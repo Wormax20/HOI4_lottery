@@ -1,0 +1,18 @@
+spriteTypes = {	
+	spriteType = {
+	    name = "GFX_idea_yj_grx"  
+	    textureFile = "gfx/interface/ideas/yj_grx.png"
+    } 
+	spriteType = {
+	    name = "GFX_idea_yj_530"  
+	    textureFile = "gfx/interface/ideas/yj_530.png"
+    } 
+	spriteType = {
+	    name = "GFX_idea_yj_xsy"  
+	    textureFile = "gfx/interface/ideas/yj_xsy.png"
+    } 
+	spriteType = {
+	    name = "GFX_idea_yj_qq"  
+	    textureFile = "gfx/interface/ideas/yj_qq.png"
+    } 
+}

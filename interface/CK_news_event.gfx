@@ -1,0 +1,10 @@
+spriteTypes = {	
+	spriteType = {
+	    name = "GFX_bfzc"  
+	    textureFile = "gfx/event_pictures/bfzc.dds"
+    } 
+	spriteType = {
+	    name = "GFX_bbls"  
+	    textureFile = "gfx/event_pictures/bbls.dds"
+    } 
+}

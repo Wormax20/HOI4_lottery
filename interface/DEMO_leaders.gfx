@@ -1,0 +1,130 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_leaders_530" 
+		texturefile = "gfx/leaders/DEMO/530.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_fe" 
+		texturefile = "gfx/leaders/DEMO/fe.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_bd" 
+		texturefile = "gfx/leaders/DEMO/bd.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_cs" 
+		texturefile = "gfx/leaders/DEMO/cs.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_dlz" 
+		texturefile = "gfx/leaders/DEMO/dlz.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_dmw" 
+		texturefile = "gfx/leaders/DEMO/dmw.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_fz" 
+		texturefile = "gfx/leaders/DEMO/fz.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_grx" 
+		texturefile = "gfx/leaders/DEMO/grx.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_kb" 
+		texturefile = "gfx/leaders/DEMO/kb.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_nl" 
+		texturefile = "gfx/leaders/DEMO/nl.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_qq" 
+		texturefile = "gfx/leaders/DEMO/qq.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_qzy" 
+		texturefile = "gfx/leaders/DEMO/qzy.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_rtx" 
+		texturefile = "gfx/leaders/DEMO/rtx.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_ty" 
+		texturefile = "gfx/leaders/DEMO/ty.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_xsy" 
+		texturefile = "gfx/leaders/DEMO/xsy.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_xz" 
+		texturefile = "gfx/leaders/DEMO/xz.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_yy" 
+		texturefile = "gfx/leaders/DEMO/yy.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_yyj" 
+		texturefile = "gfx/leaders/DEMO/yyj.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_yzx" 
+		texturefile = "gfx/leaders/DEMO/yzx.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_alps" 
+		texturefile = "gfx/leaders/DEMO/alps.jpg"
+	}
+	spriteType = {
+		name = "GFX_leaders_ydl" 
+		texturefile = "gfx/leaders/DEMO/ydl.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_E" 
+		texturefile = "gfx/leaders/DEMO/E.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_xe" 
+		texturefile = "gfx/leaders/DEMO/xe.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_tf" 
+		texturefile = "gfx/leaders/DEMO/tf.jpg"
+	}
+	spriteType = {
+		name = "GFX_leaders_keli" 
+		texturefile = "gfx/leaders/DEMO/keli.jpg"
+	}
+	spriteType = {
+		name = "GFX_leaders_6" 
+		texturefile = "gfx/leaders/DEMO/6.jpg"
+	}
+	spriteType = {
+		name = "GFX_leaders_td" 
+		texturefile = "gfx/leaders/DEMO/td.jpg"
+	}
+	spriteType = {
+		name = "GFX_leaders_bb" 
+		texturefile = "gfx/leaders/DEMO/bb.jpg"
+	}
+	spriteType = {
+		name = "GFX_leaders_mz" 
+		texturefile = "gfx/leaders/DEMO/mz.jpg"
+	}
+	spriteType = {
+		name = "GFX_leaders_bt" 
+		texturefile = "gfx/leaders/DEMO/bt.jpg"
+	}
+	spriteType = {
+		name = "GFX_leaders_yn" 
+		texturefile = "gfx/leaders/DEMO/yn.jpg"
+	}
+	spriteType = {
+		name = "GFX_leaders_god" 
+		texturefile = "gfx/leaders/DEMO/god.jpg"
+	}
+}	

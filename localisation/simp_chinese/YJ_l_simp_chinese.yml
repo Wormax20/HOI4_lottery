@@ -1,0 +1,1316 @@
+﻿l_simp_chinese:
+
+KoKi_YJ_decisions_categories: "富贵险中求 §Y[?YJ_rng]§!"
+KoKi_YJ_decisions_categories_desc: "共计三次国家抽奖,兩次通用抽奖.\nPP抽奖有专属国家抽奖的只能抽30次,无专属国家抽奖的可以抽50次\nPP抽奖分为PP奖池和通用奖池\nPP抽奖有概率出通用奖池"
+KoKi_YJ_TAG_decisions_0: "开局国家抽奖"
+KoKi_YJ_TAG_decisions_1: "第二次国家抽奖"
+KoKi_YJ_TAG_decisions_2: "第三次国家抽奖"
+
+KoKi_YJ_TAG_decisions_4: "给[FROM.GetName]提供BUFF"
+KoKi_YJ_ENG_decisions_1: "给[FROM.GetName]提供BUFF"
+KoKi_YJ_ROM_decisions_03: "给[FROM.GetName]提供BUFF"
+KoKi_YJ_ROM_decisions_04: "给[FROM.GetName]提供BUFF"
+
+
+KoKi_YJ_TY_decisions_1: "第一次通用抽奖"
+KoKi_YJ_TY_decisions_2: "第二次通用抽奖"
+
+
+KoKi_YJ_decisions_JL: "将领抽奖"
+KoKi_YJ_decisions_JL_txt: "当前抽奖次数:§Y[?KoKi_YJ_decisions_JL|Y0]§!次  最多可抽§R25§!次"
+
+KoKi_YJ_decisions_pp: "PP抽奖"
+KoKi_YJ_decisions_pp_txt: "当前抽奖次数:§Y[?KoKi_YJ_decisions_pp|Y0]§!次  最多可抽§R[?YJ_country_limit|Y0]§!次"
+
+
+KoKi_YJ_decisions_YSC: "运输船抽奖"
+
+
+
+KoKi_YJ_decisions_pp_WX: "无限次数PP抽奖"
+KoKi_YJ_decisions_pp_WX_Stxt: "当前抽奖次数:§Y[?KoKi_YJ_decisions_pp|Y0]§!次"
+
+
+KoKi_YJ_decisions_4: "学说经验与精通"
+KoKi_YJ_decisions_5: "资源抽奖"
+
+KoKi_YJ_decisions_7: "工厂迁移"
+KoKi_YJ_decisions_9: "为[FROM.GetName]提供BUFF"
+KoKi_YJ_decisions_10: "为[FROM.GetName]提供BUFF"
+
+add_mastery_bonus: "学说精通"
+
+
+KoKi_YJ_USA_event.1.title: "开始摇奖"
+KoKi_YJ_USA_event.1.desc: "本轮奖池:\n1.巨人的觉醒\n2.美利坚军事研发\n3.让美国再次伟大\n4.大繁荣"
+KoKi_YJ_USA_event.1.a: "快开始罢"
+
+KoKi_YJ_USA_event.101.title: "奖品: 巨人的觉醒"
+KoKi_YJ_USA_event.101.desc: "完成巨人的觉醒国策并获得额外加成"
+KoKi_YJ_USA_event.101.a: "好"
+
+KoKi_YJ_USA_event.102.title: "奖品: 现代战争"
+KoKi_YJ_USA_event.102.desc: "获得高额研究加成与大量加成卡\n1938.1.1解锁空天母舰\n获得高额重战减花费\n获得高额陆军buff"
+KoKi_YJ_USA_event.102.a: "好"
+
+KoKi_YJ_USA_event.103.title: "奖品: 让美国再次伟大"
+KoKi_YJ_USA_event.103.desc: "完成任务获得额外工厂产出"
+KoKi_YJ_USA_event.103.a: "好"
+
+KoKi_YJ_USA_event.104.title: "奖品: 大繁荣"
+KoKi_YJ_USA_event.104.desc: "移除大萧条并获得额外加成"
+KoKi_YJ_USA_event.104.a: "好"
+
+KoKi_YJ_USA_event.105.title: "奖品: 美英合作"
+KoKi_YJ_USA_event.105.desc: "获得英国6级沃克斯豪尔军工机构\n获得先进登陆艇\n获得3张超前10年机械化加成卡,机械化宽度-0.2,装甲率-15"
+KoKi_YJ_USA_event.105.a: "好"
+
+YJ_USA_1_ideas: "巨人的觉醒"
+YJ_USA_2_ideas: "现代战争"
+YJ_USA_2_ideas_tt: "§Y每半年§!获得§Y1次§!§R300%超前2年§!§C全类型§!加成卡与§C全类型§!§Y1§!突破点\n1938.1.1获得空天母舰"
+YJ_USA_3_ideas: "让美国再次伟大!!! "
+YJ_USA_3_ideas_tt: "[YJ_USA_3_ideas_txt]"
+YJ_USA_3_ideas_tooltip: "§Y两栖机械化§!:\n$STAT_COMMON_BUILD_COST_IC$§G-15%§!"
+YJ_USA_4_ideas: "大繁荣"
+YJ_USA_5_ideas: "美英合作"
+YJ_USA_5_ideas_tt: "解锁沃克斯豪尔军工机构\n获得先进登陆艇\n获得3张超前10年机械化加成卡,机械化宽度-0.2,装甲率-15"
+#YJ_USA_6_ideas: "殊途同归"
+YJ_USA_7_ideas: "父与子之歌"
+
+KoKi_YJ_GER_event.1.title: "开始摇奖"
+KoKi_YJ_GER_event.1.desc: "本轮奖池:\n1.闪击战法\n2.竞争战法\n3.我不用奋斗\n4.德意志帝国研发"
+KoKi_YJ_GER_event.1.a: "快开始罢"
+
+KoKi_YJ_GER_event.101.title: "奖品: 闪击战法"
+KoKi_YJ_GER_event.101.desc: "装甲飞机科技减少建造花费,增加陆军移动速度,减少计划下降速度,获得高额飞机buff"
+KoKi_YJ_GER_event.101.a: "好"
+
+KoKi_YJ_GER_event.102.title: "奖品: 竞争战法"
+KoKi_YJ_GER_event.102.desc: "获得高额坦克攻击及其他buff"
+KoKi_YJ_GER_event.102.a: "好"
+
+KoKi_YJ_GER_event.103.title: "奖品: 毫无波澜"
+KoKi_YJ_GER_event.103.desc: "高额指挥点上限和增长"
+KoKi_YJ_GER_event.103.a: "好"
+
+KoKi_YJ_GER_event.104.title: "奖品: 德意志帝国研发"
+KoKi_YJ_GER_event.104.desc: "开局获得40坦克底盘\n1937.1月获得2次50%工业加成卡\n1938.1月获得2次100%火炮加成卡\n1939.1月获得2次50%步兵武器加成卡\n1938.1.1获得全套飞机配件\n1941年1.1获得现代小型机身和二级机炮"
+KoKi_YJ_GER_event.104.a: "好"
+
+KoKi_YJ_GER_event.1011.title: "奖品: 神罗归来"
+KoKi_YJ_GER_event.1011.desc: "成立§R神圣罗马帝国§!\n维多利亚女皇上台\n获得高额政治buff"
+KoKi_YJ_GER_event.1011.a: "好"
+
+KoKi_YJ_GER_event.1012.title: "奖品: 盖世太保"
+KoKi_YJ_GER_event.1012.desc: "获得§R盖世太保§"
+KoKi_YJ_GER_event.1012.a: "好"
+
+
+YJ_GER_1_ideas: "闪击战法"
+YJ_GER_2_ideas: "竞争战法"
+YJ_GER_3_ideas: "毫无波澜"
+YJ_GER_4_ideas: "德意志帝国研发"
+YJ_GER_4_ideas_tt: "1937.1月德国将会获得§Y1次§!§R100%超前1年§!§C火炮§!加成卡\n1937.1月苏联将会获得§Y1次§!§R100%超前0.5年§!§C装甲§!加成卡\n1938.1.1获得全套飞机配件\n1941年1.1获得现代小型机身和二级机炮"
+
+YJ_GER_5_ideas: "德式军纪"
+YJ_GER_6_ideas: "德意志民族的生存空间"
+YJ_GER_01_ideas: "神罗归来"
+YJ_GER_01_ideas_tt: "成立§R神圣罗马帝国§!"
+YJ_GER_02_ideas: "盖世太保"
+
+
+
+KoKi_YJ_GER_event.10001.title: "[FROM.GetName]希望与我们进一步合作"
+KoKi_YJ_GER_event.10001.desc: "我们与[FROM.GetName]的关系密切,[GER.GetLeader]希望与我们进行工业方面的深度合作"
+KoKi_YJ_GER_event.10001.a: "可以"
+KoKi_YJ_GER_event.10001.b: "不错"
+KoKi_YJ_GER_event.10001.c: "拒绝"
+
+KoKi_YJ_GER_decisions_categories: "轴心国工业合作"
+KoKi_YJ_GER_decisions_categories_0: "与[FROM.GetName]合作"
+
+KoKi_YJ_ENG_event.1.title: "开始摇奖"
+KoKi_YJ_ENG_event.1.desc: "本轮奖池:\n1.英国皇家研发\n2.统治吧不列颠尼亚\n3.殖民地上贡\n4.日不落"
+KoKi_YJ_ENG_event.1.a: "快开始罢"
+
+KoKi_YJ_ENG_event.101.title: "奖品: 英联邦觉醒"
+KoKi_YJ_ENG_event.101.desc: "§R成立英联邦§!\n为每个附属国附加殖民地上贡buff,效果为:贡献给宗主国的工厂+40%，每日自治度获取-10\n获得英国科技buff,38.1.1获得4级引擎和40机"
+KoKi_YJ_ENG_event.101.a: "好"
+
+KoKi_YJ_ENG_event.102.title: "奖品: 英美合作"
+KoKi_YJ_ENG_event.102.desc: "解锁满血底特律军工机构\n马润宽度-0.4,登陆惩罚修正为+10%\n获得1张100炮卡,1938.9获得1张100炮卡"
+KoKi_YJ_ENG_event.102.a: "好"
+
+KoKi_YJ_ENG_event.103.title: "奖品: 天空属于不列颠"
+KoKi_YJ_ENG_event.103.desc: "高额空军buff"
+KoKi_YJ_ENG_event.103.a: "好"
+
+KoKi_YJ_ENG_event.104.title: "奖品: 殖民地上贡"
+KoKi_YJ_ENG_event.104.desc: "获得来自殖民地40%军民"
+KoKi_YJ_ENG_event.104.a: "好"
+
+KoKi_YJ_ENG_event.105.title: "奖品: 警钟长鸣"
+KoKi_YJ_ENG_event.105.desc: "获得永久保持威慑同款效果\n解锁决议,消耗100pp可为阵营成员添加1次原版保持威慑效果"
+KoKi_YJ_ENG_event.105.a: "好"
+
+KoKi_YJ_ENG_event.106.title: "奖品: 蒙哥马利的承诺"
+KoKi_YJ_ENG_event.106.desc: "高额陆军buff和减造价"
+KoKi_YJ_ENG_event.106.a: "好"
+
+
+YJ_ENG_1_ideas: "英联邦觉醒"
+YJ_ENG_1_ideas_tt: "§R成立英联邦§!"
+YJ_ENG_2_ideas: "英美合作"
+YJ_ENG_2_ideas_tt: "解锁满血底特律军工机构\n马润攻击+10%，防御+10%，宽度-0.4,所有地形惩罚修正为+10%\n1938.9获得1张100炮卡"
+YJ_ENG_3_ideas: "天空属于不列颠"
+YJ_ENG_4_ideas: "殖民地上贡"
+YJ_ENG_5_ideas: "警钟长鸣"
+YJ_ENG_5_ideas_tt: "获得永久保持威慑同款效果\n解锁决议,消耗100pp可为阵营成员添加1次原版保持威慑效果"
+YJ_ENG_6_ideas: "蒙哥马利的承诺"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+KoKi_YJ_FRA_event.1.title: "开始摇奖"
+KoKi_YJ_FRA_event.1.desc: "本轮奖池:\n1.完美马奇诺\n2.欧陆强国法兰西\n3.非洲强国法兰西\n4.移动马奇诺"
+KoKi_YJ_FRA_event.1.a: "快开始罢"
+
+KoKi_YJ_FRA_event.101.title: "奖品: 我即浪潮"
+KoKi_YJ_FRA_event.101.desc: "获得高额工业BUFF和大量人口修正"
+KoKi_YJ_FRA_event.101.a: "好"
+
+KoKi_YJ_FRA_event.102.title: "奖品: 欧陆强国法兰西"
+KoKi_YJ_FRA_event.102.desc: "移除负面buff,并获得额外加成"
+KoKi_YJ_FRA_event.102.a: "好"
+
+KoKi_YJ_FRA_event.103.title: "奖品: 非洲强国法兰西"
+KoKi_YJ_FRA_event.103.desc: "迁都阿尔及利亚并获得核心,获得额外Buff"
+KoKi_YJ_FRA_event.103.a: "好"
+
+KoKi_YJ_FRA_event.104.title: "奖品: 移动马奇诺"
+KoKi_YJ_FRA_event.104.desc: "获得重坦制造花费减少,大量重坦加成卡"
+KoKi_YJ_FRA_event.104.a: "好"
+
+YJ_FRA_1_ideas: "我即浪潮"
+YJ_FRA_2_ideas: "欧陆强国法兰西"
+YJ_FRA_3_ideas: "非洲强国法兰西"
+YJ_FRA_4_ideas: "移动马奇诺"
+
+
+
+
+
+
+
+
+
+
+
+
+KoKi_YJ_SOV_event.1.title: "开始摇奖"
+KoKi_YJ_SOV_event.1.desc: "本轮奖池:\n1.斯大林铁血统治\n2.牢不可破的联盟\n3.伟大的卫国战争\n4.无与伦比的联合"
+KoKi_YJ_SOV_event.1.a: "快开始罢"
+
+KoKi_YJ_SOV_event.101.title: "奖品: 斯大林铁血统治"
+KoKi_YJ_SOV_event.101.desc: "跳过大清洗\n删除所有斯大林互斥\n获得NKVD\n修改斯大林国策的部分buff\n获得新经济政策"
+KoKi_YJ_SOV_event.101.a: "好"
+
+KoKi_YJ_SOV_event.102.title: "奖品: TNO缔造者"
+KoKi_YJ_SOV_event.102.desc: "跳过右翼内战\n获得牢不可破的联盟\n修改部分国策buff\n获得建造速度换取高额数值"
+KoKi_YJ_SOV_event.102.a: "好"
+
+KoKi_YJ_SOV_event.103.title: "奖品: 伟大的卫国战争"
+KoKi_YJ_SOV_event.103.desc: "在战时获得伟大的卫国战争Buff"
+KoKi_YJ_SOV_event.103.a: "好"
+
+KoKi_YJ_SOV_event.104.title: "奖品: 托派联合"
+KoKi_YJ_SOV_event.104.desc: "跳过左翼内战\n获得无与伦比的联合\n修改部分国策buff\n获得总体战"
+KoKi_YJ_SOV_event.104.a: "好"
+
+
+
+YJ_SOV_1_ideas: "斯大林铁血统治"
+YJ_SOV_2_ideas: "TNO缔造者"
+YJ_SOV_3_ideas: "[KoKi_SOV_IDEAS]"
+KoKi_SOV_IDEAS_war: "伟大的卫国战争"
+KoKi_SOV_IDEAS_pace: "联盟会更好"
+YJ_SOV_3_ideas_tt: "§Y根据投降倾向获得buff增益§!"
+YJ_SOV_4_ideas: "托派联合!"
+YJ_SOV_4_ideas_tt: "跳过左翼内战\n获得无与伦比的联合\n修改部分国策buff\n获得总体战"
+YJ_SOV_5_ideas: "最美好的一代"
+YJ_SOV_3_ideas_event_tt: "§Y[KoKi_SOV_IDEAS]§!追加效果:"
+YJ_SOV_tt: "§Y五年计划§!追加效果:"
+
+YJ_SOV_6_ideas: "苏式钢铁洪流"
+
+SOV_planned_economy_subjects_tt: "所有阵营成员:"
+SOV_planned_economy_dynamic_modifier_tt: "\n添加§Y$SOV_planned_economy_dynamic_modifier$§!，其效果为（工厂产出：§G+[?SOV_planned_economy_industrial_capacity_factory_extra|2+%]§!，缺乏战略资源惩罚：§G[?SOV_planned_economy_production_lack_of_resource_penalty_factor_extra|2-%]§!）\n每有一个阵营成员采用§Y$new_economic_policy$§!，就额外获得：\n工厂产出：§G+[?SOV_planned_economy_industrial_capacity_factory_extra|2+%]§!\n缺乏战略资源惩罚：§G[?SOV_planned_economy_production_lack_of_resource_penalty_factor_extra|2-%]§!\n（额外加成上限为：工厂产出：§Y+10.00%§!，缺乏战略资源惩罚：§Y-10.00%§!）\n\n"
+
+
+
+
+
+
+
+
+
+
+KoKi_YJ_ITA_event.1.title: "开始摇奖"
+KoKi_YJ_ITA_event.1.desc: "本轮奖池:\n1.一日雄狮\n2.唯有浴血\n3.殖民地雄心\n4.赶超英美"
+KoKi_YJ_ITA_event.1.a: "快开始罢"
+
+KoKi_YJ_ITA_event.101.title: "奖品: 一日雄狮"
+KoKi_YJ_ITA_event.101.desc: "每60天从军队Buff和工业Buff抽奖"
+KoKi_YJ_ITA_event.101.a: "好"
+
+KoKi_YJ_ITA_event.102.title: "奖品: 唯有浴血"
+KoKi_YJ_ITA_event.102.desc: "获得高额工业BUFF加成"
+KoKi_YJ_ITA_event.102.a: "好"
+
+KoKi_YJ_ITA_event.104.title: "奖品: 赶超英美"
+KoKi_YJ_ITA_event.104.desc: "每月Buff增长"
+KoKi_YJ_ITA_event.104.a: "好"
+
+
+YJ_ITA_1_ideas: "一日雄狮"
+YJ_ITA_1_ideas_tt: "修正Buff§Y每60天§!从§R雄狮形态§!和§C绵羊形态§!进行抽奖\n§R雄狮形态§!获得三军Buff加成\n§C绵羊形态§!获得生产加成"
+YJ_ITA_2_ideas: "唯有浴血"
+YJ_ITA_4_ideas: "赶超英美!"
+YJ_ITA_4_ideas_tt: "各项Buff§Y每月§!增长§Y0.25%§!,每月攻防增长0.45%!"
+
+
+KoKi_YJ_ITA_event.1011.title: "奖品: 条条大路通罗马"
+KoKi_YJ_ITA_event.1011.desc: "§R获得罗马帝国版图§!\n完成国策社团主义\n高额产能buff"
+KoKi_YJ_ITA_event.1011.a: "好"
+
+KoKi_YJ_ITA_event.1012.title: "奖品: 圣帝重生"
+KoKi_YJ_ITA_event.1012.desc: "§R解锁隐藏教宗线§!\n获得高额工业buff"
+KoKi_YJ_ITA_event.1012.a: "好"
+
+KoKi_YJ_ITA_event.1013.title: "奖品: 改组皇家空军"
+KoKi_YJ_ITA_event.1013.desc: "高额空军buff"
+KoKi_YJ_ITA_event.1013.a: "好"
+
+KoKi_YJ_ITA_event.1014.title: "奖品: 罗马至上"
+KoKi_YJ_ITA_event.1014.desc: "如果意大利为§R罗马§形态,则获得一日雄狮形态\n如果意大利为§R教宗§形态,则获得“教皇他有几个师?”"
+KoKi_YJ_ITA_event.1014.a: "好"
+
+KoKi_YJ_ITA_event.1015.title: "奖品: 教皇他有几个师？"
+KoKi_YJ_ITA_event.1015.desc: "如果意大利为§R罗马§形态,则获得一日雄狮形态\n如果意大利为§R教宗§形态,则获得“教皇他有几个师?”"
+KoKi_YJ_ITA_event.1015.a: "好"
+
+YJ_ITA_01_ideas: "条条大路通罗马"
+YJ_ITA_01_ideas_tt: "§R获得罗马帝国版图§!\n完成国策社团主义"
+YJ_ITA_02_ideas: "圣帝重生"
+YJ_ITA_02_ideas_tt: "§R解锁隐藏教宗线§!"
+YJ_ITA_03_ideas: "改组皇家空军"
+YJ_ITA_04_ideas: "罗马至上"
+YJ_ITA_04_ideas_tt: "如果意大利为罗马形态，则获得一日雄狮形态\n如果意大利为教宗形态,则获得“教皇他有几个师?”"
+YJ_ITA_05_ideas: "教皇他有几个师?"
+YJ_ITA_06_ideas: "打个埃塞生死局"
+
+
+
+KoKi_YJ_BRA_event.1.title: "开始摇奖"
+KoKi_YJ_BRA_event.1.desc: "本轮奖池:\n1.蛇真的会抽烟\n2.葡萄牙皇室正统\n3.南美王\n4.战争机器"
+KoKi_YJ_BRA_event.1.a: "快开始罢"
+
+KoKi_YJ_BRA_event.101.title: "奖品: 蛇真的会抽烟"
+KoKi_YJ_BRA_event.101.desc: "获得对主要国家特攻和陆战Buff"
+KoKi_YJ_BRA_event.101.a: "好"
+
+KoKi_YJ_BRA_event.102.title: "奖品: 葡巴帝国"
+KoKi_YJ_BRA_event.102.desc: "获得葡萄牙海外殖民地并获得额外加成\n完成国策颁发皇室头衔"
+KoKi_YJ_BRA_event.102.a: "好"
+
+KoKi_YJ_BRA_event.103.title: "奖品: 南美王"
+KoKi_YJ_BRA_event.103.desc: "南美统一并获得军队加成\n完成国策强化联邦制和推动中央极权以及其前置"
+KoKi_YJ_BRA_event.103.a: "好"
+
+KoKi_YJ_BRA_event.104.title: "奖品: 战争机器"
+KoKi_YJ_BRA_event.104.desc: "获得巨额生产加成"
+KoKi_YJ_BRA_event.104.a: "好"
+
+YJ_BRA_1_ideas: "蛇真的会抽烟"
+YJ_BRA_2_ideas: "葡巴帝国"
+YJ_BRA_2_ideas_tt: "每§Y2月§!获得§Y1民1军1000步枪500防空炮500支援装备500坦克§!"
+YJ_BRA_3_ideas: "南美王"
+YJ_BRA_4_ideas: "战争机器"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+KoKi_YJ_FIN_event.1.title: "开始摇奖"
+KoKi_YJ_FIN_event.1.desc: "本轮奖池:\n1.追寻斯堪的纳维亚遗产\n2.我即是斯堪的纳维亚\n3.工业强国\n4.北欧超人"
+KoKi_YJ_FIN_event.1.a: "快开始罢"
+
+KoKi_YJ_FIN_event.101.title: "奖品: 追寻斯堪的纳维亚遗产"
+KoKi_YJ_FIN_event.101.desc: "获得高额人力加成,资源获取率\n获得全北欧核心,解锁为队友发小棉袄\n解锁4个顾问和1个元帅"
+KoKi_YJ_FIN_event.101.a: "好"
+
+KoKi_YJ_FIN_event.102.title: "奖品: 凛冬将军"
+KoKi_YJ_FIN_event.102.desc: "获得高额山地师修正，特种攻击\n冬季后勤连修正:寒冷适应度增长率+300%,积雪地形修正+15%,软攻+100点,补给使用-0.2\n长城巡逻连修正:寒冷适应度增长率+300%,积雪地形修正+15%,软攻+100点,补给使用-0.1,每个徒步步兵主动性+0.08,坦克及其衍生硬攻+10%\n山地师补给使用-0.02,山地师攻击+5%,防御+10%,山地师速度+10%"
+KoKi_YJ_FIN_event.102.a: "好"
+
+KoKi_YJ_FIN_event.103.title: "奖品: 凛冬航空队"
+KoKi_YJ_FIN_event.103.desc: "解锁满血萨博,获得高额空军buff"
+KoKi_YJ_FIN_event.103.a: "好"
+
+KoKi_YJ_FIN_event.104.title: "奖品: 北欧工业整合"
+KoKi_YJ_FIN_event.104.desc: "获得高额工业buff"
+KoKi_YJ_FIN_event.104.a: "好"
+
+KoKi_YJ_FIN_event.105.title: "奖品: 冰火人"
+KoKi_YJ_FIN_event.105.desc: "获得机制修正:当在每年的10月到3月,获得修正【雪地行者】\n在每年的4月到9月,获得修正【旱地难行】"
+KoKi_YJ_FIN_event.105.a: "好"
+
+
+YJ_FIN_1_ideas: "追寻斯堪的纳维亚遗产"
+YJ_FIN_2_ideas: "凛冬将军"
+YJ_FIN_2_ideas_tt: "山地师攻击+5%，防御+10%，山地师速度+10%,山地师补给使用-0.02\n冬季后勤连修正:寒冷适应度增长率+300%,积雪地形修正+15%,软攻+100点,补给使用-0.2\n长城巡逻连修正:寒冷适应度增长率+300%,积雪地形修正+15%,软攻+100点,补给使用-0.1,每个徒步步兵主动性+0.08,坦克及其衍生硬攻+10%"
+YJ_FIN_3_ideas: "凛冬航空队"
+YJ_FIN_3_ideas_tt: "解锁满血萨博"
+YJ_FIN_4_ideas: "北欧工业整合"
+YJ_FIN_4_ideas_tt: "增加地图外20个民\n增加地图外5个军"
+YJ_FIN_05_ideas: "冰火人"
+YJ_FIN_05_ideas_tt: "获得机制修正:当在每年的10月到3月,获得修正【雪地行者】\n在每年的4月到9月,获得修正【旱地难行】"
+YJ_FIN_6_ideas: "雪地行者"
+YJ_FIN_7_ideas: "旱地难行"
+
+
+YJ_FIN_5_ideas: "小棉袄"
+
+
+
+
+
+
+
+
+
+
+
+
+
+KoKi_YJ_JAP_event.1.title: "开始摇奖"
+KoKi_YJ_JAP_event.1.desc: "本轮奖池:\n1.陆军师团\n2.陆军航空队\n3.大东亚共荣圈\n4.财阀统治\n5.武士血统"
+KoKi_YJ_JAP_event.1.a: "快开始罢"
+
+KoKi_YJ_JAP_event.101.title: "奖品: 陆军师团"
+KoKi_YJ_JAP_event.101.desc: "获得陆军BUFF与海机科技"
+KoKi_YJ_JAP_event.101.a: "好"
+
+KoKi_YJ_JAP_event.102.title: "奖品: 陆军航空队"
+KoKi_YJ_JAP_event.102.desc: "获得空军BUFF和建造速度"
+KoKi_YJ_JAP_event.102.a: "好"
+
+KoKi_YJ_JAP_event.103.title: "奖品: 大东亚共荣圈"
+KoKi_YJ_JAP_event.103.desc: "获得对中国的攻防并获得额外加成"
+KoKi_YJ_JAP_event.103.a: "好"
+
+KoKi_YJ_JAP_event.104.title: "奖品: 财阀统治"
+KoKi_YJ_JAP_event.104.desc: "获得高额工业BUFF"
+KoKi_YJ_JAP_event.104.a: "好"
+
+KoKi_YJ_JAP_event.105.title: "奖品: 武士血统"
+KoKi_YJ_JAP_event.105.desc: "高额陆军buff和cp增长上限"
+KoKi_YJ_JAP_event.105.a: "好"
+
+
+YJ_JAP_1_ideas: "陆军师团"
+YJ_JAP_2_ideas: "陆军航空队"
+YJ_JAP_3_ideas: "大东亚共荣圈"
+YJ_JAP_4_ideas: "财阀统治"
+YJ_JAP_5_ideas: "武士血统"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+KoKi_YJ_PRC_event.1.title: "开始摇奖"
+KoKi_YJ_PRC_event.1.desc: "本轮奖池:\n1.国共合作\n2.中国制造\n3.人民战争\n4.人民站起来了"
+KoKi_YJ_PRC_event.1.a: "快开始罢"
+
+KoKi_YJ_PRC_event.101.title: "奖品: 国共合作"
+KoKi_YJ_PRC_event.101.desc: "开局统一,获得额外BUFF"
+KoKi_YJ_PRC_event.101.a: "好"
+
+KoKi_YJ_PRC_event.102.title: "奖品: 中国制造"
+KoKi_YJ_PRC_event.102.desc: "获得全方面工业BUFF加成"
+KoKi_YJ_PRC_event.102.a: "好"
+
+KoKi_YJ_PRC_event.103.title: "奖品: 人民战争"
+KoKi_YJ_PRC_event.103.desc: "提高缴获率和被占领地区的抵抗"
+KoKi_YJ_PRC_event.103.a: "好"
+
+KoKi_YJ_PRC_event.104.title: "奖品: 人民站起来了"
+KoKi_YJ_PRC_event.104.desc: "获得政治和工业BUFF加成"
+KoKi_YJ_PRC_event.104.a: "好"
+
+YJ_PRC_1_ideas: "国共合作"
+YJ_PRC_2_ideas: "中国制造"
+YJ_PRC_3_ideas: "人民战争"
+YJ_PRC_4_ideas: "人民站起来了"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+KoKi_YJ_ROM_event.1.title: "开始摇奖"
+KoKi_YJ_ROM_event.1.desc: "本轮奖池:\n1.帝国油都\n2.大罗尼之梦\n3.死亡蛋糕\n4.小罗马尼亚沼泽"
+KoKi_YJ_ROM_event.1.a: "快开始罢"
+
+KoKi_YJ_ROM_event.101.title: "奖品: 帝国油都"
+KoKi_YJ_ROM_event.101.desc: "获得高额建造速度,全部炼油科技,地区最大工厂数+15,间谍位+2"
+KoKi_YJ_ROM_event.101.a: "好"
+
+KoKi_YJ_ROM_event.102.title: "奖品: 冰与火之歌"
+KoKi_YJ_ROM_event.102.desc: "可在决议里花费100cp选择对某个与罗尼处于战时状态国家后,在与盟友接样的敌军或盟友的区块添加对敌国减50陆军速度持续7天的地形修正\n可在决议里花费50cp选择某个处于战时状态的盟友后,在与盟友接样的敌军或盟友的区块添加对敌国国家+7.5攻击持续7天的地形修正"
+KoKi_YJ_ROM_event.102.a: "好"
+
+KoKi_YJ_ROM_event.103.title: "奖品: 死亡蛋糕"
+KoKi_YJ_ROM_event.103.desc: "花费50pp为队友提供30天高额工业buff"
+KoKi_YJ_ROM_event.103.a: "好"
+
+KoKi_YJ_ROM_event.104.title: "奖品: 吸血鬼的故乡"
+KoKi_YJ_ROM_event.104.desc: "解锁决议花费100pp为队友提供60天buff\n夜战攻击+5,泄露给他国情报-15,补给消耗-20,补给范围+10"
+KoKi_YJ_ROM_event.104.a: "好"
+
+KoKi_YJ_ROM_event.105.title: "奖品: 大罗尼之梦"
+KoKi_YJ_ROM_event.105.desc: "获得老兵不死翻倍效果\n获得高额陆军buff"
+KoKi_YJ_ROM_event.105.a: "好"
+
+
+YJ_ROM_1_ideas: "帝国油都"
+YJ_ROM_2_ideas: "冰与火之歌"
+YJ_ROM_2_ideas_tt: "可在决议里花费100cp选择对某个与罗尼处于战时状态国家后在与盟友接样的敌军或盟友的区块\n添加对选择国家减50陆军速度持续7天的地形修正\n添加对选择国家+7.5攻击持续7天的地形修正"
+YJ_ROM_3_ideas: "死亡蛋糕"
+YJ_ROM_03_ideas: "死亡蛋糕"
+YJ_ROM_4_ideas: "吸血鬼的故乡"
+YJ_ROM_04_ideas: "吸血鬼的故乡"
+YJ_ROM_5_ideas: "大罗尼之梦"
+
+YJ_ROM_state_1_ideas: "血火同源"
+YJ_ROM_state_2_ideas: "寒冰"
+
+KoKi_YJ_ROM_decisions_categories: "冰与火之歌"
+KoKi_YJ_ROM_decisions_categories_txt: "此地区§Y德国,匈牙利,意大利,比利时,芬兰,日本,法国,瑞士§!将"
+KoKi_YJ_ROM_decisions_categories_1_txt: "此地区§Y苏联,美国,英国,墨西哥,巴西,印度,TG§!将"
+KoKi_YJ_ROM_decisions_categories_1: "在[FROM.GetName]计划攻势"
+KoKi_YJ_ROM_decisions_categories_2: "在[FROM.GetName]计划攻势"
+
+
+KoKi_YJ_MEX_event.1.title: "开始摇奖"
+KoKi_YJ_MEX_event.1.desc: "本轮奖池:\n1.中美洲联邦\n2.阿兹特克的遗产\n3.盟军战争后勤协调\n4.美墨特种技术特派团"
+KoKi_YJ_MEX_event.1.a: "快开始罢"
+
+KoKi_YJ_MEX_event.101.title: "奖品: 中美洲之光"
+KoKi_YJ_MEX_event.101.desc: "获得巨额工业与政治和人力加成吞并中美洲并获得核心,获得高额军事buff\n允许在战时为盟军提供军事BUFF"
+KoKi_YJ_MEX_event.101.a: "好"
+
+KoKi_YJ_MEX_event.102.title: "奖品: 阿兹特克的遗产"
+KoKi_YJ_MEX_event.102.desc: "获得高额人力加成与高额陆军加成"
+KoKi_YJ_MEX_event.102.a: "好"
+
+KoKi_YJ_MEX_event.103.title: "奖品: 异世界的拉丁同盟"
+KoKi_YJ_MEX_event.103.desc: "获得高额军事buff\n设置执政党为共产党\n改名为拉丁美洲社会主义联邦"
+KoKi_YJ_MEX_event.103.a: "好"
+
+KoKi_YJ_MEX_event.104.title: "奖品: 美墨特种技术特派团"
+KoKi_YJ_MEX_event.104.desc: "获得两栖科技与高额特种修正减少两栖载具造价"
+KoKi_YJ_MEX_event.104.a: "好"
+
+YJ_MEX_1_ideas: "中美洲之光"
+YJ_MEX_1_ideas_tt: "§C允许在战时为盟军提供军事BUFF§!"
+YJ_MEX_2_ideas: "阿兹特克的遗产"
+YJ_MEX_3_ideas: "异世界的拉丁同盟"
+YJ_MEX_3_ideas_tt: "设置执政党为共产党\n成立拉丁美洲社会主义联邦"
+YJ_MEX_03_ideas: "布拉提诺自行火炮与捷豹主战坦克"
+YJ_MEX_04_ideas: "白磷弹研究中心"
+YJ_MEX_05_ideas: "劫掠者武装直升机"
+YJ_MEX_05_ideas_tt: "获得直升机科技\n获得美国西科尔直升机设计商\n全直升机支援连增加20软攻和10硬功\n直升机后勤连和医院添加卓越单兵效果"
+YJ_MEX_06_ideas: "狐步舞者"
+YJ_MEX_state_1_ideas: "盟军战争计划"
+YJ_MEX_state_2_ideas: "霸王行动"
+YJ_MEX_4_ideas: "美墨特种技术特派团"
+
+KoKi_YJ_MEX_decisions_categories: "盟军战争部"
+KoKi_YJ_MEX_decisions_categories_txt: "此地区§Y美国,英国,巴西,墨西哥,印度§!将"
+KoKi_YJ_MEX_decisions_categories_0: "执行霸王行动"
+KoKi_YJ_MEX_decisions_categories_0_txt: "§C大西洋壁垒地区§!"
+KoKi_YJ_MEX_decisions_categories_1: "在[FROM.GetName]计划攻势"
+KoKi_YJ_MEX_decisions_categories_2: "在[FROM.GetName]计划攻势"
+KoKi_YJ_MEX_decisions_categories_3: "在[FROM.GetName]计划攻势"
+
+MEX_integrate_state_decisions_categories: "整合南美"
+MEX_integrate_state: "整合[FROM.GetName]"
+
+
+
+
+
+
+
+KoKi_YJ_HUN_event.1.title: "开始摇奖"
+KoKi_YJ_HUN_event.1.desc: "本轮奖池:\n1.破镜重圆\n2.普世帝国\n3.天主之盾\n4.帝国之心"
+KoKi_YJ_HUN_event.1.a: "快开始罢"
+
+KoKi_YJ_HUN_event.101.title: "奖品: 破镜重圆"
+KoKi_YJ_HUN_event.101.desc: "获得前奥匈版图附带核心"
+KoKi_YJ_HUN_event.101.a: "好"
+
+KoKi_YJ_HUN_event.102.title: "奖品: 普世帝国"
+KoKi_YJ_HUN_event.102.desc: "获得政治加成解锁全部顾问"
+KoKi_YJ_HUN_event.102.a: "好"
+
+KoKi_YJ_HUN_event.103.title: "奖品: 天主之盾"
+KoKi_YJ_HUN_event.103.desc: "获得高额陆军BUFF"
+KoKi_YJ_HUN_event.103.a: "好"
+
+KoKi_YJ_HUN_event.104.title: "奖品: 帝国之心"
+KoKi_YJ_HUN_event.104.desc: "波西米亚,下奥地利,北匈牙利获得巨额工业效果"
+KoKi_YJ_HUN_event.104.a: "好"
+
+YJ_HUN_1_ideas: "破镜重圆"
+YJ_HUN_1_ideas_FROM: "并肩作战"
+YJ_HUN_2_ideas: "普世帝国"
+YJ_HUN_2_ideas_tt: "§Y解锁全部顾问§!"
+YJ_HUN_3_ideas: "天主之盾"
+YJ_HUN_4_ideas: "帝国之翼"
+YJ_HUN_ideas: "帝国之心"
+
+
+
+
+
+
+KoKi_YJ_PHI_event.1.title: "开始摇奖"
+KoKi_YJ_PHI_event.1.desc: "本轮奖池:\n1.与海共生\n2.扬帆远航\n3.炮火轰鸣"
+KoKi_YJ_PHI_event.1.a: "快开始罢"
+
+KoKi_YJ_PHI_event.101.title: "奖品: 与海共生"
+KoKi_YJ_PHI_event.101.desc: "获得太平洋同盟国拥有的太平洋岛屿以及核心\n获得2个科研槽"
+KoKi_YJ_PHI_event.101.a: "好"
+
+KoKi_YJ_PHI_event.102.title: "奖品: 扬帆远航"
+KoKi_YJ_PHI_event.102.desc: "海军基地建造速度和对国家加成"
+KoKi_YJ_PHI_event.102.a: "好"
+
+KoKi_YJ_PHI_event.103.title: "奖品: 炮火轰鸣"
+KoKi_YJ_PHI_event.103.desc: "获得大列科技和陆军强化以及装备减造价"
+KoKi_YJ_PHI_event.103.a: "好"
+
+KoKi_YJ_PHI_event.104.title: "奖品: 流亡自由法国技术支持"
+KoKi_YJ_PHI_event.104.desc: "获得大量装甲加成卡和重坦属性\n解锁法国雷诺设计商"
+KoKi_YJ_PHI_event.104.a: "好"
+
+YJ_PHI_1_ideas: "与海共生"
+YJ_PHI_1_ideas_tt: "§Y获得太平洋岛屿核心§!"
+YJ_PHI_2_ideas: "扬帆远航"
+YJ_PHI_2_ideas_tt: "§Y高额海军基地建造速度和战争加成§!"
+YJ_PHI_3_ideas: "炮火轰鸣"
+YJ_PHI_3_ideas_tt: "§Y获得大列科技和陆军数值§!"
+YJ_PHI_4_ideas: "流亡自由法国技术支持"
+YJ_PHI_4_ideas_tt: "获得大量加成卡和重坦属性\n解锁法国雷诺设计商!"
+
+
+
+KoKi_YJ_BEL_event.1.title: "开始摇奖"
+KoKi_YJ_BEL_event.1.desc: "本轮奖池:\n1.苦命鸳鸯\n2.西洋壁垒\n3.林间游猎"
+KoKi_YJ_BEL_event.1.a: "快开始罢"
+
+KoKi_YJ_BEL_event.101.title: "奖品: 苦命鸳鸯"
+KoKi_YJ_BEL_event.101.desc: "获得比何卢以及荷属东印度核心\n投降倾向高于50吞并比属刚果并获得全核心以及投降倾向+100"
+KoKi_YJ_BEL_event.101.a: "好"
+
+KoKi_YJ_BEL_event.102.title: "奖品: 西洋壁垒"
+KoKi_YJ_BEL_event.102.desc: "获得陆地巡洋舰并消除debuff和陆军高额数值"
+KoKi_YJ_BEL_event.102.a: "好"
+
+KoKi_YJ_BEL_event.103.title: "奖品:林间游猎"
+KoKi_YJ_BEL_event.103.desc: "游骑兵获得降低10地形惩罚以及-0.4战场宽度"
+KoKi_YJ_BEL_event.103.a: "好"
+
+YJ_BEL_1_ideas: "苦命鸳鸯"
+YJ_BEL_1_ideas_tt: "§比何卢东印度全核心§!"
+YJ_BEL_01_ideas: "誓死抵抗"
+YJ_BEL_01_ideas_tt: "投降倾向+100\n吞并比属刚果并获得全核心"
+YJ_BEL_2_ideas: "西洋壁垒"
+YJ_BEL_2_ideas_tt: "§Y解锁陆地巡洋舰科技§!"
+YJ_BEL_3_ideas: "林间游猎"
+YJ_BEL_3_ideas_tt: "§Y高额游骑兵加成§!"
+
+
+
+
+
+KoKi_YJ_SWI_event.1.title: "开始摇奖"
+KoKi_YJ_SWI_event.1.desc: "本轮奖池:\n1.虚空造物\n2.联邦空军\n3.联邦特种部队\n4.联邦科学院"
+KoKi_YJ_SWI_event.1.a: "快开始罢"
+
+KoKi_YJ_SWI_event.101.title: "奖品: 虚空造物"
+KoKi_YJ_SWI_event.101.desc: "永久减100生产资源惩罚\n获得40生产上限和10效率增长"
+KoKi_YJ_SWI_event.101.a: "好"
+
+KoKi_YJ_SWI_event.102.title: "奖品: 联邦空军"
+KoKi_YJ_SWI_event.102.desc: "获得高额空军buff"
+KoKi_YJ_SWI_event.102.a: "好"
+
+KoKi_YJ_SWI_event.103.title: "奖品:阿尔卑斯防卫军"
+KoKi_YJ_SWI_event.103.desc: "山地师宽度-0.2"
+KoKi_YJ_SWI_event.103.a: "好"
+
+KoKi_YJ_SWI_event.104.title: "奖品:联邦科学院"
+KoKi_YJ_SWI_event.104.desc: "加50科研速度\n§R获得1科研槽§"
+KoKi_YJ_SWI_event.104.a: "好"
+
+YJ_SWI_1_ideas: "虚空造物"
+YJ_SWI_2_ideas: "联邦空军"
+YJ_SWI_3_ideas: "阿尔卑斯防卫军"
+YJ_SWI_3_ideas_tt: "§R山地师宽度-0.2§!"
+YJ_SWI_4_ideas: "联邦科学院"
+YJ_SWI_4_ideas_tt: "§R获得1个科研槽§!"
+
+
+
+
+KoKi_YJ_RAJ_event.1.title: "开始摇奖"
+KoKi_YJ_RAJ_event.1.desc: "本轮奖池:\n1.帝国一统\n2.超级马林的传承\n3.雷霆战象\n4.拜占庭帝国皇家织造\n5.五年计划的经验"
+KoKi_YJ_RAJ_event.1.a: "快开始罢"
+
+KoKi_YJ_RAJ_event.101.title: "奖品: 帝国一统"
+KoKi_YJ_RAJ_event.101.desc: "获得§R本土中东阿拉伯半岛§!\n大量初始军民"
+KoKi_YJ_RAJ_event.101.a: "好"
+
+KoKi_YJ_RAJ_event.102.title: "奖品: 超级马林的传承"
+KoKi_YJ_RAJ_event.102.desc: "获得1张150轻型飞机加成卡\n1张150加成炮卡\n§R增加15个地图外民工 15个军工§"
+KoKi_YJ_RAJ_event.102.a: "好"
+
+KoKi_YJ_RAJ_event.103.title: "奖品: 雷霆战象"
+KoKi_YJ_RAJ_event.103.desc: "获得3张100火炮支援卡"
+KoKi_YJ_RAJ_event.103.a: "好"
+
+KoKi_YJ_RAJ_event.104.title: "奖品: 五年计划的经验"
+KoKi_YJ_RAJ_event.104.desc: "§R增加10个地图外民工 10个军工§"
+KoKi_YJ_RAJ_event.104.a: "好"
+
+KoKi_YJ_RAJ_event.105.title: "奖品: 医疗奇迹"
+KoKi_YJ_RAJ_event.105.desc: "高额陆军数值"
+KoKi_YJ_RAJ_event.105.a: "好"
+
+
+YJ_RAJ_1_ideas: "帝国一统"
+YJ_RAJ_1_ideas_tt: "获得§R本土中东阿拉伯半岛§全核心!\n走向独立!"
+YJ_RAJ_2_ideas: "超级马林的传承"
+YJ_RAJ_3_ideas: "雷霆战象"
+YJ_RAJ_3_ideas_tt: "获得§R大象部队§!"
+YJ_RAJ_4_ideas: "五年计划的经验"
+YJ_RAJ_5_ideas: "医疗奇迹"
+YJ_RAJ_5_ideas_tt: "解锁3级野战医院!"
+
+
+KoKi_YJ_CAN_event.1.title: "开始摇奖"
+KoKi_YJ_CAN_event.1.desc: "本轮奖池:\n1.我们不要主人!\n2.加拿大海陆突击队\n3.美加合作\n4.民主兵工厂"
+KoKi_YJ_CAN_event.1.a: "快开始罢"
+
+KoKi_YJ_CAN_event.101.title: "奖品: 我们不要主人!"
+KoKi_YJ_CAN_event.101.desc: "获得§R独立§!\n获得高额pp和工业\n获得完整版图\n获得2个科研槽"
+KoKi_YJ_CAN_event.101.a: "好"
+
+KoKi_YJ_CAN_event.102.title: "奖品: 加拿大海陆突击队"
+KoKi_YJ_CAN_event.102.desc: "获得高额陆军buff\n获得英国同款马润buff\n获得3张超前10年机械化加成卡和高额减花费\n§R解锁英国沃克豪斯设计商和美国底特律设计商!§"
+KoKi_YJ_CAN_event.102.a: "好"
+
+KoKi_YJ_CAN_event.103.title: "奖品: 美加合作"
+KoKi_YJ_CAN_event.103.desc: "获得高额空军buff和工业buff\n§R解锁美国波音设计商!§\n1938.1解锁全套40重战配件"
+KoKi_YJ_CAN_event.103.a: "好"
+
+KoKi_YJ_CAN_event.104.title: "奖品: 民主兵工厂"
+KoKi_YJ_CAN_event.104.desc: "获得高额减花费buff和工业buff"
+KoKi_YJ_CAN_event.104.a: "好"
+
+
+YJ_CAN_1_ideas: "我们不要主人!"
+YJ_CAN_1_ideas_tt: "走向独立!"
+YJ_CAN_2_ideas: "加拿大海陆突击队"
+YJ_CAN_2_ideas_tt: "§R解锁英国沃克豪斯设计商和美国底特律设计商!§"
+YJ_CAN_3_ideas: "美加合作"
+YJ_CAN_3_ideas_tt: "§R解锁美国波音设计商!§\n1938.1解锁全套40重战配件"
+YJ_CAN_4_ideas: "民主兵工厂"
+YJ_CAN_5_ideas: "和睦家庭"
+YJ_CAN_5_ideas_tt: "良好的家庭氛围有助于打仗"
+
+
+
+KoKi_YJ_TUR_event.1.title: "开始摇奖"
+KoKi_YJ_TUR_event.1.desc: "本轮奖池:\n1.奥斯曼帝国重生!\n2.法提赫的馈赠\n3.世界渴望之城"
+KoKi_YJ_TUR_event.1.a: "快开始罢"
+
+KoKi_YJ_TUR_event.101.title: "奖品: 奥斯曼帝国重生!"
+KoKi_YJ_TUR_event.101.desc: "获得§R奥斯曼帝国版图§!\n获得高额工业buff和陆军buff\n骆驼骑兵地形修正:平原，山地，沙漠攻防+20，骆驼骑兵宽度-0.2"
+KoKi_YJ_TUR_event.101.a: "好"
+
+KoKi_YJ_TUR_event.102.title: "奖品: 法提赫的馈赠"
+KoKi_YJ_TUR_event.102.desc: "获得高额陆军buff\n§R解锁德国奔驰设计商§"
+KoKi_YJ_TUR_event.102.a: "苏丹王在召唤"
+
+KoKi_YJ_TUR_event.103.title: "奖品: 世界渴望之城"
+KoKi_YJ_TUR_event.103.desc: "君士坦丁堡获得地形修正世界渴望之城,获得高额工业buff"
+KoKi_YJ_TUR_event.103.a: "好"
+
+
+YJ_TUR_1_ideas: "奥斯曼帝国重生!"
+YJ_TUR_1_ideas_tt: "获得§R奥斯曼帝国版图§!\n骆驼骑兵地形修正:平原，山地，沙漠攻防+20，骆驼骑兵宽度-0.2，补给消耗-0.06"
+YJ_TUR_2_ideas: "法提赫的馈赠"
+YJ_TUR_2_ideas_tt: "获得高额陆军buff!\n骆驼骑兵获得地形修正:城市+15攻防!\n§R解锁德国奔驰设计商§"
+YJ_TUR_3_ideas: "世界渴望之城"
+YJ_TUR_3_ideas_tt: "君士坦丁堡获得地形修正§R世界渴望之城§!\n获得高额工业buff"
+YJ_TUR_ideas: "世界渴望之城"
+
+STATE_797: "君士坦丁堡"
+VICTORY_POINTS_9833: "君士坦丁堡"
+TUR_communism_DEF: "奥斯曼帝国"
+TUR_communism: "奥斯曼帝国"
+TUR_democratic: "奥斯曼帝国"
+TUR_democratic_DEF: "奥斯曼帝国"
+OTT_UNIFIED_democratic: "奥斯曼帝国"
+OTT_UNIFIED_democratic_DEF: "奥斯曼帝国"
+OTT_SULTANATE_democratic: "奥斯曼帝国"
+OTT_SULTANATE_democratic_DEF: "奥斯曼帝国"
+OTT_UNIFIED_communism: "奥斯曼帝国"
+OTT_UNIFIED_communism_DEF: "奥斯曼帝国"
+OTT_SULTANATE_communism: "奥斯曼帝国"
+OTT_SULTANATE_communism_DEF: "奥斯曼帝国"
+
+
+
+KoKi_YJ_TAG_decisions_BF_TM_1: "倒计时结束前,守住北非"
+KoKi_YJ_TAG_decisions_BF_TM_2: "乘胜追击!拿下君士坦丁堡!"
+
+KoKi_YJ_TAG_decisions_BF_ZX_1: "倒计时结束前,拿下北非"
+KoKi_YJ_TAG_decisions_BF_ZX_2: "乘胜追击!拿下南非!"
+
+YJ_BF_TM_1_ideas: "鉴定守住就有办法"
+YJ_BF_TM_2_ideas: "北非大获全胜"
+
+YJ_BF_ZX_1_ideas: "势如破竹"
+YJ_BF_ZX_2_ideas: "北非的完全胜利"
+
+The_Others_YJ_Flag: "其他人抽奖"
+
+
+
+
+
+
+
+
+#通用奖池
+
+KoKi_YJ.101.title: "奖品: 国际纵队"
+KoKi_YJ.101.desc: " 每个月获得5支10步师"
+KoKi_YJ.101.a: "yee~"
+
+KoKi_YJ.102.title: "老兵不死"
+KoKi_YJ.102.desc: "部队获得巨额经验增长并减少经验损失!"
+KoKi_YJ.102.a: "敢不敢打出骷髅师"
+
+KoKi_YJ.103.title: "奖品: 精致军工"
+KoKi_YJ.103.desc: " 大幅增加坦克飞机造价与属性"
+KoKi_YJ.103.a: "yee~"
+
+KoKi_YJ.104.title: "奖品: 政治大亨"
+KoKi_YJ.104.desc: "获得巨量pp加成"
+KoKi_YJ.104.a: "yee~"
+
+KoKi_YJ.105.title: "奖品: 科研预算大增"
+KoKi_YJ.105.desc: "获得2个科研槽 减少10%研究速度"
+KoKi_YJ.105.a: "yee~"
+
+KoKi_YJ.106.title: "奖品: 特种精英"
+KoKi_YJ.106.desc: "获得1个免费的特种分支\n§R请注意先点一个特种学说再领取!§"
+KoKi_YJ.106.a: "海机不要钱是吧"
+
+KoKi_YJ.107.title: "奖品: 宣传天才"
+KoKi_YJ.107.desc: "获得大量战支和稳定度"
+KoKi_YJ.107.a: "yee~"
+
+KoKi_YJ.108.title: "奖品: 多子化"
+KoKi_YJ.108.desc: "获得大量人口增长"
+KoKi_YJ.108.a: "yee~"
+
+KoKi_YJ.109.title: "奖品: 发展特勤局"
+KoKi_YJ.109.desc: "获得间谍渗透加成"
+KoKi_YJ.109.a: "yee~"
+
+KoKi_YJ.110.title: "奖品: 工业预算大增"
+KoKi_YJ.110.desc: "大幅增加工业产出"
+KoKi_YJ.110.a: "yee~"
+
+KoKi_YJ.111.title: "奖品: 资源开发家"
+KoKi_YJ.111.desc: "每两个月自动抽 一次 资源抽奖"
+KoKi_YJ.111.a: "yee~"
+
+#通用抽奖
+
+YJ_1_ideas: "国际纵队"
+YJ_1_ideas_tt: "§Y每月获得5支10步师§!"
+YJ_2_ideas: "老兵不死"
+YJ_3_ideas: "精致军工"
+YJ_4_ideas: "政治大亨"
+YJ_5_ideas: "科研预算大增"
+YJ_5_ideas_tt: "获得2个§Y科研槽§"
+YJ_6_ideas: "特种精英"
+YJ_6_ideas_tt: "§Y获得1个免费的特种分支§!"
+YJ_7_ideas: "宣传天才"
+YJ_7_ideas_tt: "§Y获得10000战支和稳定度§!"
+YJ_8_ideas: "多子化"
+YJ_9_ideas: "发展特勤局"
+YJ_10_ideas: "工业预算大增"
+YJ_11_ideas: "资源开发家"
+YJ_11_ideas_tt: "§Y每两个月自动抽 一次 资源抽奖§!"
+
+
+#pp抽奖
+
+
+YJ_21_ideas: "建造大师"
+YJ_22_ideas: "勒紧裤腰带"
+YJ_23_ideas: "加急生产"
+YJ_24_ideas: "手搓万物"
+YJ_25_ideas: "人口大爆发"
+YJ_26_ideas: "士气大增"
+YJ_27_ideas: "鉴定守住就有办法"
+YJ_28_ideas: "工作狂热"
+
+KoKi_YJ_pp.1.title: "奖品: 地图外民用工厂"
+KoKi_YJ_pp.1.desc: ""
+KoKi_YJ_pp.1.a: "yee~"
+
+KoKi_YJ_pp.2.title: "奖品: 地图外军用工厂"
+KoKi_YJ_pp.2.desc: ""
+KoKi_YJ_pp.2.a: "yee~"
+
+KoKi_YJ_pp.3.title: "奖品: 科研速度加成"
+KoKi_YJ_pp.3.desc: ""
+KoKi_YJ_pp.3.a: "yee~"
+
+KoKi_YJ_pp.4.title: "奖品: 稳定度礼包"
+KoKi_YJ_pp.4.desc: ""
+KoKi_YJ_pp.4.a: "yee~"
+
+KoKi_YJ_pp.5.title: "奖品: 战争支持度礼包"
+KoKi_YJ_pp.5.desc: ""
+KoKi_YJ_pp.5.a: "yee~"
+
+KoKi_YJ_pp.6.title: "奖品: 减少稳定度"
+KoKi_YJ_pp.6.desc: ""
+KoKi_YJ_pp.6.a: "yee~"
+
+KoKi_YJ_pp.7.title: "奖品: 减少战争支持度"
+KoKi_YJ_pp.7.desc: ""
+KoKi_YJ_pp.7.a: "yee~"
+
+KoKi_YJ_pp.8.title: "奖品: §R大奖§!"
+KoKi_YJ_pp.8.desc: "§R恭喜你中大奖啦!\n§R恭喜你中大奖啦!\n§R恭喜你中大奖啦!"
+KoKi_YJ_pp.8.a: "恭喜你中大奖啦"
+
+KoKi_YJ_pp.9.title: "奖品: 超前加成卡"
+KoKi_YJ_pp.9.desc: "超前0.5年200%全类型加成卡一张"
+KoKi_YJ_pp.9.a: "好"
+
+KoKi_YJ_pp_resource.10.title: "奖品: 钢"
+KoKi_YJ_pp_resource.10.desc: "获得小量钢"
+KoKi_YJ_pp_resource.10.a: "好"
+
+KoKi_YJ_pp_resource.11.title: "奖品: 石油"
+KoKi_YJ_pp_resource.11.desc: "获得小量石油"
+KoKi_YJ_pp_resource.11.a: "好"
+
+KoKi_YJ_pp_resource.12.title: "奖品: 钨"
+KoKi_YJ_pp_resource.12.desc: "获得小量钨"
+KoKi_YJ_pp_resource.12.a: "好"
+
+KoKi_YJ_pp_resource.13.title: "奖品: 铬"
+KoKi_YJ_pp_resource.13.desc: "获得小量铬"
+KoKi_YJ_pp_resource.13.a: "好"
+
+KoKi_YJ_pp_resource.14.title: "奖品: 橡胶"
+KoKi_YJ_pp_resource.14.desc: "获得小量橡胶"
+KoKi_YJ_pp_resource.14.a: "好"
+
+KoKi_YJ_pp_resource.15.title: "奖品: 铝"
+KoKi_YJ_pp_resource.15.desc: "获得小量铝"
+KoKi_YJ_pp_resource.15.a: "好"
+
+KoKi_YJ_pp_resource.16.title: "奖品: 煤炭"
+KoKi_YJ_pp_resource.16.desc: "获得小量煤炭"
+KoKi_YJ_pp_resource.16.a: "好"
+
+KoKi_YJ_pp_resource.17.title: "奖品: 战略资源大礼包"
+KoKi_YJ_pp_resource.17.desc: "各类资源"
+KoKi_YJ_pp_resource.17.a: "好"
+
+KoKi_YJ_pp.18.title: "奖品: 额外抽奖机会"
+KoKi_YJ_pp.18.desc: "额外加五抽奖次数"
+KoKi_YJ_pp.18.a: "好"
+
+KoKi_YJ_pp.19.title: "奖品: 军民没有船坞"
+KoKi_YJ_pp.19.desc: "军民没有船坞各10个"
+KoKi_YJ_pp.19.a: "好"
+
+KoKi_YJ_pp.20.title: "奖品: 赌徒的代价"
+KoKi_YJ_pp.20.desc: "减少10稳定与战支,扣除2军民"
+KoKi_YJ_pp.20.a: "好"
+
+KoKi_YJ_pp.21.title: "奖品: 建造大师"
+KoKi_YJ_pp.21.desc: "获得为期120天的20建造速度"
+KoKi_YJ_pp.21.a: "好"
+
+KoKi_YJ_pp.22.title: "奖品: 勒紧裤腰带"
+KoKi_YJ_pp.22.desc: "获得为期120天的-20消费品加成"
+KoKi_YJ_pp.22.a: "好"
+
+KoKi_YJ_pp.23.title: "奖品: 加急生产"
+KoKi_YJ_pp.23.desc: "获得为期120天的20生产效率增长"
+KoKi_YJ_pp.23.a: "好"
+
+KoKi_YJ_pp.24.title: "奖品: 手搓万物"
+KoKi_YJ_pp.24.desc: "获得为期90天的-2000%缺乏战略资源惩罚"
+KoKi_YJ_pp.24.a: "好"
+
+KoKi_YJ_pp.25.title: "奖品: 人口大爆发"
+KoKi_YJ_pp.25.desc: "获得为期120天的30每月人口增长额外获得1M人力"
+KoKi_YJ_pp.25.a: "好"
+
+KoKi_YJ_pp.26.title: "奖品: 士气大增"
+KoKi_YJ_pp.26.desc: "获得为期120天的20组织度与组织度恢复和5增援率"
+KoKi_YJ_pp.26.a: "好"
+
+KoKi_YJ_pp.27.title: "奖品: 鉴定守住"
+KoKi_YJ_pp.27.desc: "获得为期120天的20核心攻防"
+KoKi_YJ_pp.27.a: "好"
+
+KoKi_YJ_pp.28.title: "奖品: 工作狂热"
+KoKi_YJ_pp.28.desc: "获得为期120天的20工厂和船坞产出"
+KoKi_YJ_pp.28.a: "好"
+
+KoKi_YJ_pp.29.title: "奖品: 工厂外流?"
+KoKi_YJ_pp.29.desc: "转移5军5民到其他国家"
+KoKi_YJ_pp.29.a: "好"
+
+KoKi_YJ_pp.29_1.title: "奖品: 免費贈禮"
+KoKi_YJ_pp.29_1.desc: "[FROM.GetName] 转移5军5民到我们这"
+KoKi_YJ_pp.29_1.a: "好"
+
+YJ_10001_ideas: "大西洋宪章"
+
+
+
+
+
+
+
+
+
+
+
+
+KoKi_YJ_NEW.1.title: "莫斯科红场大阅兵"
+KoKi_YJ_NEW.1.desc: "苏联领导人[SOV.GetLeader]在莫斯科举行红场阅兵并发表演讲:\n同志们!德寇背信弃义的进攻,造成了威胁我国的危险。我们暂时失去了一些区域。敌人指望在第一次打击之后,我们国家立即屈膝投降。可是,敌人大大的失算了。陆军和海军虽然遭到暂时的失利,但还是在全部战线上英勇的击退着敌人的攻击.\n红军战士,政治工作人员,游击队同志们!全世界都望着你们,认定你们是能够消灭德国侵略者的力量。陷在德国侵略者枷锁下被奴役的欧洲各国人民都指望着你们,你们所进行的战争是解放的战争,正义的战争。\n让我们的伟大祖先的英姿,在这次战争中鼓舞着你们吧!让伟大列宁的胜利旗帜指引着你们吧!\n我们光荣的祖国万岁!我们祖国的自由和独立万岁!\n在列宁旗帜下向胜利前进!"
+KoKi_YJ_NEW.1.a: "向着胜利前进!"
+KoKi_YJ_NEW.1.b: "何意味?"
+KoKi_YJ_NEW.1.c: "有点意思"
+
+
+KoKi_YJ_NEW.2.title: "大西洋宪章"
+KoKi_YJ_NEW.2.desc: "美利坚合众国,大不列颠及北爱尔兰联合王国等国家的联合宣言\n对于[GetDateText]美利坚合众国总统和大不列颠及北爱尔兰联合王国首相所作联合宣言称为大西洋宪章内所载宗旨与原则的共同方案业已表示赞同.深信完全战胜它们的敌国对于保卫生命,自由,独立和宗教自由并对于保全其本国和其他各国的人权和正义非常重要,同时,它们正对力图征服世界的野蛮和残暴的力量从事共同的斗争,兹宣告:\n(一)每一政府各自保证对与各该政府作战的三国同盟成员国及其附从者使用其全部资源,不论军事的或经济的.(二)每一政府各自保证与本宣言签字国政府合作,并不与敌人缔结单独停战协定或和约.可能将在战胜希特勒主义的斗争中给予物质上援助和贡献的其他国家得以加入上述宣言.  "
+KoKi_YJ_NEW.2.a: "我们必将胜利!"
+KoKi_YJ_NEW.2.b: "王师要上岸了?"
+KoKi_YJ_NEW.2.c: "那就来罢"
+KoKi_YJ_NEW.2.d: "yee"
+
+KoKi_YJ_NEW.bbls.title: "巴巴罗萨行动!"
+KoKi_YJ_NEW.bbls.desc: "德意志国防军最高统帅部通告\n对于德意志帝国向苏维埃联盟发动之军事行动,兹称为巴巴罗萨行动.本日拂晓,德意志陆海空军已在广阔战线上越过边境,对苏维埃武装力量实施先制打击.柏林方面宣称,此举旨在应对来自东方之持续威胁,并彻底消除对欧洲秩序之潜在危险.\n\n德意志帝国及其盟国,将动用全部军事与工业力量,对苏维埃军队实施迅速而集中的打击,以求在短期内摧毁其作战能力.\n随着战火在东线全面展开,一场决定欧洲未来走向之大战已然开启.广袤的东部平原正成为新的战场,其结局尚未可知,但其代价与影响,势必波及整个大陆."
+KoKi_YJ_NEW.bbls.zx: "我们必将胜利!"
+KoKi_YJ_NEW.bbls.tm: "希望苏联能抗住攻势"
+KoKi_YJ_NEW.bbls.gc: "让他们来吧!"
+
+
+KoKi_YJ_NEW.bfzc.title: "北非正在总动员!"
+KoKi_YJ_NEW.bfzc.desc: "北非战区联合通告\n对于在北非地区所展开之全面军事行动,兹称为北非总动员.自地中海沿岸至撒哈拉腹地,交战双方正迅速集结兵力,战区规模不断扩大.北非之战略地位,关乎地中海航线与殖民体系之稳定,亦成为双方争夺主动权之关键所在.\n随着双方力量不断投入,北非战场正由局部冲突转变为全面对抗.沙漠与海岸线之间的广阔空间,正在成为新的决战区域,其走向不仅关系地区控制权,亦将对整个战争格局产生深远影响."
+KoKi_YJ_NEW.bfzc.zx: "一雪前耻!"
+KoKi_YJ_NEW.bfzc.tm: "来试试看!"
+KoKi_YJ_NEW.bfzc.gc: "希望同盟能抗住攻势"
+
+
+
+FRA_Small_Entente: "小协约国"
+
+
+
+
+YJ_GEN_state_ideas: "资源大开发"
+
+YJ_traits_1: "老资历"
+YJ_traits_2: "小资历"
+YJ_traits_3: "机长"
+YJ_traits_4: "喝酒成瘾"
+YJ_traits_5: "大不列颠拥护者"
+YJ_traits_6: "咖喱棒"
+YJ_traits_7: "暴躁"
+YJ_traits_8: "最高统帅"
+YJ_traits_9: "幼女控"
+YJ_traits_10: "独特的战略家"
+YJ_traits_11: "嘴臭"
+YJ_traits_12: "怯战"
+YJ_traits_13: "太君"
+YJ_traits_14: "宣传部长"
+YJ_traits_15: "药娘"
+YJ_traits_16: "男娘"
+YJ_traits_17: "ft530的拥护者"
+YJ_traits_18: "枪男"
+YJ_traits_19: "调和者"
+YJ_traits_20: "睡美人"
+YJ_traits_21: "BA批"
+YJ_traits_22: "打胶禁止"
+YJ_traits_23: "斐济杯"
+YJ_traits_24: "bvvd星怒"
+YJ_traits_25: "从从帮"
+YJ_traits_26: "点子王"
+YJ_traits_27: "动物朋友"
+YJ_traits_28: "专业卡队友宽"
+
+SOV_leader_of_the_party_and_the_people_trait_tt: "§Y[ROOT.GetLeader]§!：§Y$stalin_inheritor_of_lenin$§!或§Y$stalin_servant_of_lenin$§!追加效果：\n政党支持率对稳定度修正：§G+15.00%§!\n防御战争对稳定度修正：§G+40.00%§!\n政治顾问花费：§G-25%§!\n陆军师核心攻防:§G+3.00%§!\n"
+
+CK_SOV_development_of_tankograd_factories_tt: "在每一个至少拥有3座民用工厂的地区添加§G1§!个建筑位和§Y1座民用工厂§!。(最多20个)"
+CK_SOV_development_of_tankograd_factories_tt: "在每一个至少拥有3座军用工厂的乌拉尔和远东地区添加§G1§!个建筑位和§Y1座军用工厂§!。（最多20个）"
+
+YJ_country_traits_1: "最高统帅"
+YJ_country_traits_2: "传奇机长"
+YJ_country_traits_3: "海空部长"
+YJ_country_traits_4: "海陆仙人"
+YJ_country_traits_BD: "男娘同胞聚集地"
+YJ_country_traits_TY: "作者"
+YJ_country_traits_GRX: "冬季战神"
+
+KoKi_YJ_JL_event.1.title: "奖品: 哈罗德·530"
+KoKi_YJ_JL_event.1.desc: "将领: 哈罗德·530"
+KoKi_YJ_JL_event.1.a: "好"
+
+KoKi_YJ_JL_event.2.title: "奖品: 马楼·ALPS"
+KoKi_YJ_JL_event.2.desc: "将领: 马楼·ALPS"
+KoKi_YJ_JL_event.2.a: "好"
+
+KoKi_YJ_JL_event.3.title: "奖品: 波雅尔·空白·齐奥塞斯库"
+KoKi_YJ_JL_event.3.desc: "将领: 波雅尔·空白·齐奥塞斯库"
+KoKi_YJ_JL_event.3.a: "好"
+
+KoKi_YJ_JL_event.4.title: "奖品: 奥马尔·威尔逊·TY"
+KoKi_YJ_JL_event.4.desc: "将领: 奥马尔·威尔逊·TY"
+KoKi_YJ_JL_event.4.a: "好"
+
+KoKi_YJ_JL_event.5.title: "奖品: 切·布丁"
+KoKi_YJ_JL_event.5.desc: "将领: 切·布丁"
+KoKi_YJ_JL_event.5.a: "好"
+
+KoKi_YJ_JL_event.6.title: "奖品: 伊万诺夫·反二雅士"
+KoKi_YJ_JL_event.6.desc: "将领: 伊万诺夫·反二雅士"
+KoKi_YJ_JL_event.6.a: "好"
+
+KoKi_YJ_JL_event.7.title: "奖品: 阿尔托莉雅·呆毛"
+KoKi_YJ_JL_event.7.desc: "将领: 阿尔托莉雅·呆毛"
+KoKi_YJ_JL_event.7.a: "好"
+
+KoKi_YJ_JL_event.8.title: "奖品: 康斯坦丁诺维奇·吃素"
+KoKi_YJ_JL_event.8.desc: "将领: 康斯坦丁诺维奇·吃素"
+KoKi_YJ_JL_event.8.a: "好"
+
+KoKi_YJ_JL_event.9.title: "奖品: 乔治亚·冯·哈布斯堡"
+KoKi_YJ_JL_event.9.desc: "将领: 乔治亚·冯·哈布斯堡"
+KoKi_YJ_JL_event.9.a: "好"
+
+KoKi_YJ_JL_event.10.title: "奖品: 埃尔温·若同学"
+KoKi_YJ_JL_event.10.desc: "将领: 埃尔温·若同学"
+KoKi_YJ_JL_event.10.a: "好"
+
+KoKi_YJ_JL_event.11.title: "奖品: 奥马尔·纳尔逊·奶龙"
+KoKi_YJ_JL_event.11.desc: "将领: 奥马尔·纳尔逊·奶龙"
+KoKi_YJ_JL_event.11.a: "好"
+
+KoKi_YJ_JL_event.12.title: "奖品: 山本小鲨鱼"
+KoKi_YJ_JL_event.12.desc: "将领: 山本小鲨鱼"
+KoKi_YJ_JL_event.12.a: "好"
+
+KoKi_YJ_JL_event.13.title: "奖品: 德米特里·安德烈·预言家"
+KoKi_YJ_JL_event.13.desc: "将领: 德米特里·安德烈·预言家"
+KoKi_YJ_JL_event.13.a: "好"
+
+KoKi_YJ_JL_event.14.title: "奖品: 卡尔·乔乔"
+KoKi_YJ_JL_event.14.desc: "将领: 卡尔·乔乔"
+KoKi_YJ_JL_event.14.a: "好"
+
+KoKi_YJ_JL_event.15.title: "奖品: 约瑟夫·大林子"
+KoKi_YJ_JL_event.15.desc: "将领: 约瑟夫·大林子"
+KoKi_YJ_JL_event.15.a: "好"
+
+KoKi_YJ_JL_event.16.title: "奖品: 切斯特·威廉·风筝"
+KoKi_YJ_JL_event.16.desc: "将领: 切斯特·威廉·风筝"
+KoKi_YJ_JL_event.16.a: "好"
+
+KoKi_YJ_JL_event.17.title: "奖品: 路易斯·叶雨"
+KoKi_YJ_JL_event.17.desc: "将领: 路易斯·叶雨"
+KoKi_YJ_JL_event.17.a: "好"
+
+KoKi_YJ_JL_event.18.title: "奖品: 尼古拉·小舟"
+KoKi_YJ_JL_event.18.desc: "将领: 尼古拉·小舟"
+KoKi_YJ_JL_event.18.a: "好"
+
+KoKi_YJ_JL_event.19.title: "奖品: 戴拿·赞恩·故人闲"
+KoKi_YJ_JL_event.19.desc: "顾问: 戴拿·赞恩·故人闲"
+KoKi_YJ_JL_event.19.a: "好"
+
+KoKi_YJ_JL_event.21.title: "奖品: 小爱丽丝·有地绫"
+KoKi_YJ_JL_event.21.desc: "将领: 小爱丽丝·有地绫"
+KoKi_YJ_JL_event.21.a: "好"
+
+KoKi_YJ_JL_event.22.title: "奖品: 悠哉哉·E"
+KoKi_YJ_JL_event.22.desc: "将领: 悠哉哉·E"
+KoKi_YJ_JL_event.22.a: "好"
+
+KoKi_YJ_JL_event.23.title: "奖品: 永雏·夏尔"
+KoKi_YJ_JL_event.23.desc: "将领: 永雏·夏尔"
+KoKi_YJ_JL_event.23.a: "好"
+
+KoKi_YJ_JL_event.24.title: "奖品: 伯纳德·劳·一只屑"
+KoKi_YJ_JL_event.24.desc: "将领: 伯纳德·劳·一只屑"
+KoKi_YJ_JL_event.24.a: "好"
+
+KoKi_YJ_JL_event.25.title: "奖品: 筱筱筱·塔菲"
+KoKi_YJ_JL_event.25.desc: "将领: 筱筱筱·塔菲"
+KoKi_YJ_JL_event.25.a: "好"
+
+KoKi_YJ_JL_event.26.title: "奖品: 巴哈马·keli"
+KoKi_YJ_JL_event.26.desc: "将领: 巴哈马·keli"
+KoKi_YJ_JL_event.26.a: "好"
+
+KoKi_YJ_JL_event.27.title: "奖品: 6老师"
+KoKi_YJ_JL_event.27.desc: "将领: 6老师"
+KoKi_YJ_JL_event.27.a: "好"
+
+KoKi_YJ_JL_event.28.title: "奖品: 西伯利亚·土豆"
+KoKi_YJ_JL_event.28.desc: "将领: 西伯利亚·土豆"
+KoKi_YJ_JL_event.28.a: "好"
+
+KoKi_YJ_JL_event.29.title: "奖品: 彬彬有礼"
+KoKi_YJ_JL_event.29.desc: "将领: 彬彬有礼"
+KoKi_YJ_JL_event.29.a: "好"
+
+KoKi_YJ_JL_event.30.title: "奖品: 星星·MZ"
+KoKi_YJ_JL_event.30.desc: "将领: 星星·MZ"
+KoKi_YJ_JL_event.30.a: "好"
+
+KoKi_YJ_JL_event.31.title: "奖品: 哈吉巴·bate"
+KoKi_YJ_JL_event.31.desc: "将领: 哈吉巴·bate"
+KoKi_YJ_JL_event.31.a: "好"
+
+KoKi_YJ_JL_event.32.title: "奖品: lapwing·药娘"
+KoKi_YJ_JL_event.32.desc: "将领: lapwing·药娘"
+KoKi_YJ_JL_event.32.a: "好"
+
+KoKi_YJ_JL_event.33.title: "奖品: gods"
+KoKi_YJ_JL_event.33.desc: "将领: gods"
+KoKi_YJ_JL_event.33.a: "好"
+
+
+
+decision_cost_CP_100: "£command_power §Y100§!"
+decision_cost_CP_100_blocked: "£command_power §R100§!"
+
+
+
+
+YJ_AIR_ideas: "布丁性平衡"
+
+
+welcome_title_text: "更新日志"
+welcome_text: "懒得写了自己看群文件"
+options_button_text: "开始游戏"
+
+
+
+
+
+YJ_FRA_ideas: "自由,平等,博爱"
+YJ_FRA_ideas_tt: "§Y每月§!获得§C1民§!§G1军§!"
+
+YJ_HUN_leonidas_works_organization: "斯柯达工业"
+
+ck_TITLE:0 "ck Music"
+
+YJ_war_allow_tt: "目前时间无法对该国宣战"
+
+YJ_60d_resource: "开发资源"
+YJ_60d_resource_tt: "§R发现资源§!"
+
+continuous_focus_pop: "专注人口增长"
+continuous_focus_pop_desc: "专注人口增长"
+continuous_focus_mit: "大规模生产"
+continuous_focus_mit_desc: "大规模生产"
+
+VICTORY_POINTS_11959:0 "AK的家"
+VICTORY_POINTS_12434:0 "生命之路"
+
+YJ_war_bf: "战争前夜"

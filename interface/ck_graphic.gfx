@@ -1,0 +1,9 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_ck"
+		texturefile = "gfx/ck.dds"
+		noOfFrames = 2
+	}	
+
+}
