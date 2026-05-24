@@ -1,0 +1,262 @@
+add_namespace = KoKi_YJ_pp_resource
+country_event = {
+	id = KoKi_YJ_pp_resource.10
+	title = KoKi_YJ_pp_resource.10.title
+	desc = KoKi_YJ_pp_resource.10.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+	immediate = {
+		set_variable_to_random = { var = ROOT.YJ_rng_steel min = 10 max = 50 }
+		round_variable = ROOT.YJ_rng_steel
+	}
+
+	option = {
+		name = KoKi_YJ_pp_resource.10.a
+		clr_country_flag = YJ_resource_get_flag
+
+		random_controlled_state = {
+			limit = {
+				is_core_of = ROOT
+				is_owned_by = ROOT
+			}
+			add_resource = {
+				type = steel
+				amount = ROOT.YJ_rng_steel
+				state = THIS
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = KoKi_YJ_pp_resource.11
+	title = KoKi_YJ_pp_resource.11.title
+	desc = KoKi_YJ_pp_resource.11.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+	immediate = {
+		set_variable_to_random = { var = ROOT.YJ_rng_oil min = 10 max = 50 }
+		round_variable = ROOT.YJ_rng_oil
+	}
+
+	option = {
+		name = KoKi_YJ_pp_resource.11.a
+		clr_country_flag = YJ_resource_get_flag
+
+		random_controlled_state = {
+			limit = {
+				is_core_of = ROOT
+				is_owned_by = ROOT
+			}
+			add_resource = {
+				type = oil
+				amount = ROOT.YJ_rng_oil
+				state = THIS
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = KoKi_YJ_pp_resource.12
+	title = KoKi_YJ_pp_resource.12.title
+	desc = KoKi_YJ_pp_resource.12.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+	immediate = {
+		set_variable_to_random = { var = ROOT.YJ_rng_tungsten min = 10 max = 50 }
+		round_variable = ROOT.YJ_rng_tungsten
+	}
+
+	option = {
+		name = KoKi_YJ_pp_resource.12.a
+		clr_country_flag = YJ_resource_get_flag
+
+		random_controlled_state = {
+			limit = {
+				is_core_of = ROOT
+				is_owned_by = ROOT
+			}
+			add_resource = {
+				type = tungsten
+				amount = ROOT.YJ_rng_tungsten
+				state = THIS
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = KoKi_YJ_pp_resource.13
+	title = KoKi_YJ_pp_resource.13.title
+	desc = KoKi_YJ_pp_resource.13.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+	immediate = {
+		set_variable_to_random = { var = ROOT.YJ_rng_chromium min = 10 max = 50 }
+		round_variable = ROOT.YJ_rng_chromium
+	}
+
+	option = {
+		name = KoKi_YJ_pp_resource.13.a
+		clr_country_flag = YJ_resource_get_flag
+
+		random_controlled_state = {
+			limit = {
+				is_core_of = ROOT
+				is_owned_by = ROOT
+			}
+			add_resource = {
+				type = chromium
+				amount = ROOT.YJ_rng_chromium
+				state = THIS
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = KoKi_YJ_pp_resource.14
+	title = KoKi_YJ_pp_resource.14.title
+	desc = KoKi_YJ_pp_resource.14.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+	immediate = {
+		set_variable_to_random = { var = ROOT.YJ_rng_rubber min = 10 max = 50 }
+		round_variable = ROOT.YJ_rng_rubber
+	}
+
+	option = {
+		name = KoKi_YJ_pp_resource.14.a
+		clr_country_flag = YJ_resource_get_flag
+
+		random_controlled_state = {
+			limit = {
+				is_core_of = ROOT
+				is_owned_by = ROOT
+			}
+			add_resource = {
+				type = rubber
+				amount = ROOT.YJ_rng_rubber
+				state = THIS
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = KoKi_YJ_pp_resource.15
+	title = KoKi_YJ_pp_resource.15.title
+	desc = KoKi_YJ_pp_resource.15.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+	immediate = {
+		set_variable_to_random = { var = ROOT.YJ_rng_aluminium min = 10 max = 50 }
+		round_variable = ROOT.YJ_rng_aluminium
+	}
+
+	option = {
+		name = KoKi_YJ_pp_resource.15.a
+		clr_country_flag = YJ_resource_get_flag
+
+		random_controlled_state = {
+			limit = {
+				is_core_of = ROOT
+				is_owned_by = ROOT
+			}
+			add_resource = {
+				type = aluminium
+				amount = ROOT.YJ_rng_aluminium
+				state = THIS
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = KoKi_YJ_pp_resource.17
+	title = KoKi_YJ_pp_resource.17.title
+	desc = KoKi_YJ_pp_resource.17.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+	immediate = {
+		set_variable_to_random = { var = ROOT.YJ_rng_all min = 10 max = 50 }
+		round_variable = ROOT.YJ_rng_all
+	}
+
+	option = {
+		name = KoKi_YJ_pp_resource.17.a
+		clr_country_flag = YJ_resource_get_flag
+
+		random_controlled_state = {
+			limit = {
+				is_core_of = ROOT
+				is_owned_by = ROOT
+			}
+			add_resource = {
+				type = oil
+				amount = ROOT.YJ_rng_all
+				state = THIS
+			}
+			add_resource = {
+				type = aluminium
+				amount = ROOT.YJ_rng_all
+				state = THIS
+			}
+			add_resource = {
+				type = tungsten
+				amount = ROOT.YJ_rng_all
+				state = THIS
+			}
+			add_resource = {
+				type = chromium
+				amount = ROOT.YJ_rng_all
+				state = THIS
+			}
+			add_resource = {
+				type = steel
+				amount = ROOT.YJ_rng_all
+				state = THIS
+			}
+			add_resource = {
+				type = rubber
+				amount = ROOT.YJ_rng_all
+				state = THIS
+			}
+			add_resource = {
+				type = coal
+				amount = ROOT.YJ_rng_all
+				state = THIS
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}

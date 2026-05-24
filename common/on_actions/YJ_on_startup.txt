@@ -1,0 +1,1515 @@
+
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+					set_technology = {
+					marines = 1
+					rangers_tech = 1
+				}
+				add_ideas = YJ_AIR_ideas
+			}
+			FRA = {
+				create_faction = FRA_Small_Entente
+				add_dynamic_modifier = {
+					modifier = YJ_FRA_ideas
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = SPR
+						tag = POR
+					}
+				}
+				every_core_state = {
+					add_core_of = FRA
+				}
+			}
+			if = {
+				limit = {
+					ROM = { is_ai = no }
+					HUN = { is_ai = no }
+				}
+				ROM = {
+					add_offsite_building = {
+						type = industrial_complex
+						level = 25
+					}
+					add_offsite_building = {
+						type = arms_factory
+						level = 10
+					}
+				}
+			}
+			if = {
+				limit = { 
+					JAP = { is_ai = no } 
+					PRC= { is_ai = no } 
+				}
+				JAP = {
+					add_offsite_building = {
+						type = industrial_complex
+						level = 40
+					} 
+					add_offsite_building = {
+						type = arms_factory
+						level = 20
+					} 
+				}
+			}
+			JAP = {
+				every_core_state = {
+					set_state_category = megalopolis
+				}
+			}
+			SOV = {
+				add_ideas = YJ_SOV_5_ideas	
+				add_to_variable = {
+					SOV_fyp_consumer_goods_factor = -0.1 
+				}
+				add_to_variable = {
+					SOV_fyp_production_speed_industrial_complex_factor  = 0.05
+				}
+				add_to_variable = {
+					SOV_fyp_production_factory_efficiency_gain_factor  = 0.05
+				}
+			}
+			GER = { 
+				add_ideas = YJ_GER_6_ideas 
+				set_technology = {
+					basic_heavy_tank = 1
+				}
+			}
+			every_state = {
+				add_dynamic_modifier = {
+					modifier = YJ_GEN_state_ideas
+				}
+			}
+			46 = {
+				add_resource = {
+					type = oil
+					amount = 32
+				}
+			}
+			79 = {
+				add_resource = {
+					type = oil
+					amount = 42
+				}
+			}
+			81 = {
+				add_resource = {
+					type = oil
+					amount = 13
+				}
+			}
+			971 = {
+				add_resource = {
+					type = oil
+					amount = 29
+				}
+			}
+			76 = {
+				add_resource = {
+					type = oil
+					amount = 38
+				}
+			}
+			83 = {
+				add_resource = {
+					type = oil
+					amount = 5
+				}
+			}
+			591 = {
+				add_resource = {
+					type = rubber
+					amount = 30
+				}
+			}
+			617 = {
+				add_resource = {
+					type = oil
+					amount = 30
+				}
+			}
+			325 = {
+				add_resource = {
+					type = steel
+					amount = 50
+				}
+			}
+			607 = {
+				add_resource = {
+					type = steel
+					amount = 36
+				}
+			}
+			751 = {
+				add_resource = {
+					type = steel
+					amount = 63
+				}
+			}
+			752 = {
+				add_resource = {
+					type = aluminium
+					amount = 25
+				}
+			}
+			753 = {
+				add_resource = {
+					type = aluminium
+					amount = 56
+				}
+			}
+			603 = {
+				add_resource = {
+					type = aluminium
+					amount = 56
+				}
+			}
+			760 = {
+				add_resource = {
+					type = chromium
+					amount = 75
+				}
+			}
+			535 = {
+				add_resource = {
+					type = chromium
+					amount = 70
+				}
+				add_resource = {
+					type = aluminium
+					amount = 80
+				}
+				add_resource = {
+					type = steel
+					amount = 50
+				}
+				add_resource = {
+					type = oil
+					amount = 50
+				}
+				add_resource = {
+					type = tungsten
+					amount = 60
+				}
+				add_resource = {
+					type = coal
+					amount = 60
+				}
+			}
+			277 = {
+				add_resource = {
+					type = coal
+					amount = 500
+				}
+			}
+			43 = {
+				add_resource = {
+					type = coal
+					amount = 500
+				}
+			}
+			651 = {
+				add_resource = {
+					type = coal
+					amount = 500
+				}
+			}
+			797 = {
+				add_resource = {
+					type = aluminium
+					amount = 100
+				}
+				add_resource = {
+					type = oil
+					amount = 300
+				}
+				add_resource = {
+					type = tungsten
+					amount = 100
+				}
+			}
+			275 = {
+				add_resource = {
+					type = aluminium
+					amount = 200
+				}
+			}
+			MEX = { 
+				add_offsite_building = {
+					type = industrial_complex
+					level = 10
+				}
+				add_offsite_building = {
+					type = arms_factory
+					level = 10
+				}
+			}
+			ROM = { 
+				add_offsite_building = {
+					type = industrial_complex
+					level = 20
+				}
+				add_offsite_building = {
+					type = arms_factory
+					level = 10
+				}
+			}
+			BEL = { 
+				add_offsite_building = {
+					type = industrial_complex
+					level = 10
+				}
+			}
+			PHI = { 
+				add_offsite_building = {
+					type = industrial_complex
+					level = 30
+				}
+			}
+			RAJ = { 
+				add_offsite_building = {
+					type = industrial_complex
+					level = 10
+				}
+			}
+			FIN = { 
+				add_offsite_building = {
+					type = industrial_complex
+					level = 10
+				}
+			}
+			PHI = { 
+				add_offsite_building = {
+					type = dockyard
+					level = 15
+				}
+			}
+			ITA = { 
+				add_timed_idea = {
+				idea = YJ_ITA_06_ideas
+				days = 365
+				}
+			}
+			HUN = {
+				every_character = {
+					set_nationality = CZE
+				}
+			}
+			set_victory_points = {
+				province = 11959
+				value = 100
+			}
+			set_victory_points = {
+				province = 12434
+				value = 10
+			}
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				add_timed_idea = {
+					idea = YJ_war_bf
+					days = 365
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						AND = {
+							is_ai = yes
+							is_subject_of = ENG
+						}
+					}
+				}
+				add_ideas = YJ_ENG_4_ideas
+				every_character = {
+					set_nationality = RAJ
+				}
+			}
+		}
+	}
+
+	on_monthly_USA = {
+		effect = {
+			if = {
+				limit = { 
+					has_idea = YJ_USA_2_ideas 
+					check_variable = { var = USA_research_speed value = 5 compare = greater_than_or_equals }
+			    }
+				add_tech_bonus = {
+					name = YJ_USA_2_ideas
+					ahead_reduction = 2
+					bonus = 3
+					uses = 1
+					category = armor
+					category = infantry_weapons
+					category = artillery
+					category = air_equipment
+					category = naval_equipment
+					category = motorized_equipment
+					category = support_tech
+					category = electronics
+					category = train_tech
+					category = industry
+					category = nuclear
+					category = rocketry
+				}
+				add_breakthrough_progress = {
+					specialization = specialization_nuclear
+					value = 1
+				}
+				add_breakthrough_progress = {
+					specialization = specialization_land
+					value = 1
+				}
+				add_breakthrough_progress = {
+					specialization = specialization_naval
+					value = 1
+				}
+				add_breakthrough_progress = {
+					specialization = specialization_air
+					value = 1
+				}
+				set_variable = {
+					USA_research_speed = 0
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = YJ_USA_2_ideas
+					date > 1937.12.1
+					NOT = { has_global_flag = Beta_USA_1_on_flag }
+				}
+				complete_special_project = {
+					project = sp:sp_air_mothership_aircraft
+				}
+				set_global_flag = Beta_USA_1_on_flag
+			}
+			else_if = {
+				limit = { 
+					has_idea = YJ_USA_2_ideas 
+					check_variable = { var = USA_research_speed value = 5 compare = less_than }
+			    }
+				add_to_variable = {
+					USA_research_speed = 1
+				}
+			}
+		}
+	}
+
+	on_monthly_GER = { #德意志帝国研发
+	    effect = {
+			GER = { add_manpower = 150000 }
+			IF = {
+				limit = {
+					has_idea = YJ_GER_4_ideas
+					date > 1936.12.1
+					NOT = { has_global_flag = Beta_GER_1_on_flag }
+				}
+				add_tech_bonus = {
+					name = YJ_GER_4_ideas
+					bonus = 0.5
+					uses = 2
+					category = industry
+				}
+				set_global_flag = Beta_GER_1_on_flag
+			}
+			else_if = {
+				limit = { 
+					has_idea = YJ_GER_4_ideas
+					date > 1937.12.1
+					NOT = { has_global_flag = Beta_GER_2_on_flag }
+				}
+				add_tech_bonus = {
+					name = YJ_GER_4_ideas
+					bonus = 1
+					uses = 2
+					category = artillery
+				}
+				set_global_flag = Beta_GER_2_on_flag
+			}
+			else_if = {
+				limit = { 
+					has_idea = YJ_GER_4_ideas
+					date > 1938.12.1
+					NOT = { has_global_flag = Beta_GER_3_on_flag }
+				}
+				add_tech_bonus = {
+					name = YJ_GER_4_ideas
+					bonus = 1
+					uses = 2
+					category = infantry_weapons
+				}
+				set_global_flag = Beta_GER_3_on_flag
+			}
+			IF = {
+				limit = {
+					has_idea = YJ_GER_4_ideas
+					NOT = { has_global_flag = Beta_GER_4_on_flag }
+					date > 1937.12.1
+				}
+				set_technology = { early_bombs = 1 } 
+				set_technology = { armor_piercing_bombs = 1 } 
+				set_technology = { heavy_bombs = 1 } 
+				set_technology = { aa_lmg = 1 } 
+				set_technology = { survivability_studies = 1 } 
+				set_technology = { aa_hmg = 1 } 
+				set_technology = { aa_cannon_1 = 1 } 
+				set_technology = { aa_cannon_2 = 1 } 
+				set_technology = { air_torpedoe_1 = 1 } 
+				set_technology = { air_torpedoe_2 = 1 } 
+				set_technology = { engines_1 = 1 } 
+				set_technology = { aircraft_construction = 1 } 
+				set_technology = { engines_2 = 1 } 
+				set_technology = { range_improvements = 1 } 
+				set_technology = { engines_3 = 1 } 
+				set_technology = { engines_4 = 1 }
+				set_technology = { rocket_artillery = 1 }  
+				set_technology = { improved_small_airframe = 1 } 
+				set_global_flag = Beta_GER_4_on_flag
+			}
+			IF = {
+				limit = {
+					has_idea = YJ_GER_4_ideas
+					NOT = { has_global_flag = Beta_GER_5_on_flag }
+					date > 1940.12.1
+				}
+				set_technology = { aa_cannon_3 = 1 } 
+				set_technology = {
+					modern_small_airframe = 1
+				} 
+				set_technology = { heavy_bombs = 1 } 
+				set_technology = { aa_lmg = 1 } 
+				set_global_flag = Beta_GER_5_on_flag
+			}
+		}
+	}
+
+	on_monthly_JAP = { #大东亚共荣圈
+	    effect = {
+			IF = {
+				limit = {
+					has_idea = YJ_JAP_3_ideas
+					NOT = { has_global_flag = Beta_JAP_3_on_flag }
+					date > 1937.12.1
+				}
+				set_technology = { early_bombs = 1 } 
+				set_technology = { armor_piercing_bombs = 1 } 
+				set_technology = { heavy_bombs = 1 } 
+				set_technology = { aa_lmg = 1 } 
+				set_technology = { survivability_studies = 1 } 
+				set_technology = { aa_hmg = 1 } 
+				set_technology = { aa_cannon_1 = 1 } 
+				set_technology = { aa_cannon_2 = 1 } 
+				set_technology = { air_torpedoe_1 = 1 } 
+				set_technology = { air_torpedoe_2 = 1 } 
+				set_technology = { engines_1 = 1 } 
+				set_technology = { aircraft_construction = 1 } 
+				set_technology = { engines_2 = 1 } 
+				set_technology = { range_improvements = 1 } 
+				set_technology = { engines_3 = 1 } 
+				set_technology = { engines_4 = 1 }
+				set_technology = { rocket_artillery = 1 }  
+				set_technology = { improved_small_airframe = 1 } 
+				set_global_flag = Beta_JAP_3_on_flag
+			}
+		}
+	}
+
+	on_monthly_ENG = {
+		effect = {
+			IF = {
+				limit = {
+					has_idea = YJ_ENG_1_ideas
+					date > 1936.12.1
+					NOT = { has_global_flag = Beta_ENG_1_flag }
+				}
+				random_list = {
+					20 = { 
+						set_technology = { early_ship_hull_light = 1 } 
+						set_technology = { sonar = 1 } 
+						set_technology = { smoke_generator = 1 } 
+						set_technology = { basic_depth_charges = 1 } 
+						set_technology = { improved_sonar = 1 } 
+						set_technology = { improved_depth_charges = 1 } 
+						set_technology = { improved_ship_hull_light = 1 } 
+						set_technology = { advanced_depth_charges = 1 } 
+					}
+					20 = { 
+						set_technology = { early_ship_hull_cruiser = 1 } 
+						#set_technology = { improved_airplane_launcher = 1 } 
+						set_technology = { basic_ship_hull_cruiser = 1 } 
+						set_technology = { improved_ship_hull_cruiser = 1 } 
+						set_technology = { basic_cruiser_armor_scheme = 1 } 
+						set_technology = { basic_heavy_armor_scheme = 1 } 
+						set_technology = { improved_heavy_armor_scheme = 1 } 
+					}
+					20 = { 
+						set_technology = { early_ship_hull_heavy = 1 } 
+						set_technology = { basic_ship_hull_heavy = 1 } 
+						set_technology = { improved_ship_hull_heavy = 1 } 
+					}
+					20 = { 
+						set_technology = { early_ship_hull_carrier = 1 } 
+						set_technology = { basic_ship_hull_carrier = 1 } 
+						set_technology = { improved_ship_hull_carrier = 1 } 
+					}
+					20 = { 
+						set_technology = { early_ship_hull_submarine = 1 } 
+						set_technology = { basic_ship_hull_submarine = 1 } 
+						set_technology = { improved_ship_hull_submarine = 1 } 
+						set_technology = { basic_submarine_snorkel = 1 } 
+					}
+				}
+				set_technology = { basic_battery = 1 } 
+				set_technology = { basic_light_battery = 1 } 
+				set_technology = { basic_light_shell = 1 } 
+				set_technology = { improved_light_battery = 1 } 
+				set_technology = { basic_dp_light_battery = 1 } 
+				set_technology = { improved_dp_light_battery = 1 } 
+				set_technology = { basic_battery = 1 } 
+				#set_technology = { basic_medium_battery = 1 } 
+				#set_technology = { basic_medium_shell = 1 } 
+				#set_technology = { improved_medium_battery = 1 } 
+				set_technology = { basic_battery = 1 } 
+				set_technology = { basic_heavy_battery = 1 } 
+				set_technology = { basic_heavy_shell = 1 } 
+				set_technology = { improved_heavy_battery = 1 } 
+				set_technology = { basic_torpedo = 1 } 
+				set_technology = { improved_ship_torpedo_launcher = 1 } 
+				set_technology = { advanced_ship_torpedo_launcher = 1 } 
+				set_technology = { magnetic_detonator = 1 } 
+				#set_technology = { electric_torpedo = 1 } 
+				set_technology = { damage_control_1 = 1 } 
+				set_technology = { damage_control_2 = 1 } 
+				set_technology = { damage_control_3 = 1 } 
+				set_technology = { fire_control_methods_1 = 1 } 
+				set_technology = { fire_control_methods_2 = 1 } 
+				set_technology = { fire_control_methods_3 = 1 } 
+				set_technology = { basic_naval_mines = 1 } 
+				set_technology = { improved_naval_mines = 1 } 
+				set_technology = { degaussing = 1 } 
+				set_technology = { submarine_mine_laying = 1 } 
+				set_technology = { improved_submarine_mine_laying = 1 } 
+				set_global_flag = Beta_ENG_1_flag
+			}
+			IF = {
+				limit = {
+					has_idea = YJ_ENG_1_ideas
+					date > 1937.12.1
+					NOT = { has_global_flag = Beta_ENG_2_flag }
+				}
+				random_list = {
+					50 = { 
+						set_technology = { iw_small_airframe = 1 } 
+						set_technology = { basic_small_airframe = 1 } 
+						set_technology = { improved_small_airframe = 1 } 
+						set_technology = { improved_small_airframe = 1 } 
+					}
+					25 = { 
+						set_technology = { iw_medium_airframe = 1 } 
+						set_technology = { basic_medium_airframe = 1 } 
+						set_technology = { improved_medium_airframe = 1 } 
+						set_technology = { improved_small_airframe = 1 } 
+					}
+					25 = { 
+						set_technology = { iw_large_airframe = 1 } 
+						set_technology = { basic_large_airframe = 1 } 
+						set_technology = { improved_large_airframe = 1 } 
+						set_technology = { improved_small_airframe = 1 } 
+					}
+				}
+				set_technology = { early_bombs = 1 } 
+				set_technology = { armor_piercing_bombs = 1 } 
+				set_technology = { heavy_bombs = 1 } 
+				set_technology = { aa_lmg = 1 } 
+				set_technology = { survivability_studies = 1 } 
+				set_technology = { aa_hmg = 1 } 
+				set_technology = { aa_cannon_1 = 1 } 
+				set_technology = { aa_cannon_2 = 1 } 
+				set_technology = { air_torpedoe_1 = 1 } 
+				set_technology = { air_torpedoe_2 = 1 } 
+				set_technology = { engines_1 = 1 } 
+				set_technology = { aircraft_construction = 1 } 
+				set_technology = { engines_2 = 1 } 
+				set_technology = { range_improvements = 1 } 
+				set_technology = { engines_3 = 1 } 
+				set_technology = { engines_4 = 1 }  
+				set_technology = { advanced_small_airframe = 1 } 
+				set_global_flag = Beta_ENG_2_flag
+			}
+			IF = {
+				limit = {
+					has_idea = YJ_ENG_1_ideas
+					date > 1938.12.1
+					NOT = { has_global_flag = Beta_ENG_3_flag }
+				}
+				random_list = {
+					19 = { 
+						set_technology = { tech_engineers = 1 } 
+						set_technology = { tech_engineers2 = 1 } 
+						set_technology = { tech_engineers3 = 1 } 
+						set_technology = { sp_armored_engineer_tech = 1 } 
+					}
+					19 = { 
+						set_technology = { tech_recon = 1 } 
+						set_technology = { tech_recon2 = 1 } 
+						set_technology = { tech_recon3 = 1 } 
+						set_technology = { sp_helicopter_artillery_observers_tech = 1 } 
+					}
+					2.5 = { 
+						set_technology = { tech_military_police = 1 } 
+						set_technology = { tech_military_police2 = 1 } 
+						set_technology = { tech_military_police3 = 1 } 
+						set_technology = { sp_armored_motorized_military_police_tech = 1 } 
+					}
+					19 = { 
+						set_technology = { tech_maintenance_company = 1 } 
+						set_technology = { tech_maintenance_company2 = 1 } 
+						set_technology = { tech_maintenance_company3 = 1 } 
+						set_technology = { sp_armored_maintenance_tech = 1 } 
+					}
+					19 = { 
+						set_technology = { tech_field_hospital = 1 } 
+						set_technology = { tech_field_hospital2 = 1 } 
+						set_technology = { tech_field_hospital3 = 1 } 
+						set_technology = { sp_helicopter_med_evac_tech = 1 } 
+					}
+					19 = { 
+						set_technology = { tech_logistics_company = 1 } 
+						set_technology = { tech_logistics_company2 = 1 } 
+						set_technology = { tech_logistics_company3 = 1 } 
+						set_technology = { sp_helicopter_transport_pods_tech = 1 } 
+					}
+					2.5 = { 
+						set_technology = { tech_logistics_company = 1 } 
+						set_technology = { tech_logistics_company2 = 1 } 
+						set_technology = { tech_logistics_company3 = 1 } 
+						set_technology = { sp_armored_signal_tech = 1 } 
+					}
+				}
+				set_global_flag = Beta_ENG_3_flag
+			}
+			IF = {
+				limit = {
+					has_idea = YJ_ENG_1_ideas
+					date > 1940.12.1
+					NOT = { has_global_flag = Beta_ENG_4_flag }
+				}
+				set_technology = {
+					modern_small_airframe = 1
+					advanced_small_airframe = 1
+				}
+				complete_special_project = {
+					project = sp:sp_air_axial_jet_engine
+				}
+				complete_special_project = {
+					project = sp:sp_air_jet_engine
+				}
+				set_global_flag = Beta_ENG_4_flag
+			}
+		}
+	}
+
+	on_monthly_ENG = { #英美合作
+	    effect = {
+			IF = {
+				limit = {
+					has_idea = YJ_ENG_2_ideas
+					date > 1938.8.1
+					NOT = { has_global_flag = Beta_ENG_1_on_flag }
+				}
+				add_tech_bonus = {
+				name = YJ_ENG_2_ideas
+				bonus = 1
+				uses = 1
+				category = artillery
+				}
+				set_global_flag = Beta_ENG_1_on_flag
+			}
+		}
+	}
+
+	on_monthly_FIN = { #冰火人
+	    effect = {
+			if = {
+				limit = {
+					has_idea = YJ_FIN_05_ideas
+					date > 1938.3.1
+					NOT = { has_global_flag = Beta_FIN_1_on_flag }
+				}
+				add_timed_idea = {
+				idea = YJ_FIN_7_ideas
+				days = 149
+				}
+				set_global_flag = Beta_FIN_1_on_flag
+			}
+			else_if = {
+				limit = {
+					has_idea = YJ_FIN_05_ideas
+					date < 1938.9.1
+					has_global_flag = Beta_FIN_1_on_flag
+					NOT = { has_idea = YJ_FIN_6_ideas }
+					NOT = { has_idea = YJ_FIN_7_ideas }
+				}
+				add_timed_idea = {
+				idea = YJ_FIN_6_ideas
+				days = 149
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = YJ_FIN_05_ideas
+					date < 1939.3.1
+					has_global_flag = Beta_FIN_1_on_flag
+					NOT = { has_idea = YJ_FIN_6_ideas }
+					NOT = { has_idea = YJ_FIN_7_ideas }
+				}
+				add_timed_idea = {
+				idea = YJ_FIN_7_ideas
+				days = 149
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = YJ_FIN_05_ideas
+					date < 1939.9.1
+					has_global_flag = Beta_FIN_1_on_flag
+					NOT = { has_idea = YJ_FIN_6_ideas }
+					NOT = { has_idea = YJ_FIN_7_ideas }
+				}
+				add_timed_idea = {
+				idea = YJ_FIN_6_ideas
+				days = 149
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = YJ_FIN_05_ideas
+					date < 1940.3.1
+					has_global_flag = Beta_FIN_1_on_flag
+					NOT = { has_idea = YJ_FIN_6_ideas }
+					NOT = { has_idea = YJ_FIN_7_ideas }
+				}
+				add_timed_idea = {
+				idea = YJ_FIN_7_ideas
+				days = 149
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = YJ_FIN_05_ideas
+					date < 1940.9.1
+					has_global_flag = Beta_FIN_1_on_flag
+					NOT = { has_idea = YJ_FIN_6_ideas }
+					NOT = { has_idea = YJ_FIN_7_ideas }
+				}
+				add_timed_idea = {
+				idea = YJ_FIN_6_ideas
+				days = 149
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = YJ_FIN_05_ideas
+					date < 1941.3.1
+					has_global_flag = Beta_FIN_1_on_flag
+					NOT = { has_idea = YJ_FIN_6_ideas }
+					NOT = { has_idea = YJ_FIN_7_ideas }
+				}
+				add_timed_idea = {
+				idea = YJ_FIN_7_ideas
+				days = 149
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = YJ_FIN_05_ideas
+					date < 1941.9.1
+					has_global_flag = Beta_FIN_1_on_flag
+					NOT = { has_idea = YJ_FIN_6_ideas }
+					NOT = { has_idea = YJ_FIN_7_ideas }
+				}
+				add_timed_idea = {
+				idea = YJ_FIN_6_ideas
+				days = 149
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = YJ_FIN_05_ideas
+					date < 1942.3.1
+					has_global_flag = Beta_FIN_1_on_flag
+					NOT = { has_idea = YJ_FIN_6_ideas }
+					NOT = { has_idea = YJ_FIN_7_ideas }
+				}
+				add_timed_idea = {
+				idea = YJ_FIN_7_ideas
+				days = 149
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = YJ_FIN_05_ideas
+					date < 1942.9.1
+					has_global_flag = Beta_FIN_1_on_flag
+					NOT = { has_idea = YJ_FIN_6_ideas }
+					NOT = { has_idea = YJ_FIN_7_ideas }
+				}
+				add_timed_idea = {
+				idea = YJ_FIN_6_ideas
+				days = 149
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = YJ_FIN_05_ideas
+					date < 1943.3.1
+					has_global_flag = Beta_FIN_1_on_flag
+					NOT = { has_idea = YJ_FIN_6_ideas }
+					NOT = { has_idea = YJ_FIN_7_ideas }
+				}
+				add_timed_idea = {
+				idea = YJ_FIN_7_ideas
+				days = 149
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = YJ_FIN_05_ideas
+					date < 1943.9.1
+					has_global_flag = Beta_FIN_1_on_flag
+					NOT = { has_idea = YJ_FIN_6_ideas }
+					NOT = { has_idea = YJ_FIN_7_ideas }
+				}
+				add_timed_idea = {
+				idea = YJ_FIN_6_ideas
+				days = 149
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = YJ_FIN_05_ideas
+					date < 1944.3.1
+					has_global_flag = Beta_FIN_1_on_flag
+					NOT = { has_idea = YJ_FIN_6_ideas }
+					NOT = { has_idea = YJ_FIN_7_ideas }
+				}
+				add_timed_idea = {
+				idea = YJ_FIN_7_ideas
+				days = 149
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = YJ_FIN_05_ideas
+					date < 1944.9.1
+					has_global_flag = Beta_FIN_1_on_flag
+					NOT = { has_idea = YJ_FIN_6_ideas }
+					NOT = { has_idea = YJ_FIN_7_ideas }
+				}
+				add_timed_idea = {
+				idea = YJ_FIN_6_ideas
+				days = 149
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = YJ_FIN_05_ideas
+					date < 1945.3.1
+					has_global_flag = Beta_FIN_1_on_flag
+					NOT = { has_idea = YJ_FIN_6_ideas }
+					NOT = { has_idea = YJ_FIN_7_ideas }
+				}
+				add_timed_idea = {
+				idea = YJ_FIN_7_ideas
+				days = 149
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = YJ_FIN_05_ideas
+					date < 1945.9.1
+					has_global_flag = Beta_FIN_1_on_flag
+					NOT = { has_idea = YJ_FIN_6_ideas }
+					NOT = { has_idea = YJ_FIN_7_ideas }
+				}
+				add_timed_idea = {
+				idea = YJ_FIN_6_ideas
+				days = 149
+				}
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	on_daily_SOV = {
+		effect = {
+			if = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = YJ_SOV_3_ideas
+					}
+				}
+			}
+			set_variable = { SOV_conscription = SOV.surrender_progress }
+			set_variable = { SOV_mobilization_speed = SOV.surrender_progress }
+			set_variable = { SOV_supply_combat_penalties_on_core_factor = SOV.surrender_progress }
+			set_variable = { SOV_army_core_attack_factor = SOV.surrender_progress }
+			set_variable = { SOV_army_core_defence_factor = SOV.surrender_progress }
+			set_variable = { SOV_cas_damage_reduction = SOV.surrender_progress }
+			multiply_variable = { SOV_conscription = 0.2 }
+			multiply_variable = { SOV_mobilization_speed = 0.6 }
+			multiply_variable = { SOV_supply_combat_penalties_on_core_factor = -0.6 }
+			multiply_variable = { SOV_army_core_attack_factor = 0.4 }
+			multiply_variable = { SOV_army_core_defence_factor = 0.4 }
+			multiply_variable = { SOV_cas_damage_reduction = 0.3 }
+			add_to_variable = { SOV_conscription = 0.005 }
+			add_to_variable = { SOV_mobilization_speed = 0.05 }
+			add_to_variable = { SOV_supply_combat_penalties_on_core_factor = -0.05 }
+			add_to_variable = { SOV_army_core_attack_factor = 0.025 }
+			add_to_variable = { SOV_army_core_defence_factor = 0.025 }
+			add_to_variable = { SOV_cas_damage_reduction = 0.025 }
+			if = {
+				limit = {
+					has_idea = YJ_SOV_4_ideas
+					has_country_flag = SOV_paranoia_system_active_flag
+				}
+				clr_country_flag = SOV_paranoia_system_active_flag
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = Beta_SOV_PZD_1_Flag }
+					date > 1936.2.1
+				}
+				SOV_remove_paranoia_effect = yes
+				set_country_flag = Beta_SOV_PZD_1_Flag
+			}
+		}
+	}
+
+
+	on_monthly_ITA = {
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						has_dynamic_modifier = {
+							modifier = YJ_ITA_1_ideas
+						}
+						has_dynamic_modifier = {
+							modifier = YJ_ITA_4_ideas
+						}
+					}
+					NOT = { has_country_flag = Beta_ITA_Demo_1_Flag }
+				}
+				set_country_flag = Beta_ITA_Demo_1_Flag
+			}
+			else_if = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = YJ_ITA_1_ideas
+					}
+					has_idea = YJ_ITA_01_ideas
+					has_country_flag = Beta_ITA_Demo_1_Flag
+				}
+				KoKi_YJ_ITA_event_1_scripted_effects = yes
+				clr_country_flag = Beta_ITA_Demo_1_Flag
+			}
+			else_if = {
+				limit = {
+					has_idea = YJ_ITA_02_ideas
+					has_country_flag = Beta_ITA_Demo_2_Flag
+				}
+				country_event = KoKi_YJ_ITA_event.1015
+				clr_country_flag = Beta_ITA_Demo_2_Flag
+			}
+			if = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = YJ_ITA_4_ideas
+					}
+				}
+				add_to_variable = {
+					Beta_ITA_4_line_change_production_efficiency_factor = 0.0025
+				}
+				add_to_variable = {
+					Beta_ITA_4_lproduction_factory_max_efficiency_factor = 0.0025
+				}
+				add_to_variable = {
+					Beta_ITA_4_lproduction_factory_start_efficiency_factor = 0.0025
+				}
+				add_to_variable = {
+					Beta_ITA_4_lproduction_factory_efficiency_gain_factor = 0.0025
+				}
+				add_to_variable = {
+					Beta_ITA_4_lindustrial_capacity_factory = 0.0025
+				}
+				add_to_variable = {
+					Beta_ITA_4_lindustrial_capacity_dockyard = 0.0025
+				}
+				add_to_variable = {
+					Beta_ITA_4_army_attack_factor = 0.0045
+				}
+				add_to_variable = {
+					Beta_ITA_4_army_defence_factor = 0.003
+				}
+			}
+		}
+	}
+
+
+
+	on_monthly_BRA = {
+		effect = {
+			if = {
+				limit = { has_dynamic_modifier = { modifier = YJ_BRA_2_ideas } }
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 1000
+					producer = BRA
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 500
+					producer = BRA
+				}
+				add_equipment_to_stockpile = {
+					type = anti_air_equipment
+					amount = 500
+					producer = BRA
+				}
+				add_equipment_to_stockpile = {
+					type = medium_tank_chassis
+					amount = 500
+					producer = BRA
+				}
+				add_to_variable = {
+					Beta_BRA_2_INDUSTRIAL_FACTORY_DONATIONS = 1
+				}
+				add_to_variable = {
+					Beta_BRA_2_MILITARY_FACTORY_DONATIONS = 1
+				}
+			}
+		}
+	}
+
+	
+	on_monthly_FRA = {
+		effect = {
+			add_to_variable = {
+				YJ_FRA_ideas_INDUSTRIAL_FACTORY_DONATIONS = 1
+				YJ_FRA_ideas_MILITARY_FACTORY_DONATIONS = 1
+			}
+		}
+	}
+
+	on_daily_BEL = {
+		effect = {
+			if = {
+				limit = {
+					has_idea = YJ_BEL_01_ideas
+					surrender_progress > 0.1
+					NOT = { has_global_flag = YJ_BEL_surrender_ideas }
+			    }
+				add_stability = 1000
+				add_war_support = 1000
+				
+				#forced_surrender_limit = 3.0
+				#surrender_limit = 3
+				#max_surrender_limit_offset = 3
+				every_state = {
+					limit = {
+						is_core_of = COG
+					}
+					add_core_of = BEL
+				}
+				COG = {
+					every_unit_leader = {
+						set_nationality = BEL
+					}
+					
+				}
+				annex_country = {
+					target = COG
+					transfer_troops = yes
+				}
+				set_global_flag = YJ_BEL_surrender_ideas
+			}
+		}
+	}
+
+	on_monthly_CAN = { #美加合作
+	    effect = {
+			IF = {
+				limit = {
+					has_idea = YJ_CAN_3_ideas
+					NOT = { has_global_flag = Beta_CAN_3_on_flag }
+					date > 1938.5.1
+				}
+				set_technology = { early_bombs = 1 } 
+				set_technology = { armor_piercing_bombs = 1 } 
+				set_technology = { heavy_bombs = 1 } 
+				set_technology = { aa_lmg = 1 } 
+				set_technology = { survivability_studies = 1 } 
+				set_technology = { aa_hmg = 1 } 
+				set_technology = { aa_cannon_1 = 1 } 
+				set_technology = { aa_cannon_2 = 1 } 
+				set_technology = { air_torpedoe_1 = 1 } 
+				set_technology = { air_torpedoe_2 = 1 } 
+				set_technology = { engines_1 = 1 } 
+				set_technology = { aircraft_construction = 1 } 
+				set_technology = { engines_2 = 1 } 
+				set_technology = { range_improvements = 1 } 
+				set_technology = { engines_3 = 1 } 
+				set_technology = { engines_4 = 1 }
+				set_technology = { improved_large_airframe = 1 } 
+				set_technology = { improved_medium_airframe = 1 } 
+				set_global_flag = Beta_CAN_3_on_flag
+			}
+		}
+	}
+
+	on_monthly = {
+		effect = {
+			IF = {
+				limit = {
+					has_idea = YJ_1_ideas
+				}
+				division_template = {
+					name = "国际纵队师"
+					division_names_group = AFG_INF_01
+					is_locked = no
+					force_allow_recruiting = yes
+					obsolete = yes
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 0 y = 4 }
+
+						infantry= { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 1 y = 4 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						artillery = { x = 0 y = 1 }
+					}
+				}
+				
+				random_core_state = {
+					limit = {
+						FROM = { has_full_control_of_state = PREV } 
+					}
+					create_unit = {
+						division = "division_template = \"国际纵队师\" start_experience_factor = 0.2 start_equipment_factor = 1.0" 
+						owner = PREV
+						count = 5
+					}
+				}
+			}
+			if = {
+				limit = {
+					USA = {has_idea = YJ_USA_5_ideas}
+					ENG = {has_idea = YJ_ENG_2_ideas}
+				}
+				USA = {add_ideas = YJ_USA_7_ideas}
+				ENG = {add_ideas = YJ_USA_7_ideas}
+			}
+			if = {
+				limit = {
+					USA = {has_idea = YJ_USA_5_ideas}
+					ENG = {has_idea = YJ_ENG_2_ideas}
+					CAN = {
+						NOT = { has_idea = YJ_CAN_3_ideas }
+					}
+				}
+				USA = {add_ideas = YJ_USA_7_ideas}
+				ENG = {add_ideas = YJ_USA_7_ideas}
+			}
+
+			if = {
+				limit = {
+					USA = {has_idea = YJ_USA_5_ideas}
+					ENG = {has_idea = YJ_ENG_2_ideas}
+					CAN = {has_idea = YJ_CAN_3_ideas}
+				}
+				USA = {add_ideas = YJ_CAN_5_ideas}
+				ENG = {add_ideas = YJ_CAN_5_ideas}
+				CAN = {add_ideas = YJ_CAN_5_ideas}
+			}
+			if = {
+            	limit = {
+                date > 1941.5.1
+                NOT = { has_global_flag = xjgs_global_flag }
+            	}
+
+            	set_global_flag = xjgs_global_flag
+
+            	# 遍历轴心国
+            	GER = {
+                	if = {
+                    	limit = { is_in_faction = yes }
+                    	every_other_country = {
+                        	limit = {
+                            is_in_faction_with = GER
+                        	}
+                        	add_timed_idea = {
+                            idea = YJ_xjgs_ideas
+                            days = 180
+                        	}
+                    	}
+                    	# 自己也加
+                    	add_timed_idea = {
+                        	idea = YJ_xjgs_ideas
+                        	days = 180
+                    	}
+                	}
+            	}
+        	}
+		}
+	}
+
+	on_war = {
+		effect = {
+			if = {
+				limit = { 
+					original_tag = SOV 
+					has_war_with = GER
+			    }
+				set_global_flag = YJ_SOV_defence
+			}
+			if = {
+				limit = { 
+					original_tag = GER 
+					has_war_with = SOV
+					}
+					GER = {
+						if = {
+							limit = { is_in_faction = yes }
+							every_other_country = {
+								limit = {
+									is_in_faction_with = GER
+								}
+								add_timed_idea = {
+									idea = YJ_bbls_ideas
+									days = 180
+								}	
+							}
+							# 自己也加
+							add_timed_idea = {
+								idea = YJ_bbls_ideas
+								days = 180
+							}
+						}
+					}
+				}
+			}
+		}
+
+	on_daily = {
+		effect = {
+			set_variable_to_random = { var = YJ_rng min = 1 max = 21 }
+			round_variable = YJ_rng
+			log = "value1 : [?YJ_rng]"
+			set_variable_to_random = { var = YJ_rng1 min = 1 max = 100 }
+			round_variable = YJ_rng1
+			log = "value2 : [?YJ_rng1]"
+		}
+	}
+
+	on_startup = {
+		effect = {
+			every_country = {
+				set_variable = {
+					YJ_21_ideas_var = 0
+				}
+				set_variable = {
+					YJ_22_ideas_var = 0
+				}
+				set_variable = {
+					YJ_23_ideas_var = 0
+				}
+				set_variable = {
+					YJ_24_ideas_var = 0
+				}
+				set_variable = {
+					YJ_25_ideas_var = 0
+				}
+				set_variable = {
+					YJ_26_ideas_var = 0
+				}
+				set_variable = {
+					YJ_27_ideas_var = 0
+				}
+				set_variable = {
+					YJ_28_ideas_var = 0
+				}
+				set_variable = {
+					YJ_29_ideas_var = 0
+				}
+			}
+		}
+	}
+
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					has_idea = YJ_21_ideas
+					check_variable = {
+						YJ_21_ideas_var > 0
+					}
+				}
+				subtract_from_variable = {
+					YJ_21_ideas_var = 1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YJ_22_ideas
+					check_variable = {
+						YJ_22_ideas_var > 0
+					}
+				}
+				subtract_from_variable = {
+					YJ_22_ideas_var = 1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YJ_23_ideas
+					check_variable = {
+						YJ_23_ideas_var > 0
+					}
+				}
+				subtract_from_variable = {
+					YJ_23_ideas_var = 1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YJ_24_ideas
+					check_variable = {
+						YJ_24_ideas_var > 0
+					}
+				}
+				subtract_from_variable = {
+					YJ_24_ideas_var = 1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YJ_25_ideas
+					check_variable = {
+						YJ_25_ideas_var > 0
+					}
+				}
+				subtract_from_variable = {
+					YJ_25_ideas_var = 1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YJ_26_ideas
+					check_variable = {
+						YJ_26_ideas_var > 0
+					}
+				}
+				subtract_from_variable = {
+					YJ_26_ideas_var = 1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YJ_27_ideas
+					check_variable = {
+						YJ_27_ideas_var > 0
+					}
+				}
+				subtract_from_variable = {
+					YJ_27_ideas_var = 1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YJ_28_ideas
+					check_variable = {
+						YJ_28_ideas_var > 0
+					}
+				}
+				subtract_from_variable = {
+					YJ_28_ideas_var = 1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YJ_29_ideas
+					check_variable = {
+						YJ_29_ideas_var > 0
+					}
+				}
+				subtract_from_variable = {
+					YJ_29_ideas_var = 1
+				}
+			}
+		}
+	}
+
+	on_war_relation_added = { 
+		# ROOT is attacker, FROM is defender.
+		effect = {
+			if = {
+				limit = { 
+					ROOT = { tag = GER }
+					FROM = { tag = ENG }
+				}
+				if = {
+					limit = { NOT = { has_global_flag = Altria_GER_WAR_ENG_Global_Flag } }
+					news_event = { id = KoKi_YJ_NEW.bfzc days = 115 }
+					set_global_flag = Altria_GER_WAR_ENG_Global_Flag
+				}
+			}
+			if = {
+				limit = { 
+					ROOT = { tag = GER }
+					FROM = { tag = SOV }
+				}
+				if = {
+					limit = { NOT = { has_global_flag = Altria_GER_WAR_SOV_Global_Flag } }
+					news_event = KoKi_YJ_NEW.bbls
+					set_global_flag = Altria_GER_WAR_SOV_Global_Flag
+				}
+			}
+		}
+	}
+}

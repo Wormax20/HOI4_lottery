@@ -1,0 +1,1 @@
+NDefines.NProduction.MAX_CIV_FACTORIES_PER_LINE = 50

@@ -1,0 +1,113 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			#UI Setup
+			for_each_scope_loop = {
+				array = global.players
+				set_country_flag = show_welcome_splash
+			}
+			random_country = {
+				limit = {
+					is_ai = no
+				}
+				set_country_flag = YJ_controller
+			}
+
+			every_country = {
+				if = {
+					limit = {
+						OR = {
+							tag = USA
+							tag = ENG
+							tag = FRA
+							tag = GER
+							tag = ITA
+							tag = SOV
+							tag = HUN
+							tag = PRC
+							tag = JAP
+							tag = TUR
+							tag = FIN
+							tag = RAJ
+						}
+					}
+					set_variable = {
+						YJ_country_limit = 30
+					}
+					set_variable = {
+						YJ_country_cost = 75
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							tag = BEL
+							tag = CZE
+							tag = PHI
+							tag = SWI
+							tag = CAN
+							tag = MEX
+							tag = BRA
+						}
+					}
+					set_variable = {
+						YJ_country_limit = 50
+					}
+					set_variable = {
+						YJ_country_cost = 50
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_variable = YJ_country_limit
+						}
+					}
+					set_variable = {
+						YJ_country_limit = 50
+					}
+					set_variable = {
+						YJ_country_cost = 30
+					}
+				}
+			}
+		}
+	}
+
+	on_daily = {
+		effect = {
+			every_country = {
+				limit = { has_country_flag = YJ_controller }
+				if = {
+					limit = {
+						OR = {
+							surrender_progress > 0.75
+							is_ai = yes
+						}
+					}
+
+					if = {
+						limit = {
+							any_country = {
+								is_ai = no
+								surrender_progress < 0.75
+								NOT = { has_country_flag = YJ_controller }
+							}
+						}
+						
+						random_country = {
+							limit = {
+								is_ai = no
+								surrender_progress < 0.75
+								NOT = { has_country_flag = YJ_controller }
+							}
+							set_country_flag = YJ_controller
+						}
+						
+						clr_country_flag = YJ_controller
+					}
+				}
+			}
+		}
+	}
+}

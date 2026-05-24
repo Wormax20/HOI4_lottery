@@ -1,0 +1,33 @@
+technologies = {
+	TUR_camelry_tech = { 
+		camelry = {
+			max_strength = 0.05
+            combat_width = -0.2
+			mountain = 	{
+				attack = 0.2
+				defence = 0.2
+			}
+			desert = {
+				attack = 0.2
+				defence = 0.2
+			}
+			plains = {
+				attack = 0.2
+				defence = 0.2
+			}
+			hills = {
+				attack = 0.2
+				defence = 0.2
+			}
+		}
+    }
+	TUR_camelry_2_tech = { 
+		camelry = {
+			hardness = 0.15
+            urban = {
+				attack = 0.15
+				defence = 0.15
+			}
+		}
+    }
+}

@@ -1,0 +1,2218 @@
+KoKi_YJ_TAG_decisions_0_scripted_effects = {
+    # 美国 #
+    if = {
+		limit = { 
+			original_tag = USA 
+			is_ai = no
+		}
+		hidden_effect = {
+			USA_YJ_scripted_effects = yes
+		}
+	}
+	# 德国 #
+	if = {
+		limit = { 
+			original_tag = GER 
+			is_ai = no
+		}
+		hidden_effect = {
+			GER_YJ_scripted_effects = yes
+		}
+	}
+	# 英国 #
+	if = {
+		limit = { 
+			original_tag = ENG 
+			is_ai = no
+		}
+		hidden_effect = {
+			ENG_YJ_scripted_effects = yes
+		}
+	}
+	# 法国 #
+	if = {
+		limit = { 
+			original_tag = FRA 
+			is_ai = no
+		}
+		hidden_effect = {
+			FRA_YJ_scripted_effects = yes
+		}
+	}
+	# 苏联 #
+	if = {
+		limit = { 
+			original_tag = SOV 
+			is_ai = no
+		}
+		hidden_effect = {
+			SOV_YJ_scripted_effects = yes
+		}
+	}
+	# 意大利 #
+	if = {
+		limit = { 
+			original_tag = ITA 
+			is_ai = no
+		}
+		hidden_effect = {
+			ITA_YJ_scripted_effects = yes
+		}
+	}
+	# 巴西 #
+	if = {
+		limit = { 
+			original_tag = BRA 
+			is_ai = no
+		}
+		hidden_effect = {
+			BRA_YJ_scripted_effects = yes
+		}
+	}
+	# 芬兰 #
+	if = {
+		limit = { 
+			original_tag = FIN 
+			is_ai = no
+		}
+		hidden_effect = {
+			FIN_YJ_scripted_effects = yes
+		}
+	}
+	# 日本 #
+	if = {
+		limit = { 
+			original_tag = JAP 
+			is_ai = no
+		}
+		hidden_effect = {
+			JAP_YJ_scripted_effects = yes
+		}
+	}
+	# 中共 #
+	if = {
+		limit = { 
+			original_tag = PRC 
+		    is_ai = no
+		}
+		hidden_effect = {
+			PRC_YJ_scripted_effects = yes
+		}
+	}
+	# 罗马尼亚 #
+	if = {
+		limit = { 
+			original_tag = ROM 
+			is_ai = no
+		}
+		hidden_effect = {
+			ROM_YJ_scripted_effects = yes
+		}
+	}
+	# 墨西哥 #
+	if = {
+		limit = { 
+			original_tag = MEX 
+			is_ai = no
+		}
+		hidden_effect = {
+			MEX_YJ_scripted_effects = yes
+		}
+	}
+	# 匈牙利 #
+	if = {
+		limit = { 
+			original_tag = HUN 
+			is_ai = no
+		}
+		hidden_effect = {
+			HUN_YJ_scripted_effects = yes
+		}
+	}
+	# 菲律宾 #
+	if = {
+		limit = { 
+			original_tag = PHI 
+			is_ai = no
+		}
+		hidden_effect = {
+			PHI_YJ_scripted_effects = yes
+		}
+	}
+	# 比利时 #
+	if = {
+		limit = { 
+			original_tag = BEL 
+			is_ai = no
+		}
+		hidden_effect = {
+			BEL_YJ_scripted_effects = yes
+		}
+	}
+	# 瑞士 #
+	if = {
+		limit = { 
+			original_tag = SWI
+			is_ai = no
+		}
+		hidden_effect = {
+			SWI_YJ_scripted_effects = yes
+		}
+	}
+	# 印度 #
+	if = {
+		limit = { 
+			original_tag = RAJ
+			is_ai = no
+		}
+		hidden_effect = {
+			RAJ_YJ_scripted_effects = yes
+		}
+	}
+	# 加拿大 #
+	if = {
+		limit = { 
+			original_tag = CAN
+			is_ai = no 
+		}
+		hidden_effect = {
+			CAN_YJ_scripted_effects = yes
+		}
+	}
+	# 土耳其 #
+	if = {
+		limit = { 
+			original_tag = TUR
+			is_ai = no 
+		}
+		hidden_effect = {
+			TUR_YJ_scripted_effects = yes
+		}
+	}
+}
+
+YJ_TY_scripted_effects = {
+	random_list = {
+		9.09 = {
+			modifier = {
+				has_idea = YJ_1_ideas
+				factor = 0
+			}
+			country_event = KoKi_YJ.101
+		}
+		9.09 = {
+			modifier = {
+				has_idea = YJ_2_ideas
+				factor = 0
+			}
+			country_event = KoKi_YJ.102
+		}
+		9.09 = {
+			modifier = {
+				has_idea = YJ_3_ideas
+				factor = 0
+			}
+			country_event = KoKi_YJ.103
+		}
+		9.09 = {
+			modifier = {
+				has_idea = YJ_4_ideas
+				factor = 0
+			}
+			country_event = KoKi_YJ.104
+		}
+		9.09 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_10_ideas
+					has_idea = YJ_5_ideas
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ.105
+		}
+		9.09 = {
+			modifier = {
+				has_idea = YJ_6_ideas
+				factor = 0
+			}
+			country_event = KoKi_YJ.106
+		}
+		9.09 = {
+			modifier = {
+				has_idea = YJ_7_ideas
+				factor = 0
+			}
+			country_event = KoKi_YJ.107
+		}
+		9.09 = {
+			modifier = {
+				has_idea = YJ_8_ideas
+				factor = 0
+			}
+			country_event = KoKi_YJ.108
+		}
+		9.09 = {
+			modifier = {
+				has_idea = YJ_9_ideas
+				factor = 0
+			}
+			country_event = KoKi_YJ.109
+		}
+		9.09 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_5_ideas
+					has_idea = YJ_10_ideas
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ.110
+		}
+		9.09 = {
+			modifier = {
+				has_idea = YJ_11_ideas
+				factor = 0
+			}
+			country_event = KoKi_YJ.111
+		}
+	}
+}
+
+#国家抽奖
+GER_YJ_scripted_effects = {
+	random_list = {
+		16.6 = {
+			modifier = {
+				OR = {
+					has_global_flag = KoKi_YJ_TAG_decisions_YJ_2
+					has_idea = YJ_GER_01_ideas
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_GER_event.1011
+		}
+		16.6 = {
+			modifier = {
+				has_idea = YJ_GER_4_ideas
+				factor = 0
+			}
+			country_event = KoKi_YJ_GER_event.104
+		}
+		16.6 = {
+			modifier = {
+				has_idea = YJ_GER_1_ideas
+				factor = 0
+			}
+			country_event = KoKi_YJ_GER_event.101
+		}
+		16.6 = {
+			modifier = {
+				has_idea = YJ_GER_2_ideas
+				factor = 0
+			}
+			country_event = KoKi_YJ_GER_event.102
+		}
+		16.6 = {
+			modifier = {
+				has_idea = YJ_GER_3_ideas
+				factor = 0
+			}
+			country_event = KoKi_YJ_GER_event.103
+		}
+		16.6 = {
+			modifier = {
+				has_idea = YJ_GER_02_ideas
+				factor = 0
+			}
+			country_event = KoKi_YJ_GER_event.1012
+		}
+	}
+}
+
+USA_YJ_scripted_effects = {
+	random_list = {
+		20 = {
+			modifier = {
+				has_idea = YJ_USA_1_ideas
+				factor = 0
+			}
+			country_event = KoKi_YJ_USA_event.101
+		}
+		20 = {
+			modifier = {
+				has_idea = YJ_USA_4_ideas
+				factor = 0
+			}
+			country_event = KoKi_YJ_USA_event.104
+		}
+		20 = {
+			modifier = {
+				has_idea = YJ_USA_2_ideas
+				factor = 0
+			}
+			country_event = KoKi_YJ_USA_event.102
+		}
+		20 = {
+			modifier = {
+				has_idea = YJ_USA_5_ideas
+				factor = 0
+			}
+			country_event = KoKi_YJ_USA_event.105
+		}
+		20 = {
+			modifier = {
+				has_idea = YJ_USA_3_ideas
+				factor = 0
+			}
+			country_event = KoKi_YJ_USA_event.103
+		}
+	}
+}
+
+ENG_YJ_scripted_effects = {
+	random_list = {
+		20 = {
+			modifier = {
+				has_idea = YJ_ENG_1_ideas
+				factor = 0
+			}
+			country_event = KoKi_YJ_ENG_event.101
+		}
+		20 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_ENG_2_ideas
+					NOT = {
+						has_idea = YJ_ENG_1_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_ENG_event.102
+		}
+		20 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_ENG_3_ideas
+					NOT = {
+						has_idea = YJ_ENG_1_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_ENG_event.103
+		}
+		20 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_ENG_5_ideas
+					NOT = {
+						has_idea = YJ_ENG_1_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_ENG_event.105
+		}
+		20 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_ENG_6_ideas
+					NOT = {
+						has_idea = YJ_ENG_1_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_ENG_event.106
+		}
+	}
+}
+
+FRA_YJ_scripted_effects = {
+		random_list = {
+			25 = {
+				modifier = {
+					has_idea = YJ_FRA_1_ideas
+					factor = 0
+				}
+				country_event = KoKi_YJ_FRA_event.101
+			}
+			25 = {
+				modifier = {
+					has_idea = YJ_FRA_2_ideas
+					factor = 0
+				}
+				country_event = KoKi_YJ_FRA_event.102
+			}
+			25 = {
+				modifier = {
+					has_idea = YJ_FRA_3_ideas
+					factor = 0
+				}
+				country_event = KoKi_YJ_FRA_event.103
+			}
+			25 = {
+				modifier = {
+					has_idea = YJ_FRA_4_ideas
+					factor = 0
+				}
+				country_event = KoKi_YJ_FRA_event.104
+			}
+		}
+}
+
+SOV_YJ_scripted_effects = {
+	random_list = {
+		25 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_SOV_1_ideas
+					has_country_flag = KoKi_YJ_SOV_event
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_SOV_event.101
+			set_country_flag = KoKi_YJ_SOV_event
+		}
+		25 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_SOV_2_ideas
+					has_country_flag = KoKi_YJ_SOV_event
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_SOV_event.102
+			set_country_flag = KoKi_YJ_SOV_event
+		}
+		25 = {
+			modifier = {
+				has_dynamic_modifier = {
+					modifier = YJ_SOV_3_ideas
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_SOV_event.103
+		}
+		25 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_SOV_4_ideas
+					has_country_flag = KoKi_YJ_SOV_event
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_SOV_event.104
+			set_country_flag = KoKi_YJ_SOV_event
+		}
+	}
+}
+
+ITA_YJ_scripted_effects = { 
+	random_list = {
+		16.6 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_ITA_01_ideas
+					has_idea = YJ_ITA_02_ideas
+					FRA = {
+						is_ai = no
+					}
+					SWI = {
+						is_ai = no
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_ITA_event.1011
+		}
+		16.6 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_ITA_01_ideas
+					has_idea = YJ_ITA_02_ideas
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_ITA_event.1012
+		}
+		16.6 = {
+			modifier = {
+				OR = {
+					has_dynamic_modifier = {
+						modifier = YJ_ITA_4_ideas
+					}
+					NOT = {
+						OR = {
+							has_idea = YJ_ITA_01_ideas
+							has_idea = YJ_ITA_02_ideas
+						}
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_ITA_event.104
+		}
+		16.6 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_ITA_03_ideas
+					NOT = {
+						OR = {
+							has_idea = YJ_ITA_01_ideas
+							has_idea = YJ_ITA_02_ideas
+						}
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_ITA_event.1013
+		}
+		16.6 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_ITA_2_ideas
+					NOT = {
+						OR = {
+							has_idea = YJ_ITA_01_ideas
+							has_idea = YJ_ITA_02_ideas
+						}
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_ITA_event.102
+		}
+		16.6 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_ITA_04_ideas
+					has_idea = YJ_ITA_05_ideas
+					NOT = {
+						OR = {
+							has_idea = YJ_ITA_01_ideas
+							has_idea = YJ_ITA_02_ideas
+						}
+					}
+				}
+				factor = 0
+			}
+			if = {
+				limit = { has_idea = YJ_ITA_01_ideas }
+				country_event = KoKi_YJ_ITA_event.1014
+			}
+			if = {
+				limit = { has_idea = YJ_ITA_02_ideas }
+				country_event = KoKi_YJ_ITA_event.1015
+			}
+		}
+	}
+}
+
+BRA_YJ_scripted_effects = {
+	random_list = {
+		25 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_BRA_2_ideas
+					has_idea = YJ_BRA_3_ideas
+				}
+				has_idea = YJ_BRA_2_ideas
+				factor = 0
+			}
+			country_event = KoKi_YJ_BRA_event.102
+		}
+		25 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_BRA_2_ideas
+					has_idea = YJ_BRA_3_ideas
+				}
+				has_idea = YJ_BRA_3_ideas
+				factor = 0
+			}
+			country_event = KoKi_YJ_BRA_event.103
+		}
+		25 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_BRA_1_ideas
+					NOT = {
+						OR = {
+							has_idea = YJ_BRA_2_ideas
+							has_idea = YJ_BRA_3_ideas
+						}
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_BRA_event.101
+		}
+		25 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_BRA_4_ideas
+					NOT = {
+						OR = {
+							has_idea = YJ_BRA_2_ideas
+							has_idea = YJ_BRA_3_ideas
+						}
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_BRA_event.104
+		}
+	}
+}
+
+FIN_YJ_scripted_effects = {
+	random_list = {
+		20 = {
+			modifier = {
+				has_idea = YJ_FIN_1_ideas
+				factor = 0
+			}
+			country_event = KoKi_YJ_FIN_event.101
+		}
+		20 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_FIN_2_ideas
+					NOT = {
+						has_idea = YJ_FIN_1_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_FIN_event.102
+		}
+		20 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_FIN_3_ideas
+					NOT = {
+						has_idea = YJ_FIN_1_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_FIN_event.103
+		}
+		20 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_FIN_4_ideas
+					NOT = {
+						has_idea = YJ_FIN_1_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_FIN_event.104
+		}
+		20 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_FIN_5_ideas
+					NOT = {
+						has_idea = YJ_FIN_1_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_FIN_event.105
+		}
+	}
+}
+
+JAP_YJ_scripted_effects = {
+	random_list = {
+		20 = {
+			modifier = {
+				has_idea = YJ_JAP_3_ideas
+				factor = 0
+			}
+			country_event = KoKi_YJ_JAP_event.103
+		}
+		20 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_JAP_1_ideas
+					NOT = {
+						has_idea = YJ_JAP_3_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_JAP_event.101
+		}
+		20 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_JAP_2_ideas
+					NOT = {
+						has_idea = YJ_JAP_3_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_JAP_event.102
+		}
+		20 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_JAP_4_ideas
+					NOT = {
+						has_idea = YJ_JAP_3_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_JAP_event.104
+		}
+		20 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_JAP_5_ideas
+					NOT = {
+						has_idea = YJ_JAP_3_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_JAP_event.105
+		}
+	}
+}
+
+PRC_YJ_scripted_effects = {
+	random_list = {
+		25 = {
+			modifier = {
+				has_idea = YJ_PRC_1_ideas
+				factor = 0
+			}
+			country_event = KoKi_YJ_PRC_event.101
+		}
+		25 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_PRC_2_ideas
+					NOT = {
+						has_idea = YJ_PRC_1_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_PRC_event.102
+		}
+		25 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_PRC_3_ideas
+					NOT = {
+						has_idea = YJ_PRC_1_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_PRC_event.103
+		}
+		25 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_PRC_4_ideas
+					NOT = {
+						has_idea = YJ_PRC_1_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_PRC_event.104
+		}
+	}
+}
+
+ROM_YJ_scripted_effects = {
+	random_list = {
+		20 = {
+			modifier = {
+				has_idea = YJ_ROM_1_ideas
+				factor = 0
+			}
+			country_event = KoKi_YJ_ROM_event.101
+		}
+		20 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_ROM_2_ideas
+					NOT = {
+						has_idea = YJ_ROM_1_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_ROM_event.102
+		}
+		20 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_ROM_3_ideas
+					NOT = {
+						has_idea = YJ_ROM_1_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_ROM_event.103
+		}
+		20 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_ROM_4_ideas
+					NOT = {
+						has_idea = YJ_ROM_1_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_ROM_event.104
+		}
+		20 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_ROM_5_ideas
+					NOT = {
+						has_idea = YJ_ROM_1_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_ROM_event.105
+		}
+	}
+}
+
+MEX_YJ_scripted_effects = {
+	random_list = {
+		25 = {
+			modifier = {
+				has_idea = YJ_MEX_1_ideas
+				factor = 0
+			}
+			country_event = KoKi_YJ_MEX_event.101
+		}
+		25 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_MEX_2_ideas
+					NOT = {
+						has_idea = YJ_MEX_1_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_MEX_event.102
+		}
+		25 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_MEX_3_ideas
+					NOT = {
+						has_idea = YJ_MEX_1_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_MEX_event.103
+		}
+		25 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_MEX_4_ideas
+					NOT = {
+						has_idea = YJ_MEX_1_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_MEX_event.104
+		}
+	}
+}
+
+HUN_YJ_scripted_effects = {
+	random_list = {
+		25 = {
+			modifier = {
+				has_idea = YJ_HUN_1_ideas
+				factor = 0
+			}
+			country_event = KoKi_YJ_HUN_event.101
+		}
+		25 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_HUN_2_ideas
+					NOT = {
+						has_idea = YJ_HUN_1_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_HUN_event.102
+		}
+		25 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_HUN_3_ideas
+					NOT = {
+						has_idea = YJ_HUN_1_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_HUN_event.103
+		}
+		25 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_HUN_4_ideas
+					NOT = {
+						has_idea = YJ_HUN_1_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_HUN_event.104
+		}
+	}
+}
+
+PHI_YJ_scripted_effects = {
+	random_list = {
+		25 = {
+			modifier = {
+				has_idea = YJ_PHI_1_ideas
+				factor = 0
+			}
+			country_event = KoKi_YJ_PHI_event.101
+		}
+		25 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_PHI_2_ideas
+					NOT = {
+						has_idea = YJ_PHI_1_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_PHI_event.102
+		}
+		25 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_PHI_3_ideas
+					NOT = {
+						has_idea = YJ_PHI_1_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_PHI_event.103
+		}
+		25 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_PHI_4_ideas
+					NOT = {
+						has_idea = YJ_PHI_1_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_PHI_event.104
+		}
+	}
+}
+
+BEL_YJ_scripted_effects = {
+	random_list = {
+		33.3 = {
+			modifier = {
+				has_idea = YJ_BEL_1_ideas
+				factor = 0
+			}
+			country_event = KoKi_YJ_BEL_event.101
+		}
+		33.3 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_BEL_2_ideas
+					NOT = {
+						has_idea = YJ_BEL_1_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_BEL_event.102
+		}
+		33.3 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_BEL_3_ideas
+					NOT = {
+						has_idea = YJ_BEL_1_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_BEL_event.103
+		}
+	}
+}
+
+SWI_YJ_scripted_effects = {
+	random_list = {
+		25 = {
+			modifier = {
+				has_idea = YJ_SWI_1_ideas
+				factor = 0
+			}
+			country_event = KoKi_YJ_SWI_event.101
+		}
+		25 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_SWI_2_ideas
+					NOT = {
+						has_idea = YJ_SWI_1_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_SWI_event.102
+		}
+		25 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_SWI_3_ideas
+					NOT = {
+						has_idea = YJ_SWI_1_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_SWI_event.103
+		}
+		25 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_SWI_4_ideas
+					NOT = {
+						has_idea = YJ_SWI_1_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_SWI_event.104
+		}
+	}
+}
+
+
+RAJ_YJ_scripted_effects = {
+	random_list = {
+		25 = {
+			modifier = {
+				has_idea = YJ_RAJ_1_ideas
+				factor = 0
+			}
+			country_event = KoKi_YJ_RAJ_event.101
+		}
+		25 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_RAJ_3_ideas
+					NOT = {
+						has_idea = YJ_RAJ_1_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_RAJ_event.103
+		}
+		25 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_RAJ_4_ideas
+					NOT = {
+						has_idea = YJ_RAJ_1_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_RAJ_event.104
+		}
+		25 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_RAJ_5_ideas
+					NOT = {
+						has_idea = YJ_RAJ_1_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_RAJ_event.105
+		}
+	}
+}
+
+CAN_YJ_scripted_effects = {
+	if = {
+		limit = {
+			NOT = { has_idea = YJ_CAN_1_ideas }
+		}
+		country_event = KoKi_YJ_CAN_event.101
+	}
+	if = {
+		limit = {
+			NOT = { has_country_flag = CAN_lottery_1_Flag }
+		}
+		random_list = {
+			50 = {
+				country_event = KoKi_YJ_CAN_event.102
+			}
+			50 = {
+				country_event = KoKi_YJ_CAN_event.103
+			}
+		}
+		set_country_flag = CAN_lottery_1_Flag
+	}
+	else_if = {
+		limit = { has_idea = YJ_CAN_1_ideas }
+		country_event = KoKi_YJ_CAN_event.104
+	}
+}
+
+CAN_YJ_scripted_effects = {
+	random_list = {
+		25 = {
+			modifier = {
+				has_idea = YJ_CAN_1_ideas
+				factor = 0
+			}
+			country_event = KoKi_YJ_CAN_event.101
+		}
+		25 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_CAN_2_ideas
+					NOT = {
+						has_idea = YJ_CAN_1_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_CAN_event.102
+		}
+		25 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_CAN_3_ideas
+					NOT = {
+						has_idea = YJ_CAN_1_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_CAN_event.103
+		}
+		25 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_CAN_4_ideas
+					NOT = {
+						has_idea = YJ_CAN_1_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_CAN_event.104
+		}
+	}
+}
+
+TUR_YJ_scripted_effects = {
+	random_list = {
+		33.3 = {
+			modifier = {
+				has_idea = YJ_TUR_1_ideas
+				factor = 0
+			}
+			country_event = KoKi_YJ_TUR_event.101
+		}
+		33.3 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_TUR_2_ideas
+					NOT = {
+						has_idea = YJ_TUR_1_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_TUR_event.102
+		}
+		33.3 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_TUR_3_ideas
+					NOT = {
+						has_idea = YJ_TUR_1_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_TUR_event.103
+		}
+	}
+}
+
+MEX_state_YJ_scripted_effects = {
+	171 = {
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = USA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = ENG
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = BRA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = MEX
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = RAJ
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = PHI
+		}
+	}
+	790 = {
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = USA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = ENG
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = BRA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = MEX
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = RAJ
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = PHI
+		}
+	}
+	792 = {
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = USA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = ENG
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = BRA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = MEX
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = RAJ
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = PHI
+		}
+	}
+	806 = {
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = USA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = ENG
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = BRA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = MEX
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = RAJ
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = PHI
+		}
+	}
+	19 = {
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = USA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = ENG
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = BRA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = MEX
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = RAJ
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = PHI
+		}
+	}
+	23 = {
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = USA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = ENG
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = BRA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = MEX
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = RAJ
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = PHI
+		}
+	}
+	30 = {
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = USA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = ENG
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = BRA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = MEX
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = RAJ
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = PHI
+		}
+	}
+	14 = {
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = USA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = ENG
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = BRA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = MEX
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = RAJ
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = PHI
+		}
+	}
+	15 = {
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = USA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = ENG
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = BRA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = MEX
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = RAJ
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = PHI
+		}
+	}
+	785 = {
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = USA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = ENG
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = BRA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = MEX
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = RAJ
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = PHI
+		}
+	}
+	29 = {
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = USA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = ENG
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = BRA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = MEX
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = RAJ
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = PHI
+		}
+	}
+	6 = {
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = USA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = ENG
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = BRA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = MEX
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = RAJ
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = PHI
+		}
+	}
+	35 = {
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = USA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = ENG
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = BRA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = MEX
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = RAJ
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = PHI
+		}
+	}
+	7 = {
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = USA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = ENG
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = BRA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = MEX
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = RAJ
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = PHI
+		}
+	}
+	36 = {
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = USA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = ENG
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = BRA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = MEX
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = RAJ
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = PHI
+		}
+	}
+	56 = {
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = USA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = ENG
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = BRA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = MEX
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = RAJ
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = PHI
+		}
+	}
+	59 = {
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = USA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = ENG
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = BRA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = MEX
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = RAJ
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = PHI
+		}
+	}
+	58 = {
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = USA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = ENG
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = BRA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = MEX
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = RAJ
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = PHI
+		}
+	}
+	909 = {
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = USA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = ENG
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = BRA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = MEX
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = RAJ
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = PHI
+		}
+	}
+	912 = {
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = USA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = ENG
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = BRA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = MEX
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = RAJ
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = PHI
+		}
+	}
+	99 = {
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = USA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = ENG
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = BRA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = MEX
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = RAJ
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = PHI
+		}
+	}
+	110 = {
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = USA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = ENG
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = BRA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = MEX
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = RAJ
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = PHI
+		}
+	}
+	921 = {
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = USA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = ENG
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = BRA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = MEX
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = RAJ
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = PHI
+		}
+	}
+	922 = {
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = USA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = ENG
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = BRA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = MEX
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = RAJ
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = PHI
+		}
+	}
+	142 = {
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = USA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = ENG
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = BRA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = MEX
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = RAJ
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = PHI
+		}
+	}
+	143 = {
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = USA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = ENG
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = BRA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = MEX
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = RAJ
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = PHI
+		}
+	}
+	923 = {
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = USA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = ENG
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = BRA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = MEX
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = RAJ
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = PHI
+		}
+	}
+	144 = {
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = USA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = ENG
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = BRA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = MEX
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = RAJ
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = PHI
+		}
+	}
+	924 = {
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = USA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = ENG
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = BRA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = MEX
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = RAJ
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = PHI
+		}
+	}
+	925 = {
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = USA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = ENG
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = BRA
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = MEX
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = RAJ
+		}
+		add_dynamic_modifier = {
+			modifier = YJ_MEX_state_2_ideas
+			scope = PHI
+		}
+	}
+}
+
+
+KoKi_YJ_ITA_event_1_scripted_effects = {
+	random_list = {
+		50 = {
+			set_variable = { KoKi_YJ_ITA_event_1_industrial_capacity_factory = 0 }
+			set_variable = { KoKi_YJ_ITA_event_1_industrial_capacity_dockyard = 0 }
+			set_variable = { KoKi_YJ_ITA_event_1_production_factory_max_efficiency_factor = 0 }
+			set_variable = { KoKi_YJ_ITA_event_1_production_factory_efficiency_gain_factor = 0 }
+			set_variable = { KoKi_YJ_ITA_event_1_production_lack_of_resource_penalty_factor = 0 }
+
+			set_variable = { KoKi_YJ_ITA_event_1_army_attack_factor = 0.1 }
+			set_variable = { KoKi_YJ_ITA_event_1_army_defence_factor = 0.1 }
+			set_variable = { KoKi_YJ_ITA_event_1_breakthrough_factor = 0.1 }
+			set_variable = { KoKi_YJ_ITA_event_1_naval_damage_factor = 0.1 }
+			set_variable = { KoKi_YJ_ITA_event_1_naval_defense_factor = 0.1 }
+			set_variable = { KoKi_YJ_ITA_event_1_naval_speed_factor = 0.1 }
+			set_variable = { KoKi_YJ_ITA_event_1_air_defence_factor = 0.1 }
+			set_variable = { KoKi_YJ_ITA_event_1_air_agility_factor = 0.1 }
+			set_variable = { KoKi_YJ_ITA_event_1_air_maximum_speed_factor = 0.1 }
+		}
+		50 = {
+			set_variable = { KoKi_YJ_ITA_event_1_industrial_capacity_factory = 0.1 }
+			set_variable = { KoKi_YJ_ITA_event_1_industrial_capacity_dockyard = 0.1 }
+			set_variable = { KoKi_YJ_ITA_event_1_production_factory_max_efficiency_factor = 0.1 }
+			set_variable = { KoKi_YJ_ITA_event_1_production_factory_efficiency_gain_factor = 0.1 }
+			set_variable = { KoKi_YJ_ITA_event_1_production_lack_of_resource_penalty_factor = -0.3 }
+
+			set_variable = { KoKi_YJ_ITA_event_1_army_attack_factor = 0 }
+			set_variable = { KoKi_YJ_ITA_event_1_army_defence_factor = 0 }
+			set_variable = { KoKi_YJ_ITA_event_1_breakthrough_factor = 0 }
+			set_variable = { KoKi_YJ_ITA_event_1_naval_damage_factor = 0 }
+			set_variable = { KoKi_YJ_ITA_event_1_naval_defense_factor = 0 }
+			set_variable = { KoKi_YJ_ITA_event_1_naval_speed_factor = 0 }
+			set_variable = { KoKi_YJ_ITA_event_1_air_defence_factor = 0 }
+			set_variable = { KoKi_YJ_ITA_event_1_air_agility_factor = 0 }
+			set_variable = { KoKi_YJ_ITA_event_1_air_maximum_speed_factor = 0 }
+		}
+	}
+}
+
+#pp抽奖
+KoKi_YJ_decisions_pp = {
+    hidden_effect = {
+        if = { limit = { check_variable = { YJ_rng = 1 } } country_event = KoKi_YJ_pp.1 }
+        else_if = { limit = { check_variable = { YJ_rng = 2 } } country_event = KoKi_YJ_pp.2 }
+        else_if = { limit = { check_variable = { YJ_rng = 3 } } country_event = KoKi_YJ_pp.3 }
+        else_if = { limit = { check_variable = { YJ_rng = 4 } } country_event = KoKi_YJ_pp.4 }
+        else_if = { limit = { check_variable = { YJ_rng = 5 } } country_event = KoKi_YJ_pp.6 }
+        else_if = { limit = { check_variable = { YJ_rng = 6 } } country_event = KoKi_YJ_pp.5 }
+        else_if = { limit = { check_variable = { YJ_rng = 7 } } country_event = KoKi_YJ_pp.7 }
+        else_if = { limit = { check_variable = { YJ_rng = 8 } } country_event = KoKi_YJ_pp.9 }
+        else_if = { limit = { check_variable = { YJ_rng = 9 } } country_event = KoKi_YJ_pp.21 }
+        else_if = { limit = { check_variable = { YJ_rng = 10 } } country_event = KoKi_YJ_pp.22 }
+        else_if = { limit = { check_variable = { YJ_rng = 11 } } country_event = KoKi_YJ_pp.8 }
+        else_if = { limit = { check_variable = { YJ_rng = 12 } } country_event = KoKi_YJ_pp.23 }
+        else_if = { limit = { check_variable = { YJ_rng = 13 } } country_event = KoKi_YJ_pp.24 }
+        else_if = { limit = { check_variable = { YJ_rng = 14 } } country_event = KoKi_YJ_pp.25 }
+        else_if = { limit = { check_variable = { YJ_rng = 15 } } country_event = KoKi_YJ_pp.26 }
+        else_if = { limit = { check_variable = { YJ_rng = 16 } } country_event = KoKi_YJ_pp.27 }
+        else_if = { limit = { check_variable = { YJ_rng = 17 } } country_event = KoKi_YJ_pp.28 }
+        else_if = { limit = { check_variable = { YJ_rng = 18 } } country_event = KoKi_YJ_pp.18 }
+        else_if = { limit = { check_variable = { YJ_rng = 19 } } country_event = KoKi_YJ_pp.19 }
+        else_if = { limit = { check_variable = { YJ_rng = 20 } } country_event = KoKi_YJ_pp.20 }
+		else_if = { limit = { check_variable = { YJ_rng = 21 } } country_event = KoKi_YJ_pp.29 }
+    }
+}
+
+#资源抽奖
+
+YJ_ZY_scripted_effects_1 = {
+    hidden_effect = {
+        if = { limit = { check_variable = { YJ_rng1 < 16 } } country_event = KoKi_YJ_pp_resource.10 }
+        else_if = { limit = { check_variable = { YJ_rng1 < 32 } } country_event = KoKi_YJ_pp_resource.11 }
+        else_if = { limit = { check_variable = { YJ_rng1 < 48 } } country_event = KoKi_YJ_pp_resource.12 }
+        else_if = { limit = { check_variable = { YJ_rng1 < 64 } } country_event = KoKi_YJ_pp_resource.13 }
+        else_if = { limit = { check_variable = { YJ_rng1 < 80 } } country_event = KoKi_YJ_pp_resource.14 }
+        else_if = { limit = { check_variable = { YJ_rng1 < 95 } } country_event = KoKi_YJ_pp_resource.15 }
+        else_if = { limit = { check_variable = { YJ_rng1 < 101 } } country_event = KoKi_YJ_pp_resource.17 }
+    }
+}
+
+YJ_JL_LJ = {
+    hidden_effect = {
+        if = {
+            limit = { 
+                NOT = { has_country_flag = YJ_pool_initialized } 
+            }
+            for_loop_effect = {
+                end = 33
+                compare = less_than
+                value = current_i
+                
+                if = {
+                    limit = { check_variable = { current_i > 0 } }
+                    add_to_array = { YJ_event_pool = current_i }
+                }
+            }
+            set_country_flag = YJ_pool_initialized
+        }
+
+        if = {
+            limit = { 
+                check_variable = { YJ_event_pool^num > 0 } 
+            }
+            
+            set_variable = { pool_size = YJ_event_pool^num }
+            
+            set_variable = { random_index = 0 }
+            set_variable_to_random = { var = random_index min = 0 max = 9999 }
+            modulo_variable = { random_index = pool_size }
+            
+            set_temp_variable = { drawn_event = YJ_event_pool^random_index }
+            remove_from_array = { YJ_event_pool = drawn_event }
+
+            if = { limit = { check_variable = { drawn_event = 1 } } country_event = KoKi_YJ_JL_event.1 }
+            else_if = { limit = { check_variable = { drawn_event = 2 } } country_event = KoKi_YJ_JL_event.2 }
+            else_if = { limit = { check_variable = { drawn_event = 3 } } country_event = KoKi_YJ_JL_event.3 }
+            else_if = { limit = { check_variable = { drawn_event = 4 } } country_event = KoKi_YJ_JL_event.4 }
+            else_if = { limit = { check_variable = { drawn_event = 5 } } country_event = KoKi_YJ_JL_event.5 }
+            else_if = { limit = { check_variable = { drawn_event = 6 } } country_event = KoKi_YJ_JL_event.6 }
+            else_if = { limit = { check_variable = { drawn_event = 7 } } country_event = KoKi_YJ_JL_event.7 }
+            else_if = { limit = { check_variable = { drawn_event = 8 } } country_event = KoKi_YJ_JL_event.8 }
+            else_if = { limit = { check_variable = { drawn_event = 9 } } country_event = KoKi_YJ_JL_event.9 }
+            else_if = { limit = { check_variable = { drawn_event = 10 } } country_event = KoKi_YJ_JL_event.10 }
+            else_if = { limit = { check_variable = { drawn_event = 11 } } country_event = KoKi_YJ_JL_event.11 }
+            else_if = { limit = { check_variable = { drawn_event = 12 } } country_event = KoKi_YJ_JL_event.12 }
+            else_if = { limit = { check_variable = { drawn_event = 13 } } country_event = KoKi_YJ_JL_event.13 }
+            else_if = { limit = { check_variable = { drawn_event = 14 } } country_event = KoKi_YJ_JL_event.14 }
+            else_if = { limit = { check_variable = { drawn_event = 15 } } country_event = KoKi_YJ_JL_event.15 }
+            else_if = { limit = { check_variable = { drawn_event = 16 } } country_event = KoKi_YJ_JL_event.16 }
+            else_if = { limit = { check_variable = { drawn_event = 17 } } country_event = KoKi_YJ_JL_event.17 }
+            else_if = { limit = { check_variable = { drawn_event = 18 } } country_event = KoKi_YJ_JL_event.18 }
+            else_if = { limit = { check_variable = { drawn_event = 19 } } country_event = KoKi_YJ_JL_event.19 }
+            else_if = { limit = { check_variable = { drawn_event = 20 } } country_event = KoKi_YJ_JL_event.21 }
+            else_if = { limit = { check_variable = { drawn_event = 21 } } country_event = KoKi_YJ_JL_event.22 }
+            else_if = { limit = { check_variable = { drawn_event = 22 } } country_event = KoKi_YJ_JL_event.23 }
+            else_if = { limit = { check_variable = { drawn_event = 23 } } country_event = KoKi_YJ_JL_event.24 }
+            else_if = { limit = { check_variable = { drawn_event = 24 } } country_event = KoKi_YJ_JL_event.25 }
+            else_if = { limit = { check_variable = { drawn_event = 25 } } country_event = KoKi_YJ_JL_event.26 }
+            else_if = { limit = { check_variable = { drawn_event = 26 } } country_event = KoKi_YJ_JL_event.27 }
+            else_if = { limit = { check_variable = { drawn_event = 27 } } country_event = KoKi_YJ_JL_event.28 }
+            else_if = { limit = { check_variable = { drawn_event = 28 } } country_event = KoKi_YJ_JL_event.29 }
+            else_if = { limit = { check_variable = { drawn_event = 29 } } country_event = KoKi_YJ_JL_event.30 }
+            else_if = { limit = { check_variable = { drawn_event = 30 } } country_event = KoKi_YJ_JL_event.31 }
+            else_if = { limit = { check_variable = { drawn_event = 31 } } country_event = KoKi_YJ_JL_event.32 }
+            else_if = { limit = { check_variable = { drawn_event = 32 } } country_event = KoKi_YJ_JL_event.33 }
+        }
+    }
+}

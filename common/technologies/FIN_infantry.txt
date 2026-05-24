@@ -1,0 +1,32 @@
+technologies = {
+	FIN_mountaineers_tech = { 
+		mountaineers = {
+			soft_attack = 0.05
+			hard_attack = 0.05
+			breakthrough = 0.1
+			defence = 0.1
+			speed = 0.1
+			maximum_speed = 1
+			supply_consumption = -0.02
+		}
+		winter_logistics_support = {
+			acclimatization_cold_climate_gain_factor = 3
+			supply_consumption = -0.2
+			soft_attack = 8.33
+		}
+		long_range_patrol_support = {
+			acclimatization_cold_climate_gain_factor = 3
+			supply_consumption = -0.1
+			soft_attack = 8.33
+			battalion_mult = {
+				category = category_light_infantry
+				initiative = 0.05
+				add = yes
+			}
+			battalion_mult = {
+				category = category_all_armor
+				hard_attack = 0.1
+			}
+		}
+	}
+}

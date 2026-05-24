@@ -1,0 +1,48 @@
+add_namespace = host
+
+# 3速
+news_event = {
+	id = host.1
+	title = host.1.t
+	desc = host.1.desc
+
+	picture = GFX_news_event_CHI_ohmen
+	is_triggered_only = yes
+	major = yes
+
+
+	option = {
+		name = host.1.a
+	}
+}
+
+# 4速
+news_event = {
+	id = host.2
+	title = host.2.t
+	desc = host.2.desc
+
+	picture = GFX_news_event_monkeyak
+	is_triggered_only = yes
+	major = yes
+
+
+	option = {
+		name = host.2.a
+	}
+}
+
+news_event = {
+	id = host.3
+	title = host.3.t
+	desc = host.3.desc
+
+	picture = GFX_news_event_prc_declared
+	is_triggered_only = yes
+	major = yes
+
+
+	option = {
+		name = host.3.a
+	}
+}
