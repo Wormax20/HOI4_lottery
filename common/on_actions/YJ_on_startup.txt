@@ -1512,4 +1512,16 @@ on_actions = {
 			}
 		}
 	}
+
+	on_weekly = {
+		effect = {
+			YJ_most_factory = yes
+			if = {
+				limit = {
+					has_country_flag = YJ_bread_flag
+				}
+				set_cosmetic_tag = YJ_bread_tag
+			}
+		}
+	}
 }

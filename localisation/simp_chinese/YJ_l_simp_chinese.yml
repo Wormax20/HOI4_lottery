@@ -1314,3 +1314,23 @@ VICTORY_POINTS_11959:0 "AK的家"
 VICTORY_POINTS_12434:0 "生命之路"
 
 YJ_war_bf: "战争前夜"
+
+YJ_bread:0 "§Y成為麵包§!"
+YJ_bread_tt: "§Y成為麵包§!"
+
+YJ_no_bread:0 "§R失去麵包§!"
+YJ_no_bread_tt: "§R失去麵包§!"
+
+YJ_most_factory_country:0 "§Y民用工厂数量最多的国家§!"
+
+YJ_bread_cos:0 "麵包"
+YJ_bread_cos_DEF:0 "麵包"
+
+YJ_bread_cos_democratic:0 "麵包"
+YJ_bread_cos_democratic_DEF:0 "麵包"
+
+YJ_bread_cos_communism:0 "麵包"
+YJ_bread_cos_communism_DEF:0 "麵包"
+
+YJ_bread_cos_neutrality:0 "麵包"
+YJ_bread_cos_neutrality_DEF:0 "麵包"

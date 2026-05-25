@@ -909,6 +909,55 @@ KoKi_YJ_decisions_categories = {
 			custom_effect_tooltip = YJ_60d_resource_tt
 		}
 	}
+
+	YJ_bread = {
+		activation = {
+			has_country_flag = YJ_most_factory_country
+			NOT = {
+				has_country_flag = YJ_bread_flag
+			}
+			date > 1938.1.1
+		}
+		available = {
+			num_of_civilian_factories < global.sec_max_civ
+			NOT = {
+				has_country_flag = YJ_most_factory_country
+			}
+		}
+
+		is_good = no
+		days_mission_timeout = 30
+
+		timeout_effect = {
+			add_stability = 0.01
+			add_political_power = 1
+			custom_effect_tooltip = YJ_bread_tt
+			set_country_flag = YJ_bread_flag
+			set_cosmetic_tag = YJ_bread_cos
+		}
+	}
+	YJ_no_bread = {
+		activation = {
+			NOT = {
+				has_country_flag = YJ_most_factory_country
+			}
+			has_country_flag = YJ_bread_flag
+		}
+		available = {
+			num_of_civilian_factories > global.max_civ
+		}
+
+		is_good = yes
+		days_mission_timeout = 30
+
+		timeout_effect = {
+			add_stability = -0.01
+			add_political_power = -1
+			custom_effect_tooltip = YJ_no_bread_tt
+			clr_country_flag = YJ_bread_flag
+			drop_cosmetic_tag = yes
+		}
+	}
 }
 
 

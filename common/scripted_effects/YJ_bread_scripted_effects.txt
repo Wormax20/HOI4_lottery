@@ -1,0 +1,60 @@
+YJ_most_factory = {
+    set_variable = { global.max_civ = 0 }
+    
+    every_country = {
+        limit = { is_ai = no }
+        clr_country_flag = YJ_candidate_civ
+        clr_country_flag = YJ_most_factory_country
+        
+        clr_country_flag = YJ_sec_candidate_civ 
+        clr_country_flag = YJ_sec_factory_country
+    }
+
+    every_country = {
+        limit = { is_ai = no }
+        if = {
+            limit = { check_variable = { num_of_civilian_factories > global.max_civ } }
+            set_variable = { global.max_civ = num_of_civilian_factories }
+        }
+    }
+
+    every_country = {
+        limit = { 
+            is_ai = no
+            check_variable = { num_of_civilian_factories = global.max_civ }
+        }
+        set_country_flag = YJ_candidate_civ
+    }
+
+    random_country = {
+        limit = { has_country_flag = YJ_candidate_civ }
+        set_country_flag = YJ_most_factory_country
+    }
+
+    set_variable = { global.sec_max_civ = 0 }
+
+    every_country = {
+        limit = {
+            is_ai = no
+            NOT = { has_country_flag = YJ_most_factory_country }
+        }
+        if = {
+            limit = { check_variable = { num_of_civilian_factories > global.sec_max_civ } }
+            set_variable = { global.sec_max_civ = num_of_civilian_factories }
+        }
+    }
+
+    every_country = {
+        limit = { 
+            is_ai = no
+            NOT = { has_country_flag = YJ_most_factory_country }
+            check_variable = { num_of_civilian_factories = global.sec_max_civ }
+        }
+        set_country_flag = YJ_sec_candidate_civ
+    }
+
+    random_country = {
+        limit = { has_country_flag = YJ_sec_candidate_civ }
+        set_country_flag = YJ_sec_factory_country
+    }
+}
