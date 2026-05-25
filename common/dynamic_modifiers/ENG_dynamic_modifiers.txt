@@ -27,9 +27,8 @@ YJ_USA_3_ideas = {
 	icon = GFX_idea_USA_union_pacific_railway
 	custom_modifier_tooltip = YJ_USA_3_ideas_tt
 	industrial_capacity_dockyard = 0.1   #海军船坞产出
-	production_factory_max_efficiency_factor = 0.05 #生产效率上限
+	production_speed_dockyard_factor = 0.1   #海军船坞建造速度
 	industrial_capacity_factory = 0.05 #工厂产出
-	production_factory_efficiency_gain_factor =0.2 #生产效率增长
 	land_night_attack = 0.05 #夜间攻击
     org_loss_at_low_org_factor = -0.2 #组织度低于25%时的损失
 	command_power_gain = 0.3 #每日指挥点增长
@@ -38,6 +37,7 @@ YJ_USA_3_ideas = {
 	army_defence_factor = 0.05 #陆军师防御
 	special_forces_attack_factor = 0.05 #特种攻击
 	land_night_attack = 0.05  #陆战夜战攻击
+	production_factory_max_efficiency_factor = 0.05 #生产效率上限
 	production_factory_efficiency_gain_factor = 0.2 #生产效率增长
 }
 
