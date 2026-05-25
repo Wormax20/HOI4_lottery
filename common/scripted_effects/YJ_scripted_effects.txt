@@ -442,12 +442,14 @@ FRA_YJ_scripted_effects = {
 			25 = {
 				modifier = {
 					has_idea = YJ_FRA_2_ideas
+					has_idea = YJ_FRA_3_ideas
 					factor = 0
 				}
 				country_event = KoKi_YJ_FRA_event.102
 			}
 			25 = {
 				modifier = {
+					has_idea = YJ_FRA_2_ideas
 					has_idea = YJ_FRA_3_ideas
 					factor = 0
 				}
