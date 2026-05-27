@@ -165,7 +165,7 @@ country_event = {
 }
 
 country_event = {
-	id = KoKi_YJ_JL_event.NPL
+	id = KoKi_YJ_FRA_event.NPL
 	title = KoKi_YJ_JL_event.NPL.title
 	desc = KoKi_YJ_JL_event.NPL.desc
 	
@@ -211,7 +211,7 @@ country_event = {
 }
 
 country_event = {
-	id = KoKi_YJ_JL_event.zd
+	id = KoKi_YJ_FRA_event.zd
 	title = KoKi_YJ_JL_event.zd.title
 	desc = KoKi_YJ_JL_event.zd.desc
 	

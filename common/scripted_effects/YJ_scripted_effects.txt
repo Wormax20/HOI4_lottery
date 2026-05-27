@@ -496,7 +496,7 @@ FRA_YJ_scripted_effects = {
 					factor = 0
 				}
 				country_event = KoKi_YJ_FRA_event.101
-				country_event = KoKi_YJ_JL_event.NPL
+				country_event = KoKi_YJ_FRA_event.NPL
 			}
 			20 = {
 				modifier = {
@@ -508,7 +508,7 @@ FRA_YJ_scripted_effects = {
 					factor = 0
 				}
 				country_event = KoKi_YJ_FRA_event.102
-				country_event = KoKi_YJ_JL_event.zd
+				country_event = KoKi_YJ_FRA_event.zd
 			}
 			20 = {
 				modifier = {
