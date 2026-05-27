@@ -592,12 +592,6 @@ ITA_YJ_scripted_effects = {
 				OR = {
 					has_idea = YJ_ITA_01_ideas
 					has_idea = YJ_ITA_02_ideas
-					FRA = {
-						is_ai = no
-					}
-					SWI = {
-						is_ai = no
-					}
 				}
 				factor = 0
 			}
