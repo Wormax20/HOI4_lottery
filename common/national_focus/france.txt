@@ -3540,12 +3540,7 @@
 		}
 
 		available = {
-			NOT = {
-				OR = {
-					has_completed_focus = FRA_invite_communist_ministers
-					has_completed_focus = FRA_utilize_the_leagues
-				}
-			}
+
 		}
 		
 		bypass = {
@@ -4330,7 +4325,7 @@
 	 	available = {
 		}
 	 	prerequisite = { focus = FRA_form_the_popular_front }
-		x = -3
+		x = -5
 		y = 1
 		relative_position_id = FRA_form_the_popular_front
 		cost = 10
@@ -4385,7 +4380,7 @@
 	 		}
 		}
 	 	prerequisite = { focus = FRA_leftist_rhetoric }
-		x = -3
+		x = -1
 		y = 1
 		relative_position_id = FRA_leftist_rhetoric
 		cost = 10
