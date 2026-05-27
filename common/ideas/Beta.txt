@@ -1451,8 +1451,8 @@ ideas = {
 				naval_invasion_prep_speed = 0.75
 				special_forces_cap = 0.1 #特种部队上限增加
 				army_bonus_air_superiority_factor = 0.40 #制空權
-				air_superiority_bonus_in_combat = 0.40
-				supply_consumption_factor = -0.15
+				air_superiority_bonus_in_combat = 0.20 #戰鬥中空優加成
+				supply_consumption_factor = -0.20 #補給消耗
 				transport_capacity = -0.5
 			}
 			research_bonus = {
@@ -1499,8 +1499,9 @@ ideas = {
 				attrition = 0.1 #陆军师损耗
 				global_building_slots_factor = 0.2
 				production_speed_buildings_factor = 0.05 #建造速度
+				local_resources_factor = 0.1 #战略资源获取效率
 				production_factory_max_efficiency_factor = 0.1 #生产效率上限
-				production_lack_of_resource_penalty_factor = -0.2
+				production_lack_of_resource_penalty_factor = -0.2 #缺乏戰略資源懲罰
 				industrial_capacity_factory = 0.1 #工厂产出
 				industrial_capacity_dockyard = 0.1 #海军船坞产出
 				research_speed_factor = 0.1
@@ -2832,7 +2833,7 @@ ideas = {
 				consumer_goods_factor = -0.1 #生活消费品工厂系数
 				consumer_goods_expected_value = -0.2  #用于生产生活消费品的期望工厂数量
 				local_resources_factor = 0.20 #战略资源获取率
-				production_resources_need_factor = -0.10 #生產資源花費
+				production_resource_need_factor = -0.10 #生產資源花費
 			}
 		}
 
@@ -3054,10 +3055,10 @@ ideas = {
 			modifier = {
 				custom_modifier_tooltip = YJ_TUR_1_ideas_tt
 				political_power_factor = 0.15 #政治点数
-				stability_weekly = 0.002 #每周稳定度增长
-				war_support_weekly = 0.002 #每周战争支持度增长
-				consumer_goods_factor = -0.1 #生活消费品工厂系数
-				consumer_goods_expected_value = -0.2  #用于生产生活消费品的期望工厂数量
+				stability_weekly = 0.01 #每周稳定度增长
+				war_support_weekly = 0.01 #每周战争支持度增长
+				consumer_goods_factor = -0.15 #生活消费品工厂系数
+				consumer_goods_expected_value = -0.15  #用于生产生活消费品的期望工厂数量
 				production_factory_max_efficiency_factor = 0.1 #生产效率上限
 				production_factory_efficiency_gain_factor = 0.1 #生产效率增长
 				industrial_capacity_factory = 0.1			#工厂产出
@@ -3095,8 +3096,8 @@ ideas = {
 
 			modifier = {
 				custom_modifier_tooltip = YJ_TUR_2_ideas_tt
-				political_power_factor = 0.1 #政治点数
-				consumer_goods_expected_value = -0.1  #用于生产生活消费品的期望工厂数量
+				political_power_factor = 0.10 #政治点数
+				consumer_goods_expected_value = -0.05  #用于生产生活消费品的期望工厂数量
 				army_artillery_attack_factor = 0.25 #炮兵攻击
 				army_artillery_defence_factor = 0.25 #炮兵防御
 				army_attack_factor = 0.05
