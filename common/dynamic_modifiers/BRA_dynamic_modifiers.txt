@@ -1,0 +1,10 @@
+YJ_BRA_2_ideas = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_por_empire
+	custom_modifier_tooltip = YJ_BRA_2_ideas_tt
+	INDUSTRIAL_FACTORY_DONATIONS = Beta_BRA_2_INDUSTRIAL_FACTORY_DONATIONS
+	MILITARY_FACTORY_DONATIONS = Beta_BRA_2_MILITARY_FACTORY_DONATIONS
+	DOCKYARD_DONATIONS = Beta_BRA_2_DOCKYARD_DONATIONS
+}

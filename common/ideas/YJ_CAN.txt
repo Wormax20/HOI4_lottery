@@ -1,0 +1,228 @@
+ideas = {
+	country = {
+		YJ_CAN_1_ideas = { #我们不要主人
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+
+			modifier = {
+				custom_modifier_tooltip = YJ_CAN_1_ideas_tt
+				political_power_gain = 1 #每日获得的政治点数
+				political_power_factor = 0.15 #政治点数
+				stability_weekly = 0.005 #每周稳定度增长
+				war_support_weekly = 0.005 #每周战争支持度增长
+				consumer_goods_factor = -0.1 #生活消费品工厂系数
+				consumer_goods_expected_value = -0.2  #用于生产生活消费品的期望工厂数量
+				local_resources_factor = 0.20 #战略资源获取率
+				production_resource_need_factor = -0.10 #生產資源花費
+			}
+		}
+
+		
+		YJ_CAN_2_ideas = { #加拿大海陆突击队
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_naval_invade_britain
+
+			modifier = {
+				custom_modifier_tooltip = YJ_CAN_2_ideas_tt
+				political_power_factor = 0.15 #政治点数
+				production_factory_max_efficiency_factor = 0.05 #生产效率上限
+				industrial_capacity_factory = 0.05	#工厂产出
+				land_night_attack = 0.05  #陆战夜战攻击
+				max_planning = 0.1	# 计划上限
+				
+			}
+			equipment_bonus = {
+				amphibious_mechanized_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				mechanized_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
+
+		YJ_CAN_3_ideas = { #美加合作
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = air_support_focus
+
+			modifier = {
+				custom_modifier_tooltip = YJ_CAN_3_ideas_tt
+				political_power_factor = 0.15 #政治点数
+				air_superiority_efficiency = 0.20 #夺取制空任务效率
+				air_range_factor = 0.15 #航程
+				air_agility_factor = 0.1 #机动
+				air_maximum_speed_factor = 0.1         #空军最大速度
+			}
+			equipment_bonus = {
+				medium_plane_fighter_airframe = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+			}
+		}
+
+		YJ_CAN_4_ideas = { #民主兵工厂
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_local_self_management
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.25 #生产效率增长
+				industrial_capacity_factory = 0.05			#工厂产出
+				production_factory_max_efficiency_factor = 0.05 #生产效率上限
+			}
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				amphibious_mechanized_equipment = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				mechanized_equipment = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				small_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+				small_plane_cas_airframe = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+				cv_small_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+				medium_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+				medium_plane_scout_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+				large_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+				large_plane_maritime_patrol_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		
+		YJ_CAN_5_ideas = { #和睦家庭
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = prc_low_popular_support2
+
+			modifier = {
+				custom_modifier_tooltip = YJ_CAN_5_ideas_tt
+				political_power_factor = 0.03 #政治点数
+				production_factory_efficiency_gain_factor = 0.03 #生产效率增长
+				industrial_capacity_factory = 0.03			#工厂产出
+				production_factory_max_efficiency_factor = 0.03 #生产效率上限
+				consumer_goods_factor = -0.03 #生活消费品工厂系数
+				consumer_goods_expected_value = -0.03  #用于生产生活消费品的期望工厂数量
+				coordination_bonus = 0.03 #协同性
+			}
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.03
+					instant = yes
+				}
+				amphibious_mechanized_equipment = {
+					build_cost_ic = -0.03
+					instant = yes
+				}
+				mechanized_equipment = {
+					build_cost_ic = -0.03
+					instant = yes
+				}
+				small_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.03
+				}
+				small_plane_cas_airframe = {
+					instant = yes
+					build_cost_ic = -0.03
+				}
+				cv_small_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.03
+				}
+				medium_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.03
+				}
+				medium_plane_scout_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.03
+				}
+				large_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.03
+				}
+				large_plane_maritime_patrol_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.03
+				}
+			}
+		}
+	}
+}

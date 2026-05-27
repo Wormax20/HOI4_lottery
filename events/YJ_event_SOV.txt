@@ -1,0 +1,1106 @@
+add_namespace = KoKi_YJ_SOV_event
+country_event = {
+	id = KoKi_YJ_SOV_event.101
+	title = KoKi_YJ_SOV_event.101.title
+	desc = KoKi_YJ_SOV_event.101.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ_SOV_event.101.a
+		add_ideas = YJ_SOV_1_ideas
+		create_intelligence_agency = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		complete_national_focus = SOV_the_centre
+		complete_national_focus = SOV_the_path_of_marxism_leninism
+		complete_national_focus = SOV_the_bloc_of_rights_and_trotskyites
+		complete_national_focus = SOV_secure_the_administration
+		complete_national_focus = SOV_organization_centralization_discipline
+		complete_national_focus = SOV_behead_the_snake
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+}
+
+country_event = {
+	id = KoKi_YJ_SOV_event.102
+	title = KoKi_YJ_SOV_event.102.title
+	desc = KoKi_YJ_SOV_event.102.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		complete_national_focus = SOV_the_path_of_marxism_leninism
+		complete_national_focus = SOV_the_right_opposition
+		complete_national_focus = SOV_the_need_for_policy_changes
+		complete_national_focus = SOV_dissent_in_the_party
+		complete_national_focus = SOV_coup_detat
+		complete_national_focus = SOV_gain_support_from_party_members
+		complete_national_focus = SOV_cooperation_against_stalin
+		complete_national_focus = SOV_international_revolutionary_marxist_centre
+		set_global_flag = SOV_soviet_civil_war_over
+		set_cosmetic_tag = SOV_right_opposition
+		remove_ideas = trotskyite_plot_nsb
+		name = KoKi_YJ_SOV_event.102.a
+		add_ideas = YJ_SOV_2_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+}
+
+country_event = {
+	id = KoKi_YJ_SOV_event.103
+	title = KoKi_YJ_SOV_event.103.title
+	desc = KoKi_YJ_SOV_event.103.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ_SOV_event.103.a
+		set_country_flag = KoKi_YJ_SOV_event_dynamic_modifiers_flag
+		add_dynamic_modifier = {
+			modifier = YJ_SOV_3_ideas
+		}
+		add_to_variable = { SOV_production_speed_buildings_factor = 0.1 tooltip = production_speed_buildings_factor_tt }
+		add_to_variable = { SOV_local_resources_factor = 0.1 tooltip = local_resources_factor_tt }
+		add_to_variable = { SOV_consumer_goods_factor = -0.05 tooltip = consumer_goods_factor_tt }
+		add_to_variable = { SOV_production_factory_efficiency_gain_factor = 0.05 tooltip = production_factory_efficiency_gain_factor_tt }
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+}
+
+country_event = {
+	id = KoKi_YJ_SOV_event.104
+	title = KoKi_YJ_SOV_event.104.title
+	desc = KoKi_YJ_SOV_event.104.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		complete_national_focus = SOV_the_path_of_marxism_leninism
+		complete_national_focus = SOV_the_left_opposition
+		complete_national_focus = SOV_integrate_smirnovs_bloc
+		complete_national_focus = SOV_approach_tukhachevsky
+		complete_national_focus = SOV_approach_primakov
+		complete_national_focus = SOV_left_opposition_coup
+		complete_national_focus = SOV_bring_old_trotskyists_back
+		complete_national_focus = SOV_the_fourth_international
+		complete_national_focus = SOV_committee_in_exile
+		complete_national_focus = SOV_gain_support_from_party_members
+		complete_national_focus = SOV_cooperation_against_stalin
+		set_cosmetic_tag = SOV_left_opposition
+		set_global_flag = SOV_soviet_civil_war_over
+		name = KoKi_YJ_SOV_event.104.a
+		add_ideas = YJ_SOV_4_ideas
+		remove_ideas = trotskyite_plot_nsb
+		if = {
+			limit = {
+				has_character = SOV_genrikh_yagoda
+			}
+
+			#Remove old trait
+			if = {
+				limit = {
+					SOV_genrikh_yagoda = {
+						has_trait = head_of_the_nkvd_yagoda_initial
+					}
+				}
+				remove_trait = {
+					character = SOV_genrikh_yagoda
+					trait = head_of_the_nkvd_yagoda_initial
+					slot = political_advisor
+				}
+			}
+			else_if = {
+				limit = {
+					SOV_genrikh_yagoda = {
+						has_trait = head_of_the_nkvd_yagoda
+					}
+				}
+				remove_trait = {
+					character = SOV_genrikh_yagoda
+					trait = head_of_the_nkvd_yagoda
+					slot = political_advisor
+				}
+			}
+
+			#Add final trait
+			add_trait = {
+				character = SOV_genrikh_yagoda
+				trait = head_of_the_nkvd_yagoda_no_paranoia
+				slot = political_advisor
+			}
+			set_can_be_fired_in_advisor_role = {
+				character = SOV_genrikh_yagoda 
+				value = yes
+			}
+		}
+
+		if = {
+			limit = {
+				has_character = SOV_nikolay_yezhov
+			}
+
+			#Remove old trait
+			if = {
+				limit = {
+					SOV_nikolay_yezhov = {
+						has_trait = head_of_the_nkvd_yezhov_initial
+					}
+				}
+				remove_trait = {
+					character = SOV_nikolay_yezhov
+					trait = head_of_the_nkvd_yezhov_initial
+					slot = political_advisor
+				}
+			}
+			else_if = {
+				limit = {
+					SOV_nikolay_yezhov = {
+						has_trait = head_of_the_nkvd_yezhov
+					}
+				}
+				remove_trait = {
+					character = SOV_nikolay_yezhov
+					trait = head_of_the_nkvd_yezhov
+					slot = political_advisor
+				}
+			}
+			
+			#Add final trait
+			add_trait = {
+				character = SOV_nikolay_yezhov
+				trait = head_of_the_nkvd_yezhov_no_paranoia
+				slot = political_advisor
+			}
+			set_can_be_fired_in_advisor_role = {
+				character = SOV_nikolay_yezhov 
+				value = yes
+			}
+		}
+
+		if = {
+			limit = {
+				has_character = SOV_lavrenty_beriya
+			}
+
+			#Remove old trait
+			if = {
+				limit = {
+					SOV_lavrenty_beriya = {
+						has_trait = head_of_the_nkvd_beriya_initial
+					}
+				}
+				remove_trait = {
+					character = SOV_lavrenty_beriya
+					trait = head_of_the_nkvd_beriya_initial
+					slot = political_advisor
+				}
+			}
+			else_if = {
+				limit = {
+					SOV_lavrenty_beriya = {
+						has_trait = head_of_the_nkvd_beriya
+					}
+				}
+				remove_trait = {
+					character = SOV_lavrenty_beriya
+					trait = head_of_the_nkvd_beriya
+					slot = political_advisor
+				}
+			}
+			
+			#Add final trait
+			add_trait = {
+				character = SOV_lavrenty_beriya
+				trait = head_of_the_nkvd_beriya_no_paranoia
+				slot = political_advisor
+			}
+			set_can_be_fired_in_advisor_role = {
+				character = SOV_lavrenty_beriya 
+				value = yes
+			}
+		}
+	    hidden_effect = {
+	  		meta_effect = {
+				text = {
+					generate_character = {
+						token_base = Brta_SOV_mikhail_kalinin
+						name = "米哈伊尔·加里宁"
+						portraits = {
+							army = {
+								small = "GFX_idea_mikhail_kalinin"
+							}
+						}
+
+						advisor = {
+							visible = {
+								has_country_flag = KoKi_YJ_SOV_event_104_flag
+							}
+							cost = 150
+							slot = political_advisor
+							idea_token = SOV_mikhail_kalinin
+							traits = { popular_figurehead }
+							ai_will_do = {
+								factor = 0
+							}    
+						}            
+					}    
+				}
+			}
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = Brta_SOV_nikita_khrushchyov
+						name = "尼基塔·赫鲁晓夫"
+						portraits = {
+							army = {
+								small = "GFX_idea_nikita_khrushchev"
+							}
+						}
+
+						advisor = {
+							visible = {
+								has_country_flag = KoKi_YJ_SOV_event_104_flag
+							}
+							cost = 150
+							slot = political_advisor
+							idea_token = SOV_nikita_khrushchyov
+							traits = { political_commissar }
+							ai_will_do = {
+								factor = 0
+							}    
+						}            
+					}    
+				}
+			}
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = Brta_SOV_nikolay_voznesensky
+						name = "尼古拉·沃兹涅先斯基"
+						portraits = {
+							army = {
+								small = "GFX_idea_SOV_nikolay_voznesensky"
+							}
+						}
+
+						advisor = {
+							visible = {
+								has_country_flag = KoKi_YJ_SOV_event_104_flag
+							}
+							cost = 150
+							slot = political_advisor
+							idea_token = SOV_nikolay_voznesensky
+							traits = { captain_of_industry }
+							ai_will_do = {
+								factor = 0
+							}    
+						}            
+					}    
+				}
+			}
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = Brta_SOV_lazar_kaganovich
+						name = "拉扎尔·卡冈诺维奇"
+						portraits = {
+							army = {
+								small = "GFX_idea_SOV_lazar_kaganovich"
+							}
+						}
+
+						advisor = {
+							visible = {
+								has_country_flag = KoKi_YJ_SOV_event_104_flag
+							}
+							cost = 150
+							slot = political_advisor
+							idea_token = SOV_lazar_kaganovich
+							traits = { iron_lazar }
+							ai_will_do = {
+								factor = 0
+							}    
+						}            
+					}    
+				}
+			}
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = Brta_SOV_genrikh_yagoda
+						name = "亨利希·亚戈达"
+						portraits = {
+							army = {
+								small = "GFX_idea_SOV_genrikh_yagoda"
+							}
+						}
+
+						advisor = {
+							visible = {
+								has_country_flag = KoKi_YJ_SOV_event_104_flag
+							}
+							cost = 150
+							slot = political_advisor
+							idea_token = SOV_genrikh_yagoda
+							traits = { head_of_the_nkvd_yagoda_initial }
+							on_add = {
+								ROOT = { add_to_variable = { SOV_paranoia_weekly_modifiers_amount = 1 } }
+								ROOT = { SOV_paranoia_modifier_update_gui_tooltip = yes }
+							}
+							on_remove = {
+								ROOT = { subtract_from_variable = { SOV_paranoia_weekly_modifiers_amount = 1 } }
+								ROOT = { SOV_paranoia_modifier_update_gui_tooltip = yes }
+							}
+							ai_will_do = {
+								factor = 0
+							}    
+						}            
+					}    
+				}
+			}
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = Brta_SOV_nikolay_yezhov
+						name = "尼古拉·叶若夫"
+						portraits = {
+							army = {
+								small = "GFX_idea_SOV_nikolay_yezhov"
+							}
+						}
+
+						advisor = {
+							visible = {
+								has_country_flag = KoKi_YJ_SOV_event_104_flag
+							}
+							cost = 150
+							slot = political_advisor
+							idea_token = SOV_nikolay_yezhov
+							traits = { head_of_the_nkvd_yagoda_initial }
+							on_add = {
+								ROOT = { add_to_variable = { SOV_paranoia_weekly_modifiers_amount = 2 } }
+								SOV_paranoia_modifier_update_gui_tooltip = yes
+							}
+							on_remove = {
+								ROOT = { subtract_from_variable = { SOV_paranoia_weekly_modifiers_amount = 2 } }
+								SOV_paranoia_modifier_update_gui_tooltip = yes
+							}
+							ai_will_do = {
+								factor = 0
+							}    
+						}            
+					}    
+				}
+			}
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = Brta_SOV_lavrenty_beriya
+						name = "拉夫连季·贝利亚"
+						portraits = {
+							army = {
+								small = "GFX_idea_SOV_lavrenty_beriya"
+							}
+						}
+
+						advisor = {
+							visible = {
+								has_country_flag = KoKi_YJ_SOV_event_104_flag
+							}
+							cost = 150
+							slot = political_advisor
+							idea_token = SOV_lavrenty_beriya
+							traits = { head_of_the_nkvd_beriya_initial }
+							on_add = {
+								ROOT = { add_to_variable = { SOV_paranoia_weekly_modifiers_amount = 2 } }
+								SOV_paranoia_modifier_update_gui_tooltip = yes
+							}
+							on_remove = {
+								ROOT = { subtract_from_variable = { SOV_paranoia_weekly_modifiers_amount = 2 } }
+					            SOV_paranoia_modifier_update_gui_tooltip = yes
+							}
+							ai_will_do = {
+								factor = 0
+							}    
+						}            
+					}    
+				}
+			}
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = Brta_KoKi_YJ_SOV_event_vsevolod_merkulov
+						name = "弗谢沃洛德·梅尔库洛夫"
+						portraits = {
+							army = {
+								small = "GFX_idea_soviet_vsevolod_merkulov"
+							}
+						}
+
+						advisor = {
+							visible = {
+								has_country_flag = KoKi_YJ_SOV_event_104_flag
+							}
+							cost = 150
+							slot = political_advisor
+							idea_token = KoKi_YJ_SOV_event_vsevolod_merkulov
+							traits = { head_of_intelligence }
+							ai_will_do = {
+								factor = 0
+							}    
+						}            
+					}    
+				}
+			}
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = Brta_SOV_vyacheslav_molotov
+						name = "维亚切斯拉夫·莫洛托夫"
+						portraits = {
+							army = {
+								small = "GFX_idea_SOV_vyacheslav_molotov"
+							}
+						}
+
+						advisor = {
+							visible = {
+								has_country_flag = KoKi_YJ_SOV_event_104_flag
+							}
+							cost = 150
+							slot = political_advisor
+							idea_token = SOV_vyacheslav_molotov
+							traits = { pc_for_foreign_affairs_molotov }
+							ai_will_do = {
+								factor = 0
+							}    
+						}            
+					}    
+				}
+			}
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = Brta_SOV_maksim_litvinov
+						name = "马克西姆·李维诺夫"
+						portraits = {
+							army = {
+								small = "GFX_idea_SOV_maksim_litvinov"
+							}
+						}
+
+						advisor = {
+							visible = {
+								has_country_flag = KoKi_YJ_SOV_event_104_flag
+							}
+							cost = 150
+							slot = political_advisor
+							idea_token = SOV_maksim_litvinov
+							traits = { pc_for_foreign_affairs_litvinov }
+							ai_will_do = {
+								factor = 0
+							}    
+						}            
+					}    
+				}
+			}
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = Brta_SOV_lev_trotsky
+						name = "列夫·托洛茨基"
+						portraits = {
+							army = {
+								small = "GFX_idea_SOV_lev_trotsky"
+							}
+						}
+
+						advisor = {
+							visible = {
+								has_country_flag = KoKi_YJ_SOV_event_104_flag
+							}
+							cost = 150
+							slot = political_advisor
+							idea_token = SOV_lev_trotsky
+							traits = { pc_military_naval_affairs }
+							ai_will_do = {
+								factor = 0
+							}    
+						}            
+					}    
+				}
+			}
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = Brta_SOV_ivan_smirnov
+						name = "伊万·斯米尔诺夫"
+						portraits = {
+							army = {
+							    small = "GFX_idea_SOV_ivan_smirnov"
+						    }
+						}
+
+						advisor = {
+							visible = {
+								has_country_flag = KoKi_YJ_SOV_event_104_flag
+							}
+							cost = 150
+							slot = political_advisor
+							idea_token = SOV_ivan_smirnov
+							traits = { head_directorate_of_new_buildings }
+							ai_will_do = {
+								factor = 0
+							}    
+						}            
+					}    
+				}
+			}
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = Brta_SOV_ivar_smilga
+						name = "伊瓦尔·斯米尔加"
+						portraits = {
+							army = {
+							    small = "GFX_idea_SOV_ivar_smilga"
+						    }
+						}
+
+						advisor = {
+							visible = {
+								has_country_flag = KoKi_YJ_SOV_event_104_flag
+							}
+							cost = 150
+							slot = political_advisor
+							idea_token = SOV_ivar_smilga
+							traits = { soviet_economist }
+							ai_will_do = {
+								factor = 0
+							}    
+						}            
+					}    
+				}
+			}
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = Brta_SOV_karl_radek
+						name = "卡尔·拉狄克"
+						portraits = {
+							army = {
+							    small = "GFX_idea_SOV_karl_radek"
+						    }
+						}
+
+						advisor = {
+							visible = {
+								has_country_flag = KoKi_YJ_SOV_event_104_flag
+							}
+							cost = 150
+							slot = political_advisor
+							idea_token = SOV_karl_radek
+							traits = { international_revolutionary }
+							ai_will_do = {
+								factor = 0
+							}    
+						}            
+					}    
+				}
+			}
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = Brta_SOV_yevgeny_preobrazhensky
+						name = "叶夫根尼·普列奥布拉任斯基"
+						portraits = {
+							army = {
+							    small = "GFX_idea_SOV_yevgeny_preobrazhensky"
+						    }
+						}
+
+						advisor = {
+							visible = {
+								has_country_flag = KoKi_YJ_SOV_event_104_flag
+							}
+							cost = 150
+							slot = political_advisor
+							idea_token = SOV_yevgeny_preobrazhensky
+							traits = { ecomonist_publicist }
+							ai_will_do = {
+								factor = 0
+							}    
+						}            
+					}    
+				}
+			}
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = Brta_SOV_aleksandr_shlyapnikov
+						name = "亚历山大·什利亚普尼科夫"
+						portraits = {
+							army = {
+							    small = "GFX_idea_SOV_aleksandr_shlyapnikov"
+						    }
+						}
+
+						advisor = {
+							visible = {
+								has_country_flag = KoKi_YJ_SOV_event_104_flag
+							}
+							cost = 150
+							slot = political_advisor
+							idea_token = SOV_aleksandr_shlyapnikov
+							traits = { left_trade_unionist }
+							ai_will_do = {
+								factor = 0
+							}    
+						}            
+					}    
+				}
+			}
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = Brta_SOV_nikolay_bukharin
+						name = "尼古拉·布哈林"
+						portraits = {
+							army = {
+							    small = "GFX_idea_SOV_nikolay_bukharin"
+						    }
+						}
+
+						advisor = {
+							visible = {
+								has_country_flag = KoKi_YJ_SOV_event_104_flag
+							}
+							cost = 150
+							slot = political_advisor
+							idea_token = SOV_nikolay_bukharin
+							traits = { economy_reformer }
+							ai_will_do = {
+								factor = 0
+							}    
+						}            
+					}    
+				}
+			}
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = Brta_SOV_aleksey_rykov
+						name = "阿列克谢·李可夫"
+						portraits = {
+							army = {
+							    small = "GFX_idea_SOV_aleksey_rykov"
+						    }
+						}
+
+						advisor = {
+							visible = {
+								has_country_flag = KoKi_YJ_SOV_event_104_flag
+							}
+							cost = 150
+							slot = political_advisor
+							idea_token = SOV_aleksey_rykov
+							traits = { peoples_commissar_for_posts_and_telegraphs }
+							ai_will_do = {
+								factor = 0
+							}    
+						}            
+					}    
+				}
+			}
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = Brta_SOV_mikhail_tomsky
+						name = "米哈伊尔·托姆斯基"
+						portraits = {
+							army = {
+							    small = "GFX_idea_SOV_mikhail_tomsky"
+						    }
+						}
+
+						advisor = {
+							visible = {
+								has_country_flag = KoKi_YJ_SOV_event_104_flag
+							}
+							cost = 150
+							slot = political_advisor
+							idea_token = SOV_mikhail_tomsky
+							traits = { right_trade_unionist }
+							ai_will_do = {
+								factor = 0
+							}    
+						}            
+					}    
+				}
+			}
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = Brta_SOV_grigory_sokolnikov
+						name = "格里高利·索克林可夫"
+						portraits = {
+							army = {
+							    small = "GFX_idea_SOV_grigory_sokolnikov"
+						    }
+						}
+
+						advisor = {
+							visible = {
+								has_country_flag = KoKi_YJ_SOV_event_104_flag
+							}
+							cost = 150
+							slot = political_advisor
+							idea_token = SOV_grigory_sokolnikov
+							traits = { peoples_commissar_of_finance }
+							ai_will_do = {
+								factor = 0
+							}    
+						}            
+					}    
+				}
+			}
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = Brta_SOV_grigory_zinovyev
+						name = "格里戈里·季诺维也夫"
+						portraits = {
+							army = {
+							    small = "GFX_idea_SOV_grigory_zinovyev"
+						    }
+						}
+
+						advisor = {
+							visible = {
+								has_country_flag = KoKi_YJ_SOV_event_104_flag
+							}
+							cost = 150
+							slot = political_advisor
+							idea_token = SOV_grigory_zinovyev
+							traits = { communist_theorist }
+							ai_will_do = {
+								factor = 0
+							}    
+						}            
+					}    
+				}
+			}
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = Brta_SOV_lev_kamenev
+						name = "列夫·加米涅夫"
+						portraits = {
+							army = {
+							    small = "GFX_idea_SOV_lev_kamenev"
+						    }
+						}
+
+						advisor = {
+							visible = {
+								has_country_flag = KoKi_YJ_SOV_event_104_flag
+							}
+							cost = 150
+							slot = political_advisor
+							idea_token = SOV_lev_kamenev
+							traits = { appeasing_technocrat }
+							ai_will_do = {
+								factor = 0
+							}    
+						}            
+					}    
+				}
+			}
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = Brta_SOV_martemyan_ryutin
+						name = "马特米扬·柳廷"
+						portraits = {
+							army = {
+							    small = "GFX_idea_SOV_martemyan_ryutin"
+						    }
+						}
+
+						advisor = {
+							visible = {
+								has_country_flag = KoKi_YJ_SOV_event_104_flag
+							}
+							cost = 150
+							slot = political_advisor
+							idea_token = SOV_martemyan_ryutin
+							traits = { anti_stalinist_propagandist }
+							ai_will_do = {
+								factor = 0
+							}    
+						}            
+					}    
+				}
+			}
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = Brta_SOV_patriarch_sergy
+						name = "谢尔盖牧首"
+						portraits = {
+							army = {
+							    small = "GFX_idea_SOV_patriarch_sergy"
+						    }
+						}
+
+						advisor = {
+							visible = {
+								has_country_flag = KoKi_YJ_SOV_event_104_flag
+							}
+							cost = 150
+							slot = political_advisor
+							idea_token = SOV_patriarch_sergy
+							traits = { patriarch_of_moscow_and_all_russia }
+							ai_will_do = {
+								factor = 0
+							}    
+						}            
+					}    
+				}
+			}
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = Brta_SOV_metropolitan_anastasy
+						name = "阿纳斯塔西都主教"
+						portraits = {
+							army = {
+							    small = "GFX_idea_SOV_metropolitan_anastasy"
+						    }
+						}
+
+						advisor = {
+							visible = {
+								has_country_flag = KoKi_YJ_SOV_event_104_flag
+							}
+							cost = 150
+							slot = political_advisor
+							idea_token = SOV_metropolitan_anastasy
+							traits = { orthodox_rabblerouser }
+							ai_will_do = {
+								factor = 0
+							}    
+						}            
+					}    
+				}
+			}
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = Brta_SOV_metropolitan_nikolay
+						name = "尼古拉都主教"
+						portraits = {
+							army = {
+							    small = "GFX_idea_SOV_metropolitan_nikolay"
+						    }
+						}
+
+						advisor = {
+							visible = {
+								has_country_flag = KoKi_YJ_SOV_event_104_flag
+							}
+							cost = 150
+							slot = political_advisor
+							idea_token = SOV_metropolitan_nikolay
+							traits = { theocratic_diplomat }
+							ai_will_do = {
+								factor = 0
+							}    
+						}            
+					}    
+				}
+			}
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = Brta_SOV_metropolitan_aleksy
+						name = "阿列克谢都主教"
+						portraits = {
+							army = {
+							    small = "GFX_idea_SOV_metropolitan_aleksy"
+						    }
+						}
+
+						advisor = {
+							visible = {
+								has_country_flag = KoKi_YJ_SOV_event_104_flag
+							}
+							cost = 150
+							slot = political_advisor
+							idea_token = SOV_metropolitan_aleksy
+							traits = { driver_of_the_faithful }
+							ai_will_do = {
+								factor = 0
+							}    
+						}            
+					}    
+				}
+			}
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = Brta_SOV_anastasy_vonsyatsky
+						name = "阿纳斯塔西·冯西雅茨基"
+						portraits = {
+							army = {
+							    small = "GFX_idea_SOV_anastasy_vonsyatsky"
+						    }
+						}
+
+						advisor = {
+							visible = {
+								has_country_flag = KoKi_YJ_SOV_event_104_flag
+							}
+							cost = 150
+							slot = political_advisor
+							idea_token = SOV_anastasy_vonsyatsky
+							traits = { the_foreign_connection }
+							ai_will_do = {
+								factor = 0
+							}    
+						}            
+					}    
+				}
+			}
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = Brta_SOV_grigory_semyonov
+						name = "格里高利·谢苗诺夫"
+						portraits = {
+							army = {
+							    small = "GFX_idea_SOV_grigory_semyonov"
+						    }
+						}
+
+						advisor = {
+							visible = {
+								has_country_flag = KoKi_YJ_SOV_event_104_flag
+							}
+							cost = 150
+							slot = political_advisor
+							idea_token = SOV_grigory_semyonov
+							traits = { ataman_transbaikal_host }
+							ai_will_do = {
+								factor = 0
+							}    
+						}            
+					}    
+				}
+			}
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = Brta_SOV_nikolay_ustryalov
+						name = "尼古拉·乌斯特里亚洛夫"
+						portraits = {
+							army = {
+							    small = "GFX_idea_SOV_nikolay_ustryalov"
+						    }
+						}
+
+						advisor = {
+							visible = {
+								has_country_flag = KoKi_YJ_SOV_event_104_flag
+							}
+							cost = 150
+							slot = political_advisor
+							idea_token = SOV_nikolay_ustryalov
+							traits = { political_chameleon }
+							ai_will_do = {
+								factor = 0
+							}    
+						}            
+					}    
+				}
+			}
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = Brta_SOV_aleksandr_kazembek
+						name = "亚历山大·卡津别克"
+						portraits = {
+							army = {
+							    small = "GFX_idea_SOV_aleksandr_kazembek"
+						    }
+						}
+
+						advisor = {
+							visible = {
+								has_country_flag = KoKi_YJ_SOV_event_104_flag
+							}
+							cost = 150
+							slot = political_advisor
+							idea_token = SOV_aleksandr_kazembek
+							traits = { mladorossi_theorist }
+							ai_will_do = {
+								factor = 0
+							}    
+						}            
+					}    
+				}
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+}

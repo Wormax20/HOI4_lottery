@@ -1,0 +1,220 @@
+#通用抽奖
+add_namespace = KoKi_YJ
+country_event = {
+	id = KoKi_YJ.101
+	title = KoKi_YJ.101.title
+	desc = KoKi_YJ.101.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ.101.a
+		add_ideas = YJ_1_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = KoKi_YJ.102
+	title = KoKi_YJ.102.title
+	desc = KoKi_YJ.102.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ.102.a
+		add_ideas = YJ_2_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = KoKi_YJ.103
+	title = KoKi_YJ.103.title
+	desc = KoKi_YJ.103.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ.103.a
+		add_ideas = YJ_3_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+}
+
+country_event = {
+	id = KoKi_YJ.104
+	title = KoKi_YJ.104.title
+	desc = KoKi_YJ.104.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ.104.a
+		add_ideas = YJ_4_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+}
+
+country_event = {
+	id = KoKi_YJ.105
+	title = KoKi_YJ.105.title
+	desc = KoKi_YJ.105.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ.105.a
+		add_ideas = YJ_5_ideas
+		add_research_slot = 2
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = KoKi_YJ.106
+	title = KoKi_YJ.106.title
+	desc = KoKi_YJ.106.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		add_to_variable = { sf_trees = 1 }
+		name = KoKi_YJ.106.a
+		add_ideas = YJ_6_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+}
+
+country_event = {
+	id = KoKi_YJ.107
+	title = KoKi_YJ.107.title
+	desc = KoKi_YJ.107.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ.107.a
+		add_stability = 100
+		add_war_support = 100
+		add_ideas = YJ_7_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+}
+
+
+country_event = {
+	id = KoKi_YJ.108
+	title = KoKi_YJ.108.title
+	desc = KoKi_YJ.108.desc
+	
+	picture = GFX_news_event_AUS_military_march
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ.108.a
+		
+		add_ideas = YJ_8_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+}
+
+country_event = {
+	id = KoKi_YJ.109
+	title = KoKi_YJ.109.title
+	desc = KoKi_YJ.109.desc
+	
+	picture = GFX_news_event_generic_research_lab
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ.109.a
+
+		add_ideas = YJ_9_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+}
+
+country_event = {
+	id = KoKi_YJ.110
+	title = KoKi_YJ.110.title
+	desc = KoKi_YJ.110.desc
+	
+	picture = GFX_news_event_069
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ.110.a
+
+		add_ideas = YJ_10_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+}
+
+country_event = {
+	id = KoKi_YJ.111
+	title = KoKi_YJ.111.title
+	desc = KoKi_YJ.111.desc
+	
+	picture = GFX_news_event_quit_india_movement
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ.111.a
+		set_variable = {
+			var = YJ_check_2month
+			value = 0
+		}
+		YJ_ZY_scripted_effects_1 = yes
+		add_ideas = YJ_11_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+}

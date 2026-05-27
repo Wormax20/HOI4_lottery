@@ -912,11 +912,7 @@ KoKi_YJ_decisions_categories = {
 
 	YJ_bread = {
 		activation = {
-			has_country_flag = YJ_most_factory_country
-			NOT = {
-				has_country_flag = YJ_bread_flag
-			}
-			date > 1938.1.1
+			always = no
 		}
 		available = {
 			num_of_civilian_factories < global.sec_max_civ
@@ -938,10 +934,7 @@ KoKi_YJ_decisions_categories = {
 	}
 	YJ_no_bread = {
 		activation = {
-			NOT = {
-				has_country_flag = YJ_most_factory_country
-			}
-			has_country_flag = YJ_bread_flag
+			always = no
 		}
 		available = {
 			num_of_civilian_factories > global.max_civ

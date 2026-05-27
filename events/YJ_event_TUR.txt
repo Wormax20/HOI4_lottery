@@ -1,0 +1,206 @@
+add_namespace = KoKi_YJ_TUR_event
+country_event = {
+	id = KoKi_YJ_TUR_event.101
+	title = KoKi_YJ_TUR_event.101.title
+	desc = KoKi_YJ_TUR_event.101.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		complete_national_focus = SSB_the_saadabad_pact
+		complete_national_focus = SSB_military_cooperation
+		complete_national_focus = SSB_economic_cooperation
+		complete_national_focus = SSB_coordinate_military_production
+		complete_national_focus = SSB_savak_protect_us
+		complete_national_focus = SSB_baghlan_sugar_factory_branches
+		complete_national_focus = SSB_joint_military_exercises
+		complete_national_focus = SSB_integration_of_our_infrastructure
+		complete_national_focus = SSB_berlin_baghdad_railway_into_iran_afghanistan
+		complete_national_focus = SSB_expand_turkeys_military_infrastructure
+		complete_national_focus = SSB_expand_turkish_chromium_deposits
+		complete_national_focus = SSB_combined_arms
+		complete_national_focus = SSB_saadabad_research_cooperation
+		mio:TUR_ticaret_organization = {
+					add_mio_size = 5
+		}
+		mio:TUR_koc_ticaret_as_shipyard_organization = {
+					add_mio_size = 5
+		}
+		mio:TUR_koc_ticaret_as_defense_industry_organization = {
+					add_mio_size = 5
+		}
+		every_state = {
+			limit = {
+				is_core_of = GRE
+			}
+			add_core_of = ROOT
+		}
+		every_state = {
+			limit = {
+				is_core_of = ALB
+			}
+			add_core_of = ROOT
+		}
+		every_state = {
+			limit = {
+				is_core_of = BUL
+			}
+			add_core_of = ROOT
+		}
+		every_state = {
+			limit = {
+				is_core_of = IRQ
+			}
+			add_core_of = ROOT
+		}
+		every_state = {
+			limit = {
+				is_core_of = SAU
+			}
+			add_core_of = ROOT
+		}
+		every_state = {
+			limit = {
+				is_core_of = SYR
+			}
+			add_core_of = ROOT
+		}
+		annex_country = {
+			target = SYR
+		}
+		every_state = {
+			limit = {
+				is_core_of = LEB
+			}
+			add_core_of = ROOT
+		}
+		annex_country = {
+			target = LEB
+		}
+		transfer_state = 164
+		transfer_state = 183
+		183 = { add_core_of = root }
+		803 = { add_core_of = root }
+		106 = { add_core_of = root }
+		970 = { add_core_of = root }
+		352 = { add_core_of = root }
+		353 = { add_core_of = root }
+		800 = { add_core_of = root }
+		350 = { add_core_of = root }
+		set_cosmetic_tag = OTT_UNIFIED
+		set_capital = {
+			state = 797
+		}
+		set_province_name = {
+			id = 9833
+			name = 君士坦丁堡
+		}
+		complete_national_focus = TUR_turk_silahli_kuvvetleri
+		set_technology = { 
+			TUR_camelry_tech = 1
+			camelry = 1 }
+		every_owned_state = {
+    		add_building_construction = {
+        		type = infrastructure
+        		level = 2
+        		instant_build = yes
+    		}
+		}
+		add_building_construction = {
+			type = industrial_complex
+			level = 30
+		}
+		add_building_construction = {
+			type = arms_factory
+			level = 10
+		}
+		add_research_slot = 1
+		add_tech_bonus = {
+			name = YJ_TUR_1_ideas
+			bonus = 1
+			uses = 8
+			category = artillery
+		}
+		add_tech_bonus = {
+			name = YJ_TUR_1_ideas
+			bonus = 1
+			uses = 8
+			category = industry
+		}
+		add_tech_bonus = {
+			name = YJ_TUR_1_ideas
+			bonus = 1
+			uses = 4
+			category = infantry_weapons
+		}
+		add_tech_bonus = {
+			name = YJ_TUR_1_ideas
+			bonus = 1
+			uses = 2
+			category = armor
+		}
+		name = KoKi_YJ_TUR_event.101.a
+		add_ideas = YJ_TUR_1_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = KoKi_YJ_TUR_event.102
+	title = KoKi_YJ_TUR_event.102.title
+	desc = KoKi_YJ_TUR_event.102.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		set_technology = {
+			TUR_camelry_2_tech = 1
+		}
+		name = KoKi_YJ_TUR_event.102.a
+		add_ideas = YJ_TUR_2_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+
+country_event = {
+	id = KoKi_YJ_TUR_event.103
+	title = KoKi_YJ_TUR_event.103.title
+	desc = KoKi_YJ_TUR_event.103.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		set_victory_points = {
+			province = 9833
+			value = 500
+		}
+		797 = {
+			set_state_category = megalopolis
+			add_dynamic_modifier = {
+				modifier = YJ_TUR_ideas
+			}
+			add_extra_state_shared_building_slots = 60
+			add_building_construction = {
+				type = infrastructure
+				level = 5
+				instant_build = yes
+			}
+		}
+		name = KoKi_YJ_TUR_event.103.a
+		add_ideas = YJ_TUR_3_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+}

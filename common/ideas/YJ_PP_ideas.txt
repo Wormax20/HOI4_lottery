@@ -1,0 +1,432 @@
+ideas = {
+	country = {
+		#通用抽奖
+
+		YJ_1_ideas = { #国际纵队
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ARG_war_division
+
+			modifier = {
+				army_infantry_attack_factor = 0.10 #步兵攻击
+				army_infantry_defence_factor = 0.10 #步兵防御
+				custom_modifier_tooltip = YJ_1_ideas_tt
+			}
+		}
+
+		YJ_2_ideas = { #老兵不死
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = prc_low_popular_support2
+
+			modifier = {
+				army_strength_factor = 0.2
+				experience_loss_factor = -0.25 #有经验的士兵损失
+				experience_gain_army_unit = 1 #陆军经验增长
+			}
+		}
+
+		YJ_3_ideas = { #精致军工
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = man_five_year_plan_tank
+			modifier = {
+				air_cas_efficiency = 0.1 #密接支援任务效率
+				air_intercept_efficiency = 0.075 		#拦截任务效率
+			}
+
+			equipment_bonus = {
+				infantry_equipment = {
+					soft_attack = 0.05
+					hard_attack = 0.05
+					build_cost_ic = 0.15
+					instant = yes
+				}
+				armor = {
+					build_cost_ic = 0.15
+					armor_value = 0.05
+					soft_attack = 0.1
+					hard_attack = 0.1
+					breakthrough = 0.1
+					reliability = 0.2
+					instant = yes
+				}
+				small_plane_airframe = {
+					instant = yes
+					air_attack = 0.05
+					air_defence = 0.05
+					air_agility = 0.05
+					air_range = 0.1
+					build_cost_ic = 0.2
+				}
+			}
+		}
+
+		YJ_4_ideas = { #政治大亨
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_political_support
+
+			modifier = {
+				political_power_gain = 0.25 #每日获得的政治点数
+				political_power_factor = 0.3 #政治点数
+			}
+		}
+
+		YJ_5_ideas = { #科研预算大增
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = jap_duplicate_research
+
+			modifier = {
+				research_speed_factor = -0.1 #科研速度
+				custom_modifier_tooltip = YJ_5_ideas_tt
+			}
+		}
+
+		YJ_6_ideas = { #特种精英
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = SWE_hedgehog_defense
+			modifier = {
+				special_forces_attack_factor = 0.1
+				custom_modifier_tooltip = YJ_6_ideas_tt
+			}
+		}
+
+		YJ_7_ideas = { #宣传天才
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.5
+				war_support_weekly = 0.5
+				army_org_factor = 0.1 #陆军组织度
+		        army_morale_factor = 0.05 #组织度恢复
+				production_factory_efficiency_gain_factor = 0.05 #生产效率增长
+				army_intel_to_others = -5 #泄露给敌国的陆军情报
+				navy_intel_to_others =-5
+				airforce_intel_to_others =-5
+			}
+
+			picture = raj_rifle_factory_ishapore
+		}
+		
+		YJ_8_ideas = { #多子化
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.1
+				mobilization_speed = 1
+				monthly_population = 1
+				weekly_manpower = 10000
+			}
+
+			picture = GFX_idea_nissan
+		}
+
+		YJ_9_ideas = { #发展特勤局
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				operative_slot = 2
+				agency_upgrade_time = -0.25
+				intelligence_agency_defense = 2
+				enemy_operative_detection_chance_factor = 0.1
+				enemy_operative_intel_extraction_rate = 0.25
+				operation_cost = -0.25
+				operation_outcome = 0.25
+				intel_network_gain = 0.25
+				intel_network_gain_factor = 0.25
+			}
+
+			picture = GFX_idea_NOR_contested_leadership_ns
+		}
+
+		YJ_10_ideas = { #工业预算大增
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				global_building_slots = 2
+				line_change_production_efficiency_factor = 0.50 #生產效率保持
+				production_speed_buildings_factor = 0.1 #建設速度
+				production_factory_efficiency_gain_factor = 0.05 #生產效率增長
+				production_factory_max_efficiency_factor = 0.05 #生產效率上限
+				equipment_conversion_speed = 0.25 #裝備改裝速度
+			}
+
+			picture = GFX_idea_generic_agrarian_reform
+		}
+
+		YJ_11_ideas = { #资源开发家
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = 0.2 #戰略資源獲取效率
+				min_export = 0.1 #出口資源
+				custom_modifier_tooltip = YJ_11_ideas_tt
+			}
+
+			picture = GFX_idea_COG_forminiere
+		}
+
+
+		#pp抽奖
+
+		YJ_21_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = AFG_electrification
+
+			modifier = {
+				production_speed_buildings_factor = 0.2 #建造速度
+			}
+		}
+		YJ_22_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_foreign_capital
+
+			modifier = {
+				consumer_goods_factor = -0.2 #生活消费品系数
+			}
+		}
+		YJ_23_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_supply_line
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.2 #生产效率增长
+			}
+		}
+		YJ_24_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_flexible_foreign_policy
+
+			modifier = {
+				production_lack_of_resource_penalty_factor = -20 #缺乏资源时的产线惩罚
+			}
+		}
+		YJ_25_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = BEL_traditional_family_values
+
+			modifier = {
+				monthly_population = 0.3  #每月人口
+			}
+		}
+		YJ_26_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = CHI_corruption_armed_forces
+
+			modifier = {
+				army_org_factor = 0.2  #陆军师组织度
+				army_org_regain = 0.2  #陆军组织度恢复
+				land_reinforce_rate = 0.05 #增援率
+			}
+		}
+		YJ_27_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = PRC_land_revolution_expedited
+
+			modifier = {
+				army_core_attack_factor = 0.2 #陆军师核心领土攻击
+				army_core_defence_factor =  0.2 #陆军师核心领土防御
+			}
+		}
+		YJ_28_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_local_self_management
+
+			modifier = {
+				industrial_capacity_factory = 0.2 #工厂产出
+				industrial_capacity_dockyard = 0.2 #船坞产出
+			}
+		}
+		YJ_29_ideas = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}
+	}
+}

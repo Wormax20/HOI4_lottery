@@ -1,0 +1,123 @@
+ideas = {
+	country = {
+		YJ_RAJ_1_ideas = { #帝国一统
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = HUN_apostolic_kingdom_idea
+
+			modifier = {
+				custom_modifier_tooltip = YJ_RAJ_1_ideas_tt
+				political_power_factor =  0.25 #政治点数
+				global_building_slots = 5 #最大地区数
+				stability_weekly = 0.002 #每周稳定度增长
+				war_support_weekly = 0.002 #每周战争支持度增长
+				subversive_activites_upkeep = -0.5 #颠覆活动成本
+                justify_war_goal_time = -0.5 #正当化战争目标所需时间
+				army_core_attack_factor = 0.1 #陸軍師核心領土攻擊
+				army_core_defence_factor = 0.1 #陸軍師核心領土防禦
+				production_speed_buildings_factor = 0.2 #建設速度
+			}
+		}
+
+
+
+		YJ_RAJ_3_ideas = { #雷霆战象
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ARG_war_division
+
+			modifier = {
+				custom_modifier_tooltip = YJ_RAJ_3_ideas_tt
+				cavalry_attack_factor = 0.20 						#骑兵攻击
+				cavalry_defence_factor = 0.20 						#骑兵防御
+				supply_consumption_factor = -0.15 					# 补给消耗
+				planning_speed = 0.1 								#计划速度
+				army_speed_factor = 0.1 							#陆军师速度
+				army_defence_factor = 0.1 							# 陆军师防御
+				army_org_factor = 0.05  								#陆军师组织度
+				army_strength_factor = 0.2								#hp
+				max_planning = 0.10 									# 计划上限
+				industrial_capacity_factory = 0.10 #工厂产出
+				production_factory_efficiency_gain_factor = 0.10 #生产效率增长
+			}
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.1
+					soft_attack = 0.1
+					hard_attack = 0.1
+					instant = yes
+				}
+			}
+			research_bonus = {
+				artillery = 0.25
+			}
+		}
+
+
+		YJ_RAJ_4_ideas = { #五年计划的经验
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = PRC_factory_617
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1 #生产效率增长
+				production_factory_max_efficiency_factor = 0.1 #生产效率上限
+				industrial_capacity_factory = 0.10 #工厂产出
+				production_speed_buildings_factor = 0.10 #建造速度
+				consumer_goods_factor = -0.10 #生活消费品系数
+			}
+		}
+
+
+		YJ_RAJ_5_ideas = { #医疗奇迹
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = jap_duplicate_research
+
+			modifier = {
+				custom_modifier_tooltip = YJ_RAJ_5_ideas_tt
+				army_org_factor = 0.05								#陆军师组织度
+				army_org_regain = 0.1 									#陆军组织度恢复
+				army_strength_factor = 0.1 								#hp
+				experience_loss_factor = -0.05 						#有经验的士兵损失
+				consumer_goods_factor = -0.05 #生活消费品系数
+			}
+		}
+	}
+}

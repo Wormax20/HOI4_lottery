@@ -1,0 +1,19 @@
+YJ_MEX_state_1_ideas = {
+    enable = { always = yes }
+
+	icon = GFX_modifiers_generic_military_plans
+	army_attack_factor = 0.05 #陆军攻击
+	army_defence_factor = 0.05 #陆军防御
+	breakthrough_factor =0.1 #突破
+}
+
+YJ_MEX_state_2_ideas = {
+    enable = { always = yes }
+
+	icon = GFX_modifiers_SOV_invaders_must_die
+	naval_invasion_penalty = -0.2
+	army_attack_factor = 0.075 #陆军攻击
+	army_defence_factor = 0.075 #陆军防御
+	local_supplies = 0.2 #补给效率
+	supply_factor = 0.2 #当地补给能力
+}

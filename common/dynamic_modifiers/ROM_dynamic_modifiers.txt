@@ -1,0 +1,13 @@
+YJ_ROM_state_1_ideas = {
+    enable = { always = yes }
+	icon = GFX_modifiers_tur_traditionalist_placated
+	army_attack_factor = 0.05 #陆军攻击
+	army_defence_factor = 0.05 #陆军防御 	
+}
+
+YJ_ROM_state_2_ideas = {
+    enable = { always = yes }
+	icon = GFX_modifiers_tur_traditionalist_insurgency
+	army_attack_factor = 0.075 #陆军攻击
+	army_defence_factor = 0.075 #陆军防御
+}

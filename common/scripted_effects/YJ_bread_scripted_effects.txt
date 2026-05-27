@@ -29,6 +29,15 @@ YJ_most_factory = {
     random_country = {
         limit = { has_country_flag = YJ_candidate_civ }
         set_country_flag = YJ_most_factory_country
+        if = {
+            limit = {
+                date > 1938.1.1
+                NOT = {
+                    has_country_flag = YJ_bread_flag
+                }
+            }
+            activate_mission = YJ_bread
+        }
     }
 
     set_variable = { global.sec_max_civ = 0 }
@@ -56,5 +65,12 @@ YJ_most_factory = {
     random_country = {
         limit = { has_country_flag = YJ_sec_candidate_civ }
         set_country_flag = YJ_sec_factory_country
+        if = {
+            date > 1938.1.1
+            limit = {
+                has_country_flag = YJ_bread_flag
+            }
+            activate_mission = YJ_no_bread
+        }
     }
 }

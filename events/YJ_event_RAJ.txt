@@ -1,0 +1,252 @@
+add_namespace = KoKi_YJ_RAJ_event
+country_event = {
+	id = KoKi_YJ_RAJ_event.101
+	title = KoKi_YJ_RAJ_event.101.title
+	desc = KoKi_YJ_RAJ_event.101.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		set_technology = {
+			elephantry = 1
+		}
+		complete_national_focus = RAJ_provincial_autonomy
+		complete_national_focus = RAJ_league_against_gandhism
+		complete_national_focus = RAJ_red_in_the_shadows
+		complete_national_focus = RAJ_royal_indian_navy_mutiny
+		complete_national_focus = RAJ_urban_industrialism
+		complete_national_focus = RAJ_comrades_of_the_city
+		complete_national_focus = RAJ_industrialize_the_ganges
+		add_offsite_building = {
+						type = industrial_complex
+						level = 20
+					}
+		add_offsite_building = { 
+			type = arms_factory 
+			level = 20
+					}
+		every_controlled_state = {
+			limit = {
+				infrastructure < 4
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = AFG
+			}
+			add_core_of = ROOT
+		}
+		every_state = {
+			limit = {
+				is_core_of = PER
+			}
+			add_core_of = ROOT
+		}
+		every_state = {
+			limit = {
+				is_core_of = IRQ
+			}
+			add_core_of = ROOT
+		}
+		every_state = {
+			limit = {
+				is_core_of = SAU
+			}
+			add_core_of = ROOT
+		}
+		every_state = {
+			limit = {
+				is_core_of = YEM
+			}
+			add_core_of = ROOT
+		}
+		every_state = {
+			limit = {
+				is_core_of = OMA
+			}
+			add_core_of = ROOT
+		}
+		every_state = {
+			limit = {
+				is_core_of = BRM
+			}
+			add_core_of = ROOT
+		}
+		every_state = {
+			limit = {
+				is_core_of = NEP
+			}
+			add_core_of = ROOT
+		}
+		every_state = {
+			limit = {
+				is_core_of = BHU
+			}
+			add_core_of = ROOT
+		}
+		every_state = {
+			limit = {
+				is_core_of = KUW
+			}
+			add_core_of = ROOT
+		}
+		every_state = {
+			limit = {
+				is_core_of = SIA
+			}
+			add_core_of = ROOT
+		}
+		every_state = {
+			limit = {
+				is_core_of = BRM
+			}
+			add_core_of = ROOT
+		}
+		annex_country = {
+			target = BRM
+			transfer_troops = yes
+		}
+		
+		transfer_state = 320
+		transfer_state = 321
+		422 = { add_core_of = root }
+		320 = { add_core_of = root }
+		321 = { add_core_of = root }
+		1014 = { add_core_of = root }
+		765 = { add_core_of = root }
+		658 = { add_core_of = root }
+		1015 = { add_core_of = root }
+		659 = { add_core_of = root }
+		787 = { add_core_of = root }
+		441 = { add_core_of = root }
+		442 = { add_core_of = root }
+		440 = { add_core_of = root }
+		445 = { add_core_of = root }
+		988 = { add_core_of = root }
+		443 = { add_core_of = root }
+		1012 = { add_core_of = root }
+		444 = { add_core_of = root }
+		989 = { add_core_of = root }
+		433 = { add_core_of = root }
+		428 = { add_core_of = root }
+		437 = { add_core_of = root }
+		991 = { add_core_of = root }
+		427 = { add_core_of = root }
+		983 = { add_core_of = root }
+		425 = { add_core_of = root }
+		982 = { add_core_of = root }
+		430 = { add_core_of = root }
+		990 = { add_core_of = root }
+		670 = { add_core_of = root }
+		671 = { add_core_of = root }
+		1017 = { add_core_of = root }
+		741 = { add_core_of = root }
+		286 = { add_core_of = root }
+		add_research_slot = 1
+		name = KoKi_YJ_RAJ_event.101.a
+		add_ideas = YJ_RAJ_1_ideas
+		remove_ideas = RAJ_agrarian_society
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+
+
+country_event = {
+	id = KoKi_YJ_RAJ_event.103
+	title = KoKi_YJ_RAJ_event.103.title
+	desc = KoKi_YJ_RAJ_event.103.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ_RAJ_event.103.a
+		add_ideas = YJ_RAJ_3_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+
+
+country_event = {
+	id = KoKi_YJ_RAJ_event.104
+	title = KoKi_YJ_RAJ_event.104.title
+	desc = KoKi_YJ_RAJ_event.104.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		add_offsite_building = {
+						type = industrial_complex
+						level = 10
+					}
+		add_offsite_building = { 
+			type = arms_factory 
+			level = 10 
+					}
+		name = KoKi_YJ_RAJ_event.104.a
+		add_ideas = YJ_RAJ_4_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = KoKi_YJ_RAJ_event.105
+	title = KoKi_YJ_RAJ_event.105.title
+	desc = KoKi_YJ_RAJ_event.105.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		set_technology = {
+					tech_field_hospital4 = 1
+				}
+		name = KoKi_YJ_RAJ_event.105.a
+		add_ideas = YJ_RAJ_5_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+
+
+
+country_event = {
+	id = KoKi_YJ_RAJ_event.105
+	title = KoKi_YJ_RAJ_event.105.title
+	desc = KoKi_YJ_RAJ_event.105.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		set_technology = {
+					tech_field_hospital4 = 1
+				}
+		name = KoKi_YJ_RAJ_event.105.a
+		add_ideas = YJ_RAJ_5_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+}

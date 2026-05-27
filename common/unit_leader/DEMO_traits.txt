@@ -739,6 +739,31 @@ leader_traits = {
 		}
 	}
 
+	YJ_traits_NPL= { 
+		type = land
+		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		allowed = {
+			
+		}
+		modifier = {
+			political_power_factor = 0.1
+			land_reinforce_rate = 0.03 #增援率
+		}
+		
+		non_shared_modifier = {
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+
 
 	1 = { 
 		type = land

@@ -1,0 +1,177 @@
+ideas = {
+	country = {
+		YJ_HUN_1_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = HUN_apostolic_kingdom_idea
+
+			modifier = {
+				conscription = 0.05 #适役人口
+				cavalry_attack_factor = 0.15 #骑兵攻击
+				cavalry_defence_factor = 0.4 #骑兵防御
+				stability_weekly = 0.002 #每周稳定度增长
+				war_support_weekly = 0.002 #每周战争支持度增长
+			}
+		}
+
+		YJ_HUN_01_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = HUN_apostolic_kingdom_idea
+
+			modifier = {
+				conscription =  0.2   #适役人口
+				conscription_factor = 0.3 #适役人口系数
+				weekly_manpower = 3000 #每周人力
+				cavalry_attack_factor = 0.15 #骑兵攻击
+				cavalry_defence_factor = 0.4 #骑兵防御
+				stability_weekly = 0.002 #每周稳定度增长
+				war_support_weekly = 0.002 #每周战争支持度增长
+				global_building_slots = 10
+			}
+		}
+
+		YJ_HUN_02_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = HUN_apostolic_kingdom_idea
+
+			modifier = {
+				conscription =  0.2   #适役人口
+				conscription_factor = 0.3 #适役人口系数
+				weekly_manpower = 3000 #每周人力
+				cavalry_attack_factor = 0.15 #骑兵攻击
+				cavalry_defence_factor = 0.4 #骑兵防御
+				stability_weekly = 0.002 #每周稳定度增长
+				war_support_weekly = 0.002 #每周战争支持度增长
+				global_building_slots = 20
+			}
+		}
+
+
+		YJ_HUN_1_ideas_FROM = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = HUN_turul_association_idea
+
+			modifier = {
+				compliance_gain = 0.05 #每日顺从度增长
+				industrial_capacity_factory = 0.03
+			}
+		}
+		YJ_HUN_2_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ast_abandon_the_westminster_system
+
+			modifier = {
+				custom_modifier_tooltip = YJ_HUN_2_ideas_tt
+				political_power_gain = 0.2 						# 每日获得的政治点数
+				political_power_factor = 0.25
+				research_speed_factor = 0.1
+			}
+		}
+		YJ_HUN_3_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = PHI_united_states_army_forces_in_the_far_east
+
+			modifier = {
+				max_planning = 0.05
+				army_org_factor = 0.1 #陆军组织度
+		        army_morale_factor = 0.1 #组织度恢复
+				army_attack_against_major_factor = 0.1
+				army_defence_against_major_factor = 0.1
+			}
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
+		YJ_HUN_4_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_air_fighter
+
+			modifier = { 
+				global_building_slots = 5 #最大地区数
+				consumer_goods_factor = -0.15 #生活消费品工厂系数
+				production_factory_max_efficiency_factor = 0.1 #生产效率上限
+                production_factory_efficiency_gain_factor = 0.15 #生产效率增长
+				industrial_capacity_factory = 0.1 #工厂产出
+				production_speed_buildings_factor = 0.05 #建造速度
+			}
+			equipment_bonus = {
+				fighter = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+		}
+	}
+}

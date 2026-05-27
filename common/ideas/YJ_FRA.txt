@@ -1,0 +1,517 @@
+ideas = {
+	country = {
+		YJ_FRA_1_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = air_support_focus
+
+			modifier = {
+				global_building_slots = 15
+				political_power_factor = 0.1
+				stability_weekly = 0.003 #每周稳定度增长
+				war_support_weekly = 0.003 #每周战争支持度增长
+				industrial_capacity_factory = 0.05 #工厂产出
+				consumer_goods_factor = -0.15 #生活消费品系数
+				production_factory_max_efficiency_factor = 0.05 #生产效率上限
+				production_factory_efficiency_gain_factor = 0.05 #生产效率增长
+				production_speed_buildings_factor = 0.05
+				army_artillery_attack_factor = 0.4
+				army_artillery_defence_factor = 0.4
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					soft_attack = 0.1
+					hard_attack = 0.1
+					reliability = 0.2
+					build_cost_ic = -0.1
+				}
+			}
+		}
+		YJ_FRA_2_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+
+			modifier = {
+				global_building_slots = 10
+				compliance_gain = 0.1 #每日顺从度增长
+				political_power_factor = 0.05
+				experience_loss_factor = -0.1 						#有经验的士兵损失
+				land_reinforce_rate = 0.02 #增援率
+				cavalry_attack_factor = 0.25 #骑兵攻击
+				cavalry_defence_factor = 0.2 #骑兵防御
+				supply_consumption_factor = -0.1
+				army_strength_factor = 0.05
+				army_org_factor = 0.05
+				stability_weekly = 0.003
+				war_support_weekly = 0.003
+				production_speed_buildings_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				industrial_capacity_factory = 0.15 #工厂产出
+				consumer_goods_factor = -0.2 #生活消费品系数
+				production_factory_max_efficiency_factor = 0.1 #生产效率上限
+				production_factory_efficiency_gain_factor = 0.15 #生产效率增长
+			}
+
+		}
+		YJ_FRA_3_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = CZE_ceskoslovenska_lodstvo
+
+			modifier = {
+				global_building_slots = 15
+				political_power_factor = 0.1
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05 #工厂产出
+				production_factory_max_efficiency_factor = 0.1 #生产效率上限
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				army_armor_attack_factor = 0.05 #装甲攻击
+				army_armor_defence_factor = 0.05 #装甲防御
+				mechanized_attack_factor = 0.1 #机械化攻击
+				mechanized_defence_factor = 0.1 #机械化防御
+				stability_weekly = 0.002
+				war_support_weekly = 0.002
+				army_speed_factor = 0.1
+				surrender_limit = 1
+				army_org_regain = 0.05  #陆军组织度恢复
+			}
+			research_bonus = {
+				artillery = 0.2
+			}
+			equipment_bonus = {
+				heavy_tank_chassis = {
+					build_cost_ic = -0.3
+					reliability = 0.4 #可靠性
+					armor_value = 0.2
+					maximum_speed = 0.6 #最大速度
+					instant = yes
+				}
+			}
+		}
+		YJ_FRA_4_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ETH_italian_settlers
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+
+			}
+
+		}
+
+		YJ_FRA_5_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = NOR_norsk_hydro
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				industrial_capacity_factory = 0.1 #工厂产出
+				production_factory_max_efficiency_factor = 0.1 #生产效率上限
+				production_factory_efficiency_gain_factor = 0.1 #生产效率增长
+			}
+
+		}
+
+
+		YJ_FRA_7_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = NOR_luftforsvaret_ns
+
+			modifier = {
+			}
+			targeted_modifier = {
+				tag = ENG
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+				}
+				targeted_modifier = {
+				tag = USA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+				}
+				targeted_modifier = {
+				tag = MEX
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+				}
+				targeted_modifier = {
+				tag = BRA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+				}
+				targeted_modifier = {
+				tag = CAN
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+				}
+				targeted_modifier = {
+				tag = PHI
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+				}
+		}
+
+		YJ_FRA_8_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = NOR_anti_communist_sentiment
+
+			modifier = {
+			}
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+				}
+				targeted_modifier = {
+				tag = PRC
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+				}
+				targeted_modifier = {
+				tag = RAJ
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+				}
+
+		}
+
+		YJ_FRA_9_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = new_economic_policy
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1 #生产效率上限
+				production_speed_industrial_complex_factor = 0.2 #民用工厂建造速度
+			}
+
+		}
+
+		YJ_FRA_10_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = nakajima
+
+			modifier = {
+				max_planning = 0.1
+			}
+
+		}
+
+		YJ_FRA_11_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ger_rebuild_the_nation
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.1 #军用工厂建造速度
+			}
+
+		}
+
+		YJ_FRA_12_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_deal_with_the_devil2
+
+			modifier = {
+			}
+			targeted_modifier = {
+				tag = ENG
+				attack_bonus_against = 0.05
+				}
+				targeted_modifier = {
+				tag = USA
+				attack_bonus_against = 0.05
+				}
+				targeted_modifier = {
+				tag = MEX
+				attack_bonus_against = 0.05
+				}
+				targeted_modifier = {
+				tag = BRA
+				attack_bonus_against = 0.05
+				}
+				targeted_modifier = {
+				tag = CAN
+				attack_bonus_against = 0.05
+				}
+				targeted_modifier = {
+				tag = PHI
+				attack_bonus_against = 0.05
+				}
+
+		}
+
+		YJ_FRA_13_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_communist_army
+
+			modifier = {
+				industrial_capacity_factory = 0.1 #工厂产出
+				conscription = 0.3 #适役人口
+			}
+
+		}
+
+		YJ_FRA_14_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = DEN_occupation_laws
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.1 #军用工厂建造速度
+				production_speed_industrial_complex_factor = 0.1 #民用工厂建造速度
+				production_factory_efficiency_gain_factor = 0.2 #生产效率增长
+				training_time_factor = -0.3 #训练时间
+			}
+
+		}
+
+		YJ_FRA_15_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = DEN_fromandskorpset
+
+			modifier = {
+				political_power_factor = 0.1
+				army_org_factor = 0.1
+				army_strength_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1 #生产效率上限
+				army_core_attack_factor = 0.1 #陆军师核心领土攻击
+				army_core_defence_factor =  0.1 #陆军师核心领土防御
+			}
+
+		}
+
+		YJ_FRA_16_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = HUN_hti_turan
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.1 #军用工厂建造速度
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+				small_plane_cas_airframe = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+				cv_small_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+				medium_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+				medium_plane_scout_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+				large_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+				large_plane_maritime_patrol_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+			}
+
+		}
+
+		YJ_FRA_17_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = NOR_new_haeren_ns
+
+			modifier = {
+			}
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.1
+				}
+		}
+
+		YJ_FRA_18_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = tur_disorganised_armed_forces
+
+			modifier = {
+				army_org_factor = 0.1
+				army_strength_factor = 0.1
+				army_core_attack_factor = 0.1 #陆军师核心领土攻击
+				army_core_defence_factor =  0.1 #陆军师核心领土防御
+				army_speed_factor = 0.1
+				surrender_limit = 1
+			}
+		}
+	}
+}

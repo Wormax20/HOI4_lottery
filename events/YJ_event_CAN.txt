@@ -1,0 +1,102 @@
+add_namespace = KoKi_YJ_CAN_event
+country_event = {
+	id = KoKi_YJ_CAN_event.101
+	title = KoKi_YJ_CAN_event.101.title
+	desc = KoKi_YJ_CAN_event.101.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		if = {
+                limit = {
+                    is_subject = yes
+                }
+                ENG = {
+                    set_autonomy = {
+                        target=CAN
+                        autonomy_state = autonomy_free
+                        end_civil_wars = yes 
+                    }
+                }
+            }
+		transfer_state = 332
+		transfer_state = 331
+		add_research_slot = 2
+		name = KoKi_YJ_CAN_event.101.a
+		add_ideas = YJ_CAN_1_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+
+country_event = {
+	id = KoKi_YJ_CAN_event.102
+	title = KoKi_YJ_CAN_event.102.title
+	desc = KoKi_YJ_CAN_event.102.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		add_tech_bonus = {
+			name = YJ_CAN_2_ideas
+			bonus = 10
+			uses = 3
+			category = cat_mechanized_equipment
+		}
+		set_technology = {
+				ENG_marines_tech = 1
+				mtg_tank_landing_craft = 1
+				popup = yes
+		}
+		name = KoKi_YJ_CAN_event.102.a
+		add_ideas = YJ_CAN_2_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+
+
+country_event = {
+	id = KoKi_YJ_CAN_event.103
+	title = KoKi_YJ_CAN_event.103.title
+	desc = KoKi_YJ_CAN_event.103.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ_CAN_event.103.a
+		add_ideas = YJ_CAN_3_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+
+country_event = {
+	id = KoKi_YJ_CAN_event.104
+	title = KoKi_YJ_CAN_event.104.title
+	desc = KoKi_YJ_CAN_event.104.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ_CAN_event.104.a
+		add_ideas = YJ_CAN_4_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+}

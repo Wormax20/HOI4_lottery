@@ -1,0 +1,269 @@
+ideas = {
+	country = {
+		YJ_ENG_1_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = rock_island_arsenal
+
+			modifier = {
+				custom_modifier_tooltip = YJ_ENG_1_ideas_tt
+				global_building_slots = 5 #最大地区数
+				political_power_factor = 0.25 #政治点数 百分比
+				political_power_gain =  0.10 #每日获得的政治点数
+				stability_weekly = 0.002 #每周稳定度增长
+				war_support_weekly = 0.002 #每周战争支持度增长
+				democratic_drift = 0.01 #每日民主支持率
+				industrial_capacity_factory = 0.05 #工厂产出
+				production_factory_max_efficiency_factor = 0.05 #生产效率上限
+				production_factory_efficiency_gain_factor = 0.1 #生产效率增长
+				industrial_capacity_dockyard = 0.1   #海军船坞产出
+	            production_speed_dockyard_factor = 0.1   #海军船坞建造速度
+			}
+			equipment_bonus = {
+				small_plane_cas_airframe = {
+					instant = yes
+					build_cost_ic = 0.1
+				}
+				cv_small_plane_airframe = {
+					instant = yes
+					build_cost_ic = 0.1
+				}
+				medium_plane_airframe = {
+					instant = yes
+					build_cost_ic = 0.1
+				}
+				medium_plane_scout_plane_airframe = {
+					instant = yes
+					build_cost_ic = 0.1
+				}
+				large_plane_airframe = {
+					instant = yes
+					build_cost_ic = 0.1
+				}
+				large_plane_maritime_patrol_plane_airframe = {
+					instant = yes
+					build_cost_ic = 0.1
+				}
+			}
+		}
+		YJ_ENG_2_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = eng_the_sun_never_sets
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05 #生产效率上限
+				industrial_capacity_factory = 0.05 #工厂产出
+				custom_modifier_tooltip = YJ_ENG_2_ideas_tt
+				special_forces_attack_factor = 0.1 #特种攻击
+				army_attack_factor = 0.1  							# 陆军师攻击
+				army_defence_factor = 0.1 							# 陆军师防御
+				air_cas_efficiency = 0.1 #密接支援任务效率
+				air_attack_factor =  0.1  #对空攻击
+				air_defence_factor = 0.1  #空中防御
+				air_range_factor = 0.10 #航程
+			}
+			research_bonus = {
+				artillery = 0.1
+			}
+			equipment_bonus = { 
+				armor = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				small_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+				small_plane_cas_airframe = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+				cv_small_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+			}
+		}
+		YJ_ENG_3_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = SWE_land_air_warfare
+
+			modifier = {
+				production_speed_buildings_factor = 0.1 #建造速度
+		        air_cas_efficiency = 0.15 #密接支援任务效率
+				ground_attack_factor = 0.1
+				air_cas_present_factor = 0.1
+				air_attack_factor =  0.1  #对空攻击
+				air_defence_factor = 0.1  #空中防御
+				air_agility_factor = 0.1 #机动
+				local_resources_factor = 0.1 #战略资源获取率
+			}
+			equipment_bonus = { 
+				small_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+				small_plane_cas_airframe = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+				cv_small_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+			}
+
+		}
+		YJ_ENG_4_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+
+			modifier = {
+				autonomy_gain = -10
+				industrial_factory_donations = 5
+				military_factory_donations = 1
+				dockyard_donations = 1
+			}
+
+			targeted_modifier = {
+				tag = ENG
+				cic_to_target_factor = 0.6
+				mic_to_target_factor = 0.6
+			}
+		}
+		YJ_ENG_5_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_improved_industries
+
+			modifier = {
+				custom_modifier_tooltip = YJ_ENG_5_ideas_tt
+				production_speed_arms_factory_factor = 0.2 #军用工厂建造速度
+				industrial_capacity_factory = 0.05 #工厂产出
+				production_factory_max_efficiency_factor = 0.05 #生产效率上限
+			}
+		}
+
+
+		YJ_ENG_6_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = raj_rifle_factory_ishapore
+
+			modifier = {
+				max_planning = 0.1 									# 计划上限
+				planning_speed = 0.1 								# 计划速度
+				supply_consumption_factor = -0.2 #补给消耗
+				command_power_gain = 0.5 								# 每日指挥点增长
+				max_command_power = 200 #最大指挥点数提高多少
+				air_cas_present_factor = 0.1
+				air_attack_factor =  0.05  #对空攻击
+				air_defence_factor = 0.05  #空中防御
+				air_agility_factor = 0.05 #机动
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				support_equipment = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				armor = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				small_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+				small_plane_cas_airframe = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+				cv_small_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+				medium_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+				medium_plane_fighter_airframe = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+				medium_plane_scout_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+				large_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+				large_plane_maritime_patrol_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+			}
+		}
+	}
+}

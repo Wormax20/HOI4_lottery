@@ -127,4 +127,12 @@ spriteTypes = {
 		name = "GFX_leaders_god" 
 		texturefile = "gfx/leaders/DEMO/god.jpg"
 	}
+	spriteType = {
+		name = "GFX_leaders_npl" 
+		texturefile = "gfx/leaders/DEMO/NPL.jpg"
+	}
+	spriteType = {
+		name = "GFX_leaders_zd" 
+		texturefile = "gfx/leaders/DEMO/zd.jpg"
+	}
 }	

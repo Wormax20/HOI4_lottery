@@ -174,8 +174,8 @@ BLR_reichskommissariat = {
 }
 
 UKR_reichskommissariat = {
-	color = rgb { 115 115 115 }
-	color_ui = rgb { 122 145 93 }
+	color = rgb { 194 198 215 }
+	color_ui = rgb { 255 255 255 }
 }
 
 SPR_civil_war = {
@@ -1283,13 +1283,13 @@ COG_belgian_congo = {
 }
 
 HUN_GREATER = {
-	color = rgb { 204 102 0 }
-	color_ui = rgb { 128 64 0 }
+	color = rgb { 194 198 215 }
+	color_ui = rgb { 255 255 255 }
 }
 
 HUN_GREATER_COMMUNIST_STATE = {
-	color = rgb { 230 0 0 }
-	color_ui = rgb { 128 0 0 }
+	color = rgb { 194 198 215 }
+	color_ui = rgb { 255 255 255 }
 }
 
 AUS_liechtenstein = {
@@ -1343,8 +1343,8 @@ MAC_AUS_danubian_state = {
 }
 
 HUN_AUS_danubian_state = {
-	color = rgb { 224  228  255 }
-	color_ui = rgb { 224  228  255 }
+	color = rgb { 194 198 215 }
+	color_ui = rgb { 255 255 255 }
 }
 
 CZE_AUS_danubian_state = {
@@ -1378,8 +1378,8 @@ SIL_AUS_danubian_state = {
 }
 
 BOS_AUS_danubian_state = {
-	color = rgb { 224  228  255 }
-	color_ui = rgb { 224  228  255 }
+	color = rgb { 194 198 215 }
+	color_ui = rgb { 255 255 255 }
 }
 
 SLV_AUS_danubian_state = {
@@ -1825,6 +1825,11 @@ PHI_hispanic_empire_tag_war = {
 JAP_pacific_union = {
 	color = rgb { 230 184 0 } 
 	color_ui = rgb { 230 184 0 }
+}
+
+FRA_THIRD_EMPIRE = {
+	color = rgb { 0 40 195 }
+	color_ui = rgb { 0 40 195 }
 }
 
 YJ_bread_cos = {

@@ -1,0 +1,180 @@
+add_namespace = KoKi_YJ_PHI_event
+country_event = {
+	id = KoKi_YJ_PHI_event.101
+	title = KoKi_YJ_PHI_event.101.title
+	desc = KoKi_YJ_PHI_event.101.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	  option = {
+     name = KoKi_YJ_PHI_event.101.a
+     add_ideas = YJ_PHI_1_ideas
+	 add_research_slot = 2
+
+     # 威克岛
+     transfer_state = 632
+     632 = { add_core_of = PHI }   # 威克岛核心归属PHI
+
+     # 关岛
+     transfer_state = 638
+     638 = { add_core_of = PHI }   # 关岛核心归属PHI
+
+     # 科科斯群岛
+     transfer_state = 712
+     712 = { add_core_of = PHI }   # 科科斯群岛核心归属PHI
+
+     # 圣诞岛
+     transfer_state = 711
+     711 = { add_core_of = PHI }   # 圣诞岛核心归属PHI
+
+     # 毛里求斯
+     transfer_state = 707
+     707 = { add_core_of = PHI }   # 毛里求斯核心归属PHI
+
+     # 塞舌尔
+     transfer_state = 709
+     709 = { add_core_of = PHI }   # 塞舌尔核心归属PHI
+
+     # 马尔代夫
+     transfer_state = 281
+     281 = { add_core_of = PHI }   # 马尔代夫核心归属PHI
+
+     # 迪戈加西亚
+     transfer_state = 710
+     710 = { add_core_of = PHI }   # 迪戈加西亚核心归属PHI
+
+     # 安达曼群岛
+     transfer_state = 733
+     733 = { add_core_of = PHI }   # 安达曼群岛核心归属PHI
+
+     # 斐济
+     transfer_state = 636
+     636 = { add_core_of = PHI }   # 斐济核心归属PHI
+
+     # 瑙鲁
+     transfer_state = 725
+     725 = { add_core_of = PHI }   # 瑙鲁核心归属PHI
+
+     # 吉尔伯特群岛
+     transfer_state = 639
+     639 = { add_core_of = PHI }   # 吉尔伯特群岛核心归属PHI
+
+     # 埃里斯群岛
+     transfer_state = 643
+     643 = { add_core_of = PHI }   # 埃里斯群岛核心归属PHI
+
+     # 凤凰岛
+     transfer_state = 642
+     642 = { add_core_of = PHI }   # 凤凰岛核心归属PHI
+
+     # 莱恩群岛
+     transfer_state = 727
+     727 = { add_core_of = PHI }   # 莱恩群岛核心归属PHI
+
+     # 约翰斯顿环礁
+     transfer_state = 630
+     630 = { add_core_of = PHI }   # 约翰斯顿环礁核心归属PHI
+
+     # 阿图岛
+     transfer_state = 650
+     650 = { add_core_of = PHI }   # 阿图岛核心归属PHI
+
+     # 皮特凯恩岛
+     transfer_state = 270
+     270 = { add_core_of = PHI }   # 皮特凯恩岛核心归属PHI
+
+     # 萨摩亚
+     transfer_state = 726
+     726 = { add_core_of = PHI }   # 萨摩亚核心归属PHI
+
+     ai_chance = { factor = 100 }   # AI也必定执行
+ }
+}
+
+country_event = {
+	id = KoKi_YJ_PHI_event.102
+	title = KoKi_YJ_PHI_event.102.title
+	desc = KoKi_YJ_PHI_event.102.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		set_technology = {
+			mtg_tank_landing_craft = 1
+			amphibious_mechanized_infantry = 1
+		}
+		name = KoKi_YJ_PHI_event.102.a
+		add_ideas = YJ_PHI_2_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = KoKi_YJ_PHI_event.103
+	title = KoKi_YJ_PHI_event.103.title
+	desc = KoKi_YJ_PHI_event.103.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		add_tech_bonus = {
+			name = YJ_PHI_3_ideas
+			bonus = 1
+			uses = 8
+			category = artillery
+		}
+		set_technology = {
+			railway_gun = 1
+						}
+		name = KoKi_YJ_PHI_event.103.a
+		add_ideas = YJ_PHI_3_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = KoKi_YJ_PHI_event.104
+	title = KoKi_YJ_PHI_event.104.title
+	desc = KoKi_YJ_PHI_event.104.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		add_tech_bonus = {
+			name = YJ_PHI_4_ideas
+			ahead_reduction = 5
+			bonus = 5
+			uses = 2
+			category = cat_heavy_armor
+		}
+		add_tech_bonus = {
+			name = YJ_PHI_4_ideas
+			bonus = 2
+			uses = 3
+			category = artillery
+		}
+		add_tech_bonus = {
+			name = YJ_PHI_4_ideas
+			ahead_reduction = 2
+			uses = 2
+			category = artillery
+		}
+		name = KoKi_YJ_PHI_event.104.a
+		add_ideas = YJ_PHI_4_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+}

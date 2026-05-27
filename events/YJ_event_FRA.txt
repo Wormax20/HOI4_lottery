@@ -1,0 +1,257 @@
+add_namespace = KoKi_YJ_FRA_event
+country_event = {
+	id = KoKi_YJ_FRA_event.101
+	title = KoKi_YJ_FRA_event.101.title
+	desc = KoKi_YJ_FRA_event.101.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		add_popularity = {
+				ideology = fascism
+				popularity = 1
+			}
+		set_cosmetic_tag = FRA_THIRD_EMPIRE
+		complete_national_focus = FRA_revive_the_national_bloc
+		complete_national_focus = FRA_utilize_the_leagues
+		complete_national_focus = FRA_the_council_of_rambouillet
+		complete_national_focus = FRA_revise_the_constitution
+		complete_national_focus = FRA_repeal_the_law_of_exile
+		complete_national_focus = FRA_proclaim_the_third_empire
+		complete_national_focus = FRA_army_reform
+		add_tech_bonus = {
+			name = YJ_FRA_1_ideas
+			bonus = 1
+			uses = 6
+			category = artillery
+		}
+		set_technology = {
+			FRA_artillery_tech = 1
+		}
+		name = KoKi_YJ_FRA_event.101.a
+		add_ideas = YJ_FRA_1_ideas
+		set_war_support = 1
+		set_stability = 1
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+}
+
+country_event = {
+	id = KoKi_YJ_FRA_event.102
+	title = KoKi_YJ_FRA_event.102.title
+	desc = KoKi_YJ_FRA_event.102.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		add_popularity = {
+				ideology = communism
+				popularity = 1
+			}
+		add_tech_bonus = {
+			name = YJ_FRA_2_ideas
+			bonus = 1
+			uses = 4
+			category = infantry_weapons
+		}
+		complete_national_focus = FRA_form_the_popular_front
+		complete_national_focus = FRA_invite_communist_ministers
+		complete_national_focus = FRA_womens_suffrage
+		complete_national_focus = FRA_legal_equality
+		complete_national_focus = FRA_force_the_issue
+		complete_national_focus = FRA_revolution_to_the_utmost
+		complete_national_focus = FRA_destroy_the_counter_revolution
+		complete_national_focus = FRA_loyalty_to_the_cause
+		complete_national_focus = FRA_army_reform
+		name = KoKi_YJ_FRA_event.102.a
+		add_ideas = YJ_FRA_2_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+}
+
+country_event = {
+	id = KoKi_YJ_FRA_event.103
+	title = KoKi_YJ_FRA_event.103.title
+	desc = KoKi_YJ_FRA_event.103.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		complete_national_focus = FRA_form_the_popular_front
+		complete_national_focus = FRA_revive_the_national_bloc
+		complete_national_focus = FRA_army_reform
+		complete_national_focus = FRA_review_foreign_policy
+		complete_national_focus = FRA_defensive_strategems
+		add_tech_bonus = {
+			name = YJ_FRA_3_ideas
+			bonus = 3
+			uses = 2
+			category = armor
+		}
+		add_tech_bonus = {
+			name = YJ_FRA_3_ideas
+			bonus = 1
+			uses = 3
+			category = infantry_weapons
+		}
+		add_tech_bonus = {
+			name = YJ_FRA_3_ideas
+			bonus = 1
+			uses = 3
+			category = artillery
+		}
+		name = KoKi_YJ_FRA_event.103.a
+		add_ideas = YJ_FRA_3_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+}
+
+country_event = {
+	id = KoKi_YJ_FRA_event.104
+	title = KoKi_YJ_FRA_event.104.title
+	desc = KoKi_YJ_FRA_event.104.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		add_tech_bonus = {
+			name = YJ_FRA_4_ideas
+			bonus = 5
+			uses = 2
+			category = artillery
+		}
+		add_to_variable = { sf_trees = 1 }
+		name = KoKi_YJ_FRA_event.104.a
+		add_ideas = YJ_FRA_4_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = KoKi_YJ_FRA_event.105
+	title = KoKi_YJ_FRA_event.105.title
+	desc = KoKi_YJ_FRA_event.105.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ_FRA_event.105.a
+		add_ideas = YJ_FRA_5_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = KoKi_YJ_JL_event.NPL
+	title = KoKi_YJ_JL_event.NPL.title
+	desc = KoKi_YJ_JL_event.NPL.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = KoKi_YJ_JL_event_21_flag
+	}
+
+	option = {
+		name = KoKi_YJ_JL_event.NPL.a
+		create_corps_commander = {
+			name="拿破仑·波拿巴"
+			portrait_path = "gfx/leaders/DEMO/NPL.jpg"
+			allowed_civil_war = {
+				is_ai = no
+			}
+			traits={ 
+				brilliant_strategist 
+				armor_officer 
+				panzer_leader
+				cavalry_leader
+				commando
+				urban_assault_specialist
+				ground_pounder
+				infantry_leader
+				organizer
+				trickster
+				ranger 
+				}
+			skill = 9
+			attack_skill = 8
+			defense_skill = 8
+			planning_skill = 6
+			logistics_skill = 10
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = KoKi_YJ_JL_event.zd
+	title = KoKi_YJ_JL_event.zd.title
+	desc = KoKi_YJ_JL_event.zd.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = KoKi_YJ_JL_event_21_flag
+	}
+
+	option = {
+		name = KoKi_YJ_JL_event.zd.a
+		create_corps_commander = {
+			name="贞德"
+			portrait_path = "gfx/leaders/DEMO/zd.jpg"
+			allowed_civil_war = {
+				is_ai = no
+			}
+			traits={ 
+				brilliant_strategist 
+				armor_officer 
+				panzer_leader
+				cavalry_leader
+				commando
+				urban_assault_specialist
+				ground_pounder
+				infantry_leader
+				organizer
+				trickster
+				ranger 
+				}
+			skill = 8
+			attack_skill = 8
+			defense_skill = 6
+			planning_skill = 6
+			logistics_skill = 7
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}

@@ -1,0 +1,104 @@
+ideas = {
+	country = {
+		YJ_SWI_1_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = SOV_soviet_railways
+
+			modifier = {
+				custom_modifier_tooltip = YJ_SWI_1_ideas_tt
+				production_lack_of_resource_penalty_factor = -1 	# 缺乏资源时的产线惩罚
+				production_factory_max_efficiency_factor = 0.05 #生产效率上限
+				production_factory_efficiency_gain_factor = 0.05 #生产效率增长
+				industrial_capacity_factory = 0.05 				#工厂产出
+				stability_weekly = 0.002 #每周稳定度增长
+				war_support_weekly = 0.002 #每周战争支持度增长
+			}
+		}
+
+
+		YJ_SWI_2_ideas = { #联邦空军
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = SWE_land_air_warfare
+
+			modifier = {
+				air_cas_efficiency = 0.05 				#密接支援任务效率
+				air_range_factor = 0.10 				#航程
+				air_maximum_speed_factor = 0.05         #空军最大速度
+				air_defence_factor = 0.05				#空中防御
+				air_attack_factor = 0.05				#空中攻击
+				air_intercept_efficiency = 0.05 #拦截任务效率
+			}
+		}
+
+
+		YJ_SWI_3_ideas = { #联邦特种部队
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ARG_war_division
+
+			modifier = {
+				custom_modifier_tooltip = YJ_SWI_3_ideas_tt
+				special_forces_min = 100 							# 特种部队上限增加 
+				special_forces_cap = 1							# 特种部队上限系数增加
+				special_forces_attack_factor = 0.05					# 特种攻击
+				army_defence_factor = 0.05 							# 陆军师防御
+			}
+			equipment_bonus = {
+				heavy_tank_chassis = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
+
+
+		YJ_SWI_4_ideas = { #联邦科学院
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = jap_duplicate_research
+
+			modifier = {
+				custom_modifier_tooltip = YJ_SWI_4_ideas_tt
+				research_speed_factor = 0.1 #科研速度
+			}
+		}
+	}
+}

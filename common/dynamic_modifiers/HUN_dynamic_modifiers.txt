@@ -1,0 +1,8 @@
+YJ_HUN_ideas = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_modifiers_ETH_state_development
+	state_production_speed_buildings_factor = 0.5 #建造速度
+	local_factories =  0.2      
+}

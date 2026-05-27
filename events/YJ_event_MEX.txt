@@ -1,0 +1,206 @@
+add_namespace = KoKi_YJ_MEX_event
+country_event = {
+	id = KoKi_YJ_MEX_event.101
+	title = KoKi_YJ_MEX_event.101.title
+	desc = KoKi_YJ_MEX_event.101.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ_MEX_event.101.a
+		add_ideas = YJ_MEX_1_ideas
+		set_cosmetic_tag = USC_UNIFIED
+		every_state = {
+			limit = {
+				is_core_of = GUA
+			}
+			add_core_of = ROOT
+		}
+		annex_country = {
+			target = GUA
+			transfer_troops = yes
+		}
+		every_state = {
+			limit = {
+				is_core_of = HON
+			}
+			add_core_of = ROOT
+		}
+		annex_country = {
+			target = HON
+			transfer_troops = yes
+		}
+		every_state = {
+			limit = {
+				is_core_of = ELS
+			}
+			add_core_of = ROOT
+		}
+		annex_country = {
+			target = ELS
+			transfer_troops = yes
+		}
+		every_state = {
+			limit = {
+				is_core_of = NIC
+			}
+			add_core_of = ROOT
+		}
+		annex_country = {
+			target = NIC
+			transfer_troops = yes
+		}
+		every_state = {
+			limit = {
+				is_core_of = COS
+			}
+			add_core_of = COS
+		}
+		annex_country = {
+			target = COS
+			transfer_troops = yes
+		}
+		every_state = {
+			limit = {
+				is_core_of = PAN
+			}
+			add_core_of = ROOT
+		}
+		annex_country = {
+			target = PAN
+			transfer_troops = yes
+		}
+		every_state = {
+			limit = {
+				is_core_of = CUB
+			}
+			add_core_of = ROOT
+		}
+		annex_country = {
+			target = CUB
+			transfer_troops = yes
+		}
+		every_state = {
+			limit = {
+				is_core_of = HAI
+			}
+			add_core_of = ROOT
+		}
+		annex_country = {
+			target = HAI
+			transfer_troops = yes
+		}
+		every_state = {
+			limit = {
+				is_core_of = DOM
+			}
+			add_core_of = ROOT
+		}
+		annex_country = {
+			target = DOM
+			transfer_troops = yes
+		}
+		transfer_state = 311
+		311 = { add_core_of = ROOT }
+		transfer_state = 689
+		689 = { add_core_of = ROOT }
+		transfer_state = 690
+		690 = { add_core_of = ROOT }
+		transfer_state = 693
+		693 = { add_core_of = ROOT }
+		transfer_state = 686
+		686 = { add_core_of = ROOT }
+		transfer_state = 685
+		685 = { add_core_of = ROOT }
+		complete_national_focus = MEX_focus_agricultural_credit_bank
+		complete_national_focus = MEX_focus_liberalize_the_banking_sector
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+
+country_event = {
+	id = KoKi_YJ_MEX_event.102
+	title = KoKi_YJ_MEX_event.102.title
+	desc = KoKi_YJ_MEX_event.102.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ_MEX_event.102.a
+		add_ideas = YJ_MEX_2_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = KoKi_YJ_MEX_event.103
+	title = KoKi_YJ_MEX_event.103.title
+	desc = KoKi_YJ_MEX_event.103.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		add_popularity = {
+				ideology = communism
+				popularity = 1
+			}
+		name = KoKi_YJ_MEX_event.103.a
+		set_cosmetic_tag = BRA_union_of_latin_american_socialist_republics_cos_tag
+		set_politics = {
+		ruling_party = communism
+		}
+		set_technology = {
+			advanced_medium_tank_chassis = 1
+			advanced_light_tank_chassis = 1
+			advanced_radio = 1
+			MEX_helicopter_tech = 1
+		}
+		complete_special_project = {
+					project = sp:sp_air_helicopter
+				}
+		add_ideas = YJ_MEX_3_ideas
+		add_ideas = YJ_MEX_03_ideas
+		add_ideas = YJ_MEX_04_ideas
+		add_ideas = YJ_MEX_05_ideas
+		add_ideas = YJ_MEX_06_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = KoKi_YJ_MEX_event.104
+	title = KoKi_YJ_MEX_event.104.title
+	desc = KoKi_YJ_MEX_event.104.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ_MEX_event.104.a
+		add_ideas = YJ_MEX_4_ideas
+		set_technology = {
+			marines = 1
+			amphibious_tank = 1
+			amphibious_drive = 1
+			amphibious_mechanized_infantry = 1
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}

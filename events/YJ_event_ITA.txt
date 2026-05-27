@@ -1,0 +1,286 @@
+add_namespace = KoKi_YJ_ITA_event
+country_event = {
+	id = KoKi_YJ_ITA_event.101
+	title = KoKi_YJ_ITA_event.101.title
+	desc = KoKi_YJ_ITA_event.101.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ_ITA_event.101.a
+		add_dynamic_modifier = {
+			modifier = YJ_ITA_1_ideas
+		}
+		hidden_effect = {
+			KoKi_YJ_ITA_event_1_scripted_effects = yes
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+}
+
+country_event = { #唯有淤血
+	id = KoKi_YJ_ITA_event.102
+	title = KoKi_YJ_ITA_event.102.title
+	desc = KoKi_YJ_ITA_event.102.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ_ITA_event.102.a
+		add_ideas = YJ_ITA_2_ideas
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+}
+
+
+
+
+country_event = { #赶英超美
+	id = KoKi_YJ_ITA_event.104
+	title = KoKi_YJ_ITA_event.104.title
+	desc = KoKi_YJ_ITA_event.104.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ_ITA_event.104.a
+		add_dynamic_modifier = {
+			modifier = YJ_ITA_4_ideas
+		}
+		add_to_variable = {
+			KoKi_YJ_ITA_event_4_line_change_production_efficiency_factor = 0.0025 tooltip = line_change_production_efficiency_factor_tt
+		}
+		add_to_variable = {
+			KoKi_YJ_ITA_event_4_lproduction_factory_max_efficiency_factor = 0.0025 tooltip = production_factory_max_efficiency_factor_tt
+		}
+		add_to_variable = {
+			KoKi_YJ_ITA_event_4_lproduction_factory_start_efficiency_factor = 0.0025 tooltip = production_factory_start_efficiency_factor_tt
+		}
+		add_to_variable = {
+			KoKi_YJ_ITA_event_4_lproduction_factory_efficiency_gain_factor = 0.0025 tooltip = production_factory_efficiency_gain_factor_tt
+		}
+		add_to_variable = {
+			KoKi_YJ_ITA_event_4_lindustrial_capacity_factory = 0.0025 tooltip = industrial_capacity_factory_tt
+		}
+		add_to_variable = {
+			KoKi_YJ_ITA_event_4_lindustrial_capacity_dockyard = 0.0025 tooltip = industrial_capacity_dockyard_tt
+		}
+		add_to_variable = {
+			KoKi_YJ_ITA_event_4_army_attack_factor = 0.0045 tooltip = army_attack_factor_tt
+		}
+		add_to_variable = {
+			KoKi_YJ_ITA_event_4_army_defence_factor = 0.003 tooltip = army_defence_factor_tt
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+}
+
+
+country_event = {
+	id = KoKi_YJ_ITA_event.1011
+	title = KoKi_YJ_ITA_event.1011.title
+	desc = KoKi_YJ_ITA_event.1011.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		if = {
+			limit = {
+				FRA = {
+					is_ai = yes
+				}
+			}
+		transfer_state = 735
+		transfer_state = 851
+		transfer_state = 21
+		transfer_state = 32
+		transfer_state = 20
+		transfer_state = 22
+		transfer_state = 26
+		transfer_state = 31
+		transfer_state = 806
+		transfer_state = 19
+		transfer_state = 25
+		transfer_state = 1
+		transfer_state = 665
+		transfer_state = 458
+		transfer_state = 513
+		transfer_state = 460
+		transfer_state = 459
+		transfer_state = 290
+		transfer_state = 461
+		transfer_state = 462
+		transfer_state = 699
+		transfer_state = 557
+		transfer_state = 272
+		transfer_state = 701
+		transfer_state = 296
+		transfer_state = 899
+		transfer_state = 780
+		transfer_state = 700
+		transfer_state = 298
+		transfer_state = 898
+		transfer_state = 556
+		transfer_state = 779
+		transfer_state = 778
+		transfer_state = 274
+		transfer_state = 781
+		transfer_state = 776
+		transfer_state = 777
+		transfer_state = 902
+		transfer_state = 901
+		transfer_state = 900
+		transfer_state = 558
+		transfer_state = 774
+		transfer_state = 773
+		transfer_state = 660
+		transfer_state = 772
+		transfer_state = 539
+		transfer_state = 297
+		transfer_state = 514
+		transfer_state = 786
+		transfer_state = 782
+		transfer_state = 515
+		transfer_state = 775
+		transfer_state = 118
+		annex_country = {
+			target = SPR
+		}
+		annex_country = {
+			target = POR
+		}
+		}
+
+		add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 50000
+					producer = ITA
+				}
+		set_cosmetic_tag = SPQR_UNIFIED
+		complete_national_focus = ITA_expanded_corporatism
+		name = KoKi_YJ_ITA_event.1011.a
+		add_ideas = YJ_ITA_01_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+}
+
+country_event = {
+	id = KoKi_YJ_ITA_event.1012
+	title = KoKi_YJ_ITA_event.1012.title
+	desc = KoKi_YJ_ITA_event.1012.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		add_offsite_building = {
+						type = industrial_complex
+						level = 20
+					}
+		add_offsite_building = { 
+			type = arms_factory 
+			level = 10
+					}
+		complete_national_focus = ITA_solid_progress
+		complete_national_focus = ITA_servizio_informazione_militare
+		complete_national_focus = ITA_triumph_in_africa_bba
+		complete_national_focus = ITA_convene_the_grand_council
+		complete_national_focus = ITA_monarchia_d_italia
+		complete_national_focus = ITA_power_to_the_king
+		complete_national_focus = ITA_seek_papal_support
+		complete_national_focus = ITA_italys_destiny
+		ITA_bop_absurdly_high_decrease_effect = yes
+		name = KoKi_YJ_ITA_event.1012.a
+		add_ideas = YJ_ITA_02_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+}   
+
+
+country_event = {
+	id = KoKi_YJ_ITA_event.1013
+	title = KoKi_YJ_ITA_event.1013.title
+	desc = KoKi_YJ_ITA_event.1013.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ_ITA_event.1013.a
+		add_ideas = YJ_ITA_03_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+}
+
+country_event = {
+	id = KoKi_YJ_ITA_event.1014
+	title = KoKi_YJ_ITA_event.1014.title
+	desc = KoKi_YJ_ITA_event.1014.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		add_dynamic_modifier = {
+			modifier = YJ_ITA_1_ideas
+		}
+		name = KoKi_YJ_ITA_event.1014.a
+		add_ideas = YJ_ITA_04_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+}
+
+country_event = {
+	id = KoKi_YJ_ITA_event.1015
+	title = KoKi_YJ_ITA_event.1015.title
+	desc = KoKi_YJ_ITA_event.1015.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		add_dynamic_modifier = {
+			modifier = YJ_ITA_05_ideas
+		}
+		name = KoKi_YJ_ITA_event.1015.a
+		add_ideas = YJ_ITA_05_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+}

@@ -19260,10 +19260,9 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = HUN_develop_assault_guns
-				bonus = 0.5
+				bonus = 1
 				uses = 2
-				category = cat_anti_air
-				category = mio_cat_artillery
+				category = artillery
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt

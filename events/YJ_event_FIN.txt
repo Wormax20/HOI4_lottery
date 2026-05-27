@@ -1,0 +1,187 @@
+add_namespace = KoKi_YJ_FIN_event
+country_event = {
+	id = KoKi_YJ_FIN_event.101
+	title = KoKi_YJ_FIN_event.101.title
+	desc = KoKi_YJ_FIN_event.101.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		SWE = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = SWE
+			}
+			add_core_of = ROOT
+		}
+		NOR = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = NOR
+			}
+			add_core_of = ROOT
+		}
+		DEN = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = DEN
+			}
+			add_core_of = ROOT
+		}
+		ICE = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = ICE
+			}
+			add_core_of = ROOT
+		}
+		complete_national_focus = FIN_wartsila_engine_production
+		complete_national_focus = FIN_german_military_advisors
+		complete_national_focus = FIN_modernize_the_industry
+		complete_national_focus = FIN_a_new_course_for_kokoomus
+		mio:FIN_valtion_tykkitehdas_organization = {
+					add_mio_size = 5
+		}
+		add_research_slot = 1
+
+
+
+
+		name = KoKi_YJ_FIN_event.101.a
+		add_ideas = YJ_FIN_1_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+}
+
+country_event = {
+	id = KoKi_YJ_FIN_event.102
+	title = KoKi_YJ_FIN_event.102.title
+	desc = KoKi_YJ_FIN_event.102.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		set_technology = {
+			tech_mountaineers = 1 
+			tech_mountaineers2 = 1 
+			tech_mountaineers3 = 1
+			FIN_mountaineers_tech = 1 
+		}
+		name = KoKi_YJ_FIN_event.102.a
+		add_ideas = YJ_FIN_2_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+}
+
+country_event = {
+	id = KoKi_YJ_FIN_event.103
+	title = KoKi_YJ_FIN_event.103.title
+	desc = KoKi_YJ_FIN_event.103.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		set_technology = {
+			aa_lmg = 1
+			engines_1 = 1
+			engines_2 = 1
+			basic_small_airframe = 1
+			basic_medium_airframe = 1
+			basic_large_airframe = 1
+			aircraft_construction = 1
+			range_improvements = 1
+			photo_reconnaisance = 1
+			early_bombs = 1
+			armor_piercing_bombs = 1
+			air_torpedoe_1 = 1
+			iw_small_airframe = 1
+			iw_medium_airframe = 1
+			iw_large_airframe = 1
+		}
+		name = KoKi_YJ_FIN_event.103.a
+		add_ideas = YJ_FIN_3_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+}
+
+country_event = {
+	id = KoKi_YJ_FIN_event.104
+	title = KoKi_YJ_FIN_event.104.title
+	desc = KoKi_YJ_FIN_event.104.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		add_offsite_building = {
+						type = industrial_complex
+						level = 20
+					}
+		add_offsite_building = { 
+			type = arms_factory 
+			level = 5 
+					}
+		set_technology = {
+			excavation3 = 1 
+			excavation4 = 1 
+			excavation5 = 1 
+		}
+		name = KoKi_YJ_FIN_event.104.a
+		add_ideas = YJ_FIN_4_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+}
+
+country_event = {
+	id = KoKi_YJ_FIN_event.105
+	title = KoKi_YJ_FIN_event.105.title
+	desc = KoKi_YJ_FIN_event.105.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ_FIN_event.105.a
+		add_ideas = YJ_FIN_05_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+}

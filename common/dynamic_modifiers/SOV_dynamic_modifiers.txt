@@ -1,0 +1,21 @@
+YJ_SOV_3_ideas = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_SOV_transformation_of_nature
+	custom_modifier_tooltip = YJ_SOV_3_ideas_tt
+	conscription = SOV_conscription #适役人口
+	mobilization_speed = SOV_mobilization_speed #动员速度
+	supply_combat_penalties_on_core_factor = SOV_supply_combat_penalties_on_core_factor #核心领土战斗补给耗尽惩罚
+	army_core_attack_factor = SOV_army_core_attack_factor #陆军核心攻击
+	army_core_defence_factor = SOV_army_core_defence_factor #陆军核心防御
+	cas_damage_reduction = SOV_cas_damage_reduction
+	industrial_capacity_factory = SOV_industrial_capacity_factory #工厂产出
+	production_factory_efficiency_gain_factor = SOV_production_factory_efficiency_gain_factor #生产效率增长
+	production_factory_max_efficiency_factor = SOV_production_factory_max_efficiency_factor #生产效率上限
+	production_factory_start_efficiency_factor = SOV_production_factory_start_efficiency_factor #基础生产效率
+	consumer_goods_factor = SOV_consumer_goods_factor #生活消费品系数
+	local_resources_factor = SOV_local_resources_factor #战略资源获取率
+	production_speed_buildings_factor = SOV_production_speed_buildings_factor #建造速度
+
+}

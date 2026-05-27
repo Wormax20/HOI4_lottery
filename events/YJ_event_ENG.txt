@@ -1,0 +1,153 @@
+add_namespace = KoKi_YJ_ENG_event
+country_event = {
+	id = KoKi_YJ_ENG_event.101
+	title = KoKi_YJ_ENG_event.101.title
+	desc = KoKi_YJ_ENG_event.101.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		annex_country = {
+			target = IRE
+		}
+		annex_country = {
+			target = JOR
+		}
+		annex_country = {
+			target = PAL
+		}
+		119 = { add_core_of = ROOT }
+		119 = { add_core_of = ROOT }
+		set_cosmetic_tag = ENG_imperial_federation_unified
+		name = KoKi_YJ_ENG_event.101.a
+		add_ideas = YJ_ENG_1_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+}
+
+country_event = {
+	id = KoKi_YJ_ENG_event.102
+	title = KoKi_YJ_ENG_event.102.title
+	desc = KoKi_YJ_ENG_event.102.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		set_technology = {
+				marines = 1
+				mtg_tank_landing_craft = 1
+				ENG_marines_tech = 1
+				popup = yes
+		}
+		add_to_variable = { sf_trees = 1 }
+		name = KoKi_YJ_ENG_event.102.a
+		add_ideas = YJ_ENG_2_ideas
+		ai_chance = {
+			factor = 100
+		}
+		add_tech_bonus = {
+			name = YJ_ENG_2_ideas
+			bonus = 1
+			uses = 1
+			category = artillery
+		}
+	}
+	
+}
+
+country_event = {
+	id = KoKi_YJ_ENG_event.103
+	title = KoKi_YJ_ENG_event.103.title
+	desc = KoKi_YJ_ENG_event.103.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ_ENG_event.103.a
+		add_ideas = YJ_ENG_3_ideas
+		every_core_state = {
+			add_building_construction = {
+				type = radar_station
+				level = 6
+				instant_build = yes
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+}
+
+country_event = {
+	id = KoKi_YJ_ENG_event.104
+	title = KoKi_YJ_ENG_event.104.title
+	desc = KoKi_YJ_ENG_event.104.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ_ENG_event.104.a
+		ai_chance = {
+			factor = 100
+		}
+		set_country_flag = KoKi_YJ_ENG_event_104_Flag
+		every_country = {
+			limit = {
+				is_subject_of = ROOT
+			}
+			add_ideas = YJ_ENG_4_ideas
+		}
+	}
+	
+}
+
+country_event = {
+	id = KoKi_YJ_ENG_event.105
+	title = KoKi_YJ_ENG_event.105.title
+	desc = KoKi_YJ_ENG_event.105.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ_ENG_event.105.a
+		add_ideas = YJ_ENG_5_ideas
+		ai_chance = {
+			factor = 100
+		}
+		set_country_flag = KoKi_YJ_ENG_event_105_Flag
+	}
+	
+}
+
+country_event = {
+	id = KoKi_YJ_ENG_event.106
+	title = KoKi_YJ_ENG_event.106.title
+	desc = KoKi_YJ_ENG_event.106.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ_ENG_event.106.a
+		add_ideas = YJ_ENG_6_ideas
+		ai_chance = {
+			factor = 100
+		}
+		set_country_flag = KoKi_YJ_ENG_event_106_Flag
+	}
+}

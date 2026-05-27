@@ -1,0 +1,80 @@
+add_namespace = KoKi_YJ_BEL_event
+country_event = {
+	id = KoKi_YJ_BEL_event.101
+	title = KoKi_YJ_BEL_event.101.title
+	desc = KoKi_YJ_BEL_event.101.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		add_ideas = YJ_BEL_01_ideas
+		# 荷兰本土核心
+		36 = { add_core_of = root }
+		35 = { add_core_of = root }
+		7 = { add_core_of = root }
+		# 卢森堡核心
+		8 = { add_core_of = root }
+		# 荷属东印度核心
+		672 = { add_core_of = root }
+		1022 = { add_core_of = root }
+		334 = { add_core_of = root }
+		335 = { add_core_of = root }
+		667 = { add_core_of = root }
+		673 = { add_core_of = root }
+		668 = { add_core_of = root }
+		669 = { add_core_of = root }
+		738 = { add_core_of = root }
+
+		name = KoKi_YJ_BEL_event.101.a
+		ai_chance = {
+			factor = 100
+		}
+		add_ideas = YJ_BEL_1_ideas
+		set_country_flag = KoKi_YJ_BEL_event_101_Flag
+	}
+}
+
+country_event = {
+	id = KoKi_YJ_BEL_event.102
+	title = KoKi_YJ_BEL_event.102.title
+	desc = KoKi_YJ_BEL_event.102.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		complete_special_project = {
+					project = sp:sp_land_land_cruiser
+				}
+		set_technology = { BEL_land_cruiser_tech = 1 }
+		name = KoKi_YJ_BEL_event.102.a
+		add_ideas = YJ_BEL_2_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+
+
+country_event = {
+	id = KoKi_YJ_BEL_event.103
+	title = KoKi_YJ_BEL_event.103.title
+	desc = KoKi_YJ_BEL_event.103.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		set_technology = { BEL_category_rangers_tech = 1 }
+		name = KoKi_YJ_BEL_event.103.a
+		add_ideas = YJ_BEL_3_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+}

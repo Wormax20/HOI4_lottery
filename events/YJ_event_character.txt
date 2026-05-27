@@ -1,0 +1,1447 @@
+add_namespace = KoKi_YJ_JL_event
+country_event = {
+	id = KoKi_YJ_JL_event.1
+	title = KoKi_YJ_JL_event.1.title
+	desc = KoKi_YJ_JL_event.1.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = KoKi_YJ_JL_event_1_flag
+	}
+	option = {
+		name = KoKi_YJ_JL_event.1.a
+		create_corps_commander = {
+			name = "哈罗德·530"
+			portrait_path = "gfx/leaders/DEMO/530.png"
+
+			traits={ 
+				brilliant_strategist 
+		armor_officer 
+panzer_leader
+cavalry_leader
+infantry_leader
+trickster
+commando
+urban_assault_specialist
+organizer
+ranger YJ_traits_1 YJ_traits_3 YJ_traits_17
+				}
+			skill = 6
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 5
+			logistics_skill = 4
+		}
+		hidden_effect = {
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = YJ_530
+						name="哈罗德·530"
+						portraits = {
+							civilian = {
+								small = "GFX_idea_yj_530"
+							}
+						}
+
+						advisor={
+							cost = 150
+							slot = air_chief
+							idea_token = YJ_530
+							ledger = army
+							traits = {
+								YJ_country_traits_2
+							}
+							ai_will_do = {
+								base = 1
+							}
+						}        
+						advisor={
+							cost = 150
+							slot = high_command
+							idea_token = YJ_530
+							ledger = army
+							traits = {
+								YJ_country_traits_2
+							}
+							ai_will_do = {
+								base = 1
+							}
+						}       
+					}    
+				}
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = KoKi_YJ_JL_event.2
+	title = KoKi_YJ_JL_event.2.title
+	desc = KoKi_YJ_JL_event.2.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = KoKi_YJ_JL_event_2_flag
+	}
+
+	option = {
+		name = KoKi_YJ_JL_event.2.a
+		create_corps_commander = {
+			name="马楼·ALPS"
+			portrait_path = "gfx/leaders/DEMO/alps.jpg"
+
+			traits={ 
+				    YJ_traits_27    YJ_traits_2  brave trait_SOV_determined
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = KoKi_YJ_JL_event.3
+	title = KoKi_YJ_JL_event.3.title
+	desc = KoKi_YJ_JL_event.3.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = KoKi_YJ_JL_event_3_flag
+	}
+
+	option = {
+		name = KoKi_YJ_JL_event.3.a
+		create_corps_commander = {
+			name="波雅尔·空白·齐奥塞斯库"
+			portrait_path = "gfx/leaders/DEMO/kb.png"
+
+			traits={ 
+brilliant_strategist
+				armor_officer
+inflexible_strategist    YJ_traits_2 YJ_traits_19    YJ_traits_24    YJ_traits_25
+				}
+			skill = 2 
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = KoKi_YJ_JL_event.4
+	title = KoKi_YJ_JL_event.4.title
+	desc = KoKi_YJ_JL_event.4.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = KoKi_YJ_JL_event_4_flag
+	}
+
+	option = {
+		name = KoKi_YJ_JL_event.4.a
+		create_corps_commander = {
+			name="奥马尔·威尔逊·TY"
+			portrait_path = "gfx/leaders/DEMO/ty.png"
+
+			traits={ 
+				brilliant_strategist 
+		armor_officer 
+panzer_leader
+cavalry_leader
+commando
+urban_assault_specialist
+ground_pounder
+infantry_leader
+organizer
+trickster
+ranger YJ_traits_1 YJ_traits_10    YJ_traits_22    YJ_traits_24    YJ_traits_25
+				}
+			skill = 6
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 5
+		}
+		hidden_effect = {
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = YJ_TY
+						name="奥马尔·威尔逊·TY"
+
+						advisor={
+							cost = 150
+							slot = theorist
+							idea_token = YJ_TY
+							ledger = army
+							traits = {
+								YJ_country_traits_TY
+							}
+							ai_will_do = {
+								base = 1
+							}
+						}        
+					}    
+				}
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = KoKi_YJ_JL_event.5
+	title = KoKi_YJ_JL_event.5.title
+	desc = KoKi_YJ_JL_event.5.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = KoKi_YJ_JL_event_5_flag
+	}
+
+	option = {
+		name = KoKi_YJ_JL_event.5.a
+		create_corps_commander = {
+			name="切·布丁"
+			portrait_path = "gfx/leaders/DEMO/bd.png"
+
+			traits={ 
+				brilliant_strategist armor_officer  JAP_communist_sympathizer YJ_traits_3 YJ_traits_4 YJ_traits_14
+				YJ_traits_2 YJ_traits_16 YJ_traits_9    YJ_traits_25
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 3
+		}
+		hidden_effect = {
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = YJ_BD
+						name="切·布丁"
+
+						advisor={
+							cost = 150
+							slot = theorist
+							idea_token = YJ_BD
+							ledger = army
+							traits = {
+								YJ_country_traits_BD
+							}
+							ai_will_do = {
+								base = 1
+							}
+						}        
+					}    
+				}
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = KoKi_YJ_JL_event.6
+	title = KoKi_YJ_JL_event.6.title
+	desc = KoKi_YJ_JL_event.6.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = KoKi_YJ_JL_event_6_flag
+	}
+
+	option = {
+		name = KoKi_YJ_JL_event.6.a
+		create_corps_commander = {
+			name="伊万诺夫·反二雅士"
+			portrait_path = "gfx/leaders/DEMO/fe.png"
+
+			traits={ 
+				brilliant_strategist armor_officer panzer_leader cavalry_leader ground_pounder
+                infantry_leader organizer trickster ranger YJ_traits_1 commando
+urban_assault_specialist
+			}
+			skill = 6
+			attack_skill = 5
+			defense_skill = 6
+			planning_skill = 5
+			logistics_skill = 6
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = KoKi_YJ_JL_event.7
+	title = KoKi_YJ_JL_event.7.title
+	desc = KoKi_YJ_JL_event.7.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = KoKi_YJ_JL_event_7_flag
+	}
+
+	option = {
+		name = KoKi_YJ_JL_event.7.a
+		create_corps_commander = {
+			name="阿尔托莉雅·呆毛"
+			portrait_path = "gfx/leaders/DEMO/dmw.png"
+
+			traits={ 
+				loyalty_to_britain armor_officer panzer_leader cavalry_leader infantry_leader
+                trickster organizer ranger YJ_traits_5 YJ_traits_6 commando
+urban_assault_specialist
+			}
+			skill = 6
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 5
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = KoKi_YJ_JL_event.8
+	title = KoKi_YJ_JL_event.8.title
+	desc = KoKi_YJ_JL_event.8.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = KoKi_YJ_JL_event_8_flag
+	}
+
+	option = {
+		name = KoKi_YJ_JL_event.8.a
+		create_corps_commander = {
+			name="康斯坦丁诺维奇·吃素"
+			portrait_path = "gfx/leaders/DEMO/cs.png"
+
+			traits={ 
+				trait_SOV_stalinist
+brilliant_strategist
+				armor_officer
+panzer_leader
+cavalry_leader
+infantry_leader
+trickster
+organizer
+commando
+urban_assault_specialist
+ranger YJ_traits_1 YJ_traits_17
+				}
+			skill = 6
+			attack_skill = 4
+			defense_skill = 6
+			planning_skill = 4
+			logistics_skill = 6
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = KoKi_YJ_JL_event.9
+	title = KoKi_YJ_JL_event.9.title
+	desc = KoKi_YJ_JL_event.9.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = KoKi_YJ_JL_event_9_flag
+	}
+
+	option = {
+		name = KoKi_YJ_JL_event.9.a
+		create_corps_commander = {
+			name="乔治亚·冯·哈布斯堡"
+			portrait_path = "gfx/leaders/DEMO/qzy.png"
+
+			traits={ 
+				    YJ_traits_2    YJ_traits_26
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = KoKi_YJ_JL_event.10
+	title = KoKi_YJ_JL_event.10.title
+	desc = KoKi_YJ_JL_event.10.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = KoKi_YJ_JL_event_10_flag
+	}
+
+	option = {
+		name = KoKi_YJ_JL_event.10.a
+		create_corps_commander = {
+			name="埃尔温·若同学"
+			portrait_path = "gfx/leaders/DEMO/rtx.png"
+
+			traits={ 
+				inflexible_strategist 
+career_officer
+unyielding_defender
+panzer_leader
+cavalry_leader
+infantry_leader
+trickster
+organizer
+commando
+urban_assault_specialist
+ranger YJ_traits_1    YJ_traits_20
+				}
+			skill = 6
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 5
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = KoKi_YJ_JL_event.11
+	title = KoKi_YJ_JL_event.11.title
+	desc = KoKi_YJ_JL_event.11.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = KoKi_YJ_JL_event_11_flag
+	}
+
+	option = {
+		name = KoKi_YJ_JL_event.11.a
+		create_corps_commander = {
+			name="奥马尔·纳尔逊·奶龙"
+			portrait_path = "gfx/leaders/DEMO/nl.png"
+
+			traits={  
+harsh_leader
+armor_officer
+panzer_leader
+cavalry_leader
+infantry_leader
+trickster
+commando
+urban_assault_specialist
+organizer
+ranger YJ_traits_1 YJ_traits_7 YJ_traits_11 YJ_traits_12
+				}
+			skill = 6
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 3
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = KoKi_YJ_JL_event.12
+	title = KoKi_YJ_JL_event.12.title
+	desc = KoKi_YJ_JL_event.12.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = KoKi_YJ_JL_event_12_flag
+	}
+
+	option = {
+		name = KoKi_YJ_JL_event.12.a
+		create_corps_commander = {
+			name="山本小鲨鱼"
+			portrait_path = "gfx/leaders/DEMO/xsy.png"
+
+			traits={  
+brilliant_strategist
+armor_officer
+panzer_leader
+commando
+urban_assault_specialist
+cavalry_leader
+infantry_leader
+trickster
+organizer
+ranger YJ_traits_1 YJ_traits_13    YJ_traits_24
+				}
+			skill = 6
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+		hidden_effect = {
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = YJ_xsy
+						name="山本小鲨鱼"
+						portraits = {
+							civilian = {
+								small = "GFX_idea_yj_xsy"
+							}
+						}
+
+						advisor={
+							cost = 50
+							slot = navy_chief
+							idea_token = YJ_xsy
+							ledger = army
+							traits = {
+								YJ_country_traits_3
+							}
+							ai_will_do = {
+								base = 1
+							}
+						}        
+						advisor={
+							cost = 150
+							slot = air_chief
+							idea_token = YJ_xsy
+							ledger = army
+							traits = {
+								YJ_country_traits_3
+							}
+							ai_will_do = {
+								base = 1
+							}
+						}       
+					}    
+				}
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = KoKi_YJ_JL_event.13
+	title = KoKi_YJ_JL_event.13.title
+	desc = KoKi_YJ_JL_event.13.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = KoKi_YJ_JL_event_13_flag
+	}
+
+	option = {
+		name = KoKi_YJ_JL_event.13.a
+		create_corps_commander = {
+			name="德米特里·安德烈·预言家"
+			portrait_path = "gfx/leaders/DEMO/yyj.png"
+
+			traits={ 
+				brave trait_SOV_determined    YJ_traits_2
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = KoKi_YJ_JL_event.14
+	title = KoKi_YJ_JL_event.14.title
+	desc = KoKi_YJ_JL_event.14.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = KoKi_YJ_JL_event_14_flag
+	}
+
+	option = {
+		name = KoKi_YJ_JL_event.14.a
+		create_corps_commander = {
+			name="卡尔·乔乔"
+			portrait_path = "gfx/leaders/DEMO/qq.png"
+
+			traits={ 
+				brilliant_strategist 
+		armor_officer 
+panzer_leader
+cavalry_leader
+ground_pounder
+urban_assault_specialist
+infantry_leader
+organizer
+trickster
+ranger YJ_traits_1 
+				}
+			skill = 6
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 6
+		}
+		hidden_effect = {
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = YJ_qq
+						name="卡尔·乔乔"
+						portraits = {
+							civilian = {
+								small = "GFX_idea_yj_qq"
+							}
+						}
+
+						advisor={
+							cost = 50
+							slot = navy_chief
+							idea_token = YJ_qq
+							ledger = army
+							traits = {
+								YJ_country_traits_4
+							}
+							ai_will_do = {
+								base = 1
+							}
+						}        
+						advisor={
+							cost = 150
+							slot = high_command
+							idea_token = YJ_qq
+							ledger = army
+							traits = {
+							YJ_country_traits_4
+							}
+							ai_will_do = {
+								base = 1
+							}
+						}       
+					}    
+				}
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = KoKi_YJ_JL_event.15
+	title = KoKi_YJ_JL_event.15.title
+	desc = KoKi_YJ_JL_event.15.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = KoKi_YJ_JL_event_15_flag
+	}
+
+	option = {
+		name = KoKi_YJ_JL_event.15.a
+		create_corps_commander = {
+			name="约瑟夫·大林子"
+			portrait_path = "gfx/leaders/DEMO/dlz.png"
+
+			traits={ 
+				armor_officer YJ_traits_12
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = KoKi_YJ_JL_event.16
+	title = KoKi_YJ_JL_event.16.title
+	desc = KoKi_YJ_JL_event.16.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = KoKi_YJ_JL_event_16_flag
+	}
+
+	option = {
+		name = KoKi_YJ_JL_event.16.a
+		create_corps_commander = {
+			name="切斯特·威廉·风筝"
+			portrait_path = "gfx/leaders/DEMO/fz.png"
+
+			traits={ 
+				YJ_traits_2
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = KoKi_YJ_JL_event.17
+	title = KoKi_YJ_JL_event.17.title
+	desc = KoKi_YJ_JL_event.17.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = KoKi_YJ_JL_event_17_flag
+	}
+
+	option = {
+		name = KoKi_YJ_JL_event.17.a
+		create_corps_commander = {
+			name="路易斯·叶雨"
+			portrait_path = "gfx/leaders/DEMO/yy.png"
+
+			traits={ 
+				old_guard
+commando
+urban_assault_specialist
+panzer_leader
+cavalry_leader
+infantry_leader
+organizer
+trickster
+ranger   YJ_traits_1
+				}
+			skill = 6
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = KoKi_YJ_JL_event.18
+	title = KoKi_YJ_JL_event.18.title
+	desc = KoKi_YJ_JL_event.18.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = KoKi_YJ_JL_event_18_flag
+	}
+
+	option = {
+		name = KoKi_YJ_JL_event.18.a
+		create_corps_commander = {
+			name="尼古拉·小舟"
+			portrait_path = "gfx/leaders/DEMO/xz.png"
+
+			traits={ 
+				media_personality
+panzer_leader
+cavalry_leader
+infantry_leader
+organizer
+trickster
+commando
+urban_assault_specialist
+ranger  YJ_traits_1 YJ_traits_3 YJ_traits_16    YJ_traits_23    YJ_traits_28
+				}
+			skill = 6
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 4
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = KoKi_YJ_JL_event.19
+	title = KoKi_YJ_JL_event.19.title
+	desc = KoKi_YJ_JL_event.19.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = KoKi_YJ_JL_event_19_flag
+	}
+
+	option = {
+		name = KoKi_YJ_JL_event.19.a
+		hidden_effect = {
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = YJ_grx
+						name="戴拿·赞恩·故人闲"
+						portraits = {
+							civilian = {
+								small = "GFX_idea_yj_grx"
+							}
+						}
+
+						advisor={
+							cost = 150
+							slot = army_chief
+							idea_token = YJ_grx
+							ledger = army
+							traits = {
+								YJ_country_traits_1
+							}
+							ai_will_do = {
+								base = 1
+							}
+						}        
+						advisor={
+							cost = 150
+							slot = high_command
+							idea_token = YJ_grx
+							ledger = army
+							traits = {
+								YJ_country_traits_1
+							}
+							ai_will_do = {
+								base = 1
+							}
+						}
+						advisor={
+							cost = 150
+							slot = theorist
+							idea_token = YJ_GRX
+							ledger = army
+							traits = {
+								YJ_country_traits_GRX
+							}
+							ai_will_do = {
+								base = 1
+							}
+						}       
+					}    
+				}
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = KoKi_YJ_JL_event.21
+	title = KoKi_YJ_JL_event.21.title
+	desc = KoKi_YJ_JL_event.21.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = KoKi_YJ_JL_event_21_flag
+	}
+
+	option = {
+		name = KoKi_YJ_JL_event.21.a
+		create_corps_commander = {
+			name="小爱丽丝·有地绫"
+			portrait_path = "gfx/leaders/DEMO/ydl.png"
+
+			traits={ 
+				brilliant_strategist 
+		armor_officer 
+panzer_leader
+cavalry_leader
+commando
+urban_assault_specialist
+ground_pounder
+infantry_leader
+organizer
+trickster
+ranger YJ_traits_1 YJ_traits_3    YJ_traits_21    YJ_traits_26
+				}
+			skill = 6
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 3
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = KoKi_YJ_JL_event.22
+	title = KoKi_YJ_JL_event.22.title
+	desc = KoKi_YJ_JL_event.22.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = KoKi_YJ_JL_event_21_flag
+	}
+
+	option = {
+		name = KoKi_YJ_JL_event.22.a
+		create_corps_commander = {
+			name="悠哉哉·E"
+			portrait_path = "gfx/leaders/DEMO/E.png"
+
+			traits={ 
+				old_guard    YJ_traits_2
+            }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = KoKi_YJ_JL_event.23
+	title = KoKi_YJ_JL_event.23.title
+	desc = KoKi_YJ_JL_event.23.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = KoKi_YJ_JL_event_21_flag
+	}
+
+	option = {
+		name = KoKi_YJ_JL_event.23.a
+		create_corps_commander = {
+			name="永雏·夏尔"
+			portrait_path = "gfx/leaders/DEMO/xe.png"
+
+			traits={  
+harsh_leader
+armor_officer
+commando
+urban_assault_specialist
+panzer_leader
+cavalry_leader
+infantry_leader
+trickster
+organizer
+ranger YJ_traits_1    YJ_traits_26
+				}
+			skill = 6
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 8
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = KoKi_YJ_JL_event.24
+	title = KoKi_YJ_JL_event.24.title
+	desc = KoKi_YJ_JL_event.24.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = KoKi_YJ_JL_event_21_flag
+	}
+
+	option = {
+		name = KoKi_YJ_JL_event.24.a
+		create_corps_commander = {
+			name="伯纳德·劳·一只屑"
+			portrait_path = "gfx/leaders/DEMO/yzx.png"
+
+			traits={ 
+				inflexible_strategist
+old_guard 
+				armor_officer
+panzer_leader
+commando
+urban_assault_specialist
+cavalry_leader
+infantry_leader
+trickster
+organizer
+ranger YJ_traits_1 YJ_traits_3
+				}
+			skill = 6
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = KoKi_YJ_JL_event.25
+	title = KoKi_YJ_JL_event.25.title
+	desc = KoKi_YJ_JL_event.25.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = KoKi_YJ_JL_event_21_flag
+	}
+
+	option = {
+		name = KoKi_YJ_JL_event.25.a
+		create_corps_commander = {
+			name="筱筱筱·塔菲"
+			portrait_path = "gfx/leaders/DEMO/tf.jpg"
+
+			traits={ 
+				brilliant_strategist 
+		armor_officer 
+panzer_leader
+cavalry_leader
+commando
+urban_assault_specialist
+ground_pounder
+infantry_leader
+organizer
+trickster
+ranger YJ_traits_1 YJ_traits_16    YJ_traits_26    YJ_traits_23
+				}
+			skill = 6
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 5
+			logistics_skill = 6
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = KoKi_YJ_JL_event.26
+	title = KoKi_YJ_JL_event.26.title
+	desc = KoKi_YJ_JL_event.26.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = KoKi_YJ_JL_event_21_flag
+	}
+
+	option = {
+		name = KoKi_YJ_JL_event.26.a
+		create_corps_commander = {
+			name="巴哈马·keli"
+			portrait_path = "gfx/leaders/DEMO/keli.jpg"
+
+			traits={ 
+				brilliant_strategist 
+		armor_officer 
+panzer_leader
+cavalry_leader
+commando
+urban_assault_specialist
+infantry_leader
+organizer
+trickster
+ranger YJ_traits_1
+				}
+			skill = 6
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 5
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+
+country_event = {
+	id = KoKi_YJ_JL_event.27
+	title = KoKi_YJ_JL_event.27.title
+	desc = KoKi_YJ_JL_event.27.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = KoKi_YJ_JL_event_21_flag
+	}
+
+	option = {
+		name = KoKi_YJ_JL_event.27.a
+		create_corps_commander = {
+			name="6老师"
+			portrait_path = "gfx/leaders/DEMO/6.jpg"
+
+			traits={ 
+				brilliant_strategist 
+		armor_officer 
+panzer_leader
+cavalry_leader
+commando
+urban_assault_specialist
+infantry_leader
+organizer
+trickster
+ranger YJ_traits_1     YJ_traits_26
+				}
+			skill = 6
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 6
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = KoKi_YJ_JL_event.28
+	title = KoKi_YJ_JL_event.28.title
+	desc = KoKi_YJ_JL_event.28.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = KoKi_YJ_JL_event_21_flag
+	}
+
+	option = {
+		name = KoKi_YJ_JL_event.28.a
+		create_corps_commander = {
+			name="西伯利亚·土豆"
+			portrait_path = "gfx/leaders/DEMO/td.jpg"
+
+			traits={ 
+    YJ_traits_2 
+				}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+
+country_event = {
+	id = KoKi_YJ_JL_event.29
+	title = KoKi_YJ_JL_event.29.title
+	desc = KoKi_YJ_JL_event.29.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = KoKi_YJ_JL_event_21_flag
+	}
+
+	option = {
+		name = KoKi_YJ_JL_event.29.a
+		create_corps_commander = {
+			name="彬彬有礼"
+			portrait_path = "gfx/leaders/DEMO/bb.jpg"
+
+			traits={ 
+				brilliant_strategist 
+		armor_officer 
+panzer_leader
+cavalry_leader
+commando
+urban_assault_specialist
+infantry_leader
+organizer
+trickster
+ranger YJ_traits_1  YJ_traits_11     YJ_traits_23
+				}
+			skill = 6
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 6
+			logistics_skill = 4
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+
+country_event = {
+	id = KoKi_YJ_JL_event.30
+	title = KoKi_YJ_JL_event.30.title
+	desc = KoKi_YJ_JL_event.30.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = KoKi_YJ_JL_event_21_flag
+	}
+
+	option = {
+		name = KoKi_YJ_JL_event.30.a
+		create_corps_commander = {
+			name="星星·MZ"
+			portrait_path = "gfx/leaders/DEMO/mz.jpg"
+
+			traits={ 
+    YJ_traits_2     YJ_traits_25
+				}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 4
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = KoKi_YJ_JL_event.31
+	title = KoKi_YJ_JL_event.31.title
+	desc = KoKi_YJ_JL_event.31.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = KoKi_YJ_JL_event_21_flag
+	}
+
+	option = {
+		name = KoKi_YJ_JL_event.31.a
+		create_corps_commander = {
+			name="哈吉巴·bate"
+			portrait_path = "gfx/leaders/DEMO/bt.jpg"
+
+			traits={ 
+				brilliant_strategist 
+		armor_officer 
+panzer_leader
+cavalry_leader
+commando
+urban_assault_specialist
+infantry_leader
+organizer
+trickster
+ranger YJ_traits_1  YJ_traits_18     YJ_traits_26 
+				}
+			skill = 6
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 8
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = KoKi_YJ_JL_event.32
+	title = KoKi_YJ_JL_event.32.title
+	desc = KoKi_YJ_JL_event.32.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = KoKi_YJ_JL_event_21_flag
+	}
+
+	option = {
+		name = KoKi_YJ_JL_event.32.a
+		create_corps_commander = {
+			name="lapwing·药娘"
+			portrait_path = "gfx/leaders/DEMO/yn.jpg"
+
+			traits={ 
+				brilliant_strategist 
+		armor_officer 
+panzer_leader
+cavalry_leader
+commando
+urban_assault_specialist
+infantry_leader
+organizer
+trickster
+ranger YJ_traits_1  YJ_traits_15 
+				}
+			skill = 6
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = KoKi_YJ_JL_event.33
+	title = KoKi_YJ_JL_event.33.title
+	desc = KoKi_YJ_JL_event.33.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_country_flag = KoKi_YJ_JL_event_21_flag
+	}
+
+	option = {
+		name = KoKi_YJ_JL_event.33.a
+		create_corps_commander = {
+			name="gods"
+			portrait_path = "gfx/leaders/DEMO/god.jpg"
+
+			traits={ 
+	YJ_traits_2 
+				}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 3
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}

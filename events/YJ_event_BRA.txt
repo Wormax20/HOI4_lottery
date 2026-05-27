@@ -1,0 +1,267 @@
+add_namespace = KoKi_YJ_BRA_event
+country_event = {
+	id = KoKi_YJ_BRA_event.101
+	title = KoKi_YJ_BRA_event.101.title
+	desc = KoKi_YJ_BRA_event.101.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ_BRA_event.101.a
+		add_ideas = YJ_BRA_1_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+}
+
+country_event = {
+	id = KoKi_YJ_BRA_event.102
+	title = KoKi_YJ_BRA_event.102.title
+	desc = KoKi_YJ_BRA_event.102.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		complete_national_focus = BRA_issue_lordships
+		name = KoKi_YJ_BRA_event.102.a
+		add_dynamic_modifier = {
+			modifier = YJ_BRA_2_ideas
+		}
+		set_cosmetic_tag = BRA_uk_POR
+		POR = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = POR
+			}
+			add_core_of = ROOT
+		}
+		add_research_slot = 1
+		add_ideas = YJ_BRA_2_ideas
+		transfer_state = 721
+		721 = {add_compliance = 100}
+		transfer_state = 702
+		702 = {add_compliance = 100}
+		transfer_state = 296
+		296 = {add_compliance = 100}
+		transfer_state = 796
+		796 = {add_compliance = 100}
+		transfer_state = 540
+		540 = {add_compliance = 100}
+		transfer_state = 891
+		891 = {add_compliance = 100}
+		transfer_state = 892
+		892 = {add_compliance = 100}
+		transfer_state = 544
+		544 = {add_compliance = 100}
+		transfer_state = 896
+		896 = {add_compliance = 100}
+		transfer_state = 897
+		897 = {add_compliance = 100}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+}
+
+country_event = {
+	id = KoKi_YJ_BRA_event.103
+	title = KoKi_YJ_BRA_event.103.title
+	desc = KoKi_YJ_BRA_event.103.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ_BRA_event.103.a
+		add_ideas = YJ_BRA_3_ideas
+		add_research_slot = 1
+		set_cosmetic_tag = BRA_america_do_sul
+		complete_national_focus = BRA_court_the_military
+		CHL = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		annex_country = {
+			target = CHL
+			transfer_troops = yes
+		}
+		every_state = {
+			limit = {
+				is_core_of = CHL
+			}
+			add_core_of = ROOT
+		}
+		ARG = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		annex_country = {
+			target = ARG
+			transfer_troops = yes
+		}
+		every_state = {
+			limit = {
+				is_core_of = ARG
+			}
+			add_core_of = ROOT
+		}
+		URG = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		annex_country = {
+			target = URG
+			transfer_troops = yes
+		}
+		every_state = {
+			limit = {
+				is_core_of = URG
+			}
+			add_core_of = ROOT
+		}
+		PAR = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		annex_country = {
+			target = PAR
+			transfer_troops = yes
+		}
+		every_state = {
+			limit = {
+				is_core_of = PAR
+			}
+			add_core_of = ROOT
+		}
+		BOL = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		annex_country = {
+			target = BOL
+			transfer_troops = yes
+		}
+		every_state = {
+			limit = {
+				is_core_of = BOL
+			}
+			add_core_of = ROOT
+		}
+		PRU = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		annex_country = {
+			target = PRU
+			transfer_troops = yes
+		}
+		every_state = {
+			limit = {
+				is_core_of = PRU
+			}
+			add_core_of = ROOT
+		}
+		ECU = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		annex_country = {
+			target = ECU
+			transfer_troops = yes
+		}
+		every_state = {
+			limit = {
+				is_core_of = ECU
+			}
+			add_core_of = ROOT
+		}
+		COL = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		annex_country = {
+			target = COL
+			transfer_troops = yes
+		}
+		every_state = {
+			limit = {
+				is_core_of = COL
+			}
+			add_core_of = ROOT
+		}
+		VEN = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		annex_country = {
+			target = VEN
+			transfer_troops = yes
+		}
+		every_state = {
+			limit = {
+				is_core_of = VEN
+			}
+			add_core_of = ROOT
+		}
+		transfer_state = 310
+		310 = { add_core_of = ROOT }
+		transfer_state = 309
+		309 = { add_core_of = ROOT }
+		transfer_state = 687
+		687 = { add_core_of = ROOT }
+		transfer_state = 691
+		691 = { add_core_of = ROOT }
+		transfer_state = 695
+		695 = { add_core_of = ROOT }
+		transfer_state = 692
+		692 = { add_core_of = ROOT }
+		transfer_state = 694
+		694 = { add_core_of = ROOT }
+		transfer_state = 308
+		308 = { add_core_of = ROOT }
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+}
+
+country_event = {
+	id = KoKi_YJ_BRA_event.104
+	title = KoKi_YJ_BRA_event.104.title
+	desc = KoKi_YJ_BRA_event.104.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ_BRA_event.104.a
+		add_ideas = YJ_BRA_4_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+}

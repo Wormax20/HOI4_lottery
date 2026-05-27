@@ -1,0 +1,11 @@
+music = {
+	name = "bfzc"
+	file = "bfzc.ogg"
+	volume = 0.75 
+}
+
+music = {
+	name = "bbls"
+	file = "bbls.ogg"
+	volume = 0.75 
+}

@@ -1,0 +1,88 @@
+add_namespace = KoKi_YJ_SWI_event
+country_event = {
+	id = KoKi_YJ_SWI_event.101
+	title = KoKi_YJ_SWI_event.101.title
+	desc = KoKi_YJ_SWI_event.101.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		transfer_state = 735
+		735 = {
+			add_core_of = ROOT
+		}
+		transfer_state = 177
+		177 = {
+			add_core_of = ROOT
+		}
+		name = KoKi_YJ_SWI_event.101.a
+		add_ideas = YJ_SWI_1_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+
+
+country_event = {
+	id = KoKi_YJ_SWI_event.102
+	title = KoKi_YJ_SWI_event.102.title
+	desc = KoKi_YJ_SWI_event.102.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ_SWI_event.102.a
+		add_ideas = YJ_SWI_2_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+
+
+country_event = {
+	id = KoKi_YJ_SWI_event.103
+	title = KoKi_YJ_SWI_event.103.title
+	desc = KoKi_YJ_SWI_event.103.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		set_technology = { SWI_mountaineers_tech = 1 }
+		name = KoKi_YJ_SWI_event.103.a
+		add_ideas = YJ_SWI_3_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+
+
+country_event = {
+	id = KoKi_YJ_SWI_event.104
+	title = KoKi_YJ_SWI_event.104.title
+	desc = KoKi_YJ_SWI_event.104.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		add_research_slot = 2
+		name = KoKi_YJ_SWI_event.104.a
+		add_ideas = YJ_SWI_4_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+}

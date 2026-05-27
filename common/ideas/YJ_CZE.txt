@@ -1,0 +1,28 @@
+ideas = {
+	country = {
+		YJ_CZE_1_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_air_fighter
+
+			modifier = { 
+				political_power_gain = 0.25
+				political_power_factor = 0.15
+				global_building_slots = 20 #最大地区数
+				consumer_goods_factor = -0.15 #生活消费品工厂系数
+				production_speed_buildings_factor = 0.1 #建造速度
+				stability_weekly = 0.002 #每周稳定度增长
+				war_support_weekly = 0.002 #每周战争支持度增长
+			}
+		}
+	}
+}

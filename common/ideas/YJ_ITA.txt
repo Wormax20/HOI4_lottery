@@ -1,0 +1,174 @@
+ideas = {
+	country = {
+		YJ_ITA_2_ideas = { #唯有淤血
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ETH_italian_settlers
+
+			modifier = {
+				subversive_activites_upkeep = -0.5  #颠覆活动成本
+				supply_consumption_factor = -0.05 #补给消耗
+				army_org_regain = 0.05  #陆军组织度恢复
+				consumer_goods_factor = -0.15 #生活消费品工厂系数
+				production_factory_max_efficiency_factor = 0.1 #生产效率上限
+                production_factory_efficiency_gain_factor = 0.05 #生产效率增长
+				industrial_capacity_factory = 0.05 #工厂产出
+				industrial_capacity_dockyard = 0.25 #海军船坞产出
+				production_speed_buildings_factor = 0.05 #建造速度
+			}
+		}
+
+		YJ_ITA_01_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ITA_impero_italiano
+
+			modifier = {
+				custom_modifier_tooltip = YJ_ITA_01_ideas_tt
+				global_building_slots = 3 #最大地区数
+				industrial_capacity_factory = 0.10 #工厂产出
+				production_factory_max_efficiency_factor = 0.05 #生产效率上限
+				production_factory_efficiency_gain_factor = 0.05 #生产效率增长
+				production_speed_buildings_factor = 0.05 #建造速度
+				
+			}
+		}
+
+		YJ_ITA_02_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ITA_impero_italiano
+
+			modifier = {
+				custom_modifier_tooltip = YJ_ITA_02_ideas_tt
+				global_building_slots = 5 #最大地区数
+				industrial_capacity_factory = 0.1 #工厂产出
+				production_factory_max_efficiency_factor = 0.1 #生产效率上限
+				production_factory_efficiency_gain_factor = 0.15 #生产效率增长
+				production_speed_buildings_factor = 0.1 #建造速度
+				
+			}
+		}
+
+		YJ_ITA_03_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ITA_impero_italiano
+
+			modifier = {
+				air_attack_factor = 0.15				#空中攻击
+				air_intercept_efficiency = 0.15 		#拦截任务效率
+				air_agility_factor = 0.15 			#机动
+				air_defence_factor = 0.05  #空中防御
+				air_range_factor = 0.10 #航程
+				air_agility_factor = 0.1 #机动
+				air_maximum_speed_factor = 0.1         #空军最大速度
+
+			}
+			research_bonus = {
+				artillery = 0.1
+			}
+		}
+
+		YJ_ITA_04_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ITA_impero_italiano
+
+			modifier = {
+				custom_modifier_tooltip = YJ_ITA_04_ideas_tt
+			}
+		}
+
+		YJ_ITA_05_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ITA_impero_italiano
+			modifier = {
+				air_intercept_efficiency = 0.05 		#拦截任务效率
+				air_agility_factor = 0.05 			#机动
+				air_cas_efficiency = 0.05 #密接支援任务效率
+				air_defence_factor = 0.05  #空中防御
+			}
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+		}
+
+		YJ_ITA_06_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ARG_spirit_of_the_cisplatine_war
+			modifier = {
+				army_attack_factor = 50  							# 陆军师攻击
+				army_defence_factor = 50 							# 陆军师防御
+				army_speed_factor = 3 							#陆军师速度
+			}
+		}
+	}
+}

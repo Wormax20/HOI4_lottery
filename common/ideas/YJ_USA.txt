@@ -1,0 +1,165 @@
+ideas = {
+	hidden_ideas = {
+		YJ_USA_3_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
+			equipment_bonus = {
+				amphibious_mechanized_equipment = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+			}
+		}
+	}
+	country = {
+					YJ_USA_1_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ARG_construction_guilds
+
+			modifier = {
+				political_power_factor = 0.15 #政治点数
+				production_factory_max_efficiency_factor = 0.05 #生产效率上限
+				production_speed_buildings_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05	
+				industrial_capacity_factory = 0.05 #工厂产出
+				industrial_capacity_dockyard = 0.05 #船坞产出
+				local_resources_factor = 0.05 #战略资源获取率
+				consumer_goods_factor = -0.05 #生活消费品系数
+			}
+		}
+		YJ_USA_2_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = jap_duplicate_research
+
+			modifier = {
+				specialization_air_speed_factor = 0.5
+				specialization_land_speed_factor = 0.5
+				specialization_naval_speed_factor = 0.5
+				custom_modifier_tooltip = YJ_USA_2_ideas_tt
+				production_speed_naval_base_factor = 0.1          	# 海军基地建造速度 +10%
+				supply_consumption_factor = -0.1 #补给消耗
+				experience_loss_factor = -0.05 						#有经验的士兵损失
+				army_cas_damage_reduction = 0.05                 #陆军承受密接伤害-5%
+			}
+			equipment_bonus = {
+				medium_plane_fighter_airframe = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+				armor = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+			}
+		}
+		YJ_USA_4_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ARG_civilian_economy_boost
+
+			modifier = {
+				political_power_factor = 0.15 #政治点数
+				global_building_slots = 5
+				consumer_goods_factor = -0.05  #生活消费品工厂系数
+				consumer_goods_expected_value = -0.05  #用于生产生活消费品的期望工厂数量
+				production_speed_infrastructure_factor = 0.10
+				production_speed_industrial_complex_factor = 0.15
+				conversion_cost_civ_to_mil_factor = -0.5
+				local_resources_factor = 0.10 #战略资源获取率
+				production_speed_buildings_factor = 0.05 #建造速度
+			}
+		}
+
+		YJ_USA_5_ideas = { #美英合作
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = jap_duplicate_research
+
+			modifier = {
+				custom_modifier_tooltip = YJ_USA_5_ideas_tt
+				stability_weekly = 0.002 #每周稳定度增长
+				war_support_weekly = 0.002 #每周战争支持度增长
+				production_factory_max_efficiency_factor = 0.05 #生产效率上限
+				industrial_capacity_factory = 0.05 #工厂产出
+			}
+			equipment_bonus = {
+				armor = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		
+		YJ_USA_7_ideas = { #父与子之歌
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = citizen_militia_1
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05 #生产效率上限
+				industrial_capacity_factory = 0.05 #工厂产出
+				production_factory_efficiency_gain_factor = 0.1 #生产效率增长
+				coordination_bonus = 0.1 #协同性
+			}
+		}
+	}
+}

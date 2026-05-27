@@ -1,0 +1,207 @@
+ideas = {
+	country = {
+		YJ_ROM_1_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = PER_anglo_iranian_oil_ns
+
+			modifier = {
+                political_power_gain =  0.5 #每日获得的政治点数
+				stability_weekly = 0.002 #每周稳定度增长
+				war_support_weekly = 0.002 #每周战争支持度增长
+				production_speed_buildings_factor = 0.1 #建造速度
+				production_speed_infrastructure_factor = 1 #基础设施建造速度
+				operative_slot = 2 #特工数量
+				conscription_factor = 0.4 #适役人口修正
+				weekly_manpower = 3000 #每周人力
+				global_building_slots = 15 #最大地区数
+			}
+			equipment_bonus = {
+				train_equipment_1 = {
+					build_cost_ic = -0.3
+					instant = yes
+				}
+				railway_gun = {
+					build_cost_ic = -0.3
+					instant = yes
+				}
+			}
+		}
+		YJ_ROM_2_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = JAP_the_ainu_revolution
+
+			modifier = {
+				custom_modifier_tooltip = YJ_ROM_2_ideas_tt
+			}
+		}
+
+		YJ_ROM_3_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = recovering_from_the_civil_war
+
+			modifier = {
+			}
+		}
+
+		YJ_ROM_03_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = spa_recovering_from_the_civil_war
+
+			modifier = {
+				consumer_goods_factor = -0.1 #生活消费品工厂系数
+                production_factory_efficiency_gain_factor = 0.1 #生产效率增长
+				industrial_capacity_factory = 0.05 #工厂产出
+				production_speed_buildings_factor = 0.05 #建造速度
+				production_speed_arms_factory_factor = 0.05 #军用工厂建造速度
+				production_speed_industrial_complex_factor = 0.05 #民用工厂建造速度
+			}
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				small_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+				small_plane_cas_airframe = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+				cv_small_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+				medium_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+				medium_plane_scout_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+				large_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+				large_plane_maritime_patrol_plane_airframe = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+			}
+		}
+
+		YJ_ROM_4_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = air_war_plans_division_focus
+
+			modifier = {
+			}
+		}
+		
+		YJ_ROM_04_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = air_war_plans_division_focus
+
+			modifier = {
+				land_night_attack = 0.05  #陆战夜战攻击
+				supply_consumption_factor = -0.2 #补给消耗
+				army_intel_to_others =-10 #泄露给敌国的陆军情报
+				navy_intel_to_others =-10
+				airforce_intel_to_others =-10
+				supply_node_range = 0.1 #补给范围
+			}
+		}
+		
+		YJ_ROM_5_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = NORDIC_army_communist
+
+			modifier = {
+				experience_loss_factor = -0.5 #有经验的士兵损失
+				experience_gain_army_unit = 2 #陆军经验增长
+				conscription =  0.05   #适役人口
+				max_planning = 0.2 									# 计划上限
+				planning_speed = 0.15 								# 计划速度
+				army_strength_factor = 0.05 							# HP
+				army_intel_to_others =-5 #泄露给敌国的陆军情报
+				navy_intel_to_others =-5
+				airforce_intel_to_others =-5
+				equipment_capture = 0.1 #装备缴获比例
+				command_power_gain = 2 								# 每日指挥点增长
+				max_command_power = 300 							#最大指挥点数提高多少
+			}
+		}
+
+	}
+}

@@ -1,0 +1,38 @@
+YJ_ITA_1_ideas = { #一日雄狮
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_ITA_italia_irredenta_achieved
+	custom_modifier_tooltip = YJ_ITA_1_ideas_tt
+	army_attack_factor = KoKi_YJ_ITA_event_1_army_attack_factor #陆军攻击
+	army_defence_factor = KoKi_YJ_ITA_event_1_army_defence_factor #陆军防御
+	breakthrough_factor = KoKi_YJ_ITA_event_1_breakthrough_factor #突破
+	naval_damage_factor = KoKi_YJ_ITA_event_1_naval_damage_factor #海军伤害
+	naval_defense_factor = KoKi_YJ_ITA_event_1_naval_defense_factor #海军防御
+	naval_speed_factor = KoKi_YJ_ITA_event_1_naval_speed_factor #海军速度
+	air_defence_factor = KoKi_YJ_ITA_event_1_air_defence_factor #空中防御
+    air_agility_factor = KoKi_YJ_ITA_event_1_air_agility_factor #空中机动 
+	air_maximum_speed_factor = KoKi_YJ_ITA_event_1_air_maximum_speed_factor #最大速度
+
+	industrial_capacity_factory = KoKi_YJ_ITA_event_1_industrial_capacity_factory #工厂产出
+	industrial_capacity_dockyard = KoKi_YJ_ITA_event_1_industrial_capacity_dockyard #船坞产出
+	production_factory_max_efficiency_factor = KoKi_YJ_ITA_event_1_production_factory_max_efficiency_factor #生产效率上限
+	production_factory_efficiency_gain_factor = KoKi_YJ_ITA_event_1_production_factory_efficiency_gain_factor #生产效率增长
+	production_lack_of_resource_penalty_factor = KoKi_YJ_ITA_event_1_production_lack_of_resource_penalty_factor #缺乏资源时的产线惩罚
+}
+
+YJ_ITA_4_ideas = { #赶英超美
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_ARG_rapid_militarization
+	custom_modifier_tooltip = YJ_ITA_4_ideas_tt
+	line_change_production_efficiency_factor = Beta_ITA_4_line_change_production_efficiency_factor        #生产效率保持
+	production_factory_max_efficiency_factor = Beta_ITA_4_lproduction_factory_max_efficiency_factor        #生产效率上限
+	production_factory_start_efficiency_factor = Beta_ITA_4_lproduction_factory_start_efficiency_factor      #基础生产效率
+	production_factory_efficiency_gain_factor = Beta_ITA_4_lproduction_factory_efficiency_gain_factor       #生产效率增长
+	industrial_capacity_factory = Beta_ITA_4_lindustrial_capacity_factory                     #工厂产出
+	industrial_capacity_dockyard = Beta_ITA_4_lindustrial_capacity_dockyard                    #海军船坞产出
+	army_attack_factor = Beta_ITA_4_army_attack_factor                              #陆军师攻击
+    army_defence_factor = Beta_ITA_4_army_defence_factor                             #陆军师防御
+}

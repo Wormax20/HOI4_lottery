@@ -1,0 +1,141 @@
+ideas = {
+	country = {
+		YJ_SOV_1_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_spy_political
+
+			modifier = {
+				political_power_factor = 0.15 #政治點數 百分比
+				army_core_attack_factor = 0.05 #陆军师核心领土攻击
+				army_core_defence_factor =  0.05 #陆军师核心领土防御
+				intel_from_operatives_factor = 0.15 #特工渗透获得的情报 百分比
+				intelligence_agency_defense = 0.5 #反间谍
+				subversive_activites_upkeep = -0.25 #颠覆活动成本
+				operative_slot = 4 #特工数量
+				enemy_operative_capture_chance_factor = 0.50 #捕获敌方特工的几率 百分比修正
+				boost_ideology_mission_factor = 1
+				propaganda_mission_factor = 1
+				operation_risk = -0.2
+				operation_cost = -0.2
+				operation_outcome = 0.5
+				war_support_factor = 0.2
+				stability_factor = 0.2
+				civilian_intel_to_others = -30
+				army_intel_to_others =-30
+				navy_intel_to_others =-30
+				airforce_intel_to_others =-50
+				stability_weekly = 0.002 #每周稳定度增长
+				war_support_weekly = 0.002 #每周战争支持度增长
+			}
+		}
+		YJ_SOV_2_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = SOV_stakhanovite_movement
+
+			modifier = {
+				production_speed_buildings_factor = 0.1 #建造速度
+				consumer_goods_factor = -0.1 #生活消费品系数
+				global_building_slots = 5 #地区最大工业值
+				stability_weekly = 0.002 #每周稳定度增长
+				war_support_weekly = 0.002 #每周战争支持度增长
+				political_advisor_cost_factor = -1 #政治顾问花费
+			}
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05
+					reliability = 0.1
+					hard_attack = 0.1
+					instant = yes
+				}
+				mechanized_equipment = {
+					build_cost_ic = -0.05
+					breakthrough = 0.1
+					instant = yes
+				}
+			}
+		}
+		YJ_SOV_4_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = SOV_soviet_railways
+
+			modifier = {
+				custom_modifier_tooltip = YJ_SOV_4_ideas_tt
+				political_power_factor = 0.15
+				stability_factor = 0.1
+				global_building_slots = 3 #地区最大工业值
+				production_speed_buildings = 0.1 #建造速度
+				local_resources_factor = 0.10 #战略资源获取率
+				max_dig_in_factor = 0.1 #最大堑壕
+				supply_consumption_factor = -0.1 #补给消耗
+				stability_weekly = 0.002 #每周稳定度增长
+				war_support_weekly = 0.002 #每周战争支持度增长
+			}
+		}
+		YJ_SOV_5_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = PRC_the_central_committee
+
+			modifier = {
+				political_power_factor =  0.10 #政治点数
+				research_speed_factor = 0.10 #科研速度
+				army_speed_factor = 0.10 #陆军师速度
+				command_power_gain = 0.5 	#每日指挥点增长
+				max_command_power = 200 	#最大指挥点数提高多少
+				army_core_attack_factor = 0.1 #陆军师核心领土攻击
+				army_core_defence_factor =  0.1 #陆军师核心领土防御
+				army_org_regain = 0.1 #陆军组织度恢复
+				army_org_factor = 0.1 #陸軍師組織度
+				supply_node_range = 0.1 #补给范围
+				land_reinforce_rate = 0.02 #增援率
+				production_speed_supply_node_factor = 1.5 #补给中心建造速度
+				factory_energy_consumption = -0.1
+				local_resources_factor = 0.15 #战略资源获取率
+				conscription = 0.03 #适役人口
+				conscription_factor = 0.1 #适役人口系数
+				global_building_slots = 3 #最大地区数
+				stability_weekly = 0.002 #每周稳定度增长
+				war_support_weekly = 0.002 #每周战争支持度增长
+			}
+		}
+	}
+}

@@ -1,0 +1,10 @@
+YJ_TUR_ideas = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_modifiers_ETH_state_development
+	state_production_speed_buildings_factor = 0.8 #建造速度
+	local_factories =  0.6      
+	army_core_attack_factor = 0.3
+	army_core_defence_factor = 0.3
+}

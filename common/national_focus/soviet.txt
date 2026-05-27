@@ -327,7 +327,10 @@ focus_tree = {
 		cost = 10
 
 		available = {
-
+			custom_trigger_tooltip = {
+				tooltip = SOV_fyp_controlled_factories_tier_1_tt
+				NOT = { num_of_controlled_factories < SOV_fyp_factory_requirement_tier_1 }
+			}
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -464,7 +467,11 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			
+			SOV_third_five_year_plan_available = yes
+			custom_trigger_tooltip = {
+				tooltip = SOV_fyp_controlled_factories_tier_2_tt
+				NOT = { num_of_controlled_factories < SOV_fyp_factory_requirement_tier_2 }
+			}
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
@@ -523,7 +530,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SOV_shift_to_armaments_production }
 
 		available = {
-			
+			SOV_third_five_year_plan_available = yes
 			custom_trigger_tooltip = {
 				tooltip = SOV_fyp_controlled_factories_tier_3_tt
 				NOT = { num_of_controlled_factories < SOV_fyp_factory_requirement_tier_3 }
@@ -584,7 +591,7 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			
+			SOV_third_five_year_plan_available = yes
 			custom_trigger_tooltip = {
 				tooltip = SOV_fyp_controlled_factories_tier_4_tt
 				NOT = { num_of_controlled_factories < SOV_fyp_factory_requirement_tier_4 }
@@ -619,7 +626,7 @@ focus_tree = {
 		cost = 5
 
 		available = {
-			
+			SOV_third_five_year_plan_available = yes
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -718,7 +725,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SOV_reorganize_the_pc_of_heavy_industry}
 
 		available = {
-			
+			SOV_third_five_year_plan_available = yes
 			custom_trigger_tooltip = {
 				tooltip = SOV_fyp_controlled_factories_tier_3_tt
 				NOT = { num_of_controlled_factories < SOV_fyp_factory_requirement_tier_3 }
@@ -770,7 +777,7 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			
+			SOV_third_five_year_plan_available = yes
 			custom_trigger_tooltip = {
 				tooltip = SOV_fyp_controlled_factories_tier_4_tt
 				NOT = { num_of_controlled_factories < SOV_fyp_factory_requirement_tier_4 }
@@ -816,7 +823,7 @@ focus_tree = {
 					include_locked = yes
 				}
 			}
-			
+			SOV_third_five_year_plan_available = yes
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -907,7 +914,7 @@ focus_tree = {
 
 		available = {
 			has_tech = rubber_processing
-			
+			SOV_third_five_year_plan_available = yes
 			has_full_control_of_state = 219 #MOSCOW
 			OR = {
 				has_full_control_of_state = 260 #VORONEZH
@@ -979,7 +986,7 @@ focus_tree = {
 		cost = 5
 
 		available = {
-			
+			SOV_third_five_year_plan_available = yes
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}

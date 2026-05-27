@@ -1,0 +1,259 @@
+add_namespace = KoKi_YJ_GER_event
+country_event = {
+	id = KoKi_YJ_GER_event.101
+	title = KoKi_YJ_GER_event.101.title
+	desc = KoKi_YJ_GER_event.101.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ_GER_event.101.a
+		add_ideas = YJ_GER_1_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+}
+
+country_event = {
+	id = KoKi_YJ_GER_event.102
+	title = KoKi_YJ_GER_event.102.title
+	desc = KoKi_YJ_GER_event.102.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		set_technology = {
+			amphibious_mechanized_infantry = 1
+		}
+		name = KoKi_YJ_GER_event.102.a
+		add_ideas = YJ_GER_2_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+}
+
+country_event = {
+	id = KoKi_YJ_GER_event.103
+	title = KoKi_YJ_GER_event.103.title
+	desc = KoKi_YJ_GER_event.103.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ_GER_event.103.a
+		add_ideas = YJ_GER_3_ideas
+		complete_national_focus = GER_improve_motorized_troops
+		complete_national_focus = GER_lessons_of_the_great_war
+		complete_national_focus = GER_panzer_troops_school
+		complete_national_focus = GER_advanced_panzer_research
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+}
+
+country_event = {
+	id = KoKi_YJ_GER_event.104
+	title = KoKi_YJ_GER_event.104.title
+	desc = KoKi_YJ_GER_event.104.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ_GER_event.104.a
+		add_ideas = YJ_GER_4_ideas
+		set_technology = {
+			improved_medium_tank_chassis = 1
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+}
+
+
+
+
+country_event = {
+	id = KoKi_YJ_GER_event.1011
+	title = KoKi_YJ_GER_event.1011.title
+	desc = KoKi_YJ_GER_event.1011.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		transfer_state = 85
+		85 = { add_core_of = ROOT }
+		transfer_state = 807
+		807 = { add_core_of = ROOT }
+		transfer_state = 86
+		86 = { add_core_of = ROOT }
+		transfer_state = 762
+		762 = { add_core_of = ROOT }
+		transfer_state = 188
+		188 = { add_core_of = ROOT }
+		transfer_state = 28
+		28 = { add_core_of = ROOT }
+
+		set_politics = {
+		ruling_party = neutrality
+		}
+		set_cosmetic_tag = HRE_UNIFIED
+		name = KoKi_YJ_GER_event.1011.a
+		add_ideas = YJ_GER_01_ideas
+		ai_chance = {
+			factor = 100
+		}
+		name = wtt_germany.1001.a
+
+		add_stability = -0.1
+		kill_country_leader = yes
+
+		GER_victoria = {
+			add_country_leader_role = {
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						kaiserin_of_the_people
+						victoria_iii # Third Victoria counting from Queen Victoria hurr durr
+					}
+				}
+				promote_leader = yes
+			}
+		}
+
+		mark_focus_tree_layout_dirty = yes
+
+		hidden_effect = { set_global_flag = hindenburg_destroyed }
+	}
+	
+}
+
+
+country_event = {
+	id = KoKi_YJ_GER_event.1012
+	title = KoKi_YJ_GER_event.1012.title
+	desc = KoKi_YJ_GER_event.1012.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ_GER_event.1012.a
+		add_ideas = YJ_GER_02_ideas
+		create_intelligence_agency = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		gain_random_agency_upgrade = yes
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+country_event = {
+	id = KoKi_YJ_GER_event.10001
+	title = KoKi_YJ_GER_event.10001.title
+	desc = KoKi_YJ_GER_event.10001.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ_GER_event.10001.a
+		if = {
+			limit = { has_idea = war_economy }
+			add_ideas = tot_economic_mobilisation
+		}
+		else_if = {
+			limit = { 
+				OR = {
+					has_idea = war_economy
+					has_idea = tot_economic_mobilisation
+				}
+			}
+			add_ideas = war_economy
+		}
+		add_ideas = YJ_GER_5_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+
+	
+	option = {
+		name = KoKi_YJ_GER_event.10001.a
+		add_ideas = YJ_GER_5_ideas
+		ai_chance = {
+			factor = 0
+		}
+	}
+
+	
+	option = {
+		name = KoKi_YJ_GER_event.10001.a
+		ai_chance = {
+			factor = 0
+		}
+	}
+	
+}

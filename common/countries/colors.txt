@@ -110,8 +110,8 @@ IRE = {
 	color_ui = rgb { 104 207 117 }
 }
 HUN = {
-	color = rgb { 249 126 98 }
-	color_ui = rgb { 255 164 127 }
+	color = rgb { 194 198 215 }
+	color_ui = rgb { 255 255 255 }
 }
 AFG = {
 	color = rgb { 64 160 167 }
@@ -369,8 +369,8 @@ ICE = {
 }
 
 UKR = {
-	color = rgb { 0  80  230 }
-	color_ui = rgb { 0  80  230 }	
+	color = rgb { 194 198 215 }
+	color_ui = rgb { 255 255 255 }
 }
 
 AZR = {
@@ -1213,8 +1213,21 @@ RUT = {
 	color_ui = rgb { 10 68 199 }	
 }
 GAL = {
-	color = rgb { 195 72 17 }
-	color_ui = rgb { 195 72 16 }	
+	color = rgb { 194 198 215 }
+	color_ui = rgb { 255 255 255 }
 }
 
+BOS = {
+	color = rgb { 194 198 215 }
+	color_ui = rgb { 255 255 255 }
+}
 
+SLV = {
+	color = rgb { 194 198 215 }
+	color_ui = rgb { 255 255 255 }
+}
+
+FRA_THIRD_EMPIRE = {
+	color = rgb { 0 40 195 }
+	color_ui = rgb { 0 40 195 }
+}

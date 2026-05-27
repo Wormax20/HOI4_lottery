@@ -119,15 +119,38 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
 			MEX_YJ_scripted_effects = yes
 		}
 	}
-	# 匈牙利 #
+	# 匈牙利
 	if = {
-		limit = { 
-			original_tag = HUN 
-			is_ai = no
-		}
-		hidden_effect = {
-			HUN_YJ_scripted_effects = yes
-		}
+    	limit = {
+        	original_tag = HUN
+        	is_ai = no
+    	}
+    	hidden_effect = {
+        	if = {
+            	limit = {
+					AUS = { is_ai = yes }
+                	CZE = { is_ai = yes }
+            	}
+            	HUN_YJ_scripted_effects = yes
+        	}
+
+        	# 二元判定
+        	else_if = {
+            	limit = {
+                	AUS = { is_ai = no }
+					CZE = { is_ai = yes }
+            	}
+            	HUN_YJ_2_scripted_effects = yes
+        	}
+			# 三元判定
+			else_if = {
+            	limit = {
+                	AUS = { is_ai = no }
+					CZE = { is_ai = no }
+            	}
+            	HUN_YJ_3_scripted_effects = yes
+        	}
+    	}
 	}
 	# 菲律宾 #
 	if = {
@@ -187,6 +210,37 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
 		}
 		hidden_effect = {
 			TUR_YJ_scripted_effects = yes
+		}
+	}
+	#奥地利
+	if = {
+    	limit = { 
+        	original_tag = AUS
+        	is_ai = no 
+    	}
+    	hidden_effect = {
+
+        	# 捷克是玩家 → 触发3
+        	if = {
+            	limit = {
+                	CZE = { is_ai = no }
+            	}
+            	AUS_YJ_3_scripted_effects = yes
+        	}
+        	else_if = {
+            # 否则 → 触发2
+            	AUS_YJ_2_scripted_effects = yes
+        	}
+    	}
+	}
+	#捷克
+	if = {
+		limit = { 
+			original_tag = CZE
+			is_ai = no 
+		}
+		hidden_effect = {
+			CZE_YJ_scripted_effects = yes
 		}
 	}
 }
@@ -432,35 +486,52 @@ ENG_YJ_scripted_effects = {
 
 FRA_YJ_scripted_effects = {
 		random_list = {
-			25 = {
+			20 = {
 				modifier = {
-					has_idea = YJ_FRA_1_ideas
+					OR = {
+						has_idea = YJ_FRA_1_ideas
+						has_idea = YJ_FRA_2_ideas
+						has_idea = YJ_FRA_3_ideas
+					}
 					factor = 0
 				}
 				country_event = KoKi_YJ_FRA_event.101
 			}
-			25 = {
+			20 = {
 				modifier = {
-					has_idea = YJ_FRA_2_ideas
-					has_idea = YJ_FRA_3_ideas
+					OR = {
+						has_idea = YJ_FRA_1_ideas
+						has_idea = YJ_FRA_2_ideas
+						has_idea = YJ_FRA_3_ideas
+					}
 					factor = 0
 				}
 				country_event = KoKi_YJ_FRA_event.102
 			}
-			25 = {
+			20 = {
 				modifier = {
-					has_idea = YJ_FRA_2_ideas
-					has_idea = YJ_FRA_3_ideas
+					OR = {
+						has_idea = YJ_FRA_1_ideas
+						has_idea = YJ_FRA_2_ideas
+						has_idea = YJ_FRA_3_ideas
+					}
 					factor = 0
 				}
 				country_event = KoKi_YJ_FRA_event.103
 			}
-			25 = {
+			20 = {
 				modifier = {
 					has_idea = YJ_FRA_4_ideas
 					factor = 0
 				}
 				country_event = KoKi_YJ_FRA_event.104
+			}
+			20 = {
+				modifier = {
+					has_idea = YJ_FRA_5_ideas
+					factor = 0
+				}
+				country_event = KoKi_YJ_FRA_event.105
 			}
 		}
 }
@@ -994,6 +1065,66 @@ HUN_YJ_scripted_effects = {
 	}
 }
 
+HUN_YJ_2_scripted_effects = {
+	random_list = {
+		33.3 = {
+			modifier = {
+				has_idea = YJ_HUN_01_ideas
+				factor = 0
+			}
+			country_event = KoKi_YJ_HUN_event.1011
+		}
+		33.3 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_HUN_3_ideas
+					NOT = {
+						has_idea = YJ_HUN_01_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_HUN_event.103
+		}
+		33.3 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_HUN_4_ideas
+					NOT = {
+						has_idea = YJ_HUN_01_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_HUN_event.104
+		}
+	}
+}
+
+HUN_YJ_3_scripted_effects = {
+	random_list = {
+		50 = {
+			modifier = {
+				has_idea = YJ_HUN_02_ideas
+				factor = 0
+			}
+			country_event = KoKi_YJ_HUN_event.1012
+		}
+		50 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_HUN_3_ideas
+					NOT = {
+						has_idea = YJ_HUN_02_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_HUN_event.103
+		}
+	}
+}
+
 PHI_YJ_scripted_effects = {
 	random_list = {
 		25 = {
@@ -1176,33 +1307,6 @@ RAJ_YJ_scripted_effects = {
 }
 
 CAN_YJ_scripted_effects = {
-	if = {
-		limit = {
-			NOT = { has_idea = YJ_CAN_1_ideas }
-		}
-		country_event = KoKi_YJ_CAN_event.101
-	}
-	if = {
-		limit = {
-			NOT = { has_country_flag = CAN_lottery_1_Flag }
-		}
-		random_list = {
-			50 = {
-				country_event = KoKi_YJ_CAN_event.102
-			}
-			50 = {
-				country_event = KoKi_YJ_CAN_event.103
-			}
-		}
-		set_country_flag = CAN_lottery_1_Flag
-	}
-	else_if = {
-		limit = { has_idea = YJ_CAN_1_ideas }
-		country_event = KoKi_YJ_CAN_event.104
-	}
-}
-
-CAN_YJ_scripted_effects = {
 	random_list = {
 		25 = {
 			modifier = {
@@ -1282,6 +1386,42 @@ TUR_YJ_scripted_effects = {
 				factor = 0
 			}
 			country_event = KoKi_YJ_TUR_event.103
+		}
+	}
+}
+
+AUS_YJ_2_scripted_effects = {
+	random_list = {
+		100 = {
+			modifier = {
+				has_idea = YJ_AUS_1_ideas
+				factor = 0
+			}
+			country_event = KoKi_YJ_AUS_event.101
+		}
+	}
+}
+
+AUS_YJ_3_scripted_effects = {
+	random_list = {
+		100 = {
+			modifier = {
+				has_idea = YJ_AUS_2_ideas
+				factor = 0
+			}
+			country_event = KoKi_YJ_AUS_event.102
+		}
+	}
+}
+
+CZE_YJ_scripted_effects = {
+	random_list = {
+		100 = {
+			modifier = {
+				has_idea = YJ_CZE_1_ideas
+				factor = 0
+			}
+			country_event = KoKi_YJ_CZE_event.101
 		}
 	}
 }
@@ -2109,112 +2249,3 @@ KoKi_YJ_ITA_event_1_scripted_effects = {
 	}
 }
 
-#pp抽奖
-KoKi_YJ_decisions_pp = {
-    hidden_effect = {
-        if = { limit = { check_variable = { YJ_rng = 1 } } country_event = KoKi_YJ_pp.1 }
-        else_if = { limit = { check_variable = { YJ_rng = 2 } } country_event = KoKi_YJ_pp.2 }
-        else_if = { limit = { check_variable = { YJ_rng = 3 } } country_event = KoKi_YJ_pp.3 }
-        else_if = { limit = { check_variable = { YJ_rng = 4 } } country_event = KoKi_YJ_pp.4 }
-        else_if = { limit = { check_variable = { YJ_rng = 5 } } country_event = KoKi_YJ_pp.6 }
-        else_if = { limit = { check_variable = { YJ_rng = 6 } } country_event = KoKi_YJ_pp.5 }
-        else_if = { limit = { check_variable = { YJ_rng = 7 } } country_event = KoKi_YJ_pp.7 }
-        else_if = { limit = { check_variable = { YJ_rng = 8 } } country_event = KoKi_YJ_pp.9 }
-        else_if = { limit = { check_variable = { YJ_rng = 9 } } country_event = KoKi_YJ_pp.21 }
-        else_if = { limit = { check_variable = { YJ_rng = 10 } } country_event = KoKi_YJ_pp.22 }
-        else_if = { limit = { check_variable = { YJ_rng = 11 } } country_event = KoKi_YJ_pp.8 }
-        else_if = { limit = { check_variable = { YJ_rng = 12 } } country_event = KoKi_YJ_pp.23 }
-        else_if = { limit = { check_variable = { YJ_rng = 13 } } country_event = KoKi_YJ_pp.24 }
-        else_if = { limit = { check_variable = { YJ_rng = 14 } } country_event = KoKi_YJ_pp.25 }
-        else_if = { limit = { check_variable = { YJ_rng = 15 } } country_event = KoKi_YJ_pp.26 }
-        else_if = { limit = { check_variable = { YJ_rng = 16 } } country_event = KoKi_YJ_pp.27 }
-        else_if = { limit = { check_variable = { YJ_rng = 17 } } country_event = KoKi_YJ_pp.28 }
-        else_if = { limit = { check_variable = { YJ_rng = 18 } } country_event = KoKi_YJ_pp.18 }
-        else_if = { limit = { check_variable = { YJ_rng = 19 } } country_event = KoKi_YJ_pp.19 }
-        else_if = { limit = { check_variable = { YJ_rng = 20 } } country_event = KoKi_YJ_pp.20 }
-		else_if = { limit = { check_variable = { YJ_rng = 21 } } country_event = KoKi_YJ_pp.29 }
-    }
-}
-
-#资源抽奖
-
-YJ_ZY_scripted_effects_1 = {
-    hidden_effect = {
-        if = { limit = { check_variable = { YJ_rng1 < 16 } } country_event = KoKi_YJ_pp_resource.10 }
-        else_if = { limit = { check_variable = { YJ_rng1 < 32 } } country_event = KoKi_YJ_pp_resource.11 }
-        else_if = { limit = { check_variable = { YJ_rng1 < 48 } } country_event = KoKi_YJ_pp_resource.12 }
-        else_if = { limit = { check_variable = { YJ_rng1 < 64 } } country_event = KoKi_YJ_pp_resource.13 }
-        else_if = { limit = { check_variable = { YJ_rng1 < 80 } } country_event = KoKi_YJ_pp_resource.14 }
-        else_if = { limit = { check_variable = { YJ_rng1 < 95 } } country_event = KoKi_YJ_pp_resource.15 }
-        else_if = { limit = { check_variable = { YJ_rng1 < 101 } } country_event = KoKi_YJ_pp_resource.17 }
-    }
-}
-
-YJ_JL_LJ = {
-    hidden_effect = {
-        if = {
-            limit = { 
-                NOT = { has_country_flag = YJ_pool_initialized } 
-            }
-            for_loop_effect = {
-                end = 33
-                compare = less_than
-                value = current_i
-                
-                if = {
-                    limit = { check_variable = { current_i > 0 } }
-                    add_to_array = { YJ_event_pool = current_i }
-                }
-            }
-            set_country_flag = YJ_pool_initialized
-        }
-
-        if = {
-            limit = { 
-                check_variable = { YJ_event_pool^num > 0 } 
-            }
-            
-            set_variable = { pool_size = YJ_event_pool^num }
-            
-            set_variable = { random_index = 0 }
-            set_variable_to_random = { var = random_index min = 0 max = 9999 }
-            modulo_variable = { random_index = pool_size }
-            
-            set_temp_variable = { drawn_event = YJ_event_pool^random_index }
-            remove_from_array = { YJ_event_pool = drawn_event }
-
-            if = { limit = { check_variable = { drawn_event = 1 } } country_event = KoKi_YJ_JL_event.1 }
-            else_if = { limit = { check_variable = { drawn_event = 2 } } country_event = KoKi_YJ_JL_event.2 }
-            else_if = { limit = { check_variable = { drawn_event = 3 } } country_event = KoKi_YJ_JL_event.3 }
-            else_if = { limit = { check_variable = { drawn_event = 4 } } country_event = KoKi_YJ_JL_event.4 }
-            else_if = { limit = { check_variable = { drawn_event = 5 } } country_event = KoKi_YJ_JL_event.5 }
-            else_if = { limit = { check_variable = { drawn_event = 6 } } country_event = KoKi_YJ_JL_event.6 }
-            else_if = { limit = { check_variable = { drawn_event = 7 } } country_event = KoKi_YJ_JL_event.7 }
-            else_if = { limit = { check_variable = { drawn_event = 8 } } country_event = KoKi_YJ_JL_event.8 }
-            else_if = { limit = { check_variable = { drawn_event = 9 } } country_event = KoKi_YJ_JL_event.9 }
-            else_if = { limit = { check_variable = { drawn_event = 10 } } country_event = KoKi_YJ_JL_event.10 }
-            else_if = { limit = { check_variable = { drawn_event = 11 } } country_event = KoKi_YJ_JL_event.11 }
-            else_if = { limit = { check_variable = { drawn_event = 12 } } country_event = KoKi_YJ_JL_event.12 }
-            else_if = { limit = { check_variable = { drawn_event = 13 } } country_event = KoKi_YJ_JL_event.13 }
-            else_if = { limit = { check_variable = { drawn_event = 14 } } country_event = KoKi_YJ_JL_event.14 }
-            else_if = { limit = { check_variable = { drawn_event = 15 } } country_event = KoKi_YJ_JL_event.15 }
-            else_if = { limit = { check_variable = { drawn_event = 16 } } country_event = KoKi_YJ_JL_event.16 }
-            else_if = { limit = { check_variable = { drawn_event = 17 } } country_event = KoKi_YJ_JL_event.17 }
-            else_if = { limit = { check_variable = { drawn_event = 18 } } country_event = KoKi_YJ_JL_event.18 }
-            else_if = { limit = { check_variable = { drawn_event = 19 } } country_event = KoKi_YJ_JL_event.19 }
-            else_if = { limit = { check_variable = { drawn_event = 20 } } country_event = KoKi_YJ_JL_event.21 }
-            else_if = { limit = { check_variable = { drawn_event = 21 } } country_event = KoKi_YJ_JL_event.22 }
-            else_if = { limit = { check_variable = { drawn_event = 22 } } country_event = KoKi_YJ_JL_event.23 }
-            else_if = { limit = { check_variable = { drawn_event = 23 } } country_event = KoKi_YJ_JL_event.24 }
-            else_if = { limit = { check_variable = { drawn_event = 24 } } country_event = KoKi_YJ_JL_event.25 }
-            else_if = { limit = { check_variable = { drawn_event = 25 } } country_event = KoKi_YJ_JL_event.26 }
-            else_if = { limit = { check_variable = { drawn_event = 26 } } country_event = KoKi_YJ_JL_event.27 }
-            else_if = { limit = { check_variable = { drawn_event = 27 } } country_event = KoKi_YJ_JL_event.28 }
-            else_if = { limit = { check_variable = { drawn_event = 28 } } country_event = KoKi_YJ_JL_event.29 }
-            else_if = { limit = { check_variable = { drawn_event = 29 } } country_event = KoKi_YJ_JL_event.30 }
-            else_if = { limit = { check_variable = { drawn_event = 30 } } country_event = KoKi_YJ_JL_event.31 }
-            else_if = { limit = { check_variable = { drawn_event = 31 } } country_event = KoKi_YJ_JL_event.32 }
-            else_if = { limit = { check_variable = { drawn_event = 32 } } country_event = KoKi_YJ_JL_event.33 }
-        }
-    }
-}

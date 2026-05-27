@@ -1,0 +1,9 @@
+YJ_FRA_ideas = {
+	enable = {
+		always = yes
+	}
+	icon = GFX_idea_FRA_national_mobilization_focus
+	custom_modifier_tooltip = YJ_FRA_ideas_tt
+	INDUSTRIAL_FACTORY_DONATIONS = YJ_FRA_ideas_INDUSTRIAL_FACTORY_DONATIONS
+	MILITARY_FACTORY_DONATIONS = YJ_FRA_ideas_MILITARY_FACTORY_DONATIONS
+}
