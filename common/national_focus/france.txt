@@ -4451,7 +4451,7 @@
 			focus = FRA_concessions_to_italy
 		}
 		relative_position_id = FRA_concessions_to_italy
-		cost = 10
+		cost = 2
 
 		ai_will_do = {
 			factor = 1
