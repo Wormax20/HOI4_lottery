@@ -1,58 +1,5 @@
 add_namespace = KoKi_YJ_CZE_event
 country_event = {
-	id = KoKi_YJ_AUS_event.102
-	title = KoKi_YJ_AUS_event.102.title
-	desc = KoKi_YJ_AUS_event.102.desc
-	
-	picture = GFX_report_event_china_ledo_road
-
-	is_triggered_only = yes
-
-	option = {
-		add_offsite_building = {
-			type = industrial_complex
-			level = 15
-		}
-		set_cosmetic_tag = AUS_cisleithania
-		transfer_state = 39
-		39 = { add_core_of = ROOT }
-		transfer_state = 736
-		736 = { add_core_of = ROOT }
-		736 = { remove_core_of = SLV }
-		transfer_state = 852
-		852 = { add_core_of = ROOT }
-
-		transfer_state = 102
-		102 = { remove_core_of = SLV }
-		102 = { add_core_of = ROOT }
-		transfer_state = 853
-		853 = { remove_core_of = SLV }
-		853 = { add_core_of = ROOT }
-
-		transfer_state = 72
-		72 = { add_core_of = SLV }
-
-		transfer_state = 88
-		88 = { add_core_of = SLV }
-
-		transfer_state = 91
-		91 = { add_core_of = SLV }
-
-		transfer_state = 89
-		89 = { add_core_of = SLV }
-		transfer_state = 850
-		850 = { add_core_of = ROOT }
-		name = KoKi_YJ_AUS_event.102.a
-		add_ideas = YJ_AUS_1_ideas
-		ai_chance = {
-			factor = 100
-		}
-	}
-}
-
-
-
-country_event = {
 	id = KoKi_YJ_CZE_event.101
 	title = KoKi_YJ_CZE_event.101.title
 	desc = KoKi_YJ_CZE_event.101.desc
@@ -69,9 +16,9 @@ country_event = {
 		set_cosmetic_tag = CZE_AUS_danubian_state
 		BOS = { set_cosmetic_tag = BOS_AUS_danubian_state }
 		transfer_state = 109
-		109 = { add_core_of = BOS }
+		109 = { add_core_of = ROOT }
 		transfer_state = 103
-		103 = { add_core_of = BOS }
+		103 = { add_core_of = ROOT }
 		transfer_state = 104
 		104 = { add_core_of = ROOT }
 		transfer_state = 804

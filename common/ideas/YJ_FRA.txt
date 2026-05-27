@@ -107,10 +107,13 @@ ideas = {
 			}
 			research_bonus = {
 				artillery = 0.2
+				armor = 0.2
 			}
 			equipment_bonus = {
-				heavy_tank_chassis = {
+				armor = {
 					build_cost_ic = -0.3
+					soft_attack = 0.2
+					hard_attack = 0.2
 					reliability = 0.4 #可靠性
 					armor_value = 0.2
 					maximum_speed = 0.6 #最大速度
@@ -133,8 +136,19 @@ ideas = {
 			picture = ETH_italian_settlers
 
 			modifier = {
-				production_speed_arms_factory_factor = 0.1
-
+				political_power_gain = 0.2 #每日获得的政治点数
+				surrender_limit = 0.2 #投降界限
+				compliance_gain = 0.2 #每日顺从度增长
+				required_garrison_factor = -0.8 #驻军需求
+				resistance_target = -0.3 #抵抗目标
+				resistance_decay = 0.2 #抵抗下降速度
+				resistance_growth = -0.2 #抵抗增长速度
+				army_core_attack_factor = 0.1
+				army_armor_defence_factor = 0.1
+				resistance_target_on_our_occupied_states = 0.2 #我们被敌人占领地区的抵抗目标
+				resistance_decay_on_our_occupied_states = -0.2 #我们被敌人占领地区的抵抗下降速度
+				resistance_growth_on_our_occupied_states = 0.2 #我们被敌人占领地区的抵抗增长速度
+				compliance_growth_on_our_occupied_states = -0.2 #我们被敌人占领地区的顺从度增长速度
 			}
 
 		}
@@ -154,10 +168,14 @@ ideas = {
 			picture = NOR_norsk_hydro
 
 			modifier = {
-				production_speed_arms_factory_factor = 0.1
-				industrial_capacity_factory = 0.1 #工厂产出
-				production_factory_max_efficiency_factor = 0.1 #生产效率上限
-				production_factory_efficiency_gain_factor = 0.1 #生产效率增长
+				global_building_slots = 3
+				political_power_gain = 0.1  #每日获得的政治点数
+				monthly_population = 0.2 #月度人力
+				industrial_capacity_factory = 0.2 #工厂产出
+		        industrial_capacity_dockyard = 0.2 #船坞产出
+				production_factory_max_efficiency_factor = 0.20 #生产效率上限
+				conscription = 0.05 #适役人口
+				conscription_factor = 0.4 #适役人口修正
 			}
 
 		}

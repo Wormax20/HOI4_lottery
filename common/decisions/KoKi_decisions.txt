@@ -20,27 +20,6 @@ KoKi_YJ_decisions_categories = {
 	}
 	KoKi_YJ_TAG_decisions_0 = {
 		activation = {
-			OR = {
-				original_tag = USA
-				original_tag = ENG
-				original_tag = FRA
-				original_tag = SOV
-				original_tag = GER
-				original_tag = ITA
-				original_tag = BRA
-				original_tag = FIN
-				original_tag = JAP
-				original_tag = PRC
-				original_tag = ROM
-				original_tag = MEX
-				original_tag = HUN
-				original_tag = PHI
-				original_tag = BEL
-				original_tag = SWI
-				original_tag = RAJ
-				original_tag = CAN
-				original_tag = TUR
-			}
 			date < 1936.1.2
 		}
 		available = {
@@ -59,27 +38,6 @@ KoKi_YJ_decisions_categories = {
 	}
 	KoKi_YJ_TAG_decisions_1 = {
 		activation = {
-			OR = {
-				original_tag = USA
-				original_tag = ENG
-				original_tag = FRA
-				original_tag = SOV
-				original_tag = GER
-				original_tag = ITA
-				original_tag = BRA
-				original_tag = FIN
-				original_tag = JAP
-				original_tag = PRC
-				original_tag = ROM
-				original_tag = MEX
-				original_tag = HUN
-				original_tag = PHI
-				original_tag = BEL
-				original_tag = SWI
-				original_tag = RAJ
-				original_tag = CAN
-				original_tag = TUR
-			}
 			has_global_flag = KoKi_YJ_TAG_decisions_YJ_1
 		}
 		available = {
@@ -99,27 +57,6 @@ KoKi_YJ_decisions_categories = {
 
 	KoKi_YJ_TAG_decisions_2 = {
 		activation = {
-			OR = {
-				original_tag = USA
-				original_tag = ENG
-				original_tag = FRA
-				original_tag = SOV
-				original_tag = GER
-				original_tag = ITA
-				original_tag = BRA
-				original_tag = FIN
-				original_tag = JAP
-				original_tag = PRC
-				original_tag = ROM
-				original_tag = MEX
-				original_tag = HUN
-				original_tag = PHI
-				original_tag = BEL
-				original_tag = SWI
-				original_tag = RAJ
-				original_tag = CAN
-				original_tag = TUR
-			}
 			has_global_flag = KoKi_YJ_TAG_decisions_YJ_2
 		}
 		available = {
@@ -128,7 +65,7 @@ KoKi_YJ_decisions_categories = {
 		visible = {
 		}
 		is_good = no
-		days_mission_timeout = 695
+		days_mission_timeout = 705
 		fire_only_once = yes
 		timeout_effect = {
 			KoKi_YJ_TAG_decisions_0_scripted_effects = yes

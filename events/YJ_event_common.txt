@@ -103,7 +103,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		add_to_variable = { sf_trees = 1 }
+		set_variable = { sf_trees = 1 }
 		name = KoKi_YJ.106.a
 		add_ideas = YJ_6_ideas
 		ai_chance = {
