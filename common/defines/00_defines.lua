@@ -3520,8 +3520,8 @@ NOperatives = {
 	AGENCY_CREATION_FACTORIES = 5,					-- Number of factories used to create an intelligence agency
 	AGENCY_AI_BASE_NUM_FACTORIES = 25.0,				-- Used by AI to pace the upgrades. Formula : if( AGENCY_AI_BASE_NUM_FACTORIES <= num_civ_factories - num_upgrades * AGENCY_AI_PER_UPGRADE_FACTORIES )
 	AGENCY_AI_PER_UPGRADE_FACTORIES = 6.0,			-- Used by AI to pace the upgrades. Formula : if( AGENCY_AI_BASE_NUM_FACTORIES <= num_civ_factories - num_upgrades * AGENCY_AI_PER_UPGRADE_FACTORIES )
-	AGENCY_UPGRADE_PER_OPERATIVE_SLOT = 5,			-- Number of upgrade needed to unlock an additional operative slot
-	MAX_OPERATIVE_SLOT_FROM_AGENCY_UPGRADES = 1,	-- max operative slots gained from upgrades
+	AGENCY_UPGRADE_PER_OPERATIVE_SLOT = 3,			-- Number of upgrade needed to unlock an additional operative slot
+	MAX_OPERATIVE_SLOT_FROM_AGENCY_UPGRADES = 2,	-- max operative slots gained from upgrades
 	AGENCY_OPERATIVE_RECRUITMENT_TIME = 30,			-- Number of days to wait to have operative to recruit when an operative slot first becomes available
 	BECOME_SPYMASTER_PP_COST = 50,					-- Number of political power used to become Spy Master (only without faction dlc)
 	BECOME_SPYMASTER_FI_COST = 1,					-- Faction initiative used to become Spy Master (only with faction dlc)
@@ -3630,7 +3630,7 @@ NOperatives = {
 	OPERATIVE_MIN_DAYS_FORCED_INTO_HIDING = 7,				-- Minimum number of days an operative can be forced into hiding. Applied after modifiers. Can be zero.
 	OPERATIVE_MAX_DAYS_FORCED_INTO_HIDING = 120,				-- Maximum number of days an operative can be forced into hiding. Applied after modifiers. Is ignored if negative
 	OPERATIVE_MAX_DAYS_TO_AUTO_RESUME_MISSION = 30,				-- Maximum number of days an operative has to be disabled before its mission is not automatically resumed once he is available again
-	MAX_RECRUITED_OPERATIVES = 10,
+	MAX_RECRUITED_OPERATIVES = 20,
 
 	CRYPTO_BASE_CRYPTO_LEVEL = 12000,						-- base crypto strength for a country
 	CRYPTO_CRYPTO_LEVEL_PER_CRYPTO_UPGRADE = 4250,			-- crypto strength per crypto upgrade

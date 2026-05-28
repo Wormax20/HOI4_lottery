@@ -57,12 +57,19 @@ ideas = {
 				max_planning = 0.10 									# 计划上限
 				industrial_capacity_factory = 0.10 #工厂产出
 				production_factory_efficiency_gain_factor = 0.10 #生产效率增长
+				training_time_factor = -0.3
+				land_reinforce_rate = 0.02
 			}
 			equipment_bonus = {
 				armor = {
 					build_cost_ic = -0.1
 					soft_attack = 0.1
 					hard_attack = 0.1
+					instant = yes
+				}
+				infantry_equipment = {
+					build_cost_ic = 0.25
+					defense = 0.2
 					instant = yes
 				}
 			}
