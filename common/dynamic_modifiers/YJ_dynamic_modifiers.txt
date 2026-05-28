@@ -4,3 +4,11 @@ YJ_GEN_state_ideas = {
 	icon = GFX_modifiers_generic_construction
 	local_resources = 1 #当地资源
 }
+
+YJ_AIR_ideas = {
+	enable = { always = yes }
+    icon = GFX_idea_generic_production_bonus
+    
+	custom_modifier_tooltip = YJ_AIR_ideas_tt
+	production_speed_buildings_factor = YJ_coal_num
+}

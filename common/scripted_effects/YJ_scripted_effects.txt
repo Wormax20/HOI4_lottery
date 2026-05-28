@@ -523,14 +523,32 @@ FRA_YJ_scripted_effects = {
 			}
 			20 = {
 				modifier = {
-					has_idea = YJ_FRA_4_ideas
+					OR = {
+						NOT = {
+							OR = {
+								has_idea = YJ_FRA_1_ideas
+								has_idea = YJ_FRA_2_ideas
+								has_idea = YJ_FRA_3_ideas
+							}
+						}
+						has_idea = YJ_FRA_4_ideas
+					}
 					factor = 0
 				}
 				country_event = KoKi_YJ_FRA_event.104
 			}
 			20 = {
 				modifier = {
-					has_idea = YJ_FRA_5_ideas
+					OR = {
+						NOT = {
+							OR = {
+								has_idea = YJ_FRA_1_ideas
+								has_idea = YJ_FRA_2_ideas
+								has_idea = YJ_FRA_3_ideas
+							}
+						}
+						has_idea = YJ_FRA_5_ideas
+					}
 					factor = 0
 				}
 				country_event = KoKi_YJ_FRA_event.105
@@ -544,28 +562,37 @@ SOV_YJ_scripted_effects = {
 			modifier = {
 				OR = {
 					has_idea = YJ_SOV_1_ideas
-					has_country_flag = KoKi_YJ_SOV_event
+					has_idea = YJ_SOV_2_ideas
+					has_idea = YJ_SOV_4_ideas
 				}
 				factor = 0
 			}
 			country_event = KoKi_YJ_SOV_event.101
-			set_country_flag = KoKi_YJ_SOV_event
 		}
 		25 = {
 			modifier = {
 				OR = {
+					has_idea = YJ_SOV_1_ideas
 					has_idea = YJ_SOV_2_ideas
-					has_country_flag = KoKi_YJ_SOV_event
+					has_idea = YJ_SOV_4_ideas
 				}
 				factor = 0
 			}
 			country_event = KoKi_YJ_SOV_event.102
-			set_country_flag = KoKi_YJ_SOV_event
 		}
 		25 = {
 			modifier = {
-				has_dynamic_modifier = {
-					modifier = YJ_SOV_3_ideas
+				OR = {
+					NOT = {
+						OR = {
+							has_idea = YJ_SOV_1_ideas
+							has_idea = YJ_SOV_2_ideas
+							has_idea = YJ_SOV_4_ideas
+						}
+					}
+					has_dynamic_modifier = {
+						modifier = YJ_SOV_3_ideas
+					}
 				}
 				factor = 0
 			}
@@ -574,13 +601,13 @@ SOV_YJ_scripted_effects = {
 		25 = {
 			modifier = {
 				OR = {
+					has_idea = YJ_SOV_1_ideas
+					has_idea = YJ_SOV_2_ideas
 					has_idea = YJ_SOV_4_ideas
-					has_country_flag = KoKi_YJ_SOV_event
 				}
 				factor = 0
 			}
 			country_event = KoKi_YJ_SOV_event.104
-			set_country_flag = KoKi_YJ_SOV_event
 		}
 	}
 }

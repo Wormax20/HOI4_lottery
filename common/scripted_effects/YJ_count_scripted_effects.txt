@@ -1,0 +1,63 @@
+YJ_count_all_factory = {
+	every_country = {
+		if = {
+			limit = {
+				has_country_flag = YJ_axis
+			}
+			add_to_variable = {
+				var = global.YJ_axis_all_factory
+				value = num_of_civilian_factories
+			}
+			add_to_variable = {
+				var = global.YJ_axis_all_factory
+				value = num_of_military_factories
+			}
+			add_to_variable = {
+				var = global.YJ_axis_all_factory
+				value = num_of_naval_factories
+			}
+			add_to_variable = {
+				var = global.YJ_axis_arms_factory
+				value = num_of_military_factories
+			}
+			add_to_variable = {
+				var = global.YJ_axis_industrial_complex
+				value = num_of_civilian_factories
+			}
+			add_to_variable = {
+				var = global.YJ_axis_dockyard
+				value = num_of_naval_factories
+			}
+		}
+
+		if = {
+			limit = {
+				has_country_flag = YJ_allie
+			}
+			add_to_variable = {
+				var = global.YJ_allie_all_factory
+				value = num_of_civilian_factories
+			}
+			add_to_variable = {
+				var = global.YJ_allie_all_factory
+				value = num_of_military_factories
+			}
+			add_to_variable = {
+				var = global.YJ_allie_all_factory
+				value = num_of_naval_factories
+			}
+			add_to_variable = {
+				var = global.YJ_allie_arms_factory
+				value = num_of_military_factories
+			}
+			add_to_variable = {
+				var = global.YJ_allie_industrial_complex
+				value = num_of_civilian_factories
+			}
+			add_to_variable = {
+				var = global.YJ_allie_dockyard
+				value = num_of_naval_factories
+			}
+		}
+	}
+}

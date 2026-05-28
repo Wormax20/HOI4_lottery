@@ -11,6 +11,9 @@ on_actions = {
 					rangers_tech = 1
 				}
 				add_ideas = YJ_AIR_ideas
+				add_dynamic_modifier = {
+					modifier = YJ_AIR_ideas
+				}
 			}
 			FRA = {
 				create_faction = FRA_Small_Entente
@@ -365,11 +368,9 @@ on_actions = {
 			}
 			every_country = {
 				limit = {
-					OR = {
-						AND = {
-							is_ai = yes
-							is_subject_of = ENG
-						}
+					AND = {
+						is_ai = yes
+						is_subject_of = ENG
 					}
 				}
 				add_ideas = YJ_ENG_4_ideas

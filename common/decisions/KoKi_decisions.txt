@@ -347,7 +347,7 @@ KoKi_YJ_decisions_categories = {
 	}
 
 
-	#75pp50次抽奖
+	#pp抽奖
 		KoKi_YJ_decisions_pp = { #
 		icon = GFX_decision_generic_form_nation
 		allowed = {
@@ -392,100 +392,6 @@ KoKi_YJ_decisions_categories = {
 		}
 	}
 
-	KoKi_YJ_decisions_YSC = { #
-		icon = GFX_decision_generic_form_nation
-		allowed = {
-			always = no #暂停使用
-		}
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = KoKi_YJ_decisions_pp_txt
-			}
-			has_equipment = { convoy > 1499 }
-		}
-		visible = {
-			OR = {
-				original_tag = PHI
-				original_tag = BEL
-			}
-		}
-		cost = 0 #决议需要的花费
-		days_remove = 0  #决议点击后直到移除所需的时间（立刻完成的决议不需要写这条）
-		days_re_enable = 0
-		modifier = { #填入修正效果
-		}
-		complete_effect = {#完成（点选）决议时触发的效果
-		    add_equipment_to_stockpile = { 
-				type = convoy_1
-				amount = -1500
-			}
-		    hidden_effect = {
-			    KoKi_YJ_decisions_pp = yes
-				set_variable_to_random = { var = YJ_rng min = 1 max = 21 }
-				round_variable = YJ_rng
-				log = "value1 : [?YJ_rng]"
-		    }
-		}
-		cancel_trigger = { #满足什么条件会立刻取消（中断）此决议，会立刻打断正在读条的决议
-		}
-		cancel_effect = { #决议被打断时触发的效果（这个效果与其他效果不同，它不会在鼠标悬停于决议上方时显示出来）
-		}
-		remove_effect = { #决议移除（读条完毕）时触发的效果
-		}
-		ai_will_do = {
-			base = 0 #ai点选这个决议的意愿
-		}
-	}
-
-	KoKi_YJ_decisions_pp_WX = { #
-		icon = GFX_decision_generic_form_nation
-		allowed = {
-			always = no #暂停使用
-		}
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = KoKi_YJ_decisions_pp
-			}
-			date > 1937.1.1
-		}
-		visible = {
-			OR = {
-				original_tag = SWI
-				original_tag = AUS
-				original_tag = CZE
-				AND = {
-					original_tag = HUN
-					has_idea = YJ_HUN_2_ideas
-				}
-			}
-		}
-		cost = 60 #决议需要的花费
-		days_remove = 0  #决议点击后直到移除所需的时间（立刻完成的决议不需要写这条）
-		days_re_enable = 0
-		modifier = { #填入修正效果
-		}
-		complete_effect = {#完成（点选）决议时触发的效果
-		    hidden_effect = {
-			    KoKi_YJ_decisions_pp = yes
-				add_to_variable = {
-					KoKi_YJ_decisions_pp = 1
-				}
-				set_variable_to_random = { var = YJ_rng min = 1 max = 21 }
-				round_variable = YJ_rng
-				log = "value1 : [?YJ_rng]"
-		    }
-		}
-		cancel_trigger = { #满足什么条件会立刻取消（中断）此决议，会立刻打断正在读条的决议
-		}
-		cancel_effect = { #决议被打断时触发的效果（这个效果与其他效果不同，它不会在鼠标悬停于决议上方时显示出来）
-		}
-		remove_effect = { #决议移除（读条完毕）时触发的效果
-		}
-		ai_will_do = {
-			base = 0 #ai点选这个决议的意愿
-		}
-	}
-	
 	KoKi_YJ_decisions_4 = { #
 		icon = GFX_decision_generic_form_nation
 		allowed = {

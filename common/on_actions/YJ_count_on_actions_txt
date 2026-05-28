@@ -1,0 +1,55 @@
+on_actions = {
+    on_weekly = {
+        effect = {
+            every_country = {
+                limit = {
+                    has_country_flag = YJ_controller
+                }
+                set_variable = {
+                    var = global.YJ_axis_all_factory
+                    value = 0
+                }
+                set_variable = {
+                    var = global.YJ_axis_arms_factory
+                    value = 0
+                }
+                set_variable = {
+                    var = global.YJ_axis_industrial_complex
+                    value = 0
+                }
+                set_variable = {
+                    var = global.YJ_axis_dockyard
+                    value = 0
+                }
+                
+                set_variable = {
+                    var = global.YJ_allie_all_factory
+                    value = 0
+                }
+                set_variable = {
+                    var = global.YJ_allie_arms_factory
+                    value = 0
+                }
+                set_variable = {
+                    var = global.YJ_allie_industrial_complex
+                    value = 0
+                }
+                set_variable = {
+                    var = global.YJ_allie_dockyard
+                    value = 0
+                }
+                YJ_count_all_factory = yes
+            }
+        }
+    }
+
+    on_daily = {
+        effect = {
+            set_variable = { YJ_coal_num = resource@coal }
+            divide_variable = {
+                var = YJ_coal_num
+                value = 100
+            }
+        }
+    }
+}

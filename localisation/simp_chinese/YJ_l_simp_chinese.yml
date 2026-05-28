@@ -1,7 +1,7 @@
 ﻿l_simp_chinese:
 
 KoKi_YJ_decisions_categories: "富贵险中求§!"
-KoKi_YJ_decisions_categories_desc: "共计三次国家抽奖,兩次通用抽奖.\nPP抽奖有专属国家抽奖的只能抽30次,无专属国家抽奖的可以抽50次\nPP抽奖分为PP奖池和通用奖池\nPP抽奖有概率出通用奖池"
+KoKi_YJ_decisions_categories_desc: "共计三次国家抽奖,兩次通用抽奖.\nPP抽奖有专属国家抽奖的只能抽30次,无专属国家抽奖的可以抽50次\nPP抽奖分为PP奖池和通用奖池\nPP抽奖有概率出通用奖池\n\n§R軸心陣營: \n§9總工廠§!:        [?global.YJ_axis_all_factory|Y0]\n§Y民工§!:         [?global.YJ_axis_industrial_complex|G0]\n§G軍工§!:          [?global.YJ_axis_arms_factory|R0]\n§B船塢§!:        [?global.YJ_axis_dockyard|C0]\n\n§4同盟陣營: \n§9總工廠§!:        [?global.YJ_allie_all_factory|Y0]\n§Y民工§!:         [?global.YJ_allie_industrial_complex|G0]\n§G軍工§!:          [?global.YJ_allie_arms_factory|R0]\n§B船塢§!:        [?global.YJ_allie_dockyard|C0]"
 KoKi_YJ_TAG_decisions_0: "开局国家抽奖"
 KoKi_YJ_TAG_decisions_1: "第二次国家抽奖"
 KoKi_YJ_TAG_decisions_2: "第三次国家抽奖"
@@ -273,7 +273,7 @@ YJ_SOV_tt: "§Y五年计划§!追加效果:"
 YJ_SOV_6_ideas: "苏式钢铁洪流"
 
 SOV_planned_economy_subjects_tt: "所有阵营成员:"
-SOV_planned_economy_dynamic_modifier_tt: "\n添加§Y$SOV_planned_economy_dynamic_modifier$§!，其效果为（工厂产出：§G+[?SOV_planned_economy_industrial_capacity_factory_extra|2+%]§!，缺乏战略资源惩罚：§G[?SOV_planned_economy_production_lack_of_resource_penalty_factor_extra|2-%]§!）\n每有一个阵营成员采用§Y$new_economic_policy$§!，就额外获得：\n工厂产出：§G+[?SOV_planned_economy_industrial_capacity_factory_extra|2+%]§!\n缺乏战略资源惩罚：§G[?SOV_planned_economy_production_lack_of_resource_penalty_factor_extra|2-%]§!\n（额外加成上限为：工厂产出：§Y+10.00%§!，缺乏战略资源惩罚：§Y-10.00%§!）\n\n"
+SOV_planned_economy_dynamic_modifier_tt: "\n添加§Y$SOV_planned_economy_dynamic_modifier$§!，其效果为（工厂产出: §G+[?SOV_planned_economy_industrial_capacity_factory_extra|2+%]§!，缺乏战略资源惩罚: §G[?SOV_planned_economy_production_lack_of_resource_penalty_factor_extra|2-%]§!）\n每有一个阵营成员采用§Y$new_economic_policy$§!，就额外获得: \n工厂产出: §G+[?SOV_planned_economy_industrial_capacity_factory_extra|2+%]§!\n缺乏战略资源惩罚: §G[?SOV_planned_economy_production_lack_of_resource_penalty_factor_extra|2-%]§!\n（额外加成上限为: 工厂产出: §Y+10.00%§!，缺乏战略资源惩罚: §Y-10.00%§!）\n\n"
 
 
 
@@ -980,6 +980,7 @@ YJ_25_ideas: "人口大爆发"
 YJ_26_ideas: "士气大增"
 YJ_27_ideas: "鉴定守住就有办法"
 YJ_28_ideas: "工作狂热"
+YJ_29_ideas: "科研速度加成"
 
 KoKi_YJ_pp.1.title: "奖品: 地图外民用工厂"
 KoKi_YJ_pp.1.desc: ""
@@ -1181,7 +1182,7 @@ YJ_traits_28: "专业卡队友宽"
 YJ_traits_NPL: "拿破仑帝国"
 
 
-SOV_leader_of_the_party_and_the_people_trait_tt: "§Y[ROOT.GetLeader]§!：§Y$stalin_inheritor_of_lenin$§!或§Y$stalin_servant_of_lenin$§!追加效果：\n政党支持率对稳定度修正：§G+15.00%§!\n防御战争对稳定度修正：§G+40.00%§!\n政治顾问花费：§G-25%§!\n陆军师核心攻防:§G+3.00%§!\n"
+SOV_leader_of_the_party_and_the_people_trait_tt: "§Y[ROOT.GetLeader]§!: §Y$stalin_inheritor_of_lenin$§!或§Y$stalin_servant_of_lenin$§!追加效果: \n政党支持率对稳定度修正: §G+15.00%§!\n防御战争对稳定度修正: §G+40.00%§!\n政治顾问花费: §G-25%§!\n陆军师核心攻防:§G+3.00%§!\n"
 
 CK_SOV_development_of_tankograd_factories_tt: "在每一个至少拥有3座民用工厂的地区添加§G1§!个建筑位和§Y1座民用工厂§!。(最多20个)"
 CK_SOV_development_of_tankograd_factories_tt: "在每一个至少拥有3座军用工厂的乌拉尔和远东地区添加§G1§!个建筑位和§Y1座军用工厂§!。（最多20个）"
@@ -1337,6 +1338,7 @@ decision_cost_CP_100_blocked: "£command_power §R100§!"
 
 
 YJ_AIR_ideas: "布丁性平衡"
+YJ_AIR_ideas_tt: "§5每100煤炭增加§11%§5建造速度\n§C目前速度§7[?YJ_AIR_ideas|Y0]§!"
 
 
 welcome_title_text: "更新日志"
