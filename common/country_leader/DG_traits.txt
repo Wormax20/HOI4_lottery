@@ -228,12 +228,12 @@ leader_traits = {
 	Lgs_traits = {
 		random = no
 		sprite = 5
-		industrial_capacity_factory = -0.4
-		conscription_factor = -0.25
+		industrial_capacity_factory = -0.5
+		conscription_factor = -0.30
     	army_attack_factor = 0.15
         army_defence_factor = 0.15
-      	monthly_population = -0.5
-		army_org_factor = 0.05
+      	monthly_population = -0.75
+		army_org_factor = 0.15
 	}
 
 	Ept_traits = {
