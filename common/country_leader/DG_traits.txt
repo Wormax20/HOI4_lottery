@@ -99,7 +99,7 @@ leader_traits = {
 		random = no
 		sprite = 14
 		equipment_bonus = {
-			mio_cat_eq_all_tanks = {
+			armor = {
 				build_cost_ic = -0.15
 				reliability = -0.5
 				maximum_speed = 0.2
@@ -107,6 +107,7 @@ leader_traits = {
 			}		
 			mechanized_equipment = {
 				reliability = -0.15
+				instant = yes
 			}
 		}
 	}
@@ -150,7 +151,7 @@ leader_traits = {
 		sprite = 14
 		research_speed_factor = 0.1
 		equipment_bonus = {
-			mio_cat_eq_all_tanks = {
+			armor = {
 				build_cost_ic = 0.035
 				breakthrough = 0.15
 				soft_attack = -0.02
@@ -263,14 +264,14 @@ leader_traits = {
 		army_infantry_attack_factor = -0.05
 		army_org_factor = 0.05
 		equipment_bonus = {
-			mio_cat_artillery = {
+			artillery = {
 				breakthrough = 1
 				soft_attack = 0.35
 				hard_attack = 0.35
 				air_attack = 0.5
 				instant = yes
 			}
-			mio_cat_eq_all_tanks = {
+			armor = {
 				breakthrough = -0.15
 				soft_attack = -0.05
 				hard_attack = -0.05
