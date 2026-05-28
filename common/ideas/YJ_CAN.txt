@@ -22,8 +22,8 @@ ideas = {
 				war_support_weekly = 0.005 #每周战争支持度增长
 				consumer_goods_factor = -0.1 #生活消费品工厂系数
 				consumer_goods_expected_value = -0.2  #用于生产生活消费品的期望工厂数量
-				local_resources_factor = 0.20 #战略资源获取率
-				production_resource_need_factor = -0.10 #生產資源花費
+				local_resources_factor = 0.25 #战略资源获取率
+				min_export = -0.1 #出口資源
 			}
 		}
 

@@ -15,10 +15,10 @@ ideas = {
 			picture = generic_sea_focused_navy
 
 			modifier = {
-				global_building_slots = 15         					# 全局建筑槽 +15
+				global_building_slots = 15         					#全局建筑槽 +15
 				political_power_gain = 0.15 						#每日获得的政治点数
 				political_power_factor = 0.10 #政治点数
-				supply_consumption_factor = -0.10 #补给消耗
+				supply_consumption_factor = -0.15 #补给消耗
 				forced_surrender_limit = 3.0
 				surrender_limit = 3
 				max_surrender_limit_offset = 3

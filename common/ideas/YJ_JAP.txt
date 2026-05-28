@@ -65,7 +65,7 @@ ideas = {
 
 			modifier = {
 				attrition = 0.1 #陆军师损耗
-				global_building_slots_factor = 0.2
+				global_building_slots_factor = 0.2 #地區工廠上限%數
 				production_speed_buildings_factor = 0.05 #建造速度
 				local_resources_factor = 0.1 #战略资源获取效率
 				production_factory_max_efficiency_factor = 0.1 #生产效率上限
