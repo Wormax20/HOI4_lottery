@@ -29,7 +29,7 @@ country_event = {
 				organizer
 				ranger
 				YJ_traits_1
-				YJ_traits_30
+				YJ_traits_35
 			}
 			skill = 7
 			attack_skill = 7
@@ -113,7 +113,7 @@ country_event = {
 				organizer
 				ranger
 				YJ_traits_1
-				YJ_traits_28
+				YJ_traits_33
 			}
 			skill = 6
 			attack_skill = 5
@@ -187,7 +187,7 @@ country_event = {
 				ranger
 				YJ_traits_10
 				YJ_traits_1
-				YJ_traits_27
+				YJ_traits_32
 			}
 			skill = 6
 			attack_skill = 6
@@ -250,8 +250,8 @@ country_event = {
 				is_ai = no
 			}
 			traits={ 
-				YJ_traits_29
-				YJ_traits_35
+				YJ_traits_34
+				YJ_traits_40
 			}
 			skill = 1
 			attack_skill = 10
@@ -323,7 +323,7 @@ country_event = {
 				trickster
 				organizer
 				ranger
-				YJ_traits_24
+				YJ_traits_29
 
 			}
 			skill = 3
@@ -364,7 +364,7 @@ country_event = {
 				trickster
 				organizer
 				ranger
-				YJ_traits_32
+				YJ_traits_37
 
 			}
 			skill = 3
@@ -405,7 +405,7 @@ country_event = {
 				trickster
 				organizer
 				ranger
-				YJ_traits_31
+				YJ_traits_36
 
 			}
 			skill = 3
@@ -447,7 +447,7 @@ country_event = {
 				organizer
 				ranger
 				YJ_traits_12
-				YJ_traits_25
+				YJ_traits_30
 
 			}
 			skill = 3
@@ -489,7 +489,7 @@ country_event = {
 				cavalry_officer
 				organizer
 				ranger
-				YJ_traits_32
+				YJ_traits_37
 				CHI_dubious_loyalty
 				PRC_survivor_of_the_long_march
 
@@ -533,7 +533,7 @@ country_event = {
 				trickster
 				organizer
 				ranger
-				YJ_traits_26
+				YJ_traits_31
 
 			}
 			skill = 4
@@ -594,10 +594,11 @@ country_event = {
 			allowed_civil_war = {
 				is_ai = no
 			}
-			traits={ 
+			traits={
 				YJ_traits_2
-				YJ_traits_37
-				YJ_traits_34
+				YJ_traits_14
+				YJ_traits_42
+				YJ_traits_39
 				brilliant_strategist 
 				cavalry_officer
 				panzer_leader
@@ -605,13 +606,12 @@ country_event = {
 				trickster
 				organizer
 				YJ_traits_16
-
 			}
-			skill = 4
-			attack_skill = 4
-			defense_skill = 3
-			planning_skill = 5
-			logistics_skill = 6
+			skill = 10
+			attack_skill = 8
+			defense_skill = 8
+			planning_skill = 8
+			logistics_skill = 8
 		}
 		hidden_effect = {
 			meta_effect = {
@@ -814,7 +814,7 @@ country_event = {
 				trickster
 				organizer
 				panzer_leader
-				YJ_traits_33
+				YJ_traits_38
 				ranger
 			}
 			skill = 4
@@ -880,7 +880,7 @@ country_event = {
 			traits={ 
 				YJ_traits_1
 				YJ_traits_12
-				YJ_traits_36
+				YJ_traits_41
 				brilliant_strategist 
 				armor_officer 
 				panzer_leader
@@ -1329,7 +1329,6 @@ country_event = {
 				trickster
 				organizer
 				ranger
-				YJ_traits_1
 				YJ_traits_7
 				YJ_traits_10
 			}
@@ -1501,7 +1500,7 @@ country_event = {
 				career_officer
 				YJ_traits_16
 				YJ_traits_23
-				YJ_traits_37
+				YJ_traits_42
 				infantry_officer
 				trickster
 				organizer
@@ -1697,7 +1696,7 @@ country_event = {
 				trickster
 				organizer
 				ranger
-				YJ_traits_28
+				YJ_traits_33
 			}
 			skill = 6
 			attack_skill = 7
@@ -1767,7 +1766,7 @@ country_event = {
 				organizer
 				harsh_leader
 				ranger
-				YJ_traits_39
+				YJ_traits_44
 				YJ_traits_7
 			}
 			skill = 6
@@ -1856,7 +1855,7 @@ country_event = {
 				is_ai = no
 			}
 			traits={ 
-				YJ_traits_1
+				YJ_traits_2
 				brilliant_strategist 
 				armor_officer 
 				panzer_leader
@@ -1864,12 +1863,12 @@ country_event = {
 				trickster
 				organizer
 				ranger
-				YJ_traits_28
+				YJ_traits_33
 			}
 			skill = 5
 			attack_skill = 6
 			defense_skill = 5
-			planning_skill = 4
+			planning_skill = 8
 			logistics_skill = 6
 		}
 		hidden_effect = {

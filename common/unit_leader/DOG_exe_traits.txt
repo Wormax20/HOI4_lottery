@@ -60,7 +60,7 @@ leader_traits = {
 ##################################
 # Common Traits
 ##################################
-	YJ_traits_1 = { 
+	YJ_DG_traits_1 = { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -84,7 +84,7 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_2 = { 
+	YJ_DG_traits_2 = { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -109,7 +109,7 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_3 = { 
+	YJ_DG_traits_3 = { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -133,7 +133,7 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_4 = { 
+	YJ_DG_traits_4 = { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -157,7 +157,7 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_5 = { 
+	YJ_DG_traits_5 = { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -182,7 +182,7 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_6 = { 
+	YJ_DG_traits_6 = { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -206,7 +206,7 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_7 = { 
+	YJ_DG_traits_7 = { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -229,7 +229,7 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	#YJ_traits_8 = { 
+	#YJ_DG_traits_8 = { 
 	#	type = land
 	#	trait_type = personality_trait
 	#	gain_xp = {
@@ -253,7 +253,7 @@ leader_traits = {
 	#		factor = 0
 	#	}
 	#}
-	YJ_traits_9 = { 
+	YJ_DG_traits_9 = { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -277,7 +277,7 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_10 = { 
+	YJ_DG_traits_10 = { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -302,7 +302,7 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_11 = { 
+	YJ_DG_traits_11 = { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -325,7 +325,7 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_12 = { 
+	YJ_DG_traits_12 = { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -348,7 +348,7 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_13 = { 
+	YJ_DG_traits_13 = { 
 		type = navy
 		trait_type = personality_trait
 		gain_xp = { # This trigger is not needed as it gets xp from spotting (not by combat)
@@ -364,7 +364,7 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_14= { 
+	YJ_DG_traits_14= { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -387,7 +387,7 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_15= { 
+	YJ_DG_traits_15= { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -410,7 +410,7 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_16= { 
+	YJ_DG_traits_16= { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -435,7 +435,7 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_17= { 
+	YJ_DG_traits_17= { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -458,7 +458,7 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_18= { 
+	YJ_DG_traits_18= { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -482,7 +482,7 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_19= { 
+	YJ_DG_traits_19= { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -508,7 +508,7 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_20= { 
+	YJ_DG_traits_20= { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -539,7 +539,7 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_21= { 
+	YJ_DG_traits_21= { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -564,7 +564,7 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_22= { 
+	YJ_DG_traits_22= { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -587,7 +587,7 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_23= { 
+	YJ_DG_traits_23= { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -613,7 +613,7 @@ leader_traits = {
 		}
 	}
 
-	YJ_traits_24= { 
+	YJ_DG_traits_24= { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -643,7 +643,7 @@ leader_traits = {
 		}
 	}
 
-	YJ_traits_25= { 
+	YJ_DG_traits_25= { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -670,7 +670,7 @@ leader_traits = {
 		}
 	}
 
-	YJ_traits_26= { 
+	YJ_DG_traits_26= { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -697,7 +697,7 @@ leader_traits = {
 	}
 
 
-	YJ_traits_27= { 
+	YJ_DG_traits_27= { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -727,7 +727,7 @@ leader_traits = {
 		}
 	}
 
-	YJ_traits_28= { 
+	YJ_DG_traits_28= { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -753,7 +753,7 @@ leader_traits = {
 		}
 	}
 
-	YJ_traits_29 = { 
+	YJ_DG_traits_29 = { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -792,7 +792,7 @@ leader_traits = {
 	}
 
 
-	YJ_traits_30 = { 
+	YJ_DG_traits_30 = { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -831,7 +831,7 @@ leader_traits = {
 		}
 	}
 
-	YJ_traits_31= { 
+	YJ_DG_traits_31= { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -860,7 +860,7 @@ leader_traits = {
 		}
 	}
 
-	YJ_traits_32 = { 
+	YJ_DG_traits_32 = { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -891,7 +891,7 @@ leader_traits = {
 	}
 
 
-	YJ_traits_33 = { 
+	YJ_DG_traits_33 = { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -916,7 +916,7 @@ leader_traits = {
 		}
 	}
 
-	YJ_traits_34= { 
+	YJ_DG_traits_34= { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -941,7 +941,7 @@ leader_traits = {
 		}
 	}
 
-	YJ_traits_35 = { 
+	YJ_DG_traits_35 = { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -974,7 +974,7 @@ leader_traits = {
 		}
 	}
 
-	YJ_traits_36 = { 
+	YJ_DG_traits_36 = { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -999,7 +999,7 @@ leader_traits = {
 		}
 	}
 
-	YJ_traits_37 = { 
+	YJ_DG_traits_37 = { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -1026,7 +1026,7 @@ leader_traits = {
 		}
 	}
 
-	YJ_traits_38 = { 
+	YJ_DG_traits_38 = { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -1062,7 +1062,7 @@ leader_traits = {
 		}
 	}
 
-	YJ_traits_39 = { 
+	YJ_DG_traits_39 = { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {

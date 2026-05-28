@@ -166,16 +166,12 @@ country_event = {
 
 country_event = {
 	id = KoKi_YJ_FRA_event.NPL
-	title = KoKi_YJ_JL_event.NPL.title
-	desc = KoKi_YJ_JL_event.NPL.desc
+	title = KoKi_YJ_FRA_event.NPL.title
+	desc = KoKi_YJ_FRA_event.NPL.desc
 	
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
-	
-	immediate = {
-		set_country_flag = KoKi_YJ_JL_event_21_flag
-	}
 
 	option = {
 		name = KoKi_YJ_JL_event.NPL.a
@@ -212,19 +208,15 @@ country_event = {
 
 country_event = {
 	id = KoKi_YJ_FRA_event.zd
-	title = KoKi_YJ_JL_event.zd.title
-	desc = KoKi_YJ_JL_event.zd.desc
+	title = KoKi_YJ_FRA_event.zd.title
+	desc = KoKi_YJ_FRA_event.zd.desc
 	
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
-	
-	immediate = {
-		set_country_flag = KoKi_YJ_JL_event_21_flag
-	}
 
 	option = {
-		name = KoKi_YJ_JL_event.zd.a
+		name = KoKi_YJ_FRA_event.zd.a
 		create_corps_commander = {
 			name="贞德"
 			portrait_path = "gfx/leaders/DEMO/zd.jpg"
