@@ -187,7 +187,9 @@ ideas = {
 			modifier = {
 				custom_modifier_tooltip = YJ_ENG_5_ideas_tt
 				production_speed_arms_factory_factor = 0.2 #军用工厂建造速度
+	            production_speed_dockyard_factor = 0.2   #海军船坞建造速度
 				industrial_capacity_factory = 0.05 #工厂产出
+				industrial_capacity_dockyard = 0.05   #海军船坞产出
 				production_factory_max_efficiency_factor = 0.05 #生产效率上限
 			}
 		}
