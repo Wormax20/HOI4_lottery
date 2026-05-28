@@ -558,7 +558,7 @@ FRA_YJ_scripted_effects = {
 
 SOV_YJ_scripted_effects = {
 	random_list = {
-		25 = {
+		20 = {
 			modifier = {
 				OR = {
 					has_idea = YJ_SOV_1_ideas
@@ -569,7 +569,7 @@ SOV_YJ_scripted_effects = {
 			}
 			country_event = KoKi_YJ_SOV_event.101
 		}
-		25 = {
+		20 = {
 			modifier = {
 				OR = {
 					has_idea = YJ_SOV_1_ideas
@@ -580,7 +580,7 @@ SOV_YJ_scripted_effects = {
 			}
 			country_event = KoKi_YJ_SOV_event.102
 		}
-		25 = {
+		20 = {
 			modifier = {
 				OR = {
 					NOT = {
@@ -598,7 +598,7 @@ SOV_YJ_scripted_effects = {
 			}
 			country_event = KoKi_YJ_SOV_event.103
 		}
-		25 = {
+		20 = {
 			modifier = {
 				OR = {
 					has_idea = YJ_SOV_1_ideas
@@ -608,6 +608,24 @@ SOV_YJ_scripted_effects = {
 				factor = 0
 			}
 			country_event = KoKi_YJ_SOV_event.104
+		}
+		20 = {
+			modifier = {
+				NOT = {
+					OR = {
+						has_idea = YJ_SOV_1_ideas
+						has_idea = YJ_SOV_2_ideas
+						has_idea = YJ_SOV_4_ideas
+					}
+				}
+				NOT = {
+					has_dynamic_modifier = {
+						modifier = YJ_SOV_3_ideas
+					}
+				}
+				factor = 0
+			}
+			YJ_TY_scripted_effects = yes
 		}
 	}
 }

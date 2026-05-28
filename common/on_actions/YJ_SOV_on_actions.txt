@@ -1,0 +1,46 @@
+on_actions = {
+on_daily_SOV = {
+		effect = {
+			if = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = YJ_SOV_3_ideas
+					}
+				}
+			}
+			set_variable = { SOV_conscription = SOV.surrender_progress }
+			set_variable = { SOV_mobilization_speed = SOV.surrender_progress }
+			set_variable = { SOV_supply_combat_penalties_on_core_factor = SOV.surrender_progress }
+			set_variable = { SOV_army_core_attack_factor = SOV.surrender_progress }
+			set_variable = { SOV_army_core_defence_factor = SOV.surrender_progress }
+			set_variable = { SOV_cas_damage_reduction = SOV.surrender_progress }
+			multiply_variable = { SOV_conscription = 0.2 }
+			multiply_variable = { SOV_mobilization_speed = 0.6 }
+			multiply_variable = { SOV_supply_combat_penalties_on_core_factor = -0.6 }
+			multiply_variable = { SOV_army_core_attack_factor = 0.4 }
+			multiply_variable = { SOV_army_core_defence_factor = 0.4 }
+			multiply_variable = { SOV_cas_damage_reduction = 0.3 }
+			add_to_variable = { SOV_conscription = 0.005 }
+			add_to_variable = { SOV_mobilization_speed = 0.05 }
+			add_to_variable = { SOV_supply_combat_penalties_on_core_factor = -0.05 }
+			add_to_variable = { SOV_army_core_attack_factor = 0.055 }
+			add_to_variable = { SOV_army_core_defence_factor = 0.055 }
+			add_to_variable = { SOV_cas_damage_reduction = 0.025 }
+			if = {
+				limit = {
+					has_idea = YJ_SOV_4_ideas
+					has_country_flag = SOV_paranoia_system_active_flag
+				}
+				clr_country_flag = SOV_paranoia_system_active_flag
+			}
+			if = {
+				limit = {
+					NOT = { has_country_flag = Beta_SOV_PZD_1_Flag }
+					date > 1936.2.1
+				}
+				SOV_remove_paranoia_effect = yes
+				set_country_flag = Beta_SOV_PZD_1_Flag
+			}
+		}
+	}
+}

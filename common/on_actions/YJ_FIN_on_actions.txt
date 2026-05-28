@@ -1,0 +1,48 @@
+on_actions = {
+on_daily_FIN = { #冰火人
+		effect = {
+			if = {
+				limit = {
+					has_idea = YJ_FIN_05_ideas
+					date > 1938.3.1
+					date < 1946.1.1
+				}
+				# 冰季：每年10月~次年3月
+				if = {
+					limit = {
+						OR = {
+							AND = { date > 1938.10.1 date < 1939.4.1 }
+							AND = { date > 1939.10.1 date < 1940.4.1 }
+							AND = { date > 1940.10.1 date < 1941.4.1 }
+							AND = { date > 1941.10.1 date < 1942.4.1 }
+							AND = { date > 1942.10.1 date < 1943.4.1 }
+							AND = { date > 1943.10.1 date < 1944.4.1 }
+							AND = { date > 1944.10.1 date < 1945.4.1 }
+						}
+						NOT = { has_idea = YJ_FIN_6_ideas }
+					}
+					remove_ideas = { YJ_FIN_7_ideas }
+					add_timed_idea = { idea = YJ_FIN_6_ideas days = 180 }
+				}
+				# 火季：每年4月~9月
+				else_if = {
+					limit = {
+						OR = {
+							AND = { date > 1938.3.1 date < 1938.10.1 }
+							AND = { date > 1939.4.1 date < 1939.10.1 }
+							AND = { date > 1940.4.1 date < 1940.10.1 }
+							AND = { date > 1941.4.1 date < 1941.10.1 }
+							AND = { date > 1942.4.1 date < 1942.10.1 }
+							AND = { date > 1943.4.1 date < 1943.10.1 }
+							AND = { date > 1944.4.1 date < 1944.10.1 }
+							AND = { date > 1945.4.1 date < 1945.10.1 }
+						}
+						NOT = { has_idea = YJ_FIN_7_ideas }
+					}
+					remove_ideas = { YJ_FIN_6_ideas }
+					add_timed_idea = { idea = YJ_FIN_7_ideas days = 3 }
+				}
+			}
+		}
+	}
+}

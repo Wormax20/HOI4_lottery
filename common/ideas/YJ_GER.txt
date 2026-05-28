@@ -98,6 +98,7 @@ ideas = {
 			picture = generic_research_bonus
 
 			modifier = {
+				research_speed_factor = 0.1 #研究速度
 				custom_modifier_tooltip = YJ_GER_4_ideas_tt
 			}
 		}

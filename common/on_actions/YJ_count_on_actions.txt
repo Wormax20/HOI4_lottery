@@ -45,9 +45,20 @@ on_actions = {
 
     on_daily = {
         effect = {
-            set_variable = { YJ_coal_num = resource@coal }
+            set_variable = { 
+                var = YJ_coal_num
+                value = resource@coal
+            }
             divide_variable = {
                 var = YJ_coal_num
+                value = 100
+            }
+            set_variable = {
+                var = YJ_coal_num_0_01
+                value = YJ_coal_num
+            }
+            divide_variable = {
+                var = YJ_coal_num_0_01
                 value = 100
             }
         }

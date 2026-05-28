@@ -75,6 +75,7 @@ country_event = {
 	option = {
 		name = KoKi_YJ_GER_event.104.a
 		add_ideas = YJ_GER_4_ideas
+		add_research_slot = 1
 		set_technology = {
 			improved_medium_tank_chassis = 1
 		}

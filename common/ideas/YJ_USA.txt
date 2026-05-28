@@ -63,6 +63,7 @@ ideas = {
 			picture = jap_duplicate_research
 
 			modifier = {
+				research_speed_factor = 0.1
 				specialization_air_speed_factor = 0.5
 				specialization_land_speed_factor = 0.5
 				specialization_naval_speed_factor = 0.5
@@ -71,6 +72,8 @@ ideas = {
 				supply_consumption_factor = -0.1 #补给消耗
 				experience_loss_factor = -0.05 						#有经验的士兵损失
 				army_cas_damage_reduction = 0.05                 #陆军承受密接伤害-5%
+				army_attack_against_major_factor = 0.1
+				army_defence_against_major_factor = 0.1
 			}
 			equipment_bonus = {
 				medium_plane_fighter_airframe = {
@@ -161,5 +164,26 @@ ideas = {
 				coordination_bonus = 0.1 #协同性
 			}
 		}
+
+		YJ_USA_6_ideas = {
+            picture = generic_amphibious_assault
+            
+            allowed = { always = no } 
+
+            modifier = {
+				naval_invasion_penalty = -0.75 #登陆惩罚
+                amphibious_invasion = 0.25
+                amphibious_invasion_defense = 0.15
+                naval_invasion_capacity = 20
+
+                supply_consumption_factor = -0.15
+                org_loss_when_moving = -0.20
+
+                air_mission_efficiency = 0.10
+				army_attack_against_major_factor = 0.1
+				army_defence_against_major_factor = 0.1
+                breakthrough_factor = 0.15
+            }
+        }
 	}
 }

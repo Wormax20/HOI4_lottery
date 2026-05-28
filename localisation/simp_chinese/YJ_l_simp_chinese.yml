@@ -10,6 +10,7 @@ KoKi_YJ_TAG_decisions_4: "给[FROM.GetName]提供BUFF"
 KoKi_YJ_ENG_decisions_1: "给[FROM.GetName]提供BUFF"
 KoKi_YJ_ROM_decisions_03: "给[FROM.GetName]提供BUFF"
 KoKi_YJ_ROM_decisions_04: "给[FROM.GetName]提供BUFF"
+KoKi_YJ_USA_decisions: "给[FROM.GetName]提供BUFF"
 
 
 KoKi_YJ_TY_decisions_1: "第一次通用抽奖"
@@ -17,7 +18,7 @@ KoKi_YJ_TY_decisions_2: "第二次通用抽奖"
 
 
 KoKi_YJ_decisions_JL: "将领抽奖"
-KoKi_YJ_decisions_JL_txt: "当前抽奖次数:§Y[?KoKi_YJ_decisions_JL|Y0]§!次  最多可抽§R25§!次"
+KoKi_YJ_decisions_JL_txt: "当前抽奖次数:§Y[?KoKi_YJ_decisions_JL|Y0]§!次  最多可抽§R40§!次"
 
 KoKi_YJ_decisions_pp: "PP抽奖"
 KoKi_YJ_decisions_pp_txt: "当前抽奖次数:§Y[?KoKi_YJ_decisions_pp|Y0]§!次  最多可抽§R[?YJ_country_limit|Y0]§!次"
@@ -74,7 +75,7 @@ YJ_USA_3_ideas_tooltip: "§Y两栖机械化§!:\n$STAT_COMMON_BUILD_COST_IC$§G-
 YJ_USA_4_ideas: "大繁荣"
 YJ_USA_5_ideas: "美英合作"
 YJ_USA_5_ideas_tt: "解锁沃克斯豪尔军工机构\n获得先进登陆艇\n获得3张超前10年机械化加成卡,机械化宽度-0.2,装甲率-15"
-#YJ_USA_6_ideas: "殊途同归"
+YJ_USA_6_ideas: "殊途同归"
 YJ_USA_7_ideas: "父与子之歌"
 
 KoKi_YJ_GER_event.1.title: "开始摇奖"
@@ -209,6 +210,8 @@ YJ_FRA_1_ideas: "皇帝归来"
 YJ_FRA_2_ideas: "圣女贞德"
 YJ_FRA_3_ideas: "决不妥协"
 YJ_FRA_4_ideas: "非洲强国法兰西"
+YJ_FRA_4_ideas_tt: "1938.1.1获得全套飞机配件"
+
 YJ_FRA_5_ideas: "我即浪潮"
 
 YJ_FRA_6_ideas: "英法百年战争"
@@ -1181,6 +1184,87 @@ YJ_traits_27: "动物朋友"
 YJ_traits_28: "专业卡队友宽"
 YJ_traits_NPL: "拿破仑帝国"
 
+YJ_traits_1_desc: "該將領擁有資深的履歷"
+YJ_traits_2_desc: "該將領雖然履歷較淺，但前途無量"
+YJ_traits_3_desc: "喜歡起飛"
+YJ_traits_4_desc: "沉迷喝酒"
+YJ_traits_5_desc: "精（神）英（國人）"
+YJ_traits_6_desc: "EX咖喱棒！"
+YJ_traits_7_desc: "我TM一點都不尼瑪的暴躁"
+YJ_traits_8_desc: "領袖"
+YJ_traits_9_desc: "該將領喜歡御姐，并且偏好從小開始養成"
+YJ_traits_10_desc: "北極大登陸！"
+YJ_traits_11_desc: "我CNM！"
+YJ_traits_12_desc: "“抱歉今天不行”"
+YJ_traits_13_desc: "“你滴，大大滴有”"
+YJ_traits_14_desc: "“你們想要總體戰嗎？一場比以往所有戰爭更加總體的戰爭！”"
+YJ_traits_15_desc: "再來一發，一定會中……好！神抽！"
+YJ_traits_16_desc: "兄弟，你好香"
+YJ_traits_17_desc: "ft530是上天給予人類的至寶！"
+YJ_traits_18_desc: "喜歡打槍"
+YJ_traits_19_desc: "你們不要打架。金克拉好處都有啥，誰說對了就給他。"
+YJ_traits_20_desc: "zzz……"
+YJ_traits_21_desc: "我不是喜歡幼女，只是剛好我喜歡的都是幼女"
+YJ_traits_22_desc: "這裏不可以打熱熔膠"
+YJ_traits_23_desc: "喜歡被*"
+
+YJ_traits_24: "玄武"
+YJ_traits_25: "並非蘇聯大佬"
+YJ_traits_26: "臨陣脫逃"
+YJ_traits_27: "國軍參謀總長（in future）"
+YJ_traits_28: "碼農"
+YJ_traits_29: "獨孤求敗"
+YJ_traits_30: "偉大領袖"
+YJ_traits_31: "歡樂主義者"
+YJ_traits_32: "狡詐"
+YJ_traits_33: "青龍"
+YJ_traits_34: "白虎"
+YJ_traits_35: "朱雀"
+YJ_traits_36: "柚子的導師，山姆的知己"
+YJ_traits_37: "女裝仔"
+YJ_traits_38: "前作者(respect)"
+YJ_traits_39: "救濟所所長"
+
+YJ_traits_24_desc: "山姆這人最精了，龜男就龜男，偏偏要説是玄武"
+YJ_traits_25_desc: "神人設計+奇妙編制"
+YJ_traits_26_desc: "“我可以跟你打到6點”"
+YJ_traits_27_desc: "加入光榮的國軍吧！"
+YJ_traits_28_desc: "我確信這裏不會出bug的"
+YJ_traits_29_desc: "無敵是多麽，多麽寂寞～"
+YJ_traits_30_desc: "雙手一定要舉過頭頂！鼓掌一定要響！"
+YJ_traits_31_desc: "多吃點飯，少做點事"
+YJ_traits_32_desc: "我尋思也沒禁止這個啊……"
+YJ_traits_33_desc: "凑數的"
+YJ_traits_34_desc: "白虎男娘"
+YJ_traits_35_desc: "其實是火鷄"
+YJ_traits_36_desc: "這是一種侮辱"
+YJ_traits_37_desc: "為了天才連這個也出賣了嗎？"
+YJ_traits_38_desc: "就作者"
+YJ_traits_39_desc: "沒有就去韓家找找吧"
+
+Sha_traits: "極限爆兵"
+Wolf_traits: "滿洲麵包創始人"
+Dog_traits: "狗窩的太陽"
+AK_traits: "坦克燃燒學說理論家"
+Lan_traits: "法治社會"
+Sky_traits: "長線運營者"
+A_traits: "爆金幣"
+Pap_traits: "大管子學說理論家"
+Arg_traits: "裝甲車學說理論家"
+Tmdu_traits: "窩窩屎專家"
+Man_traits: "大登陸愛好者"
+CUF_traits: "水兵上岸"
+Col_traits: "巧冰炮奠基者"
+Blo_traits: "桶子學説理論家"
+Lgs_traits: "男娘治國"
+Bai_traits: "屎山解構者"
+Kim_traits: "準備好了再等七天"
+Han_traits: "麥塊總建築師"
+Ept_traits: "病毒散播者"
+
+receive_western_education: "西方教育背景"
+
+AGH_desc: "§Y每天§!獲得10單位的§Y裝甲車§!"
 
 SOV_leader_of_the_party_and_the_people_trait_tt: "§Y[ROOT.GetLeader]§!: §Y$stalin_inheritor_of_lenin$§!或§Y$stalin_servant_of_lenin$§!追加效果: \n政党支持率对稳定度修正: §G+15.00%§!\n防御战争对稳定度修正: §G+40.00%§!\n政治顾问花费: §G-25%§!\n陆军师核心攻防:§G+3.00%§!\n"
 
@@ -1323,6 +1407,119 @@ KoKi_YJ_JL_event.33.title: "奖品: gods"
 KoKi_YJ_JL_event.33.desc: "将领: gods"
 KoKi_YJ_JL_event.33.a: "好"
 
+DOG_exe_YJ_new_JL_event.1.title: "奖品: DOG.EXE"
+DOG_exe_YJ_new_JL_event.1.desc: "将领: DOG.EXE"
+
+DOG_exe_YJ_JL_event.1.a: "好"
+
+DOG_exe_YJ_new_JL_event.2.title: "奖品: 恶狼"
+DOG_exe_YJ_new_JL_event.2.desc: "将领: 恶狼"
+
+
+DOG_exe_YJ_new_JL_event.3.title: "奖品: 鲨皇"
+DOG_exe_YJ_new_JL_event.3.desc: "将领: 鲨皇"
+
+
+DOG_exe_YJ_new_JL_event.4.title: "奖品: AK·冯·哈布斯堡"
+DOG_exe_YJ_new_JL_event.4.desc: "将领: AK·冯·哈布斯堡"
+
+
+DOG_exe_YJ_new_JL_event.5.title: "奖品: 山姆"
+DOG_exe_YJ_new_JL_event.5.desc: "将领: 山姆"
+
+
+DOG_exe_YJ_new_JL_event.6.title: "奖品: 卡尔"
+DOG_exe_YJ_new_JL_event.6.desc: "将领: 卡尔"
+
+
+DOG_exe_YJ_new_JL_event.7.title: "奖品: 欢乐主义理论家 奥村"
+DOG_exe_YJ_new_JL_event.7.desc: "奖品: 欢乐主义理论家 奥村"
+
+DOG_exe_YJ_new_JL_event.8.title: "奖品: 柚子（苏联大佬）"
+DOG_exe_YJ_new_JL_event.8.desc: "将领: 柚子（苏联大佬）"
+
+
+DOG_exe_YJ_new_JL_event.9.title: "奖品: 大莫老师"
+DOG_exe_YJ_new_JL_event.9.desc: "将领: 大莫老师"
+
+
+DOG_exe_YJ_new_JL_event.10.title: "奖品: Bloxychan"
+DOG_exe_YJ_new_JL_event.10.desc: "奖品: Bloxychan"
+
+DOG_exe_YJ_new_JL_event.11.title: "奖品: 醋饭"
+DOG_exe_YJ_new_JL_event.11.desc: "将领: 醋饭"
+
+
+DOG_exe_YJ_new_JL_event.12.title: "奖品: kimjstyki"
+DOG_exe_YJ_new_JL_event.12.desc: "奖品: kimjstyki"
+
+DOG_exe_YJ_new_JL_event.13.title: "奖品: 蓝叶Lanye"
+DOG_exe_YJ_new_JL_event.13.desc: "奖品: 蓝叶Lanye"
+
+DOG_exe_YJ_new_JL_event.14.title: "奖品: 巧克力冰淇淋"
+DOG_exe_YJ_new_JL_event.14.desc: "奖品: 巧克力冰淇淋"
+
+DOG_exe_YJ_new_JL_event.15.title: "奖品: 黑天"
+DOG_exe_YJ_new_JL_event.15.desc: "奖品: 黑天"
+
+DOG_exe_YJ_new_JL_event.16.title: "奖品: TmDu"
+DOG_exe_YJ_new_JL_event.16.desc: "奖品: TmDu"
+
+DOG_exe_YJ_new_JL_event.17.title: "奖品: A"
+DOG_exe_YJ_new_JL_event.17.desc: "奖品: A"
+
+DOG_exe_YJ_new_JL_event.18.title: "奖品: 百鬼组"
+DOG_exe_YJ_new_JL_event.18.desc: "奖品: 百鬼组"
+
+
+DOG_exe_YJ_new_JL_event.19.title: "奖品: 橘"
+DOG_exe_YJ_new_JL_event.19.desc: "奖品: 橘"
+
+DOG_exe_YJ_new_JL_event.20.title: "奖品: 神圣的猫猫"
+DOG_exe_YJ_new_JL_event.20.desc: "奖品: 神圣的猫猫"
+
+DOG_exe_YJ_new_JL_event.21.title: "奖品: 蛋饼"
+DOG_exe_YJ_new_JL_event.21.desc: "奖品: 蛋饼"
+
+DOG_exe_YJ_new_JL_event.22.title: "奖品: PapasGatitos"
+DOG_exe_YJ_new_JL_event.22.desc: "奖品: PapasGatitos"
+
+DOG_exe_YJ_new_JL_event.23.title: "奖品: 番茄"
+DOG_exe_YJ_new_JL_event.23.desc: "奖品: 番茄"
+
+DOG_exe_YJ_new_JL_event.24.title: "奖品: Arganham"
+DOG_exe_YJ_new_JL_event.24.desc: "奖品: Arganham"
+
+DOG_exe_YJ_new_JL_event.25.title: "奖品: 麦安捏"
+DOG_exe_YJ_new_JL_event.25.desc: "奖品: 麦安捏"
+
+DOG_exe_YJ_new_JL_event.26.title: "奖品: 死剑"
+DOG_exe_YJ_new_JL_event.26.desc: "奖品: 死剑"
+
+DOG_exe_YJ_new_JL_event.27.title: "奖品: 浪漫古士"
+DOG_exe_YJ_new_JL_event.27.desc: "奖品: 浪漫古士"
+
+DOG_exe_YJ_new_JL_event.28.title: "奖品: steve"
+DOG_exe_YJ_new_JL_event.28.desc: "奖品: steve"
+
+DOG_exe_YJ_new_JL_event.29.title: "奖品: 阿强"
+DOG_exe_YJ_new_JL_event.29.desc: "奖品: 阿强"
+
+DOG_exe_YJ_new_JL_event.30.title: "奖品: 迈耶"
+DOG_exe_YJ_new_JL_event.30.desc: "奖品: 迈耶"
+
+DOG_exe_YJ_new_JL_event.31.title: "奖品: 拜登"
+DOG_exe_YJ_new_JL_event.31.desc: "奖品: 拜登"
+
+DOG_exe_YJ_new_JL_event.32.title: "奖品: 韓"
+DOG_exe_YJ_new_JL_event.32.desc: "奖品: 韓"
+
+DOG_exe_YJ_new_JL_event.33.title: "奖品: 勘规"
+DOG_exe_YJ_new_JL_event.33.desc: "奖品: 勘规"
+
+DOG_exe_YJ_new_JL_event.34.title: "奖品: EmPtY"
+DOG_exe_YJ_new_JL_event.34.desc: "奖品: EmPtY"
+
 KoKi_YJ_JL_event.NPL.title: "拿破仑归来"
 KoKi_YJ_JL_event.NPL.desc: "拿破仑将领回归"
 KoKi_YJ_JL_event.NPL.a: "好"
@@ -1338,7 +1535,7 @@ decision_cost_CP_100_blocked: "£command_power §R100§!"
 
 
 YJ_AIR_ideas: "布丁性平衡"
-YJ_AIR_ideas_tt: "§5每100煤炭增加§11%§5建造速度\n§C目前速度§7[?YJ_AIR_ideas|Y0]§!"
+YJ_AIR_ideas_tt: "§5每100煤炭增加§11%§5建造速度\n§C目前建造速度§7[?YJ_coal_num|Y0]%§!"
 
 
 welcome_title_text: "更新日志"
@@ -1390,3 +1587,9 @@ YJ_bread_cos_communism_DEF:0 "麵包"
 
 YJ_bread_cos_neutrality:0 "麵包"
 YJ_bread_cos_neutrality_DEF:0 "麵包"
+
+set_axis:0 "設為軸心国"
+set_allie:0 "設為同盟国"
+
+KoKi_YJ_decisions_set_axis_tt: "設為軸心陣營"
+KoKi_YJ_decisions_set_allie_tt: "設為同盟陣營"

@@ -1,0 +1,391 @@
+characters = {
+
+	AGH_AGH= {
+		name = "Arganham"
+		portraits={
+			army = {   
+				large="gfx/leaders/DOG_exe/Arg.png"
+				small="GFX_idea_arg"
+			}
+			civilian = {    
+				large="gfx/leaders/DOG_exe/Arg.png"
+				small="GFX_idea_arg"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = AGH
+			traits = {Arg_traits}
+			desc = AGH_desc
+			cost = 150
+			available = { 
+			}
+			ai_will_do = {
+				factor = 0
+			}
+			on_add = {
+				set_country_flag = ARG_on
+			}
+			on_remove = {
+				clr_country_flag = ARG_on
+			}
+		}
+		corps_commander = { 
+			traits = {
+				brilliant_strategist 
+				armor_officer 
+				panzer_leader
+				cavalry_leader
+				trickster
+				organizer
+				ranger
+				urban_assault_specialist
+				YJ_traits_2
+				YJ_traits_28
+				YJ_traits_38
+				YJ_traits_15
+			}
+			skill =3
+			attack_skill = 6
+			defense_skill = 1
+			planning_skill = 5
+			logistics_skill = 1
+		}
+	}
+	AGH_DOG= {
+		name = "DOG"
+		advisor = {
+			slot = theorist
+			idea_token = DOG
+			traits = {}
+			cost = 150
+			available = { 
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	AGH_WOLF= {
+		name = "WOLF"
+		advisor = {
+			slot = theorist
+			idea_token = WOLF
+			traits = {}
+			cost = 150
+			available = { 
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	AGH_SHA= {
+		name = "SHA"
+		advisor = {
+			slot = theorist
+			idea_token = SHA
+			traits = {}
+			cost = 150
+			available = { 
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	AGH_AKZ= {
+		name = "AKZ"
+		advisor = {
+			slot = theorist
+			idea_token = AKZ
+			traits = {}
+			cost = 150
+			available = { 
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	AGH_SAM= {
+		name = "Sam"
+		advisor = {
+			slot = theorist
+			idea_token = SAM
+			traits = {}
+			cost = 150
+			available = { 
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	AGH_Karl= {
+		name = "Karl"
+		advisor = {
+			slot = theorist
+			idea_token = KAL
+			traits = {}
+			cost = 150
+			available = { 
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	AGH_Ao= {
+		name = "Ao"
+		advisor = {
+			slot = theorist
+			idea_token = AOO
+			traits = {}
+			cost = 150
+			available = { 
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	AGH_Yuzu= {
+		name = "Yuzu"
+		advisor = {
+			slot = theorist
+			idea_token = YUZ
+			traits = {}
+			cost = 150
+			available = { 
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	AGH_Mosley= {
+		name = "Mosley"
+		advisor = {
+			slot = theorist
+			idea_token = MSL
+			traits = {}
+			cost = 150
+			available = { 
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	AGH_Bloxy= {
+		name = "Bloxy"
+		advisor = {
+			slot = theorist
+			idea_token = BlX
+			traits = {}
+			cost = 150
+			available = { 
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	AGH_Cuf= {
+		name = "Cuf"
+		advisor = {
+			slot = theorist
+			idea_token = CUF
+			traits = {}
+			cost = 150
+			available = { 
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	AGH_Kim= {
+		name = "Kim"
+		advisor = {
+			slot = theorist
+			idea_token = KIM
+			traits = {}
+			cost = 150
+			available = { 
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	AGH_Lan= {
+		name = "Lan"
+		advisor = {
+			slot = theorist
+			idea_token = LAN
+			traits = {}
+			cost = 150
+			available = { 
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	AGH_Chol= {
+		name = "Chol"
+		advisor = {
+			slot = theorist
+			idea_token = COL
+			traits = {}
+			cost = 150
+			available = { 
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	AGH_SKY= {
+		name = "SKY"
+		advisor = {
+			slot = theorist
+			idea_token = SKY
+			traits = {}
+			cost = 150
+			available = { 
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	AGH_TMD= {
+		name = "TMD"
+		advisor = {
+			slot = theorist
+			idea_token = TMD
+			traits = {}
+			cost = 150
+			available = { 
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	AGH_A= {
+		name = "A"
+		advisor = {
+			slot = theorist
+			idea_token = AAA
+			traits = {}
+			cost = 150
+			available = { 
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	AGH_Nakiri= {
+		name = "Nakiri"
+		advisor = {
+			slot = theorist
+			idea_token = NKR
+			traits = {}
+			cost = 150
+			available = { 
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	AGH_Ju= {
+		name = "Ju"
+		advisor = {
+			slot = theorist
+			idea_token = JUU
+			traits = {}
+			cost = 150
+			available = { 
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	AGH_Cat= {
+		name = "Cat"
+		advisor = {
+			slot = theorist
+			idea_token = CAT
+			traits = {}
+			cost = 150
+			available = { 
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	AGH_Dan= {
+		name = "Dan"
+		advisor = {
+			slot = theorist
+			idea_token = DAN
+			traits = {}
+			cost = 150
+			available = { 
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	AGH_Pap= {
+		name = "Pap"
+		advisor = {
+			slot = theorist
+			idea_token = PAP
+			traits = {}
+			cost = 150
+			available = { 
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	AGH_Tom= {
+		name = "Tom"
+		advisor = {
+			slot = theorist
+			idea_token = TOM
+			traits = {}
+			cost = 150
+			available = { 
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	AGH_Man= {
+		name = "Man"
+		advisor = {
+			slot = theorist
+			idea_token = MAN
+			traits = {}
+			cost = 150
+			available = { 
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+}

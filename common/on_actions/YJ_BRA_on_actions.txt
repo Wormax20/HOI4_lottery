@@ -1,0 +1,35 @@
+on_actions = {
+	on_monthly_BRA = {
+		effect = {
+			if = {
+				limit = { has_dynamic_modifier = { modifier = YJ_BRA_2_ideas } }
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 1000
+					producer = BRA
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 500
+					producer = BRA
+				}
+				add_equipment_to_stockpile = {
+					type = anti_air_equipment
+					amount = 500
+					producer = BRA
+				}
+				add_equipment_to_stockpile = {
+					type = medium_tank_chassis
+					amount = 500
+					producer = BRA
+				}
+				add_to_variable = {
+					Beta_BRA_2_INDUSTRIAL_FACTORY_DONATIONS = 1
+				}
+				add_to_variable = {
+					Beta_BRA_2_MILITARY_FACTORY_DONATIONS = 1
+				}
+			}
+		}
+	}
+}

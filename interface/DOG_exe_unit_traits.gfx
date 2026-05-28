@@ -1,0 +1,168 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_trait_YJ_traits_1"
+		texturefile = "gfx/interface/traits/YJ_traits_1.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_YJ_traits_2"
+		texturefile = "gfx/interface/traits/YJ_traits_2.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_YJ_traits_3"
+		texturefile = "gfx/interface/traits/YJ_traits_3.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_YJ_traits_4"
+		texturefile = "gfx/interface/traits/YJ_traits_4.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_YJ_traits_5"
+		texturefile = "gfx/interface/traits/YJ_traits_5.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_YJ_traits_6"
+		texturefile = "gfx/interface/traits/YJ_traits_6.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_YJ_traits_7"
+		texturefile = "gfx/interface/traits/YJ_traits_7.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_YJ_traits_8"
+		texturefile = "gfx/interface/traits/YJ_traits_8.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_YJ_traits_9"
+		texturefile = "gfx/interface/traits/YJ_traits_9.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_YJ_traits_10"
+		texturefile = "gfx/interface/traits/YJ_traits_10.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_YJ_traits_11"
+		texturefile = "gfx/interface/traits/YJ_traits_11.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_YJ_traits_12"
+		texturefile = "gfx/interface/traits/YJ_traits_12.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_YJ_traits_13"
+		texturefile = "gfx/interface/traits/YJ_traits_13.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_YJ_traits_14"
+		texturefile = "gfx/interface/traits/YJ_traits_14.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_YJ_traits_15"
+		texturefile = "gfx/interface/traits/YJ_traits_15.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_YJ_traits_16"
+		texturefile = "gfx/interface/traits/YJ_traits_16.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_YJ_traits_17"
+		texturefile = "gfx/interface/traits/YJ_traits_17.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_YJ_traits_18"
+		texturefile = "gfx/interface/traits/YJ_traits_18.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_YJ_traits_19"
+		texturefile = "gfx/interface/traits/YJ_traits_19.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_YJ_traits_20"
+		texturefile = "gfx/interface/traits/YJ_traits_20.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_YJ_traits_21"
+		texturefile = "gfx/interface/traits/YJ_traits_21.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_YJ_traits_22"
+		texturefile = "gfx/interface/traits/YJ_traits_22.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_YJ_traits_23"
+		texturefile = "gfx/interface/traits/YJ_traits_23.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_trait_YJ_traits_24"
+		texturefile = "gfx/interface/traits/YJ_traits_24.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_YJ_traits_25"
+		texturefile = "gfx/interface/traits/YJ_traits_25.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_YJ_traits_26"
+		texturefile = "gfx/interface/traits/YJ_traits_26.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_YJ_traits_27"
+		texturefile = "gfx/interface/traits/YJ_traits_27.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_YJ_traits_28"
+		texturefile = "gfx/interface/traits/YJ_traits_28.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_YJ_traits_29"
+		texturefile = "gfx/interface/traits/YJ_traits_29.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_YJ_traits_30"
+		texturefile = "gfx/interface/traits/YJ_traits_30.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_YJ_traits_31"
+		texturefile = "gfx/interface/traits/YJ_traits_31.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_YJ_traits_32"
+		texturefile = "gfx/interface/traits/YJ_traits_32.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_YJ_traits_33"
+		texturefile = "gfx/interface/traits/YJ_traits_33.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_YJ_traits_34"
+		texturefile = "gfx/interface/traits/YJ_traits_34.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_YJ_traits_35"
+		texturefile = "gfx/interface/traits/YJ_traits_35.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_YJ_traits_36"
+		texturefile = "gfx/interface/traits/YJ_traits_36.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_YJ_traits_37"
+		texturefile = "gfx/interface/traits/YJ_traits_37.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_YJ_traits_38"
+		texturefile = "gfx/interface/traits/YJ_traits_38.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_YJ_traits_39"
+		texturefile = "gfx/interface/traits/YJ_traits_39.dds"
+	}
+}

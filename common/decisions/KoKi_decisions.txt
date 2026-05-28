@@ -11,10 +11,73 @@ KoKi_YJ_decisions_categories = {
 		}
 
 		complete_effect = {
-			set_victory_points = {
-				province = 11959
-				value = 100
-			}
+			country_event = KoKi_YJ_JL_event.1
+			country_event = KoKi_YJ_JL_event.2
+			country_event = KoKi_YJ_JL_event.3
+			country_event = KoKi_YJ_JL_event.4
+			country_event = KoKi_YJ_JL_event.5
+			country_event = KoKi_YJ_JL_event.6
+			country_event = KoKi_YJ_JL_event.7
+			country_event = KoKi_YJ_JL_event.8
+			country_event = KoKi_YJ_JL_event.9
+			country_event = KoKi_YJ_JL_event.10
+			country_event = KoKi_YJ_JL_event.11
+			country_event = KoKi_YJ_JL_event.12
+			country_event = KoKi_YJ_JL_event.13
+			country_event = KoKi_YJ_JL_event.14
+			country_event = KoKi_YJ_JL_event.15
+			country_event = KoKi_YJ_JL_event.16
+			country_event = KoKi_YJ_JL_event.17
+			country_event = KoKi_YJ_JL_event.18
+			country_event = KoKi_YJ_JL_event.19
+			country_event = KoKi_YJ_JL_event.21
+			country_event = KoKi_YJ_JL_event.22
+			country_event = KoKi_YJ_JL_event.23
+			country_event = KoKi_YJ_JL_event.24
+			country_event = KoKi_YJ_JL_event.25
+			country_event = KoKi_YJ_JL_event.26
+			country_event = KoKi_YJ_JL_event.27
+			country_event = KoKi_YJ_JL_event.28
+			country_event = KoKi_YJ_JL_event.29
+			country_event = KoKi_YJ_JL_event.30
+			country_event = KoKi_YJ_JL_event.31
+			country_event = KoKi_YJ_JL_event.32
+			country_event = KoKi_YJ_JL_event.33
+
+			country_event = DOG_exe_YJ_new_JL_event.1
+			country_event = DOG_exe_YJ_new_JL_event.2
+			country_event = DOG_exe_YJ_new_JL_event.3
+			country_event = DOG_exe_YJ_new_JL_event.4
+			country_event = DOG_exe_YJ_new_JL_event.5
+			country_event = DOG_exe_YJ_new_JL_event.6
+			country_event = DOG_exe_YJ_new_JL_event.7
+			country_event = DOG_exe_YJ_new_JL_event.8
+			country_event = DOG_exe_YJ_new_JL_event.9
+			country_event = DOG_exe_YJ_new_JL_event.10
+			country_event = DOG_exe_YJ_new_JL_event.11
+			country_event = DOG_exe_YJ_new_JL_event.12
+			country_event = DOG_exe_YJ_new_JL_event.13
+			country_event = DOG_exe_YJ_new_JL_event.14
+			country_event = DOG_exe_YJ_new_JL_event.15
+			country_event = DOG_exe_YJ_new_JL_event.16
+			country_event = DOG_exe_YJ_new_JL_event.17
+			country_event = DOG_exe_YJ_new_JL_event.18
+			country_event = DOG_exe_YJ_new_JL_event.19
+			country_event = DOG_exe_YJ_new_JL_event.20
+			country_event = DOG_exe_YJ_new_JL_event.21
+			country_event = DOG_exe_YJ_new_JL_event.22
+			country_event = DOG_exe_YJ_new_JL_event.23
+			country_event = DOG_exe_YJ_new_JL_event.24
+			country_event = DOG_exe_YJ_new_JL_event.25
+			country_event = DOG_exe_YJ_new_JL_event.26
+			country_event = DOG_exe_YJ_new_JL_event.27
+			country_event = DOG_exe_YJ_new_JL_event.28
+			country_event = DOG_exe_YJ_new_JL_event.29
+			country_event = DOG_exe_YJ_new_JL_event.30
+			country_event = DOG_exe_YJ_new_JL_event.31
+			country_event = DOG_exe_YJ_new_JL_event.32
+			country_event = DOG_exe_YJ_new_JL_event.33
+			country_event = DOG_exe_YJ_new_JL_event.34
 		}
 
 	}
@@ -79,6 +142,7 @@ KoKi_YJ_decisions_categories = {
 			original_tag = FIN
 		}
 		available = {
+			date > 1938.1.1
 			FROM = { NOT = { has_idea = YJ_FIN_5_ideas } }
 		}
 		visible = {
@@ -114,6 +178,7 @@ KoKi_YJ_decisions_categories = {
 			original_tag = ENG
 		}
 		available = {
+			date > 1938.1.1
 			has_idea = YJ_ENG_5_ideas
 			FROM = { NOT = { has_idea = deterrence } }
 		}
@@ -158,6 +223,7 @@ KoKi_YJ_decisions_categories = {
 		original_tag = ROM
 	}
 	available = {
+			date > 1938.1.1
 			has_idea = YJ_ROM_3_ideas
 			FROM = { NOT = { has_idea = YJ_ROM_03_ideas } }
 	}
@@ -182,6 +248,53 @@ KoKi_YJ_decisions_categories = {
 					idea = YJ_ROM_03_ideas
 					days = 60
 				}
+			}
+		}
+	}
+		cancel_trigger = { #满足什么条件会立刻取消（中断）此决议，会立刻打断正在读条的决议
+		}
+		cancel_effect = { #决议被打断时触发的效果（这个效果与其他效果不同，它不会在鼠标悬停于决议上方时显示出来）
+		}
+		remove_effect = { #决议移除（读条完毕）时触发的效果
+		}
+		ai_will_do = {
+			base = 0 #ai点选这个决议的意愿
+		}
+	}
+
+	KoKi_YJ_USA_decisions = {  #D-Day决议
+	icon = GFX_decision_generic_form_nation
+	allowed = {
+		original_tag = USA
+	}
+	available = {
+		date > 1938.1.1
+		has_war = yes
+		FROM = {
+			has_war = yes
+		}
+	}
+	visible = {
+		original_tag = USA
+	}
+	target_trigger = {
+		FROM = {
+			is_in_faction_with = ROOT
+			NOT = {
+				has_idea = YJ_USA_6_ideas
+			}
+		}
+	}
+	cost = 100 #决议需要的花费
+	days_remove = 0  #决议点击后直到移除所需的时间（立刻完成的决议不需要写这条）
+	days_re_enable = 0
+	modifier = { #填入修正效果
+	}
+	complete_effect = { 
+		From = {
+			add_timed_idea = {
+				idea = YJ_USA_6_ideas
+				days = 60
 			}
 		}
 	}
@@ -494,7 +607,7 @@ KoKi_YJ_decisions_categories = {
 			custom_trigger_tooltip = {
 				tooltip = KoKi_YJ_decisions_JL_txt
 				check_variable = {
-					KoKi_YJ_decisions_JL < 25
+					KoKi_YJ_decisions_JL < 40
 				}
 			}
 		}
@@ -669,6 +782,54 @@ KoKi_YJ_decisions_categories = {
 			}
 		}
 	}
+
+	
+	set_axis = {
+		allowed = {
+			always = yes
+		}
+		visible = {
+			NOT = {
+				OR = {
+					has_country_flag = YJ_axis
+					has_country_flag = YJ_allie
+				}
+			}
+		}
+		available = {
+			always = yes
+		}
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = KoKi_YJ_decisions_set_axis_tt
+			set_country_flag = YJ_axis
+		}
+	}
+
+	set_allie = {
+		allowed = {
+			always = yes
+		}
+		visible = {
+			NOT = {
+				OR = {
+					has_country_flag = YJ_axis
+					has_country_flag = YJ_allie
+				}
+			}
+		}
+		available = {
+			always = yes
+		}
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = KoKi_YJ_decisions_set_allie_tt
+			set_country_flag = YJ_allie
+		}
+	}
+
 	KoKi_YJ_decisions_9 = { 
 		icon = GFX_decision_hol_draw_up_staff_plans
 		allowed = {
@@ -805,6 +966,7 @@ KoKi_YJ_MEX_decisions_categories = {
 			always = yes
 		}
 		available = {
+			date > 1938.1.1
 		}
 		visible = {
 			has_war_with = GER
@@ -844,6 +1006,7 @@ KoKi_YJ_MEX_decisions_categories = {
 	KoKi_YJ_MEX_decisions_categories_1 = { #计划攻势
 		icon = GFX_decision_hol_draw_up_staff_plans
 		allowed = {
+			date > 1938.1.1
 		}
 		available = {
 			has_war_with = GER
@@ -994,6 +1157,7 @@ KoKi_YJ_MEX_decisions_categories = {
 	KoKi_YJ_MEX_decisions_categories_2 = { #计划攻势
 		icon = GFX_decision_hol_draw_up_staff_plans
 		allowed = {
+			date > 1938.1.1
 		}
 		available = {
 			has_war_with = ITA
@@ -1144,6 +1308,7 @@ KoKi_YJ_MEX_decisions_categories = {
 	KoKi_YJ_MEX_decisions_categories_3 = { #计划攻势
 		icon = GFX_decision_hol_draw_up_staff_plans
 		allowed = {
+			date > 1938.1.1
 		}
 		available = {
 			has_war_with = FRA
@@ -1294,6 +1459,7 @@ KoKi_YJ_MEX_decisions_categories = {
 	KoKi_YJ_MEX_decisions_categories_4 = { #计划攻势
 		icon = GFX_decision_hol_draw_up_staff_plans
 		allowed = {
+			date > 1938.1.1
 		}
 		available = {
 			has_war_with = BEL
@@ -1444,6 +1610,7 @@ KoKi_YJ_MEX_decisions_categories = {
 	KoKi_YJ_MEX_decisions_categories_5 = { #计划攻势
 		icon = GFX_decision_hol_draw_up_staff_plans
 		allowed = {
+			date > 1938.1.1
 		}
 		available = {
 			has_war_with = JAP
@@ -1595,6 +1762,7 @@ KoKi_YJ_MEX_decisions_categories = {
 	KoKi_YJ_MEX_decisions_categories_6 = { #计划攻势
 		icon = GFX_decision_hol_draw_up_staff_plans
 		allowed = {
+			date > 1938.1.1
 		}
 		available = {
 			has_war_with = TUR
@@ -1747,6 +1915,7 @@ KoKi_YJ_ROM_decisions_categories = {
 	KoKi_YJ_ROM_decisions_categories_1 = { #火
 		icon = GFX_decision_hol_draw_up_staff_plans
 		allowed = {
+			date > 1938.1.1
 		}
 		available = {
 			has_war_with = ENG
@@ -1995,6 +2164,7 @@ KoKi_YJ_ROM_decisions_categories = {
 	KoKi_YJ_ROM_decisions_categories_2 = { #冰
 		icon = GFX_decision_hol_draw_up_staff_plans
 		allowed = {
+			date > 1938.1.1
 		}
 		available = {
 			has_idea = YJ_ROM_2_ideas
@@ -2238,6 +2408,7 @@ KoKi_YJ_GER_decisions_categories = {
 			always = yes
 		}
 		available = {
+			date > 1938.1.1
 		}
 		visible = {
 			original_tag = GER
@@ -2283,6 +2454,7 @@ MEX_integrate_state_decisions_categories = {
 			original_tag = MEX
 		}
 		available = {
+			date > 1938.1.1
 		}
 		
 		visible = {

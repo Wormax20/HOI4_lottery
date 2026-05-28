@@ -10444,6 +10444,7 @@ focus_tree = {
 		cost = 10
 		available = {
 			has_war = no
+			date > 1938.1.1
 		}
 		                
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY}
@@ -10624,6 +10625,7 @@ focus_tree = {
 
 		available = {
 			is_faction_leader = yes
+			date > 1938.1.1
 		}
 		                
 		search_filters = {}

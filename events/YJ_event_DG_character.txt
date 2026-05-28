@@ -1,0 +1,1905 @@
+add_namespace = DOG_exe_YJ_new_JL_event
+country_event = {
+	id = DOG_exe_YJ_new_JL_event.1
+	title = DOG_exe_YJ_new_JL_event.1.title
+	desc = DOG_exe_YJ_new_JL_event.1.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = DOG_exe_YJ_JL_event.1.a
+		create_corps_commander = {
+			name = "DOG.EXE"
+			portrait_path =  "gfx/leaders/DOG_exe/DOG.png"
+		
+			allowed_civil_war = {
+				is_ai = no
+			}
+
+			traits={ 
+				brilliant_strategist 
+				armor_officer 
+				panzer_leader
+				cavalry_leader
+				infantry_leader
+				trickster
+				organizer
+				ranger
+				YJ_traits_1
+				YJ_traits_30
+			}
+			skill = 7
+			attack_skill = 7
+			defense_skill = 6
+			planning_skill = 7
+			logistics_skill = 5
+		}
+		hidden_effect = {
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = DOG
+						name="DOG.EXE"
+						portraits = {
+							civilian = {
+								small="GFX_idea_dog"
+							}
+						}
+						allowed_civil_war = {
+							is_ai = no
+						}     
+						advisor={
+							cost = 75
+							slot = air_chief
+							idea_token = DOG
+ 
+							traits = {
+								Dog_traits
+							}
+							ai_will_do = {
+								base = 1
+							}
+						}   
+						advisor={
+							cost = 100
+							slot = high_command
+							idea_token = DOG
+ 
+							traits = {
+								Dog_traits
+							}
+							ai_will_do = {
+								base = 1
+							}
+						}       
+					}    
+				}
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+
+country_event = {
+	id = DOG_exe_YJ_new_JL_event.2
+	title = DOG_exe_YJ_new_JL_event.2.title
+	desc = DOG_exe_YJ_new_JL_event.2.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = DOG_exe_YJ_JL_event.1.a
+		create_corps_commander = {
+			name = "惡狼"
+			portrait_path =  "gfx/leaders/DOG_exe/Wolf.png"
+			allowed_civil_war = {
+				is_ai = no
+			}
+			traits={ 
+				brilliant_strategist 
+				armor_officer 
+				panzer_leader
+				cavalry_leader
+				infantry_leader
+				trickster
+				organizer
+				ranger
+				YJ_traits_1
+				YJ_traits_28
+			}
+			skill = 6
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 7
+			logistics_skill = 6
+		}
+
+		hidden_effect = {
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = WOLF
+						name="惡狼"
+						portraits = {
+							civilian = {
+								small="GFX_idea_wolf"
+							}
+						}
+						allowed_civil_war = {
+							is_ai = no
+						}       
+						advisor={
+							cost = 150
+							slot = political_advisor
+							idea_token = WOL
+ 
+							traits = {
+								Wolf_traits
+							}
+							ai_will_do = {
+								base = 1
+							}
+						}       
+					}    
+				}
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+
+country_event = {
+	id = DOG_exe_YJ_new_JL_event.3
+	title = DOG_exe_YJ_new_JL_event.3.title
+	desc = DOG_exe_YJ_new_JL_event.3.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = DOG_exe_YJ_JL_event.1.a
+		create_corps_commander = {
+			name = "鯊皇"
+			portrait_path = "gfx/leaders/DOG_exe/SHA.png"
+			allowed_civil_war = {
+				is_ai = no
+			}
+			traits={ 
+				brilliant_strategist 
+				armor_officer 
+				panzer_leader
+				cavalry_leader
+				infantry_leader
+				trickster
+				organizer
+				ranger
+				YJ_traits_10
+				YJ_traits_1
+				YJ_traits_27
+			}
+			skill = 6
+			attack_skill = 6
+			defense_skill = 5
+			planning_skill = 6
+			logistics_skill = 6
+		}
+
+		hidden_effect = {
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = SHAHUANG
+						name="鯊皇"
+						portraits={
+							civilian = {  
+								small="GFX_idea_sha"
+							}
+						}
+						allowed_civil_war = {
+							is_ai = no
+						}       
+						advisor={
+							cost = 100
+							slot = high_command
+							idea_token = SHA
+ 
+							traits = {
+								Sha_traits
+							}
+							ai_will_do = {
+								base = 1
+							}
+						}       
+					}    
+				}
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = DOG_exe_YJ_new_JL_event.4
+	title = DOG_exe_YJ_new_JL_event.4.title
+	desc = DOG_exe_YJ_new_JL_event.4.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = DOG_exe_YJ_JL_event.1.a
+		create_corps_commander = {
+			name = "AK·馮·哈布斯堡"
+			portrait_path =  "gfx/leaders/DOG_exe/AK.png"
+			allowed_civil_war = {
+				is_ai = no
+			}
+			traits={ 
+				YJ_traits_29
+				YJ_traits_35
+			}
+			skill = 1
+			attack_skill = 10
+			defense_skill = 10
+			planning_skill = 10
+			logistics_skill = 10
+		}
+
+		hidden_effect = {
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = AKZ
+						name="AK·馮·哈布斯堡"
+						portraits = {
+							civilian = {
+								small="GFX_idea_ak"
+							}
+						}
+						allowed_civil_war = {
+							is_ai = no
+						}      
+						advisor={
+							cost = 150
+							slot = theorist
+							idea_token = AKZ
+ 
+							can_be_fired = no
+							traits = {
+								AK_traits
+							}
+							ai_will_do = {
+								base = 1
+							}
+						}       
+					}    
+				}
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+
+country_event = {
+	id = DOG_exe_YJ_new_JL_event.5
+	title = DOG_exe_YJ_new_JL_event.5.title
+	desc = DOG_exe_YJ_new_JL_event.5.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = DOG_exe_YJ_JL_event.1.a
+		create_corps_commander = {
+			name = "山姆"
+			portrait_path =  "gfx/leaders/DOG_exe/Sam.png"
+			allowed_civil_war = {
+				is_ai = no
+			}
+			traits={ 
+				YJ_traits_2
+				old_guard
+				inflexible_strategist
+				trait_cautious
+				trickster
+				organizer
+				ranger
+				YJ_traits_24
+
+			}
+			skill = 3
+			attack_skill = 1
+			defense_skill = 9
+			planning_skill = 1
+			logistics_skill = 2
+		}
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = DOG_exe_YJ_new_JL_event.6
+	title = DOG_exe_YJ_new_JL_event.6.title
+	desc = DOG_exe_YJ_new_JL_event.6.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = DOG_exe_YJ_JL_event.1.a
+		create_corps_commander = {
+			name = "卡爾"
+			portrait_path = "gfx/leaders/DOG_exe/Karl.png"
+			allowed_civil_war = {
+				is_ai = no
+			}
+			traits={ 
+				YJ_traits_2
+				politically_connected
+				infantry_officer
+				cavalry_officer
+				trickster
+				organizer
+				ranger
+				YJ_traits_32
+
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 4
+		}
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = DOG_exe_YJ_new_JL_event.7
+	title = DOG_exe_YJ_new_JL_event.7.title
+	desc = DOG_exe_YJ_new_JL_event.7.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = DOG_exe_YJ_JL_event.1.a
+		create_corps_commander = {
+			name = "歡樂主義理論家 奧村"
+			portrait_path = "gfx/leaders/DOG_exe/Ao.png"
+			allowed_civil_war = {
+				is_ai = no
+			}
+			traits={ 
+				YJ_traits_2
+				harsh_leader
+				infantry_officer
+				cavalry_officer
+				trickster
+				organizer
+				ranger
+				YJ_traits_31
+
+			}
+			skill = 3
+			attack_skill = 6
+			defense_skill = 5
+			planning_skill = 1
+			logistics_skill = 1
+		}
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+
+country_event = {
+	id = DOG_exe_YJ_new_JL_event.8
+	title = DOG_exe_YJ_new_JL_event.8.title
+	desc = DOG_exe_YJ_new_JL_event.8.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = DOG_exe_YJ_JL_event.1.a
+		create_corps_commander = {
+			name = "柚子（蘇聯大佬）"
+			portrait_path =  "gfx/leaders/DOG_exe/Yuzu.png"
+			allowed_civil_war = {
+				is_ai = no
+			}
+			traits={ 
+				YJ_traits_2
+				infantry_officer
+				cavalry_officer
+				trickster
+				organizer
+				ranger
+				YJ_traits_12
+				YJ_traits_25
+
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 6
+		}
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = DOG_exe_YJ_new_JL_event.9
+	title = DOG_exe_YJ_new_JL_event.9.title
+	desc = DOG_exe_YJ_new_JL_event.9.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = DOG_exe_YJ_JL_event.1.a
+		create_corps_commander = {
+			name = "大莫老師"
+			portrait_path = "gfx/leaders/DOG_exe/Mosley.png"
+			allowed_civil_war = {
+				is_ai = no
+			}
+			traits={ 
+				YJ_traits_1
+				militias_officer
+				infantry_officer
+				inflexible_strategist 
+				harsh_leader
+				cavalry_officer
+				organizer
+				ranger
+				YJ_traits_32
+				CHI_dubious_loyalty
+				PRC_survivor_of_the_long_march
+
+			}
+			skill = 5
+			attack_skill = 6
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 5
+		}
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = DOG_exe_YJ_new_JL_event.10
+	title = DOG_exe_YJ_new_JL_event.10.title
+	desc = DOG_exe_YJ_new_JL_event.10.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = DOG_exe_YJ_JL_event.1.a
+		create_corps_commander = {
+			name = "Bloxychan"
+			portrait_path =  "gfx/leaders/DOG_exe/Bloxy.png"
+			allowed_civil_war = {
+				is_ai = no
+			}
+			traits={ 
+				YJ_traits_2
+				infantry_officer
+				scavenger
+				infantry_leader
+				cavalry_officer
+				trickster
+				organizer
+				ranger
+				YJ_traits_26
+
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 8
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		hidden_effect = {
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = BLO
+						name="Bloxychan"
+						portraits = {
+							civilian = {
+								small="GFX_idea_bloxy"
+							}
+						}
+						allowed_civil_war = {
+							is_ai = no
+						}      
+						advisor={
+							cost = 150
+							slot = theorist
+							idea_token = BLO
+							traits = {
+								blo_traits
+							}
+							ai_will_do = {
+								base = 1
+							}
+						}       
+					}    
+				}
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = DOG_exe_YJ_new_JL_event.11
+	title = DOG_exe_YJ_new_JL_event.11.title
+	desc = DOG_exe_YJ_new_JL_event.11.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = DOG_exe_YJ_JL_event.1.a
+		create_corps_commander = {
+			name = "醋飯"
+			portrait_path =  "gfx/leaders/DOG_exe/Cuf.png"
+			allowed_civil_war = {
+				is_ai = no
+			}
+			traits={ 
+				YJ_traits_2
+				YJ_traits_37
+				YJ_traits_34
+				brilliant_strategist 
+				cavalry_officer
+				panzer_leader
+				cavalry_leader
+				trickster
+				organizer
+				YJ_traits_16
+
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 6
+		}
+		hidden_effect = {
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = CUF
+						name="醋飯"
+						portraits = {
+							civilian = {
+								small="GFX_idea_cuf"
+							}
+						}
+						allowed_civil_war = {
+							is_ai = no
+						}      
+						advisor={
+							cost = 100
+							slot = navy_chief
+							idea_token = CUF
+							traits = {
+								CUF_traits
+							}
+							ai_will_do = {
+								base = 1
+							}
+						}       
+					}    
+				}
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = DOG_exe_YJ_new_JL_event.12
+	title = DOG_exe_YJ_new_JL_event.12.title
+	desc = DOG_exe_YJ_new_JL_event.12.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = DOG_exe_YJ_JL_event.1.a
+		create_corps_commander = {
+			name = "kimjstyki"
+			portrait_path = "gfx/leaders/DOG_exe/Kim.png"
+			allowed_civil_war = {
+				is_ai = no
+			}
+			traits={ 
+				YJ_traits_1
+				trickster
+				brilliant_strategist 
+				armor_officer 
+				panzer_leader
+				naval_invader
+				amphibious
+				naval_liason
+				organizer
+				ranger
+
+			}
+			skill = 6
+			attack_skill = 6
+			defense_skill = 7
+			planning_skill = 4
+			logistics_skill = 6
+		}
+		hidden_effect = {
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = KIM
+						name="kimjstyki"
+						portraits = {
+							civilian = {
+								small="GFX_idea_kim"
+							}
+						}
+						allowed_civil_war = {
+							is_ai = no
+						}      
+						advisor={
+							cost = 100
+							slot = high_command
+							idea_token = KIM
+							traits = {
+								Kim_traits
+							}
+							ai_will_do = {
+								base = 1
+							}
+						}       
+					}    
+				}
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = DOG_exe_YJ_new_JL_event.13
+	title = DOG_exe_YJ_new_JL_event.13.title
+	desc = DOG_exe_YJ_new_JL_event.13.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = DOG_exe_YJ_JL_event.1.a
+		create_corps_commander = {
+			name = "藍葉Lanye"
+			portrait_path =  "gfx/leaders/DOG_exe/Lan.png"
+			allowed_civil_war = {
+				is_ai = no
+			}
+			traits={ 
+				YJ_traits_1
+				brilliant_strategist 
+				armor_officer 
+				panzer_leader
+				cavalry_leader
+				infantry_leader
+				trickster
+				organizer
+				ranger
+			}
+			skill = 6
+			attack_skill = 6
+			defense_skill = 4
+			planning_skill = 6
+			logistics_skill = 7
+		}
+
+		hidden_effect = {
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = LAN
+						name="藍葉Lanye"
+						portraits={
+							civilian = {  
+								small="GFX_idea_lan"
+							}
+						}
+						allowed_civil_war = {
+							is_ai = no
+						}       
+						advisor={
+							cost = 150
+							slot = political_advisor
+							idea_token = LAN
+ 
+							traits = {
+								Lan_traits
+							}
+							ai_will_do = {
+								base = 1
+							}
+						}       
+					}    
+				}
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+
+country_event = {
+	id = DOG_exe_YJ_new_JL_event.14
+	title = DOG_exe_YJ_new_JL_event.14.title
+	desc = DOG_exe_YJ_new_JL_event.14.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = DOG_exe_YJ_JL_event.1.a
+		create_corps_commander = {
+			name = "巧克力冰淇淋"
+			portrait_path =  "gfx/leaders/DOG_exe/Chol.png"
+			allowed_civil_war = {
+				is_ai = no
+			}
+			traits={ 
+				YJ_traits_2
+				brilliant_strategist 
+				trickster
+				organizer
+				panzer_leader
+				YJ_traits_33
+				ranger
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 6
+			logistics_skill = 5
+		}
+		hidden_effect = {
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = COL
+						name="巧克力冰淇淋"
+						portraits={
+							civilian = {  
+								small="GFX_idea_chol"
+							}
+						}
+						allowed_civil_war = {
+							is_ai = no
+						}       
+						advisor={
+							cost = 100
+							slot = high_command
+							idea_token = COL
+ 
+							traits = {
+								Col_traits
+							}
+							ai_will_do = {
+								base = 1
+							}
+						}       
+					}    
+				}
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+
+country_event = {
+	id = DOG_exe_YJ_new_JL_event.15
+	title = DOG_exe_YJ_new_JL_event.15.title
+	desc = DOG_exe_YJ_new_JL_event.15.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = DOG_exe_YJ_JL_event.1.a
+		create_corps_commander = {
+			name = "黑天"
+			portrait_path = "gfx/leaders/DOG_exe/Sky.png"
+			allowed_civil_war = {
+				is_ai = no
+			}
+			traits={ 
+				YJ_traits_1
+				YJ_traits_12
+				YJ_traits_36
+				brilliant_strategist 
+				armor_officer 
+				panzer_leader
+				cavalry_leader
+				infantry_leader
+				trickster
+				organizer
+				ranger
+
+			}
+			skill = 6
+			attack_skill = 6
+			defense_skill = 5
+			planning_skill = 6
+			logistics_skill = 6
+		}
+
+		hidden_effect = {
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = SKY
+						name="黑天"
+						portraits={
+							civilian = {  
+								small="GFX_idea_bsk"
+							}
+						}
+						allowed_civil_war = {
+							is_ai = no
+						}       
+						advisor={
+							cost = 150
+							slot = political_advisor
+							idea_token = SKY
+ 
+							traits = {
+								Sky_traits
+							}
+							ai_will_do = {
+								base = 1
+							}
+						}       
+					}    
+				}
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+
+
+country_event = {
+	id = DOG_exe_YJ_new_JL_event.16
+	title = DOG_exe_YJ_new_JL_event.16.title
+	desc = DOG_exe_YJ_new_JL_event.16.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = DOG_exe_YJ_JL_event.1.a
+		create_navy_leader = {
+			name = "TmDu"
+			portrait_path = "gfx/leaders/DOG_exe/Tmdu.png"
+			allowed_civil_war = {
+				is_ai = no
+			}
+			traits = { navy_career_officer chief_engineer seawolf gentlemanly fleet_protector blockade_runner  bold superior_tactician ironside spotter naval_lineage air_controller}
+			skill = 6
+			attack_skill = 6
+			defense_skill = 5
+			maneuvering_skill = 7
+			coordination_skill = 5
+		}
+		hidden_effect = {
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = TMD
+						name="TmDu"
+						portraits = {
+							civilian = {
+								small="GFX_idea_tmdu"
+							}
+						}
+						allowed_civil_war = {
+							is_ai = no
+						}     
+						advisor={
+							cost = 100
+							slot = navy_chief
+							idea_token = TMD
+							traits = {
+								Tmdu_traits
+							}
+							ai_will_do = {
+								base = 1
+							}
+						}    
+					}    
+				}
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+
+country_event = {
+	id = DOG_exe_YJ_new_JL_event.17
+	title = DOG_exe_YJ_new_JL_event.17.title
+	desc = DOG_exe_YJ_new_JL_event.17.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = DOG_exe_YJ_JL_event.1.a
+		create_corps_commander = {
+			name = "A"
+			portrait_path =  "gfx/leaders/DOG_exe/A.png"
+			allowed_civil_war = {
+				is_ai = no
+			}
+			traits={ 
+				YJ_traits_2
+				YJ_traits_21
+				rait_reckless
+				trait_engineer
+				trickster
+				organizer
+				ranger
+
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 4
+		}
+
+		hidden_effect = {
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = AAA
+						name="A"
+						portraits={
+							civilian = {  
+								small="GFX_idea_a"
+							}
+						}
+						allowed_civil_war = {
+							is_ai = no
+						}       
+						advisor={
+							cost = 150
+							slot = political_advisor
+							idea_token = AAA
+ 
+							traits = {
+								A_traits
+							}
+							ai_will_do = {
+								base = 1
+							}
+						}       
+					}    
+				}
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = DOG_exe_YJ_new_JL_event.18
+	title = DOG_exe_YJ_new_JL_event.18.title
+	desc = DOG_exe_YJ_new_JL_event.18.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = DOG_exe_YJ_JL_event.1.a
+		create_corps_commander = {
+			name = "百鬼組"
+			portrait_path = "gfx/leaders/DOG_exe/Nakiri.png"
+			allowed_civil_war = {
+				is_ai = no
+			}
+			traits={ 
+				brilliant_strategist 	
+				trait_cautious
+				armor_officer 
+				panzer_leader
+				cavalry_leader
+				infantry_leader
+				trickster
+				organizer
+				ranger
+				YJ_traits_1
+
+			}
+			skill = 6
+			attack_skill = 6
+			defense_skill = 4
+			planning_skill = 7
+			logistics_skill = 5
+		}
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+
+country_event = {
+	id = DOG_exe_YJ_new_JL_event.19
+	title = DOG_exe_YJ_new_JL_event.19.title
+	desc = DOG_exe_YJ_new_JL_event.19.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = DOG_exe_YJ_JL_event.1.a
+		create_corps_commander = {
+			name = ""
+			portrait_path =  "gfx/leaders/DOG_exe/Ju.png"
+			allowed_civil_war = {
+				is_ai = no
+			}
+			traits={ 
+				YJ_traits_2
+				trickster
+				armor_officer 
+				panzer_leader
+				trait_engineer
+				guerilla_fighter
+				organizer
+				ranger
+
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 4
+		}
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = DOG_exe_YJ_new_JL_event.20
+	title = DOG_exe_YJ_new_JL_event.20.title
+	desc = DOG_exe_YJ_new_JL_event.20.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = DOG_exe_YJ_JL_event.1.a
+		create_corps_commander = {
+			name = "神圣的猫猫"
+			portrait_path = "gfx/leaders/DOG_exe/Cat.png"
+			allowed_civil_war = {
+				is_ai = no
+			}
+			traits={ 
+				brilliant_strategist 
+				armor_officer 
+				panzer_leader
+				cavalry_leader
+				infantry_leader
+				trickster
+				organizer
+				ranger
+				YJ_traits_1
+
+			}
+			skill = 6
+			attack_skill = 7
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 6
+		}
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+
+country_event = {
+	id = DOG_exe_YJ_new_JL_event.21
+	title = DOG_exe_YJ_new_JL_event.21.title
+	desc = DOG_exe_YJ_new_JL_event.21.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = DOG_exe_YJ_JL_event.1.a
+		create_corps_commander = {
+			name = "蛋餅"
+			portrait_path = "gfx/leaders/DOG_exe/Dan.png"
+			allowed_civil_war = {
+				is_ai = no
+			}
+			traits={ 
+				YJ_traits_2
+				trait_reckless
+				career_officer
+				armor_officer 
+				trickster
+				organizer
+				ranger
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 6
+		}
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = DOG_exe_YJ_new_JL_event.22
+	title = DOG_exe_YJ_new_JL_event.22.title
+	desc = DOG_exe_YJ_new_JL_event.22.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = DOG_exe_YJ_JL_event.1.a
+		create_corps_commander = {
+			name = "PapasGatitos"
+			portrait_path = "gfx/leaders/DOG_exe/Pap.png"
+			allowed_civil_war = {
+				is_ai = no
+			}
+			traits={ 
+				YJ_traits_1
+				brilliant_strategist 
+				career_officer
+				armor_officer 
+				trickster
+				organizer
+				ranger
+
+			}
+			skill = 5
+			attack_skill = 6
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 7
+		}
+
+		hidden_effect = {
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = PAP
+						name="PapasGatitos"
+						portraits={
+							civilian = {  
+								small="GFX_idea_pap"
+							}
+						}
+						allowed_civil_war = {
+							is_ai = no
+						}       
+						advisor={
+							cost = 150
+							slot = theorist
+							idea_token = PAP
+ 
+							traits = {
+								Pap_traits
+							}
+							ai_will_do = {
+								base = 1
+							}
+						}       
+					}    
+				}
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = DOG_exe_YJ_new_JL_event.23
+	title = DOG_exe_YJ_new_JL_event.23.title
+	desc = DOG_exe_YJ_new_JL_event.23.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = DOG_exe_YJ_JL_event.1.a
+		create_corps_commander = {
+			name = "番茄"
+			portrait_path = "gfx/leaders/DOG_exe/Tom.png"
+			allowed_civil_war = {
+				is_ai = no
+			}
+			traits={ 
+				YJ_traits_1
+				harsh_leader
+				brilliant_strategist 
+				career_officer
+				armor_officer 
+				trickster
+				organizer
+				ranger
+				YJ_traits_1
+				YJ_traits_7
+				YJ_traits_10
+			}
+			skill = 6
+			attack_skill = 8
+			defense_skill = 5
+			planning_skill = 2
+			logistics_skill = 7
+		}
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+
+country_event = {
+	id = DOG_exe_YJ_new_JL_event.24
+	title = DOG_exe_YJ_new_JL_event.24.title
+	desc = DOG_exe_YJ_new_JL_event.24.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = DOG_exe_YJ_JL_event.1.a
+		recruit_character = AGH_AGH
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = DOG_exe_YJ_new_JL_event.25
+	title = DOG_exe_YJ_new_JL_event.25.title
+	desc = DOG_exe_YJ_new_JL_event.25.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = DOG_exe_YJ_JL_event.1.a
+		create_corps_commander = {
+			name = "麥安捏"
+			portrait_path = "gfx/leaders/DOG_exe/Man.png"
+			allowed_civil_war = {
+				is_ai = no
+			}
+			traits={ 
+				YJ_traits_2
+				panzer_leader
+				naval_invader
+				armor_officer 
+				amphibious
+				naval_liason
+				organizer
+				trait_engineer
+
+			}
+			skill = 3
+			attack_skill = 4
+			defense_skill = 6
+			planning_skill = 1
+			logistics_skill = 2
+		}
+
+		hidden_effect = {
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = MAN
+						name="麥安捏"
+						portraits={
+							civilian = {  
+								small="GFX_idea_man"
+							}
+						}
+						allowed_civil_war = {
+							is_ai = no
+						}       
+						advisor={
+							cost = 100
+							slot = high_command
+							idea_token = MAN
+							traits = {
+								Man_traits
+							}
+							ai_will_do = {
+								base = 1
+							}
+						}       
+					}    
+				}
+			}
+		}
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = DOG_exe_YJ_new_JL_event.26
+	title = DOG_exe_YJ_new_JL_event.26.title
+	desc = DOG_exe_YJ_new_JL_event.26.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = DOG_exe_YJ_JL_event.1.a
+		create_corps_commander = {
+			name = "死劍"
+			portrait_path = "gfx/leaders/DOG_exe/SJ.png"
+			allowed_civil_war = {
+				is_ai = no
+			}
+			traits={ 
+				YJ_traits_1
+				brilliant_strategist 
+				armor_officer 
+				panzer_leader
+				career_officer
+				trickster
+				organizer
+				ranger
+
+			}
+			skill = 6
+			attack_skill = 7
+			defense_skill = 6
+			planning_skill = 4
+			logistics_skill = 5
+		}
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = DOG_exe_YJ_new_JL_event.27
+	title = DOG_exe_YJ_new_JL_event.27.title
+	desc = DOG_exe_YJ_new_JL_event.27.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = DOG_exe_YJ_JL_event.1.a
+		create_corps_commander = {
+			name = "浪漫古士"
+			portrait_path = "gfx/leaders/DOG_exe/Lgs.png"
+			allowed_civil_war = {
+				is_ai = no
+			}
+			traits={ 
+				YJ_traits_2
+				trait_reckless
+				brilliant_strategist 
+				career_officer
+				YJ_traits_16
+				YJ_traits_23
+				YJ_traits_37
+				infantry_officer
+				trickster
+				organizer
+				ranger
+			}
+			skill = 3
+			attack_skill = 5
+			defense_skill = 1
+			planning_skill = 4
+			logistics_skill = 3
+		}
+		hidden_effect = {
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = LGS
+						name="浪漫古士"
+						portraits = {
+							civilian = {
+								small="GFX_idea_lgs"
+							}
+						}
+						allowed_civil_war = {
+							is_ai = no
+						}      
+						advisor={
+							cost = 100
+							slot = high_command
+							idea_token = LGS
+							traits = {
+								Lgs_traits
+							}
+							ai_will_do = {
+								base = 1
+							}
+						}
+					}
+				}
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = DOG_exe_YJ_new_JL_event.28
+	title = DOG_exe_YJ_new_JL_event.28.title
+	desc = DOG_exe_YJ_new_JL_event.28.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = DOG_exe_YJ_JL_event.1.a
+		create_corps_commander = {
+			name = "steve"
+			portrait_path = "gfx/leaders/DOG_exe/Ste.png"
+			allowed_civil_war = {
+				is_ai = no
+			}
+			traits={ 
+				YJ_traits_1
+				brilliant_strategist 
+				career_officer
+				armor_officer 
+				panzer_leader
+				trickster
+				organizer
+				ranger
+			}
+			skill = 6
+			attack_skill = 6
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 6
+		}
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = DOG_exe_YJ_new_JL_event.29
+	title = DOG_exe_YJ_new_JL_event.29.title
+	desc = DOG_exe_YJ_new_JL_event.29.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = DOG_exe_YJ_JL_event.1.a
+		create_corps_commander = {
+			name = "阿強"
+			portrait_path = "gfx/leaders/DOG_exe/aqg.png"
+			allowed_civil_war = {
+				is_ai = no
+			}
+			traits={ 
+				brilliant_strategist 	
+				trait_cautious
+				armor_officer 
+				panzer_leader
+				cavalry_leader
+				infantry_leader
+				trickster
+				organizer
+				ranger
+				YJ_traits_1
+			}
+			skill = 6
+			attack_skill = 6
+			defense_skill = 6
+			planning_skill = 5
+			logistics_skill = 5
+		}
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = DOG_exe_YJ_new_JL_event.30
+	title = DOG_exe_YJ_new_JL_event.30.title
+	desc = DOG_exe_YJ_new_JL_event.30.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = DOG_exe_YJ_JL_event.1.a
+		create_corps_commander = {
+			name = "邁耶"
+			portrait_path = "gfx/leaders/DOG_exe/Grl.png"
+			allowed_civil_war = {
+				is_ai = no
+			}
+			traits={ 
+				YJ_traits_1
+				brilliant_strategist 
+				armor_officer 
+				panzer_leader
+				career_officer
+				trickster
+				organizer
+				ranger
+
+			}
+			skill = 6
+			attack_skill = 6
+			defense_skill = 6
+			planning_skill = 5
+			logistics_skill = 5
+		}
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = DOG_exe_YJ_new_JL_event.31
+	title = DOG_exe_YJ_new_JL_event.31.title
+	desc = DOG_exe_YJ_new_JL_event.31.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = DOG_exe_YJ_JL_event.1.a
+		create_corps_commander = {
+			name = "拜登"
+			portrait_path = "gfx/leaders/DOG_exe/Bai.png"
+			allowed_civil_war = {
+				is_ai = no
+			}
+			traits={ 
+				YJ_traits_1
+				brilliant_strategist 
+				armor_officer 
+				panzer_leader
+				career_officer
+				trickster
+				organizer
+				ranger
+				YJ_traits_28
+			}
+			skill = 6
+			attack_skill = 7
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 8
+		}
+		hidden_effect = {
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = BAI
+						name="拜登"
+						portraits = {
+							civilian = {
+								small="GFX_idea_bai"
+							}
+						}
+						allowed_civil_war = {
+							is_ai = no
+						}      
+						advisor={
+							cost = 150
+							slot = theorist
+							idea_token = BAI
+							traits = {
+								Bai_traits
+							}
+							ai_will_do = {
+								base = 1
+							}
+						}
+					}
+				}
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = DOG_exe_YJ_new_JL_event.32
+	title = DOG_exe_YJ_new_JL_event.32.title
+	desc = DOG_exe_YJ_new_JL_event.32.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = DOG_exe_YJ_JL_event.1.a
+		create_corps_commander = {
+			name = "韓"
+			portrait_path = "gfx/leaders/DOG_exe/Han.png"
+			allowed_civil_war = {
+				is_ai = no
+			}
+			traits={ 
+				YJ_traits_1
+				brilliant_strategist 
+				armor_officer 
+				panzer_leader
+				career_officer
+				trickster
+				organizer
+				harsh_leader
+				ranger
+				YJ_traits_39
+				YJ_traits_7
+			}
+			skill = 6
+			attack_skill = 7
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 7
+		}
+		hidden_effect = {
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = HAN
+						name="韓"
+						portraits = {
+							civilian = {
+								small="GFX_idea_han"
+							}
+						}
+						allowed_civil_war = {
+							is_ai = no
+						}      
+						advisor={
+							cost = 150
+							slot = political_advisor
+							idea_token = HAN
+							traits = {
+								Han_traits
+							}
+							ai_will_do = {
+								base = 1
+							}
+						}
+					}
+				}
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = DOG_exe_YJ_new_JL_event.33
+	title = DOG_exe_YJ_new_JL_event.33.title
+	desc = DOG_exe_YJ_new_JL_event.33.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = DOG_exe_YJ_JL_event.1.a
+		create_navy_leader = {
+			name = "勘規"
+			portrait_path = "gfx/leaders/DOG_exe/Kag.png"
+			allowed_civil_war = {
+				is_ai = no
+			}
+			traits = { bold seawolf gentlemanly navy_carrier blue_water_expert ironside flight_deck_manager  }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			maneuvering_skill = 3
+			coordination_skill = 3
+		}
+	}
+}
+
+country_event = {
+	id = DOG_exe_YJ_new_JL_event.34
+	title = DOG_exe_YJ_new_JL_event.34.title
+	desc = DOG_exe_YJ_new_JL_event.34.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = DOG_exe_YJ_JL_event.1.a
+		create_corps_commander = {
+			name = "EmPtY"
+			portrait_path = "gfx/leaders/DOG_exe/Empty.png"
+			allowed_civil_war = {
+				is_ai = no
+			}
+			traits={ 
+				YJ_traits_1
+				brilliant_strategist 
+				armor_officer 
+				panzer_leader
+				career_officer
+				trickster
+				organizer
+				ranger
+				YJ_traits_28
+			}
+			skill = 5
+			attack_skill = 6
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 6
+		}
+		hidden_effect = {
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = EPT
+						name="EmPtY"
+						portraits = {
+							civilian = {
+								small="GFX_idea_ept"
+							}
+						}
+						allowed_civil_war = {
+							is_ai = no
+						}      
+						advisor={
+							cost = 150
+							slot = political_advisor
+							idea_token = EPT
+							traits = {
+								Ept_traits
+							}
+							ai_will_do = {
+								base = 1
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

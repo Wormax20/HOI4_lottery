@@ -1,0 +1,69 @@
+on_actions = {
+	on_monthly_USA = {
+		effect = {
+			if = {
+				limit = { 
+					has_idea = YJ_USA_2_ideas 
+					check_variable = { var = USA_research_speed value = 5 compare = greater_than_or_equals }
+			    }
+				add_tech_bonus = {
+					name = YJ_USA_2_ideas
+					ahead_reduction = 2
+					bonus = 3
+					uses = 1
+					category = armor
+					category = infantry_weapons
+					category = artillery
+					category = air_equipment
+					category = naval_equipment
+					category = motorized_equipment
+					category = support_tech
+					category = electronics
+					category = train_tech
+					category = industry
+					category = nuclear
+					category = rocketry
+				}
+				add_breakthrough_progress = {
+					specialization = specialization_nuclear
+					value = 1
+				}
+				add_breakthrough_progress = {
+					specialization = specialization_land
+					value = 1
+				}
+				add_breakthrough_progress = {
+					specialization = specialization_naval
+					value = 1
+				}
+				add_breakthrough_progress = {
+					specialization = specialization_air
+					value = 1
+				}
+				set_variable = {
+					USA_research_speed = 0
+				}
+			}
+			IF = {
+				limit = {
+					has_idea = YJ_USA_2_ideas
+					date > 1937.12.1
+					NOT = { has_global_flag = Beta_USA_1_on_flag }
+				}
+				complete_special_project = {
+					project = sp:sp_air_mothership_aircraft
+				}
+				set_global_flag = Beta_USA_1_on_flag
+			}
+			else_if = {
+				limit = { 
+					has_idea = YJ_USA_2_ideas 
+					check_variable = { var = USA_research_speed value = 5 compare = less_than }
+			    }
+				add_to_variable = {
+					USA_research_speed = 1
+				}
+			}
+		}
+	}
+}

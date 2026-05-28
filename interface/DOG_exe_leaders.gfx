@@ -1,0 +1,104 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_leaders_530" 
+		texturefile = "gfx/leaders/DOG_exe/530.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_fe" 
+		texturefile = "gfx/leaders/DOG_exe/fe.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_bd" 
+		texturefile = "gfx/leaders/DOG_exe/bd.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_cs" 
+		texturefile = "gfx/leaders/DOG_exe/cs.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_dlz" 
+		texturefile = "gfx/leaders/DOG_exe/dlz.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_dmw" 
+		texturefile = "gfx/leaders/DOG_exe/dmw.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_fz" 
+		texturefile = "gfx/leaders/DOG_exe/fz.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_grx" 
+		texturefile = "gfx/leaders/DOG_exe/grx.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_kb" 
+		texturefile = "gfx/leaders/DOG_exe/kb.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_nl" 
+		texturefile = "gfx/leaders/DOG_exe/nl.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_qq" 
+		texturefile = "gfx/leaders/DOG_exe/qq.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_qzy" 
+		texturefile = "gfx/leaders/DOG_exe/qzy.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_rtx" 
+		texturefile = "gfx/leaders/DOG_exe/rtx.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_ty" 
+		texturefile = "gfx/leaders/DOG_exe/ty.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_xsy" 
+		texturefile = "gfx/leaders/DOG_exe/xsy.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_xz" 
+		texturefile = "gfx/leaders/DOG_exe/xz.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_yy" 
+		texturefile = "gfx/leaders/DOG_exe/yy.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_yyj" 
+		texturefile = "gfx/leaders/DOG_exe/yyj.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_yzx" 
+		texturefile = "gfx/leaders/DOG_exe/yzx.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_zj" 
+		texturefile = "gfx/leaders/DOG_exe/zj.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_ydl" 
+		texturefile = "gfx/leaders/DOG_exe/ydl.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_E" 
+		texturefile = "gfx/leaders/DOG_exe/E.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_xe" 
+		texturefile = "gfx/leaders/DOG_exe/xe.png"
+	}
+
+	spriteType = {
+		name = "GFX_leaders_SHA" 
+		texturefile = "gfx/leaders/DOG_exe/SHA.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_Wolf" 
+		texturefile = "gfx/leaders/DOG_exe/Wolf.png"
+	}
+
+}	

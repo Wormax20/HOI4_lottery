@@ -1,0 +1,36 @@
+on_actions = {
+	on_daily_BEL = {
+		effect = {
+			if = {
+				limit = {
+					has_idea = YJ_BEL_01_ideas
+					surrender_progress > 0.1
+					NOT = { has_global_flag = YJ_BEL_surrender_ideas }
+			    }
+				add_stability = 1000
+				add_war_support = 1000
+				
+				#forced_surrender_limit = 3.0
+				#surrender_limit = 3
+				#max_surrender_limit_offset = 3
+				every_state = {
+					limit = {
+						is_core_of = COG
+					}
+					add_core_of = BEL
+				}
+				COG = {
+					every_unit_leader = {
+						set_nationality = BEL
+					}
+					
+				}
+				annex_country = {
+					target = COG
+					transfer_troops = yes
+				}
+				set_global_flag = YJ_BEL_surrender_ideas
+			}
+		}
+	}
+}

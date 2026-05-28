@@ -1,0 +1,71 @@
+on_actions = {
+	on_monthly_ITA = {
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						has_dynamic_modifier = {
+							modifier = YJ_ITA_1_ideas
+						}
+						has_dynamic_modifier = {
+							modifier = YJ_ITA_4_ideas
+						}
+					}
+					NOT = { has_country_flag = Beta_ITA_Demo_1_Flag }
+				}
+				set_country_flag = Beta_ITA_Demo_1_Flag
+			}
+			else_if = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = YJ_ITA_1_ideas
+					}
+					has_idea = YJ_ITA_01_ideas
+					has_country_flag = Beta_ITA_Demo_1_Flag
+				}
+				KoKi_YJ_ITA_event_1_scripted_effects = yes
+				clr_country_flag = Beta_ITA_Demo_1_Flag
+			}
+			else_if = {
+				limit = {
+					has_idea = YJ_ITA_02_ideas
+					has_country_flag = Beta_ITA_Demo_2_Flag
+				}
+				country_event = KoKi_YJ_ITA_event.1015
+				clr_country_flag = Beta_ITA_Demo_2_Flag
+			}
+			if = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = YJ_ITA_4_ideas
+					}
+				}
+				add_to_variable = {
+					Beta_ITA_4_line_change_production_efficiency_factor = 0.0025
+				}
+				add_to_variable = {
+					Beta_ITA_4_lproduction_factory_max_efficiency_factor = 0.0025
+				}
+				add_to_variable = {
+					Beta_ITA_4_lproduction_factory_start_efficiency_factor = 0.0025
+				}
+				add_to_variable = {
+					Beta_ITA_4_lproduction_factory_efficiency_gain_factor = 0.0025
+				}
+				add_to_variable = {
+					Beta_ITA_4_lindustrial_capacity_factory = 0.0025
+				}
+				add_to_variable = {
+					Beta_ITA_4_lindustrial_capacity_dockyard = 0.0025
+				}
+				add_to_variable = {
+					Beta_ITA_4_army_attack_factor = 0.0045
+				}
+				add_to_variable = {
+					Beta_ITA_4_army_defence_factor = 0.003
+				}
+			}
+		}
+	}
+
+}

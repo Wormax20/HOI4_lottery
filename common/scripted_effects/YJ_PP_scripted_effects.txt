@@ -46,7 +46,7 @@ YJ_JL_LJ = {
                 NOT = { has_country_flag = YJ_pool_initialized } 
             }
             for_loop_effect = {
-                end = 33
+                end = 67
                 compare = less_than
                 value = current_i
                 
@@ -104,6 +104,41 @@ YJ_JL_LJ = {
             else_if = { limit = { check_variable = { drawn_event = 30 } } country_event = KoKi_YJ_JL_event.31 }
             else_if = { limit = { check_variable = { drawn_event = 31 } } country_event = KoKi_YJ_JL_event.32 }
             else_if = { limit = { check_variable = { drawn_event = 32 } } country_event = KoKi_YJ_JL_event.33 }
+
+            else_if = { limit = { check_variable = { drawn_event = 33 } } country_event = DOG_exe_YJ_new_JL_event.1 }
+            else_if = { limit = { check_variable = { drawn_event = 34 } } country_event = DOG_exe_YJ_new_JL_event.2 }
+            else_if = { limit = { check_variable = { drawn_event = 35 } } country_event = DOG_exe_YJ_new_JL_event.3 }
+            else_if = { limit = { check_variable = { drawn_event = 36 } } country_event = DOG_exe_YJ_new_JL_event.4 }
+            else_if = { limit = { check_variable = { drawn_event = 37 } } country_event = DOG_exe_YJ_new_JL_event.5 }
+            else_if = { limit = { check_variable = { drawn_event = 38 } } country_event = DOG_exe_YJ_new_JL_event.6 }
+            else_if = { limit = { check_variable = { drawn_event = 39 } } country_event = DOG_exe_YJ_new_JL_event.7 }
+            else_if = { limit = { check_variable = { drawn_event = 40 } } country_event = DOG_exe_YJ_new_JL_event.8 }
+            else_if = { limit = { check_variable = { drawn_event = 41 } } country_event = DOG_exe_YJ_new_JL_event.9 }
+            else_if = { limit = { check_variable = { drawn_event = 42 } } country_event = DOG_exe_YJ_new_JL_event.10 }
+            else_if = { limit = { check_variable = { drawn_event = 43 } } country_event = DOG_exe_YJ_new_JL_event.11 }
+            else_if = { limit = { check_variable = { drawn_event = 44 } } country_event = DOG_exe_YJ_new_JL_event.12 }
+            else_if = { limit = { check_variable = { drawn_event = 45 } } country_event = DOG_exe_YJ_new_JL_event.13 }
+            else_if = { limit = { check_variable = { drawn_event = 46 } } country_event = DOG_exe_YJ_new_JL_event.14 }
+            else_if = { limit = { check_variable = { drawn_event = 47 } } country_event = DOG_exe_YJ_new_JL_event.15 }
+            else_if = { limit = { check_variable = { drawn_event = 48 } } country_event = DOG_exe_YJ_new_JL_event.16 }
+            else_if = { limit = { check_variable = { drawn_event = 49 } } country_event = DOG_exe_YJ_new_JL_event.17 }
+            else_if = { limit = { check_variable = { drawn_event = 50 } } country_event = DOG_exe_YJ_new_JL_event.18 }
+            else_if = { limit = { check_variable = { drawn_event = 51 } } country_event = DOG_exe_YJ_new_JL_event.19 }
+            else_if = { limit = { check_variable = { drawn_event = 52 } } country_event = DOG_exe_YJ_new_JL_event.20 }
+            else_if = { limit = { check_variable = { drawn_event = 53 } } country_event = DOG_exe_YJ_new_JL_event.21 }
+            else_if = { limit = { check_variable = { drawn_event = 54 } } country_event = DOG_exe_YJ_new_JL_event.22 }
+            else_if = { limit = { check_variable = { drawn_event = 55 } } country_event = DOG_exe_YJ_new_JL_event.23 }
+            else_if = { limit = { check_variable = { drawn_event = 56 } } country_event = DOG_exe_YJ_new_JL_event.24 }
+            else_if = { limit = { check_variable = { drawn_event = 57 } } country_event = DOG_exe_YJ_new_JL_event.25 }
+            else_if = { limit = { check_variable = { drawn_event = 58 } } country_event = DOG_exe_YJ_new_JL_event.26 }
+            else_if = { limit = { check_variable = { drawn_event = 59 } } country_event = DOG_exe_YJ_new_JL_event.27 }
+            else_if = { limit = { check_variable = { drawn_event = 60 } } country_event = DOG_exe_YJ_new_JL_event.28 }
+            else_if = { limit = { check_variable = { drawn_event = 61 } } country_event = DOG_exe_YJ_new_JL_event.29 }
+            else_if = { limit = { check_variable = { drawn_event = 62 } } country_event = DOG_exe_YJ_new_JL_event.30 }
+            else_if = { limit = { check_variable = { drawn_event = 63 } } country_event = DOG_exe_YJ_new_JL_event.31 }
+            else_if = { limit = { check_variable = { drawn_event = 64 } } country_event = DOG_exe_YJ_new_JL_event.32 }
+            else_if = { limit = { check_variable = { drawn_event = 65 } } country_event = DOG_exe_YJ_new_JL_event.33 }
+            else_if = { limit = { check_variable = { drawn_event = 66 } } country_event = DOG_exe_YJ_new_JL_event.34 }
         }
     }
 }

@@ -1,0 +1,180 @@
+spriteTypes = {	
+	spriteType = {
+	    name = "GFX_idea_yj_grx"  
+	    textureFile = "gfx/interface/ideas/yj_grx.png"
+    } 
+	spriteType = {
+	    name = "GFX_idea_yj_530"  
+	    textureFile = "gfx/interface/ideas/yj_530.png"
+    } 
+	spriteType = {
+	    name = "GFX_idea_yj_xsy"  
+	    textureFile = "gfx/interface/ideas/yj_xsy.png"
+    } 
+	spriteType = {
+	    name = "GFX_idea_yj_qq"  
+	    textureFile = "gfx/interface/ideas/yj_qq.png"
+    } 
+	spriteType = {
+	    name = "GFX_idea_YJ_CHI_2_ideas"  
+	    textureFile = "gfx/interface/ideas/idea_YJ_CHI_2_ideas.dds"
+    } 
+
+	spriteType = {
+	    name = "GFX_idea_CHI_national_defense_mobilization"  
+	    textureFile = "gfx/interface/ideas/idea_CHI_national_defense_mobilization.dds"
+    } 
+
+
+	spriteType = {
+	    name = "GFX_idea_sha"  
+	    textureFile = "gfx/interface/ideas/sha.png"
+    } 
+	spriteType = {
+	    name = "GFX_idea_wolf"  
+	    textureFile = "gfx/interface/ideas/wolf.png"
+    } 
+
+	spriteType = {
+	    name = "GFX_idea_ak"  
+	    textureFile = "gfx/interface/ideas/ak.png"
+    } 
+	spriteType = {
+	    name = "GFX_idea_lan"  
+	    textureFile = "gfx/interface/ideas/lan.png"
+    } 
+	spriteType = {
+	    name = "GFX_idea_bsk"  
+	    textureFile = "gfx/interface/ideas/bsk.png"
+    } 
+
+	spriteType = {
+	    name = "GFX_idea_dog"  
+	    textureFile = "gfx/interface/ideas/dog.png"
+    }
+
+
+	spriteType = {
+	    name = "GFX_idea_a"  
+	    textureFile = "gfx/interface/ideas/a.png"
+    } 
+	spriteType = {
+	    name = "GFX_idea_pap"  
+	    textureFile = "gfx/interface/ideas/pap.png"
+    } 
+
+	spriteType = {
+	    name = "GFX_idea_ao"  
+	    textureFile = "gfx/interface/ideas/ao.png"
+    } 
+	spriteType = {
+	    name = "GFX_idea_bloxy"  
+	    textureFile = "gfx/interface/ideas/bloxy.png"
+    } 
+	spriteType = {
+	    name = "GFX_idea_cat"  
+	    textureFile = "gfx/interface/ideas/cat.png"
+    } 
+	spriteType = {
+	    name = "GFX_idea_chol"  
+	    textureFile = "gfx/interface/ideas/chol.png"
+    } 
+
+	spriteType = {
+	    name = "GFX_idea_cuf"  
+	    textureFile = "gfx/interface/ideas/cuf.png"
+    } 
+	spriteType = {
+	    name = "GFX_idea_dan"  
+	    textureFile = "gfx/interface/ideas/dan.png"
+    } 
+
+	spriteType = {
+	    name = "GFX_idea_ju"  
+	    textureFile = "gfx/interface/ideas/ju.png"
+    } 
+	spriteType = {
+	    name = "GFX_idea_karl"  
+	    textureFile = "gfx/interface/ideas/karl.png"
+    } 
+	spriteType = {
+	    name = "GFX_idea_kim"  
+	    textureFile = "gfx/interface/ideas/kim.png"
+    } 
+
+	spriteType = {
+	    name = "GFX_idea_mosley"  
+	    textureFile = "gfx/interface/ideas/mosley.png"
+    }
+
+
+	spriteType = {
+	    name = "GFX_idea_nakiri"  
+	    textureFile = "gfx/interface/ideas/nakiri.png"
+    } 
+	spriteType = {
+	    name = "GFX_idea_sam"  
+	    textureFile = "gfx/interface/ideas/sam.png"
+    } 
+
+	spriteType = {
+	    name = "GFX_idea_tmdu"  
+	    textureFile = "gfx/interface/ideas/tmdu.png"
+    } 
+	spriteType = {
+	    name = "GFX_idea_tom"  
+	    textureFile = "gfx/interface/ideas/tom.png"
+    } 
+
+	spriteType = {
+	    name = "GFX_idea_arg"  
+	    textureFile = "gfx/interface/ideas/arg.png"
+    } 
+
+	spriteType = {
+	    name = "GFX_idea_man"  
+	    textureFile = "gfx/interface/ideas/man.png"
+    } 
+
+	spriteType = {
+	    name = "GFX_idea_sj"  
+	    textureFile = "gfx/interface/ideas/sj.png"
+    } 
+
+
+	spriteType = {
+	    name = "GFX_idea_ste"  
+	    textureFile = "gfx/interface/ideas/ste.png"
+    } 
+
+	spriteType = {
+	    name = "GFX_idea_aqg"  
+	    textureFile = "gfx/interface/ideas/aqg.png"
+    } 
+
+	spriteType = {
+	    name = "GFX_idea_lgs"  
+	    textureFile = "gfx/interface/ideas/lgs.png"
+    } 
+
+	spriteType = {
+	    name = "GFX_idea_bai"  
+	    textureFile = "gfx/interface/ideas/bai.png"
+    } 
+
+	spriteType = {
+	    name = "GFX_idea_grl"  
+	    textureFile = "gfx/interface/ideas/grl.png"
+    } 
+	
+	spriteType = {
+	    name = "GFX_idea_han"  
+	    textureFile = "gfx/interface/ideas/han.png"
+    } 
+
+	spriteType = {
+	    name = "GFX_idea_ept"  
+	    textureFile = "gfx/interface/ideas/empty.png"
+    } 
+
+}
