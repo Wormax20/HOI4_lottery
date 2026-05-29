@@ -250,14 +250,25 @@ country_event = {
 				is_ai = no
 			}
 			traits={ 
-				YJ_traits_34
+				#YJ_traits_34
 				YJ_traits_40
+				brilliant_strategist
+				armor_officer
+				panzer_leader
+				cavalry_leader
+				infantry_leader
+				trickster
+				organizer
+				commando
+				urban_assault_specialist
+				ranger
+				YJ_traits_2
 			}
 			skill = 1
-			attack_skill = 10
-			defense_skill = 10
-			planning_skill = 10
-			logistics_skill = 10
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 0
+			logistics_skill = 0
 		}
 
 		hidden_effect = {
@@ -279,7 +290,6 @@ country_event = {
 							slot = theorist
 							idea_token = AKZ
  
-							can_be_fired = no
 							traits = {
 								AK_traits
 							}

@@ -165,4 +165,24 @@ spriteTypes = {
 		name = "GFX_trait_YJ_traits_39"
 		texturefile = "gfx/interface/traits/YJ_traits_39.dds"
 	}
+	spriteType = {
+		name = "GFX_trait_YJ_traits_40"
+		texturefile = "gfx/interface/traits/YJ_traits_40.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_YJ_traits_41"
+		texturefile = "gfx/interface/traits/YJ_traits_41.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_YJ_traits_42"
+		texturefile = "gfx/interface/traits/YJ_traits_42.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_YJ_traits_43"
+		texturefile = "gfx/interface/traits/YJ_traits_43.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_YJ_traits_44"
+		texturefile = "gfx/interface/traits/YJ_traits_44.dds"
+	}
 }

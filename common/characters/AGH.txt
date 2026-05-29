@@ -41,8 +41,8 @@ characters = {
 				ranger
 				urban_assault_specialist
 				YJ_traits_2
-				YJ_traits_28
-				YJ_traits_38
+				YJ_traits_33
+				YJ_traits_43
 				YJ_traits_15
 			}
 			skill =3
