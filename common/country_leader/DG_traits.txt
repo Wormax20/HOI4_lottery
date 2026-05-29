@@ -99,13 +99,13 @@ leader_traits = {
 		equipment_bonus = {
 			armor = {
 				build_cost_ic = -0.10
-				reliability = -0.30
+				reliability = -0.50
 				maximum_speed = 0.2
 				instant = yes
 			}		
 			mechanized_equipment = {
 				build_cost_ic = -0.10
-				reliability = -0.30
+				reliability = -0.50
 				instant = yes
 			}
 		}
