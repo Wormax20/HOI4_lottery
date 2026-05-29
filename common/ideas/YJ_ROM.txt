@@ -20,14 +20,20 @@ ideas = {
 				war_support_weekly = 0.002 #每周战争支持度增长
 				production_speed_buildings_factor = 0.1 #建造速度
 				production_speed_infrastructure_factor = 1 #基础设施建造速度
-				operative_slot = 2 #特工数量
-				conscription_factor = 0.4 #适役人口修正
+				consumer_goods_factor = -0.15 #生活消费品工厂系数
+				conscription_factor = 0.5 #适役人口修正
 				weekly_manpower = 3000 #每周人力
 				global_building_slots = 15 #最大地区数
+				global_building_slots_factor = 0.10 #地區工廠上限%數
+				fuel_gain_factor = 0.25 #從石油獲得的燃油
+				army_core_defence_factor = 0.2 #陸軍師核心領土防禦
+				research_speed_factor = 0.1 #科研速度
+				command_power_gain = 1 								#每日指挥点增长
+				max_command_power = 200 							#最大指挥点数提高多少
 			}
 			equipment_bonus = {
 				train_equipment_1 = {
-					build_cost_ic = -0.3
+					build_cost_ic = -0.5
 					instant = yes
 				}
 				railway_gun = {
@@ -191,15 +197,14 @@ ideas = {
 				experience_loss_factor = -0.5 #有经验的士兵损失
 				experience_gain_army_unit = 2 #陆军经验增长
 				conscription =  0.05   #适役人口
-				max_planning = 0.2 									# 计划上限
-				planning_speed = 0.15 								# 计划速度
-				army_strength_factor = 0.05 							# HP
-				army_intel_to_others =-5 #泄露给敌国的陆军情报
-				navy_intel_to_others =-5
-				airforce_intel_to_others =-5
+				max_planning = 0.10 									#计划上限
+				planning_speed = 0.10 								#计划速度
+				army_strength_factor = 0.05 							#HP
+				supply_consumption_factor = -0.10 #补给消耗
 				equipment_capture = 0.1 #装备缴获比例
-				command_power_gain = 2 								# 每日指挥点增长
-				max_command_power = 300 							#最大指挥点数提高多少
+				production_speed_arms_factory_factor = 0.10 #军用工厂建造速度
+				command_power_gain = 1 								# 每日指挥点增长
+				max_command_power = 200 							#最大指挥点数提高多少
 			}
 		}
 
