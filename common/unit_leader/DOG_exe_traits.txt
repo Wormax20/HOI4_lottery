@@ -55,565 +55,7 @@
 #	enable_ability = ability_key
 #}
 leader_traits = {
-
-	
-##################################
-# Common Traits
-##################################
-	YJ_DG_traits_1 = { 
-		type = land
-		trait_type = personality_trait
-		gain_xp = {
-			always = no # not gainable
-		}
-		allowed = {
-			
-		}
-		modifier = {
-			max_planning = 0.05 #计划上限
-		}
-		
-		non_shared_modifier = {
-			experience_gain_factor = -0.5
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-		new_commander_weight = {
-			factor = 0
-		}
-	}
-	YJ_DG_traits_2 = { 
-		type = land
-		trait_type = personality_trait
-		gain_xp = {
-			always = no # not gainable
-		}
-		allowed = {
-			
-		}
-		modifier = {
-		}
-		
-		non_shared_modifier = {
-			experience_gain_factor = 0.5
-		}
-		daily_effect = {
-			gain_xp = 1
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		new_commander_weight = {
-			factor = 0
-		}
-	}
-	YJ_DG_traits_3 = { 
-		type = land
-		trait_type = personality_trait
-		gain_xp = {
-			always = no # not gainable
-		}
-		allowed = {
-			
-		}
-		modifier = {
-			planning_speed = -0.2   #计划速度
-			max_planning = 0.05 #计划加成上限
-		}
-		
-		non_shared_modifier = {
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-		new_commander_weight = {
-			factor = 0
-		}
-	}
-	YJ_DG_traits_4 = { 
-		type = land
-		trait_type = personality_trait
-		gain_xp = {
-			always = no # not gainable
-		}
-		allowed = {
-			
-		}
-		modifier = {
-			wounded_chance_factor = 0.2  #受伤几率
-		}
-		
-		non_shared_modifier = {
-			offence = 0.05
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-		new_commander_weight = {
-			factor = 0
-		}
-	}
-	YJ_DG_traits_5 = { 
-		type = land
-		trait_type = personality_trait
-		gain_xp = {
-			always = no # not gainable
-		}
-		allowed = {
-			
-		}
-		modifier = {
-			army_org_regain = 0.1 #组织度恢复
-		    land_reinforce_rate = 0.01 #增援率
-		}
-		
-		non_shared_modifier = {
-			
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-		new_commander_weight = {
-			factor = 0
-		}
-	}
-	YJ_DG_traits_6 = { 
-		type = land
-		trait_type = personality_trait
-		gain_xp = {
-			always = no # not gainable
-		}
-		allowed = {
-			
-		}
-		modifier = {
-			offence = 0.1
-			defence = -0.05
-		}
-		
-		non_shared_modifier = {
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-		new_commander_weight = {
-			factor = 0
-		}
-	}
-	YJ_DG_traits_7 = { 
-		type = land
-		trait_type = personality_trait
-		gain_xp = {
-			always = no # not gainable
-		}
-		allowed = {
-			
-		}
-		modifier = {
-			wounded_chance_factor = 0.1
-		}
-		
-		non_shared_modifier = {
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-		new_commander_weight = {
-			factor = 0
-		}
-	}
-	#YJ_DG_traits_8 = { 
-	#	type = land
-	#	trait_type = personality_trait
-	#	gain_xp = {
-	#		always = no # not gainable
-	#	}
-	#	allowed = {
-	#		
-	#	}
-	#	modifier = {
-	#	    planning_speed = 0.3 #计划速度
-	#	    training_time_army_factor = -0.3 #训练时间
-	#	}
-	#	
-	#	non_shared_modifier = {
-	#	}
-	#	
-	#	ai_will_do = {
-	#		factor = 0
-	#	}
-	#	new_commander_weight = {
-	#		factor = 0
-	#	}
-	#}
-	YJ_DG_traits_9 = { 
-		type = land
-		trait_type = personality_trait
-		gain_xp = {
-			always = no # not gainable
-		}
-		allowed = {
-			
-		}
-		modifier = {
-            recon_factor = 0.05 #侦查
-			defence = -0.05
-		}
-		
-		non_shared_modifier = {
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-		new_commander_weight = {
-			factor = 0
-		}
-	}
-	YJ_DG_traits_10 = { 
-		type = land
-		trait_type = personality_trait
-		gain_xp = {
-			always = no # not gainable
-		}
-		allowed = {
-			
-		}
-		modifier = {
-            max_planning = 0.1 #计划加成上限系数
-			supply_consumption_factor = -0.05  #补给消耗
-		    planning_speed = -0.1 #计划速度
-		}
-		
-		non_shared_modifier = {
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-		new_commander_weight = {
-			factor = 0
-		}
-	}
-	YJ_DG_traits_11 = { 
-		type = land
-		trait_type = personality_trait
-		gain_xp = {
-			always = no # not gainable
-		}
-		allowed = {
-			
-		}
-		modifier = {
-			army_org_regain = -0.05
-		}
-		
-		non_shared_modifier = {
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-		new_commander_weight = {
-			factor = 0
-		}
-	}
-	YJ_DG_traits_12 = { 
-		type = land
-		trait_type = personality_trait
-		gain_xp = {
-			always = no # not gainable
-		}
-		allowed = {
-			
-		}
-		modifier = {
-			planning_speed = -0.1 #计划速度
-		}
-		
-		non_shared_modifier = {
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-		new_commander_weight = {
-			factor = 0
-		}
-	}
-	YJ_DG_traits_13 = { 
-		type = navy
-		trait_type = personality_trait
-		gain_xp = { # This trigger is not needed as it gets xp from spotting (not by combat)
-			always = no 
-		}
-	
-		modifier = {
-			spotting_chance = 0.1
-		}
-		new_commander_weight = {
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	YJ_DG_traits_14= { 
-		type = land
-		trait_type = personality_trait
-		gain_xp = {
-			always = no # not gainable
-		}
-		allowed = {
-			
-		}
-		modifier = {
-			land_reinforce_rate = 0.02 #增援率
-		}
-		
-		non_shared_modifier = {
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-		new_commander_weight = {
-			factor = 0
-		}
-	}
-	YJ_DG_traits_15= { 
-		type = land
-		trait_type = personality_trait
-		gain_xp = {
-			always = no # not gainable
-		}
-		allowed = {
-			
-		}
-		modifier = {
-			recon_factor = 0.15 #侦查
-		}
-		
-		non_shared_modifier = {
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-		new_commander_weight = {
-			factor = 0
-		}
-	}
-	YJ_DG_traits_16= { 
-		type = land
-		trait_type = personality_trait
-		gain_xp = {
-			always = no # not gainable
-		}
-		allowed = {
-			
-		}
-		modifier = {
-			army_org_regain =  0.1 #陆军师组织度恢复速率
-			supply_consumption_factor = -0.1 #补给消耗
-		}
-		
-		non_shared_modifier = {
-			defence = 0.05
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-		new_commander_weight = {
-			factor = 0
-		}
-	}
-	YJ_DG_traits_17= { 
-		type = land
-		trait_type = personality_trait
-		gain_xp = {
-			always = no # not gainable
-		}
-		allowed = {
-			
-		}
-		modifier = {
-			cas_damage_reduction = 0.2
-		}
-		
-		non_shared_modifier = {
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-		new_commander_weight = {
-			factor = 0
-		}
-	}
-	YJ_DG_traits_18= { 
-		type = land
-		trait_type = personality_trait
-		gain_xp = {
-			always = no # not gainable
-		}
-		allowed = {
-			
-		}
-		modifier = {
-			army_org_regain =  0.1 #陆军侦查
-		}
-		
-		non_shared_modifier = {
-			offence = 0.05
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-		new_commander_weight = {
-			factor = 0
-		}
-	}
-	YJ_DG_traits_19= { 
-		type = land
-		trait_type = personality_trait
-		gain_xp = {
-			always = no # not gainable
-		}
-		allowed = {
-			
-		}
-		modifier = {
-			planning_speed = -0.1 #计划速度
-			army_org_regain = 0.1 #陆军师组织度恢复速率
-			max_planning = 0.05 #计划上限
-		}
-		
-		non_shared_modifier = {
-			offence = 0.05
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-		new_commander_weight = {
-			factor = 0
-		}
-	}
-	YJ_DG_traits_20= { 
-		type = land
-		trait_type = personality_trait
-		gain_xp = {
-			always = no # not gainable
-		}
-		allowed = {
-			
-		}
-		modifier = {
-			land_reinforce_rate = -0.01
-			army_org_regain = -0.01 #陆军组织度恢复
-			recon_factor = -0.01 #陆军侦察
-			offence = -0.01 #陆军师攻击
-			defence = -0.01  #陆军师防御
-			supply_consumption_factor = 0.01 #补给消耗
-			wounded_chance_factor = 0.01  #受伤几率	
-			planning_speed = -0.01 #计划速度
-			max_planning = -0.01 #计划上限
-		}
-		
-		non_shared_modifier = {
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-		new_commander_weight = {
-			factor = 0
-		}
-	}
-	YJ_DG_traits_21= { 
-		type = land
-		trait_type = personality_trait
-		gain_xp = {
-			always = no # not gainable
-		}
-		allowed = {
-			
-		}
-		modifier = {
-			army_org_regain = 0.05 #陆军组织度恢复
-			defence = -0.05  #陆军师防御
-			recon_factor = 0.05 #陆军侦察
-		}
-		
-		non_shared_modifier = {
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-		new_commander_weight = {
-			factor = 0
-		}
-	}
-	YJ_DG_traits_22= { 
-		type = land
-		trait_type = personality_trait
-		gain_xp = {
-			always = no # not gainable
-		}
-		allowed = {
-			
-		}
-		modifier = {
-			recon_factor = 0.1 #陆军侦察
-		}
-		
-		non_shared_modifier = {
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-		new_commander_weight = {
-			factor = 0
-		}
-	}
-	YJ_DG_traits_23= { 
-		type = land
-		trait_type = personality_trait
-		gain_xp = {
-			always = no # not gainable
-		}
-		allowed = {
-			
-		}
-		modifier = {
-			wounded_chance_factor = 0.1  #受伤
-			planning_speed = -0.1 #计划速度
-			max_planning = -0.05 #计划上限
-		}
-		
-		non_shared_modifier = {
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-		new_commander_weight = {
-			factor = 0
-		}
-	}
-
-	YJ_DG_traits_24= { 
+	YJ_traits_29= { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -643,7 +85,7 @@ leader_traits = {
 		}
 	}
 
-	YJ_DG_traits_25= { 
+	YJ_traits_30= { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -670,7 +112,7 @@ leader_traits = {
 		}
 	}
 
-	YJ_DG_traits_26= { 
+	YJ_traits_31= { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -697,7 +139,7 @@ leader_traits = {
 	}
 
 
-	YJ_DG_traits_27= { 
+	YJ_traits_32= { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -727,7 +169,7 @@ leader_traits = {
 		}
 	}
 
-	YJ_DG_traits_28= { 
+	YJ_traits_33= { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -753,7 +195,7 @@ leader_traits = {
 		}
 	}
 
-	YJ_DG_traits_29 = { 
+	YJ_traits_34 = { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -792,7 +234,7 @@ leader_traits = {
 	}
 
 
-	YJ_DG_traits_30 = { 
+	YJ_traits_35 = { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -831,7 +273,7 @@ leader_traits = {
 		}
 	}
 
-	YJ_DG_traits_31= { 
+	YJ_traits_36 = { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -860,7 +302,7 @@ leader_traits = {
 		}
 	}
 
-	YJ_DG_traits_32 = { 
+	YJ_traits_37 = { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -891,7 +333,7 @@ leader_traits = {
 	}
 
 
-	YJ_DG_traits_33 = { 
+	YJ_traits_38 = { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -916,7 +358,7 @@ leader_traits = {
 		}
 	}
 
-	YJ_DG_traits_34= { 
+	YJ_traits_39= { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -941,7 +383,7 @@ leader_traits = {
 		}
 	}
 
-	YJ_DG_traits_35 = { 
+	YJ_traits_40 = { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -974,7 +416,7 @@ leader_traits = {
 		}
 	}
 
-	YJ_DG_traits_36 = { 
+	YJ_traits_41 = { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -999,7 +441,7 @@ leader_traits = {
 		}
 	}
 
-	YJ_DG_traits_37 = { 
+	YJ_traits_42 = { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -1026,7 +468,7 @@ leader_traits = {
 		}
 	}
 
-	YJ_DG_traits_38 = { 
+	YJ_traits_43 = { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
@@ -1062,7 +504,7 @@ leader_traits = {
 		}
 	}
 
-	YJ_DG_traits_39 = { 
+	YJ_traits_44 = { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {

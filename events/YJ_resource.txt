@@ -198,6 +198,39 @@ country_event = {
 	}
 }
 country_event = {
+	id = KoKi_YJ_pp_resource.16
+	title = KoKi_YJ_pp_resource.16.title
+	desc = KoKi_YJ_pp_resource.16.desc
+	
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+	immediate = {
+		set_variable_to_random = { var = ROOT.YJ_rng_coal min = 10 max = 50 }
+		round_variable = ROOT.YJ_rng_coal
+	}
+
+	option = {
+		name = KoKi_YJ_pp_resource.16.a
+		clr_country_flag = YJ_resource_get_flag
+
+		random_controlled_state = {
+			limit = {
+				is_core_of = ROOT
+				is_owned_by = ROOT
+			}
+			add_resource = {
+				type = coal
+				amount = ROOT.YJ_rng_coal
+				state = THIS
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
 	id = KoKi_YJ_pp_resource.17
 	title = KoKi_YJ_pp_resource.17.title
 	desc = KoKi_YJ_pp_resource.17.desc

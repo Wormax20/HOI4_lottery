@@ -29,12 +29,13 @@ KoKi_YJ_decisions_pp = {
 
 YJ_ZY_scripted_effects_1 = {
     hidden_effect = {
-        if = { limit = { check_variable = { YJ_rng1 < 16 } } country_event = KoKi_YJ_pp_resource.10 }
-        else_if = { limit = { check_variable = { YJ_rng1 < 32 } } country_event = KoKi_YJ_pp_resource.11 }
-        else_if = { limit = { check_variable = { YJ_rng1 < 48 } } country_event = KoKi_YJ_pp_resource.12 }
-        else_if = { limit = { check_variable = { YJ_rng1 < 64 } } country_event = KoKi_YJ_pp_resource.13 }
-        else_if = { limit = { check_variable = { YJ_rng1 < 80 } } country_event = KoKi_YJ_pp_resource.14 }
-        else_if = { limit = { check_variable = { YJ_rng1 < 95 } } country_event = KoKi_YJ_pp_resource.15 }
+        if = { limit = { check_variable = { YJ_rng1 < 15 } } country_event = KoKi_YJ_pp_resource.10 }
+        else_if = { limit = { check_variable = { YJ_rng1 < 29 } } country_event = KoKi_YJ_pp_resource.11 }
+        else_if = { limit = { check_variable = { YJ_rng1 < 43 } } country_event = KoKi_YJ_pp_resource.12 }
+        else_if = { limit = { check_variable = { YJ_rng1 < 57 } } country_event = KoKi_YJ_pp_resource.13 }
+        else_if = { limit = { check_variable = { YJ_rng1 < 71 } } country_event = KoKi_YJ_pp_resource.14 }
+        else_if = { limit = { check_variable = { YJ_rng1 < 85 } } country_event = KoKi_YJ_pp_resource.15 }
+        else_if = { limit = { check_variable = { YJ_rng1 < 99 } } country_event = KoKi_YJ_pp_resource.16 }
         else_if = { limit = { check_variable = { YJ_rng1 < 101 } } country_event = KoKi_YJ_pp_resource.17 }
     }
 }

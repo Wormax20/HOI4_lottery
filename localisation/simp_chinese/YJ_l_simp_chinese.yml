@@ -1591,5 +1591,5 @@ YJ_bread_cos_neutrality_DEF:0 "麵包"
 set_axis:0 "設為軸心国"
 set_allie:0 "設為同盟国"
 
-KoKi_YJ_decisions_set_axis_tt: "設為軸心陣營"
-KoKi_YJ_decisions_set_allie_tt: "設為同盟陣營"
+KoKi_YJ_decisions_set_axis_tt: "設為軸心陣營(用於計算工廠)"
+KoKi_YJ_decisions_set_allie_tt: "設為同盟陣營(用於計算工廠)"
