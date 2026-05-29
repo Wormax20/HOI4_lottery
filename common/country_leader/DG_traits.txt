@@ -18,29 +18,27 @@ leader_traits = {
 	Kim_traits = {
 		random = no
 		sprite = 5
-		max_planning = 0.15
-		planning_speed = -0.2
-		surrender_limit = -0.15
+		max_planning = 0.05
+		planning_speed = -0.10
+		surrender_limit = -0.10
 		max_command_power = 30
 	}
 
 	Wolf_traits = {
 		random = no
 		sprite = 10
-		industrial_capacity_factory = -0.5
+		industrial_capacity_factory = -0.10
 		political_power_cost = 0.25
-		production_speed_industrial_complex_factor = 0.3
-		monthly_population = 0.5
-		local_resources_factor = 0.2
+		production_speed_industrial_complex_factor = 0.15
+		local_resources_factor = 0.1
 	}
 
 	Han_traits = {
 		random = no
 		sprite = 10
-		production_speed_buildings_factor = 0.35
-		production_factory_max_efficiency_factor = -0.25
-		political_power_cost = 2
-		local_resources_factor = -0.5
+		production_speed_buildings_factor = 0.10
+		political_power_cost = 0.5
+		local_resources_factor = -0.2
 	}
 
 	Dog_traits = {
@@ -100,14 +98,14 @@ leader_traits = {
 		sprite = 14
 		equipment_bonus = {
 			armor = {
-				build_cost_ic = -0.15
-				reliability = -0.3
+				build_cost_ic = -0.10
+				reliability = -0.30
 				maximum_speed = 0.2
 				instant = yes
 			}		
 			mechanized_equipment = {
-				build_cost_ic = -0.15
-				reliability = -0.3
+				build_cost_ic = -0.10
+				reliability = -0.30
 				instant = yes
 			}
 		}
@@ -129,34 +127,28 @@ leader_traits = {
 		random = no
 		sprite = 10
         political_power_factor = -0.1
-		war_support_factor = -0.1
-		stability_factor = -0.1
-		industrial_capacity_factory = 0.15
-		industrial_capacity_dockyard = 0.15
-		global_building_slots_factor = 0.15
-
+		industrial_capacity_factory = 0.10
+		industrial_capacity_dockyard = 0.10
+		global_building_slots_factor = 0.05
 	}
 
 	A_traits = {
 		random = no
 		sprite = 13
         political_power_factor = -0.1
-    	consumer_goods_factor = -0.3
-		industrial_capacity_factory = -0.1
-		industrial_capacity_dockyard = -0.1
-
+    	consumer_goods_factor = -0.20
 	}
 
 	Pap_traits = {
 		random = no
 		sprite = 14
-		research_speed_factor = 0.1
+		research_speed_factor = 0.05
 		equipment_bonus = {
 			armor = {
-				build_cost_ic = 0.035
-				breakthrough = 0.15
-				soft_attack = -0.02
-				hard_attack = -0.02
+				build_cost_ic = 0.05
+				breakthrough = 0.10
+				soft_attack = -0.05
+				hard_attack = -0.05
 				instant = yes
 			}
 		}
@@ -183,45 +175,44 @@ leader_traits = {
 	Arg_traits = {
 		random = no
 		sprite = 14
-		political_power_cost = 0.8
+		political_power_cost = 0.2
 		conscription = 0.02
-		min_export = -0.2
-        research_speed_factor = 0.15
+		min_export = -0.10
+        research_speed_factor = 0.05
 		special_project_speed_factor = 0.1
 	}
 
 	Bai_traits = {
 		random = no
 		sprite = 14
-		political_power_cost = 0.5
-		production_factory_max_efficiency_factor = -0.3
-		industrial_capacity_factory = -0.5
-        research_speed_factor = 0.35
+		political_power_cost = 0.2
+		production_factory_max_efficiency_factor = -0.15
+        research_speed_factor = 0.10
 		special_project_speed_factor = 0.2
 	}
 
 	Tmdu_traits = {
 		random = no
 		sprite = 3
-		navy_capital_ship_attack_factor = 0.2
-		navy_capital_ship_defence_factor = 0.2
-		navy_screen_attack_factor = 0.2
-		navy_screen_defence_factor = 0.2
-		navy_carrier_air_attack_factor = 0.15
-		naval_strike = 0.2
-		positioning =0.15
-		naval_speed_factor = 0.15
-		screening_efficiency = 0.15
+		navy_capital_ship_attack_factor = 0.10
+		navy_capital_ship_defence_factor = 0.10
+		navy_screen_attack_factor = 0.10
+		navy_screen_defence_factor = 0.10
+		navy_carrier_air_attack_factor = 0.075
+		naval_strike = 0.10
+		positioning =0.10
+		naval_speed_factor = 0.10
+		screening_efficiency = 0.10
 	}
 
 	Man_traits = {
 		random = no
 		sprite = 3
-		naval_invasion_plan_cap = 10
-		naval_invasion_prep_days = -75
-		shore_bombardment_collateral_damage_factor = 0.75
-		amphibious_invasion = 0.5
-		amphibious_landing_penalty = -0.5
+		naval_invasion_plan_cap = 2
+		naval_invasion_prep_days = -25
+		shore_bombardment_collateral_damage_factor = 0.25
+		amphibious_invasion = 0.15
+		amphibious_landing_penalty = -0.15
 	}
 
 	Blo_traits = {
@@ -236,14 +227,11 @@ leader_traits = {
 	Lgs_traits = {
 		random = no
 		sprite = 5
-		industrial_capacity_factory = -0.75
-		production_factory_max_efficiency_factor = -0.25
-		production_factory_efficiency_gain_factor = 0.50 
-		conscription_factor = -0.50
-		monthly_population = -0.75
-    	army_attack_factor = 0.15
-        army_defence_factor = 0.15
-		army_org_factor = 0.15
+		industrial_capacity_factory = -0.25
+		conscription_factor = -0.25
+    	army_attack_factor = 0.075
+        army_defence_factor = 0.075
+		army_org_factor = 0.075
 	}
 
 	Ept_traits = {
