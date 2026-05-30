@@ -56,7 +56,7 @@ country_event = {
 			limit = {
 				is_core_of = COS
 			}
-			add_core_of = COS
+			add_core_of = ROOT
 		}
 		annex_country = {
 			target = COS

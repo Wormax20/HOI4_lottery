@@ -286,7 +286,7 @@ country_event = {
 							is_ai = no
 						}      
 						advisor={
-							cost = 150
+							cost = 300
 							slot = theorist
 							idea_token = AKZ
  
@@ -1367,7 +1367,70 @@ country_event = {
 
 	option = {
 		name = DOG_exe_YJ_JL_event.1.a
-		recruit_character = AGH_AGH
+		create_corps_commander = {
+			name = "Arganham"
+			portrait_path = "gfx/leaders/DOG_exe/Arg.png"
+			allowed_civil_war = {
+				is_ai = no
+			}
+			traits = {
+				brilliant_strategist 
+				armor_officer 
+				panzer_leader
+				cavalry_leader
+				trickster
+				organizer
+				ranger
+				urban_assault_specialist
+				YJ_traits_2
+				YJ_traits_33
+				YJ_traits_43
+				YJ_traits_15
+			}
+			skill =3
+			attack_skill = 6
+			defense_skill = 1
+			planning_skill = 5
+			logistics_skill = 1
+		}
+
+		hidden_effect = {
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = MAN
+						name="Arganham"
+						portraits={
+							civilian = {  
+								small="GFX_idea_arg"
+							}
+						}
+						allowed_civil_war = {
+							is_ai = no
+						}       
+						advisor={
+							slot = theorist
+							idea_token = AGH
+							traits = {Arg_traits}
+							desc = AGH_desc
+							cost = 150
+							available = { 
+							}
+							ai_will_do = {
+								factor = 0
+							}
+							on_add = {
+								set_country_flag = ARG_on
+							}
+							on_remove = {
+								clr_country_flag = ARG_on
+							}
+						}       
+					}    
+				}
+			}
+		}
+
 		ai_chance = {
 			factor = 100
 		}

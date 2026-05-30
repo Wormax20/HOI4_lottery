@@ -227,7 +227,7 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
             	}
             	AUS_YJ_3_scripted_effects = yes
         	}
-        	else_if = {
+        	else = {
             # 否则 → 触发2
             	AUS_YJ_2_scripted_effects = yes
         	}

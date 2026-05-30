@@ -138,4 +138,31 @@ on_actions = {
 			}
 		}
 	}
+
+	on_actions = {
+		on_daily = {
+			effect = {
+				if = {
+					limit = {
+						NOT = { has_idea = YJ_AIR_ideas }
+						is_ai = no
+					}
+					add_idea = YJ_AIR_ideas
+					add_dynamic_modifier = {
+						modifier = YJ_AIR_ideas
+					}
+				}
+				if = {
+					limit = {
+						has_idea = YJ_AIR_ideas
+						is_ai = yes
+					}
+					remove_ideas = YJ_AIR_ideas
+					remove_dynamic_modifier = {
+						modifier = YJ_AIR_ideas
+					}
+				}
+			}
+		}
+	}
 }
