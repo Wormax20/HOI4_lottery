@@ -502,6 +502,7 @@ country_event = {
 				YJ_traits_37
 				CHI_dubious_loyalty
 				PRC_survivor_of_the_long_march
+				YJ_traits_45
 
 			}
 			skill = 5
@@ -511,6 +512,35 @@ country_event = {
 			logistics_skill = 5
 		}
 
+		hidden_effect = {
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = mos
+						name="大莫老師"
+						portraits = {
+							civilian = {
+								small="GFX_idea_mosley"
+							}
+						}
+						allowed_civil_war = {
+							is_ai = no
+						}      
+						advisor={
+							cost = 150
+							slot = theorist
+							idea_token = mos
+							traits = {
+								mos_traits
+							}
+							ai_will_do = {
+								base = 1
+							}
+						}       
+					}    
+				}
+			}
+		}
 		ai_chance = {
 			factor = 100
 		}
@@ -617,11 +647,11 @@ country_event = {
 				organizer
 				YJ_traits_16
 			}
-			skill = 10
-			attack_skill = 8
-			defense_skill = 8
-			planning_skill = 8
-			logistics_skill = 8
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 9
 		}
 		hidden_effect = {
 			meta_effect = {
@@ -1398,7 +1428,7 @@ country_event = {
 			meta_effect = {
 				text = {
 					generate_character = {
-						token_base = MAN
+						token_base = AGH
 						name="Arganham"
 						portraits={
 							civilian = {  

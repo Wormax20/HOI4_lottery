@@ -180,8 +180,8 @@ leader_traits = {
 		}
 		modifier = {
 			recon_factor = 0.1
-			planning_speed = 0.2
-			max_planning = 0.2
+			planning_speed = 0.05
+			max_planning = 0.05
 		}
 		
 		non_shared_modifier = {
@@ -515,6 +515,50 @@ leader_traits = {
 			army_strength_factor = 0.05
 			army_org_regain = 0.3
 			supply_consumption_factor = -0.1
+		}
+		
+		non_shared_modifier = {
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+
+	YJ_traits_45 = { 
+		type = land
+		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		allowed = {
+		}
+		logistics_skill = 1
+		modifier = {
+			out_of_supply_factor = -0.1
+			supply_consumption_factor = -0.1
+			land_night_attack = 0.1
+			pocket_penalty = -0.1
+			no_supply_grace = 240
+
+			hills = {
+				attack = 0.1
+				defence = 0.1
+				movement = 0.1
+			}
+			forest = {
+				attack = 0.1
+				defence = 0.1
+				movement = 0.1
+			}
+			marsh = {
+				attack = 0.1
+				defence = 0.1
+				movement = 0.1
+			}
 		}
 		
 		non_shared_modifier = {

@@ -1200,6 +1200,8 @@ YJ_traits_41: "柚子的導師，山姆的知己"
 YJ_traits_42: "女裝仔"
 YJ_traits_43: "前作者(respect)"
 YJ_traits_44: "救濟所所長"
+YJ_traits_45: "游擊隊領袖"
+
 
 YJ_traits_1_desc: "該將領擁有資深的履歷"
 YJ_traits_2_desc: "該將領雖然履歷較淺，但前途無量"
@@ -1261,6 +1263,7 @@ Bai_traits: "屎山解構者"
 Kim_traits: "準備好了再等七天"
 Han_traits: "麥塊總建築師"
 Ept_traits: "病毒散播者"
+mos_traits: "這裡絕對是加拿大理论家" #冲滩夺岛理论家
 
 receive_western_education: "西方教育背景"
 

@@ -185,4 +185,8 @@ spriteTypes = {
 		name = "GFX_trait_YJ_traits_44"
 		texturefile = "gfx/interface/traits/YJ_traits_44.dds"
 	}
+	spriteType = {
+		name = "GFX_trait_YJ_traits_45"
+		texturefile = "gfx/interface/traits/YJ_traits_45.dds"
+	}
 }
