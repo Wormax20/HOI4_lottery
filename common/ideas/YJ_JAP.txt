@@ -145,7 +145,6 @@ ideas = {
 				land_night_attack = 0.2     #陸軍夜戰攻擊
 				pocket_penalty = -0.25      #包圍懲罰
 				hidden_modifier = {
-					combat_width_factor = 0.2
 					equipment_capture = 0.1
 					equipment_capture_factor = 0.1
 				}
