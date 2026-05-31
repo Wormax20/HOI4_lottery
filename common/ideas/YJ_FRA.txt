@@ -134,7 +134,7 @@ ideas = {
 			picture = ETH_italian_settlers
 
 			modifier = {
-				conscription = 0.2
+				conscription = 0.02
 				research_speed_factor = 0.15
 				political_power_gain = 0.2 #每日获得的政治点数
 				surrender_limit = 0.2 #投降界限
@@ -180,7 +180,7 @@ ideas = {
 				monthly_population = 0.2 #月度人力
 				industrial_capacity_factory = 0.2 #工厂产出
 		        industrial_capacity_dockyard = 0.2 #船坞产出
-				production_factory_max_efficiency_factor = 0.20 #生产效率上限
+				production_factory_max_efficiency_factor = 0.10 #生产效率上限
 				conscription = 0.05 #适役人口
 				conscription_factor = 0.4 #适役人口修正
 			}
@@ -325,7 +325,7 @@ ideas = {
 			picture = ger_rebuild_the_nation
 
 			modifier = {
-				production_speed_arms_factory_factor = 0.1 #军用工厂建造速度
+				production_speed_arms_factory_factor = 0.05 #军用工厂建造速度
 			}
 
 		}
@@ -389,7 +389,7 @@ ideas = {
 
 			modifier = {
 				industrial_capacity_factory = 0.1 #工厂产出
-				conscription = 0.3 #适役人口
+				conscription = 0.03 #适役人口
 			}
 
 		}
@@ -409,10 +409,10 @@ ideas = {
 			picture = DEN_occupation_laws
 
 			modifier = {
-				production_speed_arms_factory_factor = 0.1 #军用工厂建造速度
-				production_speed_industrial_complex_factor = 0.1 #民用工厂建造速度
-				production_factory_efficiency_gain_factor = 0.2 #生产效率增长
-				training_time_factor = -0.3 #训练时间
+				production_speed_arms_factory_factor = 0.05 #军用工厂建造速度
+				production_speed_industrial_complex_factor = 0.05 #民用工厂建造速度
+				production_factory_efficiency_gain_factor = 0.1 #生产效率增长
+				training_time_factor = -0.2 #训练时间
 			}
 
 		}

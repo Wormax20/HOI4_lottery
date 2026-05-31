@@ -67,9 +67,8 @@ ideas = {
 				attrition = 0.1 #陆军师损耗
 				global_building_slots_factor = 0.2 #地區工廠上限%數
 				production_speed_buildings_factor = 0.05 #建造速度
-				local_resources_factor = 0.1 #战略资源获取效率
+				local_resources_factor = 0.25 #战略资源获取效率
 				production_factory_max_efficiency_factor = 0.1 #生产效率上限
-				production_lack_of_resource_penalty_factor = -0.2 #缺乏戰略資源懲罰
 				industrial_capacity_factory = 0.1 #工厂产出
 				industrial_capacity_dockyard = 0.1 #海军船坞产出
 				research_speed_factor = 0.1
@@ -118,7 +117,7 @@ ideas = {
 				consumer_goods_expected_value = -0.10  #生活消费品工厂系数
 				resource_trade_cost_bonus_per_factory = 2
 				global_building_slots = 2 #地區工廠上限
-				cic_to_target_factor = 0.10 #該國所擁有的民用工廠
+				cic_to_target_factor = 0.15 #該國所擁有的民用工廠
 			}
 		}
 		YJ_JAP_5_ideas = {

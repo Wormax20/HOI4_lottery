@@ -22,7 +22,7 @@ ideas = {
 				army_attack_against_major_factor = 0.1
 				army_defence_against_major_factor = 0.1
 				breakthrough_factor = 0.1
-				special_forces_attack_factor = 0.05 #特种攻击
+				special_forces_attack_factor = 0.10 #特种攻击
 				supply_node_range = 0.15 #补给范围
 			}
 		}
@@ -47,7 +47,7 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.1 #生产效率上限
 				production_lack_of_resource_penalty_factor = -0.4 #缺乏资源时的产线惩罚
 				industrial_capacity_factory = 0.1 #工厂产出
-				political_power_factor =  0.2  #政治点数
+				political_power_factor =  0.25  #政治点数
 			}
 		}
 		YJ_BRA_3_ideas = {
@@ -67,7 +67,7 @@ ideas = {
 			modifier = {
 				production_lack_of_resource_penalty_factor = -0.4 #缺乏资源时的产线惩罚
 				acclimatization_hot_climate_gain_factor = 0.5
-                production_speed_arms_factory_factor = 0.1 #军用工厂建造速度
+                production_speed_arms_factory_factor = 0.15 #军用工厂建造速度
 				consumer_goods_factor = -0.1 #生活消费品系数
 				heat_attrition_factor =  -0.5 #炎热损耗
 				special_forces_training_time_factor = -0.1  #特种部队训练时间

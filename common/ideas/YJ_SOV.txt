@@ -16,8 +16,8 @@ ideas = {
 
 			modifier = {
 				political_power_factor = 0.15 #政治點數 百分比
-				army_core_attack_factor = 0.05 #陆军师核心领土攻击
-				army_core_defence_factor =  0.05 #陆军师核心领土防御
+				army_core_attack_factor = 0.10 #陆军师核心领土攻击
+				army_core_defence_factor =  0.10 #陆军师核心领土防御
 				intel_from_operatives_factor = 0.15 #特工渗透获得的情报 百分比
 				intelligence_agency_defense = 0.5 #反间谍
 				subversive_activites_upkeep = -0.25 #颠覆活动成本
@@ -93,7 +93,8 @@ ideas = {
 				political_power_factor = 0.15
 				stability_factor = 0.1
 				global_building_slots = 3 #地区最大工业值
-				production_speed_buildings = 0.1 #建造速度
+				production_speed_buildings = 0.10 #建造速度
+				industrial_capacity_factory = 0.10	#工厂产出
 				local_resources_factor = 0.10 #战略资源获取率
 				max_dig_in_factor = 0.1 #最大堑壕
 				supply_consumption_factor = -0.1 #补给消耗
@@ -117,8 +118,8 @@ ideas = {
 
 			modifier = {
 				political_power_factor =  0.15 #政治点数
-				research_speed_factor = 0.15 #科研速度
-				army_speed_factor = 0.15 #陆军师速度
+				research_speed_factor = 0.20 #科研速度
+				army_speed_factor = 0.10 #陆军师速度
 				command_power_gain = 1 	#每日指挥点增长
 				max_command_power = 300 	#最大指挥点数提高多少
 				army_core_attack_factor = 0.1 #陆军师核心领土攻击
@@ -129,7 +130,7 @@ ideas = {
 				land_reinforce_rate = 0.03 #增援率
 				production_speed_supply_node_factor = 1.5 #补给中心建造速度
 				factory_energy_consumption = -0.1
-				local_resources_factor = 0.15 #战略资源获取率
+				local_resources_factor = 0.20 #战略资源获取率
 				conscription = 0.05 #适役人口
 				conscription_factor = 0.2 #适役人口系数
 				mobilization_speed = 0.75 #动员速度
@@ -140,7 +141,7 @@ ideas = {
 				max_training = 0.25 #最大训练度
 				training_time_army_factor = -0.5 #陆军训练时间
 				hidden_modifier = {
-					pocket_penalty = -0.8 #包围惩罚
+					pocket_penalty = -0.2 #包围惩罚
 				}
 			}
 		}
