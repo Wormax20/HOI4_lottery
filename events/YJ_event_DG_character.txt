@@ -1397,6 +1397,15 @@ country_event = {
 
 	option = {
 		name = DOG_exe_YJ_JL_event.1.a
+		set_technology = {
+			armored_car1 = 1
+		}
+		set_technology = {
+			armored_car2 = 0.1
+		}
+		set_technology = {
+			armored_car3 = 0.1
+		}
 		create_corps_commander = {
 			name = "Arganham"
 			portrait_path = "gfx/leaders/DOG_exe/Arg.png"
