@@ -1433,37 +1433,45 @@ TUR_YJ_scripted_effects = {
 
 AUS_YJ_2_scripted_effects = {
 	random_list = {
-		100 = {
+		50 = {
 			modifier = {
 				has_idea = YJ_AUS_1_ideas
 				factor = 0
 			}
 			country_event = KoKi_YJ_AUS_event.101
 		}
+
+		50 = { }
 	}
 }
 
 AUS_YJ_3_scripted_effects = {
 	random_list = {
-		100 = {
+		50 = {
 			modifier = {
 				has_idea = YJ_AUS_2_ideas
 				factor = 0
 			}
 			country_event = KoKi_YJ_AUS_event.102
 		}
+
+		50 = { }
+
 	}
 }
 
 CZE_YJ_scripted_effects = {
 	random_list = {
-		100 = {
+		50 = {
 			modifier = {
 				has_idea = YJ_CZE_1_ideas
 				factor = 0
 			}
 			country_event = KoKi_YJ_CZE_event.101
 		}
+
+		50 = { }
+
 	}
 }
 

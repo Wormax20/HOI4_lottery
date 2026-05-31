@@ -61,3 +61,25 @@ YJ_count_all_factory = {
 		}
 	}
 }
+
+YJ_calculate_factory_balance_effect = {
+    set_variable = { global.YJ_axis_advantage = global.YJ_axis_all_factory }
+    subtract_from_variable = { var = global.YJ_axis_advantage value = global.YJ_allie_all_factory }
+
+    if = {
+        limit = { check_variable = { global.YJ_axis_advantage < 0 } }
+        set_variable = { global.YJ_axis_advantage = 0 }
+    }
+
+	divide_variable = { var = global.YJ_axis_advantage value = 100 }
+
+    set_variable = { global.YJ_allie_advantage = global.YJ_allie_all_factory }
+    subtract_from_variable = { var = global.YJ_allie_advantage value = global.YJ_axis_all_factory }
+    
+    if = {
+        limit = { check_variable = { global.YJ_allie_advantage < 0 } }
+        set_variable = { global.YJ_allie_advantage = 0 }
+    }
+
+	divide_variable = { var = global.YJ_allie_advantage value = 100 }
+}

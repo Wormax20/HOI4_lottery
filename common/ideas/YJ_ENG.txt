@@ -16,6 +16,7 @@ ideas = {
 
 			modifier = {
 				custom_modifier_tooltip = YJ_ENG_1_ideas_tt
+				conscription = 0.03
 				global_building_slots = 5 #最大地区数
 				political_power_factor = 0.25 #政治点数 百分比
 				political_power_gain =  0.10 #每日获得的政治点数
@@ -27,32 +28,12 @@ ideas = {
 				production_factory_efficiency_gain_factor = 0.10 #生产效率增长
 				industrial_capacity_dockyard = 0.1   #海军船坞产出
 	            production_speed_dockyard_factor = 0.1   #海军船坞建造速度
+				air_manpower_requirement_factor = -0.5
+				air_mission_efficiency = 0.1
 			}
-			equipment_bonus = {
-				small_plane_cas_airframe = {
-					instant = yes
-					build_cost_ic = 0.1
-				}
-				cv_small_plane_airframe = {
-					instant = yes
-					build_cost_ic = 0.1
-				}
-				medium_plane_airframe = {
-					instant = yes
-					build_cost_ic = 0.1
-				}
-				medium_plane_scout_plane_airframe = {
-					instant = yes
-					build_cost_ic = 0.1
-				}
-				large_plane_airframe = {
-					instant = yes
-					build_cost_ic = 0.1
-				}
-				large_plane_maritime_patrol_plane_airframe = {
-					instant = yes
-					build_cost_ic = 0.1
-				}
+			research_bonus = {
+				electronics = 0.2
+				air_equipment = 0.2
 			}
 		}
 		YJ_ENG_2_ideas = {

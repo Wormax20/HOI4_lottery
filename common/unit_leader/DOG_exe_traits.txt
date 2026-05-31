@@ -543,6 +543,7 @@ leader_traits = {
 			land_night_attack = 0.1
 			pocket_penalty = -0.1
 			no_supply_grace = 240
+			skill_bonus_factor = 0.3
 
 			hills = {
 				attack = 0.1

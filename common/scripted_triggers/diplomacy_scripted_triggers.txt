@@ -56,6 +56,22 @@ DIPLOMACY_WAR_ENABLE_TRIGGER = {
     }
 }
 
+DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			GER = {
+				NOT = {
+					has_war_with = SOV
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+            tooltip = YJ_lend_allow_tt
+            always = no 
+        }
+	}
+}
+
 DIPLOMACY_GUARANTEE_ENABLE_TRIGGER_OVERRIDES_GAME_TRIGGER = {
 	NOT = {
 		has_game_rule = {

@@ -10,3 +10,11 @@ YJ_AIR_ideas = {
 
 	production_speed_buildings_factor = YJ_coal_num_0_01
 }
+
+YJ_AXIS_BAL_ideas = {
+	production_speed_buildings_factor = global.YJ_axis_advantage
+}
+
+YJ_ALLIE_BAL_ideas = {
+	production_speed_buildings_factor = global.YJ_allie_advantage
+}

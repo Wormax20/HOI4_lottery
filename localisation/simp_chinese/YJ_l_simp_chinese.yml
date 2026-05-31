@@ -1557,6 +1557,7 @@ YJ_HUN_leonidas_works_organization: "斯柯达工业"
 ck_TITLE:0 "ck Music"
 
 YJ_war_allow_tt: "目前时间无法对该国宣战"
+YJ_lend_allow_tt: "蘇德開戰後才能起草租借法案"
 
 YJ_60d_resource: "开发资源"
 YJ_60d_resource_tt: "§R发现资源§!"

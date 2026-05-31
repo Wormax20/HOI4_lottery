@@ -168,6 +168,7 @@ buildings = {
 
 	bunker = {
 		show_on_map = 1
+		hide_if_missing_tech = yes
 		has_destroyed_mesh = yes
 		base_cost = 500
 		per_level_extra_cost = 500
@@ -183,6 +184,7 @@ buildings = {
 
 	coastal_bunker = {
 		show_on_map = 1
+		hide_if_missing_tech = yes
 		has_destroyed_mesh = yes
 		base_cost = 500
 		per_level_extra_cost = 500

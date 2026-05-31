@@ -3582,7 +3582,7 @@ NOperatives = {
 		0.5, 	50.0, -- 0.5 operative for >= 50
 	},
 
-	INTEL_NETWORK_STATE_MODIFIER_STRENGTH_THRESHOLD = 10,			-- Minimum amount of strength required in a state for the intel network related modifiers to start being applied
+	INTEL_NETWORK_STATE_MODIFIER_STRENGTH_THRESHOLD = 10000,			-- Minimum amount of strength required in a state for the intel network related modifiers to start being applied
 
 	INTEL_NETWORK_MIN_DEFAULT_FOR_SHOWING = 25,              -- default min level for networks used to filter operation requirements if not overriden
 

@@ -23,7 +23,7 @@ ideas = {
 		}
 	}
 	country = {
-					YJ_USA_1_ideas = {
+		YJ_USA_1_ideas = {
 
 			allowed = {
 				always = no
@@ -39,13 +39,19 @@ ideas = {
 
 			modifier = {
 				political_power_factor = 0.15 #政治点数
-				production_factory_max_efficiency_factor = 0.05 #生产效率上限
-				production_speed_buildings_factor = 0.05
-				production_factory_efficiency_gain_factor = 0.05	
-				industrial_capacity_factory = 0.05 #工厂产出
+				production_factory_max_efficiency_factor = 0.1 #生产效率上限
+				production_speed_buildings_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				industrial_capacity_factory = 0.1 #工厂产出
 				industrial_capacity_dockyard = 0.05 #船坞产出
 				local_resources_factor = 0.05 #战略资源获取率
 				consumer_goods_factor = -0.05 #生活消费品系数
+				production_speed_arms_factory_factor = 0.25
+				production_speed_buildings_factor = 0.2
+			}
+			research_bonus = {
+				industry = 0.2
+				artillery = 0.35
 			}
 		}
 		YJ_USA_2_ideas = {
@@ -63,6 +69,8 @@ ideas = {
 			picture = jap_duplicate_research
 
 			modifier = {
+				planning_speed = 0.2
+				max_planning = 0.05
 				research_speed_factor = 0.1
 				specialization_air_speed_factor = 0.5
 				specialization_land_speed_factor = 0.5
@@ -82,7 +90,7 @@ ideas = {
 				}
 				armor = {
 					instant = yes
-					build_cost_ic = -0.05
+					build_cost_ic = -0.1
 				}
 			}
 		}
@@ -101,7 +109,7 @@ ideas = {
 			picture = ARG_civilian_economy_boost
 
 			modifier = {
-				political_power_factor = 0.15 #政治点数
+				political_power_factor = 0.3 #政治点数
 				global_building_slots = 5
 				consumer_goods_factor = -0.05  #生活消费品工厂系数
 				consumer_goods_expected_value = -0.05  #用于生产生活消费品的期望工厂数量
@@ -109,7 +117,8 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.15
 				conversion_cost_civ_to_mil_factor = -0.5
 				local_resources_factor = 0.10 #战略资源获取率
-				production_speed_buildings_factor = 0.05 #建造速度
+				production_speed_buildings_factor = 0.1 #建造速度
+				cic_to_target_factor = 0.1
 			}
 		}
 
@@ -133,6 +142,8 @@ ideas = {
 				war_support_weekly = 0.002 #每周战争支持度增长
 				production_factory_max_efficiency_factor = 0.05 #生产效率上限
 				industrial_capacity_factory = 0.05 #工厂产出
+				ground_attack = 0.05
+				ground_attack_factor = 0.05
 			}
 			equipment_bonus = {
 				armor = {

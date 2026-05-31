@@ -39,6 +39,33 @@ on_actions = {
                     value = 0
                 }
                 YJ_count_all_factory = yes
+                YJ_calculate_factory_balance_effect = yes
+            }
+
+            every_country = {
+                if = {
+                    limit = {
+                        has_country_flag = YJ_allie
+                    }
+                    remove_dynamic_modifier = {
+                        modifier = YJ_AXIS_BAL_ideas
+                    }
+                    add_dynamic_modifier = {
+                        modifier = YJ_allie_BAL_ideas
+                    }
+                }
+
+                if = {
+                    limit = {
+                        has_country_flag = YJ_axis
+                    }
+                    remove_dynamic_modifier = {
+                        modifier = YJ_allie_BAL_ideas
+                    }
+                    add_dynamic_modifier = {
+                        modifier = YJ_AXIS_BAL_ideas
+                    }
+                }
             }
         }
     }
