@@ -95,7 +95,7 @@ leader_traits = {
 	AK_traits = {
 		random = no
 		sprite = 14
-		
+		industrial_capacity_factory = -0.1
 		equipment_bonus = {
 			armor = {
 				build_cost_ic = -0.10
@@ -108,7 +108,6 @@ leader_traits = {
 				reliability = -0.50
 				instant = yes
 			}
-			industrial_capacity_factory = -0.1
 		}
 	}
 
