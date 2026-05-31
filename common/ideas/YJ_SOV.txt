@@ -140,7 +140,6 @@ ideas = {
 				max_training = 0.25 #最大训练度
 				training_time_army_factor = -0.5 #陆军训练时间
 				hidden_modifier = {
-					combat_width_factor = 0.15 #战斗宽度
 					pocket_penalty = -0.8 #包围惩罚
 				}
 			}
