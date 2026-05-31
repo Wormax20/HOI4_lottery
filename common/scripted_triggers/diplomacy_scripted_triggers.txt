@@ -66,9 +66,9 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 			}
 		}
 		custom_trigger_tooltip = {
-            tooltip = YJ_lend_allow_tt
-            always = no 
-        }
+			tooltip = YJ_lend_allow_tt
+			always = no 
+		}
 	}
 }
 
@@ -1176,6 +1176,19 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 			always = no
 		}
 	}
+	if = {
+		limit = {
+			GER = {
+				NOT = {
+					has_war_with = SOV
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = YJ_lend_allow_tt
+			always = no 
+		}
+	}
 }
 DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
 	if = {
@@ -1230,6 +1243,19 @@ DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
 		custom_trigger_tooltip = {
 			tooltip = RULE_ALLOW_LEND_LEASE_BLOCKED_TT
 			always = no
+		}
+	}
+	if = {
+		limit = {
+			GER = {
+				NOT = {
+					has_war_with = SOV
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = YJ_lend_allow_tt
+			always = no 
 		}
 	}
 }
