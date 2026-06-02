@@ -16,10 +16,10 @@ ideas = {
 
 			modifier = { 
 				political_power_gain = 0.15
-				political_power_factor = 0.10
-				global_building_slots_factor = 0.1 #地區工廠上限%數
+				political_power_factor = 0.15
+				global_building_slots_factor = 0.20 #地區工廠上限%數
 				consumer_goods_factor = -0.10 #生活消费品工厂系数
-				production_speed_buildings_factor = 0.1 #建造速度
+				production_speed_buildings_factor = 0.10 #建造速度
 				stability_weekly = 0.002 #每周稳定度增长
 				war_support_weekly = 0.002 #每周战争支持度增长
 			}

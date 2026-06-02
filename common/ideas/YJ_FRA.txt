@@ -180,7 +180,7 @@ ideas = {
 				monthly_population = 0.2 #月度人力
 				industrial_capacity_factory = 0.2 #工厂产出
 		        industrial_capacity_dockyard = 0.2 #船坞产出
-				production_factory_max_efficiency_factor = 0.10 #生产效率上限
+				production_factory_max_efficiency_factor = 0.20 #生产效率上限
 				conscription = 0.05 #适役人口
 				conscription_factor = 0.4 #适役人口修正
 			}

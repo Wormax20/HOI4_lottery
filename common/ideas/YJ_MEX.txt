@@ -32,7 +32,7 @@ ideas = {
 				stability_weekly = 0.002 #每周稳定度增长
 				war_support_weekly = 0.002 #每周战争支持度增长
 				research_speed_factor = 0.15 #科研速度
-				special_forces_attack_factor = 0.05 #特种攻击
+				special_forces_attack_factor = 0.10 #特种攻击
 				army_defence_factor = 0.10 #陆军防御
 			}
 		}
