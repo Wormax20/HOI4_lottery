@@ -31,7 +31,7 @@ on_actions = {
                         modifier = YJ_AXIS_BAL_ideas
                     }
                     add_dynamic_modifier = {
-                        modifier = YJ_allie_BAL_ideas
+                        modifier = YJ_ALLIE_BAL_ideas
                     }
                 }
                 if = {
@@ -39,7 +39,7 @@ on_actions = {
                         has_country_flag = YJ_axis
                     }
                     remove_dynamic_modifier = {
-                        modifier = YJ_allie_BAL_ideas
+                        modifier = YJ_ALLIE_BAL_ideas
                     }
                     add_dynamic_modifier = {
                         modifier = YJ_AXIS_BAL_ideas

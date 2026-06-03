@@ -1,4 +1,4 @@
-﻿KoKi_YJ_ROM_decisions_categories = {
+KoKi_YJ_ROM_decisions_categories = {
 	KoKi_YJ_ROM_decisions_categories_1 = {
 		icon = GFX_decision_hol_draw_up_staff_plans
 		allowed = {
