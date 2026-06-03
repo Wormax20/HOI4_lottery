@@ -1,0 +1,368 @@
+﻿l_simp_chinese:
+KoKi_YJ_decisions_categories: "富贵险中求§!"
+KoKi_YJ_decisions_categories_desc: "共计三次国家抽奖,兩次通用抽奖.\nPP抽奖有专属国家抽奖的只能抽30次,无专属国家抽奖的可以抽50次\nPP抽奖分为PP奖池和通用奖池\nPP抽奖有概率出通用奖池\n\n§R軸心陣營: \n§9總工廠§!:        [?global.YJ_axis_all_factory|Y0]\n§Y民工§!:         [?global.YJ_axis_industrial_complex|G0]\n§G軍工§!:          [?global.YJ_axis_arms_factory|R0]\n§B船塢§!:        [?global.YJ_axis_dockyard|C0]\n\n§4同盟陣營: \n§9總工廠§!:        [?global.YJ_allie_all_factory|Y0]\n§Y民工§!:         [?global.YJ_allie_industrial_complex|G0]\n§G軍工§!:          [?global.YJ_allie_arms_factory|R0]\n§B船塢§!:        [?global.YJ_allie_dockyard|C0]"
+KoKi_YJ_TAG_decisions_0: "开局国家抽奖"
+KoKi_YJ_TAG_decisions_1: "第二次国家抽奖"
+KoKi_YJ_TAG_decisions_2: "第三次国家抽奖"
+
+KoKi_YJ_TAG_decisions_4: "给[FROM.GetName]提供BUFF"
+KoKi_YJ_ENG_decisions_1: "给[FROM.GetName]提供BUFF"
+KoKi_YJ_ROM_decisions_03: "给[FROM.GetName]提供BUFF"
+KoKi_YJ_ROM_decisions_04: "给[FROM.GetName]提供BUFF"
+KoKi_YJ_USA_decisions: "给[FROM.GetName]提供BUFF"
+
+
+KoKi_YJ_TY_decisions_1: "第一次通用抽奖"
+KoKi_YJ_TY_decisions_2: "第二次通用抽奖"
+
+
+KoKi_YJ_decisions_JL: "将领抽奖"
+KoKi_YJ_decisions_JL_txt: "当前抽奖次数:§Y[?KoKi_YJ_decisions_JL|Y0]§!次  最多可抽§R40§!次"
+
+KoKi_YJ_decisions_pp: "PP抽奖"
+KoKi_YJ_decisions_pp_txt: "当前抽奖次数:§Y[?KoKi_YJ_decisions_pp|Y0]§!次  最多可抽§R[?YJ_country_limit|Y0]§!次"
+
+
+
+
+
+
+
+KoKi_YJ_decisions_4: "学说经验与精通"
+KoKi_YJ_decisions_5: "资源抽奖"
+
+KoKi_YJ_decisions_7: "工厂迁移"
+KoKi_YJ_decisions_9: "为[FROM.GetName]提供BUFF"
+KoKi_YJ_decisions_10: "为[FROM.GetName]提供BUFF"
+
+
+
+KoKi_YJ_GER_event.10001.title: "[FROM.GetName]希望与我们进一步合作"
+KoKi_YJ_GER_event.10001.desc: "我们与[FROM.GetName]的关系密切,[GER.GetLeader]希望与我们进行工业方面的深度合作"
+KoKi_YJ_GER_event.10001.a: "可以"
+
+KoKi_YJ_GER_decisions_categories: "轴心国工业合作"
+KoKi_YJ_GER_decisions_categories_0: "与[FROM.GetName]合作"
+KoKi_SOV_IDEAS_war: "伟大的卫国战争"
+KoKi_SOV_IDEAS_pace: "联盟会更好"
+
+KoKi_YJ_ROM_decisions_categories: "冰与火之歌"
+KoKi_YJ_ROM_decisions_categories_txt: "此地区§Y德国,匈牙利,意大利,比利时,芬兰,日本,法国,瑞士§!将"
+KoKi_YJ_ROM_decisions_categories_1_txt: "此地区§Y苏联,美国,英国,墨西哥,巴西,印度,TG§!将"
+KoKi_YJ_ROM_decisions_categories_1: "在[FROM.GetName]计划攻势"
+KoKi_YJ_ROM_decisions_categories_2: "在[FROM.GetName]计划攻势"
+
+KoKi_YJ_MEX_decisions_categories: "盟军战争部"
+KoKi_YJ_MEX_decisions_categories_txt: "此地区§Y美国,英国,巴西,墨西哥,印度§!将"
+KoKi_YJ_MEX_decisions_categories_0: "执行霸王行动"
+KoKi_YJ_MEX_decisions_categories_0_txt: "§C大西洋壁垒地区§!"
+KoKi_YJ_MEX_decisions_categories_1: "在[FROM.GetName]计划攻势"
+KoKi_YJ_MEX_decisions_categories_2: "在[FROM.GetName]计划攻势"
+KoKi_YJ_MEX_decisions_categories_3: "在[FROM.GetName]计划攻势"
+VICTORY_POINTS_9833: "君士坦丁堡"
+
+
+
+
+
+YJ_country_traits_1: "最高统帅"
+YJ_country_traits_2: "传奇机长"
+YJ_country_traits_3: "海空部长"
+YJ_country_traits_4: "海陆仙人"
+YJ_country_traits_BD: "男娘同胞聚集地"
+YJ_country_traits_TY: "作者"
+YJ_country_traits_GRX: "冬季战神"
+
+KoKi_YJ_JL_event.1.title: "奖品: 哈罗德·530"
+KoKi_YJ_JL_event.1.desc: "将领: 哈罗德·530"
+KoKi_YJ_JL_event.1.a: "好"
+
+KoKi_YJ_JL_event.2.title: "奖品: 马楼·ALPS"
+KoKi_YJ_JL_event.2.desc: "将领: 马楼·ALPS"
+KoKi_YJ_JL_event.2.a: "好"
+
+KoKi_YJ_JL_event.3.title: "奖品: 波雅尔·空白·齐奥塞斯库"
+KoKi_YJ_JL_event.3.desc: "将领: 波雅尔·空白·齐奥塞斯库"
+KoKi_YJ_JL_event.3.a: "好"
+
+KoKi_YJ_JL_event.4.title: "奖品: 奥马尔·威尔逊·TY"
+KoKi_YJ_JL_event.4.desc: "将领: 奥马尔·威尔逊·TY"
+KoKi_YJ_JL_event.4.a: "好"
+
+KoKi_YJ_JL_event.5.title: "奖品: 切·布丁"
+KoKi_YJ_JL_event.5.desc: "将领: 切·布丁"
+KoKi_YJ_JL_event.5.a: "好"
+
+KoKi_YJ_JL_event.6.title: "奖品: 伊万诺夫·反二雅士"
+KoKi_YJ_JL_event.6.desc: "将领: 伊万诺夫·反二雅士"
+KoKi_YJ_JL_event.6.a: "好"
+
+KoKi_YJ_JL_event.7.title: "奖品: 阿尔托莉雅·呆毛"
+KoKi_YJ_JL_event.7.desc: "将领: 阿尔托莉雅·呆毛"
+KoKi_YJ_JL_event.7.a: "好"
+
+KoKi_YJ_JL_event.8.title: "奖品: 康斯坦丁诺维奇·吃素"
+KoKi_YJ_JL_event.8.desc: "将领: 康斯坦丁诺维奇·吃素"
+KoKi_YJ_JL_event.8.a: "好"
+
+KoKi_YJ_JL_event.9.title: "奖品: 乔治亚·冯·哈布斯堡"
+KoKi_YJ_JL_event.9.desc: "将领: 乔治亚·冯·哈布斯堡"
+KoKi_YJ_JL_event.9.a: "好"
+
+KoKi_YJ_JL_event.10.title: "奖品: 埃尔温·若同学"
+KoKi_YJ_JL_event.10.desc: "将领: 埃尔温·若同学"
+KoKi_YJ_JL_event.10.a: "好"
+
+KoKi_YJ_JL_event.11.title: "奖品: 奥马尔·纳尔逊·奶龙"
+KoKi_YJ_JL_event.11.desc: "将领: 奥马尔·纳尔逊·奶龙"
+KoKi_YJ_JL_event.11.a: "好"
+
+KoKi_YJ_JL_event.12.title: "奖品: 山本小鲨鱼"
+KoKi_YJ_JL_event.12.desc: "将领: 山本小鲨鱼"
+KoKi_YJ_JL_event.12.a: "好"
+
+KoKi_YJ_JL_event.13.title: "奖品: 德米特里·安德烈·预言家"
+KoKi_YJ_JL_event.13.desc: "将领: 德米特里·安德烈·预言家"
+KoKi_YJ_JL_event.13.a: "好"
+
+KoKi_YJ_JL_event.14.title: "奖品: 卡尔·乔乔"
+KoKi_YJ_JL_event.14.desc: "将领: 卡尔·乔乔"
+KoKi_YJ_JL_event.14.a: "好"
+
+KoKi_YJ_JL_event.15.title: "奖品: 约瑟夫·大林子"
+KoKi_YJ_JL_event.15.desc: "将领: 约瑟夫·大林子"
+KoKi_YJ_JL_event.15.a: "好"
+
+KoKi_YJ_JL_event.16.title: "奖品: 切斯特·威廉·风筝"
+KoKi_YJ_JL_event.16.desc: "将领: 切斯特·威廉·风筝"
+KoKi_YJ_JL_event.16.a: "好"
+
+KoKi_YJ_JL_event.17.title: "奖品: 路易斯·叶雨"
+KoKi_YJ_JL_event.17.desc: "将领: 路易斯·叶雨"
+KoKi_YJ_JL_event.17.a: "好"
+
+KoKi_YJ_JL_event.18.title: "奖品: 尼古拉·小舟"
+KoKi_YJ_JL_event.18.desc: "将领: 尼古拉·小舟"
+KoKi_YJ_JL_event.18.a: "好"
+
+KoKi_YJ_JL_event.19.title: "奖品: 戴拿·赞恩·故人闲"
+KoKi_YJ_JL_event.19.desc: "顾问: 戴拿·赞恩·故人闲"
+KoKi_YJ_JL_event.19.a: "好"
+
+KoKi_YJ_JL_event.21.title: "奖品: 小爱丽丝·有地绫"
+KoKi_YJ_JL_event.21.desc: "将领: 小爱丽丝·有地绫"
+KoKi_YJ_JL_event.21.a: "好"
+
+KoKi_YJ_JL_event.22.title: "奖品: 悠哉哉·E"
+KoKi_YJ_JL_event.22.desc: "将领: 悠哉哉·E"
+KoKi_YJ_JL_event.22.a: "好"
+
+KoKi_YJ_JL_event.23.title: "奖品: 永雏·夏尔"
+KoKi_YJ_JL_event.23.desc: "将领: 永雏·夏尔"
+KoKi_YJ_JL_event.23.a: "好"
+
+KoKi_YJ_JL_event.24.title: "奖品: 伯纳德·劳·一只屑"
+KoKi_YJ_JL_event.24.desc: "将领: 伯纳德·劳·一只屑"
+KoKi_YJ_JL_event.24.a: "好"
+
+KoKi_YJ_JL_event.25.title: "奖品: 筱筱筱·塔菲"
+KoKi_YJ_JL_event.25.desc: "将领: 筱筱筱·塔菲"
+KoKi_YJ_JL_event.25.a: "好"
+
+KoKi_YJ_JL_event.26.title: "奖品: 巴哈马·keli"
+KoKi_YJ_JL_event.26.desc: "将领: 巴哈马·keli"
+KoKi_YJ_JL_event.26.a: "好"
+
+KoKi_YJ_JL_event.27.title: "奖品: 6老师"
+KoKi_YJ_JL_event.27.desc: "将领: 6老师"
+KoKi_YJ_JL_event.27.a: "好"
+
+KoKi_YJ_JL_event.28.title: "奖品: 西伯利亚·土豆"
+KoKi_YJ_JL_event.28.desc: "将领: 西伯利亚·土豆"
+KoKi_YJ_JL_event.28.a: "好"
+
+KoKi_YJ_JL_event.29.title: "奖品: 彬彬有礼"
+KoKi_YJ_JL_event.29.desc: "将领: 彬彬有礼"
+KoKi_YJ_JL_event.29.a: "好"
+
+KoKi_YJ_JL_event.30.title: "奖品: 星星·MZ"
+KoKi_YJ_JL_event.30.desc: "将领: 星星·MZ"
+KoKi_YJ_JL_event.30.a: "好"
+
+KoKi_YJ_JL_event.31.title: "奖品: 哈吉巴·bate"
+KoKi_YJ_JL_event.31.desc: "将领: 哈吉巴·bate"
+KoKi_YJ_JL_event.31.a: "好"
+
+KoKi_YJ_JL_event.32.title: "奖品: lapwing·药娘"
+KoKi_YJ_JL_event.32.desc: "将领: lapwing·药娘"
+KoKi_YJ_JL_event.32.a: "好"
+
+KoKi_YJ_JL_event.33.title: "奖品: gods"
+KoKi_YJ_JL_event.33.desc: "将领: gods"
+KoKi_YJ_JL_event.33.a: "好"
+
+DOG_exe_YJ_new_JL_event.1.title: "奖品: DOG.EXE"
+DOG_exe_YJ_new_JL_event.1.desc: "将领: DOG.EXE"
+
+DOG_exe_YJ_JL_event.1.a: "好"
+
+DOG_exe_YJ_new_JL_event.2.title: "奖品: 恶狼"
+DOG_exe_YJ_new_JL_event.2.desc: "将领: 恶狼"
+
+
+DOG_exe_YJ_new_JL_event.3.title: "奖品: 鲨皇"
+DOG_exe_YJ_new_JL_event.3.desc: "将领: 鲨皇"
+
+
+DOG_exe_YJ_new_JL_event.4.title: "奖品: AK·冯·哈布斯堡"
+DOG_exe_YJ_new_JL_event.4.desc: "将领: AK·冯·哈布斯堡"
+
+
+DOG_exe_YJ_new_JL_event.5.title: "奖品: 山姆"
+DOG_exe_YJ_new_JL_event.5.desc: "将领: 山姆"
+
+
+DOG_exe_YJ_new_JL_event.6.title: "奖品: 卡尔"
+DOG_exe_YJ_new_JL_event.6.desc: "将领: 卡尔"
+
+
+DOG_exe_YJ_new_JL_event.7.title: "奖品: 欢乐主义理论家 奥村"
+DOG_exe_YJ_new_JL_event.7.desc: "奖品: 欢乐主义理论家 奥村"
+
+DOG_exe_YJ_new_JL_event.8.title: "奖品: 柚子（苏联大佬）"
+DOG_exe_YJ_new_JL_event.8.desc: "将领: 柚子（苏联大佬）"
+
+
+DOG_exe_YJ_new_JL_event.9.title: "奖品: 大莫老师"
+DOG_exe_YJ_new_JL_event.9.desc: "将领: 大莫老师"
+
+
+DOG_exe_YJ_new_JL_event.10.title: "奖品: Bloxychan"
+DOG_exe_YJ_new_JL_event.10.desc: "奖品: Bloxychan"
+
+DOG_exe_YJ_new_JL_event.11.title: "奖品: 醋饭"
+DOG_exe_YJ_new_JL_event.11.desc: "将领: 醋饭"
+
+
+DOG_exe_YJ_new_JL_event.12.title: "奖品: kimjstyki"
+DOG_exe_YJ_new_JL_event.12.desc: "奖品: kimjstyki"
+
+DOG_exe_YJ_new_JL_event.13.title: "奖品: 蓝叶Lanye"
+DOG_exe_YJ_new_JL_event.13.desc: "奖品: 蓝叶Lanye"
+
+DOG_exe_YJ_new_JL_event.14.title: "奖品: 巧克力冰淇淋"
+DOG_exe_YJ_new_JL_event.14.desc: "奖品: 巧克力冰淇淋"
+
+DOG_exe_YJ_new_JL_event.15.title: "奖品: 黑天"
+DOG_exe_YJ_new_JL_event.15.desc: "奖品: 黑天"
+
+DOG_exe_YJ_new_JL_event.16.title: "奖品: TmDu"
+DOG_exe_YJ_new_JL_event.16.desc: "奖品: TmDu"
+
+DOG_exe_YJ_new_JL_event.17.title: "奖品: A"
+DOG_exe_YJ_new_JL_event.17.desc: "奖品: A"
+
+DOG_exe_YJ_new_JL_event.18.title: "奖品: 百鬼组"
+DOG_exe_YJ_new_JL_event.18.desc: "奖品: 百鬼组"
+
+
+DOG_exe_YJ_new_JL_event.19.title: "奖品: 橘"
+DOG_exe_YJ_new_JL_event.19.desc: "奖品: 橘"
+
+DOG_exe_YJ_new_JL_event.20.title: "奖品: 神圣的猫猫"
+DOG_exe_YJ_new_JL_event.20.desc: "奖品: 神圣的猫猫"
+
+DOG_exe_YJ_new_JL_event.21.title: "奖品: 蛋饼"
+DOG_exe_YJ_new_JL_event.21.desc: "奖品: 蛋饼"
+
+DOG_exe_YJ_new_JL_event.22.title: "奖品: PapasGatitos"
+DOG_exe_YJ_new_JL_event.22.desc: "奖品: PapasGatitos"
+
+DOG_exe_YJ_new_JL_event.23.title: "奖品: 番茄"
+DOG_exe_YJ_new_JL_event.23.desc: "奖品: 番茄"
+
+DOG_exe_YJ_new_JL_event.24.title: "奖品: Arganham"
+DOG_exe_YJ_new_JL_event.24.desc: "奖品: Arganham"
+
+DOG_exe_YJ_new_JL_event.25.title: "奖品: 麦安捏"
+DOG_exe_YJ_new_JL_event.25.desc: "奖品: 麦安捏"
+
+DOG_exe_YJ_new_JL_event.26.title: "奖品: 死剑"
+DOG_exe_YJ_new_JL_event.26.desc: "奖品: 死剑"
+
+DOG_exe_YJ_new_JL_event.27.title: "奖品: 浪漫古士"
+DOG_exe_YJ_new_JL_event.27.desc: "奖品: 浪漫古士"
+
+DOG_exe_YJ_new_JL_event.28.title: "奖品: steve"
+DOG_exe_YJ_new_JL_event.28.desc: "奖品: steve"
+
+DOG_exe_YJ_new_JL_event.29.title: "奖品: 阿强"
+DOG_exe_YJ_new_JL_event.29.desc: "奖品: 阿强"
+
+DOG_exe_YJ_new_JL_event.30.title: "奖品: 迈耶"
+DOG_exe_YJ_new_JL_event.30.desc: "奖品: 迈耶"
+
+DOG_exe_YJ_new_JL_event.31.title: "奖品: 拜登"
+DOG_exe_YJ_new_JL_event.31.desc: "奖品: 拜登"
+
+DOG_exe_YJ_new_JL_event.32.title: "奖品: 韓"
+DOG_exe_YJ_new_JL_event.32.desc: "奖品: 韓"
+
+DOG_exe_YJ_new_JL_event.33.title: "奖品: 勘规"
+DOG_exe_YJ_new_JL_event.33.desc: "奖品: 勘规"
+
+DOG_exe_YJ_new_JL_event.34.title: "奖品: EmPtY"
+DOG_exe_YJ_new_JL_event.34.desc: "奖品: EmPtY"
+
+KoKi_YJ_FRA_event.NPL.title: "拿破仑归来"
+KoKi_YJ_FRA_event.NPL.desc: "拿破仑将领回归"
+
+KoKi_YJ_FRA_event.zd.title: "圣女降临"
+KoKi_YJ_FRA_event.zd.desc: "圣女贞德助你一臂之力"
+KoKi_YJ_FRA_event.zd.a: "好"
+
+decision_cost_CP_100: "£command_power §Y100§!"
+decision_cost_CP_100_blocked: "£command_power §R100§!"
+
+
+
+
+YJ_AIR_ideas: "布丁性平衡"
+YJ_AIR_ideas_tt: "§5每100煤炭增加§11%§5建造速度\n§C目前建造速度§7[?YJ_coal_num|Y0]%§!"
+
+
+welcome_title_text: "更新日志"
+welcome_text: "懒得写了自己看群文件"
+YJ_lend_allow_tt: "蘇德開戰後才能起草租借法案"
+
+YJ_60d_resource: "开发资源"
+YJ_60d_resource_tt: "§R发现资源§!"
+
+continuous_focus_pop: "专注人口增长"
+continuous_focus_pop_desc: "专注人口增长"
+continuous_focus_mit: "大规模生产"
+continuous_focus_mit_desc: "大规模生产"
+
+VICTORY_POINTS_11959:0 "AK的家"
+VICTORY_POINTS_12434:0 "生命之路"
+
+YJ_bread:0 "§Y成為麵包§!"
+YJ_bread_tt: "§Y成為麵包§!"
+
+YJ_no_bread:0 "§R失去麵包§!"
+YJ_no_bread_tt: "§R失去麵包§!"
+
+YJ_bread_cos:0 "麵包"
+YJ_bread_cos_DEF:0 "麵包"
+
+YJ_bread_cos_democratic:0 "麵包"
+YJ_bread_cos_democratic_DEF:0 "麵包"
+
+YJ_bread_cos_communism:0 "麵包"
+YJ_bread_cos_communism_DEF:0 "麵包"
+
+YJ_bread_cos_neutrality:0 "麵包"
+YJ_bread_cos_neutrality_DEF:0 "麵包"
+
+KoKi_YJ_decisions_set_axis_tt: "設為軸心陣營(用於計算工廠)"
+KoKi_YJ_decisions_set_allie_tt: "設為同盟陣營(用於計算工廠)"

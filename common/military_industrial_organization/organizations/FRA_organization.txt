@@ -1,12 +1,5 @@
-#####################
 
-###  ##  #  # # #  ## 
- #  #  # ## # # # #   
- #  #### # ## ##   #  
- #  #  # #  # # #   # 
- #  #  # #  # # # ## 
 
- #################### 
 
 
 FRA_renault_organization = {
@@ -37,7 +30,6 @@ FRA_renault_organization = {
 	}
 
 	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
 		IF = {
 			limit = {
 				FROM = { NOT = { original_tag = FRA } }
@@ -171,15 +163,8 @@ FRA_amx_organization = {
 	}
 }
 
-#####################
 
- ## #  # ### ###   ## 
-#   #  #  #  #  # #   
- #  ####  #  ###   #  
-  # #  #  #  #      # 
-##  #  # ### #    ##  
  
-#####################
 
 FRA_fcm_organization = {
 	include = generic_escort_ship_organization
@@ -241,15 +226,8 @@ FRA_acf_organization = {
 	}
 }
 
-###########################
 
-###  #    ##  #  # ###  ## 
-#  # #   #  # ## # #   #   
-###  #   #### # ## ##   #  
-#    #   #  # #  # #     # 
-#    ### #  # #  # ### ##  
 
-###########################
 
 FRA_morane_saulnier_organization = {
 	include = generic_light_aircraft_organization
@@ -287,7 +265,6 @@ FRA_bloch_organization = {
 	}
 	
 	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
 		IF = {
 			limit = {
 				FROM = { NOT = { original_tag = FRA } }
@@ -350,16 +327,9 @@ FRA_SNCAC_organization = {
 	}
 }
 
-################################### 
-
-#   #  ##  ### ### ###  ### ### #   
-## ## #  #  #  #   #  #  #  #   #   
-# # # ####  #  ##  ###   #  ##  #   
-#   # #  #  #  #   #  #  #  #   #   
-#   # #  #  #  ### #  # ### ### ### 
 
 
-###################################
+
 
 
 
@@ -380,7 +350,7 @@ FRA_somua_organization = {
 		OR = {
 			tag = FRA 
 			AND = {
-				tag = POL # If Poland sets up a local one
+				tag = POL
 				OR = {
 					has_dlc = "Poland: United and Ready"
 					has_dlc = "No Step Back"
@@ -401,7 +371,6 @@ FRA_somua_organization = {
 	}
 
 	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
 		IF = {
 			limit = {
 				FROM = { NOT = { original_tag = FRA } }
@@ -435,7 +404,6 @@ FRA_mas_organization = {
 	}
 
 	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
 		IF = {
 			limit = {
 				FROM = { NOT = { original_tag = FRA } }

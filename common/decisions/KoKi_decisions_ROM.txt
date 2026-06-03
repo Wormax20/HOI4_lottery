@@ -1,0 +1,489 @@
+﻿KoKi_YJ_ROM_decisions_categories = {
+	KoKi_YJ_ROM_decisions_categories_1 = {
+		icon = GFX_decision_hol_draw_up_staff_plans
+		allowed = {
+			date > 1938.1.1
+		}
+		available = {
+			has_war_with = ENG
+			has_idea = YJ_ROM_2_ideas
+			OR = {
+				is_in_faction_with = GER
+				is_in_faction_with = ITA
+				is_in_faction_with = HUN
+                is_in_faction_with = FIN
+                is_in_faction_with = JAP
+                is_in_faction_with = BEL
+                is_in_faction_with = FRA
+                is_in_faction_with = SWI
+				is_in_faction_with = CZE
+				is_in_faction_with = TUR
+			}
+		}
+		custom_cost_text = decision_cost_CP_50
+		custom_cost_trigger = {
+			command_power > 49
+		}
+		visible = {
+			has_idea = YJ_ROM_2_ideas
+			original_tag = ROM
+			FROM = {
+				OR = {
+					AND = {
+						OR = {
+							is_controlled_by = GER
+							is_controlled_by = ITA
+							is_controlled_by = HUN
+							is_controlled_by = ROM
+							is_controlled_by = FIN
+                            is_controlled_by = JAP
+                            is_controlled_by = BEL
+                            is_controlled_by = FRA
+                            is_controlled_by = SWI
+							is_controlled_by = CZE
+							is_controlled_by = TUR
+							
+						}
+                        OR = {
+						any_neighbor_state = {
+							is_controlled_by = SOV
+						}
+                        any_neighbor_state = {
+							is_controlled_by = USA
+						}
+                        any_neighbor_state = {
+							is_controlled_by = MEX
+						}
+                        any_neighbor_state = {
+							is_controlled_by = BRA
+						}
+                        any_neighbor_state = {
+							is_controlled_by = RAJ
+						}
+                        any_neighbor_state = {
+							is_controlled_by = ENG
+						}
+                        any_neighbor_state = {
+							is_controlled_by = PHI
+						}
+                        any_neighbor_state = {
+							is_controlled_by = PRC
+						}
+						any_neighbor_state = {
+							is_controlled_by = CAN
+						}
+                        }
+					}
+					AND = {
+						OR = {
+							is_controlled_by = USA
+							is_controlled_by = ENG
+							is_controlled_by = SOV
+							is_controlled_by = MEX
+							is_controlled_by = BRA
+                            is_controlled_by = RAJ
+                            is_controlled_by = PRC
+							is_controlled_by = PHI
+							is_controlled_by = CAN
+						}
+						any_neighbor_state = {
+							OR = {
+								is_controlled_by = GER
+							    is_controlled_by = ITA
+							    is_controlled_by = HUN
+							    is_controlled_by = ROM
+							    is_controlled_by = FIN
+                                is_controlled_by = JAP
+                                is_controlled_by = BEL
+                                is_controlled_by = FRA
+                                is_controlled_by = SWI
+								is_controlled_by = CZE
+								is_controlled_by = TUR
+							}
+						}
+					}
+				}
+			}
+		}
+		state_target = yes
+		target_root_trigger = {
+            OR = {
+			has_war_with = ENG
+            has_war_with = SOV
+            }
+			num_of_controlled_states > 0
+		}
+		on_map_mode = map_only
+		cost = 0    
+		days_remove = 7  
+		target_trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						OR = {
+							    is_controlled_by = GER
+							    is_controlled_by = ITA
+							    is_controlled_by = HUN
+							    is_controlled_by = ROM
+							    is_controlled_by = FIN
+                                is_controlled_by = JAP
+                                is_controlled_by = BEL
+                                is_controlled_by = FRA
+                                is_controlled_by = SWI
+								is_controlled_by = CZE
+								is_controlled_by = TUR
+						}
+						any_neighbor_state = {
+                            OR = {
+                                is_controlled_by = USA
+							    is_controlled_by = ENG
+							    is_controlled_by = SOV
+							    is_controlled_by = MEX
+							    is_controlled_by = BRA
+                                is_controlled_by = RAJ
+                                is_controlled_by = PRC
+								is_controlled_by = PHI
+								is_controlled_by = CAN
+                            }
+
+						}
+					}
+					AND = {
+                        OR = {
+                                is_controlled_by = USA
+							    is_controlled_by = ENG
+							    is_controlled_by = SOV
+							    is_controlled_by = MEX
+							    is_controlled_by = BRA
+                                is_controlled_by = RAJ
+                                is_controlled_by = PRC
+								is_controlled_by = PHI
+								is_controlled_by = CAN
+                        }
+						any_neighbor_state = {
+							OR = {
+								is_controlled_by = GER
+							    is_controlled_by = ITA
+							    is_controlled_by = HUN
+							    is_controlled_by = ROM
+							    is_controlled_by = FIN
+                                is_controlled_by = JAP
+                                is_controlled_by = BEL
+                                is_controlled_by = FRA
+                                is_controlled_by = SWI
+								is_controlled_by = CZE
+								is_controlled_by = TUR
+							}
+						}
+					}
+				}
+			}
+		}
+		complete_effect = { 
+		    add_command_power = -50
+		}
+		remove_effect = {  
+			custom_effect_tooltip = KoKi_YJ_ROM_decisions_categories_txt
+		    hidden_effect = {
+				FROM = {
+					add_dynamic_modifier = {
+						modifier = YJ_ROM_state_1_ideas
+						scope = GER
+						days = 7
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_ROM_state_1_ideas
+						scope = ITA
+						days = 7
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_ROM_state_1_ideas
+						scope = HUN
+						days = 7
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_ROM_state_1_ideas
+						scope = ROM
+						days = 7
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_ROM_state_1_ideas
+						scope = JAP
+						days = 7
+					}
+                    add_dynamic_modifier = {
+						modifier = YJ_ROM_state_1_ideas
+						scope = FRA
+						days = 7
+					}
+                    add_dynamic_modifier = {
+						modifier = YJ_ROM_state_1_ideas
+						scope = BEL
+						days = 7
+					}
+                    add_dynamic_modifier = {
+						modifier = YJ_ROM_state_1_ideas
+						scope = SWI
+						days = 7
+					}
+                    add_dynamic_modifier = {
+						modifier = YJ_ROM_state_1_ideas
+						scope = FIN
+						days = 7
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_ROM_state_1_ideas
+						scope = CZE
+						days = 7
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_ROM_state_1_ideas
+						scope = TUR
+						days = 7
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1  
+		}
+	}
+	KoKi_YJ_ROM_decisions_categories_2 = {
+		icon = GFX_decision_hol_draw_up_staff_plans
+		allowed = {
+			date > 1938.1.1
+		}
+		available = {
+			has_idea = YJ_ROM_2_ideas
+			has_war_with = ENG
+			OR = {
+				is_in_faction_with = GER
+				is_in_faction_with = ITA
+				is_in_faction_with = HUN
+                is_in_faction_with = FIN
+                is_in_faction_with = JAP
+                is_in_faction_with = BEL
+                is_in_faction_with = FRA
+                is_in_faction_with = SWI
+				is_in_faction_with = CZE
+				is_in_faction_with = TUR
+			}
+		}
+		custom_cost_text = decision_cost_CP_100
+		custom_cost_trigger = {
+			command_power > 99
+		}
+		visible = {
+			has_idea = YJ_ROM_2_ideas
+			original_tag = ROM
+			FROM = {
+				OR = {
+					AND = {
+						OR = {
+							is_controlled_by = GER
+							is_controlled_by = ITA
+							is_controlled_by = HUN
+							is_controlled_by = ROM
+							is_controlled_by = FIN
+                            is_controlled_by = JAP
+                            is_controlled_by = BEL
+                            is_controlled_by = FRA
+                            is_controlled_by = SWI
+							is_controlled_by = CZE
+							is_controlled_by = TUR
+						}
+                        OR = {
+						any_neighbor_state = {
+							is_controlled_by = SOV
+						}
+                        any_neighbor_state = {
+							is_controlled_by = USA
+						}
+                        any_neighbor_state = {
+							is_controlled_by = MEX
+						}
+                        any_neighbor_state = {
+							is_controlled_by = BRA
+						}
+                        any_neighbor_state = {
+							is_controlled_by = RAJ
+						}
+                        any_neighbor_state = {
+							is_controlled_by = ENG
+						}
+                        any_neighbor_state = {
+							is_controlled_by = PHI
+						}
+                        any_neighbor_state = {
+							is_controlled_by = PRC
+						}
+						any_neighbor_state = {
+							is_controlled_by = CAN
+						}
+                        }
+					}
+					AND = {
+						OR = {
+							is_controlled_by = USA
+							is_controlled_by = ENG
+							is_controlled_by = SOV
+							is_controlled_by = MEX
+							is_controlled_by = BRA
+                            is_controlled_by = RAJ
+                            is_controlled_by = PRC
+							is_controlled_by = PHI
+							is_controlled_by = CAN
+						}
+						any_neighbor_state = {
+							OR = {
+								is_controlled_by = GER
+							    is_controlled_by = ITA
+							    is_controlled_by = HUN
+							    is_controlled_by = ROM
+							    is_controlled_by = FIN
+                                is_controlled_by = JAP
+                                is_controlled_by = BEL
+                                is_controlled_by = FRA
+                                is_controlled_by = SWI
+								is_controlled_by = CZE
+								is_controlled_by = TUR
+							}
+						}
+					}
+				}
+			}
+		}
+		state_target = yes
+		target_root_trigger = {
+            OR = {
+			has_war_with = ENG
+            has_war_with = SOV
+            }
+			num_of_controlled_states > 0
+		}
+		on_map_mode = map_only
+		cost = 0    
+		days_remove = 7  
+		target_trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						OR = {
+							    is_controlled_by = GER
+							    is_controlled_by = ITA
+							    is_controlled_by = HUN
+							    is_controlled_by = ROM
+							    is_controlled_by = FIN
+                                is_controlled_by = JAP
+                                is_controlled_by = BEL
+                                is_controlled_by = FRA
+                                is_controlled_by = SWI
+								is_controlled_by = CZE
+								is_controlled_by = TUR
+						}
+						any_neighbor_state = {
+                            OR = {
+                                is_controlled_by = USA
+							    is_controlled_by = ENG
+							    is_controlled_by = SOV
+							    is_controlled_by = MEX
+							    is_controlled_by = BRA
+                                is_controlled_by = RAJ
+                                is_controlled_by = PRC
+								is_controlled_by = PHI
+								is_controlled_by = CAN
+                            }
+
+						}
+					}
+					AND = {
+                        OR = {
+                                is_controlled_by = USA
+							    is_controlled_by = ENG
+							    is_controlled_by = SOV
+							    is_controlled_by = MEX
+							    is_controlled_by = BRA
+                                is_controlled_by = RAJ
+                                is_controlled_by = PRC
+								is_controlled_by = PHI
+								is_controlled_by = CAN
+                        }
+						any_neighbor_state = {
+							OR = {
+								is_controlled_by = GER
+							    is_controlled_by = ITA
+							    is_controlled_by = HUN
+							    is_controlled_by = ROM
+							    is_controlled_by = FIN
+                                is_controlled_by = JAP
+                                is_controlled_by = BEL
+                                is_controlled_by = FRA
+                                is_controlled_by = SWI
+								is_controlled_by = CZE
+								is_controlled_by = TUR
+							}
+						}
+					}
+				}
+			}
+		}
+		complete_effect = { 
+		    add_command_power = -100
+		}
+		remove_effect = {  
+			custom_effect_tooltip = KoKi_YJ_ROM_decisions_categories_1_txt
+		    hidden_effect = {
+				FROM = {
+					add_dynamic_modifier = {
+						modifier = YJ_ROM_state_2_ideas
+						scope = SOV
+						days = 7
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_ROM_state_2_ideas
+						scope = PRC
+						days = 7
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_ROM_state_2_ideas
+						scope = RAJ
+						days = 7
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_ROM_state_2_ideas
+						scope = USA
+						days = 7
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_ROM_state_2_ideas
+						scope = BRA
+						days = 7
+					}
+                    add_dynamic_modifier = {
+						modifier = YJ_ROM_state_2_ideas
+						scope = MEX
+						days = 7
+					}
+                    add_dynamic_modifier = {
+						modifier = YJ_ROM_state_2_ideas
+						scope = ENG
+						days = 7
+					}
+                    add_dynamic_modifier = {
+						modifier = YJ_ROM_state_2_ideas
+						scope = PHI
+						days = 7
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_ROM_state_2_ideas
+						scope = CAN
+						days = 7
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1  
+		}
+	}
+}

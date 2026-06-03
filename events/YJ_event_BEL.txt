@@ -10,13 +10,10 @@ country_event = {
 
 	option = {
 		add_ideas = YJ_BEL_01_ideas
-		# 荷兰本土核心
 		36 = { add_core_of = root }
 		35 = { add_core_of = root }
 		7 = { add_core_of = root }
-		# 卢森堡核心
 		8 = { add_core_of = root }
-		# 荷属东印度核心
 		672 = { add_core_of = root }
 		1022 = { add_core_of = root }
 		334 = { add_core_of = root }

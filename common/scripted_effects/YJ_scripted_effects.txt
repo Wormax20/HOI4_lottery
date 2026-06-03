@@ -1,5 +1,4 @@
 KoKi_YJ_TAG_decisions_0_scripted_effects = {
-    # 美国 #
     if = {
 		limit = { 
 			original_tag = USA 
@@ -9,7 +8,6 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
 			USA_YJ_scripted_effects = yes
 		}
 	}
-	# 德国 #
 	if = {
 		limit = { 
 			original_tag = GER 
@@ -19,7 +17,6 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
 			GER_YJ_scripted_effects = yes
 		}
 	}
-	# 英国 #
 	if = {
 		limit = { 
 			original_tag = ENG 
@@ -29,7 +26,6 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
 			ENG_YJ_scripted_effects = yes
 		}
 	}
-	# 法国 #
 	if = {
 		limit = { 
 			original_tag = FRA 
@@ -39,7 +35,6 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
 			FRA_YJ_scripted_effects = yes
 		}
 	}
-	# 苏联 #
 	if = {
 		limit = { 
 			original_tag = SOV 
@@ -49,7 +44,6 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
 			SOV_YJ_scripted_effects = yes
 		}
 	}
-	# 意大利 #
 	if = {
 		limit = { 
 			original_tag = ITA 
@@ -59,7 +53,6 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
 			ITA_YJ_scripted_effects = yes
 		}
 	}
-	# 巴西 #
 	if = {
 		limit = { 
 			original_tag = BRA 
@@ -69,7 +62,6 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
 			BRA_YJ_scripted_effects = yes
 		}
 	}
-	# 芬兰 #
 	if = {
 		limit = { 
 			original_tag = FIN 
@@ -79,7 +71,6 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
 			FIN_YJ_scripted_effects = yes
 		}
 	}
-	# 日本 #
 	if = {
 		limit = { 
 			original_tag = JAP 
@@ -89,7 +80,6 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
 			JAP_YJ_scripted_effects = yes
 		}
 	}
-	# 中共 #
 	if = {
 		limit = { 
 			original_tag = PRC 
@@ -99,7 +89,6 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
 			PRC_YJ_scripted_effects = yes
 		}
 	}
-	# 罗马尼亚 #
 	if = {
 		limit = { 
 			original_tag = ROM 
@@ -109,7 +98,6 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
 			ROM_YJ_scripted_effects = yes
 		}
 	}
-	# 墨西哥 #
 	if = {
 		limit = { 
 			original_tag = MEX 
@@ -119,7 +107,6 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
 			MEX_YJ_scripted_effects = yes
 		}
 	}
-	# 匈牙利
 	if = {
     	limit = {
         	original_tag = HUN
@@ -134,7 +121,6 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
             	HUN_YJ_scripted_effects = yes
         	}
 
-        	# 二元判定
         	else_if = {
             	limit = {
                 	AUS = { is_ai = no }
@@ -142,7 +128,6 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
             	}
             	HUN_YJ_2_scripted_effects = yes
         	}
-			# 三元判定
 			else_if = {
             	limit = {
                 	AUS = { is_ai = no }
@@ -152,7 +137,6 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
         	}
     	}
 	}
-	# 菲律宾 #
 	if = {
 		limit = { 
 			original_tag = PHI 
@@ -162,7 +146,6 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
 			PHI_YJ_scripted_effects = yes
 		}
 	}
-	# 比利时 #
 	if = {
 		limit = { 
 			original_tag = BEL 
@@ -172,7 +155,6 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
 			BEL_YJ_scripted_effects = yes
 		}
 	}
-	# 瑞士 #
 	if = {
 		limit = { 
 			original_tag = SWI
@@ -182,7 +164,6 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
 			SWI_YJ_scripted_effects = yes
 		}
 	}
-	# 印度 #
 	if = {
 		limit = { 
 			original_tag = RAJ
@@ -192,7 +173,6 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
 			RAJ_YJ_scripted_effects = yes
 		}
 	}
-	# 加拿大 #
 	if = {
 		limit = { 
 			original_tag = CAN
@@ -202,7 +182,6 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
 			CAN_YJ_scripted_effects = yes
 		}
 	}
-	# 土耳其 #
 	if = {
 		limit = { 
 			original_tag = TUR
@@ -212,7 +191,6 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
 			TUR_YJ_scripted_effects = yes
 		}
 	}
-	#奥地利
 	if = {
     	limit = { 
         	original_tag = AUS
@@ -220,7 +198,6 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
     	}
     	hidden_effect = {
 
-        	# 捷克是玩家 → 触发3
         	if = {
             	limit = {
                 	CZE = { is_ai = no }
@@ -228,12 +205,10 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
             	AUS_YJ_3_scripted_effects = yes
         	}
         	else = {
-            # 否则 → 触发2
             	AUS_YJ_2_scripted_effects = yes
         	}
     	}
 	}
-	#捷克
 	if = {
 		limit = { 
 			original_tag = CZE
@@ -333,7 +308,6 @@ YJ_TY_scripted_effects = {
 	}
 }
 
-#国家抽奖
 GER_YJ_scripted_effects = {
 	random_list = {
 		16.6 = {

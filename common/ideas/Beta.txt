@@ -15,20 +15,20 @@ ideas = {
 			picture = CHI_the_political_tutelage_dm
 
 			modifier = {
-				command_power_gain = 1 								# 每日指挥点增长
-				breakthrough_factor = 0.1 #突破
+				command_power_gain = 1
+				breakthrough_factor = 0.1
 				shore_bombardment_bonus = 0.2
-				naval_invasion_penalty = -0.3 #登陆惩罚
-				amphibious_invasion_defence = 0.2 #登陆防护
-				amphibious_invasion = 0.3 #两栖登陆速度
-				special_forces_min = 72 #特种部队上限增加 
-				special_forces_cap = 0.3 #特种部队上限增加
-				naval_invasion_plan_cap = 12 #登陆作战计划上限
-				naval_invasion_prep_days = -30  #登陆作战准备时间
-				shore_bombardment_collateral_damage_factor = 0.3 #对岸炮击附带损害
-				special_forces_doctrine_cost_factor = -0.2 #特种部队战术消耗
-				naval_invasion_division_cap = 10 #登陆作战部队数量上限
-				army_intel_to_others =-5 #泄露给敌国的陆军情报
+				naval_invasion_penalty = -0.3
+				amphibious_invasion_defence = 0.2
+				amphibious_invasion = 0.3
+				special_forces_min = 72
+				special_forces_cap = 0.3
+				naval_invasion_plan_cap = 12
+				naval_invasion_prep_days = -30
+				shore_bombardment_collateral_damage_factor = 0.3
+				special_forces_doctrine_cost_factor = -0.2
+				naval_invasion_division_cap = 10
+				army_intel_to_others =-5
 				navy_intel_to_others =-5
 				airforce_intel_to_others =-5
 			}
@@ -50,8 +50,8 @@ ideas = {
 			picture = ETH_conservative_high_command
 
 			modifier = {
-				air_cas_efficiency = 0.1 						#密接支援任务效率
-				air_intercept_efficiency = 0.1 		#拦截任务效率
+				air_cas_efficiency = 0.1
+				air_intercept_efficiency = 0.1
 			}
 			targeted_modifier = {
 				tag = SOV
@@ -75,8 +75,8 @@ ideas = {
 			picture = GER_fan_prussian_militarism
 
 			modifier = {
-				air_cas_efficiency = 0.1 						#密接支援任务效率
-				air_intercept_efficiency = 0.1 		#拦截任务效率
+				air_cas_efficiency = 0.1
+				air_intercept_efficiency = 0.1
 			}
 			targeted_modifier = {
 				tag = SOV
@@ -97,11 +97,9 @@ ideas = {
 
 			removal_cost = -1
 			modifier = {
-				special_forces_cap = -100 #特种部队上限增加
+				special_forces_cap = -100
 				special_forces_attack_factor = -0.2
 				special_forces_defence_factor = -0.1
-				#army_attack_factor = -0.25  							# 陆军师攻击
-				#army_defence_factor = -0.25 							# 陆军师防御
 				production_speed_bunker_factor = -0.25
 				production_cost_bunker_factor = 0.5
 				bunker_max_level_terrain_limit = -4
@@ -128,48 +126,20 @@ ideas = {
 				}
 				light_tank_artillery_chassis = {
 					instant = yes
-					supply_consumption = -0.2 #展示用实际无效果 p社神奇代码 修改再sp_artillery_brigade.txt
+					supply_consumption = -0.2
 				}
 				medium_tank_artillery_chassis = {
 					instant = yes
-					supply_consumption = -0.2 #展示用实际无效果 p社神奇代码 修改再sp_artillery_brigade.txt
+					supply_consumption = -0.2
 				}
 				heavy_tank_artillery_chassis = {
 					instant = yes
-					supply_consumption = -0.2 #展示用实际无效果 p社神奇代码 修改再sp_artillery_brigade.txt
+					supply_consumption = -0.2
 				}
 				infantry_equipment = {
 					instant = yes
 					defense = -0.3
 				}
-				#small_plane_airframe = {
-				#	instant = yes
-				#	build_cost_ic = 2
-				#}
-				#small_plane_cas_airframe = {
-				#	instant = yes
-				#	build_cost_ic = 2
-				#}
-				#cv_small_plane_airframe = {
-				#	instant = yes
-				#	build_cost_ic = 2
-				#}
-				#medium_plane_airframe = {
-				#	instant = yes
-				#	build_cost_ic = 2
-				#}
-				#medium_plane_scout_plane_airframe = {
-				#	instant = yes
-				#	build_cost_ic = 2
-				#}
-				#large_plane_airframe = {
-				#	instant = yes
-				#	build_cost_ic = 2
-				#}
-				#large_plane_maritime_patrol_plane_airframe = {
-				#	instant = yes
-				#	build_cost_ic = 2
-				#}
 			}
 		}
 

@@ -171,7 +171,7 @@
 		available = {
 			any_owned_state = {
 				is_core_of = ROOT
-				free_building_slots = { #less than 24 unlocked slots
+				free_building_slots = {
 					building = industrial_complex
 					size > 1
 					include_locked = yes
@@ -326,7 +326,7 @@
 						has_state_flag = FRA_colonial_industry_target
 					}
 				}
-				add_extra_state_shared_building_slots = 2 #States already got 2 building slots and 2 civs in previous focuses, so let's just add 2 more slots and mils here
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 2
@@ -829,7 +829,6 @@
 		}
 	}	
 
-	#### END ####
 
 	focus = {
 		id = FRA_begin_rearmament
@@ -1576,7 +1575,6 @@
 		}
 	}	
 
-#### END ####
 
 	focus = {
 		id = FRA_form_the_popular_front
@@ -1626,7 +1624,7 @@
 				}
 				promote_leader = yes
 			}
-			set_country_flag = { flag = FRA_popular_front_cooldown value = 1 days = 360 } #fires strike event if labour laws not reformed in time
+			set_country_flag = { flag = FRA_popular_front_cooldown value = 1 days = 360 }
 		}
 	}
 
@@ -3379,7 +3377,7 @@
 			any_owned_state = {
 				NOT = {
 					is_on_continent = europe
-					is_core_of = ROOT # has at least one colonial state
+					is_core_of = ROOT
 				}
 			}
 		}
@@ -5310,7 +5308,7 @@
 						has_government = ROOT
 						has_country_leader = { character = SPA_francisco_franco ruling_only = yes }
 						NOT = {
-							has_global_flag = spanish_civil_war #to make the focus show an effect before the SCW breaks out
+							has_global_flag = spanish_civil_war
 						}
 					}
 				}
@@ -6508,7 +6506,6 @@
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			ITA = { country_event = { id = italy.8 days = 1 } }			
-			### Fires event to ITA asking them to join your faction - creates faction if you don't already lead one.
 			hidden_effect = {
 				if = {
 					limit = {
@@ -6791,7 +6788,6 @@
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			### EVENT ASKING GERMANY TO JOIN FACTION
 			GER = { country_event = { id = germany.91 days = 1 } }			
 		}
 	}
@@ -7250,7 +7246,7 @@
 		completion_reward = {
 			if = {
 				limit = {
-					date < 1941.2.21 #TODO_GABRIEL: coordinate with Drikus for death events
+					date < 1941.2.21
 				}
 				create_country_leader = {
 					name = "Alphonse I"
@@ -7549,7 +7545,7 @@
 		}
 	}
 	focus = {
-		id = FRA_avenge_waterloo #you now have ABBA stuck in your head for the rest of the day
+		id = FRA_avenge_waterloo
 		icon = GFX_focus_attack_britain
 		x = 0
 		y = 1
@@ -7797,7 +7793,7 @@
 				}
 				puppet = AUS
 			}
-			if = { #set up Wurtemberg puppet
+			if = {
 				limit = {
 					50 = {
 						is_owned_or_subject_trigger = yes
@@ -7809,12 +7805,12 @@
 				WUR = {
 					transfer_state = 50
 					add_state_core = 50
-					transfer_state = 978 #BADEN -> BADEN-WURTTEMBERG
+					transfer_state = 978
 					add_state_core = 978
 				}
 				puppet = WUR
 			}
-			if = { #set up Saxony puppet
+			if = {
 				limit = {
 					65 = {
 						is_owned_or_subject_trigger = yes
@@ -7826,7 +7822,7 @@
 				}
 				puppet = SAX
 			}
-			if = { #set up Mecklenburg puppet
+			if = {
 				limit = {
 					61 = {
 						is_owned_or_subject_trigger = yes
@@ -7838,7 +7834,7 @@
 				}
 				puppet = MEK
 			}
-			if = { #set up Schleswig-Holstein puppet
+			if = {
 				limit = {
 					58 = {
 						is_owned_or_subject_trigger = yes
@@ -7847,12 +7843,12 @@
 				SHL = {
 					transfer_state = 58
 					add_state_core = 58
-					transfer_state = 909 #New state of SCHLESWIG
-					add_state_core = 909 #New state of SCHLESWIG
+					transfer_state = 909
+					add_state_core = 909
 				}
 				puppet = SHL
 			}
-			if = { #set up Bavaria puppet
+			if = {
 				limit = {
 					52 = {
 						is_owned_or_subject_trigger = yes
@@ -7874,7 +7870,7 @@
 				}
 				puppet = BAY
 			}
-			if = { #set up Hanover puppet
+			if = {
 				limit = {
 					59 = {
 						is_owned_or_subject_trigger = yes
@@ -7937,7 +7933,7 @@
 						}
 					}
 					NOT = {
-						state = 42 #MOSELLAND
+						state = 42
 						state = 51
 					}
 				}
@@ -8028,7 +8024,6 @@
 	}
 
 
-	##### END ###########
 
 	focus = {
 		id = FRA_naval_rearmament
@@ -8063,7 +8058,7 @@
 							include_locked = yes
 						}
 					}
-				prioritize = { 21 } #Bouches du Rhone
+				prioritize = { 21 }
 				add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = dockyard
@@ -8085,7 +8080,7 @@
 							include_locked = yes
 						}
 					}
-					prioritize = { 14 } #Brittany
+					prioritize = { 14 }
 	
 				add_extra_state_shared_building_slots = 2
 					add_building_construction = {

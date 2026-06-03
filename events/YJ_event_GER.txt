@@ -133,7 +133,7 @@ country_event = {
 					ideology = despotism
 					traits = {
 						kaiserin_of_the_people
-						victoria_iii # Third Victoria counting from Queen Victoria hurr durr
+						victoria_iii
 					}
 				}
 				promote_leader = yes

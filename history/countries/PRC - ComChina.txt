@@ -18,7 +18,6 @@
 	}
 }
 
-# Politics, oops all communism!
 
 set_politics = {
 	ruling_party = communism
@@ -30,14 +29,12 @@ set_popularities = {
 	communism = 100
 }
 
-# Laws
 add_ideas = {
 	closed_economy
 	service_by_requirement
 	partial_economic_mobilisation
 }
 
-# Starting tech
 set_technology = {
 	fuel_silos = 1
 	fuel_refining = 1
@@ -129,7 +126,6 @@ if = {
 		basic_ship_hull_carrier = 1
 		basic_battery = 1
 		basic_light_battery = 1
-		#basic_medium_battery = 1
 		basic_heavy_battery = 1
 		basic_torpedo = 1
 		sonar = 1
@@ -168,7 +164,6 @@ set_grand_doctrine = mass_assault
 set_stability = 0.43
 set_war_support = 0.5
 
-#Always recruit
 recruit_character = PRC_mao_zedong
 recruit_character = PRC_zhu_de
 recruit_character = PRC_chen_yi
@@ -194,7 +189,7 @@ recruit_character = PRC_deng_xiaoping
 recruit_character = PRC_luo_ruiqing
 recruit_character = PRC_kang_sheng
 
-IF = { #Recruit only if we have the dlc
+IF = {
 	limit = {
 		has_dlc = "No Compromise, No Surrender"
 	}
@@ -258,7 +253,7 @@ IF = { #Recruit only if we have the dlc
 		add_dynamic_modifier = { modifier = PRC_the_yulin_garrison }
 	}
 
-	ELSE = { #Recruit only if we do NOT have the dlc
+	ELSE = {
 		recruit_character = PRC_lin_bojiu
 		recruit_character = PRC_gao_qiu
 		recruit_character = PRC_ma_jin
@@ -273,7 +268,6 @@ IF = { #Recruit only if we have the dlc
 
 save_global_event_target_as = WTT_communist_china
 
-# Balance of Power or Non-DLC ideas counterpart
 
 IF = {
 	limit = {
@@ -287,9 +281,7 @@ IF = {
 	    set_value = -0.15
 	}
 
-	#### Dynamic Modifiers ####
 
-	### Central Committee
 	set_variable = { PRC_central_committee_justify_war_goal_time = 0.5 }
 	set_variable = { PRC_central_committee_political_power_factor = 0 }
 	set_variable = { PRC_central_committee_faction_influence_war_score_factor = 0 }
@@ -301,7 +293,6 @@ IF = {
 		modifier = PRC_central_committee
 	}
 
-	### The Chinese Red Army ###
 	set_variable = { PRC_the_chinese_army_training_time_factor = 0.1 }
 	set_variable = { PRC_the_chinese_army_army_org_factor = -0.1 }
 	set_variable = { PRC_the_chinese_army_conscription_factor = -0.1 }
@@ -322,15 +313,13 @@ IF = {
 		modifier = PRC_the_chinese_red_army
 	}
 
-	## Bolshevik dominance
 	set_variable = { PRC_bolshevik_dominance_research_speed_factor = 0 }
-	set_variable = { PRC_bolshevik_dominance_production_speed_industrial_complex_factor = 0 } ## Make sure same values as BOP
+	set_variable = { PRC_bolshevik_dominance_production_speed_industrial_complex_factor = 0 }
 	set_variable = { PRC_bolshevik_dominance_political_power_gain = 0 }
 	set_variable = { PRC_bolshevik_dominance_industrial_capacity_factory = 0 }
 	set_variable = { PRC_bolshevik_dominance_industrial_capacity_dockyard = 0 }
 
 
-	### PLA Navy ###
 	set_variable = { PRC_pla_navy_naval_coordination = 0 }
 	set_variable = { PRC_pla_navy_naval_accidents_chance = -0.05 }
 	set_variable = { PRC_pla_navy_navy_org_factor = 0.05 }
@@ -339,7 +328,6 @@ IF = {
 	set_variable = { PRC_pla_navy_sortie_efficiency = 0 }
 	set_variable = { PRC_pla_navy_navy_max_range_factor = -0.1 }
 
-	### PLA Air Force ### 
 	set_variable = { PRC_pla_air_force_air_ace_generation_chance_factor = 0 }
 	set_variable = { PRC_pla_air_force_air_cas_efficiency = 0.05 }
 	set_variable = { PRC_pla_air_force_air_intercept_efficiency = 0.025 }
@@ -348,7 +336,6 @@ IF = {
 	set_variable = { PRC_pla_air_force_air_agility_factor = 0 }
 
 
-	### Agrarian Society ###
 	set_variable = { PRC_industry_production_speed_buildings_factor = -0.1 }
 	set_variable = { PRC_industry_global_building_slots_factor = 0 }
 	set_variable = { PRC_industry_research_speed_factor = -0.15 }
@@ -366,18 +353,16 @@ IF = {
 	set_variable = { PRC_asian_democratic_union_modifier_research_speed_factor = 0 }
 	set_variable = { PRC_asian_democratic_union_modifier_consumer_goods_factor = 0 }
 
-	### The Great Production Movement ### 
 
 
-	## Helper variables
-	set_variable = { PRC_initialize_five_year_plan_civ_factories_multiplier = 1.5 } ## Used to calculate NF
+	set_variable = { PRC_initialize_five_year_plan_civ_factories_multiplier = 1.5 }
 	set_variable = { PRC_initialize_five_year_plan_mil_factories_multiplier = 2 }
-	set_variable = { PRC_initialize_shorter_market_plans_civ_factories_multiplier = 1.5 } # 1.3 led to things like 2.6 factories required
+	set_variable = { PRC_initialize_shorter_market_plans_civ_factories_multiplier = 1.5 }
 	set_variable = { PRC_initialize_shorter_market_plans_mil_factories_multiplier = 1.5 }
-	set_variable = { PRC_five_year_plan_length = 1825 } ## 5 years
+	set_variable = { PRC_five_year_plan_length = 1825 }
 	set_variable = { PRC_shorter_market_plan_length = 900 } 
 
-	set_variable = { PRC_gain_faction_inluence_number = 0.001 } #0.1%
+	set_variable = { PRC_gain_faction_inluence_number = 0.001 }
 	set_variable = { PRC_infiltration_cost = 100 }
 	set_variable = { PRC_infiltration_cost_base = PRC_infiltration_cost }
 
@@ -392,13 +377,11 @@ IF = {
 
 
 
-	### Create Operatives 
 
 	if = {
 		limit = {
 			has_DLC = "La Resistance"
 		}
-		## Mo Xiong
 		create_operative_leader = {
 			name = PRC_mo_xiong 
 			bypass_recruitment = no 
@@ -408,7 +391,6 @@ IF = {
 			nationalities = { PRC CHI }
 			gender = male
 		}
-		## Xiong Xiangui
 		create_operative_leader = {
 			name = PRC_xiong_xianghui
 			bypass_recruitment = no 
@@ -418,7 +400,6 @@ IF = {
 			nationalities = { PRC CHI }
 			gender = male
 		}
-		## Li Kenong
 		create_operative_leader = {
 			name = PRC_li_kenong
 			bypass_recruitment = no 
@@ -431,15 +412,13 @@ IF = {
 	}
 
 	
-	### Starting Country flags 
 
 	set_country_flag = PRC_pavel_mif_alive
 
-	### Ideas ###
 
 	add_ideas = PRC_defunct_state_bank
 
-	else_if = { #TODO_MH replace these with dynamic modifiers that can be interacted with
+	else_if = {
 		limit = {
 			has_dlc = "Waking the Tiger"
 		}
@@ -523,7 +502,6 @@ add_opinion_modifier = { target = CHI modifier = hostile_status }
 			limit = {
 				has_dlc = "No Compromise, No Surrender"
 			}
-			#Complete Focuses
 			complete_national_focus = PRC_put_an_end_to_the_sufan
 			complete_national_focus = PRC_eight_points_for_attention
 			complete_national_focus = PRC_rally_the_industry
@@ -544,7 +522,6 @@ add_opinion_modifier = { target = CHI modifier = hostile_status }
 			complete_national_focus = PRC_dissent_in_the_united_front
 			complete_national_focus = PRC_empower_the_guerillas
 
-			#Handle Focuses Manually
 			unlock_national_focus = PRC_the_westward_expedition
 			unlock_national_focus = PRC_expedite_land_revolution
 			unlock_national_focus = PRC_the_eastward_expedition
@@ -555,14 +532,12 @@ add_opinion_modifier = { target = CHI modifier = hostile_status }
 			unlock_national_focus = PRC_asymmetric_warfare
 
 			add_ideas = PRC_trade_of_special_goods_banned_stabilised
-			remove_ideas = PRC_mediating_general_secretary_idea #This is given through a focus, so we need to remove it
+			remove_ideas = PRC_mediating_general_secretary_idea
 			add_ideas = PRC_mediating_general_secretary_idea_drifting_right
 
 			add_to_variable = {	PRC_the_chinese_red_army_max_dig_in = 5 }
 			add_to_variable = {	PRC_the_chinese_red_army_org_loss_when_moving = -0.05 }
 
-			#These Events & Focuses will Sway the BoP:
-			#PRC_expedite_land_revolution -5%
 
 			add_power_balance_value = {
 				id = PRC_communist_power_struggle
@@ -571,7 +546,6 @@ add_opinion_modifier = { target = CHI modifier = hostile_status }
 		}
 	}
 	
-	# Chinese Popular Front effects
 	add_to_war = {
 		targeted_alliance = CHI
 		enemy = JAP
@@ -596,7 +570,6 @@ add_opinion_modifier = { target = CHI modifier = hostile_status }
 	add_state_claim = 527
 
 	add_ideas = {
-		#laws
 		partial_economic_mobilisation
 		service_by_requirement
 		closed_economy
@@ -604,10 +577,7 @@ add_opinion_modifier = { target = CHI modifier = hostile_status }
 	
 	set_technology = {
 		tech_mountaineers = 1
-		#doctrines
-		#air_superiority = 1
 
-		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
 		mechanical_computing = 1
@@ -615,7 +585,6 @@ add_opinion_modifier = { target = CHI modifier = hostile_status }
 		basic_encryption = 1
 		basic_decryption = 1
 
-		#industry
 		basic_machine_tools = 1
 		improved_machine_tools = 1
 		advanced_machine_tools = 1

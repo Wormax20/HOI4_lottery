@@ -1,6 +1,5 @@
 characters = {
 
-	# Hirohito
 	JAP_emperor_hirohito = {
 
 		name = JAP_emperor_hirohito
@@ -15,16 +14,9 @@ characters = {
 			}
 		}
 
-		#country_leader = {
-		#	ideology = emperor_fascism # was fascism_ideology
-		#	traits = { warrior_code emperor_showa imperial_sanction }
-		#	expire = "1989.1.1.1"
-		#	id = 700
-		#}
 
 	}
 
-	# Empress Nagako
 	JAP_empress_nagako = {
 		name = JAP_empress_nagako
 
@@ -37,15 +29,9 @@ characters = {
 			}
 		}
 
-		#country_leader = {
-		#	ideology = despotism
-		#	expire = "1989.1.1.1"
-		#	id = -1
-		#}
 
 	}
 
-	# Yasuhito
 	JAP_emperor_yasuhito = {
 		name = JAP_emperor_yasuhito
 
@@ -59,19 +45,7 @@ characters = {
 			}
 		}
 
-		#country_leader = {
-		#	ideology = emperor_fascism
-		#	traits = {}
-		#	expire = "1989.1.1.1"
-		#	id = 700
-		#}
 
-		#country_leader = {
-		#	ideology = japan_militarism_ideology
-		#	traits = {}
-		#	expire = "1989.1.1.1"
-		#	id = 700
-		#}
 
 		field_marshal = {
 			traits = { politically_connected JAP_samurai_lineage offensive_doctrine JAP_royal_lineage cavalry_leader organizer ranger }
@@ -91,7 +65,6 @@ characters = {
 
 	}
 
-	# Nobuhito
 	JAP_emperor_nobuhito = {
 		name = JAP_emperor_nobuhito
 
@@ -105,23 +78,10 @@ characters = {
 			}
 		}
 
-		#country_leader = {
-		#	ideology = emperor_fascism
-		#	traits = {}
-		#	expire = "1989.1.1.1"
-		#	id = 700
-		#}
 
-		#country_leader = {
-		#	ideology = japan_militarism_ideology
-		#	traits = {}
-		#	expire = "1989.1.1.1"
-		#	id = 700
-		#}
 
 	}
 
-	# Yoshio Kodama
 	JAP_yoshio_kodama = {
 		name = JAP_yoshio_kodama
 
@@ -132,18 +92,10 @@ characters = {
 			}
 		}
 
-		# Also a Spy
 
-		#country_leader = {
-		#	ideology = fascism_ideology
-		#	traits = {}
-		#	expire = "1989.1.1.1"
-		#	id = 700
-		#}
 
 	}
 
-	# Kyūichi Tokuda
 	JAP_kyuichi_tokuda = {
 		name = JAP_kyuichi_tokuda
 
@@ -162,7 +114,6 @@ characters = {
 
 	}
 
-	# Hitoshi Yamakawa
 	JAP_hitoshi_yamakawa = {
 		name = JAP_hitoshi_yamakawa
 
@@ -173,15 +124,9 @@ characters = {
 			}
 		}
 
-		#country_leader = {
-		#	ideology = marxism
-		#	expire = "1989.1.1.1"
-		#	id = -1
-		#}
 
 	}
 
-	# Kanson Arahata
 	JAP_kanson_arahata = {
 		name = JAP_kanson_arahata
 
@@ -192,15 +137,9 @@ characters = {
 			}
 		}
 
-		#country_leader = {
-		#	ideology = marxism
-		#	expire = "1989.1.1.1"
-		#	id = -1
-		#}
 
 	}
 
-	# Yamakawa Kikue
 	JAP_yamakawa_kikue = {
 		name = JAP_yamakawa_kikue
 
@@ -213,15 +152,9 @@ characters = {
 			}
 		}
 
-		#country_leader = {
-		#	ideology = marxism
-		#	expire = "1989.1.1.1"
-		#	id = -1
-		#}
 
 	}
 
-	# Tetsu Katayama
 	JAP_tetsu_katayama = {
 		name = JAP_tetsu_katayama
 
@@ -240,7 +173,6 @@ characters = {
 
 	}
 
-	# Ichirō Hatoyama
 	JAP_ichiro_hatoyama = {
 		name = JAP_ichiro_hatoyama
 
@@ -251,15 +183,9 @@ characters = {
 			}
 		}
 
-		#country_leader = {
-		#	ideology = liberalism
-		#	expire = "1989.1.1.1"
-		#	id = -1
-		#}
 
 	}
 
-	# Machida Chūji
 	JAP_machida_chuuji = {
 		name = JAP_machida_chuuji
 
@@ -270,15 +196,9 @@ characters = {
 			}
 		}
 
-		#country_leader = {
-		#	ideology = liberalism
-		#	expire = "1989.1.1.1"
-		#	id = -1
-		#}
 
 	}
 
-	# Abe Isoo
 	JAP_abe_isoo = {
 		name = JAP_abe_isoo
 
@@ -289,15 +209,9 @@ characters = {
 			}
 		}
 
-		#country_leader = {
-		#	ideology = liberalism
-		#	expire = "1989.1.1.1"
-		#	id = -1
-		#}
 
 	}
 
-	# Keisuke Okada
 	JAP_keisuke_okada = {
 		name = JAP_keisuke_okada
 
@@ -317,7 +231,6 @@ characters = {
 
 	}
 
-	# Kōki Hirota
 	JAP_koki_hirota = {
 		name = JAP_koki_hirota
 
@@ -328,16 +241,9 @@ characters = {
 			}
 		}
 
-		#country_leader = {
-		#	ideology = japan_militarism_ideology
-		#	traits = {  }
-		#	expire = "1952.1.1.1"
-		#	id = -1
-		#}
 
 	}
 
-	# Kazushige Ugaki
 	JAP_kazushige_ugaki = {
 		name = JAP_kazushige_ugaki
 
@@ -348,16 +254,9 @@ characters = {
 			}
 		}
 
-		#country_leader = {
-		#	ideology = japan_militarism_ideology
-		#	traits = {  }
-		#	expire = "1952.1.1.1"
-		#	id = -1
-		#}
 
 	}
 
-	# Senjūrō Hayashi
 	JAP_senjuro_hayashi = {
 		name = JAP_senjuro_hayashi
 
@@ -371,12 +270,6 @@ characters = {
 			}
 		}
 
-		#country_leader = {
-		#	ideology = japan_militarism_ideology
-		#	traits = {  }
-		#	expire = "1952.1.1.1"
-		#	id = -1
-		#}
 
 		corps_commander = {
 			traits = { politically_connected trickster infantry_leader }
@@ -398,7 +291,6 @@ characters = {
 
 	}
 
-	# Fumimaro Konoe
 	JAP_fumimaro_konoe = {
 		name = JAP_fumimaro_konoe
 
@@ -412,16 +304,9 @@ characters = {
 			}
 		}
 
-		#country_leader = {
-		#	ideology = japan_militarism_ideology
-		#	traits = {  }
-		#	expire = "1952.1.1.1"
-		#	id = -1
-		#}
 
 	}
 
-	# Tokugawa Iesato
 	JAP_tokugawa_iesato = {
 		name = JAP_tokugawa_iesato
 
@@ -432,15 +317,9 @@ characters = {
 			}
 		}
 
-		#country_leader = {
-		#	ideology = liberalism
-		#	expire = "1989.1.1.1"
-		#	id = -1
-		#}
 
 	}
 
-	# Adachi Kenzō
 	JAP_adachi_kenzo = {
 		name = JAP_adachi_kenzo
 
@@ -460,7 +339,6 @@ characters = {
 
 	}
 
-	# Seigō Nakano
 	JAP_seigo_nakano = {
 		name = JAP_seigo_nakano
 
@@ -471,16 +349,9 @@ characters = {
 			}
 		}
 
-		#country_leader = {
-		#	ideology = gen_nazism
-		#	traits = {  }
-		#	expire = "1952.1.1.1"
-		#	id = -1
-		#}
 
 	}
 
-	# Prince Tsuneyoshi Takeda
 	JAP_tsuneyoshi_takeda = {
 		name = JAP_tsuneyoshi_takeda
 
@@ -508,7 +379,6 @@ characters = {
 
 	}
 
-	# Prince Yasuhiko Asaka
 	JAP_yasuhiko_asaka = {
 		name = JAP_yasuhiko_asaka
 
@@ -533,7 +403,6 @@ characters = {
 
 	}
 
-	# Masakazu Kawabe
 	JAP_masakazu_kawabe = {
 		name = JAP_masakazu_kawabe
 
@@ -558,7 +427,6 @@ characters = {
 
 	}
 
-	# Tadaichi Wakamatsu
 	JAP_tadaichi_wakamatsu = {
 		name = JAP_tadaichi_wakamatsu
 
@@ -583,7 +451,6 @@ characters = {
 
 	}
 
-	# Masanobu Tsuji
 	JAP_masanobu_tsuji = {
 		name = JAP_masanobu_tsuji
 
@@ -608,7 +475,6 @@ characters = {
 
 	}
 
-	# Hayao Tada
 	JAP_hayao_tada = {
 		name = JAP_hayao_tada
 
@@ -634,7 +500,6 @@ characters = {
 
 	}
 
-	# Isamu Chō
 	JAP_isamu_cho = {
 		name = JAP_isamu_cho
 
@@ -663,7 +528,6 @@ characters = {
 
 	}
 
-	# Michitarō Komatsubara
 	JAP_michitaro_komatsubara = {
 		name = JAP_michitaro_komatsubara
 
@@ -688,7 +552,6 @@ characters = {
 
 	}
 
-	# Tomoyuki Yamashita
 	JAP_tomoyuki_yamashita = {
 		name = JAP_tomoyuki_yamashita
 
@@ -733,7 +596,6 @@ characters = {
 
 	}
 
-	# Hisaichi Terauchi
 	JAP_hisaichi_terauchi = {
 		name = JAP_hisaichi_terauchi
 
@@ -759,7 +621,7 @@ characters = {
 				base = 1
 			}
 			traits = {
-				mobile_warfare_expert	# was military_theorist
+				mobile_warfare_expert
 			}
 			on_add = {
 				JAP_small_army_faction_gain = yes
@@ -769,9 +631,8 @@ characters = {
 			}
 		}
 		
-		# Will be promoted to Field Marshal (Gensui) through focus
 		corps_commander = {
-			traits = { politically_connected JAP_samurai_lineage armor_officer } # offensive_doctrine
+			traits = { politically_connected JAP_samurai_lineage armor_officer }
 			skill = 4
 			attack_skill = 4
 			defense_skill = 4
@@ -782,7 +643,6 @@ characters = {
 
 	}
 
-	# Shunroku Hata
 	JAP_shunroku_hata = {
 		name = JAP_shunroku_hata
 
@@ -812,9 +672,8 @@ characters = {
 			}
 		}
 		
-		# Will be promoted to Field Marshal (Gensui) through focus
 		corps_commander = {
-			traits = { JAP_samurai_lineage brilliant_strategist } # offensive_doctrine
+			traits = { JAP_samurai_lineage brilliant_strategist }
 			skill = 4
 			attack_skill = 3
 			defense_skill = 4
@@ -825,7 +684,6 @@ characters = {
 
 	}
 
-	# Akira Mutō
 	JAP_akira_muto = {
 		name = JAP_akira_muto
 
@@ -848,7 +706,6 @@ characters = {
 
 	}
 
-	# Kanji Ishiwara
 	JAP_kanji_ishiwara = {
 		name = JAP_kanji_ishiwara
 
@@ -871,7 +728,6 @@ characters = {
 
 	}
 
-	# Shizuichi Tanaka
 	JAP_shizuichi_tanaka = {
 		name = JAP_shizuichi_tanaka
 
@@ -894,7 +750,6 @@ characters = {
 
 	}
 
-	# Yasuji Okamura
 	JAP_yasuji_okamura = {
 		name = JAP_yasuji_okamura
 
@@ -941,7 +796,6 @@ characters = {
 
 	}
 
-	# Toshizō Nishio
 	JAP_toshizo_nishio = {
 		name = JAP_toshizo_nishio
 
@@ -964,7 +818,6 @@ characters = {
 
 	}
 
-	# Rikichi Andō
 	JAP_rikichi_ando = {
 		name = JAP_rikichi_ando
 
@@ -987,7 +840,6 @@ characters = {
 
 	}
 
-	# Naruhiko Higashikuni
 	JAP_naruhiko_higashikuni = {
 		name = JAP_naruhiko_higashikuni
 
@@ -1009,7 +861,6 @@ characters = {
 		}
 	}
 
-	# Seishirō Itagaki
 	JAP_seishiro_itagaki = {
 		name = JAP_seishiro_itagaki
 
@@ -1032,7 +883,6 @@ characters = {
 
 	}
 
-	# Takashi Sakai
 	JAP_takashi_sakai = {
 		name = JAP_takashi_sakai
 
@@ -1055,7 +905,6 @@ characters = {
 
 	}
 
-	# Kenji Doihara
 	JAP_kenji_doihara = {
 		name = JAP_kenji_doihara
 
@@ -1093,7 +942,6 @@ characters = {
 
 	}
 
-	# Kenkichi Ueda
 	JAP_kenkichi_ueda = {
 		name = JAP_kenkichi_ueda
 
@@ -1116,7 +964,6 @@ characters = {
 
 	}
 
-	# Shigeru Honjō
 	JAP_shigeru_honjo = {
 		name = JAP_shigeru_honjo
 
@@ -1144,7 +991,6 @@ characters = {
 
 	}
 
-	# Yoshijirō Umezu
 	JAP_yoshijiro_umezu = {
 		name = JAP_yoshijiro_umezu
 
@@ -1189,7 +1035,6 @@ characters = {
 
 	}
 
-	# Hatazō Adachi
 	JAP_hatazo_adachi = {
 		name = JAP_hatazo_adachi
 
@@ -1212,7 +1057,6 @@ characters = {
 
 	}
 
-	# Iwane Matsui
 	JAP_iwane_matsui = {
 		name = JAP_iwane_matsui
 
@@ -1235,7 +1079,6 @@ characters = {
 
 	}
 
-	# Sadao Araki
 	JAP_sadao_araki = {
 		name = JAP_sadao_araki
 
@@ -1263,9 +1106,7 @@ characters = {
 
 	}
 
-	### NEW KODOHA COMMANDERS START ###
 
-	# Saburō Aizawa
 	JAP_saburo_aizawa = {
 		name = JAP_saburo_aizawa
 
@@ -1294,7 +1135,6 @@ characters = {
 
 	}
 
-	# Yoshiyuki Kawashima
 	JAP_yoshiyuki_kawashima = {
 		name = JAP_yoshiyuki_kawashima
 
@@ -1323,7 +1163,6 @@ characters = {
 
 	}
 
-	# Shirō Nonaka
 	JAP_shiro_nonaka = {
 		name = JAP_shiro_nonaka
 
@@ -1352,7 +1191,6 @@ characters = {
 
 	}
 
-	# Asaichi Isobe
 	JAP_asaichi_isobe = {
 		name = JAP_asaichi_isobe
 
@@ -1381,7 +1219,6 @@ characters = {
 
 	}
 
-	# Kiyosada Koda
 	JAP_kiyosada_koda = {
 		name = JAP_kiyosada_koda
 
@@ -1410,7 +1247,6 @@ characters = {
 
 	}
 
-	# Yasuhide Kurihara
 	JAP_yasuhide_kurihara = {
 		name = JAP_yasuhide_kurihara
 
@@ -1439,7 +1275,6 @@ characters = {
 
 	}
 
-	# Takaji Muranaka
 	JAP_takaji_muranaka = {
 		name = JAP_takaji_muranaka
 
@@ -1468,7 +1303,6 @@ characters = {
 
 	}
 
-	# Teruzō Andō
 	JAP_teruzo_ando = {
 		name = JAP_teruzo_ando
 
@@ -1497,7 +1331,6 @@ characters = {
 
 	}
 
-	# Jinzaburō Masaki
 	JAP_jinzaburo_masaki = {
 		name = JAP_jinzaburo_masaki
 
@@ -1511,12 +1344,6 @@ characters = {
 			}
 		}
 
-		#country_leader = {
-		#	ideology = japan_militarism_ideology
-		#	traits = { JAP_military_prime_minister }
-		#	expire = "1952.1.1.1"
-		#	id = -1
-		#}
 
 		corps_commander = {
 			traits = { organizer infantry_leader trait_JAP_kodoha_sympathizer }
@@ -1558,9 +1385,7 @@ characters = {
 
 	}
 
-	### NEW KODOHA COMMANDERS END ###
 
-	# Keisuke Fujie
 	JAP_keisuke_fujie = {
 		name = JAP_keisuke_fujie
 
@@ -1583,7 +1408,6 @@ characters = {
 
 	}
 
-	# Kiichirō Higuchi
 	JAP_kiichiro_higuchi = {
 		name = JAP_kiichiro_higuchi
 
@@ -1606,7 +1430,6 @@ characters = {
 
 	}
 
-	# Masaharu Homma
 	JAP_masaharu_homma = {
 		name = JAP_masaharu_homma
 
@@ -1629,7 +1452,6 @@ characters = {
 
 	}
 
-	# Harukichi Hyakutake
 	JAP_harukichi_hyakutake = {
 		name = JAP_harukichi_hyakutake
 
@@ -1652,7 +1474,6 @@ characters = {
 
 	}
 
-	# Jō Iimura
 	JAP_jo_iimura = {
 		name = JAP_jo_iimura
 
@@ -1675,7 +1496,6 @@ characters = {
 
 	}
 
-	# Hitoshi Imamura
 	JAP_hitoshi_imamura = {
 		name = JAP_hitoshi_imamura
 
@@ -1714,7 +1534,6 @@ characters = {
 
 	}
 
-	# Masatane Kanda
 	JAP_masatane_kanda = {
 		name = JAP_masatane_kanda
 
@@ -1737,7 +1556,6 @@ characters = {
 
 	}
 
-	# Kunaiki Koiso
 	JAP_kuniaki_koiso = {
 		name = JAP_kuniaki_koiso
 
@@ -1782,7 +1600,6 @@ characters = {
 
 	}
 
-	# Isoroku Yamamoto
 	JAP_isoroku_yamamoto = {
 
 		name = JAP_isoroku_yamamoto
@@ -1792,9 +1609,6 @@ characters = {
 				large = GFX_portrait_JAP_isoroku_yamamoto
 				small = GFX_idea_isoroku_yamamoto
 			}
-			#civilian = {
-			#	large = GFX_portrait_JAP_isoroku_yamamoto_scientist
-			#}
 		}
 
 		advisor = {
@@ -1836,7 +1650,6 @@ characters = {
 
 	}
 
-	# Yuzuru Hiraga
 	JAP_yuzuru_hiraga = {
 
 		name = JAP_yuzuru_hiraga
@@ -1870,7 +1683,6 @@ characters = {
 
 	}
 
-	# Masafumi Arima
 	JAP_masafumi_arima = {
 
 		name = JAP_masafumi_arima
@@ -1894,7 +1706,6 @@ characters = {
 
 	}
 
-	# Teijirō Toyoda
 	JAP_teijiro_toyoda = {
 
 		name = JAP_teijiro_toyoda
@@ -1918,7 +1729,6 @@ characters = {
 
 	}
 
-	# Chūichi Nagumo
 	JAP_chuuichi_nagumo = {
 
 		name = JAP_chuuichi_nagumo
@@ -1942,7 +1752,6 @@ characters = {
 
 	}
 
-	# Tamon Yamaguchi
 	JAP_tamon_yamaguchi = {
 
 		name = JAP_tamon_yamaguchi
@@ -1966,7 +1775,6 @@ characters = {
 
 	}
 
-	# Hideo Iwakuro
 	JAP_hideo_iwakuro = {
 		name = JAP_hideo_iwakuro
 
@@ -1999,7 +1807,6 @@ characters = {
 
 	}
 
-	# Mineichi Koga
 	JAP_mineichi_koga = {
 		name = JAP_mineichi_koga
 
@@ -2022,7 +1829,6 @@ characters = {
 
 	}
 
-	# Kiyoshi Hasegawa
 	JAP_kiyoshi_hasegawa = {
 		name = JAP_kiyoshi_hasegawa
 
@@ -2045,7 +1851,6 @@ characters = {
 
 	}
 
-	# Shigeyoshi Inoue
 	JAP_shigeyoshi_inoue = {
 		name = JAP_shigeyoshi_inoue
 
@@ -2068,7 +1873,6 @@ characters = {
 
 	}
 
-	# Nobutake Kondō
 	JAP_nobutake_kondo = {
 		name = JAP_nobutake_kondo
 
@@ -2091,7 +1895,6 @@ characters = {
 
 	}
 
-	# Takeo Takagi
 	JAP_takeo_takagi = {
 		name = JAP_takeo_takagi
 
@@ -2114,7 +1917,6 @@ characters = {
 
 	}
 
-	# Soemu Toyoda
 	JAP_soemu_toyoda = {
 		name = JAP_soemu_toyoda
 
@@ -2155,7 +1957,6 @@ characters = {
 
 	}
 
-	# Jisaburō Ozawa
 	JAP_jisaburo_ozawa = {
 		name = JAP_jisaburo_ozawa
 
@@ -2178,7 +1979,6 @@ characters = {
 
 	}
 
-	# Zengo Yoshida
 	JAP_zengo_yoshida = {
 		name = JAP_zengo_yoshida
 
@@ -2201,7 +2001,6 @@ characters = {
 
 	}
 
-	# Hiroaki Abe
 	JAP_hiroaki_abe = {
 		name = JAP_hiroaki_abe
 
@@ -2224,7 +2023,6 @@ characters = {
 
 	}
 
-	# Tadashige Daigo
 	JAP_tadashige_daigo = {
 		name = JAP_tadashige_daigo
 
@@ -2247,7 +2045,6 @@ characters = {
 
 	}
 
-	# Gengo Hyakutake
 	JAP_gengo_hyakutake = {
 		name = JAP_gengo_hyakutake
 
@@ -2271,15 +2068,10 @@ characters = {
 	}
 
 
-	### THEORISTS ###
 
-	# Yamashita up there
 
-	# Terauchi up there
 
-	# Yamamoto up there
 
-	# Minoru Genda
 	JAP_minoru_genda = {
 		name = JAP_minoru_genda
 
@@ -2311,7 +2103,6 @@ characters = {
 
 	}
 
-	# Yoshitoshi Tokugawa
 	JAP_yoshitoshi_tokugawa = {
 		name = JAP_yoshitoshi_tokugawa
 
@@ -2365,7 +2156,6 @@ characters = {
 
 	}
 
-	# Hino Kumazō
 	JAP_hino_kumazo = {
 		name = JAP_hino_kumazo
 
@@ -2391,9 +2181,7 @@ characters = {
 
 	}
 
-	### ARMY CHIEFS ###
 
-	# Prince Kan'in Kotohito
 	JAP_kanin_kotohito = {
 		name = JAP_kanin_kotohito
 
@@ -2438,7 +2226,6 @@ characters = {
 
 	}
 
-	# Prince Nashimoto Morimasa
 	JAP_nashimoto_morimasa = {
 		name = JAP_nashimoto_morimasa
 
@@ -2486,7 +2273,6 @@ characters = {
 
 	}
 
-	# Hajime Sugiyama
 	JAP_hajime_sugiyama = {
 		name = JAP_hajime_sugiyama
 
@@ -2520,7 +2306,6 @@ characters = {
 
 	}
 
-	# Hideki Tōjō
 	JAP_hideki_tojo = {
 		name = JAP_hideki_tojo
 
@@ -2563,18 +2348,10 @@ characters = {
 			legacy_id = -1
 		}
 
-		#country_leader = {
-		#	ideology = emperor_fascism # was fascism_ideology
-		#	traits = {  }
-		#	expire = "1948.1.1.1"
-		#	id = -1
-		#}
 
 	}
 
-	### NAVY CHIEFS ###
 
-	# Fushimi Hioyasu
 	JAP_fushimi_hiroyasu = {
 		name = JAP_fushimi_hiroyasu
 
@@ -2605,7 +2382,6 @@ characters = {
 
 	}
 
-	# Osami Nagano
 	JAP_osami_nagano = {
 		name = JAP_osami_nagano
 
@@ -2636,7 +2412,6 @@ characters = {
 
 	}
 
-	# Shigetarō Shimada
 	JAP_shigetaro_shimada = {
 		name = JAP_shigetaro_shimada
 
@@ -2668,11 +2443,8 @@ characters = {
 	}
 
 
-	### AIR CHIEFS ###
 
-	# Doihara up there
 
-	# Torashirō Kawabe
 	JAP_torashiro_kawabe = {
 		name = JAP_torashiro_kawabe
 
@@ -2699,7 +2471,6 @@ characters = {
 
 	}
 
-	# Korechika Anami
 	JAP_korechika_anami = {
 		name = JAP_korechika_anami
 
@@ -2726,17 +2497,11 @@ characters = {
 	}
 
 
-	### MILITARY HIGH COMMAND ###
 
-	# Hata up there
 
-	# Okamura up there
 
-	# Imamura up there
 
-	# Toyoda up there
 
-	# Mitsuo Fuchida
 	JAP_mitsuo_fuchida = {
 		name = JAP_mitsuo_fuchida
 
@@ -2764,7 +2529,6 @@ characters = {
 
 	}
 
-	# Nishizō Tsukahara
 	JAP_nishizo_tsukahara = {
 		name = JAP_nishizo_tsukahara
 
@@ -2792,7 +2556,6 @@ characters = {
 
 	}
 	
-	# Tateo Katō
 	JAP_tateo_kato = {
 		name = JAP_tateo_kato
 
@@ -2820,7 +2583,6 @@ characters = {
 
 	}
 	
-	# Matome Ugaki
 	JAP_matome_ugaki = {
 		name = JAP_matome_ugaki
 
@@ -2848,7 +2610,6 @@ characters = {
 
 	}
 	
-	# Chūichi Nagumo
 	JAP_chuichi_nagumo = {
 		name = JAP_chuichi_nagumo
 
@@ -2877,9 +2638,7 @@ characters = {
 	}
 
 
-	### POLITICAL ADVISORS ###
 
-	# Sanzō Nosaka
 	JAP_sanzo_nosaka = {
 		instance = {
 			allowed = {
@@ -2948,18 +2707,11 @@ characters = {
 				}
 			}
 
-			# Will be a potential Kozaha country leader
-			#country_leader = {
-			#	ideology = marxism
-			#	expire = "1989.1.1.1"
-			#	id = -1
-			#}
 
 		}
 
 	}
 
-	# Kijūrō Shidehara
 	JAP_kijuro_shidehara = {
 
 		instance = {
@@ -3058,7 +2810,6 @@ characters = {
 
 	}
 
-	# Kingoro Hashimoto
 	JAP_kingoro_hashimoto = {
 
 		instance = {
@@ -3176,7 +2927,6 @@ characters = {
 
 	}
 
-	# Mitsumasa Yonai
 	JAP_mitsumasa_yonai = {
 
 		instance = {
@@ -3194,7 +2944,6 @@ characters = {
 				}
 				civilian = {
 					small = GFX_portrait_JAP_mitsumasa_yonai_civilian_small
-					# GFX_portrait_JAP_mitsumasa_yonai_civilian_imprisoned
 				}
 			}
 
@@ -3278,7 +3027,6 @@ characters = {
 				}
 				visible = {
 					NOT = {
-						#has_completed_focus = JAP_sea_purge_the_kodoha_faction
 						has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
 					}
 				}
@@ -3305,19 +3053,12 @@ characters = {
 				}
 			}
 
-			# Potential Democratic Country Leader
-			#country_leader = {
-			#	ideology = conservatism
-			#	expire = "1989.1.1.1"
-			#	id = -1
-			#}
 
 		}
 		
 
 	}
 
-	# Hiroshi Ōshima
 	JAP_hiroshi_oshima = {
 
 		instance = {
@@ -3406,7 +3147,6 @@ characters = {
 
 	}
 
-	# Chiune Sugihara
 	JAP_chiune_sugihara = {
 		name = JAP_chiune_sugihara
 
@@ -3436,7 +3176,6 @@ characters = {
 
 	}
 
-	# Takuo Godō
 	JAP_takuo_godo = {
 		name = JAP_takuo_godo
 
@@ -3462,7 +3201,6 @@ characters = {
 
 	}
 
-	# Shun Akikusa
 	JAP_shun_akikusa = {
 		name = JAP_shun_akikusa
 
@@ -3497,7 +3235,6 @@ characters = {
 
 	}
 
-	# Taketora Ogata
 	JAP_taketora_ogata = {
 		name = JAP_taketora_ogata
 
@@ -3524,11 +3261,7 @@ characters = {
 			}
 
 			available = {
-				#OR = {
-					#has_completed_focus = JAP_found_the_great_japan_press_association
-					#has_completed_focus = JAP_propagandize_the_nihon_shoki
 					has_completed_focus = JAP_reform_the_education_system
-				#}
 			}
 			traits = {
 				JAP_asahi_shimbun_editor
@@ -3540,7 +3273,6 @@ characters = {
 
 	}
 
-	# Morihei Ueshiba
 	JAP_morihei_ueshiba = {
 		name = JAP_morihei_ueshiba
 
@@ -3579,7 +3311,6 @@ characters = {
 
 	}
 
-	# Takahashi Korekiyo
 	JAP_takahashi_korekiyo = {
 		name = JAP_takahashi_korekiyo
 
@@ -3628,7 +3359,6 @@ characters = {
 
 	}
 
-	# Naoki Hoshino
 	JAP_naoki_hoshino = {
 		name = JAP_naoki_hoshino
 
@@ -3673,7 +3403,6 @@ characters = {
 
 	}
 
-	# Fukumoto Kazuo
 	JAP_fukumoto_kazuo = {
 		name = JAP_fukumoto_kazuo
 
@@ -3714,7 +3443,6 @@ characters = {
 
 	}
 
-	# Kōichi Kido
 	JAP_koichi_kido = {
 		name = JAP_koichi_kido
 
@@ -3756,7 +3484,6 @@ characters = {
 
 	}
 
-	# Shigenori Tōgō
 	JAP_shigenori_togo = {
 		name = JAP_shigenori_togo
 
@@ -3795,7 +3522,6 @@ characters = {
 
 	}
 
-	# Nisshō Inoue
 	JAP_nissho_inoue = {
 		name = JAP_nissho_inoue
 
@@ -3834,7 +3560,6 @@ characters = {
 
 	}
 
-	# Bin Akao
 	JAP_bin_akao = {
 		name = JAP_bin_akao
 
@@ -3873,7 +3598,6 @@ characters = {
 
 	}
 
-	# Yukio Ozaki
 	JAP_yukio_ozaki = {
 		name = JAP_yukio_ozaki
 
@@ -3912,7 +3636,6 @@ characters = {
 
 	}
 
-	# Tōyama Mitsuru
 	JAP_toyama_mitsuru = {
 		name = JAP_toyama_mitsuru
 
@@ -3951,7 +3674,6 @@ characters = {
 
 	}
 
-	# Hajime Kawakami
 	JAP_hajime_kawakami = {
 		name = JAP_hajime_kawakami
 
@@ -3991,7 +3713,6 @@ characters = {
 
 	}
 
-	# Osamu Shimomura
 	JAP_osamu_shimomura = {
 		name = JAP_osamu_shimomura
 
@@ -4031,7 +3752,6 @@ characters = {
 
 	}
 
-	# Heisuke Yanagawa
 	JAP_heisuke_yanagawa = {
 		name = JAP_heisuke_yanagawa
 
@@ -4102,14 +3822,12 @@ characters = {
 
 	}
 
-	# Yōsuke Matsuoka
 	JAP_yosuke_matsuoka = {
 		name = JAP_yosuke_matsuoka
 
 		portraits = {
 			civilian = {
 				small = GFX_portrait_JAP_yosuke_matsuoka_small
-				# GFX_portrait_JAP_komakichi_matsuoka_imprisoned
 			}
 		}
 
@@ -4139,7 +3857,6 @@ characters = {
 
 	}
 
-	# Genki Abe
 	JAP_genki_abe = {
 		name = JAP_genki_abe
 
@@ -4178,7 +3895,6 @@ characters = {
 
 	}
 
-	# Nobusuke Kishi
 	JAP_nobusuke_kishi = {
 		name = JAP_nobusuke_kishi
 
@@ -4217,7 +3933,6 @@ characters = {
 
 	}
 
-	# Masatoshi Ōkōchi
 	JAP_masatoshi_okochi = {
 		name = JAP_masatoshi_okochi
 
@@ -4253,7 +3968,6 @@ characters = {
 
 	}
 
-	# Hideo Shima
 	JAP_hideo_shima = {
 		name = JAP_hideo_shima
 
@@ -4293,7 +4007,6 @@ characters = {
 
 	}
 
-	# Shūmei Ōkawa
 	JAP_shumei_okawa = {
 		name = JAP_shumei_okawa
 
@@ -4332,7 +4045,6 @@ characters = {
 
 	}
 
-	# Ichikawa Fusae
 	JAP_ichikawa_fusae = {
 		name = JAP_ichikawa_fusae
 
@@ -4372,7 +4084,6 @@ characters = {
 
 	}
 
-	# Komakichi Matsuoka
 	JAP_komakichi_matsuoka = {
 		name = JAP_komakichi_matsuoka
 
@@ -4416,7 +4127,6 @@ characters = {
 
 	}
 
-	# Yoshio Shiga
 	JAP_yoshio_shiga = {
 		name = JAP_yoshio_shiga
 
@@ -4456,7 +4166,6 @@ characters = {
 
 	}
 
-	# Hisachi Aso
 	JAP_hisachi_aso = {
 		name = JAP_hisachi_aso
 
@@ -4498,7 +4207,6 @@ characters = {
 
 	}
 
-	# Suzuki Bunji
 	JAP_suzuki_bunji = {
 		name = JAP_suzuki_bunji
 
@@ -4540,7 +4248,6 @@ characters = {
 
 	}
 
-	# Okinori Kaya
 	JAP_okinori_kaya = {
 		name = JAP_okinori_kaya
 
@@ -4581,7 +4288,6 @@ characters = {
 
 	}
 
-	# Hakamada Satomi
 	JAP_hakamada_satomi = {
 		name = JAP_hakamada_satomi
 
@@ -4620,7 +4326,6 @@ characters = {
 
 	}
 
-	# Koyata Iwasaki
 	JAP_koyata_iwasaki = {
 		name = JAP_koyata_iwasaki
 
@@ -4664,7 +4369,6 @@ characters = {
 
 	}
 
-	# Chikuhei Nakajima
 	JAP_chikuhei_nakajima = {
 		name = JAP_chikuhei_nakajima
 
@@ -4704,14 +4408,12 @@ characters = {
 
 	}
 
-	# Noboru Yamaguchi
 	JAP_noboru_yamaguchi = {
 		name = JAP_noboru_yamaguchi
 
 		portraits = {
 			civilian = {
 				small = GFX_portrait_JAP_noboru_yamaguchi_small
-				# GFX_portrait_JAP_noboru_yamaguchi_imprisoned
 			}
 		}
 
@@ -4747,7 +4449,6 @@ characters = {
 
 	}
 
-	# Yoshisuke Aikawa
 	JAP_yoshisuke_aikawa = {
 		name = JAP_yoshisuke_aikawa
 
@@ -4787,7 +4488,6 @@ characters = {
 
 	}
 
-	# Kenjiro Matsumoto
 	JAP_kenjiro_matsumoto = {
 		name = JAP_kenjiro_matsumoto
 
@@ -4835,7 +4535,6 @@ characters = {
 
 	}
 
-	# Yoshihige Abe
 	JAP_yoshihige_abe = {
 		name = JAP_yoshihige_abe
 
@@ -4877,7 +4576,6 @@ characters = {
 
 	}
 
-	# Uzō Nishiyama
 	JAP_uzo_nishiyama = {
 		name = JAP_uzo_nishiyama
 
@@ -4916,7 +4614,6 @@ characters = {
 
 	}
 
-	# Tsuji Jun
 	JAP_tsuji_jun = {
 		name = JAP_tsuji_jun
 
@@ -4956,7 +4653,6 @@ characters = {
 
 	}
 
-	# Hiratsuka Raichō
 	JAP_hiratsuka_raicho = {
 		name = JAP_hiratsuka_raicho
 
@@ -4996,7 +4692,6 @@ characters = {
 
 	}
 
-	# Masamichi Royama
 	JAP_masamichi_royama = {
 		name = JAP_masamichi_royama
 
@@ -5036,7 +4731,6 @@ characters = {
 
 	}
 
-	# Minoru Takano
 	JAP_minoru_takano = {
 		name = JAP_minoru_takano
 
@@ -5075,7 +4769,6 @@ characters = {
 
 	}
 
-	# Kojiro Fukushi
 	JAP_kojiro_fukushi = {
 		name = JAP_kojiro_fukushi
 
@@ -5114,7 +4807,6 @@ characters = {
 
 	}
 
-	# Gōtarō Ogawa
 	JAP_gotaro_ogawa = {
 		name = JAP_gotaro_ogawa
 
@@ -5155,7 +4847,6 @@ characters = {
 
 	}
 
-	# Hotsumi Ozaki
 	JAP_hotsumi_ozaki = {
 		name = JAP_hotsumi_ozaki
 
@@ -5196,14 +4887,12 @@ characters = {
 
 	}
 
-	# Kōzō Sasaki
 	JAP_kozo_sasaki = {
 		name = JAP_kozo_sasaki
 
 		portraits = {
 			civilian = {
 				small = GFX_portrait_JAP_kozo_sasaki_small
-				# GFX_portrait_JAP_kozo_sasaki_imprisoned
 			}
 		}
 
@@ -5242,7 +4931,6 @@ characters = {
 
 	}
 
-	# Girō Seno'o
 	JAP_giro_senoo = {
 		name = JAP_giro_senoo
 
@@ -5253,11 +4941,6 @@ characters = {
 			}
 		}
 
-		#country_leader = {
-		#	ideology = buddhist_socialism
-		#	expire = "1989.1.1.1"
-		#	id = -1
-		#}
 
 		advisor = {
 			slot = political_advisor
@@ -5293,7 +4976,6 @@ characters = {
 
 	}
 
-	# Kiichirō Hiranuma
 	JAP_kiichiro_hiranuma = {
 		name = JAP_kiichiro_hiranuma
 
@@ -5334,7 +5016,6 @@ characters = {
 
 	}
 
-	# Yamauchi Sachiko
 	JAP_yamauchi_sachiko = {
 		name = JAP_yamauchi_sachiko
 
@@ -5373,7 +5054,6 @@ characters = {
 
 	}
 
-	# Onisaburo Deguchi
 	JAP_onisaburo_deguchi = {
 		name = JAP_onisaburo_deguchi
 
@@ -5412,7 +5092,6 @@ characters = {
 
 	}
 
-	# Saionji Kinmochi
 	JAP_saionji_kinmochi = {
 		name = JAP_saionji_kinmochi
 
@@ -5452,7 +5131,6 @@ characters = {
 
 	}
 
-	# Akira Kurosawa
 	JAP_akira_kurosawa = {
 		name = JAP_akira_kurosawa
 
@@ -5492,7 +5170,6 @@ characters = {
 
 	}
 
-	# Gempō Yamamoto
 	JAP_gempo_yamamoto = {
 		name = JAP_gempo_yamamoto
 
@@ -5531,7 +5208,6 @@ characters = {
 
 	}
 
-	# Harukichi Shimoi
 	JAP_harukichi_shimoi = {
 		name = JAP_harukichi_shimoi
 
@@ -5570,7 +5246,6 @@ characters = {
 
 	}
 
-	# Wakatsuki Reijirō
 	JAP_wakatsuki_reijiro = {
 		name = JAP_wakatsuki_reijiro
 
@@ -5606,7 +5281,6 @@ characters = {
 
 	}
 
-	# Shinji Sogō
 	JAP_shinji_sogo = {
 		name = JAP_shinji_sogo
 
@@ -5642,7 +5316,6 @@ characters = {
 
 	}
 
-	# Jōtarō Watanabe
 	JAP_jotaro_watanabe = {
 		name = JAP_jotaro_watanabe
 
@@ -5684,7 +5357,6 @@ characters = {
 
 	}
 
-	# Toyoaki Horiuchi
 	JAP_toyoaki_horiuchi = {
 		name = JAP_toyoaki_horiuchi
 
@@ -5725,18 +5397,9 @@ characters = {
 
 
 
-  #####                                                              
- #     #   ####   #  ######  #    #  #####  #   ####   #####   ####  
- #        #    #  #  #       ##   #    #    #  #         #    #      
-  #####   #       #  #####   # #  #    #    #   ####     #     ####  
-       #  #       #  #       #  # #    #    #       #    #         # 
- #     #  #    #  #  #       #   ##    #    #  #    #    #    #    # 
-  #####    ####   #  ######  #    #    #    #   ####     #     ####  
 
 
-	#JAP_isoroku_yamamoto up there
 
-	# Yoshio Nishina
 	JAP_yoshio_nishina = {
 		name = JAP_yoshio_nishina
 		portraits = {
@@ -5759,25 +5422,9 @@ characters = {
 		}
 
 
-		#advisor = {
-		#	cost = 100
-		#	slot = theorist
-		#	idea_token = yoshio_nishina
-		#	ledger = army
-		#	allowed = {
-		#		original_tag = JAP
-		#	}
-		#	research_bonus = {
-		#		nuclear = 0.150
-		#	}
-		#	traits = {
-		#		nuclear_scientist
-		#	}
-		#}
 
 	}
 
-	# Hideo Itokawa
 	JAP_hideo_itokawa = {
 		name = JAP_hideo_itokawa
 		portraits = {
@@ -5794,25 +5441,9 @@ characters = {
 			}
 		}
 
-		#advisor = {
-		#	cost = 100
-		#	slot = theorist
-		#	idea_token = hideo_itokawa
-		#	ledger = air
-		#	allowed = {
-		#		original_tag = JAP
-		#	}
-		#	research_bonus = {
-		#		rocketry = 0.150
-		#	}
-		#	traits = {
-		#		rocket_scientist
-		#	}
-		#}
 
 	}
 
-	# Kijirō Nambu
 	JAP_kijiro_nambu = {
 		name = JAP_kijiro_nambu
 
@@ -5823,7 +5454,7 @@ characters = {
 		}
 
 		scientist = {
-			traits = { scientist_trait_artillery_specialist } # Iwakuro is the scientist_trait_armored_specialist guy
+			traits = { scientist_trait_artillery_specialist }
 			skills = {
 				specialization_land = 2
 			}
@@ -5831,7 +5462,6 @@ characters = {
 
 	}
 
-	# Keiji Fukuda
 	JAP_keiji_fukuda = {
 		name = JAP_keiji_fukuda
 
@@ -5850,7 +5480,6 @@ characters = {
 
 	}
 
-	# Jiro Horikoshi
 	JAP_jiro_horikoshi = {
 		name = JAP_jiro_horikoshi
 
@@ -5877,7 +5506,6 @@ characters = {
 
 	}
 
-	# Hideki Yukawa
 	JAP_hideki_yukawa = {
 		name = JAP_hideki_yukawa
 
@@ -5896,7 +5524,6 @@ characters = {
 
 	}
 
-	# Yōji Itō
 	JAP_yoji_ito = {
 		name = JAP_yoji_ito
 
@@ -5917,7 +5544,6 @@ characters = {
 
 
 
-	#### FAKE COMMUNIST GENERALS NON-SEA #####
 
 	JAP_random_general_1 = {
 		portraits = {
@@ -5934,7 +5560,7 @@ characters = {
 			defense_skill = 4
 			planning_skill = 3
 			logistics_skill = 2
-			legacy_id = 750 #communist general 1
+			legacy_id = 750
 			visible = {
 				has_completed_focus = JAP_approach_the_young_officers
 			}
@@ -5956,7 +5582,7 @@ characters = {
 			defense_skill = 2
 			planning_skill = 1
 			logistics_skill = 2
-			legacy_id = 751 #communist general 2
+			legacy_id = 751
 			visible = {
 				has_completed_focus = JAP_approach_the_young_officers
 			}
@@ -5979,7 +5605,7 @@ characters = {
 			defense_skill = 1
 			planning_skill = 3
 			logistics_skill = 3
-			legacy_id = 752 #communist general 3
+			legacy_id = 752
 			visible = {
 				has_completed_focus = JAP_approach_the_young_officers
 			}

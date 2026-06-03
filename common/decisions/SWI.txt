@@ -40,7 +40,6 @@ SWI_debug_decisions_category = {
 		}
 	}
 
-	#MM: Never used. Unlocalized
 	SWI_add_100MR = {
 		complete_effect = {
 			add_to_variable = {
@@ -120,7 +119,7 @@ SWI_debug_decisions_category = {
 
 SWI_federal_council_decisions_category = {
 
-	SWI_oust_confederation_president = { #kicks out the current president 
+	SWI_oust_confederation_president = {
 		
 		icon = GFX_decision_SWI_dismiss_council
 
@@ -128,7 +127,6 @@ SWI_federal_council_decisions_category = {
 		allowed = { original_tag = SWI }
 
 		visible = { 
-			#has_completed_focus = SWI_swiss_guiding_principles
 			has_variable = SWI_confederation_president 
 			NOT = { has_country_flag = SWI_elected_centralized_president }
 		}
@@ -158,7 +156,7 @@ SWI_federal_council_decisions_category = {
 			add_ideas = { SWI_no_confederation_president_idea }
 		}
 
-		ai_will_do = { #shouldn't do it in historical
+		ai_will_do = {
 			base = 1 
 			modifier  = {
 				factor = 0 
@@ -167,7 +165,7 @@ SWI_federal_council_decisions_category = {
 		}
 	}
 
-	SWI_no_elected_president = { #Activates when there's no president. heavy penalties
+	SWI_no_elected_president = {
 		icon = GFX_decision_SWI_no_elected_president
 		priority = 103
 
@@ -175,7 +173,6 @@ SWI_federal_council_decisions_category = {
 
 		visible = {
 			has_country_flag = SWI_vacant_confederation_president_position
-			#has_completed_focus = SWI_swiss_guiding_principles 
 		}
 
 		available = {
@@ -189,7 +186,6 @@ SWI_federal_council_decisions_category = {
 
 		activation = {
 			has_country_flag = SWI_vacant_confederation_president_position
-			#has_completed_focus = SWI_swiss_guiding_principles 
 
 		}
 
@@ -202,7 +198,7 @@ SWI_federal_council_decisions_category = {
 		}
 	}
 
- 	SWI_elect_a_new_confederation_president = { #Allows you to elect a new president
+ 	SWI_elect_a_new_confederation_president = {
 		icon = GFX_decision_SWI_elect_confederation_president
 		priority = 102
 
@@ -215,7 +211,6 @@ SWI_federal_council_decisions_category = {
 		available = {
 			has_active_mission = SWI_no_elected_president
 			NOT = { has_variable = SWI_confederation_president }
-			#has_country_flag = SWI_vacant_confederation_president_position
 		}
 
 		cost = 250 
@@ -229,7 +224,7 @@ SWI_federal_council_decisions_category = {
 			}
 		}
 
-		ai_will_do = { #As soon as it shows up it should be used 
+		ai_will_do = {
 			base = 1000 
 		}
 
@@ -309,7 +304,7 @@ SWI_federal_council_decisions_category = {
 			defense_bonus_against = 0.25
 		}
 
-		ai_will_do = { #As soon as it shows up it should be used 
+		ai_will_do = {
 			base = 100 
 		}
 
@@ -364,7 +359,7 @@ SWI_federal_council_decisions_category = {
 			attack_bonus_against = 0.15 
 		}
 
-		ai_will_do = { #As soon as it shows up it should be used 
+		ai_will_do = {
 			base = 100 
 		}
 	}
@@ -539,7 +534,7 @@ SWI_federal_council_decisions_category = {
 				NOT = {
 					is_owned_and_controlled_by = ROOT
 					has_state_flag = SWI_influence_succeeded
-					AND = { #This might be dumb but added it so SWI can't get Alsace lorraine unless they own Framche-comte because it would look ugly and it's trolly as fuck
+					AND = {
 						state = 28
 						NOT = {	SWI = { owns_State = 17	} }	
 					}
@@ -573,17 +568,17 @@ SWI_federal_council_decisions_category = {
 
 		remove_effect = {
 			random_list = {
-				33 = { #Influence succeeds
+				33 = {
 					modifier = { 
-						factor = 1.2 #Better chance if it's an Alpine State
+						factor = 1.2
 						FROM = { is_alpine_state = yes }
 					}
 					modifier = {
-						factor = 1.2 #Better chance if tried once and failed. 
+						factor = 1.2
 						FROM = { has_state_flag = SWI_influence_failed } 
 					}
 					modifier = {
-						factor = 1.2 #Better chance if another state has a claim by Switzerland
+						factor = 1.2
 						FROM = {
 							OWNER = {
 								any_owned_state = {
@@ -596,7 +591,7 @@ SWI_federal_council_decisions_category = {
 					ROOT = { country_event = { id = BBA_swiss_expansion.2 hours = 2 } } 
 					
 				}
-				66 = { #Influence failed
+				66 = {
 					FROM = {
 						ROOT = { country_event = { id = BBA_swiss_expansion.1 hours = 3 } } 
 					}
@@ -749,7 +744,7 @@ SWI_federal_council_decisions_category = {
 			}
 		}
 
-		ai_will_do = { #The ai should not get this decision, but if they somehow do, let them invite everyone ¯\_(ツ)_/¯
+		ai_will_do = {
 			base = 120 
 		}
 	}
@@ -858,7 +853,7 @@ SWI_federal_council_decisions_category = {
 					SWI_country_about_to_be_angry = yes 
 				}
 			}
-			modifier = { #If the AI is fascist or somehow puppeted by a fascis it should get rid of this ASAP 
+			modifier = {
 				add = 200 
 				OR = {
 					SWI_AI_is_fascist = yes 
@@ -871,7 +866,7 @@ SWI_federal_council_decisions_category = {
 		}
 	}
 
-	SWI_dismiss_council = { #Fires all your council, makes the president an actual president. UNLIMITED POWEEEEEEER!!!!!!!!!!!!! 
+	SWI_dismiss_council = {
 		icon = GFX_decision_SWI_dismiss_council
 
 		priority = 200
@@ -1059,9 +1054,6 @@ SWI_federal_council_decisions_category = {
 		}
 	}
 
-########################################################################
-######################## COUNCIL PRESIDENT INITIATIVES ################# 	
-########################################################################
 
 
 	SWI_recently_finished_president_initiative_mission = {
@@ -1098,7 +1090,7 @@ SWI_federal_council_decisions_category = {
 
 	}
 
-	SWI_defense_fund_drive = { #For Pragmatic Democrat and Democratic Capitalist Presidents
+	SWI_defense_fund_drive = {
 
 		icon = GFX_decision_generic_fundraising
 
@@ -1161,7 +1153,7 @@ SWI_federal_council_decisions_category = {
 	}
 
 
-	SWI_swiss_democratic_tradition_campaign = { #For Cantonal Conservatives and Radical Democrats
+	SWI_swiss_democratic_tradition_campaign = {
 
 		icon = GFX_decision_SWI_swiss_democratic_tradition_campaign
 
@@ -1228,7 +1220,7 @@ SWI_federal_council_decisions_category = {
 		}
 	}
 
-	SWI_rally_workers = { #for Trade Unionist and Corporatist Presidents
+	SWI_rally_workers = {
 
 		icon = GFX_decision_eng_propaganda_campaigns
 
@@ -1297,7 +1289,7 @@ SWI_federal_council_decisions_category = {
 		}
 	}
 
-	SWI_anti_fascist_drive = { #for Anarchists and Soviet Spies
+	SWI_anti_fascist_drive = {
 
 		icon = GFX_decision_generic_civil_support
 
@@ -1368,7 +1360,7 @@ SWI_federal_council_decisions_category = {
 		}
 	}
 
-	SWI_focus_on_swiss_unity = { #For Social Democrats and Socialist Pacifist Presidents 
+	SWI_focus_on_swiss_unity = {
 
 		icon = GFX_decision_SWI_focus_on_swiss_unity
 
@@ -1438,7 +1430,7 @@ SWI_federal_council_decisions_category = {
 		}
 	}
 
-	SWI_isolate_switzerland = { #For Conservative Democrats
+	SWI_isolate_switzerland = {
 
 		icon = GFX_decision_SWI_isolate_switzerland
 		
@@ -1504,7 +1496,7 @@ SWI_federal_council_decisions_category = {
 		}
 	}
 
-	SWI_militarization_drive = { #For Militaristic Democrats and Militaristic Nationalists
+	SWI_militarization_drive = {
 
 		icon = GFX_decision_generic_military
 
@@ -1567,7 +1559,7 @@ SWI_federal_council_decisions_category = {
 		}
 	}	
 
-	SWI_expand_covert_operations = { #For Intelligence Officers 
+	SWI_expand_covert_operations = {
 	
 		icon = GFX_decision_SWI_expand_covert_operations
 
@@ -1627,7 +1619,7 @@ SWI_federal_council_decisions_category = {
 		}
 	}
 
-	SWI_expand_arms_industry = { #For Weapons Designers 
+	SWI_expand_arms_industry = {
 
 		icon = GFX_decision_generic_industry	
 
@@ -1683,7 +1675,7 @@ SWI_federal_council_decisions_category = {
 		}
 	}
 
-	SWI_support_humanitarian_efforts = { #For Humanitarians
+	SWI_support_humanitarian_efforts = {
 
 		icon = GFX_decision_SWI_support_humanitarian_efforts
 
@@ -1784,7 +1776,7 @@ SWI_federal_council_decisions_category = {
 		}
 	}
 
-	SWI_diplomatic_mission = { #For Diplomat Presidents
+	SWI_diplomatic_mission = {
 
 		icon = GFX_decision_hol_exchange_intelligence_data
 
@@ -1851,7 +1843,7 @@ SWI_federal_council_decisions_category = {
 		}	
 	}
 
-	SWI_spouse_fascism = { #For Fascist Propagandist and fascist recruiters 
+	SWI_spouse_fascism = {
 	
 		icon = GFX_decision_hol_radio_oranje
 
@@ -1926,7 +1918,7 @@ SWI_federal_council_decisions_category = {
 	}
 
 
-	SWI_appease_fascists = { #for Fascist Appeasers and Fascist presidents
+	SWI_appease_fascists = {
 
 		icon = GFX_decision_eng_trade_unions_support
 
@@ -2278,7 +2270,7 @@ SWI_centralization_power_balance_decisions = {
 		}
 	}
 
-	SWI_rally_cantonal_defense = { #Make it available only when certain ranges are active. 
+	SWI_rally_cantonal_defense = {
 		
 		icon = GFX_decision_eng_propaganda_campaigns
 
@@ -2396,7 +2388,7 @@ SWI_centralization_power_balance_decisions = {
 
 SWI_absolute_neutrality_decisions_category = {
 	
-	SWI_country_angry_mission = { #This should trigger when a country reaches -95 opinion
+	SWI_country_angry_mission = {
 		
 		icon = GFX_decision_generic_tank
 		
@@ -2423,7 +2415,7 @@ SWI_absolute_neutrality_decisions_category = {
 			}
 			
 		}
-		days_mission_timeout = SWI_time_to_appease_angry_country #60 at the start 
+		days_mission_timeout = SWI_time_to_appease_angry_country
 		
 		is_good = no	
 
@@ -2518,7 +2510,7 @@ SWI_absolute_neutrality_decisions_category = {
 					}
 
 				}
-				60 = { #Play the Bond theme Bam bam bam bam bam bam bam bam baam bam baaam bam bam bam BAM BAM, BAM BAM BAAM
+				60 = {
 
 				}
 			}
@@ -2617,7 +2609,7 @@ SWI_absolute_neutrality_decisions_category = {
 		icon = GFX_decision_eng_trade_unions_support
 		
 		visible = {
-			check_variable = { FROM.opinion@SWI < SWI_terrible_opinion }  #Less than -35
+			check_variable = { FROM.opinion@SWI < SWI_terrible_opinion }
 			SWI_is_historical_ai = no
 		}
 		
@@ -2642,7 +2634,7 @@ SWI_absolute_neutrality_decisions_category = {
 		}
 
 		remove_effect = {
-			ROOT = { set_country_flag = SWI_add_fallout_to_opinion } #The other countries to balance will get the opposite effect. 
+			ROOT = { set_country_flag = SWI_add_fallout_to_opinion }
 			FROM = {
 				SWI_add_small_good_opinion = yes
 			}
@@ -2664,8 +2656,6 @@ SWI_absolute_neutrality_decisions_category = {
 		allowed = { original_tag = SWI }
 
 		visible = {
-			#check_variable = { FROM.opinion@SWI < SWI_good_opinion }  
-			#check_variable = { FROM.opinion@SWI > SWI_dangerous_opinion }  			
 			always = yes 
 			SWI_is_historical_ai = no
 		}
@@ -2687,7 +2677,7 @@ SWI_absolute_neutrality_decisions_category = {
 		}
 
 		remove_effect = {
-			ROOT = { set_country_flag = SWI_add_fallout_to_opinion } #The other countries to balance will get the opposite effect. 
+			ROOT = { set_country_flag = SWI_add_fallout_to_opinion }
 			FROM = { SWI_add_small_bad_opinion = yes } 
 			custom_Effect_tooltip = SWI_positive_fallout_opinion
 
@@ -3063,9 +3053,9 @@ SWI_absolute_neutrality_decisions_category = {
 				modifier = SWI_supporting_intelligence
 			}
 			random_list = {
-				50 = { #Opposing countries find out and are angry
+				50 = {
 					modifier = { 
-						factor = 0.5 #Improve your chances if you have an agency. 
+						factor = 0.5
 						ROOT = { 
 							OR = {
 								has_idea = SWI_buero_ha_idea 
@@ -3074,7 +3064,7 @@ SWI_absolute_neutrality_decisions_category = {
 						}
 					}
 					modifier = {
-						factor = 0.5 #Improve your chances if everyone is happy with you 
+						factor = 0.5
 						NOT = {
 							any_other_country = {
 								SWI_is_country_to_balance = yes
@@ -3102,7 +3092,6 @@ SWI_absolute_neutrality_decisions_category = {
 					}
 				}
 				50 = {
-					#Do nothing 
 				}
 			}				
 		}
@@ -3175,9 +3164,9 @@ SWI_absolute_neutrality_decisions_category = {
 				}
 			}
 			random_list = {
-				50 = { #Opposing countries find out and are angry
+				50 = {
 					modifier = { 
-						factor = 0.5 #Improve your chances if you have an agency. 
+						factor = 0.5
 						ROOT = { 
 							OR = {
 								has_idea = SWI_buero_ha_idea 
@@ -3186,7 +3175,7 @@ SWI_absolute_neutrality_decisions_category = {
 						}
 					}
 					modifier = {
-						factor = 0.5 #Improve your chances if everyone is happy with you 
+						factor = 0.5
 						NOT = {
 							any_other_country = {
 								SWI_is_country_to_balance = yes
@@ -3214,7 +3203,6 @@ SWI_absolute_neutrality_decisions_category = {
 					}
 				}
 				50 = {
-					#Do nothing 
 				}
 			}
 		}
@@ -3860,7 +3848,6 @@ SWI_absolute_neutrality_decisions_category = {
 					}
 				}
 				65 = {
-					#Nothing happens
 				}
 			}
 		}
@@ -3883,7 +3870,7 @@ SWI_absolute_neutrality_decisions_category = {
 
 SWI_military_readiness_decisions_category = {	
 
-	SWI_activate_militia = {  # Activates Militias after a Delay
+	SWI_activate_militia = {
 		priority = 100
 
 		icon = GFX_decision_generic_civil_support
@@ -3929,8 +3916,8 @@ SWI_military_readiness_decisions_category = {
 		}
 
 		remove_effect = {
-			set_country_flag = SWI_militia_active #activates the Militia Mission
-			effect_tooltip = { #Every time I have to make a Tooltip to represent basic functionality Dynamic Modifiers should support my will to live dies a little bit. 
+			set_country_flag = SWI_militia_active
+			effect_tooltip = {
 				remove_dynamic_modifier = {
 					modifier = SWI_dormant_citizen_militia
 				}			
@@ -3950,14 +3937,14 @@ SWI_military_readiness_decisions_category = {
 
 		ai_will_do = {
 			base = 0 
-			modifier = { #PANIC! 
+			modifier = {
 				add = 100000
 				has_war = yes 
 			}
 		}
 	}
 
-	SWI_deactivate_militia = { #Deactivates Militias
+	SWI_deactivate_militia = {
 		
 		icon = GFX_decision_POL_looming_peasants_strike
 
@@ -3975,7 +3962,7 @@ SWI_military_readiness_decisions_category = {
 
 		complete_effect = {
 			clr_country_flag = SWI_militia_active
-			custom_effect_tooltip = SWI_remove_citizen_militia_active_tooltip # I have about 10 more of these in me... 
+			custom_effect_tooltip = SWI_remove_citizen_militia_active_tooltip
 			hidden_effect = { 
 				remove_dynamic_modifier = {
 					modifier = SWI_active_citizen_militia
@@ -4005,7 +3992,7 @@ SWI_military_readiness_decisions_category = {
 		}
 	}
 
-	SWI_militia_active = { # Shows that Militias are active and when timed out, increases the penalties and activates itself again   
+	SWI_militia_active = {
 		
 		icon = GFX_decision_SWI_swiss_military_tradition_campaign
 

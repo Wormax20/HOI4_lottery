@@ -1,11 +1,4 @@
 
-########    ###    ##    ## ##    ##  ######  
-   ##      ## ##   ###   ## ##   ##  ##    ## 
-   ##     ##   ##  ####  ## ##  ##   ##       
-   ##    ##     ## ## ## ## #####     ######  
-   ##    ######### ##  #### ##  ##         ## 
-   ##    ##     ## ##   ### ##   ##  ##    ## 
-   ##    ##     ## ##    ## ##    ##  ######  
 
 ENG_vickers_armstrong_eng_organization = {
 	include = generic_medium_tank_organization
@@ -38,7 +31,6 @@ ENG_vickers_armstrong_eng_organization = {
 	}
 	
 	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
 		IF = {
 			limit = {
 				FROM = { NOT = { original_tag = ENG } }
@@ -67,7 +59,6 @@ ENG_vickers_armstrong_eng_organization = {
 					is_subject = no
 					is_subject_of = ENG
 				}
-				#is_in_faction_with = ENG
 				NOT = { has_completed_focus = BUL_nationalization }
 			}
 		}
@@ -132,7 +123,7 @@ ENG_vauxhall_organization = {
 			tag = USA
 			tag = CAN
 			AND = {
-				tag = POL # If Poland sets up a local one
+				tag = POL
 				OR = {
 					has_dlc = "Poland: United and Ready"
 					has_dlc = "No Step Back"
@@ -174,7 +165,6 @@ ENG_vauxhall_organization = {
 	}
 
 	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
 		IF = {
 			limit = {
 				FROM = { NOT = { original_tag = ENG } }
@@ -203,7 +193,6 @@ ENG_vauxhall_organization = {
 					is_subject = no
 					is_subject_of = ENG
 				}
-				#is_in_faction_with = ENG
 				NOT = { has_completed_focus = BUL_nationalization }
 			}
 		}
@@ -256,13 +245,6 @@ ENG_vauxhall_organization = {
 }
 
 
- ######  ##     ## #### ########   ######  
-##    ## ##     ##  ##  ##     ## ##    ## 
-##       ##     ##  ##  ##     ## ##       
- ######  #########  ##  ########   ######  
-      ## ##     ##  ##  ##              ## 
-##    ## ##     ##  ##  ##        ##    ## 
- ######  ##     ## #### ##         ######  
 
 
 
@@ -410,7 +392,6 @@ ENG_yarrow_shipbuilders_organization = {
 	}
 	
 	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
 		IF = {
 			limit = {
 				FROM = { NOT = { original_tag = ENG } }
@@ -431,7 +412,6 @@ ENG_yarrow_shipbuilders_organization = {
 					is_subject = no
 					is_subject_of = ENG
 				}
-				#is_in_faction_with = ENG
 				NOT = { has_completed_focus = BUL_nationalization }
 			}
 		}
@@ -446,7 +426,7 @@ ENG_john_brown_organization = {
 		OR = {
 			tag = ENG
 			AND = {
-				tag = BUL #This one is an additional option for Bulgaria with AAT 
+				tag = BUL
 				has_dlc = "Battle for the Bosporus"
 			}
 
@@ -465,7 +445,6 @@ ENG_john_brown_organization = {
 	}
 	
 	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
 		IF = {
 			limit = {
 				FROM = { NOT = { original_tag = ENG } }
@@ -489,13 +468,6 @@ ENG_john_brown_organization = {
 
 
 
-########  ##          ###    ##    ## ########  ######  
-##     ## ##         ## ##   ###   ## ##       ##    ## 
-##     ## ##        ##   ##  ####  ## ##       ##       
-########  ##       ##     ## ## ## ## ######    ######  
-##        ##       ######### ##  #### ##             ## 
-##        ##       ##     ## ##   ### ##       ##    ## 
-##        ######## ##     ## ##    ## ########  ######  
 
 
 ENG_supermarine_organization = {
@@ -514,8 +486,6 @@ ENG_supermarine_organization = {
 
 	research_categories = {	
 		mio_cat_all_light_fighter_and_modules 
-#		mio_cat_all_naval_bomber_and_modules 
-			#Could be used to allow Supermarine to research naval bombs, but this could overpower English fighter MIO trait gain early on.
 	}
 
 	override_trait = {
@@ -548,7 +518,6 @@ ENG_supermarine_organization = {
 		position = { x=2 y=0 }
 		relative_position_id = generic_mio_trait_minimum_weapon_requirements
 
-		#any_parent = { generic_mio_trait_super_heavy_shells generic_mio_trait_semi_armor_piercing_shells generic_mio_trait_high_velocity_guns }
 
 		limit_to_equipment_type = { mio_cat_eq_all_small_plane maritime_patrol_plane }
 
@@ -616,7 +585,6 @@ ENG_de_havilland_organization = {
 	}
 
 	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
 		IF = {
 			limit = {
 				FROM = { NOT = { original_tag = ENG } }
@@ -661,7 +629,6 @@ ENG_fairey_aviation_organization = {
 	}
 	
 	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
 		IF = {
 			limit = {
 				FROM = { NOT = { original_tag = ENG } }
@@ -682,7 +649,6 @@ ENG_fairey_aviation_organization = {
 					is_subject = no
 					is_subject_of = ENG
 				}
-				#is_in_faction_with = ENG
 				NOT = { has_completed_focus = BUL_nationalization }
 			}
 		}
@@ -735,13 +701,6 @@ ENG_avro_organization = {
 
 
 
-##     ##    ###    ######## ######## ########  #### ######## ##       
-###   ###   ## ##      ##    ##       ##     ##  ##  ##       ##       
-#### ####  ##   ##     ##    ##       ##     ##  ##  ##       ##       
-## ### ## ##     ##    ##    ######   ########   ##  ######   ##       
-##     ## #########    ##    ##       ##   ##    ##  ##       ##       
-##     ## ##     ##    ##    ##       ##    ##   ##  ##       ##       
-##     ## ##     ##    ##    ######## ##     ## #### ######## ######## 
 
 ENG_rsaf_enfield_organization = {
 	include = generic_infantry_equipment_organization
@@ -766,7 +725,6 @@ ENG_rsaf_enfield_organization = {
 	}
 
 	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
 		IF = {
 			limit = {
 				FROM = { NOT = { original_tag = ENG } }
@@ -830,7 +788,7 @@ ENG_vauxhall_automotive_organization = {
 	allowed = {	
 		OR = {
 			tag = ENG
-			tag = POL # If Poland sets up a local one
+			tag = POL
 			AND = {
 				tag = ROM
 				has_dlc = "Death or Dishonor"
@@ -862,7 +820,6 @@ ENG_vauxhall_automotive_organization = {
 	}
 	
 	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
 		IF = {
 			limit = {
 				FROM = { NOT = { original_tag = ENG } }
@@ -891,7 +848,6 @@ ENG_vauxhall_automotive_organization = {
 					is_subject = no
 					is_subject_of = ENG
 				}
-				#is_in_faction_with = ENG
 				NOT = { has_completed_focus = BUL_nationalization }
 			}
 		}
@@ -926,7 +882,6 @@ ENG_royal_arsenal_organization = {
 	}
 
 	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
 		IF = {
 			limit = {
 				FROM = { NOT = { original_tag = ENG } }
@@ -987,7 +942,6 @@ ENG_crossley_motors_organization = {
 	}
 
 	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
 		IF = {
 			limit = {
 				FROM = { NOT = { original_tag = ENG } }

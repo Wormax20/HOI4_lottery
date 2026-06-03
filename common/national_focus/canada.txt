@@ -10,59 +10,16 @@ focus_tree = {
 			has_dlc = "Together for Victory"
 		}
 
-		#modifier = {
-		#	add = 10
-		#	original_tag = CAN
-		#	has_dlc = "Together for Victory"
-		#}
 	}
 	
 	default = no
 
 
 
-#	focus = {
-#		id = CAN_
-#		icon = GFX_
-#		prerequisite = { focus = }
-#		mutually_exclusive = { focus =  }
-#		x = -3
-#		y = 0
-#		relative_position_id = 
-#
-#		cost = 10
-#
-#		ai_will_do = {
-#			factor = 1
-#		}
-#
-#		available = {
-#
-#		}
-#		
-#		bypass = {
-#
-#		}
-#
-#		cancel_if_invalid = yes
-#		continue_if_invalid = no
-#		available_if_capitulated = no
-#
-#		complete_tooltip = {
-#
-#		}
-#
-#		completion_reward = {
-#
-#		}
-#	}
 
 
 
 
-	############################
-	##### INDUSTRY SECTION #####
-	############################
 
 	focus = {
 		id = CAN_rowell_sirois_commission
@@ -334,7 +291,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			build_railway = { #Vancouver - NW Canada
+			build_railway = {
 				path = {
 					1408 1858 10273 4870 10548
 				}
@@ -375,7 +332,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			build_railway = { #Montreal - Halifax
+			build_railway = {
 				path = {
 					4345 4417 10320 7433 1284 12291 4362 7379 4432 1424 7304 7644 7361
 				}
@@ -540,9 +497,6 @@ focus_tree = {
 	}
 
 
-	############################
-	#### WAR PREP SECTION ######
-	############################
 
 	focus = {
 		id = CAN_defence_of_canada_regulations
@@ -1796,7 +1750,6 @@ focus_tree = {
 			remove_ideas = CAN_conscription_crisis
 			custom_effect_tooltip = "CAN_ANGERED_WORKERS"
 			
-			# Opens up the MTTH events tfv_canada.50 - tfv_canada.53
 		}
 	}
 
@@ -1972,9 +1925,6 @@ focus_tree = {
 	}
 
 
-	############################
-	####### ARMY SECTION #######
-	############################
 
 	focus = {
 		id = CAN_army_modernization
@@ -2434,9 +2384,6 @@ focus_tree = {
 	}
 
 
-	############################
-	#### GO WITH UK SECTION ####
-	############################
 
 	focus = {
 		id = CAN_strengthen_the_commonwealth_ties
@@ -2864,13 +2811,10 @@ focus_tree = {
 	}
 
 
-	############################
-	#### LEAVE COMMONWEALTH ####
-	############################
 
 	focus = {
 		id = CAN_patriation
-		icon = GFX_goal_tfv_sever_ties_with_uk #GFX_goal_generic_demand_territory
+		icon = GFX_goal_tfv_sever_ties_with_uk
 		mutually_exclusive = { focus = CAN_strengthen_the_commonwealth_ties }
 		x = 2
 		y = 0
@@ -2915,9 +2859,6 @@ focus_tree = {
 	}
 
 
-	############################
-	#### GO WITH US SECTION ####
-	############################
 	focus = {
 		id = CAN_permanent_joint_defense_board
 		icon = GFX_goal_generic_improve_relations
@@ -3323,9 +3264,6 @@ focus_tree = {
 	}
 
 
-	############################
-	#### GO FASCIST SECTION ####
-	############################
 
 	focus = {
 		id = CAN_swastika_clubs
@@ -3425,7 +3363,7 @@ focus_tree = {
 			factor = 25
 			modifier = {
 				GER = { surrender_progress > 0.5 }
-				factor = 0 #nopenopenopenope
+				factor = 0
 			}
 		}
 
@@ -3745,13 +3683,10 @@ focus_tree = {
 		}
 	}
 
-	############################
-	### GO COMMUNIST SECTION ###
-	############################
 
 	focus = {
 		id = CAN_burn_the_royal_portraits
-		icon = GFX_goal_tfv_burn_the_royal_portraits #GFX_goal_support_communism
+		icon = GFX_goal_tfv_burn_the_royal_portraits
 		prerequisite = { focus = CAN_patriation }
 		mutually_exclusive = { focus = CAN_swastika_clubs }
 		mutually_exclusive = { focus = CAN_permanent_joint_defense_board }
@@ -4314,9 +4249,6 @@ focus_tree = {
 	}
 
 
-	############################
-	####### AIR SECTION ########
-	############################
 
 	focus = {
 		id = CAN_rcaf_station_borden
@@ -4815,10 +4747,6 @@ focus_tree = {
 					add_mio_size = 1
 					add_mio_funds = 500
 
-				#	unlock_mio_trait_tooltip  = {
-				#		department = CAN_mio_department_design_plane_heavy_combat
-				#		trait = CAN_mio_trait_cookie_carriers
-				#	}
 				}
 			}
 
@@ -4867,7 +4795,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = CAN_the_sabre_project
 				ahead_reduction = 2
-				uses = 1 # was 2
+				uses = 1
 				category = rocketry
 				category = jet_technology
 			}
@@ -4876,9 +4804,6 @@ focus_tree = {
 	}
 
 
-	############################
-	###### NAVY SECTION ########
-	############################
 
 	focus = {
 		id = CAN_halifax_shipyards

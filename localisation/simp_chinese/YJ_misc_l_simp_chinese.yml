@@ -1,0 +1,253 @@
+﻿l_simp_chinese:
+add_mastery_bonus: "学说精通"
+
+STATE_797: "君士坦丁堡"
+
+
+
+The_Others_YJ_Flag: "其他人抽奖"
+
+
+
+
+
+
+
+
+
+KoKi_YJ.101.title: "奖品: 国际纵队"
+KoKi_YJ.101.desc: " 每个月获得5支10步师"
+KoKi_YJ.101.a: "yee~"
+
+KoKi_YJ.102.title: "老兵不死"
+KoKi_YJ.102.desc: "部队获得巨额经验增长并减少经验损失!"
+KoKi_YJ.102.a: "敢不敢打出骷髅师"
+
+KoKi_YJ.103.title: "奖品: 精致军工"
+KoKi_YJ.103.desc: " 大幅增加坦克飞机造价与属性"
+KoKi_YJ.103.a: "yee~"
+
+KoKi_YJ.104.title: "奖品: 政治大亨"
+KoKi_YJ.104.desc: "获得巨量pp加成"
+KoKi_YJ.104.a: "yee~"
+
+KoKi_YJ.105.title: "奖品: 科研预算大增"
+KoKi_YJ.105.desc: "获得2个科研槽 减少10%研究速度"
+KoKi_YJ.105.a: "yee~"
+
+KoKi_YJ.106.title: "奖品: 特种精英"
+KoKi_YJ.106.desc: "获得1个免费的特种分支\n§R请注意先点一个特种学说再领取!§"
+KoKi_YJ.106.a: "海机不要钱是吧"
+
+KoKi_YJ.107.title: "奖品: 宣传天才"
+KoKi_YJ.107.desc: "获得大量战支和稳定度"
+KoKi_YJ.107.a: "yee~"
+
+KoKi_YJ.108.title: "奖品: 多子化"
+KoKi_YJ.108.desc: "获得大量人口增长"
+KoKi_YJ.108.a: "yee~"
+
+KoKi_YJ.109.title: "奖品: 发展特勤局"
+KoKi_YJ.109.desc: "获得间谍渗透加成"
+KoKi_YJ.109.a: "yee~"
+
+KoKi_YJ.110.title: "奖品: 工业预算大增"
+KoKi_YJ.110.desc: "大幅增加工业产出"
+KoKi_YJ.110.a: "yee~"
+
+KoKi_YJ.111.title: "奖品: 资源开发家"
+KoKi_YJ.111.desc: "每两个月自动抽 一次 资源抽奖"
+KoKi_YJ.111.a: "yee~"
+
+
+YJ_1_ideas: "国际纵队"
+YJ_1_ideas_tt: "§Y每月获得5支10步师§!"
+YJ_2_ideas: "老兵不死"
+YJ_3_ideas: "精致军工"
+YJ_4_ideas: "政治大亨"
+YJ_5_ideas: "科研预算大增"
+YJ_5_ideas_tt: "获得2个§Y科研槽§"
+YJ_6_ideas: "特种精英"
+YJ_6_ideas_tt: "§Y获得1个免费的特种分支§!"
+YJ_7_ideas: "宣传天才"
+YJ_7_ideas_tt: "§Y获得10000战支和稳定度§!"
+YJ_8_ideas: "多子化"
+YJ_9_ideas: "发展特勤局"
+YJ_10_ideas: "工业预算大增"
+YJ_11_ideas: "资源开发家"
+YJ_11_ideas_tt: "§Y每两个月自动抽 一次 资源抽奖§!"
+
+
+
+
+YJ_21_ideas: "建造大师"
+YJ_22_ideas: "勒紧裤腰带"
+YJ_23_ideas: "加急生产"
+YJ_24_ideas: "手搓万物"
+YJ_25_ideas: "人口大爆发"
+YJ_26_ideas: "士气大增"
+YJ_27_ideas: "鉴定守住就有办法"
+YJ_28_ideas: "工作狂热"
+YJ_29_ideas: "科研速度加成"
+
+KoKi_YJ_pp.1.title: "奖品: 地图外民用工厂"
+KoKi_YJ_pp.1.desc: ""
+KoKi_YJ_pp.1.a: "yee~"
+
+KoKi_YJ_pp.2.title: "奖品: 地图外军用工厂"
+KoKi_YJ_pp.2.desc: ""
+KoKi_YJ_pp.2.a: "yee~"
+
+KoKi_YJ_pp.3.title: "奖品: 科研速度加成"
+KoKi_YJ_pp.3.desc: ""
+KoKi_YJ_pp.3.a: "yee~"
+
+KoKi_YJ_pp.4.title: "奖品: 稳定度礼包"
+KoKi_YJ_pp.4.desc: ""
+KoKi_YJ_pp.4.a: "yee~"
+
+KoKi_YJ_pp.5.title: "奖品: 战争支持度礼包"
+KoKi_YJ_pp.5.desc: ""
+KoKi_YJ_pp.5.a: "yee~"
+
+KoKi_YJ_pp.6.title: "奖品: 减少稳定度"
+KoKi_YJ_pp.6.desc: ""
+
+KoKi_YJ_pp.7.title: "奖品: 减少战争支持度"
+KoKi_YJ_pp.7.desc: ""
+
+KoKi_YJ_pp.8.title: "奖品: §R大奖§!"
+KoKi_YJ_pp.8.desc: "§R恭喜你中大奖啦!\n§R恭喜你中大奖啦!\n§R恭喜你中大奖啦!"
+KoKi_YJ_pp.8.a: "恭喜你中大奖啦"
+
+KoKi_YJ_pp.9.title: "奖品: 超前加成卡"
+KoKi_YJ_pp.9.desc: "超前0.5年200%全类型加成卡一张"
+KoKi_YJ_pp.9.a: "好"
+
+KoKi_YJ_pp_resource.10.title: "奖品: 钢"
+KoKi_YJ_pp_resource.10.desc: "获得小量钢"
+KoKi_YJ_pp_resource.10.a: "好"
+
+KoKi_YJ_pp_resource.11.title: "奖品: 石油"
+KoKi_YJ_pp_resource.11.desc: "获得小量石油"
+KoKi_YJ_pp_resource.11.a: "好"
+
+KoKi_YJ_pp_resource.12.title: "奖品: 钨"
+KoKi_YJ_pp_resource.12.desc: "获得小量钨"
+KoKi_YJ_pp_resource.12.a: "好"
+
+KoKi_YJ_pp_resource.13.title: "奖品: 铬"
+KoKi_YJ_pp_resource.13.desc: "获得小量铬"
+KoKi_YJ_pp_resource.13.a: "好"
+
+KoKi_YJ_pp_resource.14.title: "奖品: 橡胶"
+KoKi_YJ_pp_resource.14.desc: "获得小量橡胶"
+KoKi_YJ_pp_resource.14.a: "好"
+
+KoKi_YJ_pp_resource.15.title: "奖品: 铝"
+KoKi_YJ_pp_resource.15.desc: "获得小量铝"
+KoKi_YJ_pp_resource.15.a: "好"
+
+KoKi_YJ_pp_resource.16.title: "奖品: 煤炭"
+KoKi_YJ_pp_resource.16.desc: "获得小量煤炭"
+KoKi_YJ_pp_resource.16.a: "好"
+
+KoKi_YJ_pp_resource.17.title: "奖品: 战略资源大礼包"
+KoKi_YJ_pp_resource.17.desc: "各类资源"
+KoKi_YJ_pp_resource.17.a: "好"
+
+KoKi_YJ_pp.18.title: "奖品: 额外抽奖机会"
+KoKi_YJ_pp.18.desc: "额外加五抽奖次数"
+KoKi_YJ_pp.18.a: "好"
+
+KoKi_YJ_pp.19.title: "奖品: 军民没有船坞"
+KoKi_YJ_pp.19.desc: "军民没有船坞各10个"
+KoKi_YJ_pp.19.a: "好"
+
+KoKi_YJ_pp.20.title: "奖品: 赌徒的代价"
+KoKi_YJ_pp.20.desc: "减少10稳定与战支,扣除2军民"
+KoKi_YJ_pp.20.a: "好"
+
+KoKi_YJ_pp.21.title: "奖品: 建造大师"
+KoKi_YJ_pp.21.desc: "获得为期120天的20建造速度"
+KoKi_YJ_pp.21.a: "好"
+
+KoKi_YJ_pp.22.title: "奖品: 勒紧裤腰带"
+KoKi_YJ_pp.22.desc: "获得为期120天的-20消费品加成"
+KoKi_YJ_pp.22.a: "好"
+
+KoKi_YJ_pp.23.title: "奖品: 加急生产"
+KoKi_YJ_pp.23.desc: "获得为期120天的20生产效率增长"
+KoKi_YJ_pp.23.a: "好"
+
+KoKi_YJ_pp.24.title: "奖品: 手搓万物"
+KoKi_YJ_pp.24.desc: "获得为期90天的-2000%缺乏战略资源惩罚"
+KoKi_YJ_pp.24.a: "好"
+
+KoKi_YJ_pp.25.title: "奖品: 人口大爆发"
+KoKi_YJ_pp.25.desc: "获得为期120天的30每月人口增长额外获得1M人力"
+KoKi_YJ_pp.25.a: "好"
+
+KoKi_YJ_pp.26.title: "奖品: 士气大增"
+KoKi_YJ_pp.26.desc: "获得为期120天的20组织度与组织度恢复和5增援率"
+KoKi_YJ_pp.26.a: "好"
+
+KoKi_YJ_pp.27.title: "奖品: 鉴定守住"
+KoKi_YJ_pp.27.desc: "获得为期120天的20核心攻防"
+KoKi_YJ_pp.27.a: "好"
+
+KoKi_YJ_pp.28.title: "奖品: 工作狂热"
+KoKi_YJ_pp.28.desc: "获得为期120天的20工厂和船坞产出"
+KoKi_YJ_pp.28.a: "好"
+
+KoKi_YJ_pp.29.title: "奖品: 工厂外流?"
+KoKi_YJ_pp.29.desc: "转移5军5民到其他国家"
+KoKi_YJ_pp.29.a: "好"
+
+KoKi_YJ_pp.29_1.title: "奖品: 免費贈禮"
+KoKi_YJ_pp.29_1.desc: "[FROM.GetName] 转移5军5民到我们这"
+KoKi_YJ_pp.29_1.a: "好"
+
+YJ_10001_ideas: "大西洋宪章"
+
+
+
+
+YJ_GEN_state_ideas: "资源大开发"
+
+Sha_traits: "極限爆兵"
+Wolf_traits: "滿洲麵包創始人"
+Dog_traits: "狗窩的太陽"
+AK_traits: "坦克燃燒學說理論家"
+Lan_traits: "法治社會"
+Sky_traits: "長線運營者"
+A_traits: "爆金幣"
+Pap_traits: "大管子學說理論家"
+Arg_traits: "裝甲車學說理論家"
+Tmdu_traits: "窩窩屎專家"
+Man_traits: "大登陸愛好者"
+CUF_traits: "避戰保船"
+Col_traits: "巧冰炮奠基者"
+Blo_traits: "桶子學説理論家"
+Lgs_traits: "男娘治國"
+Bai_traits: "屎山解構者"
+Kim_traits: "準備好了再等七天"
+Han_traits: "麥塊總建築師"
+Ept_traits: "病毒散播者"
+mos_traits: "這裡絕對是加拿大理论家"
+
+receive_western_education: "西方教育背景"
+
+AGH_desc: "§Y每天§!獲得10單位的§Y裝甲車§!"
+options_button_text: "开始游戏"
+
+ck_TITLE:0 "ck Music"
+
+YJ_war_allow_tt: "目前时间无法对该国宣战"
+
+YJ_war_bf: "战争前夜"
+
+YJ_most_factory_country:0 "§Y民用工厂数量最多的国家§!"
+
+set_axis:0 "設為軸心国"
+set_allie:0 "設為同盟国"

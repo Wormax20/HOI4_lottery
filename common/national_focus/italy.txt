@@ -1,19 +1,4 @@
-﻿### search_filters = {FOCUS_FILTER_POLITICAL}
-### search_filters = {FOCUS_FILTER_RESEARCH}
-### search_filters = {FOCUS_FILTER_INDUSTRY}
-### search_filters = {FOCUS_FILTER_STABILITY}
-### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
-### search_filters = {FOCUS_FILTER_MANPOWER}
-### search_filters = {FOCUS_FILTER_ANNEXATION}
-### search_filters = {FOCUS_FILTER_SOV_POLITICAL_PARANOIA}
-### search_filters = {FOCUS_FILTER_PROPAGANDA}
-### search_filters = {FOCUS_FILTER_ARMY_XP}
-### search_filters = {FOCUS_FILTER_NAVY_XP}
-### search_filters = {FOCUS_FILTER_AIR_XP}
-### search_filters = {FOCUS_FILTER_ITA_MISSIOLINI}
-### search_filters = {FOCUS_FILTER_BALANCE_OF_POWER}
-# Reminder that focus filters prio has to be handled in the generic focus file :)
-
+﻿
 
 
 focus_tree = {
@@ -42,23 +27,9 @@ focus_tree = {
 	}
 
 
-########  ##    ##    ########  ##        #######   #######  ########        ###    ##        #######  ##    ## ######## 
-##     ##  ##  ##     ##     ## ##       ##     ## ##     ## ##     ##      ## ##   ##       ##     ## ###   ## ##       
-##     ##   ####      ##     ## ##       ##     ## ##     ## ##     ##     ##   ##  ##       ##     ## ####  ## ##       
-########     ##       ########  ##       ##     ## ##     ## ##     ##    ##     ## ##       ##     ## ## ## ## ######   
-##     ##    ##       ##     ## ##       ##     ## ##     ## ##     ##    ######### ##       ##     ## ##  #### ##       
-##     ##    ##       ##     ## ##       ##     ## ##     ## ##     ##    ##     ## ##       ##     ## ##   ### ##       
-########     ##       ########  ########  #######   #######  ########     ##     ## ########  #######  ##    ## ######## 
 
 
 
- ######   #######  ##        #######  ##    ## ####    ###    ##                ##    #### ##    ## ########  ##     ##  ######  ######## ########  ####    ###    ##       
-##    ## ##     ## ##       ##     ## ###   ##  ##    ## ##   ##               ##      ##  ###   ## ##     ## ##     ## ##    ##    ##    ##     ##  ##    ## ##   ##       
-##       ##     ## ##       ##     ## ####  ##  ##   ##   ##  ##              ##       ##  ####  ## ##     ## ##     ## ##          ##    ##     ##  ##   ##   ##  ##       
-##       ##     ## ##       ##     ## ## ## ##  ##  ##     ## ##             ##        ##  ## ## ## ##     ## ##     ##  ######     ##    ########   ##  ##     ## ##       
-##       ##     ## ##       ##     ## ##  ####  ##  ######### ##            ##         ##  ##  #### ##     ## ##     ##       ##    ##    ##   ##    ##  ######### ##       
-##    ## ##     ## ##       ##     ## ##   ###  ##  ##     ## ##           ##          ##  ##   ### ##     ## ##     ## ##    ##    ##    ##    ##   ##  ##     ## ##       
- ######   #######  ########  #######  ##    ## #### ##     ## ########    ##          #### ##    ## ########   #######   ######     ##    ##     ## #### ##     ## ######## 
 
 
 	focus = {
@@ -168,7 +139,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			2 = { #ROME
+			2 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
@@ -178,7 +149,7 @@ focus_tree = {
 					}
 				}
 			}
-			117 = { #CAMPANIA
+			117 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
@@ -188,7 +159,7 @@ focus_tree = {
 					}
 				}
 			}
-			162 = { #TUSCANY
+			162 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
@@ -198,7 +169,7 @@ focus_tree = {
 					}
 				}
 			}
-			158 = { #PIEDMONT
+			158 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
@@ -271,7 +242,7 @@ focus_tree = {
 					is_core_of = ETH
 					is_fully_controlled_by = ROOT
 				}
-				any_subject_country = { #FOR PUPPETS
+				any_subject_country = {
 					any_controlled_state = {
 						is_core_of = ETH
 						is_fully_controlled_by = PREV
@@ -290,7 +261,7 @@ focus_tree = {
 							is_core_of = ETH
 							is_fully_controlled_by = ROOT
 						}
-						any_subject_country = { #FOR PUPPETS
+						any_subject_country = {
 							any_controlled_state = {
 								is_core_of = ETH
 								is_fully_controlled_by = PREV
@@ -303,7 +274,7 @@ focus_tree = {
 
 			if = {
 				limit = {
-					271 = { #SHEWA (Addis Ababa)
+					271 = {
 						OR = {
 							is_fully_controlled_by = ROOT
 							controller = {
@@ -314,7 +285,7 @@ focus_tree = {
 						NOT = { has_state_flag = ITA_improved_infrastructure_in_state_flag }
 					}
 				}
-				271 = { #SHEWA (Addis Ababa)
+				271 = {
 					set_state_flag = ITA_improved_infrastructure_in_state_flag
 					add_building_construction = {
 						type = infrastructure
@@ -336,7 +307,7 @@ focus_tree = {
 				}
 				ROOT = {
 					random_controlled_state = {
-						prioritize = { 835 } #HARARGHE
+						prioritize = { 835 }
 						limit = {
 							is_core_of = ETH
 							is_fully_controlled_by = ROOT
@@ -354,7 +325,7 @@ focus_tree = {
 			}
 			else_if = {
 				limit = {
-					any_subject_country = { #FOR PUPPETS
+					any_subject_country = {
 						any_controlled_state = {
 							is_core_of = ETH
 							is_fully_controlled_by = PREV
@@ -370,7 +341,7 @@ focus_tree = {
 						}
 					}
 					random_controlled_state = {
-						prioritize = { 835 } #HARARGHE
+						prioritize = { 835 }
 						limit = {
 							is_core_of = ETH
 							is_fully_controlled_by = PREV
@@ -388,7 +359,7 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					843 = { #WELLO
+					843 = {
 						OR = {
 							is_fully_controlled_by = ROOT
 							controller = {
@@ -399,7 +370,7 @@ focus_tree = {
 						NOT = { has_state_flag = ITA_improved_infrastructure_in_state_flag }
 					}
 				}
-				843 = { #WELLO
+				843 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 1
@@ -420,7 +391,7 @@ focus_tree = {
 				}
 				ROOT = {
 					random_controlled_state = {
-						prioritize = { 837 } #SIDAMO
+						prioritize = { 837 }
 						limit = {
 							is_core_of = ETH
 							is_fully_controlled_by = ROOT
@@ -438,7 +409,7 @@ focus_tree = {
 			}
 			else_if = {
 				limit = {
-					any_subject_country = { #FOR PUPPETS
+					any_subject_country = {
 						any_controlled_state = {
 							is_core_of = ETH
 							is_fully_controlled_by = PREV
@@ -456,7 +427,7 @@ focus_tree = {
 						}
 					}
 					random_controlled_state = {
-						prioritize = { 837 } #SIDAMO
+						prioritize = { 837 }
 						limit = {
 							is_core_of = ETH
 							is_fully_controlled_by = PREV
@@ -475,7 +446,7 @@ focus_tree = {
 
 			if = {
 				limit = {
-					842 = { #TIGRAY
+					842 = {
 						OR = {
 							is_fully_controlled_by = ROOT
 							controller = {
@@ -486,7 +457,7 @@ focus_tree = {
 						NOT = { has_state_flag = ITA_improved_infrastructure_in_state_flag }
 					}
 				}
-				842 = { #TIGRAY
+				842 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 1
@@ -507,7 +478,7 @@ focus_tree = {
 				}
 				ROOT = {
 					random_controlled_state = {
-						prioritize = { 841 } #BEGEMDER
+						prioritize = { 841 }
 						limit = {
 							is_core_of = ETH
 							is_fully_controlled_by = ROOT
@@ -525,7 +496,7 @@ focus_tree = {
 			}
 			else_if = {
 				limit = {
-					any_subject_country = { #FOR PUPPETS
+					any_subject_country = {
 						any_controlled_state = {
 							is_core_of = ETH
 							is_fully_controlled_by = PREV
@@ -543,7 +514,7 @@ focus_tree = {
 						}
 					}
 					random_controlled_state = {
-						prioritize = { 841 } #BEGEMDER
+						prioritize = { 841 }
 						limit = {
 							is_core_of = ETH
 							is_fully_controlled_by = PREV
@@ -586,7 +557,7 @@ focus_tree = {
 					is_core_of = LBA
 					is_fully_controlled_by = ROOT
 				}
-				any_subject_country = { #FOR PUPPETS
+				any_subject_country = {
 					any_controlled_state = {
 						is_core_of = LBA
 						is_fully_controlled_by = PREV
@@ -605,7 +576,7 @@ focus_tree = {
 							is_core_of = LBA
 							is_fully_controlled_by = ROOT
 						}
-						any_subject_country = { #FOR PUPPETS
+						any_subject_country = {
 							any_controlled_state = {
 								is_core_of = LBA
 								is_fully_controlled_by = PREV
@@ -618,7 +589,7 @@ focus_tree = {
 
 			if = {
 				limit = {
-					448 = { #TRIPOLI
+					448 = {
 						OR = {
 							is_fully_controlled_by = ROOT
 							controller = {
@@ -629,7 +600,7 @@ focus_tree = {
 						NOT = { has_state_flag = ITA_improved_infrastructure_in_state_flag }
 					}
 				}
-				448 = { #TRIPOLI
+				448 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 1
@@ -668,7 +639,7 @@ focus_tree = {
 			}
 			else_if = {
 				limit = {
-					any_subject_country = { #FOR PUPPETS
+					any_subject_country = {
 						any_controlled_state = {
 							is_core_of = LBA
 							is_fully_controlled_by = PREV
@@ -684,7 +655,7 @@ focus_tree = {
 						}
 					}
 					random_controlled_state = {
-						prioritize = { 841 } #HARARGHE
+						prioritize = { 841 }
 						limit = {
 							is_core_of = LBA
 							is_fully_controlled_by = PREV
@@ -703,7 +674,7 @@ focus_tree = {
 
 			if = {
 				limit = {
-					450 = { #BENGHALI
+					450 = {
 						OR = {
 							is_fully_controlled_by = ROOT
 							controller = {
@@ -714,7 +685,7 @@ focus_tree = {
 						NOT = { has_state_flag = ITA_improved_infrastructure_in_state_flag }
 					}
 				}
-				450 = { #BENGHALI
+				450 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 1
@@ -753,7 +724,7 @@ focus_tree = {
 			}
 			else_if = {
 				limit = {
-					any_subject_country = { #FOR PUPPETS
+					any_subject_country = {
 						any_controlled_state = {
 							is_core_of = LBA
 							is_fully_controlled_by = PREV
@@ -771,7 +742,7 @@ focus_tree = {
 						}
 					}
 					random_controlled_state = {
-						prioritize = { 841 } #HARARGHE
+						prioritize = { 841 }
 						limit = {
 							is_core_of = LBA
 							is_fully_controlled_by = PREV
@@ -790,7 +761,7 @@ focus_tree = {
 
 			if = {
 				limit = {
-					451 = { #DERNA
+					451 = {
 						OR = {
 							is_fully_controlled_by = ROOT
 							controller = {
@@ -801,7 +772,7 @@ focus_tree = {
 						NOT = { has_state_flag = ITA_improved_infrastructure_in_state_flag }
 					}
 				}
-				451 = { #DERNA
+				451 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 1
@@ -840,7 +811,7 @@ focus_tree = {
 			}
 			else_if = {
 				limit = {
-					any_subject_country = { #FOR PUPPETS
+					any_subject_country = {
 						any_controlled_state = {
 							is_core_of = LBA
 							is_fully_controlled_by = PREV
@@ -858,7 +829,7 @@ focus_tree = {
 						}
 					}
 					random_controlled_state = {
-						prioritize = { 841 } #HARARGHE
+						prioritize = { 841 }
 						limit = {
 							is_core_of = LBA
 							is_fully_controlled_by = PREV
@@ -898,7 +869,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			550 = { #ERITREA
+			550 = {
 				set_state_flag = ITA_improved_infrastructure_in_state_flag
 				add_building_construction = {
 					type = infrastructure
@@ -931,7 +902,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			559 = { #SOMALILAND
+			559 = {
 				set_state_flag = ITA_improved_infrastructure_in_state_flag
 				add_building_construction = {
 					type = infrastructure
@@ -942,7 +913,7 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					844 = { #JUBALAND
+					844 = {
 						OR = {
 							is_fully_controlled_by = ROOT
 							any_other_country = {
@@ -952,7 +923,7 @@ focus_tree = {
 						}
 					}
 				}
-				844 = { #JUBALAND
+				844 = {
 					set_state_flag = ITA_improved_infrastructure_in_state_flag
 					add_building_construction = {
 						type = infrastructure
@@ -992,14 +963,12 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			#Makes previous Colonial Police law hidden (Both old and new version need to cohexist so that the previous can fallback to the next one)
 			set_country_flag = ITA_colonial_police_improved_flag
 
 			custom_effect_tooltip = ITA_regional_development_occupation_law_tt
 
 			custom_effect_tooltip = ITA_regional_development_buildings_tt
 
-			#ETHIOPIA
 			if = {
 				limit = {
 					has_completed_focus = ITA_develop_ethiopia
@@ -1072,7 +1041,6 @@ focus_tree = {
 				}
 			}
 
-			#LIBYA
 			if = {
 				limit = {
 					has_completed_focus = ITA_develop_libya
@@ -1123,7 +1091,6 @@ focus_tree = {
 				}
 			}
 		
-			#ERITREA
 			if = {
 				limit = {
 					has_completed_focus = ITA_develop_eritrea
@@ -1145,7 +1112,6 @@ focus_tree = {
 				}
 			}
 			
-			#JUBALAND
 			if = {
 				limit = {
 					has_completed_focus = ITA_develop_somaliland
@@ -1230,7 +1196,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			if = { #TRIPOLI
+			if = {
 				limit = {
 					448 = {
 						state_is_fully_controlled_by_ROOT_or_subject = yes
@@ -1244,7 +1210,7 @@ focus_tree = {
 					}
 				}
 			}
-			if = { #EL AGHELIA
+			if = {
 				limit = {
 					449 = {
 						state_is_fully_controlled_by_ROOT_or_subject = yes
@@ -1258,7 +1224,7 @@ focus_tree = {
 					}
 				}
 			}
-			if = { #BENGHASI
+			if = {
 				limit = {
 					450 = {
 						state_is_fully_controlled_by_ROOT_or_subject = yes
@@ -1272,7 +1238,7 @@ focus_tree = {
 					}
 				}
 			}
-			if = { #DERNA
+			if = {
 				limit = {
 					451 = {
 						state_is_fully_controlled_by_ROOT_or_subject = yes
@@ -1337,18 +1303,16 @@ focus_tree = {
 				}
 			}
 
-			# EXTRA STATES 
 
 			custom_effect_tooltip = ITA_via_della_vittoria_extra_states_tt
 
-			#LIBYA
 			if = {
 				limit = {
-					450 = { #BENGHASI
+					450 = {
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
 				}
-				450 = { #BENGHASI
+				450 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 1
@@ -1364,11 +1328,11 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					449 = { #EL AGHELIA
+					449 = {
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
 				}
-				449 = { #EL AGHELIA
+				449 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 1
@@ -1384,94 +1348,11 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					448 = { #TRIPOLI
+					448 = {
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
 				}
-				448 = { #TRIPOLI
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-					if = {
-						limit = {
-							has_resistance = yes
-						}
-						add_compliance = 5
-					}
-				}
-			}
-
-			#TUNISIA
-			if = {
-				limit = {
-					665 = { #GABES
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-				}
-				665 = { #GABES
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-					if = {
-						limit = {
-							has_resistance = yes
-						}
-						add_compliance = 5
-					}
-				}
-			}
-			if = {
-				limit = {
-					458 = { #TUNISIA
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-				}
-				458 = { #TUNISIA
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-					if = {
-						limit = {
-							has_resistance = yes
-						}
-						add_compliance = 5
-					}
-				}
-			}
-			#ALGERIA
-			if = {
-				limit = {
-					460 = { #CONSTANTINE
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-				}
-				460 = { #CONSTANTINE
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-					if = {
-						limit = {
-							has_resistance = yes
-						}
-						add_compliance = 5
-					}
-				}
-			}
-			if = {
-				limit = {
-					459 = { #ALGIERS
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-				}
-				459 = { #ALGIERS
+				448 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 1
@@ -1486,14 +1367,13 @@ focus_tree = {
 				}
 			}
 
-			#MOROCCO
 			if = {
 				limit = {
-					461 = { #CASABLANCA
+					665 = {
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
 				}
-				461 = { #CASABLANCA
+				665 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 1
@@ -1509,11 +1389,51 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					290 = { #SPANISH AFRICA (Mediterranean coast of Morocco)
+					458 = {
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
 				}
-				290 = { #SPANISH AFRICA (Mediterranean coast of Morocco)
+				458 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					if = {
+						limit = {
+							has_resistance = yes
+						}
+						add_compliance = 5
+					}
+				}
+			}
+			if = {
+				limit = {
+					460 = {
+						state_is_fully_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				460 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					if = {
+						limit = {
+							has_resistance = yes
+						}
+						add_compliance = 5
+					}
+				}
+			}
+			if = {
+				limit = {
+					459 = {
+						state_is_fully_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				459 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 1
@@ -1528,14 +1448,13 @@ focus_tree = {
 				}
 			}
 
-			#EGYPT
 			if = {
 				limit = {
-					447 = { #ALEXANDRIA
+					461 = {
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
 				}
-				447 = { #ALEXANDRIA
+				461 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 1
@@ -1551,11 +1470,32 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					446 = { #CAIRO
+					290 = {
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
 				}
-				446 = { #CAIRO
+				290 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					if = {
+						limit = {
+							has_resistance = yes
+						}
+						add_compliance = 5
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					447 = {
+						state_is_fully_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				447 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 1
@@ -1571,11 +1511,31 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					453 = { #SINAI
+					446 = {
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
 				}
-				453 = { #SINAI
+				446 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					if = {
+						limit = {
+							has_resistance = yes
+						}
+						add_compliance = 5
+					}
+				}
+			}
+			if = {
+				limit = {
+					453 = {
+						state_is_fully_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				453 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 1
@@ -1619,7 +1579,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			# Tripoli - Tobruk
 			build_railway = {
 				path = { 1149 4194 7209 9980 1118 1041 4047 10046 10117 12088 4057 1198 1127 4120 11954 10123 12094 4151 1204 7082 9992 1130 }
 			}
@@ -1628,21 +1587,17 @@ focus_tree = {
 			every_state = {
 				limit = {
 					OR = {
-						#LIBYA
-						state = 448 #TRIPOLI
-						state = 449 #EL AGHELIA
-						state = 450 #BENGHASI
-						state = 451 #DERNA
-						#TUNISIA
-						state = 665 #GABES
-						state = 458 #TUNISIA
-						#ALGERIA
-						state = 460 #CONSTANTINE
-						state = 459 #ALGIERS
-						#EGYPT
-						state = 452 #MATROUH
-						state = 447 #ALEXANDRIA
-						state = 446 #CAIRO
+						state = 448
+						state = 449
+						state = 450
+						state = 451
+						state = 665
+						state = 458
+						state = 460
+						state = 459
+						state = 452
+						state = 447
+						state = 446
 					}
 					state_is_fully_controlled_by_ROOT_or_subject = yes
 				}
@@ -1683,7 +1638,7 @@ focus_tree = {
 			}	
 
 			662 = {
-				ITA_check_for_cooperatives_and_add_dm = yes #If appropriate, apply dm from Cooperatives for Intensive Exploitation 
+				ITA_check_for_cooperatives_and_add_dm = yes
 				set_state_flag = sirte_oil_developed
 			}
 			if = {
@@ -1733,7 +1688,7 @@ focus_tree = {
 				state = 450
 			}
 			450 = {
-				ITA_check_for_cooperatives_and_add_dm = yes #If appropriate, apply dm from Cooperatives for Intensive Exploitation 
+				ITA_check_for_cooperatives_and_add_dm = yes
 				set_state_flag = benghazi_oil_developed
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -1797,7 +1752,6 @@ focus_tree = {
 			unlock_decision_tooltip = ITA_reorganize_ascari
 
 			hidden_effect = {
-				### COLONIAL CAVALRY & CAMELRY TEMPLATES
 				if = {
 					limit = {
 						NOT = { has_template = "Cavalleria Coloniale" }
@@ -1808,7 +1762,6 @@ focus_tree = {
 						override_model = ITA_cavalry_alt_1_entity
 						is_locked = yes
 
-						# Represents lesser-equipped colonial units
 						regiments = { 
 							cavalry = { x = 0 y = 0 } 
 							cavalry = { x = 0 y = 1 } 
@@ -1838,7 +1791,6 @@ focus_tree = {
 				}
 			}
 
-			### ASCARI INFANTRY TEMPLATES
 			if = {
 				limit = {
 					NOT = { has_template = "Divisione Coloniale" }
@@ -1847,9 +1799,7 @@ focus_tree = {
 					name = "Divisione Coloniale" 
 					division_names_group = ITA_COL_01
 					template_counter = 67
-					#is_locked = yes
 
-					# Represents lesser-equipped colonial units
 					regiments = { 
 						infantry = { x = 0 y = 0 }
 						infantry = { x = 0 y = 1 }
@@ -1870,10 +1820,8 @@ focus_tree = {
 					division_names_group = ITA_COL_01
 					override_model = ITA_infantry_alt_0_entity
 					template_counter = 67
-					#is_locked = yes
 					obsolete = yes
 
-					# Represents lesser-equipped colonial units
 					regiments = { 
 						infantry = { x = 0 y = 0 }
 						infantry = { x = 0 y = 1 }
@@ -1893,10 +1841,8 @@ focus_tree = {
 					name = "Divisione Ascari Eritrea" 
 					division_names_group = ITA_COL_01
 					template_counter = 67
-					#is_locked = yes
 					obsolete = yes
 
-					# Represents lesser-equipped colonial units
 					regiments = { 
 						infantry = { x = 0 y = 0 }
 						infantry = { x = 0 y = 1 }
@@ -1917,10 +1863,8 @@ focus_tree = {
 					division_names_group = ITA_COL_01
 					override_model = ITA_infantry_alt_1_entity
 					template_counter = 67
-					#is_locked = yes
 					obsolete = yes
 
-					# Represents lesser-equipped colonial units
 					regiments = { 
 						infantry = { x = 0 y = 0 }
 						infantry = { x = 0 y = 1 }
@@ -1935,9 +1879,7 @@ focus_tree = {
 
 			custom_effect_tooltip = ITA_strengthen_ascari_corps_create_units_tt 
 
-			## CAVALRY + INFANTRY ##
 
-			#ERITREA
 			if = {
 				limit = {
 					any_controlled_state = {
@@ -1950,7 +1892,7 @@ focus_tree = {
 						is_core_of = ERI
 						is_fully_controlled_by = ROOT
 					}
-					prioritize = { 550 } # ERITREA (In case at some point this gets split or tag gets more cores)
+					prioritize = { 550 }
 					custom_effect_tooltip = ITA_strengthen_ascari_corps_eritrea_tt
 					hidden_effect = {
 						create_unit = {
@@ -1988,7 +1930,7 @@ focus_tree = {
 							is_core_of = ERI
 							is_fully_controlled_by = PREV
 						}
-						prioritize = { 550 } # ERITREA (In case at some point this gets split or tag gets more cores)
+						prioritize = { 550 }
 						custom_effect_tooltip = ITA_strengthen_ascari_corps_eritrea_tt
 						hidden_effect = {
 							create_unit = {
@@ -2006,7 +1948,6 @@ focus_tree = {
 				}
 			}
 
-			#LIBYA
 			if = {
 				limit = {
 					any_controlled_state = {
@@ -2019,7 +1960,7 @@ focus_tree = {
 						is_core_of = LBA
 						is_fully_controlled_by = ROOT
 					}
-					prioritize = { 448 } #TRIPOLI (In case at some point this gets split or tag gets more cores)
+					prioritize = { 448 }
 					custom_effect_tooltip = ITA_strengthen_ascari_corps_libya_tt
 					hidden_effect = {
 						create_unit = {
@@ -2057,7 +1998,7 @@ focus_tree = {
 							is_core_of = LBA
 							is_fully_controlled_by = PREV
 						}
-						prioritize = { 448 } #TRIPOLI (In case at some point this gets split or tag gets more cores)
+						prioritize = { 448 }
 						custom_effect_tooltip = ITA_strengthen_ascari_corps_libya_tt
 						hidden_effect = {
 							create_unit = {
@@ -2075,7 +2016,6 @@ focus_tree = {
 				}
 			}
 
-			#SOMALIA
 			if = {
 				limit = {
 					any_controlled_state = {
@@ -2088,7 +2028,7 @@ focus_tree = {
 						is_core_of = SOM
 						is_fully_controlled_by = ROOT
 					}
-					prioritize = { 559 } #SOMALILAND (In case at some point this gets split or tag gets more cores)
+					prioritize = { 559 }
 					custom_effect_tooltip = ITA_strengthen_ascari_corps_somalia_tt
 					hidden_effect = {
 						create_unit = {
@@ -2126,7 +2066,7 @@ focus_tree = {
 							is_core_of = SOM
 							is_fully_controlled_by = PREV
 						}
-						prioritize = { 559 } #SOMALILAND (In case at some point this gets split or tag gets more cores)
+						prioritize = { 559 }
 						custom_effect_tooltip = ITA_strengthen_ascari_corps_somalia_tt
 						hidden_effect = {
 							create_unit = {
@@ -2145,7 +2085,6 @@ focus_tree = {
 			}
 
 
-			#ETHIOPIA
 			if = {
 				limit = {
 					any_controlled_state = {
@@ -2158,7 +2097,7 @@ focus_tree = {
 						is_core_of = ETH
 						is_fully_controlled_by = ROOT
 					}
-					prioritize = { 271 } #ADDIS ABABA (In case at some point this gets split or tag gets more cores)
+					prioritize = { 271 }
 					custom_effect_tooltip = ITA_strengthen_ascari_corps_ethiopia_tt
 					hidden_effect = {
 						create_unit = {
@@ -2191,7 +2130,7 @@ focus_tree = {
 							is_core_of = ETH
 							is_fully_controlled_by = PREV
 						}
-						prioritize = { 271 } #ADDIS ABABA (In case at some point this gets split or tag gets more cores)
+						prioritize = { 271 }
 						custom_effect_tooltip = ITA_strengthen_ascari_corps_ethiopia_tt
 						hidden_effect = {
 							create_unit = {
@@ -2204,9 +2143,7 @@ focus_tree = {
 				}
 			}
 		
-			## CAMELRY ## Separated so that Libyan Meharisti go before Eritrean ones (cavalry is the other way around)
 			hidden_effect = {
-				#LIBYA
 				if = {
 					limit = {
 						any_controlled_state = {
@@ -2219,8 +2156,7 @@ focus_tree = {
 							is_core_of = LBA
 							is_fully_controlled_by = ROOT
 						}
-						prioritize = { 448 } #TRIPOLI (In case at some point this gets split or tag gets more cores)
-						#Regular Camelry Eritrean
+						prioritize = { 448 }
 						create_unit = {
 							division = "division_template = \"Reggimento Meharista\" start_experience_factor = 0.2 start_equipment_factor = 1.0"
 							owner = ROOT
@@ -2250,8 +2186,7 @@ focus_tree = {
 								is_core_of = LBA
 								is_fully_controlled_by = PREV
 							}
-							prioritize = { 448 } #TRIPOLI (In case at some point this gets split or tag gets more cores)
-							#Regular Camelry Eritrean
+							prioritize = { 448 }
 							create_unit = {
 								division = "division_template = \"Reggimento Meharista\" start_experience_factor = 0.2 start_equipment_factor = 1.0"
 								owner = ROOT
@@ -2261,7 +2196,6 @@ focus_tree = {
 					}
 				}
 
-				#ERITREA
 				if = {
 					limit = {
 						any_controlled_state = {
@@ -2274,8 +2208,7 @@ focus_tree = {
 							is_core_of = ERI
 							is_fully_controlled_by = ROOT
 						}
-						prioritize = { 550 } # ERITREA (In case at some point this gets split or tag gets more cores)
-						#Regular Camelry Eritrean
+						prioritize = { 550 }
 						create_unit = {
 							division = "division_template = \"Reggimento Meharista\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
 							owner = ROOT
@@ -2305,8 +2238,7 @@ focus_tree = {
 								is_core_of = ERI
 								is_fully_controlled_by = PREV
 							}
-							prioritize = { 550 } # ERITREA (In case at some point this gets split or tag gets more cores)
-							#Regular Camelry Eritrean
+							prioritize = { 550 }
 							create_unit = {
 								division = "division_template = \"Reggimento Meharista\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
 								owner = ROOT
@@ -2364,7 +2296,7 @@ focus_tree = {
 						limit = {
 							NOT = { has_country_flag = ITA_improved_irregular_templates_flag }
 						}
-						division_template = { #Improve Irregular template
+						division_template = {
 							name = "Truppe Irregolari a Cavallo"		
 							division_names_group = ITA_CAV_05
 							is_locked = yes
@@ -2378,7 +2310,7 @@ focus_tree = {
 						}
 					}
 					else = {
-						division_template = { #Basic irregular template
+						division_template = {
 							name = "Truppe Irregolari a Cavallo"		
 							division_names_group = ITA_CAV_05
 							is_locked = yes
@@ -2406,7 +2338,7 @@ focus_tree = {
 						limit = {
 							NOT = { has_country_flag = ITA_improved_irregular_templates_flag }
 						}
-						division_template = { #Improve Irregular template
+						division_template = {
 							name = "Truppe Irregolari di Cammelli"		
 							division_names_group = ITA_CAM_02
 							is_locked = yes
@@ -2420,7 +2352,7 @@ focus_tree = {
 						}
 					}
 					else = {
-						division_template = { #Basic irregular template
+						division_template = {
 							name = "Truppe Irregolari di Cammelli"		
 							division_names_group = ITA_CAM_02
 							is_locked = yes
@@ -2443,7 +2375,6 @@ focus_tree = {
 
 			custom_effect_tooltip = ITA_comandante_diavolo_create_units_tt
 
-			#ERITREA
 			if = {
 				limit = {
 					any_controlled_state = {
@@ -2456,7 +2387,7 @@ focus_tree = {
 						is_core_of = ERI
 						is_fully_controlled_by = ROOT
 					}
-					prioritize = { 550 } # ERITREA (In case at some point this gets split or tag gets more cores)
+					prioritize = { 550 }
 					custom_effect_tooltip = ITA_comandante_diavolo_eritrea_tt
 					hidden_effect = {
 						create_unit = {
@@ -2494,7 +2425,7 @@ focus_tree = {
 							is_core_of = ERI
 							is_fully_controlled_by = PREV
 						}
-						prioritize = { 550 } # ERITREA (In case at some point this gets split or tag gets more cores)
+						prioritize = { 550 }
 						custom_effect_tooltip = ITA_comandante_diavolo_eritrea_tt
 						hidden_effect = {
 							create_unit = {
@@ -2512,7 +2443,6 @@ focus_tree = {
 				}
 			}
 
-			#LIBYA
 			if = {
 				limit = {
 					any_controlled_state = {
@@ -2525,7 +2455,7 @@ focus_tree = {
 						is_core_of = LBA
 						is_fully_controlled_by = ROOT
 					}
-					prioritize = { 448 } # TRIPOLI (In case at some point this gets split or tag gets more cores)
+					prioritize = { 448 }
 					custom_effect_tooltip = ITA_comandante_diavolo_libya_tt
 					hidden_effect = {
 						create_unit = {
@@ -2563,7 +2493,7 @@ focus_tree = {
 							is_core_of = LBA
 							is_fully_controlled_by = PREV
 						}
-						prioritize = { 448 } # TRIPOLI (In case at some point this gets split or tag gets more cores)
+						prioritize = { 448 }
 						custom_effect_tooltip = ITA_comandante_diavolo_libya_tt
 						hidden_effect = {
 							create_unit = {
@@ -2581,7 +2511,6 @@ focus_tree = {
 				}
 			}
 
-			#SOMALIA
 			if = {
 				limit = {
 					any_controlled_state = {
@@ -2594,7 +2523,7 @@ focus_tree = {
 						is_core_of = SOM
 						is_fully_controlled_by = ROOT
 					}
-					prioritize = { 559 } # SOMALILAND (In case at some point this gets split or tag gets more cores)
+					prioritize = { 559 }
 					custom_effect_tooltip = ITA_comandante_diavolo_somalia_tt
 					hidden_effect = {
 						create_unit = {
@@ -2632,7 +2561,7 @@ focus_tree = {
 							is_core_of = SOM
 							is_fully_controlled_by = PREV
 						}
-						prioritize = { 559 } # SOMALILAND (In case at some point this gets split or tag gets more cores)
+						prioritize = { 559 }
 						custom_effect_tooltip = ITA_comandante_diavolo_somalia_tt
 						hidden_effect = {
 							create_unit = {
@@ -2650,7 +2579,6 @@ focus_tree = {
 				}
 			}
 
-			#ETHIOPIA
 			if = {
 				limit = {
 					any_controlled_state = {
@@ -2663,7 +2591,7 @@ focus_tree = {
 						is_core_of = ETH
 						is_fully_controlled_by = ROOT
 					}
-					prioritize = { 271 } # ADDIS ABABA (In case at some point this gets split or tag gets more cores)
+					prioritize = { 271 }
 					custom_effect_tooltip = ITA_comandante_diavolo_ethiopia_tt
 					hidden_effect = {
 						create_unit = {
@@ -2705,7 +2633,7 @@ focus_tree = {
 							is_core_of = ETH
 							is_fully_controlled_by = PREV
 						}
-						prioritize = { 271 } # ADDIS ABABA (In case at some point this gets split or tag gets more cores)
+						prioritize = { 271 }
 						custom_effect_tooltip = ITA_comandante_diavolo_ethiopia_tt
 						hidden_effect = {
 							create_unit = {
@@ -2848,7 +2776,7 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					prioritize = { 157 849 117 } #ABRUZZO as main fallback
+					prioritize = { 157 849 117 }
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = synthetic_refinery
@@ -2886,7 +2814,7 @@ focus_tree = {
 						}
 					}
 				}
-				158 = { #PIEDMONT (Torino, Genoa)
+				158 = {
 					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = industrial_complex
@@ -2905,7 +2833,7 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					prioritize = { 736 852 } #LITORALE as main fallback
+					prioritize = { 736 852 }
 					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = industrial_complex
@@ -2926,7 +2854,7 @@ focus_tree = {
 						}
 					}
 				}
-				159 = { #LOMBARDY (Milano, Brescia)
+				159 = {
 					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = arms_factory
@@ -2945,7 +2873,7 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					prioritize = { 850 30 } #TRENTINO as main fallback
+					prioritize = { 850 30 }
 					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = arms_factory
@@ -2966,7 +2894,7 @@ focus_tree = {
 						}
 					}
 				}
-				161 = { #EMILIA ROMAGNA (Bologna)
+				161 = {
 					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = industrial_complex
@@ -2985,7 +2913,7 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					prioritize = { 30 850 } #ALTO ADIGE as main fallback
+					prioritize = { 30 850 }
 					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = industrial_complex
@@ -3006,7 +2934,7 @@ focus_tree = {
 						}
 					}
 				}
-				160 = { #VENETO (Venice )
+				160 = {
 					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = dockyard
@@ -3025,7 +2953,7 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					prioritize = { 852 736 } #ISTRIA as main fallback
+					prioritize = { 852 736 }
 					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = dockyard
@@ -3063,7 +2991,7 @@ focus_tree = {
 						}
 					}
 				}
-				117 = { #CAMPAGNA (Napoli)
+				117 = {
 					if = {
 						limit = {
 							infrastructure < 5
@@ -3103,7 +3031,7 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					prioritize = { 156 2 162 } #CALABRIA as main fallback
+					prioritize = { 156 2 162 }
 					if = {
 						limit = {
 							infrastructure < 5
@@ -3132,7 +3060,7 @@ focus_tree = {
 				limit = {
 					has_full_control_of_state = 849
 				}
-				849 = { #PUGLIA (Taranto, Bari, Foggia)
+				849 = {
 					if = {
 						limit = {
 							infrastructure < 5
@@ -3163,7 +3091,7 @@ focus_tree = {
 					has_full_control_of_state = 115
 				}
 
-				115 = { #SICILY (Palermo, Messina, Catania)
+				115 = {
 					if = {
 						limit = {
 							infrastructure < 5
@@ -3193,7 +3121,7 @@ focus_tree = {
 				limit = {
 					has_full_control_of_state = 114
 				}
-				114 = { #SARDINIA (Cagliari)
+				114 = {
 					if = {
 						limit = {
 							infrastructure < 5
@@ -3215,7 +3143,7 @@ focus_tree = {
 
 			if = {
 				limit = {
-					has_full_control_of_state = 162 #TOSCANA
+					has_full_control_of_state = 162
 				}
 				162 = {
 					add_resource = {
@@ -3314,17 +3242,14 @@ focus_tree = {
 				}
 			}
 
-			#Roma - La Spezia
 			build_railway = {
 				path = { 9904 11751 6862 6875 11833 6946 6973 }
 			}
 
-			#Roma - Bologna
 			build_railway = {
 				path = { 11751 6862 9750 9879 9907 1616 6985 6606 }
 			}
 
-			#Roma - Napoli
 			build_railway = {
 				path = { 9904 11846 923 9826 819 }
 			}
@@ -3379,7 +3304,7 @@ focus_tree = {
 						}
 					}
 				}
-				159 = { #LOMBARDY (Milano)
+				159 = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
@@ -3398,7 +3323,7 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					prioritize = { 161 850 } #EMILIA ROMAGNA as main fallback
+					prioritize = { 161 850 }
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
@@ -3455,7 +3380,7 @@ focus_tree = {
 						}
 					}
 				}
-				159 = { #LOMBARDY (Milano)
+				159 = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = arms_factory
@@ -3474,7 +3399,7 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					prioritize = { 736 852 } #LITORALE as main fallback
+					prioritize = { 736 852 }
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = arms_factory
@@ -3512,7 +3437,7 @@ focus_tree = {
 						}
 					}
 				}
-				159 = { #LOMBARDY
+				159 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = arms_factory
@@ -3531,7 +3456,7 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					prioritize = { 160 852 736 } #VENETO as main fallback
+					prioritize = { 160 852 736 }
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = arms_factory
@@ -3567,21 +3492,21 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			159 = { #LOMBARDY (Milano)
+			159 = {
 				add_building_construction = {
 					type = radar_station
 					level = 1
 					instant_build = yes
 				}
 			}
-			2 = { #LATIUM (Rome)
+			2 = {
 				add_building_construction = {
 					type = radar_station
 					level = 1
 					instant_build = yes
 				}
 			}
-			115 = { #SICILY
+			115 = {
 				add_building_construction = {
 					type = radar_station
 					level = 1
@@ -3623,7 +3548,7 @@ focus_tree = {
 						}
 					}
 				}
-				159 = { #LOMBARDY (Milano)
+				159 = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = arms_factory
@@ -3642,7 +3567,7 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					prioritize = { 158 160 852 736 39 } #PIEMONTE as main fallback
+					prioritize = { 158 160 852 736 39 }
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = arms_factory
@@ -3755,13 +3680,6 @@ focus_tree = {
 	}
 
 
-########  ########  ######   ####  #######     ########  ######  ######## ########   ######  #### ########  #######  
-##     ## ##       ##    ##   ##  ##     ##    ##       ##    ## ##       ##     ## ##    ##  ##     ##    ##     ## 
-##     ## ##       ##         ##  ##     ##    ##       ##       ##       ##     ## ##        ##     ##    ##     ## 
-########  ######   ##   ####  ##  ##     ##    ######    ######  ######   ########  ##        ##     ##    ##     ## 
-##   ##   ##       ##    ##   ##  ##     ##    ##             ## ##       ##   ##   ##        ##     ##    ##     ## 
-##    ##  ##       ##    ##   ##  ##     ##    ##       ##    ## ##       ##    ##  ##    ##  ##     ##    ##     ## 
-##     ## ########  ######   ####  #######     ########  ######  ######## ##     ##  ######  ####    ##     #######  
 
 
 	focus = {
@@ -3815,7 +3733,6 @@ focus_tree = {
 				}
 			}
 
-			#Fallback
 			if = {
 				limit = {
 					NOT = {
@@ -3864,7 +3781,7 @@ focus_tree = {
 			}
 
 			add_doctrine_cost_reduction = {
-				name = ITA_army_primacy_bba #land_doc_bonus
+				name = ITA_army_primacy_bba
 				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
@@ -3969,13 +3886,13 @@ focus_tree = {
 		
 		available = {
 			OR = {
-				has_full_control_of_state = 158 #PIEDMONT
-				has_full_control_of_state = 159 #LOMBARDY
-				has_full_control_of_state = 850 #TRENTINO
-				has_full_control_of_state = 39 #ALTO ADIGE
-				has_full_control_of_state = 160 #VENETO
-				has_full_control_of_state = 736 #LITORALE
-				has_full_control_of_state = 852 #FIUME
+				has_full_control_of_state = 158
+				has_full_control_of_state = 159
+				has_full_control_of_state = 850
+				has_full_control_of_state = 39
+				has_full_control_of_state = 160
+				has_full_control_of_state = 736
+				has_full_control_of_state = 852
 			}
 		}
 
@@ -3983,8 +3900,7 @@ focus_tree = {
 
 		completion_reward = {
 
-			### VALLO ALPINO OCCIDENTALE ###
-			if = { #PIEDMONT
+			if = {
 				limit = {
 					158 = { is_fully_controlled_by = ROOT }
 				}
@@ -4008,13 +3924,12 @@ focus_tree = {
 				}
 			}
 
-			### VALLO ALPINO SETTENTRIONALE ###
-			if = { #LOMBARDY
+			if = {
 				limit = {
 					159 = { is_fully_controlled_by = ROOT }
 				}
 				159 = {
-					add_building_construction = { #Two separate effects for stupid tt reasons :)
+					add_building_construction = {
 						type = bunker
 						level = 2
 						province = {
@@ -4032,7 +3947,7 @@ focus_tree = {
 					}
 				}
 			}
-			if = { #ALTO ADIGE
+			if = {
 				limit = {
 					39 = { is_fully_controlled_by = ROOT }
 				}
@@ -4055,7 +3970,7 @@ focus_tree = {
 					}
 				}
 			}
-			if = { #TRENTINO
+			if = {
 				limit = {
 					850 = { is_fully_controlled_by = ROOT }
 				}
@@ -4070,7 +3985,7 @@ focus_tree = {
 					}
 				}
 			}
-			if = { #VENETO
+			if = {
 				limit = {
 					160 = { is_fully_controlled_by = ROOT }
 				}
@@ -4086,8 +4001,7 @@ focus_tree = {
 				}
 			}
 
-			### VALLO ALPINO ORIENTALE ###
-			if = { #LITORALE
+			if = {
 				limit = {
 					736 = { is_fully_controlled_by = ROOT }
 				}
@@ -4102,7 +4016,7 @@ focus_tree = {
 					}
 				}
 			}
-			if = { #ISTRIA
+			if = {
 				limit = {
 					852 = { is_fully_controlled_by = ROOT }
 				}
@@ -4205,7 +4119,6 @@ focus_tree = {
 				add_ideas = ITA_bandits_war_no_lar
 			}
 
-			# AI will never swap to another doctrine tree once they have started one, regardless of the AI weights, so AI needs to have it replaced manually
 			hidden_effect = {
 				if = {
 					limit = {
@@ -4259,7 +4172,6 @@ focus_tree = {
 		cost = 10
 		available = {
 			NOT = { has_global_flag = second_italo_ethiopian_war_flag }
-			#NTH_Manu: Should probably also require a completed focus in any of the ME political paths, so that it can unlock appropriate generals
 		}
 
 		search_filters = {FOCUS_FILTER_ARMY_XP}
@@ -4290,14 +4202,13 @@ focus_tree = {
 				}
 				show_unit_leaders_tooltip = ITA_giovanni_duca
 			}
-			else_if = { #Communist
+			else_if = {
 				limit = {
 					has_government = communism
 				}
 				show_unit_leaders_tooltip = ITA_ada_gobetti
 			}
 			
-			#NTH_Manu: Medals to Divsion Commanders
 		}
 	}
 
@@ -4322,7 +4233,6 @@ focus_tree = {
 
 			army_experience = 50
 
-			#Update NS icon
 			ITA_improve_regio_esercito_dm_effect = yes
 		}
 	}
@@ -4394,7 +4304,6 @@ focus_tree = {
 					limit = {
 						is_special_project_completed = sp:sp_land_flamethrower_tank
 					}
-					#L3/35 lf Flamethrower
 					ITA_add_basic_light_flamethrower_template = yes
 				}
 				else = {
@@ -4403,7 +4312,6 @@ focus_tree = {
 					}
 					custom_effect_tooltip = ITA_italian_tankettes_flamethrower_tt
 					effect_tooltip = {
-						#L3/35 lf Flamethrower
 						ITA_add_basic_light_flamethrower_template = yes
 					}
 				}
@@ -4455,7 +4363,6 @@ focus_tree = {
 				support = { 
 					engineer = { x = 0 y = 0 }
 					artillery = { x = 0 y = 1 }
-					#anti_tank = { x = 0 y = 2 }
 				}
 			}
 			capital_scope = {
@@ -4546,7 +4453,6 @@ focus_tree = {
 					}
 				}
 			}
-			#ASCARI
 			if = {
 				limit = {
 					any_owned_state = {
@@ -4728,7 +4634,6 @@ focus_tree = {
 				}	
 			}
 
-			#Update NS icon
 			ITA_improve_regio_esercito_dm_effect = yes
 		}
 	}
@@ -4767,7 +4672,7 @@ focus_tree = {
 						}
 					}
 				}
-				158 = { #PIEDMONT (Genova)
+				158 = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = arms_factory
@@ -4786,7 +4691,7 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					prioritize = { 162 161 157 } #TOSCANA as main fallback
+					prioritize = { 162 161 157 }
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = arms_factory
@@ -4827,7 +4732,6 @@ focus_tree = {
 				}	
 			}
 
-			#Update NS icon
 			ITA_improve_regio_esercito_dm_effect = yes
 		}
 	}
@@ -4911,13 +4815,6 @@ focus_tree = {
 	}
 
 
-########  ########  ######   ####    ###          ###    ######## ########   #######  ##    ##    ###    ##     ## ######## ####  ######     ###    
-##     ## ##       ##    ##   ##    ## ##        ## ##   ##       ##     ## ##     ## ###   ##   ## ##   ##     ##    ##     ##  ##    ##   ## ##   
-##     ## ##       ##         ##   ##   ##      ##   ##  ##       ##     ## ##     ## ####  ##  ##   ##  ##     ##    ##     ##  ##        ##   ##  
-########  ######   ##   ####  ##  ##     ##    ##     ## ######   ########  ##     ## ## ## ## ##     ## ##     ##    ##     ##  ##       ##     ## 
-##   ##   ##       ##    ##   ##  #########    ######### ##       ##   ##   ##     ## ##  #### ######### ##     ##    ##     ##  ##       ######### 
-##    ##  ##       ##    ##   ##  ##     ##    ##     ## ##       ##    ##  ##     ## ##   ### ##     ## ##     ##    ##     ##  ##    ## ##     ## 
-##     ## ########  ######   #### ##     ##    ##     ## ######## ##     ##  #######  ##    ## ##     ##  #######     ##    ####  ######  ##     ## 
 
 
 	focus = {
@@ -4937,7 +4834,7 @@ focus_tree = {
 			air_experience = 25
 
 			add_tech_bonus = {
-				name = ITA_air_innovations_bba #fighter_bonus
+				name = ITA_air_innovations_bba
 				bonus = 0.5
 				uses = 1
 				category = light_fighter
@@ -4972,7 +4869,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = ITA_citta_dell_aria
 				bonus = 0.25
-				uses = 3 # was 4
+				uses = 3
 				category = air_equipment
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -4987,7 +4884,7 @@ focus_tree = {
 						}
 					}
 				}
-				2 = { #LATIUM (Rome)
+				2 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = arms_factory
@@ -5007,7 +4904,7 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					prioritize = { 157 849 117 } #ABRUZZO as main fallback
+					prioritize = { 157 849 117 }
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = arms_factory
@@ -5036,7 +4933,7 @@ focus_tree = {
 							type = air_facility
 							level = 1
 							instant_build = yes
-							province = 11751 # North of Rome
+							province = 11751
 						}
 					}
 				}
@@ -5108,7 +5005,7 @@ focus_tree = {
 						}
 					}
 				}
-				161 = { #EMILIA ROMAGNA (Reggio Emilio)
+				161 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = arms_factory
@@ -5127,7 +5024,7 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					prioritize = { 162 157 } #TOSCANA as main fallback
+					prioritize = { 162 157 }
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = arms_factory
@@ -5141,7 +5038,7 @@ focus_tree = {
 				name = ITA_reggianes_exports
 				bonus = 0.50
 				uses = 1
-				category = air_equipment #Maybe more specific stuff? (Light/Medium bombers, fighters...)
+				category = air_equipment
 			}
 
 			if = {
@@ -5191,7 +5088,6 @@ focus_tree = {
 					category = naval_bomber
 				}	
 			}
-			#NTH_Manu: Sends a request to Germany to purchase CAS and/or licensing design templates (historically 100 Ju87)
 		}
 	}
 
@@ -5215,7 +5111,6 @@ focus_tree = {
 
 			air_experience = 50
 
-			#Update NS icon
 			ITA_improve_regia_aeronautica_dm_effect = yes
 		}
 	}
@@ -5258,13 +5153,13 @@ focus_tree = {
 				type = "fighter_good"
 				name = "Adriano"
 				surname = "Visconti"
-				callsign = "Tigre" #Totally made up
+				callsign = "Tigre"
 			}
-			add_ace = { #Ace is a fighter pilot really
+			add_ace = {
 				type = "bomber_unique"
 				name = "Vittorio"
 				surname = "Sanseverino"
-				callsign = "Postino" #Totally made up
+				callsign = "Postino"
 			}
 
 			custom_effect_tooltip = ITA_reduced_chance_of_air_accidents_tt
@@ -5286,7 +5181,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			#More expensive to edit templates, more cheap to produce aircraft
 			add_to_variable = { ITA_military_industry_air_equipment_upgrade_xp_cost = 0.25 }
 			custom_effect_tooltip = ITA_standardization_ra_tt
 
@@ -5323,7 +5217,6 @@ focus_tree = {
 				}
 			}
 
-			#Update NS icon
 			ITA_improve_regia_aeronautica_dm_effect = yes
 		}
 	}
@@ -5343,7 +5236,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY FOCUS_FILTER_AIR_XP}
 
 		completion_reward = {
-			#More expensive to edit templates, more cheap to produce aircraft
 			add_to_variable = { ITA_military_industry_air_equipment_upgrade_xp_cost = -0.5 }
 			custom_effect_tooltip = ITA_specialization_ra_tt
 
@@ -5380,7 +5272,6 @@ focus_tree = {
 				}
 			}
 
-			#Update NS icon
 			ITA_improve_regia_aeronautica_dm_effect = yes
 		}
 	}
@@ -5614,13 +5505,6 @@ focus_tree = {
 	}
 
 
-########  ########  ######   ####    ###       ##     ##    ###    ########  #### ##    ##    ###    
-##     ## ##       ##    ##   ##    ## ##      ###   ###   ## ##   ##     ##  ##  ###   ##   ## ##   
-##     ## ##       ##         ##   ##   ##     #### ####  ##   ##  ##     ##  ##  ####  ##  ##   ##  
-########  ######   ##   ####  ##  ##     ##    ## ### ## ##     ## ########   ##  ## ## ## ##     ## 
-##   ##   ##       ##    ##   ##  #########    ##     ## ######### ##   ##    ##  ##  #### ######### 
-##    ##  ##       ##    ##   ##  ##     ##    ##     ## ##     ## ##    ##   ##  ##   ### ##     ## 
-##     ## ########  ######   #### ##     ##    ##     ## ##     ## ##     ## #### ##    ## ##     ## 
 
 
 	focus = {
@@ -5809,7 +5693,7 @@ focus_tree = {
 						}
 					}
 				}
-				162 = { #TUSCANY (La Spezia)
+				162 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
@@ -5828,7 +5712,7 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					prioritize = { 157 161 2 } #ABRUZZO as main fallback
+					prioritize = { 157 161 2 }
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
@@ -5849,7 +5733,7 @@ focus_tree = {
 						}
 					}
 				}
-				736 = { #LITORALE (Trieste)
+				736 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
@@ -5868,7 +5752,7 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					prioritize = { 852 160 161 } #ISTRIA as main fallback
+					prioritize = { 852 160 161 }
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
@@ -5878,31 +5762,31 @@ focus_tree = {
 				}
 			}
 
-			114 = { #SARDINIA (Cagliari, La Maddalena)
+			114 = {
 				add_building_construction = {
 					type = naval_base
 					level = 2
 					instant_build = yes
-					province = 6891 #La Maddalena
+					province = 6891
 				}
 				add_building_construction = {
 					type = naval_base
 					level = 2
 					instant_build = yes
-					province = 11773 #Cagliari
-				}
-			}
-
-			117 = { #CAMPAGNA (Napoli)
-				add_building_construction = {
-					type = naval_base
-					level = 2
-					instant_build = yes
-					province = 819 #Napoli
+					province = 11773
 				}
 			}
 
-			849 = { #PUGLIA (Brindisi)
+			117 = {
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+					province = 819
+				}
+			}
+
+			849 = {
 				add_building_construction = {
 					type = naval_base
 					level = 2
@@ -5911,7 +5795,7 @@ focus_tree = {
 				}
 			}
 
-			852 = { #ISTRIA (Fiume)
+			852 = {
 				add_building_construction = {
 					type = naval_base
 					level = 2
@@ -5951,7 +5835,7 @@ focus_tree = {
 						}
 					}
 				}
-				162 = { #TUSCANY (La Spezia)
+				162 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
@@ -5970,7 +5854,7 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					prioritize = { 157 161 160 } #ABRUZZO as main fallback
+					prioritize = { 157 161 160 }
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
@@ -6025,7 +5909,7 @@ focus_tree = {
 				limit = {
 					has_full_control_of_state = 448
 				}
-				448 = { #TRIPOLI (Tripoli)
+				448 = {
 					add_building_construction = {
 						type = naval_base
 						level = 1
@@ -6045,7 +5929,7 @@ focus_tree = {
 				limit = {
 					has_full_control_of_state = 451
 				}
-				451 = { #DERNA (Tobruk)
+				451 = {
 					add_building_construction = {
 						type = naval_base
 						level = 1
@@ -6065,7 +5949,7 @@ focus_tree = {
 				limit = {
 					has_full_control_of_state = 164
 				}
-				164 = { #DODECANESE (Rhodes)
+				164 = {
 					add_building_construction = {
 						type = naval_base
 						level = 1
@@ -6085,7 +5969,7 @@ focus_tree = {
 				limit = {
 					has_full_control_of_state = 550
 				}
-				550 = { #ERITREA (Massaua)
+				550 = {
 					add_building_construction = {
 						type = naval_base
 						level = 1
@@ -6105,7 +5989,7 @@ focus_tree = {
 				limit = {
 					has_full_control_of_state = 559
 				}
-				559 = { #SOMALILAND (Mogadishu)
+				559 = {
 					add_building_construction = {
 						type = naval_base
 						level = 1
@@ -6125,7 +6009,7 @@ focus_tree = {
 				limit = {
 					has_full_control_of_state = 844
 				}
-				844 = { #JUBALAND (Kismaayo)
+				844 = {
 					add_building_construction = {
 						type = naval_base
 						level = 1
@@ -6141,12 +6025,11 @@ focus_tree = {
 				}
 			}
 
-			#EXTRA STATES
 			if = {
 				limit = {
 					has_full_control_of_state = 447
 				}
-				447 = { #ALEXANDRIA (Alexandria)
+				447 = {
 					add_building_construction = {
 						type = naval_base
 						level = 1
@@ -6166,7 +6049,7 @@ focus_tree = {
 				limit = {
 					has_full_control_of_state = 458
 				}
-				458 = { #TUNISIA (Bizerte)
+				458 = {
 					add_building_construction = {
 						type = naval_base
 						level = 1
@@ -6186,7 +6069,7 @@ focus_tree = {
 				limit = {
 					has_full_control_of_state = 459
 				}
-				459 = { #ALGIERS (Oran)
+				459 = {
 					add_building_construction = {
 						type = naval_base
 						level = 1
@@ -6265,7 +6148,6 @@ focus_tree = {
 
 			navy_experience = 50
 
-			#Update NS icon
 			ITA_improve_regia_marina_dm_effect = yes
 		}
 	}
@@ -6299,7 +6181,7 @@ focus_tree = {
 						}
 					}
 				}
-				849 = { #PUGLIA (Taranto)
+				849 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = fuel_silo
@@ -6318,7 +6200,7 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					prioritize = { 852 736 } #ISTRIA as main fallback
+					prioritize = { 852 736 }
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = fuel_silo
@@ -6339,7 +6221,7 @@ focus_tree = {
 						}
 					}
 				}
-				117 = { #Campagna (Napoli)
+				117 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = fuel_silo
@@ -6358,7 +6240,7 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					prioritize = { 157 162 } #ABRUZZO as main fallback
+					prioritize = { 157 162 }
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = fuel_silo
@@ -6379,7 +6261,7 @@ focus_tree = {
 						}
 					}
 				}
-				115 = { #SICILY (Palermo)
+				115 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = fuel_silo
@@ -6398,7 +6280,7 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					prioritize = { 156 114 } #CALABRIA as main fallback
+					prioritize = { 156 114 }
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = fuel_silo
@@ -6452,7 +6334,6 @@ focus_tree = {
 					count = 2
 				}
 			}
-			#ASCARI
 			if = {
 				limit = {
 					any_owned_state = {
@@ -6629,7 +6510,7 @@ focus_tree = {
 
 			add_ace = {
 				type = "support_unique"
-				name = "Giulio" #MM: Real name Giulio Cesare Graziani but art won't hook-in with double name :D
+				name = "Giulio"
 				surname = "Graziani"
 				callsign = "Torpedo Twin"
 			}
@@ -6717,7 +6598,6 @@ focus_tree = {
 				category = ca_tech
 			}
 
-			#Update NS icon
 			ITA_improve_regia_marina_dm_effect = yes
 		}
 	}
@@ -6770,7 +6650,6 @@ focus_tree = {
 				category = ca_tech
 			}
 
-			#Update NS icon
 			ITA_improve_regia_marina_dm_effect = yes
 		}
 	}
@@ -6815,7 +6694,7 @@ focus_tree = {
 		completion_reward = {
 			navy_experience = 25
 			custom_effect_tooltip = ITA_cooperation_programs_decisions_tt
-			if = { #Historical agreement with Sweden
+			if = {
 				limit = {
 					NOT = {
 						has_war_with = SWE
@@ -6882,7 +6761,7 @@ focus_tree = {
 					is_fully_controlled_by = ROOT
 					is_coastal = yes
 				}
-				prioritize = { 736 160 } #TRIESTE / VENETO
+				prioritize = { 736 160 }
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
@@ -6940,7 +6819,7 @@ focus_tree = {
 					is_fully_controlled_by = ROOT
 					is_coastal = yes
 				}
-				prioritize = { 158 } #PIEDMONT (Built by Caproni, potentially in Milano, so Genova due to proximity)
+				prioritize = { 158 }
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
@@ -6977,8 +6856,6 @@ focus_tree = {
 				}
 				has_tech = improved_ship_hull_light
 				has_tech = sonar
-				#has_tech = improved_ship_torpedo_launcher #Granting it anyways
-				#has_tech = improved_depth_charges #Granting it anyways
 			}
 			else = {
 				has_tech = improved_destroyer
@@ -7012,14 +6889,10 @@ focus_tree = {
 				category = dd_tech
 			}
 
-			###########
-			### MTG ###
-			###########
-			if = { #MTG 
+			if = {
 				limit = {
 					has_dlc = "Man the Guns"
 				}
-				#Equipment Variant
 				if = {
 					limit = {
 						has_tech = basic_dp_light_battery
@@ -7029,7 +6902,7 @@ focus_tree = {
 						type = ship_hull_light_3
 						name_group = ITA_DD_HISTORICAL
 						parent_version = 0
-						allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
+						allow_without_tech = yes
 						modules = {
 							fixed_ship_battery_slot = dp_light_battery_2
 							fixed_ship_anti_air_slot = ship_anti_air_2
@@ -7049,7 +6922,7 @@ focus_tree = {
 						type = ship_hull_light_3
 						name_group = ITA_DD_HISTORICAL
 						parent_version = 0
-						allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
+						allow_without_tech = yes
 						modules = {
 							fixed_ship_battery_slot = ship_light_battery_2
 							fixed_ship_anti_air_slot = ship_anti_air_2
@@ -7063,7 +6936,6 @@ focus_tree = {
 						}
 					}
 				}
-				#Line Production
 				add_equipment_production = {
 					equipment = {
 						type = ship_hull_light_3
@@ -7077,14 +6949,11 @@ focus_tree = {
 				}
 			}
 
-			##############
-			### NO MTG ###
-			##############
 			else = {
 				create_equipment_variant = {
 					name = "Comandanti Medaglie d'Oro Class"
 					type = destroyer_3
-					allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
+					allow_without_tech = yes
 					upgrades = {
 						ship_torpedo_upgrade = 2
 						destroyer_engine_upgrade = 2
@@ -7109,7 +6978,7 @@ focus_tree = {
 					is_fully_controlled_by = ROOT
 					is_coastal = yes
 				}
-				prioritize = { 162 158 } ##TUSCANY (Livorno) / PIEDMONT (Genova) (First ones built in Genova, others in Livorno, but Genova already receives a bunch of buildings)
+				prioritize = { 162 158 }
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
@@ -7157,14 +7026,10 @@ focus_tree = {
 				category = asw_tech
 			}
 
-			###########
-			### MTG ###
-			###########
-			if = { #MTG 
+			if = {
 				limit = {
 					has_dlc = "Man the Guns"
 				}
-				#Equipment Variant
 				if = {
 					limit = {
 						has_tech = improved_sonar
@@ -7174,7 +7039,7 @@ focus_tree = {
 						type = ship_hull_light_1
 						name_group = ITA_DD_HISTORICAL
 						parent_version = 0
-						allow_without_tech = yes #Makes no difference since ITA already has tech, but in order to keep it consistent
+						allow_without_tech = yes
 						modules = {
 							fixed_ship_battery_slot = ship_light_battery_1
 							fixed_ship_anti_air_slot = ship_anti_air_2
@@ -7184,7 +7049,6 @@ focus_tree = {
 							fixed_ship_torpedo_slot = ship_torpedo_1
 							mid_1_custom_slot = ship_depth_charge_2
 							rear_1_custom_slot = ship_depth_charge_2
-							#front_1_custom_slot = ship_light_battery_2
 						}
 					}
 				}
@@ -7194,7 +7058,7 @@ focus_tree = {
 						type = ship_hull_light_1
 						name_group = ITA_DD_HISTORICAL
 						parent_version = 0
-						allow_without_tech = yes #Makes no difference since ITA already has tech, but in order to keep it consistent
+						allow_without_tech = yes
 						modules = {
 							fixed_ship_battery_slot = ship_light_battery_1
 							fixed_ship_anti_air_slot = ship_anti_air_2
@@ -7204,11 +7068,9 @@ focus_tree = {
 							fixed_ship_torpedo_slot = ship_torpedo_1
 							mid_1_custom_slot = ship_depth_charge_2
 							rear_1_custom_slot = ship_depth_charge_2
-							#front_1_custom_slot = ship_light_battery_2
 						}
 					}
 				}
-				#Line Production
 				add_equipment_production = {
 					equipment = {
 						type = ship_hull_light_1
@@ -7220,7 +7082,6 @@ focus_tree = {
 					progress = 0.35
 					amount = 3
 				}
-				#Line Production
 				add_equipment_production = {
 					equipment = {
 						type = ship_hull_light_1
@@ -7234,9 +7095,6 @@ focus_tree = {
 				}
 			}
 
-			##############
-			### NO MTG ###
-			##############
 			else = {
 				if = {
 					limit = {
@@ -7271,7 +7129,7 @@ focus_tree = {
 					is_fully_controlled_by = ROOT
 					is_coastal = yes
 				}
-				prioritize = { 162 117 } ##TUSCANY (La Spezia) / CAMPANIA (Napoli) (Napoli just to split it up a little bit)
+				prioritize = { 162 117 }
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
@@ -7319,14 +7177,10 @@ focus_tree = {
 				category = bb_tech
 			}
 
-			###########
-			### MTG ###
-			###########
-			if = { #MTG 
+			if = {
 				limit = {
 					has_dlc = "Man the Guns"
 				}
-				#Line Production
 				add_equipment_production = {
 					equipment = {
 						type = ship_hull_heavy_2
@@ -7339,7 +7193,6 @@ focus_tree = {
 					amount = 1
 				}
 
-				#Line Production
 				add_equipment_production = {
 					equipment = {
 						type = ship_hull_heavy_2
@@ -7353,9 +7206,6 @@ focus_tree = {
 				}
 			}
 
-			##############
-			### NO MTG ###
-			##############
 			else = {
 				add_equipment_production = {
 					equipment = {
@@ -7384,7 +7234,7 @@ focus_tree = {
 					is_fully_controlled_by = ROOT
 					is_coastal = yes
 				}
-				prioritize = { 736 158 } ##LITORALE (Trieste) / PIEDMONT (Genova)
+				prioritize = { 736 158 }
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
@@ -7405,13 +7255,13 @@ focus_tree = {
 		relative_position_id = ITA_incrociatori_pesanti
 		cost = 10
 		available = {
-			if = { # MTG tech
+			if = {
 				limit = {
 					has_dlc = "Man the Guns"
 				}
 				has_tech = early_ship_hull_carrier
 			}
-			else = { #Non-MTG tech
+			else = {
 				has_tech = early_carrier
 			}
 		}
@@ -7427,10 +7277,7 @@ focus_tree = {
 				category = cv_tech
 			}
 
-			###########
-			### MTG ###
-			###########
-			if = { #MTG 
+			if = {
 				limit = {
 					has_dlc = "Man the Guns"
 				}
@@ -7441,13 +7288,12 @@ focus_tree = {
 					set_technology = { basic_ship_hull_carrier = 1 }
 				}
 
-				#Equipment Variant
 				create_equipment_variant = {
 					name = "Aquila Class"
 					type = ship_hull_carrier_1
 					name_group = ITA_CV_HISTORICAL
 					parent_version = 0
-					allow_without_tech = yes #Makes no difference since focus grants appropriate tech (above), but it improves tooltip
+					allow_without_tech = yes
 					modules = {
 						fixed_ship_deck_slot_1 = ship_deck_space
 						fixed_ship_deck_slot_2 = ship_deck_space
@@ -7458,7 +7304,6 @@ focus_tree = {
 						front_1_custom_slot = ship_deck_space
 					}
 				}
-				#Line Production
 				add_equipment_production = {
 					equipment = {
 						type = ship_hull_carrier_1
@@ -7472,9 +7317,6 @@ focus_tree = {
 				}
 			}
 
-			##############
-			### NO MTG ###
-			##############
 			else = {
 				if = {
 					limit = {
@@ -7485,7 +7327,7 @@ focus_tree = {
 				create_equipment_variant = {
 					name = "Aquila Class"
 					type = carrier_2
-					allow_without_tech = yes #Makes no difference since focus grants appropriate tech (above), but it improves tooltip
+					allow_without_tech = yes
 					upgrades = {
 						ship_deckspace_upgrade = 3
 						carrier_armor_upgrade = 2
@@ -7510,7 +7352,7 @@ focus_tree = {
 					is_fully_controlled_by = ROOT
 					is_coastal = yes
 				}
-				prioritize = { 158 } #PIEDMONT (Genoa)
+				prioritize = { 158 }
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
@@ -7543,10 +7385,7 @@ focus_tree = {
 
 			navy_experience = 15
 
-			###########
-			### MTG ###
-			###########
-			if = { #MTG
+			if = {
 				limit = {
 					has_dlc = "Man the Guns"
 				}
@@ -7556,13 +7395,12 @@ focus_tree = {
 					}
 					set_technology = { early_ship_hull_carrier = 1 }
 				}
-				#Equipment Variant
 				create_equipment_variant = {
 					name = "Conte di Savoia Class - Converted Liner"
 					type = ship_hull_carrier_conversion_ca
 					name_group = ITA_CV_HISTORICAL
 					parent_version = 0
-					allow_without_tech = yes #Makes no difference since focus grants appropriate tech (above), but it improves tooltip
+					allow_without_tech = yes
 					modules = {
 						fixed_ship_deck_slot_1 = ship_deck_space
 						fixed_ship_deck_slot_2 = ship_deck_space
@@ -7573,7 +7411,6 @@ focus_tree = {
 					}
 				}
 
-				#Line Production
 				add_equipment_production = {
 					equipment = {
 						type = ship_hull_carrier_conversion_ca
@@ -7585,7 +7422,6 @@ focus_tree = {
 					progress = 0.65
 					amount = 1
 				}
-				#Line Production
 				add_equipment_production = {
 					equipment = {
 						type = ship_hull_carrier_conversion_ca
@@ -7598,9 +7434,6 @@ focus_tree = {
 					amount = 1
 				}
 			}
-			##############
-			### NO MTG ###
-			##############
 			else = {
 				if = {
 					limit = {
@@ -7611,7 +7444,7 @@ focus_tree = {
 				create_equipment_variant = {
 					name = "Conte di Savoia Class - Converted Liner"
 					type = carrier_1
-					allow_without_tech = yes #Makes no difference since focus grants appropriate tech (above), but it improves tooltip
+					allow_without_tech = yes
 					upgrades = {
 						ship_deckspace_upgrade = 2
 						carrier_armor_upgrade = 1
@@ -7646,7 +7479,7 @@ focus_tree = {
 					is_fully_controlled_by = ROOT
 					is_coastal = yes
 				}
-				prioritize = { 158 } #PIEDMONT (Genoa)
+				prioritize = { 158 }
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
@@ -7682,10 +7515,8 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = ITA_flotta_d_evasione_admiral_traits_tt
-			#Stupid tooltips oh my god I hate this game
 			hidden_effect = {
-				#First admiral trait
-				if = { #Try to select high level admirals
+				if = {
 					limit = {
 						any_navy_leader = {
 							NOT = {
@@ -7722,8 +7553,7 @@ focus_tree = {
 					}
 				}
 
-				#Second admiral trait
-				if = { #Try to select high level admirals
+				if = {
 					limit = {
 						any_navy_leader = {
 							NOT = {
@@ -7763,14 +7593,11 @@ focus_tree = {
 			
 			navy_experience = 50
 
-			###########
-			### MTG ###
-			###########
-			if = { #MTG
+			if = {
 				limit = {
 					has_dlc = "Man the Guns"
 				}
-				if = { #CRUISER HULL III
+				if = {
 					limit = {
 						has_tech = improved_ship_hull_cruiser
 					}
@@ -7778,13 +7605,12 @@ focus_tree = {
 						limit = {
 							has_tech = basic_dp_light_battery
 						}
-						#Equipment Variant
 						create_equipment_variant = {
 							name = "Costanzo Ciano Class"
 							type = ship_hull_cruiser_3
 							name_group = ITA_CL_HISTORICAL
 							parent_version = 0
-							allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
+							allow_without_tech = yes
 							modules = {
 								front_1_custom_slot = ship_light_medium_battery_3
 								mid_1_custom_slot = ship_torpedo_2
@@ -7802,13 +7628,12 @@ focus_tree = {
 						}
 					}
 					else = {
-						#Equipment Variant
 						create_equipment_variant = {
 							name = "Costanzo Ciano Class"
 							type = ship_hull_cruiser_3
 							name_group = ITA_CL_HISTORICAL
 							parent_version = 0
-							allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
+							allow_without_tech = yes
 							modules = {
 								front_1_custom_slot = ship_light_medium_battery_3
 								mid_1_custom_slot = ship_torpedo_2
@@ -7826,7 +7651,6 @@ focus_tree = {
 						}
 					}
 
-					#Line Production
 					add_equipment_production = {
 						equipment = {
 							type = ship_hull_cruiser_3
@@ -7838,7 +7662,6 @@ focus_tree = {
 						progress = 0.5
 						amount = 1
 					}
-					#Line Production
 					add_equipment_production = {
 						equipment = {
 							type = ship_hull_cruiser_3
@@ -7851,18 +7674,17 @@ focus_tree = {
 						amount = 1
 					}
 				}
-				else = { #CRUISER HULL II
+				else = {
 					if = {
 						limit = {
 							has_tech = basic_dp_light_battery
 						}
-						#Equipment Variant
 						create_equipment_variant = {
 							name = "Costanzo Ciano Class"
 							type = ship_hull_cruiser_2
 							name_group = ITA_CL_HISTORICAL
 							parent_version = 0
-							allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
+							allow_without_tech = yes
 							modules = {
 								front_1_custom_slot = ship_anti_air_2
 								mid_1_custom_slot = ship_torpedo_1
@@ -7879,13 +7701,12 @@ focus_tree = {
 						}
 					}
 					else = {
-						#Equipment Variant
 						create_equipment_variant = {
 							name = "Costanzo Ciano Class"
 							type = ship_hull_cruiser_2
 							name_group = ITA_CL_HISTORICAL
 							parent_version = 0
-							allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
+							allow_without_tech = yes
 							modules = {
 								front_1_custom_slot = ship_anti_air_2
 								mid_1_custom_slot = ship_torpedo_1
@@ -7902,7 +7723,6 @@ focus_tree = {
 						}
 					}
 
-					#Line Production
 					add_equipment_production = {
 						equipment = {
 							type = ship_hull_cruiser_2
@@ -7914,7 +7734,6 @@ focus_tree = {
 						progress = 0.5
 						amount = 1
 					}
-					#Line Production
 					add_equipment_production = {
 						equipment = {
 							type = ship_hull_cruiser_2
@@ -7928,9 +7747,6 @@ focus_tree = {
 					}
 				}
 			}
-			##############
-			### NO MTG ###
-			##############
 			else = {
 				if = {
 					limit = {
@@ -7939,7 +7755,7 @@ focus_tree = {
 					create_equipment_variant = {
 						name = "Costanzo Ciano Class"
 						type = light_cruiser_3
-						allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
+						allow_without_tech = yes
 						upgrades = {
 							ship_reliability_upgrade = 2
 							ship_engine_upgrade = 3
@@ -7972,7 +7788,7 @@ focus_tree = {
 					create_equipment_variant = {
 						name = "Costanzo Ciano Class"
 						type = light_cruiser_2
-						allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
+						allow_without_tech = yes
 						upgrades = {
 							ship_reliability_upgrade = 2
 							ship_engine_upgrade = 2
@@ -8003,8 +7819,6 @@ focus_tree = {
 				}
 			}
 
-			### CORES
-			#ROME
 			if = {
 				limit = {
 					has_full_control_of_state = 2
@@ -8018,7 +7832,6 @@ focus_tree = {
 					}
 				}
 			}
-			#PUGLIA
 			if = {
 				limit = {
 					has_full_control_of_state = 849
@@ -8032,7 +7845,6 @@ focus_tree = {
 					}
 				}
 			}
-			#SICILIA
 			if = {
 				limit = {
 					has_full_control_of_state = 115
@@ -8047,8 +7859,6 @@ focus_tree = {
 				}
 			}
 
-			### COLONIES
-			#TRIPOLI
 			if = {
 				limit = {
 					has_full_control_of_state = 448
@@ -8062,7 +7872,6 @@ focus_tree = {
 					}
 				}
 			}
-			#ERITREA
 			if = {
 				limit = {
 					has_full_control_of_state = 550
@@ -8076,7 +7885,6 @@ focus_tree = {
 					}
 				}
 			}
-			#SOMALILAND
 			if = {
 				limit = {
 					has_full_control_of_state = 559
@@ -8091,8 +7899,6 @@ focus_tree = {
 				}
 			}
 
-			### EXTRA STUFF
-			#GIBRALTAR
 			if = {
 				limit = {
 					has_full_control_of_state = 118
@@ -8106,7 +7912,6 @@ focus_tree = {
 					}
 				}
 			}
-			#ALGIERS
 			if = {
 				limit = {
 					has_full_control_of_state = 459
@@ -8120,7 +7925,6 @@ focus_tree = {
 					}
 				}
 			}
-			#TUNISIA
 			if = {
 				limit = {
 					has_full_control_of_state = 458
@@ -8134,7 +7938,6 @@ focus_tree = {
 					}
 				}
 			}
-			#ALEXANDRIA
 			if = {
 				limit = {
 					has_full_control_of_state = 447
@@ -8148,7 +7951,6 @@ focus_tree = {
 					}
 				}
 			}
-			#LISBON
 			if = {
 				limit = {
 					has_full_control_of_state = 112
@@ -8162,7 +7964,6 @@ focus_tree = {
 					}
 				}
 			}
-			#SEVILLA
 			if = {
 				limit = {
 					has_full_control_of_state = 169
@@ -8176,7 +7977,6 @@ focus_tree = {
 					}
 				}
 			}
-			#BORDEAUX
 			if = {
 				limit = {
 					has_full_control_of_state = 19
@@ -8190,7 +7990,6 @@ focus_tree = {
 					}
 				}
 			}
-			#BRITTANY
 			if = {
 				limit = {
 					has_full_control_of_state = 14
@@ -8211,13 +8010,6 @@ focus_tree = {
 
 
 
-##     ## ####  ######  ########  #######  ########  ####  ######     ###    ##       
-##     ##  ##  ##    ##    ##    ##     ## ##     ##  ##  ##    ##   ## ##   ##       
-##     ##  ##  ##          ##    ##     ## ##     ##  ##  ##        ##   ##  ##       
-#########  ##   ######     ##    ##     ## ########   ##  ##       ##     ## ##       
-##     ##  ##        ##    ##    ##     ## ##   ##    ##  ##       ######### ##       
-##     ##  ##  ##    ##    ##    ##     ## ##    ##   ##  ##    ## ##     ## ##       
-##     ## ####  ######     ##     #######  ##     ## ####  ######  ##     ## ######## 
 
 
 	focus = {
@@ -8397,9 +8189,8 @@ focus_tree = {
 				}
 				set_power_balance = {
 					id = ITA_power_balance
-					left_side = ITA_grand_council_side # will keep the last set side if not specified
-					right_side = ITA_mussolini_side # will keep the last set side if not specified
-					#set_default = yes # whether or not to reset the power balance to the initial value, default = no
+					left_side = ITA_grand_council_side
+					right_side = ITA_mussolini_side
 					set_value = 0.2
 				}
 			}
@@ -8413,8 +8204,8 @@ focus_tree = {
 				effect_tooltip = {
 					set_power_balance = {
 						id = ITA_power_balance
-						left_side = ITA_grand_council_side # will keep the last set side if not specified
-						right_side = ITA_mussolini_side # will keep the last set side if not specified
+						left_side = ITA_grand_council_side
+						right_side = ITA_mussolini_side
 						set_value = 0.2
 					}
 				}
@@ -8586,9 +8377,9 @@ focus_tree = {
 				effect_tooltip = {
 					set_power_balance = {
 						id = ITA_power_balance
-						left_side = ITA_grand_council_side # will keep the last set side if not specified
-						right_side = ITA_mussolini_side # will keep the last set side if not specified
-						set_default = yes # whether or not to reset the power balance to the initial value, default = no
+						left_side = ITA_grand_council_side
+						right_side = ITA_mussolini_side
+						set_default = yes
 					}
 				}
 			}
@@ -8741,7 +8532,6 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
-			#Suez Canal access
 			if = {
 				limit = {
 					has_country_flag = SUEZ_SANCTIONS_FLAG
@@ -8750,7 +8540,6 @@ focus_tree = {
 				custom_effect_tooltip = ITA_anglo_italian_agreements_suez_unlocked_tt
 			}
 
-			#Deescalation
 			add_to_variable = { ETH.ETH_war_escalation_level = -1 }
 			custom_effect_tooltip = ETH_war_deescalation_inc_tt
 		}
@@ -8780,7 +8569,7 @@ focus_tree = {
 
 		search_filters = {}
 
-		completion_reward = {#Changing stuff here will require changing stuff in History file for 1939 bookmark
+		completion_reward = {
 			effect_tooltip = {
 				if = {
 					limit = {
@@ -8795,7 +8584,7 @@ focus_tree = {
 				limit = {
 					835 = { has_resistance = yes } 
 				}
-				835 = { #HARARGHE
+				835 = {
 					add_compliance = 10
 				}
 			}
@@ -8814,7 +8603,7 @@ focus_tree = {
 				limit = {
 					836 = { has_resistance = yes } 
 				}
-				836 = { #BALE
+				836 = {
 					add_compliance = 10
 				}
 			}
@@ -8833,7 +8622,7 @@ focus_tree = {
 				limit = {
 					837 = { has_resistance = yes } 
 				}
-				837 = { #SIDAMO
+				837 = {
 					add_compliance = 10
 				}
 			}
@@ -8852,7 +8641,7 @@ focus_tree = {
 				limit = {
 					838 = { has_resistance = yes } 
 				}
-				838 = { #ILLUBABOR
+				838 = {
 					add_compliance = 10
 				}
 			}
@@ -8926,7 +8715,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_STABILITY}
 
 		completion_reward = {
-			# The king is an idea
 			if = {
 				limit = {
 					has_idea = vittorio_emanuele
@@ -9163,7 +8951,6 @@ focus_tree = {
 
 			ITA_bop_very_low_increase_effect = yes
 
-			#Reduce time for Missiolinis
 			set_variable = { ITA_missiolinis_default_days = 350 }
 			custom_effect_tooltip = ITA_to_live_as_a_lion_missiolinis_tt
 		}
@@ -9203,7 +8990,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL}
 
 		completion_reward = {
-			if = { #Latium
+			if = {
 				limit = {
 					2 = {
 						free_building_slots = {
@@ -9217,7 +9004,7 @@ focus_tree = {
 					add_extra_state_shared_building_slots = 2
 				}
 			}
-			if = { #Campania
+			if = {
 				limit = {
 					117 = {
 						free_building_slots = {
@@ -9232,7 +9019,7 @@ focus_tree = {
 				}
 			}
 
-			if = { #Tuscany
+			if = {
 				limit = {
 					162 = {
 						free_building_slots = {
@@ -9348,7 +9135,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ITA_ministero_della_cultura_popolare #Alt name would be Ministry of Popular Culture (1937-1943)
+		id = ITA_ministero_della_cultura_popolare
 		icon = GFX_focus_generic_italy_propaganda
 		prerequisite = { focus = ITA_culto_del_duce focus = ITA_convene_the_grand_council }
 
@@ -9375,7 +9162,7 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_BALANCE_OF_POWER}
 
-		completion_reward = { #Propaganda System? NOPE :D
+		completion_reward = {
 			add_popularity = {
 				ideology = fascism
 				popularity = 0.05
@@ -9383,7 +9170,7 @@ focus_tree = {
 			add_war_support = 0.03
 			add_political_power = 25
 
-			ITA_bop_very_low_increase_effect = yes #Works for every Duce
+			ITA_bop_very_low_increase_effect = yes
 		}
 	}
 
@@ -9654,7 +9441,7 @@ focus_tree = {
 					}
 				}
 			}
-			random_controlled_state = { #Create a few more Blackshirt Divs
+			random_controlled_state = {
 				limit = {
 					is_core_of = ROOT
 					is_fully_controlled_by = ROOT
@@ -9754,12 +9541,11 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = form_greater_italy_tt
 
-			#CLAIMS IN TUNISIA
 			if = {
 				limit = {
 					458 = { NOT = { is_claimed_by = ROOT } }
 				}
-				add_state_claim = 458 #TUNISIA
+				add_state_claim = 458
 				if = {
 					limit = {
 						458 = {
@@ -9771,7 +9557,7 @@ focus_tree = {
 							}
 						}
 					}
-					if = { #Same controller for both Tunisian states
+					if = {
 						limit = {
 							458 = {
 								controller = {
@@ -9785,7 +9571,7 @@ focus_tree = {
 							generator = { 458 665 }
 						}
 					}
-					else = { #Each Tunisian states have different controllers
+					else = {
 						create_wargoal = {
 							type = take_state_focus
 							target = 458.controller
@@ -9798,12 +9584,12 @@ focus_tree = {
 				limit = {
 					665 = { NOT = { is_claimed_by = ROOT } }
 				}
-				add_state_claim = 665 #GABÈS
+				add_state_claim = 665
 				if = {
 					limit = {
 						665 = {
 							controller = {
-								NOT = { controls_state = 458 } #Otherwise already received the wargoal above
+								NOT = { controls_state = 458 }
 								NOT = { has_war_with = ROOT }
 								NOT = { is_in_faction_with = ROOT }
 								NOT = { has_non_aggression_pact_with = ROOT }
@@ -9819,12 +9605,11 @@ focus_tree = {
 				}
 			}
 
-			#CLAIMS IN DALMATIAN COAST (Yugoslavia)
 			if = {
 				limit = {
 					103 = { NOT = { is_claimed_by = ROOT } }
 				}
-				add_state_claim = 103 #DALMATIA
+				add_state_claim = 103
 				if = {
 					limit = {
 						103 = {
@@ -9836,7 +9621,7 @@ focus_tree = {
 							}
 						}
 					}
-					if = { #Same controller for both Yugoslavian states
+					if = {
 						limit = {
 							103 = {
 								controller = {
@@ -9850,7 +9635,7 @@ focus_tree = {
 							generator = { 103 105 }
 						}
 					}
-					else = { #Each Yugoslavian states have different controllers
+					else = {
 						create_wargoal = {
 							type = take_state_focus
 							target = 103.controller
@@ -9864,12 +9649,12 @@ focus_tree = {
 				limit = {
 					105 = { NOT = { is_claimed_by = ROOT } }
 				}
-				add_state_claim = 105 #MONTENEGRO
+				add_state_claim = 105
 				if = {
 					limit = {
 						105 = {
 							controller = {
-								NOT = { controls_state = 103 } #Otherwise already received the wargoal above
+								NOT = { controls_state = 103 }
 								NOT = { has_war_with = ROOT }
 								NOT = { is_in_faction_with = ROOT }
 								NOT = { has_non_aggression_pact_with = ROOT }
@@ -9885,12 +9670,11 @@ focus_tree = {
 				}
 			}
 
-			#CLAIMS IN ALBANIA
 			if = {
 				limit = {
 					44 = { NOT = { is_claimed_by = ROOT } }
 				}
-				add_state_claim = 44 #ALBANIA
+				add_state_claim = 44
 				if = {
 					limit = {
 						44 = {
@@ -9902,7 +9686,7 @@ focus_tree = {
 							}
 						}
 					}
-					if = { #Same controller for both Albanian states
+					if = {
 						limit = {
 							44 = {
 								controller = {
@@ -9916,7 +9700,7 @@ focus_tree = {
 							generator = { 44 805 }
 						}
 					}
-					else = { #Each Albanian states have different controllers
+					else = {
 						create_wargoal = {
 							type = take_state_focus
 							target = 44.controller
@@ -9930,12 +9714,12 @@ focus_tree = {
 				limit = {
 					805 = { NOT = { is_claimed_by = ROOT } }
 				}
-				add_state_claim = 805 #NORTHERN EPIRUS
+				add_state_claim = 805
 				if = {
 					limit = {
 						805 = {
 							controller = {
-								NOT = { controls_state = 44 } #Otherwise already received the wargoal above
+								NOT = { controls_state = 44 }
 								NOT = { has_war_with = ROOT }
 								NOT = { is_in_faction_with = ROOT }
 								NOT = { has_non_aggression_pact_with = ROOT }
@@ -9955,13 +9739,13 @@ focus_tree = {
 				limit = {
 					934 = { NOT = { is_claimed_by = ROOT } }
 				}
-				add_state_claim = 934 #SHKÖDER
+				add_state_claim = 934
 				if = {
 					limit = {
 						934 = {
 							controller = {
-								NOT = { controls_state = 44 } #Otherwise already received the wargoal above
-								NOT = { controls_state = 805 } #Otherwise already received the wargoal above
+								NOT = { controls_state = 44 }
+								NOT = { controls_state = 805 }
 								NOT = { has_war_with = ROOT }
 								NOT = { is_in_faction_with = ROOT }
 								NOT = { has_non_aggression_pact_with = ROOT }
@@ -10018,7 +9802,6 @@ focus_tree = {
 			}
 
 			custom_effect_tooltip = ITA_heroes_of_the_nation_general_traits_tt
-			#Stupid tooltips oh my god I hate this game
 			hidden_effect = {
 				if = {
 					limit = {
@@ -10151,7 +9934,7 @@ focus_tree = {
 
 			add_country_leader_trait = capo_supremo
 
-			custom_effect_tooltip = ITA_mussolini_becomes_field_marshal_tt #Has to start as unit leader so that you cannot give him traits via unit_leader events (missiolinis)
+			custom_effect_tooltip = ITA_mussolini_becomes_field_marshal_tt
 
 			hidden_effect = {
 				ITA_benito_mussolini = {
@@ -10173,7 +9956,6 @@ focus_tree = {
 					limit = {
 						has_tech = super_heavy_tank_chassis
 					}
-					#SH template
 					ITA_add_il_duce_sh_tank_template_and_production = yes
 				}
 				else = {
@@ -10205,7 +9987,6 @@ focus_tree = {
 
 			ITA_bop_very_low_increase_effect = yes
 
-			#Names for NSs
 			hidden_effect = {
 				ITA_replace_stuff_based_on_ideology_effect = yes
 			}
@@ -10227,12 +10008,11 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
-			#CLAIM IN CORSICA
 			if = {
 				limit = {
 					1 = { NOT = { is_claimed_by = ROOT } }
 				}
-				add_state_claim = 1 #CORSICA
+				add_state_claim = 1
 				if = {
 					limit = {
 						1 = {
@@ -10244,7 +10024,7 @@ focus_tree = {
 							}
 						}
 					}
-					if = { #Same controller for Corsica and Tunisian states
+					if = {
 						limit = {
 							1 = {
 								controller = {
@@ -10259,7 +10039,7 @@ focus_tree = {
 							generator = { 1 458 }
 						}
 					}
-					else = { #Corsica and Tunisian states have different controllers
+					else = {
 						create_wargoal = {
 							type = take_state_focus
 							target = 1.controller
@@ -10269,17 +10049,16 @@ focus_tree = {
 				}
 			}
 
-			#CLAIMS IN TUNISIA
 			if = {
 				limit = {
 					458 = { NOT = { is_claimed_by = ROOT } }
 				}
-				add_state_claim = 458 #TUNISIA
+				add_state_claim = 458
 				if = {
 					limit = {
 						458 = {
 							controller = {
-								ROOT = { NOT = { has_wargoal_against = PREV } } #Didn't get wargoal from Corsica script above
+								ROOT = { NOT = { has_wargoal_against = PREV } }
 								NOT = { has_war_with = ROOT }
 								NOT = { is_in_faction_with = ROOT }
 								NOT = { has_non_aggression_pact_with = ROOT }
@@ -10287,7 +10066,7 @@ focus_tree = {
 							}
 						}
 					}
-					if = { #Same controller for both Tunisian states
+					if = {
 						limit = {
 							458 = {
 								controller = {
@@ -10301,7 +10080,7 @@ focus_tree = {
 							generator = { 458 665 }
 						}
 					}
-					else = { #Each Tunisian states have different controllers
+					else = {
 						create_wargoal = {
 							type = take_state_focus
 							target = 458.controller
@@ -10314,13 +10093,13 @@ focus_tree = {
 				limit = {
 					665 = { NOT = { is_claimed_by = ROOT } }
 				}
-				add_state_claim = 665 #GABÈS
+				add_state_claim = 665
 				if = {
 					limit = {
 						665 = {
 							controller = {
-								ROOT = { NOT = { has_wargoal_against = PREV } } #Didn't get wargoal from Corsica script above
-								NOT = { controls_state = 458 } #Otherwise already received the wargoal above
+								ROOT = { NOT = { has_wargoal_against = PREV } }
+								NOT = { controls_state = 458 }
 								NOT = { has_war_with = ROOT }
 								NOT = { is_in_faction_with = ROOT }
 								NOT = { has_non_aggression_pact_with = ROOT }
@@ -10336,12 +10115,11 @@ focus_tree = {
 				}
 			}
 
-			#CLAIMS IN BRITISH ISLANDS
 			if = {
 				limit = {
 					116 = { NOT = { is_claimed_by = ROOT } }
 				}
-				add_state_claim = 116 #MALTA
+				add_state_claim = 116
 				if = {
 					limit = {
 						116 = {
@@ -10353,7 +10131,7 @@ focus_tree = {
 							}
 						}
 					}
-					if = { #Same controller for both Malta and Cyprus
+					if = {
 						limit = {
 							116 = {
 								controller = {
@@ -10367,7 +10145,7 @@ focus_tree = {
 							generator = { 116 183 }
 						}
 					}
-					else = { #Malta and Cyprus have different controllers
+					else = {
 						create_wargoal = {
 							type = take_state_focus
 							target = 116.controller
@@ -10380,12 +10158,12 @@ focus_tree = {
 				limit = {
 					183 = { NOT = { is_claimed_by = ROOT } }
 				}
-				add_state_claim = 183 #CYPRUS
+				add_state_claim = 183
 				if = {
 					limit = {
 						183 = {
 							controller = {
-								NOT = { controls_state = 116 } #Otherwise already received the wargoal above
+								NOT = { controls_state = 116 }
 								NOT = { has_war_with = ROOT }
 								NOT = { is_in_faction_with = ROOT }
 								NOT = { has_non_aggression_pact_with = ROOT }
@@ -10418,12 +10196,11 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
-			#CLAIMS IN GIBRALTAR AND SUEZ CANAL
 			if = {
 				limit = {
 					118 = { NOT = { is_claimed_by = ROOT } }
 				}
-				add_state_claim = 118 #GIBRALTAR
+				add_state_claim = 118
 				if = {
 					limit = {
 						118 = {
@@ -10435,7 +10212,7 @@ focus_tree = {
 							}
 						}
 					}
-					if = { #Same controller for both states
+					if = {
 						limit = {
 							118 = {
 								controller = {
@@ -10449,7 +10226,7 @@ focus_tree = {
 							generator = { 118 446 }
 						}
 					}
-					else = { #Each state have different controllers
+					else = {
 						create_wargoal = {
 							type = take_state_focus
 							target = 118.controller
@@ -10463,12 +10240,12 @@ focus_tree = {
 				limit = {
 					446 = { NOT = { is_claimed_by = ROOT } }
 				}
-				add_state_claim = 446 #CAIRO (Suez Canal)
+				add_state_claim = 446
 				if = {
 					limit = {
 						446 = {
 							controller = {
-								NOT = { controls_state = 118 } #Otherwise already received the wargoal above
+								NOT = { controls_state = 118 }
 								NOT = { has_war_with = ROOT }
 								NOT = { is_in_faction_with = ROOT }
 								NOT = { has_non_aggression_pact_with = ROOT }
@@ -10543,17 +10320,14 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT}
 
 		completion_reward = {
-			# REGIO ESERCITO
 			add_to_variable = { ITA_re_army_morale_factor = 0.05 }
 			add_to_variable = { ITA_re_conscription_factor = 0.05 }
 			add_to_variable = { ITA_re_army_attack_factor = 0.05 }
 			custom_effect_tooltip = ITA_by_blood_alone_re_tt
 
-			#REGIA AERONAUTICA
 			add_to_variable = { ITA_ra_air_superiority_bonus_in_combat = 0.05 }
 			custom_effect_tooltip = ITA_by_blood_alone_ra_tt
 
-			#REGIA MARINA
 			add_to_variable = { ITA_rm_naval_morale_factor = 0.05 }
 			custom_effect_tooltip = ITA_by_blood_alone_rm_tt
 
@@ -10629,11 +10403,6 @@ focus_tree = {
 	}
 
 
-###############
-###############
-# ALT FASCISM #
-###############
-###############
 
 	focus = {
 		id = ITA_depose_mussolini
@@ -10822,9 +10591,6 @@ focus_tree = {
 		}
 	}
 
-	#####################
-	# SHARED SUB-BRANCH #
-	#####################
 	focus = {
 		id = ITA_stop_the_squandering
 		icon = GFX_focus_mex_privatisation
@@ -11171,9 +10937,6 @@ focus_tree = {
 
 
 
-	###############
-	# Italo Balbo #
-	###############
 
 	focus = {
 		id = ITA_reorganize_regio_esercito
@@ -11300,7 +11063,7 @@ focus_tree = {
 					is_core_of = LBA
 					is_fully_controlled_by = ROOT
 				}
-				any_subject_country = { #FOR PUPPETS
+				any_subject_country = {
 					any_controlled_state = {
 						is_core_of = LBA
 						is_fully_controlled_by = PREV
@@ -11314,7 +11077,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					448 = { #TRIPOLI
+					448 = {
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
 				}
@@ -11334,7 +11097,7 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					449 = { #EL AGHEILA
+					449 = {
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
 				}
@@ -11349,7 +11112,7 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					450 = { #BENGHASI
+					450 = {
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
 				}
@@ -11369,11 +11132,11 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					451 = { #DERNA
+					451 = {
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
 				}
-				451 = { #TRIPOLI
+				451 = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = dockyard
@@ -11422,7 +11185,7 @@ focus_tree = {
 			    	amount = 8
 			    	state = 448   
 				}
-				448 = { #TRIPOLI
+				448 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = fuel_silo
@@ -11434,7 +11197,7 @@ focus_tree = {
 					limit = {
 						has_tech = synth_oil_experiments
 					}
-					448 = { #TRIPOLI
+					448 = {
 						add_extra_state_shared_building_slots = 1
 						add_building_construction = {
 							type = synthetic_refinery
@@ -11489,7 +11252,7 @@ focus_tree = {
 				    amount = 16
 				    state = 448  
 				}
-				448 = { #TRIPOLI
+				448 = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
@@ -11515,7 +11278,7 @@ focus_tree = {
 
 	focus = {
 		id = ITA_novus_ordo
-		icon = GFX_focus_ITA_strengthen_ascari_corps #ITA_ministry_of_italian_africa?
+		icon = GFX_focus_ITA_strengthen_ascari_corps
 		prerequisite = { focus = ITA_steel_in_tripoli focus = ITA_oil_in_tripoli }
 		relative_position_id = ITA_the_fourth_shore
 		x = 0
@@ -11528,7 +11291,7 @@ focus_tree = {
 					is_core_of = LBA
 					is_fully_controlled_by = ROOT
 				}
-				any_subject_country = { #FOR PUPPETS
+				any_subject_country = {
 					any_controlled_state = {
 						is_core_of = LBA
 						is_fully_controlled_by = PREV
@@ -11550,7 +11313,7 @@ focus_tree = {
 			
 			if = {
 				limit = {
-					448 = { #TRIPOLI
+					448 = {
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
 				}
@@ -11565,7 +11328,7 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					449 = { #EL AGHEILA
+					449 = {
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
 				}
@@ -11575,7 +11338,7 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					450 = { #BENGHASI
+					450 = {
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
 				}
@@ -11590,11 +11353,11 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					451 = { #DERNA
+					451 = {
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
 				}
-				451 = { #TRIPOLI
+				451 = {
 					add_extra_state_shared_building_slots = 1
 				}
 			}
@@ -11699,10 +11462,8 @@ focus_tree = {
 							division_names_group = ITA_COL_01
 							override_model = ITA_infantry_alt_0_entity
 							template_counter = 67
-							#is_locked = yes
 							obsolete = yes
 
-							# Represents lesser-equipped colonial units
 							regiments = { 
 								infantry = { x = 0 y = 0 }
 								infantry = { x = 0 y = 1 }
@@ -11719,10 +11480,8 @@ focus_tree = {
 							division_names_group = ITA_COL_01
 							override_model = ITA_infantry_alt_0_entity
 							template_counter = 67
-							#is_locked = yes
 							obsolete = yes
 
-							# Represents lesser-equipped colonial units
 							regiments = { 
 								infantry = { x = 0 y = 0 }
 								infantry = { x = 0 y = 1 }
@@ -11752,7 +11511,7 @@ focus_tree = {
 						is_core_of = LBA
 						is_fully_controlled_by = ROOT
 					}
-					prioritize = { 448 } #TRIPOLI (In case at some point this gets split or tag gets more cores)
+					prioritize = { 448 }
 					custom_effect_tooltip = ITA_novus_ordo_irregular_troops_tt
 					hidden_effect = {
 						create_unit = {
@@ -11785,7 +11544,7 @@ focus_tree = {
 							is_core_of = LBA
 							is_fully_controlled_by = ROOT
 						}
-						prioritize = { 448 } #TRIPOLI (In case at some point this gets split or tag gets more cores)
+						prioritize = { 448 }
 						custom_effect_tooltip = ITA_novus_ordo_irregular_troops_tt
 						hidden_effect = {
 							create_unit = {
@@ -11801,9 +11560,6 @@ focus_tree = {
 		}
 	}
 
-	###############
-	# Dino Grandi #
-	###############
 	focus = {
 		id = ITA_seek_british_military_cooperation
 		icon = GFX_goal_generic_scientific_exchange
@@ -11986,12 +11742,12 @@ focus_tree = {
 		cost = 10
 		available = {
 			is_subject = no
-			OR = { #ADD A TOOLTIP INSTEAD??
+			OR = {
 				any_controlled_state = {
 					is_core_of = ETH
 					is_fully_controlled_by = ROOT
 				}
-				any_subject_country = { #FOR PUPPETS
+				any_subject_country = {
 					any_controlled_state = {
 						is_core_of = ETH
 						is_fully_controlled_by = PREV
@@ -12003,7 +11759,7 @@ focus_tree = {
 					is_core_of = LBA
 					is_fully_controlled_by = ROOT
 				}
-				any_subject_country = { #FOR PUPPETS
+				any_subject_country = {
 					any_controlled_state = {
 						is_core_of = LBA
 						is_fully_controlled_by = PREV
@@ -12061,7 +11817,7 @@ focus_tree = {
 			add_political_power = 75
 			add_war_support = 0.05
 
-			custom_effect_tooltip = ITA_african_conquests_tt #Annex cost reduction TT
+			custom_effect_tooltip = ITA_african_conquests_tt
 
 			add_ideas = ITA_impero_italiano
 			if = { 
@@ -12173,7 +11929,7 @@ focus_tree = {
 				}
 				add_tech_bonus = {
 					name = ITA_meritocracy
-					bonus = 0.75 # was 1
+					bonus = 0.75
 					uses = 1
 					category = nuclear
 				}
@@ -12197,7 +11953,6 @@ focus_tree = {
 		icon = GFX_focus_usa_reestablish_the_gold_standard
 		prerequisite = { focus = ITA_reorganize_the_party }
 
-		#icon = 
 		relative_position_id = ITA_reorganize_the_party
 		x = 2
 		y = 1
@@ -12275,14 +12030,14 @@ focus_tree = {
 				limit = {
 					2 = { 
 						is_fully_controlled_by = ROOT
-						free_building_slots = { #Preventing Lazio state from getting overcrowded
+						free_building_slots = {
 							building = arms_factory
 							size > 0
 							include_locked = yes
 						}
 					}
 				}
-				2 = { #LATIUM
+				2 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = arms_factory
@@ -12301,7 +12056,7 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					prioritize = { 157 849 115 } #ABRUZZO as main fallback
+					prioritize = { 157 849 115 }
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = arms_factory
@@ -12317,7 +12072,7 @@ focus_tree = {
 						is_fully_controlled_by = ROOT
 					}
 				}
-				117 = { #CAMPANIA
+				117 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = arms_factory
@@ -12332,7 +12087,7 @@ focus_tree = {
 						is_fully_controlled_by = ROOT
 					}
 				}
-				161 = { #EMILIA ROMAGNA
+				161 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = arms_factory
@@ -12347,7 +12102,7 @@ focus_tree = {
 						is_fully_controlled_by = ROOT
 					}
 				}
-				162 = { #TUSCANY
+				162 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = arms_factory
@@ -12361,13 +12116,6 @@ focus_tree = {
 
 
 
-##     ##  #######  ##    ##    ###    ########   ######  ##     ## ####  ######  ######## 
-###   ### ##     ## ###   ##   ## ##   ##     ## ##    ## ##     ##  ##  ##    ##    ##    
-#### #### ##     ## ####  ##  ##   ##  ##     ## ##       ##     ##  ##  ##          ##    
-## ### ## ##     ## ## ## ## ##     ## ########  ##       #########  ##   ######     ##    
-##     ## ##     ## ##  #### ######### ##   ##   ##       ##     ##  ##        ##    ##    
-##     ## ##     ## ##   ### ##     ## ##    ##  ##    ## ##     ##  ##  ##    ##    ##    
-##     ##  #######  ##    ## ##     ## ##     ##  ######  ##     ## ####  ######     ##    
 
 
 
@@ -12389,7 +12137,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
-			every_owned_state = { #Compensating for ideology swap auto-eating half compliance
+			every_owned_state = {
 				limit = {
 					has_resistance = yes
 				}
@@ -12415,7 +12163,6 @@ focus_tree = {
 			
 			show_unit_leaders_tooltip = ITA_giuseppe_de_stefanis
 
-			#BoP
 			set_power_balance = {
 				id = ITA_power_balance
 				right_side = ITA_king_side
@@ -12439,11 +12186,9 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			#IRI
 			add_to_variable = { ITA_iri_local_resources_factor = 0.1 }
 			custom_effect_tooltip = ITA_extraction_industry_iri_tt
 
-			#MILITARY INDUSTRY
 			add_to_variable = { ITA_military_industry_dm_production_lack_of_resource_penalty_factor = -0.15 }
 			custom_effect_tooltip = ITA_extraction_industry_military_industry_tt
 			
@@ -12609,7 +12354,6 @@ focus_tree = {
 				}
 			}
 
-			#Clear stuff thanks
 			hidden_effect = {
 				every_core_state = {
 					limit = {
@@ -12706,13 +12450,12 @@ focus_tree = {
 				set_technology = { coastal_defense_ships = 1 popup = no }
 				set_technology = { pre_dreadnoughts = 1 popup = no }
 
-				#QUARTO and LIBIA - Pre-Dreadnoughts
 				create_equipment_variant = {
 					name = "Vecchio Esploratore Class"
 					type = ship_hull_pre_dreadnought
 					name_group = ITA_BC_HISTORICAL
 					parent_version = 0
-					allow_without_tech = yes #Makes no difference since focus grants appropriate tech (above), but it improves tooltip
+					allow_without_tech = yes
 					modules = {
 						front_1_custom_slot = ship_anti_air_1
 						mid_1_custom_slot = ship_secondaries_1
@@ -12750,13 +12493,12 @@ focus_tree = {
 					amount = 1
 				}
 				
-				#ALESSANDRO POERIO Class - Destroyers
 				create_equipment_variant = {
 					name = "Alessandro Poerio Class"
 					type = ship_hull_light_1
 					name_group = ITA_DD_HISTORICAL
 					parent_version = 0
-					allow_without_tech = yes #Makes no difference since appropriate tech is already researched, but it improves tooltip
+					allow_without_tech = yes
 					modules = {
 						mid_1_custom_slot = ship_anti_air_1
 						rear_1_custom_slot = ship_mine_layer_1
@@ -12791,13 +12533,12 @@ focus_tree = {
 					amount = 1
 				}
 				
-				#ERITREA - Coastal Defense Ship
 				create_equipment_variant = {
 					name = "Eritrea Class"
 					type = ship_hull_cruiser_coastal_defense_ship
 					name_group = ITA_BC_HISTORICAL
 					parent_version = 0
-					allow_without_tech = yes #Makes no difference since focus grants appropriate tech (above), but it improves tooltip
+					allow_without_tech = yes
 					modules = {
 						front_1_custom_slot = ship_anti_air_1
 						mid_1_custom_slot = ship_secondaries_1
@@ -12824,11 +12565,10 @@ focus_tree = {
 				}
 			}
 			else = {
-				#VECHIO ESPLORATORE CLASS (Quarto and Libia) - CA
 				create_equipment_variant = {
 					name = "Vecchio Esploratore Class"
 					type = heavy_cruiser_1
-					allow_without_tech = yes #Makes no difference since focus appropriate tech is already researched but it improves tooltip
+					allow_without_tech = yes
 					upgrades = {
 						ship_reliability_upgrade = 2
 						ship_engine_upgrade = 1
@@ -12859,11 +12599,10 @@ focus_tree = {
 					amount = 1
 				}
 
-				#ALESSANDRO POERIO CLASS - DD
 				create_equipment_variant = {
 					name = "Alessandro Poerio Class"
 					type = destroyer_1
-					allow_without_tech = yes #Makes no difference since focus appropriate tech is already researched but it improves tooltip
+					allow_without_tech = yes
 					upgrades = {
 						ship_torpedo_upgrade = 1
 						destroyer_engine_upgrade = 1
@@ -12894,11 +12633,10 @@ focus_tree = {
 					amount = 1
 				}
 
-				#ERITREA CLASS - DD
 				create_equipment_variant = {
 					name = "Eritrea Class"
 					type = destroyer_1
-					allow_without_tech = yes #Makes no difference since focus appropriate tech is already researched but it improves tooltip
+					allow_without_tech = yes
 					upgrades = {
 						ship_torpedo_upgrade = 1
 						destroyer_engine_upgrade = 2
@@ -12983,7 +12721,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
-			every_owned_state = { #Compensating for ideology swap auto-eating half compliance
+			every_owned_state = {
 				limit = {
 					has_resistance = yes
 				}
@@ -13018,7 +12756,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY}
 
 		completion_reward = {
-			every_owned_state = { #Compensating for ideology swap auto-eating half compliance
+			every_owned_state = {
 				limit = {
 					has_resistance = yes
 				}
@@ -13078,7 +12816,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_ARMY_XP FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
-			every_owned_state = { #Compensating for ideology swap auto-eating half compliance
+			every_owned_state = {
 				limit = {
 					has_resistance = yes
 				}
@@ -13245,7 +12983,7 @@ focus_tree = {
 						side = ITA_grand_council_side
 					}
 				}
-				hidden_effect = { #Remove all BoP modifiers from losing states
+				hidden_effect = {
 					ITA_bop_remove_lost_core_modifier = yes
 				}
 				custom_effect_tooltip = ITA_crush_opposition_bop_tt
@@ -13578,17 +13316,15 @@ focus_tree = {
 			}
 			add_ideas = ITA_papal_support
 
-			#BoP
 			set_power_balance = {
 				id = ITA_power_balance
 				left_side = ITA_pope_side
 			}
-			#If BoP was towards Grand Council, set it to 0
 			if = {
 				limit = {
 					power_balance_value = {
 						id = ITA_power_balance
-						value < 0 # accepts <, > or =
+						value < 0
 					}
 				}
 				set_power_balance = {
@@ -13596,7 +13332,7 @@ focus_tree = {
 					set_value = 0
 				}
 			}
-			hidden_effect = { #Remove all BoP modifiers from losing states
+			hidden_effect = {
 				ITA_bop_remove_lost_core_modifier = yes
 			}
 			unlock_decision_tooltip = ITA_bop_expand_the_lateran_treaty
@@ -13739,7 +13475,6 @@ focus_tree = {
 				}
 			}
 		}
-		#relative_position_id = ITA_setting_course #Better to use the other one for hiding branches
 		relative_position_id = ITA_towards_a_greater_italy
 		cost = 5
 		available = {
@@ -13817,26 +13552,20 @@ focus_tree = {
 				}
 			}
 
-			add_tech_bonus = { #Changed to require the tech to complete this focus, and give template and production line
+			add_tech_bonus = {
 				name = ITA_mare_nostrum_bba
 				ahead_reduction = 2
 				bonus = 1.0
 				uses = 1
 				technology = super_heavy_tank_chassis
 			}
-			add_tech_bonus = { #Changed to require the tech to complete this focus, and give template and production line
+			add_tech_bonus = {
 				name = ITA_mare_nostrum_bba
 				ahead_reduction = 2
 				bonus = 1.0
 				uses = 1
 				category = heavy_air
 			}
-			#add_tech_bonus = { #Changed to require the tech to complete this focus, and give template and production line
-				#name = ITA_mare_nostrum_bba
-				#bonus = 1.0
-				#uses = 1
-				#technology = ship_hull_super_heavy
-			#}
 
 			add_breakthrough_progress = {
 				specialization = specialization_naval
@@ -14191,15 +13920,6 @@ focus_tree = {
 		cost = 5
 		available = {
 			is_special_project_completed = sp:sp_naval_super_heavy_battleship
-			#if = {
-				#limit = {
-					#has_dlc = "Man the Guns"
-				#}
-				#has_tech = ship_hull_super_heavy
-			#}
-			#else = {
-				#has_tech = heavy_battleship
-			#}
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
@@ -14244,7 +13964,7 @@ focus_tree = {
 					type = ship_hull_super_heavy_1
 					name_group = ITA_BB_HISTORICAL
 					parent_version = 0
-					allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
+					allow_without_tech = yes
 					modules = {
 						front_1_custom_slot = ship_anti_air_2
 						front_2_custom_slot = ship_super_heavy_battery_1
@@ -14263,7 +13983,6 @@ focus_tree = {
 					}
 				}
 
-				#Line Production
 				add_equipment_production = {
 					equipment = {
 						type = ship_hull_super_heavy_1
@@ -14293,7 +14012,7 @@ focus_tree = {
 				create_equipment_variant = {
 					name = "Neptunus Class"
 					type = SH_battleship_1
-					allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
+					allow_without_tech = yes
 					upgrades = {
 						ship_reliability_upgrade = 2
 						ship_engine_upgrade = 2
@@ -14302,7 +14021,6 @@ focus_tree = {
 					}
 				}
 
-				#Line Production
 				add_equipment_production = {
 					equipment = {
 						type = SH_battleship_1
@@ -14422,7 +14140,6 @@ focus_tree = {
 		relative_position_id = ITA_iberian_protection
 		cost = 10
 		available = {
-			#NOT adding requirements here since it's a final focus and it would really overrcrowd tt
 		}
 
 		search_filters = {}
@@ -14691,7 +14408,6 @@ focus_tree = {
 					limit = {
 						has_tech = super_heavy_tank_chassis
 					}
-					#SH template
 					ITA_add_hand_of_god_sh_tank_template_and_production = yes
 				}
 				else = {
@@ -14764,7 +14480,7 @@ focus_tree = {
 				}
 				custom_effect_tooltip = if_they_accept_tt
 				effect_tooltip = {
-					transfer_state = 454 #PALESTINE
+					transfer_state = 454
 					add_war_support = 0.03
 					454 = {
 						set_state_category = town
@@ -14873,13 +14589,6 @@ focus_tree = {
 
 
 
-########  #######  ########  ######## ####  ######   ##    ##    ########   #######  ##       #### ######## ####  ######   ######     ########  ####  ######   ##     ## ######## 
-##       ##     ## ##     ## ##        ##  ##    ##  ###   ##    ##     ## ##     ## ##        ##     ##     ##  ##    ## ##    ##    ##     ##  ##  ##    ##  ##     ##    ##    
-##       ##     ## ##     ## ##        ##  ##        ####  ##    ##     ## ##     ## ##        ##     ##     ##  ##       ##          ##     ##  ##  ##        ##     ##    ##    
-######   ##     ## ########  ######    ##  ##   #### ## ## ##    ########  ##     ## ##        ##     ##     ##  ##        ######     ########   ##  ##   #### #########    ##    
-##       ##     ## ##   ##   ##        ##  ##    ##  ##  ####    ##        ##     ## ##        ##     ##     ##  ##             ##    ##   ##    ##  ##    ##  ##     ##    ##    
-##       ##     ## ##    ##  ##        ##  ##    ##  ##   ###    ##        ##     ## ##        ##     ##     ##  ##    ## ##    ##    ##    ##   ##  ##    ##  ##     ##    ##    
-##        #######  ##     ## ######## ####  ######   ##    ##    ##         #######  ######## ####    ##    ####  ######   ######     ##     ## ####  ######   ##     ##    ##    
 
 
 	focus = {
@@ -14970,10 +14679,10 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
-			add_state_claim = 102 #NORTH SLOVENIA
-			add_state_claim = 853 #LJUBLJANA
-			add_state_claim = 103 #DALMATIA
-			add_state_claim = 105 #MONTENEGRO
+			add_state_claim = 102
+			add_state_claim = 853
+			add_state_claim = 103
+			add_state_claim = 105
 
 			if = {
 				limit = {
@@ -15023,7 +14732,7 @@ focus_tree = {
 
 		search_filters = {}
 
-		completion_reward = { #Changing stuff here will require changing stuff in History file for 1939 bookmark
+		completion_reward = {
 			YUG = {
 				add_opinion_modifier = { target = ITA modifier = ita_diplomacy_focus }
 				if = {
@@ -15132,7 +14841,6 @@ focus_tree = {
 				custom_effect_tooltip = if_they_accept_tt
 				annex_country = { target = ALB }
 				add_named_threat = { threat = 2 name = ITA_albania_war_goal }
-				# The king is an idea
 				if = {
 					limit = {
 						has_idea = vittorio_emanuele
@@ -15217,17 +14925,17 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
-			add_state_claim = 802 #KOSOVO
-			add_state_claim = 970 #DEBAR
-			add_state_claim = 185 #EPIRUS
-			add_state_claim = 105 #MONTENEGRO
+			add_state_claim = 802
+			add_state_claim = 970
+			add_state_claim = 185
+			add_state_claim = 105
 
-			hidden_effect = { #Representing the Albanian Irredentism recognized by ITA.
+			hidden_effect = {
 				ALB = {
-					add_state_claim = 802 #KOSOVO
-					add_state_claim = 970 #DEBAR
-					add_state_claim = 185 #EPIRUS
-					add_state_claim = 105 #MONTENEGRO
+					add_state_claim = 802
+					add_state_claim = 970
+					add_state_claim = 185
+					add_state_claim = 105
 				}
 			}
 
@@ -15329,7 +15037,6 @@ focus_tree = {
 					is_core_of = ALB
 					is_fully_controlled_by = ROOT
 				}
-				#set_occupation_law = colonial_police #MM: Not working
 				add_compliance = 10
 			}
 
@@ -15342,7 +15049,7 @@ focus_tree = {
 			44 = {
 				custom_effect_tooltip = ITA_albanian_fascist_militia_spawn_divs_tt
 				hidden_effect = {
-					create_unit = { #Historically 14 battalions
+					create_unit = {
 						division = "division_template = \"Camicie Nere\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
 						owner = ROOT
 						count = 3
@@ -15438,8 +15145,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 
 		completion_reward = {
-			if = { #Send this event if ETH is hosted by ENG and ITA is at war with ETH
-				limit = { #UK or an ally is hosting exiled Ethiopia
+			if = {
+				limit = {
 					ITA_hosting_exiled_ethiopia = yes
 					ROOT = {
 						has_war_with = ETH
@@ -15449,7 +15156,7 @@ focus_tree = {
 					country_event = { id = BBA_italy_interaction_events.50 hours = 1 }
 				}
 			}
-			else_if = { #Send this event if ITA isn't at war with ETH or ETH isn't hosted by ENG
+			else_if = {
 				limit = {
 					ENG = {
 						controls_state = 269
@@ -15460,7 +15167,7 @@ focus_tree = {
 					country_event = { id = BBA_italy_interaction_events.31 hours = 1 }
 				}
 			}
-			else_if = { #If Britain didn't have the necessary state(s), send this event
+			else_if = {
 				limit = {
 					FRA = {
 						controls_state = 268
@@ -15474,7 +15181,7 @@ focus_tree = {
 					}
 				}
 			}
-			else_if = { #If France didn't have the necessary state(s), send this event
+			else_if = {
 				limit = {
 					ENG = {
 						controls_state = 906
@@ -15488,7 +15195,7 @@ focus_tree = {
 					}
 				}
 			}
-			else_if = { #If Britain didn't have the necessary state(s), send this event
+			else_if = {
 				limit = {
 					FRA = {
 						controls_state = 458
@@ -15503,7 +15210,7 @@ focus_tree = {
 					}
 				}
 			}
-			else_if = { #If France didn't have the necessary state(s), send this event
+			else_if = {
 				limit = {
 					ENG = {
 						controls_state = 116
@@ -15517,9 +15224,9 @@ focus_tree = {
 					}
 				}
 			}
-			else = { #If Britain didn't have the necessary state(s), send this event
+			else = {
 				FRA = {
-					country_event = { #Balkan claims event
+					country_event = {
 					    id = BBA_italy_interaction_events.36
 					    days = 3
 					    random = 6
@@ -15580,7 +15287,7 @@ focus_tree = {
 				}
 			}
 			effect_tooltip = {
-				every_country = { #If Italy has any wargoal on other countries, remove them so they can join the faction
+				every_country = {
 					limit = {
 						OR = {
 							is_in_faction_with = FRA
@@ -15694,7 +15401,7 @@ focus_tree = {
 			every_other_country = {
 				limit = {
 					BUL_is_balkan_nation = yes
-					NOT = { tag = TUR } #Skip Turkey
+					NOT = { tag = TUR }
 					NOT = { is_in_faction_with = ROOT }
 					NOT = { is_guaranteed_by = ROOT }
 					NOT = { has_non_aggression_pact_with = ROOT }
@@ -15868,14 +15575,6 @@ focus_tree = {
 
 		completion_reward = {
 
-			#add_tech_bonus = {
-			#	name = ITA_secret_weapons
-			#	bonus = 0.5
-			#	uses = 2
-			#	category = electronics
-			#	category = rocketry
-			#	category = nuclear
-			#}
 
 			add_ideas = generic_secret_weapons_ns
 			
@@ -15917,7 +15616,6 @@ focus_tree = {
 				country_event = { id = italy.5 days = 1 }
 				custom_effect_tooltip = needs_approval
 			}
-			# Actual reward effects added in event if Soviets approve
 			effect_tooltip = {
 				add_tech_bonus = {
 					name = synth_bonus
@@ -15925,7 +15623,6 @@ focus_tree = {
 					uses = 1
 					category = synth_resources
 				}
-				# Balance research bonus to 2 techs in armor, also in event
 				add_tech_bonus = {
 					name = armor_bonus
 					bonus = 0.5
@@ -16014,8 +15711,6 @@ focus_tree = {
 		available = {
 			is_subject = no
 			is_in_faction = no
-			#NOT = { is_in_faction_with = GER }
-			#NOT = { is_in_faction_with = ENG }
 			OR = {
 				owns_state = 44
 				44 = { owner = { is_subject_of = ROOT } }
@@ -16088,7 +15783,6 @@ focus_tree = {
 
 			YUG = {
 				add_opinion_modifier = { target = ITA modifier = ita_diplomacy_focus }
-				# REVISIT Possibly clear old negative modifier if Slovenia and Dalmatia were taken
 			}
 			hidden_effect = {
 				news_event = { hours = 6 id = news.185 }
@@ -16164,7 +15858,7 @@ focus_tree = {
 					is_in_faction = yes 
 				}
 				add_faction_goal_slot = {
-					category  = medium_term # options: short_term, medium_term, long_term 
+					category  = medium_term
 					value = 1 
 				}
 				add_faction_goal = faction_goal_secure_north_africa 
@@ -16179,14 +15873,14 @@ focus_tree = {
 				popularity = 0.05
 			}
 			add_ideas = ITA_italian_irredentism_ns
-			add_named_threat = { threat = 4 name = ITA_italian_irredentism } #Comes from the old Claims in Yugoslavia focus
+			add_named_threat = { threat = 4 name = ITA_italian_irredentism }
 			if = {
 				limit = {
 					103 = {
 						NOT = { is_claimed_by = ROOT }
 					}
 				}
-				add_state_claim = 103 #DALMATIA
+				add_state_claim = 103
 			}
 			if = {
 				limit = {
@@ -16194,17 +15888,16 @@ focus_tree = {
 						NOT = { is_claimed_by = ROOT }
 					}
 				}
-				add_state_claim = 105 #MONTENEGRO
+				add_state_claim = 105
 			}
-			add_state_claim = 268 #DJIBUTI/FRENCH SOMALILAND
-			add_state_claim = 269 #BRITISH SOMALILAND
-			add_state_claim = 735 #SAVOY
-			add_state_claim = 851 #VAR
-			#add_state_claim = 185 #CORFU
-			add_state_claim = 1 #CORSICA
-			add_state_claim = 116 #MALTA
-			add_state_claim = 846 #TICINO
-			add_state_claim = 853 #LJUBLJANA
+			add_state_claim = 268
+			add_state_claim = 269
+			add_state_claim = 735
+			add_state_claim = 851
+			add_state_claim = 1
+			add_state_claim = 116
+			add_state_claim = 846
+			add_state_claim = 853
 
 			if = {
 				limit = {
@@ -16274,15 +15967,14 @@ focus_tree = {
 				limit = {
 					is_owned_by = FRA
 					OR = {
-						region = 182 #WESTERN MAGHREB
-						region = 126 #EASTERN MAGHREB
-						#region = 17 #EAST AFRICA #MM: TUrned into Ethiopian Highlands and no longer including Djibouti or British Somalia
-						region = 273 #DANAKIL (new region including Djibouti)
-						region = 274 #OGADEN (new region including British Somalia)
-						region = 128 #EGYPT (just in case)
-						region = 28 #MIDDLE EAST (Syria) #MM:No longer all of Syria, just Eastern part now
-						region = 232 #LEVANT (including Western part of Syria now)
-						region = 216 #UPPER NILE (Just in case)
+						region = 182
+						region = 126
+						region = 273
+						region = 274
+						region = 128
+						region = 28
+						region = 232
+						region = 216
 						AND = {
 							is_island_state = yes
 							state_is_in_the_mediterranean_sea = yes
@@ -16377,15 +16069,14 @@ focus_tree = {
 				limit = {
 					is_owned_by = ENG
 					OR = {
-						region = 182 #WESTERN MAGHREB
-						region = 126 #EASTERN MAGHREB
-						#region = 17 #EAST AFRICA #MM: TUrned into Ethiopian Highlands and no longer including Djibouti or British Somalia
-						region = 273 #DANAKIL (new region including Djibouti)
-						region = 274 #OGADEN (new region including British Somalia)
-						region = 128 #EGYPT (just in case)
-						region = 28 #MIDDLE EAST (Syria) #MM:No longer all of Syria, just Eastern part now
-						region = 232 #LEVANT (including Western part of Syria now)
-						region = 216 #UPPER NILE (Just in case)
+						region = 182
+						region = 126
+						region = 273
+						region = 274
+						region = 128
+						region = 28
+						region = 232
+						region = 216
 						AND = {
 							is_island_state = yes
 							state_is_in_the_mediterranean_sea = yes
@@ -16698,7 +16389,7 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_AIR_XP}
 
-		completion_reward = { #Changing stuff here will require changing stuff in History file for 1939 bookmark
+		completion_reward = {
 			if = {
 				limit = {
 					NOT = { has_dlc = "La Resistance" }
@@ -16941,13 +16632,6 @@ focus_tree = {
 
 
 
- ######  #### ##     ## #### ##          ##      ##    ###    ########         ######   #######          ########  ######## ##       ##       ####  ######   ######## ########  ######## ##    ## ######## 
-##    ##  ##  ##     ##  ##  ##          ##  ##  ##   ## ##   ##     ##       ##    ## ##     ##         ##     ## ##       ##       ##        ##  ##    ##  ##       ##     ## ##       ###   ##    ##    
-##        ##  ##     ##  ##  ##          ##  ##  ##  ##   ##  ##     ##       ##       ##     ##         ##     ## ##       ##       ##        ##  ##        ##       ##     ## ##       ####  ##    ##    
-##        ##  ##     ##  ##  ##          ##  ##  ## ##     ## ########        ##       ##     ## ####### ########  ######   ##       ##        ##  ##   #### ######   ########  ######   ## ## ##    ##    
-##        ##   ##   ##   ##  ##          ##  ##  ## ######### ##   ##         ##       ##     ##         ##     ## ##       ##       ##        ##  ##    ##  ##       ##   ##   ##       ##  ####    ##    
-##    ##  ##    ## ##    ##  ##          ##  ##  ## ##     ## ##    ##        ##    ## ##     ##         ##     ## ##       ##       ##        ##  ##    ##  ##       ##    ##  ##       ##   ###    ##    
- ######  ####    ###    #### ########     ###  ###  ##     ## ##     ##        ######   #######          ########  ######## ######## ######## ####  ######   ######## ##     ## ######## ##    ##    ##    
 
 
 	focus = {
@@ -16972,12 +16656,11 @@ focus_tree = {
 		completion_reward = {
 			effect_tooltip = {
 				set_country_flag = ITA_rds_cw_flag
-				#Leader back
 				if = {
 					limit = {
 						has_completed_focus = ITA_monarchia_d_italia
 					}
-					if = { #Safety check for ideology
+					if = {
 						limit = {
 							NOT = { has_government = neutrality }
 						}
@@ -17002,7 +16685,7 @@ focus_tree = {
 						}
 						if = {
 							limit = {
-								NOT = { ITA_prince_umberto = { has_ideology_group = neutrality } }#Checking for the country_leader role
+								NOT = { ITA_prince_umberto = { has_ideology_group = neutrality } }
 							}
 							ITA_promote_umberto_to_country_leader = yes
 						}
@@ -17021,7 +16704,6 @@ focus_tree = {
 					}
 				}
 
-				#Puppet
 				if = {
 					limit = {
 						any_other_country = {
@@ -17054,10 +16736,8 @@ focus_tree = {
 					}
 				}
 
-				#Disband Camicie Nere in the country
 				delete_unit_template_and_units = { division_template = "Camicie Nere" }
 
-				#Resistance in all cores
 				every_state = {
 					limit = {
 						is_core_of = ROOT
@@ -17142,7 +16822,7 @@ focus_tree = {
 				}
 			}
 
-			2 = { #ROME
+			2 = {
 				if = {
 					limit = {
 						is_controlled_by = ROOT
@@ -17222,7 +16902,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
-			#Add 2 Militia divs in up to 5 fully controlled states
 			custom_effect_tooltip = ITA_corpo_volontari_della_liberta_spawn_divs_tt
 			hidden_effect = {
 				set_temp_variable = { i = 0 }
@@ -17245,7 +16924,6 @@ focus_tree = {
 					add_to_temp_variable = { i = 1 }
 				}
 			}
-			#Add 2 Infantry Divs in capital scope (if controlled)
 			if = {
 				limit = {
 					capital_scope = {
@@ -17431,7 +17109,6 @@ focus_tree = {
 			add_to_variable = { 2.ITA_fronte_militare_clandestino_compliance_growth_on_our_occupied_states = -0.1 }
 			custom_effect_tooltip = ITA_partisan_republics_state_modifier_tt
 
-			#Add 2 Militia divs in up to 5 fully controlled states
 			custom_effect_tooltip = ITA_partisan_republics_spawn_divs_tt
 			hidden_effect = {
 				set_temp_variable = { i = 0 }
@@ -17453,7 +17130,6 @@ focus_tree = {
 					}
 					add_to_temp_variable = { i = 1 }
 				}
-				#Clear flags
 				every_core_state = {
 					limit = {
 						has_state_flag = ITA_corpo_volontari_della_liberta_partisans_raised_flag
@@ -17518,7 +17194,7 @@ focus_tree = {
 					NOT = { has_template = "Divisione Celere" }
 				}
 				division_template = {
-					name = "Divisione Celere" 			# Divisione Celere (Fast Division)
+					name = "Divisione Celere"
 					division_names_group = ITA_CAV_02
 
 					regiments = {
@@ -17526,7 +17202,7 @@ focus_tree = {
 						cavalry = { x = 0 y = 1 }
 						cavalry = { x = 1 y = 0 }
 						cavalry = { x = 1 y = 1 }
-						motorized = { x = 2 y = 0 }			# (elite) Bersaglieri Regiment
+						motorized = { x = 2 y = 0 }
 						motorized = { x = 2 y = 1 }
 						light_armor = { x = 3 y = 0 }
 					}
@@ -17541,7 +17217,6 @@ focus_tree = {
 					}
 				}
 				capital_scope = {
-					#Add 3 Infantry divs and 1 Divisione Celere
 					custom_effect_tooltip = ITA_the_kings_finest_spawn_divs_tt
 					hidden_effect = {
 						create_unit = {
@@ -17563,7 +17238,6 @@ focus_tree = {
 						is_fully_controlled_by = ROOT
 					}
 					prioritize = { 2 158 159 117 160 }
-					#Add 3 Infantry divs and 1 Divisione Celere
 					custom_effect_tooltip = ITA_the_kings_finest_spawn_divs_tt
 					hidden_effect = {
 						create_unit = {
@@ -17592,9 +17266,6 @@ focus_tree = {
 		relative_position_id = ITA_partisan_republics
 		cost = 5
 
-		#bypass = { #MM: Might be beneficial for players to do this regardless of CW
-		#	ITA_is_antifascist_civil_war_over = yes
-		#}
 
 		available = {
 		}
@@ -17606,7 +17277,6 @@ focus_tree = {
 				idea = ITA_grande_rivolta_rurale_ns
 				days = 365
 			}
-			#Hidden tech for terrain bonuses for militias (communicated as part of the NS above)
 			hidden_effect = {
 				set_technology = { 
 					mountain_warfare_militias_tech = 1
@@ -17679,7 +17349,7 @@ focus_tree = {
 					}
 				}
 			}
-			else = { #FALLBACK TOOLTIPS
+			else = {
 				custom_effect_tooltip = ITA_independence_overlord_fallback_tt
 				effect_tooltip = {
 					country_event = { id = BBA_italy_civil_war.5 hours = 12 random_hours = 6 }
@@ -17692,13 +17362,6 @@ focus_tree = {
 
 
 
- ######  #### ##     ## #### ##          ##      ##    ###    ########        ########    ###     ######   ######  ####  ######  ######## 
-##    ##  ##  ##     ##  ##  ##          ##  ##  ##   ## ##   ##     ##       ##         ## ##   ##    ## ##    ##  ##  ##    ##    ##    
-##        ##  ##     ##  ##  ##          ##  ##  ##  ##   ##  ##     ##       ##        ##   ##  ##       ##        ##  ##          ##    
-##        ##  ##     ##  ##  ##          ##  ##  ## ##     ## ########        ######   ##     ##  ######  ##        ##   ######     ##    
-##        ##   ##   ##   ##  ##          ##  ##  ## ######### ##   ##         ##       #########       ## ##        ##        ##    ##    
-##    ##  ##    ## ##    ##  ##          ##  ##  ## ##     ## ##    ##        ##       ##     ## ##    ## ##    ##  ##  ##    ##    ##    
- ######  ####    ###    #### ########     ###  ###  ##     ## ##     ##       ##       ##     ##  ######   ######  ####  ######     ##    
 
 
  	focus = {
@@ -17723,12 +17386,11 @@ focus_tree = {
 		completion_reward = {
 			effect_tooltip = { 
 				set_country_flag = ITA_rsi_cw_flag
-				#Leader back
 				if = {
 					limit = {
 						has_completed_focus = ITA_monarchia_d_italia
 					}
-					if = { #Safety check for ideology
+					if = {
 						limit = {
 							NOT = { has_government = neutrality }
 						}
@@ -17753,7 +17415,7 @@ focus_tree = {
 						}
 						if = {
 							limit = {
-								NOT = { ITA_prince_umberto = { has_ideology_group = neutrality } }#Checking for the country_leader role
+								NOT = { ITA_prince_umberto = { has_ideology_group = neutrality } }
 							}
 							ITA_promote_umberto_to_country_leader = yes
 						}
@@ -17784,7 +17446,6 @@ focus_tree = {
 					promote_character = ITA_benito_mussolini
 				}
 
-				#Puppet
 				if = {
 					limit = {
 						is_in_faction = yes
@@ -17847,7 +17508,7 @@ focus_tree = {
 				}
 			}
 			else = {
-				random_controlled_state = { #Create a few more Blackshirt Divs
+				random_controlled_state = {
 					limit = {
 						is_core_of = ROOT
 						is_fully_controlled_by = ROOT
@@ -17879,27 +17540,12 @@ focus_tree = {
 		}
 
 		available = {
-			#OR = { #MM: Probably better to leave it unlocked so that player doesn't get stuck
-			#	any_owned_state = {
-			#		is_on_continent = africa
-			#		is_fully_controlled_by = ROOT
-			#	}
-			#	any_subject_country = {
-			#		capital_scope = {
-			#			is_on_continent = africa
-			#		}
-			#		any_owned_state = {
-			#			is_fully_controlled_by = PREV
-			#		}
-			#	}
-			#}
 		}
 
 		search_filters = {FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
 			hidden_effect = {
-				### COLONIAL CAVALRY & CAMELRY TEMPLATES
 				if = {
 					limit = {
 						NOT = { has_template = "Cavalleria Coloniale" }
@@ -17910,7 +17556,6 @@ focus_tree = {
 						override_model = ITA_cavalry_alt_1_entity
 						is_locked = yes
 
-						# Represents lesser-equipped colonial units
 						regiments = { 
 							cavalry = { x = 0 y = 0 } 
 							cavalry = { x = 0 y = 1 } 
@@ -17940,7 +17585,6 @@ focus_tree = {
 				}
 			}
 
-			### ITALY ###
 			if = {
 				limit = {
 					capital_scope = { is_fully_controlled_by = ROOT }
@@ -18012,9 +17656,7 @@ focus_tree = {
 
 			custom_effect_tooltip = ITA_strengthen_ascari_corps_create_units_tt
 
-			## CAVALRY + INFANTRY ##
 
-			#ERITREA
 			if = {
 				limit = {
 					any_controlled_state = {
@@ -18027,7 +17669,7 @@ focus_tree = {
 						is_core_of = ERI
 						is_fully_controlled_by = ROOT
 					}
-					prioritize = { 550 } # ERITREA (In case at some point this gets split or tag gets more cores)
+					prioritize = { 550 }
 					custom_effect_tooltip = ITA_integrate_polizia_dell_africa_italiana_eritrea_tt
 					hidden_effect = {
 						create_unit = {
@@ -18065,7 +17707,7 @@ focus_tree = {
 							is_core_of = ERI
 							is_fully_controlled_by = ROOT
 						}
-						prioritize = { 550 } # ERITREA (In case at some point this gets split or tag gets more cores)
+						prioritize = { 550 }
 						custom_effect_tooltip = ITA_integrate_polizia_dell_africa_italiana_eritrea_tt
 						hidden_effect = {
 							create_unit = {
@@ -18083,7 +17725,6 @@ focus_tree = {
 				}
 			}
 
-			#LIBYA
 			if = {
 				limit = {
 					any_controlled_state = {
@@ -18096,7 +17737,7 @@ focus_tree = {
 						is_core_of = LBA
 						is_fully_controlled_by = ROOT
 					}
-					prioritize = { 448 } #TRIPOLI (In case at some point this gets split or tag gets more cores)
+					prioritize = { 448 }
 					custom_effect_tooltip = ITA_integrate_polizia_dell_africa_italiana_libya_tt
 					hidden_effect = {
 						create_unit = {
@@ -18134,7 +17775,7 @@ focus_tree = {
 							is_core_of = LBA
 							is_fully_controlled_by = ROOT
 						}
-						prioritize = { 448 } #TRIPOLI (In case at some point this gets split or tag gets more cores)
+						prioritize = { 448 }
 						custom_effect_tooltip = ITA_integrate_polizia_dell_africa_italiana_libya_tt
 						hidden_effect = {
 							create_unit = {
@@ -18152,7 +17793,6 @@ focus_tree = {
 				}
 			}
 
-			#SOMALIA
 			if = {
 				limit = {
 					any_controlled_state = {
@@ -18165,7 +17805,7 @@ focus_tree = {
 						is_core_of = SOM
 						is_fully_controlled_by = ROOT
 					}
-					prioritize = { 559 } #SOMALILAND (In case at some point this gets split or tag gets more cores)
+					prioritize = { 559 }
 					custom_effect_tooltip = ITA_integrate_polizia_dell_africa_italiana_somalia_tt
 					hidden_effect = {
 						create_unit = {
@@ -18198,7 +17838,7 @@ focus_tree = {
 							is_core_of = SOM
 							is_fully_controlled_by = ROOT
 						}
-						prioritize = { 559 } #SOMALILAND (In case at some point this gets split or tag gets more cores)
+						prioritize = { 559 }
 						custom_effect_tooltip = ITA_integrate_polizia_dell_africa_italiana_somalia_tt
 						hidden_effect = {
 							create_unit = {
@@ -18212,7 +17852,6 @@ focus_tree = {
 			}
 
 
-			#ETHIOPIA
 			if = {
 				limit = {
 					any_controlled_state = {
@@ -18225,7 +17864,7 @@ focus_tree = {
 						is_core_of = ETH
 						is_fully_controlled_by = ROOT
 					}
-					prioritize = { 271 } #ADDIS ABABA (In case at some point this gets split or tag gets more cores)
+					prioritize = { 271 }
 					custom_effect_tooltip = ITA_integrate_polizia_dell_africa_italiana_ethiopia_tt
 					hidden_effect = {
 						create_unit = {
@@ -18258,7 +17897,7 @@ focus_tree = {
 							is_core_of = ETH
 							is_fully_controlled_by = ROOT
 						}
-						prioritize = { 271 } #ADDIS ABABA (In case at some point this gets split or tag gets more cores)
+						prioritize = { 271 }
 						custom_effect_tooltip = ITA_integrate_polizia_dell_africa_italiana_ethiopia_tt
 						hidden_effect = {
 							create_unit = {
@@ -18271,9 +17910,7 @@ focus_tree = {
 				}
 			}
 
-			## CAMELRY ## Separated so that Libyan Meharisti go before Eritrean ones (cavalry is the other way around)
 			hidden_effect = {
-				#LIBYA
 				if = {
 					limit = {
 						any_controlled_state = {
@@ -18286,8 +17923,7 @@ focus_tree = {
 							is_core_of = LBA
 							is_fully_controlled_by = ROOT
 						}
-						prioritize = { 448 } #TRIPOLI (In case at some point this gets split or tag gets more cores)
-						#Regular Camelry Eritrean
+						prioritize = { 448 }
 						create_unit = {
 							division = "division_template = \"Reggimento Meharista\" start_experience_factor = 0.2 start_equipment_factor = 1.0"
 							owner = ROOT
@@ -18317,8 +17953,7 @@ focus_tree = {
 								is_core_of = LBA
 								is_fully_controlled_by = ROOT
 							}
-							prioritize = { 448 } #TRIPOLI (In case at some point this gets split or tag gets more cores)
-							#Regular Camelry Eritrean
+							prioritize = { 448 }
 							create_unit = {
 								division = "division_template = \"Reggimento Meharista\" start_experience_factor = 0.2 start_equipment_factor = 1.0"
 								owner = ROOT
@@ -18418,7 +18053,6 @@ focus_tree = {
 			add_to_variable = { ITA_re_modifier_army_sub_unit_militia_max_org_factor = 0.05 }
 			add_to_variable = { ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_defence_factor = 0.05 }
 			add_to_variable = { ITA_re_modifier_army_sub_unit_blackshirt_assault_battalion_attack_factor = 0.05 }
-			#Custom tooltip based on Assault Battalions focus
 			if = {
 				limit = {
 					has_completed_focus = ITA_battaglioni_d_assalto
@@ -18514,9 +18148,6 @@ focus_tree = {
 		relative_position_id = ITA_all_within_the_state
 		cost = 5
 
-		#bypass = { #MM: Might be benefitial for the player to complete this regardless of CW
-		#	ITA_is_antifascist_civil_war_over = yes
-		#}
 
 		available = {
 			surrender_progress < 0.01
@@ -18568,7 +18199,7 @@ focus_tree = {
 					}
 				}
 			}
-			else = { #FALLBACK TOOLTIPS
+			else = {
 				custom_effect_tooltip = ITA_independence_overlord_fallback_tt
 				effect_tooltip = {
 					country_event = { id = BBA_italy_civil_war.5 hours = 12 random_hours = 6 }
@@ -18580,13 +18211,6 @@ focus_tree = {
 	}
 
 
-   ###    ##    ## ######## ####         ########    ###     ######   ######  ####  ######  ######## 
-  ## ##   ###   ##    ##     ##          ##         ## ##   ##    ## ##    ##  ##  ##    ##    ##    
- ##   ##  ####  ##    ##     ##          ##        ##   ##  ##       ##        ##  ##          ##    
-##     ## ## ## ##    ##     ##  ####### ######   ##     ##  ######  ##        ##   ######     ##    
-######### ##  ####    ##     ##          ##       #########       ## ##        ##        ##    ##    
-##     ## ##   ###    ##     ##          ##       ##     ## ##    ## ##    ##  ##  ##    ##    ##    
-##     ## ##    ##    ##    ####         ##       ##     ##  ######   ######  ####  ######     ##    
 
 
 	focus = {
@@ -18809,7 +18433,6 @@ focus_tree = {
 		completion_reward = {
 			country_event = BBA_italy_civil_war.300
 
-			#Unlock Political Advisors if coming from Solid Progress
 			if = {
 				limit = {
 					NOT = { has_completed_focus = ITA_unite_the_opposition }
@@ -18821,12 +18444,10 @@ focus_tree = {
 
 			custom_effect_tooltip = ITA_foreign_affairs_focus_locked_tt
 
-			#START MAFIA STUFF
 			hidden_effect = {
 				country_event = { id = BBA_italy_democratic_events.03 days = 40 random_days = 15}
 			}
 
-			#BELLA CIAO
 			hidden_effect = {
 				play_song = "bella_ciao"
 			}
@@ -18885,7 +18506,7 @@ focus_tree = {
 		cost = 5
 		available = {
 			has_civil_war = yes
-			has_full_control_of_state = 162 #TOSCANA -> La Spezia, where railway guns were stored.
+			has_full_control_of_state = 162
 		}
 
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
@@ -18895,7 +18516,6 @@ focus_tree = {
 				limit = {
 					has_dlc = "No Step Back"
 				}
-				#Required techs for railway guns
 				if = {
 					limit = {
 						NOT = { has_tech = armored_train }
@@ -18980,14 +18600,13 @@ focus_tree = {
 
 			add_ideas = ITA_disgruntled_military
 
-			every_owned_state = { #Compensating for ideology swap auto-eating half compliance
+			every_owned_state = {
 				limit = {
 					has_resistance = yes
 				}
 				add_compliance = 5
 			}
 
-			#Names for NSs
 			hidden_effect = {
 				ITA_replace_stuff_based_on_ideology_effect = yes
 			}
@@ -18996,13 +18615,6 @@ focus_tree = {
 
 
 
- ######   #######  ##     ## ##     ## ##     ## ##    ## ####  ######  ######## 
-##    ## ##     ## ###   ### ###   ### ##     ## ###   ##  ##  ##    ##    ##    
-##       ##     ## #### #### #### #### ##     ## ####  ##  ##  ##          ##    
-##       ##     ## ## ### ## ## ### ## ##     ## ## ## ##  ##   ######     ##    
-##       ##     ## ##     ## ##     ## ##     ## ##  ####  ##        ##    ##    
-##    ## ##     ## ##     ## ##     ## ##     ## ##   ###  ##  ##    ##    ##    
- ######   #######  ##     ## ##     ##  #######  ##    ## ####  ######     ##    
 
 
 
@@ -19026,7 +18638,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
-			every_owned_state = { #Compensating for ideology swap auto-eating half compliance
+			every_owned_state = {
 				limit = {
 					has_resistance = yes
 				}
@@ -19057,7 +18669,6 @@ focus_tree = {
 
 			unlock_decision_tooltip = ITA_bop_cooperation_with_anarchists
 
-			#Remove the other country leader role if any
 			hidden_effect = {
 				if = {
 					limit = {
@@ -19072,7 +18683,6 @@ focus_tree = {
 				}
 			}
 
-			#BoP
 			set_power_balance = {
 				id = ITA_power_balance
 				left_side = ITA_communism_side
@@ -19348,7 +18958,7 @@ focus_tree = {
 		bypass = {
 			NOT = {
 				any_other_country = {
-					OR = { #Communists and Socialists
+					OR = {
 						has_government = communism
 						has_country_leader_ideology = socialism
 					}
@@ -19366,7 +18976,7 @@ focus_tree = {
 			if = {
 				limit = {
 					any_other_country = {
-						OR = { #Communists and Socialists
+						OR = {
 							has_government = communism
 							has_country_leader_ideology = socialism
 						}
@@ -19376,7 +18986,7 @@ focus_tree = {
 				custom_effect_tooltip = generic_current_effects
 				every_other_country = {
 					limit = {
-						OR = { #Communists and Socialists
+						OR = {
 							has_government = communism
 							has_country_leader_ideology = socialism
 						}
@@ -19415,7 +19025,6 @@ focus_tree = {
 
 			custom_effect_tooltip = ITA_industrial_socialization_factories_tt
 			hidden_effect = {
-				# 4 CIVS
 				random_core_state = {
 					limit = {
 						free_building_slots = {
@@ -19450,7 +19059,6 @@ focus_tree = {
 					}
 				}
 
-				# 4 MILS
 				random_core_state = {
 					limit = {
 						NOT = { has_state_flag = ITA_social_industrialization_flag }
@@ -19487,7 +19095,6 @@ focus_tree = {
 
 			ITA_bop_medium_increase_communism_side_effect = yes
 
-			#Clear stuff thanks
 			hidden_effect = {
 				every_core_state = {
 					limit = {
@@ -19666,13 +19273,13 @@ focus_tree = {
 				limit = {
 					has_completed_focus = ITA_the_popular_front
 				}
-				ITA_bop_medium_increase_democratic_side_effect = yes #WARNING THIS VALUES NEED TO MATCH WITH THE ONE SHOWN IN TOOLTIP ITA_common_ground_bop_tt
+				ITA_bop_medium_increase_democratic_side_effect = yes
 			}
 			else_if = {
 				limit = {
 					has_completed_focus = ITA_italian_socialism
 				}
-				ITA_bop_medium_increase_communism_side_effect = yes #WARNING THIS VALUES NEED TO MATCH WITH THE ONE SHOWN IN TOOLTIP ITA_common_ground_bop_tt
+				ITA_bop_medium_increase_communism_side_effect = yes
 			}
 			else = {
 				custom_effect_tooltip = ITA_common_ground_bop_tt
@@ -19703,7 +19310,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ARMY_XP FOCUS_FILTER_AIR_XP FOCUS_FILTER_NAVY_XP}
 
 		completion_reward = {
-			#NTH_Manu: Medals to Divsion Commanders
 
 			if = {
 				limit = {
@@ -19718,7 +19324,6 @@ focus_tree = {
 			}
 
 			custom_effect_tooltip = ITA_heroes_of_the_nation_general_traits_tt
-			#Stupid tooltips oh my god I hate this game
 			hidden_effect = {
 				if = {
 					limit = {
@@ -20016,7 +19621,6 @@ focus_tree = {
 						is_in_faction_with = SOU
 					}
 				}
-				#This is intended so that the focus does not look unavailable when it is actually bypassed
 			}
 			else = {
 				is_in_faction = no
@@ -20029,7 +19633,7 @@ focus_tree = {
 					NOT = { is_justifying_wargoal_against = ROOT }
 					NOT = { has_war_with = ROOT }
 				}
-				SOU = { #Split for easier visualization in the tooltip
+				SOU = {
 					has_opinion	= {
 						target = ROOT
 						value > 50
@@ -20458,13 +20062,6 @@ focus_tree = {
 	}
 
 
-########  ######## ##     ##  #######   ######  ########     ###    ######## ####  ######  
-##     ## ##       ###   ### ##     ## ##    ## ##     ##   ## ##      ##     ##  ##    ## 
-##     ## ##       #### #### ##     ## ##       ##     ##  ##   ##     ##     ##  ##       
-##     ## ######   ## ### ## ##     ## ##       ########  ##     ##    ##     ##  ##       
-##     ## ##       ##     ## ##     ## ##       ##   ##   #########    ##     ##  ##       
-##     ## ##       ##     ## ##     ## ##    ## ##    ##  ##     ##    ##     ##  ##    ## 
-########  ######## ##     ##  #######   ######  ##     ## ##     ##    ##    ####  ######  
 
 
 	focus = {
@@ -20484,7 +20081,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_BALANCE_OF_POWER}
 
 		completion_reward = {
-			every_owned_state = { #Compensating for ideology swap auto-eating half compliance
+			every_owned_state = {
 				limit = {
 					has_resistance = yes
 				}
@@ -20517,7 +20114,6 @@ focus_tree = {
 
 			unlock_decision_tooltip = ITA_bop_cooperation_with_christian_democrats
 
-			#Remove the other country leader role if any
 			hidden_effect = {
 				if = {
 					limit = {
@@ -20532,7 +20128,6 @@ focus_tree = {
 				}
 			}
 
-			#BoP
 			set_power_balance = {
 				id = ITA_power_balance
 				left_side = ITA_communism_side
@@ -20567,7 +20162,7 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				prioritize = { 115 } #SIcilia Campania
+				prioritize = { 115 }
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -20663,7 +20258,7 @@ focus_tree = {
 				limit = {
 					is_major = yes
 					has_government = democratic
-					NOT = { original_tag = USA } #USA always gets stuff
+					NOT = { original_tag = USA }
 					capital_scope = {
 						OR = {
 							is_on_continent = europe
@@ -20776,7 +20371,6 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
-				#Clear flag
 				random_core_state = {
 					limit = {
 						has_state_flag = ITA_production_lines_flag
@@ -20847,7 +20441,7 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			hidden_effect = {	#Fix character being on the civil war side that lost
+			hidden_effect = {
                 every_possible_country = {
                     limit = { has_character = ITA_enrico_fermi }
                     random_character = {
@@ -21121,7 +20715,6 @@ focus_tree = {
 					add_to_variable = { ROOT.ITA_num_of_allies = 1 }
 				}
 
-				#Add Stab per ally
 				multiply_variable = { ITA_stability_per_ally = ITA_num_of_allies }
 				clamp_variable = {
 					var = ITA_stability_per_ally
@@ -21130,7 +20723,6 @@ focus_tree = {
 				}
 				add_stability = ITA_stability_per_ally
 
-				#Add PP per ally
 				multiply_variable = { ITA_pp_per_ally = ITA_num_of_allies }
 				clamp_variable = {
 					var = ITA_pp_per_ally
@@ -21175,7 +20767,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER}
 
 		completion_reward = {
-			hidden_effect = { #GUARANTEES
+			hidden_effect = {
 				set_variable = { ITA_num_of_countries_guaranteed = 0 }
 				set_variable = { ITA_peace_keepers_consumer_goods_factor = 0.02 }
 				set_variable = { ITA_peace_keepers_war_support_factor = 0.01 }
@@ -21205,7 +20797,7 @@ focus_tree = {
 				}
 
 				multiply_variable = { ITA_peace_keepers_consumer_goods_factor = ITA_num_of_countries_guaranteed }
-				multiply_variable = { ITA_peace_keepers_consumer_goods_factor = -1 } #Negative for CG bonus
+				multiply_variable = { ITA_peace_keepers_consumer_goods_factor = -1 }
 				multiply_variable = { ITA_peace_keepers_war_support_factor = ITA_num_of_countries_guaranteed }
 				multiply_variable = { ITA_peace_keepers_weekly_manpower = ITA_num_of_countries_guaranteed }
 			}
@@ -21224,7 +20816,7 @@ focus_tree = {
 				}
 			}
 
-			hidden_effect = { #NATIONAL SPIRIT
+			hidden_effect = {
 				add_dynamic_modifier = { modifier = ITA_peace_keepers_of_europe }
 			}
 			custom_effect_tooltip = ITA_peace_preservation_ns_tt
@@ -21440,7 +21032,7 @@ focus_tree = {
 					}
 				}
 			}
-			any_other_country = { #Split for easier visualization in the tooltip
+			any_other_country = {
 				OR = {
 					tag = FRA
 					tag = ENG
@@ -21455,7 +21047,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 
 		completion_reward = {
-			if = { #UK first
+			if = {
 				limit = {
 					ENG = {
 						NOT = { has_government = fascism }
@@ -21493,7 +21085,7 @@ focus_tree = {
 				}
 
 			}
-			else_if = { #FRANCE only if ENG is not available
+			else_if = {
 				limit = {
 					FRA = {
 						NOT = { has_government = fascism }
@@ -21830,7 +21422,7 @@ focus_tree = {
 							is_on_continent = africa
 						}
 					}
-					if = { #Give a potential player the option to get puppeted
+					if = {
 						limit = { 
 							is_ai = no
 							is_government_in_exile = yes
@@ -21965,7 +21557,7 @@ focus_tree = {
 			44 = {
 				custom_effect_tooltip = ITA_enlist_the_bashkimi_kombetar_spawn_divs_tt
 				hidden_effect = {
-					create_unit = { #Historically 14 battalions
+					create_unit = {
 						division = "division_template = \"Camicie Nere\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
 						owner = ROOT
 						count = 4
@@ -22200,7 +21792,7 @@ focus_tree = {
 						limit = {
 							NOT = { has_country_flag = ITA_improved_irregular_templates_flag }
 						}
-						division_template = { #Improve Irregular template
+						division_template = {
 							name = "Truppe Irregolari a Cavallo"		
 							division_names_group = ITA_CAV_05
 							is_locked = yes
@@ -22214,7 +21806,7 @@ focus_tree = {
 						}
 					}
 					else = {
-						division_template = { #Basic irregular template
+						division_template = {
 							name = "Truppe Irregolari a Cavallo"		
 							division_names_group = ITA_CAV_05
 							is_locked = yes
@@ -22242,7 +21834,7 @@ focus_tree = {
 						limit = {
 							NOT = { has_country_flag = ITA_improved_irregular_templates_flag }
 						}
-						division_template = { #Improve Irregular template
+						division_template = {
 							name = "Truppe Irregolari di Cammelli"		
 							division_names_group = ITA_CAM_02
 							is_locked = yes
@@ -22256,7 +21848,7 @@ focus_tree = {
 						}
 					}
 					else = {
-						division_template = { #Basic irregular template
+						division_template = {
 							name = "Truppe Irregolari di Cammelli"		
 							division_names_group = ITA_CAM_02
 							is_locked = yes
@@ -22293,7 +21885,7 @@ focus_tree = {
 							is_fully_controlled_by = ROOT
 							NOT = { has_state_flag = ITA_irregulars_raised_flag }
 						}
-						prioritize = { 550 559 448 450 271 } # ERITREA / SOMALILAND / TRIPOLI / BENGHASI / ADDIS ABABA
+						prioritize = { 550 559 448 450 271 }
 						if = {
 							limit = {
 								is_core_of = ERI
@@ -22371,7 +21963,6 @@ focus_tree = {
 					}
 					add_to_temp_variable = { i = 1 }
 				}
-				#Clean flag and vars
 				every_controlled_state = {
 					limit = {
 						has_state_flag = ITA_irregulars_raised_flag
@@ -22381,7 +21972,6 @@ focus_tree = {
 				set_variable = { ITA_camelry_raised = 0 }
 				set_variable = { ITA_cavalry_raised = 0 }
 
-				#SUBJECTS
 				if = {
 					limit = {
 						any_subject_country = {
@@ -22396,7 +21986,7 @@ focus_tree = {
 								is_on_continent = africa
 							}
 						}
-						if = { #Puppet is ERI
+						if = {
 							limit = {
 								original_tag = ERI
 							}
@@ -22417,7 +22007,7 @@ focus_tree = {
 								}
 							}
 						}
-						else_if = { #Puppet is SOM
+						else_if = {
 							limit = {
 								original_tag = SOM
 							}
@@ -22438,7 +22028,7 @@ focus_tree = {
 								}
 							}
 						}
-						else_if = { #Puppet is LBA
+						else_if = {
 							limit = {
 								original_tag = LBA
 							}
@@ -22464,7 +22054,7 @@ focus_tree = {
 								}
 							}
 						}
-						else_if = { #Puppet is ETH
+						else_if = {
 							limit = {
 								original_tag = ETH
 							}
@@ -22596,7 +22186,6 @@ focus_tree = {
 			custom_effect_tooltip = ITA_ascari_re_tt
 
 			hidden_effect = {
-				### COLONIAL CAVALRY & CAMELRY TEMPLATES
 				if = {
 					limit = {
 						NOT = { has_template = "Cavalleria Coloniale" }
@@ -22611,7 +22200,6 @@ focus_tree = {
 							override_model = ITA_cavalry_alt_1_entity
 							is_locked = yes
 
-							# Represents lesser-equipped colonial units
 							regiments = { 
 								cavalry = { x = 0 y = 0 } 
 								cavalry = { x = 0 y = 1 } 
@@ -22629,7 +22217,6 @@ focus_tree = {
 							override_model = ITA_cavalry_alt_1_entity
 							is_locked = yes
 
-							# Represents lesser-equipped colonial units
 							regiments = {
 								cavalry = { x = 0 y = 0 }
 								cavalry = { x = 0 y = 1 }
@@ -22689,7 +22276,6 @@ focus_tree = {
 					}
 				}
 
-				### ASCARI INFANTRY TEMPLATES
 				if = {
 					limit = {
 						NOT = { has_template = "Divisione Coloniale" }
@@ -22702,9 +22288,7 @@ focus_tree = {
 							name = "Divisione Coloniale" 
 							division_names_group = ITA_COL_01
 							template_counter = 67
-							#is_locked = yes
 
-							# Represents lesser-equipped colonial units
 							regiments = { 
 								infantry = { x = 0 y = 0 }
 								infantry = { x = 0 y = 1 }
@@ -22725,9 +22309,7 @@ focus_tree = {
 							name = "Divisione Coloniale" 
 							division_names_group = ITA_COL_01
 							template_counter = 67
-							#is_locked = yes
 
-							# Represents lesser-equipped colonial units
 							regiments = { 
 								infantry = { x = 0 y = 0 }
 								infantry = { x = 0 y = 1 }
@@ -22753,10 +22335,8 @@ focus_tree = {
 							division_names_group = ITA_COL_01
 							override_model = ITA_infantry_alt_0_entity
 							template_counter = 67
-							#is_locked = yes
 							obsolete = yes
 
-							# Represents lesser-equipped colonial units
 							regiments = { 
 								infantry = { x = 0 y = 0 }
 								infantry = { x = 0 y = 1 }
@@ -22773,10 +22353,8 @@ focus_tree = {
 							division_names_group = ITA_COL_01
 							override_model = ITA_infantry_alt_0_entity
 							template_counter = 67
-							#is_locked = yes
 							obsolete = yes
 
-							# Represents lesser-equipped colonial units
 							regiments = { 
 								infantry = { x = 0 y = 0 }
 								infantry = { x = 0 y = 1 }
@@ -22806,10 +22384,8 @@ focus_tree = {
 							name = "Divisione Ascari Eritrea" 
 							division_names_group = ITA_COL_01
 							template_counter = 67
-							#is_locked = yes
 							obsolete = yes
 
-							# Represents lesser-equipped colonial units
 							regiments = { 
 								infantry = { x = 0 y = 0 }
 								infantry = { x = 0 y = 1 }
@@ -22825,10 +22401,8 @@ focus_tree = {
 							name = "Divisione Ascari Eritrea" 
 							division_names_group = ITA_COL_01
 							template_counter = 67
-							#is_locked = yes
 							obsolete = yes
 
-							# Represents lesser-equipped colonial units
 							regiments = { 
 								infantry = { x = 0 y = 0 }
 								infantry = { x = 0 y = 1 }
@@ -22859,10 +22433,8 @@ focus_tree = {
 							division_names_group = ITA_COL_01
 							override_model = ITA_infantry_alt_1_entity
 							template_counter = 67
-							#is_locked = yes
 							obsolete = yes
 
-							# Represents lesser-equipped colonial units
 							regiments = { 
 								infantry = { x = 0 y = 0 }
 								infantry = { x = 0 y = 1 }
@@ -22879,10 +22451,8 @@ focus_tree = {
 							division_names_group = ITA_COL_01
 							override_model = ITA_infantry_alt_1_entity
 							template_counter = 67
-							#is_locked = yes
 							obsolete = yes
 
-							# Represents lesser-equipped colonial units
 							regiments = { 
 								infantry = { x = 0 y = 0 }
 								infantry = { x = 0 y = 1 }
@@ -22917,7 +22487,7 @@ focus_tree = {
 							is_fully_controlled_by = ROOT
 							NOT = { has_state_flag = ITA_ascari_raised_flag }
 						}
-						prioritize = { 550 559 448 450 271 } # ERITREA / SOMALILAND / TRIPOLI / BENGHASI / ADDIS ABABA
+						prioritize = { 550 559 448 450 271 }
 						if = {
 							limit = {
 								is_core_of = ERI
@@ -22995,7 +22565,6 @@ focus_tree = {
 					}
 					add_to_temp_variable = { i = 1 }
 				}
-				#Clean flag and vars
 				every_controlled_state = {
 					limit = {
 						has_state_flag = ITA_ascari_raised_flag
@@ -23005,7 +22574,6 @@ focus_tree = {
 				set_variable = { ITA_camelry_raised = 0 }
 				set_variable = { ITA_cavalry_raised = 0 }
 
-				#SUBJECTS
 				if = {
 					limit = {
 						any_subject_country = {
@@ -23020,7 +22588,7 @@ focus_tree = {
 								is_on_continent = africa
 							}
 						}
-						if = { #Puppet is ERI
+						if = {
 							limit = {
 								original_tag = ERI
 							}
@@ -23041,7 +22609,7 @@ focus_tree = {
 								}
 							}
 						}
-						else_if = { #Puppet is SOM
+						else_if = {
 							limit = {
 								original_tag = SOM
 							}
@@ -23062,7 +22630,7 @@ focus_tree = {
 								}
 							}
 						}
-						else_if = { #Puppet is LBA
+						else_if = {
 							limit = {
 								original_tag = LBA
 							}
@@ -23088,7 +22656,7 @@ focus_tree = {
 								}
 							}
 						}
-						else_if = { #Puppet is ETH
+						else_if = {
 							limit = {
 								original_tag = ETH
 							}

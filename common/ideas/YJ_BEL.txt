@@ -15,15 +15,15 @@ ideas = {
 			picture = generic_sea_focused_navy
 
 			modifier = {
-				global_building_slots = 15         					#全局建筑槽 +15
-				political_power_gain = 0.15 						#每日获得的政治点数
-				political_power_factor = 0.15 #政治点数
-				supply_consumption_factor = -0.15 #补给消耗
+				global_building_slots = 15
+				political_power_gain = 0.15
+				political_power_factor = 0.15
+				supply_consumption_factor = -0.15
 				forced_surrender_limit = 3.0
 				surrender_limit = 3
 				max_surrender_limit_offset = 3
-				stability_weekly = 0.002 #每周稳定度增长
-				war_support_weekly = 0.002 #每周战争支持度增长
+				stability_weekly = 0.002
+				war_support_weekly = 0.002
 			}
 		}
 	
@@ -42,14 +42,14 @@ ideas = {
 			picture = generic_sea_focused_navy
 
 			modifier = {
-				max_dig_in_factor = 0.05  							# 堑壕上限(百分比)
-				dig_in_speed_factor =  0.2 							# 堑壕速度
-				land_reinforce_rate = 0.05 							# 增援率
-				initiative_factor = 0.1 							# 主动性
-				supply_consumption_factor = -0.1 					# 补给消耗
-				army_strength_factor = 0.1 							# HP
-				global_building_slots = 15         					# 全局建筑槽 +15
-				political_power_gain = 0.10 						#每日获得的政治点数
+				max_dig_in_factor = 0.05
+				dig_in_speed_factor =  0.2
+				land_reinforce_rate = 0.05
+				initiative_factor = 0.1
+				supply_consumption_factor = -0.1
+				army_strength_factor = 0.1
+				global_building_slots = 15
+				political_power_gain = 0.10
 			}
 			equipment_bonus = { 
 				armor = {
@@ -74,60 +74,16 @@ ideas = {
 
 			picture = generic_the_london_naval_treaty
 			
-			#category_rangers = {
-			#	combat_width = 1.6
-			#	forest = {
-			#	attack = 0.2
-			#	defence = 0.2
-			#	movement = 0.25
-			#	}
-			#	hills = {
-			#		attack = 0.1
-			#		defence = 0.1
-			#		movement = 0.1
-			#	}
-			#	mountain = 	{
-			#		attack = 0.1
-			#		defence = 0.1
-			#		movement = 0.1
-			#	}
-			#	jungle = {
-			#		attack = 0.3
-			#		defence = 0.2
-			#		movement = 0.25
-			#	}
-			#	marsh = {
-			#		attack = 0.1
-			#		defence = 0.1
-			#		movement = 0.1
-			#	}
-			#	urban = {
-			#		attack = 0.1
-			#		defence = 0.1
-			#	}
-			#	river = { 
-			#		attack = 0.1
-			#		defence = 0.1
-			#		movement = 0.1
-			#	}
-			#	amphibious = { 
-			#		attack = 0.1
-			#	}
-			#	fort = {
-			#		attack = 0.3
-			#		defence = 0.2
-			#	}
-			#}
 
 			modifier = {
-				special_forces_attack_factor = 0.1 					# 特种攻击
-				supply_consumption_factor = -0.10 					# 补给消耗
-				global_building_slots= 15         					# 全局建筑槽 +15
-				political_power_gain = 0.10 						# 每日获得的政治点数
+				special_forces_attack_factor = 0.1
+				supply_consumption_factor = -0.10
+				global_building_slots= 15
+				political_power_gain = 0.10
 			}
 		}
 
-		YJ_BEL_01_ideas = { #比属刚果
+		YJ_BEL_01_ideas = {
 
 			allowed = {
 				always = no

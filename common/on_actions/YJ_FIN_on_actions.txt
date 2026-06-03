@@ -1,5 +1,5 @@
 on_actions = {
-on_daily_FIN = { #冰火人
+on_daily_FIN = {
 		effect = {
 			if = {
 				limit = {
@@ -7,7 +7,6 @@ on_daily_FIN = { #冰火人
 					date > 1938.3.1
 					date < 1946.1.1
 				}
-				# 冰季：每年10月~次年3月
 				if = {
 					limit = {
 						OR = {
@@ -24,7 +23,6 @@ on_daily_FIN = { #冰火人
 					remove_ideas = { YJ_FIN_7_ideas }
 					add_timed_idea = { idea = YJ_FIN_6_ideas days = 180 }
 				}
-				# 火季：每年4月~9月
 				else_if = {
 					limit = {
 						OR = {

@@ -1,8 +1,5 @@
 characters={ 
 
-	############################
-	##### COUNTRY LEADERS ######
-	############################
 
 	PRC_mao_zedong={
 		instance = {
@@ -37,12 +34,6 @@ characters={
 			}
 			
 
-			#country_leader={ #unlocks in PRC_leadership_of_mao
-			#	ideology=marxism
-			#	traits={ cornered_fox }
-			#	expire="1965.1.1.1"
-			#	id=-1
-			#}
 
 			advisor={
 				slot = political_advisor
@@ -56,7 +47,7 @@ characters={
 				cost = 100
 				available = {
 					NOT = {
-						has_country_leader = { #TODO switch this to having a flag given in the event after PRC_the_unwilling_diarchy_focus
+						has_country_leader = {
 							ruling_only = yes 
 							character = PRC_mao_zedong 
 						}
@@ -115,7 +106,6 @@ characters={
 					PRC_guerilla_warfare_theorist
 				}
 				available = {
-					#TODO add another focus!
 					OR = {
 						has_completed_focus = PRC_burn_the_paper_tigers
 						has_completed_focus = PRC_promote_guerilla_warfare
@@ -159,7 +149,7 @@ characters={
 				logistics_skill=4
 				legacy_id=-1
 			}
-			country_leader={ #unlock
+			country_leader={
 				ideology=marxism
 				traits={ cornered_fox }
 				expire="1965.1.1.1"
@@ -171,7 +161,7 @@ characters={
 
 
 
-	PRC_zhang_guotao = { # Shell character to add leader role to in appropriate focus
+	PRC_zhang_guotao = {
 		name = PRC_zhang_guotao
 		portraits = {
 			army = {
@@ -184,12 +174,6 @@ characters={
 			}
 		} 
 
-		#country_leader = {
-		#	ideology = marxism
-		#	traits = { PRC_out_for_revenge }
-		#	expire = "1965.1.1.1"
-		#	id = -1
-		#}
 		field_marshal = {
 			traits={ infantry_officer }
 			visible = {
@@ -263,7 +247,7 @@ characters={
 			}
 			available = {
 				NOT = {
-					has_country_leader = { #TODO switch this to having a flag given in the event after PRC_the_unwilling_diarchy_focus
+					has_country_leader = {
 						ruling_only = yes 
 						character = PRC_zhang_guotao 
 					}
@@ -292,24 +276,17 @@ characters={
 		}
 	}
 
-	PRC_guotao_and_mao = { # Shell character to add leader role to in appropriate focus
+	PRC_guotao_and_mao = {
 		name = PRC_guotao_and_mao
 		portraits = {
 			civilian={
 				large = GFX_portrait_PRC_guotao_and_mao
-				#small = GFX_portrait_PLACEHOLDER_small
 			}
 		} 
 
-		#country_leader = {
-		#	ideology = marxism
-		#	traits = { PRC_our_enemys_enemy }
-		#	expire = "1965.1.1.1"
-		#	id = -1
-		#}
 	}
 
-	PRC_wang_ming = { # Shell character to add leader role to in appropriate focus
+	PRC_wang_ming = {
 		name = PRC_wang_ming
 		portraits = {
 			civilian={
@@ -318,12 +295,6 @@ characters={
 			}
 		} 
 
-		#country_leader = {
-		#	ideology = marxism
-		#	traits = { PRC_one_of_28 }
-		#	expire = "1965.1.1.1"
-		#	id = -1
-		#}
 
 		advisor={
 			slot = political_advisor
@@ -375,7 +346,7 @@ characters={
 		}
 	}
 
-	PRC_bo_gu = { #Might be axed or turned into an advisor
+	PRC_bo_gu = {
 		name = PRC_bo_gu
 		portraits = {
 			army = {
@@ -445,12 +416,6 @@ characters={
 			logistics_skill=4
 			legacy_id=-1
 		}
-		#country_leader = {
-		#	ideology = marxism
-		#	traits = { PRC_one_of_28 }
-		#	expire = "1965.1.1.1"
-		#	id = -1
-		#}
 	}
 
 	
@@ -543,9 +508,6 @@ PRC_zhang_wentian = {
 		}
 	}
 
-	##############################
-	#### POLITICAL ADVISORS ######
-	##############################
 
 	PRC_zhou_enlai={
 		instance = {
@@ -572,7 +534,6 @@ PRC_zhang_wentian = {
 					PRC_kang_sheng = {
 						is_hired_as_advisor = no
 					}
-					#custom_trigger_tooltip = PRC_has_not_been_purged_tt
 					}
 				ai_will_do = {
 					base = 5
@@ -605,7 +566,6 @@ PRC_zhang_wentian = {
 					PRC_multi_talented_diplomat_no_lar
 				}
 				available = {
-					#custom_trigger_tooltip = PRC_has_not_been_purged_tt
 				}
 				ai_will_do = {
 					base = 5
@@ -961,12 +921,12 @@ PRC_zhang_wentian = {
 			available = {
 				OR = {
 					has_country_leader = {
-						ruling_only = yes # default = yes
+						ruling_only = yes
 						character = PRC_zhang_guotao
 					}
 					AND = {
 						has_country_leader = {
-							ruling_only = yes # default = yes
+							ruling_only = yes
 							character = PRC_mao_zedong
 						}
 						has_completed_focus = PRC_the_unwilling_diarchy_focus
@@ -1122,7 +1082,7 @@ PRC_zhang_wentian = {
 						has_trait = PRC_avid_maoist
 					}
 					has_country_leader = {
-						ruling_only = yes # default = yes
+						ruling_only = yes
 						character = PRC_mao_zedong
 					}
 				}
@@ -1345,7 +1305,7 @@ PRC_zhang_wentian = {
 		}
 	}
 
-	PRC_lin_bojiu={ #Not real
+	PRC_lin_bojiu={
 		name=PRC_lin_bojiu
 		portraits={
 			civilian={
@@ -1365,7 +1325,7 @@ PRC_zhang_wentian = {
 	}
 
 
-	PRC_he_yuandang={ #Not real
+	PRC_he_yuandang={
 		name=PRC_he_yuandang
 		portraits={
 			civilian={
@@ -1782,11 +1742,7 @@ PRC_zhang_wentian = {
 
 
 
-	##############################
-	####### CHIEF OF ARMY ########
-	##############################
 
-	# Alexander von Falkenhausen in shared file
 
 	PRC_zhu_de={
 		instance = {
@@ -2004,7 +1960,7 @@ PRC_zhang_wentian = {
 		
 	}
 
-	PRC_ma_jin={ #Is a female badminton player, not in DLC
+	PRC_ma_jin={
 		name=PRC_ma_jin
 		portraits={
 			army={
@@ -2027,9 +1983,6 @@ PRC_zhang_wentian = {
 		}
 	}
 
-	##############################
-	####### CHIEF OF NAVY ########
-	##############################
 
 	PRC_ziao_jingguang={
 		instance = {
@@ -2043,7 +1996,7 @@ PRC_zhang_wentian = {
 					small = GFX_portrait_PRC_xiao_jinguang_small
 				}
 			}
-			advisor={ #unlocks after a focus
+			advisor={
 				slot = navy_chief
 				idea_token = PRC_ziao_jingguang
 				allowed = {
@@ -2154,17 +2107,13 @@ PRC_zhang_wentian = {
 
 
 
-	##############################
-	####### CHIEF OF AIR #########
-	##############################
 
-	# Claire Lee Chennault in shared file
 
 	PRC_fang_zeyi={
 		name=PRC_fang_zeyi
 		portraits={
 			army={
-				small="GFX_idea_generic_air_asia_3" #If we can find a new poirtrait 
+				small="GFX_idea_generic_air_asia_3"
 			}
 		}
 		advisor={
@@ -2262,9 +2211,6 @@ PRC_zhang_wentian = {
 		}
 	}
 
-	##############################
-	######## HIGH COMMAND ########
-	##############################
 
 	PRC_chen_yi={
 		instance = {
@@ -2694,7 +2640,7 @@ PRC_zhang_wentian = {
 		}	
 	}
 
-	PRC_liang_shen={ #Cannot confirm the existence of this person
+	PRC_liang_shen={
 		name=PRC_liang_shen
 		portraits={
 			army={
@@ -2721,7 +2667,7 @@ PRC_zhang_wentian = {
 		}
 	}
 
-	PRC_deng_ye_peng={ #Cannot confirm the existence of this person
+	PRC_deng_ye_peng={
 		name=PRC_deng_ye_peng
 		portraits={
 			army={
@@ -2875,11 +2821,7 @@ PRC_zhang_wentian = {
 
 
 
-	##############################
-	######### THEORISTS ##########
-	##############################
 
-	#Claire Lee Chennault in shared file
 
 	PRC_liu_bocheng={
 		instance = {
@@ -2952,7 +2894,7 @@ PRC_zhang_wentian = {
 		}
 	}
 
-	PRC_hsia_tian={ #Cannot find, might be due to bad translitteration
+	PRC_hsia_tian={
 		name=PRC_hsia_tian
 		portraits={
 			army={
@@ -2975,7 +2917,7 @@ PRC_zhang_wentian = {
 		}
 	}
 
-	PRC_zhang_wei={ #Is a CURRENT captain in the PLA Navy, not with dlc
+	PRC_zhang_wei={
 		name=PRC_zhang_wei
 		portraits={
 			army={
@@ -3000,15 +2942,12 @@ PRC_zhang_wentian = {
 	}
 
 
-	##############################
-	######### GENERALS ###########
-	##############################
 
 	PRC_peng_dehuai={
 		instance = {
 			allowed = { has_dlc = "No Compromise, No Surrender"} 
 			name = PRC_peng_dehuai
-			portraits = { #order new art (low prio)
+			portraits = {
 				army = {
 					large = GFX_portrait_PRC_peng_dehuai
 					small = GFX_portrait_PRC_peng_dehuai_small
@@ -3366,9 +3305,6 @@ PRC_zhang_wentian = {
 
 
 
-	##############################
-	######## SCIENTISTS ##########
-	##############################
 
 	PRC_qian_sanqiang = {
 		name = PRC_qian_sanqiang
@@ -3428,9 +3364,6 @@ PRC_zhang_wentian = {
 				specialization_air = 1
 			}
 
-			#visible = {
-			#	has_completed_focus =
-			#}
 		}
 	}
 
@@ -3448,17 +3381,11 @@ PRC_zhang_wentian = {
 				specialization_land = 1
 			}
 
-			#visible = {
-			#	has_completed_focus =
-			#}
 		}
 	}
 
 
 
-	############################
-	######## ADMIRALS ##########
-	############################
 
 	PRC_rao_shoukun={
 		name=PRC_rao_shoukun

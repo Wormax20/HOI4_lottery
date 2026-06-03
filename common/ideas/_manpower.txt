@@ -11,7 +11,6 @@ ideas = {
 			level = 7
 
 			available = {
-				#has_manpower_for_recruit_change_to = { value = 0.005 group = mobilization_laws }
 			}
 
 			modifier = {
@@ -28,7 +27,6 @@ ideas = {
 			level = 6
 
 			available = {
-				#has_manpower_for_recruit_change_to =  { value = 0.015 group = mobilization_laws }
 				IF = {
 					limit = {
 						original_tag = HUN
@@ -98,7 +96,7 @@ ideas = {
    				factor = 1
 
    				modifier = {
-					factor = 60 # being disarmed is bad in a wargame yo
+					factor = 60
 					has_idea = disarmed_nation
 				}
 			}
@@ -119,7 +117,6 @@ ideas = {
 			level = 5
 
 			available = {
-				#has_manpower_for_recruit_change_to =  { value = 0.025 group = mobilization_laws }
 				has_war_support > 0.1
 				NOT = { has_idea = undisturbed_isolation }
 				NOT = { has_idea = isolation }
@@ -264,12 +261,10 @@ ideas = {
 			ai_will_do = {
    				factor = 1
 				modifier = {
-					# Ignore if high on manpower
 					factor = 0.5
 					manpower_per_military_factory > 5000
 				}
 				modifier = {
-					#Prio if low on manpower
 					factor = 20
 					manpower_per_military_factory < 2000
 				}
@@ -326,7 +321,6 @@ ideas = {
 		extensive_conscription = {
 
 			available = {
-				#has_manpower_for_recruit_change_to = { value = 0.05 group = mobilization_laws }
 				OR = {
 					has_government = fascism
 					has_government = communism
@@ -348,11 +342,11 @@ ideas = {
 							has_idea = PHI_ties_with_republican_spain_2
 						}
 						else = {
-							hidden_trigger = { always = no } #NEED TO HAVE AN ALWAYS AS AN END STATEMENT IF URE USING AN IF ELSE IN AN OR STATEMENT OTHERWISE THE EVALUATION BREAKS!!
+							hidden_trigger = { always = no }
 						}
 					}
 					else = {
-						hidden_trigger = { always = no } #NEED TO HAVE AN ALWAYS AS AN END STATEMENT IF URE USING AN IF ELSE IN AN OR STATEMENT OTHERWISE THE EVALUATION BREAKS!!
+						hidden_trigger = { always = no }
 					}
 					SWE_rapid_mob_manpower_law_trigger = yes 
 					if = {
@@ -366,17 +360,11 @@ ideas = {
 						}
 					}
 					else = {
-						hidden_trigger = { always = no } #NEED TO HAVE AN ALWAYS AS AN END STATEMENT IF URE USING AN IF ELSE IN AN OR STATEMENT OTHERWISE THE EVALUATION BREAKS!!
+						hidden_trigger = { always = no }
 					}
 					AND = {
 						has_war = yes
 						enemies_strength_ratio > 0.5
-						#any_enemy_country = {
-						#	strength_ratio = {
-						#		tag = ROOT
-						#		ratio > 0.5
-						#	}
-						#}
 					}
 
 					if = {
@@ -387,11 +375,10 @@ ideas = {
 						}
 					}
 					else = {
-						hidden_trigger = { always = no }  #NEED TO HAVE AN ALWAYS AS AN END STATEMENT IF URE USING AN IF ELSE IN AN OR STATEMENT OTHERWISE THE EVALUATION BREAKS!!
+						hidden_trigger = { always = no }
 					}
 				}
 				has_war_support > 0.2
-				#Special rules AST in TFV
 				if = {
 					limit = {
 						original_tag = AST
@@ -531,13 +518,11 @@ ideas = {
    				factor = 1
 
 				modifier = {
-					# Ignore if high on manpower
 					factor = 0.5
 					manpower_per_military_factory > 3000
 				}
 
 				modifier = {
-					#Prio if low on manpower
 					factor = 20
 					manpower_per_military_factory <  800
 				}
@@ -548,7 +533,6 @@ ideas = {
 					factor = 50
 				}
 
-				# china relies a lot on throwing bodies at the enemy
 				modifier = {
 					factor = 3
 
@@ -556,7 +540,6 @@ ideas = {
 					has_manpower < 300000
 				}
 
-				# soviet also relies a lot on throwing bodies at the enemy
 				modifier = {
 					factor = 3
 
@@ -604,8 +587,6 @@ ideas = {
 
 			modifier = {
 				conscription = 0.05
-				#industrial_capacity_factory = -0.1
-				#production_speed_buildings_factor = -0.1
 				training_time_factor = 0.1
 			}
 
@@ -616,7 +597,6 @@ ideas = {
 
 
 			available = {
-				#has_manpower_for_recruit_change_to =  { value = 0.1 group = mobilization_laws }
 				OR = {
 					has_government = fascism
 					has_government = communism
@@ -637,22 +617,16 @@ ideas = {
 							has_idea = PHI_ties_with_republican_spain_2
 						}
 						else = {
-							hidden_trigger = { always = no } #NEED TO HAVE AN ALWAYS AS AN END STATEMENT IF URE USING AN IF ELSE IN AN OR STATEMENT OTHERWISE THE EVALUATION BREAKS!!
+							hidden_trigger = { always = no }
 						}
 					}
 					else = {
-						hidden_trigger = { always = no } #NEED TO HAVE AN ALWAYS AS AN END STATEMENT IF URE USING AN IF ELSE IN AN OR STATEMENT OTHERWISE THE EVALUATION BREAKS!!
+						hidden_trigger = { always = no }
 					}
 					SWE_rapid_mob_manpower_law_trigger = yes
 					AND = {
 						has_war = yes
 						enemies_strength_ratio > 0.6
-						#any_enemy_country = {
-						#	strength_ratio = {
-						#		tag = ROOT
-						#		ratio > 0.6
-						#	}
-						#}
 					}
 				}
 				OR = {
@@ -802,24 +776,21 @@ ideas = {
 			ai_will_do = {
    				factor = 1
 				modifier = {
-					#Prio if low on manpower
 					factor = 20
 					manpower_per_military_factory <  700
 				}
 				modifier = {
-					#Lower chance if has decent amount
 					factor = 0.5
 					manpower_per_military_factory >  1000
 				}
 				modifier = {
-					#Block has plenty manpower
 					factor = 0
 					NOT = { tag = CHI }
 					NOT = { tag = SOV }
 					manpower_per_military_factory >  3000
 				}
 
-				modifier = { # china relies a lot on throwing bodies at the enemy
+				modifier = {
 					factor = 3
 
 					original_tag = CHI
@@ -833,14 +804,14 @@ ideas = {
 					has_manpower < 400000
 				}
 
-				modifier = { # germany needs this before russia, badly
+				modifier = {
 					factor = 10
 
 					original_tag = GER
 					has_manpower < 2000000
 				}
 
-				modifier = { # germany needs this before russia, badly
+				modifier = {
 					factor = 10
 
 					original_tag = GER
@@ -892,19 +863,12 @@ ideas = {
 
 
 			available = {
-				#has_manpower_for_recruit_change_to =  { value = 0.2 group = mobilization_laws }
 				has_war = yes
 				OR = {
 					has_war_support > 0.7
 					surrender_progress > 0
 				}
 				enemies_strength_ratio > 0.75
-				#any_enemy_country = {
-				#	strength_ratio = {
-				#		tag = ROOT
-				#		ratio > 0.75
-				#	}
-				#}
 
 				if = {
 					limit = {
@@ -1048,23 +1012,20 @@ ideas = {
 			ai_will_do = {
    				factor = 1
 				modifier = {
-					#Prio if low on manpower
 					factor = 20
 					manpower_per_military_factory <  600
 				}
 				modifier = {
-					#Lower chance if has decent amount
 					factor = 0.5
 					manpower_per_military_factory >  1000
 				}
 				modifier = {
-					#Block has plenty manpower
 					factor = 0
 					NOT = { tag = CHI }
 					manpower_per_military_factory >  2800
 				}
 
-				modifier = { # china relies a lot on throwing bodies at the enemy
+				modifier = {
 					factor = 3
 
 					tag = CHI
@@ -1115,7 +1076,6 @@ ideas = {
 				industrial_capacity_factory = -0.3
 				industrial_capacity_dockyard = -0.3
 				production_speed_buildings_factor = -0.3
-				#XP from reinforcement penalty (small)
 				training_time_factor = 0.3
 			}
 
@@ -1125,19 +1085,12 @@ ideas = {
 		scraping_the_barrel = {
 
 			available = {
-				#has_manpower_for_recruit_change_to =  { value = 0.25 group = mobilization_laws }
 				has_war = yes
 				OR = {
 					has_war_support > 0.85
 					surrender_progress > 0.25
 				}
 				enemies_strength_ratio > 1
-				#any_enemy_country = {
-				#	strength_ratio = {
-				#		tag = ROOT
-				#		ratio > 1
-				#	}
-				#}
 				if = {
 					limit = {
 						original_tag = AST
@@ -1280,17 +1233,14 @@ ideas = {
 			ai_will_do = {
    				factor = 1
 				modifier = {
-					#Prio if low on manpower
 					factor = 20
 					manpower_per_military_factory <  500
 				}
 				modifier = {
-					#Lower chance if has decent amount
 					factor = 0.5
 					manpower_per_military_factory >  1000
 				}
 				modifier = {
-					#Block has plenty manpower
 					factor = 0
 					manpower_per_military_factory >  5000
 				}
@@ -1339,7 +1289,6 @@ ideas = {
 			cancel_if_invalid = no
 		}
 
-		### Ethiopian National Levy
 		ETH_chitet_law = {
 			picture = ETH_chitet_law
 			cost = 150
@@ -1400,7 +1349,6 @@ ideas = {
 			cancel_if_invalid = no
 		}
 
-		### Swiss Citizen Militia ###
 
 		SWI_citizen_militia_1 = {
 			cost = 200

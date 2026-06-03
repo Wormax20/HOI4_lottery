@@ -1,5 +1,5 @@
 characters={
-	FRA_pierre_laval={ #Democratic Leader
+	FRA_pierre_laval={
 		name=FRA_pierre_laval
 		portraits={
 			civilian={
@@ -29,7 +29,7 @@ characters={
 		}
 	}
 
-	FRA_denis_guillaumat={ #Non-Aligned Leader
+	FRA_denis_guillaumat={
 		name=FRA_denis_guillaumat
 		portraits={
 			civilian={
@@ -44,7 +44,7 @@ characters={
 		}
 	}
 
-	FRA_maurice_thorez={ #Communist Leader
+	FRA_maurice_thorez={
 		name=FRA_maurice_thorez
 		portraits={
 			army={
@@ -117,7 +117,7 @@ characters={
 		}
 	}
 
-	FRA_philippe_petain={ #Fascist Leader
+	FRA_philippe_petain={
 		name=FRA_philippe_petain
 		portraits={
 			civilian={
@@ -745,11 +745,8 @@ characters={
 	}
 
 
-	### THEORISTS ###
 
-	# De Gaulle up there
 
-	# Giraud up there
 
 	FRA_victor_denain={
 		name=FRA_victor_denain
@@ -835,13 +832,9 @@ characters={
 	}
 
 
-	### ARMY CHIEFS ###
 
-	# Gamelin up there
 
-	# Weygand up there
 
-	# Georges up there
 
 	FRA_henri_marie_auguste_bineau={
 		name=FRA_henri_marie_auguste_bineau
@@ -894,9 +887,7 @@ characters={
 	}
 
 
-	### NAVY CHIEFS ###
 
-	# Darlan Up there
 
 	FRA_marcel_gensoul={
 		name=FRA_marcel_gensoul
@@ -945,7 +936,6 @@ characters={
 	}
 
 
-	### AIR CHIEFS ###
 
 	FRA_joseph_vuillemin={
 		name=FRA_joseph_vuillemin
@@ -1100,15 +1090,10 @@ characters={
 
 	
 
-	### MILITARY HIGH COMMAND ###
 
-	# Leclerc up there
 
-	# Huntziger up there
 
-	# Godfroy up there
 
-	# Laborde up there
 
 	FRA_martial_valin={
 		name=FRA_martial_valin
@@ -1231,9 +1216,7 @@ characters={
 	}
 
 
-	### POLITICAL ADVISORS ###
 
-	# Thorez up there
 
 	FRA_leon_blum={
 		name=FRA_leon_blum
@@ -1350,12 +1333,6 @@ characters={
 				small = GFX_portrait_FRA_marcel_deat_small
 			}
 		}
-		#country_leader = {
-		#	ideology = fascism_ideology
-		#	traits = {  }
-		#	expire = "1949.1.1.12"
-		#	id = -1
-		#}
 		advisor = {
 			slot = political_advisor
 			idea_token = FRA_marcel_deat
@@ -1611,7 +1588,7 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_europe_1"
-				large=GFX_portrait_FRA_jacques_duclos #Used only as Operative atm
+				large=GFX_portrait_FRA_jacques_duclos
 			}
 		}
 		advisor={
@@ -1847,38 +1824,7 @@ characters={
 	}
 
 
-  #####                                                              
- #     #   ####   #  ######  #    #  #####  #   ####   #####   ####  
- #        #    #  #  #       ##   #    #    #  #         #    #      
-  #####   #       #  #####   # #  #    #    #   ####     #     ####  
-       #  #       #  #       #  # #    #    #       #    #         # 
- #     #  #    #  #  #       #   ##    #    #  #    #    #    #    # 
-  #####    ####   #  ######  #    #    #    #   ####     #     ####  
 
-	# OLD combo character theorist for both Curies, now each one is an independent person with their own dreams.
-	#FRA_frederic_irene_joliot_curie={
-	#	name=FRA_frederic_irene_joliot_curie
-	#	portraits={
-	#		army={
-	#			small="GFX_idea_frederic_irene_joliot_curie"
-	#		}
-	#	}
-	#	advisor={
-	#		cost = 100
-	#		slot = theorist
-	#		idea_token = frederic_irene_joliot_curie
-	#		ledger = army
-	#		allowed = {
-	#			original_tag = FRA
-	#		}
-	#		research_bonus = {
-	#			nuclear = 0.150
-	#		}
-	#		traits = {
-	#			nuclear_scientist
-	#		}
-	#	}
-	#}
 
 	FRA_irene_joliot_curie = {
 		name = FRA_irene_joliot_curie

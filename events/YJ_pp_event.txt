@@ -1,4 +1,3 @@
-#pp抽奖
 add_namespace = KoKi_YJ_pp
 country_event = {
 	id = KoKi_YJ_pp.1

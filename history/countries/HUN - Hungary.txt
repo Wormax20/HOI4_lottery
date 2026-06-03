@@ -1,4 +1,4 @@
-﻿capital = 43 # Budapest (Northern Hungary)
+﻿capital = 43
 
 IF = {
 	limit = {
@@ -104,7 +104,6 @@ if = {
 		basic_ship_hull_carrier = 1
 		basic_battery = 1
 		basic_light_battery = 1
-		#basic_medium_battery = 1
 		basic_heavy_battery = 1
 		basic_torpedo = 1
 		sonar = 1
@@ -136,7 +135,6 @@ if = {
 		basic_light_tank_chassis = 1
 	}
 }
-### SETUP THE CORRECT POLITICAL PARTIES ###
 
 IF = {
 	limit = {
@@ -151,7 +149,6 @@ IF = {
 
 set_research_slots = 3
 
-### SETUP STABILITY AND WAR SUPPORT ###
 IF = {
 	limit = {
 		NOT = {
@@ -197,7 +194,6 @@ IF = {
 	}
 }
 
-### SETUP NATIONAL SPIRITS NO WW ###
 IF = {
 	limit = {
 		AND = {
@@ -222,7 +218,6 @@ IF = {
 	}
 }
 
-### SETUP HUNGARO-GERMAN RELATIONS AND NATIONAL SPIRITS ###
 IF = {
 	limit = {
 		AND = {
@@ -238,7 +233,6 @@ IF = {
 		HUN_levente_associations
 	}
 
-	### OPINION MODIFIERS ###
 
 	add_opinion_modifier = {
 		target = GER
@@ -282,10 +276,8 @@ IF = {
 
 }
 
-# The Academy of Sciences Modifier
 set_variable = { HUN_academy_of_sciences_research_speed_factor = 0.03 }
 
-### PLANE VARIANTS ###
 IF = {
 	limit = {
 		has_dlc = "By Blood Alone"
@@ -310,7 +302,6 @@ IF = {
 	}
 }
 
-### TANK VARIANTS ###
 IF = {
 	limit = {
 		has_dlc = "No Step Back"
@@ -332,7 +323,6 @@ IF = {
 			tank_nsb_engine_upgrade = 0
 			tank_nsb_armor_upgrade = 1
 		}
-		#icon = "GFX_gwtank_medium"
 	}
 
 	add_equipment_to_stockpile = {
@@ -342,14 +332,12 @@ IF = {
 	}
 }
 
-### AH DYNAMIC MODIFIERS ###
 
 IF = {
 	limit = {
 		has_dlc = "Gotterdammerung"
 	}
 
-	# JOINT ECONOMY SPIRIT
 	set_variable = { global.HABSBURG_economy_stability_factor = 0.05 }
 	set_variable = { global.HABSBURG_economy_power_factor = 0.1 }	
 	set_variable = { global.HABSBURG_economy_consumer_goods_factor = 0.0 }	
@@ -361,7 +349,6 @@ IF = {
 	set_variable = { global.HABSBURG_economy_license_production_speed = 0.0 }	
 	set_variable = { global.HABSBURG_economy_special_project_speed_factor = 0.0 }	
 
-	# JOINT INDUSTRY SPIRIT
 	set_variable = { global.HABSBURG_industry_production_speed_industrial_complex_factor = 0.1 }	
 	set_variable = { global.HABSBURG_industry_industrial_capacity_factory = 0.05 }	
 	set_variable = { global.HABSBURG_industry_local_resources_factor = 0.00 }	
@@ -375,7 +362,6 @@ IF = {
 	set_variable = { global.HABSBURG_industry_production_lack_of_resource_penalty_factor = 0.00 }	
 	set_variable = { global.HABSBURG_industry_production_factory_max_efficiency_factor = 0.00 }	
 
-	# JOINT ARMY SPIRIT
 	set_variable = { global.HABSBURG_army_war_stability_factor = 0.1 }	
 	set_variable = { global.HABSBURG_army_land_doctrine_cost_factor = -0.1 }	
 	set_variable = { global.HABSBURG_army_conscription_factor = 0.0 }	
@@ -393,7 +379,6 @@ IF = {
 	set_variable = { global.HABSBURG_army_fuel_gain_factor = 0.0 }	
 	set_variable = { global.HABSBURG_army_army_attack_factor = 0.0 }	
 
-	# JOINT HUSSAR SPIRIT
 	set_variable = { global.HABSBURG_cavalry_cavalry_attack_factor = 0.05 }	
 	set_variable = { global.HABSBURG_cavalry_cavalry_defence_factor = 0.1 }	
 	set_variable = { global.HABSBURG_army_conscription = 0.01 }	
@@ -414,7 +399,6 @@ add_opinion_modifier = {
 	modifier = BFTB_incongruous_neighbors
 }
 
-# SETUP HUNGARIAN POLITICS
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1935.3.31"
@@ -427,7 +411,6 @@ set_popularities = {
 	neutrality = 44
 }
 
-# RECRUITING HUNGARIAN CHARACTERS
 IF = {
 	limit = {
 		NOT = {
@@ -546,10 +529,9 @@ IF = {
 	recruit_character = HUN_kalman_hardy
 	recruit_character = HUN_franz_anton_bach
 	recruit_character = HUN_hermann_goring
-	recruit_character = HUN_asboth_oszkar # Helis only exist if you have the dlc
+	recruit_character = HUN_asboth_oszkar
 }
 
-#Scientists always recruited
 recruit_character = HUN_nicholas_straussler
 recruit_character = HUN_leo_szilard
 recruit_character = HUN_john_von_neumann
@@ -557,7 +539,6 @@ recruit_character = HUN_edward_teller
 recruit_character = HUN_laszlo_varga
 
 
-# HIRES THE STARTING PM
 IF = {
 	limit = {
 		has_dlc = "Gotterdammerung"
@@ -567,19 +548,17 @@ IF = {
 
 add_breakthrough_progress = {
 	specialization = specialization_land
-	value = 0.2 # Due to Straussler
+	value = 0.2
 }
 
 add_breakthrough_progress = {
 	specialization = specialization_air
-	value = 0.2 # Due to Azboth Oskar
+	value = 0.2
 }
 
 
-# SETUP THE 1939 SCENARIO
 1939.1.1 = {
 
-	# WITHOUT THE WW DLC
 	IF = {
 		limit = {
 			NOT = {
@@ -637,21 +616,19 @@ add_breakthrough_progress = {
 			complete_national_focus = HUN_mobile_focus
 			complete_national_focus = HUN_license_foreign_designs
 			
-			#Handle this manually
 			unlock_national_focus = HUN_renounce_the_treaty_of_trianon
 			add_ideas = {
 				limited_conscription
 				HUN_treaty_of_triannon_3
 			}
 
-			unlock_national_focus = HUN_strengthen_fascists #To avoid leader ID clash
+			unlock_national_focus = HUN_strengthen_fascists
 			add_ideas = HUN_strengthen_fascists
 
 		}
 		
 	}
 
-	# WITH THE WW DLC
 	IF = {
 		limit = {
 			has_dlc = "Gotterdammerung"
@@ -708,9 +685,7 @@ add_breakthrough_progress = {
 			set_country_flag = HUN_horthy_aligned_the_move_flag
 		}
 
-		# COMPLETING FOCUSES
 
-		# ONES THAT CAN JUST BE COMPLETED NORMALLY
 		complete_national_focus = wuw_HUN_continue_the_regency
 		complete_national_focus = wuw_HUN_strengthen_horthys_reign
 		complete_national_focus = wuw_HUN_economic_intervention
@@ -730,7 +705,6 @@ add_breakthrough_progress = {
 		complete_national_focus = wuw_HUN_form_the_gyorshadtest
 		complete_national_focus = wuw_HUN_invest_in_ludovica_academy
 
-		# ONES THAT HAVE TO BE HANDELED MANUALLY
 		unlock_national_focus = wuw_HUN_secret_rearmament
 		unlock_national_focus = wuw_HUN_outlaw_the_party_of_national_will
 		unlock_national_focus = wuw_HUN_restrict_voting_rights
@@ -750,7 +724,6 @@ add_breakthrough_progress = {
 
 	}
 
-	# TECHNOLOGIES
 	set_technology = {
 		infantry_weapons = 1
 		infantry_weapons1 = 1
@@ -776,16 +749,12 @@ add_breakthrough_progress = {
 		tech_maintenance_company = 1
 		tech_field_hospital = 1
 
-		#doctrines
-		#air_superiority = 1
 
-		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
 		mechanical_computing = 1
 		computing_machine = 1
 
-		#industry
 		basic_machine_tools = 1
 		improved_machine_tools = 1
 		advanced_machine_tools = 1
@@ -810,7 +779,6 @@ set_grand_doctrine = new_strategic_destruction
 		set_technology = {
 			armored_car1 = 1
 		}
-		# The Hivatal has already been established at this point 
 		create_intelligence_agency = yes
 	}
 

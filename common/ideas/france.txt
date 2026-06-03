@@ -10,7 +10,7 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				tag = FRA #stays with main country
+				tag = FRA
 			}
 
 			removal_cost = -1
@@ -252,8 +252,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_speed_arms_factory_factor = 0.15 #军用工厂建造速度
-				production_speed_industrial_complex_factor = 0.1 #民用工厂建造速度
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.1
 				economy_cost_factor = -0.5
 				conversion_cost_civ_to_mil_factor = -0.5
 			}
@@ -440,7 +440,7 @@ ideas = {
 				training_time_army_factor = -0.2
 				army_attack_factor = 0.05
 				army_strength_factor = 0.05
-				army_org_factor = 0.05 #陆军组织度
+				army_org_factor = 0.05
 			}
 		}
 
@@ -527,7 +527,7 @@ ideas = {
 		FRA_down_with_marianne = {
 			picture = FRA_down_marianne
 			allowed = {
-				original_tag = FRA #should probably be VIC
+				original_tag = FRA
 				always = no
 			}
 
@@ -545,7 +545,7 @@ ideas = {
 			picture = generic_fascism_drift_bonus
 			
 			allowed = {
-				original_tag = FRA #should probably be VIC
+				original_tag = FRA
 				always = no
 			}
 
@@ -563,7 +563,7 @@ ideas = {
 		FRA_venerate_the_craftsman = {
 			picture = generic_production_bonus
 			allowed = {
-				original_tag = FRA #should probably be VIC
+				original_tag = FRA
 				always = no
 			}
 
@@ -581,7 +581,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 			name = FRA_occupation_costs_1
 			allowed = {
-				original_tag = FRA #should probably be VIC
+				original_tag = FRA
 				always = no
 			}
 
@@ -629,7 +629,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 			name = FRA_occupation_costs_1
 			allowed = {
-				original_tag = FRA #should probably be VIC
+				original_tag = FRA
 				always = no
 			}
 
@@ -677,7 +677,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 			name = FRA_occupation_costs_1
 			allowed = {
-				original_tag = FRA #should probably be VIC
+				original_tag = FRA
 				always = no
 			}
 
@@ -724,7 +724,7 @@ ideas = {
 		FRA_occupation_costs_1 = {
 			picture = generic_goods_red_bonus
 			allowed = {
-				original_tag = FRA #should probably be VIC
+				original_tag = FRA
 				always = no
 			}
 
@@ -771,7 +771,7 @@ ideas = {
 		FRA_mandatory_work_service = {
 			picture = ast_all_in
 			allowed = {
-				original_tag = FRA #should probably be VIC
+				original_tag = FRA
 				always = no
 			}
 
@@ -789,7 +789,7 @@ ideas = {
 		VIC_guest_workers = {
 			picture = generic_exploit_mines
 			allowed = {
-				original_tag = GER #should probably be main occupier
+				original_tag = GER
 				always = no
 			}
 
@@ -807,7 +807,7 @@ ideas = {
 		VIC_produce_aircraft_parts = {
 			picture = generic_bomber_production_diverted
 			allowed = {
-				original_tag = FRA #should probably be VIC
+				original_tag = FRA
 				always = no
 			}
 
@@ -936,7 +936,7 @@ ideas = {
 		FRA_national_bureau_of_statistics = {
 			picture = SOV_scientist_defect
 			allowed = {
-				original_tag = FRA #should probably be VIC
+				original_tag = FRA
 				always = no
 			}
 
@@ -953,7 +953,7 @@ ideas = {
 		FRA_legionary_service_order = {
 			picture = ast_volunteer_defence_corps
 			allowed = {
-				original_tag = FRA #should probably be VIC
+				original_tag = FRA
 				always = no
 			}
 
@@ -970,7 +970,7 @@ ideas = {
 		FRA_milice = {
 			picture = generic_war_preparation
 			allowed = {
-				original_tag = FRA #should probably be VIC
+				original_tag = FRA
 				always = no
 			}
 
@@ -987,7 +987,7 @@ ideas = {
 		FRA_anti_bolshevist_volunteers = {
 			picture = generic_manpower_bonus
 			allowed = {
-				original_tag = FRA #should probably be VIC
+				original_tag = FRA
 				always = no
 			}
 
@@ -1009,7 +1009,7 @@ ideas = {
 		FRA_rebuild_the_military = {
 			picture = generic_infantry_bonus
 			allowed = {
-				original_tag = FRA #should probably be VIC
+				original_tag = FRA
 				always = no
 			}
 
@@ -1028,7 +1028,7 @@ ideas = {
 		FRA_hidden_materials = {
 			picture = HUN_secret_rearmament
 			allowed = {
-				original_tag = FRA #should probably be VIC
+				original_tag = FRA
 				always = no
 			}
 
@@ -1045,7 +1045,7 @@ ideas = {
 		FRA_buy_from_the_enemy = {
 			picture = generic_license_production
 			allowed = {
-				original_tag = FRA #should probably be VIC
+				original_tag = FRA
 				always = no
 			}
 
@@ -1123,7 +1123,7 @@ ideas = {
 				has_government = democratic
 			}
 			available = {
-				communism < 0.2 #switched out at 15%
+				communism < 0.2
 			}
 
 			removal_cost = -1
@@ -1411,7 +1411,7 @@ ideas = {
 		FRA_support_the_left_focus = {
 				picture = generic_communism_drift_bonus
 				allowed = {
-					always = no # Added via focus
+					always = no
 				}
 
 				allowed_civil_war = {
@@ -1469,7 +1469,7 @@ ideas = {
 		FRA_support_the_centre_focus = {
 				picture = generic_democratic_drift_bonus				
 				allowed = {
-					always = no # Added via focus
+					always = no
 				}
 
 				allowed_civil_war = {
@@ -1484,7 +1484,7 @@ ideas = {
 		FRA_strengthen_government_support_focus = {
 				picture = generic_pp_unity_bonus
 				allowed = {
-					always = no # Added via focus
+					always = no
 				}
 
 				allowed_civil_war = {
@@ -1494,14 +1494,14 @@ ideas = {
 				modifier = {
 					political_power_factor = 0.1
 					stability_weekly = 0.002
-					army_core_attack_factor =  0.1 #陆军师核心领土攻击
-					army_core_defence_factor = 0.1 #陆军师核心领土防御						
+					army_core_attack_factor =  0.1
+					army_core_defence_factor = 0.1
 				}
 		}		
 		FRA_support_the_right_focus = {
 				picture = generic_fascism_drift_bonus
 				allowed = {
-					always = no # Added via focus
+					always = no
 				}
 				allowed_civil_war = {
 					NOT = {
@@ -1591,8 +1591,8 @@ ideas = {
 				industrial_capacity_factory = 0.1
 				stability_factor = 0.1
 				consumer_goods_factor = -0.20
-				production_factory_efficiency_gain_factor = 0.1 #生产效率增长
-				production_factory_max_efficiency_factor = 0.1 #生产效率上限
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
 			}
 		}
 
@@ -1619,7 +1619,6 @@ ideas = {
 
 		designer = yes
 	
-		# TECHNOLOGY
 		renault_fra = {
 		
 			picture = renault

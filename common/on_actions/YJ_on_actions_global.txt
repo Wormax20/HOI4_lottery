@@ -1,7 +1,6 @@
 on_actions = {
 	on_startup = {
 		effect = {
-			#UI Setup
 			for_each_scope_loop = {
 				array = global.players
 				set_country_flag = show_welcome_splash
@@ -78,90 +77,49 @@ on_actions = {
 	on_daily = {
 		effect = {
 			every_country = {
-				limit = { has_country_flag = YJ_controller }
 				if = {
 					limit = {
+						has_country_flag = YJ_controller
 						OR = {
-							surrender_progress > 0.75
 							is_ai = yes
+							surrender_progress > 0.75
 						}
 					}
-
-					if = {
-						limit = {
-							any_country = {
-								is_ai = no
-								surrender_progress < 0.75
-								NOT = { has_country_flag = YJ_controller }
-							}
-						}
-						
-						random_country = {
-							limit = {
-								is_ai = no
-								surrender_progress < 0.75
-								NOT = { has_country_flag = YJ_controller }
-							}
-							set_country_flag = YJ_controller
-						}
-						
-						clr_country_flag = YJ_controller
-					}
+					clr_country_flag = YJ_controller
 				}
-			}
-		}
-	}
 
-	on_weekly = {
-		effect = {
-			every_country = {
 				if = {
 					limit = {
-						OR = {
-							tag = GER
-							is_in_faction_with = GER
-						}
-					}
-					clr_country_flag = YJ_allie
-					set_country_flag = YJ_axis
-				}
-				
-				if = {
-					limit = {
-						OR = {
-							tag = SOV
-							is_in_faction_with = SOV
-						}
-					}
-					clr_country_flag = YJ_axis
-					set_country_flag = YJ_allie
-				}
-			}
-		}
-	}
-
-	on_actions = {
-		on_daily = {
-			effect = {
-				if = {
-					limit = {
-						NOT = { has_idea = YJ_AIR_ideas }
 						is_ai = no
+						NOT = { has_idea = YJ_AIR_ideas }
 					}
-					add_idea = YJ_AIR_ideas
+					add_ideas = YJ_AIR_ideas
 					add_dynamic_modifier = {
 						modifier = YJ_AIR_ideas
 					}
 				}
 				if = {
 					limit = {
-						has_idea = YJ_AIR_ideas
 						is_ai = yes
+						has_idea = YJ_AIR_ideas
 					}
 					remove_ideas = YJ_AIR_ideas
 					remove_dynamic_modifier = {
 						modifier = YJ_AIR_ideas
 					}
+				}
+			}
+
+			if = {
+				limit = {
+					NOT = { any_country = { has_country_flag = YJ_controller } }
+				}
+				random_country = {
+					limit = {
+						is_ai = no
+						surrender_progress < 0.75
+					}
+					set_country_flag = YJ_controller
 				}
 			}
 		}

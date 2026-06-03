@@ -1,5 +1,5 @@
 on_actions = {
-	on_monthly_CAN = { #美加合作
+	on_monthly_CAN = {
 	    effect = {
 			IF = {
 				limit = {

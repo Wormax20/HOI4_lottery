@@ -15,15 +15,15 @@ ideas = {
 			picture = ARG_spirit_of_the_cisplatine_war
 
 			modifier = {
-				org_loss_at_low_org_factor = -0.1   #组织度低于25%时的损失
+				org_loss_at_low_org_factor = -0.1
 				dont_lose_dig_in_on_attack = 1
-				supply_consumption_factor = -0.1 #补给消耗
-				land_night_attack = 0.1 #陆战夜战攻击
+				supply_consumption_factor = -0.1
+				land_night_attack = 0.1
 				army_attack_against_major_factor = 0.1
 				army_defence_against_major_factor = 0.1
 				breakthrough_factor = 0.1
-				special_forces_attack_factor = 0.10 #特种攻击
-				supply_node_range = 0.15 #补给范围
+				special_forces_attack_factor = 0.10
+				supply_node_range = 0.15
 			}
 		}
 		YJ_BRA_2_ideas = {
@@ -43,11 +43,11 @@ ideas = {
 			modifier = {
 				custom_modifier_tooltip = YJ_BRA_2_ideas_tt
 				global_building_slots =  5
-				production_speed_buildings_factor = 0.1 #建造速度
-				production_factory_max_efficiency_factor = 0.1 #生产效率上限
-				production_lack_of_resource_penalty_factor = -0.4 #缺乏资源时的产线惩罚
-				industrial_capacity_factory = 0.1 #工厂产出
-				political_power_factor =  0.25  #政治点数
+				production_speed_buildings_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_lack_of_resource_penalty_factor = -0.4
+				industrial_capacity_factory = 0.1
+				political_power_factor =  0.25
 			}
 		}
 		YJ_BRA_3_ideas = {
@@ -65,15 +65,15 @@ ideas = {
 			picture = CHL_ligas_patrioticas
 
 			modifier = {
-				production_lack_of_resource_penalty_factor = -0.4 #缺乏资源时的产线惩罚
+				production_lack_of_resource_penalty_factor = -0.4
 				acclimatization_hot_climate_gain_factor = 0.5
-                production_speed_arms_factory_factor = 0.15 #军用工厂建造速度
-				consumer_goods_factor = -0.1 #生活消费品系数
-				heat_attrition_factor =  -0.5 #炎热损耗
-				special_forces_training_time_factor = -0.1  #特种部队训练时间
-				production_speed_industrial_complex_factor = 0.15 #民用工厂建造速度
-				research_speed_factor = 0.1 #科研速度
-		        production_speed_infrastructure_factor = 0.5 #基础设施建造速度
+                production_speed_arms_factory_factor = 0.15
+				consumer_goods_factor = -0.1
+				heat_attrition_factor =  -0.5
+				special_forces_training_time_factor = -0.1
+				production_speed_industrial_complex_factor = 0.15
+				research_speed_factor = 0.1
+		        production_speed_infrastructure_factor = 0.5
 				global_building_slots = 10
 			}
 		}
@@ -92,10 +92,10 @@ ideas = {
 			picture = CHL_carabineros_de_chile_fascist
 
 			modifier = {
-				production_factory_efficiency_gain_factor = 0.1 #生产效率增长
-				line_change_production_efficiency_factor = 0.3 #生产效率保持
-				production_factory_start_efficiency_factor = 0.15 #基础生产效率
-				air_superiority_efficiency = 0.20 #夺取制空任务效率
+				production_factory_efficiency_gain_factor = 0.1
+				line_change_production_efficiency_factor = 0.3
+				production_factory_start_efficiency_factor = 0.15
+				air_superiority_efficiency = 0.20
 			}
 			equipment_bonus = {
 				infantry_equipment = {

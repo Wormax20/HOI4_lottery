@@ -1,77 +1,18 @@
-# leader_traits contain a list of UnitLeaderTrait with the following structure:
-# trait_key = {
-# 	type = all # or either of field_marshal, corps_commander, navy
-#	trait_type = basic_trait # or either of status_trait, personality_trait, assignable_trait, basic_terrain_trait, assignable_terrain_trait, exile
-#	attack_skill = 0 # integer
-#	defense_skill = 0 # integer
-#	logistics_skill = 0 # integer
-#	planning_skill = 0 # integer
-#	maneuvering_skill = 0 # integer
-#	coordination_skill = 0 # integer
-#	attack_skill_factor = 0.0 # decimal
-#	defense_skill_factor = 0.0 # decimal
-#	logistics_skill_factor = 0.0 # decimal
-#	planning_skill_factor = 0.0 # decimal
-#	maneuvering_skill_factor = 0.0 # decimal
-#	coordination_skill_factor = 0.0 # decimal
-#	show_in_combat = yes # boolean
-#	override_effect_tooltip = "" # loc key
-#	custom_effect_tooltip = "" # loc key
-#	custom_prerequisite_tooltip = "" # loc key
-#	custom_gain_xp_trigger_tooltip = "" # loc key
-#	mutually_exclusive = other_trait # trait key
-#	parent = { # Can be added multiple times
-#	    traits = {XXX YYY ZZZ}  # A list of other traits that
-#       num_parents_needed = 1 # The number of the above traits that must be true
-#   }
-#   any_parent = { XXX YYY ZZZ } # shorthand for parent when num_parents_needed are defaulted to 1
-#   all_parents = { XXX YYY ZZZ } # shorthand for parent when num_parents_needed are the same as the number of parents
-#	gui_row = 0 # integer, starts at 0, unset or -1 means the trait does not appear in unlockable trait tree.
-#	gui_column = 0 # integer, starts at 0, unset or -1 means auto
-#	allowed = trigger # scope is a unit leader
-#	prerequisites = trigger # scope is an unit leader
-#	gain_xp = trigger # scope is a combatant
-#	gain_xp_leader = trigger # scope is a unit leader. ROOT is country you are from and FROM is any target nationality for agents
-#	gain_xp_on_spotting = 0 # integer
-#	modifier = { } # list of modifiers
-#	non_shared_modifier = {} #
-#	corps_commander_modifier = {} #
-#	field_marshal_modifier = {} #
-#	sub_unit_modifiers = { # list of sub unit def
-#		# e.g.
-#		submarine {
-#			units = {} # list of adjusters
-#			# list of modifiers e.g.
-#			naval_visibility = -0.1
-#		}
-#	}
-#	trait_xp_factor = {} # list of trait_key/decimal
-#	on_add = effect # scope is an unit leader
-#	on_remove = effect # scope is an unit leader
-#	daily_effect = effect # scope is an unit leader
-#	cost = 1000 # integer
-#	ai_will_do = {} # weight
-#	new_commander_weight = {} # weight
-#	enable_ability = ability_key
-#}
 leader_traits = {
 
 	
-##################################
-# Common Traits
-##################################
 	YJ_traits_1 = { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
-			always = no # not gainable
+			always = no
 		}
 		allowed = {
 			
 		}
 		modifier = {
-			wounded_chance_factor = -0.3 #受伤几率
-			max_planning = 0.05 #计划上限
+			wounded_chance_factor = -0.3
+			max_planning = 0.05
 		}
 		
 		non_shared_modifier = {
@@ -89,13 +30,13 @@ leader_traits = {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
-			always = no # not gainable
+			always = no
 		}
 		allowed = {
 			
 		}
 		modifier = {
-			wounded_chance_factor = -0.3 #受伤几率
+			wounded_chance_factor = -0.3
 		}
 		
 		non_shared_modifier = {
@@ -113,14 +54,14 @@ leader_traits = {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
-			always = no # not gainable
+			always = no
 		}
 		allowed = {
 			
 		}
 		modifier = {
-			planning_speed = -0.2   #计划速度
-			max_planning = 0.05 #计划加成上限
+			planning_speed = -0.2
+			max_planning = 0.05
 		}
 		
 		non_shared_modifier = {
@@ -137,13 +78,13 @@ leader_traits = {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
-			always = no # not gainable
+			always = no
 		}
 		allowed = {
 			
 		}
 		modifier = {
-			wounded_chance_factor = 0.2  #受伤几率
+			wounded_chance_factor = 0.2
 		}
 		
 		non_shared_modifier = {
@@ -161,14 +102,14 @@ leader_traits = {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
-			always = no # not gainable
+			always = no
 		}
 		allowed = {
 			
 		}
 		modifier = {
-			army_morale_factor = 0.1 #组织度恢复
-		    land_reinforce_rate = 0.05 #增援率
+			army_morale_factor = 0.1
+		    land_reinforce_rate = 0.05
 		}
 		
 		non_shared_modifier = {
@@ -186,7 +127,7 @@ leader_traits = {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
-			always = no # not gainable
+			always = no
 		}
 		allowed = {
 			
@@ -210,7 +151,7 @@ leader_traits = {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
-			always = no # not gainable
+			always = no
 		}
 		allowed = {
 			
@@ -229,41 +170,17 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	#YJ_traits_8 = { 
-	#	type = land
-	#	trait_type = personality_trait
-	#	gain_xp = {
-	#		always = no # not gainable
-	#	}
-	#	allowed = {
-	#		
-	#	}
-	#	modifier = {
-	#	    planning_speed = 0.3 #计划速度
-	#	    training_time_army_factor = -0.3 #训练时间
-	#	}
-	#	
-	#	non_shared_modifier = {
-	#	}
-	#	
-	#	ai_will_do = {
-	#		factor = 0
-	#	}
-	#	new_commander_weight = {
-	#		factor = 0
-	#	}
-	#}
 	YJ_traits_9 = { 
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
-			always = no # not gainable
+			always = no
 		}
 		allowed = {
 			
 		}
 		modifier = {
-            recon_factor = 0.05 #侦查
+            recon_factor = 0.05
 		}
 		
 		non_shared_modifier = {
@@ -281,15 +198,15 @@ leader_traits = {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
-			always = no # not gainable
+			always = no
 		}
 		allowed = {
 			
 		}
 		modifier = {
-            max_planning = 0.1 #计划加成上限系数
-			supply_consumption_factor = -0.05  #补给消耗
-		    planning_speed = -0.1 #计划速度
+            max_planning = 0.1
+			supply_consumption_factor = -0.05
+		    planning_speed = -0.1
 		}
 		
 		non_shared_modifier = {
@@ -306,13 +223,13 @@ leader_traits = {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
-			always = no # not gainable
+			always = no
 		}
 		allowed = {
 			
 		}
 		modifier = {
-			army_morale_factor = -0.05  #陆军师组织度恢复速率
+			army_morale_factor = -0.05
 		}
 		
 		non_shared_modifier = {
@@ -329,13 +246,13 @@ leader_traits = {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
-			always = no # not gainable
+			always = no
 		}
 		allowed = {
 			
 		}
 		modifier = {
-			planning_speed = -0.1 #计划速度
+			planning_speed = -0.1
 		}
 		
 		non_shared_modifier = {
@@ -351,7 +268,7 @@ leader_traits = {
 	YJ_traits_13 = { 
 		type = navy
 		trait_type = personality_trait
-		gain_xp = { # This trigger is not needed as it gets xp from spotting (not by combat)
+		gain_xp = {
 			always = no 
 		}
 	
@@ -368,13 +285,13 @@ leader_traits = {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
-			always = no # not gainable
+			always = no
 		}
 		allowed = {
 			
 		}
 		modifier = {
-			land_reinforce_rate = 0.02 #增援率
+			land_reinforce_rate = 0.02
 		}
 		
 		non_shared_modifier = {
@@ -391,13 +308,13 @@ leader_traits = {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
-			always = no # not gainable
+			always = no
 		}
 		allowed = {
 			
 		}
 		modifier = {
-			recon_factor = 0.15 #侦查
+			recon_factor = 0.15
 		}
 		
 		non_shared_modifier = {
@@ -414,15 +331,15 @@ leader_traits = {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
-			always = no # not gainable
+			always = no
 		}
 		allowed = {
 			
 		}
 		modifier = {
-			army_morale_factor = 0.1 #陆军师组织度恢复速率
-			supply_consumption_factor = -0.05 #补给消耗
-			army_defence_factor = 0.05  #陆军师防御
+			army_morale_factor = 0.1
+			supply_consumption_factor = -0.05
+			army_defence_factor = 0.05
 		}
 		
 		non_shared_modifier = {
@@ -440,7 +357,7 @@ leader_traits = {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
-			always = no # not gainable
+			always = no
 		}
 		allowed = {
 			
@@ -463,13 +380,13 @@ leader_traits = {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
-			always = no # not gainable
+			always = no
 		}
 		allowed = {
 			
 		}
 		modifier = {
-			recon_factor = 0.1 #陆军侦查
+			recon_factor = 0.1
 		}
 		
 		non_shared_modifier = {
@@ -487,15 +404,15 @@ leader_traits = {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
-			always = no # not gainable
+			always = no
 		}
 		allowed = {
 			
 		}
 		modifier = {
-			planning_speed = -0.1 #计划速度
-			army_morale_factor = 0.1 #陆军师组织度恢复速率
-			max_planning = 0.05 #计划上限
+			planning_speed = -0.1
+			army_morale_factor = 0.1
+			max_planning = 0.05
 		}
 		
 		non_shared_modifier = {
@@ -513,21 +430,21 @@ leader_traits = {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
-			always = no # not gainable
+			always = no
 		}
 		allowed = {
 			
 		}
 		modifier = {
 			land_reinforce_rate = -0.01
-			army_org_regain = -0.01 #陆军组织度恢复
-			recon_factor = -0.01 #陆军侦察
-			army_attack_factor = -0.01 #陆军师攻击
-			army_defence_factor = -0.01  #陆军师防御
-			supply_consumption_factor = 0.01 #补给消耗
-			wounded_chance_factor = 0.01  #受伤几率	
-			planning_speed = -0.01 #计划速度
-			max_planning = -0.01 #计划上限
+			army_org_regain = -0.01
+			recon_factor = -0.01
+			army_attack_factor = -0.01
+			army_defence_factor = -0.01
+			supply_consumption_factor = 0.01
+			wounded_chance_factor = 0.01
+			planning_speed = -0.01
+			max_planning = -0.01
 		}
 		
 		non_shared_modifier = {
@@ -544,15 +461,15 @@ leader_traits = {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
-			always = no # not gainable
+			always = no
 		}
 		allowed = {
 			
 		}
 		modifier = {
-			army_org_regain = 0.05 #陆军组织度恢复
-			army_defence_factor = -0.05  #陆军师防御
-			recon_factor = 0.05 #陆军侦察
+			army_org_regain = 0.05
+			army_defence_factor = -0.05
+			recon_factor = 0.05
 		}
 		
 		non_shared_modifier = {
@@ -569,13 +486,13 @@ leader_traits = {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
-			always = no # not gainable
+			always = no
 		}
 		allowed = {
 			
 		}
 		modifier = {
-			recon_factor = 0.1 #陆军侦察
+			recon_factor = 0.1
 		}
 		
 		non_shared_modifier = {
@@ -592,15 +509,15 @@ leader_traits = {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
-			always = no # not gainable
+			always = no
 		}
 		allowed = {
 			
 		}
 		modifier = {
-			wounded_chance_factor = 0.1  #受伤
-			planning_speed = -0.1 #计划速度
-			max_planning = -0.05 #计划上限
+			wounded_chance_factor = 0.1
+			planning_speed = -0.1
+			max_planning = -0.05
 		}
 		
 		non_shared_modifier = {
@@ -617,14 +534,14 @@ leader_traits = {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
-			always = no # not gainable
+			always = no
 		}
 		allowed = {
 			
 		}
 		modifier = {
-			army_armor_attack_factor = 0.05 #装甲攻击
-			army_armor_defence_factor = 0.05 #装甲防御
+			army_armor_attack_factor = 0.05
+			army_armor_defence_factor = 0.05
 		}
 		
 		non_shared_modifier = {
@@ -641,16 +558,16 @@ leader_traits = {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
-			always = no # not gainable
+			always = no
 		}
 		allowed = {
 			
 		}
 		modifier = {
-			recon_factor = 0.05 #陆军侦察
-			supply_consumption_factor = -0.01 #补给消耗
-			wounded_chance_factor = -0.1  #受伤几率
-			land_reinforce_rate = 0.01 #增援率
+			recon_factor = 0.05
+			supply_consumption_factor = -0.01
+			wounded_chance_factor = -0.1
+			land_reinforce_rate = 0.01
 		}
 		
 		non_shared_modifier = {
@@ -667,17 +584,17 @@ leader_traits = {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
-			always = no # not gainable
+			always = no
 		}
 		allowed = {
 			
 		}
 		modifier = {
-			recon_factor = 0.05 #陆军侦察
-			wounded_chance_factor = 0.1  #受伤几率	
-			max_planning = 0.02 #计划上限
-			land_reinforce_rate = 0.03 #增援率
-			planning_speed = 0.03 #计划速度
+			recon_factor = 0.05
+			wounded_chance_factor = 0.1
+			max_planning = 0.02
+			land_reinforce_rate = 0.03
+			planning_speed = 0.03
 		}
 		
 		non_shared_modifier = {
@@ -694,14 +611,14 @@ leader_traits = {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
-			always = no # not gainable
+			always = no
 		}
 		allowed = {
 			
 		}
 		modifier = {
-			land_reinforce_rate = 0.03 #增援率
-			army_morale_factor = 0.05 #陆军师组织度恢复速率
+			land_reinforce_rate = 0.03
+			army_morale_factor = 0.05
 		}
 		
 		non_shared_modifier = {
@@ -718,13 +635,13 @@ leader_traits = {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
-			always = no # not gainable
+			always = no
 		}
 		allowed = {
 			
 		}
 		modifier = {
-			max_dig_in_factor = 0.05  							# 堑壕上限(百分比)
+			max_dig_in_factor = 0.05
 			cas_damage_reduction = 0.05
 		}
 		
@@ -743,14 +660,14 @@ leader_traits = {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
-			always = no # not gainable
+			always = no
 		}
 		allowed = {
 			
 		}
 		modifier = {
 			political_power_factor = 0.1
-			land_reinforce_rate = 0.03 #增援率
+			land_reinforce_rate = 0.03
 		}
 		
 		non_shared_modifier = {
@@ -769,22 +686,22 @@ leader_traits = {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
-			always = no # not gainable
+			always = no
 		}
 		allowed = {
 			
 		}
-		attack_skill = 1 #进攻
-		planning_skill = 1 #计划
+		attack_skill = 1
+		planning_skill = 1
 		
-		attack_skill_factor = 1 #
-		planning_skill_factor = 1 #
+		attack_skill_factor = 1
+		planning_skill_factor = 1
 		modifier = {
-			breakthrough_factor = 0.1 #突破
-			land_reinforce_rate = 0.03 #增援率
-			army_org_factor = 0.1 #陆军师组织度
-			army_morale_factor = 0.1 #陆军师组织度恢复速率
-			supply_consumption_factor = -0.1 #补给消耗
+			breakthrough_factor = 0.1
+			land_reinforce_rate = 0.03
+			army_org_factor = 0.1
+			army_morale_factor = 0.1
+			supply_consumption_factor = -0.1
 			desert = {
 				attack = 0.1
 				movement = 0.1

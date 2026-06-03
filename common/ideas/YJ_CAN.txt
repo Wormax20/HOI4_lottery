@@ -1,6 +1,6 @@
 ideas = {
 	country = {
-		YJ_CAN_1_ideas = { #我们不要主人
+		YJ_CAN_1_ideas = {
 
 			allowed = {
 				always = no
@@ -16,19 +16,19 @@ ideas = {
 
 			modifier = {
 				custom_modifier_tooltip = YJ_CAN_1_ideas_tt
-				political_power_gain = 1 #每日获得的政治点数
-				political_power_factor = 0.15 #政治点数
-				stability_weekly = 0.005 #每周稳定度增长
-				war_support_weekly = 0.005 #每周战争支持度增长
-				consumer_goods_factor = -0.20 #生活消费品工厂系数
-				consumer_goods_expected_value = -0.20  #用于生产生活消费品的期望工厂数量
-				local_resources_factor = 0.30 #战略资源获取率
-				min_export = -0.1 #出口資源
+				political_power_gain = 1
+				political_power_factor = 0.15
+				stability_weekly = 0.005
+				war_support_weekly = 0.005
+				consumer_goods_factor = -0.20
+				consumer_goods_expected_value = -0.20
+				local_resources_factor = 0.30
+				min_export = -0.1
 			}
 		}
 
 		
-		YJ_CAN_2_ideas = { #加拿大海陆突击队
+		YJ_CAN_2_ideas = {
 
 			allowed = {
 				always = no
@@ -44,11 +44,11 @@ ideas = {
 
 			modifier = {
 				custom_modifier_tooltip = YJ_CAN_2_ideas_tt
-				political_power_factor = 0.15 #政治点数
-				production_factory_max_efficiency_factor = 0.05 #生产效率上限
-				industrial_capacity_factory = 0.05	#工厂产出
-				land_night_attack = 0.05  #陆战夜战攻击
-				max_planning = 0.1	# 计划上限
+				political_power_factor = 0.15
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+				land_night_attack = 0.05
+				max_planning = 0.1
 				
 			}
 			equipment_bonus = {
@@ -63,7 +63,7 @@ ideas = {
 			}
 		}
 
-		YJ_CAN_3_ideas = { #美加合作
+		YJ_CAN_3_ideas = {
 
 			allowed = {
 				always = no
@@ -79,11 +79,11 @@ ideas = {
 
 			modifier = {
 				custom_modifier_tooltip = YJ_CAN_3_ideas_tt
-				political_power_factor = 0.15 #政治点数
-				air_superiority_efficiency = 0.20 #夺取制空任务效率
-				air_range_factor = 0.15 #航程
-				air_agility_factor = 0.1 #机动
-				air_maximum_speed_factor = 0.1         #空军最大速度
+				political_power_factor = 0.15
+				air_superiority_efficiency = 0.20
+				air_range_factor = 0.15
+				air_agility_factor = 0.1
+				air_maximum_speed_factor = 0.1
 			}
 			equipment_bonus = {
 				medium_plane_fighter_airframe = {
@@ -93,7 +93,7 @@ ideas = {
 			}
 		}
 
-		YJ_CAN_4_ideas = { #民主兵工厂
+		YJ_CAN_4_ideas = {
 
 			allowed = {
 				always = no
@@ -108,9 +108,9 @@ ideas = {
 			picture = generic_local_self_management
 
 			modifier = {
-				production_factory_efficiency_gain_factor = 0.25 #生产效率增长
-				industrial_capacity_factory = 0.05			#工厂产出
-				production_factory_max_efficiency_factor = 0.05 #生产效率上限
+				production_factory_efficiency_gain_factor = 0.25
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.05
 			}
 			equipment_bonus = {
 				armor = {
@@ -157,7 +157,7 @@ ideas = {
 		}
 
 		
-		YJ_CAN_5_ideas = { #和睦家庭
+		YJ_CAN_5_ideas = {
 
 			allowed = {
 				always = no
@@ -173,13 +173,13 @@ ideas = {
 
 			modifier = {
 				custom_modifier_tooltip = YJ_CAN_5_ideas_tt
-				political_power_factor = 0.03 #政治点数
-				production_factory_efficiency_gain_factor = 0.03 #生产效率增长
-				industrial_capacity_factory = 0.03			#工厂产出
-				production_factory_max_efficiency_factor = 0.03 #生产效率上限
-				consumer_goods_factor = -0.03 #生活消费品工厂系数
-				consumer_goods_expected_value = -0.03  #用于生产生活消费品的期望工厂数量
-				coordination_bonus = 0.03 #协同性
+				political_power_factor = 0.03
+				production_factory_efficiency_gain_factor = 0.03
+				industrial_capacity_factory = 0.03
+				production_factory_max_efficiency_factor = 0.03
+				consumer_goods_factor = -0.03
+				consumer_goods_expected_value = -0.03
+				coordination_bonus = 0.03
 			}
 			equipment_bonus = {
 				armor = {

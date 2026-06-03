@@ -143,7 +143,6 @@ country_event = {
 				has_character = SOV_genrikh_yagoda
 			}
 
-			#Remove old trait
 			if = {
 				limit = {
 					SOV_genrikh_yagoda = {
@@ -169,7 +168,6 @@ country_event = {
 				}
 			}
 
-			#Add final trait
 			add_trait = {
 				character = SOV_genrikh_yagoda
 				trait = head_of_the_nkvd_yagoda_no_paranoia
@@ -186,7 +184,6 @@ country_event = {
 				has_character = SOV_nikolay_yezhov
 			}
 
-			#Remove old trait
 			if = {
 				limit = {
 					SOV_nikolay_yezhov = {
@@ -212,7 +209,6 @@ country_event = {
 				}
 			}
 			
-			#Add final trait
 			add_trait = {
 				character = SOV_nikolay_yezhov
 				trait = head_of_the_nkvd_yezhov_no_paranoia
@@ -229,7 +225,6 @@ country_event = {
 				has_character = SOV_lavrenty_beriya
 			}
 
-			#Remove old trait
 			if = {
 				limit = {
 					SOV_lavrenty_beriya = {
@@ -255,7 +250,6 @@ country_event = {
 				}
 			}
 			
-			#Add final trait
 			add_trait = {
 				character = SOV_lavrenty_beriya
 				trait = head_of_the_nkvd_beriya_no_paranoia

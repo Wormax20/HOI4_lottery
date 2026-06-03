@@ -609,7 +609,7 @@ war_measures = {
 			}
 			modifier = {
 				has_manpower < 10000 
-				factor = 0 #need to up conscription laws
+				factor = 0
 			}
 		}
 		modifier = {
@@ -666,7 +666,7 @@ war_measures = {
 			}
 			modifier = {
 				has_manpower < 10000 
-				factor = 0 #need to up conscription laws
+				factor = 0
 			}
 		}
 		modifier = {
@@ -723,7 +723,7 @@ war_measures = {
 			}
 			modifier = {
 				has_manpower < 10000 
-				factor = 0 #need to up conscription laws
+				factor = 0
 			}
 		}
 		modifier = {
@@ -739,7 +739,7 @@ war_measures = {
 						NOT = { has_country_flag = USB_fighter_template_active }
 					}
 					create_equipment_variant = {
-						name = "P-44 Bald Eagle" #
+						name = "P-44 Bald Eagle"
 						type = small_plane_airframe_1
 						allow_without_tech = yes
 						modules = {
@@ -813,7 +813,7 @@ war_measures = {
 			}
 			modifier = {
 				has_manpower < 10000 
-				factor = 0 #need to up conscription laws
+				factor = 0
 			}
 		}
 		modifier = {
@@ -829,7 +829,7 @@ war_measures = {
 						NOT = { has_country_flag = USB_bomber_template_active }
 					}
 					create_equipment_variant = {
-						name = "B-13 Raven" #
+						name = "B-13 Raven"
 						type = medium_plane_airframe_1
 						allow_without_tech = yes
 						modules = {
@@ -1584,7 +1584,7 @@ foreign_politics = {
 		available = {
 			OR = {
 				not = { has_government = SOV }
-				has_war_with = SOV #commie on commie violence
+				has_war_with = SOV
 			}			
 			has_equipment = { infantry_equipment > 999 }
 			FROM = {
@@ -1678,7 +1678,6 @@ foreign_politics = {
 			}
 			create_faction = MTG_USA_NORTH_AMERICAN_DOMINION_FACTION
 			hidden_effect = {
-				#news_event = { id = xxx days = 3 } MTG_TODO_GABRIEL
 			}
 		}
 	}
@@ -2964,7 +2963,7 @@ USA_intervention_mandate = {
 			has_completed_focus = USA_reinforce_monroe_doctrine
 			NOT = { has_wargoal_against = FROM }
 			FROM = {
-				NOT = { has_country_flag = USA_monroe_backed_down } #set when US player backs down in reply event
+				NOT = { has_country_flag = USA_monroe_backed_down }
 				any_owned_state = {
 					is_controlled_by = PREV
 					OR = {
@@ -3147,7 +3146,7 @@ operations = {
 					overlord = {
 						NOT = {
 							has_government = democratic
-							has_war_with = USA #Unfair to just grab a piece of land from your enemy like this
+							has_war_with = USA
 							is_in_faction_with = ROOT
 						}
 					}
@@ -3201,7 +3200,7 @@ operations = {
 					is_major = yes
 					NOT = {
 						has_government = democratic
-						has_war_with = USA #Unfair to just grab a piece of land from your enemy like this
+						has_war_with = USA
 						is_in_faction_with = ROOT
 					}
 				}

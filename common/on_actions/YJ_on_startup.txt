@@ -440,7 +440,6 @@ on_actions = {
 
             	set_global_flag = xjgs_global_flag
 
-            	# 遍历轴心国
             	GER = {
                 	if = {
                     	limit = { is_in_faction = yes }
@@ -453,7 +452,6 @@ on_actions = {
                             days = 180
                         	}
                     	}
-                    	# 自己也加
                     	add_timed_idea = {
                         	idea = YJ_xjgs_ideas
                         	days = 180
@@ -490,7 +488,6 @@ on_actions = {
 									days = 180
 								}	
 							}
-							# 自己也加
 							add_timed_idea = {
 								idea = YJ_bbls_ideas
 								days = 180
@@ -651,7 +648,6 @@ on_actions = {
 	}
 
 	on_war_relation_added = { 
-		# ROOT is attacker, FROM is defender.
 		effect = {
 			if = {
 				limit = { 

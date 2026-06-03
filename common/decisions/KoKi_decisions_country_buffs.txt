@@ -1,0 +1,219 @@
+﻿KoKi_YJ_decisions_categories = {
+
+	KoKi_YJ_TAG_decisions_4 = {
+		icon = GFX_decision_generic_form_nation
+		allowed = {
+			original_tag = FIN
+		}
+		available = {
+			date > 1938.1.1
+			FROM = { NOT = { has_idea = YJ_FIN_5_ideas } }
+		}
+		visible = {
+			original_tag = FIN
+		}
+		target_trigger = {
+			FROM = {
+				is_in_faction_with = ROOT
+			}
+		}
+		cost = 50
+		days_remove = 0
+		days_re_enable = 0
+		modifier = {
+		}
+		complete_effect = {
+			FROM = { add_ideas = YJ_FIN_5_ideas }
+		}
+		cancel_trigger = {
+		}
+		cancel_effect = {
+		}
+		remove_effect = {
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	KoKi_YJ_ENG_decisions_1 = {
+		icon = GFX_decision_generic_form_nation
+		allowed = {
+			original_tag = ENG
+		}
+		available = {
+			date > 1938.1.1
+			has_idea = YJ_ENG_5_ideas
+			FROM = { NOT = { has_idea = deterrence } }
+		}
+		visible = {
+			original_tag = ENG
+		}
+		target_trigger = {
+			FROM = {
+				is_in_faction_with = ROOT
+			}
+		}
+		cost = 100
+		days_remove = 0
+		days_re_enable = 0
+		modifier = {
+		}
+		complete_effect = { 
+			FROM = {
+				if = {
+					limit = { NOT = { has_idea = deterrence } }
+					add_timed_idea = {
+						idea = deterrence
+						days = 360
+					}
+				}
+			}
+		}
+		cancel_trigger = {
+		}
+		cancel_effect = {
+		}
+		remove_effect = {
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	KoKi_YJ_ROM_decisions_03 = { 
+	icon = GFX_decision_generic_form_nation
+	allowed = {
+		original_tag = ROM
+	}
+	available = {
+			date > 1938.1.1
+			has_idea = YJ_ROM_3_ideas
+			FROM = { NOT = { has_idea = YJ_ROM_03_ideas } }
+	}
+	visible = {
+		original_tag = ROM
+	}
+	target_trigger = {
+		FROM = {
+			is_in_faction_with = ROOT
+		}
+	}
+	cost = 100
+	days_remove = 0
+	days_re_enable = 0
+	modifier = {
+	}
+	complete_effect = { 
+		FROM = {
+			if = {
+				limit = { NOT = { has_idea = YJ_ROM_03_ideas } }
+				add_timed_idea = {
+					idea = YJ_ROM_03_ideas
+					days = 60
+				}
+			}
+		}
+	}
+		cancel_trigger = {
+		}
+		cancel_effect = {
+		}
+		remove_effect = {
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	KoKi_YJ_USA_decisions = {
+	icon = GFX_decision_generic_form_nation
+	allowed = {
+		original_tag = USA
+	}
+	available = {
+		date > 1938.1.1
+		has_war = yes
+		FROM = {
+			has_war = yes
+		}
+	}
+	visible = {
+		original_tag = USA
+	}
+	target_trigger = {
+		FROM = {
+			is_in_faction_with = ROOT
+			NOT = {
+				has_idea = YJ_USA_6_ideas
+			}
+		}
+	}
+	cost = 100
+	days_remove = 0
+	days_re_enable = 0
+	modifier = {
+	}
+	complete_effect = { 
+		From = {
+			add_timed_idea = {
+				idea = YJ_USA_6_ideas
+				days = 60
+			}
+		}
+	}
+		cancel_trigger = {
+		}
+		cancel_effect = {
+		}
+		remove_effect = {
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	KoKi_YJ_ROM_decisions_04 = { 
+		icon = GFX_decision_generic_form_nation
+		allowed = {
+			original_tag = ROM
+		}
+		available = {
+			has_idea = YJ_ROM_4_ideas
+			FROM = { NOT = { has_idea = YJ_ROM_04_ideas } }
+		}
+		visible = {
+			original_tag = ROM
+		}
+		target_trigger = {
+			FROM = {
+				is_in_faction_with = ROOT
+			}
+		}
+		cost = 100
+		days_remove = 0
+		days_re_enable = 0
+		modifier = {
+		}
+		complete_effect = { 
+			FROM = {
+				if = {
+					limit = { NOT = { has_idea = YJ_ROM_04_ideas } }
+					add_timed_idea = {
+						idea = YJ_ROM_04_ideas
+						days = 60
+					}
+				}
+			}
+		}
+		cancel_trigger = {
+		}
+		cancel_effect = {
+		}
+		remove_effect = {
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+}

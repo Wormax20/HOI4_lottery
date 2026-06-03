@@ -2,7 +2,7 @@ YJ_GEN_state_ideas = {
     enable = { always = yes }
 
 	icon = GFX_modifiers_generic_construction
-	local_resources = 1 #当地资源
+	local_resources = 1
 }
 
 YJ_AIR_ideas = {

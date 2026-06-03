@@ -1,6 +1,3 @@
-###############################################
-########     ABSOLUTE NEUTRALITY       ########
-###############################################
 
 SWI_is_country_to_balance = {
 	custom_trigger_tooltip = {
@@ -11,7 +8,7 @@ SWI_is_country_to_balance = {
 	}
 }
 
-SWI_is_at_war_with_neighbor = { #Checks if it's at war with your major neighbor 
+SWI_is_at_war_with_neighbor = {
 	is_faction_leader = yes  
 	any_other_country = {
 		is_major = yes 
@@ -62,7 +59,7 @@ SWI_has_fascist_neighbor = {
 	}
 }
 
-is_suitable_fascist_major = { #This is an adaptation of the one found in the Baltic Scripted Triggers
+is_suitable_fascist_major = {
 	is_major = yes
 	capital_scope = { is_on_continent = europe }
 	exists = yes
@@ -163,9 +160,6 @@ SWI_dem_usa_valid_to_buy_planes = {
 	 }
 }
 
-###############################################
-########        COUNCIL SYSTEM         ########
-###############################################
 
 SWI_can_be_councilor = {	
 	if = {
@@ -231,9 +225,8 @@ SWI_council_not_filled = {
 	}
 }
 
-##### Sorting Councilors by Canton vs Council #### 
 
-SWI_is_council_guy = { #Checks if the character has traits that favor the council side of the BoP
+SWI_is_council_guy = {
 	OR = {
 		has_trait = SWI_fascist_appeaser
 		has_trait = SWI_fascist
@@ -251,7 +244,7 @@ SWI_is_council_guy = { #Checks if the character has traits that favor the counci
 	}
 }
 
-SWI_is_cantons_guy = { #Checks if the character has traits that favor the Cantons side of the BoP
+SWI_is_cantons_guy = {
 	OR = {
 		has_trait = SWI_radical_democrat
 		has_trait = SWI_democratic_capitalist
@@ -261,9 +254,8 @@ SWI_is_cantons_guy = { #Checks if the character has traits that favor the Canton
 	}
 }
 
-### Sorting councilors by Ideology #####
 
-SWI_councilor_is_fascist = { #trigger used to check if councilor in scope is fascist 
+SWI_councilor_is_fascist = {
 	OR = {
 		has_trait = SWI_fascist_appeaser
 		has_trait = SWI_fascist
@@ -273,7 +265,7 @@ SWI_councilor_is_fascist = { #trigger used to check if councilor in scope is fas
 	} 
 }
 
-SWI_councilor_is_any_kind_of_communist = { #Checks if the councilor has any trait related to communism. I hate this solution but otherwise the tooltip is a mess. 
+SWI_councilor_is_any_kind_of_communist = {
 	OR = {
 		has_trait = SWI_anarchist	
 		has_trait = SWI_trade_unionist
@@ -376,14 +368,14 @@ SWI_president_compatible_with_country_politics = {
 	}
 }
 
-SWI_has_fascist_council_president = { #Checks of the president of the council is a fascist 
+SWI_has_fascist_council_president = {
 	var:SWI_confederation_president = {
 		SWI_councilor_is_fascist = yes
 	}
 }
 
 
-SWI_has_fascist_councilor = { #Checks if any councilor is fascist 
+SWI_has_fascist_councilor = {
 	OR = {
 		var:SWI_councilor_1 = {
 			SWI_councilor_is_fascist = yes 
@@ -397,9 +389,6 @@ SWI_has_fascist_councilor = { #Checks if any councilor is fascist
 	}
 } 
 
-###############################################
-########       Militia System          ########
-###############################################
 
 SWI_MR_full = {
 	check_variable = {
@@ -409,11 +398,8 @@ SWI_MR_full = {
 	}
 }
 
-###############################################
-########            OTHER              ########
-###############################################
 
-SWI_has_any_spirit_of_helvetia = { #Checks if ANY Spirit of Helvetia ideas are present in current scope
+SWI_has_any_spirit_of_helvetia = {
 	OR = {
 		has_idea = SWI_spirit_of_helvetia_passive_peace
 		has_idea = SWI_spirit_of_helvetia_passive_war
@@ -437,7 +423,7 @@ SWI_is_fully_centralized = {
 	}
 }
 
-SWI_bba = { #Trigger so I don't thave to type has_dlc = "By Blood Alone" every time - Should've done this 6 months ago...  
+SWI_bba = {
 	AND = {
 		tag = SWI
 		original_tag = SWI
@@ -445,7 +431,7 @@ SWI_bba = { #Trigger so I don't thave to type has_dlc = "By Blood Alone" every t
 	}
 }
 
-SWI_bba_lar = { #Trigger for having BBA and LaR, mostly for espionage stuff. 
+SWI_bba_lar = {
 	AND = {
 		original_tag = SWI
 		has_dlc = "By Blood Alone"	
@@ -453,7 +439,7 @@ SWI_bba_lar = { #Trigger for having BBA and LaR, mostly for espionage stuff.
 	}
 }
 
-SWI_is_regular_switzerland = { #Check for the states belonging to Vanilla Switzerland flavor
+SWI_is_regular_switzerland = {
 	OR = {
 		state = 845
 		state = 3
@@ -511,25 +497,25 @@ SWI_any_fascist_to_balance_is_about_to_be_angry = {
 SWI_can_form_alpine = {
 	count_triggers = {
 		amount > 7 
-		controls_state = 21 #Bouche-du-Rhone - FRA
-		controls_state = 851 #Var - FRA 
-		controls_state = 735 #Savoy - FRA 
-		controls_state = 32 #Alpes - FRA 
-		controls_state = 158 #Piemonte - ITA
-		controls_state = 159 #Lombardia - ITA 
-		controls_state = 850 #Trentino - ITA 
-		controls_state = 39 #Alto Adige - ITA
-		controls_state = 847 #Western Swiss Alps - SWi
-		controls_state = 151 #Eastern Swiss Alps - SWI 
-		controls_state = 846 #Ticino - SWI
-		controls_state = 848 #Vorarlberg - AUS
-		controls_state = 153 #Tyrol - AUS 
-		controls_state = 152 #Upper Austria - AUS 
-		controls_state = 4 #Lower Austria 
+		controls_state = 21
+		controls_state = 851
+		controls_state = 735
+		controls_state = 32
+		controls_state = 158
+		controls_state = 159
+		controls_state = 850
+		controls_state = 39
+		controls_state = 847
+		controls_state = 151
+		controls_state = 846
+		controls_state = 848
+		controls_state = 153
+		controls_state = 152
+		controls_state = 4
 	}
 }
 
-SWI_fascist_germany_exists = { #Checks if there's any fascist Germany around
+SWI_fascist_germany_exists = {
 	any_other_country = { 
 		SWI_is_fasc_ger = yes 
 	}
@@ -540,7 +526,6 @@ SWI_is_fasc_ger = {
 	has_government = fascism
 }
 
-###### AI Triggers ##### 
 
 SWI_is_historical_ai = { 
 	is_ai = yes 

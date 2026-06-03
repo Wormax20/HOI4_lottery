@@ -1,0 +1,7 @@
+.claude/
+.vscode/
+.idea/
+*.bak
+*.tmp
+_*.py
+Thumbs.db

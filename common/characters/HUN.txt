@@ -11,7 +11,7 @@ characters = {
 
 			name = HUN_miklos_horthy
 			portraits = {
-				navy = { #Can become Navy leader and therefore navy advisor
+				navy = {
 					large = "GFX_Portrait_hungary_miklos_horthy_admiral"
 					small = "GFX_idea_HUN_miklos_horthy_admiral"
 				}
@@ -65,7 +65,7 @@ characters = {
 			name = HUN_miklos_horthy
 
 			portraits = {
-				navy = { #Can become Navy leader and therefore navy advisor
+				navy = {
 					large = "GFX_Portrait_hungary_miklos_horthy_admiral"
 					small = "GFX_idea_HUN_miklos_horthy_admiral"
 				}
@@ -82,27 +82,11 @@ characters = {
 				id = 500
 			}
 
-			#field_marshal = {
-			#	traits = { politically_connected inflexible_strategist media_personality }
-			#	skill = 2
-			#	attack_skill = 1
-			#	defense_skill = 1
-			#	planning_skill = 2
-			#	logistics_skill = 2
-			#	legacy_id = -1 
-			#	visible = {
-			#		#has_country_leader = {
-			#		#	ruling_only = yes
-			#		#	character = HUN_miklos_horthy
-			#		#}
-			#		has_completed_focus = wuw_HUN_pass_statute_xix
-			#	}
-			#}
 
 			navy_leader = {
 				traits = { gunnery_expert navy_media_personality superior_tactician }
 				skill = 3
-				legacy_id = 556 #Navy Miklos
+				legacy_id = 556
 				attack_skill = 2
 				defense_skill = 2
 				maneuvering_skill = 2
@@ -204,7 +188,6 @@ characters = {
 				id = -1
 			}
 
-			# Basically only available if country leader
 			field_marshal = {
 				traits = { politically_connected }
 				skill = 2
@@ -245,12 +228,6 @@ characters = {
 			}
 		}
 
-		#country_leader = {
-		#	ideology = despotism
-		#	traits = { HUN_the_old_warden }
-		#	expire = "1965.1.1.1"
-		#	id = -1
-		#}
 
 		field_marshal = {
 			traits = { inflexible_strategist politically_connected old_guard }
@@ -281,12 +258,6 @@ characters = {
 			}
 		}
 
-		#country_leader = {
-		#	ideology = despotism
-		#	traits = { dislikes_germany HUN_popular_aviator }
-		#	expire = "1965.1.1.1"
-		#	id = -1
-		#}
 
 		advisor = {
 
@@ -356,7 +327,6 @@ characters = {
 			id = -1
 		}
 
-		# Basically only available if country leader
 		field_marshal = {
 			traits = { infantry_officer politically_connected }
 			skill = 2
@@ -436,12 +406,6 @@ characters = {
 			}
 		}
 
-		#country_leader = {
-		#	ideology = marxism
-		#	traits = { HUN_the_hungarian_lenin }
-		#	expire = "1965.1.1.1"
-		#	id = -1
-		#}
 		
 	}
 
@@ -503,12 +467,6 @@ characters = {
 			}
 		}
 		
-		#country_leader = {
-		#	ideology = conservatism
-		#	traits = { HUN_veteran_president }
-		#	expire = "1965.1.1.1"
-		#	id = -1
-		#}
 		
 	}
 
@@ -522,12 +480,6 @@ characters = {
 			}
 		}
 		
-		#country_leader = {
-		#	ideology = liberalism
-		#	traits = { HUN_christian_academic }
-		#	expire = "1965.1.1.1"
-		#	id = -1
-		#}
 		
 	}
 
@@ -545,16 +497,10 @@ characters = {
 			}
 		}
 		
-		#country_leader = {
-		#	ideology = liberalism
-		#	traits = { HUN_duke_of_sormland_king_of_hungarians }
-		#	expire = "1965.1.1.1"
-		#	id = -1
-		#}
 		
 	}
 
-	HUN_franz_friedrich = { #Can be given country leader roles later
+	HUN_franz_friedrich = {
 		instance = {
 			allowed = {
 				NOT = {
@@ -566,9 +512,6 @@ characters = {
 
 			portraits = {
 
-				#army = {
-				#	large = "GFX_Portrait_hungary_friedrich_franz"
-				#}
 
 				civilian = {
 					large = "GFX_Portrait_hungary_friedrich_franz"
@@ -586,9 +529,6 @@ characters = {
 
 			portraits = {
 
-				#army = {
-				#	large = "GFX_Portrait_hungary_friedrich_franz"
-				#}
 
 				civilian = {
 					large = GFX_portrait_HUN_franz_friedrich
@@ -597,16 +537,10 @@ characters = {
 				
 			}
 
-			#country_leader = {
-			#	ideology = despotism
-			#	traits = { HUN_duke_and_king_of_mecklenburg }
-			#	expire = "1965.1.1"
-			#}
 
 		}
 	}
 
-	# Should not exist if you have wuw!
 	HUN_istvan_szechenyi = {
 		name = HUN_istvan_szechenyi
 		portraits = {
@@ -662,7 +596,6 @@ characters = {
 				}
 			}
 			
-			# Will be upgradeable through various focuses
 			corps_commander = {
 				traits = { trait_HUN_vitez infantry_officer }
 				skill = 2
@@ -723,7 +656,6 @@ characters = {
 				}
 			}
 
-			# Will be upgradeable thorugh the focus tree
 			corps_commander = {
 				traits = { trickster }
 				skill = 2
@@ -951,7 +883,6 @@ characters = {
 				}
 			}
 			
-			# Can become a field marshal through the military promotions focus
 			corps_commander = {
 				traits = { trait_HUN_vitez trait_HUN_fascist_sympathies }
 				skill = 2
@@ -1021,8 +952,6 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 2
 			legacy_id = -1
-			#visible = {
-			#}
 		}
 
 		advisor = {
@@ -1075,8 +1004,6 @@ characters = {
 			planning_skill = 3
 			logistics_skill = 2
 			legacy_id = -1
-			#visible = {
-			#}
 		}
 		
 	}
@@ -1092,7 +1019,6 @@ characters = {
 			}
 		}
 		
-		# Should be upgraded to field marshal through the focus wuw_HUN_award_military_promotions
 		corps_commander = {
 			traits = { inflexible_strategist trait_HUN_vitez }
 			skill = 1
@@ -1101,8 +1027,6 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = -1
-			#visible = {
-			#}
 		}
 		
 	}
@@ -1255,7 +1179,6 @@ characters = {
 			}
 		}
 		
-		# Should prob be promoteable etc by Joseph August as he was close to him through marriage
 		corps_commander = {
 			traits = { trait_mountaineer trait_HUN_vitez }
 			skill = 1
@@ -1466,7 +1389,6 @@ characters = {
 	}
 
 
-	### THEORISTS ###
 
 	HUN_shvoy_kalman = {
 		instance = {
@@ -1596,7 +1518,6 @@ characters = {
 	}
 
 
-	### ARMY CHIEFS ###
 
 	HUN_ferenc_szombathelyi = {
 		instance = {
@@ -1644,7 +1565,6 @@ characters = {
 				}
 			}
 
-			# Can become a general through the military promotions focus
 			corps_commander = {
 				traits = { hill_fighter }
 				skill = 3
@@ -1751,8 +1671,6 @@ characters = {
 				planning_skill = 2
 				logistics_skill = 1
 				legacy_id = -1
-				#visible = {
-				#}
 			}
 
 			advisor = {
@@ -1789,7 +1707,6 @@ characters = {
 	}
 
 
-	### NAVY CHIEFS ###
 
 	HUN_kalman_hardy = {
 
@@ -1832,7 +1749,6 @@ characters = {
 
 	}
 
-	# Should not be recruited with the dlc wuw
 	HUN_francois_deak = {
 
 		name = HUN_francois_deak
@@ -1860,7 +1776,6 @@ characters = {
 
 	}
 
-	# Should not be recruited with the dlc wuw
 	HUN_reszo_kastner = {
 
 		name = HUN_reszo_kastner
@@ -1889,9 +1804,7 @@ characters = {
 	}
 
 
-	### AIR CHIEFS ###
 
-	# Should not be recruited with the dlc wuw
 	HUN_bela_rakosi = {
 
 		name = HUN_bela_rakosi
@@ -1962,7 +1875,6 @@ characters = {
 
 
 
-	### MILITARY HIGH COMMAND ###
 
 	HUN_sandor_magyarossy = {
 		instance = {
@@ -2105,8 +2017,6 @@ characters = {
 				planning_skill = 2
 				logistics_skill = 1
 				legacy_id = -1
-				#visible = {
-				#}
 			}
 
 			advisor = {
@@ -2206,8 +2116,6 @@ characters = {
 				planning_skill = 1
 				logistics_skill = 1
 				legacy_id = -1
-				#visible = {
-				#}
 			}
 
 			advisor = {
@@ -2307,8 +2215,6 @@ characters = {
 				planning_skill = 1
 				logistics_skill = 1
 				legacy_id = -1
-				#visible = {
-				#}
 			}
 
 			advisor = {
@@ -2466,12 +2372,6 @@ characters = {
 				}
 			}
 
-			#country_leader = {
-			#	ideology = nazism
-			#	traits = { nazi_sympathizer volksgruppenfurher_der_volksbund }
-			#	expire = "1965.1.1.1"
-			#	id = -1
-			#}
 
 		}
 		instance = {
@@ -2488,12 +2388,6 @@ characters = {
 				}
 			}
 
-			#country_leader = {
-			#	ideology = nazism
-			#	traits = { nazi_sympathizer volksgruppenfurher_der_volksbund }
-			#	expire = "1965.1.1.1"
-			#	id = -1
-			#}
 
 			corps_commander = {
 				traits = { trait_HUN_fascist_sympathies militias_officer }
@@ -2518,7 +2412,6 @@ characters = {
 	}
 
 
-	### POLITICAL ADVISORS ###
 	
 	HUN_kalman_kanya = {
 		instance = {
@@ -3246,8 +3139,6 @@ characters = {
 					NOT = {
 						has_government = communism
 					}
-					# This is replaced by an on_action
-					#has_war = no 
 					NOT = {
 						has_global_flag = HUN_entered_an_offensive_war_flag
 					}
@@ -3427,7 +3318,6 @@ characters = {
 				}
 			}
 
-			# He should get a better trait through the focus wuw_HUN_sway_the_count
 			traits = {
 				nazi_sympathizer
 			}
@@ -4187,7 +4077,6 @@ characters = {
 				has_dlc = "Gotterdammerung"
 			}
 
-			# Usually dies by event at the end of 1936
 			name = HUN_gyula_gombos_de_jakfa
 
 			portraits = {
@@ -4197,15 +4086,7 @@ characters = {
 				}
 			}
 
-			# Can become leader after the focus wuw_HUN_the_march_on_budapest
-			#country_leader = {
-			#	ideology = despotism
-			#	traits = { HUN_popular_among_paramilitaries }
-			#	expire = "1965.1.1.1"
-			#	id = -1
-			#}
 
-			# Should start as a locked advisor
 			advisor = {
 			
 				slot = political_advisor
@@ -4298,21 +4179,12 @@ characters = {
 		}
 	}
 
-	# Illusive Gentleman auto-generated if no wuw
 
 
 
 
-  #####                                                              
- #     #   ####   #  ######  #    #  #####  #   ####   #####   ####  
- #        #    #  #  #       ##   #    #    #  #         #    #      
-  #####   #       #  #####   # #  #    #    #   ####     #     ####  
-       #  #       #  #       #  # #    #    #       #    #         # 
- #     #  #    #  #  #       #   ##    #    #  #    #    #    #    # 
-  #####    ####   #  ######  #    #    #    #   ####     #     ####  
 
 
-  #HUN_gyorgy_jendrassik up there (Theorist)
 
 	HUN_nicholas_straussler = {
 		name = HUN_nicholas_straussler

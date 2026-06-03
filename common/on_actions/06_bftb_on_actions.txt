@@ -1,5 +1,4 @@
 on_actions = { 
-# ROOT is capitulated country, FROM is winner
 	on_capitulation = {
 		effect = {
 			if = {
@@ -84,7 +83,6 @@ on_actions = {
 			}
 		}
 	}
-	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
 	on_state_control_changed = {
 		effect = {
 			if = {
@@ -97,7 +95,7 @@ on_actions = {
 			}
 		}
 
-		effect = { #Check for Turkish state modifiers for non-Turkish occupiers
+		effect = {
 			if = {
 				limit = {
 					FROM = { original_tag = TUR }
@@ -111,7 +109,7 @@ on_actions = {
 				}
 			}
 		}
-		effect = { #Check for lost Turkish state modifiers
+		effect = {
 			if = {
 				limit = {
 					FROM.FROM = { 
@@ -126,12 +124,11 @@ on_actions = {
 				}
 			}		
 		}
-		effect = { #Check for Macedonian state modifiers
+		effect = {
 			if = {
 				limit = {
 					FROM.FROM = { BUL_is_macedonian_state = yes }
 				}
-				#Widespread Sentiment
 				if = {
 					limit = {
 						FROM.FROM = { has_dynamic_modifier = { modifier = widespread_bulgarian_sentiment_01 } }
@@ -152,7 +149,6 @@ on_actions = {
 						add_dynamic_modifier = { modifier = widespread_bulgarian_sentiment_01 }
 					}
 				}
-				#IMRO Skirmishes
 				if = {
 					limit = {
 						FROM.FROM = {
@@ -168,7 +164,6 @@ on_actions = {
 		}
 	}
 
-	#FROM is faction leader on join faction requests. THIS DOES NOT FIRE ON ADD_TO_FACTION EFFECT! USE ON_OFFER_JOIN_FACTION!
 	on_join_faction = {
 		effect = {
 			if = {
@@ -191,8 +186,8 @@ on_actions = {
 				}
 			}
 		}
-		effect = { #If in faction with Bulgaria, remove bad opinion modifiers
-			if = { #A country joins Bulgaria's faction
+		effect = {
+			if = {
 				limit = {
 					NOT = { original_tag = BUL }
 					FROM = {
@@ -204,7 +199,7 @@ on_actions = {
 				}
 				BUL_remove_balkan_opinion_modifiers = yes
 			}
-			else_if = { #Bulgaria joins a faction
+			else_if = {
 				limit = {
 					original_tag = BUL
 					FROM = {
@@ -224,10 +219,9 @@ on_actions = {
 		}
 	}
 
-	#FROM is country getting invited.
 	on_offer_join_faction = {
-		effect = { #If in faction with Bulgaria, remove bad opinion modifiers
-			if = { #A country joins Bulgaria's faction
+		effect = {
+			if = {
 				limit = {
 					is_in_faction_with = BUL
 					FROM = {
@@ -236,7 +230,7 @@ on_actions = {
 				}
 				FROM = { BUL_remove_balkan_opinion_modifiers = yes }
 			}
-			else_if = { #Bulgaria joins a faction
+			else_if = {
 				limit = {
 					FROM = {
 						original_tag = BUL
@@ -264,7 +258,6 @@ on_actions = {
 
 	on_startup = {
 		effect = {
-			#Iraqi oil concessions
 			if = {
 				limit = {
 					has_dlc = "Battle for the Bosporus"
@@ -277,7 +270,6 @@ on_actions = {
 			}
 		}
 		effect = {
-			#Greek faction set-up
 			if = {
 				limit = {
 					has_dlc = "Battle for the Bosporus"
@@ -295,7 +287,6 @@ on_actions = {
 		}
 	}
 
-	#ROOT is winner #FROM gets annexed - This will also fire on_annex
 	on_civil_war_end = {
 		effect = {
 			if = {
@@ -351,7 +342,6 @@ on_actions = {
 					original_tag = BUL
 					has_dlc = "Battle for the Bosporus"
 				}
-				#Set Sofia as capital
 				if = {
 					limit = {
 						controls_state = 48
@@ -359,14 +349,14 @@ on_actions = {
 					}
 					set_capital = { state = 48 }
 				}
-				if = { #Unlock faction interaction
+				if = {
 					limit = {					
 						NOT = { has_country_flag = BUL_factions_unlocked_flag }
 						NOT = { has_focus_tree = generic_focus }
 					}
 					set_country_flag = BUL_factions_unlocked_flag
 				}
-				if = { #ZVENO Bulgaria won the CW
+				if = {
 					limit = {
 						has_cosmetic_tag = BUL_zveno_bulgaria
 						has_focus_tree = generic_focus
@@ -381,7 +371,6 @@ on_actions = {
 					unlock_national_focus = BUL_depose_the_tsar
 					unlock_national_focus = BUL_military_dictatorship
 
-					#Initialize vars
 					BUL_set_buz_faction_values = yes
 
 					if = {
@@ -393,7 +382,7 @@ on_actions = {
 					set_country_flag = BUL_zveno_integrated_flag
 					clr_country_flag = BUL_zveno_coup_flag
 				}
-				else_if = { #Original BUL won the CW against ZVENO
+				else_if = {
 					limit = {
 						FROM = {
 							has_cosmetic_tag = BUL_zveno_bulgaria
@@ -409,13 +398,12 @@ on_actions = {
 					set_country_flag = BUL_factions_unlocked_flag
 					clr_country_flag = BUL_zveno_coup_flag
 				}
-				else_if = { #FATHERLAND FRONT won the CW
+				else_if = {
 					limit = {
 						original_tag = BUL
 						has_country_flag = BUL_fatherland_front_flag
 						has_focus_tree = generic_focus
 					}
-					#FOCUS TREE
 					load_focus_tree = { tree = bulgarian_focus keep_completed = no }
 					unlock_national_focus = BUL_oppose_the_royal_dictatorship
 					unlock_national_focus = BUL_appoint_communist_ministers
@@ -428,13 +416,12 @@ on_actions = {
 					unlock_national_focus = BUL_acquire_modern_tools
 					unlock_national_focus = BUL_negotiate_bulgarian_rearmament
 
-					if = { #Lock faction interaction
+					if = {
 						limit = {					
 							has_country_flag = BUL_factions_unlocked_flag
 						}
 						clr_country_flag = BUL_factions_unlocked_flag
 					}
-					#SET Faction flags
 					if = {
 						limit = {
 							FROM = {
@@ -472,13 +459,13 @@ on_actions = {
 					}
 					set_country_flag = BUL_nsm_destroyed_flag				
 
-					hidden_effect = { #NEWS EVENT SO THE WORLD KNOW WHO RULES IN BULGARIA
+					hidden_effect = {
 						news_event = { id = bftb_news.8 hours = 4 random_hours = 4 }
 					}
 				}
 			}
 		}
-		effect = { #SCW
+		effect = {
 			if = {
 				limit = {
 					FROM = {
@@ -518,11 +505,9 @@ on_actions = {
 		}
 	}
 
-	# called when a country send volunteers to another
-	# ROOT is sender, FROM is receiver
 	on_send_volunteers = {
 		effect = {
-			if = { #Bulgaria has sent volunteers to Spanish Republicans/Nationalists (LaR)
+			if = {
 				limit = {
 					tag = BUL
 					FROM = { original_tag = SPR }
@@ -565,13 +550,12 @@ on_actions = {
 	}
 
 	on_ruling_party_change = {
-		# Change 3D Models based on ideology
 		effect = {
 			if = {
 				limit = {
 					original_tag = BUL
 				}
-				if = { #BUL - TBE
+				if = {
 					limit = {
 						has_country_flag = BUL_tbe_flag
 					}
@@ -600,7 +584,7 @@ on_actions = {
 						set_cosmetic_tag = TBE_third_bulgarian_empire_neutrality
 					}
 				}
-				else_if = {  #BUL - UBF
+				else_if = {
 					limit = {
 						has_country_flag = BUL_ubf_flag
 					}
@@ -629,23 +613,22 @@ on_actions = {
 						set_cosmetic_tag = UBF_united_balkan_federation_neutrality
 					}
 				}
-				else_if = { #BUL - The fabulous original one
+				else_if = {
 					limit = {
-						NOT = { has_cosmetic_tag = BUL_zveno_bulgaria } # NOT Zveno Bulgaria
+						NOT = { has_cosmetic_tag = BUL_zveno_bulgaria }
 					}
 					if = {
 						limit = {
 							has_government = communism
-							NOT = { has_cosmetic_tag = BUL_ff_bulgaria } # NOT Fatherland Front Bulgaria
+							NOT = { has_cosmetic_tag = BUL_ff_bulgaria }
 						}
 						set_cosmetic_tag = BUL_communism
 					}
-					else_if = { #Default democratic Bulgaria's name is "Republic of Bulgaria", so it is to be applied only if monarchy is actually abolished
+					else_if = {
 						limit = {
 							has_government = communism
-							has_cosmetic_tag = BUL_ff_bulgaria # Fatherland Front Bulgaria
+							has_cosmetic_tag = BUL_ff_bulgaria
 						}
-						#DO NOTHING
 					}
 					else_if = {
 						limit = {
@@ -654,14 +637,14 @@ on_actions = {
 						}
 						if = {
 							limit = {
-								has_cosmetic_tag = BUL_ff_bulgaria #Remove FF cosmetic
+								has_cosmetic_tag = BUL_ff_bulgaria
 							}
 							drop_cosmetic_tag = yes
 						}
 						set_cosmetic_tag = BUL_democratic
 						set_country_leader_ideology = socialism
 					}
-					else_if = { #Cosmetic tag with a non-republican name, so it is to be applied as long as monarchy has not been abolished
+					else_if = {
 						limit = {
 							has_government = democratic
 							NOT = { has_completed_focus = BUL_abolish_the_monarchy }
@@ -674,7 +657,7 @@ on_actions = {
 						}
 						if = {
 							limit = {
-								has_cosmetic_tag = BUL_ff_bulgaria #Remove FF cosmetic
+								has_cosmetic_tag = BUL_ff_bulgaria
 							}
 							drop_cosmetic_tag = yes
 						}
@@ -686,7 +669,7 @@ on_actions = {
 						}
 						if = {
 							limit = {
-								has_cosmetic_tag = BUL_ff_bulgaria #Remove FF cosmetic
+								has_cosmetic_tag = BUL_ff_bulgaria
 							}
 							drop_cosmetic_tag = yes
 						}
@@ -698,7 +681,7 @@ on_actions = {
 				limit = {
 					original_tag = GRE
 				}
-				if = { #GRE - BYZ_UNIFIED
+				if = {
 					limit = {
 						has_country_flag = GRE_byz_unified_flag
 					}
@@ -727,13 +710,12 @@ on_actions = {
 						set_cosmetic_tag = BYZ_UNIFIED_neutrality
 					}
 				}
-				else_if = { #GRE BYZANTINE REPUBLIC
+				else_if = {
 					limit = {
 						has_cosmetic_tag = GRE_byz_republic
 					}
-					#DO NOTHING, this cosmetic does not have dynamic models
 				}
-				else_if = { #GRE - GRE_GREATER_GREECE
+				else_if = {
 					limit = {
 						has_country_flag = GRE_GREATER_GREECE_flag
 					}
@@ -762,7 +744,7 @@ on_actions = {
 						set_cosmetic_tag = GRE_GREATER_GREECE_neutrality
 					}
 				}
-				else_if = { #GRE - GRE_dem_monarchy
+				else_if = {
 					limit = {
 						has_country_flag = GRE_dem_monarchy_flag
 					}
@@ -791,13 +773,12 @@ on_actions = {
 						set_cosmetic_tag = GRE_dem_monarchy_neutrality
 					}
 				}
-				else_if = { #GRE - Stalinist
+				else_if = {
 					limit = {
 						has_cosmetic_tag = GRE_stalinist
 					}
-					#DO NOTHING, this cosmetic does not have dynamic models
 				}
-				else_if = { #GRE - GRE_com_independent
+				else_if = {
 					limit = {
 						has_country_flag = GRE_com_independent_flag
 					}
@@ -826,7 +807,7 @@ on_actions = {
 						set_cosmetic_tag = GRE_com_independent_neutrality
 					}
 				}
-				else_if = { #GRE - MAE
+				else_if = {
 					limit = {
 						has_country_flag = GRE_mae_flag
 					}
@@ -855,7 +836,7 @@ on_actions = {
 						set_cosmetic_tag = MAE_neutrality
 					}
 				}
-				else = { #GRE - The one and only
+				else = {
 					if = {
 						limit = {
 							has_government = communism
@@ -886,7 +867,7 @@ on_actions = {
 				limit = {
 					original_tag = TUR
 				}
-				if = { #TUR - OTT_UNIFIED
+				if = {
 					limit = {
 						has_country_flag = TUR_ott_unified_flag
 					}
@@ -915,7 +896,7 @@ on_actions = {
 						set_cosmetic_tag = OTT_UNIFIED
 					}
 				}
-				else_if = { #TUR - OTT_SULTANATE
+				else_if = {
 					limit = {
 						has_country_flag = TUR_ott_sultanate_flag
 					}
@@ -944,7 +925,7 @@ on_actions = {
 						set_cosmetic_tag = OTT_UNIFIED
 					}
 				}
-				else_if = { #TUR - TUR_PROVISIONARY
+				else_if = {
 					limit = {
 						has_country_flag = TUR_PROVISIONARY_flag
 					}
@@ -973,7 +954,7 @@ on_actions = {
 						set_cosmetic_tag = OTT_UNIFIED
 					}
 				}
-				else_if = { #TUR - TUR_GREATER_TURKEY
+				else_if = {
 					limit = {
 						has_country_flag = TUR_greater_turkey_flag
 					}
@@ -1002,7 +983,7 @@ on_actions = {
 						set_cosmetic_tag = OTT_UNIFIED
 					}
 				}
-				else_if = { #TRN
+				else_if = {
 					limit = {
 						has_country_flag = TUR_trn_flag
 					}
@@ -1031,7 +1012,7 @@ on_actions = {
 						set_cosmetic_tag = TRN_neutrality
 					}
 				}
-				else = { #TUR - The real TUR
+				else = {
 					if = {
 						limit = {
 							has_government = communism
@@ -1133,13 +1114,12 @@ on_actions = {
 
 	on_weekly_BUL = {
 		effect = {
-			# FATHERLAND FRONT
 			if = {
 				limit = {
 					has_dlc = "Battle for the Bosporus"
 					NOT = { has_country_flag = BUL_fatherland_front_formed_flag }
 					NOT = { has_completed_focus = BUL_the_fatherland_front }
-					date > 1941.6.1 #Previously date > 1940.1.1 but it felt too punishing
+					date > 1941.6.1
 				}
 				BUL_communists_try_to_form_ff_effect = yes
 			}
@@ -1147,17 +1127,16 @@ on_actions = {
 				limit = {
 					NOT = { has_country_flag = BUL_ff_civil_war_flag }
 					NOT = { has_country_flag = BUL_ff_destroyed_flag }
-					has_country_flag = { flag = BUL_fatherland_front_formed_flag days > 60 } #Give the player some time after FF formation
+					has_country_flag = { flag = BUL_fatherland_front_formed_flag days > 60 }
 					OR = {
 						NOT = { has_country_flag = BUL_ff_approaching_faction_flag }
 						has_country_flag = { flag = BUL_ff_approaching_faction_flag days > 30 }
 					}
 				}
 				log = "checking if FF approaches someone"
-				# CHECK IF FF APPROACHES ANY BULARIAN INTERNAL FACTION
-				BUL_ff_approaches_a_faction_effect = yes #Random chance
+				BUL_ff_approaches_a_faction_effect = yes
 
-				if = { # Check if FF approaches BROAD SOCIALISTS
+				if = {
 					limit = { 
 						NOT = { has_country_flag = BUL_bs_joined_ff_flag }
 						NOT = { has_country_flag = BUL_bs_destroyed_flag }
@@ -1183,7 +1162,7 @@ on_actions = {
 						log = "FF DOES NOT approach BS: [?BUL.BUL_bs_loyalty_factor] is lower than [?BUL.BUL_random_ff_approaching_faction_chance]"
 					}
 				}
-				else_if = { # Check if FF approaches AGRARIAN NATIONAL UNION
+				else_if = {
 					limit = {
 						NOT = { has_country_flag = BUL_bzns_joined_ff_flag }
 						NOT = { has_country_flag = BUL_bzns_destroyed_flag }
@@ -1209,7 +1188,7 @@ on_actions = {
 						log = "FF DOES NOT approach BZNS: [?BUL.BUL_bzns_loyalty_factor] is lower than [?BUL.BUL_random_ff_approaching_faction_chance]"
 					}
 				}
-				else_if = { # Check if FF approaches ZVENO
+				else_if = {
 					limit = { 
 						NOT = { has_country_flag = BUL_zveno_joined_ff_flag }
 						NOT = { has_country_flag = BUL_zveno_coup_flag }
@@ -1241,11 +1220,10 @@ on_actions = {
 						has_country_flag = BUL_ff_coup_planned_flag
 						date > 1943.1.1
 					}
-					BUL_ff_tries_to_stage_a_coup_effect = yes #Check if the FF starts the CW
+					BUL_ff_tries_to_stage_a_coup_effect = yes
 				}					
 			}
 
-			# BULGARIAN CLAIMS IN THE BALKANS
 			if = {
 				limit = {
 					has_global_flag = BUL_germany_recognizes_bulgarian_claims_flag
@@ -1257,8 +1235,7 @@ on_actions = {
 							controller = {
 								is_in_faction_with = GER
 								NOT = { tag = BUL }
-								NOT = { owns_state = PREV } #Not owner (it should be actually occupating the state -> Also prevents the issue in YUG with IMRO removing the core)
-								#NOT = { PREV.PREV = { is_core_of = PREV } }
+								NOT = { owns_state = PREV }
 							}
 						}
 					}
@@ -1266,7 +1243,6 @@ on_actions = {
 				country_event = bftb_bulgarian_claims.4
 			}
 		}
-		#Check for any subject not having the appropriate NS while Ferdinand I is ruling (ie. released nations)
 		effect = {
 			if = {
 				limit = {
@@ -1289,7 +1265,6 @@ on_actions = {
 			}
 		}
 
-		#Retire Generals that do not agree with pro-German policies
 		effect = {
 			if = {
 				limit = {
@@ -1298,13 +1273,13 @@ on_actions = {
 				}
 				random_unit_leader = {
 					limit = {
-						has_id = 1203 #Hadzipetkov
+						has_id = 1203
 					}
 					retire = yes
 				}
 				random_unit_leader = {
 					limit = {
-						has_id = 1204 #Boydev
+						has_id = 1204
 					}
 					retire = yes
 				}
@@ -1312,11 +1287,8 @@ on_actions = {
 		}
 	}
 	
-	#ROOT = attacking side
-	#FROM = defending side
-	#fired when two countries end up at war with each other (on_war is fired when a country goes to war against anyone and is not fired again when it enters war against another country unless it went to peace first)
 	on_war_relation_added = {
-		effect = { #Bulgaria vs SOV -> Cooldown before high chance of FF forming up
+		effect = {
 			if = {
 				limit = {
 					OR = {
@@ -1474,10 +1446,8 @@ on_actions = {
 		}
 	}
 
-	#used when puppeting in a peace conference
-	#ROOT = nation being puppeted, FROM = overlord
 	on_puppet = {
-		effect = { #Add Ferdinand's puppet NS
+		effect = {
 			if = {
 				limit = {
 					FROM = {
@@ -1492,15 +1462,15 @@ on_actions = {
 				add_ideas = BUL_ferdinands_puppet
 			}
 		}
-		effect = { #Remove bad opinion modifiers when puppetting
-			if = { #If puppeted by Bulgaria, remove bad opinion modifiers
+		effect = {
+			if = {
 				limit = {
 					BUL_is_balkan_nation_no_bulgaria = yes
 					FROM = { original_tag = BUL }
 				}
 				BUL_remove_balkan_opinion_modifiers = yes
 			}
-			else_if = { #Bulgaria puppeted by a Balkan nation
+			else_if = {
 				limit = {
 					original_tag = BUL
 					FROM = { BUL_is_balkan_nation_no_bulgaria = yes }
@@ -1530,76 +1500,76 @@ on_actions = {
 	}
 
 	on_monthly_BUL = {
-		effect = { #ZVENO DISSIDENT EVENT
+		effect = {
 			if = {
 				limit = {
-					date > 1937.6.1	#Give the player some time
-					NOT = {	has_country_flag = BUL_zveno_destroyed_flag } #Zveno is not destroyed
-					NOT = {	has_country_flag = BUL_zveno_legalized_flag } #Zveno is not legalized
+					date > 1937.6.1
+					NOT = {	has_country_flag = BUL_zveno_destroyed_flag }
+					NOT = {	has_country_flag = BUL_zveno_legalized_flag }
 				}
 				BUL = { country_event = bftb_bulgaria_factions.01 }
 			}
 		}
-		effect = { #BROAD SOCIALISTS DISSIDENT EVENT
+		effect = {
 			if = {
 				limit = {
-					date > 1936.6.1	#Give the player some time
-					NOT = {	has_country_flag = BUL_bs_destroyed_flag } #BS is not destroyed
-					NOT = {	has_country_flag = BUL_bs_legalized_flag } #BS is not legalized
+					date > 1936.6.1
+					NOT = {	has_country_flag = BUL_bs_destroyed_flag }
+					NOT = {	has_country_flag = BUL_bs_legalized_flag }
 				}
 				BUL = { country_event = bftb_bulgaria_factions.02 }
 			}
 		}
-		effect = { #AGRARIAN NATIONAL UNION DISSIDENT EVENT
+		effect = {
 			if = {
 				limit = {
-					date > 1938.1.1	#Give the player some time
-					NOT = {	has_country_flag = BUL_bzns_destroyed_flag } #BZNS is not destroyed
-					NOT = {	has_country_flag = BUL_bzns_legalized_flag } #BZNS is not legalized
+					date > 1938.1.1
+					NOT = {	has_country_flag = BUL_bzns_destroyed_flag }
+					NOT = {	has_country_flag = BUL_bzns_legalized_flag }
 				}
 				BUL = { country_event = bftb_bulgaria_factions.03 }
 			}
 		}
-		effect = { #NATIONAL SOCIAL MOVEMENT DISSIDENT EVENT
+		effect = {
 			if = {
 				limit = {
-					date > 1937.6.1	#Give the player some time
-					NOT = {	has_country_flag = BUL_nsm_destroyed_flag } #NSM is not destroyed
-					NOT = {	has_country_flag = BUL_nsm_legalized_flag } #NSM is not legalized
+					date > 1937.6.1
+					NOT = {	has_country_flag = BUL_nsm_destroyed_flag }
+					NOT = {	has_country_flag = BUL_nsm_legalized_flag }
 				}
 				BUL = { country_event = bftb_bulgaria_factions.04 }
 			}
 		}
-		effect = { #ZVENO COUP
+		effect = {
 			if = {
 				limit = {
-					date > 1938.1.1	#Give the player some time
-					has_country_flag = BUL_zveno_dissident_event_flag #Zveno has triggered a dissident event
-					NOT = { has_country_flag = BUL_zveno_coup_flag } #Zveno CW has not started
-					NOT = {	has_country_flag = BUL_zveno_destroyed_flag } #Zveno is not destroyed
-					NOT = {	has_country_flag = BUL_zveno_legalized_flag } #Zveno is not legalized
+					date > 1938.1.1
+					has_country_flag = BUL_zveno_dissident_event_flag
+					NOT = { has_country_flag = BUL_zveno_coup_flag }
+					NOT = {	has_country_flag = BUL_zveno_destroyed_flag }
+					NOT = {	has_country_flag = BUL_zveno_legalized_flag }
 				}
 				BUL = { country_event = bftb_bulgaria_factions.05 }
 			}
 		}
-		effect = { #Tsar Boris Dies
-			if = { #Force Boris's death in historical
+		effect = {
+			if = {
 				limit = {
 					is_historical_focus_on = yes
 					NOT = { has_completed_focus	= BUL_strengthen_the_royal_dictatorship }
 					BUL_has_abolished_monarchy = no
-					date > 1943.7.30 #Historical date of death is 1943.8.28
+					date > 1943.7.30
 					NOT = { has_country_flag = BUL_tsar_boris_is_dead_flag }
 					NOT = { has_country_flag = BUL_tsar_boris_assassinated_flag }
 				}
 				BUL = { country_event = { id = bftb_bulgaria_tsar_boris.2 days = 28 } }
 			}
-			else_if = { #Attempt to make Boris die if not historical
+			else_if = {
 				limit = {
 					is_historical_focus_on = no
 					NOT = { has_completed_focus	= BUL_strengthen_the_royal_dictatorship }
 					BUL_has_abolished_monarchy = no
-					date > 1943.1.1 #Historical date of death is 1943.8.28
+					date > 1943.1.1
 					NOT = { has_country_flag = BUL_tsar_boris_is_dead_flag }
 					NOT = { has_country_flag = BUL_tsar_boris_assassinated_flag }
 				}
@@ -1607,7 +1577,7 @@ on_actions = {
 			}
 		}
 
-		effect = { #Support the Spanish Coup - Check for a general assigned to volunteers in the SCW fighting for SPA (it cannot be any other side)
+		effect = {
 			if = {
 				limit = {
 					has_country_flag = BUL_sent_volunteers_to_SPA_flag
@@ -1638,7 +1608,6 @@ on_actions = {
 		}
 	}
 
-	#ROOT is winner, FROM gets annexed.
 	on_annex = {
 		effect = {
 			if = {

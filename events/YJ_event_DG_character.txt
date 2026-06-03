@@ -250,7 +250,6 @@ country_event = {
 				is_ai = no
 			}
 			traits={ 
-				#YJ_traits_34
 				YJ_traits_40
 				brilliant_strategist
 				armor_officer

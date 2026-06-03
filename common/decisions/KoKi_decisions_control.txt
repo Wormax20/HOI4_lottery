@@ -1,0 +1,74 @@
+﻿KoKi_YJ_decisions_categories = {
+	speed_button_1 = {
+		icon = GFX_decision_hol_attract_foreign_investors
+		allowed = {
+		}
+		days_re_enable = 30
+		
+		complete_effect = {
+			news_event = {
+				id = host.1
+			}
+		}
+	}
+
+	speed_button_2 = {
+		icon = GFX_decision_hol_attract_foreign_investors
+		allowed = {
+		}
+		days_re_enable = 30
+		
+		complete_effect = {
+			news_event = {
+				id = host.2
+			}
+		}
+	}
+
+	
+	set_axis = {
+		allowed = {
+			always = yes
+		}
+		visible = {
+			NOT = {
+				OR = {
+					has_country_flag = YJ_axis
+					has_country_flag = YJ_allie
+				}
+			}
+		}
+		available = {
+			always = yes
+		}
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = KoKi_YJ_decisions_set_axis_tt
+			set_country_flag = YJ_axis
+		}
+	}
+
+	set_allie = {
+		allowed = {
+			always = yes
+		}
+		visible = {
+			NOT = {
+				OR = {
+					has_country_flag = YJ_axis
+					has_country_flag = YJ_allie
+				}
+			}
+		}
+		available = {
+			always = yes
+		}
+		fire_only_once = yes
+
+		complete_effect = {
+			custom_effect_tooltip = KoKi_YJ_decisions_set_allie_tt
+			set_country_flag = YJ_allie
+		}
+	}
+}

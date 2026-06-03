@@ -4,15 +4,8 @@
 @aircraft_hamburger_X = 9
 @aircraft_hamburger_Y = 0
 
-#####################
 
-###  ##  #  # # #  ## 
- #  #  # ## # # # #   
- #  #### # ## ##   #  
- #  #  # #  # # #   # 
- #  #  # #  # # # ## 
 
- #################### 
 
 
 GER_porsche_organization = {
@@ -35,7 +28,6 @@ GER_porsche_organization = {
 	}
 
 	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
 		IF = {
 			limit = {
 				FROM = { NOT = { original_tag = GER } }
@@ -291,7 +283,6 @@ GER_henschel_organization = {
 	}
 
 	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
 		IF = {
 			limit = {
 				FROM = { NOT = { original_tag = GER } }
@@ -321,7 +312,6 @@ GER_henschel_organization = {
 					is_subject = no
 					is_subject_of = GER
 				}
-				#is_in_faction_with = GER
 				NOT = { has_completed_focus = BUL_nationalization }
 			}
 		}
@@ -519,7 +509,6 @@ GER_man_organization = {
 	}
 	
 	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
 		IF = {
 			limit = {
 				FROM = { NOT = { original_tag = GER } }
@@ -659,7 +648,6 @@ GER_man_organization = {
 	}
 }
 
-#Alkett
 GER_alkett_organization = {
 	include = generic_assault_guns_organization
 	icon = GFX_idea_GER_alkett
@@ -689,11 +677,6 @@ GER_alkett_organization = {
 		mutually_exclusive = { GER_mio_trait_panzerjager }	
 	}
 
-	#override_trait = {
-	#	token = generic_mio_trait_fully_cast_turret_assault_gun
-#
-	#	position = { x = 0 y = 2 }	
-	#}
 	
 	add_trait = {
 		token = GER_mio_trait_hoesch_facilities
@@ -803,7 +786,6 @@ GER_alkett_organization = {
 		}
 
 		available = {
-			#TODO_Danne fix this with a flag or something! GER should integrate CZE industries or something before doing this
 			FROM = {
 				OR = {
 					has_completed_focus = GER_fate_of_czechoslovakia
@@ -828,7 +810,6 @@ GER_alkett_organization = {
 
 }
 
-#Benz 
 GER_daimler_benz_organization = {
 	include = generic_tank_organization
 	icon = GFX_idea_GER_daimler_benz
@@ -926,10 +907,6 @@ GER_daimler_benz_organization = {
 
     	position = { x=0 y=1 }
   	}
-    #override_trait = {
-    #    token = generic_mio_trait_crew_ergonomics
-    #    position = { x=3 y=0 }
-    #}
 
 	add_trait = {  
 		token = GER_mio_trait_hotrolled_armor
@@ -1073,15 +1050,8 @@ GER_daimler_benz_organization = {
 }
 
 
-#####################
 
- ## #  # ### ###   ## 
-#   #  #  #  #  # #   
- #  ####  #  ###   #  
-  # #  #  #  #      # 
-##  #  # ### #    ##  
  
-#####################
 
 GER_deschimag_organization = {
 	include = generic_escort_ship_organization
@@ -1115,11 +1085,6 @@ GER_deschimag_organization = {
 
 		position = { x=0 y=1 } 
 
-		#available = {
-		#	FROM = {
-		#		has_completed_focus = GER_high_seas_fleet
-		#	}
-		#}
 
 		equipment_bonus = {
 			lg_attack = 0.05
@@ -1143,11 +1108,6 @@ GER_deschimag_organization = {
 
 		position = { x=0 y=1 } 
 
-		#available = {
-		#	FROM = {
-		#		has_completed_focus = GER_high_seas_fleet
-		#	}
-		#}
 
 		equipment_bonus = {
 			armor_value = 0.07
@@ -1168,11 +1128,6 @@ GER_deschimag_organization = {
 
 		position = { x=3 y=0 } 
 
-		#available = {
-		#	FROM = {
-		#		has_completed_focus = GER_u_boat_efforts
-		#	}
-		#}
 
 		production_bonus = {
 			production_capacity_factor = 0.05
@@ -1609,11 +1564,6 @@ GER_deutsche_werke_organization = {
 
 		position = { x=2 y=0 } 
 
-		#available = {
-		#	FROM = {
-		#		has_completed_focus = GER_u_boat_efforts
-		#	}
-		#}
 
 		organization_modifier = {
 			military_industrial_organization_research_bonus = 0.05
@@ -1635,11 +1585,6 @@ GER_deutsche_werke_organization = {
 		
 		any_parent = { generic_mio_trait_long_range_cruising generic_mio_trait_high_speed_cruising }
 
-		#available = {
-		#	FROM = {
-		#		has_completed_focus = GER_u_boat_efforts
-		#	}
-		#}
 
 		limit_to_equipment_type = { screen_ship }
 
@@ -1664,11 +1609,6 @@ GER_deutsche_werke_organization = {
 		
 		any_parent = { generic_mio_trait_splinter_protection  }
 
-		#available = {
-		#	FROM = {
-		#		has_completed_focus = GER_u_boat_efforts
-		#	}
-		#}
 
 		limit_to_equipment_type = { screen_ship }
 
@@ -1693,11 +1633,6 @@ GER_deutsche_werke_organization = {
 		
 		all_parents = { GER_mio_trait_fast_raiders  }
 
-		#available = {
-		#	FROM = {
-		#		has_completed_focus = GER_u_boat_efforts
-		#	}
-		#}
 
 		limit_to_equipment_type = { mio_cat_eq_all_carrier }
 
@@ -1752,11 +1687,6 @@ GER_kriegsmarinewerft_wilhelmshaven_organization = {
 
 		position = { x=9 y=0 }
 		
-		#available = {
-		#	FROM = {
-		#		has_completed_focus = GER_u_boat_efforts
-		#	}
-		#}
 
 		limit_to_equipment_type = { ship_hull_cruiser }
 
@@ -1782,11 +1712,6 @@ GER_kriegsmarinewerft_wilhelmshaven_organization = {
 
 		position = { x=0 y=1 }
 		
-		#available = {
-		#	FROM = {
-		#		has_completed_focus = GER_u_boat_efforts
-		#	}
-		#}
 
 		limit_to_equipment_type = { capital_ship }
 
@@ -1802,15 +1727,8 @@ GER_kriegsmarinewerft_wilhelmshaven_organization = {
 	}
 }
 
-###########################
 
-###  #    ##  #  # ###  ## 
-#  # #   #  # ## # #   #   
-###  #   #### # ## ##   #  
-#    #   #  # #  # #     # 
-#    ### #  # #  # ### ##  
 
-###########################
 
 GER_messerschmitt_organization = {
 	include = generic_light_aircraft_organization
@@ -1824,7 +1742,6 @@ GER_messerschmitt_organization = {
 	}
 
 	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
 		IF = {
 			limit = {
 				FROM = { NOT = { original_tag = GER } }
@@ -2005,7 +1922,6 @@ GER_junkers_organization = {
 	}
 
 	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
 		IF = {
 			limit = {
 				FROM = { NOT = { original_tag = GER } }
@@ -2371,7 +2287,6 @@ GER_heinkel_organization = {
 	}
 
 	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
 		IF = {
 			limit = {
 				FROM = { NOT = { original_tag = GER } }
@@ -2394,7 +2309,6 @@ GER_heinkel_organization = {
 					is_subject = no
 					is_subject_of = GER
 				}
-				#is_in_faction_with = GER
 				NOT = { has_completed_focus = BUL_nationalization }
 			}
 		}
@@ -2977,16 +2891,9 @@ GER_focke_achgelis_organization = {
 }
 
 
-################################### 
-
-#   #  ##  ### ### ###  ### ### #   
-## ## #  #  #  #   #  #  #  #   #   
-# # # ####  #  ##  ###   #  ##  #   
-#   # #  #  #  #   #  #  #  #   #   
-#   # #  #  #  ### #  # ### ### ### 
 
 
-###################################
+
 
 GER_rheinmetall_organization = {
 	include = generic_artillery_organization
@@ -3007,7 +2914,6 @@ GER_rheinmetall_organization = {
 	}
 
 	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
 		IF = {
 			limit = {
 				FROM = { NOT = { original_tag = GER } }
@@ -3032,7 +2938,6 @@ GER_rheinmetall_organization = {
 		position = { x = 1 y = 0 }
 		relative_position_id = generic_mio_trait_big_guns
 
-		#any_parent = { generic_mio_trait_cantilever_wing_structure }
 
 		limit_to_equipment_type = { 
 			anti_tank_equipment
@@ -3169,7 +3074,6 @@ GER_mauser_organization = {
 	}
 	
 	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
 		IF = {
 			limit = {
 				FROM = { NOT = { original_tag = GER } }
@@ -3318,7 +3222,6 @@ GER_opel_organization = {
 	}
 	
 	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
 		IF = {
 			limit = {
 				FROM = { NOT = { original_tag = GER } }
@@ -3339,7 +3242,6 @@ GER_opel_organization = {
 					is_subject = no
 					is_subject_of = GER
 				}
-				#is_in_faction_with = GER
 				NOT = { has_completed_focus = BUL_nationalization }
 			}
 		}

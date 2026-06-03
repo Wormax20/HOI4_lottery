@@ -1,4 +1,3 @@
-#pp抽奖
 KoKi_YJ_decisions_pp = {
     hidden_effect = {
         if = { limit = { check_variable = { YJ_rng = 1 } } country_event = KoKi_YJ_pp.1 }
@@ -25,7 +24,6 @@ KoKi_YJ_decisions_pp = {
     }
 }
 
-#资源抽奖
 
 YJ_ZY_scripted_effects_1 = {
     hidden_effect = {

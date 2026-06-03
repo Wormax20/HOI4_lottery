@@ -1,6 +1,6 @@
 ideas = {
 	country = {
-		YJ_TUR_1_ideas = { #奥斯曼帝国重生
+		YJ_TUR_1_ideas = {
 
 			allowed = {
 				always = no
@@ -16,20 +16,20 @@ ideas = {
 
 			modifier = {
 				custom_modifier_tooltip = YJ_TUR_1_ideas_tt
-				political_power_factor = 0.15 #政治点数
-				stability_weekly = 0.01 #每周稳定度增长
-				war_support_weekly = 0.01 #每周战争支持度增长
-				consumer_goods_factor = -0.15 #生活消费品工厂系数
-				consumer_goods_expected_value = -0.15  #用于生产生活消费品的期望工厂数量
-				production_factory_max_efficiency_factor = 0.1 #生产效率上限
-				production_factory_efficiency_gain_factor = 0.1 #生产效率增长
-				industrial_capacity_factory = 0.1			#工厂产出
+				political_power_factor = 0.15
+				stability_weekly = 0.01
+				war_support_weekly = 0.01
+				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.15
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				industrial_capacity_factory = 0.1
 				global_building_slots = 10
-				production_speed_industrial_complex_factor = 0.15 #民用工厂建造速度
-				production_speed_arms_factory_factor = 0.15 #軍用工廠建造速度
-				production_speed_buildings_factor = 0.1 #建造速度
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_arms_factory_factor = 0.15
+				production_speed_buildings_factor = 0.1
 				weekly_manpower = 5000
-				conscription = 0.1 #适役人口
+				conscription = 0.1
 				cavalry_attack_factor = 0.3
 				cavalry_defence_factor = 0.3
 				army_core_attack_factor = 0.1
@@ -42,7 +42,7 @@ ideas = {
 		}
 
 
-		YJ_TUR_2_ideas = { #法提赫的馈赠
+		YJ_TUR_2_ideas = {
 
 			allowed = {
 				always = no
@@ -58,17 +58,17 @@ ideas = {
 
 			modifier = {
 				custom_modifier_tooltip = YJ_TUR_2_ideas_tt
-				political_power_factor = 0.10 #政治点数
-				consumer_goods_expected_value = -0.05  #用于生产生活消费品的期望工厂数量
-				army_artillery_attack_factor = 0.25 #炮兵攻击
-				army_artillery_defence_factor = 0.25 #炮兵防御
+				political_power_factor = 0.10
+				consumer_goods_expected_value = -0.05
+				army_artillery_attack_factor = 0.25
+				army_artillery_defence_factor = 0.25
 				army_attack_factor = 0.05
 				army_defence_factor = 0.05
 				max_planning = 0.1
 				planning_speed = 0.1
-				army_strength_factor = 0.05 #HP
-				army_org_factor = 0.1 #陆军组织度
-				army_morale_factor = 0.1 #组织度恢复
+				army_strength_factor = 0.05
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
 				min_export = -0.2
 				local_resources_factor = 0.2
 			}
@@ -102,7 +102,7 @@ ideas = {
 
 
 
-		YJ_TUR_3_ideas = { #世界渴望之城
+		YJ_TUR_3_ideas = {
 
 			allowed = {
 				always = no

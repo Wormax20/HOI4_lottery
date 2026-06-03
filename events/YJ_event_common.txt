@@ -1,4 +1,3 @@
-#通用抽奖
 add_namespace = KoKi_YJ
 country_event = {
 	id = KoKi_YJ.101

@@ -1,7 +1,6 @@
 
 shared_focus = {
 	id = SMB_army
-	#icon = GFX_goal_panzerwaffe
 
 	dynamic = yes
 
@@ -408,13 +407,6 @@ shared_focus = {
 		}
 	}
 
-	#offset = {
-	#	x = -1
-	#	y = 0
-	#	trigger = {
-	#		tag = BRA
-	#	}
-	#}
 
 	bypass = {
 		
@@ -446,13 +438,6 @@ shared_focus = {
 
 	cost = 10
 
-	#offset = {
-	#	x = 3
-	#	y = 0
-	#	trigger = {
-	#		tag = BRA
-	#	}
-	#}
 
 	allow_branch = { 
 		NOT = {
@@ -461,10 +446,6 @@ shared_focus = {
 	}
 
 	available = {
-		#OR = {
-		#	has_war = yes
-		#	threat > 0.49
-		#}
 	}
 
 	bypass = {
@@ -532,7 +513,6 @@ shared_focus = {
 	allow_branch = {
 		OR = {
 			TAG = ARG
-			#TAG = CHL
 			TAG = PAR
 			TAG = URG
 		}
@@ -555,26 +535,12 @@ shared_focus = {
 		}
 
 	completion_reward = {
-		#IF = {
-		#	limit = {
-		#		original_tag = BRA
-		#	}
-		#	add_tech_bonus = {
-		#		name = JUNO_support_company_initiative
-		#		bonus = 0.25
-		#		uses = 1
-		#		category = support_tech
-		#	}
-		#	set_technology = { TOA_jungle_pioneers_support_tech = 1 }
-		#}
-		#ELSE = {
 			add_tech_bonus = {
 				name = JUNO_support_company_initiative
 				bonus = 0.25
 				uses = 2
 				category = support_tech
 			}
-		#}
 	}
 }
 
@@ -958,7 +924,6 @@ shared_focus = {
 shared_focus = {
 	id = SMB_a_land_of_mountains
 	icon = GFX_focus_SMB_a_land_of_mountains
-	#mutually_exclusive = { focus = SMB_tierra_del_fuego_training }
 	relative_position_id = SMB_atacama_training
 	prerequisite = { focus = SMB_atacama_training focus = SMB_tierra_del_fuego_training }
 	x = 1
@@ -1527,14 +1492,6 @@ shared_focus = {
 
 		add_ideas = generic_secret_weapons_ns
 
-		#add_tech_bonus = {
-		#	name = secret_bonus
-		#	bonus = 0.5
-		#	uses = 2
-		#	category = electronics
-		#	category = nuclear
-		#	category = rocketry
-		#}
 
 	}
 }
@@ -2366,9 +2323,7 @@ shared_focus = {
 
 shared_focus = {
 	id = SMB_air_force
-	#icon = GFX_goal_generic_build_airforce
 	relative_position_id = SMB_army
-	#prerequisite = { focus = SMB_army }
 	x = 8
 	y = 0
 
@@ -3770,7 +3725,6 @@ shared_focus = {
 
 shared_focus = {
 	id = SMB_navy
-	#icon = GFX_goal_generic_build_navy
 	relative_position_id = SMB_air_force
 	x = 8
 	y = 0
@@ -4165,7 +4119,6 @@ shared_focus = {
 
 shared_focus = {
 	id = SMB_blue_water_fleet
-	# TODO JUNO: Icon is missing shine, need to fix
 	icon = GFX_focus_SMB_blue_water_fleet
 	prerequisite = {focus = SMB_reescalate_the_naval_arms_race }
 	relative_position_id = SMB_reescalate_the_naval_arms_race
@@ -4803,7 +4756,6 @@ shared_focus = {
 					size > 1
 					include_locked = yes
 				}
-				#has_state_flag = SMB_expanded_naval_bases
 			}
 			IF = {
 				limit = { naval_base < 8 }
@@ -5069,16 +5021,12 @@ shared_focus = {
 		}
 
 	completion_reward = {
-		#custom_effect_tooltip = BRA_modify_brazilian_army_ns_intro
-		#add_to_variable = { JUNO_army_heat_attrition_factor = -0.1 tooltip = heat_attrition_factor_tt }
-		#add_to_variable = { JUNO_supply_combat_penalties_on_core_factor = -0.05 tooltip = supply_combat_penalties_on_core_factor_tt }
 		hidden_effect = { 
 			set_technology = { 
 				ToA_river_boats_tech = 1	
 				popup = no
 			} 
 		}
-		#show_ideas_tooltip = BRA_brown_water_navy_idea
 		add_ideas = BRA_brown_water_navy_idea
 	}
 }

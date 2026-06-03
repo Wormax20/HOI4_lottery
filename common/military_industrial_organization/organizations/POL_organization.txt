@@ -1,12 +1,5 @@
-#####################
 
-###  ##  #  # # #  ## 
- #  #  # ## # # # #   
- #  #### # ## ##   #  
- #  #  # #  # # #   # 
- #  #  # #  # # # ## 
 
- #################### 
 
 POL_pzinz_organization = {
 	include = generic_infantry_tank_organization
@@ -27,7 +20,6 @@ POL_pzinz_organization = {
 	}
 
 	available = {
-		# When in a Foreign MIO, countries need to be at peace with original country
 		IF = {
 			limit = {
 				FROM = { NOT = { original_tag = POL } }
@@ -71,15 +63,8 @@ POL_pzinz_organization = {
 }
 
 
-#####################
 
- ## #  # ### ###   ## 
-#   #  #  #  #  # #   
- #  ####  #  ###   #  
-  # #  #  #  #      # 
-##  #  # ### #    ##  
  
-#####################
 
 POL_stocznia_gdynia_organization = {
 	include = generic_task_force_ship_organization
@@ -94,15 +79,8 @@ POL_stocznia_gdynia_organization = {
 }
 
 
-###########################
 
-###  #    ##  #  # ###  ## 
-#  # #   #  # ## # #   #   
-###  #   #### # ## ##   #  
-#    #   #  # #  # #     # 
-#    ### #  # #  # ### ##  
 
-###########################
 
 POL_pws_organization = {
 	include = generic_light_aircraft_organization
@@ -127,16 +105,9 @@ POL_pzl_organization = {
 	}
 }
 
-################################### 
-
-#   #  ##  ### ### ###  ### ### #   
-## ## #  #  #  #   #  #  #  #   #   
-# # # ####  #  ##  ###   #  ##  #   
-#   # #  #  #  #   #  #  #  #   #   
-#   # #  #  #  ### #  # ### ### ### 
 
 
-###################################
+
 
 POL_fb_organization = {
 	include = generic_infantry_equipment_organization
@@ -172,10 +143,6 @@ POL_smpa_organization = {
 	}
 }
 
-### Foreign Subsidiaries
 
-### POL_USA_ford_motor_company_organization - Polish Ford -> see USA_organizations.txt 
 
-### POL_ENG_vauxhall_organization - Polish Vauxall -> see ENG_organizations.txt 
 
-### POL_FRA_somua_organization - Polish SOMUA -> see FRA_organizations.txt 

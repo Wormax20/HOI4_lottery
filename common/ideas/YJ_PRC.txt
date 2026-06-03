@@ -15,13 +15,13 @@ ideas = {
 			picture = chi_chinese_unity
 
 			modifier = {
-                political_power_gain = 0.15 #每日获得的政治点数
-				research_speed_factor = 0.1 #科研速度
-				training_time_factor = -0.1 #训练时间
-				production_speed_buildings_factor = 0.05 #建造速度
-				production_factory_efficiency_gain_factor = 0.05 #生产效率增长
-				production_factory_max_efficiency_factor = 0.05 #生产效率上限
-				industrial_capacity_factory = 0.05 #工厂产出
+                political_power_gain = 0.15
+				research_speed_factor = 0.1
+				training_time_factor = -0.1
+				production_speed_buildings_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
 			}
 			equipment_bonus = {
 				infantry_equipment = {
@@ -49,12 +49,12 @@ ideas = {
 			picture = PRC_factory_617
 
 			modifier = {
-				line_change_production_efficiency_factor = 0.1 #生产效率保持
-				production_factory_max_efficiency_factor = 0.1 #生产效率上限
-				production_factory_start_efficiency_factor = 0.1 #基础生产效率
-				production_factory_efficiency_gain_factor = 0.1 #生产效率增长
-				industrial_capacity_factory = 0.1 #工厂产出
-				industrial_capacity_dockyard = 0.1  #海军船坞产出
+				line_change_production_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
 			}
 		}
 		YJ_PRC_3_ideas = {
@@ -72,12 +72,12 @@ ideas = {
 			picture = PRC_peoples_aviation_company_of_china
 
 			modifier = {
-				production_speed_arms_factory_factor = 0.1 #军用工厂建造速度
-				production_factory_efficiency_gain_factor = 0.1 #生产效率增长
-				production_factory_max_efficiency_factor = 0.1 #生产效率上限
-				supply_consumption_factor = -0.1 #补给消耗
-				air_attack_factor =  0.05  #对空攻击
-				air_defence_factor = 0.05  #空中防御
+				production_speed_arms_factory_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				supply_consumption_factor = -0.1
+				air_attack_factor =  0.05
+				air_defence_factor = 0.05
 				global_building_slots = 3
 			}
 
@@ -98,12 +98,12 @@ ideas = {
 
 			modifier = {
 				global_building_slots = 3
-				political_power_factor =  0.10 #政治点数
-                monthly_population = 0.1 #每月人口
-				production_speed_buildings_factor = 0.1 #建造速度
-				production_factory_max_efficiency_factor = 0.05 #生产效率上限
-				cas_damage_reduction = 0.2 #陆军对近距离支援机的伤害减免
-				max_planning = 0.1 #计划上限
+				political_power_factor =  0.10
+                monthly_population = 0.1
+				production_speed_buildings_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				cas_damage_reduction = 0.2
+				max_planning = 0.1
 			}
 		}
 	}

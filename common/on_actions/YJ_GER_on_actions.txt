@@ -1,5 +1,5 @@
 on_actions = {
-	on_monthly_GER = { #德意志帝国研发
+	on_monthly_GER = {
 	    effect = {
 			GER = { add_manpower = 150000 }
 			IF = {

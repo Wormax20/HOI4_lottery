@@ -15,14 +15,14 @@ ideas = {
 			picture = generic_the_london_naval_treaty
 
 			modifier = {
-				global_building_slots = 10         					# 全局建筑槽 +10
-				political_power_gain = 0.25 						# 每日获得的政治点数
-				production_speed_buildings_factor = 0.2  #建造速度
-				industrial_capacity_dockyard = 0.2  #海军船坞产出
-				navy_capital_ship_attack_factor = 0.15  #主力舰攻击
-				local_resources_factor = 0.20 #战略资源获取率
-				stability_weekly = 0.002 #每周稳定度增长
-				war_support_weekly = 0.002 #每周战争支持度增长
+				global_building_slots = 10
+				political_power_gain = 0.25
+				production_speed_buildings_factor = 0.2
+				industrial_capacity_dockyard = 0.2
+				navy_capital_ship_attack_factor = 0.15
+				local_resources_factor = 0.20
+				stability_weekly = 0.002
+				war_support_weekly = 0.002
 				surrender_limit = 0.5
 				forced_surrender_limit = 0.5
 			}
@@ -74,11 +74,11 @@ ideas = {
 			picture = generic_sea_focused_navy
 
 			modifier = {
-				production_speed_naval_base_factor = 2.0          	# 海军基地建造速度 +200%
-				max_planning = 0.10 								# 计划上限
-				max_planning_factor = 0.10							# 计划上限系数
-				shore_bombardment_bonus = 0.25						# 对岸炮击加成 +25%
-				army_attack_factor = 0.1 							# 陆军师攻击
+				production_speed_naval_base_factor = 2.0
+				max_planning = 0.10
+				max_planning_factor = 0.10
+				shore_bombardment_bonus = 0.25
+				army_attack_factor = 0.1
 			}
 		}
 
@@ -97,20 +97,20 @@ ideas = {
 			picture = generic_railroads
 
 			modifier = {
-				max_dig_in_factor = 0.10  							# 堑壕上限(百分比)
-				artillery_attack = 0.15                         	# 攻击 +15%
-        		artillery_defense = 0.15                        	# 防御 +15%
-				army_strength_factor = 0.1 							# HP
-				army_org_factor = 0.1 								# 陆军师组织度
-				army_attack_factor = 0.15  							# 陆军师攻击
-				army_defence_factor = 0.15 							# 陆军师防御
+				max_dig_in_factor = 0.10
+				artillery_attack = 0.15
+        		artillery_defense = 0.15
+				army_strength_factor = 0.1
+				army_org_factor = 0.1
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
 				}
 			equipment_bonus = {
 				heavy_tank_chassis = {
 					build_cost_ic = -0.3
-					reliability = 0.4 #可靠性
+					reliability = 0.4
 					armor_value = 0.2
-					maximum_speed = 0.3 #最大速度
+					maximum_speed = 0.3
 					instant = yes
 				}
 				infantry_equipment = {
@@ -156,9 +156,9 @@ ideas = {
 			equipment_bonus = {
 				heavy_tank_chassis = {
 					build_cost_ic = -0.3
-					reliability = 0.4 #可靠性
+					reliability = 0.4
 					armor_value = 0.2
-					maximum_speed = 0.3 #最大速度
+					maximum_speed = 0.3
 					instant = yes
 				}
 			}

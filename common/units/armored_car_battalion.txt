@@ -2,7 +2,6 @@ sub_units = {
 
 	armored_car = {
 		abbreviation = "CAR"
-		#sprite = light_armor
 		sprite = armored_car
 		map_icon_category = armored
 		priority = 501
@@ -37,7 +36,6 @@ sub_units = {
 		weight = 0.8
 		supply_consumption = 0.14
 
-		#WE GOOD AT SUPPRESS 
 		suppression = 2.5
 
 		forest = {

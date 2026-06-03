@@ -1,9 +1,5 @@
-### operations are sorted by order of 
-### 1) no. of required operatives
-### 2) required network strength
-### eg. 1/70 comes before 2/40
 
-operation_rescue_operative = { ### 0 1/35
+operation_rescue_operative = {
 	icon = GFX_operations_rescue_captured_operative
 	map_icon = GFX_operations_rescue_captured_operative_map
 	name = operation_rescue_operative
@@ -38,9 +34,9 @@ operation_rescue_operative = { ### 0 1/35
 	}
 	risk_chance = 0.1
 	experience = 2
-	cost_multiplier = 0 # we dont scale in cost for rescues
+	cost_multiplier = 0
 
-	outcome_execute = { # SCOPE_OPERATION
+	outcome_execute = {
 		ROOT = {
 			free_random_operative = {
 				captured_by = FROM
@@ -63,7 +59,7 @@ operation_rescue_operative = { ### 0 1/35
 		}
 	}
 
-	phases = { #infiltration
+	phases = {
 		infiltration_border = { base = 25 }
 		infiltration_submarine = { base = 25 }
 		infiltration_paradrop = { 
@@ -99,7 +95,7 @@ operation_rescue_operative = { ### 0 1/35
 		free_operative_liberate_camp = { base = 33 }
 		free_operative_smuggle_in_escape_gear = { base = 33 }
 	}
-	phases = { #exfiltration
+	phases = {
 		exfiltration_air_pickup = { 
 			base = 15 
 			modifier = {
@@ -117,7 +113,7 @@ operation_rescue_operative = { ### 0 1/35
 	}
 }
 
-operation_infiltrate_civilian = { ### 1 1/35
+operation_infiltrate_civilian = {
 	icon = GFX_operations_infiltrate_civilian_govt
 	map_icon = GFX_operations_infiltrate_civilian_govt_map
 	name = operation_infiltrate_civilian
@@ -146,12 +142,6 @@ operation_infiltrate_civilian = { ### 1 1/35
 	}
 
 	available = {
-		#NOT = {
-			#has_operation_token = {
-			#	tag = FROM
-			#	token = token_civilian
-			#}
-		#}
 	}
 
 	awarded_tokens = {
@@ -170,7 +160,7 @@ operation_infiltrate_civilian = { ### 1 1/35
 			}
 		}
 	}
-	outcome_extra_execute = { # SCOPE_OPERATION
+	outcome_extra_execute = {
 		random_list = {
 			33 = {
 				ROOT = {
@@ -206,7 +196,7 @@ operation_infiltrate_civilian = { ### 1 1/35
 		}
 	}
 
-	phases = { #infiltration
+	phases = {
 		infiltration_border = { base = 25 }
 		infiltration_submarine = { base = 25 }
 		infiltration_paradrop = { 
@@ -231,7 +221,7 @@ operation_infiltrate_civilian = { ### 1 1/35
 			}
 		}
 	}
-	phases = { #infiltrate military
+	phases = {
 		infiltrate_military_bribe = { base = 25 }
 		infiltrate_military_seduction = { base = 25 }
 		infiltrate_military_ideological_supporter = {
@@ -242,7 +232,7 @@ operation_infiltrate_civilian = { ### 1 1/35
 			}
 		}
 	}
-	phases = { #exfiltration
+	phases = {
 		exfiltration_air_pickup = { 
 			base = 15 
 			modifier = {
@@ -260,7 +250,7 @@ operation_infiltrate_civilian = { ### 1 1/35
 	}
 }
 
-operation_fake_intel = { ### 2 1/40
+operation_fake_intel = {
 	icon = GFX_operations_fake_intel
 	map_icon = GFX_operations_fake_intel_map
 	name = operation_fake_intel
@@ -285,7 +275,6 @@ operation_fake_intel = { ### 2 1/40
 	
 	available = {
 		ROOT = {
-			# check if we have at most x2.5 amount units we will generate
 			set_temp_variable = { num_max_fake_intel_unit = num_armies }
 			multiply_temp_variable = { num_max_fake_intel_unit = 0.25 }
 			round_temp_variable = num_max_fake_intel_unit
@@ -299,7 +288,6 @@ operation_fake_intel = { ### 2 1/40
 			
 			num_fake_intel_divisions < num_max_fake_intel_unit
 			
-			# if enemy has high intel, don't do mission at all
 			all_enemy_country = {
 				intel_level_over = {
 					target = PREV
@@ -316,13 +304,12 @@ operation_fake_intel = { ### 2 1/40
 	required_tokens = {
 		
 	}
-	risk_chance = 0 #there shouldn't be any risk
+	risk_chance = 0
 	experience = 0.5
-	outcome_execute = { # SCOPE_OPERATION
+	outcome_execute = {
 		ROOT = {
 			hidden_effect = {
 				if = {
-					# create template if not exist
 					limit = {
 						not = {
 							has_country_flag = fake_intel_template_created
@@ -340,7 +327,6 @@ operation_fake_intel = { ### 2 1/40
 					set_country_flag = fake_intel_template_created
 				}
 				
-				# give it an id and store id & current date so it can be deleted later
 				if = {
 					limit = { NOT = { has_variable = fake_intel_id } }
 					set_variable = { fake_intel_id = 1000 }
@@ -352,7 +338,6 @@ operation_fake_intel = { ### 2 1/40
 				}
 				set_variable = { num_days_for_fake_intel_id@var:id_to_set = global.num_days }
 				
-				# minimum of 0.25 of current armies or 24
 				set_temp_variable = { num_to_create = num_armies }
 				multiply_temp_variable = { num_to_create = 0.25 }
 				round_temp_variable = num_to_create
@@ -362,7 +347,6 @@ operation_fake_intel = { ### 2 1/40
 					min = 24
 				}
 				
-				# create actual units
 				capital_scope = {
 					create_unit = {
 						division = "division_template = \"Fake Intel Division\" start_experience_factor = 0.5" 
@@ -372,7 +356,6 @@ operation_fake_intel = { ### 2 1/40
 					}
 				}
 				
-				# will delete them after 90 days
 				country_event = { id = lar_fake_intel_units.1 days = 90 }
 			}
 		}
@@ -383,23 +366,22 @@ operation_fake_intel = { ### 2 1/40
 		custom_effect_tooltip = CUSTOM_EFFECT_CREATE_FAKE_ARMIES
 	}
 	
-	#since this operation is taking place in friendly territory, no infiltration/exfiltration is necessary
-	phases = { #
+	phases = {
 		fake_intel_decoy_tanks = { base = 33 }
 		fake_intel_radio_deception = { base = 33 }
 		fake_intel_deliberate_leaks = { base = 33 }
 	}
-	phases = { #fake intel
+	phases = {
 		fake_intel_press_releases = { base = 50 }
 		fake_intel_utilize_double_agents = { base = 50 }
 	}
-	phases = { #
+	phases = {
 		fake_intel_plant_evidence = { base = 50 }
 		fake_intel_release_pow = { base = 50 }
 	}
 }
 
-operation_capture_cipher = { ### 3 1/55
+operation_capture_cipher = {
 	icon = GFX_operations_capture_ciphers
 	map_icon = GFX_operations_capture_ciphers_map
 	name = operation_capture_cipher
@@ -436,7 +418,7 @@ operation_capture_cipher = { ### 3 1/55
 			}
 		}
 	}
-	outcome_extra_execute = { # SCOPE_OPERATION
+	outcome_extra_execute = {
 		random_list = {
 			33 = {
 				ROOT = {
@@ -492,7 +474,7 @@ operation_capture_cipher = { ### 3 1/55
 		}
 	}
 
-	phases = { #infiltration
+	phases = {
 		infiltration_border = { base = 25 }
 		infiltration_submarine = { base = 25 }
 		infiltration_paradrop = { 
@@ -517,7 +499,7 @@ operation_capture_cipher = { ### 3 1/55
 			}
 		}
 	}
-	phases = { #capturing cyphers
+	phases = {
 		capture_cyphers_bribe = { base = 20 }
 		capture_cyphers_raid = {
 			base = 20
@@ -531,7 +513,7 @@ operation_capture_cipher = { ### 3 1/55
 		capture_cyphers_reverse_engineer = { base = 20 }
 	}
 
-	phases = { #exfiltration
+	phases = {
 		exfiltration_air_pickup = { 
 			base = 15 
 			modifier = {
@@ -549,7 +531,7 @@ operation_capture_cipher = { ### 3 1/55
 	}
 }
 
-operation_infiltrate_armed_forces_army = { ### 4 1/55
+operation_infiltrate_armed_forces_army = {
 	icon = GFX_operations_infiltrate_armed_forces
 	map_icon = GFX_operations_infiltrate_armed_forces_map
 	name = operation_infiltrate_armed_forces_army
@@ -578,12 +560,6 @@ operation_infiltrate_armed_forces_army = { ### 4 1/55
 	}
 
 	available = {
-		#NOT = {
-		#	has_operation_token = {
-		#		tag = FROM
-		#		token = token_army
-		#	}
-		#}
 	}
 	
 	awarded_tokens = {
@@ -603,7 +579,7 @@ operation_infiltrate_armed_forces_army = { ### 4 1/55
 			}
 		}
 	}
-	outcome_extra_execute = { # SCOPE_OPERATION
+	outcome_extra_execute = {
 		random_list = {
 			33 = {
 				ROOT = {
@@ -637,7 +613,7 @@ operation_infiltrate_armed_forces_army = { ### 4 1/55
 			}
 		}
 	}
-	phases = { #infiltration
+	phases = {
 		infiltration_border = { base = 25 }
 		infiltration_submarine = { base = 25 }
 		infiltration_paradrop = { 
@@ -662,7 +638,7 @@ operation_infiltrate_armed_forces_army = { ### 4 1/55
 			}
 		}
 	}
-	phases = { #infiltrate military
+	phases = {
 		infiltrate_military_bribe = { base = 25 }
 		infiltrate_military_seduction = { base = 25 }
 		infiltrate_military_turned_pow = {
@@ -680,7 +656,7 @@ operation_infiltrate_armed_forces_army = { ### 4 1/55
 			}
 		}
 	}
-	phases = { #exfiltration
+	phases = {
 		exfiltration_air_pickup = { 
 			base = 15 
 			modifier = {
@@ -698,7 +674,7 @@ operation_infiltrate_armed_forces_army = { ### 4 1/55
 	}
 }
 
-operation_infiltrate_armed_forces_navy = { ### 5 1/55
+operation_infiltrate_armed_forces_navy = {
 	icon = GFX_operations_infiltrate_naval_forces
 	map_icon = GFX_operations_infiltrate_naval_forces_map
 	name = operation_infiltrate_armed_forces_navy
@@ -732,17 +708,6 @@ operation_infiltrate_armed_forces_navy = { ### 5 1/55
 	}
 
 	available = {
-		#NOT = {
-		#	has_operation_token = {
-		#		tag = FROM
-		#		token = token_navy
-		#	}
-		#}
-		#FROM = {
-		#	any_owned_state = {
-		#		is_coastal = yes
-		#	}
-		#}
 	}
 
 	awarded_tokens = {
@@ -761,7 +726,7 @@ operation_infiltrate_armed_forces_navy = { ### 5 1/55
 			}
 		}
 	}
-	outcome_extra_execute = { # SCOPE_OPERATION
+	outcome_extra_execute = {
 		random_list = {
 			33 = {
 				ROOT = {
@@ -795,7 +760,7 @@ operation_infiltrate_armed_forces_navy = { ### 5 1/55
 			}
 		}
 	}
-	phases = { #infiltration
+	phases = {
 		infiltration_border = { base = 25 }
 		infiltration_submarine = { base = 25 }
 		infiltration_paradrop = { 
@@ -820,7 +785,7 @@ operation_infiltrate_armed_forces_navy = { ### 5 1/55
 			}
 		}
 	}
-	phases = { #infiltrate military
+	phases = {
 		infiltrate_military_bribe = { base = 25 }
 		infiltrate_military_seduction = { base = 25 }
 		infiltrate_military_turned_pow = {
@@ -838,7 +803,7 @@ operation_infiltrate_armed_forces_navy = { ### 5 1/55
 			}
 		}
 	}
-	phases = { #exfiltration
+	phases = {
 		exfiltration_air_pickup = { 
 			base = 15 
 			modifier = {
@@ -856,7 +821,7 @@ operation_infiltrate_armed_forces_navy = { ### 5 1/55
 	}
 }
 
-operation_infiltrate_armed_forces_airforce = { ### 6 1/55
+operation_infiltrate_armed_forces_airforce = {
 	icon = GFX_operations_infiltrate_air_forces
 	map_icon = GFX_operations_infiltrate_air_forces_map
 	name = operation_infiltrate_armed_forces_airforce
@@ -885,12 +850,6 @@ operation_infiltrate_armed_forces_airforce = { ### 6 1/55
 	}
 
 	available = {
-		#NOT = {
-		#	has_operation_token = {
-		#		tag = FROM
-		#		token = token_airforce
-		#	}
-		#}
 	}
 
 	awarded_tokens = {
@@ -910,7 +869,7 @@ operation_infiltrate_armed_forces_airforce = { ### 6 1/55
 		}
 	}
 
-	outcome_extra_execute = { # SCOPE_OPERATION
+	outcome_extra_execute = {
 		random_list = {
 			33 = {
 				ROOT = {
@@ -946,7 +905,7 @@ operation_infiltrate_armed_forces_airforce = { ### 6 1/55
 		}
 	}
 
-	phases = { #infiltration
+	phases = {
 		infiltration_border = { base = 25 }
 		infiltration_submarine = { base = 25 }
 		infiltration_paradrop = { 
@@ -971,7 +930,7 @@ operation_infiltrate_armed_forces_airforce = { ### 6 1/55
 			}
 		}
 	}
-	phases = { #infiltrate military
+	phases = {
 		infiltrate_military_bribe = { base = 25 }
 		infiltrate_military_seduction = { base = 25 }
 		infiltrate_military_turned_pow = {
@@ -989,7 +948,7 @@ operation_infiltrate_armed_forces_airforce = { ### 6 1/55
 			}
 		}
 	}
-	phases = { #exfiltration
+	phases = {
 		exfiltration_air_pickup = { 
 			base = 15 
 			modifier = {
@@ -1007,7 +966,7 @@ operation_infiltrate_armed_forces_airforce = { ### 6 1/55
 	}
 }
 
-operation_coup_government = { ### 7 1/70
+operation_coup_government = {
 	icon = GFX_operations_coup_government
 	map_icon = GFX_operations_coup_government_map
 	name = operation_coup_government
@@ -1030,7 +989,6 @@ operation_coup_government = { ### 7 1/70
 	equipment = {
 		infantry_equipment = 12000
 	}
-	# Cannot spawn a civil war in the capital
 	selection_target_state = {
 		is_capital = no
 	}
@@ -1077,21 +1035,18 @@ operation_coup_government = { ### 7 1/70
 				}
 				neutrality > 0.2
 			}
-				#set_temp_variable = { coup_ideology@ROOT = PREV.ROOT.current_party_ideology_group }
-				#set_temp_variable = { coup_ideology_popularity@ROOT = party_popularity@ROOT.coup_ideology }
-				#check_variable = { ROOT.coup_ideology_popularity > 0.2 }
 			
 			OR = {
 				AND = {
 					is_major = no
 					has_war = no
-					has_stability < 0.7 #majors are harder to coup
+					has_stability < 0.7
 				}
 				AND = {
 					has_war = no
 					has_stability < 0.5
 				}
-				has_stability < 0.35 #can always coup at low stability
+				has_stability < 0.35
 			}
 		}
 		OR = {
@@ -1111,7 +1066,7 @@ operation_coup_government = { ### 7 1/70
 		}
 	}
 
-	on_start = { #SCOPE_OPERATION
+	on_start = {
 		FROM = {
 			set_variable = { coup_operation_party@ROOT = PREV.ROOT.current_party_ideology_group }
 		}
@@ -1119,7 +1074,7 @@ operation_coup_government = { ### 7 1/70
 	risk_chance = 0.3
 	experience = 2.5
 	cost_modifiers = { operation_coup_cost }
-	outcome_execute = { # SCOPE_OPERATION
+	outcome_execute = {
 		FROM = {
 			if = {
 				limit = {
@@ -1133,7 +1088,6 @@ operation_coup_government = { ### 7 1/70
 				}
 			}
 
-			# Exploit prevention: Make sure ruling party is not the same as the saved one, otherwise change it!
 			if = {
 				limit = {
 					has_government = var:coup_operation_party@ROOT
@@ -1151,7 +1105,6 @@ operation_coup_government = { ### 7 1/70
 			set_temp_variable = { civil_war_navy_fraction = civil_war_size }
 			set_temp_variable = { civil_war_army_fraction = civil_war_size }
 
-			# If ROOT has infiltrated a service, the revolter gets additional troops
 			if = {
 				limit = {
 					ROOT = {
@@ -1187,7 +1140,6 @@ operation_coup_government = { ### 7 1/70
 				add_to_temp_variable = { civil_war_navy_fraction = 0.15 }
 			}
 
-			# create different civil wars depending on ROOT ideology
 			start_civil_war = {
 				capital = coup_civil_war_capital
 				size = civil_war_size
@@ -1197,7 +1149,6 @@ operation_coup_government = { ### 7 1/70
 				air_ratio = civil_war_airforce_fraction
 			}
 
-			# Clear State
 			clear_variable = coup_operation_party@ROOT
 		}
 
@@ -1224,8 +1175,6 @@ operation_coup_government = { ### 7 1/70
 					has_variable = coup_operation_party@ROOT
 				}
 
-				# Display the locked in variable if the operation has already started
-				# This is because politics can change and it would display the wrong party if someone looked at the generated tooltip it in that situation
 				set_temp_variable = { civil_war_party = coup_operation_party@ROOT }
 			}
 			else = {
@@ -1238,7 +1187,7 @@ operation_coup_government = { ### 7 1/70
 		}
 	}
 
-	phases = { #infiltration
+	phases = {
 		infiltration_border = { base = 25 }
 		infiltration_submarine = { base = 25 }
 		infiltration_paradrop = { 
@@ -1267,7 +1216,7 @@ operation_coup_government = { ### 7 1/70
 	phases = { lar_fra_launch_coup = { base = 100 } }
 }
 
-operation_boost_resistance = { ### 8 2/40
+operation_boost_resistance = {
 	icon = GFX_operations_boost_resistance
 	map_icon = GFX_operations_boost_resistance_map
 	name = operation_boost_resistance
@@ -1334,9 +1283,9 @@ operation_boost_resistance = { ### 8 2/40
 			subtract_from_variable = { boost_resistance_chance = 10 }
 		}
 	}
-	outcome_extra_execute = { # SCOPE_OPERATION
+	outcome_extra_execute = {
 		random_list = {
-			33 = { #critical success
+			33 = {
 				FROM.FROM = {
 					add_resistance_target = {
 						amount = 20
@@ -1348,7 +1297,7 @@ operation_boost_resistance = { ### 8 2/40
 					add_compliance = -10
 				}
 			}
-			67 = { #normal success
+			67 = {
 				FROM.FROM = {
 					add_resistance_target = {
 						amount = 20
@@ -1401,20 +1350,20 @@ operation_boost_resistance = { ### 8 2/40
 		}
 	}
 	
-	phases = { #infiltration
+	phases = {
 		infiltration_border = { base = 50 }
 		infiltration_submarine = { base = 25 }
 		infiltration_paradrop = { 
 			base = 25 
 		}
 	}
-	phases = { #resistance support
+	phases = {
 		resistance_support_arms_depots = { base = 25 }
 		resistance_support_distribute_weapons = { base = 25 }
 		resistance_support_organize_training = { base = 25 }
 		resistance_support_coordinate_groups = { base = 25 }
 	}
-	phases = { #exfiltration
+	phases = {
 		exfiltration_air_pickup = { 
 			base = 15 
 		}
@@ -1424,7 +1373,7 @@ operation_boost_resistance = { ### 8 2/40
 	}
 }
 
-operation_make_resistance_contacts = { ### 9 2/40
+operation_make_resistance_contacts = {
 	icon = GFX_operations_make_resistance_contacts
 	map_icon = GFX_operations_make_resistance_contacts_map
 	name = operation_make_resistance_contacts
@@ -1472,18 +1421,6 @@ operation_make_resistance_contacts = { ### 9 2/40
 	}
 
 	available = {
-		#NOT = {
-		#	has_operation_token = {
-		#		tag = FROM
-		#		token = token_resistance_contacts
-		#	}
-		#}
-		#
-		#FROM = {
-		#	any_controlled_state = {
-		#		has_resistance = yes
-		#	}
-		#}
 	}
 	
 	awarded_tokens = {
@@ -1502,7 +1439,7 @@ operation_make_resistance_contacts = { ### 9 2/40
 			}
 		}
 	}
-	outcome_extra_execute = { # SCOPE_OPERATION
+	outcome_extra_execute = {
 		random_list = {
 			33 = {
 				ROOT = {
@@ -1565,7 +1502,7 @@ operation_make_resistance_contacts = { ### 9 2/40
 		}
 	}
 	
-	phases = { #infiltration
+	phases = {
 		infiltration_border = { base = 25 }
 		infiltration_submarine = { base = 25 }
 		infiltration_paradrop = { 
@@ -1580,12 +1517,12 @@ operation_make_resistance_contacts = { ### 9 2/40
 			}
 		}
 	}
-	phases = { #resistance contacts
+	phases = {
 		resistance_contacts_radio_circuits = { base = 33 }
 		resistance_support_pidgeons = { base = 33 }
 		resistance_contacts_briefings = { base = 33 }
 	}
-	phases = { #exfiltration
+	phases = {
 		exfiltration_air_pickup = { 
 			base = 15 
 			modifier = {
@@ -1603,7 +1540,7 @@ operation_make_resistance_contacts = { ### 9 2/40
 	}
 }
 
-operation_collaboration_government = { ### 10 2/55
+operation_collaboration_government = {
 	icon = GFX_operations_collaboration_government
 	map_icon = GFX_operations_collaboration_government_map
 	name = operation_collaboration_government
@@ -1646,7 +1583,7 @@ operation_collaboration_government = { ### 10 2/55
 	risk_chance = 0.1
 	experience = 1.5
 	outcome_extra_chance = 0.33
-	outcome_execute = { # SCOPE_OPERATION
+	outcome_execute = {
 		ROOT = {
 			add_collaboration = {
 				target = FROM
@@ -1654,7 +1591,7 @@ operation_collaboration_government = { ### 10 2/55
 			}
 		}
 	}
-	outcome_extra_execute = { # SCOPE_OPERATION
+	outcome_extra_execute = {
 		ROOT = {
 			add_collaboration = {
 				target = FROM
@@ -1672,7 +1609,7 @@ operation_collaboration_government = { ### 10 2/55
 		}
 	}
 
-	phases = { #infiltration
+	phases = {
 		infiltration_border = { base = 25 }
 		infiltration_submarine = { base = 25 }
 		infiltration_paradrop = { 
@@ -1702,7 +1639,7 @@ operation_collaboration_government = { ### 10 2/55
 		collaboration_government_train_paramilitary_forces = { base = 33 }
 		collaboration_government_contact_military_officers = { base = 33 }
 	}
-	phases = { #exfiltration
+	phases = {
 		exfiltration_air_pickup = { 
 			base = 15 
 			modifier = {
@@ -1720,7 +1657,7 @@ operation_collaboration_government = { ### 10 2/55
 	}
 }
 
-operation_coordinated_strike = { ### 11 2/70
+operation_coordinated_strike = {
 	icon = GFX_operations_coordinated_strike
 	map_icon = GFX_operations_coordinated_strike_map
 	name = operation_coordinated_strike
@@ -1762,18 +1699,16 @@ operation_coordinated_strike = { ### 11 2/70
 		targets = { FROM }
 	}
 
-	# Coordinated Strike will lead to a war with the target
 	will_lead_to_war_with = yes
 	risk_chance = 0.3
 	experience = 2
-	outcome_execute = { # SCOPE_OPERATION
+	outcome_execute = {
 		ROOT = {
 			declare_war_on = { target = FROM type = annex_everything }
 		}
 		
 		execute_operation_coordinated_strike = {
-			# Amount determines how often the mission simulation is run
-			amount = 12 #1 attack per 6 hours --> 12 attacks = 3 days
+			amount = 12
 		}
 	}
 
@@ -1781,7 +1716,7 @@ operation_coordinated_strike = { ### 11 2/70
 		custom_effect_tooltip = coordinated_strike_tt
 	}
 
-	phases = { #infiltration
+	phases = {
 		infiltration_border = { base = 25 }
 		infiltration_submarine = { base = 25 }
 		infiltration_paradrop = { 
@@ -1806,12 +1741,12 @@ operation_coordinated_strike = { ### 11 2/70
 			}
 		}
 	}
-	phases = { #preparing
+	phases = {
 		coordinated_strike_scout_target = { base = 50 }
 		coordinate_strike_mark_targets = { base = 50 }
 	}
 
-	phases = { #execution
+	phases = {
 		coordinated_strike_sabotage_communications = { base = 34 }
 		coordinated_strike_direct_units = { base = 34 }
 		coordinated_strike_occupy_bridges = { 
@@ -1820,7 +1755,7 @@ operation_coordinated_strike = { ### 11 2/70
 				NOT = {
 					FROM = {
 						any_neighbor_country = {
-							tag = ROOT #no land connection between FROM and ROOT
+							tag = ROOT
 						}
 					}
 				}
@@ -1832,7 +1767,7 @@ operation_coordinated_strike = { ### 11 2/70
 
 
 
-operation_targeted_sabotage_industry = { ### 13 3/35
+operation_targeted_sabotage_industry = {
 	icon = GFX_operations_targeted_sabotage
 	map_icon = GFX_operations_targeted_sabotage_map
 	name = operation_targeted_sabotage_industry
@@ -1897,7 +1832,7 @@ operation_targeted_sabotage_industry = { ### 13 3/35
 			}
 		}
 	}
-	outcome_extra_execute = { # SCOPE_OPERATION
+	outcome_extra_execute = {
 		
 		FROM.FROM = {
 			add_to_variable = {
@@ -1913,7 +1848,7 @@ operation_targeted_sabotage_industry = { ### 13 3/35
 		custom_effect_tooltip = operation_outcome_consumes_token_tt
 	}
 
-	phases = { #infiltration
+	phases = {
 		infiltration_border = { base = 25 }
 		infiltration_submarine = { base = 25 }
 		infiltration_paradrop = { 
@@ -1944,11 +1879,11 @@ operation_targeted_sabotage_industry = { ### 13 3/35
 			}
 		}
 	}
-	phases = { #exfiltration
+	phases = {
 		targeted_sabotage_plant_explosives = { base = 90 }
 		targeted_sabotage_organize_more_meetings = { base = 10 }
 	}
-	phases = { #exfiltration
+	phases = {
 		exfiltration_air_pickup = { 
 			base = 15 
 			modifier = {
@@ -1966,7 +1901,7 @@ operation_targeted_sabotage_industry = { ### 13 3/35
 	}
 }
 
-operation_targeted_sabotage_infrastructure = { ### 14 3/35
+operation_targeted_sabotage_infrastructure = {
 	icon = GFX_operations_targeted_sabotage
 	map_icon = GFX_operations_targeted_sabotage_map
 	name = operation_targeted_sabotage_infrastructure
@@ -2029,7 +1964,7 @@ operation_targeted_sabotage_infrastructure = { ### 14 3/35
 			}
 		}
 	}
-	outcome_extra_execute = { # SCOPE_OPERATION
+	outcome_extra_execute = {
 		FROM.FROM = {
 			add_to_variable = {
 				var = targeted_sabotage_infrastructure
@@ -2042,7 +1977,7 @@ operation_targeted_sabotage_infrastructure = { ### 14 3/35
 		custom_effect_tooltip = operation_outcome_sabotage_infrastructure_tt
 		custom_effect_tooltip = operation_outcome_consumes_token_tt
 	}
-	phases = { #infiltration
+	phases = {
 		infiltration_border = { base = 25 }
 		infiltration_submarine = { base = 25 }
 		infiltration_paradrop = { 
@@ -2079,7 +2014,7 @@ operation_targeted_sabotage_infrastructure = { ### 14 3/35
 		targeted_sabotage_remove_roadsigns = { base = 25 }
 		targeted_sabotage_immobilize_rolling_stock = { base = 25 }
 	}
-	phases = { #exfiltration
+	phases = {
 		exfiltration_air_pickup = { 
 			base = 15 
 			modifier = {
@@ -2097,7 +2032,7 @@ operation_targeted_sabotage_infrastructure = { ### 14 3/35
 	}
 }
 
-operation_targeted_sabotage_resources = { ### 15 3/35
+operation_targeted_sabotage_resources = {
 	icon = GFX_operations_targeted_sabotage
 	map_icon = GFX_operations_targeted_sabotage_map
 	name = operation_targeted_sabotage_resources
@@ -2160,7 +2095,7 @@ operation_targeted_sabotage_resources = { ### 15 3/35
 			}
 		}
 	}
-	outcome_extra_execute = { # SCOPE_OPERATION
+	outcome_extra_execute = {
 		
 		FROM.FROM = {
 			add_to_variable = {
@@ -2174,7 +2109,7 @@ operation_targeted_sabotage_resources = { ### 15 3/35
 		custom_effect_tooltip = operation_outcome_sabotage_resources_tt
 		custom_effect_tooltip = operation_outcome_consumes_token_tt
 	}
-	phases = { #infiltration
+	phases = {
 		infiltration_border = { base = 25 }
 		infiltration_submarine = { base = 25 }
 		infiltration_paradrop = { 
@@ -2209,7 +2144,7 @@ operation_targeted_sabotage_resources = { ### 15 3/35
 		targeted_sabotage_burn_storage = { base = 50 }
 		targeted_sabotage_destroy_mining_equipment = { base = 50 }
 	}
-	phases = { #exfiltration
+	phases = {
 		exfiltration_air_pickup = { 
 			base = 15 
 			modifier = {

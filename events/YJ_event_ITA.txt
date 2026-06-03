@@ -23,7 +23,7 @@ country_event = {
 	
 }
 
-country_event = { #唯有淤血
+country_event = {
 	id = KoKi_YJ_ITA_event.102
 	title = KoKi_YJ_ITA_event.102.title
 	desc = KoKi_YJ_ITA_event.102.desc
@@ -46,7 +46,7 @@ country_event = { #唯有淤血
 
 
 
-country_event = { #赶英超美
+country_event = {
 	id = KoKi_YJ_ITA_event.104
 	title = KoKi_YJ_ITA_event.104.title
 	desc = KoKi_YJ_ITA_event.104.desc

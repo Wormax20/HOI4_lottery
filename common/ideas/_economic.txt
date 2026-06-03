@@ -251,7 +251,7 @@ ideas = {
 				}
 				modifier = {
 					has_war_support > 0.25
-					factor = 0 #don't even look at it if you could be taking partial mob
+					factor = 0
 				}
 				modifier = {
 					tag = ENG
@@ -402,7 +402,7 @@ ideas = {
 							has_idea = tot_economic_mobilisation
 						}
 					}
-					add = 1200 #Prep for invasion
+					add = 1200
 				}
 
 				modifier = {
@@ -444,11 +444,11 @@ ideas = {
 							has_idea = PHI_ties_with_nationalist_spain_2
 						}
 						else = {
-							hidden_trigger = { always = no } #NEED TO HAVE AN ALWAYS AS AN END STATEMENT IF URE USING AN IF ELSE IN AN OR STATEMENT OTHERWISE THE EVALUATION BREAKS!!
+							hidden_trigger = { always = no }
 						}
 					}
 					else = {
-						hidden_trigger = { always = no } #NEED TO HAVE AN ALWAYS AS AN END STATEMENT IF URE USING AN IF ELSE IN AN OR STATEMENT OTHERWISE THE EVALUATION BREAKS!!
+						hidden_trigger = { always = no }
 					}
 					custom_trigger_tooltip = { tooltip = or_clarification_tooltip always = no }
 					AND = {
@@ -581,13 +581,11 @@ ideas = {
    				base = 3
 
 				modifier = {
-					#High prio on production
 					factor = 20
 					manpower_per_military_factory >  1000
 				}
 
 				modifier = {
-					# If we CAN go for total mobilization and have enough manpower for it, skip war economy, it's only a waste of PP
 					factor = 0
 
 					manpower_per_military_factory > 15000
@@ -604,13 +602,11 @@ ideas = {
 				modifier = {
 					add = 1800
 
-					# revert from closed_economy if we have large allies
 					has_idea = closed_economy
 					has_large_ally_not_pick_closed_economy = yes
 				}
 
 				modifier = {
-					# We will lose the war support after the war anyway
 					factor = 0
 					original_tag = GER
 					has_civil_war = yes
@@ -618,7 +614,6 @@ ideas = {
 				}
 
 				modifier = {
-					# They will take the focus to gain this for free, so they shouldn't spend pp on it too willy-nilly 
 					factor = 0.5
 					original_tag = JAP
 					OR = {
@@ -768,19 +763,16 @@ ideas = {
 
 				modifier = {
 					factor = 25
-					#Prio this if nation has a lot of manpower compared to MIC
 					manpower_per_military_factory > 15000
 				}
 
 				modifier = {
-					#Block  unless nation has a lot of manpower
 					factor = 0
 					manpower_per_military_factory <  10000
 				}
 
 
 				modifier = {
-					# never take this if we are on low conscription laws for safety
 					factor = 0
 					OR = {
 						has_idea = volunteer_only
@@ -788,7 +780,6 @@ ideas = {
 					}
 				}
 
-				# Germany needs to be careful
 				modifier = {
 					factor = 0
 
@@ -863,7 +854,7 @@ ideas = {
 				conversion_cost_civ_to_mil_factor= -0.3
 				conversion_cost_mil_to_civ_factor = -0.3
 				industrial_capacity_factory = 0.05
-				production_factory_max_efficiency_factor = 0.05 #生产效率上限
+				production_factory_max_efficiency_factor = 0.05
 				industrial_capacity_dockyard = 0.05
 				factory_energy_consumption = 0.5
 			}
@@ -935,10 +926,10 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				industrial_capacity_factory = 0.05 #工厂产出
+				industrial_capacity_factory = 0.05
 				consumer_goods_expected_value = 0.15
 				production_speed_buildings_factor = 0.15
-				production_factory_max_efficiency_factor = 0.05 #生产效率上限
+				production_factory_max_efficiency_factor = 0.05
 				factory_energy_consumption = 0.25
 			}
 
@@ -970,9 +961,9 @@ ideas = {
 				production_speed_buildings_factor = -0.2
 				global_building_slots_factor = 0.1
 				factory_energy_consumption = 0.35
-				production_factory_max_efficiency_factor = 0.05 #生产效率上限
+				production_factory_max_efficiency_factor = 0.05
 				production_speed_buildings_factor = 0.15	
-				industrial_capacity_factory = 0.05 #工厂产出
+				industrial_capacity_factory = 0.05
 			}
 
 			cancel_if_invalid = no
@@ -1182,7 +1173,7 @@ ideas = {
 					factor = 300
 
 					tag = BRA
-					date > 1943.1.1 # at this point we can probably cash in on rubber lack in the world
+					date > 1943.1.1
 				}
 
 				modifier = {
@@ -1191,7 +1182,6 @@ ideas = {
 					date > 1941.6.1
 				}
 
-				# Oil for hitlers oil throne!
 				modifier = {
 					factor = 600
 					tag = ROM
@@ -1263,18 +1253,16 @@ ideas = {
 					has_war = no
 					is_in_faction = no
 					OR = {
-						# portugal and sweden are special tungsten snowflakes
 						tag = POR
 						tag = SWE
 
-						# Iraq & Iran are special oil snowflakes
 						tag = PER
 						tag = IRQ
 					}
 				}
 				modifier = {
 					factor = 1000
-					has_idea = uncontrolled_exports #Poland should try and escape this as soon as they can
+					has_idea = uncontrolled_exports
 				}
    			}
 		}
@@ -1305,7 +1293,7 @@ ideas = {
 								has_idea = totaler_krieg_economy
 							}
 							else = {
-								hidden_trigger = { always = no } #NEED TO HAVE AN ALWAYS AS AN END STATEMENT IF URE USING AN IF ELSE IN AN OR STATEMENT OTHERWISE THE EVALUATION BREAKS!!
+								hidden_trigger = { always = no }
 							}
 						}
 					}
@@ -1317,7 +1305,7 @@ ideas = {
 						has_completed_focus = RAJ_raise_import_duties
 					}
 					else = {
-						hidden_trigger = { always = no } #NEED TO HAVE AN ALWAYS AS AN END STATEMENT IF URE USING AN IF ELSE IN AN OR STATEMENT OTHERWISE THE EVALUATION BREAKS!!
+						hidden_trigger = { always = no }
 					}
 				}
 
@@ -1365,7 +1353,6 @@ ideas = {
 					has_war = yes
 				}
 
-				# minors not at war should want to get the bonuses from free trade
 				modifier = {
 					add = -1
 
@@ -1382,11 +1369,10 @@ ideas = {
 				modifier = {
 					add = 1500
 
-					# revert from closed_economy if we have large allies
 					has_idea = closed_economy
 					has_large_ally_not_pick_closed_economy = yes
 				}
-				modifier = { #Germany should keep its Autarkic Economy
+				modifier = {
 					factor = 0.5
 					original_tag = GER
 					OR = {
@@ -1412,18 +1398,15 @@ ideas = {
 
 			modifier = {
 				min_export = 0.15
-				#industrial_capacity_factory = 0.05
-				#industrial_capacity_dockyard = 0.05
 				production_speed_buildings_factor = 0.05
 				research_speed_factor = 0.05
 				lend_lease_tension = 0.20
 				faction_trade_opinion_factor = 0.25
-				#cic_construction_boost = -0.05
 			}
 
 			cancel_if_invalid = no
 
-			ai_will_do = { #Germany should always for AutarkicEconomy if its available
+			ai_will_do = {
    				factor = 100
 
    				modifier = {
@@ -1461,12 +1444,11 @@ ideas = {
 				research_speed_factor = 0.05
 				lend_lease_tension = 0.20
 				faction_trade_opinion_factor = 0.5
-				#cic_construction_boost = -0.05
 			}
 
 			cancel_if_invalid = no
 
-			ai_will_do = { #Germany should always for AutarkicEconomy if its available
+			ai_will_do = {
    				factor = 100
 
    				modifier = {
@@ -1527,11 +1509,10 @@ ideas = {
 						limit = {
 							original_tag = JAP
 						}
-						#has_completed_focus = JAP_sea_state_general_mobilization_law
 						has_idea = national_defense_state
 					}
 					ELSE = {
-						hidden_trigger = { always = no } #NEED TO HAVE AN ALWAYS AS AN END STATEMENT IF URE USING AN IF ELSE IN AN OR STATEMENT OTHERWISE THE EVALUATION BREAKS!!
+						hidden_trigger = { always = no }
 					}
 				}
 				OR = {
@@ -1559,7 +1540,6 @@ ideas = {
 
 			modifier = {
 				min_export = 0
-				#civilian_intel_to_others = 0.0
 				lend_lease_tension = 0.40
 				cic_construction_boost = -0.1
 			}
@@ -1577,7 +1557,6 @@ ideas = {
 					has_war = yes
 				}
 
-				# minors not at war should want to get the bonuses from free trade
 				modifier = {
 					factor = 0
 
@@ -1588,11 +1567,9 @@ ideas = {
 				modifier = {
 					factor = 0
 
-					# don't take if we have a reasonable sized ally
-					# since they will require our trades
 					has_large_ally_not_pick_closed_economy = yes
 				}
-				modifier = { #Germany should keep its Autarkic Economy
+				modifier = {
 					factor = 0.5
 					original_tag = GER
 					is_in_faction = yes

@@ -38,14 +38,14 @@ ideas = {
 			picture = ARG_construction_guilds
 
 			modifier = {
-				political_power_factor = 0.15 #政治点数
-				production_factory_max_efficiency_factor = 0.1 #生产效率上限
+				political_power_factor = 0.15
+				production_factory_max_efficiency_factor = 0.1
 				production_speed_buildings_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.1
-				industrial_capacity_factory = 0.10 #工厂产出
-				industrial_capacity_dockyard = 0.10 #船坞产出
-				local_resources_factor = 0.10 #战略资源获取率
-				consumer_goods_factor = -0.05 #生活消费品系数
+				industrial_capacity_factory = 0.10
+				industrial_capacity_dockyard = 0.10
+				local_resources_factor = 0.10
+				consumer_goods_factor = -0.05
 				production_speed_arms_factory_factor = 0.25
 				production_speed_buildings_factor = 0.2
 			}
@@ -76,10 +76,10 @@ ideas = {
 				specialization_land_speed_factor = 0.5
 				specialization_naval_speed_factor = 0.5
 				custom_modifier_tooltip = YJ_USA_2_ideas_tt
-				production_speed_naval_base_factor = 0.1          	# 海军基地建造速度 +10%
-				supply_consumption_factor = -0.1 #补给消耗
-				experience_loss_factor = -0.05 						#有经验的士兵损失
-				army_cas_damage_reduction = 0.05                 #陆军承受密接伤害-5%
+				production_speed_naval_base_factor = 0.1
+				supply_consumption_factor = -0.1
+				experience_loss_factor = -0.05
+				army_cas_damage_reduction = 0.05
 				army_attack_against_major_factor = 0.1
 				army_defence_against_major_factor = 0.1
 			}
@@ -109,20 +109,20 @@ ideas = {
 			picture = ARG_civilian_economy_boost
 
 			modifier = {
-				political_power_factor = 0.3 #政治点数
+				political_power_factor = 0.3
 				global_building_slots = 5
-				consumer_goods_factor = -0.05  #生活消费品工厂系数
-				consumer_goods_expected_value = -0.05  #用于生产生活消费品的期望工厂数量
+				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
 				production_speed_infrastructure_factor = 0.10
 				production_speed_industrial_complex_factor = 0.15
 				conversion_cost_civ_to_mil_factor = -0.5
-				local_resources_factor = 0.10 #战略资源获取率
-				production_speed_buildings_factor = 0.1 #建造速度
+				local_resources_factor = 0.10
+				production_speed_buildings_factor = 0.1
 				cic_to_target_factor = 0.1
 			}
 		}
 
-		YJ_USA_5_ideas = { #美英合作
+		YJ_USA_5_ideas = {
 
 			allowed = {
 				always = no
@@ -138,10 +138,10 @@ ideas = {
 
 			modifier = {
 				custom_modifier_tooltip = YJ_USA_5_ideas_tt
-				stability_weekly = 0.002 #每周稳定度增长
-				war_support_weekly = 0.002 #每周战争支持度增长
-				production_factory_max_efficiency_factor = 0.05 #生产效率上限
-				industrial_capacity_factory = 0.05 #工厂产出
+				stability_weekly = 0.002
+				war_support_weekly = 0.002
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
 				ground_attack = 0.05
 				ground_attack_factor = 0.05
 			}
@@ -154,7 +154,7 @@ ideas = {
 		}
 
 		
-		YJ_USA_7_ideas = { #父与子之歌
+		YJ_USA_7_ideas = {
 
 			allowed = {
 				always = no
@@ -169,10 +169,10 @@ ideas = {
 			picture = citizen_militia_1
 
 			modifier = {
-				production_factory_max_efficiency_factor = 0.05 #生产效率上限
-				industrial_capacity_factory = 0.05 #工厂产出
-				production_factory_efficiency_gain_factor = 0.1 #生产效率增长
-				coordination_bonus = 0.1 #协同性
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+				production_factory_efficiency_gain_factor = 0.1
+				coordination_bonus = 0.1
 			}
 		}
 
@@ -182,7 +182,7 @@ ideas = {
             allowed = { always = no } 
 
             modifier = {
-				naval_invasion_penalty = -0.75 #登陆惩罚
+				naval_invasion_penalty = -0.75
                 amphibious_invasion = 0.25
                 amphibious_invasion_defense = 0.15
                 naval_invasion_capacity = 20

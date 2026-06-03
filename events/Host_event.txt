@@ -1,6 +1,5 @@
 add_namespace = host
 
-# 3速
 news_event = {
 	id = host.1
 	title = host.1.t
@@ -16,7 +15,6 @@ news_event = {
 	}
 }
 
-# 4速
 news_event = {
 	id = host.2
 	title = host.2.t

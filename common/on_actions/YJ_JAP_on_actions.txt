@@ -1,5 +1,5 @@
 on_actions = {
-	on_monthly_JAP = { #大东亚共荣圈
+	on_monthly_JAP = {
 	    effect = {
 			IF = {
 				limit = {

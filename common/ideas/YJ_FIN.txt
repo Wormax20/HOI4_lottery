@@ -1,6 +1,6 @@
 ideas = {
 	country = {
-		YJ_FIN_1_ideas = { #追寻斯堪的纳维亚遗产
+		YJ_FIN_1_ideas = {
 
 			allowed = {
 				always = no
@@ -15,16 +15,16 @@ ideas = {
 			picture = SWE_with_finland_for_sweden_swe
 
 			modifier = {
-				political_power_factor = 0.2 #政治点
-				conscription =  0.1   #适役人口
-				conscription_factor = 0.3 #适役人口系数
-				global_building_slots = 5 #最大地区数
-				local_resources_factor = 0.3 #战略资源获取率
-				stability_weekly = 0.002 #每周稳定度增长
-				war_support_weekly = 0.002 #每周战争支持度增长
+				political_power_factor = 0.2
+				conscription =  0.1
+				conscription_factor = 0.3
+				global_building_slots = 5
+				local_resources_factor = 0.3
+				stability_weekly = 0.002
+				war_support_weekly = 0.002
 			}
 		}
-		YJ_FIN_2_ideas = { #凛冬将军
+		YJ_FIN_2_ideas = {
 
 			allowed = {
 				always = no
@@ -40,12 +40,12 @@ ideas = {
 
 			modifier = {
 				custom_modifier_tooltip = YJ_FIN_2_ideas_tt
-				special_forces_attack_factor = 0.05 #特种攻击
-				army_attack_factor = 0.05  							# 陆军师攻击
-				army_defence_factor = 0.05 							# 陆军师防御
+				special_forces_attack_factor = 0.05
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
 			}
 		}
-		YJ_FIN_3_ideas = { #凛冬航空队
+		YJ_FIN_3_ideas = {
 
 			allowed = {
 				always = no
@@ -61,12 +61,12 @@ ideas = {
 
 			modifier = {
 				custom_modifier_tooltip = YJ_FIN_3_ideas_tt
-				air_attack_factor =  0.05  #对空攻击
-				air_defence_factor = 0.1  #空中防御
-				air_range_factor = 0.10 				#航程
-				air_intercept_efficiency = 0.1 #拦截任务效率
-				air_night_penalty = -0.5 #夜间惩罚
-				air_superiority_detect_factor = 0.1 #对空探测
+				air_attack_factor =  0.05
+				air_defence_factor = 0.1
+				air_range_factor = 0.10
+				air_intercept_efficiency = 0.1
+				air_night_penalty = -0.5
+				air_superiority_detect_factor = 0.1
 			}
 			equipment_bonus = {
 				small_plane_airframe = {
@@ -83,7 +83,7 @@ ideas = {
 				}
 			}
 		}
-		YJ_FIN_4_ideas = { #北欧工业整合
+		YJ_FIN_4_ideas = {
 
 			allowed = {
 				always = no
@@ -99,15 +99,15 @@ ideas = {
 
 			modifier = {
 				custom_modifier_tooltip = YJ_FIN_4_ideas_tt
-				industrial_capacity_factory = 0.1 #工厂产出
-				production_factory_max_efficiency_factor = 0.05 #生产效率上限
-				production_factory_efficiency_gain_factor = 0.1 #生产效率增长
-				line_change_production_efficiency_factor = 0.1 #生产效率保持
-				production_speed_buildings_factor = 0.1 #建造速度
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.1
 			}
 		}
 		
-		YJ_FIN_5_ideas = { #冬季小棉袄
+		YJ_FIN_5_ideas = {
 
 			allowed = {
 				always = no
@@ -122,13 +122,13 @@ ideas = {
 			picture = FIN_funs_from_kalevala_koru_oy
 
 			modifier = {
-				political_power_gain =  0.10 #每日获得的政治点数
-				winter_attrition_factor = -0.2  #冬季损耗
-				acclimatization_cold_climate_gain_factor = 0.2 #冬季寒冷适应
+				political_power_gain =  0.10
+				winter_attrition_factor = -0.2
+				acclimatization_cold_climate_gain_factor = 0.2
 			}
 		}
 
-		YJ_FIN_05_ideas = { #冰火人
+		YJ_FIN_05_ideas = {
 
 			allowed = {
 				always = no
@@ -147,7 +147,7 @@ ideas = {
 			}
 		}
 
-		YJ_FIN_6_ideas = { #雪地行者
+		YJ_FIN_6_ideas = {
 
 			allowed = {
 				always = no
@@ -162,19 +162,19 @@ ideas = {
 			picture = NORDIC_army_democratic
 
 			modifier = {
-				army_strength_factor = 0.1 							# HP
-				army_speed_factor = 0.1 							#陆军师速度
-				army_org_factor = 0.1 								# 陆军组织度
-				experience_loss_factor = -0.3 						#有经验的士兵损失
-				land_reinforce_rate = 0.05 #增援率
-				air_attack_factor =  0.05  #对空攻击
-				air_range_factor = 0.05 				#航程
-				air_intercept_efficiency = 0.1 #拦截任务效率
-				air_night_penalty = -0.2 #夜间惩罚
+				army_strength_factor = 0.1
+				army_speed_factor = 0.1
+				army_org_factor = 0.1
+				experience_loss_factor = -0.3
+				land_reinforce_rate = 0.05
+				air_attack_factor =  0.05
+				air_range_factor = 0.05
+				air_intercept_efficiency = 0.1
+				air_night_penalty = -0.2
 			}
 		}
 
-		YJ_FIN_7_ideas = { #旱地难行
+		YJ_FIN_7_ideas = {
 
 			allowed = {
 				always = no
@@ -189,15 +189,15 @@ ideas = {
 			picture = RAJ_partition_chaos_bad
 
 			modifier = {
-				army_strength_factor = -0.2 							# HP
-				army_speed_factor = -0.05 							#陆军师速度
-				army_org_factor = -0.05 								# 陆军组织度
-				experience_loss_factor = 0.1 						#有经验的士兵损失
-				land_reinforce_rate = -0.03 #增援率
-				air_attack_factor =  -0.05  #对空攻击
-				air_range_factor = -0.1 				#航程
-				air_defence_factor = -0.05  #空中防御
-				air_accidents_factor = 0.1   #空军事故
+				army_strength_factor = -0.2
+				army_speed_factor = -0.05
+				army_org_factor = -0.05
+				experience_loss_factor = 0.1
+				land_reinforce_rate = -0.03
+				air_attack_factor =  -0.05
+				air_range_factor = -0.1
+				air_defence_factor = -0.05
+				air_accidents_factor = 0.1
 			}
 		}
 	}

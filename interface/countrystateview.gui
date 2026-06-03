@@ -272,7 +272,7 @@ guiTypes = {
 					iconType = {
 						name = "template_garrison"
 						position = { x = 29 y = 63 }
-						spriteType = "GFX_locked_icon" # Will be replaced by the current template
+						spriteType = "GFX_locked_icon"
 						alwaystransparent = yes
 					}
 				}
@@ -317,7 +317,6 @@ guiTypes = {
 				hide = yes
 			}
 
-			### Positioning of these are controlled by the positionType "countrystateview_weathericons_position" and "countrystateview_weathericons_offset" above
 			iconType = {
 				name = "modifiers_mud_icon"
 				position = { x = 0 y= 0 }
@@ -444,7 +443,6 @@ guiTypes = {
 			name = "stakeholder_country_flag"
 			quadTextureSprite ="GFX_flag_small2"
 			position = { x= 0 y = 0 }
-			#Orientation = "UPPER_LEFT"
 		}
 
 		iconType = {
@@ -604,8 +602,6 @@ guiTypes = {
 			spriteType ="GFX_province_landmark_bg"
 		}
 
-		# Since the province building and facility icons are not the same size.
-		# For now use the position type X value as a scale, where 1 = 0.1 scale.
 		positionType = {
 			name = "facility_building_button_scale"
 			position = { x = 4 y = 0}

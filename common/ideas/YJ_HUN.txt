@@ -15,11 +15,11 @@ ideas = {
 			picture = HUN_apostolic_kingdom_idea
 
 			modifier = {
-				conscription = 0.05 #适役人口
-				cavalry_attack_factor = 0.15 #骑兵攻击
-				cavalry_defence_factor = 0.4 #骑兵防御
-				stability_weekly = 0.002 #每周稳定度增长
-				war_support_weekly = 0.002 #每周战争支持度增长
+				conscription = 0.05
+				cavalry_attack_factor = 0.15
+				cavalry_defence_factor = 0.4
+				stability_weekly = 0.002
+				war_support_weekly = 0.002
 			}
 		}
 
@@ -38,13 +38,13 @@ ideas = {
 			picture = HUN_apostolic_kingdom_idea
 
 			modifier = {
-				conscription =  0.2   #适役人口
-				conscription_factor = 0.3 #适役人口系数
-				weekly_manpower = 3000 #每周人力
-				cavalry_attack_factor = 0.15 #骑兵攻击
-				cavalry_defence_factor = 0.4 #骑兵防御
-				stability_weekly = 0.002 #每周稳定度增长
-				war_support_weekly = 0.002 #每周战争支持度增长
+				conscription =  0.2
+				conscription_factor = 0.3
+				weekly_manpower = 3000
+				cavalry_attack_factor = 0.15
+				cavalry_defence_factor = 0.4
+				stability_weekly = 0.002
+				war_support_weekly = 0.002
 				global_building_slots = 10
 			}
 		}
@@ -64,13 +64,13 @@ ideas = {
 			picture = HUN_apostolic_kingdom_idea
 
 			modifier = {
-				conscription =  0.2   #适役人口
-				conscription_factor = 0.3 #适役人口系数
-				weekly_manpower = 3000 #每周人力
-				cavalry_attack_factor = 0.15 #骑兵攻击
-				cavalry_defence_factor = 0.4 #骑兵防御
-				stability_weekly = 0.002 #每周稳定度增长
-				war_support_weekly = 0.002 #每周战争支持度增长
+				conscription =  0.2
+				conscription_factor = 0.3
+				weekly_manpower = 3000
+				cavalry_attack_factor = 0.15
+				cavalry_defence_factor = 0.4
+				stability_weekly = 0.002
+				war_support_weekly = 0.002
 				global_building_slots = 20
 			}
 		}
@@ -91,7 +91,7 @@ ideas = {
 			picture = HUN_turul_association_idea
 
 			modifier = {
-				compliance_gain = 0.05 #每日顺从度增长
+				compliance_gain = 0.05
 				industrial_capacity_factory = 0.03
 			}
 		}
@@ -111,7 +111,7 @@ ideas = {
 
 			modifier = {
 				custom_modifier_tooltip = YJ_HUN_2_ideas_tt
-				political_power_gain = 0.2 						# 每日获得的政治点数
+				political_power_gain = 0.2
 				political_power_factor = 0.25
 				research_speed_factor = 0.1
 			}
@@ -132,8 +132,8 @@ ideas = {
 
 			modifier = {
 				max_planning = 0.05
-				army_org_factor = 0.1 #陆军组织度
-		        army_morale_factor = 0.1 #组织度恢复
+				army_org_factor = 0.1
+		        army_morale_factor = 0.1
 				army_attack_against_major_factor = 0.1
 				army_defence_against_major_factor = 0.1
 			}
@@ -159,12 +159,12 @@ ideas = {
 			picture = generic_air_fighter
 
 			modifier = { 
-				global_building_slots = 5 #最大地区数
-				consumer_goods_factor = -0.15 #生活消费品工厂系数
-				production_factory_max_efficiency_factor = 0.1 #生产效率上限
-                production_factory_efficiency_gain_factor = 0.15 #生产效率增长
-				industrial_capacity_factory = 0.1 #工厂产出
-				production_speed_buildings_factor = 0.05 #建造速度
+				global_building_slots = 5
+				consumer_goods_factor = -0.15
+				production_factory_max_efficiency_factor = 0.1
+                production_factory_efficiency_gain_factor = 0.15
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.05
 			}
 			equipment_bonus = {
 				fighter = {

@@ -15,15 +15,15 @@ ideas = {
 			picture = generic_acquire_tanks
 
 			modifier = {
-				army_speed_factor = 0.3 #陆军师速度
+				army_speed_factor = 0.3
 				planning_decay_rate_factor = -0.1
-				supply_node_range = 0.2 #补给范围
-				army_strength_factor = 0.1 #HP
-				army_org_factor = 0.1 #陆军组织度
+				supply_node_range = 0.2
+				army_strength_factor = 0.1
+				army_org_factor = 0.1
 				factory_energy_consumption = -0.3
-				army_bonus_air_superiority_factor = 0.1 #制空权
-				air_agility_factor = 0.05 #机动
-				air_range_factor = 0.05 #航程
+				army_bonus_air_superiority_factor = 0.1
+				air_agility_factor = 0.05
+				air_range_factor = 0.05
 			}
 			equipment_bonus = {
 				armor = {
@@ -50,12 +50,12 @@ ideas = {
 			picture = generic_armor
 
 			modifier = {
-				army_armor_attack_factor = 0.1 #装甲攻击
-				mechanized_attack_factor = 0.1 #机械化步兵攻击
-				coordination_bonus = 0.05 #协同性
-				army_strength_factor = 0.1 #HP
-				initiative_factor = 0.1 #主动性
-				breakthrough_factor = 0.1 #突破
+				army_armor_attack_factor = 0.1
+				mechanized_attack_factor = 0.1
+				coordination_bonus = 0.05
+				army_strength_factor = 0.1
+				initiative_factor = 0.1
+				breakthrough_factor = 0.1
 			}
 		}
 		YJ_GER_3_ideas = {
@@ -73,12 +73,12 @@ ideas = {
 			picture = GER_german_military
 
 			modifier = {	
-				command_power_gain = 0.5 #每日指挥点增长
-				army_strength_factor = 0.1 #HP
-				max_command_power = 500 #最大指挥点数提高多少
-				army_attack_factor = 0.10  							# 陆军师攻击
-				army_defence_factor = 0.10 							# 陆军师防御
-				army_org_factor = 0.10 #陸軍師組織度
+				command_power_gain = 0.5
+				army_strength_factor = 0.1
+				max_command_power = 500
+				army_attack_factor = 0.10
+				army_defence_factor = 0.10
+				army_org_factor = 0.10
 			}
 		}
 		YJ_GER_4_ideas = {
@@ -96,7 +96,7 @@ ideas = {
 			picture = generic_research_bonus
 
 			modifier = {
-				research_speed_factor = 0.20 #研究速度
+				research_speed_factor = 0.20
 				custom_modifier_tooltip = YJ_GER_4_ideas_tt
 			}
 		}
@@ -117,13 +117,13 @@ ideas = {
 			picture = GER_german_trade
 
 			modifier = {
-				production_speed_buildings_factor = 0.05 #建造速度
-				production_factory_max_efficiency_factor = 0.05 #生产效率上限
-				industrial_capacity_factory = 0.05 #工厂产出
-				local_resources_factor = 0.15 #战略资源获取效率
+				production_speed_buildings_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+				local_resources_factor = 0.15
 				factory_energy_consumption = -0.1
-                subversive_activites_upkeep = -1 #颠覆活动成本
-                justify_war_goal_time = -1 #正当化战争目标所需时间
+                subversive_activites_upkeep = -1
+                justify_war_goal_time = -1
 			}
 		}
 		
@@ -144,10 +144,10 @@ ideas = {
 			modifier = {
 				army_attack_against_major_factor = 0.1
 				army_breakthrough_against_minor_factor = 0.15
-				army_core_attack_factor =  0.1 #陆军师核心领土攻击
-				army_core_defence_factor = 0.1 #陆军师核心领土防御
-				land_night_attack = 0.10  #陆战夜战攻击
-				production_speed_supply_node_factor = 1 #补给中心建造速度
+				army_core_attack_factor =  0.1
+				army_core_defence_factor = 0.1
+				land_night_attack = 0.10
+				production_speed_supply_node_factor = 1
 			}
 		}
 
@@ -168,10 +168,10 @@ ideas = {
 			modifier = {
 				custom_modifier_tooltip = YJ_GER_01_ideas_tt
 				neutrality_drift = 0.2
-				political_power_factor = 0.25 #政治点数
-				stability_factor = 0.1 #稳定度
-				stability_weekly = 0.002 #每周稳定度增长
-				war_support_weekly = 0.002 #每周战争支持度增长
+				political_power_factor = 0.25
+				stability_factor = 0.1
+				stability_weekly = 0.002
+				war_support_weekly = 0.002
 			}
 		}
 
@@ -191,12 +191,12 @@ ideas = {
 			picture = generic_spy_political
 
 			modifier = {
-				political_power_factor = 0.25 #政治点数
-				intel_from_operatives_factor = 0.15 #特工渗透获得的情报 百分比
-				intelligence_agency_defense = 0.3 #反间谍
-				subversive_activites_upkeep = -0.25 #颠覆活动成本
-				operative_slot = 4 #特工数量
-				enemy_operative_capture_chance_factor = 0.1 #捕获敌方特工的几率 百分比修正
+				political_power_factor = 0.25
+				intel_from_operatives_factor = 0.15
+				intelligence_agency_defense = 0.3
+				subversive_activites_upkeep = -0.25
+				operative_slot = 4
+				enemy_operative_capture_chance_factor = 0.1
 				boost_ideology_mission_factor = 1
 				propaganda_mission_factor = 1
 				operation_risk = -0.2

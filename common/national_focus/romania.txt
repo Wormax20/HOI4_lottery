@@ -7,7 +7,6 @@ focus_tree = {
 		modifier = {
 			add = 10
 			tag = ROM
-			#always = no
 			has_dlc = "Death or Dishonor"
 		}
 	}
@@ -16,50 +15,9 @@ focus_tree = {
 
 	continuous_focus_position = { x = 50 y = 1100 }
 
-#	focus = {
-#		id = ROM_
-#		icon = GFX_
-#		prerequisite = { focus = }
-#		mutually_exclusive = { focus =  }
-#		x = -3
-#		y = 0
-#		relative_position_id = 
-#
-#		cost = 10
-#
-#		ai_will_do = {
-#			factor = 1
-#		}
-#
-#		available = {
-#
-#		}
-#		
-#		bypass = {
-#
-#		}
-#
-#		cancel_if_invalid = yes
-#		continue_if_invalid = no
-#		available_if_capitulated = no
-#
-#		complete_tooltip = {
-#
-#		}
-#
-#		completion_reward = {
-#
-#		}
-#	} 
-
-	############################
-	##### CATEGORY HERE ! ######
-	############################
 
 
-	############################
-	##### PRESERVE G ROM #######
-	############################
+
 
 	focus = {
 		id = ROM_preserve_greater_romania
@@ -652,7 +610,7 @@ focus_tree = {
 			if = {
 				limit = {
 					POL = {
-						is_faction_leader = yes #Poland did own faction
+						is_faction_leader = yes
 						has_capitulated = no
 					}
 				}
@@ -717,7 +675,7 @@ focus_tree = {
 						FRA = {
 							OR = {
 								NOT = { is_in_faction_with = ENG }
-								is_faction_leader = yes #if France has formed the little entente
+								is_faction_leader = yes
 							}
 						}
 					}
@@ -882,9 +840,6 @@ focus_tree = {
 		}
 	}
 
-	############################
-	##### INDUSTRY BRANCH ######
-	############################
 
 	focus = {
 		id = ROM_civil_works
@@ -1496,9 +1451,6 @@ focus_tree = {
 		}
 	}
 
-	##########################
-	### BALKANS DOMINANCE ####
-	####¤#####################
 
 	focus = {
 		id = ROM_balkans_dominance
@@ -1530,7 +1482,6 @@ focus_tree = {
 			set_rule = { can_create_factions = yes }
 			if = {
 				limit = { 
-					#has_dlc = "Battle for the Bosporus" #TODO
 				}
 				every_other_country = {
 					limit = {
@@ -1553,7 +1504,6 @@ focus_tree = {
 			hidden_effect = {
 				if = { 
 					limit = {
-						#has_dlc = "Battle for the Bosporus" #TODO
 					}
 					remove_opinion_modifier = {
 						target = BUL
@@ -1776,7 +1726,6 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#Only split if YUG is not at war
 			if = {
 				limit = {
 					YUG = {
@@ -1905,9 +1854,6 @@ focus_tree = {
 		}
 	}
 
-	#############################
-	######## KING BRANCH ########
-	#############################
 
 	focus = {
 		id = ROM_institute_royal_dictatorship
@@ -2224,7 +2170,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			ROM_ion_antonescu = { #Making Antonescu into a Country leader and removing him from his other roles. 
+			ROM_ion_antonescu = {
 				add_country_leader_role = {
 					country_leader = {
 						expire = "1965.1.1"
@@ -2314,7 +2260,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			#Remove ideas or display tooltip warning that it will happen
 			if = {
 				limit = {
 					has_idea = ROM_constitutional_guarantees
@@ -2351,7 +2296,6 @@ focus_tree = {
 			SOV = { add_opinion_modifier = { modifier = ROM_appoint_soviet_friendly_government target = ROOT } }
 			if = {
 				limit = { 
-					#has_dlc = "Battle for the Bosporus" #TODO
 					NOT = {
 						is_in_faction_with = TUR
 						TUR = { is_faction_leader = yes }
@@ -2385,7 +2329,6 @@ focus_tree = {
 				set_country_flag = can_change_sides_com 
 				if = { 
 					limit = {
-						#has_dlc = "Battle for the Bosporus" #TODO
 						NOT = {
 							is_in_faction_with = TUR
 							TUR = { is_faction_leader = yes }
@@ -2451,7 +2394,6 @@ focus_tree = {
 				add_ideas = ROM_securitate	
 			}
 			
-			#Remove ideas or display tooltip warning that it will happen
 			if = {
 				limit = {
 					has_idea = ROM_constitutional_guarantees
@@ -2504,7 +2446,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			#Remove ideas or display tooltip warning that it will happen
 			if = {
 				limit = {
 					has_idea = ROM_securitate
@@ -2612,7 +2553,6 @@ focus_tree = {
 
 			custom_effect_tooltip = CHL_skip_one_line_tt
 
-			#Cancel guarantees
 			diplomatic_relation = {
 				country = YUG
 				relation = guarantee
@@ -2682,7 +2622,6 @@ focus_tree = {
 					add_ideas = ROM_iron_guard
 				}
 			}
-			#Remove ideas or display tooltip warning that it will happen
 			if = {
 				limit = {
 					has_idea = ROM_securitate
@@ -2758,7 +2697,6 @@ focus_tree = {
 					add_ideas = ROM_national_christian_party_in_power
 				}
 			}
-			#Remove ideas or display tooltip warning that it will happen
 			if = {
 				limit = {
 					has_idea = ROM_securitate
@@ -2814,7 +2752,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			#Removes king carol and makes the most popular party the ruling one
 			if = {
 				limit = { 
 					has_country_leader = { 
@@ -2998,7 +2935,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			#Remove ideas or display tooltip warning that it will happen
 			if = {
 				limit = {
 					has_idea = ROM_iron_guard
@@ -3067,7 +3003,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_ideas = ROM_constitutional_guarantees
-			#Remove ideas or display tooltip warning that it will happen
 			if = {
 				limit = {
 					has_idea = ROM_iron_guard
@@ -3151,9 +3086,6 @@ focus_tree = {
 		}
 	}
 
-	############################
-	######## AIR BRANCH ########
-	############################
 
 	focus = {
 		id = ROM_expand_the_air_force
@@ -3699,7 +3631,7 @@ focus_tree = {
 					create_equipment_variant = {
 						name = "IAR 80"
 						type = small_plane_airframe_2
-						allow_without_tech = yes #Makes no difference since appropriate tech is already researched, but it improves tooltip
+						allow_without_tech = yes
 						modules = {
 							fixed_main_weapon_slot = light_mg_4x
 							fixed_auxiliary_weapon_slot_1 = light_mg_2x
@@ -3829,9 +3761,6 @@ focus_tree = {
 		}
 	}
 
-	############################
-	####### ARMY BRANCH ########
-	############################
 
 	focus = {
 		id = ROM_army_maneuvers
@@ -4271,7 +4200,6 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = ROM_the_armored_division_tt
-			#Give template depending on recon tech and medium
 			hidden_effect = {
 				if = {
 					limit = {
@@ -4334,7 +4262,6 @@ focus_tree = {
 								support = {
 									engineer = { x = 0 y = 0 }
 									artillery = { x = 0 y = 1 }
-									#recon = { x = 0 y = 2 }
 								}
 							}
 							else = {
@@ -4525,9 +4452,6 @@ focus_tree = {
 		}
 	}
 
-	############################
-	####### NAVY BRANCH ########
-	############################
 
 	focus = {
 		id = ROM_expand_the_galati_shipyards
@@ -4628,10 +4552,6 @@ focus_tree = {
 				mio:ROM_galati_shipyard_organization = {
 					add_mio_funds = 2500
 				}
-#					unlock_mio_trait_tooltip  = {
-#						department = ROM_mio_department_design_ship_capital_screen_weapons
-#						trait = ROM_mio_trait_coastal_defense_weapons
-#					}
 			}
 
 			else = {
@@ -4669,7 +4589,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = ROM_coastal_defense_ships
-			#custom_effect_tooltip = ROM_coastal_defense_ships_tech_tt
 			if = { 
 				limit = { has_dlc = "Man the Guns" }
 				set_technology = { coastal_defense_ships = 1 } 

@@ -1,0 +1,1005 @@
+﻿KoKi_YJ_MEX_decisions_categories = {
+	KoKi_YJ_MEX_decisions_categories_0 = {
+		icon = GFX_decision_generic_form_nation
+		allowed = {
+			always = yes
+		}
+		available = {
+			date > 1938.1.1
+		}
+		visible = {
+			has_war_with = GER
+			OR = {
+				is_in_faction_with = USA
+				is_in_faction_with = ENG
+				is_in_faction_with = BRA
+			}
+		}
+		cost = 100
+		days_remove = 0
+		days_re_enable = 0
+		fire_only_once = yes
+		modifier = {
+		}
+		complete_effect = {
+		    custom_effect_tooltip = KoKi_YJ_MEX_decisions_categories_0_txt
+			effect_tooltip = {
+				add_dynamic_modifier = {
+					modifier = YJ_MEX_state_2_ideas
+				}
+			}
+		    hidden_effect = {
+				MEX_state_YJ_scripted_effects = yes
+			}
+		}
+		cancel_trigger = {
+		}
+		cancel_effect = {
+		}
+		remove_effect = {
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+	KoKi_YJ_MEX_decisions_categories_1 = {
+		icon = GFX_decision_hol_draw_up_staff_plans
+		allowed = {
+			date > 1938.1.1
+		}
+		available = {
+			has_war_with = GER
+			OR = {
+				is_in_faction_with = USA
+				is_in_faction_with = ENG
+				is_in_faction_with = BRA
+			}
+		}
+		custom_cost_text = decision_cost_CP_50
+		custom_cost_trigger = {
+			command_power > 49
+		}
+		visible = {
+			has_idea = YJ_MEX_1_ideas
+			original_tag = MEX
+			FROM = {
+				OR = {
+					AND = {
+						OR = {
+							is_controlled_by = USA
+							is_controlled_by = BRA
+							is_controlled_by = ENG
+							is_controlled_by = MEX
+							is_controlled_by = RAJ
+							is_controlled_by = PHI
+							is_controlled_by = CAN
+						}
+						any_neighbor_state = {
+							is_controlled_by = GER
+						}
+					}
+					AND = {
+						is_controlled_by = GER
+						any_neighbor_state = {
+							OR = {
+								is_controlled_by = USA
+								is_controlled_by = BRA
+								is_controlled_by = ENG
+								is_controlled_by = MEX
+								is_controlled_by = RAJ
+								is_controlled_by = PHI
+								is_controlled_by = CAN
+							}
+						}
+					}
+				}
+			}
+		}
+		state_target = yes
+		target_root_trigger = {
+			has_war_with = GER
+			num_of_controlled_states > 0
+		}
+		on_map_mode = map_only
+		cost = 0    
+		days_remove = 7  
+		target_trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						OR = {
+							is_controlled_by = USA
+							is_controlled_by = BRA
+							is_controlled_by = ENG
+							is_controlled_by = MEX
+							is_controlled_by = RAJ
+							is_controlled_by = PHI
+							is_controlled_by = CAN
+						}
+						any_neighbor_state = {
+							is_controlled_by = GER
+						}
+					}
+					AND = {
+						is_controlled_by = GER
+						any_neighbor_state = {
+							OR = {
+								is_controlled_by = USA
+								is_controlled_by = BRA
+								is_controlled_by = ENG
+								is_controlled_by = MEX
+								is_controlled_by = RAJ
+								is_controlled_by = PHI
+								is_controlled_by = CAN
+							}
+						}
+					}
+				}
+			}
+		}
+		complete_effect = { 
+		    add_command_power = -50
+		}
+		remove_effect = {  
+			custom_effect_tooltip = KoKi_YJ_MEX_decisions_categories_txt
+			effect_tooltip = {
+				add_dynamic_modifier = {
+					modifier = YJ_MEX_state_1_ideas
+					days = 90
+				}
+			}
+		    hidden_effect = {
+				FROM = {
+					add_dynamic_modifier = {
+						modifier = YJ_MEX_state_1_ideas
+						scope = USA
+						days = 90
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_MEX_state_1_ideas
+						scope = ENG
+						days = 90
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_MEX_state_1_ideas
+						scope = BRA
+						days = 90
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_MEX_state_1_ideas
+						scope = MEX
+						days = 90
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_MEX_state_1_ideas
+						scope = RAJ
+						days = 90
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_MEX_state_1_ideas
+						scope = PHI
+						days = 90
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_MEX_state_1_ideas
+						scope = CAN
+						days = 90
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1  
+		}
+	}
+	KoKi_YJ_MEX_decisions_categories_2 = {
+		icon = GFX_decision_hol_draw_up_staff_plans
+		allowed = {
+			date > 1938.1.1
+		}
+		available = {
+			has_war_with = ITA
+			OR = {
+				is_in_faction_with = USA
+				is_in_faction_with = ENG
+				is_in_faction_with = BRA
+			}
+		}
+		custom_cost_text = decision_cost_CP_50
+		custom_cost_trigger = {
+			command_power > 49
+		}
+		visible = {
+			has_idea = YJ_MEX_1_ideas
+			original_tag = MEX
+			FROM = {
+				OR = {
+					AND = {
+						OR = {
+							is_controlled_by = USA
+							is_controlled_by = BRA
+							is_controlled_by = ENG
+							is_controlled_by = MEX
+							is_controlled_by = RAJ
+							is_controlled_by = PHI
+							is_controlled_by = CAN
+						}
+						any_neighbor_state = {
+							is_controlled_by = ITA
+						}
+					}
+					AND = {
+						is_controlled_by = ITA
+						any_neighbor_state = {
+							OR = {
+								is_controlled_by = USA
+								is_controlled_by = BRA
+								is_controlled_by = ENG
+								is_controlled_by = MEX
+								is_controlled_by = RAJ
+								is_controlled_by = PHI
+								is_controlled_by = CAN
+							}
+						}
+					}
+				}
+			}
+		}
+		state_target = yes
+		target_root_trigger = {
+			has_war_with = ITA
+			num_of_controlled_states > 0
+		}
+		on_map_mode = map_only
+		cost = 0    
+		days_remove = 7  
+		target_trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						OR = {
+							is_controlled_by = USA
+							is_controlled_by = BRA
+							is_controlled_by = ENG
+							is_controlled_by = MEX
+							is_controlled_by = RAJ
+							is_controlled_by = PHI
+							is_controlled_by = CAN
+						}
+						any_neighbor_state = {
+							is_controlled_by = ITA
+						}
+					}
+					AND = {
+						is_controlled_by = ITA
+						any_neighbor_state = {
+							OR = {
+								is_controlled_by = USA
+								is_controlled_by = BRA
+								is_controlled_by = ENG
+								is_controlled_by = MEX
+								is_controlled_by = RAJ
+								is_controlled_by = PHI
+								is_controlled_by = CAN
+							}
+						}
+					}
+				}
+			}
+		}
+		complete_effect = { 
+		    add_command_power = -50
+		}
+		remove_effect = {  
+			custom_effect_tooltip = KoKi_YJ_MEX_decisions_categories_txt
+			effect_tooltip = {
+				add_dynamic_modifier = {
+					modifier = YJ_MEX_state_1_ideas
+					days = 90
+				}
+			}
+		    hidden_effect = {
+				FROM = {
+					add_dynamic_modifier = {
+						modifier = YJ_MEX_state_1_ideas
+						scope = USA
+						days = 90
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_MEX_state_1_ideas
+						scope = ENG
+						days = 90
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_MEX_state_1_ideas
+						scope = BRA
+						days = 90
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_MEX_state_1_ideas
+						scope = MEX
+						days = 90
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_MEX_state_1_ideas
+						scope = RAJ
+						days = 90
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_MEX_state_1_ideas
+						scope = PHI
+						days = 90
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_MEX_state_1_ideas
+						scope = CAN
+						days = 90
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1  
+		}
+	}
+	KoKi_YJ_MEX_decisions_categories_3 = {
+		icon = GFX_decision_hol_draw_up_staff_plans
+		allowed = {
+			date > 1938.1.1
+		}
+		available = {
+			has_war_with = FRA
+			OR = {
+				is_in_faction_with = USA
+				is_in_faction_with = ENG
+				is_in_faction_with = BRA
+			}
+		}
+		custom_cost_text = decision_cost_CP_50
+		custom_cost_trigger = {
+			command_power > 49
+		}
+		visible = {
+			has_idea = YJ_MEX_1_ideas
+			original_tag = MEX
+			FROM = {
+				OR = {
+					AND = {
+						OR = {
+							is_controlled_by = USA
+							is_controlled_by = BRA
+							is_controlled_by = ENG
+							is_controlled_by = MEX
+							is_controlled_by = RAJ
+							is_controlled_by = PHI
+							is_controlled_by = CAN
+						}
+						any_neighbor_state = {
+							is_controlled_by = FRA
+						}
+					}
+					AND = {
+						is_controlled_by = FRA
+						any_neighbor_state = {
+							OR = {
+								is_controlled_by = USA
+								is_controlled_by = BRA
+								is_controlled_by = ENG
+								is_controlled_by = MEX
+								is_controlled_by = RAJ
+								is_controlled_by = PHI
+								is_controlled_by = CAN
+							}
+						}
+					}
+				}
+			}
+		}
+		state_target = yes
+		target_root_trigger = {
+			has_war_with = FRA
+			num_of_controlled_states > 0
+		}
+		on_map_mode = map_only
+		cost = 0    
+		days_remove = 7  
+		target_trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						OR = {
+							is_controlled_by = USA
+							is_controlled_by = BRA
+							is_controlled_by = ENG
+							is_controlled_by = MEX
+							is_controlled_by = RAJ
+							is_controlled_by = PHI
+							is_controlled_by = CAN
+						}
+						any_neighbor_state = {
+							is_controlled_by = FRA
+						}
+					}
+					AND = {
+						is_controlled_by = FRA
+						any_neighbor_state = {
+							OR = {
+								is_controlled_by = USA
+								is_controlled_by = BRA
+								is_controlled_by = ENG
+								is_controlled_by = MEX
+								is_controlled_by = RAJ
+								is_controlled_by = PHI
+								is_controlled_by = CAN
+							}
+						}
+					}
+				}
+			}
+		}
+		complete_effect = { 
+		    add_command_power = -50
+		}
+		remove_effect = {  
+			custom_effect_tooltip = KoKi_YJ_MEX_decisions_categories_txt
+			effect_tooltip = {
+				add_dynamic_modifier = {
+					modifier = YJ_MEX_state_1_ideas
+					days = 90
+				}
+			}
+		    hidden_effect = {
+				FROM = {
+					add_dynamic_modifier = {
+						modifier = YJ_MEX_state_1_ideas
+						scope = USA
+					days = 90
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_MEX_state_1_ideas
+						scope = ENG
+					days = 90
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_MEX_state_1_ideas
+						scope = BRA
+					days = 90
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_MEX_state_1_ideas
+						scope = MEX
+					days = 90
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_MEX_state_1_ideas
+						scope = RAJ
+					days = 90
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_MEX_state_1_ideas
+						scope = PHI
+					days = 90
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_MEX_state_1_ideas
+						scope = CAN
+					days = 90
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0  
+		}
+	}
+	KoKi_YJ_MEX_decisions_categories_4 = {
+		icon = GFX_decision_hol_draw_up_staff_plans
+		allowed = {
+			date > 1938.1.1
+		}
+		available = {
+			has_war_with = BEL
+			OR = {
+				is_in_faction_with = USA
+				is_in_faction_with = ENG
+				is_in_faction_with = BRA
+			}
+		}
+		custom_cost_text = decision_cost_CP_50
+		custom_cost_trigger = {
+			command_power > 49
+		}
+		visible = {
+			has_idea = YJ_MEX_1_ideas
+			original_tag = MEX
+			FROM = {
+				OR = {
+					AND = {
+						OR = {
+							is_controlled_by = USA
+							is_controlled_by = BRA
+							is_controlled_by = ENG
+							is_controlled_by = MEX
+							is_controlled_by = RAJ
+							is_controlled_by = PHI
+							is_controlled_by = CAN
+						}
+						any_neighbor_state = {
+							is_controlled_by = BEL
+						}
+					}
+					AND = {
+						is_controlled_by = BEL
+						any_neighbor_state = {
+							OR = {
+								is_controlled_by = USA
+								is_controlled_by = BRA
+								is_controlled_by = ENG
+								is_controlled_by = MEX
+								is_controlled_by = RAJ
+								is_controlled_by = PHI
+								is_controlled_by = CAN
+							}
+						}
+					}
+				}
+			}
+		}
+		state_target = yes
+		target_root_trigger = {
+			has_war_with = BEL
+			num_of_controlled_states > 0
+		}
+		on_map_mode = map_only
+		cost = 0    
+		days_remove = 7  
+		target_trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						OR = {
+							is_controlled_by = USA
+							is_controlled_by = BRA
+							is_controlled_by = ENG
+							is_controlled_by = MEX
+							is_controlled_by = RAJ
+							is_controlled_by = PHI
+							is_controlled_by = CAN
+						}
+						any_neighbor_state = {
+							is_controlled_by = BEL
+						}
+					}
+					AND = {
+						is_controlled_by = BEL
+						any_neighbor_state = {
+							OR = {
+								is_controlled_by = USA
+								is_controlled_by = BRA
+								is_controlled_by = ENG
+								is_controlled_by = MEX
+								is_controlled_by = RAJ
+								is_controlled_by = PHI
+								is_controlled_by = CAN
+							}
+						}
+					}
+				}
+			}
+		}
+		complete_effect = { 
+		    add_command_power = -50
+		}
+		remove_effect = {  
+			custom_effect_tooltip = KoKi_YJ_MEX_decisions_categories_txt
+			effect_tooltip = {
+				add_dynamic_modifier = {
+					modifier = YJ_MEX_state_1_ideas
+					days = 90
+				}
+			}
+		    hidden_effect = {
+				FROM = {
+					add_dynamic_modifier = {
+						modifier = YJ_MEX_state_1_ideas
+						scope = USA
+					days = 90
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_MEX_state_1_ideas
+						scope = ENG
+					days = 90
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_MEX_state_1_ideas
+						scope = BRA
+					days = 90
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_MEX_state_1_ideas
+						scope = MEX
+					days = 90
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_MEX_state_1_ideas
+						scope = RAJ
+					days = 90
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_MEX_state_1_ideas
+						scope = PHI
+					days = 90
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_MEX_state_1_ideas
+						scope = CAN
+					days = 90
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0  
+		}
+	}
+	KoKi_YJ_MEX_decisions_categories_5 = {
+		icon = GFX_decision_hol_draw_up_staff_plans
+		allowed = {
+			date > 1938.1.1
+		}
+		available = {
+			has_war_with = JAP
+			OR = {
+				is_in_faction_with = USA
+				is_in_faction_with = ENG
+				is_in_faction_with = BRA
+			}
+		}
+		custom_cost_text = decision_cost_CP_50
+		custom_cost_trigger = {
+			command_power > 49
+		}
+		visible = {
+			has_idea = YJ_MEX_1_ideas
+			original_tag = MEX
+			FROM = {
+				OR = {
+					AND = {
+						OR = {
+							is_controlled_by = USA
+							is_controlled_by = BRA
+							is_controlled_by = ENG
+							is_controlled_by = MEX
+							is_controlled_by = RAJ
+							is_controlled_by = PHI
+							is_controlled_by = CAN
+						}
+						any_neighbor_state = {
+							is_controlled_by = JAP
+						}
+					}
+					AND = {
+						is_controlled_by = JAP
+						any_neighbor_state = {
+							OR = {
+								is_controlled_by = USA
+								is_controlled_by = BRA
+								is_controlled_by = ENG
+								is_controlled_by = MEX
+								is_controlled_by = RAJ
+								is_controlled_by = PHI
+								is_controlled_by = CAN
+							}
+						}
+					}
+				}
+			}
+		}
+		state_target = yes
+		target_root_trigger = {
+			has_war_with = JAP
+			num_of_controlled_states > 0
+		}
+		on_map_mode = map_only
+		cost = 0    
+		days_remove = 7  
+		target_trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						OR = {
+							is_controlled_by = USA
+							is_controlled_by = BRA
+							is_controlled_by = ENG
+							is_controlled_by = MEX
+							is_controlled_by = RAJ
+							is_controlled_by = PHI
+							is_controlled_by = CAN
+						}
+						any_neighbor_state = {
+							is_controlled_by = JAP
+						}
+					}
+					AND = {
+						is_controlled_by = JAP
+						any_neighbor_state = {
+							OR = {
+								is_controlled_by = USA
+								is_controlled_by = BRA
+								is_controlled_by = ENG
+								is_controlled_by = MEX
+								is_controlled_by = RAJ
+								is_controlled_by = PHI
+								is_controlled_by = CAN
+							}
+						}
+					}
+				}
+			}
+		}
+		complete_effect = { 
+		    add_command_power = -50
+		}
+		remove_effect = {  
+			custom_effect_tooltip = KoKi_YJ_MEX_decisions_categories_txt
+			effect_tooltip = {
+				add_dynamic_modifier = {
+					modifier = YJ_MEX_state_1_ideas
+					days = 90
+				}
+			}
+		    hidden_effect = {
+				FROM = {
+					add_dynamic_modifier = {
+						modifier = YJ_MEX_state_1_ideas
+						scope = USA
+					days = 90
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_MEX_state_1_ideas
+						scope = ENG
+					days = 90
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_MEX_state_1_ideas
+						scope = BRA
+					days = 90
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_MEX_state_1_ideas
+						scope = MEX
+					days = 90
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_MEX_state_1_ideas
+						scope = RAJ
+					days = 90
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_MEX_state_1_ideas
+						scope = PHI
+					days = 90
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_MEX_state_1_ideas
+						scope = CAN
+					days = 90
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0  
+		}
+	}
+
+	KoKi_YJ_MEX_decisions_categories_6 = {
+		icon = GFX_decision_hol_draw_up_staff_plans
+		allowed = {
+			date > 1938.1.1
+		}
+		available = {
+			has_war_with = TUR
+			OR = {
+				is_in_faction_with = USA
+				is_in_faction_with = ENG
+				is_in_faction_with = BRA
+			}
+		}
+		custom_cost_text = decision_cost_CP_50
+		custom_cost_trigger = {
+			command_power > 49
+		}
+		visible = {
+			has_idea = YJ_MEX_1_ideas
+			original_tag = MEX
+			FROM = {
+				OR = {
+					AND = {
+						OR = {
+							is_controlled_by = USA
+							is_controlled_by = BRA
+							is_controlled_by = ENG
+							is_controlled_by = MEX
+							is_controlled_by = RAJ
+							is_controlled_by = PHI
+							is_controlled_by = CAN
+						}
+						any_neighbor_state = {
+							is_controlled_by = TUR
+						}
+					}
+					AND = {
+						is_controlled_by = TUR
+						any_neighbor_state = {
+							OR = {
+								is_controlled_by = USA
+								is_controlled_by = BRA
+								is_controlled_by = ENG
+								is_controlled_by = MEX
+								is_controlled_by = RAJ
+								is_controlled_by = PHI
+								is_controlled_by = CAN
+							}
+						}
+					}
+				}
+			}
+		}
+		state_target = yes
+		target_root_trigger = {
+			has_war_with = TUR
+			num_of_controlled_states > 0
+		}
+		on_map_mode = map_only
+		cost = 0    
+		days_remove = 7  
+		target_trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						OR = {
+							is_controlled_by = USA
+							is_controlled_by = BRA
+							is_controlled_by = ENG
+							is_controlled_by = MEX
+							is_controlled_by = RAJ
+							is_controlled_by = PHI
+							is_controlled_by = CAN
+						}
+						any_neighbor_state = {
+							is_controlled_by = TUR
+						}
+					}
+					AND = {
+						is_controlled_by = TUR
+						any_neighbor_state = {
+							OR = {
+								is_controlled_by = USA
+								is_controlled_by = BRA
+								is_controlled_by = ENG
+								is_controlled_by = MEX
+								is_controlled_by = RAJ
+								is_controlled_by = PHI
+								is_controlled_by = CAN
+							}
+						}
+					}
+				}
+			}
+		}
+		complete_effect = { 
+		    add_command_power = -50
+		}
+		remove_effect = {  
+			custom_effect_tooltip = KoKi_YJ_MEX_decisions_categories_txt
+			effect_tooltip = {
+				add_dynamic_modifier = {
+					modifier = YJ_MEX_state_1_ideas
+					days = 90
+				}
+			}
+		    hidden_effect = {
+				FROM = {
+					add_dynamic_modifier = {
+						modifier = YJ_MEX_state_1_ideas
+						scope = USA
+					days = 90
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_MEX_state_1_ideas
+						scope = ENG
+					days = 90
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_MEX_state_1_ideas
+						scope = BRA
+					days = 90
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_MEX_state_1_ideas
+						scope = MEX
+					days = 90
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_MEX_state_1_ideas
+						scope = RAJ
+					days = 90
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_MEX_state_1_ideas
+						scope = PHI
+					days = 90
+					}
+					add_dynamic_modifier = {
+						modifier = YJ_MEX_state_1_ideas
+						scope = CAN
+					days = 90
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0  
+		}
+	}
+}
+
+MEX_integrate_state_decisions_categories = {
+	MEX_integrate_state = {
+		icon = GFX_decision_generic_operation
+		allowed = {
+			original_tag = MEX
+		}
+		available = {
+			date > 1938.1.1
+		}
+		
+		visible = {
+			any_owned_state = {
+				is_on_continent = south_america
+				NOT = {
+					is_core_of = ROOT
+				}
+			}
+		}
+		state_target = yes
+		target_trigger = {
+		    FROM = {
+		    	is_fully_controlled_by = ROOT
+		    	is_on_continent = south_america
+		    	NOT = {
+		    		is_core_of = ROOT
+		    	}
+		    }
+		}
+		on_map_mode = map_and_decisions_view
+		cost = 10
+		ai_will_do = {
+			base = 50
+			modifier = {
+				factor = 10
+				any_owned_state = {
+					NOT = {
+						is_core_of = ROOT
+					}
+					is_on_continent = south_america
+				}
+			}
+		}
+		fire_only_once = no
+		days_remove = 5
+		complete_effect = {
+		}
+		remove_effect = {
+			FROM = {
+				add_core_of = ROOT
+			}
+		}
+	}
+}

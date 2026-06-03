@@ -105,7 +105,6 @@ focus_tree = {
 	focus = {
 		id = TUR_continue_the_sumerbank_industrialization_scheme
 		icon = GFX_focus_CHL_enlarge_the_textile_industries
-		#mutually_exclusive = { focus = TUR_fully_integrate_the_is_bank }
 		prerequisite = { focus = TUR_continue_the_policy_of_etatism focus = TUR_fully_integrate_the_is_bank }
 		available = {
 			
@@ -311,7 +310,6 @@ focus_tree = {
 	focus = {
 		id = TUR_millet_mektebi_focus 
 		icon = GFX_focus_AFG_education_reform
-		#mutually_exclusive = { focus = TUR_fully_integrate_the_is_bank }
 		prerequisite = { focus = TUR_continue_the_policy_of_etatism focus = TUR_fully_integrate_the_is_bank }
 		available = {
 			
@@ -1540,7 +1538,7 @@ focus_tree = {
 						has_dynamic_modifier = { modifier = islamist_insurgency }
 					}
 				}
-				PREV = { set_temp_variable = { placate_state_1  = PREV }} #At long last Mischief Village, at long last I have found you
+				PREV = { set_temp_variable = { placate_state_1  = PREV }}
 				save_event_target_as = TUR_fundamentalist_state
 				TUR_placate_fundamentalist_state_effect = yes
 			}
@@ -2353,7 +2351,7 @@ focus_tree = {
 		icon = {
 			value = GFX_focus_generic_steel
 			trigger = {
-				SOV = { NOT = { controls_state = 231 } } #APPROPRIATE CONDITIONS FOR GENERIC ICON
+				SOV = { NOT = { controls_state = 231 } }
 			}
 		}
 		icon = GFX_focus_chi_mission_to_the_soviet_union
@@ -2947,7 +2945,7 @@ focus_tree = {
 					has_capitulated = yes
 					has_war_with = ROOT
 					is_in_faction_with = ROOT
-					is_subject = yes #MM: Bulgaria being a subject of anyone (not only TUR) should bypass the focus to prevent the entire branch from becoming locked.
+					is_subject = yes
 				}
 			}
 		}
@@ -2996,7 +2994,6 @@ focus_tree = {
 				set_country_flag = TUR_ott_unified_flag
 				TUR_set_appropriate_cosmetic_tag = yes
 			}
-			#Set appropriate cosmetic tag to work with dynamic 3D models
 
 			unlock_decision_category_tooltip = form_ottoman_empire_category
 		}
@@ -3297,25 +3294,6 @@ focus_tree = {
 			base = 10
 		}
 
-		#bypass = {
-		#	custom_trigger_tooltip = { 
-		#		tooltip = TUR_no_faction_alliance_members_tt
-		#		AND = {
-		#			AFG = {
-		#				NOT = { is_in_faction_with = TUR }
-		#			}
-		#			PER = {
-		#				NOT = { is_in_faction_with = TUR }
-		#			}
-		#			IRQ = {
-		#				NOT = { is_in_faction_with = TUR }
-		#			}
-		#			SYR = {
-		#				NOT = { is_in_faction_with = TUR }
-		#			}
-		#		}
-		#	}
-		#}
 
 		available = {
 			is_subject = no
@@ -4277,7 +4255,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			#Turkey
 			if = {
 				limit = {
 					TUR = {
@@ -4318,7 +4295,6 @@ focus_tree = {
 					}
 				}
 			}
-			#Greece
 			if = {
 				limit = {
 					GRE = {
@@ -4352,7 +4328,6 @@ focus_tree = {
 					}
 				}
 			}
-			#Yugoslavia
 			if = {
 				limit = {
 					YUG = {
@@ -4394,7 +4369,6 @@ focus_tree = {
 					}
 				}
 			}
-			#Romania
 			if = {
 				limit = {
 					ROM = {
@@ -5446,7 +5420,6 @@ focus_tree = {
 					hidden_effect = { set_technology = { basic_medium_tank_chassis = 1 } }
 					custom_effect_tooltip = TUR_add_medium_tank_technology_tt
 				}
-				#TODO Gabriel give them a free design?
 				add_equipment_to_stockpile = { type = medium_tank_chassis_1 amount = 25 }
 			}
 		}
@@ -8075,7 +8048,7 @@ focus_tree = {
 			add_corps_commander_role = {
 				character = TUR_hazi_aslanov
 				traits = { war_hero inflexible_strategist armor_officer winter_specialist }
-				skill = 4 #13
+				skill = 4
 				legacy_id = 78
 				attack_skill = 4
 				defense_skill = 4
@@ -8574,7 +8547,7 @@ focus_tree = {
 					}
 					has_global_flag = TUR_soviets_keeping_eye_on_turkey
 				}
-				SOV = { country_event = { id = bftb_turkey.138 } } #Turkey violates fellow faction member's sovereignty
+				SOV = { country_event = { id = bftb_turkey.138 } }
 			}
 			else_if = {
 				limit = {
@@ -8589,7 +8562,7 @@ focus_tree = {
 					}
 					has_global_flag = TUR_soviets_faction_warning
 				}
-				SOV = { country_event = { id = bftb_turkey.139 } } #Turkey violates fellow faction member's sovereignty again!
+				SOV = { country_event = { id = bftb_turkey.139 } }
 			}
 			else_if = {
 				limit = {
@@ -8609,7 +8582,7 @@ focus_tree = {
 					has_global_flag = TUR_fascist_faction_leader_keeping_eye_on_turkey
 				}
 				var:faction_leader = {
-					country_event = { id = bftb_turkey.138 } #Turkey violates fellow faction member's sovereignty
+					country_event = { id = bftb_turkey.138 }
 				}
 			}
 			else_if = {
@@ -8630,7 +8603,7 @@ focus_tree = {
 					has_global_flag = TUR_fascist_faction_leader_warned_turkey
 				}
 				var:faction_leader = {
-					country_event = { id = bftb_turkey.139 } #Turkey violates fellow faction member's sovereignty again!
+					country_event = { id = bftb_turkey.139 }
 				}
 			}
 			else_if = {
@@ -8693,7 +8666,7 @@ focus_tree = {
 						}
 					}
 				}
-				SOV = { country_event = { id = bftb_turkey.138 } } #Turkey violates fellow faction member's sovereignty
+				SOV = { country_event = { id = bftb_turkey.138 } }
 			}
 			else_if = {
 				limit = {
@@ -8721,7 +8694,7 @@ focus_tree = {
 						}
 					}
 				}
-				SOV = { country_event = { id = bftb_turkey.139 } } #Turkey violates fellow faction member's sovereignty again!
+				SOV = { country_event = { id = bftb_turkey.139 } }
 			}
 			else_if = {
 				limit = {
@@ -8751,7 +8724,7 @@ focus_tree = {
 					}
 				}
 				var:faction_leader = {
-					country_event = { id = bftb_turkey.138 } #Turkey violates fellow faction member's sovereignty
+					country_event = { id = bftb_turkey.138 }
 				}
 			}
 			else_if = {
@@ -8784,7 +8757,7 @@ focus_tree = {
 					}
 				}
 				var:faction_leader = {
-					country_event = { id = bftb_turkey.139 } #Turkey violates fellow faction member's sovereignty again!
+					country_event = { id = bftb_turkey.139 }
 				}
 			}
 		}
@@ -8827,7 +8800,7 @@ focus_tree = {
 						}
 					}
 				}
-				SOV = { country_event = { id = bftb_turkey.138 } } #Turkey violates fellow faction member's sovereignty
+				SOV = { country_event = { id = bftb_turkey.138 } }
 			}
 			else_if = {
 				limit = {
@@ -8848,7 +8821,7 @@ focus_tree = {
 						}
 					}
 				}
-				SOV = { country_event = { id = bftb_turkey.139 } } #Turkey violates fellow faction member's sovereignty again!
+				SOV = { country_event = { id = bftb_turkey.139 } }
 			}
 			else_if = {
 				limit = {
@@ -8871,7 +8844,7 @@ focus_tree = {
 					}
 				}
 				var:faction_leader = {
-					country_event = { id = bftb_turkey.138 } #Turkey violates fellow faction member's sovereignty
+					country_event = { id = bftb_turkey.138 }
 				}
 			}
 			else_if = {
@@ -8895,7 +8868,7 @@ focus_tree = {
 					}
 				}
 				var:faction_leader = {
-					country_event = { id = bftb_turkey.139 } #Turkey violates fellow faction member's sovereignty again!
+					country_event = { id = bftb_turkey.139 }
 				}
 			}
 		}
@@ -8938,7 +8911,7 @@ focus_tree = {
 						}
 					}
 				}
-				SOV = { country_event = { id = bftb_turkey.138 } } #Turkey violates fellow faction member's sovereignty
+				SOV = { country_event = { id = bftb_turkey.138 } }
 			}
 			else_if = {
 				limit = {
@@ -8959,7 +8932,7 @@ focus_tree = {
 						}
 					}
 				}
-				SOV = { country_event = { id = bftb_turkey.139 } } #Turkey violates fellow faction member's sovereignty again!
+				SOV = { country_event = { id = bftb_turkey.139 } }
 			}
 			else_if = {
 				limit = {
@@ -8982,7 +8955,7 @@ focus_tree = {
 					}
 				}
 				var:faction_leader = {
-					country_event = { id = bftb_turkey.138 } #Turkey violates fellow faction member's sovereignty
+					country_event = { id = bftb_turkey.138 }
 				}
 			}
 			else_if = {
@@ -9006,7 +8979,7 @@ focus_tree = {
 					}
 				}
 				var:faction_leader = {
-					country_event = { id = bftb_turkey.139 } #Turkey violates fellow faction member's sovereignty again!
+					country_event = { id = bftb_turkey.139 }
 				}
 			}
 		}
@@ -9031,7 +9004,7 @@ focus_tree = {
 			add_state_core = 231
 			add_state_core = 420
 			add_state_core = 419
-			add_state_core = 1000 #East Azerbaijan
+			add_state_core = 1000
 			add_state_core = 417
 			add_state_claim = 413
 			add_state_claim = 232
@@ -9057,7 +9030,7 @@ focus_tree = {
 						}
 					}
 				}
-				SOV = { country_event = { id = bftb_turkey.138 } } #Turkey violates fellow faction member's sovereignty
+				SOV = { country_event = { id = bftb_turkey.138 } }
 			}
 			else_if = {
 				limit = {
@@ -9081,7 +9054,7 @@ focus_tree = {
 						}
 					}
 				}
-				SOV = { country_event = { id = bftb_turkey.139 } } #Turkey violates fellow faction member's sovereignty again!
+				SOV = { country_event = { id = bftb_turkey.139 } }
 			}
 			else_if = {
 				limit = {
@@ -9107,7 +9080,7 @@ focus_tree = {
 					}
 				}
 				var:faction_leader = {
-					country_event = { id = bftb_turkey.138 } #Turkey violates fellow faction member's sovereignty
+					country_event = { id = bftb_turkey.138 }
 				}
 			}
 			else_if = {
@@ -9134,7 +9107,7 @@ focus_tree = {
 					}
 				}
 				var:faction_leader = {
-					country_event = { id = bftb_turkey.139 } #Turkey violates fellow faction member's sovereignty again!
+					country_event = { id = bftb_turkey.139 }
 				}
 			}
 		}
@@ -9202,7 +9175,7 @@ focus_tree = {
 						}
 					}
 				}
-				SOV = { country_event = { id = bftb_turkey.138 } } #Turkey violates fellow faction member's sovereignty
+				SOV = { country_event = { id = bftb_turkey.138 } }
 			}
 			else_if = {
 				limit = {
@@ -9223,7 +9196,7 @@ focus_tree = {
 						}
 					}
 				}
-				SOV = { country_event = { id = bftb_turkey.139 } } #Turkey violates fellow faction member's sovereignty again!
+				SOV = { country_event = { id = bftb_turkey.139 } }
 			}
 			else_if = {
 				limit = {
@@ -9246,7 +9219,7 @@ focus_tree = {
 					}
 				}
 				var:faction_leader = {
-					country_event = { id = bftb_turkey.138 } #Turkey violates fellow faction member's sovereignty
+					country_event = { id = bftb_turkey.138 }
 				}
 			}
 			else_if = {
@@ -9270,7 +9243,7 @@ focus_tree = {
 					}
 				}
 				var:faction_leader = {
-					country_event = { id = bftb_turkey.139 } #Turkey violates fellow faction member's sovereignty again!
+					country_event = { id = bftb_turkey.139 }
 				}
 			}
 		}
@@ -9323,7 +9296,7 @@ focus_tree = {
 						}
 					}
 				}
-				SOV = { country_event = { id = bftb_turkey.138 } } #Turkey violates fellow faction member's sovereignty
+				SOV = { country_event = { id = bftb_turkey.138 } }
 			}
 			else_if = {
 				limit = {
@@ -9344,7 +9317,7 @@ focus_tree = {
 						}
 					}
 				}
-				SOV = { country_event = { id = bftb_turkey.139 } } #Turkey violates fellow faction member's sovereignty again!
+				SOV = { country_event = { id = bftb_turkey.139 } }
 			}
 			else_if = {
 				limit = {
@@ -9367,7 +9340,7 @@ focus_tree = {
 					}
 				}
 				var:faction_leader = {
-					country_event = { id = bftb_turkey.138 } #Turkey violates fellow faction member's sovereignty
+					country_event = { id = bftb_turkey.138 }
 				}
 			}
 			else_if = {
@@ -9391,7 +9364,7 @@ focus_tree = {
 					}
 				}
 				var:faction_leader = {
-					country_event = { id = bftb_turkey.139 } #Turkey violates fellow faction member's sovereignty again!
+					country_event = { id = bftb_turkey.139 }
 				}
 			}
 		}
@@ -10386,7 +10359,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = TUR_fortified_defensive_bases
 				bonus = 1
-				uses = 1 # was 2
+				uses = 1
 				category = radar_tech
 			}
 

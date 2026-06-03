@@ -1,5 +1,5 @@
 on_actions = {
-	on_monthly_CZE = { #捷克
+	on_monthly_CZE = {
 	    effect = {
 			IF = {
 				limit = {

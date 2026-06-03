@@ -1,36 +1,4 @@
-#	Triggers to control if diplomatic actions are enabled:
-#		Format:
-#
-#		<diplomatic action tag>_enabled_trigger = {
-#			<trigger contents>
-#		}
-#
-#		ROOT is the country initiating the diplomatic action.
-#		FROM is the recipient or target of the diplomatic action.
-#
-#		Note:  For cleaner tooltips, it is recommended that you use
-#			if triggers within the enable triggers, and a single
-#			custom_trigger_tooltip trigger within each if trigger.
-#
-#		Example: (Germany is prevented from declaring war on the Soviet Union.)
-#
-#		DIPLOMACY_WAR_ENABLE_TRIGGER = {
-#			if = {
-#				limit = {
-#					tag = GER
-#				}
-#				custom_trigger_tooltip = {
-#					tooltip = PREVENT_GER_WAR_ON_SOV
-#					FROM = {
-#						NOT = {
-#							tag = SOV
-#						}
-#					}
-#				}
-#			}
-#		}
 
-# This specifically overrides the rule check as to whether or not you can guarantee other ideologies
 
 DIPLOMACY_WAR_ENABLE_TRIGGER = {
     if = {
@@ -54,22 +22,6 @@ DIPLOMACY_WAR_ENABLE_TRIGGER = {
             always = no
         }
     }
-}
-
-DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
-	if = {
-		limit = {
-			GER = {
-				NOT = {
-					has_war_with = SOV
-				}
-			}
-		}
-		custom_trigger_tooltip = {
-			tooltip = YJ_lend_allow_tt
-			always = no 
-		}
-	}
 }
 
 DIPLOMACY_GUARANTEE_ENABLE_TRIGGER_OVERRIDES_GAME_TRIGGER = {
@@ -98,7 +50,7 @@ DIPLOMACY_GUARANTEE_ENABLE_TRIGGER = {
 				option = LIMITED
 			}
 		}
-		always = yes # Handled by game logic.
+		always = yes
 	}
 	if = {
 		limit = {
@@ -1138,7 +1090,7 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 				option = LIMITED
 			}
 		}
-		always = yes #handled by game logic, see above
+		always = yes
 	}
 	if = {
 		limit = {
@@ -1207,7 +1159,7 @@ DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
 				option = LIMITED
 			}
 		}
-		always = yes #handled by game logic, see above
+		always = yes
 	}
 	if = {
 		limit = {
@@ -1624,7 +1576,7 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 				}
 			}
 		}
-		else_if = { #Bulgarian volunteers in SCW (with La Resistance)
+		else_if = {
 			limit = {
 				has_dlc = "Battle for the Bosporus"
 				tag = BUL
@@ -1649,7 +1601,7 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 				}
 			}
 		}
-		else_if = { #Bulgarian volunteers in SCW (without La Resistance)
+		else_if = {
 			limit = {
 				has_dlc = "Battle for the Bosporus"
 				NOT = { has_dlc = "La Resistance" }
@@ -1682,7 +1634,7 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 				}
 			}
 		}
-		else_if = { #Soviet volunteers to China (Communist Soviet -> Only to the supported China)
+		else_if = {
 			limit = {
 				original_tag = SOV
 				has_government = communism
@@ -1720,7 +1672,7 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 				}
 			}
 		}
-		else_if = { #Soviet volunteers to China (other ideologies -> Only to one China)
+		else_if = {
 			limit = {
 				original_tag = SOV
 				NOT = { has_government = communism }
@@ -1737,7 +1689,7 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 				}
 			}
 		}
-		else_if = { #Soviet volunteers to Spain (Commie & Democr) (no POUM) (with No Step Back)
+		else_if = {
 			limit = {
 				has_dlc = "No Step Back"
 				original_tag = SOV
@@ -1773,7 +1725,7 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 				}
 			}
 		}
-		else_if = { #Soviet volunteers to Spain (Commie) (supporting POUM -> POUM split happened -> Stalin in charge) (with No Step Back)
+		else_if = {
 			limit = {
 				has_dlc = "No Step Back"
 				has_dlc = "La Resistance"
@@ -1792,7 +1744,7 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 				}
 			}
 		}
-		else_if = { #Soviet volunteers to Spain (Commie) (supporting POUM -> POUM split happened -> Right Oppo in charge) (with No Step Back)
+		else_if = {
 			limit = {
 				has_dlc = "No Step Back"
 				has_dlc = "La Resistance"
@@ -1814,7 +1766,7 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 				}
 			}
 		}
-		else_if = { #Soviet volunteers to Spain (Commie & Democr) (without No Step Back)
+		else_if = {
 			limit = {
 				NOT = { has_dlc = "No Step Back" }
 				original_tag = SOV
@@ -1844,7 +1796,7 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 				}
 			}
 		}
-		else_if = { #Soviet volunteers to Spain (Exiles)
+		else_if = {
 			limit = {
 				original_tag = SOV
 				OR = {
@@ -1874,16 +1826,6 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 				}
 			}
 		}
-		#else_if = { #Can only send Volunteers to Ethiopia while having the National Spirit to do so)
-		#	limit = {
-		#		has_dlc = "By Blood Alone"
-		#		has_idea = ETH_support_for_ethiopia_idea
-		#	}
-		#	custom_trigger_tooltip = {
-		#		tooltip = RULE_VOLUNTEERS_ETHIOPIA_ONLY_ONE_TT
-		#		FROM = { tag = ETH } 
-		#	}
-		#}
 		else = {
 			always = yes
 		}

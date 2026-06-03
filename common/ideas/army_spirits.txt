@@ -539,12 +539,9 @@ ideas = {
 				experience_gain_motorized_combat_factor = 0.1
 				experience_gain_mechanized_combat_factor = 0.1
 				unit_light_armor_design_cost_factor = -1
-				#light_tank_destroyer_brigade
 				unit_medium_armor_design_cost_factor = -1
-				#medium_tank_destroyer_brigade 
 				unit_modern_armor_design_cost_factor = -1
 				unit_heavy_armor_design_cost_factor = -1
-				#heavy_tank_destroyer_brigade 
 				unit_super_heavy_armor_design_cost_factor = -1
 				unit_motorized_design_cost_factor = -1
 				unit_mechanized_design_cost_factor = -1
@@ -841,7 +838,7 @@ ideas = {
 				}
 			}
 		}
-		CZE_legacy_of_the_czechoslovak_legion_army_spirit = { #Pfot
+		CZE_legacy_of_the_czechoslovak_legion_army_spirit = {
 			ledger = army
 			picture = tur_sub_zero_survival_training
 			allowed = { 
@@ -859,7 +856,6 @@ ideas = {
 				army_retreat_speed_factor = 0.05
 				winter_attrition_factor = -0.05
 				army_experience_from_volunteers = 0.05
-				#tactic_delay_preferred_weight_factor = 0.25
 			}
 
 			ai_will_do = {
@@ -926,7 +922,7 @@ ideas = {
 				}
 				modifier = {
 					factor = 4
-					original_tag = GER #Right now this is just better for AI Germany
+					original_tag = GER
 				}
 				modifier = {
 					factor = 2
