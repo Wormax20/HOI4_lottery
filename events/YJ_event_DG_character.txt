@@ -1406,7 +1406,7 @@ country_event = {
 			armored_car3 = 0.1
 		}
 		set_technology = {
-			armored_car4 = 0.1
+			armored_car_at_upgrade = 0.1
 		}
 		create_corps_commander = {
 			name = "Arganham"
