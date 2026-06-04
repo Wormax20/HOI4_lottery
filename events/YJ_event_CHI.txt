@@ -1,0 +1,204 @@
+add_namespace = YJ_event_CHI
+
+country_event = {
+	id = YJ_event_CHI.101
+	title = YJ_event_CHI.101.title
+	desc = YJ_event_CHI.101.desc
+
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = YJ_event_CHI.101.a
+
+		add_ideas = YJ_CHI_1_ideas
+
+		PRC = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		annex_country = {
+			target = PRC
+			transfer_troops = yes
+		}
+
+		GXC = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		annex_country = {
+			target = GXC
+			transfer_troops = yes
+		}
+
+		YUN = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		annex_country = {
+			target = YUN
+			transfer_troops = yes
+		}
+
+		SHX = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		annex_country = {
+			target = SHX
+			transfer_troops = yes
+		}
+
+		XSM = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		annex_country = {
+			target = XSM
+			transfer_troops = yes
+		}
+
+		SIK = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		annex_country = {
+			target = SIK
+			transfer_troops = yes
+		}
+
+		SND = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		annex_country = {
+			target = SND
+			transfer_troops = yes
+		}
+
+		TIB = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		annex_country = {
+			target = TIB
+			transfer_troops = yes
+		}
+
+		MAN = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		annex_country = {
+			target = MAN
+			transfer_troops = yes
+		}
+
+		MEN = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		annex_country = {
+			target = MEN
+			transfer_troops = yes
+		}
+
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = PRC
+					is_core_of = TIB
+					is_core_of = MAN
+					is_core_of = MEN
+				}
+			}
+			add_core_of = ROOT
+		}
+
+		hidden_effect = {
+			every_core_state = {
+				add_extra_state_shared_building_slots = 3
+
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+		}
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = YJ_event_CHI.102
+	title = YJ_event_CHI.102.title
+	desc = YJ_event_CHI.102.desc
+
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = YJ_event_CHI.102.a
+
+		add_ideas = YJ_CHI_2_ideas
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = YJ_event_CHI.103
+	title = YJ_event_CHI.103.title
+	desc = YJ_event_CHI.103.desc
+
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = YJ_event_CHI.103.a
+
+		add_ideas = YJ_CHI_3_ideas
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = YJ_event_CHI.104
+	title = YJ_event_CHI.104.title
+	desc = YJ_event_CHI.104.desc
+
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = YJ_event_CHI.104.a
+
+		add_ideas = YJ_CHI_4_ideas
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+}

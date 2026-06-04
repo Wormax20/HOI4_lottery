@@ -2272,3 +2272,54 @@ KoKi_YJ_ITA_event_1_scripted_effects = {
 	}
 }
 
+CHI_YJ_scripted_effects = {
+
+	if = {
+		limit = {
+			NOT = {
+				has_idea = YJ_CHI_1_ideas
+			}
+		}
+
+		country_event = YJ_event_CHI.101
+	}
+
+	else = {
+
+		random_list = {
+
+			100 = {
+				modifier = {
+					has_idea = YJ_CHI_2_ideas
+					factor = 0
+				}
+
+				country_event = YJ_event_CHI.102
+			}
+
+			100 = {
+				modifier = {
+					OR = {
+						has_idea = YJ_CHI_3_ideas
+						has_idea = YJ_CHI_4_ideas
+					}
+					factor = 0
+				}
+
+				country_event = YJ_event_CHI.103
+			}
+
+			100 = {
+				modifier = {
+					OR = {
+						has_idea = YJ_CHI_3_ideas
+						has_idea = YJ_CHI_4_ideas
+					}
+					factor = 0
+				}
+
+				country_event = YJ_event_CHI.104
+			}
+		}
+	}
+}
