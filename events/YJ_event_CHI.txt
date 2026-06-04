@@ -11,14 +11,14 @@ country_event = {
 
 	option = {
 		name = KoKi_YJ_CHI_event.101.a
-		add_ideas = YJ_PRC_1_ideas
-		CHI = {
+		add_ideas = YJ_CHI_1_ideas
+		PRC = {
 			every_unit_leader = {
 				set_nationality = ROOT
 			}
 		}
 		annex_country = {
-			target = CHI
+			target = PRC
 			transfer_troops = yes
 		}
 		GDC = {
