@@ -218,6 +218,15 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
 			CZE_YJ_scripted_effects = yes
 		}
 	}
+	if = {
+		limit = {
+			original_tag = CHI
+			is_ai = no
+		}
+		hidden_effect = {
+			CHI_YJ_scripted_effects = yes
+		}
+	}
 }
 
 YJ_TY_scripted_effects = {
@@ -1449,6 +1458,57 @@ CZE_YJ_scripted_effects = {
 	}
 }
 
+CHI_YJ_scripted_effects = {
+
+	random_list = {
+		25 = {
+			modifier = {
+				has_idea = YJ_CHI_1_ideas
+				factor = 0
+			}
+			country_event = YJ_event_CHI.101
+		}
+		25 = {
+			modifier = {
+				OR = {
+					NOT = {
+						has_idea = YJ_CHI_1_ideas
+					}
+					has_idea = YJ_CHI_2_ideas
+				}
+				factor = 0
+			}
+			country_event = YJ_event_CHI.102
+		}
+		25 = {
+			modifier = {
+				OR = {
+					NOT = {
+						has_idea = YJ_CHI_1_ideas
+					}
+					has_idea = YJ_CHI_3_ideas
+					has_idea = YJ_CHI_4_ideas
+				}
+				factor = 0
+			}
+			country_event = YJ_event_CHI.103
+		}
+		25 = {
+			modifier = {
+				OR = {
+					NOT = {
+						has_idea = YJ_CHI_1_ideas
+					}
+					has_idea = YJ_CHI_3_ideas
+					has_idea = YJ_CHI_4_ideas
+				}
+				factor = 0
+			}
+			country_event = YJ_event_CHI.104
+		}
+	}
+}
+
 MEX_state_YJ_scripted_effects = {
 	171 = {
 		add_dynamic_modifier = {
@@ -2268,58 +2328,6 @@ KoKi_YJ_ITA_event_1_scripted_effects = {
 			set_variable = { KoKi_YJ_ITA_event_1_air_defence_factor = 0 }
 			set_variable = { KoKi_YJ_ITA_event_1_air_agility_factor = 0 }
 			set_variable = { KoKi_YJ_ITA_event_1_air_maximum_speed_factor = 0 }
-		}
-	}
-}
-
-CHI_YJ_scripted_effects = {
-
-	if = {
-		limit = {
-			NOT = {
-				has_idea = YJ_CHI_1_ideas
-			}
-		}
-
-		country_event = YJ_event_CHI.101
-	}
-
-	if = {
-		limit = {
-			has_idea = YJ_CHI_1_ideas
-		}
-
-		random_list = {
-
-			100 = {
-				modifier = {
-					has_idea = YJ_CHI_2_ideas
-					factor = 0
-				}
-				country_event = YJ_event_CHI.102
-			}
-
-			100 = {
-				modifier = {
-					OR = {
-						has_idea = YJ_CHI_3_ideas
-						has_idea = YJ_CHI_4_ideas
-					}
-					factor = 0
-				}
-				country_event = YJ_event_CHI.103
-			}
-
-			100 = {
-				modifier = {
-					OR = {
-						has_idea = YJ_CHI_3_ideas
-						has_idea = YJ_CHI_4_ideas
-					}
-					factor = 0
-				}
-				country_event = YJ_event_CHI.104
-			}
 		}
 	}
 }
