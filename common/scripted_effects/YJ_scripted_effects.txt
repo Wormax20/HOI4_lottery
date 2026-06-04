@@ -2284,7 +2284,10 @@ CHI_YJ_scripted_effects = {
 		country_event = YJ_event_CHI.101
 	}
 
-	else = {
+	if = {
+		limit = {
+			has_idea = YJ_CHI_1_ideas
+		}
 
 		random_list = {
 
@@ -2293,7 +2296,6 @@ CHI_YJ_scripted_effects = {
 					has_idea = YJ_CHI_2_ideas
 					factor = 0
 				}
-
 				country_event = YJ_event_CHI.102
 			}
 
@@ -2305,7 +2307,6 @@ CHI_YJ_scripted_effects = {
 					}
 					factor = 0
 				}
-
 				country_event = YJ_event_CHI.103
 			}
 
@@ -2317,7 +2318,6 @@ CHI_YJ_scripted_effects = {
 					}
 					factor = 0
 				}
-
 				country_event = YJ_event_CHI.104
 			}
 		}
