@@ -1,4 +1,5 @@
 add_namespace = KoKi_YJ_PRC_event
+
 country_event = {
 	id = KoKi_YJ_PRC_event.101
 	title = KoKi_YJ_PRC_event.101.title

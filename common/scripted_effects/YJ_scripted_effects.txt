@@ -1466,7 +1466,7 @@ CHI_YJ_scripted_effects = {
 				has_idea = YJ_CHI_1_ideas
 				factor = 0
 			}
-			country_event = YJ_event_CHI.101
+			country_event = KoKi_YJ_CHI_event.101
 		}
 		25 = {
 			modifier = {
@@ -1478,7 +1478,7 @@ CHI_YJ_scripted_effects = {
 				}
 				factor = 0
 			}
-			country_event = YJ_event_CHI.102
+			country_event = KoKi_YJ_CHI_event.102
 		}
 		25 = {
 			modifier = {
@@ -1491,7 +1491,7 @@ CHI_YJ_scripted_effects = {
 				}
 				factor = 0
 			}
-			country_event = YJ_event_CHI.103
+			country_event = KoKi_YJ_CHI_event.103
 		}
 		25 = {
 			modifier = {
@@ -1504,7 +1504,7 @@ CHI_YJ_scripted_effects = {
 				}
 				factor = 0
 			}
-			country_event = YJ_event_CHI.104
+			country_event = KoKi_YJ_CHI_event.104
 		}
 	}
 }

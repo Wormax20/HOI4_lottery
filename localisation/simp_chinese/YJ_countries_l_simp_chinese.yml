@@ -428,9 +428,25 @@ YJ_PRC_3_ideas: "人民战争"
 YJ_PRC_4_ideas: "人民站起来了"
 
 YJ_CHI_1_ideas: "国共合作"
-YJ_CHI_2_ideas: "黃金十年的遺產"
-YJ_CHI_3_ideas: "國父遺囑"
-YJ_CHI_4_ideas: "蔣公千古"
+YJ_CHI_2_ideas: "黄金十年的遗产"
+YJ_CHI_3_ideas: "国父遗嘱"
+YJ_CHI_4_ideas: "蒋公千古"
+
+KoKi_YJ_CHI_event.101.title: "奖品: 国共合作"
+KoKi_YJ_CHI_event.101.desc: "开局统一,获得额外BUFF"
+KoKi_YJ_CHI_event.101.a: "好"
+
+KoKi_YJ_CHI_event.102.title: "奖品: 黄金十年的遗产"
+KoKi_YJ_CHI_event.102.desc: "获得全方面工业BUFF加成"
+KoKi_YJ_CHI_event.102.a: "好"
+
+KoKi_YJ_CHI_event.103.title: "奖品: 国父遗嘱"
+KoKi_YJ_CHI_event.103.desc: "获得政治与经济加成"
+KoKi_YJ_CHI_event.103.a: "好"
+
+KoKi_YJ_CHI_event.104.title: "奖品: 蒋公千古"
+KoKi_YJ_CHI_event.104.desc: "获得军事加成"
+KoKi_YJ_CHI_event.104.a: "好"
 
 
 
