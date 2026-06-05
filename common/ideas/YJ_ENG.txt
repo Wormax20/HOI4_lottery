@@ -60,7 +60,7 @@ ideas = {
 				air_cas_efficiency = 0.1
 				air_attack_factor =  0.1
 				air_defence_factor = 0.1
-				air_range_factor = 0.10
+				air_range_factor = 0.1
 			}
 			research_bonus = {
 				artillery = 0.1
@@ -103,9 +103,10 @@ ideas = {
 		        air_cas_efficiency = 0.15
 				ground_attack_factor = 0.1
 				air_cas_present_factor = 0.1
-				air_attack_factor =  0.1
-				air_defence_factor = 0.1
-				air_agility_factor = 0.1
+				air_attack_factor =  0.15
+				air_defence_factor = 0.15
+				air_agility_factor = 0.15
+				air_range_factor = 0.15
 				local_resources_factor = 0.1
 			}
 			equipment_bonus = { 
@@ -167,6 +168,8 @@ ideas = {
 
 			modifier = {
 				custom_modifier_tooltip = YJ_ENG_5_ideas_tt
+				global_building_slots_factor = 0.15
+				production_speed_infrastructure_factor = 0.2
 				production_speed_arms_factory_factor = 0.2
 	            production_speed_dockyard_factor = 0.2
 				industrial_capacity_factory = 0.10
