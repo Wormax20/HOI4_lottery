@@ -49,7 +49,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = chi_chinese_unity
+			picture = generic_improved_industriesl
 
 			modifier = {
 				consumer_goods_factor = -0.20
@@ -72,7 +72,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = chi_chinese_unity
+			picture = rock_island_arsenal
 
 			modifier = {
 				political_power_factor = 0.10
@@ -96,7 +96,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = chi_chinese_unity
+			picture = SWE_land_air_warfare
 
 			modifier = {
 				political_power_factor = 0.10
