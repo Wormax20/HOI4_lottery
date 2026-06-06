@@ -1055,7 +1055,7 @@ country_event = {
 			traits={ 
 				YJ_traits_2
 				YJ_traits_21
-				rait_reckless
+				trait_reckless
 				trait_engineer
 				trickster
 				organizer
