@@ -24,6 +24,7 @@ on_actions = {
 							tag = SOV
 							tag = HUN
 							tag = PRC
+							tag = CHI
 							tag = JAP
 							tag = TUR
 							tag = FIN
