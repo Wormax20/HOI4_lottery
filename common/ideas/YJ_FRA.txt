@@ -20,8 +20,8 @@ ideas = {
 				stability_weekly = 0.003
 				war_support_weekly = 0.003
 				industrial_capacity_factory = 0.05
-				consumer_goods_factor = -0.15
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.10
+				consumer_goods_expected_value = -0.10
 				production_factory_max_efficiency_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.05
 				production_speed_buildings_factor = 0.05
@@ -69,7 +69,7 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.1
 				industrial_capacity_factory = 0.15
 				consumer_goods_factor = -0.2
-				production_factory_max_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.15
 				production_factory_efficiency_gain_factor = 0.15
 			}
 
@@ -326,7 +326,7 @@ ideas = {
 			picture = ger_rebuild_the_nation
 
 			modifier = {
-				production_speed_arms_factory_factor = 0.05
+				production_speed_arms_factory_factor = 0.10
 			}
 
 		}
@@ -389,7 +389,7 @@ ideas = {
 			picture = generic_communist_army
 
 			modifier = {
-				industrial_capacity_factory = 0.1
+				industrial_capacity_factory = 0.10
 				conscription = 0.03
 			}
 
@@ -412,7 +412,7 @@ ideas = {
 			modifier = {
 				production_speed_arms_factory_factor = 0.05
 				production_speed_industrial_complex_factor = 0.05
-				production_factory_efficiency_gain_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.15
 				training_time_factor = -0.2
 			}
 
