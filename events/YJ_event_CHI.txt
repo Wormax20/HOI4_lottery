@@ -204,6 +204,8 @@ country_event = {
 			factor = 100
 		}
 		add_research_slot = 1
+		
+		country_event = {id = SEA_warlords.34  days = 105 }
 	}
 }
 
