@@ -50,12 +50,12 @@ ideas = {
 			picture = generic_armor
 
 			modifier = {
-				army_armor_attack_factor = 0.1
-				mechanized_attack_factor = 0.1
+				army_armor_attack_factor = 0.15
+				mechanized_attack_factor = 0.15
 				coordination_bonus = 0.05
 				army_strength_factor = 0.1
 				initiative_factor = 0.1
-				breakthrough_factor = 0.1
+				breakthrough_factor = 0.15
 			}
 		}
 		YJ_GER_3_ideas = {
@@ -142,7 +142,7 @@ ideas = {
 			picture = GER_the_shield_of_democracy
 
 			modifier = {
-				army_attack_against_major_factor = 0.1
+				army_attack_against_major_factor = 0.15
 				army_breakthrough_against_minor_factor = 0.15
 				army_core_attack_factor =  0.1
 				army_core_defence_factor = 0.1
@@ -170,8 +170,8 @@ ideas = {
 				neutrality_drift = 0.2
 				political_power_factor = 0.25
 				stability_factor = 0.1
-				stability_weekly = 0.002
-				war_support_weekly = 0.002
+				stability_weekly = 0.005
+				war_support_weekly = 0.005
 			}
 		}
 
