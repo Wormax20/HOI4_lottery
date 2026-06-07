@@ -49,11 +49,11 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_industry
+			picture = generic_improved_industries
 
 			modifier = {
-				consumer_goods_factor = -0.10
-				consumer_goods_expected_value = -0.10
+				consumer_goods_factor = -0.15
+				consumer_goods_expected_value = -0.05
 				global_building_slots = 5
 				production_speed_buildings_factor = 0.10
 				industrial_capacity_factory = 0.10
