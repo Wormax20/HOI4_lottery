@@ -16,15 +16,9 @@ spriteTypes = {
 	    textureFile = "gfx/interface/ideas/yj_qq.png"
     } 
 	spriteType = {
-	    name = "GFX_idea_YJ_CHI_2_ideas"  
-	    textureFile = "gfx/interface/ideas/idea_YJ_CHI_2_ideas.dds"
-    } 
-
-	spriteType = {
 	    name = "GFX_idea_CHI_national_defense_mobilization"  
 	    textureFile = "gfx/interface/ideas/idea_CHI_national_defense_mobilization.dds"
     } 
-
 
 	spriteType = {
 	    name = "GFX_idea_sha"  
