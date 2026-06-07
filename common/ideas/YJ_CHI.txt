@@ -75,7 +75,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = rock_island_arsenal
+			picture = CHI_three_principles_of_the_people
 
 			modifier = {
 				political_power_factor = 0.15
@@ -99,7 +99,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = SWE_land_air_warfare
+			picture = CHI_cult_of_shek
 
 			modifier = {
 				political_power_factor = 0.15
