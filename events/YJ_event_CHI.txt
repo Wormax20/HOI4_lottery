@@ -188,6 +188,9 @@ country_event = {
 			}
 			add_core_of = ROOT
 		}
+		complete_national_focus = {
+                focus = CHI_victory_over_the_invaders
+            }
 		hidden_effect = {
 			every_core_state = {
 				add_extra_state_shared_building_slots = 3
@@ -200,6 +203,7 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
+		add_research_slot = 1
 	}
 }
 
