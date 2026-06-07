@@ -82,9 +82,7 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		add_research_slot = 1 
 	}
-	
 }
 
 
