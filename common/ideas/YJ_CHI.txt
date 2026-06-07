@@ -49,7 +49,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = PRC_factory_617
+			picture = generic_industry
 
 			modifier = {
 				consumer_goods_factor = -0.10
