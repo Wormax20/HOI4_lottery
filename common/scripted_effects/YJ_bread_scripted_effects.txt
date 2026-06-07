@@ -66,8 +66,8 @@ YJ_most_factory = {
         limit = { has_country_flag = YJ_sec_candidate_civ }
         set_country_flag = YJ_sec_factory_country
         if = {
-            date > 1938.1.1
             limit = {
+                date > 1938.1.1
                 has_country_flag = YJ_bread_flag
             }
             activate_mission = YJ_no_bread

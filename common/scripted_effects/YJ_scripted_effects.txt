@@ -1432,7 +1432,7 @@ AUS_YJ_3_scripted_effects = {
 	random_list = {
 		50 = {
 			modifier = {
-				has_idea = YJ_AUS_2_ideas
+				has_idea = YJ_AUS_1_ideas
 				factor = 0
 			}
 			country_event = KoKi_YJ_AUS_event.102
