@@ -17,7 +17,7 @@ ideas = {
 
 			modifier = {
 				political_power_gain = 0.15
-				research_speed_factor = 0.15
+				research_speed_factor = 0.20
 				training_time_factor = -0.1
 				production_speed_buildings_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.05
@@ -58,8 +58,8 @@ ideas = {
 				production_speed_buildings_factor = 0.10
 				industrial_capacity_factory = 0.10
 				production_factory_max_efficiency_factor = 0.10
-				production_factory_start_efficiency_factor = 0.10
 				production_factory_efficiency_gain_factor = 0.10
+				production_factory_start_efficiency_factor = 0.10
 			}
 		}
 
@@ -102,15 +102,12 @@ ideas = {
 			picture = CHI_cult_of_shek
 
 			modifier = {
-				political_power_factor = 0.10
+				political_power_factor = 0.15
 				production_speed_arms_factory_factor = 0.10
 				stability_factor = 0.20
 				war_support_factor = 0.20
-				max_dig_in_factor = 0.10
-				dig_in_speed_factor = 0.10
-				supply_consumption_factor = -0.10
-				army_attack_factor = 0.10
-				army_defence_factor = 0.10
+				supply_consumption_factor = -0.20
+				army_defence_factor = 0.15
 				command_power_gain = 1
 				max_command_power = 200
 				army_chief_cost_factor = -0.25
