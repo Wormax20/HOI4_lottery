@@ -263,7 +263,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = idea_british_navy
+			picture = idea_eng_the_kings_party
 
 			modifier = {
 				global_building_slots_factor = 0.10
