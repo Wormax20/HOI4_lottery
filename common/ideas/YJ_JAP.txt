@@ -68,12 +68,12 @@ ideas = {
 				global_building_slots_factor = 0.20
 				production_speed_buildings_factor = 0.10
 				production_speed_infrastructure_factor = 0.20
-				local_resources_factor = 0.30
-				production_factory_max_efficiency_factor = 0.05
-				production_factory_efficiency_gain_factor = 0.05
+				local_resources_factor = 0.40
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.10
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
-				research_speed_factor = 0.1
+				research_speed_factor = 0.10
 				conscription = 0.1
 				army_core_attack_factor = 0.2
 				army_core_defence_factor = 0.2
@@ -93,6 +93,12 @@ ideas = {
 				attack_bonus_against = 0.3
 			    defense_bonus_against = 0.3
 				breakthrough_bonus_against = 0.3
+			}
+			equipment_bonus = {
+				convoy = {
+					instant = yes
+					build_cost_ic = -0.25
+				}
 			}
 		}
 		YJ_JAP_4_ideas = {
