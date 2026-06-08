@@ -1,5 +1,5 @@
 on_actions = {
-on_daily_FIN = {
+	on_weekly_FIN = {
 		effect = {
 			if = {
 				limit = {
@@ -21,7 +21,7 @@ on_daily_FIN = {
 						NOT = { has_idea = YJ_FIN_6_ideas }
 					}
 					remove_ideas = { YJ_FIN_7_ideas }
-					add_timed_idea = { idea = YJ_FIN_6_ideas days = 180 }
+					add_timed_idea = { idea = YJ_FIN_6_ideas days = 182 }
 				}
 				else_if = {
 					limit = {
@@ -38,7 +38,7 @@ on_daily_FIN = {
 						NOT = { has_idea = YJ_FIN_7_ideas }
 					}
 					remove_ideas = { YJ_FIN_6_ideas }
-					add_timed_idea = { idea = YJ_FIN_7_ideas days = 3 }
+					add_timed_idea = { idea = YJ_FIN_7_ideas days = 183 }
 				}
 			}
 		}

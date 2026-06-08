@@ -10,9 +10,10 @@ country_event = {
 
 	option = {
 		add_popularity = {
-				ideology = fascism
-				popularity = 1
-			}
+			ideology = fascism
+			popularity = 1
+		}
+		country_event = KoKi_YJ_FRA_event.NPL
 		set_cosmetic_tag = FRA_THIRD_EMPIRE
 		complete_national_focus = FRA_revive_the_national_bloc
 		complete_national_focus = FRA_utilize_the_leagues
@@ -34,6 +35,7 @@ country_event = {
 		add_ideas = YJ_FRA_1_ideas
 		set_war_support = 1
 		set_stability = 1
+		army_experience = 100
 		ai_chance = {
 			factor = 100
 		}
@@ -52,9 +54,10 @@ country_event = {
 
 	option = {
 		add_popularity = {
-				ideology = communism
-				popularity = 1
-			}
+			ideology = communism
+			popularity = 1
+		}
+		country_event = KoKi_YJ_FRA_event.zd
 		add_tech_bonus = {
 			name = YJ_FRA_2_ideas
 			bonus = 1
@@ -72,6 +75,9 @@ country_event = {
 		complete_national_focus = FRA_army_reform
 		name = KoKi_YJ_FRA_event.102.a
 		add_ideas = YJ_FRA_2_ideas
+		add_manpower = 75000
+		add_political_power = 150
+		set_war_support = 1
 		ai_chance = {
 			factor = 100
 		}
@@ -174,32 +180,9 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = KoKi_YJ_JL_event.NPL.a
-		create_corps_commander = {
-			name="拿破仑·波拿巴"
-			portrait_path = "gfx/leaders/DEMO/NPL.jpg"
-			allowed_civil_war = {
-				is_ai = no
-			}
-			traits={ 
-				brilliant_strategist 
-				armor_officer 
-				panzer_leader
-				cavalry_leader
-				commando
-				urban_assault_specialist
-				ground_pounder
-				infantry_leader
-				organizer
-				trickster
-				ranger 
-				}
-			skill = 9
-			attack_skill = 8
-			defense_skill = 8
-			planning_skill = 6
-			logistics_skill = 10
-		}
+		name = KoKi_YJ_FRA_event.NPL.a
+		recruit_character = FRA_napoleon_bonaparte
+		promote_character = FRA_napoleon_bonaparte
 		ai_chance = {
 			factor = 100
 		}
@@ -217,31 +200,8 @@ country_event = {
 
 	option = {
 		name = KoKi_YJ_FRA_event.zd.a
-		create_corps_commander = {
-			name="贞德"
-			portrait_path = "gfx/leaders/DEMO/zd.jpg"
-			allowed_civil_war = {
-				is_ai = no
-			}
-			traits={ 
-				brilliant_strategist 
-				armor_officer 
-				panzer_leader
-				cavalry_leader
-				commando
-				urban_assault_specialist
-				ground_pounder
-				infantry_leader
-				organizer
-				trickster
-				ranger 
-				}
-			skill = 8
-			attack_skill = 8
-			defense_skill = 6
-			planning_skill = 6
-			logistics_skill = 7
-		}
+		recruit_character = FRA_jeanne_darc
+		promote_character = FRA_jeanne_darc
 		ai_chance = {
 			factor = 100
 		}

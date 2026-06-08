@@ -1953,4 +1953,80 @@ characters={
 			}
 		}
 	}
+
+	FRA_napoleon_bonaparte = {
+		name = "拿破仑·波拿巴"
+		portraits = {
+			army = {
+				large = GFX_leaders_npl
+			}
+			civilian = {
+				large = GFX_leaders_npl
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = { NPL_grande_armee NPL_artillery_emperor NPL_empire_glory }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		corps_commander = {
+			traits = {
+				brilliant_strategist
+				armor_officer
+				panzer_leader
+				cavalry_leader
+				commando
+				urban_assault_specialist
+				ground_pounder
+				infantry_leader
+				organizer
+				trickster
+				ranger
+			}
+			skill = 9
+			attack_skill = 8
+			defense_skill = 8
+			planning_skill = 6
+			logistics_skill = 10
+		}
+	}
+
+	FRA_jeanne_darc = {
+		name = "贞德"
+		portraits = {
+			army = {
+				large = GFX_leaders_zd
+			}
+			civilian = {
+				large = GFX_leaders_zd
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			traits = { JD_holy_warrior JD_divine_voice JD_peoples_champion }
+			expire = "1965.1.1.1"
+			id = -1
+		}
+		corps_commander = {
+			traits = {
+				brilliant_strategist
+				armor_officer
+				panzer_leader
+				cavalry_leader
+				commando
+				urban_assault_specialist
+				ground_pounder
+				infantry_leader
+				organizer
+				trickster
+				ranger
+			}
+			skill = 8
+			attack_skill = 8
+			defense_skill = 6
+			planning_skill = 6
+			logistics_skill = 7
+		}
+	}
 }
