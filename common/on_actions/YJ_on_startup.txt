@@ -120,6 +120,9 @@ on_actions = {
 					basic_heavy_tank = 1
 				}
 			}
+			ENG = { 
+				add_ideas = YJ_ENG_7_ideas
+			}
 			every_state = {
 				add_dynamic_modifier = {
 					modifier = YJ_GEN_state_ideas
