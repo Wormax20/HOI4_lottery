@@ -91,21 +91,13 @@ on_actions = {
 
 				if = {
 					limit = {
-						is_ai = no
-						NOT = { has_idea = YJ_AIR_ideas }
+						OR = {
+							NOT = { has_idea = YJ_AIR_ideas }
+							NOT = { has_dynamic_modifier = YJ_AIR_ideas }
+						}
 					}
 					add_ideas = YJ_AIR_ideas
 					add_dynamic_modifier = {
-						modifier = YJ_AIR_ideas
-					}
-				}
-				if = {
-					limit = {
-						is_ai = yes
-						has_idea = YJ_AIR_ideas
-					}
-					remove_ideas = YJ_AIR_ideas
-					remove_dynamic_modifier = {
 						modifier = YJ_AIR_ideas
 					}
 				}

@@ -28,10 +28,12 @@ sub_units = {
 		need = {
 			armored_car_equipment = 50
 		}
+		soft_attack = 0.5
+		hard_attack = 3.0
 		manpower = 500
 		max_organisation = 65
 		default_morale = 0.3
-		training_time = 180
+		training_time = 140
 		max_strength = 20
 		weight = 0.8
 		supply_consumption = 0.14
