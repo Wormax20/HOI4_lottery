@@ -263,7 +263,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = idea_eng_the_kings_party
+			picture = ast_abandon_the_westminster_system
 
 			modifier = {
 				global_building_slots_factor = 0.10
