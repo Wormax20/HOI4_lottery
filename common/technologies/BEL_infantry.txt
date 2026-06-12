@@ -1,5 +1,5 @@
-technologies = {
-	BEL_category_rangers_tech = { 
+﻿technologies = {
+	BEL_category_rangers_tech = {
 		category_rangers = {
 		combat_width = -0.4
 		}
@@ -35,12 +35,12 @@ technologies = {
 			attack = -0.15
 			defence = -0.15
 		}
-		river = { 
+		river = {
 			attack = -0.15
 			defence = -0.15
 			movement = -0.25
 		}
-		amphibious = { 
+		amphibious = {
 			attack = -0.35
 		}
 		fort = {

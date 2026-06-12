@@ -1,11 +1,10 @@
-ideas = {
+﻿ideas = {
 
 	economy = {
 		law = yes
 		use_list_view = yes
 
 		undisturbed_isolation = {
-
 
 			allowed = {
 				always = no
@@ -100,7 +99,6 @@ ideas = {
 
 		civilian_economy = {
 
-
 			cost = 150
 			removal_cost = -1
 
@@ -118,13 +116,34 @@ ideas = {
 			default = yes
 
 			cancel_if_invalid = no
+
+			on_add = {
+				if = {
+					limit = {
+						has_dlc = "Thunder at Our Gates"
+						original_tag = SIA
+						NOT = { has_idea = civilian_economy }
+					}
+					if = {
+						limit = { check_variable = { SIA_current_economy_law > 0 } }
+						SIA_decrease_military_approval = yes
+						SIA_increase_civilian_approval = yes
+					}
+					else = {
+						SIA_increase_military_approval = yes
+						SIA_decrease_civilian_approval = yes
+					}
+
+					set_variable = { SIA_current_economy_law = 0 }
+				}
+			}
 		}
 
 		low_economic_mobilisation = {
 
 			available = {
 				has_war_support > 0.15
-				
+
 				IF = {
 					limit = {
 						original_tag = HUN
@@ -154,26 +173,26 @@ ideas = {
 						}
 						custom_trigger_tooltip = {
 							tooltip = wuw_HUN_not_has_trianon_for_laws_tt
-							NOT = { 
+							NOT = {
 								OR = {
-									has_idea = HUN_treaty_of_triannon_aat_wuw 
-									has_idea = HUN_treaty_of_triannon_aat_wuw_no_air_debuff 
-									has_idea = HUN_treaty_of_triannon_aat_wuw_no_army_exp_debuff 
-									has_idea = HUN_treaty_of_triannon_aat_wuw_no_air_or_army_debuff 
+									has_idea = HUN_treaty_of_triannon_aat_wuw
+									has_idea = HUN_treaty_of_triannon_aat_wuw_no_air_debuff
+									has_idea = HUN_treaty_of_triannon_aat_wuw_no_army_exp_debuff
+									has_idea = HUN_treaty_of_triannon_aat_wuw_no_air_or_army_debuff
 								}
 							}
-							
-						}		
+
+						}
 					}
 					ELSE = {
 						custom_trigger_tooltip = {
 							tooltip = wuw_HUN_not_has_trianon_for_laws_tt
-							NOT = { 
+							NOT = {
 								OR = {
-									has_idea = HUN_treaty_of_triannon_wuw 
-									has_idea = HUN_treaty_of_triannon_wuw_no_army_exp_debuff 
-									has_idea = HUN_treaty_of_triannon_wuw_no_air_debuff 
-									has_idea = HUN_treaty_of_triannon_wuw_no_air_or_army_debuff 
+									has_idea = HUN_treaty_of_triannon_wuw
+									has_idea = HUN_treaty_of_triannon_wuw_no_army_exp_debuff
+									has_idea = HUN_treaty_of_triannon_wuw_no_air_debuff
+									has_idea = HUN_treaty_of_triannon_wuw_no_air_or_army_debuff
 								}
 							}
 						}
@@ -225,6 +244,25 @@ ideas = {
 						has_defensive_war = no
 					}
 					USA_congress_large_opposition = yes
+				}
+
+				if = {
+					limit = {
+						has_dlc = "Thunder at Our Gates"
+						original_tag = SIA
+						NOT = { has_idea = low_economic_mobilisation }
+					}
+					if = {
+						limit = { check_variable = { SIA_current_economy_law > 1 } }
+						SIA_decrease_military_approval = yes
+						SIA_increase_civilian_approval = yes
+					}
+					else = {
+						SIA_increase_military_approval = yes
+						SIA_decrease_civilian_approval = yes
+					}
+
+					set_variable = { SIA_current_economy_law = 1 }
 				}
 			}
 
@@ -372,6 +410,25 @@ ideas = {
 					}
 					USA_congress_large_opposition = yes
 				}
+
+				if = {
+					limit = {
+						has_dlc = "Thunder at Our Gates"
+						original_tag = SIA
+						NOT = { has_idea = partial_economic_mobilisation }
+					}
+					if = {
+						limit = { check_variable = { SIA_current_economy_law > 2 } }
+						SIA_decrease_military_approval = yes
+						SIA_increase_civilian_approval = yes
+					}
+					else = {
+						SIA_increase_military_approval = yes
+						SIA_decrease_civilian_approval = yes
+					}
+
+					set_variable = { SIA_current_economy_law = 2 }
+				}
 			}
 			ai_will_do = {
    				factor = 2
@@ -381,24 +438,24 @@ ideas = {
 
 					is_major = yes
 				}
-				
+
 				modifier = {
 					add = 80
 					original_tag = SOV
 					date < 1937.1.1
-					NOT = { 
+					NOT = {
 						OR = {
-							has_idea = war_economy 
+							has_idea = war_economy
 							has_idea = tot_economic_mobilisation
 						}
 					}
 				}
-				
+
 				modifier = {
 					original_tag = SIA
-					NOT = { 
+					NOT = {
 						OR = {
-							has_idea = war_economy 
+							has_idea = war_economy
 							has_idea = tot_economic_mobilisation
 						}
 					}
@@ -420,7 +477,6 @@ ideas = {
 		}
 
 		war_economy = {
-
 
 			available = {
 				has_war_support > 0.5
@@ -491,26 +547,26 @@ ideas = {
 						}
 						custom_trigger_tooltip = {
 							tooltip = wuw_HUN_not_has_trianon_for_laws_tt
-							NOT = { 
+							NOT = {
 								OR = {
-									has_idea = HUN_treaty_of_triannon_aat_wuw 
-									has_idea = HUN_treaty_of_triannon_aat_wuw_no_air_debuff 
-									has_idea = HUN_treaty_of_triannon_aat_wuw_no_army_exp_debuff 
-									has_idea = HUN_treaty_of_triannon_aat_wuw_no_air_or_army_debuff 
+									has_idea = HUN_treaty_of_triannon_aat_wuw
+									has_idea = HUN_treaty_of_triannon_aat_wuw_no_air_debuff
+									has_idea = HUN_treaty_of_triannon_aat_wuw_no_army_exp_debuff
+									has_idea = HUN_treaty_of_triannon_aat_wuw_no_air_or_army_debuff
 								}
 							}
-							
-						}		
+
+						}
 					}
 					ELSE = {
 						custom_trigger_tooltip = {
 							tooltip = wuw_HUN_not_has_trianon_for_laws_tt
-							NOT = { 
+							NOT = {
 								OR = {
-									has_idea = HUN_treaty_of_triannon_wuw 
-									has_idea = HUN_treaty_of_triannon_wuw_no_army_exp_debuff 
-									has_idea = HUN_treaty_of_triannon_wuw_no_air_debuff 
-									has_idea = HUN_treaty_of_triannon_wuw_no_air_or_army_debuff 
+									has_idea = HUN_treaty_of_triannon_wuw
+									has_idea = HUN_treaty_of_triannon_wuw_no_army_exp_debuff
+									has_idea = HUN_treaty_of_triannon_wuw_no_air_debuff
+									has_idea = HUN_treaty_of_triannon_wuw_no_air_or_army_debuff
 								}
 							}
 						}
@@ -576,16 +632,37 @@ ideas = {
 					}
 					USA_congress_large_opposition = yes
 				}
+
+				if = {
+					limit = {
+						has_dlc = "Thunder at Our Gates"
+						original_tag = SIA
+						NOT = { has_idea = war_economy }
+					}
+					if = {
+						limit = { check_variable = { SIA_current_economy_law > 3 } }
+						SIA_decrease_military_approval = yes
+						SIA_increase_civilian_approval = yes
+					}
+					else = {
+						SIA_increase_military_approval = yes
+						SIA_decrease_civilian_approval = yes
+					}
+
+					set_variable = { SIA_current_economy_law = 3 }
+				}
 			}
 			ai_will_do = {
    				base = 3
 
 				modifier = {
+
 					factor = 20
 					manpower_per_military_factory >  1000
 				}
 
 				modifier = {
+
 					factor = 0
 
 					manpower_per_military_factory > 15000
@@ -607,6 +684,7 @@ ideas = {
 				}
 
 				modifier = {
+
 					factor = 0
 					original_tag = GER
 					has_civil_war = yes
@@ -614,6 +692,7 @@ ideas = {
 				}
 
 				modifier = {
+
 					factor = 0.5
 					original_tag = JAP
 					OR = {
@@ -639,9 +718,9 @@ ideas = {
 					limit = {
 						original_tag = JAP
 					}
-					NOT = { 
-						has_completed_focus = JAP_sea_national_defense_state 
-						has_completed_focus = JAP_prepare_for_the_final_war 
+					NOT = {
+						has_completed_focus = JAP_sea_national_defense_state
+						has_completed_focus = JAP_prepare_for_the_final_war
 					}
 				}
 			}
@@ -685,32 +764,32 @@ ideas = {
 						}
 						custom_trigger_tooltip = {
 							tooltip = wuw_HUN_not_has_trianon_for_laws_tt
-							NOT = { 
+							NOT = {
 								OR = {
-									has_idea = HUN_treaty_of_triannon_aat_wuw 
-									has_idea = HUN_treaty_of_triannon_aat_wuw_no_air_debuff 
-									has_idea = HUN_treaty_of_triannon_aat_wuw_no_army_exp_debuff 
-									has_idea = HUN_treaty_of_triannon_aat_wuw_no_air_or_army_debuff 
+									has_idea = HUN_treaty_of_triannon_aat_wuw
+									has_idea = HUN_treaty_of_triannon_aat_wuw_no_air_debuff
+									has_idea = HUN_treaty_of_triannon_aat_wuw_no_army_exp_debuff
+									has_idea = HUN_treaty_of_triannon_aat_wuw_no_air_or_army_debuff
 								}
 							}
-							
-						}		
+
+						}
 					}
 					ELSE = {
 						custom_trigger_tooltip = {
 							tooltip = wuw_HUN_not_has_trianon_for_laws_tt
-							NOT = { 
+							NOT = {
 								OR = {
-									has_idea = HUN_treaty_of_triannon_wuw 
-									has_idea = HUN_treaty_of_triannon_wuw_no_army_exp_debuff 
-									has_idea = HUN_treaty_of_triannon_wuw_no_air_debuff 
-									has_idea = HUN_treaty_of_triannon_wuw_no_air_or_army_debuff 
+									has_idea = HUN_treaty_of_triannon_wuw
+									has_idea = HUN_treaty_of_triannon_wuw_no_army_exp_debuff
+									has_idea = HUN_treaty_of_triannon_wuw_no_air_debuff
+									has_idea = HUN_treaty_of_triannon_wuw_no_air_or_army_debuff
 								}
 							}
 						}
 					}
 				}
-				
+
 				if = {
 					limit = {
 						has_completed_focus = USA_limited_intervention
@@ -757,22 +836,43 @@ ideas = {
 					}
 					USA_congress_large_opposition = yes
 				}
+
+				if = {
+					limit = {
+						has_dlc = "Thunder at Our Gates"
+						original_tag = SIA
+						NOT = { has_idea = tot_economic_mobilisation }
+					}
+					if = {
+						limit = { check_variable = { SIA_current_economy_law > 4 } }
+						SIA_decrease_military_approval = yes
+						SIA_increase_civilian_approval = yes
+					}
+					else = {
+						SIA_increase_military_approval = yes
+						SIA_decrease_civilian_approval = yes
+					}
+
+					set_variable = { SIA_current_economy_law = 4 }
+				}
 			}
 			ai_will_do = {
    				base = 1
 
 				modifier = {
 					factor = 25
+
 					manpower_per_military_factory > 15000
 				}
 
 				modifier = {
+
 					factor = 0
 					manpower_per_military_factory <  10000
 				}
 
-
 				modifier = {
+
 					factor = 0
 					OR = {
 						has_idea = volunteer_only
@@ -1049,7 +1149,6 @@ ideas = {
 
 		uncontrolled_exports = {
 
-
 			allowed = {
 				always = no
 			}
@@ -1097,7 +1196,7 @@ ideas = {
 						limit = {
 							tag = POL
 							85 = { is_demilitarized_zone = no }
-							has_civil_war = no 
+							has_civil_war = no
 						}
 						85 = {
 							if = {
@@ -1110,7 +1209,7 @@ ideas = {
 					}
 				}
 			}
-			
+
 			cancel_if_invalid = no
 		}
 
@@ -1188,6 +1287,28 @@ ideas = {
 					is_in_faction_with = GER
 				}
    			}
+
+   			on_add = {
+				if = {
+					limit = {
+						has_dlc = "Thunder at Our Gates"
+						original_tag = SIA
+						NOT = { has_idea = free_trade }
+					}
+					if = {
+						limit = { check_variable = { SIA_current_trade_law > -1 } }
+
+						SIA_increase_military_approval = yes
+						SIA_decrease_civilian_approval = yes
+					}
+					else = {
+						SIA_decrease_military_approval = yes
+						SIA_increase_civilian_approval = yes
+					}
+
+					set_variable = { SIA_current_trade_law = -1 }
+				}
+   			}
 		}
 
 		export_focus = {
@@ -1224,7 +1345,6 @@ ideas = {
 				}
 			}
 
-
 			cost = 150
 			removal_cost = -1
 
@@ -1253,6 +1373,7 @@ ideas = {
 					has_war = no
 					is_in_faction = no
 					OR = {
+
 						tag = POR
 						tag = SWE
 
@@ -1263,6 +1384,28 @@ ideas = {
 				modifier = {
 					factor = 1000
 					has_idea = uncontrolled_exports
+				}
+   			}
+
+   			on_add = {
+				if = {
+					limit = {
+						has_dlc = "Thunder at Our Gates"
+						original_tag = SIA
+						NOT = { has_idea = export_focus }
+					}
+					if = {
+						limit = { check_variable = { SIA_current_trade_law > 0 } }
+
+						SIA_increase_military_approval = yes
+						SIA_decrease_civilian_approval = yes
+					}
+					else = {
+						SIA_decrease_military_approval = yes
+						SIA_increase_civilian_approval = yes
+					}
+
+					set_variable = { SIA_current_trade_law = 0 }
 				}
    			}
 		}
@@ -1381,13 +1524,44 @@ ideas = {
 					}
 				}
    			}
+
+   			on_add = {
+				if = {
+					limit = {
+						has_dlc = "Thunder at Our Gates"
+						original_tag = SIA
+						NOT = { has_idea = limited_exports }
+					}
+					if = {
+						limit = { check_variable = { SIA_current_trade_law > 1 } }
+
+						SIA_increase_military_approval = yes
+						SIA_decrease_civilian_approval = yes
+					}
+					else = {
+						SIA_decrease_military_approval = yes
+						SIA_increase_civilian_approval = yes
+					}
+
+					set_variable = { SIA_current_trade_law = 1 }
+				}
+   			}
 		}
 
 		autarkic_economy = {
 			visible = {
-				original_tag = GER
-				has_completed_focus = GER_autarky_efforts
-				NOT = { has_completed_focus = GER_autarky_achieved }
+				OR = {
+					AND = {
+						original_tag = GER
+						has_completed_focus = GER_autarky_efforts
+						NOT = { has_completed_focus = GER_autarky_achieved }
+					}
+					AND = {
+						has_dlc = "Thunder at Our Gates"
+						original_tag = AST
+						has_completed_focus = AST_autarky
+					}
+				}
 			}
 
 			available = {
@@ -1398,10 +1572,12 @@ ideas = {
 
 			modifier = {
 				min_export = 0.15
+
 				production_speed_buildings_factor = 0.05
 				research_speed_factor = 0.05
 				lend_lease_tension = 0.20
 				faction_trade_opinion_factor = 0.25
+
 			}
 
 			cancel_if_invalid = no
@@ -1444,6 +1620,7 @@ ideas = {
 				research_speed_factor = 0.05
 				lend_lease_tension = 0.20
 				faction_trade_opinion_factor = 0.5
+
 			}
 
 			cancel_if_invalid = no
@@ -1465,7 +1642,6 @@ ideas = {
 		}
 
 		closed_economy = {
-
 
 			available = {
 
@@ -1495,7 +1671,7 @@ ideas = {
 						}
 					}
 				}
-				
+
 				OR = {
 					has_idea = war_economy
 					has_idea = tot_economic_mobilisation
@@ -1509,6 +1685,7 @@ ideas = {
 						limit = {
 							original_tag = JAP
 						}
+
 						has_idea = national_defense_state
 					}
 					ELSE = {
@@ -1540,6 +1717,7 @@ ideas = {
 
 			modifier = {
 				min_export = 0
+
 				lend_lease_tension = 0.40
 				cic_construction_boost = -0.1
 			}
@@ -1577,6 +1755,28 @@ ideas = {
 						has_idea = autarkic_economy
 						has_idea = autarkic_economy_improved
 					}
+				}
+   			}
+
+   			on_add = {
+				if = {
+					limit = {
+						has_dlc = "Thunder at Our Gates"
+						original_tag = SIA
+						NOT = { has_idea = closed_economy }
+					}
+					if = {
+						limit = { check_variable = { SIA_current_trade_law > 2 } }
+
+						SIA_increase_military_approval = yes
+						SIA_decrease_civilian_approval = yes
+					}
+					else = {
+						SIA_decrease_military_approval = yes
+						SIA_increase_civilian_approval = yes
+					}
+
+					set_variable = { SIA_current_trade_law = 2 }
 				}
    			}
 		}

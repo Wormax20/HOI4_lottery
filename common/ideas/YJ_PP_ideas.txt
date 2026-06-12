@@ -1,4 +1,4 @@
-ideas = {
+﻿ideas = {
 	country = {
 
 		YJ_1_ideas = {
@@ -171,7 +171,7 @@ ideas = {
 
 			picture = raj_rifle_factory_ishapore
 		}
-		
+
 		YJ_8_ideas = {
 
 			allowed = {
@@ -263,8 +263,6 @@ ideas = {
 
 			picture = GFX_idea_COG_forminiere
 		}
-
-
 
 		YJ_21_ideas = {
 

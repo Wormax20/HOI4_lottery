@@ -1,4 +1,4 @@
-YJ_ROM_state_1_ideas = {
+﻿YJ_ROM_state_1_ideas = {
     enable = { always = yes }
 	icon = GFX_modifiers_tur_traditionalist_placated
 	army_attack_factor = 0.05

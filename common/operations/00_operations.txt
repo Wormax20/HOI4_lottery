@@ -1,12 +1,10 @@
-
-operation_rescue_operative = {
+﻿operation_rescue_operative = {
 	icon = GFX_operations_rescue_captured_operative
 	map_icon = GFX_operations_rescue_captured_operative_map
 	name = operation_rescue_operative
 	desc = operation_rescue_operative_desc
 	priority = 0
 	prevent_captured_operative_to_die = yes
-
 
 	days = 35
 	network_strength = 30
@@ -19,7 +17,7 @@ operation_rescue_operative = {
 	}
 
 	available = {
-		
+
 	}
 
 	requirements = {
@@ -28,9 +26,8 @@ operation_rescue_operative = {
 		}
 	}
 
-
 	equipment = {
-		
+
 	}
 	risk_chance = 0.1
 	experience = 2
@@ -62,10 +59,10 @@ operation_rescue_operative = {
 	phases = {
 		infiltration_border = { base = 25 }
 		infiltration_submarine = { base = 25 }
-		infiltration_paradrop = { 
-			base = 25 
+		infiltration_paradrop = {
+			base = 25
 			modifier = {
-				ROOT = { 
+				ROOT = {
 					has_equipment = {
 						transport_plane_equipment < 1
 					}
@@ -96,10 +93,10 @@ operation_rescue_operative = {
 		free_operative_smuggle_in_escape_gear = { base = 33 }
 	}
 	phases = {
-		exfiltration_air_pickup = { 
-			base = 15 
+		exfiltration_air_pickup = {
+			base = 15
 			modifier = {
-				ROOT = { 
+				ROOT = {
 					has_equipment = {
 						transport_plane_equipment < 1
 					}
@@ -110,6 +107,85 @@ operation_rescue_operative = {
 		exfiltration_border = { base = 30 }
 		exfiltration_go_to_ground = { base = 30 }
 		exfiltration_submarine_pickup = { base = 25 }
+	}
+}
+
+operation_rescue_general= {
+	icon = GFX_operations_rescue_captured_operative
+	map_icon = GFX_operations_rescue_captured_operative_map
+	name = operation_rescue_general
+	desc = operation_rescue_general_desc
+	priority = 1
+
+	days = 35
+	network_strength = 30
+	operatives = 1
+
+	visible = {
+
+		has_any_general_captured_by = FROM
+	}
+
+	available = {
+
+	}
+
+	requirements = {
+		has_any_general_captured_by = FROM
+	}
+
+	equipment = {
+
+	}
+	risk_chance = 0.1
+	experience = 2
+	cost_multiplier = 0
+
+	outcome_execute = {
+		FROM = {
+			release_captured_generals_from = ROOT
+		}
+	}
+
+	outcome_potential = {
+		FROM = {
+			release_captured_generals_from = ROOT
+		}
+	}
+
+	phases = {
+		infiltration_border = { base = 25 }
+		infiltration_paradrop = {
+			base = 25
+			modifier = {
+				ROOT = {
+					has_equipment = {
+						transport_plane_equipment < 1
+					}
+				}
+				factor = 0
+			}
+		}
+	}
+	phases = {
+		free_general_free_in_transit = { base = 33 }
+		free_general_assault_holding_area = { base = 33 }
+		free_general_disguise_and_extract = { base = 33 }
+	}
+	phases = {
+		exfiltration_air_pickup = {
+			base = 15
+			modifier = {
+				ROOT = {
+					has_equipment = {
+						transport_plane_equipment < 1
+					}
+				}
+				factor = 0
+			}
+		}
+		exfiltration_border = { base = 30 }
+		exfiltration_go_to_ground = { base = 30 }
 	}
 }
 
@@ -138,10 +214,11 @@ operation_infiltrate_civilian = {
 	}
 
 	equipment = {
-		
+
 	}
 
 	available = {
+
 	}
 
 	awarded_tokens = {
@@ -182,7 +259,7 @@ operation_infiltrate_civilian = {
 						token = token_civilian
 					}
 					add_political_power = 25
-				}	
+				}
 			}
 		}
 	}
@@ -199,10 +276,10 @@ operation_infiltrate_civilian = {
 	phases = {
 		infiltration_border = { base = 25 }
 		infiltration_submarine = { base = 25 }
-		infiltration_paradrop = { 
-			base = 25 
+		infiltration_paradrop = {
+			base = 25
 			modifier = {
-				ROOT = { 
+				ROOT = {
 					has_equipment = {
 						transport_plane_equipment < 1
 					}
@@ -233,10 +310,10 @@ operation_infiltrate_civilian = {
 		}
 	}
 	phases = {
-		exfiltration_air_pickup = { 
-			base = 15 
+		exfiltration_air_pickup = {
+			base = 15
 			modifier = {
-				ROOT = { 
+				ROOT = {
 					has_equipment = {
 						transport_plane_equipment < 1
 					}
@@ -270,11 +347,12 @@ operation_fake_intel = {
 			has_war_with = ROOT
 		}
 	}
-	
+
 	scale_cost_independent_of_target = yes
-	
+
 	available = {
 		ROOT = {
+
 			set_temp_variable = { num_max_fake_intel_unit = num_armies }
 			multiply_temp_variable = { num_max_fake_intel_unit = 0.25 }
 			round_temp_variable = num_max_fake_intel_unit
@@ -283,11 +361,11 @@ operation_fake_intel = {
 				var = num_max_fake_intel_unit
 				min = 24
 			}
-			multiply_temp_variable = { num_max_fake_intel_unit = 2.5 } 
+			multiply_temp_variable = { num_max_fake_intel_unit = 2.5 }
 			round_temp_variable = num_max_fake_intel_unit
-			
+
 			num_fake_intel_divisions < num_max_fake_intel_unit
-			
+
 			all_enemy_country = {
 				intel_level_over = {
 					target = PREV
@@ -296,13 +374,13 @@ operation_fake_intel = {
 			}
 		}
 	}
-	
+
 	equipment = {
 
 	}
 
 	required_tokens = {
-		
+
 	}
 	risk_chance = 0
 	experience = 0.5
@@ -310,6 +388,7 @@ operation_fake_intel = {
 		ROOT = {
 			hidden_effect = {
 				if = {
+
 					limit = {
 						not = {
 							has_country_flag = fake_intel_template_created
@@ -317,7 +396,7 @@ operation_fake_intel = {
 					}
 					division_template = {
 						name = "Fake Intel Division"
-						
+
 						is_fake_intel_division = yes
 						is_locked = yes
 						regiments = {
@@ -326,7 +405,7 @@ operation_fake_intel = {
 					}
 					set_country_flag = fake_intel_template_created
 				}
-				
+
 				if = {
 					limit = { NOT = { has_variable = fake_intel_id } }
 					set_variable = { fake_intel_id = 1000 }
@@ -337,7 +416,7 @@ operation_fake_intel = {
 					fake_intel_ids_to_delete = id_to_set
 				}
 				set_variable = { num_days_for_fake_intel_id@var:id_to_set = global.num_days }
-				
+
 				set_temp_variable = { num_to_create = num_armies }
 				multiply_temp_variable = { num_to_create = 0.25 }
 				round_temp_variable = num_to_create
@@ -346,16 +425,16 @@ operation_fake_intel = {
 					var = num_to_create
 					min = 24
 				}
-				
+
 				capital_scope = {
 					create_unit = {
-						division = "division_template = \"Fake Intel Division\" start_experience_factor = 0.5" 
+						division = "division_template = \"Fake Intel Division\" start_experience_factor = 0.5"
 						owner = PREV
 						count = num_to_create
 						id = id_to_set
 					}
 				}
-				
+
 				country_event = { id = lar_fake_intel_units.1 days = 90 }
 			}
 		}
@@ -365,7 +444,7 @@ operation_fake_intel = {
 	outcome_potential = {
 		custom_effect_tooltip = CUSTOM_EFFECT_CREATE_FAKE_ARMIES
 	}
-	
+
 	phases = {
 		fake_intel_decoy_tanks = { base = 33 }
 		fake_intel_radio_deception = { base = 33 }
@@ -406,7 +485,7 @@ operation_capture_cipher = {
 	}
 
 	equipment = {
-		
+
 	}
 	risk_chance = 0.2
 	outcome_extra_chance = 0.25
@@ -462,7 +541,7 @@ operation_capture_cipher = {
 					}
 				}
 			}
-		}	
+		}
 	}
 
 	outcome_potential = {
@@ -477,10 +556,10 @@ operation_capture_cipher = {
 	phases = {
 		infiltration_border = { base = 25 }
 		infiltration_submarine = { base = 25 }
-		infiltration_paradrop = { 
-			base = 25 
+		infiltration_paradrop = {
+			base = 25
 			modifier = {
-				ROOT = { 
+				ROOT = {
 					has_equipment = {
 						transport_plane_equipment < 1
 					}
@@ -514,10 +593,10 @@ operation_capture_cipher = {
 	}
 
 	phases = {
-		exfiltration_air_pickup = { 
-			base = 15 
+		exfiltration_air_pickup = {
+			base = 15
 			modifier = {
-				ROOT = { 
+				ROOT = {
 					has_equipment = {
 						transport_plane_equipment < 1
 					}
@@ -537,7 +616,7 @@ operation_infiltrate_armed_forces_army = {
 	name = operation_infiltrate_armed_forces_army
 	desc = operation_infiltrate_armed_forces_army_desc
 	priority = 4
-	
+
 	days = 75
 	network_strength = 50
 	operatives = 2
@@ -556,12 +635,13 @@ operation_infiltrate_armed_forces_army = {
 	}
 
 	equipment = {
-		
+
 	}
 
 	available = {
+
 	}
-	
+
 	awarded_tokens = {
 		token_army
 	}
@@ -616,10 +696,10 @@ operation_infiltrate_armed_forces_army = {
 	phases = {
 		infiltration_border = { base = 25 }
 		infiltration_submarine = { base = 25 }
-		infiltration_paradrop = { 
-			base = 25 
+		infiltration_paradrop = {
+			base = 25
 			modifier = {
-				ROOT = { 
+				ROOT = {
 					has_equipment = {
 						transport_plane_equipment < 1
 					}
@@ -657,10 +737,10 @@ operation_infiltrate_armed_forces_army = {
 		}
 	}
 	phases = {
-		exfiltration_air_pickup = { 
-			base = 15 
+		exfiltration_air_pickup = {
+			base = 15
 			modifier = {
-				ROOT = { 
+				ROOT = {
 					has_equipment = {
 						transport_plane_equipment < 1
 					}
@@ -680,7 +760,7 @@ operation_infiltrate_armed_forces_navy = {
 	name = operation_infiltrate_armed_forces_navy
 	desc = operation_infiltrate_armed_forces_navy_desc
 	priority = 5
-	
+
 	days = 75
 	network_strength = 50
 	operatives = 2
@@ -700,14 +780,15 @@ operation_infiltrate_armed_forces_navy = {
 			any_owned_state = {
 				is_coastal = yes
 			}
-		}		
+		}
 	}
 
 	equipment = {
-		
+
 	}
 
 	available = {
+
 	}
 
 	awarded_tokens = {
@@ -763,10 +844,10 @@ operation_infiltrate_armed_forces_navy = {
 	phases = {
 		infiltration_border = { base = 25 }
 		infiltration_submarine = { base = 25 }
-		infiltration_paradrop = { 
-			base = 25 
+		infiltration_paradrop = {
+			base = 25
 			modifier = {
-				ROOT = { 
+				ROOT = {
 					has_equipment = {
 						transport_plane_equipment < 1
 					}
@@ -804,10 +885,10 @@ operation_infiltrate_armed_forces_navy = {
 		}
 	}
 	phases = {
-		exfiltration_air_pickup = { 
-			base = 15 
+		exfiltration_air_pickup = {
+			base = 15
 			modifier = {
-				ROOT = { 
+				ROOT = {
 					has_equipment = {
 						transport_plane_equipment < 1
 					}
@@ -842,14 +923,15 @@ operation_infiltrate_armed_forces_airforce = {
 				tag = FROM
 				token = token_airforce
 			}
-		}		
+		}
 	}
 
 	equipment = {
-		
+
 	}
 
 	available = {
+
 	}
 
 	awarded_tokens = {
@@ -908,10 +990,10 @@ operation_infiltrate_armed_forces_airforce = {
 	phases = {
 		infiltration_border = { base = 25 }
 		infiltration_submarine = { base = 25 }
-		infiltration_paradrop = { 
-			base = 25 
+		infiltration_paradrop = {
+			base = 25
 			modifier = {
-				ROOT = { 
+				ROOT = {
 					has_equipment = {
 						transport_plane_equipment < 1
 					}
@@ -949,10 +1031,10 @@ operation_infiltrate_armed_forces_airforce = {
 		}
 	}
 	phases = {
-		exfiltration_air_pickup = { 
-			base = 15 
+		exfiltration_air_pickup = {
+			base = 15
 			modifier = {
-				ROOT = { 
+				ROOT = {
 					has_equipment = {
 						transport_plane_equipment < 1
 					}
@@ -989,6 +1071,7 @@ operation_coup_government = {
 	equipment = {
 		infantry_equipment = 12000
 	}
+
 	selection_target_state = {
 		is_capital = no
 	}
@@ -1005,7 +1088,7 @@ operation_coup_government = {
 	}
 
 	available = {
-		
+
 		FROM = {
 			has_civil_war = no
 			NOT = {
@@ -1035,7 +1118,7 @@ operation_coup_government = {
 				}
 				neutrality > 0.2
 			}
-			
+
 			OR = {
 				AND = {
 					is_major = no
@@ -1134,7 +1217,7 @@ operation_coup_government = {
 							tag = FROM
 							token = token_navy
 						}
-						
+
 					}
 				}
 				add_to_temp_variable = { civil_war_navy_fraction = 0.15 }
@@ -1190,10 +1273,10 @@ operation_coup_government = {
 	phases = {
 		infiltration_border = { base = 25 }
 		infiltration_submarine = { base = 25 }
-		infiltration_paradrop = { 
-			base = 25 
+		infiltration_paradrop = {
+			base = 25
 			modifier = {
-				ROOT = { 
+				ROOT = {
 					has_equipment = {
 						transport_plane_equipment < 1
 					}
@@ -1222,9 +1305,9 @@ operation_boost_resistance = {
 	name = operation_boost_resistance
 	desc = operation_boost_resistance_desc
 	priority = 8
-	
+
 	cost_multiplier = 0.25
-	
+
 	days = 50
 	network_strength = 35
 	operatives = 2
@@ -1332,29 +1415,28 @@ operation_boost_resistance = {
 		}
 	}
 
-	
 	target_weight = {
 		base = 100
-		
+
 		modifier = {
 			add = boost_resistance_chance
 		}
-		
+
 		modifier = {
 			set_temp_variable = { t = distance_to@ROOT.capital }
 			divide_temp_variable = { t = 600 }
 			clamp_temp_variable = { var = t min = 0 max = 1 }
 			multiply_temp_variable = { t = -40 }
-			
+
 			add = t
 		}
 	}
-	
+
 	phases = {
 		infiltration_border = { base = 50 }
 		infiltration_submarine = { base = 25 }
-		infiltration_paradrop = { 
-			base = 25 
+		infiltration_paradrop = {
+			base = 25
 		}
 	}
 	phases = {
@@ -1364,8 +1446,8 @@ operation_boost_resistance = {
 		resistance_support_coordinate_groups = { base = 25 }
 	}
 	phases = {
-		exfiltration_air_pickup = { 
-			base = 15 
+		exfiltration_air_pickup = {
+			base = 15
 		}
 		exfiltration_border = { base = 30 }
 		exfiltration_go_to_ground = { base = 30 }
@@ -1400,18 +1482,18 @@ operation_make_resistance_contacts = {
 				token = token_resistance_contacts
 			}
 		}
-		
+
 		FROM = {
 			any_controlled_state = {
 				has_resistance = yes
 			}
-		}		
+		}
 	}
 
 	equipment = {
-		
+
 	}
-	
+
 	selection_target = {
 		targets = { FROM }
 	}
@@ -1421,8 +1503,9 @@ operation_make_resistance_contacts = {
 	}
 
 	available = {
+
 	}
-	
+
 	awarded_tokens = {
 		token_resistance_contacts
 	}
@@ -1487,28 +1570,28 @@ operation_make_resistance_contacts = {
 
 	target_weight = {
 		base = 100
-		
+
 		modifier = {
 			add = boost_resistance_chance
 		}
-		
+
 		modifier = {
 			set_temp_variable = { t = distance_to@ROOT.capital }
 			divide_temp_variable = { t = 600 }
 			clamp_temp_variable = { var = t min = 0 max = 1 }
 			multiply_temp_variable = { t = -40 }
-			
+
 			add = t
 		}
 	}
-	
+
 	phases = {
 		infiltration_border = { base = 25 }
 		infiltration_submarine = { base = 25 }
-		infiltration_paradrop = { 
-			base = 25 
+		infiltration_paradrop = {
+			base = 25
 			modifier = {
-				ROOT = { 
+				ROOT = {
 					has_equipment = {
 						transport_plane_equipment < 1
 					}
@@ -1523,10 +1606,10 @@ operation_make_resistance_contacts = {
 		resistance_contacts_briefings = { base = 33 }
 	}
 	phases = {
-		exfiltration_air_pickup = { 
-			base = 15 
+		exfiltration_air_pickup = {
+			base = 15
 			modifier = {
-				ROOT = { 
+				ROOT = {
 					has_equipment = {
 						transport_plane_equipment < 1
 					}
@@ -1550,9 +1633,9 @@ operation_collaboration_government = {
 	days = 90
 	network_strength = 50
 	operatives = 2
-	
+
 	cost_multiplier = 0.25
-	
+
 	visible = {
 		network_strength = {
 			target = FROM
@@ -1568,7 +1651,6 @@ operation_collaboration_government = {
 			days = 60
 		}
 	}
-
 
 	allowed = {
 		has_rule = can_create_collaboration_government
@@ -1612,10 +1694,10 @@ operation_collaboration_government = {
 	phases = {
 		infiltration_border = { base = 25 }
 		infiltration_submarine = { base = 25 }
-		infiltration_paradrop = { 
-			base = 25 
+		infiltration_paradrop = {
+			base = 25
 			modifier = {
-				ROOT = { 
+				ROOT = {
 					has_equipment = {
 						transport_plane_equipment < 1
 					}
@@ -1640,10 +1722,10 @@ operation_collaboration_government = {
 		collaboration_government_contact_military_officers = { base = 33 }
 	}
 	phases = {
-		exfiltration_air_pickup = { 
-			base = 15 
+		exfiltration_air_pickup = {
+			base = 15
 			modifier = {
-				ROOT = { 
+				ROOT = {
 					has_equipment = {
 						transport_plane_equipment < 1
 					}
@@ -1706,8 +1788,9 @@ operation_coordinated_strike = {
 		ROOT = {
 			declare_war_on = { target = FROM type = annex_everything }
 		}
-		
+
 		execute_operation_coordinated_strike = {
+
 			amount = 12
 		}
 	}
@@ -1719,10 +1802,10 @@ operation_coordinated_strike = {
 	phases = {
 		infiltration_border = { base = 25 }
 		infiltration_submarine = { base = 25 }
-		infiltration_paradrop = { 
-			base = 25 
+		infiltration_paradrop = {
+			base = 25
 			modifier = {
-				ROOT = { 
+				ROOT = {
 					has_equipment = {
 						transport_plane_equipment < 1
 					}
@@ -1749,8 +1832,8 @@ operation_coordinated_strike = {
 	phases = {
 		coordinated_strike_sabotage_communications = { base = 34 }
 		coordinated_strike_direct_units = { base = 34 }
-		coordinated_strike_occupy_bridges = { 
-			base = 34 
+		coordinated_strike_occupy_bridges = {
+			base = 34
 			modifier = {
 				NOT = {
 					FROM = {
@@ -1773,7 +1856,7 @@ operation_targeted_sabotage_industry = {
 	name = operation_targeted_sabotage_industry
 	desc = operation_targeted_sabotage_industry_desc
 	priority = 13
-	
+
 	days = 90
 	network_strength = 35
 	operatives = 3
@@ -1784,7 +1867,6 @@ operation_targeted_sabotage_industry = {
 			target = FROM
 			value > 0
 		}
-
 
 		has_operation_token = {
 			tag = FROM
@@ -1808,7 +1890,7 @@ operation_targeted_sabotage_industry = {
 	}
 	required_tokens = { token_resistance_contacts }
 	equipment = {
-		
+
 	}
 
 	risk_chance = 0.2
@@ -1833,14 +1915,14 @@ operation_targeted_sabotage_industry = {
 		}
 	}
 	outcome_extra_execute = {
-		
+
 		FROM.FROM = {
 			add_to_variable = {
 				var = targeted_sabotage_industry
 				value = 8
 			}
 			custom_effect_tooltip = targeted_sabotage_industry_3_tt
-		}		
+		}
 	}
 
 	outcome_potential = {
@@ -1851,10 +1933,10 @@ operation_targeted_sabotage_industry = {
 	phases = {
 		infiltration_border = { base = 25 }
 		infiltration_submarine = { base = 25 }
-		infiltration_paradrop = { 
-			base = 25 
+		infiltration_paradrop = {
+			base = 25
 			modifier = {
-				ROOT = { 
+				ROOT = {
 					has_equipment = {
 						transport_plane_equipment < 1
 					}
@@ -1884,10 +1966,10 @@ operation_targeted_sabotage_industry = {
 		targeted_sabotage_organize_more_meetings = { base = 10 }
 	}
 	phases = {
-		exfiltration_air_pickup = { 
-			base = 15 
+		exfiltration_air_pickup = {
+			base = 15
 			modifier = {
-				ROOT = { 
+				ROOT = {
 					has_equipment = {
 						transport_plane_equipment < 1
 					}
@@ -1907,7 +1989,7 @@ operation_targeted_sabotage_infrastructure = {
 	name = operation_targeted_sabotage_infrastructure
 	desc = operation_targeted_sabotage_infrastructure_desc
 	priority = 14
-	
+
 	days = 90
 	network_strength = 35
 	operatives = 3
@@ -1923,7 +2005,7 @@ operation_targeted_sabotage_infrastructure = {
 			tag = FROM
 			token = token_resistance_contacts
 		}
-	}	
+	}
 
 	requirements = {
 		FROM = {
@@ -1940,7 +2022,7 @@ operation_targeted_sabotage_infrastructure = {
 	}
 	required_tokens = { token_resistance_contacts }
 	equipment = {
-		
+
 	}
 	risk_chance = 0.2
 	experience = 2
@@ -1948,7 +2030,7 @@ operation_targeted_sabotage_infrastructure = {
 	outcome_modifiers = { target_sabotage_factor operation_risk }
 	risk_modifiers = { target_sabotage_risk operation_outcome }
 	cost_modifiers = { target_sabotage_cost operation_cost }
-	
+
 	outcome_execute = {
 		FROM.FROM = {
 			add_to_variable = {
@@ -1980,10 +2062,10 @@ operation_targeted_sabotage_infrastructure = {
 	phases = {
 		infiltration_border = { base = 25 }
 		infiltration_submarine = { base = 25 }
-		infiltration_paradrop = { 
-			base = 25 
+		infiltration_paradrop = {
+			base = 25
 			modifier = {
-				ROOT = { 
+				ROOT = {
 					has_equipment = {
 						transport_plane_equipment < 1
 					}
@@ -2015,10 +2097,10 @@ operation_targeted_sabotage_infrastructure = {
 		targeted_sabotage_immobilize_rolling_stock = { base = 25 }
 	}
 	phases = {
-		exfiltration_air_pickup = { 
-			base = 15 
+		exfiltration_air_pickup = {
+			base = 15
 			modifier = {
-				ROOT = { 
+				ROOT = {
 					has_equipment = {
 						transport_plane_equipment < 1
 					}
@@ -2038,7 +2120,7 @@ operation_targeted_sabotage_resources = {
 	name = operation_targeted_sabotage_resources
 	desc = operation_targeted_sabotage_resources_desc
 	priority = 15
-	
+
 	days = 90
 	network_strength = 35
 	operatives = 3
@@ -2050,13 +2132,12 @@ operation_targeted_sabotage_resources = {
 			value > 0
 		}
 
-
 		has_operation_token = {
 			tag = FROM
 			token = token_resistance_contacts
 		}
 	}
-	
+
 	requirements = {
 		FROM = {
 			any_controlled_state = {
@@ -2072,7 +2153,7 @@ operation_targeted_sabotage_resources = {
 	}
 	required_tokens = { token_resistance_contacts }
 	equipment = {
-		
+
 	}
 	risk_chance = 0.2
 	experience = 2
@@ -2096,7 +2177,7 @@ operation_targeted_sabotage_resources = {
 		}
 	}
 	outcome_extra_execute = {
-		
+
 		FROM.FROM = {
 			add_to_variable = {
 				var = targeted_sabotage_resources
@@ -2112,10 +2193,10 @@ operation_targeted_sabotage_resources = {
 	phases = {
 		infiltration_border = { base = 25 }
 		infiltration_submarine = { base = 25 }
-		infiltration_paradrop = { 
-			base = 25 
+		infiltration_paradrop = {
+			base = 25
 			modifier = {
-				ROOT = { 
+				ROOT = {
 					has_equipment = {
 						transport_plane_equipment < 1
 					}
@@ -2145,10 +2226,10 @@ operation_targeted_sabotage_resources = {
 		targeted_sabotage_destroy_mining_equipment = { base = 50 }
 	}
 	phases = {
-		exfiltration_air_pickup = { 
-			base = 15 
+		exfiltration_air_pickup = {
+			base = 15
 			modifier = {
-				ROOT = { 
+				ROOT = {
 					has_equipment = {
 						transport_plane_equipment < 1
 					}

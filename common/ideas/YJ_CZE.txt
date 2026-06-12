@@ -1,4 +1,4 @@
-ideas = {
+﻿ideas = {
 	country = {
 		YJ_CZE_1_ideas = {
 
@@ -14,7 +14,7 @@ ideas = {
 
 			picture = generic_air_fighter
 
-			modifier = { 
+			modifier = {
 				political_power_gain = 0.15
 				political_power_factor = 0.15
 				global_building_slots_factor = 0.20

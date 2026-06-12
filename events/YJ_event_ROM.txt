@@ -1,16 +1,16 @@
-add_namespace = KoKi_YJ_ROM_event
+﻿add_namespace = KoKi_YJ_ROM_event
 country_event = {
 	id = KoKi_YJ_ROM_event.101
 	title = KoKi_YJ_ROM_event.101.title
 	desc = KoKi_YJ_ROM_event.101.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
 	option = {
 		name = KoKi_YJ_ROM_event.101.a
 		add_ideas = YJ_ROM_1_ideas
-		set_technology = { 
+		set_technology = {
 			fuel_silos = 1
 			fuel_refining = 1
 			fuel_refining2 = 1
@@ -29,7 +29,7 @@ country_event = {
 	id = KoKi_YJ_ROM_event.102
 	title = KoKi_YJ_ROM_event.102.title
 	desc = KoKi_YJ_ROM_event.102.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -47,7 +47,7 @@ country_event = {
 	id = KoKi_YJ_ROM_event.103
 	title = KoKi_YJ_ROM_event.103.title
 	desc = KoKi_YJ_ROM_event.103.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -65,7 +65,7 @@ country_event = {
 	id = KoKi_YJ_ROM_event.104
 	title = KoKi_YJ_ROM_event.104.title
 	desc = KoKi_YJ_ROM_event.104.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -79,12 +79,11 @@ country_event = {
 	}
 }
 
-
 country_event = {
 	id = KoKi_YJ_ROM_event.105
 	title = KoKi_YJ_ROM_event.105.title
 	desc = KoKi_YJ_ROM_event.105.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes

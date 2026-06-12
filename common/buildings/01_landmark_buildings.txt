@@ -1,8 +1,6 @@
-@landmark_repair_speed_factor = 0.15
+﻿@landmark_repair_speed_factor = 0.15
 
 buildings = {
-
-
 
 	landmark_big_ben = {
 		dlc_allowed = { has_dlc = Gotterdammerung }
@@ -11,7 +9,7 @@ buildings = {
 		damage_factor = 0
 		icon_frame = 22
 		value = 5
-		
+
 		is_buildable = no
 		disable_grow_animation = yes
 		spawn_point = landmark_spawn
@@ -38,7 +36,7 @@ buildings = {
 		damage_factor = 0
 		icon_frame = 22
 		value = 5
-		
+
 		is_buildable = no
 		disable_grow_animation = yes
 		spawn_point = landmark_spawn
@@ -65,7 +63,7 @@ buildings = {
 		damage_factor = 0
 		icon_frame = 22
 		value = 5
-		
+
 		is_buildable = no
 		disable_grow_animation = yes
 		spawn_point = landmark_spawn
@@ -92,7 +90,7 @@ buildings = {
 		damage_factor = 0
 		icon_frame = 22
 		value = 5
-		
+
 		is_buildable = no
 		disable_grow_animation = yes
 		spawn_point = landmark_spawn
@@ -111,7 +109,7 @@ buildings = {
 			}
 		}
 	}
-	
+
 	landmark_statue_of_liberty = {
 		dlc_allowed = { has_dlc = Gotterdammerung }
 		show_on_map = 1
@@ -134,7 +132,7 @@ buildings = {
 			enable_for_controllers = { USA }
 			modifiers = {
 				stability_factor = 0.05
-				political_power_factor = 0.02 
+				political_power_factor = 0.02
 			}
 		}
 	}
@@ -146,7 +144,7 @@ buildings = {
 		damage_factor = 0
 		icon_frame = 22
 		value = 5
-		
+
 		is_buildable = no
 		disable_grow_animation = yes
 		spawn_point = landmark_spawn
@@ -173,7 +171,7 @@ buildings = {
 		damage_factor = 0
 		icon_frame = 22
 		value = 5
-		
+
 		is_buildable = no
 		disable_grow_animation = yes
 		spawn_point = landmark_spawn
@@ -241,7 +239,7 @@ buildings = {
 			enable_for_controllers = { GER }
 			modifiers = {
 				stability_factor = 0.05
-				war_support_factor = 0.05 
+				war_support_factor = 0.05
 			}
 		}
 	}
@@ -253,7 +251,7 @@ buildings = {
 		damage_factor = 0
 		icon_frame = 22
 		value = 5
-		
+
 		is_buildable = no
 		disable_grow_animation = yes
 		spawn_point = landmark_spawn
@@ -280,7 +278,7 @@ buildings = {
 		damage_factor = 0
 		icon_frame = 22
 		value = 5
-		
+
 		is_buildable = no
 		disable_grow_animation = yes
 		spawn_point = landmark_spawn
@@ -307,7 +305,7 @@ buildings = {
 		damage_factor = 0
 		icon_frame = 22
 		value = 5
-		
+
 		is_buildable = no
 		disable_grow_animation = yes
 		spawn_point = landmark_spawn

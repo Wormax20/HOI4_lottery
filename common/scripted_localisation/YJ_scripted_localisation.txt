@@ -1,5 +1,4 @@
-
-defined_text = {
+﻿defined_text = {
 	name = KoKi_SOV_IDEAS
 	text = {
 		trigger = {

@@ -1,9 +1,9 @@
-add_namespace = KoKi_YJ_TUR_event
+﻿add_namespace = KoKi_YJ_TUR_event
 country_event = {
 	id = KoKi_YJ_TUR_event.101
 	title = KoKi_YJ_TUR_event.101.title
 	desc = KoKi_YJ_TUR_event.101.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -98,7 +98,7 @@ country_event = {
 			name = 君士坦丁堡
 		}
 		complete_national_focus = TUR_turk_silahli_kuvvetleri
-		set_technology = { 
+		set_technology = {
 			TUR_camelry_tech = 1
 			camelry = 1 }
 		every_owned_state = {
@@ -153,7 +153,7 @@ country_event = {
 	id = KoKi_YJ_TUR_event.102
 	title = KoKi_YJ_TUR_event.102.title
 	desc = KoKi_YJ_TUR_event.102.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -170,12 +170,11 @@ country_event = {
 	}
 }
 
-
 country_event = {
 	id = KoKi_YJ_TUR_event.103
 	title = KoKi_YJ_TUR_event.103.title
 	desc = KoKi_YJ_TUR_event.103.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes

@@ -1,5 +1,5 @@
-technologies = {
-	TUR_camelry_tech = { 
+﻿technologies = {
+	TUR_camelry_tech = {
 		camelry = {
 			max_strength = 0.05
             combat_width = -0.2
@@ -21,7 +21,7 @@ technologies = {
 			}
 		}
     }
-	TUR_camelry_2_tech = { 
+	TUR_camelry_2_tech = {
 		camelry = {
 			hardness = 0.15
             urban = {

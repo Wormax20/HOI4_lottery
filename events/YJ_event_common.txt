@@ -1,9 +1,9 @@
-add_namespace = KoKi_YJ
+﻿add_namespace = KoKi_YJ
 country_event = {
 	id = KoKi_YJ.101
 	title = KoKi_YJ.101.title
 	desc = KoKi_YJ.101.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -21,7 +21,7 @@ country_event = {
 	id = KoKi_YJ.102
 	title = KoKi_YJ.102.title
 	desc = KoKi_YJ.102.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -39,7 +39,7 @@ country_event = {
 	id = KoKi_YJ.103
 	title = KoKi_YJ.103.title
 	desc = KoKi_YJ.103.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -51,14 +51,14 @@ country_event = {
 			factor = 100
 		}
 	}
-	
+
 }
 
 country_event = {
 	id = KoKi_YJ.104
 	title = KoKi_YJ.104.title
 	desc = KoKi_YJ.104.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -70,14 +70,14 @@ country_event = {
 			factor = 100
 		}
 	}
-	
+
 }
 
 country_event = {
 	id = KoKi_YJ.105
 	title = KoKi_YJ.105.title
 	desc = KoKi_YJ.105.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -96,7 +96,7 @@ country_event = {
 	id = KoKi_YJ.106
 	title = KoKi_YJ.106.title
 	desc = KoKi_YJ.106.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -109,14 +109,14 @@ country_event = {
 			factor = 100
 		}
 	}
-	
+
 }
 
 country_event = {
 	id = KoKi_YJ.107
 	title = KoKi_YJ.107.title
 	desc = KoKi_YJ.107.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -130,35 +130,34 @@ country_event = {
 			factor = 100
 		}
 	}
-	
-}
 
+}
 
 country_event = {
 	id = KoKi_YJ.108
 	title = KoKi_YJ.108.title
 	desc = KoKi_YJ.108.desc
-	
+
 	picture = GFX_news_event_AUS_military_march
 
 	is_triggered_only = yes
 
 	option = {
 		name = KoKi_YJ.108.a
-		
+
 		add_ideas = YJ_8_ideas
 		ai_chance = {
 			factor = 100
 		}
 	}
-	
+
 }
 
 country_event = {
 	id = KoKi_YJ.109
 	title = KoKi_YJ.109.title
 	desc = KoKi_YJ.109.desc
-	
+
 	picture = GFX_news_event_generic_research_lab
 
 	is_triggered_only = yes
@@ -171,14 +170,14 @@ country_event = {
 			factor = 100
 		}
 	}
-	
+
 }
 
 country_event = {
 	id = KoKi_YJ.110
 	title = KoKi_YJ.110.title
 	desc = KoKi_YJ.110.desc
-	
+
 	picture = GFX_news_event_069
 
 	is_triggered_only = yes
@@ -191,14 +190,14 @@ country_event = {
 			factor = 100
 		}
 	}
-	
+
 }
 
 country_event = {
 	id = KoKi_YJ.111
 	title = KoKi_YJ.111.title
 	desc = KoKi_YJ.111.desc
-	
+
 	picture = GFX_news_event_quit_india_movement
 
 	is_triggered_only = yes
@@ -215,5 +214,5 @@ country_event = {
 			factor = 100
 		}
 	}
-	
+
 }

@@ -1,4 +1,4 @@
-on_actions = {
+﻿on_actions = {
 	on_monthly_GER = {
 	    effect = {
 			GER = { add_manpower = 150000 }
@@ -17,7 +17,7 @@ on_actions = {
 				set_global_flag = Beta_GER_1_on_flag
 			}
 			else_if = {
-				limit = { 
+				limit = {
 					has_idea = YJ_GER_4_ideas
 					date > 1937.12.1
 					NOT = { has_global_flag = Beta_GER_2_on_flag }
@@ -31,7 +31,7 @@ on_actions = {
 				set_global_flag = Beta_GER_2_on_flag
 			}
 			else_if = {
-				limit = { 
+				limit = {
 					has_idea = YJ_GER_4_ideas
 					date > 1938.12.1
 					NOT = { has_global_flag = Beta_GER_3_on_flag }
@@ -50,24 +50,24 @@ on_actions = {
 					NOT = { has_global_flag = Beta_GER_4_on_flag }
 					date > 1937.12.1
 				}
-				set_technology = { early_bombs = 1 } 
-				set_technology = { armor_piercing_bombs = 1 } 
-				set_technology = { heavy_bombs = 1 } 
-				set_technology = { aa_lmg = 1 } 
-				set_technology = { survivability_studies = 1 } 
-				set_technology = { aa_hmg = 1 } 
-				set_technology = { aa_cannon_1 = 1 } 
-				set_technology = { aa_cannon_2 = 1 } 
-				set_technology = { air_torpedoe_1 = 1 } 
-				set_technology = { air_torpedoe_2 = 1 } 
-				set_technology = { engines_1 = 1 } 
-				set_technology = { aircraft_construction = 1 } 
-				set_technology = { engines_2 = 1 } 
-				set_technology = { range_improvements = 1 } 
-				set_technology = { engines_3 = 1 } 
+				set_technology = { early_bombs = 1 }
+				set_technology = { armor_piercing_bombs = 1 }
+				set_technology = { heavy_bombs = 1 }
+				set_technology = { aa_lmg = 1 }
+				set_technology = { survivability_studies = 1 }
+				set_technology = { aa_hmg = 1 }
+				set_technology = { aa_cannon_1 = 1 }
+				set_technology = { aa_cannon_2 = 1 }
+				set_technology = { air_torpedoe_1 = 1 }
+				set_technology = { air_torpedoe_2 = 1 }
+				set_technology = { engines_1 = 1 }
+				set_technology = { aircraft_construction = 1 }
+				set_technology = { engines_2 = 1 }
+				set_technology = { range_improvements = 1 }
+				set_technology = { engines_3 = 1 }
 				set_technology = { engines_4 = 1 }
-				set_technology = { rocket_artillery = 1 }  
-				set_technology = { improved_small_airframe = 1 } 
+				set_technology = { rocket_artillery = 1 }
+				set_technology = { improved_small_airframe = 1 }
 				set_global_flag = Beta_GER_4_on_flag
 			}
 			IF = {
@@ -76,12 +76,12 @@ on_actions = {
 					NOT = { has_global_flag = Beta_GER_5_on_flag }
 					date > 1940.12.1
 				}
-				set_technology = { aa_cannon_3 = 1 } 
+				set_technology = { aa_cannon_3 = 1 }
 				set_technology = {
 					modern_small_airframe = 1
-				} 
-				set_technology = { heavy_bombs = 1 } 
-				set_technology = { aa_lmg = 1 } 
+				}
+				set_technology = { heavy_bombs = 1 }
+				set_technology = { aa_lmg = 1 }
 				set_global_flag = Beta_GER_5_on_flag
 			}
 		}

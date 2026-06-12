@@ -1,7 +1,6 @@
-ideas = {
+﻿ideas = {
 
 	country = {
-
 
 		HUN_treaty_of_triannon = {
 			allowed = {
@@ -88,7 +87,7 @@ ideas = {
 			}
 
 			modifier = {
-				production_speed_arms_factory_factor = -0.15	
+				production_speed_arms_factory_factor = -0.15
 			}
 		}
 
@@ -103,7 +102,7 @@ ideas = {
 			}
 
 			modifier = {
-				
+
 			}
 		}
 
@@ -243,10 +242,6 @@ ideas = {
 				war_support_factor = 0.05
 			}
 		}
-
-		
-		
-
 
 		HUN_gombos_trade_treaty = {
 			allowed = {
@@ -506,7 +501,6 @@ ideas = {
 			}
 		}
 
-
 		HABSBURG_an_imperium_restored = {
 			allowed = {
 				OR = {
@@ -517,7 +511,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			picture = HABSBURG_an_imperium_restored
 
 			modifier = {
@@ -540,7 +534,6 @@ ideas = {
 				autonomy_gain = -0.5
 			}
 		}
-
 
 		HUN_low_popular_support = {
 			allowed = {
@@ -571,7 +564,7 @@ ideas = {
 				NOT = {
 					OR = {
 						has_government = democratic
-						has_government = communism 
+						has_government = communism
 					}
 				}
 			}
@@ -609,7 +602,7 @@ ideas = {
 				original_tag = HUN
 			}
 			available = {
-				
+
 			}
 			allowed_civil_war = {
 				always = yes
@@ -628,7 +621,7 @@ ideas = {
 				original_tag = HUN
 			}
 			available = {
-				
+
 			}
 			allowed_civil_war = {
 				always = yes
@@ -973,7 +966,7 @@ ideas = {
 				always = yes
 			}
 			picture = generic_armor
-			
+
 			equipment_bonus = {
 				light_tank_artillery_chassis = {
 					build_cost_ic = -0.15 instant = yes
@@ -1041,7 +1034,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			picture = HUN_hungarian_monarchy
 
 			modifier = {
@@ -1058,7 +1051,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			picture = HUN_hungarian_monarchy
 
 			modifier = {
@@ -1291,12 +1284,12 @@ ideas = {
 			picture = generic_attack_soviet_union
 
 			modifier = {
-				
+
 			}
 
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.075
+				attack_bonus_against = 0.15
 				defense_bonus_against = 0.1
 			}
 		}
@@ -1349,8 +1342,8 @@ ideas = {
 			modifier = {
 				supply_consumption_factor = -0.15
 				non_core_manpower = 0.05
-				army_attack_factor = 0.075
-				army_defence_factor = 0.075
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
 				political_power_factor = 0.1
 			}
 		}
@@ -1520,7 +1513,7 @@ ideas = {
 			removal_cost = -1
 
 			picture = HUN_state_protection_authority_idea
-				
+
 			allowed = {
 				original_tag = HUN
 			}
@@ -1528,7 +1521,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-					
+
 			modifier = {
 				operative_slot = 1
 			}
@@ -1538,7 +1531,7 @@ ideas = {
 			removal_cost = -1
 
 			picture = HUN_state_protection_authority_idea
-				
+
 			allowed = {
 				original_tag = HUN
 			}
@@ -1546,7 +1539,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-					
+
 			modifier = {
 				foreign_subversive_activites = -0.25
 				subversive_activites_upkeep = -0.25
@@ -1557,7 +1550,7 @@ ideas = {
 			removal_cost = -1
 
 			picture = home_of_revolution
-				
+
 			allowed = {
 				original_tag = HUN
 			}
@@ -1565,7 +1558,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-					
+
 			modifier = {
 				industrial_capacity_factory = 0.1
 				drift_defence_factor = 0.5
@@ -1607,19 +1600,6 @@ ideas = {
 			}
 		}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 		HUN_war_preparation = {
 			allowed = {
 				original_tag = HUN
@@ -1637,8 +1617,6 @@ ideas = {
 			}
 		}
 
-		
-
 		HUN_hungarian_monarchy = {
 			allowed = {
 				original_tag = HUN
@@ -1646,7 +1624,7 @@ ideas = {
 			allowed_civil_war = {
 				has_government = neutrality
 			}
-			
+
 			modifier = {
 				neutrality_drift = 0.02
 			}
@@ -1661,7 +1639,7 @@ ideas = {
 			allowed_civil_war = {
 				has_government = neutrality
 			}
-			
+
 			modifier = {
 				neutrality_drift = 0.02
 				stability_factor = 0.1
@@ -1678,7 +1656,7 @@ ideas = {
 			allowed_civil_war = {
 				has_government = neutrality
 			}
-			
+
 			modifier = {
 				neutrality_drift = 0.02
 				stability_factor = 0.15
@@ -1700,7 +1678,7 @@ ideas = {
 					has_government = fascism
 				}
 			}
-			
+
 			modifier = {
 				neutrality_drift = 0.02
 				fascism_drift = 0.03
@@ -1720,7 +1698,7 @@ ideas = {
 			allowed_civil_war = {
 				has_government = neutrality
 			}
-			
+
 			modifier = {
 				neutrality_drift = 0.02
 				stability_factor = 0.1
@@ -1739,7 +1717,7 @@ ideas = {
 			allowed_civil_war = {
 				has_government = neutrality
 			}
-			
+
 			modifier = {
 				neutrality_drift = 0.02
 				stability_factor = 0.1
@@ -1750,7 +1728,7 @@ ideas = {
 			}
 		}
 
-		HUN_hungarian_monarchy_democratic = {		
+		HUN_hungarian_monarchy_democratic = {
 
 			allowed = {
 				original_tag = HUN
@@ -1768,15 +1746,15 @@ ideas = {
 					}
 				}
 			}
-			
+
 			modifier = {
 				democratic_drift = 0.02
 				stability_factor = 0.1
 			}
 		}
 
-		HUN_hungarian_monarchy_nice_democratic = {	
-			name = HUN_hungarian_monarchy_democratic		
+		HUN_hungarian_monarchy_nice_democratic = {
+			name = HUN_hungarian_monarchy_democratic
 
 			picture = HUN_hungarian_monarchy_democratic
 
@@ -1788,13 +1766,13 @@ ideas = {
 			}
 
 			available = {
-				
+
 				OR = {
 					has_government = democratic
 					has_government = neutrality
 				}
 			}
-			
+
 			modifier = {
 				democratic_drift = 0.04
 				neutrality_drift = 0.01
@@ -1804,7 +1782,7 @@ ideas = {
 			}
 		}
 
-		HUN_hungarian_monarchy_fascism = {			
+		HUN_hungarian_monarchy_fascism = {
 			allowed = {
 				original_tag = HUN
 			}
@@ -1821,7 +1799,7 @@ ideas = {
 					}
 				}
 			}
-			
+
 			modifier = {
 				fascism_drift = 0.034
 				stability_factor = 0.1
@@ -1839,10 +1817,10 @@ ideas = {
 				has_government = democratic
 			}
 
-			available = { 
+			available = {
 				has_government = democratic
 			}
-			
+
 			modifier = {
 				democratic_drift = 0.02
 				fascism_drift = -0.01
@@ -1851,9 +1829,9 @@ ideas = {
 			}
 		}
 
-		HUN_hungarian_monarchy_nice_democratic_2 = {	
+		HUN_hungarian_monarchy_nice_democratic_2 = {
 
-			name = HUN_his_majestys_government		
+			name = HUN_his_majestys_government
 
 			picture = HUN_hungarian_monarchy_democratic
 
@@ -1865,13 +1843,13 @@ ideas = {
 			}
 
 			available = {
-				
+
 				OR = {
 					has_government = democratic
 					has_government = neutrality
 				}
 			}
-			
+
 			modifier = {
 				democratic_drift = 0.05
 				neutrality_drift = 0.02
@@ -1898,7 +1876,7 @@ ideas = {
 			available = {
 				has_government = neutrality
 			}
-			
+
 			modifier = {
 				neutrality_drift = 0.02
 				stability_factor = 0.1
@@ -1915,7 +1893,7 @@ ideas = {
 			allowed_civil_war = {
 				has_government = democratic
 			}
-			
+
 			modifier = {
 				democratic_drift = 0.02
 			}
@@ -1929,9 +1907,9 @@ ideas = {
 			allowed_civil_war = {
 				has_government = democratic
 			}
-			
+
 			modifier = {
-				
+
 			}
 		}
 
@@ -1941,7 +1919,7 @@ ideas = {
 				always = no
 			}
 			picture = generic_fascism_drift_2
-			
+
 			modifier = {
 				fascism_drift = 0.03
 			}
@@ -2004,15 +1982,15 @@ ideas = {
 			}
 			available = {
 				OR = {
-					has_idea = disarmed_nation 
-					has_idea = volunteer_only 
+					has_idea = disarmed_nation
+					has_idea = volunteer_only
 				}
 			}
 
 			allowed_civil_war = {
-				
+
 			}
-			
+
 			modifier = {
 				conscription = 0.0025
 				industrial_capacity_factory = 0.05
@@ -2028,9 +2006,9 @@ ideas = {
 			picture = generic_foreign_capital
 
 			allowed_civil_war = {
-				
+
 			}
-			
+
 			modifier = {
 				production_speed_infrastructure_factor = 0.1
 				production_speed_industrial_complex_factor = 0.1
@@ -2050,9 +2028,9 @@ ideas = {
 			picture = generic_air_research
 
 			allowed_civil_war = {
-				
+
 			}
-			
+
 			research_bonus = {
 				air_equipment = 0.15
 			}
@@ -2066,12 +2044,12 @@ ideas = {
 			picture = generic_license_production
 
 			allowed_civil_war = {
-				
+
 			}
-			
+
 			modifier = {
 				license_air_purchase_cost = -0.3
-				license_production_speed = 0.5 
+				license_production_speed = 0.5
 			}
 		}
 
@@ -2083,9 +2061,9 @@ ideas = {
 			picture = generic_navy_bonus
 
 			allowed_civil_war = {
-				
+
 			}
-			
+
 			modifier = {
 				industrial_capacity_dockyard = 0.1
 			}
@@ -2099,9 +2077,9 @@ ideas = {
 			picture = generic_armor
 
 			allowed_civil_war = {
-				
+
 			}
-			
+
 			equipment_bonus = {
 				light_tank_artillery_chassis = {
 					build_cost_ic = -0.1 instant = yes
@@ -2131,13 +2109,13 @@ ideas = {
 			ai_will_do = {
 				base = 1
 			}
-						
+
 			allowed = {
 				original_tag = HUN
 				has_dlc = "La Resistance"
 				has_dlc = "Gotterdammerung"
 			}
-						
+
 			research_bonus = {
 				armor = 0.15
 			}
@@ -2156,12 +2134,12 @@ ideas = {
 			ai_will_do = {
 				base = 2
 			}
-						
+
 			allowed = {
 				original_tag = HUN
 				has_dlc = "Gotterdammerung"
 			}
-						
+
 			research_bonus = {
 				armor = 0.15
 			}
@@ -2180,12 +2158,12 @@ ideas = {
 			ai_will_do = {
 				base = 5
 			}
-						
+
 			allowed = {
 				original_tag = HUN
 				has_dlc = "Gotterdammerung"
 			}
-						
+
 			research_bonus = {
 				armor = 0.15
 			}
@@ -2204,12 +2182,12 @@ ideas = {
 			ai_will_do = {
 				base = 1
 			}
-						
+
 			allowed = {
 				original_tag = HUN
 				has_dlc = "Gotterdammerung"
 			}
-						
+
 			research_bonus = {
 				armor = 0.15
 			}
@@ -2228,12 +2206,12 @@ ideas = {
 			ai_will_do = {
 				base = 2
 			}
-						
+
 			allowed = {
 				original_tag = HUN
 				has_dlc = "Gotterdammerung"
 			}
-						
+
 			research_bonus = {
 				armor = 0.15
 			}
@@ -2242,20 +2220,19 @@ ideas = {
 		}
 
 	}
-	
+
 	aircraft_manufacturer = {
-			
+
 		designer = yes
-		
+
 		mw_aircraft = {
-			
+
 			picture = generic_air_manufacturer_2
 
-			
 			allowed = {
 				original_tag = HUN
 			}
-			
+
 			research_bonus = {
 				air_equipment = 0.15
 			}
@@ -2263,20 +2240,18 @@ ideas = {
 			ai_will_do = {
 				base = 1
 			}
-			
+
 			traits = { light_aircraft_manufacturer }
-			
-						
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 
 		mavag_aircraft = {
-			
+
 			picture = HUN_mavag_aircraft
 
-			
 			allowed = {
 				original_tag = HUN
 			}
@@ -2284,7 +2259,7 @@ ideas = {
 			available = {
 				has_completed_focus = wuw_HUN_establish_the_mavag_aircraft_factory
 			}
-			
+
 			research_bonus = {
 				air_equipment = 0.15
 			}
@@ -2292,26 +2267,26 @@ ideas = {
 			ai_will_do = {
 				base = 1
 			}
-			
+
 			traits = { fuel_efficient_aircraft_manufacturer }
-						
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 
 		HUN_mrt_aircraft = {
-			
+
 			picture = HUN_mrt_aircraft
 
-			
 			allowed = {
 				original_tag = HUN
 			}
 
 			available = {
+
 			}
-			
+
 			research_bonus = {
 				air_equipment = 0.05
 			}
@@ -2319,9 +2294,9 @@ ideas = {
 			ai_will_do = {
 				base = 1
 			}
-			
+
 			traits = { aircraft_production_plant }
-						
+
 			ai_will_do = {
 				factor = 1
 			}
@@ -2330,17 +2305,17 @@ ideas = {
 	}
 
 	naval_manufacturer = {
-	
+
 		designer = yes
-	
+
 		HUN_ganz_danubius = {
-			
+
 			picture = HUN_ganz_danubius
 
 			available = {
 				IF = {
-					limit = { 
-						has_dlc = "Death or Dishonor" 
+					limit = {
+						has_dlc = "Death or Dishonor"
 						NOT = {
 							has_dlc = "Gotterdammerung"
 						}
@@ -2358,10 +2333,10 @@ ideas = {
 			allowed = {
 				original_tag = HUN
 			}
-			
+
 			cost = 150
 			removal_cost = 10
-			
+
 			research_bonus = {
 				naval_equipment = 0.15
 			}
@@ -2369,7 +2344,7 @@ ideas = {
 			ai_will_do = {
 				base = 1
 			}
-			
+
 			traits = { naval_manufacturer }
 
 			equipment_bonus = {
@@ -2380,13 +2355,13 @@ ideas = {
 		}
 
 		HUN_obudai_hajogyar = {
-			
+
 			picture = HUN_obudai_hajogyar
 
 			available = {
 				IF = {
-					limit = { 
-						has_dlc = "Death or Dishonor" 
+					limit = {
+						has_dlc = "Death or Dishonor"
 						NOT = {
 							has_dlc = "Gotterdammerung"
 						}
@@ -2404,10 +2379,10 @@ ideas = {
 			allowed = {
 				original_tag = HUN
 			}
-			
+
 			cost = 150
 			removal_cost = 10
-			
+
 			research_bonus = {
 				naval_equipment = 0.1
 			}
@@ -2415,7 +2390,7 @@ ideas = {
 			ai_will_do = {
 				base = 1
 			}
-			
+
 			traits = { repair_and_refurbishment_plant }
 
 			modifier = {
@@ -2429,15 +2404,15 @@ ideas = {
 	}
 
 	industrial_concern = {
-	
+
 		HUN_mavag = {
-			
+
 			picture = generic_industrial_concern_1
 
 			allowed = {
 				original_tag = HUN
 			}
-			
+
 			research_bonus = {
 				industry = 0.15
 			}
@@ -2445,19 +2420,18 @@ ideas = {
 			ai_will_do = {
 				base = 1
 			}
-			
+
 			traits = { industrial_steel_mills_trait }
 		}
 
 		HUN_orion = {
-			
+
 			picture = HUN_orion
 
 			allowed = {
 				original_tag = HUN
 			}
 
-			
 			research_bonus = {
 				electronics = 0.15
 			}
@@ -2465,11 +2439,11 @@ ideas = {
 			ai_will_do = {
 				base = 0.5
 			}
-			
+
 			traits = { electronics_concern }
 		}
 
-		HUN_mav = { 
+		HUN_mav = {
 
 			picture = HUN_mav
 
@@ -2491,14 +2465,14 @@ ideas = {
 			ai_will_do = {
 				base = 2
 			}
-		
-			traits = { railway_company } 
+
+			traits = { railway_company }
 
 			modifier = {
 			}
 		}
 
-		HUN_maort = { 
+		HUN_maort = {
 
 			picture = HUN_maort
 
@@ -2521,8 +2495,8 @@ ideas = {
 			ai_will_do = {
 				base = 2
 			}
-		
-			traits = { oil_extraction_company_trait } 
+
+			traits = { oil_extraction_company_trait }
 
 			modifier = {
 
@@ -2532,20 +2506,20 @@ ideas = {
 	}
 
 	materiel_manufacturer = {
-	
+
 		designer = yes
-	
+
 		HUN_femaru_fegyver_es_gepgyar = {
-			
+
 			picture = generic_infantry_equipment_manufacturer_2
 
 			allowed = {
 				original_tag = HUN
 			}
-			
+
 			cost = 150
 			removal_cost = 10
-			
+
 			research_bonus = {
 				infantry_weapons = 0.15
 			}
@@ -2553,12 +2527,12 @@ ideas = {
 			ai_will_do = {
 				base = 0.5
 			}
-			
+
 			traits = { infantry_equipment_manufacturer }
 		}
 
 		HUN_danuvia_inf = {
-			
+
 			picture = HUN_dunai_gepgyar
 
 			allowed = {
@@ -2576,23 +2550,23 @@ ideas = {
 			ai_will_do = {
 				base = 5
 			}
-			
+
 			research_bonus = {
 				infantry_weapons = 0.1
 				support_tech = 0.1
 			}
-			
+
 			traits = { infantry_equipment_manufacturer }
 		}
 
 		HUN_mwg_raba = {
-			
+
 			picture = HUN_mwg_raba
-			
+
 			allowed = {
 				original_tag = HUN
 			}
-			
+
 			available = {
 				has_completed_focus = wuw_HUN_the_botond
 			}
@@ -2604,25 +2578,25 @@ ideas = {
 			ai_will_do = {
 				base = 1
 			}
-			
+
 			research_bonus = {
 				motorized_equipment = 0.15
 			}
-			
+
 			traits = { motorized_equipment_manufacturer }
-			
+
 			modifier = {
 			}
 		}
 
 		HUN_rheinmetall = {
-			
+
 			picture = rheinmetall
-			
+
 			allowed = {
 				original_tag = HUN
 			}
-			
+
 			available = {
 				has_completed_focus = wuw_HUN_seek_german_contracts
 			}
@@ -2634,13 +2608,13 @@ ideas = {
 			ai_will_do = {
 				base = 1
 			}
-			
+
 			research_bonus = {
 				artillery = 0.15
 			}
-			
+
 			traits = { artillery_manufacturer }
-			
+
 			modifier = {
 			}
 		}

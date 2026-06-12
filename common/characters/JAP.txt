@@ -1,4 +1,4 @@
-characters = {
+﻿characters = {
 
 	JAP_emperor_hirohito = {
 
@@ -14,7 +14,6 @@ characters = {
 			}
 		}
 
-
 	}
 
 	JAP_empress_nagako = {
@@ -28,7 +27,6 @@ characters = {
 				small = GFX_portrait_JAP_empress_nagako_small
 			}
 		}
-
 
 	}
 
@@ -45,13 +43,11 @@ characters = {
 			}
 		}
 
-
-
 		field_marshal = {
-			traits = { politically_connected JAP_samurai_lineage offensive_doctrine JAP_royal_lineage cavalry_leader organizer ranger }
+			traits = { politically_connected JAP_samurai_lineage offensive_doctrine JAP_royal_lineage infantry_leader }
 			skill = 3
-			attack_skill = 4
-			defense_skill = 1
+			attack_skill = 3
+			defense_skill = 2
 			planning_skill = 3
 			logistics_skill = 2
 			legacy_id = -1
@@ -59,7 +55,7 @@ characters = {
 				has_country_leader = {
 					ruling_only = yes
 					character = JAP_emperor_yasuhito
-				}	
+				}
 			}
 		}
 
@@ -78,8 +74,6 @@ characters = {
 			}
 		}
 
-
-
 	}
 
 	JAP_yoshio_kodama = {
@@ -91,8 +85,6 @@ characters = {
 				small = GFX_portrait_JAP_yoshio_kodama_small
 			}
 		}
-
-
 
 	}
 
@@ -124,7 +116,6 @@ characters = {
 			}
 		}
 
-
 	}
 
 	JAP_kanson_arahata = {
@@ -137,7 +128,6 @@ characters = {
 			}
 		}
 
-
 	}
 
 	JAP_yamakawa_kikue = {
@@ -145,13 +135,43 @@ characters = {
 
 		gender = female
 
+		advisor = {
+			slot = political_advisor
+			idea_token = JAP_yamakawa_kikue
+
+			allowed = {
+				original_tag = JAP
+			}
+
+			visible = {
+				NOT = {
+					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
+					has_completed_focus = JAP_organize_a_general_election
+					has_completed_focus = JAP_sea_purge_the_kodoha_faction
+				}
+			}
+
+			available = {
+				has_country_leader = {
+					ruling_only = yes
+					character = JAP_hitoshi_yamakawa
+				}
+			}
+
+			traits = {
+				ARG_feminist_revolutionary
+			}
+			ai_will_do = {
+				base = 1
+			}
+		}
+
 		portraits = {
 			civilian = {
 				large = GFX_portrait_JAP_yamakawa_kikue
 				small = GFX_portrait_JAP_yamakawa_kikue_small
 			}
 		}
-
 
 	}
 
@@ -183,7 +203,6 @@ characters = {
 			}
 		}
 
-
 	}
 
 	JAP_machida_chuuji = {
@@ -196,7 +215,6 @@ characters = {
 			}
 		}
 
-
 	}
 
 	JAP_abe_isoo = {
@@ -208,7 +226,6 @@ characters = {
 				small = GFX_portrait_JAP_abe_isoo_smalll
 			}
 		}
-
 
 	}
 
@@ -241,7 +258,6 @@ characters = {
 			}
 		}
 
-
 	}
 
 	JAP_kazushige_ugaki = {
@@ -253,7 +269,6 @@ characters = {
 				small = GFX_portrait_JAP_kazushige_ugaki_small
 			}
 		}
-
 
 	}
 
@@ -269,7 +284,6 @@ characters = {
 				small = GFX_portrait_JAP_senjuro_hayashi_military_small
 			}
 		}
-
 
 		corps_commander = {
 			traits = { politically_connected trickster infantry_leader }
@@ -304,7 +318,6 @@ characters = {
 			}
 		}
 
-
 	}
 
 	JAP_tokugawa_iesato = {
@@ -316,7 +329,6 @@ characters = {
 				small = GFX_portrait_JAP_tokugawa_iesato_small
 			}
 		}
-
 
 	}
 
@@ -348,7 +360,6 @@ characters = {
 				small = GFX_portrait_JAP_seigo_nakano_small
 			}
 		}
-
 
 	}
 
@@ -630,7 +641,7 @@ characters = {
 				JAP_small_army_faction_loss = yes
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { politically_connected JAP_samurai_lineage armor_officer }
 			skill = 4
@@ -671,7 +682,7 @@ characters = {
 				base = 1
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { JAP_samurai_lineage brilliant_strategist }
 			skill = 4
@@ -783,7 +794,7 @@ characters = {
 				}
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { trait_reckless }
 			skill = 1
@@ -929,7 +940,7 @@ characters = {
 				base = 1
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { career_officer substance_abuser }
 			skill = 1
@@ -1105,7 +1116,6 @@ characters = {
 		}
 
 	}
-
 
 	JAP_saburo_aizawa = {
 		name = JAP_saburo_aizawa
@@ -1344,7 +1354,6 @@ characters = {
 			}
 		}
 
-
 		corps_commander = {
 			traits = { organizer infantry_leader trait_JAP_kodoha_sympathizer }
 			skill = 3
@@ -1384,7 +1393,6 @@ characters = {
 		}
 
 	}
-
 
 	JAP_keisuke_fujie = {
 		name = JAP_keisuke_fujie
@@ -1521,7 +1529,7 @@ characters = {
 				base = 3
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { career_officer infantry_officer commando }
 			skill = 3
@@ -1609,6 +1617,7 @@ characters = {
 				large = GFX_portrait_JAP_isoroku_yamamoto
 				small = GFX_idea_isoroku_yamamoto
 			}
+
 		}
 
 		advisor = {
@@ -1632,7 +1641,7 @@ characters = {
 				JAP_small_naval_faction_loss = yes
 			}
 		}
-		
+
 		navy_leader = {
 			traits = { bold aviation_enthusiast superior_tactician spotter air_controller flight_deck_manager }
 			skill = 5
@@ -1663,7 +1672,7 @@ characters = {
 				large = GFX_portrait_JAP_yuzuru_hiraga_scientist
 			}
 		}
-		
+
 		navy_leader = {
 			traits = { bold navy_career_officer gunnery_expert naval_lineage }
 			skill = 3
@@ -1693,7 +1702,7 @@ characters = {
 				small = GFX_portrait_JAP_masafumi_arima_small
 			}
 		}
-		
+
 		navy_leader = {
 			traits = { bold navy_career_officer aviation_enthusiast air_controller }
 			skill = 3
@@ -1716,7 +1725,7 @@ characters = {
 				small = GFX_portrait_JAP_teijiro_toyoda_small
 			}
 		}
-		
+
 		navy_leader = {
 			traits = { navy_career_officer naval_lineage }
 			skill = 2
@@ -1739,7 +1748,7 @@ characters = {
 				small = GFX_portrait_JAP_chuichi_nagumo_small
 			}
 		}
-		
+
 		navy_leader = {
 			traits = { old_guard_navy superior_tactician lancer }
 			skill = 3
@@ -1762,7 +1771,7 @@ characters = {
 				small = GFX_portrait_JAP_tamon_yamaguchi_small
 			}
 		}
-		
+
 		navy_leader = {
 			traits = { bold aviation_enthusiast cuts_corners }
 			skill = 4
@@ -1789,7 +1798,7 @@ characters = {
 		}
 
 		scientist = {
-			traits = { scientist_trait_armored_specialist } 
+			traits = { scientist_trait_armored_specialist }
 			skills = {
 				specialization_land = 1
 			}
@@ -1846,7 +1855,7 @@ characters = {
 			defense_skill = 2
 			maneuvering_skill = 1
 			coordination_skill = 2
-			legacy_id = 0 
+			legacy_id = 0
 		}
 
 	}
@@ -1944,7 +1953,7 @@ characters = {
 				base = 1
 			}
 		}
-		
+
 		navy_leader = {
 			traits = { old_guard_navy bold ironside }
 			skill = 3
@@ -2067,11 +2076,6 @@ characters = {
 
 	}
 
-
-
-
-
-
 	JAP_minoru_genda = {
 		name = JAP_minoru_genda
 
@@ -2180,7 +2184,6 @@ characters = {
 		}
 
 	}
-
 
 	JAP_kanin_kotohito = {
 		name = JAP_kanin_kotohito
@@ -2348,9 +2351,7 @@ characters = {
 			legacy_id = -1
 		}
 
-
 	}
-
 
 	JAP_fushimi_hiroyasu = {
 		name = JAP_fushimi_hiroyasu
@@ -2442,9 +2443,6 @@ characters = {
 
 	}
 
-
-
-
 	JAP_torashiro_kawabe = {
 		name = JAP_torashiro_kawabe
 
@@ -2495,12 +2493,6 @@ characters = {
 			}
 		}
 	}
-
-
-
-
-
-
 
 	JAP_mitsuo_fuchida = {
 		name = JAP_mitsuo_fuchida
@@ -2555,7 +2547,7 @@ characters = {
 		}
 
 	}
-	
+
 	JAP_tateo_kato = {
 		name = JAP_tateo_kato
 
@@ -2582,7 +2574,7 @@ characters = {
 		}
 
 	}
-	
+
 	JAP_matome_ugaki = {
 		name = JAP_matome_ugaki
 
@@ -2609,7 +2601,7 @@ characters = {
 		}
 
 	}
-	
+
 	JAP_chuichi_nagumo = {
 		name = JAP_chuichi_nagumo
 
@@ -2637,8 +2629,6 @@ characters = {
 
 	}
 
-
-
 	JAP_sanzo_nosaka = {
 		instance = {
 			allowed = {
@@ -2663,7 +2653,7 @@ characters = {
 						limit = {
 							has_dlc = "Waking the Tiger"
 						}
-						has_completed_focus = JAP_the_unthinkable_option 
+						has_completed_focus = JAP_the_unthinkable_option
 					}
 					if = {
 						limit = {
@@ -2678,11 +2668,11 @@ characters = {
 					original_tag = JAP
 				}
 				traits = {
-					communist_revolutionary 
+					communist_revolutionary
 				}
 				do_effect = {
 					NOT = {
-						has_government = communism 
+						has_government = communism
 					}
 				}
 				ai_will_do = {
@@ -2706,7 +2696,6 @@ characters = {
 					small = GFX_portrait_JAP_sanzo_nosaka_civilian_small
 				}
 			}
-
 
 		}
 
@@ -2736,7 +2725,7 @@ characters = {
 						limit = {
 							has_dlc = "Waking the Tiger"
 						}
-						has_completed_focus = JAP_strengthen_civilian_government 
+						has_completed_focus = JAP_strengthen_civilian_government
 					}
 					if = {
 						limit = {
@@ -2751,11 +2740,11 @@ characters = {
 					original_tag = JAP
 				}
 				traits = {
-					democratic_reformer 
+					democratic_reformer
 				}
 				do_effect = {
 					NOT = {
-						has_government = democratic 
+						has_government = democratic
 					}
 				}
 				ai_will_do = {
@@ -2795,9 +2784,9 @@ characters = {
 				available = {
 					has_government = democratic
 				}
-				
+
 				traits = {
-					JAP_pacifist_baron 
+					JAP_pacifist_baron
 				}
 
 				ai_will_do = {
@@ -2839,13 +2828,13 @@ characters = {
 				}
 
 				traits = {
-					JAP_paramilitary_leader 
+					JAP_paramilitary_leader
 				}
-				
+
 				ai_will_do = {
 					base = 0.5
 				}
-			}	
+			}
 
 			corps_commander = {
 				traits = { politically_connected militias_officer }
@@ -2899,13 +2888,13 @@ characters = {
 				}
 
 				traits = {
-					JAP_paramilitary_leader 
+					JAP_paramilitary_leader
 				}
-				
+
 				ai_will_do = {
 					base = 1.5
 				}
-			}	
+			}
 
 			corps_commander = {
 				traits = { politically_connected militias_officer }
@@ -2944,6 +2933,7 @@ characters = {
 				}
 				civilian = {
 					small = GFX_portrait_JAP_mitsumasa_yonai_civilian_small
+
 				}
 			}
 
@@ -2954,7 +2944,7 @@ characters = {
 				defense_skill = 1
 				maneuvering_skill = 2
 				coordination_skill = 2
-				legacy_id = -1 
+				legacy_id = -1
 				visible = {
 					has_completed_focus = JAP_end_the_interservice_rivalry
 					NOT = {
@@ -2979,7 +2969,7 @@ characters = {
 					has_completed_focus = JAP_konoes_first_cabinet
 				}
 				traits = {
-					silent_workhorse 
+					silent_workhorse
 				}
 				ai_will_do = {
 					base = 3
@@ -3010,7 +3000,7 @@ characters = {
 				defense_skill = 1
 				maneuvering_skill = 2
 				coordination_skill = 2
-				legacy_id = -1 
+				legacy_id = -1
 				visible = {
 					OR = {
 						has_completed_focus = JAP_sway_the_navy_moderates
@@ -3027,6 +3017,7 @@ characters = {
 				}
 				visible = {
 					NOT = {
+
 						has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
 					}
 				}
@@ -3035,7 +3026,7 @@ characters = {
 						has_country_leader = {
 							ruling_only = yes
 							character = JAP_mitsumasa_yonai
-						}	
+						}
 					}
 					OR = {
 						has_completed_focus = JAP_sway_the_navy_moderates
@@ -3046,16 +3037,14 @@ characters = {
 					}
 				}
 				traits = {
-					silent_workhorse 
+					silent_workhorse
 				}
 				ai_will_do = {
 					base = 1
 				}
 			}
 
-
 		}
-		
 
 	}
 
@@ -3088,7 +3077,7 @@ characters = {
 				}
 
 				traits = {
-					JAP_ambassador_to_germany 
+					JAP_ambassador_to_germany
 				}
 
 				ai_will_do = {
@@ -3134,7 +3123,7 @@ characters = {
 				}
 
 				traits = {
-					JAP_ambassador_to_germany 
+					JAP_ambassador_to_germany
 				}
 
 				ai_will_do = {
@@ -3143,7 +3132,6 @@ characters = {
 			}
 
 		}
-		
 
 	}
 
@@ -3165,14 +3153,14 @@ characters = {
 			}
 
 			traits = {
-				compassionate_gentleman 
+				compassionate_gentleman
 			}
 
 			ai_will_do = {
 				base = 0.01
 			}
 
-		}	
+		}
 
 	}
 
@@ -3192,7 +3180,7 @@ characters = {
 				original_tag = JAP
 			}
 			traits = {
-				naval_architect 
+				naval_architect
 			}
 			ai_will_do = {
 				base = 0.01
@@ -3215,7 +3203,7 @@ characters = {
 			idea_token = JAP_shun_akikusa
 
 			available  = {
-				has_intelligence_agency  = yes 
+				has_intelligence_agency  = yes
 			}
 
 			allowed  = {
@@ -3224,7 +3212,7 @@ characters = {
 			}
 
 			traits  = {
-				head_of_intelligence 
+				head_of_intelligence
 			}
 
 			ai_will_do  = {
@@ -3261,7 +3249,9 @@ characters = {
 			}
 
 			available = {
+
 					has_completed_focus = JAP_reform_the_education_system
+
 			}
 			traits = {
 				JAP_asahi_shimbun_editor
@@ -3828,6 +3818,7 @@ characters = {
 		portraits = {
 			civilian = {
 				small = GFX_portrait_JAP_yosuke_matsuoka_small
+
 			}
 		}
 
@@ -4393,7 +4384,7 @@ characters = {
 			}
 
 			available = {
-				NOT = {						
+				NOT = {
 					has_government = communism
 				}
 			}
@@ -4414,6 +4405,7 @@ characters = {
 		portraits = {
 			civilian = {
 				small = GFX_portrait_JAP_noboru_yamaguchi_small
+
 			}
 		}
 
@@ -4893,6 +4885,7 @@ characters = {
 		portraits = {
 			civilian = {
 				small = GFX_portrait_JAP_kozo_sasaki_small
+
 			}
 		}
 
@@ -4941,7 +4934,6 @@ characters = {
 			}
 		}
 
-
 		advisor = {
 			slot = political_advisor
 			idea_token = JAP_giro_senoo
@@ -4958,7 +4950,7 @@ characters = {
 					has_country_leader = {
 						ruling_only = yes
 						character = JAP_giro_senoo
-					}	
+					}
 				}
 			}
 
@@ -5148,7 +5140,7 @@ characters = {
 				original_tag = JAP
 			}
 
-			visible = {	
+			visible = {
 				NOT = {
 					has_completed_focus = JAP_revere_the_emperor_destroy_the_traitors
 					has_completed_focus = JAP_a_red_sun_rises_for_a_new_era
@@ -5268,7 +5260,7 @@ characters = {
 			}
 
 			available = {
-				
+
 			}
 
 			traits = {
@@ -5376,11 +5368,11 @@ characters = {
 			}
 
 			visible = {
-				
+
 			}
 
 			available = {
-				has_completed_focus = JAP_prepare_the_southern_front	
+				has_completed_focus = JAP_prepare_the_southern_front
 			}
 
 			traits = {
@@ -5393,12 +5385,6 @@ characters = {
 		}
 
 	}
-
-
-
-
-
-
 
 	JAP_yoshio_nishina = {
 		name = JAP_yoshio_nishina
@@ -5421,8 +5407,6 @@ characters = {
 			}
 		}
 
-
-
 	}
 
 	JAP_hideo_itokawa = {
@@ -5440,7 +5424,6 @@ characters = {
 				specialization_air = 2
 			}
 		}
-
 
 	}
 
@@ -5542,9 +5525,6 @@ characters = {
 
 	}
 
-
-
-
 	JAP_random_general_1 = {
 		portraits = {
 			army = {
@@ -5552,7 +5532,7 @@ characters = {
 				small = GFX_Portrait_Japan_Generic_land_3_small
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { JAP_communist_sympathizer trickster }
 			skill = 3
@@ -5597,7 +5577,7 @@ characters = {
 				small = GFX_Portrait_Japan_Generic_land_4_small
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { JAP_communist_sympathizer trait_reckless politically_connected }
 			skill = 3

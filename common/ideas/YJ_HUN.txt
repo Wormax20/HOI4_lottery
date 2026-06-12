@@ -1,4 +1,4 @@
-ideas = {
+﻿ideas = {
 	country = {
 		YJ_HUN_1_ideas = {
 
@@ -74,7 +74,6 @@ ideas = {
 				global_building_slots = 20
 			}
 		}
-
 
 		YJ_HUN_1_ideas_FROM = {
 
@@ -158,7 +157,7 @@ ideas = {
 
 			picture = generic_air_fighter
 
-			modifier = { 
+			modifier = {
 				global_building_slots = 5
 				consumer_goods_factor = -0.15
 				production_factory_max_efficiency_factor = 0.1

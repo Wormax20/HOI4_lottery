@@ -1,7 +1,4 @@
-characters = {
-	
-
-
+﻿characters = {
 
 	ITA_benito_mussolini = {
 		name = ITA_benito_mussolini
@@ -88,8 +85,6 @@ characters = {
 
 	}
 
-
-
 	ITA_ferruccio_parri = {
 		name = ITA_ferruccio_parri
 		portraits = {
@@ -122,13 +117,6 @@ characters = {
 			id = -1
 		}
 	}
-
-
-
-
-
-
-                                                                                             
 
 	ITA_rodolfo_graziani = {
 		name = ITA_rodolfo_graziani
@@ -228,7 +216,7 @@ characters = {
 				base = 1.000
 			}
 		}
-		
+
 		field_marshal = {
 			traits = { old_guard trait_cautious politically_connected defensive_doctrine }
 			skill = 1
@@ -260,13 +248,13 @@ characters = {
 			}
 			available = {
 				if =  {
-					limit = { 
+					limit = {
 						has_dlc = "By Blood Alone"
 					}
 					ITA_is_advisor_available = yes
 				}
 			}
-			
+
 			traits = {
 				air_chief_all_weather_2
 			}
@@ -275,7 +263,7 @@ characters = {
 				base = 1.000
 			}
 		}
-		
+
 		field_marshal = {
 			traits = { career_officer politically_connected trait_reckless media_personality }
 			skill = 1
@@ -320,7 +308,7 @@ characters = {
 				mobile_warfare_expert
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { armor_officer war_hero }
 			skill = 4
@@ -355,7 +343,7 @@ characters = {
 				base = 1.000
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { old_guard career_officer trait_cautious organisational_leader }
 			skill = 2
@@ -416,7 +404,7 @@ characters = {
 				large = GFX_portrait_ITA_ettore_bastico
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { infantry_officer career_officer }
 			skill = 1
@@ -437,7 +425,7 @@ characters = {
 				large = GFX_portrait_ITA_italo_gariboldi
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { old_guard career_officer }
 			skill = 1
@@ -473,7 +461,7 @@ characters = {
 				base = 1.000
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { cavalry_officer }
 			skill = 1
@@ -484,9 +472,6 @@ characters = {
 			legacy_id = 0
 		}
 	}
-
-
-
 
 	ITA_alfredo_guzzoni = {
 		name = ITA_alfredo_guzzoni
@@ -515,7 +500,7 @@ characters = {
 				base = 2.000
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { old_guard }
 			skill = 1
@@ -536,7 +521,7 @@ characters = {
 				large = GFX_portrait_ITA_pietro_pintor
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { old_guard inflexible_strategist }
 			skill = 1
@@ -557,7 +542,7 @@ characters = {
 				large = GFX_portrait_ITA_mario_berti
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { old_guard trait_reckless war_hero }
 			skill = 1
@@ -577,7 +562,7 @@ characters = {
 				large = GFX_portrait_ITA_carlo_geloso
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { old_guard trait_engineer }
 			skill = 1
@@ -597,7 +582,7 @@ characters = {
 				large = GFX_portrait_ITA_giuseppe_tellera
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { armor_officer }
 			skill = 1
@@ -618,7 +603,7 @@ characters = {
 				large = GFX_portrait_ITA_francesco_zingales
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { cavalry_leader combined_arms_expert }
 			skill = 1
@@ -639,7 +624,7 @@ characters = {
 				large = GFX_portrait_ITA_ezio_rosi
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { infantry_officer organizer }
 			skill = 1
@@ -659,7 +644,7 @@ characters = {
 				large = GFX_portrait_ITA_mario_vercellino
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { infantry_officer }
 			skill = 1
@@ -679,7 +664,7 @@ characters = {
 				large = GFX_portrait_ITA_prince_filiberto
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { career_officer infantry_officer militias_officer }
 			skill = 2
@@ -702,7 +687,7 @@ characters = {
 				large = GFX_portrait_ITA_prince_adalberto
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { career_officer }
 			skill = 1
@@ -722,7 +707,7 @@ characters = {
 				large = GFX_portrait_ITA_prince_umberto
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { career_officer }
 			skill = 1
@@ -742,7 +727,7 @@ characters = {
 				large = GFX_portrait_ITA_alessandro_pirzio_biroli
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { harsh_leader }
 			skill = 1
@@ -763,7 +748,7 @@ characters = {
 				large = GFX_portrait_ITA_carlo_vecchiarelli
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { trait_mountaineer }
 			skill = 1
@@ -783,7 +768,7 @@ characters = {
 				large = GFX_portrait_ITA_mario_robotti
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { infantry_officer }
 			skill = 1
@@ -803,7 +788,7 @@ characters = {
 				large = GFX_portrait_ITA_ettore_baldasarre
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { old_guard trait_engineer fortress_buster trait_reckless }
 			skill = 2
@@ -824,7 +809,7 @@ characters = {
 				large = GFX_portrait_ITA_amedeo_guillet
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { irregulars_officer desert_fox cavalry_leader skirmisher }
 			skill = 3
@@ -845,7 +830,7 @@ characters = {
 				large = GFX_portrait_ITA_annibale_bergonzoli
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { old_guard infantry_officer commando }
 			skill = 2
@@ -869,7 +854,7 @@ characters = {
 				large = GFX_portrait_ITA_hamid_idris_awate
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { ascari_officer trickster guerilla_fighter trait_reckless desert_fox }
 			skill = 2
@@ -890,7 +875,7 @@ characters = {
 				large = GFX_portrait_ITA_ibrahim_farag_mohammed
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { ascari_officer naval_invader desert_fox }
 			skill = 2
@@ -905,12 +890,6 @@ characters = {
 			}
 		}
 	}
-
-	
-
-
-                                                                                             
-
 
 	ITA_inigo_campioni = {
 		name = ITA_inigo_campioni
@@ -935,7 +914,7 @@ characters = {
 				base = 1.000
 			}
 		}
-		
+
 		navy_leader = {
 			traits = { battleship_adherent superior_tactician spotter }
 			skill = 3
@@ -971,7 +950,7 @@ characters = {
 				base = 1.000
 			}
 		}
-		
+
 		navy_leader = {
 			traits = { gentlemanly superior_tactician }
 			skill = 3
@@ -994,7 +973,7 @@ characters = {
 				large = GFX_portrait_ITA_prince_aimone
 			}
 		}
-		 
+
 		navy_leader = {
 			traits = { gentlemanly inshore_fighter }
 			skill = 2
@@ -1048,7 +1027,7 @@ characters = {
 			}
 		}
 
-		advisor = {	
+		advisor = {
 			slot = high_command
 			idea_token = carlo_bergamini
 			ledger = navy
@@ -1063,7 +1042,7 @@ characters = {
 				base = 1.000
 			}
 		}
-		
+
 		navy_leader = {
 			traits = { gunnery_expert battleship_adherent ironside }
 			skill = 2
@@ -1128,7 +1107,7 @@ characters = {
 			coordination_skill = 1
 			legacy_id = 0
 			visible = {
-			} 
+			}
 		}
 	}
 
@@ -1152,12 +1131,6 @@ characters = {
 			visible = { has_completed_focus = ITA_decima_flottiglia_mas }
 		}
 	}
-
-
-
-
-
-
 
 	ITA_amedeo_mecozzi = {
 		name = ITA_amedeo_mecozzi
@@ -1198,9 +1171,9 @@ characters = {
 				ITA_is_italian_tag = yes
 			}
 			traits = { air_warfare_theorist }
-		}		
+		}
 	}
-	
+
 	ITA_romeo_bernotti = {
 		name = ITA_romeo_bernotti
 		portraits = {
@@ -1222,11 +1195,6 @@ characters = {
 			}
 		}
 	}
-
-
-
-
-
 
 	ITA_alberto_pariani = {
 		name = ITA_alberto_pariani
@@ -1254,9 +1222,6 @@ characters = {
 			}
 		}
 	}
-
-
-
 
 	ITA_domenico_cavagnari = {
 		name = ITA_domenico_cavagnari
@@ -1336,9 +1301,6 @@ characters = {
 		}
 	}
 
-
-
-
 	ITA_rino_corso_fougier = {
 		name = ITA_rino_corso_fougier
 		portraits = {
@@ -1347,7 +1309,7 @@ characters = {
 			}
 		}
 
-		advisor = {	
+		advisor = {
 			slot = air_chief
 			idea_token = rino_corso_fougier
 			allowed = {
@@ -1384,7 +1346,7 @@ characters = {
 			ai_will_do = {
 				base = 1.000
 			}
-		}		
+		}
 	}
 
 	ITA_aldo_pellegrini = {
@@ -1411,16 +1373,6 @@ characters = {
 		}
 	}
 
-
-
-
-
-
-
-
-
-
-	
 	ITA_ettore_muti = {
 		name = ITA_ettore_muti
 		portraits = {
@@ -1474,9 +1426,9 @@ characters = {
 			ai_will_do = {
 				base = 1.000
 			}
-		}		
+		}
 	}
-	
+
 	ITA_silvio_scaroni = {
 		name = ITA_silvio_scaroni
 		portraits = {
@@ -1563,10 +1515,6 @@ characters = {
 		}
 	}
 
-
-
-
-
 	ITA_gian_galeazzo_ciano = {
 		name = ITA_gian_galeazzo_ciano
 		portraits = {
@@ -1643,16 +1591,16 @@ characters = {
 				}
 				ITA_government_is_somewhat_fascist = yes
 				if =  {
-					limit = { 
+					limit = {
 						has_dlc = "By Blood Alone"
 					}
 					ITA_is_advisor_available = yes
 				}
 			}
-			
+
 			cost = 75
 			traits = {
-				hierarch_minister_of_justice 
+				hierarch_minister_of_justice
 			}
 			on_add = {
 				owner = {
@@ -1826,7 +1774,7 @@ characters = {
 				ITA_government_is_really_fascist = yes
 			}
 			traits = {
-				head_of_intelligence 
+				head_of_intelligence
 			}
 			ai_will_do = {
 				base = 1.000
@@ -1884,7 +1832,7 @@ characters = {
 					}
 				}
 			}
-		}		
+		}
 	}
 
 	ITA_giacomo_acerbo = {
@@ -1905,7 +1853,7 @@ characters = {
 				ITA_government_is_really_fascist = yes
 			}
 			traits = {
-				war_industrialist 
+				war_industrialist
 			}
 			ai_will_do = {
 				base = 3.000
@@ -1921,7 +1869,7 @@ characters = {
 			}
 		}
 	}
-	
+
 	ITA_paolo_thaon_di_revel = {
 		name = ITA_paolo_thaon_di_revel
 		portraits = {
@@ -1940,7 +1888,7 @@ characters = {
 				ITA_government_is_somewhat_fascist = yes
 			}
 			traits = {
-				quartermaster_general 
+				quartermaster_general
 			}
 
 			ai_will_do = {
@@ -2182,7 +2130,7 @@ characters = {
 				ITA_government_is_really_fascist = yes
 			}
 			traits = {
-				ideological_crusader 
+				ideological_crusader
 			}
 			on_add = {
 			}
@@ -2218,7 +2166,7 @@ characters = {
 				ITA_government_is_really_fascist = yes
 			}
 			traits = {
-				backroom_backstabber 
+				backroom_backstabber
 			}
 			ai_will_do = {
 				base = 0.000
@@ -2261,11 +2209,11 @@ characters = {
 				}
 			}
 			traits = {
-				fascist_demagogue 
+				fascist_demagogue
 			}
 			do_effect = {
 				NOT = {
-					has_government = fascism 
+					has_government = fascism
 				}
 			}
 			ai_will_do = {
@@ -2280,12 +2228,8 @@ characters = {
 					}
 				}
 			}
-		}		
+		}
 	}
-
-
-
-
 
 	ITA_giuseppe_pieche = {
 		name = ITA_giuseppe_pieche
@@ -2295,7 +2239,7 @@ characters = {
 				large = GFX_portrait_ITA_giuseppe_pieche
 			}
 		}
-		
+
 		field_marshal = {
 			traits = { infantry_officer expert_delegator }
 			skill = 2
@@ -2347,7 +2291,7 @@ characters = {
 				base = 1.000
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { militias_officer infantry_officer hill_fighter }
 			skill = 2
@@ -2379,7 +2323,7 @@ characters = {
 				large = GFX_portrait_ITA_giuseppe_de_stefanis
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { infantry_officer armor_officer }
 			skill = 2
@@ -2405,7 +2349,7 @@ characters = {
 				large = GFX_portrait_ITA_ugo_luca
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { infantry_officer urban_assault_specialist }
 			skill = 1
@@ -2414,7 +2358,7 @@ characters = {
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
-			visible = { 
+			visible = {
 				OR = {
 					has_completed_focus = ITA_the_carabinieri
 					has_completed_focus = ITA_empower_the_carabinieri
@@ -2487,7 +2431,7 @@ characters = {
 				}
 			}
 			traits = {
-				financial_expert 
+				financial_expert
 			}
 			on_add = {
 			}
@@ -2588,7 +2532,7 @@ characters = {
 					}
 				}
 				ITA_is_going_antifascist_in_bba = yes
-				NOT = { 
+				NOT = {
 					has_country_leader = {
 						character = ITA_ivanoe_bonomi
 						ruling_only = yes
@@ -2596,11 +2540,11 @@ characters = {
 				}
 			}
 			traits = {
-				democratic_reformer 
+				democratic_reformer
 			}
 			do_effect = {
 				NOT = {
-					has_government = democratic 
+					has_government = democratic
 				}
 			}
 			ai_will_do = {
@@ -2652,7 +2596,7 @@ characters = {
 						has_government = democratic
 					}
 				}
-				NOT = { 
+				NOT = {
 					has_country_leader = {
 						character = ITA_alcide_de_gasperi
 						ruling_only = yes
@@ -2806,13 +2750,8 @@ characters = {
 			ai_will_do = {
 				base = 0.300
 			}
-		}		
-	}	
-
-
-
-
-
+		}
+	}
 
  	ITA_mario_ricci = {
 		name = ITA_mario_ricci
@@ -2822,7 +2761,7 @@ characters = {
 				large = GFX_portrait_ITA_mario_ricci
 			}
 		}
-		
+
 		field_marshal = {
 			traits = { unyielding_defender trait_mountaineer }
 			skill = 3
@@ -2852,7 +2791,7 @@ characters = {
 				large = GFX_portrait_ITA_norma_barbolini
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { militias_officer trickster }
 			skill = 2
@@ -2874,7 +2813,6 @@ characters = {
 		}
 	}
 
-
 	ITA_ada_gobetti = {
 		name = ITA_ada_gobetti
 		portraits = {
@@ -2883,7 +2821,7 @@ characters = {
 				large = GFX_portrait_ITA_ada_gobetti
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { militias_officer organizer trait_cautious }
 			skill = 2
@@ -2906,7 +2844,7 @@ characters = {
 				large = GFX_portrait_ITA_pompeo_colajanni
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { trait_reckless cavalry_officer commando }
 			skill = 2
@@ -2936,7 +2874,7 @@ characters = {
 				large = GFX_portrait_ITA_randolfo_pacciardi
 			}
 		}
-		
+
 		advisor = {
 			slot = high_command
 			idea_token = ITA_randolfo_pacciardi
@@ -2955,7 +2893,7 @@ characters = {
 			}
 			cost = 50
 			traits = {
-				army_regrouping_2 
+				army_regrouping_2
 			}
 
 			ai_will_do = {
@@ -3010,11 +2948,11 @@ characters = {
 				}
 			}
 			traits = {
-				communist_revolutionary 
+				communist_revolutionary
 			}
 			do_effect = {
 				NOT = {
-					has_government = communism 
+					has_government = communism
 				}
 			}
 			ai_will_do = {
@@ -3054,7 +2992,7 @@ characters = {
 			}
 
 			traits = {
-				gallo 
+				gallo
 			}
 
 			ai_will_do = {
@@ -3115,7 +3053,7 @@ characters = {
 						}
 						NOT = { has_completed_focus = ITA_culto_del_duce }
 						NOT = { has_completed_focus = ITA_convene_the_grand_council }
-						NOT = { 
+						NOT = {
 							has_country_leader = {
 								character = ITA_palmiro_togliatti
 								ruling_only = yes
@@ -3125,11 +3063,11 @@ characters = {
 					SWE_refuge_for_revolutionaries_trigger = yes
 				}
 			}
-			
+
 			traits = {
 				marxist_fundamentalist
 			}
-			
+
 			ai_will_do = {
 				base = 0.100
 				modifier = {
@@ -3174,18 +3112,18 @@ characters = {
 				}
 				NOT = { has_completed_focus = ITA_culto_del_duce }
 				NOT = { has_completed_focus = ITA_convene_the_grand_council }
-				NOT = { 
+				NOT = {
 					has_country_leader = {
 						character = ITA_sandro_pertini
 						ruling_only = yes
 					}
 				}
 			}
-			
+
 			traits = {
 				marxist_philosopher
 			}
-			
+
 			ai_will_do = {
 				base = 1.000
 				modifier = {
@@ -3247,7 +3185,7 @@ characters = {
 					original_tag = SWE
 				}
 				has_dlc = "By Blood Alone"
-			
+
 			}
 			available = {
 				OR = {
@@ -3344,8 +3282,6 @@ characters = {
 		}
 	}
 
-
-
 	ITA_haile_selassie_gugsa_doppleganger = {
 		name = ETH_haile_selassie_gugsa
 		portraits = {
@@ -3416,7 +3352,7 @@ characters = {
 				large = GFX_portrait_ETH_seyoum_mengesha
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { old_guard }
 			skill = 2
@@ -3431,12 +3367,6 @@ characters = {
 		}
 	}
 
-
-
-
-
-
-	
 	ITA_enrico_fermi = {
 		name = ITA_enrico_fermi
 		portraits = {

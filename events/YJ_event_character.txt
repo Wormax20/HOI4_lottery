@@ -1,9 +1,9 @@
-add_namespace = KoKi_YJ_JL_event
+﻿add_namespace = KoKi_YJ_JL_event
 country_event = {
 	id = KoKi_YJ_JL_event.1
 	title = KoKi_YJ_JL_event.1.title
 	desc = KoKi_YJ_JL_event.1.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -17,9 +17,9 @@ country_event = {
 			name = "哈罗德·530"
 			portrait_path = "gfx/leaders/DEMO/530.png"
 
-			traits={ 
-				brilliant_strategist 
-		armor_officer 
+			traits={
+				brilliant_strategist
+		armor_officer
 panzer_leader
 cavalry_leader
 infantry_leader
@@ -58,7 +58,7 @@ ranger YJ_traits_1 YJ_traits_3 YJ_traits_17
 							ai_will_do = {
 								base = 1
 							}
-						}        
+						}
 						advisor={
 							cost = 150
 							slot = high_command
@@ -70,8 +70,8 @@ ranger YJ_traits_1 YJ_traits_3 YJ_traits_17
 							ai_will_do = {
 								base = 1
 							}
-						}       
-					}    
+						}
+					}
 				}
 			}
 		}
@@ -84,11 +84,11 @@ country_event = {
 	id = KoKi_YJ_JL_event.2
 	title = KoKi_YJ_JL_event.2.title
 	desc = KoKi_YJ_JL_event.2.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 		set_country_flag = KoKi_YJ_JL_event_2_flag
 	}
@@ -99,7 +99,7 @@ country_event = {
 			name="马楼·ALPS"
 			portrait_path = "gfx/leaders/DEMO/alps.jpg"
 
-			traits={ 
+			traits={
 				    YJ_traits_27    YJ_traits_2  brave trait_SOV_determined
 			}
 			skill = 1
@@ -117,11 +117,11 @@ country_event = {
 	id = KoKi_YJ_JL_event.3
 	title = KoKi_YJ_JL_event.3.title
 	desc = KoKi_YJ_JL_event.3.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 		set_country_flag = KoKi_YJ_JL_event_3_flag
 	}
@@ -132,12 +132,12 @@ country_event = {
 			name="波雅尔·空白·齐奥塞斯库"
 			portrait_path = "gfx/leaders/DEMO/kb.png"
 
-			traits={ 
+			traits={
 brilliant_strategist
 				armor_officer
 inflexible_strategist    YJ_traits_2 YJ_traits_19    YJ_traits_24    YJ_traits_25
 				}
-			skill = 2 
+			skill = 2
 			attack_skill = 2
 			defense_skill = 2
 			planning_skill = 2
@@ -152,11 +152,11 @@ country_event = {
 	id = KoKi_YJ_JL_event.4
 	title = KoKi_YJ_JL_event.4.title
 	desc = KoKi_YJ_JL_event.4.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 		set_country_flag = KoKi_YJ_JL_event_4_flag
 	}
@@ -167,9 +167,9 @@ country_event = {
 			name="奥马尔·威尔逊·TY"
 			portrait_path = "gfx/leaders/DEMO/ty.png"
 
-			traits={ 
-				brilliant_strategist 
-		armor_officer 
+			traits={
+				brilliant_strategist
+		armor_officer
 panzer_leader
 cavalry_leader
 commando
@@ -204,8 +204,8 @@ ranger YJ_traits_1 YJ_traits_10    YJ_traits_22    YJ_traits_24    YJ_traits_25
 							ai_will_do = {
 								base = 1
 							}
-						}        
-					}    
+						}
+					}
 				}
 			}
 		}
@@ -218,11 +218,11 @@ country_event = {
 	id = KoKi_YJ_JL_event.5
 	title = KoKi_YJ_JL_event.5.title
 	desc = KoKi_YJ_JL_event.5.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 		set_country_flag = KoKi_YJ_JL_event_5_flag
 	}
@@ -233,7 +233,7 @@ country_event = {
 			name="切·布丁"
 			portrait_path = "gfx/leaders/DEMO/bd.png"
 
-			traits={ 
+			traits={
 				brilliant_strategist armor_officer  JAP_communist_sympathizer YJ_traits_3 YJ_traits_4 YJ_traits_14
 				YJ_traits_2 YJ_traits_16 YJ_traits_9    YJ_traits_25
 			}
@@ -261,8 +261,8 @@ country_event = {
 							ai_will_do = {
 								base = 1
 							}
-						}        
-					}    
+						}
+					}
 				}
 			}
 		}
@@ -275,11 +275,11 @@ country_event = {
 	id = KoKi_YJ_JL_event.6
 	title = KoKi_YJ_JL_event.6.title
 	desc = KoKi_YJ_JL_event.6.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 		set_country_flag = KoKi_YJ_JL_event_6_flag
 	}
@@ -290,7 +290,7 @@ country_event = {
 			name="伊万诺夫·反二雅士"
 			portrait_path = "gfx/leaders/DEMO/fe.png"
 
-			traits={ 
+			traits={
 				brilliant_strategist armor_officer panzer_leader cavalry_leader ground_pounder
                 infantry_leader organizer trickster ranger YJ_traits_1 commando
 urban_assault_specialist
@@ -310,11 +310,11 @@ country_event = {
 	id = KoKi_YJ_JL_event.7
 	title = KoKi_YJ_JL_event.7.title
 	desc = KoKi_YJ_JL_event.7.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 		set_country_flag = KoKi_YJ_JL_event_7_flag
 	}
@@ -325,7 +325,7 @@ country_event = {
 			name="阿尔托莉雅·呆毛"
 			portrait_path = "gfx/leaders/DEMO/dmw.png"
 
-			traits={ 
+			traits={
 				loyalty_to_britain armor_officer panzer_leader cavalry_leader infantry_leader
                 trickster organizer ranger YJ_traits_5 YJ_traits_6 commando
 urban_assault_specialist
@@ -345,11 +345,11 @@ country_event = {
 	id = KoKi_YJ_JL_event.8
 	title = KoKi_YJ_JL_event.8.title
 	desc = KoKi_YJ_JL_event.8.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 		set_country_flag = KoKi_YJ_JL_event_8_flag
 	}
@@ -360,7 +360,7 @@ country_event = {
 			name="康斯坦丁诺维奇·吃素"
 			portrait_path = "gfx/leaders/DEMO/cs.png"
 
-			traits={ 
+			traits={
 				trait_SOV_stalinist
 brilliant_strategist
 				armor_officer
@@ -388,11 +388,11 @@ country_event = {
 	id = KoKi_YJ_JL_event.9
 	title = KoKi_YJ_JL_event.9.title
 	desc = KoKi_YJ_JL_event.9.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 		set_country_flag = KoKi_YJ_JL_event_9_flag
 	}
@@ -403,7 +403,7 @@ country_event = {
 			name="乔治亚·冯·哈布斯堡"
 			portrait_path = "gfx/leaders/DEMO/qzy.png"
 
-			traits={ 
+			traits={
 				    YJ_traits_2    YJ_traits_26
 			}
 			skill = 1
@@ -421,11 +421,11 @@ country_event = {
 	id = KoKi_YJ_JL_event.10
 	title = KoKi_YJ_JL_event.10.title
 	desc = KoKi_YJ_JL_event.10.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 		set_country_flag = KoKi_YJ_JL_event_10_flag
 	}
@@ -436,8 +436,8 @@ country_event = {
 			name="埃尔温·若同学"
 			portrait_path = "gfx/leaders/DEMO/rtx.png"
 
-			traits={ 
-				inflexible_strategist 
+			traits={
+				inflexible_strategist
 career_officer
 unyielding_defender
 panzer_leader
@@ -464,11 +464,11 @@ country_event = {
 	id = KoKi_YJ_JL_event.11
 	title = KoKi_YJ_JL_event.11.title
 	desc = KoKi_YJ_JL_event.11.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 		set_country_flag = KoKi_YJ_JL_event_11_flag
 	}
@@ -479,7 +479,7 @@ country_event = {
 			name="奥马尔·纳尔逊·奶龙"
 			portrait_path = "gfx/leaders/DEMO/nl.png"
 
-			traits={  
+			traits={
 harsh_leader
 armor_officer
 panzer_leader
@@ -506,11 +506,11 @@ country_event = {
 	id = KoKi_YJ_JL_event.12
 	title = KoKi_YJ_JL_event.12.title
 	desc = KoKi_YJ_JL_event.12.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 		set_country_flag = KoKi_YJ_JL_event_12_flag
 	}
@@ -521,7 +521,7 @@ country_event = {
 			name="山本小鲨鱼"
 			portrait_path = "gfx/leaders/DEMO/xsy.png"
 
-			traits={  
+			traits={
 brilliant_strategist
 armor_officer
 panzer_leader
@@ -562,7 +562,7 @@ ranger YJ_traits_1 YJ_traits_13    YJ_traits_24
 							ai_will_do = {
 								base = 1
 							}
-						}        
+						}
 						advisor={
 							cost = 150
 							slot = air_chief
@@ -574,8 +574,8 @@ ranger YJ_traits_1 YJ_traits_13    YJ_traits_24
 							ai_will_do = {
 								base = 1
 							}
-						}       
-					}    
+						}
+					}
 				}
 			}
 		}
@@ -588,11 +588,11 @@ country_event = {
 	id = KoKi_YJ_JL_event.13
 	title = KoKi_YJ_JL_event.13.title
 	desc = KoKi_YJ_JL_event.13.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 		set_country_flag = KoKi_YJ_JL_event_13_flag
 	}
@@ -603,7 +603,7 @@ country_event = {
 			name="德米特里·安德烈·预言家"
 			portrait_path = "gfx/leaders/DEMO/yyj.png"
 
-			traits={ 
+			traits={
 				brave trait_SOV_determined    YJ_traits_2
 			}
 			skill = 1
@@ -621,11 +621,11 @@ country_event = {
 	id = KoKi_YJ_JL_event.14
 	title = KoKi_YJ_JL_event.14.title
 	desc = KoKi_YJ_JL_event.14.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 		set_country_flag = KoKi_YJ_JL_event_14_flag
 	}
@@ -636,9 +636,9 @@ country_event = {
 			name="卡尔·乔乔"
 			portrait_path = "gfx/leaders/DEMO/qq.png"
 
-			traits={ 
-				brilliant_strategist 
-		armor_officer 
+			traits={
+				brilliant_strategist
+		armor_officer
 panzer_leader
 cavalry_leader
 ground_pounder
@@ -646,7 +646,7 @@ urban_assault_specialist
 infantry_leader
 organizer
 trickster
-ranger YJ_traits_1 
+ranger YJ_traits_1
 				}
 			skill = 6
 			attack_skill = 5
@@ -677,7 +677,7 @@ ranger YJ_traits_1
 							ai_will_do = {
 								base = 1
 							}
-						}        
+						}
 						advisor={
 							cost = 150
 							slot = high_command
@@ -689,8 +689,8 @@ ranger YJ_traits_1
 							ai_will_do = {
 								base = 1
 							}
-						}       
-					}    
+						}
+					}
 				}
 			}
 		}
@@ -703,11 +703,11 @@ country_event = {
 	id = KoKi_YJ_JL_event.15
 	title = KoKi_YJ_JL_event.15.title
 	desc = KoKi_YJ_JL_event.15.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 		set_country_flag = KoKi_YJ_JL_event_15_flag
 	}
@@ -718,7 +718,7 @@ country_event = {
 			name="约瑟夫·大林子"
 			portrait_path = "gfx/leaders/DEMO/dlz.png"
 
-			traits={ 
+			traits={
 				armor_officer YJ_traits_12
 			}
 			skill = 2
@@ -736,11 +736,11 @@ country_event = {
 	id = KoKi_YJ_JL_event.16
 	title = KoKi_YJ_JL_event.16.title
 	desc = KoKi_YJ_JL_event.16.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 		set_country_flag = KoKi_YJ_JL_event_16_flag
 	}
@@ -751,7 +751,7 @@ country_event = {
 			name="切斯特·威廉·风筝"
 			portrait_path = "gfx/leaders/DEMO/fz.png"
 
-			traits={ 
+			traits={
 				YJ_traits_2
 			}
 			skill = 2
@@ -769,11 +769,11 @@ country_event = {
 	id = KoKi_YJ_JL_event.17
 	title = KoKi_YJ_JL_event.17.title
 	desc = KoKi_YJ_JL_event.17.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 		set_country_flag = KoKi_YJ_JL_event_17_flag
 	}
@@ -784,7 +784,7 @@ country_event = {
 			name="路易斯·叶雨"
 			portrait_path = "gfx/leaders/DEMO/yy.png"
 
-			traits={ 
+			traits={
 				old_guard
 commando
 urban_assault_specialist
@@ -810,11 +810,11 @@ country_event = {
 	id = KoKi_YJ_JL_event.18
 	title = KoKi_YJ_JL_event.18.title
 	desc = KoKi_YJ_JL_event.18.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 		set_country_flag = KoKi_YJ_JL_event_18_flag
 	}
@@ -825,7 +825,7 @@ country_event = {
 			name="尼古拉·小舟"
 			portrait_path = "gfx/leaders/DEMO/xz.png"
 
-			traits={ 
+			traits={
 				media_personality
 panzer_leader
 cavalry_leader
@@ -851,11 +851,11 @@ country_event = {
 	id = KoKi_YJ_JL_event.19
 	title = KoKi_YJ_JL_event.19.title
 	desc = KoKi_YJ_JL_event.19.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 		set_country_flag = KoKi_YJ_JL_event_19_flag
 	}
@@ -885,7 +885,7 @@ country_event = {
 							ai_will_do = {
 								base = 1
 							}
-						}        
+						}
 						advisor={
 							cost = 150
 							slot = high_command
@@ -909,8 +909,8 @@ country_event = {
 							ai_will_do = {
 								base = 1
 							}
-						}       
-					}    
+						}
+					}
 				}
 			}
 		}
@@ -924,11 +924,11 @@ country_event = {
 	id = KoKi_YJ_JL_event.21
 	title = KoKi_YJ_JL_event.21.title
 	desc = KoKi_YJ_JL_event.21.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 		set_country_flag = KoKi_YJ_JL_event_21_flag
 	}
@@ -939,9 +939,9 @@ country_event = {
 			name="小爱丽丝·有地绫"
 			portrait_path = "gfx/leaders/DEMO/ydl.png"
 
-			traits={ 
-				brilliant_strategist 
-		armor_officer 
+			traits={
+				brilliant_strategist
+		armor_officer
 panzer_leader
 cavalry_leader
 commando
@@ -967,11 +967,11 @@ country_event = {
 	id = KoKi_YJ_JL_event.22
 	title = KoKi_YJ_JL_event.22.title
 	desc = KoKi_YJ_JL_event.22.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 		set_country_flag = KoKi_YJ_JL_event_21_flag
 	}
@@ -982,7 +982,7 @@ country_event = {
 			name="悠哉哉·E"
 			portrait_path = "gfx/leaders/DEMO/E.png"
 
-			traits={ 
+			traits={
 				old_guard    YJ_traits_2
             }
 			skill = 2
@@ -1000,11 +1000,11 @@ country_event = {
 	id = KoKi_YJ_JL_event.23
 	title = KoKi_YJ_JL_event.23.title
 	desc = KoKi_YJ_JL_event.23.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 		set_country_flag = KoKi_YJ_JL_event_21_flag
 	}
@@ -1015,7 +1015,7 @@ country_event = {
 			name="永雏·夏尔"
 			portrait_path = "gfx/leaders/DEMO/xe.png"
 
-			traits={  
+			traits={
 harsh_leader
 armor_officer
 commando
@@ -1042,11 +1042,11 @@ country_event = {
 	id = KoKi_YJ_JL_event.24
 	title = KoKi_YJ_JL_event.24.title
 	desc = KoKi_YJ_JL_event.24.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 		set_country_flag = KoKi_YJ_JL_event_21_flag
 	}
@@ -1057,9 +1057,9 @@ country_event = {
 			name="伯纳德·劳·一只屑"
 			portrait_path = "gfx/leaders/DEMO/yzx.png"
 
-			traits={ 
+			traits={
 				inflexible_strategist
-old_guard 
+old_guard
 				armor_officer
 panzer_leader
 commando
@@ -1086,11 +1086,11 @@ country_event = {
 	id = KoKi_YJ_JL_event.25
 	title = KoKi_YJ_JL_event.25.title
 	desc = KoKi_YJ_JL_event.25.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 		set_country_flag = KoKi_YJ_JL_event_21_flag
 	}
@@ -1101,9 +1101,9 @@ country_event = {
 			name="筱筱筱·塔菲"
 			portrait_path = "gfx/leaders/DEMO/tf.jpg"
 
-			traits={ 
-				brilliant_strategist 
-		armor_officer 
+			traits={
+				brilliant_strategist
+		armor_officer
 panzer_leader
 cavalry_leader
 commando
@@ -1130,11 +1130,11 @@ country_event = {
 	id = KoKi_YJ_JL_event.26
 	title = KoKi_YJ_JL_event.26.title
 	desc = KoKi_YJ_JL_event.26.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 		set_country_flag = KoKi_YJ_JL_event_21_flag
 	}
@@ -1145,9 +1145,9 @@ country_event = {
 			name="巴哈马·keli"
 			portrait_path = "gfx/leaders/DEMO/keli.jpg"
 
-			traits={ 
-				brilliant_strategist 
-		armor_officer 
+			traits={
+				brilliant_strategist
+		armor_officer
 panzer_leader
 cavalry_leader
 commando
@@ -1169,16 +1169,15 @@ ranger YJ_traits_1
 	}
 }
 
-
 country_event = {
 	id = KoKi_YJ_JL_event.27
 	title = KoKi_YJ_JL_event.27.title
 	desc = KoKi_YJ_JL_event.27.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 		set_country_flag = KoKi_YJ_JL_event_21_flag
 	}
@@ -1189,9 +1188,9 @@ country_event = {
 			name="6老师"
 			portrait_path = "gfx/leaders/DEMO/6.jpg"
 
-			traits={ 
-				brilliant_strategist 
-		armor_officer 
+			traits={
+				brilliant_strategist
+		armor_officer
 panzer_leader
 cavalry_leader
 commando
@@ -1217,11 +1216,11 @@ country_event = {
 	id = KoKi_YJ_JL_event.28
 	title = KoKi_YJ_JL_event.28.title
 	desc = KoKi_YJ_JL_event.28.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 		set_country_flag = KoKi_YJ_JL_event_21_flag
 	}
@@ -1232,8 +1231,8 @@ country_event = {
 			name="西伯利亚·土豆"
 			portrait_path = "gfx/leaders/DEMO/td.jpg"
 
-			traits={ 
-    YJ_traits_2 
+			traits={
+    YJ_traits_2
 				}
 			skill = 3
 			attack_skill = 3
@@ -1247,16 +1246,15 @@ country_event = {
 	}
 }
 
-
 country_event = {
 	id = KoKi_YJ_JL_event.29
 	title = KoKi_YJ_JL_event.29.title
 	desc = KoKi_YJ_JL_event.29.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 		set_country_flag = KoKi_YJ_JL_event_21_flag
 	}
@@ -1267,9 +1265,9 @@ country_event = {
 			name="彬彬有礼"
 			portrait_path = "gfx/leaders/DEMO/bb.jpg"
 
-			traits={ 
-				brilliant_strategist 
-		armor_officer 
+			traits={
+				brilliant_strategist
+		armor_officer
 panzer_leader
 cavalry_leader
 commando
@@ -1291,16 +1289,15 @@ ranger YJ_traits_1  YJ_traits_11     YJ_traits_23
 	}
 }
 
-
 country_event = {
 	id = KoKi_YJ_JL_event.30
 	title = KoKi_YJ_JL_event.30.title
 	desc = KoKi_YJ_JL_event.30.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 		set_country_flag = KoKi_YJ_JL_event_21_flag
 	}
@@ -1311,7 +1308,7 @@ country_event = {
 			name="星星·MZ"
 			portrait_path = "gfx/leaders/DEMO/mz.jpg"
 
-			traits={ 
+			traits={
     YJ_traits_2     YJ_traits_25
 				}
 			skill = 3
@@ -1330,11 +1327,11 @@ country_event = {
 	id = KoKi_YJ_JL_event.31
 	title = KoKi_YJ_JL_event.31.title
 	desc = KoKi_YJ_JL_event.31.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 		set_country_flag = KoKi_YJ_JL_event_21_flag
 	}
@@ -1345,9 +1342,9 @@ country_event = {
 			name="哈吉巴·bate"
 			portrait_path = "gfx/leaders/DEMO/bt.jpg"
 
-			traits={ 
-				brilliant_strategist 
-		armor_officer 
+			traits={
+				brilliant_strategist
+		armor_officer
 panzer_leader
 cavalry_leader
 commando
@@ -1355,7 +1352,7 @@ urban_assault_specialist
 infantry_leader
 organizer
 trickster
-ranger YJ_traits_1  YJ_traits_18     YJ_traits_26 
+ranger YJ_traits_1  YJ_traits_18     YJ_traits_26
 				}
 			skill = 6
 			attack_skill = 3
@@ -1373,11 +1370,11 @@ country_event = {
 	id = KoKi_YJ_JL_event.32
 	title = KoKi_YJ_JL_event.32.title
 	desc = KoKi_YJ_JL_event.32.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 		set_country_flag = KoKi_YJ_JL_event_21_flag
 	}
@@ -1388,9 +1385,9 @@ country_event = {
 			name="lapwing·药娘"
 			portrait_path = "gfx/leaders/DEMO/yn.jpg"
 
-			traits={ 
-				brilliant_strategist 
-		armor_officer 
+			traits={
+				brilliant_strategist
+		armor_officer
 panzer_leader
 cavalry_leader
 commando
@@ -1398,7 +1395,7 @@ urban_assault_specialist
 infantry_leader
 organizer
 trickster
-ranger YJ_traits_1  YJ_traits_15 
+ranger YJ_traits_1  YJ_traits_15
 				}
 			skill = 6
 			attack_skill = 4
@@ -1416,11 +1413,11 @@ country_event = {
 	id = KoKi_YJ_JL_event.33
 	title = KoKi_YJ_JL_event.33.title
 	desc = KoKi_YJ_JL_event.33.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 		set_country_flag = KoKi_YJ_JL_event_21_flag
 	}
@@ -1431,8 +1428,8 @@ country_event = {
 			name="gods"
 			portrait_path = "gfx/leaders/DEMO/god.jpg"
 
-			traits={ 
-	YJ_traits_2 
+			traits={
+	YJ_traits_2
 				}
 			skill = 2
 			attack_skill = 2

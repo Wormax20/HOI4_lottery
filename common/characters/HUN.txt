@@ -1,4 +1,4 @@
-characters = {
+﻿characters = {
 
 	HUN_miklos_horthy = {
 		instance = {
@@ -82,7 +82,6 @@ characters = {
 				id = 500
 			}
 
-
 			navy_leader = {
 				traits = { gunnery_expert navy_media_personality superior_tactician }
 				skill = 3
@@ -90,13 +89,13 @@ characters = {
 				attack_skill = 2
 				defense_skill = 2
 				maneuvering_skill = 2
-				coordination_skill = 4		
+				coordination_skill = 4
 				visible = {
 					OR = {
 						has_completed_focus = wuw_HUN_strengthen_horthys_reign
 						has_completed_focus = wuw_HUN_end_the_regency
 					}
-				}		
+				}
 			}
 
 			advisor = {
@@ -154,7 +153,7 @@ characters = {
 					large = "GFX_Portrait_hungary_otto_von_hapsburg"
 				}
 			}
-			
+
 			country_leader = {
 				ideology = despotism
 				traits = { HUN_the_habsburg_prince }
@@ -175,7 +174,7 @@ characters = {
 					large = "GFX_Portrait_hungary_otto_von_hapsburg"
 					small = GFX_portrait_HUN_otto_von_habsburg_small
 				}
-				army = { 
+				army = {
 					large = GFX_portrait_HUN_otto_von_habsburg_military
 					small = GFX_portrait_HUN_otto_von_habsburg_military_small
 				}
@@ -195,7 +194,7 @@ characters = {
 				defense_skill = 1
 				planning_skill = 3
 				logistics_skill = 2
-				legacy_id = -1 
+				legacy_id = -1
 				visible = {
 					OR = {
 						AND = {
@@ -210,7 +209,7 @@ characters = {
 							has_country_flag = AUS_otto_on_the_battlefield_flag
 						}
 					}
-					
+
 				}
 			}
 
@@ -228,7 +227,6 @@ characters = {
 			}
 		}
 
-
 		field_marshal = {
 			traits = { inflexible_strategist politically_connected old_guard }
 			skill = 3
@@ -244,7 +242,7 @@ characters = {
 				}
 			}
 		}
-		
+
 	}
 
 	HUN_istvan_horthy = {
@@ -257,7 +255,6 @@ characters = {
 				small = GFX_portrait_HUN_istvan_horthy_small
 			}
 		}
-
 
 		advisor = {
 
@@ -282,7 +279,7 @@ characters = {
 				}
 			}
 
-			available = {	
+			available = {
 				OR = {
 						AND = {
 						has_completed_focus = wuw_HUN_act_of_defense
@@ -292,19 +289,19 @@ characters = {
 						}
 				    }
 					has_idea = YJ_HUN_2_ideas
-				}	
+				}
 			}
 
 			traits = {
-				war_industrialist 
+				war_industrialist
 			}
 
 			ai_will_do = {
 				base = 1
 			}
-			
+
 		}
-		
+
 	}
 
 	HUN_ferenc_szalasi = {
@@ -334,7 +331,7 @@ characters = {
 			defense_skill = 1
 			planning_skill = 2
 			logistics_skill = 2
-			legacy_id = -1 
+			legacy_id = -1
 			visible = {
 				has_country_leader = {
 					ruling_only = yes
@@ -342,7 +339,7 @@ characters = {
 				}
 			}
 		}
-		
+
 	}
 
 	HUN_matyas_rakosi = {
@@ -406,7 +403,6 @@ characters = {
 			}
 		}
 
-		
 	}
 
 	HUN_arpad_szakasits = {
@@ -446,7 +442,7 @@ characters = {
 					small = GFX_portrait_HUN_arpad_szakasits_small
 				}
 			}
-			
+
 			country_leader = {
 				ideology = socialism
 				traits = { HUN_socialist_bulwark }
@@ -466,8 +462,7 @@ characters = {
 				large = GFX_portrait_HUN_mihaly_karolyi
 			}
 		}
-		
-		
+
 	}
 
 	HUN_janos_zichy = {
@@ -479,8 +474,7 @@ characters = {
 				large = GFX_portrait_HUN_janos_zichy
 			}
 		}
-		
-		
+
 	}
 
 	HUN_carl_wilhelm = {
@@ -496,8 +490,7 @@ characters = {
 				small = GFX_portrait_HUN_carl_wilhelm_military_small
 			}
 		}
-		
-		
+
 	}
 
 	HUN_franz_friedrich = {
@@ -511,7 +504,6 @@ characters = {
 			name = HUN_franz_friedrich
 
 			portraits = {
-
 
 				civilian = {
 					large = "GFX_Portrait_hungary_friedrich_franz"
@@ -529,14 +521,12 @@ characters = {
 
 			portraits = {
 
-
 				civilian = {
 					large = GFX_portrait_HUN_franz_friedrich
 					small = GFX_portrait_HUN_franz_friedrich_small
 				}
-				
-			}
 
+			}
 
 		}
 	}
@@ -578,7 +568,7 @@ characters = {
 				defense_skill = 2
 				planning_skill = 3
 				logistics_skill = 2
-				legacy_id = -1 
+				legacy_id = -1
 			}
 
 		}
@@ -595,7 +585,7 @@ characters = {
 					small = "GFX_idea_HUN_geza_lakatos"
 				}
 			}
-			
+
 			corps_commander = {
 				traits = { trait_HUN_vitez infantry_officer }
 				skill = 2
@@ -603,7 +593,7 @@ characters = {
 				defense_skill = 1
 				planning_skill = 2
 				logistics_skill = 2
-				legacy_id = -1 
+				legacy_id = -1
 				visible = {
 					NOT = {
 						has_government = fascism
@@ -730,7 +720,7 @@ characters = {
 					small = "GFX_idea_HUN_karoly_beregfy"
 				}
 			}
-			
+
 			corps_commander = {
 				traits = { trait_HUN_fascist_sympathies }
 				skill = 1
@@ -822,7 +812,7 @@ characters = {
 					small = "GFX_idea_HUN_lajos_veress"
 				}
 			}
-			
+
 			corps_commander = {
 				traits = { armor_officer cavalry_leader }
 				skill = 2
@@ -882,7 +872,7 @@ characters = {
 					small = "GFX_idea_HUN_ferenc_feketehalmy_czeydner"
 				}
 			}
-			
+
 			corps_commander = {
 				traits = { trait_HUN_vitez trait_HUN_fascist_sympathies }
 				skill = 2
@@ -943,7 +933,7 @@ characters = {
 				small = GFX_portrait_HUN_vilmos_nagy_small
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { armor_officer cavalry_leader }
 			skill = 2
@@ -982,7 +972,7 @@ characters = {
 			}
 
 		}
-		
+
 	}
 
 	HUN_jozsef_bajnoczy = {
@@ -995,7 +985,7 @@ characters = {
 				small = GFX_portrait_HUN_jozsef_bajnoczy_small
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { organizer trait_HUN_vitez }
 			skill = 2
@@ -1005,7 +995,7 @@ characters = {
 			logistics_skill = 2
 			legacy_id = -1
 		}
-		
+
 	}
 
 	HUN_karoly_bartha = {
@@ -1018,7 +1008,7 @@ characters = {
 				small = GFX_portrait_HUN_karoly_bartha_small
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { inflexible_strategist trait_HUN_vitez }
 			skill = 1
@@ -1028,7 +1018,7 @@ characters = {
 			logistics_skill = 1
 			legacy_id = -1
 		}
-		
+
 	}
 
 	HUN_dome_sztojay = {
@@ -1041,7 +1031,7 @@ characters = {
 				small = GFX_portrait_HUN_dome_sztojay_small
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { trait_HUN_fascist_sympathies }
 			skill = 1
@@ -1059,7 +1049,7 @@ characters = {
 				}
 			}
 		}
-		
+
 	}
 
 	HUN_jeno_oszkar_ruszkay = {
@@ -1072,7 +1062,7 @@ characters = {
 				small = GFX_portrait_HUN_jeno_oszkar_ruszkay_small
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { old_guard trait_HUN_fascist_sympathies trait_HUN_vitez }
 			skill = 2
@@ -1090,7 +1080,7 @@ characters = {
 				}
 			}
 		}
-		
+
 	}
 
 	HUN_janos_voros = {
@@ -1103,7 +1093,7 @@ characters = {
 				small = GFX_portrait_HUN_janos_voros_small
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { trickster }
 			skill = 2
@@ -1115,7 +1105,7 @@ characters = {
 			visible = {
 			}
 		}
-		
+
 	}
 
 	HUN_lajos_csatay = {
@@ -1128,7 +1118,7 @@ characters = {
 				small = GFX_portrait_HUN_lajos_csatay_small
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { skilled_staffer trait_HUN_vitez }
 			skill = 2
@@ -1140,7 +1130,7 @@ characters = {
 			visible = {
 			}
 		}
-		
+
 	}
 
 	HUN_sandor_gyorffy_bengyel = {
@@ -1153,7 +1143,7 @@ characters = {
 				small = GFX_portrait_HUN_sandor_gyorffy_bengyel_small
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { infantry_officer inflexible_strategist }
 			skill = 1
@@ -1165,7 +1155,7 @@ characters = {
 			visible = {
 			}
 		}
-		
+
 	}
 
 	HUN_zoltan_decleva = {
@@ -1178,7 +1168,7 @@ characters = {
 				small = GFX_portrait_HUN_zoltan_decleva_small
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { trait_mountaineer trait_HUN_vitez }
 			skill = 1
@@ -1190,7 +1180,7 @@ characters = {
 			visible = {
 			}
 		}
-		
+
 	}
 
 	HUN_elemer_gorondy_novak = {
@@ -1203,7 +1193,7 @@ characters = {
 				small = GFX_portrait_HUN_elemer_gorondy_novak_small
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { cavalry_leader }
 			skill = 1
@@ -1215,7 +1205,7 @@ characters = {
 			visible = {
 			}
 		}
-		
+
 	}
 
 	HUN_bela_miklos = {
@@ -1228,7 +1218,7 @@ characters = {
 				small = GFX_portrait_HUN_bela_miklos_small
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { cavalry_leader trickster trait_HUN_vitez }
 			skill = 2
@@ -1240,7 +1230,7 @@ characters = {
 			visible = {
 			}
 		}
-		
+
 	}
 
 	HUN_kocsard_janky = {
@@ -1253,7 +1243,7 @@ characters = {
 				small = GFX_portrait_HUN_kocsard_janky_small
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { trait_HUN_vitez cavalry_leader old_guard inflexible_strategist }
 			skill = 4
@@ -1266,7 +1256,7 @@ characters = {
 				has_country_flag = HUN_recalled_kocsard_janky_flag
 			}
 		}
-		
+
 	}
 
 	HUN_antal_freiherr = {
@@ -1279,7 +1269,7 @@ characters = {
 				small = GFX_portrait_HUN_antal_freiherr_small
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { cavalry_leader trait_mountaineer old_guard }
 			skill = 4
@@ -1295,7 +1285,7 @@ characters = {
 				}
 			}
 		}
-		
+
 	}
 
 	HUN_vasyl_vyshyvanyi = {
@@ -1311,7 +1301,7 @@ characters = {
 				large = GFX_portrait_UKR_vasyl_vyshyvany
 			}
 		}
-		
+
 		field_marshal = {
 			traits = { infantry_leader organizer inspirational_leader aggressive_assaulter }
 			skill = 4
@@ -1327,7 +1317,7 @@ characters = {
 				}
 			}
 		}
-		
+
 	}
 
 	HUN_pal_pronay = {
@@ -1340,7 +1330,7 @@ characters = {
 				small = GFX_portrait_HUN_pal_pronay_small
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { trickster militias_officer }
 			skill = 1
@@ -1356,7 +1346,7 @@ characters = {
 				}
 			}
 		}
-		
+
 	}
 
 	HUN_imre_kemeri_nagy = {
@@ -1369,7 +1359,7 @@ characters = {
 				small = GFX_portrait_HUN_imre_kemeri_nagy_small
 			}
 		}
-		
+
 		corps_commander = {
 			traits = { winter_specialist militias_officer }
 			skill = 2
@@ -1385,10 +1375,8 @@ characters = {
 				}
 			}
 		}
-		
+
 	}
-
-
 
 	HUN_shvoy_kalman = {
 		instance = {
@@ -1414,7 +1402,7 @@ characters = {
 				allowed = {
 					original_tag = HUN
 				}
-				
+
 				traits = {
 					military_theorist
 				}
@@ -1455,7 +1443,7 @@ characters = {
 						has_idea = YJ_HUN_2_ideas
 					}
 				}
-				
+
 				traits = {
 					military_theorist
 				}
@@ -1516,8 +1504,6 @@ characters = {
 			}
 		}
 	}
-
-
 
 	HUN_ferenc_szombathelyi = {
 		instance = {
@@ -1699,14 +1685,12 @@ characters = {
 				ai_will_do = {
 					base = 3
 				}
-				
+
 			}
 
 		}
-		
+
 	}
-
-
 
 	HUN_kalman_hardy = {
 
@@ -1803,8 +1787,6 @@ characters = {
 
 	}
 
-
-
 	HUN_bela_rakosi = {
 
 		name = HUN_bela_rakosi
@@ -1873,9 +1855,6 @@ characters = {
 
 	}
 
-
-
-
 	HUN_sandor_magyarossy = {
 		instance = {
 			allowed = {
@@ -1920,7 +1899,7 @@ characters = {
 					small = "GFX_idea_HUN_sandor_magyarossy"
 				}
 			}
-			
+
 			advisor = {
 
 				slot = high_command
@@ -2047,7 +2026,7 @@ characters = {
 				ai_will_do = {
 					base = 2
 				}
-				
+
 			}
 
 		}
@@ -2146,7 +2125,7 @@ characters = {
 				ai_will_do = {
 					base = 1
 				}
-				
+
 			}
 
 		}
@@ -2245,7 +2224,7 @@ characters = {
 				ai_will_do = {
 					base = 2
 				}
-				
+
 			}
 
 		}
@@ -2349,7 +2328,7 @@ characters = {
 				ai_will_do = {
 					base = 1
 				}
-				
+
 			}
 
 		}
@@ -2372,7 +2351,6 @@ characters = {
 				}
 			}
 
-
 		}
 		instance = {
 			allowed = {
@@ -2388,7 +2366,6 @@ characters = {
 				}
 			}
 
-
 			corps_commander = {
 				traits = { trait_HUN_fascist_sympathies militias_officer }
 				skill = 2
@@ -2402,7 +2379,7 @@ characters = {
 						has_country_leader = {
 							ruling_only = yes
 							character = HUN_franz_anton_bach
-						}	
+						}
 						has_completed_focus = wuw_HUN_volksbund_der_deutschen_in_ungarn
 					}
 				}
@@ -2411,8 +2388,6 @@ characters = {
 		}
 	}
 
-
-	
 	HUN_kalman_kanya = {
 		instance = {
 			allowed = {
@@ -2440,7 +2415,7 @@ characters = {
 				}
 
 				traits = {
-					compassionate_gentleman 
+					compassionate_gentleman
 				}
 
 			}
@@ -2482,13 +2457,13 @@ characters = {
 				}
 
 				traits = {
-					HUN_irredentist_foreign_minister 
+					HUN_irredentist_foreign_minister
 				}
 
 				ai_will_do = {
 					base = 1
 				}
-				
+
 			}
 
 		}
@@ -2520,7 +2495,7 @@ characters = {
 				}
 
 				traits = {
-					captain_of_industry 
+					captain_of_industry
 				}
 
 			}
@@ -2558,13 +2533,13 @@ characters = {
 				}
 
 				traits = {
-					financial_expert 
+					financial_expert
 				}
 
 				ai_will_do = {
 					base = 2
 				}
-				
+
 			}
 
 		}
@@ -2597,7 +2572,7 @@ characters = {
 				}
 
 				traits = {
-					war_industrialist 
+					war_industrialist
 				}
 
 			}
@@ -2624,11 +2599,11 @@ characters = {
 				defense_skill = 1
 				planning_skill = 1
 				logistics_skill = 1
-				legacy_id = -1 
+				legacy_id = -1
 			}
 
 			advisor = {
-			
+
 				slot = army_chief
 
 				idea_token = HUN_vilmos_roder
@@ -2716,7 +2691,7 @@ characters = {
 			}
 
 			traits = {
-				staunch_monarchist 
+				staunch_monarchist
 			}
 
 			ai_will_do = {
@@ -2754,7 +2729,7 @@ characters = {
 				}
 
 				traits = {
-					smooth_talking_charmer 
+					smooth_talking_charmer
 				}
 
 				ai_will_do = {
@@ -2814,13 +2789,13 @@ characters = {
 				}
 
 				traits = {
-					HUN_moderate_authoritarian 
+					HUN_moderate_authoritarian
 				}
 
 				ai_will_do = {
 					base = 1
 				}
-				
+
 			}
 
 		}
@@ -2886,7 +2861,7 @@ characters = {
 			}
 
 			traits = {
-				democratic_reformer 
+				democratic_reformer
 			}
 
 			ai_will_do = {
@@ -2937,7 +2912,7 @@ characters = {
 				}
 
 				traits = {
-					communist_revolutionary 
+					communist_revolutionary
 				}
 
 				ai_will_do = {
@@ -3008,7 +2983,7 @@ characters = {
 				}
 
 				traits = {
-					marxist_philosopher 
+					marxist_philosopher
 				}
 
 				ai_will_do = {
@@ -3024,7 +2999,7 @@ characters = {
 						}
 					}
 				}
-				
+
 			}
 
 		}
@@ -3103,7 +3078,7 @@ characters = {
 			}
 
 			traits = {
-				HUN_magyar_nemzeti_bank_president 
+				HUN_magyar_nemzeti_bank_president
 			}
 
 			ai_will_do = {
@@ -3255,7 +3230,7 @@ characters = {
 			available = {
 				OR = {
 					AND = {
-						has_government = communism 
+						has_government = communism
 						has_completed_focus = wuw_HUN_join_the_comintern
 					}
 					has_idea = YJ_HUN_2_ideas
@@ -3462,7 +3437,7 @@ characters = {
 			}
 
 			traits = {
-				expert_code_cracker 
+				expert_code_cracker
 			}
 
 			ai_will_do = {
@@ -3501,7 +3476,7 @@ characters = {
 			}
 
 			traits = {
-				fortress_architecht 
+				fortress_architecht
 			}
 
 			ai_will_do = {
@@ -3546,7 +3521,7 @@ characters = {
 
 			available = {
 				OR = {
-					
+
 				has_government = communism
 				has_idea = YJ_HUN_2_ideas
 				}
@@ -3696,7 +3671,7 @@ characters = {
 			available = {
 				OR = {
 					and = {
-						has_intelligence_agency  = yes 
+						has_intelligence_agency  = yes
 				NOT = {
 					has_government = communism
 				}
@@ -3794,7 +3769,7 @@ characters = {
 			}
 
 			available = {
-				OR = {  
+				OR = {
 					NOT = {
 					OR = {
 						has_government = communism
@@ -4020,7 +3995,7 @@ characters = {
 		}
 
 	}
-	
+
 	HUN_gyula_gombos_de_jakfa = {
 		instance = {
 			allowed = {
@@ -4062,7 +4037,7 @@ characters = {
 				}
 
 				traits = {
-					fascist_demagogue 
+					fascist_demagogue
 				}
 
 				ai_will_do = {
@@ -4086,9 +4061,8 @@ characters = {
 				}
 			}
 
-
 			advisor = {
-			
+
 				slot = political_advisor
 
 				can_be_fired = no
@@ -4128,7 +4102,7 @@ characters = {
 				}
 
 				traits = {
-					HUN_fascist_prime_minister 
+					HUN_fascist_prime_minister
 				}
 
 				ai_will_do = {
@@ -4144,7 +4118,7 @@ characters = {
 		name = HUN_hermann_goring
 		portraits = {
 			civilian = {
-				large = GFX_portrait_GER_hermann_goring 
+				large = GFX_portrait_GER_hermann_goring
 				small = GFX_portrait_GER_hermann_goring_civilian_small
 			}
 		}
@@ -4158,7 +4132,7 @@ characters = {
 			}
 			visible = {
 			    OR = {
-					
+
 				has_government = fascism
 				has_country_flag = HUN_has_goering_as_king_flag
 				has_idea = YJ_HUN_2_ideas
@@ -4178,13 +4152,6 @@ characters = {
 			}
 		}
 	}
-
-
-
-
-
-
-
 
 	HUN_nicholas_straussler = {
 		name = HUN_nicholas_straussler

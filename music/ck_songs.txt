@@ -1,25 +1,23 @@
-music_station = "ck"
+﻿music_station = "ck"
 
 music = {
 	song = "bbls"
-	
+
 	chance = {
 		modifier = {
 			factor = 1
 
-
-		}		
-	}	
+		}
+	}
 }
 
 music = {
 	song = "bfzc"
-	
+
 	chance = {
 		modifier = {
 			factor = 1
 
-
-		}		
-	}	
+		}
+	}
 }

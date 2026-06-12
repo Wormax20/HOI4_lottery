@@ -1,4 +1,4 @@
-sub_units = {
+﻿sub_units = {
 
 	armored_car = {
 		abbreviation = "CAR"
@@ -7,13 +7,13 @@ sub_units = {
 		priority = 501
 		ai_priority = 200
 		active = yes
-		
+
 		type = {
 			mechanized
 		}
-		
+
 		group = mobile
-		
+
 		categories = {
 			category_front_line
 			category_all_infantry
@@ -21,7 +21,6 @@ sub_units = {
 			category_vehicle_infantry
 			category_mobile_and_mobile_combat_sup
 		}
-
 
 		combat_width = 2
 
@@ -53,7 +52,7 @@ sub_units = {
 			movement = -0.25
 		}
 		marsh = {
-		    attack = -0.1 
+		    attack = -0.1
 			movement = -0.1
 		}
 		desert = {
@@ -64,12 +63,12 @@ sub_units = {
 			attack = -0.3
 			movement = 0.15
 		}
-		river = { 
-			attack = -0.2 
+		river = {
+			attack = -0.2
 			movement = -0.1
 		}
-		amphibious = { 
+		amphibious = {
 			attack = -0.4
-		}	
+		}
 	}
 }

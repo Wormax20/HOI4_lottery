@@ -1,4 +1,4 @@
-ideas = {
+﻿ideas = {
 	country = {
 		YJ_SWI_1_ideas = {
 
@@ -25,7 +25,6 @@ ideas = {
 			}
 		}
 
-
 		YJ_SWI_2_ideas = {
 
 			allowed = {
@@ -49,7 +48,6 @@ ideas = {
 				air_intercept_efficiency = 0.05
 			}
 		}
-
 
 		YJ_SWI_3_ideas = {
 
@@ -79,7 +77,6 @@ ideas = {
 				}
 			}
 		}
-
 
 		YJ_SWI_4_ideas = {
 

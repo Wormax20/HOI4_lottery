@@ -1,9 +1,9 @@
-add_namespace = KoKi_YJ_SOV_event
+﻿add_namespace = KoKi_YJ_SOV_event
 country_event = {
 	id = KoKi_YJ_SOV_event.101
 	title = KoKi_YJ_SOV_event.101.title
 	desc = KoKi_YJ_SOV_event.101.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -53,14 +53,14 @@ country_event = {
 			factor = 100
 		}
 	}
-	
+
 }
 
 country_event = {
 	id = KoKi_YJ_SOV_event.102
 	title = KoKi_YJ_SOV_event.102.title
 	desc = KoKi_YJ_SOV_event.102.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -83,14 +83,14 @@ country_event = {
 			factor = 100
 		}
 	}
-	
+
 }
 
 country_event = {
 	id = KoKi_YJ_SOV_event.103
 	title = KoKi_YJ_SOV_event.103.title
 	desc = KoKi_YJ_SOV_event.103.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -109,14 +109,14 @@ country_event = {
 			factor = 100
 		}
 	}
-	
+
 }
 
 country_event = {
 	id = KoKi_YJ_SOV_event.104
 	title = KoKi_YJ_SOV_event.104.title
 	desc = KoKi_YJ_SOV_event.104.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -174,7 +174,7 @@ country_event = {
 				slot = political_advisor
 			}
 			set_can_be_fired_in_advisor_role = {
-				character = SOV_genrikh_yagoda 
+				character = SOV_genrikh_yagoda
 				value = yes
 			}
 		}
@@ -208,14 +208,14 @@ country_event = {
 					slot = political_advisor
 				}
 			}
-			
+
 			add_trait = {
 				character = SOV_nikolay_yezhov
 				trait = head_of_the_nkvd_yezhov_no_paranoia
 				slot = political_advisor
 			}
 			set_can_be_fired_in_advisor_role = {
-				character = SOV_nikolay_yezhov 
+				character = SOV_nikolay_yezhov
 				value = yes
 			}
 		}
@@ -249,14 +249,14 @@ country_event = {
 					slot = political_advisor
 				}
 			}
-			
+
 			add_trait = {
 				character = SOV_lavrenty_beriya
 				trait = head_of_the_nkvd_beriya_no_paranoia
 				slot = political_advisor
 			}
 			set_can_be_fired_in_advisor_role = {
-				character = SOV_lavrenty_beriya 
+				character = SOV_lavrenty_beriya
 				value = yes
 			}
 		}
@@ -282,9 +282,9 @@ country_event = {
 							traits = { popular_figurehead }
 							ai_will_do = {
 								factor = 0
-							}    
-						}            
-					}    
+							}
+						}
+					}
 				}
 			}
 			meta_effect = {
@@ -308,9 +308,9 @@ country_event = {
 							traits = { political_commissar }
 							ai_will_do = {
 								factor = 0
-							}    
-						}            
-					}    
+							}
+						}
+					}
 				}
 			}
 			meta_effect = {
@@ -334,9 +334,9 @@ country_event = {
 							traits = { captain_of_industry }
 							ai_will_do = {
 								factor = 0
-							}    
-						}            
-					}    
+							}
+						}
+					}
 				}
 			}
 			meta_effect = {
@@ -360,9 +360,9 @@ country_event = {
 							traits = { iron_lazar }
 							ai_will_do = {
 								factor = 0
-							}    
-						}            
-					}    
+							}
+						}
+					}
 				}
 			}
 			meta_effect = {
@@ -394,9 +394,9 @@ country_event = {
 							}
 							ai_will_do = {
 								factor = 0
-							}    
-						}            
-					}    
+							}
+						}
+					}
 				}
 			}
 			meta_effect = {
@@ -428,9 +428,9 @@ country_event = {
 							}
 							ai_will_do = {
 								factor = 0
-							}    
-						}            
-					}    
+							}
+						}
+					}
 				}
 			}
 			meta_effect = {
@@ -462,9 +462,9 @@ country_event = {
 							}
 							ai_will_do = {
 								factor = 0
-							}    
-						}            
-					}    
+							}
+						}
+					}
 				}
 			}
 			meta_effect = {
@@ -488,9 +488,9 @@ country_event = {
 							traits = { head_of_intelligence }
 							ai_will_do = {
 								factor = 0
-							}    
-						}            
-					}    
+							}
+						}
+					}
 				}
 			}
 			meta_effect = {
@@ -514,9 +514,9 @@ country_event = {
 							traits = { pc_for_foreign_affairs_molotov }
 							ai_will_do = {
 								factor = 0
-							}    
-						}            
-					}    
+							}
+						}
+					}
 				}
 			}
 			meta_effect = {
@@ -540,9 +540,9 @@ country_event = {
 							traits = { pc_for_foreign_affairs_litvinov }
 							ai_will_do = {
 								factor = 0
-							}    
-						}            
-					}    
+							}
+						}
+					}
 				}
 			}
 			meta_effect = {
@@ -566,9 +566,9 @@ country_event = {
 							traits = { pc_military_naval_affairs }
 							ai_will_do = {
 								factor = 0
-							}    
-						}            
-					}    
+							}
+						}
+					}
 				}
 			}
 			meta_effect = {
@@ -592,9 +592,9 @@ country_event = {
 							traits = { head_directorate_of_new_buildings }
 							ai_will_do = {
 								factor = 0
-							}    
-						}            
-					}    
+							}
+						}
+					}
 				}
 			}
 			meta_effect = {
@@ -618,9 +618,9 @@ country_event = {
 							traits = { soviet_economist }
 							ai_will_do = {
 								factor = 0
-							}    
-						}            
-					}    
+							}
+						}
+					}
 				}
 			}
 			meta_effect = {
@@ -644,9 +644,9 @@ country_event = {
 							traits = { international_revolutionary }
 							ai_will_do = {
 								factor = 0
-							}    
-						}            
-					}    
+							}
+						}
+					}
 				}
 			}
 			meta_effect = {
@@ -670,9 +670,9 @@ country_event = {
 							traits = { ecomonist_publicist }
 							ai_will_do = {
 								factor = 0
-							}    
-						}            
-					}    
+							}
+						}
+					}
 				}
 			}
 			meta_effect = {
@@ -696,9 +696,9 @@ country_event = {
 							traits = { left_trade_unionist }
 							ai_will_do = {
 								factor = 0
-							}    
-						}            
-					}    
+							}
+						}
+					}
 				}
 			}
 			meta_effect = {
@@ -722,9 +722,9 @@ country_event = {
 							traits = { economy_reformer }
 							ai_will_do = {
 								factor = 0
-							}    
-						}            
-					}    
+							}
+						}
+					}
 				}
 			}
 			meta_effect = {
@@ -748,9 +748,9 @@ country_event = {
 							traits = { peoples_commissar_for_posts_and_telegraphs }
 							ai_will_do = {
 								factor = 0
-							}    
-						}            
-					}    
+							}
+						}
+					}
 				}
 			}
 			meta_effect = {
@@ -774,9 +774,9 @@ country_event = {
 							traits = { right_trade_unionist }
 							ai_will_do = {
 								factor = 0
-							}    
-						}            
-					}    
+							}
+						}
+					}
 				}
 			}
 			meta_effect = {
@@ -800,9 +800,9 @@ country_event = {
 							traits = { peoples_commissar_of_finance }
 							ai_will_do = {
 								factor = 0
-							}    
-						}            
-					}    
+							}
+						}
+					}
 				}
 			}
 			meta_effect = {
@@ -826,9 +826,9 @@ country_event = {
 							traits = { communist_theorist }
 							ai_will_do = {
 								factor = 0
-							}    
-						}            
-					}    
+							}
+						}
+					}
 				}
 			}
 			meta_effect = {
@@ -852,9 +852,9 @@ country_event = {
 							traits = { appeasing_technocrat }
 							ai_will_do = {
 								factor = 0
-							}    
-						}            
-					}    
+							}
+						}
+					}
 				}
 			}
 			meta_effect = {
@@ -878,9 +878,9 @@ country_event = {
 							traits = { anti_stalinist_propagandist }
 							ai_will_do = {
 								factor = 0
-							}    
-						}            
-					}    
+							}
+						}
+					}
 				}
 			}
 			meta_effect = {
@@ -904,9 +904,9 @@ country_event = {
 							traits = { patriarch_of_moscow_and_all_russia }
 							ai_will_do = {
 								factor = 0
-							}    
-						}            
-					}    
+							}
+						}
+					}
 				}
 			}
 			meta_effect = {
@@ -930,9 +930,9 @@ country_event = {
 							traits = { orthodox_rabblerouser }
 							ai_will_do = {
 								factor = 0
-							}    
-						}            
-					}    
+							}
+						}
+					}
 				}
 			}
 			meta_effect = {
@@ -956,9 +956,9 @@ country_event = {
 							traits = { theocratic_diplomat }
 							ai_will_do = {
 								factor = 0
-							}    
-						}            
-					}    
+							}
+						}
+					}
 				}
 			}
 			meta_effect = {
@@ -982,9 +982,9 @@ country_event = {
 							traits = { driver_of_the_faithful }
 							ai_will_do = {
 								factor = 0
-							}    
-						}            
-					}    
+							}
+						}
+					}
 				}
 			}
 			meta_effect = {
@@ -1008,9 +1008,9 @@ country_event = {
 							traits = { the_foreign_connection }
 							ai_will_do = {
 								factor = 0
-							}    
-						}            
-					}    
+							}
+						}
+					}
 				}
 			}
 			meta_effect = {
@@ -1034,9 +1034,9 @@ country_event = {
 							traits = { ataman_transbaikal_host }
 							ai_will_do = {
 								factor = 0
-							}    
-						}            
-					}    
+							}
+						}
+					}
 				}
 			}
 			meta_effect = {
@@ -1060,9 +1060,9 @@ country_event = {
 							traits = { political_chameleon }
 							ai_will_do = {
 								factor = 0
-							}    
-						}            
-					}    
+							}
+						}
+					}
 				}
 			}
 			meta_effect = {
@@ -1086,9 +1086,9 @@ country_event = {
 							traits = { mladorossi_theorist }
 							ai_will_do = {
 								factor = 0
-							}    
-						}            
-					}    
+							}
+						}
+					}
 				}
 			}
 		}
@@ -1096,5 +1096,5 @@ country_event = {
 			factor = 100
 		}
 	}
-	
+
 }

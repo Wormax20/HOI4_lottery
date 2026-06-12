@@ -1,14 +1,14 @@
-equipments = {
+﻿equipments = {
 
 	convoy = {
 		year = 1910
 
 		is_archetype = yes
 		type = convoy
-		picture = archetype_convoy		
+		picture = archetype_convoy
 		group_by = archetype
 		sprite = convoy
-		
+
 		interface_category = interface_category_other_ships
 
 		surface_detection = 0
@@ -28,11 +28,10 @@ equipments = {
 		max_organisation = 1
 		anti_air_attack = 0
 
-
         lend_lease_cost = 0
-		
+
 		offensive_weapons = no
-		
+
 		build_cost_ic = 17.5
 		resources = {
 			steel = 1

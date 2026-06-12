@@ -1,4 +1,4 @@
-YJ_BRA_2_ideas = {
+﻿YJ_BRA_2_ideas = {
 	enable = {
 		always = yes
 	}

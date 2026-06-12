@@ -1,13 +1,10 @@
-
-
-
-SWE_landsverk_organization = {
+﻿SWE_landsverk_organization = {
 	include = generic_mobile_tank_organization
 	icon = GFX_idea_SWE_landsverk
-	
-	allowed = { 
+
+	allowed = {
 		OR = {
-			tag = SWE 
+			tag = SWE
 			AND = {
 				tag = ETH
 				has_dlc = "By Blood Alone"
@@ -75,13 +72,10 @@ SWE_landsverk_organization = {
 
 		organization_modifier = {
 			military_industrial_organization_research_bonus = 0.08
-		
+
 		}
 	}
 }
-
-
- 
 
 SWE_kockums_organization = {
 	include = generic_raider_ship_organization
@@ -137,13 +131,10 @@ SWE_gotaverken_organization = {
 	}
 }
 
-
-
-
 SWE_saab_organization = {
 	include = generic_light_aircraft_organization
 	icon = GFX_idea_SWE_saab
-	allowed = { 
+	allowed = {
 		OR = {
 			tag = SWE
 			AND = {
@@ -176,10 +167,10 @@ SWE_saab_organization = {
 
 	initial_trait = {
 		name = generic_mio_initial_trait_standardized_production
-		
+
 		organization_modifier = {
 			military_industrial_organization_research_bonus = 0.1
-		}	
+		}
 		production_bonus = {
 			production_cost_factor = -0.1
 		}
@@ -216,19 +207,13 @@ SWE_husqvarna_organization = {
 		}
 }
 
-
-
-
-
-
-
 SWE_volvo_organization = {
 	include = generic_motorized_mechanized_organization
 	icon = GFX_idea_SWE_volvo
-	
-	allowed = { 
+
+	allowed = {
 		OR = {
-			tag = SWE 
+			tag = SWE
 			AND = {
 				tag = ETH
 				has_dlc = "By Blood Alone"
@@ -268,7 +253,7 @@ SWE_volvo_organization = {
 SWE_scania_vabis_organization = {
 	include = generic_armored_car_organization
 	icon = GFX_idea_scania
-	allowed = { 
+	allowed = {
 		has_dlc = "La Resistance"
 		OR = {
 			tag = SWE
@@ -295,17 +280,16 @@ SWE_scania_vabis_organization = {
 				}
 			}
 		}
-	}	
+	}
 }
-
 
 SWE_bofors_organization = {
 	include = generic_artillery_organization
 	icon = GFX_idea_SWE_bofors
-	
-	allowed = { 
+
+	allowed = {
 		OR = {
-			tag = SWE 
+			tag = SWE
 			AND = {
 				tag = ETH
 				has_dlc = "By Blood Alone"
@@ -361,7 +345,7 @@ SWE_bofors_organization = {
 		}
 	}
 
-	trait = { 
+	trait = {
 		token = SWE_bofors_fly_swatter
 		name = SWE_bofors_fly_swatter
 		icon = GFX_generic_mio_department_icon_anti_air
@@ -384,7 +368,7 @@ SWE_bofors_organization = {
 		}
 	}
 
-	trait = { 
+	trait = {
 		token = SWE_bofors_anti_tank_gun
 		name = SWE_bofors_anti_tank_gun
 		icon = GFX_generic_mio_department_icon_anti_tank
@@ -408,11 +392,11 @@ SWE_bofors_organization = {
 		}
 
 		production_bonus = {
-			production_capacity_factor = 0.05 
+			production_capacity_factor = 0.05
 		}
 	}
 
-	trait = { 
+	trait = {
 		token = SWE_mio_trait_defense_in_depth
 		name = SWE_mio_trait_defense_in_depth
 		icon = GFX_generic_mio_department_icon_tank_general_weapons
@@ -432,43 +416,3 @@ SWE_bofors_organization = {
 		}
 	}
 }
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

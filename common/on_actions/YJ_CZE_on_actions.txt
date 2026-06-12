@@ -1,4 +1,4 @@
-on_actions = {
+﻿on_actions = {
 	on_monthly_CZE = {
 	    effect = {
 			IF = {
@@ -7,23 +7,23 @@ on_actions = {
 					NOT = { has_global_flag = Beta_CZE_1_on_flag }
 					date > 1938.5.1
 				}
-				set_technology = { early_bombs = 1 } 
-				set_technology = { armor_piercing_bombs = 1 } 
-				set_technology = { heavy_bombs = 1 } 
-				set_technology = { aa_lmg = 1 } 
-				set_technology = { survivability_studies = 1 } 
-				set_technology = { aa_hmg = 1 } 
-				set_technology = { aa_cannon_1 = 1 } 
-				set_technology = { aa_cannon_2 = 1 } 
-				set_technology = { air_torpedoe_1 = 1 } 
-				set_technology = { air_torpedoe_2 = 1 } 
-				set_technology = { engines_1 = 1 } 
-				set_technology = { aircraft_construction = 1 } 
-				set_technology = { engines_2 = 1 } 
-				set_technology = { range_improvements = 1 } 
-				set_technology = { engines_3 = 1 } 
-				set_technology = { rocket_artillery = 1 }  
-				set_technology = { improved_small_airframe = 1 } 
+				set_technology = { early_bombs = 1 }
+				set_technology = { armor_piercing_bombs = 1 }
+				set_technology = { heavy_bombs = 1 }
+				set_technology = { aa_lmg = 1 }
+				set_technology = { survivability_studies = 1 }
+				set_technology = { aa_hmg = 1 }
+				set_technology = { aa_cannon_1 = 1 }
+				set_technology = { aa_cannon_2 = 1 }
+				set_technology = { air_torpedoe_1 = 1 }
+				set_technology = { air_torpedoe_2 = 1 }
+				set_technology = { engines_1 = 1 }
+				set_technology = { aircraft_construction = 1 }
+				set_technology = { engines_2 = 1 }
+				set_technology = { range_improvements = 1 }
+				set_technology = { engines_3 = 1 }
+				set_technology = { rocket_artillery = 1 }
+				set_technology = { improved_small_airframe = 1 }
 				set_global_flag = Beta_CZE_1_on_flag
 			}
 		}

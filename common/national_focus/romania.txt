@@ -1,23 +1,19 @@
-focus_tree = {
+﻿focus_tree = {
 	id = romanian_focus
-	
+
 	country = {
 		factor = 0
-		
+
 		modifier = {
 			add = 10
 			tag = ROM
 			has_dlc = "Death or Dishonor"
 		}
 	}
-	
+
 	default = no
 
 	continuous_focus_position = { x = 50 y = 1100 }
-
-
-
-
 
 	focus = {
 		id = ROM_preserve_greater_romania
@@ -43,7 +39,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 
 		completion_reward = {
 			add_ideas = ROM_preserve_greater_romania
@@ -143,7 +138,7 @@ focus_tree = {
 				NOT = {
 					has_war_with = ROOT
 				}
-				has_civil_war = no 
+				has_civil_war = no
 			}
 		}
 
@@ -154,7 +149,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 
 		completion_reward = {
 			SOV = { country_event = DOD_romania.30 }
@@ -187,7 +181,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-
 		completion_reward = {
 			add_ideas = ROM_romanian_volunteer_brigades
 		}
@@ -214,7 +207,7 @@ focus_tree = {
 		}
 
 		available = {
-			SOV_comintern_joinable = yes 
+			SOV_comintern_joinable = yes
 			is_in_faction = no
 			is_subject = no
 			NOT = {
@@ -232,7 +225,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 
 		completion_reward = {
 			SOV = { country_event = generic.2 }
@@ -341,7 +333,7 @@ focus_tree = {
 		available = {
 			OR = {
 				is_in_faction = no
-				is_in_faction_with = GER 
+				is_in_faction_with = GER
 			}
 		}
 
@@ -352,7 +344,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 
 		completion_reward = {
 			add_relation_modifier = {
@@ -383,7 +374,7 @@ focus_tree = {
 		}
 
 		available = {
-			GER = { 
+			GER = {
 				is_faction_leader = yes
 			}
 			is_in_faction = no
@@ -405,7 +396,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-
 		completion_reward = {
 			GER = {
 				country_event = generic.2
@@ -420,7 +410,6 @@ focus_tree = {
 		x = -1
 		y = 5
 		relative_position_id = ROM_trade_treaty_with_germany
-
 
 		cost = 10
 
@@ -499,7 +488,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-
 		completion_reward = {
 			create_wargoal = {
 				type = take_state_focus
@@ -524,8 +512,8 @@ focus_tree = {
 		}
 
 		available = {
-			POL = { 
-				exists = yes 
+			POL = {
+				exists = yes
 				is_puppet = no
 			}
 			NOT = { has_war_with = POL }
@@ -578,7 +566,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-
 		completion_reward = {
 			set_rule = { can_create_factions = yes }
 			create_faction_from_template = {
@@ -587,8 +574,8 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					CZE = { 
-						exists = yes 
+					CZE = {
+						exists = yes
 						has_capitulated = no
 						is_subject = no
 						is_in_faction = no
@@ -598,8 +585,8 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					POL = { 
-						exists = yes 
+					POL = {
+						exists = yes
 						has_capitulated = no
 						is_subject = no
 						is_in_faction = no
@@ -652,7 +639,7 @@ focus_tree = {
 				}
 				FRA = { is_subject = no }
 			}
-			
+
 		}
 
 		bypass = {
@@ -665,7 +652,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 
 		completion_reward = {
 			if = {
@@ -685,13 +671,12 @@ focus_tree = {
 			if = {
 				limit = {
 					ENG = {
-						is_faction_leader = yes 
+						is_faction_leader = yes
 					}
 				}
 				ENG = { country_event = DOD_romania.20 }
 			}
-			
-			
+
 		}
 	}
 
@@ -721,14 +706,13 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-
 		completion_reward = {
-			
+
 			add_relation_modifier = {
 				target = ENG
 				modifier = ROM_military_modernization
 			}
-			
+
 			if = {
 				limit = {
 					FRA = {
@@ -739,7 +723,7 @@ focus_tree = {
 					target = FRA
 					modifier = ROM_military_modernization
 				}
-			
+
 			}
 		}
 	}
@@ -793,7 +777,6 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-
 		completion_reward = {
 			ENG = {
 				country_event = generic.2
@@ -839,7 +822,6 @@ focus_tree = {
 			}
 		}
 	}
-
 
 	focus = {
 		id = ROM_civil_works
@@ -1152,7 +1134,7 @@ focus_tree = {
 			random_owned_controlled_state = {
 				prioritize = { 79 }
 				limit = {
-					ROOT = { has_full_control_of_state = PREV } 
+					ROOT = { has_full_control_of_state = PREV }
 					free_building_slots = {
 						building = industrial_complex
 						size > 2
@@ -1196,7 +1178,6 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 
 		completion_reward = {
 			country_event = DOD_romania.120
@@ -1251,7 +1232,7 @@ focus_tree = {
 			random_owned_controlled_state = {
 				prioritize = { 84 }
 				limit = {
-					ROOT = { has_full_control_of_state = PREV } 
+					ROOT = { has_full_control_of_state = PREV }
 					free_building_slots = {
 						building = industrial_complex
 						size > 1
@@ -1451,7 +1432,6 @@ focus_tree = {
 		}
 	}
 
-
 	focus = {
 		id = ROM_balkans_dominance
 		icon = GFX_goal_demand_sudetenland
@@ -1481,7 +1461,7 @@ focus_tree = {
 			add_ideas = ROM_balkans_dominance
 			set_rule = { can_create_factions = yes }
 			if = {
-				limit = { 
+				limit = {
 				}
 				every_other_country = {
 					limit = {
@@ -1502,7 +1482,7 @@ focus_tree = {
 				}
 			}
 			hidden_effect = {
-				if = { 
+				if = {
 					limit = {
 					}
 					remove_opinion_modifier = {
@@ -1555,7 +1535,7 @@ focus_tree = {
 			BUL = {
 				OR = {
 					is_subject = yes
-					exists = no 
+					exists = no
 					AND = {
 						has_war_with = ROM
 						has_capitulated = yes
@@ -1574,11 +1554,11 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			BUL = { 
+			BUL = {
 				country_event = {
 					id = DOD_romania.40
 					hours = 12
-				}	
+				}
 			}
 		}
 	}
@@ -1614,23 +1594,21 @@ focus_tree = {
 			HUN = {
 				OR = {
 					is_puppet_of = ROM
-					exists = no 
+					exists = no
 				}
 			}
 		}
-
-
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			HUN = { 
+			HUN = {
 				country_event = {
 					id = DOD_romania.50
 					hours = 4
-				}	
+				}
 			}
 		}
 	}
@@ -1660,12 +1638,12 @@ focus_tree = {
 			strength_ratio = { tag = GRE ratio > 1 }
 			has_army_manpower = { size > 500000 }
 		}
- 
+
 		bypass = {
 			GRE = {
 				OR = {
 					is_puppet_of = ROM
-					exists = no 
+					exists = no
 				}
 			}
 		}
@@ -1756,7 +1734,7 @@ focus_tree = {
 										value = THIS
 									}
 								}
-							} 
+							}
 						}
 					}
 					YUG = {
@@ -1768,7 +1746,7 @@ focus_tree = {
 							log = "[THIS.GetName] was removed from the array"
 						}
 					}
-					
+
 				}
 			}
 		}
@@ -1854,7 +1832,6 @@ focus_tree = {
 		}
 	}
 
-
 	focus = {
 		id = ROM_institute_royal_dictatorship
 		icon = GFX_focus_rom_royal_dictatorship
@@ -1887,7 +1864,7 @@ focus_tree = {
 			create_country_leader = {
 				name = "Carol II"
 				desc = "POLITICS_CAROL_II_DESC"
-				picture = GFX_Portrait_romania_Carol_II				
+				picture = GFX_Portrait_romania_Carol_II
 				expire = "1965.1.1"
 				ideology = despotism
 				traits = {
@@ -1904,7 +1881,7 @@ focus_tree = {
 				popularity = 65
 			}
 			remove_ideas = neutrality_idea
-		}		
+		}
 	}
 
 	focus = {
@@ -1995,7 +1972,7 @@ focus_tree = {
 		id = ROM_militarize_the_sentinels
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = ROM_his_majestys_loyal_government }
-	
+
 		x = 0
 		y = 1
 		relative_position_id = ROM_his_majestys_loyal_government
@@ -2026,7 +2003,7 @@ focus_tree = {
 			swap_ideas = {
 				add_idea = ROM_the_sentinel_of_the_motherland_2
 				remove_idea = ROM_the_sentinel_of_the_motherland
-			}			
+			}
 		}
 	}
 
@@ -2034,7 +2011,7 @@ focus_tree = {
 		id = ROM_all_parties_must_end
 		icon = GFX_focus_rom_parties_end
 		prerequisite = { focus = ROM_militarize_the_sentinels }
-	
+
 		x = 0
 		y = 2
 		relative_position_id = ROM_his_majestys_loyal_government
@@ -2085,7 +2062,7 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
@@ -2099,7 +2076,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		completion_reward = {			
+		completion_reward = {
 			add_country_leader_trait = camarilla_leader
 			add_ideas = ROM_the_sentinel_of_the_motherland
 		}
@@ -2120,11 +2097,11 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -2136,7 +2113,7 @@ focus_tree = {
 			add_research_slot = 1
 		}
 	}
-	
+
 	focus = {
 		id = ROM_crack_down_on_extremism
 		icon = GFX_goal_generic_political_pressure
@@ -2153,7 +2130,7 @@ focus_tree = {
 
 		available = {
 			is_subject = no
-			NOT = { 
+			NOT = {
 				OR = {
 					has_completed_focus = ROM_iron_guard
 					has_completed_focus = ROM_national_christian_party
@@ -2184,7 +2161,7 @@ focus_tree = {
 				remove_advisor_role = { slot = army_chief }
 				remove_unit_leader_role = yes
 			}
-			set_party_name = { 
+			set_party_name = {
 			    ideology = fascism
 			    long_name = ROM_fascism_party_long
 			    name = ROM_fascism_party
@@ -2192,7 +2169,7 @@ focus_tree = {
 			hidden_effect = { retire_character = ROM_corneliu_codreanu }
 		}
 	}
-	
+
 	focus = {
 		id = ROM_flexible_foreign_policy
 		icon = GFX_goal_generic_improve_relations
@@ -2295,7 +2272,7 @@ focus_tree = {
 			add_opinion_modifier = { modifier = ROM_appoint_soviet_friendly_government target = SOV }
 			SOV = { add_opinion_modifier = { modifier = ROM_appoint_soviet_friendly_government target = ROOT } }
 			if = {
-				limit = { 
+				limit = {
 					NOT = {
 						is_in_faction_with = TUR
 						TUR = { is_faction_leader = yes }
@@ -2325,9 +2302,9 @@ focus_tree = {
 					}
 				}
 			}
-			hidden_effect = { 
-				set_country_flag = can_change_sides_com 
-				if = { 
+			hidden_effect = {
+				set_country_flag = can_change_sides_com
+				if = {
 					limit = {
 						NOT = {
 							is_in_faction_with = TUR
@@ -2388,12 +2365,12 @@ focus_tree = {
 
 		completion_reward = {
 			if = {
-				limit = { 
-					NOT = { has_idea = ROM_securitate	} 
+				limit = {
+					NOT = { has_idea = ROM_securitate	}
 				}
-				add_ideas = ROM_securitate	
+				add_ideas = ROM_securitate
 			}
-			
+
 			if = {
 				limit = {
 					has_idea = ROM_constitutional_guarantees
@@ -2404,7 +2381,7 @@ focus_tree = {
 				}
 			}
 			hidden_effect = {
-				if = { 
+				if = {
 					limit = { has_idea = ROM_national_christian_party_in_power }
 					remove_ideas = ROM_national_christian_party_in_power
 				}
@@ -2486,7 +2463,7 @@ focus_tree = {
 			add_opinion_modifier = { modifier = ROM_appoint_german_friendly_government target = GER }
 			GER = { add_opinion_modifier = { modifier = ROM_appoint_german_friendly_government target = ROOT } }
 			if = {
-				limit = { 
+				limit = {
 					has_dlc = "Battle for the Bosporus"
 					NOT = {
 						is_in_faction_with = TUR
@@ -2517,9 +2494,9 @@ focus_tree = {
 					}
 				}
 			}
-			hidden_effect = { 
+			hidden_effect = {
 				set_country_flag = can_change_sides_fas
-				if = { 
+				if = {
 					limit = {
 						has_dlc = "Battle for the Bosporus"
 						NOT = {
@@ -2640,14 +2617,14 @@ focus_tree = {
 				}
 			}
 			hidden_effect = {
-				if = { 
+				if = {
 					limit = { has_idea = ROM_national_christian_party_in_power }
 					remove_ideas = ROM_national_christian_party_in_power
 				}
 			}
 		}
 	}
-	
+
 	focus = {
 		id = ROM_national_christian_party
 		icon = GFX_goal_generic_propaganda
@@ -2656,7 +2633,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_appoint_german_friendly_government
 		mutually_exclusive = { focus = ROM_iron_guard }
-		
+
 		cost = 10
 
 		ai_will_do = {
@@ -2722,7 +2699,7 @@ focus_tree = {
 		icon = GFX_focus_rom_abdicate
 		prerequisite = { focus = ROM_iron_guard focus = ROM_securitate focus = ROM_national_christian_party }
 		mutually_exclusive = { focus = ROM_handle_the_king }
-		x = 1				
+		x = 1
 		y = 2
 		relative_position_id = ROM_appoint_soviet_friendly_government
 
@@ -2740,7 +2717,7 @@ focus_tree = {
 				fascism > 0.35
 			}
 			is_subject = no
-			
+
 		}
 
 		bypass = {
@@ -2753,10 +2730,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			if = {
-				limit = { 
-					has_country_leader = { 
-						id = 550 
-					} 
+				limit = {
+					has_country_leader = {
+						id = 550
+					}
 				}
 				retire_country_leader = yes
 			}
@@ -2801,7 +2778,7 @@ focus_tree = {
 				}
 				remove_ideas = ROM_the_sentinel_of_the_motherland
 			}
-			
+
 			add_timed_idea = { idea = ROM_king_carol_emptied_accounts days = 360 }
 			hidden_effect = {
 				news_event = { id = news.323 days = 1 }
@@ -2887,12 +2864,12 @@ focus_tree = {
 				}
 				remove_ideas = ROM_iron_guard
 			}
-			
+
 			hidden_effect = {
 				news_event = { id = news.322 days = 1 }
 				set_country_flag = can_change_sides_dem
 				set_country_flag = can_change_sides_com
-				set_country_flag = can_change_sides_fas				
+				set_country_flag = can_change_sides_fas
 			}
 			unlock_decision_tooltip = ROM_change_sides_to_allies
 			unlock_decision_tooltip = ROM_change_sides_to_axis
@@ -2969,7 +2946,7 @@ focus_tree = {
 			add_stability = -0.05
 
 			custom_effect_tooltip = CHL_skip_one_line_tt
-			
+
 			add_opinion_modifier = { modifier = ROM_appoint_allied_friendly_government target = ENG }
 			ENG = { add_opinion_modifier = { modifier = ROM_appoint_allied_friendly_government target = ROOT } }
 		}
@@ -2990,7 +2967,7 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
@@ -3021,7 +2998,7 @@ focus_tree = {
 				}
 			}
 			hidden_effect = {
-				if = { 
+				if = {
 					limit = { has_idea = ROM_national_christian_party_in_power }
 					remove_ideas = ROM_national_christian_party_in_power
 				}
@@ -3085,7 +3062,6 @@ focus_tree = {
 			}
 		}
 	}
-
 
 	focus = {
 		id = ROM_expand_the_air_force
@@ -3171,7 +3147,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = ROM_white_squadron_focus
 		icon = GFX_focus_SOV_women_in_aviation
@@ -3205,7 +3181,7 @@ focus_tree = {
 			add_ideas = ROM_white_squadron
 		}
 	}
-	
+
 	focus = {
 		id = ROM_acquire_licenses
 		icon = GFX_focus_generic_license_production
@@ -3510,7 +3486,6 @@ focus_tree = {
 				days = 240
 				track = fighter_aircraft
 			}
-			
 
 		}
 	}
@@ -3539,7 +3514,7 @@ focus_tree = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no 
+		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
@@ -3761,7 +3736,6 @@ focus_tree = {
 		}
 	}
 
-
 	focus = {
 		id = ROM_army_maneuvers
 		icon = GFX_goal_generic_army_doctrines
@@ -3821,7 +3795,7 @@ focus_tree = {
 			add_ideas = ROM_army_war_college
 			custom_effect_tooltip = ROM_war_college_tt
 			hidden_effect = {
-				create_corps_commander = { 
+				create_corps_commander = {
 					name = "Barbu Paraianu"
 					gfx = GFX_Portrait_romania_barbu_paraianu
 					traits = { infantry_officer }
@@ -3871,7 +3845,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {		
+	focus = {
 		id = ROM_vanatori_de_munte
 		icon = GFX_goal_generic_special_forces
 		prerequisite = { focus = ROM_the_zb_53 }
@@ -3908,11 +3882,11 @@ focus_tree = {
 						mountaineers = { x = 0 y = 0 }
 						mountaineers = { x = 0 y = 1 }
 						mountaineers = { x = 0 y = 2 }
-			
+
 	    	   		 	mountaineers = { x = 1 y = 0 }
 						mountaineers = { x = 1 y = 1 }
 						mountaineers = { x = 1 y = 2 }
-			
+
 	    	   		 	mountaineers = { x = 2 y = 0 }
 						mountaineers = { x = 2 y = 1 }
 						mountaineers = { x = 2 y = 2 }
@@ -3925,7 +3899,7 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 46 }
 					create_unit = {
-						division = "name = \"Vanatori de munte\" division_template = \"Vanatori de munte\" start_experience_factor = 1.0" 
+						division = "name = \"Vanatori de munte\" division_template = \"Vanatori de munte\" start_experience_factor = 1.0"
 						owner = ROM
 					}
 				}
@@ -4086,11 +4060,11 @@ focus_tree = {
 							infantry = { x = 0 y = 0 }
 							infantry = { x = 0 y = 1 }
 							infantry = { x = 0 y = 2 }
-				
+
 		    	   		 	infantry = { x = 1 y = 0 }
 							infantry = { x = 1 y = 1 }
 							infantry = { x = 1 y = 2 }
-				
+
 		    	   		 	infantry = { x = 2 y = 0 }
 							artillery_brigade = { x = 3 y = 0 }
 							artillery_brigade = { x = 3 y = 1 }
@@ -4109,11 +4083,11 @@ focus_tree = {
 								infantry = { x = 0 y = 0 }
 								infantry = { x = 0 y = 1 }
 								infantry = { x = 0 y = 2 }
-					
+
 			    	   		 	infantry = { x = 1 y = 0 }
 								infantry = { x = 1 y = 1 }
 								infantry = { x = 1 y = 2 }
-					
+
 			    	   		 	infantry = { x = 2 y = 0 }
 								artillery_brigade = { x = 3 y = 0 }
 								artillery_brigade = { x = 3 y = 1 }
@@ -4128,11 +4102,11 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 46 }
 					create_unit = {
-						division = "name = \"Royal Guards Division\" division_template = \"Royal Guards Division\" start_experience_factor = 1.0" 
+						division = "name = \"Royal Guards Division\" division_template = \"Royal Guards Division\" start_experience_factor = 1.0"
 						owner = ROM
 					}
 				}
-			}			
+			}
 		}
 	}
 
@@ -4187,7 +4161,7 @@ focus_tree = {
 			OR = {
 				has_design_based_on = light_tank_chassis
 				has_design_based_on = medium_tank_chassis
-			}		
+			}
 		}
 
 		bypass = {
@@ -4217,10 +4191,10 @@ focus_tree = {
 						regiments = {
 							medium_armor = { x = 0 y = 0 }
 							medium_armor = { x = 0 y = 1 }
-				
+
 		    	   		 	medium_armor = { x = 1 y = 0 }
 							medium_armor = { x = 1 y = 1 }
-				
+
 		    	   		 	motorized = { x = 2 y = 0 }
 							motorized = { x = 2 y = 1 }
 
@@ -4249,10 +4223,10 @@ focus_tree = {
 								regiments = {
 									medium_armor = { x = 0 y = 0 }
 									medium_armor = { x = 0 y = 1 }
-						
+
 				    	   		 	medium_armor = { x = 1 y = 0 }
 									medium_armor = { x = 1 y = 1 }
-						
+
 				    	   		 	motorized = { x = 2 y = 0 }
 									motorized = { x = 2 y = 1 }
 
@@ -4276,10 +4250,10 @@ focus_tree = {
 										regiments = {
 											light_armor = { x = 0 y = 0 }
 											light_armor = { x = 0 y = 1 }
-								
+
 						    	   		 	light_armor = { x = 1 y = 0 }
 											light_armor = { x = 1 y = 1 }
-								
+
 						    	   		 	motorized = { x = 2 y = 0 }
 											motorized = { x = 2 y = 1 }
 
@@ -4300,10 +4274,10 @@ focus_tree = {
 											regiments = {
 												light_armor = { x = 0 y = 0 }
 												light_armor = { x = 0 y = 1 }
-									
+
 							    	   		 	light_armor = { x = 1 y = 0 }
 												light_armor = { x = 1 y = 1 }
-									
+
 							    	   		 	motorized = { x = 2 y = 0 }
 												motorized = { x = 2 y = 1 }
 
@@ -4325,15 +4299,15 @@ focus_tree = {
 					limit = { ROOT = { has_full_control_of_state = PREV } }
 					prioritize = { 46 }
 					create_unit = {
-						division = "name = \"Armored Division\" division_template = \"Armored Division\" start_experience_factor = 0.7" 
+						division = "name = \"Armored Division\" division_template = \"Armored Division\" start_experience_factor = 0.7"
 						owner = ROM
 					}
 					create_unit = {
-						division = "name = \"Armored Division\" division_template = \"Armored Division\" start_experience_factor = 0.7" 
+						division = "name = \"Armored Division\" division_template = \"Armored Division\" start_experience_factor = 0.7"
 						owner = ROM
 					}
 				}
-			}			
+			}
 		}
 	}
 
@@ -4451,7 +4425,6 @@ focus_tree = {
 			}
 		}
 	}
-
 
 	focus = {
 		id = ROM_expand_the_galati_shipyards
@@ -4589,9 +4562,9 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = ROM_coastal_defense_ships
-			if = { 
+			if = {
 				limit = { has_dlc = "Man the Guns" }
-				set_technology = { coastal_defense_ships = 1 } 
+				set_technology = { coastal_defense_ships = 1 }
 			}
 		}
 	}
@@ -4665,7 +4638,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = ROM_modern_submarines
 		icon = GFX_goal_generic_navy_submarine
@@ -4729,7 +4702,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		completion_reward = {			
+		completion_reward = {
 
 			IF = {
 				limit = {

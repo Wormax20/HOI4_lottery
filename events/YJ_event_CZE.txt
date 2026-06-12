@@ -1,9 +1,9 @@
-add_namespace = KoKi_YJ_CZE_event
+﻿add_namespace = KoKi_YJ_CZE_event
 country_event = {
 	id = KoKi_YJ_CZE_event.101
 	title = KoKi_YJ_CZE_event.101.title
 	desc = KoKi_YJ_CZE_event.101.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes

@@ -1,10 +1,10 @@
-add_namespace = KoKi_YJ_CHI_event
+﻿add_namespace = KoKi_YJ_CHI_event
 
 country_event = {
 	id = KoKi_YJ_CHI_event.101
 	title = KoKi_YJ_CHI_event.101.title
 	desc = KoKi_YJ_CHI_event.101.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -204,12 +204,11 @@ country_event = {
 			factor = 100
 		}
 		add_research_slot = 1
-		
+
 		country_event = {id = SEA_warlords.34  days = 105 }
 		country_event = { id = wtt_xian_incident.8 days = 345 }
 	}
 }
-
 
 country_event = {
 	id = KoKi_YJ_CHI_event.102

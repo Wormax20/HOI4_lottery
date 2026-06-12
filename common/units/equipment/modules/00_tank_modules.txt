@@ -1,6 +1,6 @@
-equipment_modules = {
+﻿equipment_modules = {
 	limit = {
-		has_dlc = "No Step Back" 
+		has_dlc = "No Step Back"
 	}
 
 	tank_gasoline_engine = {
@@ -25,7 +25,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_engine
 
 		add_stats = {
-			build_cost_ic = 1 
+			build_cost_ic = 1
 			fuel_consumption = 2
 			reliability = 0.25
 		}
@@ -68,14 +68,13 @@ equipment_modules = {
 		}
 	}
 
-
 	tank_riveted_armor = {
 		abbreviation = "riv"
 		category = tank_armor_type
 		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
-			
+
 			defense = 2
 			breakthrough = 2
 		}
@@ -94,7 +93,7 @@ equipment_modules = {
 		add_stats = {
 			defense = 3
 			breakthrough = 3
-			hardness = 0.02	
+			hardness = 0.02
 		}
 		dismantle_cost_ic = 1
 		xp_cost = 8
@@ -131,7 +130,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_sonar
 
 		add_stats = {
-			
+
 			defense = 1
 			breakthrough = 0
 			hardness = -0.3
@@ -240,7 +239,6 @@ equipment_modules = {
 		}
 	}
 
-
 	tank_light_one_man_tank_turret = {
 		abbreviation = "l1m"
 		category = tank_light_turret_type
@@ -249,12 +247,12 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 1
 			breakthrough = 7
-			
+
 		}
 		dismantle_cost_ic = 0.5
 		xp_cost = 2
 		multiply_stats = {
-			
+
 		}
 
 	}
@@ -267,12 +265,12 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 1.25
 			breakthrough = 10
-			
+
 		}
 		xp_cost = 2
 		dismantle_cost_ic = 0.5
 		multiply_stats = {
-			
+
 		}
 
 	}
@@ -290,7 +288,7 @@ equipment_modules = {
 		dismantle_cost_ic = 0.5
 		xp_cost = 2
 		multiply_stats = {
-			
+
 		}
 
 	}
@@ -318,7 +316,7 @@ equipment_modules = {
 			build_cost_ic = 1
 			reliability = 0.2
 			defense = 3
-			
+
 		}
 
 		multiply_stats = {
@@ -344,12 +342,12 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 1.25
 			breakthrough = 8
-			
+
 		}
 		dismantle_cost_ic = 1
 		xp_cost = 2
 		multiply_stats = {
-			
+
 			hard_attack = -0.05
 			soft_attack = -0.05
 		}
@@ -395,7 +393,7 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 2
 		multiply_stats = {
-	
+
 		}
 
 	}
@@ -461,7 +459,7 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-			
+
 		}
 
 	}
@@ -487,7 +485,7 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-			
+
 		}
 
 	}
@@ -580,7 +578,7 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 		xp_cost = 2
 		multiply_stats = {
-			
+
 		}
 
 	}
@@ -606,8 +604,6 @@ equipment_modules = {
 		}
 
 	}
-
-
 
 	tank_heavy_machine_gun = {
 		abbreviation = "hmg"
@@ -1236,7 +1232,6 @@ equipment_modules = {
 		}
 	}
 
-
 	NOR_rikstanken_turret = {
 		abbreviation = "mst"
 		category = tank_light_turret_type
@@ -1244,18 +1239,16 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 0.1
-			breakthrough = 1	
+			breakthrough = 1
 			reliability = -0.25
 		}
 		dismantle_cost_ic = 0.5
 		xp_cost = 2
 		multiply_stats = {
-			
+
 		}
 
 	}
-
-
 
 	tank_radio_1 = {
 		abbreviation = "rad1"
@@ -1277,7 +1270,7 @@ equipment_modules = {
 		category = tank_radio_module
 		parent = tank_radio_1
 		sfx = sfx_ui_sd_module_turret
-		
+
 		add_stats = {
 			build_cost_ic = 1.5
 		}
@@ -1426,7 +1419,7 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		multiply_stats = {
-			
+
 		}
 	}
 
@@ -1436,7 +1429,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			
+
 		}
 		xp_cost = 1
 		multiply_stats = {
@@ -1460,7 +1453,7 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		multiply_stats = {
-			
+
 		}
 	}
 
@@ -1475,7 +1468,7 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		multiply_stats = {
-			
+
 		}
 	}
 
@@ -1490,7 +1483,7 @@ equipment_modules = {
 			defense = 4
 		}
 		xp_cost = 1
-		
+
 	}
 
 	easy_maintenance = {
@@ -1520,10 +1513,10 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		multiply_stats = {
-			
+
 		}
 	}
-	
+
 	expanded_fuel_tank = {
 		abbreviation = "fuel"
 		category = tank_special_module
@@ -1536,13 +1529,10 @@ equipment_modules = {
 		}
 		xp_cost = 3
 		multiply_stats = {
-			
+
 		}
 	}
 }
-
-
-
 
 equipment_modules = {
 	limit = {
@@ -1550,7 +1540,6 @@ equipment_modules = {
 		has_dlc = "No Step Back"
 	}
 
-	
 	lc_heavy_naval_guns = {
 		abbreviation = "hng"
 		category = lc_main_armament
@@ -1649,7 +1638,6 @@ equipment_modules = {
 			reliability = -0.05
 		}
 
-
 		dismantle_cost_ic = 1
 		xp_cost = 1
 		can_convert_from = {
@@ -1661,8 +1649,6 @@ equipment_modules = {
 			steel = 5
 		}
 	}
-
-
 
 	lc_medium_naval_guns = {
 		abbreviation = "mng"
@@ -1802,8 +1788,6 @@ equipment_modules = {
 			steel = 4
 		}
 	}
-
-
 
 	lc_medium_cannon_turret = {
 		abbreviation = "mct"
@@ -1966,9 +1950,6 @@ equipment_modules = {
 		}
 	}
 
-
-
-	
 	lc_radio_1 = {
 		abbreviation = "lcrad1"
 		category = lc_radio_module
@@ -1989,7 +1970,7 @@ equipment_modules = {
 		category = lc_radio_module
 		parent = lc_radio_1
 		sfx = sfx_ui_sd_module_turret
-		
+
 		add_stats = {
 			build_cost_ic = 4
 		}
@@ -2029,7 +2010,7 @@ equipment_modules = {
 			defense = 0.75
 			breakthrough = 0.5
 		}
-	}	
+	}
 
 	lc_aircraft_catapult = {
 		abbreviation = "acc"
@@ -2140,7 +2121,7 @@ equipment_modules = {
 		}
 		xp_cost = 1
 	}
-	
+
 	lc_wet_ammunition_storage = {
 		abbreviation = "wets"
 		category = lc_structural_features
@@ -2183,6 +2164,3 @@ equipment_modules = {
 	}
 
 }
-
-
-

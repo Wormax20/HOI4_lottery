@@ -1,7 +1,7 @@
-KoKi_YJ_TAG_decisions_0_scripted_effects = {
+﻿KoKi_YJ_TAG_decisions_0_scripted_effects = {
     if = {
-		limit = { 
-			original_tag = USA 
+		limit = {
+			original_tag = USA
 			is_ai = no
 		}
 		hidden_effect = {
@@ -9,8 +9,8 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
 		}
 	}
 	if = {
-		limit = { 
-			original_tag = GER 
+		limit = {
+			original_tag = GER
 			is_ai = no
 		}
 		hidden_effect = {
@@ -18,8 +18,8 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
 		}
 	}
 	if = {
-		limit = { 
-			original_tag = ENG 
+		limit = {
+			original_tag = ENG
 			is_ai = no
 		}
 		hidden_effect = {
@@ -27,8 +27,8 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
 		}
 	}
 	if = {
-		limit = { 
-			original_tag = FRA 
+		limit = {
+			original_tag = FRA
 			is_ai = no
 		}
 		hidden_effect = {
@@ -36,8 +36,8 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
 		}
 	}
 	if = {
-		limit = { 
-			original_tag = SOV 
+		limit = {
+			original_tag = SOV
 			is_ai = no
 		}
 		hidden_effect = {
@@ -45,8 +45,8 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
 		}
 	}
 	if = {
-		limit = { 
-			original_tag = ITA 
+		limit = {
+			original_tag = ITA
 			is_ai = no
 		}
 		hidden_effect = {
@@ -54,8 +54,8 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
 		}
 	}
 	if = {
-		limit = { 
-			original_tag = BRA 
+		limit = {
+			original_tag = BRA
 			is_ai = no
 		}
 		hidden_effect = {
@@ -63,8 +63,8 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
 		}
 	}
 	if = {
-		limit = { 
-			original_tag = FIN 
+		limit = {
+			original_tag = FIN
 			is_ai = no
 		}
 		hidden_effect = {
@@ -72,8 +72,8 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
 		}
 	}
 	if = {
-		limit = { 
-			original_tag = JAP 
+		limit = {
+			original_tag = JAP
 			is_ai = no
 		}
 		hidden_effect = {
@@ -81,8 +81,8 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
 		}
 	}
 	if = {
-		limit = { 
-			original_tag = PRC 
+		limit = {
+			original_tag = PRC
 		    is_ai = no
 		}
 		hidden_effect = {
@@ -90,8 +90,8 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
 		}
 	}
 	if = {
-		limit = { 
-			original_tag = ROM 
+		limit = {
+			original_tag = ROM
 			is_ai = no
 		}
 		hidden_effect = {
@@ -99,8 +99,8 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
 		}
 	}
 	if = {
-		limit = { 
-			original_tag = MEX 
+		limit = {
+			original_tag = MEX
 			is_ai = no
 		}
 		hidden_effect = {
@@ -138,8 +138,8 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
     	}
 	}
 	if = {
-		limit = { 
-			original_tag = PHI 
+		limit = {
+			original_tag = PHI
 			is_ai = no
 		}
 		hidden_effect = {
@@ -147,8 +147,8 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
 		}
 	}
 	if = {
-		limit = { 
-			original_tag = BEL 
+		limit = {
+			original_tag = BEL
 			is_ai = no
 		}
 		hidden_effect = {
@@ -156,7 +156,7 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
 		}
 	}
 	if = {
-		limit = { 
+		limit = {
 			original_tag = SWI
 			is_ai = no
 		}
@@ -165,7 +165,7 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
 		}
 	}
 	if = {
-		limit = { 
+		limit = {
 			original_tag = RAJ
 			is_ai = no
 		}
@@ -174,27 +174,27 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
 		}
 	}
 	if = {
-		limit = { 
+		limit = {
 			original_tag = CAN
-			is_ai = no 
+			is_ai = no
 		}
 		hidden_effect = {
 			CAN_YJ_scripted_effects = yes
 		}
 	}
 	if = {
-		limit = { 
+		limit = {
 			original_tag = TUR
-			is_ai = no 
+			is_ai = no
 		}
 		hidden_effect = {
 			TUR_YJ_scripted_effects = yes
 		}
 	}
 	if = {
-    	limit = { 
+    	limit = {
         	original_tag = AUS
-        	is_ai = no 
+        	is_ai = no
     	}
     	hidden_effect = {
 
@@ -210,9 +210,9 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
     	}
 	}
 	if = {
-		limit = { 
+		limit = {
 			original_tag = CZE
-			is_ai = no 
+			is_ai = no
 		}
 		hidden_effect = {
 			CZE_YJ_scripted_effects = yes
@@ -611,7 +611,7 @@ SOV_YJ_scripted_effects = {
 	}
 }
 
-ITA_YJ_scripted_effects = { 
+ITA_YJ_scripted_effects = {
 	random_list = {
 		16.6 = {
 			modifier = {
@@ -1278,7 +1278,6 @@ SWI_YJ_scripted_effects = {
 		}
 	}
 }
-
 
 RAJ_YJ_scripted_effects = {
 	random_list = {
@@ -2289,7 +2288,6 @@ MEX_state_YJ_scripted_effects = {
 		}
 	}
 }
-
 
 KoKi_YJ_ITA_event_1_scripted_effects = {
 	random_list = {

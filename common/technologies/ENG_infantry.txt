@@ -1,5 +1,5 @@
-technologies = {
-	ENG_marines_tech = { 
+﻿technologies = {
+	ENG_marines_tech = {
 		marine = {
             combat_width = -0.4
 			forest = {
@@ -31,12 +31,12 @@ technologies = {
 			attack = 0.1
 			defence = 0.1
 		}
-		river = { 
+		river = {
 			attack = 0.1
 			defence = 0.1
 			movement = 0.1
 		}
-		amphibious = { 
+		amphibious = {
 			attack = 0.1
 		}
 		fort = {

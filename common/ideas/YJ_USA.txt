@@ -1,4 +1,4 @@
-ideas = {
+﻿ideas = {
 	hidden_ideas = {
 		YJ_USA_3_ideas = {
 
@@ -153,7 +153,6 @@ ideas = {
 			}
 		}
 
-		
 		YJ_USA_7_ideas = {
 
 			allowed = {
@@ -178,8 +177,8 @@ ideas = {
 
 		YJ_USA_6_ideas = {
             picture = generic_amphibious_assault
-            
-            allowed = { always = no } 
+
+            allowed = { always = no }
 
             modifier = {
 				naval_invasion_penalty = -0.75

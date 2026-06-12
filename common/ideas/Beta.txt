@@ -1,4 +1,4 @@
-ideas = {
+﻿ideas = {
 	country = {
 		YJ_10001_ideas = {
 
@@ -33,7 +33,6 @@ ideas = {
 				airforce_intel_to_others =-5
 			}
 		}
-
 
 		YJ_bbls_ideas = {
 
@@ -108,10 +107,10 @@ ideas = {
 				navy_submarine_defence_factor = -10
 				custom_modifier_tooltip = YJ_AIR_ideas_tt
 			}
-			
+
 			picture = generic_anti_air
 
-			equipment_bonus = {			
+			equipment_bonus = {
 				light_tank_destroyer_chassis = {
 					instant = yes
 					soft_attack = 0.1
@@ -161,7 +160,7 @@ ideas = {
 			}
 		}
 	}
-	
+
 	industrial_concern = {
 
 		YJ_industrial_concern = {

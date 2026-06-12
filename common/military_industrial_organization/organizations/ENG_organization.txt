@@ -1,11 +1,8 @@
-
-
-ENG_vickers_armstrong_eng_organization = {
+﻿ENG_vickers_armstrong_eng_organization = {
 	include = generic_medium_tank_organization
 	icon = GFX_idea_vickers_armstrong_eng
-	
-	
-	allowed = {	
+
+	allowed = {
 		OR = {
 			tag = ENG
 			AND = {
@@ -17,7 +14,7 @@ ENG_vickers_armstrong_eng_organization = {
 				has_dlc = "Battle for the Bosporus"
 			}
 			AND = {
-				tag = ETH 
+				tag = ETH
 				has_dlc = "By Blood Alone"
 			}
 		}
@@ -29,7 +26,7 @@ ENG_vickers_armstrong_eng_organization = {
 			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
 		}
 	}
-	
+
 	available = {
 		IF = {
 			limit = {
@@ -39,21 +36,21 @@ ENG_vickers_armstrong_eng_organization = {
 		}
 
 		IF = {
-			limit = { 
-				OR = { 
+			limit = {
+				OR = {
 					FROM = { original_tag = BUL }
 					FROM = { original_tag = ETH }
-				}  
+				}
 			}
 			custom_trigger_tooltip = {
 				tooltip = has_invited_mio_tt
 				FROM = {
-					has_country_flag = has_invited_vickers_mio_flag 
+					has_country_flag = has_invited_vickers_mio_flag
 				}
 			}
 		}
 		IF = {
-			limit = { FROM = { original_tag = BUL } } 
+			limit = { FROM = { original_tag = BUL } }
 			FROM = {
 				OR = {
 					is_subject = no
@@ -75,7 +72,7 @@ ENG_vickers_armstrong_eng_organization = {
 		}
 	}
 
-	add_trait = { 
+	add_trait = {
 		token = ENG_mio_trait_expanded_turret_capacity
 		name = ENG_mio_trait_expanded_turret_capacity
 		icon = GFX_generic_mio_department_icon_tank_medium_tank_engine
@@ -94,7 +91,7 @@ ENG_vickers_armstrong_eng_organization = {
 		}
 	}
 
-	add_trait = { 
+	add_trait = {
 		token = ENG_mio_trait_expanded_production_facilities
 		name = ENG_mio_trait_expanded_production_facilities
 		icon = GFX_generic_mio_department_icon_tank_medium_tank_technology
@@ -108,7 +105,7 @@ ENG_vickers_armstrong_eng_organization = {
 			production_efficiency_cap_factor = 0.1
 			production_efficiency_gain_factor = 0.1
 		}
-		
+
 	}
 }
 
@@ -116,7 +113,7 @@ ENG_vauxhall_organization = {
 	include = generic_infantry_tank_organization
 	icon = GFX_idea_vauxhall
 
-	allowed = {	
+	allowed = {
 		OR = {
 			tag = ENG
 			tag = SAF
@@ -134,22 +131,22 @@ ENG_vauxhall_organization = {
 				has_dlc = "Battle for the Bosporus"
 			}
 			AND = {
-				tag = ETH 
+				tag = ETH
 				has_dlc = "By Blood Alone"
 			}
 			AND = {
-				tag = BRA 
+				tag = BRA
 				has_dlc = "Trial of Allegiance"
 			}
 			AND = {
-				tag = IRQ 
+				tag = IRQ
 				has_dlc = "Graveyard of Empires"
 			}
 		}
 	}
 
 	visible = {
-		IF = { 
+		IF = {
 			limit = {
 				FROM = { original_tag = POL }
 			}
@@ -161,7 +158,7 @@ ENG_vauxhall_organization = {
 			limit = { FROM = { original_tag = ETH } }
 			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
 		}
-	
+
 	}
 
 	available = {
@@ -173,21 +170,21 @@ ENG_vauxhall_organization = {
 		}
 
 		IF = {
-			limit = { 
-				OR = { 
+			limit = {
+				OR = {
 					FROM = { original_tag = BUL }
 					FROM = { original_tag = ETH }
-				}  
+				}
 			}
 			custom_trigger_tooltip = {
 				tooltip = has_invited_mio_tt
 				FROM = {
-					has_country_flag = has_invited_vauxhall_mio_flag 
+					has_country_flag = has_invited_vauxhall_mio_flag
 				}
 			}
 		}
 		IF = {
-			limit = { FROM = { original_tag = BUL } } 
+			limit = { FROM = { original_tag = BUL } }
 			FROM = {
 				OR = {
 					is_subject = no
@@ -244,15 +241,11 @@ ENG_vauxhall_organization = {
 	}
 }
 
-
-
-
-
 ENG_harland_wolff_organization = {
 	include = generic_task_force_ship_organization
 	icon = GFX_idea_harland_wolff
-	
-	allowed = {	
+
+	allowed = {
 		tag = ENG
 		has_dlc = "Arms Against Tyranny"
 	}
@@ -264,7 +257,7 @@ ENG_harland_wolff_organization = {
 		relative_position_id = generic_mio_trait_transom_stern
 	}
 
-	add_trait = { 
+	add_trait = {
 		token = ENG_mio_trait_flared_bow
 		name = ENG_mio_trait_flared_bow
 		icon = GFX_generic_mio_department_icon_ship_general_quality
@@ -280,7 +273,7 @@ ENG_harland_wolff_organization = {
 		}
 	}
 
-	add_trait = { 
+	add_trait = {
 		token = generic_mio_trait_semi_armor_piercing_shells
 		name = generic_mio_trait_semi_armor_piercing_shells
 		icon = GFX_generic_mio_trait_icon_lg_attack
@@ -297,12 +290,11 @@ ENG_harland_wolff_organization = {
 	}
 }
 
-
 ENG_cammell_laird_organization = {
 	include = generic_battle_line_ship_organization
 	icon = GFX_idea_cammell_laird
-	
-	allowed = {	
+
+	allowed = {
 		has_dlc = "Arms Against Tyranny"
 		OR = {
 			tag = ENG
@@ -331,8 +323,6 @@ ENG_cammell_laird_organization = {
 			}
 		}
 	}
-		
-
 
 	override_trait = {
 		token = generic_mio_trait_advanced_armor_design
@@ -341,7 +331,7 @@ ENG_cammell_laird_organization = {
 		relative_position_id = generic_mio_trait_advanced_hydrodynamic_design
 	}
 
-	add_trait = { 
+	add_trait = {
 		token = ENG_mio_trait_flared_bow
 		name = ENG_mio_trait_flared_bow
 		icon = GFX_generic_mio_department_icon_ship_general_quality
@@ -351,13 +341,13 @@ ENG_cammell_laird_organization = {
 		relative_position_id = generic_mio_trait_advanced_armor_design
 
 		any_parent = { generic_mio_trait_hardened_critical_components}
-		
+
 		equipment_bonus = {
 			naval_weather_penalty_factor = -0.1
 		}
 	}
 
-	add_trait = { 
+	add_trait = {
 		token = ENG_mio_trait_super_charges
 		name = ENG_mio_trait_super_charges
 		icon = GFX_generic_mio_department_icon_ship_capital_ship_weapons
@@ -380,17 +370,17 @@ ENG_cammell_laird_organization = {
 ENG_yarrow_shipbuilders_organization = {
 	include = generic_escort_ship_organization
 	icon = GFX_idea_yarrow_shipbuilders
-	
-	allowed = {	
+
+	allowed = {
 		OR = {
-			tag = ENG 
+			tag = ENG
 			AND = {
 				tag = BUL
 				has_dlc = "Battle for the Bosporus"
 			}
 		}
 	}
-	
+
 	available = {
 		IF = {
 			limit = {
@@ -404,7 +394,7 @@ ENG_yarrow_shipbuilders_organization = {
 			custom_trigger_tooltip = {
 				tooltip = has_invited_mio_tt
 				FROM = {
-					has_country_flag = has_invited_yarrow_mio_flag 
+					has_country_flag = has_invited_yarrow_mio_flag
 				}
 			}
 			FROM = {
@@ -421,8 +411,8 @@ ENG_yarrow_shipbuilders_organization = {
 ENG_john_brown_organization = {
 	include = generic_raider_ship_organization
 	icon = GFX_idea_john_brown_company
-	
-	allowed = {	
+
+	allowed = {
 		OR = {
 			tag = ENG
 			AND = {
@@ -431,7 +421,7 @@ ENG_john_brown_organization = {
 			}
 
 			AND = {
-				tag = ETH 
+				tag = ETH
 				has_dlc = "By Blood Alone"
 			}
 		}
@@ -443,7 +433,7 @@ ENG_john_brown_organization = {
 			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
 		}
 	}
-	
+
 	available = {
 		IF = {
 			limit = {
@@ -466,15 +456,11 @@ ENG_john_brown_organization = {
 	}
 }
 
-
-
-
-
 ENG_supermarine_organization = {
 	include = generic_high_agility_fighter_aircraft_organization
 	icon = GFX_idea_supermarine
-	
-	allowed = {	
+
+	allowed = {
 		tag = ENG
 		has_dlc = "Arms Against Tyranny"
 	}
@@ -482,34 +468,34 @@ ENG_supermarine_organization = {
 	equipment_type = {
 		mio_cat_eq_all_small_plane
 		maritime_patrol_plane
-	}	
+	}
 
-	research_categories = {	
-		mio_cat_all_light_fighter_and_modules 
+	research_categories = {
+		mio_cat_all_light_fighter_and_modules
 	}
 
 	override_trait = {
 		token = generic_mio_trait_fuel_injection_engines
-		
+
 		position = { x=0 y=2 }
 		relative_position_id = generic_mio_trait_bigger_engines
 	}
 
 	override_trait = {
 		token = generic_mio_trait_high_octane_fuels
-		
+
 		position = { x=1 y=1 }
 		relative_position_id = generic_mio_trait_bigger_engines
 	}
 
 	override_trait = {
 		token = generic_mio_trait_subsidiary_suppliers
-		
+
 		position = { x=0 y=2 }
 		relative_position_id = generic_mio_trait_fuel_injection_engines
 	}
 
-	add_trait = { 
+	add_trait = {
 		token = ENG_mio_trait_seaplane_origins
 		name = ENG_mio_trait_seaplane_origins
 		icon = GFX_generic_mio_trait_icon_detection
@@ -517,7 +503,6 @@ ENG_supermarine_organization = {
 
 		position = { x=2 y=0 }
 		relative_position_id = generic_mio_trait_minimum_weapon_requirements
-
 
 		limit_to_equipment_type = { mio_cat_eq_all_small_plane maritime_patrol_plane }
 
@@ -528,7 +513,7 @@ ENG_supermarine_organization = {
 		}
 	}
 
-	add_trait = { 
+	add_trait = {
 		token = ENG_mio_trait_elliptical_wings
 		name = ENG_mio_trait_elliptical_wings
 		icon = GFX_generic_mio_trait_icon_defense
@@ -540,11 +525,11 @@ ENG_supermarine_organization = {
 		any_parent = { generic_mio_trait_cantilever_wing_structure }
 
 		equipment_bonus = {
-			air_defence = 0.1	
+			air_defence = 0.1
 		}
 	}
 
-	add_trait = { 
+	add_trait = {
 		token = ENG_mio_trait_supercharger
 		name = ENG_mio_trait_supercharger
 		icon = GFX_generic_mio_trait_icon_defense
@@ -556,7 +541,7 @@ ENG_supermarine_organization = {
 		all_parents = { generic_mio_trait_fuel_injection_engines generic_mio_trait_high_octane_fuels }
 
 		equipment_bonus = {
-			air_defence = 0.1	
+			air_defence = 0.1
 		}
 	}
 }
@@ -564,7 +549,7 @@ ENG_supermarine_organization = {
 ENG_hawker_organization = {
 	include = generic_cas_aircraft_organization
 	icon = GFX_idea_hawker
-	allowed = {	
+	allowed = {
 		OR = {
 			tag = ENG
 			tag = SAF
@@ -576,11 +561,11 @@ ENG_hawker_organization = {
 ENG_de_havilland_organization = {
 	include = generic_medium_aircraft_organization
 	icon = GFX_idea_de_havilland
-	allowed = {	
+	allowed = {
 		has_dlc = "Arms Against Tyranny"
 		OR = {
 			tag = ENG
-			tag = NOR 		
+			tag = NOR
 		}
 	}
 
@@ -606,10 +591,10 @@ ENG_de_havilland_organization = {
 ENG_fairey_aviation_organization = {
 	include = generic_naval_aircraft_organization
 	icon = GFX_idea_fairey_aviation
-	
-	allowed = {	
+
+	allowed = {
 		OR = {
-			tag = ENG 
+			tag = ENG
 			AND = {
 				tag = BUL
 				has_dlc = "Battle for the Bosporus"
@@ -627,7 +612,7 @@ ENG_fairey_aviation_organization = {
 			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
 		}
 	}
-	
+
 	available = {
 		IF = {
 			limit = {
@@ -641,7 +626,7 @@ ENG_fairey_aviation_organization = {
 			custom_trigger_tooltip = {
 				tooltip = has_invited_mio_tt
 				FROM = {
-					has_country_flag = has_invited_fairey_aviation_mio_flag 
+					has_country_flag = has_invited_fairey_aviation_mio_flag
 				}
 			}
 			FROM = {
@@ -669,7 +654,7 @@ ENG_fairey_aviation_organization = {
 ENG_avro_organization = {
 	include = generic_heavy_aircraft_organization
 	icon = GFX_idea_avro
-	allowed = {	
+	allowed = {
 		OR = {
 			tag = ENG
 			AND = {
@@ -698,17 +683,13 @@ ENG_avro_organization = {
 	}
 }
 
-
-
-
-
 ENG_rsaf_enfield_organization = {
 	include = generic_infantry_equipment_organization
 	icon = GFX_idea_rsaf_enfield
 
-	allowed = {	
+	allowed = {
 		OR = {
-			tag = ENG 
+			tag = ENG
 			AND = {
 				tag = GRE
 				has_dlc = "Battle for the Bosporus"
@@ -748,9 +729,9 @@ ENG_rsaf_enfield_organization = {
 		}
 	}
 
-	override_trait = { 
-		token = generic_mio_trait_anti_vechicle_land_mines	
-		name = ENG_mio_trait_piat	
+	override_trait = {
+		token = generic_mio_trait_anti_vechicle_land_mines
+		name = ENG_mio_trait_piat
 		icon = GFX_generic_mio_trait_icon_hard_attack
 		special_trait_background = yes
 
@@ -761,9 +742,9 @@ ENG_rsaf_enfield_organization = {
 		}
 	}
 
-	add_trait = { 
-		token = ENG_mio_trait_sten_submachine_guns	
-		name = ENG_mio_trait_sten_submachine_guns	
+	add_trait = {
+		token = ENG_mio_trait_sten_submachine_guns
+		name = ENG_mio_trait_sten_submachine_guns
 		icon = GFX_generic_mio_trait_icon_ap_attack
 		special_trait_background = yes
 
@@ -784,8 +765,8 @@ ENG_vauxhall_automotive_organization = {
 	include = generic_motorized_mechanized_organization
 	icon = GFX_idea_vauxhall
 	name = ENG_vauxhall_organization
-	
-	allowed = {	
+
+	allowed = {
 		OR = {
 			tag = ENG
 			tag = POL
@@ -798,14 +779,14 @@ ENG_vauxhall_automotive_organization = {
 				has_dlc = "Battle for the Bosporus"
 			}
 			AND = {
-				tag = ETH 
+				tag = ETH
 				has_dlc = "By Blood Alone"
 			}
 		}
 	}
-	
+
 	visible = {
-		IF = { 
+		IF = {
 			limit = {
 				FROM = { original_tag = POL }
 			}
@@ -816,9 +797,9 @@ ENG_vauxhall_automotive_organization = {
 		IF = {
 			limit = { FROM = { original_tag = ETH } }
 			FROM = { has_completed_focus = ETH_invite_foreign_industrialists }
-		}	
+		}
 	}
-	
+
 	available = {
 		IF = {
 			limit = {
@@ -829,15 +810,15 @@ ENG_vauxhall_automotive_organization = {
 
 		IF = {
 			limit = {
-				OR = { 
+				OR = {
 					FROM = { original_tag = BUL }
 					FROM = { original_tag = ETH }
-				}  
+				}
 			}
 			custom_trigger_tooltip = {
 				tooltip = has_invited_mio_tt
 				FROM = {
-					has_country_flag = has_invited_vauxhall_mio_flag 
+					has_country_flag = has_invited_vauxhall_mio_flag
 				}
 			}
 		}
@@ -854,9 +835,9 @@ ENG_vauxhall_automotive_organization = {
 		IF = {
 			limit = { FROM = { original_tag = ROM } }
 			FROM = { has_country_flag = ENG_mot_chosen }
-		}	
+		}
 	}
-	
+
 	initial_trait = {
 		equipment_bonus = {
 			maximum_speed = 0.05
@@ -909,12 +890,12 @@ ENG_royal_arsenal_organization = {
 ENG_crossley_motors_organization = {
 	include = generic_armored_car_organization
 	icon = GFX_idea_ENG_crossley_motors
-	
-	allowed = {	
+
+	allowed = {
 		has_dlc = "La Resistance"
 		OR = {
-			tag = ENG 
-			tag = SAF 
+			tag = ENG
+			tag = SAF
 			AND = {
 				tag = HUN
 				has_dlc = "Gotterdammerung"
@@ -949,7 +930,7 @@ ENG_crossley_motors_organization = {
 			FROM = { NOT = { has_war_with = ENG } }
 		}
 
-		IF = { 
+		IF = {
 			limit = {
 				FROM = { tag = HUN }
 			}
@@ -958,11 +939,11 @@ ENG_crossley_motors_organization = {
 			}
 		}
 
-		IF = { 
+		IF = {
 			limit = {
-				FROM = { 
+				FROM = {
 					OR = {
-						original_tag = EST 
+						original_tag = EST
 						original_tag = LAT
 						original_tag = LIT
 					}

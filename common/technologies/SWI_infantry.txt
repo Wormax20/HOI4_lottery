@@ -1,5 +1,5 @@
-technologies = {
-	SWI_mountaineers_tech = { 
+﻿technologies = {
+	SWI_mountaineers_tech = {
 		mountaineers = {
             combat_width = -0.2
 	}

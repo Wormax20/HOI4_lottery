@@ -1,9 +1,9 @@
-add_namespace = KoKi_YJ_SWI_event
+﻿add_namespace = KoKi_YJ_SWI_event
 country_event = {
 	id = KoKi_YJ_SWI_event.101
 	title = KoKi_YJ_SWI_event.101.title
 	desc = KoKi_YJ_SWI_event.101.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -25,13 +25,11 @@ country_event = {
 	}
 }
 
-
-
 country_event = {
 	id = KoKi_YJ_SWI_event.102
 	title = KoKi_YJ_SWI_event.102.title
 	desc = KoKi_YJ_SWI_event.102.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -45,13 +43,11 @@ country_event = {
 	}
 }
 
-
-
 country_event = {
 	id = KoKi_YJ_SWI_event.103
 	title = KoKi_YJ_SWI_event.103.title
 	desc = KoKi_YJ_SWI_event.103.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -66,13 +62,11 @@ country_event = {
 	}
 }
 
-
-
 country_event = {
 	id = KoKi_YJ_SWI_event.104
 	title = KoKi_YJ_SWI_event.104.title
 	desc = KoKi_YJ_SWI_event.104.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes

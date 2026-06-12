@@ -1,4 +1,4 @@
-ideas = {
+﻿ideas = {
 	country = {
 		YJ_RAJ_1_ideas = {
 
@@ -27,8 +27,6 @@ ideas = {
 				production_speed_buildings_factor = 0.2
 			}
 		}
-
-
 
 		YJ_RAJ_3_ideas = {
 
@@ -78,7 +76,6 @@ ideas = {
 			}
 		}
 
-
 		YJ_RAJ_4_ideas = {
 
 			allowed = {
@@ -101,7 +98,6 @@ ideas = {
 				consumer_goods_factor = -0.10
 			}
 		}
-
 
 		YJ_RAJ_5_ideas = {
 

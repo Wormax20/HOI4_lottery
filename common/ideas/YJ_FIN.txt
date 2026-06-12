@@ -1,4 +1,4 @@
-ideas = {
+﻿ideas = {
 	country = {
 		YJ_FIN_1_ideas = {
 
@@ -106,7 +106,7 @@ ideas = {
 				production_speed_buildings_factor = 0.1
 			}
 		}
-		
+
 		YJ_FIN_5_ideas = {
 
 			allowed = {

@@ -1,5 +1,5 @@
-technologies = {
-	FRA_artillery_tech = { 
+﻿technologies = {
+	FRA_artillery_tech = {
 		mot_artillery_brigade = {
 			breakthrough = 3
 			defense = -1
@@ -7,29 +7,29 @@ technologies = {
 		}
 		mot_anti_tank_brigade = {
 			ap_attack = 1
-			
+
 			breakthrough = 10
 			combat_width = 1
 		}
 		mot_anti_air_brigade = {
-			
+
 			breakthrough = 3
 			combat_width = 1
 		}
 		artillery_brigade = {
-			
+
 			breakthrough = 3
 			defense = -1
             combat_width = -1
 		}
 		anti_tank_brigade = {
 			ap_attack = 1
-			
+
 			breakthrough = 10
 			combat_width = 1
 		}
 		anti_air_brigade = {
-			
+
 			breakthrough = 3
 			combat_width = 1
 		}

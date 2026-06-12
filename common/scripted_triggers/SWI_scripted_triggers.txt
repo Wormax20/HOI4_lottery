@@ -1,5 +1,4 @@
-
-SWI_is_country_to_balance = {
+﻿SWI_is_country_to_balance = {
 	custom_trigger_tooltip = {
 		tooltip = SWI_country_to_balance_TT
 	}
@@ -9,45 +8,45 @@ SWI_is_country_to_balance = {
 }
 
 SWI_is_at_war_with_neighbor = {
-	is_faction_leader = yes  
+	is_faction_leader = yes
 	any_other_country = {
-		is_major = yes 
-		is_neighbor_of = SWI 
+		is_major = yes
+		is_neighbor_of = SWI
 		has_war_with = PREV
-		
+
 	}
 }
 
 SWI_is_democratic_to_balance = {
-	SWI_is_country_to_balance = yes 
-	has_government = democratic	
+	SWI_is_country_to_balance = yes
+	has_government = democratic
 }
 
 SWI_is_fascist_to_balance = {
-	SWI_is_country_to_balance = yes 
-	has_government = fascism	
+	SWI_is_country_to_balance = yes
+	has_government = fascism
 }
 
 SWI_is_faction_leader_of_neighbor = {
-	is_faction_leader = yes 
+	is_faction_leader = yes
 	any_allied_country = {
-		is_neighbor_of = SWI 
+		is_neighbor_of = SWI
 	}
 }
 
 SWI_has_easy_fascist_neighbor_option = {
 	OR = {
 		GER = {
-			exists = yes 
-			has_government = fascism 
+			exists = yes
+			has_government = fascism
 		}
 		ITA = {
-			exists = yes 
-			has_government = fascism 
+			exists = yes
+			has_government = fascism
 		}
 		FRA = {
-			exists = yes 
-			has_government = fascism 
+			exists = yes
+			has_government = fascism
 		}
 	}
 }
@@ -74,7 +73,7 @@ is_suitable_democratic_major = {
 	exists = yes
 	has_capitulated = no
 	has_government = democratic
-	NOT = { has_war_with = ROOT }	
+	NOT = { has_war_with = ROOT }
 }
 
 is_possible_secret_ally = {
@@ -82,7 +81,7 @@ is_possible_secret_ally = {
 	exists = yes
 	has_capitulated = no
 	has_government = democratic
-	NOT = { has_war_with = ROOT }	
+	NOT = { has_war_with = ROOT }
 	OR = {
 		is_faction_leader = yes
 		is_in_faction = yes
@@ -134,7 +133,7 @@ SWI_country_opinion_is_excellent = {
 		var = THIS.opinion@SWI
 		value = SWI_excellent_opinion
 		compare = greater_than_or_equals
-	}	
+	}
 }
 
 SWI_country_is_angry = {
@@ -153,15 +152,14 @@ SWI_country_opinion_is_dangerous = {
 }
 
 SWI_dem_usa_valid_to_buy_planes = {
-	USA = { 
+	USA = {
 		exists = yes
 		has_government = democratic
 		NOT = { has_war_with = ROOT }
 	 }
 }
 
-
-SWI_can_be_councilor = {	
+SWI_can_be_councilor = {
 	if = {
 		limit = {
 			NOT = { has_country_flag = SWI_elected_centralized_president }
@@ -176,7 +174,7 @@ SWI_can_be_councilor = {
 	}
 	else = {
 		hidden_trigger = { always = yes }
-	}	
+	}
 
 }
 
@@ -191,7 +189,7 @@ SWI_councilor_visible = {
 			NOT = { has_dlc = "La Resistance" }
 			NOT = { has_trait = SWI_intelligence_officer }
 			NOT = { has_character_flag = SWI_former_confederation_president }
-			NOT = { has_character_flag = SWI_ousted_councilor }		
+			NOT = { has_character_flag = SWI_ousted_councilor }
 		}
 	}
 }
@@ -208,7 +206,6 @@ SWI_president_initiative_cancel_trigger = {
 	}
 }
 
-
 SWI_council_not_filled = {
 	custom_trigger_tooltip = {
 		tooltip = SWI_council_not_filled_TT
@@ -224,7 +221,6 @@ SWI_council_not_filled = {
 		}
 	}
 }
-
 
 SWI_is_council_guy = {
 	OR = {
@@ -254,20 +250,19 @@ SWI_is_cantons_guy = {
 	}
 }
 
-
 SWI_councilor_is_fascist = {
 	OR = {
 		has_trait = SWI_fascist_appeaser
 		has_trait = SWI_fascist
 		has_trait = SWI_fascist_propagandist
 		has_trait = SWI_fascist_recruiter
-		has_trait = SWI_corporatist	
-	} 
+		has_trait = SWI_corporatist
+	}
 }
 
 SWI_councilor_is_any_kind_of_communist = {
 	OR = {
-		has_trait = SWI_anarchist	
+		has_trait = SWI_anarchist
 		has_trait = SWI_trade_unionist
 		has_trait = SWI_socialist_pacifist
 		has_trait = SWI_soviet_spy
@@ -299,7 +294,7 @@ SWI_councilor_is_neutrality_despotism = {
 }
 
 SWI_councilor_is_communist_anarchist = {
-	has_trait = SWI_anarchist	
+	has_trait = SWI_anarchist
 }
 
 SWI_councilor_is_communist = {
@@ -336,7 +331,7 @@ SWI_councilor_is_democratic_socialism = {
 SWI_president_compatible_with_country_politics = {
 	custom_trigger_tooltip = {
 		tooltip = SWI_president_matches_country_politics_TT
-	} 
+	}
 	hidden_trigger = {
 		var:SWI_confederation_president = {
 			OR = {
@@ -351,13 +346,13 @@ SWI_president_compatible_with_country_politics = {
 				AND = {
 					ROOT = { has_government = communism }
 					OR = {
-						SWI_councilor_is_communist = yes 
-						SWI_councilor_is_communist_anarchist = yes 
+						SWI_councilor_is_communist = yes
+						SWI_councilor_is_communist_anarchist = yes
 					}
 				}
 				AND = {
 					ROOT = { has_government = fascism }
-					SWI_councilor_is_fascist = yes 
+					SWI_councilor_is_fascist = yes
 				}
 				AND = {
 					ROOT = { has_government = neutrality }
@@ -374,21 +369,19 @@ SWI_has_fascist_council_president = {
 	}
 }
 
-
 SWI_has_fascist_councilor = {
 	OR = {
 		var:SWI_councilor_1 = {
-			SWI_councilor_is_fascist = yes 
+			SWI_councilor_is_fascist = yes
 		}
 		var:SWI_councilor_2 = {
-			SWI_councilor_is_fascist = yes 
+			SWI_councilor_is_fascist = yes
 		}
 		var:SWI_councilor_3 = {
-			SWI_councilor_is_fascist = yes 
+			SWI_councilor_is_fascist = yes
 		}
 	}
-} 
-
+}
 
 SWI_MR_full = {
 	check_variable = {
@@ -397,7 +390,6 @@ SWI_MR_full = {
 		compare = greater_than_or_equals
 	}
 }
-
 
 SWI_has_any_spirit_of_helvetia = {
 	OR = {
@@ -417,7 +409,7 @@ SWI_is_fully_centralized = {
 	}
 	NOT = {
 		power_balance_weekly_change = {
-			id = SWI_centralization_bop 
+			id = SWI_centralization_bop
 			value > 0.01
 		}
 	}
@@ -434,7 +426,7 @@ SWI_bba = {
 SWI_bba_lar = {
 	AND = {
 		original_tag = SWI
-		has_dlc = "By Blood Alone"	
+		has_dlc = "By Blood Alone"
 		has_dlc = "La Resistance"
 	}
 }
@@ -445,7 +437,7 @@ SWI_is_regular_switzerland = {
 		state = 3
 		state = 847
 		state = 846
-		state = 151 	
+		state = 151
 	}
 }
 
@@ -463,40 +455,38 @@ SWI_country_about_to_be_angry = {
 
 SWI_someone_is_about_to_be_angry = {
 	any_other_country = {
-		SWI_is_country_to_balance = yes 
-		SWI_country_about_to_be_angry = yes 
+		SWI_is_country_to_balance = yes
+		SWI_country_about_to_be_angry = yes
 	}
 }
 
 SWI_any_democratic_to_balance_is_about_to_be_angry = {
 	any_other_country = {
-		SWI_is_country_to_balance = yes 
-		has_government = democratic 
-		SWI_country_about_to_be_angry = yes 
+		SWI_is_country_to_balance = yes
+		has_government = democratic
+		SWI_country_about_to_be_angry = yes
 	}
 }
-
 
 SWI_any_communist_to_balance_is_about_to_be_angry = {
 	any_other_country = {
-		SWI_is_country_to_balance = yes 
-		has_government = communism 
-		SWI_country_about_to_be_angry = yes 
+		SWI_is_country_to_balance = yes
+		has_government = communism
+		SWI_country_about_to_be_angry = yes
 	}
 }
 
-
 SWI_any_fascist_to_balance_is_about_to_be_angry = {
 	any_other_country = {
-		SWI_is_country_to_balance = yes 
-		has_government = fascism 
-		SWI_country_about_to_be_angry = yes 
+		SWI_is_country_to_balance = yes
+		has_government = fascism
+		SWI_country_about_to_be_angry = yes
 	}
 }
 
 SWI_can_form_alpine = {
 	count_triggers = {
-		amount > 7 
+		amount > 7
 		controls_state = 21
 		controls_state = 851
 		controls_state = 735
@@ -516,22 +506,21 @@ SWI_can_form_alpine = {
 }
 
 SWI_fascist_germany_exists = {
-	any_other_country = { 
-		SWI_is_fasc_ger = yes 
+	any_other_country = {
+		SWI_is_fasc_ger = yes
 	}
 }
 
 SWI_is_fasc_ger = {
-	original_tag = GER 
+	original_tag = GER
 	has_government = fascism
 }
 
-
-SWI_is_historical_ai = { 
-	is_ai = yes 
+SWI_is_historical_ai = {
+	is_ai = yes
 	OR = {
 		AND = {
-			is_historical_focus_on = yes 
+			is_historical_focus_on = yes
 			has_game_rule = {
 				rule = SWI_AI_BEHAVIOR
 				option = DEFAULT
@@ -542,11 +531,11 @@ SWI_is_historical_ai = {
 			rule = SWI_ai_behavior
 			option = HISTORICAL
 		}
-	}	
+	}
 }
 
 SWI_AI_is_dem_allied = {
-	OR = {		
+	OR = {
 		has_game_rule = {
 			rule = SWI_AI_BEHAVIOR
 			option = SWI_ALLIED_DEMOCRATIC
@@ -555,7 +544,7 @@ SWI_AI_is_dem_allied = {
 	}
 }
 SWI_AI_is_dem_exp = {
-	OR = {		
+	OR = {
 		has_game_rule = {
 			rule = SWI_AI_BEHAVIOR
 			option = SWI_EXPANSIONIST_DEMOCRATIC
@@ -565,55 +554,55 @@ SWI_AI_is_dem_exp = {
 }
 
 SWI_AI_is_imperial = {
-	OR = {		
+	OR = {
 		has_game_rule = {
 			rule = SWI_AI_BEHAVIOR
 			option = SWI_IMPERIAL
 		}
 		has_country_flag = SWI_AI_RANDOM_IMPERIAL
-	}	
+	}
 }
 SWI_AI_is_fascist = {
-	OR = {		
+	OR = {
 		has_game_rule = {
 			rule = SWI_AI_BEHAVIOR
 			option = SWI_FASCIST
 		}
 		has_country_flag = SWI_AI_RANDOM_FASCIST
-	}	
+	}
 }
 
 SWI_character_matches_strategy = {
 	OR = {
 		AND = {
-			SWI = { SWI_is_historical_ai = yes } 
+			SWI = { SWI_is_historical_ai = yes }
 			OR = {
 				SWI_is_cantons_guy = yes
-				SWI_councilor_is_democratic = yes  
+				SWI_councilor_is_democratic = yes
 			}
 		}
 		AND = {
 			SWI = { SWI_AI_is_fascist = yes }
-			SWI_councilor_is_fascist = yes 
+			SWI_councilor_is_fascist = yes
 		}
 		AND = {
-			SWI = { SWI_AI_is_dem_exp = yes } 
+			SWI = { SWI_AI_is_dem_exp = yes }
 			OR = {
-				SWI_councilor_is_democratic = yes 
+				SWI_councilor_is_democratic = yes
 				AND = {
-					SWI_is_council_guy = yes 
-					SWI_councilor_is_fascist = no 
+					SWI_is_council_guy = yes
+					SWI_councilor_is_fascist = no
 				}
-			} 
+			}
 		}
 		AND = {
 			SWI = { SWI_AI_is_imperial = yes }
-			SWI_is_council_guy = yes 
-			SWI_councilor_is_fascist = no 
+			SWI_is_council_guy = yes
+			SWI_councilor_is_fascist = no
 		}
 		AND = {
-			SWI = { SWI_AI_is_dem_allied = yes } 
-			SWI_councilor_is_fascist = no 
+			SWI = { SWI_AI_is_dem_allied = yes }
+			SWI_councilor_is_fascist = no
 			SWI_councilor_is_any_kind_of_communist = no
 		}
 	}

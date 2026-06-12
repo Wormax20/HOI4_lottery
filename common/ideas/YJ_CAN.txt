@@ -1,4 +1,4 @@
-ideas = {
+﻿ideas = {
 	country = {
 		YJ_CAN_1_ideas = {
 
@@ -27,7 +27,6 @@ ideas = {
 			}
 		}
 
-		
 		YJ_CAN_2_ideas = {
 
 			allowed = {
@@ -49,7 +48,7 @@ ideas = {
 				industrial_capacity_factory = 0.05
 				land_night_attack = 0.05
 				max_planning = 0.1
-				
+
 			}
 			equipment_bonus = {
 				amphibious_mechanized_equipment = {
@@ -156,7 +155,6 @@ ideas = {
 			}
 		}
 
-		
 		YJ_CAN_5_ideas = {
 
 			allowed = {

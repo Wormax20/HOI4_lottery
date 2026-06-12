@@ -1,9 +1,9 @@
-on_actions = {
+﻿on_actions = {
 	on_monthly_USA = {
 		effect = {
 			if = {
-				limit = { 
-					has_idea = YJ_USA_2_ideas 
+				limit = {
+					has_idea = YJ_USA_2_ideas
 					check_variable = { var = USA_research_speed value = 5 compare = greater_than_or_equals }
 			    }
 				add_tech_bonus = {
@@ -56,8 +56,8 @@ on_actions = {
 				set_global_flag = Beta_USA_1_on_flag
 			}
 			else_if = {
-				limit = { 
-					has_idea = YJ_USA_2_ideas 
+				limit = {
+					has_idea = YJ_USA_2_ideas
 					check_variable = { var = USA_research_speed value = 5 compare = less_than }
 			    }
 				add_to_variable = {

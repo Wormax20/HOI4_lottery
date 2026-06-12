@@ -1,9 +1,9 @@
-add_namespace = KoKi_YJ_FIN_event
+﻿add_namespace = KoKi_YJ_FIN_event
 country_event = {
 	id = KoKi_YJ_FIN_event.101
 	title = KoKi_YJ_FIN_event.101.title
 	desc = KoKi_YJ_FIN_event.101.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -62,33 +62,30 @@ country_event = {
 		}
 		add_research_slot = 1
 
-
-
-
 		name = KoKi_YJ_FIN_event.101.a
 		add_ideas = YJ_FIN_1_ideas
 		ai_chance = {
 			factor = 100
 		}
 	}
-	
+
 }
 
 country_event = {
 	id = KoKi_YJ_FIN_event.102
 	title = KoKi_YJ_FIN_event.102.title
 	desc = KoKi_YJ_FIN_event.102.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
 
 	option = {
 		set_technology = {
-			tech_mountaineers = 1 
-			tech_mountaineers2 = 1 
+			tech_mountaineers = 1
+			tech_mountaineers2 = 1
 			tech_mountaineers3 = 1
-			FIN_mountaineers_tech = 1 
+			FIN_mountaineers_tech = 1
 		}
 		name = KoKi_YJ_FIN_event.102.a
 		add_ideas = YJ_FIN_2_ideas
@@ -96,14 +93,14 @@ country_event = {
 			factor = 100
 		}
 	}
-	
+
 }
 
 country_event = {
 	id = KoKi_YJ_FIN_event.103
 	title = KoKi_YJ_FIN_event.103.title
 	desc = KoKi_YJ_FIN_event.103.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -132,14 +129,14 @@ country_event = {
 			factor = 100
 		}
 	}
-	
+
 }
 
 country_event = {
 	id = KoKi_YJ_FIN_event.104
 	title = KoKi_YJ_FIN_event.104.title
 	desc = KoKi_YJ_FIN_event.104.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -149,14 +146,14 @@ country_event = {
 						type = industrial_complex
 						level = 20
 					}
-		add_offsite_building = { 
-			type = arms_factory 
-			level = 5 
+		add_offsite_building = {
+			type = arms_factory
+			level = 5
 					}
 		set_technology = {
-			excavation3 = 1 
-			excavation4 = 1 
-			excavation5 = 1 
+			excavation3 = 1
+			excavation4 = 1
+			excavation5 = 1
 		}
 		name = KoKi_YJ_FIN_event.104.a
 		add_ideas = YJ_FIN_4_ideas
@@ -164,14 +161,14 @@ country_event = {
 			factor = 100
 		}
 	}
-	
+
 }
 
 country_event = {
 	id = KoKi_YJ_FIN_event.105
 	title = KoKi_YJ_FIN_event.105.title
 	desc = KoKi_YJ_FIN_event.105.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -183,5 +180,5 @@ country_event = {
 			factor = 100
 		}
 	}
-	
+
 }

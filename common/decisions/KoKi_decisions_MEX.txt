@@ -1,4 +1,4 @@
-KoKi_YJ_MEX_decisions_categories = {
+﻿KoKi_YJ_MEX_decisions_categories = {
 	KoKi_YJ_MEX_decisions_categories_0 = {
 		icon = GFX_decision_generic_form_nation
 		allowed = {
@@ -101,8 +101,8 @@ KoKi_YJ_MEX_decisions_categories = {
 			num_of_controlled_states > 0
 		}
 		on_map_mode = map_only
-		cost = 0    
-		days_remove = 7  
+		cost = 0
+		days_remove = 7
 		target_trigger = {
 			FROM = {
 				OR = {
@@ -137,10 +137,10 @@ KoKi_YJ_MEX_decisions_categories = {
 				}
 			}
 		}
-		complete_effect = { 
+		complete_effect = {
 		    add_command_power = -50
 		}
-		remove_effect = {  
+		remove_effect = {
 			custom_effect_tooltip = KoKi_YJ_MEX_decisions_categories_txt
 			effect_tooltip = {
 				add_dynamic_modifier = {
@@ -188,9 +188,9 @@ KoKi_YJ_MEX_decisions_categories = {
 				}
 			}
 		}
-		
+
 		ai_will_do = {
-			factor = 1  
+			factor = 1
 		}
 	}
 	KoKi_YJ_MEX_decisions_categories_2 = {
@@ -252,8 +252,8 @@ KoKi_YJ_MEX_decisions_categories = {
 			num_of_controlled_states > 0
 		}
 		on_map_mode = map_only
-		cost = 0    
-		days_remove = 7  
+		cost = 0
+		days_remove = 7
 		target_trigger = {
 			FROM = {
 				OR = {
@@ -288,10 +288,10 @@ KoKi_YJ_MEX_decisions_categories = {
 				}
 			}
 		}
-		complete_effect = { 
+		complete_effect = {
 		    add_command_power = -50
 		}
-		remove_effect = {  
+		remove_effect = {
 			custom_effect_tooltip = KoKi_YJ_MEX_decisions_categories_txt
 			effect_tooltip = {
 				add_dynamic_modifier = {
@@ -339,9 +339,9 @@ KoKi_YJ_MEX_decisions_categories = {
 				}
 			}
 		}
-		
+
 		ai_will_do = {
-			factor = 1  
+			factor = 1
 		}
 	}
 	KoKi_YJ_MEX_decisions_categories_3 = {
@@ -403,8 +403,8 @@ KoKi_YJ_MEX_decisions_categories = {
 			num_of_controlled_states > 0
 		}
 		on_map_mode = map_only
-		cost = 0    
-		days_remove = 7  
+		cost = 0
+		days_remove = 7
 		target_trigger = {
 			FROM = {
 				OR = {
@@ -439,10 +439,10 @@ KoKi_YJ_MEX_decisions_categories = {
 				}
 			}
 		}
-		complete_effect = { 
+		complete_effect = {
 		    add_command_power = -50
 		}
-		remove_effect = {  
+		remove_effect = {
 			custom_effect_tooltip = KoKi_YJ_MEX_decisions_categories_txt
 			effect_tooltip = {
 				add_dynamic_modifier = {
@@ -490,9 +490,9 @@ KoKi_YJ_MEX_decisions_categories = {
 				}
 			}
 		}
-		
+
 		ai_will_do = {
-			factor = 0  
+			factor = 0
 		}
 	}
 	KoKi_YJ_MEX_decisions_categories_4 = {
@@ -554,8 +554,8 @@ KoKi_YJ_MEX_decisions_categories = {
 			num_of_controlled_states > 0
 		}
 		on_map_mode = map_only
-		cost = 0    
-		days_remove = 7  
+		cost = 0
+		days_remove = 7
 		target_trigger = {
 			FROM = {
 				OR = {
@@ -590,10 +590,10 @@ KoKi_YJ_MEX_decisions_categories = {
 				}
 			}
 		}
-		complete_effect = { 
+		complete_effect = {
 		    add_command_power = -50
 		}
-		remove_effect = {  
+		remove_effect = {
 			custom_effect_tooltip = KoKi_YJ_MEX_decisions_categories_txt
 			effect_tooltip = {
 				add_dynamic_modifier = {
@@ -641,9 +641,9 @@ KoKi_YJ_MEX_decisions_categories = {
 				}
 			}
 		}
-		
+
 		ai_will_do = {
-			factor = 0  
+			factor = 0
 		}
 	}
 	KoKi_YJ_MEX_decisions_categories_5 = {
@@ -705,8 +705,8 @@ KoKi_YJ_MEX_decisions_categories = {
 			num_of_controlled_states > 0
 		}
 		on_map_mode = map_only
-		cost = 0    
-		days_remove = 7  
+		cost = 0
+		days_remove = 7
 		target_trigger = {
 			FROM = {
 				OR = {
@@ -741,10 +741,10 @@ KoKi_YJ_MEX_decisions_categories = {
 				}
 			}
 		}
-		complete_effect = { 
+		complete_effect = {
 		    add_command_power = -50
 		}
-		remove_effect = {  
+		remove_effect = {
 			custom_effect_tooltip = KoKi_YJ_MEX_decisions_categories_txt
 			effect_tooltip = {
 				add_dynamic_modifier = {
@@ -792,9 +792,9 @@ KoKi_YJ_MEX_decisions_categories = {
 				}
 			}
 		}
-		
+
 		ai_will_do = {
-			factor = 0  
+			factor = 0
 		}
 	}
 
@@ -857,8 +857,8 @@ KoKi_YJ_MEX_decisions_categories = {
 			num_of_controlled_states > 0
 		}
 		on_map_mode = map_only
-		cost = 0    
-		days_remove = 7  
+		cost = 0
+		days_remove = 7
 		target_trigger = {
 			FROM = {
 				OR = {
@@ -893,10 +893,10 @@ KoKi_YJ_MEX_decisions_categories = {
 				}
 			}
 		}
-		complete_effect = { 
+		complete_effect = {
 		    add_command_power = -50
 		}
-		remove_effect = {  
+		remove_effect = {
 			custom_effect_tooltip = KoKi_YJ_MEX_decisions_categories_txt
 			effect_tooltip = {
 				add_dynamic_modifier = {
@@ -945,7 +945,7 @@ KoKi_YJ_MEX_decisions_categories = {
 			}
 		}
 		ai_will_do = {
-			factor = 0  
+			factor = 0
 		}
 	}
 }
@@ -959,7 +959,7 @@ MEX_integrate_state_decisions_categories = {
 		available = {
 			date > 1938.1.1
 		}
-		
+
 		visible = {
 			any_owned_state = {
 				is_on_continent = south_america

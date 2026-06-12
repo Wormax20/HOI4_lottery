@@ -1,9 +1,9 @@
-add_namespace = KoKi_YJ_ITA_event
+﻿add_namespace = KoKi_YJ_ITA_event
 country_event = {
 	id = KoKi_YJ_ITA_event.101
 	title = KoKi_YJ_ITA_event.101.title
 	desc = KoKi_YJ_ITA_event.101.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -20,14 +20,14 @@ country_event = {
 			factor = 100
 		}
 	}
-	
+
 }
 
 country_event = {
 	id = KoKi_YJ_ITA_event.102
 	title = KoKi_YJ_ITA_event.102.title
 	desc = KoKi_YJ_ITA_event.102.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -40,17 +40,14 @@ country_event = {
 			factor = 100
 		}
 	}
-	
+
 }
-
-
-
 
 country_event = {
 	id = KoKi_YJ_ITA_event.104
 	title = KoKi_YJ_ITA_event.104.title
 	desc = KoKi_YJ_ITA_event.104.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -88,15 +85,14 @@ country_event = {
 			factor = 100
 		}
 	}
-	
-}
 
+}
 
 country_event = {
 	id = KoKi_YJ_ITA_event.1011
 	title = KoKi_YJ_ITA_event.1011.title
 	desc = KoKi_YJ_ITA_event.1011.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -182,14 +178,14 @@ country_event = {
 			factor = 100
 		}
 	}
-	
+
 }
 
 country_event = {
 	id = KoKi_YJ_ITA_event.1012
 	title = KoKi_YJ_ITA_event.1012.title
 	desc = KoKi_YJ_ITA_event.1012.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -199,8 +195,8 @@ country_event = {
 						type = industrial_complex
 						level = 20
 					}
-		add_offsite_building = { 
-			type = arms_factory 
+		add_offsite_building = {
+			type = arms_factory
 			level = 10
 					}
 		complete_national_focus = ITA_solid_progress
@@ -218,15 +214,14 @@ country_event = {
 			factor = 100
 		}
 	}
-	
-}   
 
+}
 
 country_event = {
 	id = KoKi_YJ_ITA_event.1013
 	title = KoKi_YJ_ITA_event.1013.title
 	desc = KoKi_YJ_ITA_event.1013.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -238,14 +233,14 @@ country_event = {
 			factor = 100
 		}
 	}
-	
+
 }
 
 country_event = {
 	id = KoKi_YJ_ITA_event.1014
 	title = KoKi_YJ_ITA_event.1014.title
 	desc = KoKi_YJ_ITA_event.1014.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -260,14 +255,14 @@ country_event = {
 			factor = 100
 		}
 	}
-	
+
 }
 
 country_event = {
 	id = KoKi_YJ_ITA_event.1015
 	title = KoKi_YJ_ITA_event.1015.title
 	desc = KoKi_YJ_ITA_event.1015.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -282,5 +277,5 @@ country_event = {
 			factor = 100
 		}
 	}
-	
+
 }

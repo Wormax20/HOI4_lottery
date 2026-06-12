@@ -1,4 +1,4 @@
-ideas = {
+﻿ideas = {
 	country = {
 		YJ_GER_1_ideas = {
 
@@ -72,7 +72,7 @@ ideas = {
 
 			picture = GER_german_military
 
-			modifier = {	
+			modifier = {
 				command_power_gain = 0.5
 				army_strength_factor = 0.1
 				max_command_power = 500
@@ -101,7 +101,6 @@ ideas = {
 			}
 		}
 
-
 		YJ_GER_5_ideas = {
 
 			allowed = {
@@ -126,7 +125,7 @@ ideas = {
                 justify_war_goal_time = -1
 			}
 		}
-		
+
 		YJ_GER_6_ideas = {
 
 			allowed = {
@@ -174,7 +173,6 @@ ideas = {
 				war_support_weekly = 0.005
 			}
 		}
-
 
 		YJ_GER_02_ideas = {
 

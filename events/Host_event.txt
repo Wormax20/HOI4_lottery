@@ -1,4 +1,4 @@
-add_namespace = host
+﻿add_namespace = host
 
 news_event = {
 	id = host.1
@@ -8,7 +8,6 @@ news_event = {
 	picture = GFX_news_event_CHI_ohmen
 	is_triggered_only = yes
 	major = yes
-
 
 	option = {
 		name = host.1.a
@@ -24,7 +23,6 @@ news_event = {
 	is_triggered_only = yes
 	major = yes
 
-
 	option = {
 		name = host.2.a
 	}
@@ -38,7 +36,6 @@ news_event = {
 	picture = GFX_news_event_prc_declared
 	is_triggered_only = yes
 	major = yes
-
 
 	option = {
 		name = host.3.a

@@ -1,4 +1,4 @@
-KoKi_YJ_decisions_categories = {
+﻿KoKi_YJ_decisions_categories = {
 	test = {
 		allowed = {
 			always = yes
@@ -136,8 +136,6 @@ KoKi_YJ_decisions_categories = {
 		priority = 99999
 	}
 
-
-
 	KoKi_YJ_TY_decisions_1 = {
 		activation = {
 			date < 1936.1.2
@@ -152,7 +150,7 @@ KoKi_YJ_decisions_categories = {
 		fire_only_once = yes
 		timeout_effect = {
 			if = {
-				limit = { 
+				limit = {
 					is_ai = no
 				}
 				hidden_effect = {
@@ -161,7 +159,7 @@ KoKi_YJ_decisions_categories = {
 							has_country_flag = YJ_controller
 						}
 						every_country = {
-							limit = { 
+							limit = {
 								is_ai = no
 							}
 							set_country_flag = YJ_get_idea
@@ -203,7 +201,7 @@ KoKi_YJ_decisions_categories = {
 		fire_only_once = yes
 		timeout_effect = {
 			if = {
-				limit = { 
+				limit = {
 					is_ai = no
 				}
 				hidden_effect = {
@@ -212,7 +210,7 @@ KoKi_YJ_decisions_categories = {
 							has_country_flag = YJ_controller
 						}
 						every_country = {
-							limit = { 
+							limit = {
 								is_ai = no
 							}
 							set_country_flag = YJ_get_idea
@@ -239,7 +237,6 @@ KoKi_YJ_decisions_categories = {
 		priority = 99999
 	}
 
-
 		KoKi_YJ_decisions_pp = {
 		icon = GFX_decision_generic_form_nation
 		allowed = {
@@ -255,7 +252,7 @@ KoKi_YJ_decisions_categories = {
 			date > 1937.1.1
 		}
 		visible = {
-			
+
 		}
 		cost = YJ_country_cost
 		days_remove = 0
@@ -373,9 +370,6 @@ KoKi_YJ_decisions_categories = {
 		}
 	}
 
-
-
-
 	KoKi_YJ_decisions_JL = {
 		icon = GFX_decision_generic_form_nation
 		allowed = {
@@ -425,7 +419,7 @@ KoKi_YJ_decisions_categories = {
         icon = infiltrate_state
 		priority = 1
         target_array = controlled_states
-        state_target = yes 
+        state_target = yes
         on_map_mode = map_only
 		cost = 100
 
@@ -460,7 +454,7 @@ KoKi_YJ_decisions_categories = {
 
         complete_effect = {
             if = {
-                limit = { 
+                limit = {
                     from = {
                         arms_factory > 0
                     }
@@ -477,7 +471,7 @@ KoKi_YJ_decisions_categories = {
                 }
             }
             if = {
-                limit = { 
+                limit = {
                     from = {
                         industrial_complex > 0
                     }
@@ -494,7 +488,7 @@ KoKi_YJ_decisions_categories = {
                 }
             }
             if = {
-                limit = { 
+                limit = {
                     from = {
                         dockyard > 0
                     }
@@ -510,7 +504,7 @@ KoKi_YJ_decisions_categories = {
                     }
                 }
             }
-        }      
+        }
 		ai_will_do = {
 			base = 10
 			modifier = {
@@ -534,9 +528,9 @@ KoKi_YJ_decisions_categories = {
 				factor = 0
 			}
 		}
-    }   
+    }
 
-	KoKi_YJ_decisions_9 = { 
+	KoKi_YJ_decisions_9 = {
 		icon = GFX_decision_hol_draw_up_staff_plans
 		allowed = {
 		}
@@ -545,26 +539,26 @@ KoKi_YJ_decisions_categories = {
 		visible = {
 			has_idea = YJ_10001_ideas
 		}
-		cost = 50    
-		days_remove = 0  
+		cost = 50
+		days_remove = 0
 		target_trigger = {
 			FROM = {
 				is_in_faction_with = ROOT
 			}
 		}
-		complete_effect = { 
+		complete_effect = {
 			FROM = {
 				add_ideas = YJ_10001_ideas
 			}
 		}
-		remove_effect = {  
+		remove_effect = {
 		}
-		
+
 		ai_will_do = {
-			factor = 1  
+			factor = 1
 		}
 	}
-	KoKi_YJ_decisions_10 = { 
+	KoKi_YJ_decisions_10 = {
 		icon = GFX_decision_hol_draw_up_staff_plans
 		allowed = {
 		}
@@ -577,23 +571,23 @@ KoKi_YJ_decisions_categories = {
 				is_in_faction_with = ROOT
 			}
 		}
-		cost = 50    
-		days_remove = 0  
+		cost = 50
+		days_remove = 0
 		target_trigger = {
 			FROM = {
 				is_in_faction_with = ROOT
 			}
 		}
-		complete_effect = { 
+		complete_effect = {
 			FROM = {
 				add_ideas = YJ_HUN_1_ideas_FROM
 			}
 		}
-		remove_effect = {  
+		remove_effect = {
 		}
-		
+
 		ai_will_do = {
-			factor = 1  
+			factor = 1
 		}
 	}
 
@@ -667,7 +661,7 @@ KoKi_YJ_decisions_categories = {
 		allowed = {
 		}
 		days_re_enable = 30
-		
+
 		complete_effect = {
 			news_event = {
 				id = host.1
@@ -680,7 +674,7 @@ KoKi_YJ_decisions_categories = {
 		allowed = {
 		}
 		days_re_enable = 30
-		
+
 		complete_effect = {
 			news_event = {
 				id = host.2
@@ -688,7 +682,6 @@ KoKi_YJ_decisions_categories = {
 		}
 	}
 
-	
 	set_axis = {
 		allowed = {
 			always = yes
@@ -734,7 +727,6 @@ KoKi_YJ_decisions_categories = {
 			set_country_flag = YJ_allie
 		}
 	}
-
 
 	KoKi_YJ_TAG_decisions_4 = {
 		icon = GFX_decision_generic_form_nation
@@ -795,7 +787,7 @@ KoKi_YJ_decisions_categories = {
 		days_re_enable = 0
 		modifier = {
 		}
-		complete_effect = { 
+		complete_effect = {
 			FROM = {
 				if = {
 					limit = { NOT = { has_idea = deterrence } }
@@ -817,7 +809,7 @@ KoKi_YJ_decisions_categories = {
 		}
 	}
 
-	KoKi_YJ_ROM_decisions_03 = { 
+	KoKi_YJ_ROM_decisions_03 = {
 	icon = GFX_decision_generic_form_nation
 	allowed = {
 		original_tag = ROM
@@ -840,7 +832,7 @@ KoKi_YJ_decisions_categories = {
 	days_re_enable = 0
 	modifier = {
 	}
-	complete_effect = { 
+	complete_effect = {
 		FROM = {
 			if = {
 				limit = { NOT = { has_idea = YJ_ROM_03_ideas } }
@@ -890,7 +882,7 @@ KoKi_YJ_decisions_categories = {
 	days_re_enable = 0
 	modifier = {
 	}
-	complete_effect = { 
+	complete_effect = {
 		From = {
 			add_timed_idea = {
 				idea = YJ_USA_6_ideas
@@ -909,7 +901,7 @@ KoKi_YJ_decisions_categories = {
 		}
 	}
 
-	KoKi_YJ_ROM_decisions_04 = { 
+	KoKi_YJ_ROM_decisions_04 = {
 		icon = GFX_decision_generic_form_nation
 		allowed = {
 			original_tag = ROM
@@ -931,7 +923,7 @@ KoKi_YJ_decisions_categories = {
 		days_re_enable = 0
 		modifier = {
 		}
-		complete_effect = { 
+		complete_effect = {
 			FROM = {
 				if = {
 					limit = { NOT = { has_idea = YJ_ROM_04_ideas } }

@@ -1,9 +1,9 @@
-add_namespace = KoKi_YJ_pp
+﻿add_namespace = KoKi_YJ_pp
 country_event = {
 	id = KoKi_YJ_pp.1
 	title = KoKi_YJ_pp.1.title
 	desc = KoKi_YJ_pp.1.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -23,7 +23,7 @@ country_event = {
 	id = KoKi_YJ_pp.2
 	title = KoKi_YJ_pp.2.title
 	desc = KoKi_YJ_pp.2.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -44,7 +44,7 @@ country_event = {
 	id = KoKi_YJ_pp.3
 	title = KoKi_YJ_pp.3.title
 	desc = KoKi_YJ_pp.3.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -69,7 +69,7 @@ country_event = {
 	id = KoKi_YJ_pp.4
 	title = KoKi_YJ_pp.4.title
 	desc = KoKi_YJ_pp.4.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -86,7 +86,7 @@ country_event = {
 	id = KoKi_YJ_pp.5
 	title = KoKi_YJ_pp.5.title
 	desc = KoKi_YJ_pp.5.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -103,7 +103,7 @@ country_event = {
 	id = KoKi_YJ_pp.6
 	title = KoKi_YJ_pp.6.title
 	desc = KoKi_YJ_pp.6.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -120,7 +120,7 @@ country_event = {
 	id = KoKi_YJ_pp.7
 	title = KoKi_YJ_pp.7.title
 	desc = KoKi_YJ_pp.7.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -137,7 +137,7 @@ country_event = {
 	id = KoKi_YJ_pp.8
 	title = KoKi_YJ_pp.8.title
 	desc = KoKi_YJ_pp.8.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -148,7 +148,7 @@ country_event = {
     		state = capital
    			controller = ROOT
     		use_nuke = no
-    		nuke_type = thermonuclear_bomb 
+    		nuke_type = thermonuclear_bomb
 		}
 		ai_chance = {
 			factor = 100
@@ -159,7 +159,7 @@ country_event = {
 	id = KoKi_YJ_pp.9
 	title = KoKi_YJ_pp.9.title
 	desc = KoKi_YJ_pp.9.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -194,7 +194,7 @@ country_event = {
 	id = KoKi_YJ_pp.18
 	title = KoKi_YJ_pp.18.title
 	desc = KoKi_YJ_pp.18.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -214,7 +214,7 @@ country_event = {
 	id = KoKi_YJ_pp.19
 	title = KoKi_YJ_pp.19.title
 	desc = KoKi_YJ_pp.19.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -238,7 +238,7 @@ country_event = {
 	id = KoKi_YJ_pp.20
 	title = KoKi_YJ_pp.20.title
 	desc = KoKi_YJ_pp.20.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -281,13 +281,11 @@ country_event = {
 	}
 }
 
-
-
 country_event = {
 	id = KoKi_YJ_pp.21
 	title = KoKi_YJ_pp.21.title
 	desc = KoKi_YJ_pp.21.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -313,7 +311,7 @@ country_event = {
 	id = KoKi_YJ_pp.22
 	title = KoKi_YJ_pp.22.title
 	desc = KoKi_YJ_pp.22.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -339,7 +337,7 @@ country_event = {
 	id = KoKi_YJ_pp.23
 	title = KoKi_YJ_pp.23.title
 	desc = KoKi_YJ_pp.23.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -365,7 +363,7 @@ country_event = {
 	id = KoKi_YJ_pp.24
 	title = KoKi_YJ_pp.24.title
 	desc = KoKi_YJ_pp.24.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -391,7 +389,7 @@ country_event = {
 	id = KoKi_YJ_pp.25
 	title = KoKi_YJ_pp.25.title
 	desc = KoKi_YJ_pp.25.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -418,7 +416,7 @@ country_event = {
 	id = KoKi_YJ_pp.26
 	title = KoKi_YJ_pp.26.title
 	desc = KoKi_YJ_pp.26.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -444,7 +442,7 @@ country_event = {
 	id = KoKi_YJ_pp.27
 	title = KoKi_YJ_pp.27.title
 	desc = KoKi_YJ_pp.27.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -466,13 +464,11 @@ country_event = {
 	}
 }
 
-
-
 country_event = {
 	id = KoKi_YJ_pp.28
 	title = KoKi_YJ_pp.28.title
 	desc = KoKi_YJ_pp.28.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes

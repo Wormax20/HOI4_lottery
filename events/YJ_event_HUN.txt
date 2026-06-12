@@ -1,9 +1,9 @@
-add_namespace = KoKi_YJ_HUN_event
+﻿add_namespace = KoKi_YJ_HUN_event
 country_event = {
 	id = KoKi_YJ_HUN_event.101
 	title = KoKi_YJ_HUN_event.101.title
 	desc = KoKi_YJ_HUN_event.101.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -119,7 +119,7 @@ country_event = {
 	id = KoKi_YJ_HUN_event.1011
 	title = KoKi_YJ_HUN_event.1011.title
 	desc = KoKi_YJ_HUN_event.1011.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -166,7 +166,7 @@ country_event = {
 			type = arms_factory
 			level = 5
 		}
-		
+
 		9 = {
 			add_dynamic_modifier = {
 				modifier = YJ_HUN_ideas
@@ -206,13 +206,11 @@ country_event = {
 	}
 }
 
-
-
 country_event = {
 	id = KoKi_YJ_HUN_event.1012
 	title = KoKi_YJ_HUN_event.1012.title
 	desc = KoKi_YJ_HUN_event.1012.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -298,7 +296,7 @@ country_event = {
 	id = KoKi_YJ_HUN_event.102
 	title = KoKi_YJ_HUN_event.102.title
 	desc = KoKi_YJ_HUN_event.102.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -317,7 +315,7 @@ country_event = {
 	id = KoKi_YJ_HUN_event.103
 	title = KoKi_YJ_HUN_event.103.title
 	desc = KoKi_YJ_HUN_event.103.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -335,7 +333,7 @@ country_event = {
 	id = KoKi_YJ_HUN_event.104
 	title = KoKi_YJ_HUN_event.104.title
 	desc = KoKi_YJ_HUN_event.104.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes

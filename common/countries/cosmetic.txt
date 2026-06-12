@@ -1,4 +1,4 @@
-MAL_UK = {
+﻿MAL_UK = {
     color = rgb { 201 56 93 }
     color_ui = rgb { 255 73 121 }
 }
@@ -14,8 +14,28 @@ RAJ_FREE = {
 }
 
 INS_HOL = {
-    color = rgb { 203 138 74 }
-    color_ui = rgb { 255 179 96 }
+    color = rgb { 176 90 70 }
+    color_ui = rgb { 176 90 70 }
+}
+
+INS_HOL_FLAG = {
+    color = rgb { 176 90 70 }
+    color_ui = rgb { 176 90 70 }
+}
+
+INS_UNION = {
+	color = rgb { 240  166  139 }
+	color_ui = rgb { 240  166  139 }
+}
+
+INS_REP_UNION = {
+    color = rgb { 176 24 35 }
+    color_ui = rgb { 176 24 35 }
+}
+
+INS_aslia = {
+	color = rgb { 101 163 145 }
+	color_ui = rgb { 101 163 145 }
 }
 
 HUN_EMPIRE = {
@@ -23,7 +43,7 @@ HUN_EMPIRE = {
 	color_ui = rgb { 255 255 255 }
 }
 
-AUS_NOT_WHITE = {	
+AUS_NOT_WHITE = {
 	color = rgb { 249 126 98 }
 	color_ui = rgb { 255 164 127 }
 }
@@ -174,8 +194,8 @@ BLR_reichskommissariat = {
 }
 
 UKR_reichskommissariat = {
-	color = rgb { 194 198 215 }
-	color_ui = rgb { 255 255 255 }
+	color = rgb { 115 115 115 }
+	color_ui = rgb { 122 145 93 }
 }
 
 SPR_civil_war = {
@@ -403,7 +423,6 @@ POR_empire = {
 	color_ui = rgb { 19  83  180 }
 }
 
-
 GRE_dem_monarchy = {
 	color = rgb { 93 181 227 }
 	color_ui = rgb { 93 181 227 }
@@ -499,7 +518,7 @@ MAE_neutrality = {
 	color_ui = rgb { 35 65 153 }
 }
 
-ARM_UK = { 
+ARM_UK = {
 	color = rgb { 201 56 93 }
 	color_ui = rgb { 201 56 93 }
 }
@@ -530,43 +549,43 @@ OTT_SULTANATE_neutrality = {
 }
 
 TUR_GREATER_TURKEY_communism = {
-	color = rgb { 26 138 4 }
-	color_ui = rgb { 26 138 4 }
+	color = rgb { 227 10 23 }
+	color_ui = rgb { 227 10 23 }
 }
 
 TUR_GREATER_TURKEY_democratic = {
-	color = rgb { 26 138 4 }
-	color_ui = rgb { 26 138 4 }
+	color = rgb { 227 10 23 }
+	color_ui = rgb { 227 10 23 }
 }
 
 TUR_GREATER_TURKEY_fascism = {
-	color = rgb { 26 138 4 }
-	color_ui = rgb { 26 138 4 }
+	color = rgb { 227 10 23 }
+	color_ui = rgb { 227 10 23 }
 }
 
 TUR_GREATER_TURKEY_neutrality = {
-	color = rgb { 26 138 4 }
-	color_ui = rgb { 26 138 4 }
+	color = rgb { 227 10 23 }
+	color_ui = rgb { 227 10 23 }
 }
 
 TUR_PROVISIONARY_communism = {
-	color = rgb { 26 138 4 }
-	color_ui = rgb { 26 138 4 }
+	color = rgb { 193 99 99 }
+	color_ui = rgb { 193 99 99 }
 }
 
 TUR_PROVISIONARY_democratic = {
-	color = rgb { 26 138 4 }
-	color_ui = rgb { 26 138 4 }
+	color = rgb { 193 99 99 }
+	color_ui = rgb { 193 99 99 }
 }
 
 TUR_PROVISIONARY_fascism = {
-	color = rgb { 26 138 4 }
-	color_ui = rgb { 26 138 4 }
+	color = rgb { 193 99 99 }
+	color_ui = rgb { 193 99 99 }
 }
 
 TUR_PROVISIONARY_neutrality = {
-	color = rgb { 26 138 4 }
-	color_ui = rgb { 26 138 4 }
+	color = rgb { 193 99 99 }
+	color_ui = rgb { 193 99 99 }
 }
 
 TRN_communism = {
@@ -917,7 +936,7 @@ ITA_rds = {
 
 SWI_GER_puppet_fascism ={
 	color = rgb{ 125 0 0 }
-	color_ui = rgb { 255 255 255 } 
+	color_ui = rgb { 255 255 255 }
 }
 
 SWI_FRA_puppet_fascism = {
@@ -937,7 +956,7 @@ SWI_ENG_puppet_fascism = {
 
 SWI_GER_puppet_democratic = {
 	color = rgb { 140 140 140 }
-	color_ui = rgb { 255 255 255 }  
+	color_ui = rgb { 255 255 255 }
 }
 
 SWI_FRA_puppet_democratic = {
@@ -957,7 +976,7 @@ SWI_ENG_puppet_democratic = {
 
 SWI_SOV_puppet_communism = {
 	color = rgb { 192 50 50 }
-	color_ui = rgb { 255 255 255 } 
+	color_ui = rgb { 255 255 255 }
 }
 
 SWI_alpine_democratic = {
@@ -1034,6 +1053,7 @@ FIN_confederated_finno_russian_republics = {
 FIN_finnish_democratic_republic = {
 	color = rgb { 200 122 125 }
 	color_ui = rgb { 200 122 125 }
+
 }
 
 SWE_greater_nordic_reich_tag = {
@@ -1060,7 +1080,7 @@ NOR_SOV_communism = {
 	color = rgb { 180 40 40 }
 	color_ui = rgb { 255 120 120 }
 }
- 
+
 NOR_trotsky_communism = {
 	color = rgb { 205 69 0 }
 	color_ui = rgb { 122 145 93 }
@@ -1081,7 +1101,7 @@ NOR_GER_fascism = {
 	color_ui = rgb { 122 145 93 }
 }
 
-NOR_fascism = {	
+NOR_fascism = {
 	color = rgb { 134 120 66 }
 	color_ui = rgb { 178 172 0 }
 }
@@ -1108,7 +1128,7 @@ DEN_imperial = {
 
 SWE_the_new_order = {
 	color = rgb { 152 107 16 }
-	color_ui = rgb  { 152 107 16  }		
+	color_ui = rgb  { 152 107 16  }
 }
 
 DEN_greater_denmark = {
@@ -1219,7 +1239,7 @@ ARG_fourth_reich_fascism = {
 PAR_anti_imperialism = {
 	color = rgb { 92 28 119}
 	color_ui = rgb { 92 28 119}
-	
+
 }
 
 URG_anti_imperialism = {
@@ -1278,13 +1298,13 @@ COG_belgian_congo = {
 }
 
 HUN_GREATER = {
-	color = rgb { 194 198 215 }
-	color_ui = rgb { 255 255 255 }
+	color = rgb { 204 102 0 }
+	color_ui = rgb { 128 64 0 }
 }
 
 HUN_GREATER_COMMUNIST_STATE = {
-	color = rgb { 194 198 215 }
-	color_ui = rgb { 255 255 255 }
+	color = rgb { 230 0 0 }
+	color_ui = rgb { 128 0 0 }
 }
 
 AUS_liechtenstein = {
@@ -1303,8 +1323,8 @@ FRA_AUS_danubian_state = {
 }
 
 TUR_AUS_danubian_state = {
-	color = rgb { 26 138 4 }
-	color_ui = rgb { 26 138 4 }
+	color = rgb { 224  228  255 }
+	color_ui = rgb { 224  228  255 }
 }
 
 GRE_AUS_danubian_state = {
@@ -1338,13 +1358,13 @@ MAC_AUS_danubian_state = {
 }
 
 HUN_AUS_danubian_state = {
-	color = rgb { 194 198 215 }
-	color_ui = rgb { 255 255 255 }
+	color = rgb { 224  228  255 }
+	color_ui = rgb { 224  228  255 }
 }
 
 CZE_AUS_danubian_state = {
-	color = rgb { 194 198 215 }
-	color_ui = rgb { 255 255 255 }
+	color = rgb { 224  228  255 }
+	color_ui = rgb { 224  228  255 }
 }
 
 SLO_AUS_danubian_state = {
@@ -1373,8 +1393,8 @@ SIL_AUS_danubian_state = {
 }
 
 BOS_AUS_danubian_state = {
-	color = rgb { 194 198 215 }
-	color_ui = rgb { 255 255 255 }
+	color = rgb { 224  228  255 }
+	color_ui = rgb { 224  228  255 }
 }
 
 SLV_AUS_danubian_state = {
@@ -1527,6 +1547,11 @@ BEL_european_union_leader = {
 	color_ui = rgb { 0 51 153 }
 }
 
+HND_UNIFIED = {
+	color = rgb { 204 102 0 }
+	color_ui = rgb { 128 64 0 }
+}
+
 JOR_emirate = {
 	color = rgb { 201 56 93 }
 	color_ui = rgb { 255 73 121 }
@@ -1614,7 +1639,7 @@ RAJ_akhand_bharat_tag = {
 
 RAJ_eic_tag = {
 	color = rgb { 25 25 255 }
-	color_ui = rgb { 25 25 255  }	
+	color_ui = rgb { 25 25 255  }
 }
 
 RAJ_mughal_breakaway_state = {
@@ -1639,12 +1664,12 @@ RAJ_al_hind = {
 
 IRQ_kurdistan_tag = {
 	color = rgb { 230 184 0 }
-	color_ui = rgb { 153 122 0 }	
+	color_ui = rgb { 153 122 0 }
 }
 
 greater_kurdistan = {
 	color = rgb { 230 184 0 }
-	color_ui = rgb { 153 122 0 }	
+	color_ui = rgb { 153 122 0 }
 }
 
 RAJ_azad_hind = {
@@ -1818,16 +1843,85 @@ PHI_hispanic_empire_tag_war = {
 }
 
 JAP_pacific_union = {
-	color = rgb { 230 184 0 } 
+	color = rgb { 230 184 0 }
 	color_ui = rgb { 230 184 0 }
 }
 
-FRA_THIRD_EMPIRE = {
-	color = rgb { 0 40 195 }
-	color_ui = rgb { 0 40 195 }
+SIA_thailand = {
+	color = rgb { 90 80 180 }
+	color_ui = rgb { 90 80 180 }
+}
+
+SIA_great_thai_empire = {
+	color = rgb { 252 253 254 }
+	color_ui = rgb { 252 253 254 }
+}
+CZE_puppet = {
+	color = rgb { 54 167 156 }
+	color_ui = rgb { 70 217 203 }
+}
+
+CZE_CEF = {
+	color = rgb { 85 200 203 }
+	color_ui = rgb { 85 200 203 }
+}
+
+CZE_CEF_puppet = {
+	color = rgb { 85 200 203 }
+	color_ui = rgb { 85 200 203 }
+}
+
+CZE_SLO_bohemia_expansion = {
+	color = rgb { 255 166 2 }
+	color_ui = rgb { 255 166 2 }
+}
+
+CZE_union_expanded = {
+	color = rgb { 11 11 11 }
+	color_ui = rgb { 11 11 11 }
+}
+
+CZE_union_expanded_puppet = {
+	color = rgb { 11 11 11 }
+	color_ui = rgb { 11 11 11 }
+}
+
+CZE_great_moravia = {
+	color = rgb { 245 135 45 }
+	color_ui = rgb { 245 135 45 }
+}
+
+CZE_fascist_color = {
+	color = rgb { 47 141 130 }
+	color_ui = rgb { 47 141 130 }
+}
+
+CZE_first_monarchy_color = {
+	color = rgb { 111 110 137 }
+	color_ui = rgb { 111 110 137 }
+}
+
+OTT_UNIFIED = {
+	color = rgb { 26 138 4 }
+	color_ui = rgb { 26 138 4 }
+}
+
+OTT_UNIFIED_communism = {
+	color = rgb { 26 138 4 }
+	color_ui = rgb { 26 138 4 }
+}
+
+OTT_UNIFIED_democratic = {
+	color = rgb { 26 138 4 }
+	color_ui = rgb { 26 138 4 }
 }
 
 YJ_bread_cos = {
     color = rgb { 240 165 0 } 
     color_ui = rgb { 240 165 0 } 
+}
+
+FRA_THIRD_EMPIRE = {
+	color = rgb { 0 40 195 }
+	color_ui = rgb { 0 40 195 }
 }

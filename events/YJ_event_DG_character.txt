@@ -1,27 +1,26 @@
-add_namespace = DOG_exe_YJ_new_JL_event
+﻿add_namespace = DOG_exe_YJ_new_JL_event
 country_event = {
 	id = DOG_exe_YJ_new_JL_event.1
 	title = DOG_exe_YJ_new_JL_event.1.title
 	desc = DOG_exe_YJ_new_JL_event.1.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
-
 
 	option = {
 		name = DOG_exe_YJ_JL_event.1.a
 		create_corps_commander = {
 			name = "DOG.EXE"
 			portrait_path =  "gfx/leaders/DOG_exe/DOG.png"
-		
+
 			allowed_civil_war = {
 				is_ai = no
 			}
 
-			traits={ 
-				brilliant_strategist 
-				armor_officer 
+			traits={
+				brilliant_strategist
+				armor_officer
 				panzer_leader
 				cavalry_leader
 				infantry_leader
@@ -50,32 +49,32 @@ country_event = {
 						}
 						allowed_civil_war = {
 							is_ai = no
-						}     
+						}
 						advisor={
 							cost = 75
 							slot = air_chief
 							idea_token = DOG
- 
+
 							traits = {
 								Dog_traits
 							}
 							ai_will_do = {
 								base = 1
 							}
-						}   
+						}
 						advisor={
 							cost = 100
 							slot = high_command
 							idea_token = DOG
- 
+
 							traits = {
 								Dog_traits
 							}
 							ai_will_do = {
 								base = 1
 							}
-						}       
-					}    
+						}
+					}
 				}
 			}
 		}
@@ -85,12 +84,11 @@ country_event = {
 	}
 }
 
-
 country_event = {
 	id = DOG_exe_YJ_new_JL_event.2
 	title = DOG_exe_YJ_new_JL_event.2.title
 	desc = DOG_exe_YJ_new_JL_event.2.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -103,9 +101,9 @@ country_event = {
 			allowed_civil_war = {
 				is_ai = no
 			}
-			traits={ 
-				brilliant_strategist 
-				armor_officer 
+			traits={
+				brilliant_strategist
+				armor_officer
 				panzer_leader
 				cavalry_leader
 				infantry_leader
@@ -135,20 +133,20 @@ country_event = {
 						}
 						allowed_civil_war = {
 							is_ai = no
-						}       
+						}
 						advisor={
 							cost = 150
 							slot = political_advisor
 							idea_token = WOL
- 
+
 							traits = {
 								Wolf_traits
 							}
 							ai_will_do = {
 								base = 1
 							}
-						}       
-					}    
+						}
+					}
 				}
 			}
 		}
@@ -158,12 +156,11 @@ country_event = {
 	}
 }
 
-
 country_event = {
 	id = DOG_exe_YJ_new_JL_event.3
 	title = DOG_exe_YJ_new_JL_event.3.title
 	desc = DOG_exe_YJ_new_JL_event.3.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -176,9 +173,9 @@ country_event = {
 			allowed_civil_war = {
 				is_ai = no
 			}
-			traits={ 
-				brilliant_strategist 
-				armor_officer 
+			traits={
+				brilliant_strategist
+				armor_officer
 				panzer_leader
 				cavalry_leader
 				infantry_leader
@@ -203,26 +200,26 @@ country_event = {
 						token_base = SHAHUANG
 						name="鯊皇"
 						portraits={
-							civilian = {  
+							civilian = {
 								small="GFX_idea_sha"
 							}
 						}
 						allowed_civil_war = {
 							is_ai = no
-						}       
+						}
 						advisor={
 							cost = 100
 							slot = high_command
 							idea_token = SHA
- 
+
 							traits = {
 								Sha_traits
 							}
 							ai_will_do = {
 								base = 1
 							}
-						}       
-					}    
+						}
+					}
 				}
 			}
 		}
@@ -236,7 +233,7 @@ country_event = {
 	id = DOG_exe_YJ_new_JL_event.4
 	title = DOG_exe_YJ_new_JL_event.4.title
 	desc = DOG_exe_YJ_new_JL_event.4.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -249,7 +246,7 @@ country_event = {
 			allowed_civil_war = {
 				is_ai = no
 			}
-			traits={ 
+			traits={
 				YJ_traits_40
 				brilliant_strategist
 				armor_officer
@@ -283,20 +280,20 @@ country_event = {
 						}
 						allowed_civil_war = {
 							is_ai = no
-						}      
+						}
 						advisor={
 							cost = 300
 							slot = theorist
 							idea_token = AKZ
- 
+
 							traits = {
 								AK_traits
 							}
 							ai_will_do = {
 								base = 1
 							}
-						}       
-					}    
+						}
+					}
 				}
 			}
 		}
@@ -306,12 +303,11 @@ country_event = {
 	}
 }
 
-
 country_event = {
 	id = DOG_exe_YJ_new_JL_event.5
 	title = DOG_exe_YJ_new_JL_event.5.title
 	desc = DOG_exe_YJ_new_JL_event.5.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -324,7 +320,7 @@ country_event = {
 			allowed_civil_war = {
 				is_ai = no
 			}
-			traits={ 
+			traits={
 				YJ_traits_2
 				old_guard
 				inflexible_strategist
@@ -352,7 +348,7 @@ country_event = {
 	id = DOG_exe_YJ_new_JL_event.6
 	title = DOG_exe_YJ_new_JL_event.6.title
 	desc = DOG_exe_YJ_new_JL_event.6.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -365,7 +361,7 @@ country_event = {
 			allowed_civil_war = {
 				is_ai = no
 			}
-			traits={ 
+			traits={
 				YJ_traits_2
 				politically_connected
 				infantry_officer
@@ -393,7 +389,7 @@ country_event = {
 	id = DOG_exe_YJ_new_JL_event.7
 	title = DOG_exe_YJ_new_JL_event.7.title
 	desc = DOG_exe_YJ_new_JL_event.7.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -406,7 +402,7 @@ country_event = {
 			allowed_civil_war = {
 				is_ai = no
 			}
-			traits={ 
+			traits={
 				YJ_traits_2
 				harsh_leader
 				infantry_officer
@@ -430,12 +426,11 @@ country_event = {
 	}
 }
 
-
 country_event = {
 	id = DOG_exe_YJ_new_JL_event.8
 	title = DOG_exe_YJ_new_JL_event.8.title
 	desc = DOG_exe_YJ_new_JL_event.8.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -448,7 +443,7 @@ country_event = {
 			allowed_civil_war = {
 				is_ai = no
 			}
-			traits={ 
+			traits={
 				YJ_traits_2
 				infantry_officer
 				cavalry_officer
@@ -476,7 +471,7 @@ country_event = {
 	id = DOG_exe_YJ_new_JL_event.9
 	title = DOG_exe_YJ_new_JL_event.9.title
 	desc = DOG_exe_YJ_new_JL_event.9.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -489,11 +484,11 @@ country_event = {
 			allowed_civil_war = {
 				is_ai = no
 			}
-			traits={ 
+			traits={
 				YJ_traits_1
 				militias_officer
 				infantry_officer
-				inflexible_strategist 
+				inflexible_strategist
 				harsh_leader
 				cavalry_officer
 				organizer
@@ -524,7 +519,7 @@ country_event = {
 						}
 						allowed_civil_war = {
 							is_ai = no
-						}      
+						}
 						advisor={
 							cost = 150
 							slot = theorist
@@ -535,8 +530,8 @@ country_event = {
 							ai_will_do = {
 								base = 1
 							}
-						}       
-					}    
+						}
+					}
 				}
 			}
 		}
@@ -550,7 +545,7 @@ country_event = {
 	id = DOG_exe_YJ_new_JL_event.10
 	title = DOG_exe_YJ_new_JL_event.10.title
 	desc = DOG_exe_YJ_new_JL_event.10.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -563,7 +558,7 @@ country_event = {
 			allowed_civil_war = {
 				is_ai = no
 			}
-			traits={ 
+			traits={
 				YJ_traits_2
 				infantry_officer
 				scavenger
@@ -594,7 +589,7 @@ country_event = {
 						}
 						allowed_civil_war = {
 							is_ai = no
-						}      
+						}
 						advisor={
 							cost = 150
 							slot = theorist
@@ -605,8 +600,8 @@ country_event = {
 							ai_will_do = {
 								base = 1
 							}
-						}       
-					}    
+						}
+					}
 				}
 			}
 		}
@@ -620,7 +615,7 @@ country_event = {
 	id = DOG_exe_YJ_new_JL_event.11
 	title = DOG_exe_YJ_new_JL_event.11.title
 	desc = DOG_exe_YJ_new_JL_event.11.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -638,7 +633,7 @@ country_event = {
 				YJ_traits_14
 				YJ_traits_42
 				YJ_traits_39
-				brilliant_strategist 
+				brilliant_strategist
 				cavalry_officer
 				panzer_leader
 				cavalry_leader
@@ -665,7 +660,7 @@ country_event = {
 						}
 						allowed_civil_war = {
 							is_ai = no
-						}      
+						}
 						advisor={
 							cost = 100
 							slot = navy_chief
@@ -676,8 +671,8 @@ country_event = {
 							ai_will_do = {
 								base = 1
 							}
-						}       
-					}    
+						}
+					}
 				}
 			}
 		}
@@ -691,7 +686,7 @@ country_event = {
 	id = DOG_exe_YJ_new_JL_event.12
 	title = DOG_exe_YJ_new_JL_event.12.title
 	desc = DOG_exe_YJ_new_JL_event.12.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -704,11 +699,11 @@ country_event = {
 			allowed_civil_war = {
 				is_ai = no
 			}
-			traits={ 
+			traits={
 				YJ_traits_1
 				trickster
-				brilliant_strategist 
-				armor_officer 
+				brilliant_strategist
+				armor_officer
 				panzer_leader
 				naval_invader
 				amphibious
@@ -736,7 +731,7 @@ country_event = {
 						}
 						allowed_civil_war = {
 							is_ai = no
-						}      
+						}
 						advisor={
 							cost = 100
 							slot = high_command
@@ -747,8 +742,8 @@ country_event = {
 							ai_will_do = {
 								base = 1
 							}
-						}       
-					}    
+						}
+					}
 				}
 			}
 		}
@@ -762,7 +757,7 @@ country_event = {
 	id = DOG_exe_YJ_new_JL_event.13
 	title = DOG_exe_YJ_new_JL_event.13.title
 	desc = DOG_exe_YJ_new_JL_event.13.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -775,10 +770,10 @@ country_event = {
 			allowed_civil_war = {
 				is_ai = no
 			}
-			traits={ 
+			traits={
 				YJ_traits_1
-				brilliant_strategist 
-				armor_officer 
+				brilliant_strategist
+				armor_officer
 				panzer_leader
 				cavalry_leader
 				infantry_leader
@@ -800,26 +795,26 @@ country_event = {
 						token_base = LAN
 						name="藍葉Lanye"
 						portraits={
-							civilian = {  
+							civilian = {
 								small="GFX_idea_lan"
 							}
 						}
 						allowed_civil_war = {
 							is_ai = no
-						}       
+						}
 						advisor={
 							cost = 150
 							slot = political_advisor
 							idea_token = LAN
- 
+
 							traits = {
 								Lan_traits
 							}
 							ai_will_do = {
 								base = 1
 							}
-						}       
-					}    
+						}
+					}
 				}
 			}
 		}
@@ -829,12 +824,11 @@ country_event = {
 	}
 }
 
-
 country_event = {
 	id = DOG_exe_YJ_new_JL_event.14
 	title = DOG_exe_YJ_new_JL_event.14.title
 	desc = DOG_exe_YJ_new_JL_event.14.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -847,9 +841,9 @@ country_event = {
 			allowed_civil_war = {
 				is_ai = no
 			}
-			traits={ 
+			traits={
 				YJ_traits_2
-				brilliant_strategist 
+				brilliant_strategist
 				trickster
 				organizer
 				panzer_leader
@@ -869,26 +863,26 @@ country_event = {
 						token_base = COL
 						name="巧克力冰淇淋"
 						portraits={
-							civilian = {  
+							civilian = {
 								small="GFX_idea_chol"
 							}
 						}
 						allowed_civil_war = {
 							is_ai = no
-						}       
+						}
 						advisor={
 							cost = 100
 							slot = high_command
 							idea_token = COL
- 
+
 							traits = {
 								Col_traits
 							}
 							ai_will_do = {
 								base = 1
 							}
-						}       
-					}    
+						}
+					}
 				}
 			}
 		}
@@ -898,12 +892,11 @@ country_event = {
 	}
 }
 
-
 country_event = {
 	id = DOG_exe_YJ_new_JL_event.15
 	title = DOG_exe_YJ_new_JL_event.15.title
 	desc = DOG_exe_YJ_new_JL_event.15.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -916,12 +909,12 @@ country_event = {
 			allowed_civil_war = {
 				is_ai = no
 			}
-			traits={ 
+			traits={
 				YJ_traits_1
 				YJ_traits_12
 				YJ_traits_41
-				brilliant_strategist 
-				armor_officer 
+				brilliant_strategist
+				armor_officer
 				panzer_leader
 				cavalry_leader
 				infantry_leader
@@ -944,26 +937,26 @@ country_event = {
 						token_base = SKY
 						name="黑天"
 						portraits={
-							civilian = {  
+							civilian = {
 								small="GFX_idea_bsk"
 							}
 						}
 						allowed_civil_war = {
 							is_ai = no
-						}       
+						}
 						advisor={
 							cost = 150
 							slot = political_advisor
 							idea_token = SKY
- 
+
 							traits = {
 								Sky_traits
 							}
 							ai_will_do = {
 								base = 1
 							}
-						}       
-					}    
+						}
+					}
 				}
 			}
 		}
@@ -973,13 +966,11 @@ country_event = {
 	}
 }
 
-
-
 country_event = {
 	id = DOG_exe_YJ_new_JL_event.16
 	title = DOG_exe_YJ_new_JL_event.16.title
 	desc = DOG_exe_YJ_new_JL_event.16.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -1012,7 +1003,7 @@ country_event = {
 						}
 						allowed_civil_war = {
 							is_ai = no
-						}     
+						}
 						advisor={
 							cost = 100
 							slot = navy_chief
@@ -1023,8 +1014,8 @@ country_event = {
 							ai_will_do = {
 								base = 1
 							}
-						}    
-					}    
+						}
+					}
 				}
 			}
 		}
@@ -1034,12 +1025,11 @@ country_event = {
 	}
 }
 
-
 country_event = {
 	id = DOG_exe_YJ_new_JL_event.17
 	title = DOG_exe_YJ_new_JL_event.17.title
 	desc = DOG_exe_YJ_new_JL_event.17.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -1052,7 +1042,7 @@ country_event = {
 			allowed_civil_war = {
 				is_ai = no
 			}
-			traits={ 
+			traits={
 				YJ_traits_2
 				YJ_traits_21
 				trait_reckless
@@ -1076,26 +1066,26 @@ country_event = {
 						token_base = AAA
 						name="A"
 						portraits={
-							civilian = {  
+							civilian = {
 								small="GFX_idea_a"
 							}
 						}
 						allowed_civil_war = {
 							is_ai = no
-						}       
+						}
 						advisor={
 							cost = 150
 							slot = political_advisor
 							idea_token = AAA
- 
+
 							traits = {
 								A_traits
 							}
 							ai_will_do = {
 								base = 1
 							}
-						}       
-					}    
+						}
+					}
 				}
 			}
 		}
@@ -1109,7 +1099,7 @@ country_event = {
 	id = DOG_exe_YJ_new_JL_event.18
 	title = DOG_exe_YJ_new_JL_event.18.title
 	desc = DOG_exe_YJ_new_JL_event.18.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -1122,10 +1112,10 @@ country_event = {
 			allowed_civil_war = {
 				is_ai = no
 			}
-			traits={ 
-				brilliant_strategist 	
+			traits={
+				brilliant_strategist
 				trait_cautious
-				armor_officer 
+				armor_officer
 				panzer_leader
 				cavalry_leader
 				infantry_leader
@@ -1148,12 +1138,11 @@ country_event = {
 	}
 }
 
-
 country_event = {
 	id = DOG_exe_YJ_new_JL_event.19
 	title = DOG_exe_YJ_new_JL_event.19.title
 	desc = DOG_exe_YJ_new_JL_event.19.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -1166,10 +1155,10 @@ country_event = {
 			allowed_civil_war = {
 				is_ai = no
 			}
-			traits={ 
+			traits={
 				YJ_traits_2
 				trickster
-				armor_officer 
+				armor_officer
 				panzer_leader
 				trait_engineer
 				guerilla_fighter
@@ -1194,7 +1183,7 @@ country_event = {
 	id = DOG_exe_YJ_new_JL_event.20
 	title = DOG_exe_YJ_new_JL_event.20.title
 	desc = DOG_exe_YJ_new_JL_event.20.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -1207,9 +1196,9 @@ country_event = {
 			allowed_civil_war = {
 				is_ai = no
 			}
-			traits={ 
-				brilliant_strategist 
-				armor_officer 
+			traits={
+				brilliant_strategist
+				armor_officer
 				panzer_leader
 				cavalry_leader
 				infantry_leader
@@ -1232,12 +1221,11 @@ country_event = {
 	}
 }
 
-
 country_event = {
 	id = DOG_exe_YJ_new_JL_event.21
 	title = DOG_exe_YJ_new_JL_event.21.title
 	desc = DOG_exe_YJ_new_JL_event.21.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -1250,11 +1238,11 @@ country_event = {
 			allowed_civil_war = {
 				is_ai = no
 			}
-			traits={ 
+			traits={
 				YJ_traits_2
 				trait_reckless
 				career_officer
-				armor_officer 
+				armor_officer
 				trickster
 				organizer
 				ranger
@@ -1276,7 +1264,7 @@ country_event = {
 	id = DOG_exe_YJ_new_JL_event.22
 	title = DOG_exe_YJ_new_JL_event.22.title
 	desc = DOG_exe_YJ_new_JL_event.22.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -1289,11 +1277,11 @@ country_event = {
 			allowed_civil_war = {
 				is_ai = no
 			}
-			traits={ 
+			traits={
 				YJ_traits_1
-				brilliant_strategist 
+				brilliant_strategist
 				career_officer
-				armor_officer 
+				armor_officer
 				trickster
 				organizer
 				ranger
@@ -1313,26 +1301,26 @@ country_event = {
 						token_base = PAP
 						name="PapasGatitos"
 						portraits={
-							civilian = {  
+							civilian = {
 								small="GFX_idea_pap"
 							}
 						}
 						allowed_civil_war = {
 							is_ai = no
-						}       
+						}
 						advisor={
 							cost = 150
 							slot = theorist
 							idea_token = PAP
- 
+
 							traits = {
 								Pap_traits
 							}
 							ai_will_do = {
 								base = 1
 							}
-						}       
-					}    
+						}
+					}
 				}
 			}
 		}
@@ -1346,7 +1334,7 @@ country_event = {
 	id = DOG_exe_YJ_new_JL_event.23
 	title = DOG_exe_YJ_new_JL_event.23.title
 	desc = DOG_exe_YJ_new_JL_event.23.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -1359,12 +1347,12 @@ country_event = {
 			allowed_civil_war = {
 				is_ai = no
 			}
-			traits={ 
+			traits={
 				YJ_traits_1
 				harsh_leader
-				brilliant_strategist 
+				brilliant_strategist
 				career_officer
-				armor_officer 
+				armor_officer
 				trickster
 				organizer
 				ranger
@@ -1384,12 +1372,11 @@ country_event = {
 	}
 }
 
-
 country_event = {
 	id = DOG_exe_YJ_new_JL_event.24
 	title = DOG_exe_YJ_new_JL_event.24.title
 	desc = DOG_exe_YJ_new_JL_event.24.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -1415,8 +1402,8 @@ country_event = {
 				is_ai = no
 			}
 			traits = {
-				brilliant_strategist 
-				armor_officer 
+				brilliant_strategist
+				armor_officer
 				panzer_leader
 				cavalry_leader
 				trickster
@@ -1442,20 +1429,20 @@ country_event = {
 						token_base = AGH
 						name="Arganham"
 						portraits={
-							civilian = {  
+							civilian = {
 								small="GFX_idea_arg"
 							}
 						}
 						allowed_civil_war = {
 							is_ai = no
-						}       
+						}
 						advisor={
 							slot = theorist
 							idea_token = AGH
 							traits = {Arg_traits}
 							desc = AGH_desc
 							cost = 150
-							available = { 
+							available = {
 							}
 							ai_will_do = {
 								factor = 0
@@ -1466,8 +1453,8 @@ country_event = {
 							on_remove = {
 								clr_country_flag = ARG_on
 							}
-						}       
-					}    
+						}
+					}
 				}
 			}
 		}
@@ -1482,7 +1469,7 @@ country_event = {
 	id = DOG_exe_YJ_new_JL_event.25
 	title = DOG_exe_YJ_new_JL_event.25.title
 	desc = DOG_exe_YJ_new_JL_event.25.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -1495,11 +1482,11 @@ country_event = {
 			allowed_civil_war = {
 				is_ai = no
 			}
-			traits={ 
+			traits={
 				YJ_traits_2
 				panzer_leader
 				naval_invader
-				armor_officer 
+				armor_officer
 				amphibious
 				naval_liason
 				organizer
@@ -1520,13 +1507,13 @@ country_event = {
 						token_base = MAN
 						name="麥安捏"
 						portraits={
-							civilian = {  
+							civilian = {
 								small="GFX_idea_man"
 							}
 						}
 						allowed_civil_war = {
 							is_ai = no
-						}       
+						}
 						advisor={
 							cost = 100
 							slot = high_command
@@ -1537,8 +1524,8 @@ country_event = {
 							ai_will_do = {
 								base = 1
 							}
-						}       
-					}    
+						}
+					}
 				}
 			}
 		}
@@ -1553,7 +1540,7 @@ country_event = {
 	id = DOG_exe_YJ_new_JL_event.26
 	title = DOG_exe_YJ_new_JL_event.26.title
 	desc = DOG_exe_YJ_new_JL_event.26.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -1566,10 +1553,10 @@ country_event = {
 			allowed_civil_war = {
 				is_ai = no
 			}
-			traits={ 
+			traits={
 				YJ_traits_1
-				brilliant_strategist 
-				armor_officer 
+				brilliant_strategist
+				armor_officer
 				panzer_leader
 				career_officer
 				trickster
@@ -1594,7 +1581,7 @@ country_event = {
 	id = DOG_exe_YJ_new_JL_event.27
 	title = DOG_exe_YJ_new_JL_event.27.title
 	desc = DOG_exe_YJ_new_JL_event.27.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -1607,10 +1594,10 @@ country_event = {
 			allowed_civil_war = {
 				is_ai = no
 			}
-			traits={ 
+			traits={
 				YJ_traits_2
 				trait_reckless
-				brilliant_strategist 
+				brilliant_strategist
 				career_officer
 				YJ_traits_16
 				YJ_traits_23
@@ -1639,7 +1626,7 @@ country_event = {
 						}
 						allowed_civil_war = {
 							is_ai = no
-						}      
+						}
 						advisor={
 							cost = 100
 							slot = high_command
@@ -1665,7 +1652,7 @@ country_event = {
 	id = DOG_exe_YJ_new_JL_event.28
 	title = DOG_exe_YJ_new_JL_event.28.title
 	desc = DOG_exe_YJ_new_JL_event.28.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -1678,11 +1665,11 @@ country_event = {
 			allowed_civil_war = {
 				is_ai = no
 			}
-			traits={ 
+			traits={
 				YJ_traits_1
-				brilliant_strategist 
+				brilliant_strategist
 				career_officer
-				armor_officer 
+				armor_officer
 				panzer_leader
 				trickster
 				organizer
@@ -1705,7 +1692,7 @@ country_event = {
 	id = DOG_exe_YJ_new_JL_event.29
 	title = DOG_exe_YJ_new_JL_event.29.title
 	desc = DOG_exe_YJ_new_JL_event.29.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -1718,10 +1705,10 @@ country_event = {
 			allowed_civil_war = {
 				is_ai = no
 			}
-			traits={ 
-				brilliant_strategist 	
+			traits={
+				brilliant_strategist
 				trait_cautious
-				armor_officer 
+				armor_officer
 				panzer_leader
 				cavalry_leader
 				infantry_leader
@@ -1747,7 +1734,7 @@ country_event = {
 	id = DOG_exe_YJ_new_JL_event.30
 	title = DOG_exe_YJ_new_JL_event.30.title
 	desc = DOG_exe_YJ_new_JL_event.30.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -1760,10 +1747,10 @@ country_event = {
 			allowed_civil_war = {
 				is_ai = no
 			}
-			traits={ 
+			traits={
 				YJ_traits_1
-				brilliant_strategist 
-				armor_officer 
+				brilliant_strategist
+				armor_officer
 				panzer_leader
 				career_officer
 				trickster
@@ -1788,7 +1775,7 @@ country_event = {
 	id = DOG_exe_YJ_new_JL_event.31
 	title = DOG_exe_YJ_new_JL_event.31.title
 	desc = DOG_exe_YJ_new_JL_event.31.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -1801,10 +1788,10 @@ country_event = {
 			allowed_civil_war = {
 				is_ai = no
 			}
-			traits={ 
+			traits={
 				YJ_traits_1
-				brilliant_strategist 
-				armor_officer 
+				brilliant_strategist
+				armor_officer
 				panzer_leader
 				career_officer
 				trickster
@@ -1831,7 +1818,7 @@ country_event = {
 						}
 						allowed_civil_war = {
 							is_ai = no
-						}      
+						}
 						advisor={
 							cost = 150
 							slot = theorist
@@ -1857,7 +1844,7 @@ country_event = {
 	id = DOG_exe_YJ_new_JL_event.32
 	title = DOG_exe_YJ_new_JL_event.32.title
 	desc = DOG_exe_YJ_new_JL_event.32.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -1870,10 +1857,10 @@ country_event = {
 			allowed_civil_war = {
 				is_ai = no
 			}
-			traits={ 
+			traits={
 				YJ_traits_1
-				brilliant_strategist 
-				armor_officer 
+				brilliant_strategist
+				armor_officer
 				panzer_leader
 				career_officer
 				trickster
@@ -1902,7 +1889,7 @@ country_event = {
 						}
 						allowed_civil_war = {
 							is_ai = no
-						}      
+						}
 						advisor={
 							cost = 150
 							slot = political_advisor
@@ -1928,7 +1915,7 @@ country_event = {
 	id = DOG_exe_YJ_new_JL_event.33
 	title = DOG_exe_YJ_new_JL_event.33.title
 	desc = DOG_exe_YJ_new_JL_event.33.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -1955,7 +1942,7 @@ country_event = {
 	id = DOG_exe_YJ_new_JL_event.34
 	title = DOG_exe_YJ_new_JL_event.34.title
 	desc = DOG_exe_YJ_new_JL_event.34.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -1968,10 +1955,10 @@ country_event = {
 			allowed_civil_war = {
 				is_ai = no
 			}
-			traits={ 
+			traits={
 				YJ_traits_2
-				brilliant_strategist 
-				armor_officer 
+				brilliant_strategist
+				armor_officer
 				panzer_leader
 				career_officer
 				trickster
@@ -1998,7 +1985,7 @@ country_event = {
 						}
 						allowed_civil_war = {
 							is_ai = no
-						}      
+						}
 						advisor={
 							cost = 150
 							slot = political_advisor

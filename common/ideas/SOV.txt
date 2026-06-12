@@ -1,6 +1,4 @@
-ideas = {
-
-
+﻿ideas = {
 
 	country= {
 
@@ -183,7 +181,6 @@ ideas = {
 				land_equipment_upgrade_xp_cost = 0.15
 			}
 		}
-
 
 		SOV_purged_junior_army_officers_1 = {
 			removal_cost = -1
@@ -431,8 +428,6 @@ ideas = {
 				air_accidents_factor = 0.25
 			}
 		}
-
-
 
 		SOV_anti_capitalist_campaign_eng = {
 			name = SOV_anti_capitalist_campaign_generic
@@ -756,7 +751,6 @@ ideas = {
 				war_stability_factor = -0.05
 			}
 		}
-
 
 		SOV_restoration_and_development_idea = {
 			removal_cost = -1
@@ -1769,11 +1763,12 @@ ideas = {
 			}
 
 			on_remove = {
+
 			}
 
 			modifier = {
 				consumer_goods_factor = -0.10
-				country_resource_steel = 20 
+				country_resource_steel = 20
 				country_resource_oil = 30
 				country_resource_chromium = 6
 				country_resource_rubber = 6
@@ -2064,7 +2059,6 @@ ideas = {
 			}
 		}
 
-
 		SOV_aristocratic_investments_idea = {
 
 			picture = generic_foreign_capital
@@ -2119,6 +2113,7 @@ ideas = {
 			}
 
 			modifier = {
+
 			}
 		}
 
@@ -2433,6 +2428,7 @@ ideas = {
 				send_volunteer_size = 1
 				send_volunteer_divisions_required = -0.75
 				lend_lease_tension = -0.30
+				send_volunteers_tension = -0.5
 			}
 		}
 
@@ -2576,7 +2572,6 @@ ideas = {
 				political_power_factor = 0.15
 			}
 		}
-
 
 		SOV_workers_government_idea = {
 
@@ -2746,7 +2741,9 @@ ideas = {
 			}
 
 			modifier = {
-				political_power_factor = 0.15
+				conscription = 0.01
+				consumer_goods_factor = -0.15
+				global_building_slots_factor = -0.1
 			}
 		}
 		SOV_administrative_reforms_idea = {
@@ -2805,7 +2802,6 @@ ideas = {
 			modifier = {
 				intelligence_agency_defense = 0.10
 				army_core_defence_factor = 0.05
-				army_core_attack_factor = 0.05
 				attack_bonus_against_cores = 0.05
 			}
 		}
@@ -3306,11 +3302,6 @@ ideas = {
 		}
 	}
 
-
-
-
-
-
 	hidden_ideas = {
 		SOV_non_communism_aversion_ns = {
 			removal_cost = -1
@@ -3560,6 +3551,7 @@ ideas = {
 			}
 
 			equipment_bonus = {
+
 				small_plane_airframe = {
 					build_cost_ic = -0.05 instant = yes
 				}
@@ -3596,7 +3588,6 @@ ideas = {
 			}
 		}
 
-
 		SOV_purged_junior_army_officers_equipment_effects_1 = {
 			name = SOV_purged_junior_army_officers_1
 
@@ -3614,6 +3605,7 @@ ideas = {
 			}
 
 			equipment_bonus = {
+
 				amphibious_mechanized_equipment = {
 					reliability = -0.1 instant = yes
 				}
@@ -3667,6 +3659,7 @@ ideas = {
 			}
 
 			equipment_bonus = {
+
 				amphibious_mechanized_equipment = {
 					reliability = -0.2 instant = yes
 				}
@@ -3720,6 +3713,7 @@ ideas = {
 			}
 
 			equipment_bonus = {
+
 				amphibious_mechanized_equipment = {
 					reliability = -0.3 instant = yes
 				}
@@ -3757,11 +3751,6 @@ ideas = {
 		}
 	}
 
-
-
-
-
-
 	country = {
 
 		comintern_influence = {
@@ -3798,18 +3787,9 @@ ideas = {
 
 	}
 
-
-
-
-
-
 	tank_manufacturer = {
 
 		designer = yes
-
-
-
-
 
 		SOV_morozov_design_bureau = {
 			name = morozov_design_bureau
@@ -3840,14 +3820,14 @@ ideas = {
 						has_dlc = "No Compromise, No Surrender"
 						FROM = { original_tag = CHI }
 					}
-					FROM = { 
-						has_completed_focus = CHI_secure_the_soviet_border 
+					FROM = {
+						has_completed_focus = CHI_secure_the_soviet_border
 						NOT = {
 							has_country_flag = SOV_accepted_Astrov
 							has_country_flag = SOV_accepted_OKMO
 						}
 					}
-				}	
+				}
 			}
 
 			available = {
@@ -3866,7 +3846,7 @@ ideas = {
 				}
 				IF = {
 					limit = {
-						has_dlc = "No Compromise, No Surrender" 
+						has_dlc = "No Compromise, No Surrender"
 						original_tag = CHI
 					}
 					has_country_flag = SOV_accepted_Morozov
@@ -4102,9 +4082,6 @@ ideas = {
 			}
 		}
 
-
-
-
 		SOV_astrov_design_bureau = {
 			name = astrov_design_bureau
 
@@ -4131,8 +4108,8 @@ ideas = {
 						has_dlc = "No Compromise, No Surrender"
 						FROM = { original_tag = CHI }
 					}
-					FROM = { 
-						has_completed_focus = CHI_secure_the_soviet_border 
+					FROM = {
+						has_completed_focus = CHI_secure_the_soviet_border
 						NOT = {
 							has_country_flag = SOV_accepted_Morozov
 							has_country_flag = SOV_accepted_OKMO
@@ -4143,7 +4120,7 @@ ideas = {
 			available = {
 				IF = {
 					limit = {
-						has_dlc = "No Compromise, No Surrender" 
+						has_dlc = "No Compromise, No Surrender"
 						original_tag = CHI
 					}
 					has_country_flag = SOV_accepted_Astrov
@@ -4378,9 +4355,6 @@ ideas = {
 			}
 		}
 
-
-
-
 		SOV_okmo = {
 			name = okmo
 
@@ -4407,8 +4381,8 @@ ideas = {
 						has_dlc = "No Compromise, No Surrender"
 						FROM = { original_tag = CHI }
 					}
-					FROM = { 
-						has_completed_focus = CHI_secure_the_soviet_border 
+					FROM = {
+						has_completed_focus = CHI_secure_the_soviet_border
 						NOT = {
 							has_country_flag = SOV_accepted_Morozov
 							has_country_flag = SOV_accepted_Astrov
@@ -4420,7 +4394,7 @@ ideas = {
 			available = {
 				IF = {
 					limit = {
-						has_dlc = "No Compromise, No Surrender" 
+						has_dlc = "No Compromise, No Surrender"
 						original_tag = CHI
 					}
 					has_country_flag = SOV_accepted_OKMO
@@ -4654,9 +4628,6 @@ ideas = {
 				}
 			}
 		}
-
-
-
 
 		SOV_mytishchy_machine_building_plant = {
 
@@ -4944,10 +4915,6 @@ ideas = {
 			}
 		}
 
-
-
-
-
 		SOV_kirov = {
 
 			picture = SOV_kirov
@@ -5196,10 +5163,6 @@ ideas = {
 	naval_manufacturer = {
 
 		designer = yes
-
-
-
-
 
 		SOV_nevskoye_design_bureau = {
 			name = nevskoye_design_bureau
@@ -5633,9 +5596,6 @@ ideas = {
 			}
 		}
 
-
-
-
 		SOV_rubin_design_bureau = {
 
 			picture = SOV_rubin_design_bureau
@@ -6055,9 +6015,6 @@ ideas = {
 			}
 		}
 
-
-
-
 		SOV_black_sea_shipyard = {
 
 			picture = SOV_black_sea_shipyard
@@ -6473,9 +6430,6 @@ ideas = {
 				}
 			}
 		}
-
-
-
 
 		SOV_sevastopol_marine_plant = {
 
@@ -6943,10 +6897,6 @@ ideas = {
 
 		designer = yes
 
-
-
-
-
 		SOV_mig_design_bureau = {
 			name = mig_design_bureau
 
@@ -7230,9 +7180,6 @@ ideas = {
 				}
 			}
 		}
-
-
-
 
 		SOV_ilyushin_design_bureau = {
 			name = ilyushin_design_bureau
@@ -7518,10 +7465,6 @@ ideas = {
 			}
 		}
 
-
-
-
-
 		SOV_tupolev_design_bureau = {
 			name = tupolev_design_bureau
 
@@ -7805,9 +7748,6 @@ ideas = {
 				}
 			}
 		}
-
-
-
 
 		SOV_yakovlev_design_bureau = {
 			name = yakovlev_design_bureau
@@ -8094,12 +8034,9 @@ ideas = {
 		}
 	}
 
-
 	materiel_manufacturer = {
 
 		designer = yes
-
-
 
 		SOV_grabin_design_bureau = {
 			name = grabin_design_bureau
@@ -8349,9 +8286,6 @@ ideas = {
 			}
 		}
 
-
-
-
 		SOV_tula_arms_plant = {
 			name = tula_arms_plant
 
@@ -8600,8 +8534,6 @@ ideas = {
 			}
 		}
 
-
-
 		SOV_gaz = {
 			name = gaz
 
@@ -8757,7 +8689,6 @@ ideas = {
 			}
 		}
 
-
 		SOV_gaz_1_3 = {
 			name = gaz
 
@@ -8858,11 +8789,47 @@ ideas = {
 				}
 			}
 		}
+
+		SOV_kolomna_manufacturer = {
+			name = "[SOV_kolomna_locomotive_plant_name_dynamic]"
+
+			picture = SOV_kolomna_alt
+
+			allowed = {
+				original_tag = SOV
+			}
+
+			available = {
+			}
+
+			visible = {
+			}
+
+			ai_will_do = {
+				factor = 0
+			}
+
+			research_bonus = {
+				train_tech = 0.15
+				support_tech = 0.07
+			}
+
+			equipment_bonus = {
+				train_equipment = {
+					build_cost_ic = -0.10
+					armor_value = 0.10
+					air_attack = 0.10
+					instant = yes
+				}
+			}
+
+			cost = 150
+
+			traits = { train_equipment_manufacturer }
+		}
 	}
 
 	industrial_concern = {
-
-
 
 		stalingrad_tractor_factory = {
 
@@ -8907,7 +8874,7 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = -0.05
 			}
-			
+
 			ai_will_do = {
 				base = 2
 				modifier = {
@@ -8916,9 +8883,6 @@ ideas = {
 				}
 			}
 		}
-
-
-
 
 		leningrad_polytechnical_institute = {
 
@@ -8964,9 +8928,6 @@ ideas = {
 				supply_consumption_factor = -0.02
 			}
 		}
-
-
-
 
 		SOV_soviet_railways = {
 
@@ -9028,9 +8989,6 @@ ideas = {
 				mobilization_speed = 0.02
 			}
 		}
-
-
-
 
 		SOV_gosproyektstroy_1 = {
 
@@ -9540,4 +9498,5 @@ ideas = {
 			}
 		}
 
+}
 }

@@ -1,4 +1,4 @@
-KoKi_YJ_GER_decisions_categories = {
+﻿KoKi_YJ_GER_decisions_categories = {
 	KoKi_YJ_GER_decisions_categories_0 = {
 		icon = GFX_decision_generic_consumer_goods
 		allowed = {

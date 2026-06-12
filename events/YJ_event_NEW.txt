@@ -1,11 +1,10 @@
-add_namespace = KoKi_YJ_NEW
-
+﻿add_namespace = KoKi_YJ_NEW
 
 news_event = {
 	id = KoKi_YJ_NEW.1
 	title = KoKi_YJ_NEW.1.title
 	desc = KoKi_YJ_NEW.1.desc
-	
+
 	picture = GFX_news_event_soviet_tanks
 
 	major = yes
@@ -13,7 +12,7 @@ news_event = {
 	immediate = {
 		set_global_flag = KoKi_YJ_NEW_1_flag
 	}
-	
+
 	mean_time_to_happen = {
 		days = 2
 	}
@@ -53,14 +52,14 @@ news_event = {
 			NOT = { tag = SOV }
 		}
 	}
-	
+
 }
 
 news_event = {
 	id = KoKi_YJ_NEW.2
 	title = KoKi_YJ_NEW.2.title
 	desc = KoKi_YJ_NEW.2.desc
-	
+
 	picture = GFX_news_event_generic_usa_treaty
 
 	major = yes
@@ -73,19 +72,19 @@ news_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 2
 	}
 
 	trigger = {
-		ENG = { 
-			has_war_with = GER 
+		ENG = {
+			has_war_with = GER
 			has_war_with = ITA
 			is_in_faction_with = USA
 		}
-		USA = { 
-			has_war_with = GER 
+		USA = {
+			has_war_with = GER
 			has_war_with = ITA
 			is_in_faction_with = ENG
 		}
@@ -95,7 +94,7 @@ news_event = {
 
 	option = {
 		name = KoKi_YJ_NEW.2.a
-		
+
 		trigger = {
 			OR = {
 				TAG = ENG
@@ -135,7 +134,7 @@ news_event = {
 		name = KoKi_YJ_NEW.2.d
 		trigger = {
 			OR = {
-				NOT = { 
+				NOT = {
 					TAG = ENG
 					TAG = USA
 					TAG = MEX
@@ -154,12 +153,11 @@ news_event = {
 	}
 }
 
-
 news_event = {
 	id = KoKi_YJ_NEW.bbls
 	title = KoKi_YJ_NEW.bbls.title
 	desc = KoKi_YJ_NEW.bbls.desc
-	
+
 	picture = GFX_bbls
 
 	major = yes
@@ -196,7 +194,7 @@ news_event = {
 	id = KoKi_YJ_NEW.bfzc
 	title = KoKi_YJ_NEW.bfzc.title
 	desc = KoKi_YJ_NEW.bfzc.desc
-	
+
 	picture = GFX_bfzc
 
 	major = yes

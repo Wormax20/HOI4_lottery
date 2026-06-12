@@ -1,4 +1,4 @@
-KoKi_YJ_decisions_pp = {
+﻿KoKi_YJ_decisions_pp = {
     hidden_effect = {
         if = { limit = { check_variable = { YJ_rng = 1 } } country_event = KoKi_YJ_pp.1 }
         else_if = { limit = { check_variable = { YJ_rng = 2 } } country_event = KoKi_YJ_pp.2 }
@@ -24,7 +24,6 @@ KoKi_YJ_decisions_pp = {
     }
 }
 
-
 YJ_ZY_scripted_effects_1 = {
     hidden_effect = {
         if = { limit = { check_variable = { YJ_rng1 < 15 } } country_event = KoKi_YJ_pp_resource.10 }
@@ -41,14 +40,14 @@ YJ_ZY_scripted_effects_1 = {
 YJ_JL_LJ = {
     hidden_effect = {
         if = {
-            limit = { 
-                NOT = { has_country_flag = YJ_pool_initialized } 
+            limit = {
+                NOT = { has_country_flag = YJ_pool_initialized }
             }
             for_loop_effect = {
                 end = 67
                 compare = less_than
                 value = current_i
-                
+
                 if = {
                     limit = { check_variable = { current_i > 0 } }
                     add_to_array = { YJ_event_pool = current_i }
@@ -58,16 +57,16 @@ YJ_JL_LJ = {
         }
 
         if = {
-            limit = { 
-                check_variable = { YJ_event_pool^num > 0 } 
+            limit = {
+                check_variable = { YJ_event_pool^num > 0 }
             }
-            
+
             set_variable = { pool_size = YJ_event_pool^num }
-            
+
             set_variable = { random_index = 0 }
             set_variable_to_random = { var = random_index min = 0 max = 9999 }
             modulo_variable = { random_index = pool_size }
-            
+
             set_temp_variable = { drawn_event = YJ_event_pool^random_index }
             remove_from_array = { YJ_event_pool = drawn_event }
 

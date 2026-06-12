@@ -1,9 +1,9 @@
-add_namespace = KoKi_YJ_RAJ_event
+﻿add_namespace = KoKi_YJ_RAJ_event
 country_event = {
 	id = KoKi_YJ_RAJ_event.101
 	title = KoKi_YJ_RAJ_event.101.title
 	desc = KoKi_YJ_RAJ_event.101.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -23,8 +23,8 @@ country_event = {
 						type = industrial_complex
 						level = 20
 					}
-		add_offsite_building = { 
-			type = arms_factory 
+		add_offsite_building = {
+			type = arms_factory
 			level = 20
 					}
 		every_controlled_state = {
@@ -112,7 +112,7 @@ country_event = {
 			target = BRM
 			transfer_troops = yes
 		}
-		
+
 		transfer_state = 320
 		transfer_state = 321
 		422 = { add_core_of = root }
@@ -158,13 +158,11 @@ country_event = {
 	}
 }
 
-
-
 country_event = {
 	id = KoKi_YJ_RAJ_event.103
 	title = KoKi_YJ_RAJ_event.103.title
 	desc = KoKi_YJ_RAJ_event.103.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -178,13 +176,11 @@ country_event = {
 	}
 }
 
-
-
 country_event = {
 	id = KoKi_YJ_RAJ_event.104
 	title = KoKi_YJ_RAJ_event.104.title
 	desc = KoKi_YJ_RAJ_event.104.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -194,9 +190,9 @@ country_event = {
 						type = industrial_complex
 						level = 10
 					}
-		add_offsite_building = { 
-			type = arms_factory 
-			level = 10 
+		add_offsite_building = {
+			type = arms_factory
+			level = 10
 					}
 		name = KoKi_YJ_RAJ_event.104.a
 		add_ideas = YJ_RAJ_4_ideas
@@ -210,7 +206,7 @@ country_event = {
 	id = KoKi_YJ_RAJ_event.105
 	title = KoKi_YJ_RAJ_event.105.title
 	desc = KoKi_YJ_RAJ_event.105.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes

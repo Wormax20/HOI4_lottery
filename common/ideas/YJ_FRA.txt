@@ -1,4 +1,4 @@
-ideas = {
+﻿ideas = {
 	country = {
 		YJ_FRA_1_ideas = {
 
@@ -186,7 +186,6 @@ ideas = {
 				conscription_factor = 0.4
 			}
 		}
-
 
 		YJ_FRA_7_ideas = {
 

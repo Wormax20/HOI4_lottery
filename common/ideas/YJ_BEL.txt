@@ -1,6 +1,6 @@
-ideas = {
+﻿ideas = {
 	country = {
-		YJ_BEL_1_ideas = { 
+		YJ_BEL_1_ideas = {
 
 			allowed = {
 				always = no
@@ -26,7 +26,7 @@ ideas = {
 				war_support_weekly = 0.002
 			}
 		}
-	
+
 		YJ_BEL_2_ideas = {
 
 			allowed = {
@@ -51,14 +51,13 @@ ideas = {
 				global_building_slots = 15
 				political_power_gain = 0.10
 			}
-			equipment_bonus = { 
+			equipment_bonus = {
 				armor = {
 					build_cost_ic = -0.05
 					instant = yes
 						}
 			}
 		}
-
 
 		YJ_BEL_3_ideas = {
 
@@ -73,7 +72,6 @@ ideas = {
 			removal_cost = -1
 
 			picture = generic_the_london_naval_treaty
-			
 
 			modifier = {
 				special_forces_attack_factor = 0.1

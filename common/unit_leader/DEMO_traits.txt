@@ -1,24 +1,23 @@
-leader_traits = {
+﻿leader_traits = {
 
-	
-	YJ_traits_1 = { 
+	YJ_traits_1 = {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
 			always = no
 		}
 		allowed = {
-			
+
 		}
 		modifier = {
 			wounded_chance_factor = -0.3
 			max_planning = 0.05
 		}
-		
+
 		non_shared_modifier = {
 			experience_gain_factor = -0.5
 		}
-		
+
 		ai_will_do = {
 			factor = 0
 		}
@@ -26,23 +25,23 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_2 = { 
+	YJ_traits_2 = {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
 			always = no
 		}
 		allowed = {
-			
+
 		}
 		modifier = {
 			wounded_chance_factor = -0.3
 		}
-		
+
 		non_shared_modifier = {
 			experience_gain_factor = 0.4
 		}
-		
+
 		ai_will_do = {
 			factor = 0
 		}
@@ -50,23 +49,23 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_3 = { 
+	YJ_traits_3 = {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
 			always = no
 		}
 		allowed = {
-			
+
 		}
 		modifier = {
 			planning_speed = -0.2
 			max_planning = 0.05
 		}
-		
+
 		non_shared_modifier = {
 		}
-		
+
 		ai_will_do = {
 			factor = 0
 		}
@@ -74,23 +73,23 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_4 = { 
+	YJ_traits_4 = {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
 			always = no
 		}
 		allowed = {
-			
+
 		}
 		modifier = {
 			wounded_chance_factor = 0.2
 		}
-		
+
 		non_shared_modifier = {
 			offence = 0.05
 		}
-		
+
 		ai_will_do = {
 			factor = 0
 		}
@@ -98,24 +97,24 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_5 = { 
+	YJ_traits_5 = {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
 			always = no
 		}
 		allowed = {
-			
+
 		}
 		modifier = {
 			army_morale_factor = 0.1
 		    land_reinforce_rate = 0.05
 		}
-		
+
 		non_shared_modifier = {
-			
+
 		}
-		
+
 		ai_will_do = {
 			factor = 0
 		}
@@ -123,23 +122,23 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_6 = { 
+	YJ_traits_6 = {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
 			always = no
 		}
 		allowed = {
-			
+
 		}
 		modifier = {
 		}
-		
+
 		non_shared_modifier = {
 			offence = 0.1
 			defence = -0.05
 		}
-		
+
 		ai_will_do = {
 			factor = 0
 		}
@@ -147,22 +146,22 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_7 = { 
+	YJ_traits_7 = {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
 			always = no
 		}
 		allowed = {
-			
+
 		}
 		modifier = {
 			wounded_chance_factor = 0.1
 		}
-		
+
 		non_shared_modifier = {
 		}
-		
+
 		ai_will_do = {
 			factor = 0
 		}
@@ -170,23 +169,23 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_9 = { 
+	YJ_traits_9 = {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
 			always = no
 		}
 		allowed = {
-			
+
 		}
 		modifier = {
             recon_factor = 0.05
 		}
-		
+
 		non_shared_modifier = {
 			defence = -0.05
 		}
-		
+
 		ai_will_do = {
 			factor = 0
 		}
@@ -194,24 +193,24 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_10 = { 
+	YJ_traits_10 = {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
 			always = no
 		}
 		allowed = {
-			
+
 		}
 		modifier = {
             max_planning = 0.1
 			supply_consumption_factor = -0.05
 		    planning_speed = -0.1
 		}
-		
+
 		non_shared_modifier = {
 		}
-		
+
 		ai_will_do = {
 			factor = 0
 		}
@@ -219,22 +218,22 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_11 = { 
+	YJ_traits_11 = {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
 			always = no
 		}
 		allowed = {
-			
+
 		}
 		modifier = {
 			army_morale_factor = -0.05
 		}
-		
+
 		non_shared_modifier = {
 		}
-		
+
 		ai_will_do = {
 			factor = 0
 		}
@@ -242,22 +241,22 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_12 = { 
+	YJ_traits_12 = {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
 			always = no
 		}
 		allowed = {
-			
+
 		}
 		modifier = {
 			planning_speed = -0.1
 		}
-		
+
 		non_shared_modifier = {
 		}
-		
+
 		ai_will_do = {
 			factor = 0
 		}
@@ -265,13 +264,13 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_13 = { 
+	YJ_traits_13 = {
 		type = navy
 		trait_type = personality_trait
 		gain_xp = {
-			always = no 
+			always = no
 		}
-	
+
 		modifier = {
 			spotting_chance = 0.1
 		}
@@ -281,22 +280,22 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_14= { 
+	YJ_traits_14= {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
 			always = no
 		}
 		allowed = {
-			
+
 		}
 		modifier = {
 			land_reinforce_rate = 0.02
 		}
-		
+
 		non_shared_modifier = {
 		}
-		
+
 		ai_will_do = {
 			factor = 0
 		}
@@ -304,22 +303,22 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_15= { 
+	YJ_traits_15= {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
 			always = no
 		}
 		allowed = {
-			
+
 		}
 		modifier = {
 			recon_factor = 0.15
 		}
-		
+
 		non_shared_modifier = {
 		}
-		
+
 		ai_will_do = {
 			factor = 0
 		}
@@ -327,25 +326,25 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_16= { 
+	YJ_traits_16= {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
 			always = no
 		}
 		allowed = {
-			
+
 		}
 		modifier = {
 			army_morale_factor = 0.1
 			supply_consumption_factor = -0.05
 			army_defence_factor = 0.05
 		}
-		
+
 		non_shared_modifier = {
 			defence = 0.05
 		}
-		
+
 		ai_will_do = {
 			factor = 0
 		}
@@ -353,22 +352,22 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_17= { 
+	YJ_traits_17= {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
 			always = no
 		}
 		allowed = {
-			
+
 		}
 		modifier = {
 			cas_damage_reduction = 0.2
 		}
-		
+
 		non_shared_modifier = {
 		}
-		
+
 		ai_will_do = {
 			factor = 0
 		}
@@ -376,23 +375,23 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_18= { 
+	YJ_traits_18= {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
 			always = no
 		}
 		allowed = {
-			
+
 		}
 		modifier = {
 			recon_factor = 0.1
 		}
-		
+
 		non_shared_modifier = {
 			offence = 0.05
 		}
-		
+
 		ai_will_do = {
 			factor = 0
 		}
@@ -400,25 +399,25 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_19= { 
+	YJ_traits_19= {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
 			always = no
 		}
 		allowed = {
-			
+
 		}
 		modifier = {
 			planning_speed = -0.1
 			army_morale_factor = 0.1
 			max_planning = 0.05
 		}
-		
+
 		non_shared_modifier = {
 			offence = 0.05
 		}
-		
+
 		ai_will_do = {
 			factor = 0
 		}
@@ -426,14 +425,14 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_20= { 
+	YJ_traits_20= {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
 			always = no
 		}
 		allowed = {
-			
+
 		}
 		modifier = {
 			land_reinforce_rate = -0.01
@@ -446,10 +445,10 @@ leader_traits = {
 			planning_speed = -0.01
 			max_planning = -0.01
 		}
-		
+
 		non_shared_modifier = {
 		}
-		
+
 		ai_will_do = {
 			factor = 0
 		}
@@ -457,24 +456,24 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_21= { 
+	YJ_traits_21= {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
 			always = no
 		}
 		allowed = {
-			
+
 		}
 		modifier = {
 			army_org_regain = 0.05
 			army_defence_factor = -0.05
 			recon_factor = 0.05
 		}
-		
+
 		non_shared_modifier = {
 		}
-		
+
 		ai_will_do = {
 			factor = 0
 		}
@@ -482,22 +481,22 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_22= { 
+	YJ_traits_22= {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
 			always = no
 		}
 		allowed = {
-			
+
 		}
 		modifier = {
 			recon_factor = 0.1
 		}
-		
+
 		non_shared_modifier = {
 		}
-		
+
 		ai_will_do = {
 			factor = 0
 		}
@@ -505,24 +504,24 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_23= { 
+	YJ_traits_23= {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
 			always = no
 		}
 		allowed = {
-			
+
 		}
 		modifier = {
 			wounded_chance_factor = 0.1
 			planning_speed = -0.1
 			max_planning = -0.05
 		}
-		
+
 		non_shared_modifier = {
 		}
-		
+
 		ai_will_do = {
 			factor = 0
 		}
@@ -530,23 +529,23 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_24= { 
+	YJ_traits_24= {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
 			always = no
 		}
 		allowed = {
-			
+
 		}
 		modifier = {
 			army_armor_attack_factor = 0.05
 			army_armor_defence_factor = 0.05
 		}
-		
+
 		non_shared_modifier = {
 		}
-		
+
 		ai_will_do = {
 			factor = 0
 		}
@@ -554,14 +553,14 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_25= { 
+	YJ_traits_25= {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
 			always = no
 		}
 		allowed = {
-			
+
 		}
 		modifier = {
 			recon_factor = 0.05
@@ -569,10 +568,10 @@ leader_traits = {
 			wounded_chance_factor = -0.1
 			land_reinforce_rate = 0.01
 		}
-		
+
 		non_shared_modifier = {
 		}
-		
+
 		ai_will_do = {
 			factor = 0
 		}
@@ -580,14 +579,14 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_26= { 
+	YJ_traits_26= {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
 			always = no
 		}
 		allowed = {
-			
+
 		}
 		modifier = {
 			recon_factor = 0.05
@@ -596,10 +595,10 @@ leader_traits = {
 			land_reinforce_rate = 0.03
 			planning_speed = 0.03
 		}
-		
+
 		non_shared_modifier = {
 		}
-		
+
 		ai_will_do = {
 			factor = 0
 		}
@@ -607,23 +606,23 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_27= { 
+	YJ_traits_27= {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
 			always = no
 		}
 		allowed = {
-			
+
 		}
 		modifier = {
 			land_reinforce_rate = 0.03
 			army_morale_factor = 0.05
 		}
-		
+
 		non_shared_modifier = {
 		}
-		
+
 		ai_will_do = {
 			factor = 0
 		}
@@ -631,23 +630,23 @@ leader_traits = {
 			factor = 0
 		}
 	}
-	YJ_traits_28= { 
+	YJ_traits_28= {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
 			always = no
 		}
 		allowed = {
-			
+
 		}
 		modifier = {
 			max_dig_in_factor = 0.05
 			cas_damage_reduction = 0.05
 		}
-		
+
 		non_shared_modifier = {
 		}
-		
+
 		ai_will_do = {
 			factor = 0
 		}
@@ -656,23 +655,23 @@ leader_traits = {
 		}
 	}
 
-	YJ_traits_NPL= { 
+	YJ_traits_NPL= {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
 			always = no
 		}
 		allowed = {
-			
+
 		}
 		modifier = {
 			political_power_factor = 0.1
 			land_reinforce_rate = 0.03
 		}
-		
+
 		non_shared_modifier = {
 		}
-		
+
 		ai_will_do = {
 			factor = 0
 		}
@@ -681,19 +680,18 @@ leader_traits = {
 		}
 	}
 
-
-	1 = { 
+	1 = {
 		type = land
 		trait_type = personality_trait
 		gain_xp = {
 			always = no
 		}
 		allowed = {
-			
+
 		}
 		attack_skill = 1
 		planning_skill = 1
-		
+
 		attack_skill_factor = 1
 		planning_skill_factor = 1
 		modifier = {
@@ -735,13 +733,13 @@ leader_traits = {
 				movement = 0.1
 			}
 		}
-		
+
 		non_shared_modifier = {
 			experience_gain_factor = 0.2
 			offence = 0.05
 			defence = 0.05
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 		}

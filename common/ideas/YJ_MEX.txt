@@ -1,4 +1,4 @@
-ideas = {
+﻿ideas = {
 	country = {
 		YJ_MEX_1_ideas = {
 
@@ -78,7 +78,7 @@ ideas = {
 			picture = spr_international_brigades
 
 			modifier = {
-				custom_modifier_tooltip = YJ_MEX_3_ideas_tt			
+				custom_modifier_tooltip = YJ_MEX_3_ideas_tt
 			}
 		}
 
@@ -97,7 +97,7 @@ ideas = {
 			picture = generic_acquire_tanks
 
 			modifier = {
-				
+
 			}
 			equipment_bonus = {
 				armor = {
@@ -126,7 +126,7 @@ ideas = {
 			picture = the_long_lance
 
 			modifier = {
-				
+
 			}
 			equipment_bonus = {
 				infantry_equipment = {
@@ -172,7 +172,7 @@ ideas = {
 				air_ground_attack = 0.2
 				ground_attack_factor = 0.05
 			}
-			
+
 		}
 		YJ_MEX_4_ideas = {
 

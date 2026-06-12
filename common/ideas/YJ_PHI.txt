@@ -1,4 +1,4 @@
-ideas = {
+﻿ideas = {
 	country = {
 		YJ_PHI_1_ideas = {
 
@@ -26,7 +26,7 @@ ideas = {
 				surrender_limit = 0.5
 				forced_surrender_limit = 0.5
 			}
-			equipment_bonus = { 
+			equipment_bonus = {
 				ship_hull_cruiser = {
 					instant = yes
 					build_cost_ic = -0.1
@@ -55,7 +55,7 @@ ideas = {
 					instant = yes
 					build_cost_ic = -0.5
 				}
-				
+
 			}
 		}
 
@@ -135,7 +135,6 @@ ideas = {
 				}
 			}
 		}
-
 
 		YJ_PHI_4_ideas = {
 

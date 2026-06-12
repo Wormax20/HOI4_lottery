@@ -1,8 +1,8 @@
-ideas = {
+﻿ideas = {
 	country = {
 
 		BRA_national_defence_fund_idea = {
-			
+
 			allowed = {
 				always = yes
 			}
@@ -12,20 +12,20 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
+
 			picture = SPR_seize_the_gold_reserves
-			
+
 			modifier = {
 
 				consumer_goods_factor = -0.15
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05
-				
+
 			}
 		}
 
 		BRA_defense_of_the_fatherland_idea = {
-			
+
 			allowed = {
 				always = yes
 			}
@@ -35,19 +35,19 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
+
 			picture = SPR_seize_the_gold_reserves
-			
+
 			modifier = {
-				army_defence_factor = 0.05
-				army_attack_factor = 0.05
+				army_defence_factor = 0.1
+				army_attack_factor = 0.1
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05
 			}
 		}
 
 		BRA_rail_investment = {
-			
+
 			allowed = {
 				always = yes
 			}
@@ -57,17 +57,17 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
+
 			picture = generic_build_infrastructure
-			
+
 			modifier = {
 				production_speed_rail_way_factor = 0.1
-				production_speed_supply_node_factor = 0.1 
+				production_speed_supply_node_factor = 0.1
 			}
 		}
 
 		BRA_road_investment = {
-			
+
 			allowed = {
 				always = yes
 			}
@@ -77,16 +77,16 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
+
 			picture = FRA_motorized_focus
-			
+
 			modifier = {
 				production_speed_infrastructure_factor = 0.1
 			}
 		}
 
 		BRA_port_investment = {
-			
+
 			allowed = {
 				always = yes
 			}
@@ -96,9 +96,9 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
+
 			picture = generic_the_london_naval_treaty
-			
+
 			modifier = {
 				production_speed_dockyard_factor = 0.1
 			}
@@ -181,7 +181,7 @@ ideas = {
 			}
 		}
 
-		BRA_radio_nacional_idea = { 
+		BRA_radio_nacional_idea = {
 
 			allowed = {
 				tag = BRA
@@ -194,6 +194,7 @@ ideas = {
 			modifier = {
 				research_speed_factor = 0.04
 				drift_defence_factor = 0.3
+
 				stability_factor = 0.05
 			}
 		}
@@ -209,7 +210,6 @@ ideas = {
 				army_core_attack_factor = 0.1
 			}
 		}
-
 
 		BRA_ethical_internationalism_idea = {
 			allowed = {
@@ -286,7 +286,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			modifier = {
 				encryption = 2
 				encryption_factor = 0.25
@@ -305,7 +305,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			modifier = {
 				war_support_factor = 0.05
 				democratic_drift = 0.01
@@ -324,7 +324,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			modifier = {
 				encryption_factor = 0.05
 				decryption_factor = 0.05
@@ -439,6 +439,7 @@ ideas = {
 			modifier = {
 				stability_factor = 0.05
 				consumer_goods_factor = -0.1
+
 			}
 		}
 
@@ -552,7 +553,6 @@ ideas = {
 			}
 		}
 
-
 		BRA_king_vassouras = {
 			picture = bra_monarchist_uprising
 
@@ -647,7 +647,7 @@ ideas = {
 		}
 
 		BRA_romanticize_the_old_empire_idea = {
-			picture = bra_monarchist_uprising
+			picture = por_monarchist_uprising
 			allowed = {
 				original_tag = BRA
 			}
@@ -663,7 +663,7 @@ ideas = {
 		}
 
 		BRA_undermine_democracy_idea = {
-			picture = bra_monarchist_uprising
+			picture = EST_democratic_opposition
 			allowed = {
 				original_tag = BRA
 			}
@@ -707,9 +707,10 @@ ideas = {
 			}
 
 			modifier = {
+
 				production_speed_dockyard_factor = 0.1
 			}
-		}	
+		}
 
 		BRA_psad_idea = {
 			picture = BRA_dasp
@@ -776,7 +777,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-			
+
 			modifier = {
 				stability_factor = -0.1
 				communism_drift = 0.03
@@ -815,6 +816,7 @@ ideas = {
 			}
 
 			modifier = {
+
 				conscription_factor = 0.1
 				stability_factor = -0.05
 				communism_drift = 0.03
@@ -826,7 +828,7 @@ ideas = {
 
 			allowed = {
 				is_subject = no
-				
+
 			}
 			allowed_civil_war = {
 				always = no
@@ -856,13 +858,13 @@ ideas = {
 				army_attack_factor = 0.1
 			}
 		}
-		
+
 		BRA_promoting_communism = {
 
 			picture = generic_communism_drift_bonus
 
 			allowed = {
-				
+
 			}
 
 			allowed_civil_war = {
@@ -896,7 +898,7 @@ ideas = {
 			}
 		}
 
-		BRA_pro_labor_agreement = { 
+		BRA_pro_labor_agreement = {
 			picture = SWE_saltsjobaden_agreement
 
 			removal_cost = -1
@@ -917,9 +919,9 @@ ideas = {
 			removal_cost = -1
 			picture =  MEX_politicised_army
 
-			modifier = { 
-				army_speed_factor = 0.05
-				army_attack_factor = 0.05
+			modifier = {
+				army_speed_factor = 0.10
+				army_attack_factor = 0.10
 			}
 		}
 
@@ -934,7 +936,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-			
+
 			modifier = {
 				custom_modifier_tooltip = BRA_brown_water_navy_idea_bonus_tt
 			}
@@ -945,10 +947,9 @@ ideas = {
 	tank_manufacturer = {
 		designer = yes
 
-
 		BRA_fiat_company = {
 			picture = fiat
-			
+
 			allowed = {
 				has_dlc = "Trial of Allegiance"
 				original_tag = BRA
@@ -961,18 +962,18 @@ ideas = {
 				motorized_equipment = 0.15
 				armor = 0.15
 			}
-			
+
 			traits = { fast_tank_manufacturer }
-			
+
 			modifier = {
 			}
 		}
 
 	 	BRA_bernadini_manufacturer = {
 		 	picture =  BRA_bernardini
-		 	allowed = {	
+		 	allowed = {
 		 		has_dlc = "Trial of Allegiance"
-		 		tag = BRA 
+		 		tag = BRA
 		 	}
 
 		 	available = {
@@ -989,13 +990,13 @@ ideas = {
 		 					has_completed_focus = SMB_foreign_designs
 		 				}
 		 			}
-		 		} 
+		 		}
 		 	}
 
 			research_bonus = {
 				armor = 0.15
 			}
-			
+
 			traits = { medium_tank_manufacturer }
 		 }
 	}
@@ -1004,8 +1005,9 @@ ideas = {
 		BRA_embraer_manufacturer = {
 
 			picture = BRA_embraer
-			allowed = {	
-				tag = BRA 
+			allowed = {
+
+				tag = BRA
 				has_dlc = "Trial of Allegiance"
 			}
 
@@ -1028,7 +1030,7 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.15
 			}
-			
+
 			traits = { light_aircraft_manufacturer }
 		}
 
@@ -1045,7 +1047,6 @@ ideas = {
 				}
 				has_dlc = "Trial of Allegiance"
 			}
-
 
 			available = {
 				OR = {
@@ -1079,9 +1080,9 @@ ideas = {
 		BRA_amrj_manufacturer = {
 
 			picture = BRA_arsenal_de_marinha
-			allowed = {	
+			allowed = {
 				has_dlc = "Trial of Allegiance"
-				tag = BRA 
+				tag = BRA
 			}
 
 			available = {
@@ -1095,7 +1096,7 @@ ideas = {
 					FROM = {
 						controls_state = 500
 					}
-				} 
+				}
 			}
 
 			research_bonus = {
@@ -1131,7 +1132,7 @@ ideas = {
 						has_completed_focus = ARG_russian_manufacturers
 					}
 					AND = {
-						original_tag = BRA 
+						original_tag = BRA
 						has_completed_focus = BRA_soviet_arms_industry
 					}
 				}
@@ -1146,7 +1147,6 @@ ideas = {
 			modifier = {
 			}
 		}
-
 
 	}
 
@@ -1192,13 +1192,12 @@ ideas = {
 		}
 
 		BRA_ford_motor_company = {
-			
+
 			picture = ford_motor_company
 			allowed = {
 				original_tag = BRA
 				has_dlc = "Trial of Allegiance"
 			}
-			
 
 			available = {
 				has_completed_focus = BRA_expand_fordlandia
@@ -1206,32 +1205,30 @@ ideas = {
 			research_bonus = {
 				motorized_equipment = 0.2
 			}
-			
+
 			traits = { motorized_equipment_manufacturer }
-			
+
 			modifier = {
 			}
 		}
 
-
 		BRA_fnm_manufacturer = {
 			picture = BRA_fnm
-			allowed = { 
+			allowed = {
 				has_dlc = "Trial of Allegiance"
 				tag = BRA
 			}
 
-
 			research_bonus = {
 				motorized_equipment = 0.2
 			}
-			
+
 			traits = { motorized_equipment_manufacturer }
 		}
 
 		BRA_rossi_manufacturer = {
 			picture = BRA_rossi
-			allowed = { 
+			allowed = {
 
 				has_dlc = "Trial of Allegiance"
 				tag = BRA
@@ -1240,13 +1237,13 @@ ideas = {
 			research_bonus = {
 				infantry_weapons = 0.15
 			}
-			
+
 			traits = { infantry_equipment_manufacturer }
-		}			
+		}
 
 		BRA_ddam_manufacturer = {
 			picture = generic_artillery_manufacturer_1
-			allowed = { 
+			allowed = {
 				has_dlc = "Trial of Allegiance"
 				tag = BRA
 			}
@@ -1254,14 +1251,14 @@ ideas = {
 			research_bonus = {
 				artillery = 0.15
 			}
-			
+
 			traits = { artillery_manufacturer }
 		}
 	}
 
 	industrial_concern = {
 
-		BRA_banco_do_brasil_idea = { 
+		BRA_banco_do_brasil_idea = {
 			name = BRA_banco_do_brasil_idea
 			picture = BRA_banco_do_brasil
 			allowed = {
@@ -1272,19 +1269,19 @@ ideas = {
 				has_completed_focus = BRA_banco_do_brasil
 			}
 			visible = {
-				
+
 			}
 			cost = 75
 			removal_cost = 10
 			research_bonus = {
 			}
-			traits = { central_bank } 
+			traits = { central_bank }
 			modifier = {
 				consumer_goods_factor = -0.15
 			}
 		}
 
-		BRA_cprm_idea = { 
+		BRA_cprm_idea = {
 			name = BRA_cprm_idea
 			picture = generic_radio_concern
 			allowed = {
@@ -1292,20 +1289,21 @@ ideas = {
 				original_tag = BRA
 			}
 			available = {
-				
+
 			}
 			visible = {
-				
+
 			}
 			cost = 150
 			removal_cost = 10
 			research_bonus = {
 				electronics = 0.15
+
 			}
-			traits = { electronics_concern } 
+			traits = { electronics_concern }
 		}
 
-		BRA_ef_central_do_brasil_idea = { 
+		BRA_ef_central_do_brasil_idea = {
 			name = BRA_ef_central_do_brasil_idea
 			picture = BRA_estrada_de_ferro_do_brasil
 			allowed = {
@@ -1313,20 +1311,20 @@ ideas = {
 				original_tag = BRA
 			}
 			available = {
-				
+
 			}
 			visible = {
-				
+
 			}
 			cost = 150
 			removal_cost = 10
 			research_bonus = {
 				train_tech = 0.1
 			}
-			traits = { railway_company } 
+			traits = { railway_company }
 		}
 
-		BRA_lloyd_brasileiro_idea = { 
+		BRA_lloyd_brasileiro_idea = {
 			name = BRA_lloyd_brasileiro_idea
 			picture = BRA_lloyd_brasilero
 			allowed = {
@@ -1334,10 +1332,10 @@ ideas = {
 				original_tag = BRA
 			}
 			available = {
-				
+
 			}
 			visible = {
-				
+
 			}
 			cost = 150
 			removal_cost = 10
@@ -1351,10 +1349,10 @@ ideas = {
 				repair_speed_factor = 0.1
 				production_speed_dockyard_factor = 0.1
 			}
-			traits = { ICE_shipping_concern } 
+			traits = { ICE_shipping_concern }
 		}
 
-		BRA_departamento_nacional_do_cafe_idea = { 
+		BRA_departamento_nacional_do_cafe_idea = {
 			name = BRA_departamento_nacional_do_cafe_idea
 			picture = BRA_departamento_nacional_do_cafe
 			allowed = {
@@ -1365,18 +1363,17 @@ ideas = {
 				has_completed_focus = BRA_coffee_crisis_aftermath
 			}
 			visible = {
-				
+
 			}
 			cost = 50
 			removal_cost = 10
 			research_bonus = {
 				industry = 0.1
 			}
-			traits = { industrial_concern } 
+			traits = { industrial_concern }
 			modifier = {
 				production_speed_industrial_complex_factor = 0.05
 			}
 		}
 	}
 }
-

@@ -1,4 +1,4 @@
-YJ_count_all_factory = {
+﻿YJ_count_all_factory = {
 	every_country = {
 		if = {
 			limit = {

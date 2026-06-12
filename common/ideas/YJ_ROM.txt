@@ -1,4 +1,4 @@
-ideas = {
+﻿ideas = {
 	country = {
 		YJ_ROM_1_ideas = {
 
@@ -154,7 +154,7 @@ ideas = {
 			modifier = {
 			}
 		}
-		
+
 		YJ_ROM_04_ideas = {
 
 			allowed = {
@@ -178,7 +178,7 @@ ideas = {
 				supply_node_range = 0.1
 			}
 		}
-		
+
 		YJ_ROM_5_ideas = {
 
 			allowed = {

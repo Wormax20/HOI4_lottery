@@ -1,5 +1,4 @@
-characters={ 
-
+﻿characters={
 
 	PRC_mao_zedong={
 		instance = {
@@ -8,6 +7,7 @@ characters={
 			}
 
 			name=PRC_mao_zedong
+			
 			portraits={
 				army={
 					large="GFX_portrait_prc_mao_zedong"
@@ -28,12 +28,10 @@ characters={
 				legacy_id=-1
 				visible = {
 					NOT = {
-						has_character_flag = PRC_dismissed_advisor 
+						has_character_flag = PRC_dismissed_advisor
 					}
 				}
 			}
-			
-
 
 			advisor={
 				slot = political_advisor
@@ -42,14 +40,14 @@ characters={
 					original_tag  = PRC
 				}
 				traits  = {
-					PRC_agrarian_revolutionary 
+					PRC_agrarian_revolutionary
 				}
 				cost = 100
 				available = {
 					NOT = {
 						has_country_leader = {
-							ruling_only = yes 
-							character = PRC_mao_zedong 
+							ruling_only = yes
+							character = PRC_mao_zedong
 						}
 					}
 					custom_trigger_tooltip = {
@@ -90,7 +88,7 @@ characters={
 				}
 				visible = {
 					NOT = {
-						has_character_flag = PRC_dismissed_advisor 
+						has_character_flag = PRC_dismissed_advisor
 					}
 				}
 
@@ -106,6 +104,7 @@ characters={
 					PRC_guerilla_warfare_theorist
 				}
 				available = {
+
 					OR = {
 						has_completed_focus = PRC_burn_the_paper_tigers
 						has_completed_focus = PRC_promote_guerilla_warfare
@@ -130,6 +129,7 @@ characters={
 			}
 
 			name=PRC_mao_zedong
+			
 			portraits={
 				army={
 					large="GFX_portrait_prc_mao_zedong"
@@ -158,9 +158,6 @@ characters={
 		}
 	}
 
-
-
-
 	PRC_zhang_guotao = {
 		name = PRC_zhang_guotao
 		portraits = {
@@ -172,7 +169,7 @@ characters={
 				large = GFX_portrait_PRC_zhang_guotao
 				small = GFX_portrait_PRC_zhang_guotao_civilian_small
 			}
-		} 
+		}
 
 		field_marshal = {
 			traits={ infantry_officer }
@@ -202,7 +199,7 @@ characters={
 			allowed = {
 				original_tag = PRC
 			}
-			
+
 			ai_will_do = {
 				base = 5
 				modifier = {
@@ -236,7 +233,7 @@ characters={
 			}
 			cost = 100
 			traits  = {
-				PRC_dubious_loyalty 
+				PRC_dubious_loyalty
 			}
 			ai_will_do = {
 				base = 5
@@ -248,8 +245,8 @@ characters={
 			available = {
 				NOT = {
 					has_country_leader = {
-						ruling_only = yes 
-						character = PRC_zhang_guotao 
+						ruling_only = yes
+						character = PRC_zhang_guotao
 					}
 				}
 				custom_trigger_tooltip = {
@@ -281,8 +278,9 @@ characters={
 		portraits = {
 			civilian={
 				large = GFX_portrait_PRC_guotao_and_mao
+
 			}
-		} 
+		}
 
 	}
 
@@ -293,8 +291,7 @@ characters={
 				large = GFX_portrait_PRC_wang_ming
 				small = GFX_portrait_PRC_wang_ming_small
 			}
-		} 
-
+		}
 
 		advisor={
 			slot = political_advisor
@@ -316,9 +313,9 @@ characters={
 			}
 			available = {
 				NOT = {
-					has_country_leader = { 
-						ruling_only = yes 
-						character = PRC_wang_ming 
+					has_country_leader = {
+						ruling_only = yes
+						character = PRC_wang_ming
 					}
 				}
 				custom_trigger_tooltip = {
@@ -357,7 +354,7 @@ characters={
 				large = GFX_portrait_PRC_bo_gu
 				small = GFX_portrait_PRC_bo_gu_small
 			}
-		} 
+		}
 
 		advisor={
 			slot = political_advisor
@@ -367,7 +364,7 @@ characters={
 				original_tag  = PRC
 			}
 			cost = 100
-			traits  = { 
+			traits  = {
 				PRC_28_bolshevik_trait_bo_gu
 			}
 			ai_will_do = {
@@ -379,9 +376,9 @@ characters={
 			}
 			available = {
 				NOT = {
-					has_country_leader = { 
-						ruling_only = yes 
-						character = PRC_bo_gu 
+					has_country_leader = {
+						ruling_only = yes
+						character = PRC_bo_gu
 					}
 				}
 				custom_trigger_tooltip = {
@@ -418,7 +415,6 @@ characters={
 		}
 	}
 
-	
 PRC_zhang_wentian = {
 		name = PRC_zhang_wentian
 		portraits = {
@@ -426,7 +422,7 @@ PRC_zhang_wentian = {
 				large = GFX_portrait_PRC_zhang_wentian
 				small = GFX_portrait_PRC_zhang_wentian_small
 			}
-		} 
+		}
 
 		country_leader = {
 			ideology = marxism
@@ -443,7 +439,7 @@ PRC_zhang_wentian = {
 			}
 			idea_token = PRC_zhang_wentian
 			traits  = {
-				PRC_agricultural_reformist 
+				PRC_agricultural_reformist
 			}
 			ai_will_do = {
 				base = 5
@@ -455,15 +451,15 @@ PRC_zhang_wentian = {
 			available = {
 				NOT = {
 					has_country_leader = {
-						ruling_only = yes 
-						character = PRC_zhang_wentian 
+						ruling_only = yes
+						character = PRC_zhang_wentian
 					}
 				}
 			}
 		}
 
 	}
-	
+
 	PRC_kwong_hu={
 		name=PRC_kwong_hu
 		portraits={
@@ -508,7 +504,6 @@ PRC_zhang_wentian = {
 		}
 	}
 
-
 	PRC_zhou_enlai={
 		instance = {
 			allowed = {
@@ -534,6 +529,7 @@ PRC_zhang_wentian = {
 					PRC_kang_sheng = {
 						is_hired_as_advisor = no
 					}
+
 					}
 				ai_will_do = {
 					base = 5
@@ -566,6 +562,7 @@ PRC_zhang_wentian = {
 					PRC_multi_talented_diplomat_no_lar
 				}
 				available = {
+
 				}
 				ai_will_do = {
 					base = 5
@@ -594,21 +591,21 @@ PRC_zhang_wentian = {
 					original_tag  = PRC
 				}
 				traits  = {
-					ideological_crusader 
+					ideological_crusader
 				}
 			}
-		}	
+		}
 	}
 	PRC_deng_xiaoping = {
 		instance = {
-			allowed = { 
+			allowed = {
 				has_dlc = "No Compromise, No Surrender"
 			}
 			name = PRC_deng_xiaoping
 			portraits = {
 				army = { small = GFX_portrait_PRC_deng_xiaoping_small }
 			}
-			
+
 			advisor={
 				allowed = {
 					original_tag = PRC
@@ -621,7 +618,7 @@ PRC_zhang_wentian = {
 				slot = political_advisor
 				idea_token = PRC_deng_xiaoping
 				traits  = {
-					PRC_promising_future 
+					PRC_promising_future
 				}
 				ai_will_do = {
 					base = 5
@@ -647,21 +644,21 @@ PRC_zhang_wentian = {
 				allowed = {
 					OR = {
 						original_tag  = PRC
-						is_chinese_warlord = yes 
+						is_chinese_warlord = yes
 					}
 				}
 				available  = {
-					has_completed_focus  = PRC_socialist_market_economy 
+					has_completed_focus  = PRC_socialist_market_economy
 				}
 				idea_token = PRC_deng_xiaoping
 				traits  = {
-					captain_of_industry 
+					captain_of_industry
 				}
 			}
 		}
 	}
 
-	PRC_xie_juezai={ 
+	PRC_xie_juezai={
 		name=PRC_xie_juezai
 		portraits={
 			civilian={
@@ -684,8 +681,7 @@ PRC_zhang_wentian = {
 		}
 	}
 
-
-	PRC_lin_boqu={ 
+	PRC_lin_boqu={
 		name=PRC_lin_boqu
 		portraits={
 			civilian={
@@ -716,7 +712,7 @@ PRC_zhang_wentian = {
 			name=PRC_liu_shaoqi
 			portraits={
 				civilian={
-					small="GFX_idea_PRC_liu_shaoqi" 
+					small="GFX_idea_PRC_liu_shaoqi"
 				}
 			}
 			advisor={
@@ -731,7 +727,7 @@ PRC_zhang_wentian = {
 					}
 				}
 				traits  = {
-					PRC_labor_rights_advocate 
+					PRC_labor_rights_advocate
 				}
 				ai_will_do = {
 					base = 3
@@ -741,12 +737,12 @@ PRC_zhang_wentian = {
 
 		instance = {
 			allowed = {
-				NOT = { has_dlc = "No Compromise, No Surrender" } 
+				NOT = { has_dlc = "No Compromise, No Surrender" }
 			}
 			name=PRC_liu_shaoqi
 			portraits={
 				civilian={
-					small="GFX_idea_PRC_liu_shaoqi" 
+					small="GFX_idea_PRC_liu_shaoqi"
 				}
 			}
 			advisor={
@@ -756,15 +752,15 @@ PRC_zhang_wentian = {
 					original_tag  = PRC
 				}
 				traits  = {
-					silent_workhorse 
+					silent_workhorse
 				}
 			}
 		}
 	}
 
 	PRC_dong_biwu={
-		instance = { 
-			allowed = { 
+		instance = {
+			allowed = {
 				has_dlc = "No Compromise, No Surrender"
 			}
 			name=PRC_dong_biwu
@@ -778,24 +774,24 @@ PRC_zhang_wentian = {
 				idea_token = PRC_dong_biwu
 				allowed  = {
 					original_tag  = PRC
-					
+
 				}
 				traits  = {
-					marxist_philosopher 
+					marxist_philosopher
 				}
 				ai_will_do  = {
 					base  = 1.000
 				}
 				available = {
-					
+
 				}
 			}
 		}
-		instance = { 
-			allowed = { 
-				NOT = { 
+		instance = {
+			allowed = {
+				NOT = {
 					has_dlc = "No Compromise, No Surrender"
-				} 
+				}
 				has_dlc = "Waking the Tiger"
 			}
 			name=PRC_dong_biwu
@@ -809,16 +805,16 @@ PRC_zhang_wentian = {
 				idea_token = PRC_dong_biwu
 				allowed  = {
 					original_tag  = PRC
-					
+
 				}
 				traits  = {
-					popular_figurehead 
+					popular_figurehead
 				}
 				ai_will_do  = {
 					base  = 1.000
 				}
 				available = {
-					
+
 				}
 			}
 		}
@@ -841,7 +837,7 @@ PRC_zhang_wentian = {
 			}
 			idea_token = PRC_deng_zihiu
 			traits  = {
-				PRC_agricultural_reformist 
+				PRC_agricultural_reformist
 			}
 			ai_will_do  = {
 				base  = 1.000
@@ -850,7 +846,7 @@ PRC_zhang_wentian = {
 				has_completed_focus = PRC_agricultural_reform
 			}
 		}
-		corps_commander={ 
+		corps_commander={
 			traits={ guerilla_fighter }
 			skill=2
 			attack_skill=2
@@ -862,17 +858,16 @@ PRC_zhang_wentian = {
 
 	}
 
-
-
-	PRC_li_zhen={ 
+	PRC_li_zhen={
 		name=PRC_li_zhen
+		
 		portraits={
 			civilian={
 				large = GFX_portrait_PRC_li_zhen
 				small = GFX_portrait_PRC_li_zhen_small
 			}
 		}
-		advisor={ 
+		advisor={
 			allowed  = {
 				original_tag  = PRC
 				has_dlc = "No Compromise, No Surrender"
@@ -880,14 +875,14 @@ PRC_zhang_wentian = {
 			slot = political_advisor
 			idea_token = PRC_li_zhen
 			traits  = {
-				PRC_president_female_officers 
+				PRC_president_female_officers
 			}
 			ai_will_do  = {
 				base  = 1.000
 			}
 		}
 
-		corps_commander={ 
+		corps_commander={
 			traits={ guerilla_fighter PRC_survivor_of_the_long_march }
 			skill=3
 			attack_skill=3
@@ -898,7 +893,7 @@ PRC_zhang_wentian = {
 		}
 	}
 
-	PRC_li_lisan={ 
+	PRC_li_lisan={
 		name=PRC_li_lisan
 		portraits={
 			civilian={
@@ -913,7 +908,7 @@ PRC_zhang_wentian = {
 			slot = political_advisor
 			idea_token = PRC_li_lisan
 			traits  = {
-				PRC_holding_the_line 
+				PRC_holding_the_line
 			}
 			ai_will_do  = {
 				base  = 1.000
@@ -936,7 +931,7 @@ PRC_zhang_wentian = {
 		}
 	}
 
-	PRC_gao_gang={ 
+	PRC_gao_gang={
 		instance = {
 			allowed = { has_dlc = "No Compromise, No Surrender"}
 			name=PRC_gao_gang
@@ -954,14 +949,14 @@ PRC_zhang_wentian = {
 					original_tag  = PRC
 				}
 				traits  = {
-					PRC_charming_revoluionary 
+					PRC_charming_revoluionary
 				}
 				ai_will_do  = {
 					base  = 1.000
 				}
 			}
 
-			corps_commander={ 
+			corps_commander={
 				traits={ infantry_officer organizer }
 				skill=2
 				attack_skill=1
@@ -1020,7 +1015,7 @@ PRC_zhang_wentian = {
 				}
 			}
 			traits  = {
-				socialist_journalist 
+				socialist_journalist
 			}
 			ai_will_do  = {
 				base  = 1.000
@@ -1048,7 +1043,7 @@ PRC_zhang_wentian = {
 				}
 			}
 			traits  = {
-				PRC_soviet_negotiator 
+				PRC_soviet_negotiator
 			}
 			ai_will_do  = {
 				base  = 1.000
@@ -1056,7 +1051,7 @@ PRC_zhang_wentian = {
 		}
 	}
 
-	PRC_wang_jiaxiang={ 
+	PRC_wang_jiaxiang={
 		name=PRC_wang_jiaxiang
 		portraits={
 			civilian={
@@ -1071,7 +1066,7 @@ PRC_zhang_wentian = {
 				has_dlc = "No Compromise, No Surrender"
 			}
 			traits  = {
-				PRC_avid_maoist 
+				PRC_avid_maoist
 			}
 			ai_will_do  = {
 				base  = 1.000
@@ -1105,7 +1100,7 @@ PRC_zhang_wentian = {
 				has_dlc = "No Compromise, No Surrender"
 			}
 			traits  = {
-				PRC_head_of_state_bank 
+				PRC_head_of_state_bank
 			}
 			ai_will_do  = {
 				base  = 1.000
@@ -1135,13 +1130,13 @@ PRC_zhang_wentian = {
 				has_dlc = "No Compromise, No Surrender"
 			}
 			traits  = {
-				socdem_reformist 
+				socdem_reformist
 			}
 			ai_will_do  = {
 				base  = 1.000
 			}
 			available = {
-				has_completed_focus = PRC_adopt_sun_yat_sens_principles 
+				has_completed_focus = PRC_adopt_sun_yat_sens_principles
 			}
 		}
 	}
@@ -1164,7 +1159,7 @@ PRC_zhang_wentian = {
 				has_completed_focus = PRC_found_the_academy_of_science
 			}
 			traits  = {
-				AUS_minister_of_education 
+				AUS_minister_of_education
 			}
 			ai_will_do  = {
 				base  = 1.000
@@ -1172,7 +1167,7 @@ PRC_zhang_wentian = {
 		}
 	}
 
-	PRC_chen_changhao={ 
+	PRC_chen_changhao={
 		name=PRC_chen_changhao
 		portraits={
 			civilian={
@@ -1197,8 +1192,6 @@ PRC_zhang_wentian = {
 			}
 		}
 	}
-
-	
 
 	PRC_kang_sheng = {
 		instance = {
@@ -1228,7 +1221,7 @@ PRC_zhang_wentian = {
 				idea_token = PRC_kang_sheng
 				cost = 75
 				traits  = {
-					PRC_trained_by_the_nkvd 
+					PRC_trained_by_the_nkvd
 				}
 				ai_will_do  = {
 					base  = 1.000
@@ -1261,7 +1254,7 @@ PRC_zhang_wentian = {
 				idea_token = PRC_kang_sheng
 				cost = 75
 				traits  = {
-					prince_of_terror 
+					prince_of_terror
 				}
 				ai_will_do  = {
 					base  = 1.000
@@ -1273,7 +1266,7 @@ PRC_zhang_wentian = {
 			allowed = {
 				NOT = {
 					has_dlc = "No Compromise, No Surrender"
-				}		
+				}
 			}
 
 			name = PRC_kang_sheng
@@ -1290,13 +1283,13 @@ PRC_zhang_wentian = {
 				allowed = {
 					OR = {
 						original_tag  = PRC
-						is_chinese_warlord = yes 
+						is_chinese_warlord = yes
 					}
 				}
 				idea_token = PRC_kang_sheng
 				cost = 75
 				traits  = {
-					prince_of_terror 
+					prince_of_terror
 				}
 				ai_will_do  = {
 					base  = 1.000
@@ -1319,11 +1312,10 @@ PRC_zhang_wentian = {
 				original_tag  = PRC
 			}
 			traits  = {
-				armaments_organizer 
+				armaments_organizer
 			}
 		}
 	}
-
 
 	PRC_he_yuandang={
 		name=PRC_he_yuandang
@@ -1339,16 +1331,14 @@ PRC_zhang_wentian = {
 				original_tag  = PRC
 			}
 			traits  = {
-				war_industrialist 
+				war_industrialist
 			}
 		}
 	}
 
-
-
-
-	PRC_cai_chang={ 
+	PRC_cai_chang={
 		name=PRC_cai_chang
+		
 		portraits={
 			civilian={
 				small = GFX_portrait_PRC_cai_chang
@@ -1367,7 +1357,7 @@ PRC_zhang_wentian = {
 		}
 	}
 
-	PRC_wu_yuzhang={ 
+	PRC_wu_yuzhang={
 		name=PRC_wu_yuzhang
 		portraits={
 			civilian={
@@ -1387,8 +1377,7 @@ PRC_zhang_wentian = {
 		}
 	}
 
-
-	PRC_chen_yun={ 
+	PRC_chen_yun={
 		instance = {
 			allowed = {
 				has_dlc = "No Compromise, No Surrender"
@@ -1414,7 +1403,7 @@ PRC_zhang_wentian = {
 				}
 			}
 		}
-		
+
 		instance = {
 			allowed = {
 				has_dlc = "No Compromise, No Surrender"
@@ -1442,10 +1431,7 @@ PRC_zhang_wentian = {
 		}
 	}
 
-
-
-
-	PRC_chen_tanqiu={ 
+	PRC_chen_tanqiu={
 		instance = {
 			allowed = {
 				has_dlc = "No Compromise, No Surrender"
@@ -1474,7 +1460,7 @@ PRC_zhang_wentian = {
 		instance = {
 			allowed = {
 				has_dlc = "No Compromise, No Surrender"
-				NOT = { 
+				NOT = {
 					has_dlc = "La Resistance"
 				}
 			}
@@ -1501,8 +1487,7 @@ PRC_zhang_wentian = {
 
 	}
 
-
-	PRC_chen_shaomin={ 
+	PRC_chen_shaomin={
 		name=PRC_chen_shaomin
 		portraits={
 			civilian={
@@ -1525,8 +1510,9 @@ PRC_zhang_wentian = {
 		}
 	}
 
-	PRC_deng_yingchao={ 
+	PRC_deng_yingchao={
 		name=PRC_deng_yingchao
+		
 		portraits={
 			civilian={
 				small = GFX_portrait_PRC_deng_yingchao
@@ -1548,7 +1534,7 @@ PRC_zhang_wentian = {
 		}
 	}
 
-	PRC_bo_yibo={ 
+	PRC_bo_yibo={
 		instance = {
 			allowed = {
 				has_dlc = "No Compromise, No Surrender"
@@ -1599,14 +1585,12 @@ PRC_zhang_wentian = {
 				ai_will_do  = {
 					base  = 1.000
 				}
-			}	
+			}
 		}
-		
 
 	}
 
-
-	PRC_shao_shiping={ 
+	PRC_shao_shiping={
 		name=PRC_shao_shiping
 		portraits={
 			civilian={
@@ -1629,7 +1613,7 @@ PRC_zhang_wentian = {
 		}
 	}
 
-	PRC_pavel_mif={ 
+	PRC_pavel_mif={
 		name=PRC_pavel_mif
 		portraits={
 			civilian={
@@ -1673,7 +1657,7 @@ PRC_zhang_wentian = {
 		}
 	}
 
-	PRC_deng_fa={ 
+	PRC_deng_fa={
 		instance = {
 			allowed = {
 				AND = {
@@ -1687,7 +1671,7 @@ PRC_zhang_wentian = {
 					small = GFX_portrait_PRC_deng_fa_small
 				}
 			}
-			advisor={	
+			advisor={
 				slot = political_advisor
 				idea_token = PRC_deng_fa
 				ledger = army
@@ -1707,9 +1691,9 @@ PRC_zhang_wentian = {
 		instance = {
 			allowed = {
 				has_dlc = "No Compromise, No Surrender"
-				NOT = { 
+				NOT = {
 					has_dlc = "La Resistance"
-				} 
+				}
 			}
 			name=PRC_deng_fa
 			portraits={
@@ -1717,7 +1701,7 @@ PRC_zhang_wentian = {
 					small = GFX_portrait_PRC_deng_fa_small
 				}
 			}
-			advisor={	
+			advisor={
 				slot = political_advisor
 				idea_token = PRC_deng_fa
 				ledger = army
@@ -1737,16 +1721,9 @@ PRC_zhang_wentian = {
 
 	}
 
-
-
-
-
-
-
-
 	PRC_zhu_de={
 		instance = {
-			allowed = { has_dlc = "No Compromise, No Surrender"} 
+			allowed = { has_dlc = "No Compromise, No Surrender"}
 			name=PRC_zhu_de
 			portraits={
 				army={
@@ -1768,7 +1745,7 @@ PRC_zhang_wentian = {
 					base = 1.000
 				}
 			}
-			
+
 			field_marshal={
 				traits={ brilliant_strategist organizer PRC_survivor_of_the_long_march }
 				skill=4
@@ -1802,7 +1779,7 @@ PRC_zhang_wentian = {
 					base = 1.000
 				}
 			}
-			
+
 			corps_commander={
 				traits={ infantry_officer organizer }
 				skill=4
@@ -1877,7 +1854,7 @@ PRC_zhang_wentian = {
 		}
 	}
 
-	PRC_otto_braun={ 
+	PRC_otto_braun={
 		instance = {
 			allowed = {
 				has_dlc = "No Compromise, No Surrender"
@@ -1957,7 +1934,7 @@ PRC_zhang_wentian = {
 				}
 			}
 		}
-		
+
 	}
 
 	PRC_ma_jin={
@@ -1967,7 +1944,7 @@ PRC_zhang_wentian = {
 				small="GFX_idea_generic_army_asia_5"
 			}
 		}
-		advisor={	
+		advisor={
 			slot = army_chief
 			idea_token = PRC_ma_jin
 			allowed = {
@@ -1982,7 +1959,6 @@ PRC_zhang_wentian = {
 			}
 		}
 	}
-
 
 	PRC_ziao_jingguang={
 		instance = {
@@ -2052,14 +2028,14 @@ PRC_zhang_wentian = {
 		}
 	}
 
-	PRC_gao_qiu={ 
+	PRC_gao_qiu={
 		name=PRC_gao_qiu
 		portraits={
 			army={
 				small="GFX_idea_generic_navy_asia_2"
 			}
 		}
-		advisor={	
+		advisor={
 			slot = navy_chief
 			idea_token = PRC_gao_qiu
 			allowed = {
@@ -2078,15 +2054,14 @@ PRC_zhang_wentian = {
 		}
 	}
 
-
-	PRC_luo_shunchu={ 
+	PRC_luo_shunchu={
 		name=PRC_luo_shunchu
 		portraits={
 			army={
 				small = GFX_portrait_PRC_luo_shunchu_small
 			}
 		}
-		advisor={	
+		advisor={
 			slot = navy_chief
 			idea_token = PRC_luo_shunchu
 			ledger = army
@@ -2103,11 +2078,6 @@ PRC_zhang_wentian = {
 			}
 		}
 	}
-
-
-
-
-
 
 	PRC_fang_zeyi={
 		name=PRC_fang_zeyi
@@ -2162,7 +2132,6 @@ PRC_zhang_wentian = {
 		}
 	}
 
-
 	PRC_liu_yalou={
 		name=PRC_liu_yalou
 		portraits={
@@ -2210,7 +2179,6 @@ PRC_zhang_wentian = {
 			}
 		}
 	}
-
 
 	PRC_chen_yi={
 		instance = {
@@ -2288,7 +2256,7 @@ PRC_zhang_wentian = {
 		}
 	}
 
-	PRC_xu_xiangqian={ 
+	PRC_xu_xiangqian={
 		instance = {
 			allowed = { has_dlc = "No Compromise, No Surrender" }
 			name=PRC_xu_xiangqian
@@ -2297,7 +2265,7 @@ PRC_zhang_wentian = {
 					small = GFX_portrait_PRC_xu_xiangqin_small
 				}
 			}
-			advisor={	
+			advisor={
 				slot = high_command
 				idea_token = PRC_xu_xiangqian
 				ledger = army
@@ -2314,9 +2282,9 @@ PRC_zhang_wentian = {
 			}
 		}
 		instance = {
-			allowed = { 
+			allowed = {
 				NOT = {
-					has_dlc = "No Compromise, No Surrender" 
+					has_dlc = "No Compromise, No Surrender"
 				}
 			}
 			name=PRC_xu_xiangqian
@@ -2325,7 +2293,7 @@ PRC_zhang_wentian = {
 					small="GFX_idea_PRC_xu_xiangqian"
 				}
 			}
-			advisor={	
+			advisor={
 				slot = high_command
 				idea_token = PRC_xu_xiangqian
 				ledger = army
@@ -2343,7 +2311,7 @@ PRC_zhang_wentian = {
 		}
 	}
 
-	PRC_nie_rongzhen={ 
+	PRC_nie_rongzhen={
 		instance = {
 			allowed = { has_dlc = "No Compromise, No Surrender" }
 			name=PRC_nie_rongzhen
@@ -2379,9 +2347,9 @@ PRC_zhang_wentian = {
 			}
 		}
 		instance = {
-			allowed = { 
+			allowed = {
 				NOT = {
-					has_dlc = "No Compromise, No Surrender" 
+					has_dlc = "No Compromise, No Surrender"
 				}
 			}
 			name=PRC_nie_rongzhen
@@ -2423,7 +2391,7 @@ PRC_zhang_wentian = {
 				idea_token = PRC_chen_geng
 				ledger = army
 				traits = {
-					PRC_rocket_force 
+					PRC_rocket_force
 				}
 				cost = 100
 				ai_will_do = {
@@ -2450,7 +2418,7 @@ PRC_zhang_wentian = {
 					small="GFX_idea_PRC_chen_geng"
 				}
 			}
-			advisor={	
+			advisor={
 				slot = high_command
 				idea_token = PRC_chen_geng
 				ledger = army
@@ -2467,7 +2435,7 @@ PRC_zhang_wentian = {
 
 	PRC_zuo_quan={
 		instance = {
-			allowed = { has_dlc = "No Compromise, No Surrender" } 
+			allowed = { has_dlc = "No Compromise, No Surrender" }
 			name=PRC_zuo_quan
 			portraits={
 				army={
@@ -2475,7 +2443,7 @@ PRC_zhang_wentian = {
 					large = GFX_portrait_PRC_zuo_quan
 				}
 			}
-			advisor={	
+			advisor={
 				slot = high_command
 				idea_token = PRC_zuo_quan
 				ledger = army
@@ -2503,10 +2471,10 @@ PRC_zhang_wentian = {
 		}
 
 		instance = {
-			allowed = { 
-				NOT = { 
-					has_dlc = "No Compromise, No Surrender" 
-				} 
+			allowed = {
+				NOT = {
+					has_dlc = "No Compromise, No Surrender"
+				}
 			}
 			name=PRC_zuo_quan
 			portraits={
@@ -2514,7 +2482,7 @@ PRC_zhang_wentian = {
 					small= GFX_portrait_PLACEHOLDER_small
 				}
 			}
-			advisor={	
+			advisor={
 				slot = high_command
 				idea_token = PRC_zuo_quan
 				ledger = army
@@ -2531,11 +2499,11 @@ PRC_zhang_wentian = {
 			}
 		}
 	}
-	
+
 	PRC_ye_jianying={
 		instance = {
-			allowed = { 
-				has_dlc = "No Compromise, No Surrender" 
+			allowed = {
+				has_dlc = "No Compromise, No Surrender"
 				has_dlc = "La Resistance"
 			}
 			name=PRC_ye_jianying
@@ -2553,7 +2521,7 @@ PRC_zhang_wentian = {
 					original_tag = PRC
 				}
 				traits = {
-					army_radio_intelligence_1 
+					army_radio_intelligence_1
 				}
 				cost = 100
 				ai_will_do = {
@@ -2571,10 +2539,10 @@ PRC_zhang_wentian = {
 			}
 		}
 		instance = {
-			allowed = { 
-				has_dlc = "No Compromise, No Surrender" 
-				NOT = { 
-					has_dlc = "La Resistance" 
+			allowed = {
+				has_dlc = "No Compromise, No Surrender"
+				NOT = {
+					has_dlc = "La Resistance"
 				}
 			}
 			name=PRC_ye_jianying
@@ -2611,10 +2579,10 @@ PRC_zhang_wentian = {
 		}
 
 		instance = {
-			allowed = { 
-				NOT = { 
-					has_dlc = "No Compromise, No Surrender" 
-				} 
+			allowed = {
+				NOT = {
+					has_dlc = "No Compromise, No Surrender"
+				}
 			}
 			name=PRC_ye_jianying
 			portraits={
@@ -2637,7 +2605,7 @@ PRC_zhang_wentian = {
 				}
 				cost = 100
 			}
-		}	
+		}
 	}
 
 	PRC_liang_shen={
@@ -2647,7 +2615,7 @@ PRC_zhang_wentian = {
 				small="GFX_idea_generic_air_asia_3"
 			}
 		}
-		advisor={	
+		advisor={
 			slot = high_command
 			idea_token = PRC_liang_shen
 			ledger = air
@@ -2674,7 +2642,7 @@ PRC_zhang_wentian = {
 				small="GFX_idea_generic_navy_asia_1"
 			}
 		}
-		advisor={	
+		advisor={
 			slot = high_command
 			idea_token = PRC_deng_ye_peng
 			ledger = army
@@ -2692,15 +2660,14 @@ PRC_zhang_wentian = {
 		}
 	}
 
-
-	PRC_yang_zhicheng={ 
+	PRC_yang_zhicheng={
 		name=PRC_yang_zhicheng
 		portraits={
 			army={
 				small = GFX_portrait_PRC_yang_zhicheng
 			}
 		}
-		advisor={	
+		advisor={
 			slot = high_command
 			idea_token = PRC_yang_zhicheng
 			ledger = army
@@ -2718,14 +2685,14 @@ PRC_zhang_wentian = {
 		}
 	}
 
-	PRC_he_cheng={ 
+	PRC_he_cheng={
 		name=PRC_he_cheng
 		portraits={
 			army={
 				small = GFX_portrait_PRC_he_cheng
 			}
 		}
-		advisor={	
+		advisor={
 			slot = high_command
 			idea_token = PRC_he_cheng
 			ledger = army
@@ -2743,14 +2710,14 @@ PRC_zhang_wentian = {
 		}
 	}
 
-	PRC_li_xiannian={ 
+	PRC_li_xiannian={
 		name=PRC_li_xiannian
 		portraits={
 			army={
 				small = GFX_portrait_PRC_li_xiannian
 			}
 		}
-		advisor={	
+		advisor={
 			slot = high_command
 			idea_token = PRC_li_xiannian
 			ledger = army
@@ -2768,14 +2735,14 @@ PRC_zhang_wentian = {
 		}
 	}
 
-	PRC_chu_qing={ 
+	PRC_chu_qing={
 		name=PRC_chu_qing
 		portraits={
 			army={
 				small = GFX_portrait_PRC_chu_qing
 			}
 		}
-		advisor={	
+		advisor={
 			slot = high_command
 			idea_token = PRC_chu_qing
 			ledger = army
@@ -2793,15 +2760,14 @@ PRC_zhang_wentian = {
 		}
 	}
 
-
-	PRC_yang_shangkun={ 
+	PRC_yang_shangkun={
 		name=PRC_yang_shangkun
 		portraits={
 			army={
 				small = GFX_portrait_PRC_yang_shanhkun_small
 			}
 		}
-		advisor={	
+		advisor={
 			slot = high_command
 			idea_token = PRC_yang_shangkun
 			ledger = army
@@ -2818,10 +2784,6 @@ PRC_zhang_wentian = {
 			}
 		}
 	}
-
-
-
-
 
 	PRC_liu_bocheng={
 		instance = {
@@ -2934,18 +2896,16 @@ PRC_zhang_wentian = {
 				original_tag = PRC
 				NOT = { has_dlc = "No Compromise, No Surrender" }
 			}
-			
+
 			traits = {
 				naval_theorist
 			}
 		}
 	}
 
-
-
 	PRC_peng_dehuai={
 		instance = {
-			allowed = { has_dlc = "No Compromise, No Surrender"} 
+			allowed = { has_dlc = "No Compromise, No Surrender"}
 			name = PRC_peng_dehuai
 			portraits = {
 				army = {
@@ -2986,9 +2946,9 @@ PRC_zhang_wentian = {
 
 	PRC_lin_biao={
 		instance = {
-			allowed = { has_dlc = "No Compromise, No Surrender"} 
+			allowed = { has_dlc = "No Compromise, No Surrender"}
 			name = PRC_lin_biao
-			portraits = { 
+			portraits = {
 				army = {
 					large = GFX_portrait_PRC_lin_biao
 					small = GFX_portrait_PRC_lin_biao_small
@@ -3101,7 +3061,7 @@ PRC_zhang_wentian = {
 					small = GFX_portrait_PRC_luo_ruiqing_small
 				}
 			}
-			
+
 			corps_commander={
 				traits={ politically_connected PRC_survivor_of_the_long_march }
 				skill=2
@@ -3137,12 +3097,12 @@ PRC_zhang_wentian = {
 					NOT = { original_tag = MAN }
 				}
 				available  = {
-					has_intelligence_agency  = yes 
+					has_intelligence_agency  = yes
 					has_focus_tree  = china_communist_focus
 				}
 				idea_token = PRC_luo_ruiqing
 				traits  = {
-					head_of_intelligence 
+					head_of_intelligence
 				}
 			}
 		}
@@ -3166,7 +3126,6 @@ PRC_zhang_wentian = {
 			legacy_id=-1
 		}
 	}
-
 
 	PRC_lu_sheng={
 		name=PRC_lu_sheng
@@ -3225,7 +3184,6 @@ PRC_zhang_wentian = {
 		}
 	}
 
-
 	PRC_ye_ting={
 		name=PRC_ye_ting
 		portraits={
@@ -3244,7 +3202,6 @@ PRC_zhang_wentian = {
 			legacy_id=-1
 		}
 	}
-
 
 	PRC_luo_ronghuan={
 		name=PRC_luo_ronghuan
@@ -3286,10 +3243,11 @@ PRC_zhang_wentian = {
 
 	PRC_zhang_qinqiu={
 		name=PRC_zhang_qinqiu
+		
 		portraits={
 			army={
 				large = GFX_portrait_PRC_zhang_qinqiu
-				small = GFX_portrait_PRC_zhang_qinqiu_small 
+				small = GFX_portrait_PRC_zhang_qinqiu_small
 			}
 		}
 		corps_commander={
@@ -3303,16 +3261,13 @@ PRC_zhang_wentian = {
 		}
 	}
 
-
-
-
 	PRC_qian_sanqiang = {
 		name = PRC_qian_sanqiang
 		portraits = {
 			army = {
 				large = GFX_portrait_PRC_qian_sanqiang
 			}
-		} 
+		}
 
 		scientist = {
 			traits  = { scientist_trait_nuclear_warfare_expert }
@@ -3330,11 +3285,12 @@ PRC_zhang_wentian = {
 
 	PRC_he_zehui= {
 		name = PRC_he_zehui
+		
 		portraits = {
 			army = {
 				large = GFX_portrait_PRC_he_zehui
 			}
-		} 
+		}
 
 		scientist = {
 			traits  = { scientist_trait_nuclear_power_expert }
@@ -3356,7 +3312,7 @@ PRC_zhang_wentian = {
 			army = {
 				large = GFX_portrait_PRC_qian_xuesan
 			}
-		} 
+		}
 
 		scientist = {
 			traits  = { scientist_trait_rocketry_specialist }
@@ -3373,7 +3329,7 @@ PRC_zhang_wentian = {
 			army = {
 				large = GFX_portrait_PRC_wang_shusheng
 			}
-		} 
+		}
 
 		scientist = {
 			traits  = { scientist_trait_artillery_specialist }
@@ -3384,9 +3340,6 @@ PRC_zhang_wentian = {
 		}
 	}
 
-
-
-
 	PRC_rao_shoukun={
 		name=PRC_rao_shoukun
 		portraits={
@@ -3395,7 +3348,7 @@ PRC_zhang_wentian = {
 				small = GFX_portrait_PRC_rao_shoukun_small
 			}
 		}
-		navy_leader = { 
+		navy_leader = {
 			traits = { navy_career_officer }
 			skill = 3
 			attack_skill = 2
@@ -3406,7 +3359,6 @@ PRC_zhang_wentian = {
 		}
 	}
 
-
 	PRC_su_zhenhua={
 		name=PRC_su_zhenhua
 		portraits={
@@ -3415,7 +3367,7 @@ PRC_zhang_wentian = {
 				small = GFX_portrait_PRC_su_zhenhua_small
 			}
 		}
-		navy_leader = { 
+		navy_leader = {
 			traits = { navy_career_officer }
 			skill = 2
 			attack_skill = 2
@@ -3426,8 +3378,294 @@ PRC_zhang_wentian = {
 		}
 	}
 
+	PRC_zhang_guotao = {
+		name = PRC_zhang_guotao
+		portraits = {
+			army = {
+				large = GFX_portrait_PRC_zhang_guotao
+				small = GFX_portrait_PRC_zhang_guotao_military_small
+			}
+			civilian={
+				large = GFX_portrait_PRC_zhang_guotao
+				small = GFX_portrait_PRC_zhang_guotao_civilian_small
+			}
+		}
 
+		field_marshal = {
+			traits={ infantry_officer }
+			visible = {
+				has_country_flag = PRC_zhang_guatao_arrived
+				NOT = {
+					has_country_flag = PRC_zhang_guotao_left
+				}
+				NOT = {
+					has_character_flag = PRC_dismissed_advisor
+				}
+			}
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
 
-			
+		advisor={
+			cost = 100
+
+			slot = theorist
+			idea_token = PRC_zhang_guotao_theorist
+			ledger = army
+			allowed = {
+				original_tag = PRC
+			}
+
+			ai_will_do = {
+				base = 5
+				modifier = {
+					factor = 0
+					is_historical_focus_on = yes
+				}
+			}
+
+			traits = {
+				mass_assault_expert
+			}
+			available = {
+				has_country_flag = PRC_zhang_guatao_arrived
+				custom_trigger_tooltip = {
+					tooltip = PRC_has_not_been_purged_tt
+				}
+			}
+			visible = {
+				NOT = {
+					has_country_flag = PRC_zhang_guotao_left
+					has_character_flag = PRC_dismissed_advisor
+				}
+			}
+		}
+
+		advisor={
+			slot = political_advisor
+			idea_token = PRC_zhang_guotao
+			allowed  = {
+				original_tag  = PRC
+			}
+			cost = 100
+			traits  = {
+				PRC_dubious_loyalty
+			}
+			ai_will_do = {
+				base = 5
+				modifier = {
+					factor = 0
+					is_historical_focus_on = yes
+				}
+			}
+			available = {
+				NOT = {
+					has_country_leader = {
+						ruling_only = yes
+						character = PRC_zhang_guotao
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = PRC_has_not_been_purged_tt
+				}
+			}
+			visible = {
+				has_country_flag = PRC_zhang_guatao_arrived
+				NOT = {
+					has_character_flag = PRC_dismissed_advisor
+					has_country_flag = PRC_zhang_guotao_left
+				}
+			}
+			on_add = {
+				owner = {
+					PRC_increase_bolsheviks_BOP_small = yes
+				}
+			}
+			on_remove = {
+				owner = {
+					PRC_increase_mao_BOP_small = yes
+				}
+			}
+		}
+	}
+
+	PRC_guotao_and_mao = {
+		name = PRC_guotao_and_mao
+		portraits = {
+			civilian={
+				large = GFX_portrait_PRC_guotao_and_mao
+			}
+		}
+
+	}
+
+	PRC_wang_ming = {
+		name = PRC_wang_ming
+		portraits = {
+			civilian={
+				large = GFX_portrait_PRC_wang_ming
+				small = GFX_portrait_PRC_wang_ming_small
+			}
+		}
+
+		advisor={
+			slot = political_advisor
+			idea_token = PRC_wang_ming
+			allowed  = {
+				has_dlc = "No Compromise, No Surrender"
+				original_tag  = PRC
+			}
+			cost = 100
+			traits  = {
+				PRC_28_bolshevik_trait_wang_ming
+			}
+			ai_will_do = {
+				base = 5
+				modifier = {
+					factor = 0
+					is_historical_focus_on = yes
+				}
+			}
+			available = {
+				NOT = {
+					has_country_leader = {
+						ruling_only = yes
+						character = PRC_wang_ming
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = PRC_has_not_been_purged_tt
+				}
+				NOT = {
+					has_character_flag = PRC_wang_ming_exiled
+				}
+			}
+			visible = {
+				NOT = {
+					has_character_flag = PRC_dismissed_advisor
+				}
+			}
+			on_add = {
+				owner = {
+					PRC_increase_bolsheviks_BOP_small = yes
+				}
+			}
+			on_remove = {
+				owner = {
+					PRC_increase_mao_BOP_small = yes
+				}
+			}
+		}
+	}
+
+	PRC_bo_gu = {
+		name = PRC_bo_gu
+		portraits = {
+			army = {
+				large = GFX_portrait_PRC_bo_gu
+				small = GFX_portrait_PRC_bo_gu_small
+			}
+			civilian={
+				large = GFX_portrait_PRC_bo_gu
+				small = GFX_portrait_PRC_bo_gu_small
+			}
+		}
+
+		advisor={
+			slot = political_advisor
+			idea_token = PRC_bo_gu
+			allowed  = {
+				has_dlc = "No Compromise, No Surrender"
+				original_tag  = PRC
+			}
+			cost = 100
+			traits  = {
+				PRC_28_bolshevik_trait_bo_gu
+			}
+			ai_will_do = {
+				base = 5
+				modifier = {
+					factor = 0
+					is_historical_focus_on = yes
+				}
+			}
+			available = {
+				NOT = {
+					has_country_leader = {
+						ruling_only = yes
+						character = PRC_bo_gu
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = PRC_has_not_been_purged_tt
+				}
+			}
+			visible = {
+				NOT = {
+					has_character_flag = PRC_dismissed_advisor
+				}
+			}
+			on_add = {
+				owner = {
+					PRC_increase_bolsheviks_BOP_small = yes
+				}
+			}
+			on_remove = {
+				owner = {
+					PRC_increase_mao_BOP_small = yes
+				}
+			}
+		}
+		field_marshal={
+			traits={ infantry_officer trait_cautious politically_connected  PRC_survivor_of_the_long_march brilliant_strategist organizer }
+			visible = {
+				has_country_flag = PRC_bo_gu_general
+			}
+			skill=4
+			attack_skill=5
+			defense_skill=2
+			planning_skill= 2
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+
+	PRC_li_zhen={
+		name=PRC_li_zhen
+		portraits={
+			civilian={
+				large = GFX_portrait_PRC_li_zhen
+				small = GFX_portrait_PRC_li_zhen_small
+			}
+		}
+		advisor={
+			allowed  = {
+				original_tag  = PRC
+				has_dlc = "No Compromise, No Surrender"
+			}
+			slot = political_advisor
+			idea_token = PRC_li_zhen
+			traits  = {
+				PRC_president_female_officers
+			}
+			ai_will_do  = {
+				base  = 1.000
+			}
+		}
+
+		corps_commander={
+			traits={ guerilla_fighter PRC_survivor_of_the_long_march }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
 
 }

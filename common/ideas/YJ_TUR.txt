@@ -1,4 +1,4 @@
-ideas = {
+﻿ideas = {
 	country = {
 		YJ_TUR_1_ideas = {
 
@@ -40,7 +40,6 @@ ideas = {
 				artillery = 0.35
 			}
 		}
-
 
 		YJ_TUR_2_ideas = {
 
@@ -100,8 +99,6 @@ ideas = {
 			}
 		}
 
-
-
 		YJ_TUR_3_ideas = {
 
 			allowed = {
@@ -119,7 +116,7 @@ ideas = {
 			modifier = {
 				custom_modifier_tooltip = YJ_TUR_3_ideas_tt
 				weekly_manpower = 10000
-				
+
 			}
 			equipment_bonus = {
 				armor = {

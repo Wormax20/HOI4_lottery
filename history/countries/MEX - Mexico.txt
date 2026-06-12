@@ -152,7 +152,6 @@ IF = {
 		MEX_politicised_army
 		MEX_cedillo_tension_2
 	}
-		
 
     set_convoys = 1000
 	add_stability = 0.3
@@ -169,7 +168,7 @@ add_breakthrough_progress = {
 	add_command_power = 100
 
 	set_global_flag = flag_mexico_cedillo_has_revolted
-	
+
 	oob = "MEX_1939"
 	IF = {
 		limit = { has_dlc = "By Blood Alone" }
@@ -185,13 +184,12 @@ add_breakthrough_progress = {
 			set_naval_oob = "MEX_1939_naval_legacy"
 		}
 	}
-	
+
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons1 = 1
 		infantry_weapons2 = 1
 		support_weapons = 1
-
 
 		electronic_mechanical_engineering = 1
 		radio = 1
@@ -226,7 +224,7 @@ set_grand_doctrine = new_strategic_destruction
 		remove_ideas = {
 			MEX_cedillo_tension_2
 		}
-		
+
 		complete_national_focus = MEX_focus_plan_of_agua_prieta
 		complete_national_focus = MEX_focus_exile_calles
 		complete_national_focus = MEX_focus_control_the_army
@@ -244,7 +242,7 @@ set_grand_doctrine = new_strategic_destruction
 		remove_ideas = {
 			MEX_oil_concessions
 		}
-		
+
 		ENG = {
 			add_opinion_modifier = {
 				target = MEX
@@ -265,7 +263,7 @@ set_grand_doctrine = new_strategic_destruction
 			target = USA
 			modifier = embargo
 		}
-		
+
 		ELSE = {
 			complete_national_focus = army_effort
 			complete_national_focus = equipment_effort
@@ -317,7 +315,7 @@ IF = {
 IF = {
 	limit = { has_dlc = "Man the Guns" }
 	create_equipment_variant = {
-		name = "Nicolás Bravo Class"			
+		name = "Nicolás Bravo Class"
 		type = ship_hull_light_1
 		name_group = MEX_DD_HISTORICAL
 		parent_version = 0
@@ -350,7 +348,7 @@ IF = {
 		}
 	}
 	create_equipment_variant = {
-		name = "Anahuac Class"			
+		name = "Anahuac Class"
 		type = ship_hull_cruiser_coastal_defense_ship
 		name_group = MEX_BB_HISTORICAL
 		parent_version = 0
@@ -367,7 +365,3 @@ IF = {
 		}
 	}
 }
-
-
-
-

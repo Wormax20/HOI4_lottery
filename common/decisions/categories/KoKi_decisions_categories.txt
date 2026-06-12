@@ -1,4 +1,4 @@
-KoKi_YJ_decisions_categories = { 
+﻿KoKi_YJ_decisions_categories = {
 	priority = 999999
 	icon = GFX_decision_category_generic_political_actions
 	picture = GFX_focus_AFG_afghan_bank
@@ -9,8 +9,7 @@ KoKi_YJ_decisions_categories = {
 	}
 }
 
-
-KoKi_YJ_ROM_decisions_categories = { 
+KoKi_YJ_ROM_decisions_categories = {
 	priority = 9999
 	icon = GFX_decision_category_SOV_civil_puppet_interaction
 	picture = GFX_focus_ARG_accept_german_advisors
@@ -22,8 +21,7 @@ KoKi_YJ_ROM_decisions_categories = {
 	}
 }
 
-
-KoKi_YJ_MEX_decisions_categories = { 
+KoKi_YJ_MEX_decisions_categories = {
 	priority = 9999
 	icon = GFX_decision_category_NOR_monarchist_prep
 	allowed = {
@@ -35,7 +33,7 @@ KoKi_YJ_MEX_decisions_categories = {
 	}
 }
 
-KoKi_YJ_GER_decisions_categories = { 
+KoKi_YJ_GER_decisions_categories = {
 	priority = 9999
 	icon = GFX_decision_category_generic_trade
 	allowed = {
@@ -47,7 +45,7 @@ KoKi_YJ_GER_decisions_categories = {
 	}
 }
 
-MEX_integrate_state_decisions_categories = { 
+MEX_integrate_state_decisions_categories = {
 	priority = 9998
 	icon = GFX_decision_category_generic_trade
 	allowed = {

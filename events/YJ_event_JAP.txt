@@ -1,9 +1,9 @@
-add_namespace = KoKi_YJ_JAP_event
+﻿add_namespace = KoKi_YJ_JAP_event
 country_event = {
 	id = KoKi_YJ_JAP_event.101
 	title = KoKi_YJ_JAP_event.101.title
 	desc = KoKi_YJ_JAP_event.101.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -32,14 +32,14 @@ country_event = {
 			factor = 100
 		}
 	}
-	
+
 }
 
 country_event = {
 	id = KoKi_YJ_JAP_event.102
 	title = KoKi_YJ_JAP_event.102.title
 	desc = KoKi_YJ_JAP_event.102.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -58,14 +58,14 @@ country_event = {
 			factor = 100
 		}
 	}
-	
+
 }
 
 country_event = {
 	id = KoKi_YJ_JAP_event.103
 	title = KoKi_YJ_JAP_event.103.title
 	desc = KoKi_YJ_JAP_event.103.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -111,14 +111,14 @@ country_event = {
 			factor = 100
 		}
 	}
-	
+
 }
 
 country_event = {
 	id = KoKi_YJ_JAP_event.104
 	title = KoKi_YJ_JAP_event.104.title
 	desc = KoKi_YJ_JAP_event.104.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -130,14 +130,14 @@ country_event = {
 			factor = 100
 		}
 	}
-	
+
 }
 
 country_event = {
 	id = KoKi_YJ_JAP_event.105
 	title = KoKi_YJ_JAP_event.105.title
 	desc = KoKi_YJ_JAP_event.105.desc
-	
+
 	picture = GFX_report_event_china_ledo_road
 
 	is_triggered_only = yes
@@ -155,5 +155,5 @@ country_event = {
 			factor = 100
 		}
 	}
-	
+
 }
