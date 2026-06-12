@@ -18,8 +18,8 @@ SWE_landsverk_organization = {
 
 	visible = {
 		OR = {
-			ROOT = {
-				tag = FIN
+			FROM = {
+				original_tag = FIN
 			}
 		IF = {
 			limit = { FROM = { original_tag = ETH } }
