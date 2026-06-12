@@ -1,4 +1,4 @@
-﻿equipments = {
+equipments = {
 
 	convoy = {
 		year = 1910

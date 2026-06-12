@@ -1,4 +1,4 @@
-﻿YJ_GEN_state_ideas = {
+YJ_GEN_state_ideas = {
     enable = { always = yes }
 
 	icon = GFX_modifiers_generic_construction

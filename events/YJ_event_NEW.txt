@@ -1,4 +1,4 @@
-﻿add_namespace = KoKi_YJ_NEW
+add_namespace = KoKi_YJ_NEW
 
 news_event = {
 	id = KoKi_YJ_NEW.1

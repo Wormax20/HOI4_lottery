@@ -1,4 +1,4 @@
-﻿ideas = {
+ideas = {
 	country = {
 
 		BRA_national_defence_fund_idea = {

@@ -1,4 +1,4 @@
-﻿technologies = {
+technologies = {
 	MEX_helicopter_tech = {
 		helicopter_recon = {
             soft_attack = 3.15

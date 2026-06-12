@@ -1,4 +1,4 @@
-﻿characters = {
+characters = {
 
 	GER_adolf_hitler = {
 		name = GER_adolf_hitler

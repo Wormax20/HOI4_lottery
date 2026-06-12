@@ -1,4 +1,4 @@
-﻿USA_marmon_herrington_organization = {
+USA_marmon_herrington_organization = {
 	include = generic_mobile_tank_organization
 	icon = GFX_idea_marmon_herrington
 	allowed = {

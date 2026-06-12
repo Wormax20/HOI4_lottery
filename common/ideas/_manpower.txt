@@ -1,4 +1,4 @@
-﻿ideas = {
+ideas = {
 
 	mobilization_laws = {
 		law = yes

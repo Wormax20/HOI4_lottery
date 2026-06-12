@@ -1,4 +1,4 @@
-﻿DIPLOMACY_WAR_ENABLE_TRIGGER = {
+DIPLOMACY_WAR_ENABLE_TRIGGER = {
     if = {
         limit = {
             AND = {

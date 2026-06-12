@@ -1,4 +1,4 @@
-﻿YJ_MEX_state_1_ideas = {
+YJ_MEX_state_1_ideas = {
     enable = { always = yes }
 
 	icon = GFX_modifiers_generic_military_plans

@@ -1,4 +1,4 @@
-﻿sub_units = {
+sub_units = {
 
 	light_sp_artillery_brigade = {
 		abbreviation = "LAR"

@@ -1,4 +1,4 @@
-﻿@tank_hoesch_X = 9
+@tank_hoesch_X = 9
 @tank_hoesch_Y = 0
 
 @aircraft_hamburger_X = 9

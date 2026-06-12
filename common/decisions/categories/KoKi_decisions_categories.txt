@@ -1,4 +1,4 @@
-﻿KoKi_YJ_decisions_categories = {
+KoKi_YJ_decisions_categories = {
 	priority = 999999
 	icon = GFX_decision_category_generic_political_actions
 	picture = GFX_focus_AFG_afghan_bank

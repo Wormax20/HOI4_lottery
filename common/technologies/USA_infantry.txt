@@ -1,4 +1,4 @@
-﻿technologies = {
+technologies = {
 	USA_mechanized_tech = {
 		mechanized = {
             combat_width = -0.2

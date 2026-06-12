@@ -1,4 +1,4 @@
-﻿SWI_is_country_to_balance = {
+SWI_is_country_to_balance = {
 	custom_trigger_tooltip = {
 		tooltip = SWI_country_to_balance_TT
 	}

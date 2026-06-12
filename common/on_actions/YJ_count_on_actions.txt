@@ -1,4 +1,4 @@
-﻿on_actions = {
+on_actions = {
     on_weekly = {
         effect = {
             every_country = {
@@ -27,8 +27,13 @@
                     limit = {
                         has_country_flag = YJ_allie
                     }
-                    remove_dynamic_modifier = {
-                        modifier = YJ_AXIS_BAL_ideas
+                    if = {
+                        limit = {
+                            has_dynamic_modifier = YJ_AXIS_BAL_ideas
+                        }
+                        remove_dynamic_modifier = {
+                            modifier = YJ_AXIS_BAL_ideas
+                        }
                     }
                     add_dynamic_modifier = {
                         modifier = YJ_ALLIE_BAL_ideas
@@ -38,8 +43,13 @@
                     limit = {
                         has_country_flag = YJ_axis
                     }
-                    remove_dynamic_modifier = {
-                        modifier = YJ_ALLIE_BAL_ideas
+                    if = {
+                        limit = {
+                            has_dynamic_modifier = YJ_ALLIE_BAL_ideas
+                        }
+                        remove_dynamic_modifier = {
+                            modifier = YJ_ALLIE_BAL_ideas
+                        }
                     }
                     add_dynamic_modifier = {
                         modifier = YJ_AXIS_BAL_ideas

@@ -1,4 +1,4 @@
-﻿YJ_most_factory = {
+YJ_most_factory = {
     set_variable = { global.max_civ = 0 }
 
     every_country = {

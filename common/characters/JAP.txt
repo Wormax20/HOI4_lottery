@@ -1,4 +1,4 @@
-﻿characters = {
+characters = {
 
 	JAP_emperor_hirohito = {
 

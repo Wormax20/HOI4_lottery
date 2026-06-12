@@ -1,4 +1,4 @@
-﻿technologies = {
+technologies = {
 	FIN_mountaineers_tech = {
 		mountaineers = {
 			soft_attack = 0.05

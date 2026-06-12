@@ -1,4 +1,4 @@
-﻿YJ_HUN_ideas = {
+YJ_HUN_ideas = {
 	enable = {
 		always = yes
 	}

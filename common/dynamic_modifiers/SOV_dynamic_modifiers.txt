@@ -1,4 +1,4 @@
-﻿YJ_SOV_3_ideas = {
+YJ_SOV_3_ideas = {
 	enable = {
 		always = yes
 	}

@@ -1,4 +1,4 @@
-﻿leader_traits = {
+leader_traits = {
 	YJ_traits_29= {
 		type = land
 		trait_type = personality_trait
@@ -479,26 +479,26 @@
 		}
 		logistics_skill = 1
 		modifier = {
-			out_of_supply_factor = -0.1
-			supply_consumption_factor = -0.1
-			land_night_attack = 0.1
+			out_of_supply_factor = -0.05
+			supply_consumption_factor = -0.05
+			land_night_attack = 0.05
 			pocket_penalty = -0.1
-			no_supply_grace = 240
+			no_supply_grace = 120
 
 			hills = {
-				attack = 0.1
-				defence = 0.1
-				movement = 0.1
+				attack = 0.05
+				defence = 0.05
+				movement = -0.1
 			}
 			forest = {
-				attack = 0.1
-				defence = 0.1
-				movement = 0.1
+				attack = 0.05
+				defence = 0.05
+				movement = -0.1
 			}
 			marsh = {
-				attack = 0.1
-				defence = 0.1
-				movement = 0.1
+				attack = 0.05
+				defence = 0.05
+				movement = -0.1
 			}
 		}
 

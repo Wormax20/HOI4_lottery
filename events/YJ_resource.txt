@@ -1,4 +1,4 @@
-﻿add_namespace = KoKi_YJ_pp_resource
+add_namespace = KoKi_YJ_pp_resource
 country_event = {
 	id = KoKi_YJ_pp_resource.10
 	title = KoKi_YJ_pp_resource.10.title

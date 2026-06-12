@@ -1,4 +1,4 @@
-﻿operation_rescue_operative = {
+operation_rescue_operative = {
 	icon = GFX_operations_rescue_captured_operative
 	map_icon = GFX_operations_rescue_captured_operative_map
 	name = operation_rescue_operative

@@ -1,4 +1,4 @@
-﻿KoKi_YJ_decisions_pp = {
+KoKi_YJ_decisions_pp = {
     hidden_effect = {
         if = { limit = { check_variable = { YJ_rng = 1 } } country_event = KoKi_YJ_pp.1 }
         else_if = { limit = { check_variable = { YJ_rng = 2 } } country_event = KoKi_YJ_pp.2 }

@@ -1,4 +1,4 @@
-﻿add_namespace = KoKi_YJ_BEL_event
+add_namespace = KoKi_YJ_BEL_event
 country_event = {
 	id = KoKi_YJ_BEL_event.101
 	title = KoKi_YJ_BEL_event.101.title

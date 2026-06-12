@@ -1,4 +1,4 @@
-﻿add_namespace = host
+add_namespace = host
 
 news_event = {
 	id = host.1

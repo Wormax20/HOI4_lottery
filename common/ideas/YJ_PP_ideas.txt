@@ -1,4 +1,4 @@
-﻿ideas = {
+ideas = {
 	country = {
 
 		YJ_1_ideas = {
@@ -184,7 +184,7 @@
 
 			removal_cost = -1
 			modifier = {
-				conscription_factor = 0.1
+				conscription_factor = 0.15
 				mobilization_speed = 1
 				monthly_population = 1
 				weekly_manpower = 10000
@@ -214,8 +214,8 @@
 				operation_outcome = 0.25
 				intel_network_gain = 0.25
 				intel_network_gain_factor = 0.25
-				encryption_factor = 0.5
-				decryption_factor = 0.5
+				encryption_factor = 1
+				decryption_factor = 1
 			}
 
 			picture = GFX_idea_NOR_contested_leadership_ns

@@ -1,4 +1,4 @@
-﻿ideas = {
+ideas = {
 	country = {
 		YJ_HUN_1_ideas = {
 

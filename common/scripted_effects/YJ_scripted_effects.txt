@@ -1,4 +1,4 @@
-﻿KoKi_YJ_TAG_decisions_0_scripted_effects = {
+KoKi_YJ_TAG_decisions_0_scripted_effects = {
     if = {
 		limit = {
 			original_tag = USA

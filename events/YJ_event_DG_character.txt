@@ -1,4 +1,4 @@
-﻿add_namespace = DOG_exe_YJ_new_JL_event
+add_namespace = DOG_exe_YJ_new_JL_event
 country_event = {
 	id = DOG_exe_YJ_new_JL_event.1
 	title = DOG_exe_YJ_new_JL_event.1.title

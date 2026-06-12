@@ -1,4 +1,4 @@
-﻿KoKi_YJ_decisions_categories = {
+KoKi_YJ_decisions_categories = {
 	test = {
 		allowed = {
 			always = yes

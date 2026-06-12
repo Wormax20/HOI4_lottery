@@ -1,4 +1,4 @@
-﻿@tier1_cp_cap_increase = 10
+@tier1_cp_cap_increase = 10
 @tier2_cp_cap_increase = 20
 @tier3_cp_cap_increase = 30
 

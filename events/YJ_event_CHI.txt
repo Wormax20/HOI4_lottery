@@ -1,4 +1,4 @@
-﻿add_namespace = KoKi_YJ_CHI_event
+add_namespace = KoKi_YJ_CHI_event
 
 country_event = {
 	id = KoKi_YJ_CHI_event.101

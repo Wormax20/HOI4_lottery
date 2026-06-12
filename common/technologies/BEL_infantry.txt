@@ -1,4 +1,4 @@
-﻿technologies = {
+technologies = {
 	BEL_category_rangers_tech = {
 		category_rangers = {
 		combat_width = -0.4

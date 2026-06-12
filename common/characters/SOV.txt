@@ -1,4 +1,4 @@
-﻿characters = {
+characters = {
 
 	SOV_iosif_stalin = {
 		name = SOV_iosif_stalin

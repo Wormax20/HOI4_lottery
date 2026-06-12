@@ -1,4 +1,4 @@
-﻿ideas = {
+ideas = {
 	country = {
 		YJ_FIN_1_ideas = {
 

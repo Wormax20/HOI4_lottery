@@ -1,4 +1,4 @@
-﻿sub_units = {
+sub_units = {
 
 	armored_car = {
 		abbreviation = "CAR"

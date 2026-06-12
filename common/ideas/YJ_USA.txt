@@ -1,4 +1,4 @@
-﻿ideas = {
+ideas = {
 	hidden_ideas = {
 		YJ_USA_3_ideas = {
 

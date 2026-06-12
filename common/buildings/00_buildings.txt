@@ -1,4 +1,4 @@
-﻿buildings = {
+buildings = {
 
 	infrastructure = {
 		base_cost = 6000

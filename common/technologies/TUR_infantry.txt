@@ -1,4 +1,4 @@
-﻿technologies = {
+technologies = {
 	TUR_camelry_tech = {
 		camelry = {
 			max_strength = 0.05

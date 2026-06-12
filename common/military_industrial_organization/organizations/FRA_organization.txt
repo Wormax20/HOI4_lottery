@@ -1,4 +1,4 @@
-﻿FRA_renault_organization = {
+FRA_renault_organization = {
 	include = generic_infantry_tank_organization
 	icon = GFX_idea_renault
 	allowed = {

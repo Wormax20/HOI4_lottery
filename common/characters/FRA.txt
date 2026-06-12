@@ -1,4 +1,4 @@
-﻿characters={
+characters={
 	FRA_pierre_laval={
 		name=FRA_pierre_laval
 		portraits={

@@ -1,4 +1,4 @@
-﻿
+
 @inner_circle_time_tier_1 = 20
 @inner_circle_time_tier_2 = 20
 @inner_circle_time_tier_3 = 40

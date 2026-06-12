@@ -1,4 +1,4 @@
-﻿YJ_FRA_ideas = {
+YJ_FRA_ideas = {
 	enable = {
 		always = yes
 	}

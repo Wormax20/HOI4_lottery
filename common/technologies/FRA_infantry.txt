@@ -1,4 +1,4 @@
-﻿technologies = {
+technologies = {
 	FRA_artillery_tech = {
 		mot_artillery_brigade = {
 			breakthrough = 3

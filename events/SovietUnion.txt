@@ -1,4 +1,4 @@
-﻿add_namespace = soviet
+add_namespace = soviet
 
 country_event = {
 	id = soviet.1

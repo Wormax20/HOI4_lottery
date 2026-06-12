@@ -1,4 +1,4 @@
-﻿add_namespace = SEA_japan
+add_namespace = SEA_japan
 add_namespace = SEA_japan_foreign_policy
 add_namespace = SEA_japan_popup_events
 add_namespace = SEA_japan_tokko_arrest_events

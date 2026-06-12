@@ -1,4 +1,4 @@
-﻿@landmark_repair_speed_factor = 0.15
+@landmark_repair_speed_factor = 0.15
 
 buildings = {
 

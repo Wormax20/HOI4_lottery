@@ -1,4 +1,4 @@
-﻿characters = {
+characters = {
 
 	HUN_miklos_horthy = {
 		instance = {
