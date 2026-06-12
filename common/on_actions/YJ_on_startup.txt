@@ -80,7 +80,10 @@ on_actions = {
 			if = {
 				limit = {
 					JAP = { is_ai = no }
-					PRC= { is_ai = no }
+					OR = {
+						CHI = { is_ai = no }
+						PRC = { is_ai = no }
+					}
 				}
 				JAP = {
 					add_offsite_building = {
@@ -91,11 +94,9 @@ on_actions = {
 						type = arms_factory
 						level = 20
 					}
-				}
-			}
-			JAP = {
-				every_core_state = {
-					set_state_category = megalopolis
+					every_core_state = {
+						set_state_category = megalopolis
+					}
 				}
 			}
 			SOV = {

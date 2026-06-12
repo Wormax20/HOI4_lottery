@@ -270,10 +270,14 @@
 9715;10454;impassable;-1;-1;-1;-1;-1;;Blocked
 11704;10454;impassable;-1;-1;-1;-1;-1;;Blocked
 12446;4576;sea;4465;-1;-1;-1;-1;;japtosov
+4198;7115;sea;8318;-1;-1;-1;-1;;jap
 4135;9945;sea;5407;-1;-1;-1;-1;SUEZ_CANAL;Suez
 13312;13369;sea;2919;-1;-1;-1;-1;;IRQ
 7661;7477;sea;1271;-1;-1;-1;-1;;SOV
 4178;12058;sea;225;-1;-1;-1;-1;;GRE
+211;6258;sea;2230;-1;-1;-1;-1;;SWE
+6066;9228;sea;990;-1;-1;-1;-1;;FINTOSWE
+11278;9228;sea;1211;-1;-1;-1;-1;;FINTOSWE
 -1;-1;;-1;-1;-1;-1;-1;-1 
 #Start province ID;End province ID;Adjacency type;Through province ID;Starting X position;Starting Y position;Ending X position;Ending Y position;Adjacency rule;Comment
 
