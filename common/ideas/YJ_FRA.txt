@@ -64,11 +64,11 @@ ideas = {
 				army_org_factor = 0.10
 				stability_weekly = 0.003
 				war_support_weekly = 0.003
+				consumer_goods_factor = -0.10
 				production_speed_buildings_factor = 0.10
 				production_speed_arms_factory_factor = 0.10
 				production_speed_industrial_complex_factor = 0.10
 				industrial_capacity_factory = 0.15
-				consumer_goods_factor = -0.20
 				production_factory_max_efficiency_factor = 0.15
 				production_factory_efficiency_gain_factor = 0.15
 			}
@@ -89,19 +89,19 @@ ideas = {
 			picture = CZE_ceskoslovenska_lodstvo
 
 			modifier = {
-				global_building_slots = 15
-				political_power_factor = 0.1
+				global_building_slots = 10
+				political_power_factor = 0.10
 				production_speed_buildings_factor = 0.05
-				industrial_capacity_factory = 0.05
-				production_factory_max_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.10
+				production_factory_max_efficiency_factor = 0.10
 				army_attack_factor = 0.05
 				army_defence_factor = 0.05
 				army_armor_attack_factor = 0.05
 				army_armor_defence_factor = 0.05
 				mechanized_attack_factor = 0.1
 				mechanized_defence_factor = 0.1
-				stability_weekly = 0.002
-				war_support_weekly = 0.002
+				stability_weekly = 0.005
+				war_support_weekly = 0.005
 				army_speed_factor = 0.1
 				surrender_limit = 1
 				army_org_regain = 0.05
@@ -151,13 +151,6 @@ ideas = {
 				resistance_growth_on_our_occupied_states = 0.4
 				compliance_growth_on_our_occupied_states = -0.4
 				custom_modifier_tooltip = YJ_FRA_4_ideas_tt
-			}
-
-			equipment_bonus = {
-				fighter = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
 			}
 		}
 

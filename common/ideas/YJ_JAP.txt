@@ -71,8 +71,8 @@ ideas = {
 				local_resources_factor = 0.40
 				production_factory_max_efficiency_factor = 0.10
 				production_factory_efficiency_gain_factor = 0.10
-				industrial_capacity_factory = 0.1
-				industrial_capacity_dockyard = 0.1
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
 				research_speed_factor = 0.10
 				conscription = 0.1
 				army_core_attack_factor = 0.2
@@ -119,11 +119,11 @@ ideas = {
 				political_power_gain = 0.15
 				production_speed_industrial_complex_factor = 0.10
 				production_factory_max_efficiency_factor = 0.10
-				local_resources_factor = 0.2
+				local_resources_factor = 0.20
 				industrial_capacity_factory = 0.05
 				consumer_goods_expected_value = -0.10
 				resource_trade_cost_bonus_per_factory = 2
-				global_building_slots = 3
+				global_building_slots = 5
 				cic_to_target_factor = 0.15
 			}
 		}
