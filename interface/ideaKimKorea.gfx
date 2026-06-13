@@ -1,0 +1,79 @@
+spriteTypes = {
+    spriteType = {
+		name = "GFX_idea_The_Kim_Dynasty"
+		textureFile = "gfx/interface/ideas/idea_por_iberian_workers_united.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KimKorea_focus_SAN_idea"
+		textureFile = "gfx/interface/ideas/idea_PRC_sinochem.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KimKorea_focus_Ni_One_idea"
+		textureFile = "gfx/interface/ideas/idea_ARG_construction_guilds.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KimKorea_focus_SAN_two_idea"
+		textureFile = "gfx/interface/ideas/idea_generic_reserve_divisions.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KimKorea_focus_Finish_idea"
+		textureFile = "gfx/interface/ideas/idea_ast_abandon_the_westminster_system_communism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KimKorea_debuff_political_idea"
+		textureFile = "gfx/interface/ideas/idea_generic_political_support.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KimKorea_debuff_army_idea"
+		textureFile = "gfx/interface/ideas/idea_chi_army_corruption3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KimKorea_debuff_air_idea"
+		textureFile = "gfx/interface/ideas/idea_AUS_airforce.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KimKorea_debuff_navy_idea"
+		textureFile = "gfx/interface/ideas/idea_generic_sea_focused_navy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KimKorea_debuff_money_idea"
+		textureFile = "gfx/interface/ideas/idea_PRC_factory_617.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KimKorea_debuff_research_idea"
+		textureFile = "gfx/interface/ideas/idea_jap_duplicate_research.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KimKorea_buff_All_Army_Finish_idea"
+		textureFile = "gfx/interface/ideas/idea_generic_communist_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KimKorea_focus_New_Start_idea"
+		textureFile = "gfx/interface/ideas/idea_eng_imperial_conscription.dds"
+	}
+
+
+
+
+
+	spriteType = {
+		name = "GFX_idea_KimKorea_focus_Prod1"
+		textureFile = "gfx/interface/ideas/idea_generic_improved_industries.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KimKorea_focus_Prod2"
+		textureFile = "gfx/interface/ideas/idea_generic_improved_industries.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KimKorea_focus_Prod3"
+		textureFile = "gfx/interface/ideas/idea_generic_improved_industries.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KimKorea_focus_Prod4"
+		textureFile = "gfx/interface/ideas/idea_CHI_lend_lease_american.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KimKorea_focus_Prod5"
+		textureFile = "gfx/interface/ideas/idea_CHI_lend_lease_soviet.dds"
+	}
+}

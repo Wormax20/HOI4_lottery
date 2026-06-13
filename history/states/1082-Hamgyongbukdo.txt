@@ -1,0 +1,35 @@
+state = {
+	id = 1082
+	name = "STATE_1082"
+	manpower = 946066
+	state_category = rural
+
+	resources = {
+		steel = 32
+		tungsten = 10
+		coal = 5
+	}
+
+	history = {
+
+		owner = KOR
+		add_core_of = KOR
+
+		victory_points = {
+			898 1
+		}	
+
+		buildings = {
+			infrastructure = 2
+			898 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces = {
+		6944 898 3860 6822 959 3803 11878 6922
+	}
+
+	local_supplies = 1.0 
+}

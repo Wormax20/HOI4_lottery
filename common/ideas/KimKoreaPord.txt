@@ -1,0 +1,95 @@
+ideas = {
+	country = {
+		KimKorea_focus_Prod1 = {
+			picture = KimKorea_focus_Prod1
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				industrial_capacity_factory = -0.10
+				production_factory_max_efficiency_factor = -0.10
+				production_factory_efficiency_gain_factor = -0.10
+				production_speed_infrastructure_factor = 0.10
+				production_speed_industrial_complex_factor = 0.10
+			}
+		}
+
+		KimKorea_focus_Prod2 = {
+			picture = KimKorea_focus_Prod2
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				industrial_capacity_factory = -0.20
+				production_factory_max_efficiency_factor = -0.20
+				production_factory_efficiency_gain_factor = -0.20
+				production_speed_infrastructure_factor = 0.20
+				production_speed_industrial_complex_factor = 0.10
+				production_speed_arms_factory_factor = 0.10
+			}
+		}
+		
+		KimKorea_focus_Prod3 = {
+			picture = KimKorea_focus_Prod3
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = -0.10
+				consumer_goods_expected_value = -0.05
+				industrial_capacity_factory = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.10
+				production_speed_buildings_factor = 0.15
+			}
+		}
+
+		#上方为工业线
+		#下方为政治线
+
+		KimKorea_focus_Prod4 = {
+			picture = KimKorea_focus_Prod4
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_factor = -0.10
+				conscription_factor = -0.25
+				stability_factor = -0.20
+				war_support_factor = -0.20
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.25
+				production_speed_industrial_complex_factor = 0.10
+			}
+		}
+
+		KimKorea_focus_Prod5 = {
+			picture = KimKorea_focus_Prod5
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_factor = 0.10
+				industrial_capacity_factory = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = -0.15
+			}
+		}
+	}
+}

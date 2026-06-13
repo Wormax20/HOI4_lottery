@@ -1,0 +1,22 @@
+spriteTypes = {
+    spriteType = {
+		name = "GFX_portrait_KimKorea_Kim_Il_Sung"
+		texturefile = "gfx/leaders/KOR/portrait_KimKorea_Kim_Il_Sung.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_KimKorea_Kim_Il"
+		texturefile = "gfx/interface/ideas/portrait_KimKorea_Kim_Il.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KimKorea_Heo_Heon"
+		texturefile = "gfx/interface/ideas/portrait_KimKorea_Heo_Heon.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KimKorea_Ri_Sung_Yop"
+		texturefile = "gfx/interface/ideas/portrait_KimKorea_Ri_Sung_Yop.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_KimKorea_Pak_Kum_chol"
+		texturefile = "gfx/interface/ideas/portrait_KimKorea_Pak_Kum_chol.png"
+	}
+}

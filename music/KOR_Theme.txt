@@ -1,0 +1,6 @@
+music = {
+	song = "KOR_Theme"
+	chance = { 
+		factor = 0 
+	}
+}

@@ -1,0 +1,33 @@
+state = {
+	id = 1083
+	name = "STATE_1083"
+	manpower = 1020134
+	state_category = rural
+
+	resources = {
+		steel = 24
+		tungsten = 8
+		coal = 4
+	}
+
+	history = {
+
+		owner = KOR
+		add_core_of = KOR
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		
+		victory_points = {
+			11835 1 # Shingishū
+		}	
+	}
+
+	provinces = {
+		11835 9918 9795 11828 6963 912 11896 9790 3912 7171 
+	}
+
+	local_supplies = 1.0 
+}

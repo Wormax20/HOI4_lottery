@@ -1,0 +1,140 @@
+ideas = {
+	country = { #國家精神
+		The_Kim_Dynasty = { #ideas的id
+			picture = The_Kim_Dynasty
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_factor = 0.25
+				production_speed_arms_factory_factor = 0.10
+				conscription = 0.03
+				army_core_attack_factor = 0.10
+				army_core_defence_factor = 0.10
+			}
+		}
+
+		KimKorea_focus_SAN_idea = {
+			picture = KimKorea_focus_SAN_idea
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				research_speed_factor = 0.10
+			}
+		}
+
+		KimKorea_focus_Ni_One_idea = {
+			picture = KimKorea_focus_Ni_One_idea
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.10
+			}
+		}
+
+		KimKorea_focus_SAN_two_idea = {
+			picture = KimKorea_focus_SAN_two_idea
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				research_speed_factor = 0.10
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.10
+					instant = yes
+				}
+				support_equipment = {
+					build_cost_ic = -0.10
+					instant = yes
+				}
+				motorized_equipment = {
+					build_cost_ic = -0.10
+					instant = yes
+				}
+			}
+		}
+
+		KimKorea_focus_Finish_idea = {
+			picture = KimKorea_focus_Finish_idea
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_factor = 0.25
+				weekly_manpower = 10000
+				local_resources_factor = 0.30
+				consumer_goods_factor = -0.20
+				consumer_goods_expected_value = -0.10
+				research_speed_factor = 0.10
+				production_speed_buildings_factor = 0.10
+				production_speed_arms_factory_factor = 0.10
+				production_speed_industrial_complex_factor = 0.10
+				production_speed_dockyard_factor = 0.10
+				industrial_capacity_factory = 0.20
+				industrial_capacity_dockyard = 0.20
+				production_factory_max_efficiency_factor = 0.20
+				production_factory_efficiency_gain_factor = 0.20
+				command_power_gain_mult = 0.50
+				max_command_power_mult = 0.50
+			}
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.10
+					soft_attack = 0.05
+					hard_attack = 0.05
+					breakthrough = 0.05
+					instant = yes
+				}
+				mechanized_equipment = {
+					build_cost_ic = -0.10
+					soft_attack = 0.05
+					hard_attack = 0.05
+					breakthrough = 0.05
+					instant = yes
+				}
+				convoy = {
+					build_cost_ic = -0.25
+					instant = yes
+				}
+			}
+		}
+		KimKorea_focus_New_Start_idea = {
+			picture = KimKorea_focus_New_Start_idea
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				enemy_operative_capture_chance_factor = 0.20
+				own_operative_capture_chance_factor = -0.10
+				agency_upgrade_time = -0.25
+				operative_slot = 2
+				airforce_intel_to_others = -20
+				army_intel_to_others = -20
+				civilian_intel_to_others = -20
+				operation_outcome = 0.2
+			}
+		}
+	}
+}

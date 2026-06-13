@@ -1,0 +1,39 @@
+state = {
+	id = 527
+	name = "STATE_527"
+	manpower = 3516134
+	state_category = city
+
+	resources = {
+		steel = 6
+		tungsten = 2
+	}
+
+	history = {
+
+		owner = KOR
+		add_core_of = KOR
+
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			1003 = {
+				naval_base = 2
+			}
+		}
+		
+		victory_points = {
+			4052 10 # Pyongyang
+		}	
+		victory_points = {
+			1003 1 
+		}	
+		
+	}
+
+	provinces = {
+		1003 4107 7070 7155 9981 10065 11915 12040 4052
+	}
+
+	local_supplies = 2.0 
+}

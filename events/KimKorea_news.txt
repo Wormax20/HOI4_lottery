@@ -1,0 +1,18 @@
+add_namespace = KimKorea_news
+
+news_event = {
+	id = KimKorea_news.1
+	title = KimKorea_news.1.t
+	desc = KimKorea_news.1.d
+
+	picture = GFX_report_event_generic
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = KimKorea_news.1.a
+		hidden_effect = {
+			play_song = "KOR_Theme"
+		}
+	}
+}

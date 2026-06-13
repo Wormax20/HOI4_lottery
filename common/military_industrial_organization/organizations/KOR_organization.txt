@@ -1,0 +1,118 @@
+@tank_hoesch_X = 9
+@tank_hoesch_Y = 0
+
+@aircraft_hamburger_X = 9
+@aircraft_hamburger_Y = 0
+
+#西方
+
+KOR_henschel_KimKorea_organization = {
+	include = generic_infantry_tank_organization
+	icon = GFX_idea_henschel
+	name = 朝鲜-德国坦克制造商
+
+	allowed = {	
+		original_tag = KOR
+	}
+	visible = {
+		always = yes
+	}
+	available = {
+		from = {
+			has_country_flag = KimKorea_west_organization
+		}
+	}
+}
+
+KOR_harland_wolff_KimKorea_organization = {
+	include = generic_task_force_ship_organization
+	icon = GFX_idea_harland_wolff
+	name = 朝鲜-英国船舰设计商
+
+	allowed = {	
+		original_tag = KOR
+	}
+	visible = {
+		always = yes
+	}
+	available = {
+		from = {
+			has_country_flag = KimKorea_west_organization
+		}
+	}
+}
+
+KOR_ceska_zbrojovka_uhersky_brod_KimKorea_organization = {
+	include = CZE_automatic_weapons_equipment_organization
+	icon = GFX_idea_CZE_ceska_zbrojovka_uhersky_brod
+	name = 朝鲜-捷克混合生产商
+
+	allowed = {	
+		original_tag = KOR
+	}
+	visible = {
+		always = yes
+	}
+	available = {
+		from = {
+			has_country_flag = KimKorea_west_organization
+		}
+	}
+}
+
+#共产国际
+
+KOR_okmo_KimKorea_organization = {
+	include = generic_infantry_tank_organization
+	icon = GFX_idea_okmo
+	name = 朝鲜-苏维埃坦克设计商
+
+	allowed = {	
+		original_tag = KOR
+	}
+	visible = {
+		always = yes
+	}
+	available = {
+		from = {
+			has_country_flag = KimKorea_east_organization
+		}
+	}
+}
+
+KOR_mytishchy_machine_building_plant_KimKorea_organization = {
+	include = generic_tank_refurbishment_plant_organization
+	icon = GFX_idea_SOV_mytishchy_machine_building_plant
+	name = 朝鲜-苏维埃坦克生产商
+	
+	allowed = {	
+		original_tag = KOR
+	}
+	visible = {
+		always = yes
+	}
+	available = {
+		from = {
+			has_country_flag = KimKorea_east_organization
+		}
+	}
+}
+
+KOR_shenyang_aircraft_corporation_KimKorea_organization = {
+	include = generic_high_agility_fighter_aircraft_organization 
+	name = PRC_shenyang_aircraft_corporation_organization
+ 	icon = GFX_idea_PRC_shenyang_aircraft_corporation
+	name = 朝鲜-中共飞机合作商
+
+ 	allowed = {	
+		original_tag = KOR
+	}
+	visible = {
+		always = yes
+	}
+	available = {
+		from = {
+			has_country_flag = KimKorea_east_organization
+		}
+	}
+}

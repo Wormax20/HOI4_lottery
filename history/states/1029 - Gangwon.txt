@@ -1,0 +1,33 @@
+state = {
+
+	id = 1029
+	name = "STATE_1029"
+	manpower = 828410
+	
+	state_category = town
+
+	resources = {
+		tungsten = 2
+	}
+
+	history = {
+
+		owner = KOR
+		add_core_of = KOR
+
+		buildings = {
+			infrastructure = 2
+		}
+
+		victory_points = {
+			4103 1 
+		}
+
+	}
+
+	provinces = {
+		4103 9936 12011 11912 
+	}
+
+	local_supplies = 1.0 
+}

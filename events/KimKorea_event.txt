@@ -1,0 +1,38 @@
+add_namespace = KimKorea_event
+add_namespace = KimKorea_event_Tech
+
+country_event = {
+	id = KimKorea_event.100
+	title = KimKorea_event.100.t
+	desc = KimKorea_event.100.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		KimKorea_Kim_Il_Sung = {
+			add_country_leader_trait = Kim_Great_Leader
+		}
+	}
+
+	option = {
+		name = KimKorea_event.100.a
+	}
+}
+
+country_event = {
+	id = KimKorea_event_Tech.100
+	title = KimKorea_event_Tech.100.t
+	desc = KimKorea_event_Tech.100.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		KimKorea_Kim_Il_Sung = {
+			add_country_leader_trait = Kim_Tech_Titan
+		}
+	}
+
+	option = {
+		name = KimKorea_event_Tech.100.a
+	}
+}

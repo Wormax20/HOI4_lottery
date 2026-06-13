@@ -1,0 +1,810 @@
+focus_tree = {
+	id = KimKorea_focustree
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 50
+			tag = KOR
+		}
+	}
+
+	initial_show_position = {
+		x = 0
+	}
+
+	default = no
+	reset_on_civilwar = no
+	continuous_focus_position = {
+		x = 100
+		y = 1200
+	}
+
+	focus = {
+		id = KimKorea_focus_IChi
+		icon = GFX_focus_generic_spur_communist_revolutions
+		cost = 10
+		x = 18
+		y = 0
+		completion_reward = { 
+			set_popularities = {
+				communism = 100
+				democratic = 0
+				fascism = 0
+				neutrality = 0
+			}
+			set_politics = {
+				ruling_party = communism
+			}
+			add_ideas = The_Kim_Dynasty
+			add_ideas = KimKorea_debuff_political_one
+			add_ideas = KimKorea_debuff_army_one
+			add_ideas = KimKorea_debuff_air_one
+			add_ideas = KimKorea_debuff_navy_one
+			add_ideas = KimKorea_debuff_money_one
+			add_ideas = KimKorea_debuff_research_one
+			add_offsite_building = {
+				type = industrial_complex
+				level = 5
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 3
+			}
+			add_offsite_building = {
+                type = dockyard
+                level = 2
+            }
+			news_event = {
+				id = KimKorea_news.1
+				days = 0
+			}
+		}
+	}
+
+	focus = {
+		id = KimKorea_focus_Ni
+		icon = GFX_focus_generic_industry_1
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi #定義該國策相對位置
+		x = -2
+		y = 1
+		prerequisite = { #要求的前置國策
+			focus = KimKorea_focus_IChi 
+		}
+		completion_reward = { 
+			remove_ideas = KimKorea_debuff_money_one
+			add_ideas = KimKorea_debuff_money_two
+			add_offsite_building = {
+				type = industrial_complex
+				level = 5
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 5
+			}
+		}
+	}
+
+	focus = {
+		id = KimKorea_focus_Ni_One
+		icon = GFX_focus_generic_industry_2
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi
+		x = -2
+		y = 2
+		prerequisite = { 
+			focus = KimKorea_focus_Ni
+		}
+		completion_reward = { 
+			add_offsite_building = {
+				type = industrial_complex
+				level = 5
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 5
+			}
+			add_timed_idea = {
+				idea = KimKorea_focus_Ni_One_idea
+				years = 2
+			}
+		}
+	}
+
+	focus = {
+		id = KimKorea_focus_Ni_two_1
+		icon = GFX_focus_generic_industry_2
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi
+		x = -1
+		y = 3
+		prerequisite = { 
+			focus = KimKorea_focus_Ni_One
+		}
+		available = {
+   			num_of_factories > 50
+		}
+		completion_reward = { 
+			remove_ideas = KimKorea_debuff_money_two
+			add_ideas = KimKorea_debuff_money_three
+			add_ideas = KimKorea_focus_Prod1
+		}
+	}
+
+	focus = {
+		id = KimKorea_focus_Ni_two_2
+		icon = GFX_focus_generic_horse_studs
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi
+		x = -1
+		y = 4
+		prerequisite = { 
+			focus = KimKorea_focus_Ni_two_1
+		}
+		available = {
+   			num_of_factories > 70
+		}
+		completion_reward = { 
+			remove_ideas = KimKorea_focus_Prod1
+			remove_ideas = KimKorea_debuff_money_three
+			add_ideas = KimKorea_debuff_money_four
+			add_ideas = KimKorea_focus_Prod2
+		}
+	}
+	#上方為工業線分支
+	#下方為资源線分支
+	focus = {
+		id = KimKorea_focus_Ni_one_1
+		icon = GFX_focus_generic_farmland
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi
+		x = -3
+		y = 3
+		prerequisite = { 
+			focus = KimKorea_focus_Ni_One
+		}
+		completion_reward = { 
+			1031 = {
+				add_resource = {
+					type = Tungsten
+					amount = 16
+				}
+				add_resource = {
+					type = steel
+					amount = 36
+				}
+				add_resource = {
+					type = aluminium
+					amount = 24
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = KimKorea_focus_Ni_one_2
+		icon = GFX_focus_generic_farmland
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi
+		x = -3
+		y = 4
+		prerequisite = { 
+			focus = KimKorea_focus_Ni_one_1
+		}
+		completion_reward = { 
+			1030 = {
+				add_resource = {
+					type = oil
+					amount = 10
+				}
+				add_resource = {
+					type = chromium
+					amount = 30
+				}
+				add_resource = {
+					type = rubber
+					amount = 24
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = KimKorea_focus_Ni_three
+		icon = GFX_focus_generic_industry_3
+		cost = 10
+		relative_position_id = KimKorea_focus_IChi
+		x = -2
+		y = 5
+		prerequisite = { 
+			focus = KimKorea_focus_Ni_two_2
+		}
+		prerequisite = { 
+			focus = KimKorea_focus_Ni_one_2
+		}
+		available = {
+   			num_of_factories > 90
+		}
+		completion_reward = { 
+			remove_ideas = KimKorea_focus_Prod2
+			remove_ideas = KimKorea_debuff_money_four
+			add_ideas = KimKorea_buff_money
+			add_ideas = KimKorea_focus_Prod3
+		}
+	}
+	#下方為科研線分支
+	focus = {
+		id = KimKorea_focus_SAN
+		icon = GFX_focus_generic_socialist_science
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi
+		x = 2
+		y = 1
+		prerequisite = { 
+			focus = KimKorea_focus_IChi 
+		}
+		completion_reward = { 
+			remove_ideas = KimKorea_debuff_research_one
+			add_ideas = KimKorea_debuff_research_two
+			add_research_slot = 1
+			add_ideas = KimKorea_focus_SAN_idea
+		}
+	}
+
+	focus = {
+		id = KimKorea_focus_SAN_one
+		icon = GFX_focus_generic_socialist_science
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi
+		x = 2
+		y = 2
+		prerequisite = { 
+			focus = KimKorea_focus_SAN
+		}
+		completion_reward = { 
+			add_tech_bonus = {
+       			name = industry_bonus
+      			bonus = 1.0
+      			uses = 4
+        		category = industry
+   			}
+			add_tech_bonus = {
+				name = electronics_bonus
+				bonus = 1.0
+				uses = 4
+				category = electronics
+			}
+		}
+	}
+
+	focus = {
+		id = KimKorea_focus_SAN_two
+		icon = GFX_focus_generic_socialist_science
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi
+		x = 2
+		y = 3
+		prerequisite = { 
+			focus = KimKorea_focus_SAN_one
+		}
+		completion_reward = { 
+			remove_ideas = KimKorea_debuff_research_two
+			add_ideas = KimKorea_debuff_research_three
+			add_ideas = KimKorea_focus_SAN_two_idea
+		}
+	}
+
+	focus = {
+		id = KimKorea_focus_SAN_three
+		icon = GFX_focus_generic_socialist_science
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi
+		x = 2
+		y = 4
+		prerequisite = { 
+			focus = KimKorea_focus_SAN_two
+		}
+		completion_reward = { 
+			add_tech_bonus = {
+				name = ARMOUR_TITLE
+				bonus = 1.5
+				uses = 3
+				category = mio_cat_tech_all_armor_and_modules
+			}
+			add_tech_bonus = {
+				name = ARTILLERY_TITLE
+				bonus = 1.5
+				uses = 3
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = KimKorea_focus_SAN_four
+		icon = GFX_focus_generic_socialist_science
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi
+		x = 2
+		y = 5
+		prerequisite = { 
+			focus = KimKorea_focus_SAN_three
+		}
+		completion_reward = { 
+			remove_ideas = KimKorea_debuff_research_three
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = KimKorea_focus_Finish
+		icon = GFX_focus_generic_communist_asia
+		cost = 20
+		relative_position_id = KimKorea_focus_IChi
+		x = 0
+		y = 6
+		prerequisite = { 
+			focus = KimKorea_focus_SAN_four
+		}
+		prerequisite = { 
+			focus = KimKorea_focus_Ni_three
+		}
+		prerequisite = { 
+			focus = KimKorea_focus_Shi_three_1
+		}
+		prerequisite = { 
+			focus = KimKorea_focus_Go_Finish
+		}
+		available = {
+   			num_of_factories > 250
+			has_army_manpower = {
+				size > 2500000
+			}
+		}
+		completion_reward = { 
+			remove_ideas = KimKorea_focus_Prod3
+			add_ideas = KimKorea_focus_Finish_idea
+			add_research_slot = 1
+		}
+	}
+
+
+	#下方为政治线分支
+
+	focus = {
+		id = KimKorea_focus_Shi
+		icon = GFX_focus_generic_improve_the_administration
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi #定義該國策相對位置
+		x = -6
+		y = 1
+		prerequisite = { #要求的前置國策
+			focus = KimKorea_focus_IChi 
+		}
+		completion_reward = { 
+			add_political_power = 300
+			add_stability = 0.10
+			add_war_support = 0.10
+			remove_ideas = KimKorea_debuff_political_one
+			add_ideas = KimKorea_debuff_political_two
+		}
+	}
+
+	focus = {
+		id = KimKorea_focus_Shi_one #西方
+		icon = GFX_focus_generic_befriend_usa
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi #定義該國策相對位置
+		x = -7
+		y = 2
+		prerequisite = { #要求的前置國策
+			focus = KimKorea_focus_Shi
+		}
+		mutually_exclusive = { focus = KimKorea_focus_Shi_two } #互斥国策
+		completion_reward = { 
+			remove_ideas = KimKorea_debuff_political_two
+			add_ideas = KimKorea_debuff_political_three
+			add_ideas = KimKorea_focus_Prod4
+		}
+	}
+
+	focus = {
+		id = KimKorea_focus_Shi_one_1 #西方
+		icon = GFX_focus_generic_befriend_usa
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi #定義該國策相對位置
+		x = -7
+		y = 3
+		prerequisite = { #要求的前置國策
+			focus = KimKorea_focus_Shi_one
+		}
+		completion_reward = { 
+			set_country_flag = KimKorea_west_organization
+			add_political_power = 10
+		}
+	}
+
+	focus = {
+		id = KimKorea_focus_Shi_two #共产国际
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi #定義該國策相對位置
+		x = -5
+		y = 2
+		prerequisite = { #要求的前置國策
+			focus = KimKorea_focus_Shi
+		}
+		mutually_exclusive = { focus = KimKorea_focus_Shi_one } #互斥国策
+		completion_reward = { 
+			remove_ideas = KimKorea_debuff_political_two
+			add_ideas = KimKorea_debuff_political_three
+			add_ideas = KimKorea_focus_Prod5
+
+			add_offsite_building = {
+				type = industrial_complex
+				level = 3
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 2
+			}
+		}
+	}
+
+	focus = {
+		id = KimKorea_focus_Shi_two_1 #共产国际
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi #定義該國策相對位置
+		x = -5
+		y = 3
+		prerequisite = { #要求的前置國策
+			focus = KimKorea_focus_Shi_two
+		}
+		completion_reward = { 
+			set_country_flag = KimKorea_east_organization
+			add_political_power = 10
+		}
+	}
+
+	focus = {
+		id = KimKorea_focus_Shi_three #共产国际
+		icon = GFX_focus_SOV_the_supreme_soviet
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi #定義該國策相對位置
+		x = -6
+		y = 4
+		prerequisite = { #要求的前置國策
+			focus = KimKorea_focus_Shi_two_1
+			focus = KimKorea_focus_Shi_one_1
+		}
+		completion_reward = { 
+			remove_ideas = KimKorea_debuff_political_three
+			country_event = {
+				id = KimKorea_event.100
+				days = 0
+			}
+		}
+	}
+
+	focus = {
+		id = KimKorea_focus_Shi_three_1 #共产国际
+		icon = GFX_focus_NORDIC_com_capstone_research
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi #定義該國策相對位置
+		x = -6
+		y = 5
+		prerequisite = { #要求的前置國策
+			focus = KimKorea_focus_Shi_three
+		}
+		completion_reward = { 
+			add_research_slot = 1
+			country_event = {
+				id = KimKorea_event_Tech.100
+				days = 0
+			}
+		}
+	}
+	#上方为政治线
+	#下方为军事线
+
+	focus = {
+		id = KimKorea_focus_Go
+		icon = GFX_focus_SOV_builder_of_the_red_army
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi
+		x = 6
+		y = 1
+		prerequisite = { 
+			focus = KimKorea_focus_IChi 
+		}
+		completion_reward = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 5
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_focus_Go_army
+		icon = GFX_focus_PRC_immediate_response_to_lack_of_army
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi
+		x = 4
+		y = 2
+		prerequisite = { 
+			focus = KimKorea_focus_Go
+		}
+		completion_reward = {
+			remove_ideas = KimKorea_debuff_army_one
+			add_ideas = KimKorea_debuff_army_two
+			add_tech_bonus = {
+				name = INFANTRY_TITLE
+    			bonus = 1.0
+    			uses = 3
+   				 category = infantry_tech
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_focus_Go_army_one
+		icon = GFX_focus_PRC_immediate_response_to_lack_of_army
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi
+		x = 4
+		y = 3
+		prerequisite = { 
+			focus = KimKorea_focus_Go_army
+		}
+		completion_reward = {
+			remove_ideas = KimKorea_debuff_army_two
+			add_ideas = KimKorea_debuff_army_three
+			add_tech_bonus = {
+				name = INFANTRY_TITLE
+    			bonus = 1.0
+    			uses = 3
+   				 category = infantry_tech
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_focus_Go_army_two
+		icon = GFX_focus_PRC_immediate_response_to_lack_of_army
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi
+		x = 4
+		y = 4
+		prerequisite = { 
+			focus = KimKorea_focus_Go_army_one
+		}
+		completion_reward = {
+			remove_ideas = KimKorea_debuff_army_three
+			add_tech_bonus = {
+   				name = MOTORIZED_TITLE
+    			bonus = 1.0
+    			uses = 2
+    			category = mio_cat_tech_all_motorized_mechanized
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_focus_Go_air
+		icon = GFX_focus_PER_the_peoples_airforce
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi
+		x = 6
+		y = 2
+		prerequisite = { 
+			focus = KimKorea_focus_Go
+		}
+		completion_reward = {
+			remove_ideas = KimKorea_debuff_air_one
+			add_ideas = KimKorea_debuff_air_two
+		}
+	}
+	focus = {
+		id = KimKorea_focus_Go_air_one
+		icon = GFX_focus_PER_the_peoples_airforce
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi
+		x = 6
+		y = 3
+		prerequisite = { 
+			focus = KimKorea_focus_Go_air
+		}
+		completion_reward = {
+			remove_ideas = KimKorea_debuff_air_two
+			add_ideas = KimKorea_debuff_air_three
+		}
+	}
+	focus = {
+		id = KimKorea_focus_Go_air_two
+		icon = GFX_focus_PER_the_peoples_airforce
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi
+		x = 6
+		y = 4
+		prerequisite = { 
+			focus = KimKorea_focus_Go_air_one
+		}
+		completion_reward = {
+			remove_ideas = KimKorea_debuff_air_three
+		}
+	}
+	focus = {
+		id = KimKorea_focus_Go_navy
+		icon = GFX_focus_PER_the_peoples_navy
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi
+		x = 8
+		y = 2
+		prerequisite = { 
+			focus = KimKorea_focus_Go
+		}
+		completion_reward = {
+			remove_ideas = KimKorea_debuff_navy_one
+			add_ideas = KimKorea_debuff_navy_two
+		}
+	}
+	focus = {
+		id = KimKorea_focus_Go_navy_one
+		icon = GFX_focus_PER_the_peoples_navy
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi
+		x = 8
+		y = 3
+		prerequisite = { 
+			focus = KimKorea_focus_Go_navy
+		}
+		completion_reward = {
+			remove_ideas = KimKorea_debuff_navy_two
+			add_ideas = KimKorea_debuff_navy_three
+		}
+	}
+	focus = {
+		id = KimKorea_focus_Go_navy_two
+		icon = GFX_focus_PER_the_peoples_navy
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi
+		x = 8
+		y = 4
+		prerequisite = { 
+			focus = KimKorea_focus_Go_navy_one
+		}
+		completion_reward = {
+			remove_ideas = KimKorea_debuff_navy_three
+		}
+	}
+	focus = {
+		id = KimKorea_focus_Go_Finish
+		icon = GFX_focus_SWE_refuge_from_war
+		cost = 10
+		relative_position_id = KimKorea_focus_IChi
+		x = 6
+		y = 5
+		prerequisite = { 
+			focus = KimKorea_focus_Go_navy_two
+		}
+		prerequisite = { 
+			focus = KimKorea_focus_Go_air_two
+		}
+		prerequisite = { 
+			focus = KimKorea_focus_Go_army_two
+		}
+		completion_reward = {
+			add_ideas = KimKorea_buff_All_Army_Finish
+			add_ideas = KimKorea_buff_All_Air_Finish
+			add_ideas = KimKorea_buff_All_Navy_Finish
+		}
+	}
+	focus = {
+		id = KimKorea_focus_Special
+		icon = GFX_focus_SMB_special_forces_option_3
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi
+		x = 4
+		y = 5
+		prerequisite = { 
+			focus = KimKorea_focus_Go_army_two
+		}
+		completion_reward = {
+			add_potential_special_forces_tree = yes
+		}
+	}
+	focus = {
+		id = KimKorea_focus_More_Navy
+		icon = GFX_focus_generic_navy_battleship2
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi
+		x = 8
+		y = 5
+		prerequisite = { 
+			focus = KimKorea_focus_Go_navy_two
+		}
+		completion_reward = {
+			add_offsite_building = {
+                type = dockyard
+                level = 10
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_focus_More_Navy_1
+		icon = GFX_focus_generic_navy_battleship2
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi
+		x = 8
+		y = 6
+		prerequisite = { 
+			focus = KimKorea_focus_More_Navy
+		}
+		completion_reward = {
+			add_offsite_building = {
+                type = dockyard
+                level = 10
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_focus_New_Start
+		icon = GFX_focus_SWE_socialist_reforms
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi
+		x = 0
+		y = 7
+		prerequisite = { 
+			focus = KimKorea_focus_Finish
+		}
+		completion_reward = { 
+			add_ideas = KimKorea_focus_New_Start_idea
+			create_intelligence_agency = yes
+		}
+	}
+	focus = {
+		id = KimKorea_focus_PRC_Korea
+		icon = GFX_focus_SWE_socialist_reforms
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi
+		x = 4
+		y = 8
+		prerequisite = { 
+			focus = KimKorea_focus_New_Start
+		}
+		completion_reward = { 
+			add_ideas = KimKorea_focus_New_Start_idea
+			create_intelligence_agency = yes
+		}
+	}
+	focus = {
+		id = KimKorea_focus_SOV_Korea
+		icon = GFX_focus_SWE_socialist_reforms
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi
+		x = 0
+		y = 8
+		prerequisite = { 
+			focus = KimKorea_focus_New_Start
+		}
+		completion_reward = { 
+			add_ideas = KimKorea_focus_New_Start_idea
+			create_intelligence_agency = yes
+		}
+	}
+	focus = {
+		id = KimKorea_focus_JAP_Korea
+		icon = GFX_focus_SWE_socialist_reforms
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi
+		x = -4
+		y = 8
+		prerequisite = { 
+			focus = KimKorea_focus_New_Start
+		}
+		completion_reward = { 
+			add_ideas = KimKorea_focus_New_Start_idea
+			create_intelligence_agency = yes
+		}
+	}
+}

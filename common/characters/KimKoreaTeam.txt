@@ -1,0 +1,95 @@
+characters = {
+	KimKorea_Kim_Il_Sung = {
+		name = KimKorea_Kim_Il_Sung
+		portraits={
+			civilian={
+				large = "GFX_portrait_KimKorea_Kim_Il_Sung" #156*210 肖像
+			}
+		}
+		country_leader={
+			ideology = anti_revisionism
+			traits={ Kim_Chairman }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	KimKorea_Kim_Il = {
+		name = KimKorea_Kim_Il
+		portraits={
+			civilian={
+				small = "GFX_portrait_KimKorea_Kim_Il" #65*67
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			cost = 150
+			idea_token = KimKorea_Kim_Il1
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				KimKorea_Kim_Il_buff
+			}
+		}
+	}
+
+	KimKorea_Heo_Heon = {
+		name = KimKorea_Heo_Heon
+		portraits={
+			civilian={
+				small = "GFX_portrait_KimKorea_Heo_Heon" #65*67
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			cost = 150
+			idea_token = KimKorea_Heo_Heon
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				KimKorea_Heo_Heon_buff
+			}
+		}
+	}
+
+	KimKorea_Ri_Sung_Yop = {
+		name = KimKorea_Ri_Sung_Yop
+		portraits={
+			civilian={
+				small = "GFX_portrait_KimKorea_Ri_Sung_Yop" #65*67
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			cost = 150
+			idea_token = KimKorea_Ri_Sung_Yop
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				KimKorea_Ri_Sung_Yop_buff
+			}
+		}
+	}
+
+	KimKorea_Pak_Kum_chol = {
+		name = KimKorea_Pak_Kum_chol
+		portraits={
+			civilian={
+				small = "GFX_portrait_KimKorea_Pak_Kum_chol" #65*67
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			cost = 150
+			idea_token = KimKorea_Pak_Kum_chol
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				KimKorea_Pak_Kum_chol_buff
+			}
+		}
+	}
+}

@@ -1,0 +1,41 @@
+state = {
+
+	id = 1085
+	name = "STATE_1085"
+	manpower = 1561368
+	
+	state_category = town
+
+	resources = {
+		aluminium = 10
+	}
+
+	history = {
+
+		owner = KOR
+		add_core_of = KOR
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1 
+			7175 = {
+				naval_base = 3
+			}
+		}
+
+		victory_points = {
+			10115 1 # Seishū
+		}
+
+		victory_points = {
+			11977 1 # Taiden
+		}
+
+	}
+
+	provinces = {
+		11992 7204 10115 7175 11977
+	}
+
+	local_supplies = 1.0 
+}
