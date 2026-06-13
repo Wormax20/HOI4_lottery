@@ -36,7 +36,7 @@ leader_traits = {
 	Han_traits = {
 		random = no
 		sprite = 10
-		political_power_cost = 0.35
+		political_power_cost = 0.25
 		production_speed_buildings_factor = 0.10
 	}
 

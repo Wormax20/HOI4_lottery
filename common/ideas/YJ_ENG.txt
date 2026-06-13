@@ -267,6 +267,7 @@ ideas = {
 			modifier = {
 				global_building_slots_factor = 0.10
 				industrial_capacity_dockyard = 0.10
+				production_speed_dockyard_factor = 0.10
 			}
 			equipment_bonus = {
 				ship_hull_light = {
