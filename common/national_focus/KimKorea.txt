@@ -74,8 +74,10 @@ focus_tree = {
 			focus = KimKorea_focus_IChi 
 		}
 		completion_reward = { 
-			remove_ideas = KimKorea_debuff_money_one
-			add_ideas = KimKorea_debuff_money_two
+			swap_ideas = {
+				remove_idea = KimKorea_debuff_money_one
+				add_idea = KimKorea_debuff_money_two
+			}
 			add_offsite_building = {
 				type = industrial_complex
 				level = 5
@@ -127,8 +129,10 @@ focus_tree = {
    			num_of_factories > 50
 		}
 		completion_reward = { 
-			remove_ideas = KimKorea_debuff_money_two
-			add_ideas = KimKorea_debuff_money_three
+			swap_ideas = {
+				remove_idea = KimKorea_debuff_money_two
+				add_idea = KimKorea_debuff_money_three
+			}
 			add_ideas = KimKorea_focus_Prod1
 		}
 	}
@@ -147,10 +151,14 @@ focus_tree = {
    			num_of_factories > 70
 		}
 		completion_reward = { 
-			remove_ideas = KimKorea_focus_Prod1
-			remove_ideas = KimKorea_debuff_money_three
-			add_ideas = KimKorea_debuff_money_four
-			add_ideas = KimKorea_focus_Prod2
+			swap_ideas = {
+				remove_idea = KimKorea_focus_Prod1
+				add_idea = KimKorea_focus_Prod2
+			}
+			swap_ideas = {
+				remove_idea = KimKorea_debuff_money_three
+				add_idea = KimKorea_debuff_money_four
+			}
 		}
 	}
 	#上方為工業線分支
@@ -228,10 +236,14 @@ focus_tree = {
    			num_of_factories > 90
 		}
 		completion_reward = { 
-			remove_ideas = KimKorea_focus_Prod2
-			remove_ideas = KimKorea_debuff_money_four
-			add_ideas = KimKorea_buff_money
-			add_ideas = KimKorea_focus_Prod3
+			swap_ideas = {
+				remove_idea = KimKorea_focus_Prod2
+				add_idea = KimKorea_focus_Prod3
+			}
+			swap_ideas = {
+				remove_idea = KimKorea_debuff_money_four
+				add_idea = KimKorea_buff_money
+			}
 		}
 	}
 	#下方為科研線分支
@@ -246,8 +258,10 @@ focus_tree = {
 			focus = KimKorea_focus_IChi 
 		}
 		completion_reward = { 
-			remove_ideas = KimKorea_debuff_research_one
-			add_ideas = KimKorea_debuff_research_two
+			swap_ideas = {
+				remove_idea = KimKorea_debuff_research_one
+				add_idea = KimKorea_debuff_research_two
+			}
 			add_research_slot = 1
 			add_ideas = KimKorea_focus_SAN_idea
 		}
@@ -290,8 +304,10 @@ focus_tree = {
 			focus = KimKorea_focus_SAN_one
 		}
 		completion_reward = { 
-			remove_ideas = KimKorea_debuff_research_two
-			add_ideas = KimKorea_debuff_research_three
+			swap_ideas = {
+				remove_idea = KimKorea_debuff_research_two
+				add_idea = KimKorea_debuff_research_three
+			}
 			add_ideas = KimKorea_focus_SAN_two_idea
 		}
 	}
@@ -364,8 +380,10 @@ focus_tree = {
 			}
 		}
 		completion_reward = { 
-			remove_ideas = KimKorea_focus_Prod3
-			add_ideas = KimKorea_focus_Finish_idea
+			swap_ideas = {
+				remove_idea = KimKorea_focus_Prod3
+				add_idea = KimKorea_focus_Finish_idea
+			}
 			add_research_slot = 1
 		}
 	}
@@ -387,8 +405,10 @@ focus_tree = {
 			add_political_power = 300
 			add_stability = 0.10
 			add_war_support = 0.10
-			remove_ideas = KimKorea_debuff_political_one
-			add_ideas = KimKorea_debuff_political_two
+			swap_ideas = {
+				remove_idea = KimKorea_debuff_political_one
+				add_idea = KimKorea_debuff_political_two
+			}
 		}
 	}
 
@@ -404,8 +424,10 @@ focus_tree = {
 		}
 		mutually_exclusive = { focus = KimKorea_focus_Shi_two } #互斥国策
 		completion_reward = { 
-			remove_ideas = KimKorea_debuff_political_two
-			add_ideas = KimKorea_debuff_political_three
+			swap_ideas = {
+				remove_idea = KimKorea_debuff_political_two
+				add_idea = KimKorea_debuff_political_three
+			}
 			add_ideas = KimKorea_focus_Prod4
 		}
 	}
@@ -438,8 +460,10 @@ focus_tree = {
 		}
 		mutually_exclusive = { focus = KimKorea_focus_Shi_one } #互斥国策
 		completion_reward = { 
-			remove_ideas = KimKorea_debuff_political_two
-			add_ideas = KimKorea_debuff_political_three
+			swap_ideas = {
+				remove_idea = KimKorea_debuff_political_two
+				add_idea = KimKorea_debuff_political_three
+			}
 			add_ideas = KimKorea_focus_Prod5
 
 			add_offsite_building = {
@@ -538,8 +562,10 @@ focus_tree = {
 			focus = KimKorea_focus_Go
 		}
 		completion_reward = {
-			remove_ideas = KimKorea_debuff_army_one
-			add_ideas = KimKorea_debuff_army_two
+			swap_ideas = {
+				remove_idea = KimKorea_debuff_army_one
+				add_idea = KimKorea_debuff_army_two
+			}
 			add_tech_bonus = {
 				name = INFANTRY_TITLE
     			bonus = 1.0
@@ -559,8 +585,10 @@ focus_tree = {
 			focus = KimKorea_focus_Go_army
 		}
 		completion_reward = {
-			remove_ideas = KimKorea_debuff_army_two
-			add_ideas = KimKorea_debuff_army_three
+			swap_ideas = {
+				remove_idea = KimKorea_debuff_army_two
+				add_idea = KimKorea_debuff_army_three
+			}
 			add_tech_bonus = {
 				name = INFANTRY_TITLE
     			bonus = 1.0
@@ -600,8 +628,10 @@ focus_tree = {
 			focus = KimKorea_focus_Go
 		}
 		completion_reward = {
-			remove_ideas = KimKorea_debuff_air_one
-			add_ideas = KimKorea_debuff_air_two
+			swap_ideas = {
+				remove_idea = KimKorea_debuff_air_one
+				add_idea = KimKorea_debuff_air_two
+			}
 		}
 	}
 	focus = {
@@ -615,8 +645,10 @@ focus_tree = {
 			focus = KimKorea_focus_Go_air
 		}
 		completion_reward = {
-			remove_ideas = KimKorea_debuff_air_two
-			add_ideas = KimKorea_debuff_air_three
+			swap_ideas = {
+				remove_idea = KimKorea_debuff_air_two
+				add_idea = KimKorea_debuff_air_three
+			}
 		}
 	}
 	focus = {
@@ -644,8 +676,10 @@ focus_tree = {
 			focus = KimKorea_focus_Go
 		}
 		completion_reward = {
-			remove_ideas = KimKorea_debuff_navy_one
-			add_ideas = KimKorea_debuff_navy_two
+			swap_ideas = {
+				remove_idea = KimKorea_debuff_navy_one
+				add_idea = KimKorea_debuff_navy_two
+			}
 		}
 	}
 	focus = {
@@ -659,8 +693,10 @@ focus_tree = {
 			focus = KimKorea_focus_Go_navy
 		}
 		completion_reward = {
-			remove_ideas = KimKorea_debuff_navy_two
-			add_ideas = KimKorea_debuff_navy_three
+			swap_ideas = {
+				remove_idea = KimKorea_debuff_navy_two
+				add_idea = KimKorea_debuff_navy_three
+			}
 		}
 	}
 	focus = {

@@ -363,7 +363,7 @@ leader_traits = {
 		war_support_weekly = 0.003
 		equipment_bonus = {
 			fighter = {
-				build_cost_ic = -0.05
+				build_cost_ic = 0.1
 				air_attack = 0.05
 				air_agility = 0.05
 				air_defence = 0.05
@@ -371,7 +371,7 @@ leader_traits = {
 				instant = yes
 			}
 			cas = {
-				build_cost_ic = -0.05
+				build_cost_ic = 0.1
 				air_ground_attack = 0.05
 				air_agility = 0.05
 				air_defence = 0.05

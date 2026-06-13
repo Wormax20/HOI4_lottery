@@ -46,7 +46,7 @@ country_event = {
 				ENG_marines_tech = 1
 				popup = yes
 		}
-		add_to_variable = { sf_trees = 1 }
+		add_potential_special_forces_tree = yes
 		name = KoKi_YJ_ENG_event.102.a
 		add_ideas = YJ_ENG_2_ideas
 		ai_chance = {

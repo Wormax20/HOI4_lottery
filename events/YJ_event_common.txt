@@ -102,7 +102,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		set_variable = { sf_trees = 1 }
+		add_potential_special_forces_tree = yes
 		name = KoKi_YJ.106.a
 		add_ideas = YJ_6_ideas
 		ai_chance = {

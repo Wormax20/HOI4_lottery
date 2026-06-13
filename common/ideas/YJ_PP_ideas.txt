@@ -142,7 +142,7 @@ ideas = {
 
 			picture = SWE_hedgehog_defense
 			modifier = {
-				special_forces_attack_factor = 0.1
+				special_forces_attack_factor = 0.15
 				custom_modifier_tooltip = YJ_6_ideas_tt
 			}
 		}

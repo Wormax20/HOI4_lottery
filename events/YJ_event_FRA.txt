@@ -143,7 +143,7 @@ country_event = {
 			uses = 2
 			category = artillery
 		}
-		add_to_variable = { sf_trees = 1 }
+		add_potential_special_forces_tree = yes
 		name = KoKi_YJ_FRA_event.104.a
 		add_ideas = YJ_FRA_4_ideas
 		ai_chance = {
