@@ -51,8 +51,8 @@
 
  KimKorea_focus_dam_Korea: "大坝建设工程"
  KimKorea_focus_dam_Korea_desc: "大坝建设工程"
- KimKorea_focus_dam_Korea2: "发展乡村"
- KimKorea_focus_dam_Korea2_desc: "发展乡村"
+ KimKorea_focus_dam_Korea_2: "发展乡村"
+ KimKorea_focus_dam_Korea_2_desc: "发展乡村"
 
  
 
@@ -110,3 +110,8 @@
 
  KimKorea_focus_New_Start: "兵马未动情报先行"
  KimKorea_focus_New_Start_desc: "兵马未动情报先行"
+
+ KimKorea_focus_Follow_SOV: "跟随苏联领导"
+ KimKorea_focus_Follow_SOV_desc: "跟随苏联领导"
+ KimKorea_focus_Korea_First: "走出我们自己的路"
+ KimKorea_focus_Korea_First_desc: "走出我们自己的路"

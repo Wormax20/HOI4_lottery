@@ -8195,8 +8195,6 @@ country_event = {
 
 		hidden_effect = {
 
-			SOV_start_civil_war = yes
-
 			SOV_right_opposition_civil_war_start = yes
 		}
 	}

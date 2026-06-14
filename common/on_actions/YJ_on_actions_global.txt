@@ -49,6 +49,7 @@ on_actions = {
 							tag = MEX
 							tag = BRA
 							tag = AUS
+							tag = KOR
 						}
 					}
 					set_variable = {

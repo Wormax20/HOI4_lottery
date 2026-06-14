@@ -1,6 +1,7 @@
 add_namespace = KimKorea_event
 add_namespace = KimKorea_event_Tech
 add_namespace = KimKorea_event_BacktoJapan
+add_namespace = KimKorea_event_JoinSOV
 
 country_event = {
 	id = KimKorea_event.100
@@ -69,4 +70,32 @@ country_event = {
         	factor = 0
     	}
 	}
+}
+country_event = {
+    id = KimKorea_event_JoinSOV.301
+
+    title = KimKorea_event_JoinSOV.301.t
+    desc = KimKorea_event_JoinSOV.301.d
+
+    picture = GFX_report_event_soviet_tanks
+
+    is_triggered_only = yes
+
+    option = {
+        name = KimKorea_event_JoinSOV.301.a
+
+        add_to_faction = FROM
+
+        ai_chance = {
+            factor = 100
+        }
+    }
+
+    option = {
+        name = KimKorea_event_JoinSOV.301.b
+
+        ai_chance = {
+            factor = 0
+        }
+    }
 }
