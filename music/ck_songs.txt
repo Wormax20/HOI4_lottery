@@ -21,3 +21,13 @@ music = {
 		}
 	}
 }
+
+music = {
+	song = "KOR_Theme"
+	
+	chance = { 
+		modifier = {
+			factor = 1
+		}
+	}
+}

@@ -673,7 +673,7 @@ focus_tree = {
 				name = INFANTRY_TITLE
     			bonus = 1.0
     			uses = 3
-   				 category = infantry_tech
+   				 category = support_tech
 			}
 		}
 	}
@@ -692,7 +692,7 @@ focus_tree = {
 			add_tech_bonus = {
    				name = MOTORIZED_TITLE
     			bonus = 1.0
-    			uses = 2
+    			uses = 3
     			category = mio_cat_tech_all_motorized_mechanized
 			}
 		}
@@ -712,6 +712,12 @@ focus_tree = {
 				remove_idea = KimKorea_debuff_air_one
 				add_idea = KimKorea_debuff_air_two
 			}
+			add_tech_bonus = {
+				name = small_airframe
+				bonus = 1.0
+				uses = 2
+				category = light_air
+			}
 		}
 	}
 	focus = {
@@ -729,6 +735,12 @@ focus_tree = {
 				remove_idea = KimKorea_debuff_air_two
 				add_idea = KimKorea_debuff_air_three
 			}
+			add_tech_bonus = {
+				name = small_airframe
+				bonus = 1.0
+				uses = 6
+				category = air_equipment
+			}
 		}
 	}
 	focus = {
@@ -743,6 +755,12 @@ focus_tree = {
 		}
 		completion_reward = {
 			remove_ideas = KimKorea_debuff_air_three
+			add_tech_bonus = {
+				name = small_airframe
+				bonus = 2.0
+				uses = 1
+				category = light_air
+			}
 		}
 	}
 	focus = {
