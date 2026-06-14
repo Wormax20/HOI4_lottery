@@ -17,7 +17,7 @@ ideas = {
 
 			modifier = {
 				political_power_gain = 0.25
-				research_speed_factor = 0.20
+				research_speed_factor = 0.25
 				training_time_factor = -0.1
 				production_speed_buildings_factor = 0.10
 				production_factory_efficiency_gain_factor = 0.10
@@ -27,11 +27,11 @@ ideas = {
 
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.05
+					build_cost_ic = -0.10
 					instant = yes
 				}
 				support_equipment = {
-					build_cost_ic = -0.05
+					build_cost_ic = -0.10
 					instant = yes
 				}
 			}
@@ -102,7 +102,7 @@ ideas = {
 			picture = CHI_cult_of_shek
 
 			modifier = {
-				political_power_factor = 0.25
+				political_power_factor = 0.15
 				production_speed_arms_factory_factor = 0.10
 				stability_factor = 0.20
 				war_support_factor = 0.20
@@ -110,6 +110,7 @@ ideas = {
 				max_dig_in_factor = 0.10
 				dig_in_speed_factor = 0.10
 				army_defence_factor = 0.10
+				land_reinforce_rate = 0.05
 				command_power_gain = 1
 				max_command_power = 200
 				army_chief_cost_factor = -1
