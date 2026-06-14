@@ -99,3 +99,17 @@ country_event = {
         }
     }
 }
+country_event = {
+	id = KimKorea_event.101
+	title = KimKorea_event.101.t
+	desc = KimKorea_event.101.d
+	picture = GFX_report_event_generic
+	is_triggered_only = yes
+	after = {
+		add_political_power = 50
+		add_stability = 0.05
+	}
+	option = {
+		name = KimKorea_event.101.a
+	}
+}
