@@ -899,6 +899,7 @@ focus_tree = {
 		}
 		mutually_exclusive = { focus = KimKorea_focus_Follow_SOV } #互斥国策
 		completion_reward = { 
+			add_political_power = 300
 			set_rule = {
 				can_create_factions = yes
 			}
