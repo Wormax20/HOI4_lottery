@@ -64,6 +64,27 @@ focus_tree = {
 	}
 
 	focus = {
+		id = KimKorea_focus_BacktoJapan
+		icon = GFX_focus_generic_improve_the_administration
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi #定義該國策相對位置
+		x = -8
+		y = 1
+		prerequisite = { #要求的前置國策
+			focus = KimKorea_focus_IChi 
+		}
+		ai_will_do = {
+			factor = 10000
+		}
+		completion_reward = { 
+			country_event = {
+				id = KimKorea_event_BacktoJapan.200
+				days = 0
+			}
+		}
+	}
+
+	focus = {
 		id = KimKorea_focus_Ni
 		icon = GFX_focus_generic_industry_1
 		cost = 5
