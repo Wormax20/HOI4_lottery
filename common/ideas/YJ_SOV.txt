@@ -151,9 +151,6 @@ ideas = {
 				motorized_equipment = {
 					build_cost_ic = -0.10
 				}
-				train_equipment = {
-					bulid_cost_ic = -0.10
-				}
 				anti_air_equipment = {
 					build_cost_ic = -0.10
 				}
