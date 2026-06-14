@@ -68,7 +68,7 @@ focus_tree = {
 		icon = GFX_focus_generic_improve_the_administration
 		cost = 5
 		relative_position_id = KimKorea_focus_IChi #定義該國策相對位置
-		x = -8
+		x = -9
 		y = 1
 		prerequisite = { #要求的前置國策
 			focus = KimKorea_focus_IChi 
@@ -241,6 +241,61 @@ focus_tree = {
 	}
 
 	focus = {
+		id = KimKorea_focus_dam_Korea
+		icon = GFX_focus_generic_hydroelectric_energy
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi
+		x = -4
+		y = 5
+		prerequisite = { 
+			focus = KimKorea_focus_Ni_one_2
+		}
+		completion_reward = { 
+			527 = {
+				add_building_construction = {
+					type = dam
+					level = 1
+					instant_build = yes
+					province = {
+						id = 7070
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = KimKorea_focus_dam_Korea_2
+		icon = GFX_focus_generic_hydroelectric_energy
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi
+		x = 0
+		y = 5
+		prerequisite = { 
+			focus = KimKorea_focus_Ni_two_2
+		}
+		completion_reward = { 
+			1028 = {
+				add_building_construction = {
+					type = dam
+					level = 1
+					instant_build = yes
+					province = {
+						id = 852
+					}
+				}
+				set_state_category = town
+			}
+			1082 = {
+				set_state_category = town
+			}
+			1083 = {
+				set_state_category = town
+			}
+		}
+	}
+
+	focus = {
 		id = KimKorea_focus_Ni_three
 		icon = GFX_focus_generic_industry_3
 		cost = 10
@@ -378,7 +433,7 @@ focus_tree = {
 	focus = {
 		id = KimKorea_focus_Finish
 		icon = GFX_focus_generic_communist_asia
-		cost = 20
+		cost = 30
 		relative_position_id = KimKorea_focus_IChi
 		x = 0
 		y = 6
@@ -397,7 +452,7 @@ focus_tree = {
 		available = {
    			num_of_factories > 250
 			has_army_manpower = {
-				size > 2500000
+				size > 3000000
 			}
 		}
 		completion_reward = { 
@@ -406,6 +461,10 @@ focus_tree = {
 				add_idea = KimKorea_focus_Finish_idea
 			}
 			add_research_slot = 1
+			news_event = {
+				id = KimKorea_news_Victory.1
+				days = 0
+			}
 		}
 	}
 
@@ -750,10 +809,19 @@ focus_tree = {
 		prerequisite = { 
 			focus = KimKorea_focus_Go_army_two
 		}
+		available = {
+			has_army_manpower = {
+				size > 1500000
+			}
+		}
 		completion_reward = {
 			add_ideas = KimKorea_buff_All_Army_Finish
 			add_ideas = KimKorea_buff_All_Air_Finish
 			add_ideas = KimKorea_buff_All_Navy_Finish
+			news_event = {
+				id = KimKorea_news_ArmyOK.1
+				days = 0
+			}
 		}
 	}
 	focus = {
@@ -820,7 +888,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = KimKorea_focus_PRC_Korea
+		id = KimKorea_focus_Korea_First
 		icon = GFX_focus_SWE_socialist_reforms
 		cost = 5
 		relative_position_id = KimKorea_focus_IChi
@@ -829,28 +897,20 @@ focus_tree = {
 		prerequisite = { 
 			focus = KimKorea_focus_New_Start
 		}
+		mutually_exclusive = { focus = KimKorea_focus_Follow_SOV } #互斥国策
 		completion_reward = { 
-			add_ideas = KimKorea_focus_New_Start_idea
-			create_intelligence_agency = yes
+			add_offsite_building = {
+				type = industrial_complex
+				level = 5
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 5
+			}
 		}
 	}
 	focus = {
-		id = KimKorea_focus_SOV_Korea
-		icon = GFX_focus_SWE_socialist_reforms
-		cost = 5
-		relative_position_id = KimKorea_focus_IChi
-		x = 0
-		y = 8
-		prerequisite = { 
-			focus = KimKorea_focus_New_Start
-		}
-		completion_reward = { 
-			add_ideas = KimKorea_focus_New_Start_idea
-			create_intelligence_agency = yes
-		}
-	}
-	focus = {
-		id = KimKorea_focus_JAP_Korea
+		id = KimKorea_focus_Follow_SOV
 		icon = GFX_focus_SWE_socialist_reforms
 		cost = 5
 		relative_position_id = KimKorea_focus_IChi
@@ -859,9 +919,16 @@ focus_tree = {
 		prerequisite = { 
 			focus = KimKorea_focus_New_Start
 		}
+		mutually_exclusive = { focus = KimKorea_focus_Korea_First } #互斥国策
 		completion_reward = { 
-			add_ideas = KimKorea_focus_New_Start_idea
-			create_intelligence_agency = yes
+			add_offsite_building = {
+				type = industrial_complex
+				level = 5
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 5
+			}
 		}
 	}
 }

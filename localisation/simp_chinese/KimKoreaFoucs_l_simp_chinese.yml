@@ -49,6 +49,11 @@
  KimKorea_focus_Ni_one_2: "国家资源开发"
  KimKorea_focus_Ni_one_2_desc: "国家资源开发"
 
+ KimKorea_focus_dam_Korea: "大坝建设工程"
+ KimKorea_focus_dam_Korea_desc: "大坝建设工程"
+ KimKorea_focus_dam_Korea2: "发展乡村"
+ KimKorea_focus_dam_Korea2_desc: "发展乡村"
+
  
 
  KimKorea_focus_SAN: "朝鲜科研院"
@@ -71,8 +76,8 @@
 
  KimKorea_focus_Go: "没有军队就没有国家"
  KimKorea_focus_Go_desc: "没有军队就没有国家"
- KimKorea_focus_Go_Finish: "朝鲜人民军"
- KimKorea_focus_Go_Finish_desc: "朝鲜人民军"
+ KimKorea_focus_Go_Finish: "以战止戈"
+ KimKorea_focus_Go_Finish_desc: "主体思想的钢铁长城"
 
  KimKorea_focus_Go_army: "陆军改革开始"
  KimKorea_focus_Go_army_desc: "陆军改革开始"
