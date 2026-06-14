@@ -7515,16 +7515,15 @@ focus_tree = {
 		id = TUR_soviet_tank_factories
 		icon = GFX_goal_generic_soviet_construction
 		available = {
-
-		prerequisite = { focus = TUR_the_batumi_accord }
-		x = 2
-		y = 1
-		relative_position_id = TUR_the_batumi_accord
-		cost = 10
-		ai_will_do = {
-			base = 10
+			prerequisite = { focus = TUR_the_batumi_accord }
+			x = 2
+			y = 1
+			elative_position_id = TUR_the_batumi_accord
+			cost = 10
+			ai_will_do = {
+				base = 10
+			}
 		}
-
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			random_owned_controlled_state = {

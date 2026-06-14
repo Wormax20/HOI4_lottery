@@ -4,8 +4,8 @@ technologies = {
 			soft_attack = 0.05
 			hard_attack = 0.05
 			breakthrough = 0.1
-			defence = 0.1
-			speed = 0.1
+			defense = 0.1
+			#speed = 0.1
 			maximum_speed = 1
 			supply_consumption = -0.02
 		}

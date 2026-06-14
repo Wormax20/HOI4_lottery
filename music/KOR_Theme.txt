@@ -1,3 +1,5 @@
+music_station = "KOR_Theme"
+
 music = {
 	song = "KOR_Theme"
 	chance = { 
