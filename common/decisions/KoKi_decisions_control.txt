@@ -953,7 +953,7 @@ KoKi_YJ_decisions_categories = {
 			tag = KOR
 			has_country_flag = KimKorea_Navy_Build_Yes
 		}
-		cost = 50
+		cost = 75
 		days_remove = 150
 
 		complete_effect = {
@@ -998,7 +998,7 @@ KoKi_YJ_decisions_categories = {
 			tag = KOR
 			has_country_flag = KimKorea_Navy_Build_Yes
 		}
-		cost = 100
+		cost = 150
 		days_remove = 300
 
 		complete_effect = {
