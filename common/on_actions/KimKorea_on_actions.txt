@@ -1,0 +1,44 @@
+on_actions = {
+    on_daily = {
+        effect = {
+            every_country = {
+                limit = {
+                    tag = KOR
+
+					date > 1936.4.14
+					date < 1936.4.16
+
+					NOT ={
+						has_country_flag = TaiYouDay
+					}
+				}
+				set_country_flag = TaiYouDay
+
+				country_event = {
+					id = KimKorea_event.101
+				}
+			}
+        }
+    }
+	on_daily = {
+        effect = {
+            every_country = {
+                limit = {
+                    tag = KOR
+					
+					date > 1936.10.9
+					date < 1936.10.11
+
+					NOT ={
+						has_country_flag = LaoDonCreat
+					}
+				}
+				set_country_flag = LaoDonCreat
+
+				country_event = {
+					id = KimKorea_event.102
+				}
+			}
+        }
+    }
+}
