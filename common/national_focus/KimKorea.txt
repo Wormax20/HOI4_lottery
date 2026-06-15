@@ -1102,6 +1102,8 @@ focus_tree = {
 			}
 		}
 	}
+	#上方为走出自己的路
+	#下方为跟随苏联领导
 	focus = {
 		id = KimKorea_focus_Follow_SOV
 		icon = GFX_focus_SWE_socialist_reforms
