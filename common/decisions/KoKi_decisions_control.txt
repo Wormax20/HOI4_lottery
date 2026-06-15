@@ -944,4 +944,76 @@ KoKi_YJ_decisions_categories = {
 			base = 0
 		}
 	}
+	KimKorea_Navy_Build = {
+		visible = {
+			tag = KOR
+			has_country_flag = KimKorea_Navy_Build_Yes
+		}
+		available = {
+			tag = KOR
+			has_country_flag = KimKorea_Navy_Build_Yes
+		}
+		cost = 50
+		days_remove = 150
+
+		complete_effect = {
+			create_ship = {
+				type = ship_hull_light_2
+				equipment_variant = "恩情级驱逐舰"
+				creator = KOR
+				name = "恩情号"
+			}
+			create_ship = {
+				type = ship_hull_light_2
+				equipment_variant = "恩情级驱逐舰"
+				creator = KOR
+				name = "恩情号"
+			}
+			create_ship = {
+				type = ship_hull_light_2
+				equipment_variant = "恩情级驱逐舰"
+				creator = KOR
+				name = "恩情号"
+			}
+			create_ship = {
+				type = ship_hull_light_2
+				equipment_variant = "恩情级驱逐舰"
+				creator = KOR
+				name = "恩情号"
+			}
+			create_ship = {
+				type = ship_hull_light_2
+				equipment_variant = "恩情级驱逐舰"
+				creator = KOR
+				name = "恩情号"
+			}
+		}
+	}
+	KimKorea_Navy_Build_1 = {
+		visible = {
+			tag = KOR
+			has_country_flag = KimKorea_Navy_Build_Yes
+		}
+		available = {
+			tag = KOR
+			has_country_flag = KimKorea_Navy_Build_Yes
+		}
+		cost = 100
+		days_remove = 300
+
+		complete_effect = {
+			create_ship = {
+				type = ship_hull_cruiser_2
+				equipment_variant = "朝鲜级重巡洋舰"
+				creator = KOR
+				name = "主体号"
+			}
+			create_ship = {
+				type = ship_hull_cruiser_2
+				equipment_variant = "朝鲜级重巡洋舰"
+				creator = KOR
+				name = "主体号"
+			}
+		}
+	}
 }

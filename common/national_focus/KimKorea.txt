@@ -1017,7 +1017,7 @@ focus_tree = {
 		completion_reward = {
 			add_offsite_building = {
                 type = dockyard
-                level = 5
+                level = 3
 			}
 			create_ship = {
 				type = ship_hull_light_2
@@ -1064,8 +1064,52 @@ focus_tree = {
 		completion_reward = {
 			add_offsite_building = {
                 type = dockyard
-                level = 5
+                level = 3
 			}
+			create_ship = {
+				type = ship_hull_cruiser_2
+				equipment_variant = "朝鲜级重巡洋舰"
+				creator = KOR
+				name = "主体号"
+			}
+			create_ship = {
+				type = ship_hull_cruiser_2
+				equipment_variant = "朝鲜级重巡洋舰"
+				creator = KOR
+				name = "主体号"
+			}
+			create_ship = {
+				type = ship_hull_light_2
+				equipment_variant = "恩情级驱逐舰"
+				creator = KOR
+				name = "恩情号"
+			}
+			create_ship = {
+				type = ship_hull_light_2
+				equipment_variant = "恩情级驱逐舰"
+				creator = KOR
+				name = "恩情号"
+			}
+			create_ship = {
+				type = ship_hull_light_2
+				equipment_variant = "恩情级驱逐舰"
+				creator = KOR
+				name = "恩情号"
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_focus_More_Navy_2
+		icon = GFX_focus_generic_navy_battleship2
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi
+		x = 8
+		y = 7
+		prerequisite = { 
+			focus = KimKorea_focus_More_Navy_1
+		}
+		completion_reward = {
+			set_country_flag = KimKorea_Navy_Build_Yes
 			create_ship = {
 				type = ship_hull_cruiser_2
 				equipment_variant = "朝鲜级重巡洋舰"
