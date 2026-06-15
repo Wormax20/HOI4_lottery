@@ -7,7 +7,7 @@ news_event = {
 	title = KimKorea_news.1.t
 	desc = KimKorea_news.1.d
 
-	picture = GFX_report_event_generic
+	picture = GFX_report_KimKorea_news
 	is_triggered_only = yes
 	major = yes
 

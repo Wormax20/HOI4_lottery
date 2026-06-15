@@ -76,4 +76,12 @@ spriteTypes = {
 		name = "GFX_idea_KimKorea_focus_Prod5"
 		textureFile = "gfx/interface/ideas/idea_CHI_lend_lease_soviet.dds"
 	}
+
+
+
+
+	spriteType = {
+		name = "GFX_report_KimKorea_news"
+		textureFile = "gfx/event_pictures/report_KimKorea_news.dds"
+	}
 }
