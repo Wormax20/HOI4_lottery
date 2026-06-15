@@ -24,7 +24,39 @@ set_popularities = {
 	communism = 40
 	neutrality = 10
 }
-
+create_equipment_variant = {
+	name = "朝鲜级重巡洋舰"
+	type = ship_hull_cruiser_2
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_medium_battery_2
+		fixed_ship_anti_air_slot = ship_anti_air_2
+        fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+        fixed_ship_radar_slot = ship_radar_1
+        fixed_ship_engine_slot = cruiser_ship_engine_2
+        fixed_ship_armor_slot = ship_armor_cruiser_2
+		fixed_ship_secondaries_slot = dp_ship_secondaries_2
+        front_1_custom_slot = ship_anti_air_2
+        mid_1_custom_slot = ship_anti_air_2
+		mid_2_custom_slot = ship_medium_battery_2
+        rear_1_custom_slot = ship_medium_battery_2
+	}
+}
+create_equipment_variant = {
+	name = "恩情级驱逐舰"
+	type = ship_hull_light_2
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_battery_2
+		fixed_ship_anti_air_slot = ship_anti_air_2
+        fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+        fixed_ship_radar_slot = ship_sonar_2
+		fixed_ship_engine_slot = light_ship_engine_2
+		fixed_ship_torpedo_slot = ship_torpedo_2
+		mid_1_custom_slot = ship_torpedo_2
+		rear_1_custom_slot = ship_depth_charge_2
+	}
+}
 recruit_character = KimKorea_Kim_Il_Sung
 recruit_character = KimKorea_Kim_Il
 recruit_character = KimKorea_Heo_Heon
