@@ -325,6 +325,21 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = KimKorea_focus_Train
+		icon = GFX_goal_continuous_non_factory_construct
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi
+		x = -2
+		y = 6
+		prerequisite = { 
+			focus = KimKorea_focus_Ni_three
+		}
+		completion_reward = { 
+			set_country_flag = KimKorea_train_organization
+			add_political_power = 10
+		}
+	}
 	#下方為科研線分支
 	focus = {
 		id = KimKorea_focus_SAN

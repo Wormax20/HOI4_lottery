@@ -116,3 +116,21 @@ KOR_shenyang_aircraft_corporation_KimKorea_organization = {
 		}
 	}
 }
+KOR_crewe_works_KimKorea_organization = {
+	include = generic_train_organization
+	icon = GFX_idea_ENG_crewe
+	name = 中央火车厂
+	
+ 	allowed = {	
+		original_tag = KOR
+	}
+	visible = {
+		always = yes
+	}
+	available = {
+		from = {
+			has_country_flag = KimKorea_train_organization
+		}
+	}
+	
+}
