@@ -451,7 +451,7 @@ focus_tree = {
 	focus = {
 		id = KimKorea_focus_SAN_four
 		icon = GFX_focus_generic_socialist_science
-		cost = 5
+		cost = 10
 		relative_position_id = KimKorea_focus_IChi
 		x = 2
 		y = 5
@@ -484,9 +484,9 @@ focus_tree = {
 			focus = KimKorea_focus_Go_Finish
 		}
 		available = {
-   			num_of_factories > 300
+   			num_of_factories > 240
 			has_army_manpower = {
-				size > 3000000
+				size > 2000000
 			}
 		}
 		completion_reward = { 
@@ -610,7 +610,7 @@ focus_tree = {
 	focus = {
 		id = KimKorea_focus_Shi_three
 		icon = GFX_focus_SOV_the_supreme_soviet
-		cost = 5
+		cost = 10
 		relative_position_id = KimKorea_focus_IChi #定義該國策相對位置
 		x = -6
 		y = 4
@@ -630,7 +630,7 @@ focus_tree = {
 	focus = {
 		id = KimKorea_focus_Shi_three_1
 		icon = GFX_focus_NORDIC_com_capstone_research
-		cost = 5
+		cost = 10
 		relative_position_id = KimKorea_focus_IChi #定義該國策相對位置
 		x = -6
 		y = 5
