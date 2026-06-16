@@ -1,1 +1,133 @@
+KimKorea_discipline = { #宣传部
+	KimKorea_More_Food = {
+		icon = 1
+		cost = 50
+		allowed = {
+			always = yes
+		}
+		days_remove = 120
+		modifier = {
+			monthly_population = 0.10
+			consumer_goods_factor = -0.05
+		}
+	}
+	KimKorea_More_Build = {
+		icon = 1
+		cost = 50
+		allowed = {
+			always = yes
+		}
+		days_remove = 120
+		modifier = {
+			production_speed_buildings_factor = 0.05
+		}
+	}
+	KimKorea_More_Research = {
+		icon = 1
+		cost = 50
+		allowed = {
+			always = yes
+		}
+		days_remove = 120
+		modifier = {
+			research_speed_factor = 0.05
+		}
+	}
+	KimKorea_More_Equipment = {
+		icon = 1
+		cost = 50
+		allowed = {
+			always = yes
+		}
+		days_remove = 120
+		modifier = {
+			production_factory_efficiency_gain_factor = 0.05
+			industrial_capacity_factory = 0.05
+		}
+	}
+	KimKorea_More_Army_Factor = {
+		icon = 1
+		cost = 50
+		allowed = {
+			has_war = yes
+		}
+		days_remove = 120
+		modifier = {
+			army_attack_factor = 0.05
+			army_defence_factor = 0.05
+		}
+	}
 
+	KimKorea_Navy_Build = {
+		visible = {
+			tag = KOR
+			has_country_flag = KimKorea_Navy_Build_Yes
+		}
+		available = {
+			tag = KOR
+			has_country_flag = KimKorea_Navy_Build_Yes
+		}
+		cost = 75
+		days_remove = 150
+
+		complete_effect = {
+			create_ship = {
+				type = ship_hull_light_2
+				equipment_variant = "恩情级驱逐舰"
+				creator = KOR
+				name = "恩情号"
+			}
+			create_ship = {
+				type = ship_hull_light_2
+				equipment_variant = "恩情级驱逐舰"
+				creator = KOR
+				name = "恩情号"
+			}
+			create_ship = {
+				type = ship_hull_light_2
+				equipment_variant = "恩情级驱逐舰"
+				creator = KOR
+				name = "恩情号"
+			}
+			create_ship = {
+				type = ship_hull_light_2
+				equipment_variant = "恩情级驱逐舰"
+				creator = KOR
+				name = "恩情号"
+			}
+			create_ship = {
+				type = ship_hull_light_2
+				equipment_variant = "恩情级驱逐舰"
+				creator = KOR
+				name = "恩情号"
+			}
+		}
+	}
+	KimKorea_Navy_Build_1 = {
+		visible = {
+			tag = KOR
+			has_country_flag = KimKorea_Navy_Build_Yes
+		}
+		available = {
+			tag = KOR
+			has_country_flag = KimKorea_Navy_Build_Yes
+		}
+		cost = 150
+		days_remove = 300
+
+		complete_effect = {
+			create_ship = {
+				type = ship_hull_cruiser_2
+				equipment_variant = "朝鲜级重巡洋舰"
+				creator = KOR
+				name = "主体号"
+			}
+			create_ship = {
+				type = ship_hull_cruiser_2
+				equipment_variant = "朝鲜级重巡洋舰"
+				creator = KOR
+				name = "主体号"
+			}
+		}
+	}
+}

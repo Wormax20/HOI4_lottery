@@ -1,0 +1,10 @@
+KimKorea_discipline = {
+	icon = 1
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+		has_completed_focus = KimKorea_focus_RoKu
+	}
+	priority = 100
+}

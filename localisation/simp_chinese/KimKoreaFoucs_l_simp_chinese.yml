@@ -5,6 +5,9 @@
  KimKorea_focus_BacktoJapan: "回归日本"
  KimKorea_focus_BacktoJapan_desc: "§R警告 警告 此为回归日本的国策§!"
 
+ KimKorea_focus_RoKu: "建立宣传部"
+ KimKorea_focus_RoKu_desc: "建立宣传部"
+
  KimKorea_focus_Shi: "确立国务委员会"
  KimKorea_focus_Shi_desc: "确立国家施政基础会议"
 
@@ -97,6 +100,8 @@
  KimKorea_focus_Go_army_two_desc: "陆军改革结尾"
  KimKorea_focus_Special: "扩编特种部队"
  KimKorea_focus_Special_desc: "扩编特种部队"
+ KimKorea_focus_Go_army_3: "北方要塞化"
+ KimKorea_focus_Go_army_3_desc: "北方要塞化"
 
  KimKorea_focus_Go_air: "空军改革开始"
  KimKorea_focus_Go_air_desc: "空军改革开始"

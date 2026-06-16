@@ -86,6 +86,22 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = KimKorea_focus_RoKu
+		icon = GFX_SOV_expand_the_agitprop_ccp_2d_sov_compatibility
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi
+		x = 0
+		y = 1
+		prerequisite = { 
+			focus = KimKorea_focus_IChi 
+		}
+		completion_reward = { 
+			add_political_power = 50
+			unlock_decision_category_tooltip = KimKorea_discipline
+		}
+	}
+
 
 	focus = {
 		id = KimKorea_focus_Ni
@@ -780,6 +796,80 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = KimKorea_focus_Go_army_3
+		icon = GFX_goal_generic_construct_military
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi
+		x = 2
+		y = 7
+		prerequisite = { 
+			focus = KimKorea_focus_Go_army_two
+		}
+		completion_reward = {
+			1082 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 6944
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 898
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 3860
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 3803
+				}
+			}
+			1028 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 9899
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 906
+				}
+			}
+			1083 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 6963
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 11828
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 9795
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 9918
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 11835
+				}
+			}
+		}
+	}
+	focus = {
 		id = KimKorea_focus_Go_air
 		icon = GFX_focus_PER_the_peoples_airforce
 		cost = 10
@@ -875,11 +965,17 @@ focus_tree = {
 		}
 		completion_reward = {
 			remove_ideas = KimKorea_debuff_air_three
-			add_tech_bonus = {
-				name = small_airframe
-				bonus = 2.0
-				uses = 1
-				category = light_air
+			1030 = {
+				add_building_construction = {
+					type = air_base
+					level = 3
+				}
+			}
+			1031 = {
+				add_building_construction = {
+					type = air_base
+					level = 3
+				}
 			}
 		}
 	}
@@ -1033,6 +1129,14 @@ focus_tree = {
 		}
 		completion_reward = {
 			remove_ideas = KimKorea_debuff_navy_three
+			1030 = {
+				add_building_construction = {
+					type = naval_base
+					level = 6
+					instant_build = yes
+					province = 4056
+				}
+			}
 		}
 	}
 	focus = {
