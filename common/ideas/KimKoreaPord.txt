@@ -91,5 +91,44 @@ ideas = {
 				production_factory_efficiency_gain_factor = -0.25
 			}
 		}
+		KimKorea_Decisions_1 = {
+			picture = GFX_idea_KimKorea_debuff_money_idea
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+					soft_attack = 0.05
+					hard_attack = 0.05
+					breakthrough = 0.05
+					reliability = 0.05
+					instant = yes
+				}
+				support_equipment = {
+					build_cost_ic = -0.05
+					soft_attack = 0.05
+					hard_attack = 0.05
+					breakthrough = 0.05
+					reliability = 0.05
+					instant = yes
+				}
+				armor = {
+					build_cost_ic = -0.05
+					soft_attack = 0.05
+					hard_attack = 0.05
+					breakthrough = 0.05
+					reliability = 0.05
+					instant = yes
+				}
+			}
+		}
 	}
 }

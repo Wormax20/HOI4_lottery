@@ -29,6 +29,10 @@
  KimKorea_event_JoinSOV.301.a: "我们欢迎他们的加入"
  KimKorea_event_JoinSOV.301.b: "朝鲜?那个日本的殖民地吗"
 
+ KimKorea_event.103.t: "朝鲜协助武器生产"
+ KimKorea_event.103.d: "朝鲜决定派遣生产专家到我国，以协助我国生产军事装备"
+ KimKorea_event.103.a: "太好了"
+
  KimKorea_event.101.t: "太阳节"
  KimKorea_event.101.d: "在伟大领袖金日成同志诞辰之际，全国人民怀着无限敬仰之情，向民族的太阳献上最崇高的敬意。\n\n在劳动党的领导下，祖国将继续迈向繁荣与胜利。"
  KimKorea_event.101.a: "万岁!"
