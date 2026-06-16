@@ -1,4 +1,5 @@
 add_namespace = KimKorea_news
+add_namespace = KimKorea_news_Navy
 add_namespace = KimKorea_news_ArmyOK
 add_namespace = KimKorea_news_Victory
 
@@ -16,6 +17,19 @@ news_event = {
 		hidden_effect = {
 			play_song = "KOR_Theme"
 		}
+	}
+}
+news_event = {
+	id = KimKorea_news_Navy.101
+	title = KimKorea_news_Navy.101.t
+	desc = KimKorea_news_Navy.101.d
+	picture = GFX_report_event_generic
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = KimKorea_news_Navy.101.a
+		
 	}
 }
 

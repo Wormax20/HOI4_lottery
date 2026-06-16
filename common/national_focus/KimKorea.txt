@@ -108,7 +108,7 @@ focus_tree = {
 			}
 			add_offsite_building = {
 				type = arms_factory
-				level = 5
+				level = 3
 			}
 		}
 	}
@@ -130,7 +130,7 @@ focus_tree = {
 			}
 			add_offsite_building = {
 				type = arms_factory
-				level = 5
+				level = 3
 			}
 			add_timed_idea = {
 				idea = KimKorea_focus_Ni_One_idea
@@ -150,7 +150,7 @@ focus_tree = {
 			focus = KimKorea_focus_Ni_One
 		}
 		available = {
-   			num_of_factories > 45
+   			num_of_factories > 40
 		}
 		completion_reward = { 
 			swap_ideas = {
@@ -201,15 +201,15 @@ focus_tree = {
 			1031 = {
 				add_resource = {
 					type = Tungsten
-					amount = 16
+					amount = 24
 				}
 				add_resource = {
 					type = steel
-					amount = 36
+					amount = 56
 				}
 				add_resource = {
 					type = aluminium
-					amount = 24
+					amount = 32
 				}
 			}
 		}
@@ -229,15 +229,15 @@ focus_tree = {
 			1030 = {
 				add_resource = {
 					type = oil
-					amount = 10
+					amount = 12
 				}
 				add_resource = {
 					type = chromium
-					amount = 30
+					amount = 44
 				}
 				add_resource = {
 					type = rubber
-					amount = 24
+					amount = 30
 				}
 			}
 		}
@@ -331,7 +331,7 @@ focus_tree = {
 		cost = 5
 		relative_position_id = KimKorea_focus_IChi
 		x = 2
-		y = 7
+		y = 9
 		prerequisite = { 
 			focus = KimKorea_focus_Finish
 		}
@@ -375,13 +375,13 @@ focus_tree = {
 			add_tech_bonus = {
        			name = industry_bonus
       			bonus = 1.0
-      			uses = 4
+      			uses = 2
         		category = industry
    			}
 			add_tech_bonus = {
 				name = electronics_bonus
 				bonus = 1.0
-				uses = 4
+				uses = 2
 				category = electronics
 			}
 		}
@@ -418,14 +418,14 @@ focus_tree = {
 		}
 		completion_reward = { 
 			add_tech_bonus = {
-				name = ARMOUR_TITLE
-				bonus = 1.5
-				uses = 3
-				category = mio_cat_tech_all_armor_and_modules
+   				name = MOTORIZED_TITLE
+    			bonus = 1.5
+    			uses = 2
+    			category = mio_cat_tech_all_motorized_mechanized
 			}
 			add_tech_bonus = {
 				name = ARTILLERY_TITLE
-				bonus = 1.5
+				bonus = 1.0
 				uses = 3
 				category = artillery
 			}
@@ -454,7 +454,7 @@ focus_tree = {
 		cost = 30
 		relative_position_id = KimKorea_focus_IChi
 		x = 0
-		y = 6
+		y = 8
 		prerequisite = { 
 			focus = KimKorea_focus_SAN_four
 		}
@@ -635,7 +635,7 @@ focus_tree = {
 		cost = 5
 		relative_position_id = KimKorea_focus_IChi #定義該國策相對位置
 		x = -2
-		y = 7
+		y = 9
 		prerequisite = { #要求的前置國策
 			focus = KimKorea_focus_Finish
 		}
@@ -673,7 +673,7 @@ focus_tree = {
 	focus = {
 		id = KimKorea_focus_Go
 		icon = GFX_focus_SOV_builder_of_the_red_army
-		cost = 5
+		cost = 10
 		relative_position_id = KimKorea_focus_IChi
 		x = 6
 		y = 1
@@ -690,7 +690,7 @@ focus_tree = {
 	focus = {
 		id = KimKorea_focus_Go_army
 		icon = GFX_focus_PRC_immediate_response_to_lack_of_army
-		cost = 5
+		cost = 10
 		relative_position_id = KimKorea_focus_IChi
 		x = 4
 		y = 2
@@ -711,8 +711,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = KimKorea_focus_Go_army_one
-		icon = GFX_focus_PRC_immediate_response_to_lack_of_army
+		id = KimKorea_focus_Go_army_1
+		icon = GFX_focus_AFG_against_kabul
 		cost = 5
 		relative_position_id = KimKorea_focus_IChi
 		x = 4
@@ -721,42 +721,68 @@ focus_tree = {
 			focus = KimKorea_focus_Go_army
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = KimKorea_debuff_army_two
-				add_idea = KimKorea_debuff_army_three
-			}
 			add_tech_bonus = {
 				name = INFANTRY_TITLE
     			bonus = 1.0
     			uses = 3
-   				 category = support_tech
+   				 category = infantry_tech
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_focus_Go_army_one
+		icon = GFX_focus_PRC_immediate_response_to_lack_of_army
+		cost = 10
+		relative_position_id = KimKorea_focus_IChi
+		x = 4
+		y = 4
+		prerequisite = { 
+			focus = KimKorea_focus_Go_army_1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KimKorea_debuff_army_two
+				add_idea = KimKorea_debuff_army_three
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_focus_Go_army_2
+		icon = GFX_goal_generic_army_tanks
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi
+		x = 4
+		y = 5
+		prerequisite = { 
+			focus = KimKorea_focus_Go_army_one
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = ARMOUR_TITLE
+				bonus = 1.0
+				uses = 3
+				category = mio_cat_tech_all_armor_and_modules
 			}
 		}
 	}
 	focus = {
 		id = KimKorea_focus_Go_army_two
 		icon = GFX_focus_PRC_immediate_response_to_lack_of_army
-		cost = 5
+		cost = 10
 		relative_position_id = KimKorea_focus_IChi
 		x = 4
-		y = 4
+		y = 6
 		prerequisite = { 
-			focus = KimKorea_focus_Go_army_one
+			focus = KimKorea_focus_Go_army_2
 		}
 		completion_reward = {
 			remove_ideas = KimKorea_debuff_army_three
-			add_tech_bonus = {
-   				name = MOTORIZED_TITLE
-    			bonus = 1.0
-    			uses = 3
-    			category = mio_cat_tech_all_motorized_mechanized
-			}
 		}
 	}
 	focus = {
 		id = KimKorea_focus_Go_air
 		icon = GFX_focus_PER_the_peoples_airforce
-		cost = 5
+		cost = 10
 		relative_position_id = KimKorea_focus_IChi
 		x = 6
 		y = 2
@@ -768,17 +794,11 @@ focus_tree = {
 				remove_idea = KimKorea_debuff_air_one
 				add_idea = KimKorea_debuff_air_two
 			}
-			add_tech_bonus = {
-				name = small_airframe
-				bonus = 1.0
-				uses = 2
-				category = light_air
-			}
 		}
 	}
 	focus = {
-		id = KimKorea_focus_Go_air_one
-		icon = GFX_focus_PER_the_peoples_airforce
+		id = KimKorea_focus_Go_air_1
+		icon = GFX_goal_generic_air_fighter
 		cost = 5
 		relative_position_id = KimKorea_focus_IChi
 		x = 6
@@ -787,14 +807,58 @@ focus_tree = {
 			focus = KimKorea_focus_Go_air
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = KimKorea_debuff_air_two
-				add_idea = KimKorea_debuff_air_three
+			add_tech_bonus = {
+				name = small_airframe
+				bonus = 1.0
+				uses = 1
+				category = light_air
 			}
 			add_tech_bonus = {
 				name = small_airframe
 				bonus = 1.0
-				uses = 6
+				uses = 3
+				category = air_equipment
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_focus_Go_air_one
+		icon = GFX_focus_PER_the_peoples_airforce
+		cost = 10
+		relative_position_id = KimKorea_focus_IChi
+		x = 6
+		y = 4
+		prerequisite = { 
+			focus = KimKorea_focus_Go_air_1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KimKorea_debuff_air_two
+				add_idea = KimKorea_debuff_air_three
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_focus_Go_air_2
+		icon = GFX_goal_generic_air_fighter2
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi
+		x = 6
+		y = 5
+		prerequisite = { 
+			focus = KimKorea_focus_Go_air_one
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = small_airframe
+				bonus = 1.0
+				uses = 2
+				category = light_air
+			}
+			add_tech_bonus = {
+				name = small_airframe
+				bonus = 1.0
+				uses = 3
 				category = air_equipment
 			}
 		}
@@ -802,12 +866,12 @@ focus_tree = {
 	focus = {
 		id = KimKorea_focus_Go_air_two
 		icon = GFX_focus_PER_the_peoples_airforce
-		cost = 5
+		cost = 10
 		relative_position_id = KimKorea_focus_IChi
 		x = 6
-		y = 4
+		y = 6
 		prerequisite = { 
-			focus = KimKorea_focus_Go_air_one
+			focus = KimKorea_focus_Go_air_2
 		}
 		completion_reward = {
 			remove_ideas = KimKorea_debuff_air_three
@@ -822,7 +886,7 @@ focus_tree = {
 	focus = {
 		id = KimKorea_focus_Go_navy
 		icon = GFX_focus_PER_the_peoples_navy
-		cost = 5
+		cost = 10
 		relative_position_id = KimKorea_focus_IChi
 		x = 8
 		y = 2
@@ -836,6 +900,23 @@ focus_tree = {
 			}
 			set_technology = {basic_ship_hull_cruiser = 1}
 			set_technology = {basic_ship_hull_light = 1}
+		}
+	}
+	focus = {
+		id = KimKorea_focus_Go_navy_1
+		icon = GFX_focus_generic_destroyer
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi
+		x = 8
+		y = 3
+		prerequisite = { 
+			focus = KimKorea_focus_Go_navy
+		}
+		completion_reward = {
+			news_event = {
+				id = KimKorea_news_Navy.101
+				days = 0
+			}
 			create_ship = {
 				type = ship_hull_light_2
 				equipment_variant = "恩情级驱逐舰"
@@ -871,17 +952,42 @@ focus_tree = {
 	focus = {
 		id = KimKorea_focus_Go_navy_one
 		icon = GFX_focus_PER_the_peoples_navy
-		cost = 5
+		cost = 10
 		relative_position_id = KimKorea_focus_IChi
 		x = 8
-		y = 3
+		y = 4
 		prerequisite = { 
-			focus = KimKorea_focus_Go_navy
+			focus = KimKorea_focus_Go_navy_1
 		}
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = KimKorea_debuff_navy_two
 				add_idea = KimKorea_debuff_navy_three
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_focus_Go_navy_2
+		icon = GFX_focus_generic_large_navy
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi
+		x = 8
+		y = 5
+		prerequisite = { 
+			focus = KimKorea_focus_Go_navy_one
+		}
+		completion_reward = {
+			create_ship = {
+				type = ship_hull_cruiser_2
+				equipment_variant = "朝鲜级重巡洋舰"
+				creator = KOR
+				name = "主体号"
+			}
+			create_ship = {
+				type = ship_hull_cruiser_2
+				equipment_variant = "朝鲜级重巡洋舰"
+				creator = KOR
+				name = "主体号"
 			}
 			create_ship = {
 				type = ship_hull_light_2
@@ -918,54 +1024,24 @@ focus_tree = {
 	focus = {
 		id = KimKorea_focus_Go_navy_two
 		icon = GFX_focus_PER_the_peoples_navy
-		cost = 5
+		cost = 10
 		relative_position_id = KimKorea_focus_IChi
 		x = 8
-		y = 4
+		y = 6
 		prerequisite = { 
-			focus = KimKorea_focus_Go_navy_one
+			focus = KimKorea_focus_Go_navy_2
 		}
 		completion_reward = {
 			remove_ideas = KimKorea_debuff_navy_three
-			create_ship = {
-				type = ship_hull_cruiser_2
-				equipment_variant = "朝鲜级重巡洋舰"
-				creator = KOR
-				name = "主体号"
-			}
-			create_ship = {
-				type = ship_hull_cruiser_2
-				equipment_variant = "朝鲜级重巡洋舰"
-				creator = KOR
-				name = "主体号"
-			}
-			create_ship = {
-				type = ship_hull_light_2
-				equipment_variant = "恩情级驱逐舰"
-				creator = KOR
-				name = "恩情号"
-			}
-			create_ship = {
-				type = ship_hull_light_2
-				equipment_variant = "恩情级驱逐舰"
-				creator = KOR
-				name = "恩情号"
-			}
-			create_ship = {
-				type = ship_hull_light_2
-				equipment_variant = "恩情级驱逐舰"
-				creator = KOR
-				name = "恩情号"
-			}
 		}
 	}
 	focus = {
 		id = KimKorea_focus_Go_Finish
 		icon = GFX_focus_SWE_refuge_from_war
-		cost = 10
+		cost = 20
 		relative_position_id = KimKorea_focus_IChi
 		x = 6
-		y = 5
+		y = 7
 		prerequisite = { 
 			focus = KimKorea_focus_Go_navy_two
 		}
@@ -996,7 +1072,7 @@ focus_tree = {
 		cost = 5
 		relative_position_id = KimKorea_focus_IChi
 		x = 4
-		y = 5
+		y = 7
 		prerequisite = { 
 			focus = KimKorea_focus_Go_army_two
 		}
@@ -1010,7 +1086,7 @@ focus_tree = {
 		cost = 5
 		relative_position_id = KimKorea_focus_IChi
 		x = 8
-		y = 5
+		y = 7
 		prerequisite = { 
 			focus = KimKorea_focus_Go_navy_two
 		}
@@ -1057,7 +1133,7 @@ focus_tree = {
 		cost = 5
 		relative_position_id = KimKorea_focus_IChi
 		x = 8
-		y = 6
+		y = 8
 		prerequisite = { 
 			focus = KimKorea_focus_More_Navy
 		}
@@ -1104,7 +1180,7 @@ focus_tree = {
 		cost = 5
 		relative_position_id = KimKorea_focus_IChi
 		x = 8
-		y = 7
+		y = 9
 		prerequisite = { 
 			focus = KimKorea_focus_More_Navy_1
 		}
@@ -1148,7 +1224,7 @@ focus_tree = {
 		cost = 5
 		relative_position_id = KimKorea_focus_IChi
 		x = 0
-		y = 7
+		y = 9
 		prerequisite = { 
 			focus = KimKorea_focus_Finish
 		}
@@ -1163,9 +1239,12 @@ focus_tree = {
 		cost = 5
 		relative_position_id = KimKorea_focus_IChi
 		x = 4
-		y = 8
+		y = 11
 		prerequisite = { 
 			focus = KimKorea_focus_New_Start
+		}
+		prerequisite = { 
+			focus = KimKorea_focus_More_Navy_2
 		}
 		mutually_exclusive = { focus = KimKorea_focus_Follow_SOV } #互斥国策
 		completion_reward = { 
@@ -1183,7 +1262,7 @@ focus_tree = {
 		cost = 5
 		relative_position_id = KimKorea_focus_IChi
 		x = -4
-		y = 8
+		y =11
 		prerequisite = { 
 			focus = KimKorea_focus_New_Start
 		}
