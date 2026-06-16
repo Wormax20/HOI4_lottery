@@ -330,10 +330,10 @@ focus_tree = {
 		icon = GFX_goal_continuous_non_factory_construct
 		cost = 5
 		relative_position_id = KimKorea_focus_IChi
-		x = -2
-		y = 6
+		x = 2
+		y = 7
 		prerequisite = { 
-			focus = KimKorea_focus_Ni_three
+			focus = KimKorea_focus_Finish
 		}
 		completion_reward = { 
 			set_country_flag = KimKorea_train_organization
@@ -634,10 +634,10 @@ focus_tree = {
 		icon = GFX_focus_PRC_assume_leadership
 		cost = 5
 		relative_position_id = KimKorea_focus_IChi #定義該國策相對位置
-		x = -6
-		y = 6
+		x = -2
+		y = 7
 		prerequisite = { #要求的前置國策
-			focus = KimKorea_focus_Shi_three_1
+			focus = KimKorea_focus_Finish
 		}
 		completion_reward = { 
 			set_capital = {
