@@ -166,7 +166,7 @@ focus_tree = {
 			focus = KimKorea_focus_Ni_One
 		}
 		available = {
-   			num_of_factories > 40
+   			num_of_factories > 30
 		}
 		completion_reward = { 
 			swap_ideas = {
