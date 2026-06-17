@@ -91,6 +91,19 @@ country_event = {
 			type = arms_factory
 			level = 5
 		}
+		complete_national_focus = JAP_the_shuilikeng_power_plant
+		complete_national_focus = JAP_improve_agricultural_output
+		complete_national_focus = JAP_upgrade_the_oriental_development_company
+		complete_national_focus = JAP_build_up_korean_industries
+		complete_national_focus = JAP_increase_agricultural_export
+		complete_national_focus = JAP_hydroelectric_dams_in_korea
+		complete_national_focus = JAP_prepare_for_peninsular_warfare
+		complete_national_focus = JAP_establish_the_japanese_korean_army
+		complete_national_focus = JAP_manchuria_five_year_plan
+		complete_national_focus = JAP_eastern_road_and_steel_expansion
+		complete_national_focus = JAP_establish_manchuria_airplane_manufacturing_company
+		complete_national_focus = JAP_sea_promote_japanese_settlement
+		complete_national_focus = JAP_construct_the_sui_ho_dam
 		1028 = { add_core_of = ROOT }
 		527 = { add_core_of = ROOT }
 		1029 = { add_core_of = ROOT }
