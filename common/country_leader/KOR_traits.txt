@@ -1,7 +1,7 @@
 leader_traits = {
 	Kim_Chairman = {
 		random = no
-		political_power_factor = 0.15
+		political_power_factor = 0.25
 		stability_factor = 0.20
 		war_support_factor = 0.20
 		communism_drift = 0.05
@@ -24,8 +24,8 @@ leader_traits = {
 	}
 	Kim_Tech_Titan = {
 		random = no
-		research_speed_factor = 0.10
-		special_project_speed_factor = 0.10
+		research_speed_factor = 0.20
+		special_project_speed_factor = 0.20
 
 		ai_will_do = {
 			factor = 1
