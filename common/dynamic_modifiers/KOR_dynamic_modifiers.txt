@@ -1,0 +1,16 @@
+KimKorea_Army = {
+	icon = GFX_idea_generic_communist_army
+	enable = {
+		always = yes
+	}
+	conscription = KimKorea_Army_conscription
+	conscription_factor = KimKorea_Army_conscription_factor
+	army_attack_factor = KimKorea_Army_army_attack_factor
+	army_defence_factor = KimKorea_Army_army_defence_factor
+	special_forces_attack_factor = KimKorea_Army_special_forces_attack_factor
+	special_forces_defence_factor = KimKorea_Army_special_forces_defence_factor
+	army_org_factor = KimKorea_Army_army_org_factor
+	army_speed_factor = KimKorea_Army_army_speed_factor
+	supply_consumption_factor = KimKorea_Army_supply_consumption_factor
+	army_bonus_air_superiority_factor = KimKorea_Army_army_bonus_air_superiority_factor
+}

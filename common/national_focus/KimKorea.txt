@@ -708,9 +708,34 @@ focus_tree = {
 			focus = KimKorea_focus_Go
 		}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = KimKorea_debuff_army_one
-				add_idea = KimKorea_debuff_army_two
+			custom_effect_tooltip = KimKorea_Army_tt
+			add_to_variable = {
+				KimKorea_Army_conscription_factor = 0.25
+				tooltip = conscription_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Army_army_attack_factor = 0.25
+				tooltip = army_attack_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Army_army_defence_factor = 0.25
+				tooltip = army_defence_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Army_army_org_factor = 0.25
+				tooltip = army_org_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Army_army_speed_factor = 0.25
+				tooltip = army_speed_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Army_supply_consumption_factor = 0.25
+				tooltip = supply_consumption_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Army_army_bonus_air_superiority_factor = 0.50
+				tooltip = bonus_air_superiority_factor
 			}
 			add_tech_bonus = {
 				name = INFANTRY_TITLE

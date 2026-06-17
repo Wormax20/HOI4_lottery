@@ -69,3 +69,17 @@ recruit_character = KOR_yi_kang
 recruit_character = KOR_yi_un
 recruit_character = KOR_choe_hyon
 recruit_character = KOR_pak_hon_yong
+
+add_dynamic_modifier = {
+	modifier = KimKorea_Army
+}
+set_variable = {KimKorea_Army_conscription = 0}
+set_variable = {KimKorea_Army_conscription_factor = -0.50}
+set_variable = {KimKorea_Army_army_attack_factor = -0.50}
+set_variable = {KimKorea_Army_army_defence_factor = -0.50}
+set_variable = {KimKorea_Army_special_forces_attack_factor = 0}
+set_variable = {KimKorea_Army_special_forces_defence_factor = 0}
+set_variable = {KimKorea_Army_army_org_factor = -0.50}
+set_variable = {KimKorea_Army_army_speed_factor = -0.50}
+set_variable = {KimKorea_Army_supply_consumption_factor = 0.50}
+set_variable = {KimKorea_Army_army_bonus_air_superiority_factor = -1}
