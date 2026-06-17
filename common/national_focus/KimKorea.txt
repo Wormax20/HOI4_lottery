@@ -347,7 +347,7 @@ focus_tree = {
 		cost = 5
 		relative_position_id = KimKorea_focus_IChi
 		x = 2
-		y = 9
+		y = 13
 		prerequisite = { 
 			focus = KimKorea_focus_Finish
 		}
@@ -464,7 +464,7 @@ focus_tree = {
 		cost = 30
 		relative_position_id = KimKorea_focus_IChi
 		x = 0
-		y = 8
+		y = 12
 		prerequisite = { 
 			focus = KimKorea_focus_SAN_four
 		}
@@ -645,7 +645,7 @@ focus_tree = {
 		cost = 5
 		relative_position_id = KimKorea_focus_IChi #定義該國策相對位置
 		x = -2
-		y = 9
+		y = 13
 		prerequisite = { #要求的前置國策
 			focus = KimKorea_focus_Finish
 		}
@@ -954,7 +954,7 @@ focus_tree = {
 		icon = GFX_focus_PER_the_peoples_airforce
 		cost = 10
 		relative_position_id = KimKorea_focus_IChi
-		x = 16
+		x = 14
 		y = 2
 		prerequisite = { 
 			focus = KimKorea_focus_Go
@@ -971,11 +971,38 @@ focus_tree = {
 		icon = GFX_goal_generic_air_fighter
 		cost = 5
 		relative_position_id = KimKorea_focus_IChi
-		x = 16
+		x = 13
 		y = 3
 		prerequisite = { 
 			focus = KimKorea_focus_Go_air
 		}
+		mutually_exclusive = { focus = KimKorea_focus_Go_air_1_1 } #互斥国策
+		completion_reward = {
+			add_tech_bonus = {
+				name = small_airframe
+				bonus = 1.0
+				uses = 1
+				category = light_air
+			}
+			add_tech_bonus = {
+				name = small_airframe
+				bonus = 1.0
+				uses = 3
+				category = air_equipment
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_focus_Go_air_1_1
+		icon = GFX_focus_PER_raf_planes
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi
+		x = 15
+		y = 3
+		prerequisite = { 
+			focus = KimKorea_focus_Go_air
+		}
+		mutually_exclusive = { focus = KimKorea_focus_Go_air_1 } #互斥国策
 		completion_reward = {
 			add_tech_bonus = {
 				name = small_airframe
@@ -996,10 +1023,27 @@ focus_tree = {
 		icon = GFX_focus_PER_the_peoples_airforce
 		cost = 10
 		relative_position_id = KimKorea_focus_IChi
-		x = 16
+		x = 12
 		y = 4
 		prerequisite = { 
 			focus = KimKorea_focus_Go_air_1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KimKorea_debuff_air_two
+				add_idea = KimKorea_debuff_air_three
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_focus_Go_air_one_1
+		icon = GFX_focus_PER_the_peoples_airforce
+		cost = 10
+		relative_position_id = KimKorea_focus_IChi
+		x = 16
+		y = 4
+		prerequisite = { 
+			focus = KimKorea_focus_Go_air_1_1
 		}
 		completion_reward = {
 			swap_ideas = {
@@ -1013,10 +1057,35 @@ focus_tree = {
 		icon = GFX_goal_generic_air_fighter2
 		cost = 5
 		relative_position_id = KimKorea_focus_IChi
-		x = 16
+		x = 12
 		y = 5
 		prerequisite = { 
 			focus = KimKorea_focus_Go_air_one
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = small_airframe
+				bonus = 1.0
+				uses = 2
+				category = light_air
+			}
+			add_tech_bonus = {
+				name = small_airframe
+				bonus = 1.0
+				uses = 3
+				category = air_equipment
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_focus_Go_air_2_1
+		icon = GFX_goal_generic_air_fighter2
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi
+		x = 16
+		y = 5
+		prerequisite = { 
+			focus = KimKorea_focus_Go_air_one_1
 		}
 		completion_reward = {
 			add_tech_bonus = {
@@ -1038,10 +1107,11 @@ focus_tree = {
 		icon = GFX_focus_PER_the_peoples_airforce
 		cost = 10
 		relative_position_id = KimKorea_focus_IChi
-		x = 16
+		x = 14
 		y = 6
 		prerequisite = { 
 			focus = KimKorea_focus_Go_air_2
+			focus = KimKorea_focus_Go_air_2_1
 		}
 		completion_reward = {
 			remove_ideas = KimKorea_debuff_air_three
@@ -1225,7 +1295,7 @@ focus_tree = {
 		cost = 20
 		relative_position_id = KimKorea_focus_IChi
 		x = 12
-		y = 7
+		y = 11
 		prerequisite = { 
 			focus = KimKorea_focus_Go_navy_two
 		}
@@ -1408,7 +1478,7 @@ focus_tree = {
 		cost = 5
 		relative_position_id = KimKorea_focus_IChi
 		x = 0
-		y = 9
+		y = 13
 		prerequisite = { 
 			focus = KimKorea_focus_Finish
 		}
@@ -1423,7 +1493,7 @@ focus_tree = {
 		cost = 5
 		relative_position_id = KimKorea_focus_IChi
 		x = 4
-		y = 11
+		y = 14
 		prerequisite = { 
 			focus = KimKorea_focus_New_Start
 		}
@@ -1443,7 +1513,7 @@ focus_tree = {
 		cost = 5
 		relative_position_id = KimKorea_focus_IChi
 		x = -4
-		y =11
+		y =14
 		prerequisite = { 
 			focus = KimKorea_focus_New_Start
 		}
