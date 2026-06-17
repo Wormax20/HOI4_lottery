@@ -51,6 +51,14 @@ spriteTypes = {
 		name = "GFX_idea_KimKorea_focus_New_Start_idea"
 		textureFile = "gfx/interface/ideas/idea_eng_imperial_conscription.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_KimKorea_focus_Tank_Choose_idea"
+		textureFile = "gfx/interface/ideas/idea_generic_acquire_tanks.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KimKorea_focus_Infantry_Choose_idea"
+		textureFile = "gfx/interface/ideas/generic_infantry_bonus.dds"
+	}
 
 
 

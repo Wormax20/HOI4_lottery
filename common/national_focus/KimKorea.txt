@@ -18,7 +18,7 @@ focus_tree = {
 	reset_on_civilwar = no
 	continuous_focus_position = {
 		x = 100
-		y = 1200
+		y = 1500
 	}
 
 	focus = {
@@ -434,17 +434,11 @@ focus_tree = {
 		}
 		completion_reward = { 
 			add_tech_bonus = {
-   				name = MOTORIZED_TITLE
-    			bonus = 1.5
-    			uses = 2
-    			category = mio_cat_tech_all_motorized_mechanized
-			}
-			add_tech_bonus = {
-				name = ARTILLERY_TITLE
-				bonus = 1.0
-				uses = 3
-				category = artillery
-			}
+       			name = industry_bonus
+      			bonus = 1.0
+      			uses = 3
+        		category = industry
+   			}
 		}
 	}
 
@@ -691,7 +685,7 @@ focus_tree = {
 		icon = GFX_focus_SOV_builder_of_the_red_army
 		cost = 10
 		relative_position_id = KimKorea_focus_IChi
-		x = 6
+		x = 12
 		y = 1
 		prerequisite = { 
 			focus = KimKorea_focus_IChi 
@@ -708,7 +702,7 @@ focus_tree = {
 		icon = GFX_focus_PRC_immediate_response_to_lack_of_army
 		cost = 10
 		relative_position_id = KimKorea_focus_IChi
-		x = 4
+		x = 8
 		y = 2
 		prerequisite = { 
 			focus = KimKorea_focus_Go
@@ -731,17 +725,38 @@ focus_tree = {
 		icon = GFX_focus_AFG_against_kabul
 		cost = 5
 		relative_position_id = KimKorea_focus_IChi
-		x = 4
+		x = 7
 		y = 3
 		prerequisite = { 
 			focus = KimKorea_focus_Go_army
 		}
+		mutually_exclusive = { focus = KimKorea_focus_Go_army_1_1 } #互斥国策
 		completion_reward = {
 			add_tech_bonus = {
 				name = INFANTRY_TITLE
     			bonus = 1.0
-    			uses = 3
+    			uses = 4
    				 category = infantry_tech
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_focus_Go_army_1_1
+		icon = GFX_goal_generic_army_motorized
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi
+		x = 9
+		y = 3
+		prerequisite = { 
+			focus = KimKorea_focus_Go_army
+		}
+		mutually_exclusive = { focus = KimKorea_focus_Go_army_1 } #互斥国策
+		completion_reward = {
+			add_tech_bonus = {
+   				name = MOTORIZED_TITLE
+    			bonus = 1.0
+    			uses = 2
+    			category = mio_cat_tech_all_motorized_mechanized
 			}
 		}
 	}
@@ -750,10 +765,60 @@ focus_tree = {
 		icon = GFX_focus_PRC_immediate_response_to_lack_of_army
 		cost = 10
 		relative_position_id = KimKorea_focus_IChi
-		x = 4
+		x = 6
 		y = 4
 		prerequisite = { 
 			focus = KimKorea_focus_Go_army_1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = KimKorea_debuff_army_two
+				add_idea = KimKorea_debuff_army_three
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_focus_Go_army_one_2
+		icon = GFX_goal_generic_army_artillery2
+		cost = 5
+		relative_position_id = KimKorea_focus_IChi
+		x = 6
+		y = 5
+		prerequisite = { 
+			focus = KimKorea_focus_Go_army_one
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = ARTILLERY_TITLE
+				bonus = 1.0
+				uses = 3
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_focus_Go_army_one_3
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10
+		relative_position_id = KimKorea_focus_IChi
+		x = 6
+		y = 6
+		prerequisite = { 
+			focus = KimKorea_focus_Go_army_one_2
+		}
+		completion_reward = {
+			add_ideas = KimKorea_focus_Infantry_Choose_idea
+		}
+	}
+	focus = {
+		id = KimKorea_focus_Go_army_one_1
+		icon = GFX_focus_PRC_immediate_response_to_lack_of_army
+		cost = 10
+		relative_position_id = KimKorea_focus_IChi
+		x = 10
+		y = 4
+		prerequisite = { 
+			focus = KimKorea_focus_Go_army_1_1
 		}
 		completion_reward = {
 			swap_ideas = {
@@ -767,10 +832,10 @@ focus_tree = {
 		icon = GFX_goal_generic_army_tanks
 		cost = 5
 		relative_position_id = KimKorea_focus_IChi
-		x = 4
+		x = 10
 		y = 5
 		prerequisite = { 
-			focus = KimKorea_focus_Go_army_one
+			focus = KimKorea_focus_Go_army_one_1
 		}
 		completion_reward = {
 			add_tech_bonus = {
@@ -782,14 +847,29 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = KimKorea_focus_Go_army_4
+		icon = GFX_focus_generic_tank_assault
+		cost = 10
+		relative_position_id = KimKorea_focus_IChi
+		x = 10
+		y = 6
+		prerequisite = { 
+			focus = KimKorea_focus_Go_army_2
+		}
+		completion_reward = {
+			add_ideas = KimKorea_focus_Tank_Choose_idea
+		}
+	}
+	focus = {
 		id = KimKorea_focus_Go_army_two
 		icon = GFX_focus_PRC_immediate_response_to_lack_of_army
 		cost = 10
 		relative_position_id = KimKorea_focus_IChi
-		x = 4
+		x = 8
 		y = 6
 		prerequisite = { 
 			focus = KimKorea_focus_Go_army_2
+			focus = KimKorea_focus_Go_army_one_2
 		}
 		completion_reward = {
 			remove_ideas = KimKorea_debuff_army_three
@@ -800,7 +880,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_military
 		cost = 5
 		relative_position_id = KimKorea_focus_IChi
-		x = 2
+		x = 6
 		y = 7
 		prerequisite = { 
 			focus = KimKorea_focus_Go_army_two
@@ -874,7 +954,7 @@ focus_tree = {
 		icon = GFX_focus_PER_the_peoples_airforce
 		cost = 10
 		relative_position_id = KimKorea_focus_IChi
-		x = 6
+		x = 16
 		y = 2
 		prerequisite = { 
 			focus = KimKorea_focus_Go
@@ -891,7 +971,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_fighter
 		cost = 5
 		relative_position_id = KimKorea_focus_IChi
-		x = 6
+		x = 16
 		y = 3
 		prerequisite = { 
 			focus = KimKorea_focus_Go_air
@@ -916,7 +996,7 @@ focus_tree = {
 		icon = GFX_focus_PER_the_peoples_airforce
 		cost = 10
 		relative_position_id = KimKorea_focus_IChi
-		x = 6
+		x = 16
 		y = 4
 		prerequisite = { 
 			focus = KimKorea_focus_Go_air_1
@@ -933,7 +1013,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_fighter2
 		cost = 5
 		relative_position_id = KimKorea_focus_IChi
-		x = 6
+		x = 16
 		y = 5
 		prerequisite = { 
 			focus = KimKorea_focus_Go_air_one
@@ -958,7 +1038,7 @@ focus_tree = {
 		icon = GFX_focus_PER_the_peoples_airforce
 		cost = 10
 		relative_position_id = KimKorea_focus_IChi
-		x = 6
+		x = 16
 		y = 6
 		prerequisite = { 
 			focus = KimKorea_focus_Go_air_2
@@ -984,7 +1064,7 @@ focus_tree = {
 		icon = GFX_focus_PER_the_peoples_navy
 		cost = 10
 		relative_position_id = KimKorea_focus_IChi
-		x = 8
+		x = 20
 		y = 2
 		prerequisite = { 
 			focus = KimKorea_focus_Go
@@ -1003,7 +1083,7 @@ focus_tree = {
 		icon = GFX_focus_generic_destroyer
 		cost = 5
 		relative_position_id = KimKorea_focus_IChi
-		x = 8
+		x = 20
 		y = 3
 		prerequisite = { 
 			focus = KimKorea_focus_Go_navy
@@ -1050,7 +1130,7 @@ focus_tree = {
 		icon = GFX_focus_PER_the_peoples_navy
 		cost = 10
 		relative_position_id = KimKorea_focus_IChi
-		x = 8
+		x = 20
 		y = 4
 		prerequisite = { 
 			focus = KimKorea_focus_Go_navy_1
@@ -1067,7 +1147,7 @@ focus_tree = {
 		icon = GFX_focus_generic_large_navy
 		cost = 5
 		relative_position_id = KimKorea_focus_IChi
-		x = 8
+		x = 20
 		y = 5
 		prerequisite = { 
 			focus = KimKorea_focus_Go_navy_one
@@ -1122,7 +1202,7 @@ focus_tree = {
 		icon = GFX_focus_PER_the_peoples_navy
 		cost = 10
 		relative_position_id = KimKorea_focus_IChi
-		x = 8
+		x = 20
 		y = 6
 		prerequisite = { 
 			focus = KimKorea_focus_Go_navy_2
@@ -1144,7 +1224,7 @@ focus_tree = {
 		icon = GFX_focus_SWE_refuge_from_war
 		cost = 20
 		relative_position_id = KimKorea_focus_IChi
-		x = 6
+		x = 12
 		y = 7
 		prerequisite = { 
 			focus = KimKorea_focus_Go_navy_two
@@ -1175,7 +1255,7 @@ focus_tree = {
 		icon = GFX_focus_SMB_special_forces_option_3
 		cost = 5
 		relative_position_id = KimKorea_focus_IChi
-		x = 4
+		x = 8
 		y = 7
 		prerequisite = { 
 			focus = KimKorea_focus_Go_army_two
@@ -1189,7 +1269,7 @@ focus_tree = {
 		icon = GFX_focus_generic_navy_battleship2
 		cost = 5
 		relative_position_id = KimKorea_focus_IChi
-		x = 8
+		x = 20
 		y = 7
 		prerequisite = { 
 			focus = KimKorea_focus_Go_navy_two
@@ -1236,7 +1316,7 @@ focus_tree = {
 		icon = GFX_focus_generic_navy_battleship2
 		cost = 5
 		relative_position_id = KimKorea_focus_IChi
-		x = 8
+		x = 20
 		y = 8
 		prerequisite = { 
 			focus = KimKorea_focus_More_Navy
@@ -1283,7 +1363,7 @@ focus_tree = {
 		icon = GFX_focus_generic_navy_battleship2
 		cost = 5
 		relative_position_id = KimKorea_focus_IChi
-		x = 8
+		x = 20
 		y = 9
 		prerequisite = { 
 			focus = KimKorea_focus_More_Navy_1
@@ -1346,9 +1426,6 @@ focus_tree = {
 		y = 11
 		prerequisite = { 
 			focus = KimKorea_focus_New_Start
-		}
-		prerequisite = { 
-			focus = KimKorea_focus_More_Navy_2
 		}
 		mutually_exclusive = { focus = KimKorea_focus_Follow_SOV } #互斥国策
 		completion_reward = { 

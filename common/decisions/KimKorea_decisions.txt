@@ -49,7 +49,7 @@ KimKorea_discipline = { #宣传部
 		icon = 1
 		cost = 50
 		allowed = {
-			has_war = yes
+			has_completed_focus = KimKorea_focus_Go_Finish
 		}
 		days_remove = 120
 		modifier = {
