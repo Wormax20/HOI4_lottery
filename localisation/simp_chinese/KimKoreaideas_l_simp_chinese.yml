@@ -5,65 +5,17 @@
  KimKorea_Decisions_1: "朝鲜武器生产"
  KimKorea_Decisions_1_desc: "朝鲜已向我国派遣专家协助生产"
 
- KimKorea_Army: "朝鲜人民军陆军"
+ KimKorea_Army: "朝鲜陆军"
  KimKorea_Army_tt: "$KimKorea_Army$追加修正:"
- KimKorea_Army_desc: "朝鲜人民军陆军"
+ KimKorea_Army_desc: "朝鲜陆军"
+ KimKorea_AirForce: "朝鲜空军"
+ KimKorea_AirForce_tt: "$KimKorea_Army$追加修正:"
+ KimKorea_AirForce_desc: "朝鲜空军"
+ KimKorea_Navy: "朝鲜海军"
+ KimKorea_Navy_tt: "$KimKorea_Army$追加修正:"
+ KimKorea_Navy_desc: "朝鲜海军"
 
  KimKorea_focus_SAN_idea: "朝鲜科研院"
  KimKorea_focus_SAN_idea_desc: "科学主义万岁!"
- KimKorea_focus_SAN_two_idea: "利用科研成果"
- KimKorea_focus_SAN_two_idea_desc: "将国家与人民科研的成果实践出来"
  KimKorea_focus_Ni_One_idea: "建设半岛"
  KimKorea_focus_Ni_One_idea_desc: "加速朝鲜半岛地区的和平建设与繁荣"
- KimKorea_focus_Finish_idea: "主体思想的胜利"
- KimKorea_focus_Finish_idea_desc: "这是主体思想的胜利，拥有压倒性优势的我们，是敌人的噩梦"
-
- KimKorea_focus_Tank_Choose_idea: "追求现代战术"
- KimKorea_focus_Infantry_Choose_idea: "精进传统"
- 
- KimKorea_debuff_political_one: "不被承认的国家"
- KimKorea_debuff_political_two: "不被关注的国家"
- KimKorea_debuff_political_three: "新兴国家"
-
- KimKorea_debuff_army_one: "我们没有陆军"
- KimKorea_debuff_army_two: "陆军改革"
- KimKorea_debuff_army_three: "陆军改革尾声"
-
- KimKorea_debuff_air_one: "地面飞行部队"
- KimKorea_debuff_air_two: "空军改革"
- KimKorea_debuff_air_three: "空军改革尾声"
-
- KimKorea_debuff_navy_one: "西藩浦湖泊舰队"
- KimKorea_debuff_navy_two: "海军改革"
- KimKorea_debuff_navy_three: "海军改革尾声"
-
- KimKorea_debuff_money_one: "经济糟糕透顶"
- KimKorea_debuff_money_two: "开始经济改革"
- KimKorea_debuff_money_three: "经济改革初有成效"
- KimKorea_debuff_money_four: "经济改革尾声"
- KimKorea_buff_money: "那种勃勃生机、万物竞发的境界，犹在眼前。"
-
- KimKorea_debuff_research_one: "研发不如去大炼钢"
- KimKorea_debuff_research_two: "重视科研"
- KimKorea_debuff_research_three: "接近群星"
-
- KimKorea_buff_All_Army_Finish: "朝鲜人民军陆军"
- KimKorea_buff_All_Army_Finish_desc: "朝鲜人民军继承了抗日革命斗争的光荣传统，以坚定的革命信念和无畏的牺牲精神，捍卫祖国的自主权与尊严。全军官兵在党的领导下团结一致，成为保卫社会主义事业的钢铁长城。"
- KimKorea_buff_All_Air_Finish: "朝鲜人民军空军"
- KimKorea_buff_All_Air_Finish_desc: "在党的领导下，人民军飞行员们以无畏的勇气翱翔于天际，捍卫祖国的领空与尊严。"
- KimKorea_buff_All_Navy_Finish: "朝鲜人民军海军"
- KimKorea_buff_All_Navy_Finish_desc: "朝鲜人民军海军继承革命传统，以坚定意志与忠诚精神守卫祖国的海疆，成为保卫社会主义事业的重要力量。"
-
- KimKorea_focus_Prod1: "社会主义工业化"
- KimKorea_focus_Prod1_desc: "将有限的资源投入未来，建设独立自主的民族工业。"
- KimKorea_focus_Prod2: "千里马运动"
- KimKorea_focus_Prod2_desc: "以千里马的速度前进，超额完成国家计画！"
- KimKorea_focus_Prod3: "主体工业体系"
- KimKorea_focus_Prod3_desc: "依靠自己的力量建设繁荣富强的朝鲜。"
- KimKorea_focus_Prod4: "借用资本主义的技术"
- KimKorea_focus_Prod4_desc: "为了朝鲜的未来，我们不得不向敌人低头"
- KimKorea_focus_Prod5: "来自共产国际的支援"
- KimKorea_focus_Prod5_desc: "共产国际的援助将带领我们实现高产量"
-
-
- KimKorea_focus_New_Start_idea: "扩建情报机构"

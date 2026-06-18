@@ -77,9 +77,33 @@ set_variable = {KimKorea_Army_conscription = 0}
 set_variable = {KimKorea_Army_conscription_factor = -0.50}
 set_variable = {KimKorea_Army_army_attack_factor = -0.50}
 set_variable = {KimKorea_Army_army_defence_factor = -0.50}
-set_variable = {KimKorea_Army_special_forces_attack_factor = 0}
-set_variable = {KimKorea_Army_special_forces_defence_factor = 0}
+set_variable = {KimKorea_Army_special_forces_attack_factor = -0.10}
+set_variable = {KimKorea_Army_special_forces_defence_factor = -0.10}
 set_variable = {KimKorea_Army_army_org_factor = -0.50}
 set_variable = {KimKorea_Army_army_speed_factor = -0.50}
 set_variable = {KimKorea_Army_supply_consumption_factor = 0.50}
 set_variable = {KimKorea_Army_army_bonus_air_superiority_factor = -1}
+
+add_dynamic_modifier = {
+	modifier = KimKorea_AirForce
+}
+set_variable = {KimKorea_AirForce_air_attack_factor = -0.50}
+set_variable = {KimKorea_AirForce_air_defence_factor = -0.50}
+set_variable = {KimKorea_AirForce_air_detection = -0.50}
+set_variable = {KimKorea_AirForce_air_accidents_factor = 1}
+set_variable = {KimKorea_AirForce_air_ace_bonuses_factor = -0.50}
+set_variable = {KimKorea_AirForce_air_manpower_requirement_factor = 0.50}
+set_variable = {KimKorea_AirForce_air_range_factor = -0.50}
+
+add_dynamic_modifier = {
+	modifier = KimKorea_Navy
+}
+set_variable = {KimKorea_Navy_naval_damage_factor = -0.50}
+set_variable = {KimKorea_Navy_naval_defense_factor = -0.50}
+set_variable = {KimKorea_Navy_naval_detection = -0.50}
+set_variable = {KimKorea_Navy_naval_hit_chance = -0.50}
+set_variable = {KimKorea_Navy_naval_supply_consumption_factor = 0.50}
+set_variable = {KimKorea_Navy_naval_speed_factor = -0.50}
+set_variable = {KimKorea_Navy_navy_anti_air_attack_factor = -0.50}
+set_variable = {KimKorea_Navy_navy_fuel_consumption_factor = 0.50}
+set_variable = {KimKorea_Navy_KimKorea_Navy_navy_max_range_factor = -0.50}

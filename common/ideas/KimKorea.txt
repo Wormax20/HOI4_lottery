@@ -9,8 +9,8 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				political_power_factor = 0.15
-				production_speed_arms_factory_factor = 0.15
+				political_power_factor = 0.25
+				production_speed_arms_factory_factor = 0.10
 				conscription = 0.05
 				army_core_attack_factor = 0.10
 				army_core_defence_factor = 0.10
@@ -90,25 +90,6 @@ ideas = {
 					build_cost_ic = -0.25
 					instant = yes
 				}
-			}
-		}
-		KimKorea_focus_New_Start_idea = {
-			picture = KimKorea_focus_New_Start_idea
-			allowed = {
-				always = yes
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			modifier = {
-				enemy_operative_capture_chance_factor = 0.20
-				own_operative_capture_chance_factor = -0.10
-				agency_upgrade_time = -0.25
-				operative_slot = 2
-				airforce_intel_to_others = -20
-				army_intel_to_others = -20
-				civilian_intel_to_others = -20
-				operation_outcome = 0.2
 			}
 		}
 		KimKorea_focus_Tank_Choose_idea = {

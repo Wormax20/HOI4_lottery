@@ -14,3 +14,31 @@ KimKorea_Army = {
 	supply_consumption_factor = KimKorea_Army_supply_consumption_factor
 	army_bonus_air_superiority_factor = KimKorea_Army_army_bonus_air_superiority_factor
 }
+KimKorea_AirForce = {
+	icon = GFX_idea_generic_air_fighter
+	enable = {
+		always = yes
+	}
+	air_attack_factor = KimKorea_AirForce_air_attack_factor
+	air_defence_factor = KimKorea_AirForce_air_defence_factor
+	air_detection = KimKorea_AirForce_air_detection
+	air_accidents_factor = KimKorea_AirForce_air_accidents_factor
+	air_ace_bonuses_factor = KimKorea_AirForce_air_ace_bonuses_factor
+	air_manpower_requirement_factor = KimKorea_AirForce_air_manpower_requirement_factor
+	air_range_factor = KimKorea_AirForce_air_range_factor
+}
+KimKorea_Navy = {
+	icon = GFX_idea_generic_navy_bonus
+	enable = {
+		always = yes
+	}
+	naval_damage_factor = KimKorea_Navy_naval_damage_factor
+	naval_defense_factor = KimKorea_Navy_naval_defense_factor
+	naval_detection = KimKorea_Navy_naval_detection
+	naval_hit_chance = KimKorea_Navy_naval_hit_chance
+	naval_supply_consumption_factor = KimKorea_Navy_naval_supply_consumption_factor
+	naval_speed_factor = KimKorea_Navy_naval_speed_factor
+	navy_anti_air_attack_factor = KimKorea_Navy_navy_anti_air_attack_factor
+	navy_fuel_consumption_factor = KimKorea_Navy_navy_fuel_consumption_factor
+	navy_max_range_factor = KimKorea_Navy_KimKorea_Navy_navy_max_range_factor
+}
