@@ -52,7 +52,7 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				research_speed_factor = 0.10
+				industrial_capacity_factory = 0.10
 				global_building_slots = 5
 			}
 		}

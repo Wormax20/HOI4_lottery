@@ -295,6 +295,10 @@ focus_tree = {
 				neutrality = 0
 			}
 			add_ideas = The_Kim_Dynasty
+			add_offsite_building = {
+				type = industrial_complex
+				level = 5
+			}
 			news_event = {
 				id = KimKorea_news.1
 				days = 0
@@ -489,7 +493,7 @@ focus_tree = {
 			}
 			add_to_variable = {
 				KimKorea_Political_max_command_power_mult = 0.25
-				tooltip = political_power_gain_tt
+				tooltip = max_command_power_mult_tt
 			}
 		}
 	}
@@ -534,6 +538,198 @@ focus_tree = {
 				tooltip = political_power_gain_tt
 			}
 			country_event = KimKorea_event.100
+		}
+	}
+	focus = {
+		id = KimKorea_focus_IChi_8
+		icon = GFX_focus_research
+		cost = 5
+		x = -2
+		y = 5
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_focus_IChi
+		prerequisite = { 
+			focus = KimKorea_focus_IChi_1_5
+		}
+		completion_reward = { 
+			custom_effect_tooltip = KimKorea_Research
+			add_to_variable = {
+				KimKorea_Research_research_speed_factor = 0.10
+				tooltip = research_speed_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Research_special_project_speed_factor = 0.10
+				tooltip = special_project_speed_factor_tt
+			}
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = KimKorea_focus_IChi_8_1
+		icon = GFX_focus_NORDIC_dem_capstone_research
+		cost = 5
+		x = 0
+		y = 5
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_focus_IChi
+		prerequisite = { 
+			focus = KimKorea_focus_IChi_1_5
+		}
+		completion_reward = { 
+			custom_effect_tooltip = KimKorea_Research
+			add_to_variable = {
+				KimKorea_Research_research_speed_factor = 0.10
+				tooltip = research_speed_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Research_special_project_speed_factor = 0.10
+				tooltip = special_project_speed_factor_tt
+			}
+			add_ideas = KimKorea_focus_SAN_idea
+		}
+	}
+	focus = {
+		id = KimKorea_focus_IChi_8_1_1
+		icon = GFX_focus_NORDIC_dem_research
+		cost = 5
+		x = 0
+		y = 6
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_focus_IChi
+		prerequisite = { 
+			focus = KimKorea_focus_IChi_8_1
+		}
+		completion_reward = { 
+			custom_effect_tooltip = KimKorea_Research
+			add_to_variable = {
+				KimKorea_Research_research_speed_factor = 0.10
+				tooltip = research_speed_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Research_special_project_speed_factor = 0.10
+				tooltip = special_project_speed_factor_tt
+			}
+			add_tech_bonus = {
+       			name = industry_bonus
+      			bonus = 1.0
+      			uses = 3
+        		category = industry
+   			}
+		}
+	}
+	focus = {
+		id = KimKorea_focus_IChi_8_2
+		icon = GFX_focus_NORDIC_dem_research
+		cost = 5
+		x = -2
+		y = 6
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_focus_IChi
+		prerequisite = { 
+			focus = KimKorea_focus_IChi_8
+		}
+		completion_reward = { 
+			custom_effect_tooltip = KimKorea_Research
+			add_to_variable = {
+				KimKorea_Research_research_speed_factor = 0.10
+				tooltip = research_speed_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Research_special_project_speed_factor = 0.10
+				tooltip = special_project_speed_factor_tt
+			}
+			add_tech_bonus = {
+				name = electronics_bonus
+				bonus = 1.0
+				uses = 3
+				category = electronics
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_focus_IChi_8_1_2
+		icon = GFX_goal_continuous_research
+		cost = 5
+		x = 0
+		y = 7
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_focus_IChi
+		prerequisite = { 
+			focus = KimKorea_focus_IChi_8_1_1
+		}
+		completion_reward = { 
+			custom_effect_tooltip = KimKorea_Research
+			add_to_variable = {
+				KimKorea_Research_research_speed_factor = 0.10
+				tooltip = research_speed_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Research_special_project_speed_factor = 0.10
+				tooltip = special_project_speed_factor_tt
+			}
+			add_tech_bonus = {
+       			name = industry_bonus
+      			bonus = 1.0
+      			uses = 3
+        		category = industry
+   			}
+		}
+	}
+	focus = {
+		id = KimKorea_focus_IChi_8_2_1
+		icon = GFX_focus_research2
+		cost = 5
+		x = -2
+		y = 7
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_focus_IChi
+		prerequisite = { 
+			focus = KimKorea_focus_IChi_8_2
+		}
+		completion_reward = { 
+			custom_effect_tooltip = KimKorea_Research
+			add_to_variable = {
+				KimKorea_Research_research_speed_factor = 0.10
+				tooltip = research_speed_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Research_special_project_speed_factor = 0.10
+				tooltip = special_project_speed_factor_tt
+			}
+			add_ideas = KimKorea_focus_SAN_two_idea
+		}
+	}
+	focus = {
+		id = KimKorea_focus_IChi_8_3
+		icon = GFX_focus_NORDIC_com_capstone_research
+		cost = 10
+		x = -1
+		y = 8
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_focus_IChi
+		prerequisite = { 
+			focus = KimKorea_focus_IChi_8_2_1
+		}
+		prerequisite = { 
+			focus = KimKorea_focus_IChi_8_1_2
+		}
+		completion_reward = {
+			add_research_slot = 1
+			country_event = KimKorea_event_Tech.100
 		}
 	}
 	#上方共產線
