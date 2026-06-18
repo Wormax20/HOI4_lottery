@@ -473,6 +473,7 @@ focus_tree = {
 				neutrality = 0
 			}
 			add_ideas = The_Kim_Dynasty
+			add_research_slot = 1
 			add_offsite_building = {
 				type = industrial_complex
 				level = 5
