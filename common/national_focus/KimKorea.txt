@@ -106,8 +106,8 @@ focus_tree = {
 				tooltip = war_support_factor_tt
 			}
 			set_popularities = {
-				communism = 60
-				democratic = 30
+				communism = 45
+				democratic = 45
 				fascism = 5
 				neutrality = 5
 			}
@@ -149,8 +149,8 @@ focus_tree = {
 				tooltip = political_power_gain_tt
 			}
 			set_popularities = {
-				communism = 70
-				democratic = 20
+				communism = 50
+				democratic = 40
 				fascism = 5
 				neutrality = 5
 			}
@@ -230,39 +230,310 @@ focus_tree = {
 				tooltip = political_power_gain_tt
 			}
 			set_popularities = {
-				communism = 80
-				democratic = 20
-				fascism = 0
-				neutrality = 0
+				communism = 55
+				democratic = 35
+				fascism = 5
+				neutrality = 5
 			}
 			1030 = {
 				add_resource = {
 					type = oil
-					amount = 16
+					amount = 10
 				}
 				add_resource = {
 					type = chromium
-					amount = 48
+					amount = 24
 				}
 				add_resource = {
 					type = rubber
-					amount = 32
+					amount = 16
 				}
 			}
 			1031 = {
 				add_resource = {
 					type = Tungsten
-					amount = 30
+					amount = 12
 				}
 				add_resource = {
 					type = steel
-					amount = 72
+					amount = 32
 				}
 				add_resource = {
 					type = aluminium
-					amount = 36
+					amount = 18
 				}
 			}
+		}
+	}
+	focus = {
+		id = KimKorea_focus_IChi_1_5
+		icon = GFX_focus_SWE_socialist_reforms
+		cost = 10
+		x = -3
+		y = 4
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_focus_IChi
+		prerequisite = { 
+			focus = KimKorea_focus_IChi_1_4
+		}
+		prerequisite = { 
+			focus = KimKorea_focus_IChi_1_2
+		}
+		prerequisite = { 
+			focus = KimKorea_focus_IChi_1_3
+		}
+		completion_reward = { 
+			set_politics = {
+				ruling_party = communism
+			}
+			set_popularities = {
+				communism = 70
+				democratic = 30
+				fascism = 0
+				neutrality = 0
+			}
+			add_ideas = The_Kim_Dynasty
+			news_event = {
+				id = KimKorea_news.1
+				days = 0
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_focus_IChi_3
+		icon = GFX_goal_tfv_burn_the_royal_portraits
+		cost = 5
+		x = -6
+		y = 5
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_focus_IChi
+		mutually_exclusive = { focus = KimKorea_focus_IChi_4 }
+		prerequisite = { 
+			focus = KimKorea_focus_IChi_1_5
+		}
+		completion_reward = { 
+			custom_effect_tooltip = KimKorea_Political_tt
+			add_to_variable = {
+				KimKorea_Political_stability_factor = 0.10
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Political_war_support_factor = 0.10
+				tooltip = war_support_factor_tt
+			}
+			set_popularities = {
+				communism = 100
+				democratic = 0
+				fascism = 0
+				neutrality = 0
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_focus_IChi_4
+		icon = GFX_goal_anschluss
+		cost = 5
+		x = -4
+		y = 5
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_focus_IChi
+		mutually_exclusive = { focus = KimKorea_focus_IChi_3 }
+		prerequisite = { 
+			focus = KimKorea_focus_IChi_1_5
+		}
+		completion_reward = { 
+			custom_effect_tooltip = KimKorea_Political_tt
+			add_to_variable = {
+				KimKorea_Political_stability_factor = 0.10
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Political_war_support_factor = 0.10
+				tooltip = war_support_factor_tt
+			}
+			set_popularities = {
+				communism = 90
+				democratic = 10
+				fascism = 0
+				neutrality = 0
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_focus_IChi_3_1
+		icon = GFX_goal_tfv_burn_the_royal_portraits
+		cost = 5
+		x = -6
+		y = 6
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_focus_IChi
+		prerequisite = { 
+			focus = KimKorea_focus_IChi_3
+		}
+		completion_reward = { 
+			custom_effect_tooltip = KimKorea_Political_tt
+			add_to_variable = {
+				KimKorea_Political_stability_factor = 0.10
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Political_war_support_factor = 0.10
+				tooltip = war_support_factor_tt
+			}
+			set_country_flag = KimKorea_east_organization
+			add_ideas = KimKorea_focus_Prod5
+			add_offsite_building = {
+				type = industrial_complex
+				level = 3
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 2
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_focus_IChi_3_2
+		icon = GFX_focus_USA_uncle_sam
+		cost = 5
+		x = -4
+		y = 6
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_focus_IChi
+		prerequisite = { 
+			focus = KimKorea_focus_IChi_4
+		}
+		completion_reward = { 
+			custom_effect_tooltip = KimKorea_Political_tt
+			add_to_variable = {
+				KimKorea_Political_stability_factor = 0.10
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Political_war_support_factor = 0.10
+				tooltip = war_support_factor_tt
+			}
+			set_country_flag = KimKorea_west_organization
+			add_ideas = KimKorea_focus_Prod4
+		}
+	}
+	focus = {
+		id = KimKorea_focus_IChi_6_1
+		icon = GFX_focus_generic_befriend_usa
+		cost = 5
+		x = -4
+		y = 7
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_focus_IChi
+		prerequisite = { 
+			focus = KimKorea_focus_IChi_3_2
+		}
+		completion_reward = { 
+			custom_effect_tooltip = KimKorea_Political_tt
+			add_to_variable = {
+				KimKorea_Political_stability_factor = 0.10
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Political_war_support_factor = 0.10
+				tooltip = war_support_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Political_command_power_gain_mult = 0.25
+				tooltip = command_power_gain_mult_tt
+			}
+			add_to_variable = {
+				KimKorea_Political_max_command_power_mult = 0.25
+				tooltip = max_command_power_mult_tt
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_focus_IChi_6
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		cost = 5
+		x = -6
+		y = 7
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_focus_IChi
+		prerequisite = { 
+			focus = KimKorea_focus_IChi_3_1
+		}
+		completion_reward = { 
+			custom_effect_tooltip = KimKorea_Political_tt
+			add_to_variable = {
+				KimKorea_Political_stability_factor = 0.10
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Political_war_support_factor = 0.10
+				tooltip = war_support_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Political_command_power_gain_mult = 0.25
+				tooltip = command_power_gain_mult_tt
+			}
+			add_to_variable = {
+				KimKorea_Political_max_command_power_mult = 0.25
+				tooltip = political_power_gain_tt
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_focus_IChi_7
+		icon = GFX_focus_SOV_the_supreme_soviet
+		cost = 10
+		x = -5
+		y = 8
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_focus_IChi
+		prerequisite = { 
+			focus = KimKorea_focus_IChi_6
+			focus = KimKorea_focus_IChi_6_1
+		}
+		completion_reward = { 
+			custom_effect_tooltip = KimKorea_Political_tt
+			add_to_variable = {
+				KimKorea_Political_stability_factor = 0.10
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Political_war_support_factor = 0.10
+				tooltip = war_support_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Political_command_power_gain_mult = 0.50
+				tooltip = command_power_gain_mult_tt
+			}
+			add_to_variable = {
+				KimKorea_Political_max_command_power_mult = 0.50
+				tooltip = max_command_power_mult_tt
+			}
+			add_to_variable = {
+				KimKorea_Political_political_power_factor = 0.05
+				tooltip = political_power_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Political_political_power_gain = 0.05
+				tooltip = political_power_gain_tt
+			}
+			country_event = KimKorea_event.100
 		}
 	}
 	#上方共產線
