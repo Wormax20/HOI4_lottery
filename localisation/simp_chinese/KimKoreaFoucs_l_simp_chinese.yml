@@ -1,6 +1,21 @@
 ﻿l_simp_chinese:
- KimKorea_focus_IChi: "金家王朝"
- KimKorea_focus_IChi_desc: "金家是国家的栋梁"
- 
+ KimKorea_focus_IChi: "稳定局势"
+ KimKorea_focus_IChi_desc: "朝鲜的新生是全体国民共同努力的结果，现在的局势还不明朗，稳定国家才是重中之重。"
+ KimKorea_focus_IChi_1: "与共产党合作"
+ KimKorea_focus_IChi_1_desc: "共产党是当年抗日的骨干力量，或许我们可以与他们合作。"
+ KimKorea_focus_IChi_1_1: "共产党要求掌控电台局"
+ KimKorea_focus_IChi_1_1_desc: "朝鲜电台局虽说不是一个重要的位置，但他们好像在密谋什么。"
+ KimKorea_focus_IChi_1_2: "精简政府"
+ KimKorea_focus_IChi_1_2_desc: "过去庞大的殖民政府体系拖累了我们的政府效率，必须做出改变了。"
+ KimKorea_focus_IChi_1_3: "打击贪腐"
+ KimKorea_focus_IChi_1_3_desc: "我们清楚政府内部有多少和珅，现在我们必须出重拳将他们一网打尽。"
+ KimKorea_focus_IChi_1_4: "开发南部资源"
+ KimKorea_focus_IChi_1_4_desc: "我们的红色好友很积极的参与资源的开发。"
+
+ KimKorea_focus_IChi_2: "打击共产党"
+ KimKorea_focus_IChi_2_desc: "历史的教训表明，与共产党合作都没有好事。"
+
+
+
  KimKorea_focus_BacktoJapan: "回归日本"
  KimKorea_focus_BacktoJapan_desc: "§R警告 警告 此为回归日本的国策§!"

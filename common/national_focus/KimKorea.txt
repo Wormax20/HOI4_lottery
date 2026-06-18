@@ -44,7 +44,7 @@ focus_tree = {
 
 	focus = {
 		id = KimKorea_focus_IChi
-		icon = GFX_focus_generic_spur_communist_revolutions
+		icon = GFX_goal_generic_neutrality_focus
 		cost = 10
 		x = 18
 		y = 0
@@ -52,16 +52,21 @@ focus_tree = {
 			is_ai = no
 		}
 		completion_reward = { 
+			custom_effect_tooltip = KimKorea_Political_tt
+			add_to_variable = {
+				KimKorea_Political_stability_factor = 0.10
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Political_war_support_factor = 0.10
+				tooltip = war_support_factor_tt
+			}
 			set_popularities = {
-				communism = 100
-				democratic = 0
-				fascism = 0
-				neutrality = 0
+				communism = 40
+				democratic = 40
+				fascism = 10
+				neutrality = 10
 			}
-			set_politics = {
-				ruling_party = communism
-			}
-			add_ideas = The_Kim_Dynasty
 			add_offsite_building = {
 				type = industrial_complex
 				level = 5
@@ -74,9 +79,227 @@ focus_tree = {
                 type = dockyard
                 level = 2
             }
-			news_event = {
-				id = KimKorea_news.1
-				days = 0
+		}
+	}
+	focus = {
+		id = KimKorea_focus_IChi_1
+		icon = GFX_goal_tripartite_pact
+		cost = 5
+		x = -1
+		y = 1
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_focus_IChi
+		mutually_exclusive = { focus = KimKorea_focus_IChi_2 }
+		prerequisite = { 
+			focus = KimKorea_focus_IChi 
+		}
+		completion_reward = { 
+			custom_effect_tooltip = KimKorea_Political_tt
+			add_to_variable = {
+				KimKorea_Political_stability_factor = 0.10
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Political_war_support_factor = 0.10
+				tooltip = war_support_factor_tt
+			}
+			set_popularities = {
+				communism = 60
+				democratic = 30
+				fascism = 5
+				neutrality = 5
+			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 3
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_focus_IChi_1_1
+		icon = GFX_goal_generic_radar
+		cost = 5
+		x = -2
+		y = 2
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_focus_IChi
+		prerequisite = { 
+			focus = KimKorea_focus_IChi_1
+		}
+		completion_reward = { 
+			custom_effect_tooltip = KimKorea_Political_tt
+			add_to_variable = {
+				KimKorea_Political_stability_factor = 0.10
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Political_war_support_factor = 0.10
+				tooltip = war_support_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Political_political_power_factor = 0.05
+				tooltip = political_power_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Political_political_power_gain = 0.05
+				tooltip = political_power_gain_tt
+			}
+			set_popularities = {
+				communism = 70
+				democratic = 20
+				fascism = 5
+				neutrality = 5
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_focus_IChi_1_2
+		icon = GFX_goal_generic_propaganda
+		cost = 5
+		x = -3
+		y = 3
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_focus_IChi
+		prerequisite = { 
+			focus = KimKorea_focus_IChi_1_1
+		}
+		completion_reward = { 
+			custom_effect_tooltip = KimKorea_Political_tt
+			add_to_variable = {
+				KimKorea_Political_political_power_factor = 0.05
+				tooltip = political_power_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Political_political_power_gain = 0.05
+				tooltip = political_power_gain_tt
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_focus_IChi_1_3
+		icon = GFX_goal_generic_demand_territory
+		cost = 5
+		x = -1
+		y = 3
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_focus_IChi
+		prerequisite = { 
+			focus = KimKorea_focus_IChi_1_1
+		}
+		completion_reward = { 
+			custom_effect_tooltip = KimKorea_Political_tt
+			add_to_variable = {
+				KimKorea_Political_political_power_factor = 0.05
+				tooltip = political_power_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Political_political_power_gain = 0.05
+				tooltip = political_power_gain_tt
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_focus_IChi_1_4
+		icon = GFX_goal_generic_soviet_construction
+		cost = 5
+		x = -5
+		y = 3
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_focus_IChi
+		prerequisite = { 
+			focus = KimKorea_focus_IChi_1_1
+		}
+		completion_reward = { 
+			custom_effect_tooltip = KimKorea_Political_tt
+			add_to_variable = {
+				KimKorea_Political_political_power_factor = 0.05
+				tooltip = political_power_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Political_political_power_gain = 0.05
+				tooltip = political_power_gain_tt
+			}
+			set_popularities = {
+				communism = 80
+				democratic = 20
+				fascism = 0
+				neutrality = 0
+			}
+			1030 = {
+				add_resource = {
+					type = oil
+					amount = 16
+				}
+				add_resource = {
+					type = chromium
+					amount = 48
+				}
+				add_resource = {
+					type = rubber
+					amount = 32
+				}
+			}
+			1031 = {
+				add_resource = {
+					type = Tungsten
+					amount = 30
+				}
+				add_resource = {
+					type = steel
+					amount = 72
+				}
+				add_resource = {
+					type = aluminium
+					amount = 36
+				}
+			}
+		}
+	}
+	#上方共產線
+	#下方民主線 未來可期
+	focus = {
+		id = KimKorea_focus_IChi_2
+		icon = GFX_goal_anti_comintern_pact
+		cost = 5
+		x = 1
+		y = 1
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_focus_IChi
+		mutually_exclusive = { focus = KimKorea_focus_IChi_1 }
+		prerequisite = { 
+			focus = KimKorea_focus_IChi 
+		}
+		completion_reward = { 
+			custom_effect_tooltip = KimKorea_Political_tt
+			add_to_variable = {
+				KimKorea_Political_stability_factor = 0.10
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Political_war_support_factor = 0.10
+				tooltip = war_support_factor_tt
+			}
+			set_popularities = {
+				communism = 30
+				democratic = 60
+				fascism = 5
+				neutrality = 5
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 3
 			}
 		}
 	}

@@ -5,6 +5,12 @@
  KimKorea_Decisions_1: "朝鲜武器生产"
  KimKorea_Decisions_1_desc: "朝鲜已向我国派遣专家协助生产"
 
+ KimKorea_focus_SAN_idea: "朝鲜科研院"
+ KimKorea_focus_SAN_idea_desc: "科学主义万岁!"
+ KimKorea_focus_Ni_One_idea: "建设半岛"
+ KimKorea_focus_Ni_One_idea_desc: "加速朝鲜半岛地区的和平建设与繁荣"
+
+
  KimKorea_Army: "朝鲜陆军"
  KimKorea_Army_tt: "$KimKorea_Army$追加修正:"
  KimKorea_Army_desc: "朝鲜陆军"
@@ -15,7 +21,7 @@
  KimKorea_Navy_tt: "$KimKorea_Navy$追加修正:"
  KimKorea_Navy_desc: "朝鲜海军"
  KimKorea_Political: "朝鲜政治"
- KimKorea_Political_tt: "$KimKorea_Army$追加修正:"
+ KimKorea_Political_tt: "$KimKorea_Political$追加修正:"
  KimKorea_Political_desc: "朝鲜政治"
  KimKorea_Research: "朝鲜研发"
  KimKorea_Research_tt: "$KimKorea_Research$追加修正:"
@@ -24,7 +30,3 @@
  KimKorea_Factory_tt: "$KimKorea_Factory$追加修正:"
  KimKorea_Factory_desc: "朝鲜工业"
 
- KimKorea_focus_SAN_idea: "朝鲜科研院"
- KimKorea_focus_SAN_idea_desc: "科学主义万岁!"
- KimKorea_focus_Ni_One_idea: "建设半岛"
- KimKorea_focus_Ni_One_idea_desc: "加速朝鲜半岛地区的和平建设与繁荣"
