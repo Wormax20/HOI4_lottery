@@ -18,14 +18,14 @@ focus_tree = {
 	reset_on_civilwar = no
 	continuous_focus_position = {
 		x = 100
-		y = 1500
+		y = 1700
 	}
 
 	focus = {
 		id = KimKorea_focus_BacktoJapan
 		icon = GFX_focus_generic_improve_the_administration
 		cost = 2
-		x = 15
+		x = 5
 		y = 0
 		
 		ai_will_do = {
@@ -46,7 +46,7 @@ focus_tree = {
 		id = KimKorea_focus_IChi
 		icon = GFX_goal_generic_neutrality_focus
 		cost = 10
-		x = 18
+		x = 10
 		y = 0
 		available = {
 			is_ai = no
@@ -207,6 +207,76 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = KimKorea_focus_IChi_1_3_1
+		icon = GFX_focus_NOR_restore_public_trust_in_the_storting
+		cost = 5
+		x = 2
+		y = 4
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_focus_IChi
+		prerequisite = { 
+			focus = KimKorea_focus_IChi_1_3
+		}
+		completion_reward = { 
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = KimKorea_focus_IChi_1_3_2
+		icon = GFX_focus_PER_establish_opec
+		cost = 5
+		x = 2
+		y = 6
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_focus_IChi
+		prerequisite = { 
+			focus = KimKorea_focus_IChi_1_3_1
+		}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = KimKorea_focus_IChi_1_3_3
+		icon = GFX_focus_NORDIC_com_capstone_materiel
+		cost = 5
+		x = 2
+		y = 8
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_focus_IChi
+		prerequisite = { 
+			focus = KimKorea_focus_IChi_1_3_2
+		}
+		completion_reward = { 
+			custom_effect_tooltip = KimKorea_Research
+			custom_effect_tooltip = KimKorea_Political_tt
+
+			add_to_variable = {
+				KimKorea_Research_research_speed_factor = 0.10
+				tooltip = research_speed_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Research_special_project_speed_factor = 0.10
+				tooltip = special_project_speed_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Political_political_power_factor = 0.05
+				tooltip = political_power_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Political_political_power_gain = 0.05
+				tooltip = political_power_gain_tt
+			}
+			add_political_power = -300
+		}
+	}
+	focus = {
 		id = KimKorea_focus_IChi_1_4
 		icon = GFX_goal_generic_soviet_construction
 		cost = 5
@@ -261,6 +331,114 @@ focus_tree = {
 				add_resource = {
 					type = aluminium
 					amount = 18
+				}
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_focus_IChi_1_4_1
+		icon = GFX_goal_generic_soviet_construction
+		cost = 5
+		x = -8
+		y = 4
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_focus_IChi
+		prerequisite = { 
+			focus = KimKorea_focus_IChi_1_4
+		}
+		completion_reward = { 
+			1084 = {
+				add_resource = {
+					type = chromium
+					amount = 12
+				}
+				add_resource = {
+					type = rubber
+					amount = 10
+				}
+			}
+			1082 = {
+				add_resource = {
+					type = Tungsten
+					amount = 12
+				}
+				add_resource = {
+					type = steel
+					amount = 20
+				}
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_focus_IChi_1_4_2
+		icon = GFX_goal_generic_soviet_construction
+		cost = 5
+		x = -8
+		y = 6
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_focus_IChi
+		prerequisite = { 
+			focus = KimKorea_focus_IChi_1_4_1
+		}
+		completion_reward = { 
+			527 = {
+				add_resource = {
+					type = steel
+					amount = 24
+				}
+				add_resource = {
+					type = coal
+					amount = 10
+				}
+			}
+			1085 = {
+				add_resource = {
+					type = aluminium
+					amount = 12
+				}
+				add_resource = {
+					type = steel
+					amount = 16
+				}
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_focus_IChi_1_4_3
+		icon = GFX_goal_generic_soviet_construction
+		cost = 5
+		x = -8
+		y = 8
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_focus_IChi
+		prerequisite = { 
+			focus = KimKorea_focus_IChi_1_4_2
+		}
+		completion_reward = { 
+			525 = {
+				add_resource = {
+					type = steel
+					amount = 24
+				}
+				add_resource = {
+					type = chromium
+					amount = 16
+				}
+			}
+			1029 = {
+				add_resource = {
+					type = rubber
+					amount = 12
+				}
+				add_resource = {
+					type = oil
+					amount = 16
 				}
 			}
 		}
@@ -522,11 +700,11 @@ focus_tree = {
 				tooltip = war_support_factor_tt
 			}
 			add_to_variable = {
-				KimKorea_Political_command_power_gain_mult = 0.50
+				KimKorea_Political_command_power_gain_mult = 0.75
 				tooltip = command_power_gain_mult_tt
 			}
 			add_to_variable = {
-				KimKorea_Political_max_command_power_mult = 0.50
+				KimKorea_Political_max_command_power_mult = 0.75
 				tooltip = max_command_power_mult_tt
 			}
 			add_to_variable = {
@@ -605,16 +783,7 @@ focus_tree = {
 		prerequisite = { 
 			focus = KimKorea_focus_IChi_8_1
 		}
-		completion_reward = { 
-			custom_effect_tooltip = KimKorea_Research
-			add_to_variable = {
-				KimKorea_Research_research_speed_factor = 0.10
-				tooltip = research_speed_factor_tt
-			}
-			add_to_variable = {
-				KimKorea_Research_special_project_speed_factor = 0.10
-				tooltip = special_project_speed_factor_tt
-			}
+		completion_reward = {
 			add_tech_bonus = {
        			name = industry_bonus
       			bonus = 1.0
@@ -636,16 +805,7 @@ focus_tree = {
 		prerequisite = { 
 			focus = KimKorea_focus_IChi_8
 		}
-		completion_reward = { 
-			custom_effect_tooltip = KimKorea_Research
-			add_to_variable = {
-				KimKorea_Research_research_speed_factor = 0.10
-				tooltip = research_speed_factor_tt
-			}
-			add_to_variable = {
-				KimKorea_Research_special_project_speed_factor = 0.10
-				tooltip = special_project_speed_factor_tt
-			}
+		completion_reward = {
 			add_tech_bonus = {
 				name = electronics_bonus
 				bonus = 1.0
@@ -728,6 +888,15 @@ focus_tree = {
 			focus = KimKorea_focus_IChi_8_1_2
 		}
 		completion_reward = {
+			custom_effect_tooltip = KimKorea_Research
+			add_to_variable = {
+				KimKorea_Research_research_speed_factor = 0.10
+				tooltip = research_speed_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Research_special_project_speed_factor = 0.10
+				tooltip = special_project_speed_factor_tt
+			}
 			add_research_slot = 1
 			country_event = KimKorea_event_Tech.100
 		}

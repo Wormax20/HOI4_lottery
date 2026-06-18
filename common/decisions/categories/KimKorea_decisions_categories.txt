@@ -4,7 +4,7 @@ KimKorea_discipline = {
 		original_tag = KOR
 	}
 	visible = {
-		has_completed_focus = KimKorea_focus_RoKu
+		has_completed_focus = KimKorea_focus_IChi_1_3_1
 	}
 	priority = 100
 }

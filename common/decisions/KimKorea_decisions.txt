@@ -5,7 +5,7 @@ KimKorea_discipline = { #宣传部
 		allowed = {
 			always = yes
 		}
-		days_remove = 120
+		days_remove = 180
 		modifier = {
 			monthly_population = 0.10
 			consumer_goods_factor = -0.05
@@ -17,7 +17,7 @@ KimKorea_discipline = { #宣传部
 		allowed = {
 			always = yes
 		}
-		days_remove = 120
+		days_remove = 180
 		modifier = {
 			production_speed_buildings_factor = 0.05
 		}
@@ -28,7 +28,7 @@ KimKorea_discipline = { #宣传部
 		allowed = {
 			always = yes
 		}
-		days_remove = 120
+		days_remove = 180
 		modifier = {
 			research_speed_factor = 0.05
 		}
@@ -39,7 +39,7 @@ KimKorea_discipline = { #宣传部
 		allowed = {
 			always = yes
 		}
-		days_remove = 120
+		days_remove = 180
 		modifier = {
 			production_factory_efficiency_gain_factor = 0.05
 			industrial_capacity_factory = 0.05
@@ -49,9 +49,9 @@ KimKorea_discipline = { #宣传部
 		icon = 1
 		cost = 50
 		allowed = {
-			has_completed_focus = KimKorea_focus_Go_Finish
+			always = yes
 		}
-		days_remove = 120
+		days_remove = 180
 		modifier = {
 			army_attack_factor = 0.05
 			army_defence_factor = 0.05
@@ -67,8 +67,8 @@ KimKorea_discipline = { #宣传部
 			tag = KOR
 			has_country_flag = KimKorea_Navy_Build_Yes
 		}
-		cost = 75
-		days_remove = 150
+		cost = 50
+		days_remove = 100
 
 		complete_effect = {
 			create_ship = {
@@ -112,8 +112,8 @@ KimKorea_discipline = { #宣传部
 			tag = KOR
 			has_country_flag = KimKorea_Navy_Build_Yes
 		}
-		cost = 150
-		days_remove = 300
+		cost = 100
+		days_remove = 200
 
 		complete_effect = {
 			create_ship = {
@@ -141,7 +141,6 @@ KimKorea_discipline = { #宣传部
 		}
 		visible = {
 			original_tag = KOR
-			has_completed_focus = KimKorea_focus_Finish
 		}
 		target_trigger = {
 			FROM = { is_in_faction_with = ROOT }
