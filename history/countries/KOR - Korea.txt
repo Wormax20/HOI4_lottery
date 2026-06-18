@@ -107,3 +107,31 @@ set_variable = {KimKorea_Navy_naval_speed_factor = -0.50}
 set_variable = {KimKorea_Navy_navy_anti_air_attack_factor = -0.50}
 set_variable = {KimKorea_Navy_navy_fuel_consumption_factor = 0.50}
 set_variable = {KimKorea_Navy_KimKorea_Navy_navy_max_range_factor = -0.50}
+
+add_dynamic_modifier = {
+	modifier = KimKorea_Political
+}
+set_variable = {KimKorea_Political_political_power_factor = -0.15}
+set_variable = {KimKorea_Political_political_power_gain = -0.15}
+set_variable = {KimKorea_Political_stability_factor = -0.50}
+set_variable = {KimKorea_Political_war_support_factor = -0.50}
+set_variable = {KimKorea_Political_command_power_gain_mult = -0.50}
+set_variable = {KimKorea_Political_max_command_power_mult = -0.50}
+
+add_dynamic_modifier = {
+	modifier = KimKorea_Research
+}
+set_variable = {KimKorea_Research_research_speed_factor = -0.50}
+set_variable = {KimKorea_Research_special_project_speed_factor = -0.50}
+
+add_dynamic_modifier = {
+	modifier = KimKorea_Factory
+}
+set_variable = {KimKorea_Factory_production_speed_buildings_factor = -0.20}
+set_variable = {KimKorea_Factory_consumer_goods_expected_value = 0.10}
+set_variable = {KimKorea_Factory_consumer_goods_factor = 0.20}
+set_variable = {KimKorea_Factory_production_factory_max_efficiency_factor = -0.20}
+set_variable = {KimKorea_Factory_production_factory_efficiency_gain_factor = -0.20}
+set_variable = {KimKorea_Factory_production_factory_start_efficiency_factor = -0.20}
+set_variable = {KimKorea_Factory_industrial_capacity_factory = -0.20}
+set_variable = {KimKorea_Factory_industrial_capacity_dockyard = -0.20}

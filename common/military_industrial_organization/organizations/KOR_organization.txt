@@ -19,7 +19,7 @@ KOR_henschel_KimKorea_organization = {
 	}
 	available = {
 		from = {
-			has_country_flag = KimKorea_west_organization
+			#has_country_flag = KimKorea_west_organization
 		}
 	}
 }
@@ -37,7 +37,7 @@ KOR_harland_wolff_KimKorea_organization = {
 	}
 	available = {
 		from = {
-			has_country_flag = KimKorea_west_organization
+			#has_country_flag = KimKorea_west_organization
 		}
 	}
 }
@@ -55,7 +55,7 @@ KOR_ceska_zbrojovka_uhersky_brod_KimKorea_organization = {
 	}
 	available = {
 		from = {
-			has_country_flag = KimKorea_west_organization
+			#has_country_flag = KimKorea_west_organization
 		}
 	}
 }
@@ -75,7 +75,7 @@ KOR_okmo_KimKorea_organization = {
 	}
 	available = {
 		from = {
-			has_country_flag = KimKorea_east_organization
+			#has_country_flag = KimKorea_east_organization
 		}
 	}
 }
@@ -93,7 +93,7 @@ KOR_mytishchy_machine_building_plant_KimKorea_organization = {
 	}
 	available = {
 		from = {
-			has_country_flag = KimKorea_east_organization
+			#has_country_flag = KimKorea_east_organization
 		}
 	}
 }
@@ -112,7 +112,7 @@ KOR_shenyang_aircraft_corporation_KimKorea_organization = {
 	}
 	available = {
 		from = {
-			has_country_flag = KimKorea_east_organization
+			#has_country_flag = KimKorea_east_organization
 		}
 	}
 }
@@ -129,7 +129,7 @@ KOR_crewe_works_KimKorea_organization = {
 	}
 	available = {
 		from = {
-			has_country_flag = KimKorea_train_organization
+			#has_country_flag = KimKorea_train_organization
 		}
 	}
 	

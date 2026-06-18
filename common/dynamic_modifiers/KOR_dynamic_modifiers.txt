@@ -15,7 +15,7 @@ KimKorea_Army = {
 	army_bonus_air_superiority_factor = KimKorea_Army_army_bonus_air_superiority_factor
 }
 KimKorea_AirForce = {
-	icon = GFX_idea_generic_air_fighter
+	icon = GFX_idea_generic_communist_army
 	enable = {
 		always = yes
 	}
@@ -28,7 +28,7 @@ KimKorea_AirForce = {
 	air_range_factor = KimKorea_AirForce_air_range_factor
 }
 KimKorea_Navy = {
-	icon = GFX_idea_generic_navy_bonus
+	icon = GFX_idea_generic_communist_army
 	enable = {
 		always = yes
 	}
@@ -41,4 +41,38 @@ KimKorea_Navy = {
 	navy_anti_air_attack_factor = KimKorea_Navy_navy_anti_air_attack_factor
 	navy_fuel_consumption_factor = KimKorea_Navy_navy_fuel_consumption_factor
 	navy_max_range_factor = KimKorea_Navy_KimKorea_Navy_navy_max_range_factor
+}
+KimKorea_Political = {
+	icon = GFX_idea_generic_political_support
+	enable = {
+		always = yes
+	}
+	political_power_factor = KimKorea_Political_political_power_factor
+	political_power_gain = KimKorea_Political_political_power_gain
+	stability_factor = KimKorea_Political_stability_factor
+	war_support_factor = KimKorea_Political_war_support_factor
+	command_power_gain_mult = KimKorea_Political_command_power_gain_mult
+	max_command_power_mult = KimKorea_Political_max_command_power_mult
+}
+KimKorea_Research = {
+	icon = GFX_idea_generic_research_bonus
+	enable = {
+		always = yes
+	}
+	research_speed_factor = KimKorea_Research_research_speed_factor
+	special_project_speed_factor = KimKorea_Research_special_project_speed_factor
+}
+KimKorea_Factory = {
+	icon = GFX_idea_FRA_factory_strikes
+	enable = {
+		always = yes
+	}
+	production_speed_buildings_factor = KimKorea_Factory_production_speed_buildings_factor
+	consumer_goods_expected_value = KimKorea_Factory_consumer_goods_expected_value
+	consumer_goods_factor = KimKorea_Factory_consumer_goods_factor
+	production_factory_max_efficiency_factor = KimKorea_Factory_production_factory_max_efficiency_factor
+	production_factory_efficiency_gain_factor = KimKorea_Factory_production_factory_efficiency_gain_factor
+	production_factory_start_efficiency_factor = KimKorea_Factory_production_factory_start_efficiency_factor
+	industrial_capacity_factory = KimKorea_Factory_industrial_capacity_factory
+	industrial_capacity_dockyard = KimKorea_Factory_industrial_capacity_dockyard
 }
