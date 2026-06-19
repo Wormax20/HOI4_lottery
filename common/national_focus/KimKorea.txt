@@ -220,6 +220,7 @@ focus_tree = {
 			focus = KimKorea_focus_IChi_1_3
 		}
 		completion_reward = { 
+			custom_effect_tooltip = KimKorea_discipline
 			add_political_power = 100
 		}
 	}
@@ -463,6 +464,11 @@ focus_tree = {
 			focus = KimKorea_focus_IChi_1_3
 		}
 		completion_reward = { 
+			custom_effect_tooltip = KimKorea_FacBud_balance
+			set_power_balance = {
+				id = KimKorea_FacBud_balance
+			}
+			add_political_power = 100
 			set_politics = {
 				ruling_party = communism
 			}
@@ -905,9 +911,9 @@ focus_tree = {
 	focus = {
 		id = KimKorea_focus_Ni
 		icon = GFX_focus_SWE_socialist_reforms
-		cost = 5
+		cost = 10
 		x = -3
-		y = 8
+		y = 9
 		available = {
 			is_ai = no
 		}
@@ -915,13 +921,16 @@ focus_tree = {
 		prerequisite = { 
 			focus = KimKorea_focus_IChi_1_5
 		}
+		prerequisite = { 
+			focus = KimKorea_focus_IChi_7
+		}
+		prerequisite = { 
+			focus = KimKorea_focus_IChi_8_3
+		}
 		completion_reward = { 
 			add_political_power = 100
 			set_capital = {
 				state = 527
-			}
-			set_power_balance = {
-				id = KimKorea_FacBud_balance
 			}
 			527 = {
 				set_state_category = large_city
@@ -943,7 +952,7 @@ focus_tree = {
 			}
 			add_victory_points = {
 				province = 4052
-				value = 20
+				value = 15
 			}
 		}
 	}
