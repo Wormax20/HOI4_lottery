@@ -256,7 +256,7 @@ focus_tree = {
 			focus = KimKorea_focus_IChi_1_3_2
 		}
 		completion_reward = { 
-			custom_effect_tooltip = KimKorea_Research
+			custom_effect_tooltip = KimKorea_Research_tt
 			custom_effect_tooltip = KimKorea_Political_tt
 
 			add_to_variable = {
@@ -740,7 +740,7 @@ focus_tree = {
 			focus = KimKorea_focus_IChi_1_5
 		}
 		completion_reward = { 
-			custom_effect_tooltip = KimKorea_Research
+			custom_effect_tooltip = KimKorea_Research_tt
 			add_to_variable = {
 				KimKorea_Research_research_speed_factor = 0.10
 				tooltip = research_speed_factor_tt
@@ -766,7 +766,7 @@ focus_tree = {
 			focus = KimKorea_focus_IChi_1_5
 		}
 		completion_reward = { 
-			custom_effect_tooltip = KimKorea_Research
+			custom_effect_tooltip = KimKorea_Research_tt
 			add_to_variable = {
 				KimKorea_Research_research_speed_factor = 0.10
 				tooltip = research_speed_factor_tt
@@ -836,7 +836,7 @@ focus_tree = {
 			focus = KimKorea_focus_IChi_8_1_1
 		}
 		completion_reward = { 
-			custom_effect_tooltip = KimKorea_Research
+			custom_effect_tooltip = KimKorea_Research_tt
 			add_to_variable = {
 				KimKorea_Research_research_speed_factor = 0.10
 				tooltip = research_speed_factor_tt
@@ -867,7 +867,7 @@ focus_tree = {
 			focus = KimKorea_focus_IChi_8_2
 		}
 		completion_reward = { 
-			custom_effect_tooltip = KimKorea_Research
+			custom_effect_tooltip = KimKorea_Research_tt
 			add_to_variable = {
 				KimKorea_Research_research_speed_factor = 0.10
 				tooltip = research_speed_factor_tt
@@ -896,7 +896,7 @@ focus_tree = {
 			focus = KimKorea_focus_IChi_8_1_2
 		}
 		completion_reward = {
-			custom_effect_tooltip = KimKorea_Research
+			custom_effect_tooltip = KimKorea_Research_tt
 			add_to_variable = {
 				KimKorea_Research_research_speed_factor = 0.10
 				tooltip = research_speed_factor_tt
@@ -973,7 +973,7 @@ focus_tree = {
 				type = industrial_complex
 				level = 1
 			}
-			custom_effect_tooltip = KimKorea_Factory
+			custom_effect_tooltip = KimKorea_Factory_tt
 			add_to_variable = {
 				KimKorea_Factory_production_speed_buildings_factor = 0.05
 				tooltip = production_speed_buildings_factor_tt
@@ -1022,7 +1022,7 @@ focus_tree = {
 			focus = KimKorea_focus_Factory
 		}
 		completion_reward = { 
-			custom_effect_tooltip = KimKorea_Factory
+			custom_effect_tooltip = KimKorea_Factory_tt
 			add_to_variable = {
 				KimKorea_Factory_production_speed_buildings_factor = 0.05
 				tooltip = production_speed_buildings_factor_tt
@@ -1081,7 +1081,7 @@ focus_tree = {
 			focus = KimKorea_focus_Factory_Ichi
 		}
 		completion_reward = { 
-			custom_effect_tooltip = KimKorea_Factory
+			custom_effect_tooltip = KimKorea_Factory_tt
 			add_to_variable = {
 				KimKorea_Factory_production_factory_max_efficiency_factor = 0.05
 				tooltip = production_factory_max_efficiency_factor_tt
@@ -1140,7 +1140,7 @@ focus_tree = {
 			focus = KimKorea_focus_Factory_Ichi_1_1
 		}
 		completion_reward = { 
-			custom_effect_tooltip = KimKorea_Factory
+			custom_effect_tooltip = KimKorea_Factory_tt
 			add_to_variable = {
 				KimKorea_Factory_production_factory_max_efficiency_factor = 0.05
 				tooltip = production_factory_max_efficiency_factor_tt
@@ -1178,7 +1178,7 @@ focus_tree = {
 			focus = KimKorea_focus_Factory_Ichi_1_2
 		}
 		completion_reward = { 
-			custom_effect_tooltip = KimKorea_Factory
+			custom_effect_tooltip = KimKorea_Factory_tt
 			add_to_variable = {
 				KimKorea_Factory_production_factory_efficiency_gain_factor = 0.10
 				tooltip = production_factory_efficiency_gain_factor_tt
@@ -1212,7 +1212,7 @@ focus_tree = {
 			focus = KimKorea_focus_Factory_Ichi_1_2
 		}
 		completion_reward = { 
-			custom_effect_tooltip = KimKorea_Factory
+			custom_effect_tooltip = KimKorea_Factory_tt
 			add_to_variable = {
 				KimKorea_Factory_production_factory_max_efficiency_factor = 0.10
 				tooltip = production_factory_max_efficiency_factor_tt
@@ -1294,7 +1294,7 @@ focus_tree = {
 			focus = KimKorea_focus_Factory_Ichi_1_4
 		}
 		completion_reward = { 
-			custom_effect_tooltip = KimKorea_Factory
+			custom_effect_tooltip = KimKorea_Factory_tt
 			add_to_variable = {
 				KimKorea_Factory_production_factory_max_efficiency_factor = 0.05
 				tooltip = production_factory_max_efficiency_factor_tt
@@ -1331,10 +1331,14 @@ focus_tree = {
 			focus = KimKorea_focus_Factory_Ichi
 		}
 		completion_reward = { 
-			custom_effect_tooltip = KimKorea_Factory
+			custom_effect_tooltip = KimKorea_Factory_tt
 			add_to_variable = {
 				KimKorea_Factory_production_speed_buildings_factor = 0.05
 				tooltip = production_speed_buildings_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Factory_consumer_goods_factor = -0.05
+				tooltip = consumer_goods_factor_tt
 			}
 			add_timed_idea = {
 				idea = KimKorea_focus_Ni_One_idea
@@ -1356,7 +1360,7 @@ focus_tree = {
 			focus = KimKorea_focus_Factory_Ichi_2
 		}
 		completion_reward = { 
-			custom_effect_tooltip = KimKorea_Factory
+			custom_effect_tooltip = KimKorea_Factory_tt
 			add_to_variable = {
 				KimKorea_Factory_production_speed_buildings_factor = 0.05
 				tooltip = production_speed_buildings_factor_tt
@@ -1390,7 +1394,7 @@ focus_tree = {
 			focus = KimKorea_focus_Factory_Ichi_2_1
 		}
 		completion_reward = { 
-			custom_effect_tooltip = KimKorea_Factory
+			custom_effect_tooltip = KimKorea_Factory_tt
 			add_to_variable = {
 				KimKorea_Factory_production_speed_buildings_factor = 0.05
 				tooltip = production_speed_buildings_factor_tt
@@ -1424,7 +1428,7 @@ focus_tree = {
 			focus = KimKorea_focus_Factory_Ichi_2_2
 		}
 		completion_reward = { 
-			custom_effect_tooltip = KimKorea_Factory
+			custom_effect_tooltip = KimKorea_Factory_tt
 			add_to_variable = {
 				KimKorea_Factory_production_speed_buildings_factor = 0.05
 				tooltip = production_speed_buildings_factor_tt
@@ -1455,7 +1459,7 @@ focus_tree = {
 			focus = KimKorea_focus_Factory_Ichi
 		}
 		completion_reward = { 
-			custom_effect_tooltip = KimKorea_Factory
+			custom_effect_tooltip = KimKorea_Factory_tt
 			add_to_variable = {
 				KimKorea_Factory_consumer_goods_expected_value = -0.05
 				tooltip = consumer_goods_expected_value_tt
@@ -1491,7 +1495,7 @@ focus_tree = {
 			focus = KimKorea_focus_Factory_Ichi_3
 		}
 		completion_reward = { 
-			custom_effect_tooltip = KimKorea_Factory
+			custom_effect_tooltip = KimKorea_Factory_tt
 			add_to_variable = {
 				KimKorea_Factory_consumer_goods_expected_value = -0.05
 				tooltip = consumer_goods_expected_value_tt
@@ -1527,7 +1531,7 @@ focus_tree = {
 			focus = KimKorea_focus_Factory_Ichi_3_1
 		}
 		completion_reward = { 
-			custom_effect_tooltip = KimKorea_Factory
+			custom_effect_tooltip = KimKorea_Factory_tt
 			1082 = {
 				add_building_construction = {
 					type = dam
@@ -1565,6 +1569,30 @@ focus_tree = {
 					}
 				}
 			}
+		}
+	}
+	focus = {
+		id = KimKorea_focus_Factory_Ichi_4
+		icon = GFX_focus_SWE_the_beast_stirs
+		cost = 10
+		x = 0
+		y = 9
+		available = {
+			is_ai = no
+			num_of_factories > 120
+		}
+		relative_position_id = KimKorea_focus_Factory
+		prerequisite = { 
+			focus = KimKorea_focus_Factory_Ichi_3_3
+		}
+		prerequisite = { 
+			focus = KimKorea_focus_Factory_Ichi_1_5
+		}
+		prerequisite = { 
+			focus = KimKorea_focus_Factory_Ichi_2_3
+		}
+		completion_reward = { 
+			add_political_power = 100
 		}
 	}
 	#下方民主線 未來可期
