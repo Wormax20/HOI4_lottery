@@ -41,7 +41,8 @@ focus_tree = {
 			}
 		}
 	}
-
+	#上方為回歸日本
+	#下方政治線與科研線
 	focus = {
 		id = KimKorea_focus_IChi
 		icon = GFX_goal_generic_neutrality_focus
@@ -957,6 +958,82 @@ focus_tree = {
 		}
 	}
 	#上方共產線
+	#下方工業線
+	focus = {
+		id = KimKorea_focus_Factory
+		icon = GFX_goal_generic_production
+		cost = 10
+		x = 18
+		y = 0
+		available = {
+			is_ai = no
+		}
+		completion_reward = { 
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_focus_Factory_Ichi
+		icon = GFX_focus_generic_hydroelectric_energy
+		cost = 10
+		x = 0
+		y = 1
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_focus_Factory
+		prerequisite = { 
+			focus = KimKorea_focus_Factory
+		}
+		completion_reward = { 
+			custom_effect_tooltip = KimKorea_Factory
+			add_to_variable = {
+				KimKorea_Factory_production_speed_buildings_factor = 0.10
+				tooltip = research_speed_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Factory_consumer_goods_expected_value = 0.10
+				tooltip = special_project_speed_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Factory_consumer_goods_factor = 0.10
+				tooltip = research_speed_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Factory_production_factory_max_efficiency_factor = 0.10
+				tooltip = special_project_speed_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Factory_production_factory_efficiency_gain_factor = 0.10
+				tooltip = research_speed_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Factory_production_factory_start_efficiency_factor = 0.10
+				tooltip = special_project_speed_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Factory_industrial_capacity_factory = 0.10
+				tooltip = research_speed_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Factory_industrial_capacity_dockyard = 0.10
+				tooltip = special_project_speed_factor_tt
+			}
+			527 = {
+				add_building_construction = {
+					type = dam
+					level = 1
+					instant_build = yes
+					province = {
+						id = 7070
+					}
+				}
+			}
+		}
+	}
 	#下方民主線 未來可期
 	focus = {
 		id = KimKorea_focus_IChi_2
