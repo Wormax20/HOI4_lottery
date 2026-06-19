@@ -46,7 +46,7 @@ focus_tree = {
 	focus = {
 		id = KimKorea_focus_IChi
 		icon = GFX_goal_generic_neutrality_focus
-		cost = 10
+		cost = 5
 		x = 10
 		y = 0
 		available = {
@@ -245,7 +245,7 @@ focus_tree = {
 	focus = {
 		id = KimKorea_focus_IChi_1_3_3
 		icon = GFX_focus_NORDIC_com_capstone_materiel
-		cost = 5
+		cost = 10
 		x = 2
 		y = 8
 		available = {
@@ -276,6 +276,7 @@ focus_tree = {
 				tooltip = political_power_gain_tt
 			}
 			add_political_power = -300
+			add_research_slot = 1
 		}
 	}
 	focus = {
@@ -351,6 +352,11 @@ focus_tree = {
 			focus = KimKorea_focus_IChi_1_4
 		}
 		completion_reward = { 
+			custom_effect_tooltip = KimKorea_Factory_tt
+			add_to_variable = {
+				KimKorea_Factory_local_resources_factor = 0.10
+				tooltip = local_resources_factor_tt
+			}
 			1084 = {
 				add_resource = {
 					type = chromium
@@ -387,6 +393,11 @@ focus_tree = {
 			focus = KimKorea_focus_IChi_1_4_1
 		}
 		completion_reward = { 
+			custom_effect_tooltip = KimKorea_Factory_tt
+			add_to_variable = {
+				KimKorea_Factory_local_resources_factor = 0.10
+				tooltip = local_resources_factor_tt
+			}
 			527 = {
 				add_resource = {
 					type = steel
@@ -423,6 +434,11 @@ focus_tree = {
 			focus = KimKorea_focus_IChi_1_4_2
 		}
 		completion_reward = { 
+			custom_effect_tooltip = KimKorea_Factory_tt
+			add_to_variable = {
+				KimKorea_Factory_local_resources_factor = 0.10
+				tooltip = local_resources_factor_tt
+			}
 			525 = {
 				add_resource = {
 					type = steel
@@ -480,7 +496,6 @@ focus_tree = {
 				neutrality = 0
 			}
 			add_ideas = The_Kim_Dynasty
-			add_research_slot = 1
 			add_offsite_building = {
 				type = industrial_complex
 				level = 5
@@ -1595,6 +1610,352 @@ focus_tree = {
 			add_political_power = 100
 		}
 	}
+	#上方工業線
+	#下方陸軍線
+	focus = {
+		id = KimKorea_Army_focus
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 5
+		x = 27
+		y = 0
+		available = {
+			is_ai = no
+		}
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = KimKorea_Army_focus_1
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 5
+		x = 0
+		y = 1
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_Army_focus
+		prerequisite = { 
+			focus = KimKorea_Army_focus
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = INFANTRY_TITLE
+    			bonus = 1.0
+    			uses = 2
+   				category = infantry_tech
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_Army_focus_2
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 5
+		x = 0
+		y = 2
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_Army_focus
+		prerequisite = { 
+			focus = KimKorea_Army_focus_1
+		}
+		completion_reward = {
+			custom_effect_tooltip = KimKorea_Army_tt
+			add_to_variable = {
+				KimKorea_Army_conscription = 0.01
+				tooltip = conscription_tt
+			}
+			add_to_variable = {
+				KimKorea_Army_conscription_factor = 0.10
+				tooltip = conscription_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Army_army_attack_factor = 0.10
+				tooltip = army_attack_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Army_army_defence_factor = 0.10
+				tooltip = army_defence_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Army_special_forces_attack_factor = 0.05
+				tooltip = special_forces_attack_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Army_special_forces_defence_factor = 0.05
+				tooltip = special_forces_defence_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Army_army_org_factor = 0.10
+				tooltip = army_org_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Army_army_speed_factor = 0.10
+				tooltip = army_speed_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Army_supply_consumption_factor = -0.10
+				tooltip = supply_consumption_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Army_army_bonus_air_superiority_factor = 0.25
+				tooltip = army_bonus_air_superiority_factor_tt
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_Army_focus_3_1
+		icon = GFX_focus_generic_infiltration
+		cost = 5
+		x = -2
+		y = 3
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_Army_focus
+		mutually_exclusive = { focus = KimKorea_Army_focus_3_2 }
+		prerequisite = { 
+			focus = KimKorea_Army_focus_2
+		}
+		completion_reward = {
+			custom_effect_tooltip = KimKorea_Army_tt
+			add_to_variable = {
+				KimKorea_Army_conscription_factor = 0.10
+				tooltip = conscription_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Army_army_attack_factor = 0.10
+				tooltip = army_attack_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Army_army_defence_factor = 0.10
+				tooltip = army_defence_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Army_army_org_factor = 0.10
+				tooltip = army_org_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Army_army_speed_factor = 0.10
+				tooltip = army_speed_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Army_supply_consumption_factor = -0.10
+				tooltip = supply_consumption_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Army_army_bonus_air_superiority_factor = 0.25
+				tooltip = army_bonus_air_superiority_factor_tt
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_Army_focus_3_1_1
+		icon = GFX_focus_AFG_against_kabul
+		cost = 5
+		x = -3
+		y = 4
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_Army_focus
+		prerequisite = { 
+			focus = KimKorea_Army_focus_3_1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = INFANTRY_TITLE
+    			bonus = 1.0
+    			uses = 2
+   				category = infantry_tech
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_Army_focus_3_1_2
+		icon = GFX_goal_generic_army_artillery2
+		cost = 5
+		x = -1
+		y = 4
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_Army_focus
+		prerequisite = { 
+			focus = KimKorea_Army_focus_3_1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = ARTILLERY_TITLE
+				bonus = 1.0
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_Army_focus_3_1_3
+		icon = GFX_focus_GER_support_the_proletarian_uprising
+		cost = 5
+		x = -2
+		y = 5
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_Army_focus
+		prerequisite = { 
+			focus = KimKorea_Army_focus_3_1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = support_bonus
+    			bonus = 1.0
+    			uses = 2
+   				category = support_tech
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_Army_focus_3_1_4
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 5
+		x = -2
+		y = 6
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_Army_focus
+		prerequisite = { 
+			focus = KimKorea_Army_focus_3_1_3
+		}
+		completion_reward = {
+			custom_effect_tooltip = KimKorea_Army_tt
+			add_to_variable = {
+				KimKorea_Army_conscription_factor = 0.10
+				tooltip = conscription_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Army_army_attack_factor = 0.10
+				tooltip = army_attack_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Army_army_defence_factor = 0.10
+				tooltip = army_defence_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Army_army_org_factor = 0.10
+				tooltip = army_org_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Army_army_speed_factor = 0.10
+				tooltip = army_speed_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Army_supply_consumption_factor = -0.10
+				tooltip = supply_consumption_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Army_army_bonus_air_superiority_factor = 0.25
+				tooltip = army_bonus_air_superiority_factor_tt
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_Army_focus_3_1_5
+		icon = GFX_focus_generic_soldier_salute
+		cost = 5
+		x = -2
+		y = 7
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_Army_focus
+		prerequisite = { 
+			focus = KimKorea_Army_focus_3_1_3
+		}
+		completion_reward = {
+			custom_effect_tooltip = KimKorea_Army_tt
+			add_to_variable = {
+				KimKorea_Army_conscription_factor = 0.10
+				tooltip = conscription_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Army_army_attack_factor = 0.10
+				tooltip = army_attack_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Army_army_defence_factor = 0.10
+				tooltip = army_defence_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Army_army_org_factor = 0.10
+				tooltip = army_org_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Army_army_speed_factor = 0.10
+				tooltip = army_speed_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Army_supply_consumption_factor = -0.10
+				tooltip = supply_consumption_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Army_army_bonus_air_superiority_factor = 0.25
+				tooltip = army_bonus_air_superiority_factor_tt
+			}
+			add_ideas = KimKorea_focus_Infantry_Choose_idea
+		}
+	}
+
+
+	focus = {
+		id = KimKorea_Army_focus_3_2
+		icon = GFX_goal_generic_army_tanks
+		cost = 5
+		x = 2
+		y = 3
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_Army_focus
+		mutually_exclusive = { focus = KimKorea_Army_focus_3_1 }
+		prerequisite = { 
+			focus = KimKorea_Army_focus_2
+		}
+		completion_reward = {
+			custom_effect_tooltip = KimKorea_Army_tt
+			add_to_variable = {
+				KimKorea_Army_conscription_factor = 0.10
+				tooltip = conscription_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Army_army_attack_factor = 0.10
+				tooltip = army_attack_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Army_army_defence_factor = 0.10
+				tooltip = army_defence_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Army_army_org_factor = 0.10
+				tooltip = army_org_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Army_army_speed_factor = 0.10
+				tooltip = army_speed_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Army_supply_consumption_factor = -0.10
+				tooltip = supply_consumption_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Army_army_bonus_air_superiority_factor = 0.25
+				tooltip = army_bonus_air_superiority_factor_tt
+			}
+		}
+	}
+	#上方陸軍線
 	#下方民主線 未來可期
 	focus = {
 		id = KimKorea_focus_IChi_2

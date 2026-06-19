@@ -17447,7 +17447,7 @@ leader_traits = {
 		max_surrender_limit_offset = 0.1
 		local_resources_factor = 0.20
 		political_power_factor = 0.10
-		global_building_slots_factor = 0.10
+		global_building_slots_factor = 0.01
 		production_factory_max_efficiency_factor = 0.15
 		production_factory_efficiency_gain_factor = 0.15
 		industrial_capacity_factory = 0.15
@@ -17473,7 +17473,7 @@ leader_traits = {
 		stability_factor = 0.10
 		war_support_factor = 0.10
 		local_resources_factor = 0.10
-		global_building_slots_factor = 0.10
+		global_building_slots_factor = 0.01
 		command_power_gain_mult = 0.50
 		command_cap_increase = 200
 
