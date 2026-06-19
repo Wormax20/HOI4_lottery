@@ -1166,7 +1166,7 @@ focus_tree = {
 	focus = {
 		id = KimKorea_focus_Factory_Ichi_1_2_1
 		icon = GFX_goal_continuous_repairments
-		cost = 5
+		cost = 10
 		x = -4
 		y = 5
 		available = {
@@ -1200,7 +1200,7 @@ focus_tree = {
 	focus = {
 		id = KimKorea_focus_Factory_Ichi_1_2_2
 		icon = GFX_goal_continuous_non_factory_construct
-		cost = 5
+		cost = 10
 		x = -2
 		y = 5
 		available = {
@@ -1320,7 +1320,7 @@ focus_tree = {
 	focus = {
 		id = KimKorea_focus_Factory_Ichi_2
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 5
+		cost = 10
 		x = 3
 		y = 2
 		available = {
@@ -1336,12 +1336,16 @@ focus_tree = {
 				KimKorea_Factory_production_speed_buildings_factor = 0.05
 				tooltip = production_speed_buildings_factor_tt
 			}
+			add_timed_idea = {
+				idea = KimKorea_focus_Ni_One_idea
+				years = 5
+			}
 		}
 	}
 	focus = {
 		id = KimKorea_focus_Factory_Ichi_2_1
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 5
+		cost = 10
 		x = 3
 		y = 4
 		available = {
@@ -1375,7 +1379,7 @@ focus_tree = {
 	focus = {
 		id = KimKorea_focus_Factory_Ichi_2_2
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 5
+		cost = 10
 		x = 3
 		y = 6
 		available = {
@@ -1409,7 +1413,7 @@ focus_tree = {
 	focus = {
 		id = KimKorea_focus_Factory_Ichi_2_3
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 5
+		cost = 10
 		x = 3
 		y = 8
 		available = {
@@ -1480,6 +1484,7 @@ focus_tree = {
 		y = 4
 		available = {
 			is_ai = no
+			num_of_factories > 30
 		}
 		relative_position_id = KimKorea_focus_Factory
 		prerequisite = { 
@@ -1515,6 +1520,7 @@ focus_tree = {
 		y = 6
 		available = {
 			is_ai = no
+			num_of_factories > 50
 		}
 		relative_position_id = KimKorea_focus_Factory
 		prerequisite = { 
@@ -1542,6 +1548,7 @@ focus_tree = {
 		y = 8
 		available = {
 			is_ai = no
+			num_of_factories > 70
 		}
 		relative_position_id = KimKorea_focus_Factory
 		prerequisite = { 
