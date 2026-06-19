@@ -57,7 +57,7 @@ KimKorea_discipline = { #宣传部
 			army_defence_factor = 0.05
 		}
 	}
-
+	#下方海軍建設
 	KimKorea_Navy_Build = {
 		visible = {
 			tag = KOR

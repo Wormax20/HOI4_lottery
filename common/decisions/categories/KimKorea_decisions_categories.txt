@@ -8,3 +8,11 @@ KimKorea_discipline = {
 	}
 	priority = 100
 }
+KimKorea_FacBud_balance = {
+	allowed = {
+		original_tag = KOR
+	}
+	visible = {
+		has_completed_focus = KimKorea_focus_Ni
+	}
+}

@@ -23,10 +23,10 @@ state = {
 		}
 		
 		victory_points = {
-			4052 3 # Pyongyang
+			4052 10 # Pyongyang
 		}	
 		victory_points = {
-			1003 1 
+			1003 3 
 		}	
 		
 	}

@@ -24,11 +24,14 @@ state = {
 		}
 
 		victory_points = {
-			10115 1 # Seishū
+			10115 3 # Seishū
 		}
 
 		victory_points = {
-			11977 1 # Taiden
+			11977 3 # Taiden
+		}
+		victory_points = {
+			7175 3 
 		}
 
 	}

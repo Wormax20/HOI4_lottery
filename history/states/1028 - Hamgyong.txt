@@ -16,7 +16,7 @@ state = {
 		add_core_of = KOR
 		
 		victory_points = {
-			6928 1
+			6928 3
 		}	
 
 		buildings = {

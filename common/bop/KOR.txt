@@ -1,0 +1,117 @@
+KimKorea_FacBud_balance = {
+	initial_value = 0.25
+	left_side = KOR_Factory_left_side_bop
+	right_side = KOR_Building_right_side_bop
+	decision_category = KimKorea_FacBud_balance
+	range = {
+		id = mid_range
+		min = -0.1
+		max = 0.1
+		modifier = {
+			political_power_factor = 0.15
+		}
+	}
+	side = {
+		id = KOR_Factory_left_side_bop
+		icon = GFX_idea_FRA_market_dynamism
+		range = {
+			id = KOR_Factory_left_side_bop_1
+			min = -0.3
+			max = -0.1
+			modifier = {
+				political_power_factor = 0.10
+				production_speed_buildings_factor = -0.05
+				production_speed_arms_factory_factor = -0.05
+				production_speed_industrial_complex_factor = -0.05
+				production_speed_dockyard_factor = -0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+		range = {
+			id = KOR_Factory_left_side_bop_2
+			min = -0.6
+			max = -0.3
+			modifier = {
+				political_power_factor = 0.05
+				production_speed_buildings_factor = -0.10
+				production_speed_arms_factory_factor = -0.10
+				production_speed_industrial_complex_factor = -0.10
+				production_speed_dockyard_factor = -0.10
+				production_factory_efficiency_gain_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				industrial_capacity_factory = 0.10
+				industrial_capacity_dockyard = 0.10
+			}
+		}
+		range = {
+			id = KOR_Factory_left_side_bop_3
+			min = -1
+			max = -0.6
+			modifier = {
+				production_speed_buildings_factor = -0.15
+				production_speed_arms_factory_factor = -0.15
+				production_speed_industrial_complex_factor = -0.15
+				production_speed_dockyard_factor = -0.15
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				local_resources_factor = 0.15
+			}
+		}
+	}
+	side = {
+		id = KOR_Building_right_side_bop
+		icon = GFX_idea_generic_degauss_ship_hulls
+		range = {
+			id = KOR_Building_right_side_bop_1
+			min = 0.1
+			max = 0.3
+			modifier = {
+				political_power_factor = 0.10
+				production_speed_buildings_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_dockyard_factor = 0.05
+				production_factory_efficiency_gain_factor = -0.05
+				production_factory_max_efficiency_factor = -0.05
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+			}
+		}
+		range = {
+			id = KOR_Building_right_side_bop_2
+			min = 0.3
+			max = 0.6
+			modifier = {
+				political_power_factor = 0.05
+				production_speed_buildings_factor = 0.10
+				production_speed_arms_factory_factor = 0.10
+				production_speed_industrial_complex_factor = 0.10
+				production_speed_dockyard_factor = 0.10
+				production_factory_efficiency_gain_factor = -0.10
+				production_factory_max_efficiency_factor = -0.10
+				industrial_capacity_factory = -0.10
+				industrial_capacity_dockyard = -0.10
+			}
+		}
+		range = {
+			id = KOR_Building_right_side_bop_3
+			min = 0.6
+			max = 1
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_dockyard_factor = 0.15
+				production_factory_efficiency_gain_factor = -0.15
+				production_factory_max_efficiency_factor = -0.15
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+			}
+		}
+	}
+}
