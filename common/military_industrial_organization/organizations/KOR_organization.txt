@@ -58,6 +58,33 @@ KOR_ceska_zbrojovka_uhersky_brod_KimKorea_organization = {
 			has_country_flag = KimKorea_west_organization
 		}
 	}
+	add_trait = {
+		token = CZE_mio_trait_export_models
+		name = GER_mio_trait_export_models
+		icon = GFX_generic_mio_department_icon_facilities
+		special_trait_background = yes
+
+		position = { x=9 y=0 }
+
+		visible = {
+			FROM = { 
+				original_tag = KOR
+			}
+		}
+		
+		available = {
+			always = yes
+		}
+
+		production_bonus = {
+			production_efficiency_cap_factor = 0.10
+			production_cost_factor = -0.10
+		}
+		
+		ai_will_do = {
+			base = 2
+		}
+	}
 }
 
 #共产国际

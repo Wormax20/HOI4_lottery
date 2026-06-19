@@ -1335,7 +1335,7 @@ focus_tree = {
 	focus = {
 		id = KimKorea_focus_Factory_Ichi_2
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 10
+		cost = 5
 		x = 3
 		y = 2
 		available = {
@@ -1496,7 +1496,7 @@ focus_tree = {
 	focus = {
 		id = KimKorea_focus_Factory_Ichi_2_1
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 10
+		cost = 5
 		x = 3
 		y = 4
 		available = {
@@ -1530,7 +1530,7 @@ focus_tree = {
 	focus = {
 		id = KimKorea_focus_Factory_Ichi_2_2
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 10
+		cost = 5
 		x = 3
 		y = 6
 		available = {
@@ -1564,7 +1564,7 @@ focus_tree = {
 	focus = {
 		id = KimKorea_focus_Factory_Ichi_2_3
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 10
+		cost = 5
 		x = 3
 		y = 8
 		available = {
@@ -1721,7 +1721,7 @@ focus_tree = {
 	focus = {
 		id = KimKorea_focus_Factory_Ichi_4
 		icon = GFX_focus_SWE_the_beast_stirs
-		cost = 10
+		cost = 5
 		x = 0
 		y = 9
 		available = {
@@ -2483,6 +2483,283 @@ focus_tree = {
 		}
 	}
 	#上方陸軍線
+	#下方空軍線
+	focus = {
+		id = KimKorea_AirForce_focus
+		icon = GFX_goal_generic_build_airforce
+		cost = 5
+		x = 36
+		y = 0
+		available = {
+			is_ai = no
+		}
+		completion_reward = {
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = KimKorea_AirForce_focus_1
+		icon = GFX_goal_generic_build_airforce
+		cost = 5
+		x = 0
+		y = 1
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_AirForce_focus
+		prerequisite = { 
+			focus = KimKorea_AirForce_focus
+		}
+		completion_reward = {
+			custom_effect_tooltip = KimKorea_AirForce_tt
+			add_to_variable = {
+				KimKorea_AirForce_air_attack_factor = 0.10
+				tooltip = air_attack_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_AirForce_air_defence_factor = 0.10
+				tooltip = air_defence_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_AirForce_air_detection = 0.10
+				tooltip = air_detection_tt
+			}
+			add_to_variable = {
+				KimKorea_AirForce_air_accidents_factor = -0.25
+				tooltip = air_accidents_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_AirForce_air_ace_bonuses_factor = 0.10
+				tooltip = air_ace_bonuses_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_AirForce_air_manpower_requirement_factor = -0.10
+				tooltip = air_manpower_requirement_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_AirForce_air_range_factor = 0.10
+				tooltip = air_range_factor_tt
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_AirForce_focus_2
+		icon = GFX_goal_generic_air_fighter
+		cost = 5
+		x = -4
+		y = 2
+		available = {
+			is_ai = no
+		}
+		mutually_exclusive = { focus = KimKorea_AirForce_focus_3 }
+		relative_position_id = KimKorea_AirForce_focus
+		prerequisite = { 
+			focus = KimKorea_AirForce_focus_1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = small_airframe
+				bonus = 1.0
+				uses = 2
+				category = light_air
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_AirForce_focus_3
+		icon = GFX_goal_continuous_air_production
+		cost = 5
+		x = -2
+		y = 2
+		available = {
+			is_ai = no
+		}
+		mutually_exclusive = { focus = KimKorea_AirForce_focus_2 }
+		relative_position_id = KimKorea_AirForce_focus
+		prerequisite = { 
+			focus = KimKorea_AirForce_focus_1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = small_airframe
+				bonus = 1.0
+				uses = 3
+				category = air_equipment
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_AirForce_focus_4
+		icon = GFX_goal_generic_air_fighter2
+		cost = 5
+		x = 0
+		y = 2
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_AirForce_focus
+		prerequisite = { 
+			focus = KimKorea_AirForce_focus_1
+		}
+		completion_reward = {
+			custom_effect_tooltip = KimKorea_AirForce_tt
+			add_to_variable = {
+				KimKorea_AirForce_air_attack_factor = 0.10
+				tooltip = air_attack_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_AirForce_air_defence_factor = 0.10
+				tooltip = air_defence_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_AirForce_air_detection = 0.10
+				tooltip = air_detection_tt
+			}
+			add_to_variable = {
+				KimKorea_AirForce_air_accidents_factor = -0.25
+				tooltip = air_accidents_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_AirForce_air_ace_bonuses_factor = 0.10
+				tooltip = air_ace_bonuses_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_AirForce_air_manpower_requirement_factor = -0.10
+				tooltip = air_manpower_requirement_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_AirForce_air_range_factor = 0.10
+				tooltip = air_range_factor_tt
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_AirForce_focus_5
+		icon = GFX_goal_continuous_air_production
+		cost = 5
+		x = -1
+		y = 3
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_AirForce_focus
+		prerequisite = { 
+			focus = KimKorea_AirForce_focus_3
+		}
+		prerequisite = { 
+			focus = KimKorea_AirForce_focus_4
+		}
+		completion_reward = {
+				mio:KOR_ceska_zbrojovka_uhersky_brod_KimKorea_organization = {
+					add_mio_size = 2
+					add_mio_funds_gain_factor = 0.25
+					add_mio_research_bonus = 0.05
+				}
+		}
+	}
+	focus = {
+		id = KimKorea_AirForce_focus_5_1
+		icon = GFX_goal_generic_air_fighter
+		cost = 5
+		x = -4
+		y = 3
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_AirForce_focus
+		prerequisite = { 
+			focus = KimKorea_AirForce_focus_2
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = small_airframe
+				bonus = 1.0
+				uses = 1
+				category = light_air
+			}
+			add_tech_bonus = {
+				name = small_airframe
+				bonus = 1.0
+				uses = 1
+				category = air_equipment
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_AirForce_focus_6
+		icon = GFX_focus_generic_pilot_training
+		cost = 5
+		x = 0
+		y = 4
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_AirForce_focus
+		prerequisite = { 
+			focus = KimKorea_AirForce_focus_1
+		}
+		completion_reward = {
+			custom_effect_tooltip = KimKorea_AirForce_tt
+			add_to_variable = {
+				KimKorea_AirForce_air_attack_factor = 0.10
+				tooltip = air_attack_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_AirForce_air_defence_factor = 0.10
+				tooltip = air_defence_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_AirForce_air_detection = 0.10
+				tooltip = air_detection_tt
+			}
+			add_to_variable = {
+				KimKorea_AirForce_air_accidents_factor = -0.25
+				tooltip = air_accidents_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_AirForce_air_ace_bonuses_factor = 0.10
+				tooltip = air_ace_bonuses_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_AirForce_air_manpower_requirement_factor = -0.10
+				tooltip = air_manpower_requirement_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_AirForce_air_range_factor = 0.10
+				tooltip = air_range_factor_tt
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_AirForce_focus_6_1
+		icon = GFX_focus_NORDIC_com_airforce
+		cost = 5
+		x = -2
+		y = 4
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_AirForce_focus
+		prerequisite = { 
+			focus = KimKorea_AirForce_focus_5
+			focus = KimKorea_AirForce_focus_5_1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = small_airframe
+				bonus = 1.0
+				uses = 1
+				category = light_air
+			}
+			add_tech_bonus = {
+				name = small_airframe
+				bonus = 1.0
+				uses = 2
+				category = air_equipment
+			}
+		}
+	}
+	#上方空軍線
 	#下方民主線 未來可期
 	focus = {
 		id = KimKorea_focus_IChi_2
