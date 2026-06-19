@@ -2319,11 +2319,7 @@ focus_tree = {
 		}
 		relative_position_id = KimKorea_Army_focus
 		prerequisite = { 
-			focus = KimKorea_Army_focus_4_1
-		}
-		prerequisite = { 
-			focus = KimKorea_Army_focus_3_1_5
-			focus = KimKorea_Army_focus_3_2_5
+			focus = KimKorea_Army_focus_5
 		}
 		completion_reward = {
 			custom_effect_tooltip = KimKorea_Army_tt
