@@ -77,9 +77,9 @@ leader_traits = {
 
 	KimKorea_Pak_Kum_chol_buff = {
 		random = no
-		industrial_capacity_factory = 0.15
-		production_factory_efficiency_gain_factor = 0.15
-		local_resources_factor = 0.15
+		industrial_capacity_factory = 0.10
+		production_factory_efficiency_gain_factor = 0.10
+		local_resources_factor = 0.20
 
 		sprite = 10
 

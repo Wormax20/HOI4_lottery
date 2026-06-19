@@ -38,3 +38,5 @@
  KimKorea_focus_Prod5: "来自共产国际的支援"
  KimKorea_focus_Prod5_desc: "共产国际的援助将带领我们实现高产量"
 
+ consumer_goods_expected_value_tt: "$MODIFIER_CONSUMER_GOODS_EXPECTED_VALUE$：$RIGHT|Y=%1$"
+

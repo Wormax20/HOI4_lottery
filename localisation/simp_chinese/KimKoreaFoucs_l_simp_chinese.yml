@@ -14,7 +14,7 @@
  KimKorea_focus_IChi_1_5: "共产党夺权"
  KimKorea_focus_IChi_1_5_desc: "我们太盲目相信他人了，到最后发现已无法阻止，朝鲜民主已死。"
  KimKorea_focus_Ni: "迁都平壤"
- KimKorea_focus_Ni_desc: "迁都平壤，开启权力平衡。"
+ KimKorea_focus_Ni_desc: "迁都平壤"
  KimKorea_focus_IChi_3: "清洗反对派"
  KimKorea_focus_IChi_3_desc: "拥有其余思想的皆是敌人，我们会不留余力的清除他们。"
  KimKorea_focus_IChi_4: "无害化反对派"
@@ -57,6 +57,11 @@
  KimKorea_focus_IChi_1_3_3_desc: "提高公务人员薪资"
 
 
+
+ KimKorea_focus_Factory: "工业计划"
+ KimKorea_focus_Factory_desc: "工业计划"
+ KimKorea_focus_Factory_Ichi: "建设大坝"
+ KimKorea_focus_Factory_Ichi_desc: "建设大坝"
 
 
 
