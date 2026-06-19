@@ -1365,7 +1365,7 @@ focus_tree = {
 		id = KimKorea_focus_Factory_Ichi_5
 		icon = GFX_goal_generic_soviet_construction
 		cost = 5
-		x = 1.5
+		x = 2
 		y = 3
 		available = {
 			is_ai = no
@@ -1409,7 +1409,7 @@ focus_tree = {
 		id = KimKorea_focus_Factory_Ichi_5_1
 		icon = GFX_goal_generic_soviet_construction
 		cost = 5
-		x = 1.5
+		x = 2
 		y = 5
 		available = {
 			is_ai = no
@@ -1453,7 +1453,7 @@ focus_tree = {
 		id = KimKorea_focus_Factory_Ichi_5_2
 		icon = GFX_goal_generic_soviet_construction
 		cost = 5
-		x = 1.5
+		x = 2
 		y = 7
 		available = {
 			is_ai = no
@@ -1739,6 +1739,11 @@ focus_tree = {
 			focus = KimKorea_focus_Factory_Ichi_2_3
 		}
 		completion_reward = { 
+			custom_effect_tooltip = KimKorea_Factory_tt
+			add_to_variable = {
+				KimKorea_Factory_local_resources_factor = 0.10
+				tooltip = local_resources_factor_tt
+			}
 			add_political_power = 100
 		}
 	}
