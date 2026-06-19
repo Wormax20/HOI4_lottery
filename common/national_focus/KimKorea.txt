@@ -354,7 +354,7 @@ focus_tree = {
 		completion_reward = { 
 			custom_effect_tooltip = KimKorea_Factory_tt
 			add_to_variable = {
-				KimKorea_Factory_local_resources_factor = 0.10
+				KimKorea_Factory_local_resources_factor = 0.05
 				tooltip = local_resources_factor_tt
 			}
 			1084 = {
@@ -395,7 +395,7 @@ focus_tree = {
 		completion_reward = { 
 			custom_effect_tooltip = KimKorea_Factory_tt
 			add_to_variable = {
-				KimKorea_Factory_local_resources_factor = 0.10
+				KimKorea_Factory_local_resources_factor = 0.05
 				tooltip = local_resources_factor_tt
 			}
 			527 = {
@@ -436,7 +436,7 @@ focus_tree = {
 		completion_reward = { 
 			custom_effect_tooltip = KimKorea_Factory_tt
 			add_to_variable = {
-				KimKorea_Factory_local_resources_factor = 0.10
+				KimKorea_Factory_local_resources_factor = 0.05
 				tooltip = local_resources_factor_tt
 			}
 			525 = {
@@ -1358,6 +1358,138 @@ focus_tree = {
 			add_timed_idea = {
 				idea = KimKorea_focus_Ni_One_idea
 				years = 5
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_focus_Factory_Ichi_5
+		icon = GFX_goal_generic_soviet_construction
+		cost = 5
+		x = 1.5
+		y = 3
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_focus_Factory
+		prerequisite = { 
+			focus = KimKorea_focus_Factory_Ichi_2
+		}
+		prerequisite = { 
+			focus = KimKorea_focus_Factory_Ichi_3
+		}
+		completion_reward = { 
+			custom_effect_tooltip = KimKorea_Factory_tt
+			add_to_variable = {
+				KimKorea_Factory_local_resources_factor = 0.05
+				tooltip = local_resources_factor_tt
+			}
+			1028 = {
+				add_resource = {
+					type = chromium
+					amount = 12
+				}
+				add_resource = {
+					type = steel
+					amount = 24
+				}
+			}
+			1082 = {
+				add_resource = {
+					type = Tungsten
+					amount = 16
+				}
+				add_resource = {
+					type = steel
+					amount = 24
+				}
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_focus_Factory_Ichi_5_1
+		icon = GFX_goal_generic_soviet_construction
+		cost = 5
+		x = 1.5
+		y = 5
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_focus_Factory
+		prerequisite = { 
+			focus = KimKorea_focus_Factory_Ichi_2_1
+		}
+		prerequisite = { 
+			focus = KimKorea_focus_Factory_Ichi_3_1
+		}
+		completion_reward = { 
+			custom_effect_tooltip = KimKorea_Factory_tt
+			add_to_variable = {
+				KimKorea_Factory_local_resources_factor = 0.05
+				tooltip = local_resources_factor_tt
+			}
+			1028 = {
+				add_resource = {
+					type = aluminium
+					amount = 16
+				}
+				add_resource = {
+					type = steel
+					amount = 24
+				}
+			}
+			1083 = {
+				add_resource = {
+					type = aluminium
+					amount = 18
+				}
+				add_resource = {
+					type = coal
+					amount = 12
+				}
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_focus_Factory_Ichi_5_2
+		icon = GFX_goal_generic_soviet_construction
+		cost = 5
+		x = 1.5
+		y = 7
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_focus_Factory
+		prerequisite = { 
+			focus = KimKorea_focus_Factory_Ichi_2_2
+		}
+		prerequisite = { 
+			focus = KimKorea_focus_Factory_Ichi_3_2
+		}
+		completion_reward = { 
+			custom_effect_tooltip = KimKorea_Factory_tt
+			add_to_variable = {
+				KimKorea_Factory_local_resources_factor = 0.05
+				tooltip = local_resources_factor_tt
+			}
+			527 = {
+				add_resource = {
+					type = tungsten
+					amount = 15
+				}
+				add_resource = {
+					type = steel
+					amount = 28
+				}
+			}
+			1084 = {
+				add_resource = {
+					type = aluminium
+					amount = 17
+				}
+				add_resource = {
+					type = coal
+					amount = 12
+				}
 			}
 		}
 	}
