@@ -978,7 +978,7 @@ focus_tree = {
 		id = KimKorea_focus_Factory
 		icon = GFX_goal_generic_production
 		cost = 10
-		x = 18
+		x = 19
 		y = 0
 		available = {
 			is_ai = no
@@ -3789,6 +3789,33 @@ focus_tree = {
 		}
 	}
 	#上方海軍線
+	#下方總結
+	focus = {
+		id = KimKorea_focus_Final
+		icon = GFX_focus_generic_communist_asia
+		cost = 30
+		x = 3
+		y = 10
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_focus_IChi
+		prerequisite = { 
+			focus = KimKorea_focus_Ni
+		}
+		prerequisite = { 
+			focus = KimKorea_focus_Factory_Ichi_4
+		}
+		completion_reward = { 
+			add_ideas = KimKorea_focus_Finish_idea
+			add_research_slot = 1
+			news_event = {
+				id = KimKorea_news_Victory.1
+				days = 0
+			}
+		}
+	}
+	#上方總結
 	#下方民主線 未來可期
 	focus = {
 		id = KimKorea_focus_IChi_2
