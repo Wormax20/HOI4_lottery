@@ -106,7 +106,7 @@ set_variable = {KimKorea_Navy_naval_supply_consumption_factor = 0.50}
 set_variable = {KimKorea_Navy_naval_speed_factor = -0.50}
 set_variable = {KimKorea_Navy_navy_anti_air_attack_factor = -0.50}
 set_variable = {KimKorea_Navy_navy_fuel_consumption_factor = 0.50}
-set_variable = {KimKorea_Navy_KimKorea_Navy_navy_max_range_factor = -0.50}
+set_variable = {KimKorea_Navy_navy_max_range_factor = -0.50}
 
 add_dynamic_modifier = {
 	modifier = KimKorea_Political

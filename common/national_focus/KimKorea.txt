@@ -1195,7 +1195,7 @@ focus_tree = {
 		completion_reward = { 
 			custom_effect_tooltip = KimKorea_Factory_tt
 			add_to_variable = {
-				KimKorea_Factory_production_factory_efficiency_gain_factor = 0.10
+				KimKorea_Factory_production_factory_efficiency_gain_factor = 0.15
 				tooltip = production_factory_efficiency_gain_factor_tt
 			}
 			add_to_variable = {
@@ -1229,7 +1229,7 @@ focus_tree = {
 		completion_reward = { 
 			custom_effect_tooltip = KimKorea_Factory_tt
 			add_to_variable = {
-				KimKorea_Factory_production_factory_max_efficiency_factor = 0.10
+				KimKorea_Factory_production_factory_max_efficiency_factor = 0.15
 				tooltip = production_factory_max_efficiency_factor_tt
 			}
 			add_to_variable = {
@@ -1287,11 +1287,11 @@ focus_tree = {
 		completion_reward = { 
 			add_offsite_building = {
 				type = industrial_complex
-				level = 2
+				level = 3
 			}
 			add_offsite_building = {
 				type = arms_factory
-				level = 2
+				level = 3
 			}
 		}
 	}
@@ -2444,7 +2444,7 @@ focus_tree = {
 	focus = {
 		id = KimKorea_Army_focus_6
 		icon = GFX_focus_generic_reinforcing_the_supply_network
-		cost = 10
+		cost = 5
 		x = 0
 		y = 8
 		available = {
@@ -3099,6 +3099,74 @@ focus_tree = {
 		}
 	}
 	#上方空軍線
+	#下方海軍線
+	focus = {
+		id = KimKorea_Navy_focus
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 5
+		x = 42
+		y = 0
+		available = {
+			is_ai = no
+		}
+		completion_reward = {
+			navy_experience = 25
+		}
+	}
+	focus = {
+		id = KimKorea_Navy_focus_1
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 5
+		x = 0
+		y = 1
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_Navy_focus
+		prerequisite = { 
+			focus = KimKorea_Navy_focus
+		}
+		completion_reward = {
+			custom_effect_tooltip = KimKorea_Navy_tt
+			add_to_variable = {
+				KimKorea_Navy_naval_damage_factor = 0.10
+				tooltip = naval_damage_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Navy_naval_defense_factor = 0.10
+				tooltip = naval_defense_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Navy_naval_detection = 0.10
+				tooltip = naval_detection_tt
+			}
+			add_to_variable = {
+				KimKorea_Navy_naval_hit_chance = -0.10
+				tooltip = naval_hit_chance_tt
+			}
+			add_to_variable = {
+				KimKorea_Navy_naval_supply_consumption_factor = -0.10
+				tooltip = naval_supply_consumption_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Navy_naval_speed_factor = 0.10
+				tooltip = naval_speed_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Navy_navy_anti_air_attack_factor = 0.10
+				tooltip = navy_anti_air_attack_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Navy_navy_fuel_consumption_factor = -0.10
+				tooltip = navy_fuel_consumption_factor_tt
+			}
+			add_to_variable = {
+				KimKorea_Navy_navy_max_range_factor = 0.10
+				tooltip = navy_max_range_factor_tt
+			}
+		}
+	}
+	#上方海軍線
 	#下方民主線 未來可期
 	focus = {
 		id = KimKorea_focus_IChi_2

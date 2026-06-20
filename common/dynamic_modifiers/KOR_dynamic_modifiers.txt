@@ -40,7 +40,7 @@ KimKorea_Navy = {
 	naval_speed_factor = KimKorea_Navy_naval_speed_factor
 	navy_anti_air_attack_factor = KimKorea_Navy_navy_anti_air_attack_factor
 	navy_fuel_consumption_factor = KimKorea_Navy_navy_fuel_consumption_factor
-	navy_max_range_factor = KimKorea_Navy_KimKorea_Navy_navy_max_range_factor
+	navy_max_range_factor = KimKorea_Navy_navy_max_range_factor
 }
 KimKorea_Political = {
 	icon = GFX_idea_generic_political_support
