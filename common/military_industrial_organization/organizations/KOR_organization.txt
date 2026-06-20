@@ -78,6 +78,7 @@ KOR_ceska_zbrojovka_uhersky_brod_KimKorea_organization = {
 
 		production_bonus = {
 			production_efficiency_cap_factor = 0.10
+			production_resource_need_factor = -0.10
 			production_cost_factor = -0.10
 		}
 		
