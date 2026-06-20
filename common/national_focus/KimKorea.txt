@@ -222,7 +222,7 @@ focus_tree = {
 		}
 		completion_reward = { 
 			custom_effect_tooltip = KimKorea_discipline
-			add_political_power = 100
+			add_political_power = 150
 		}
 	}
 	focus = {
@@ -239,7 +239,7 @@ focus_tree = {
 			focus = KimKorea_focus_IChi_1_3_1
 		}
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = 150
 		}
 	}
 	focus = {
@@ -573,7 +573,7 @@ focus_tree = {
 	focus = {
 		id = KimKorea_focus_IChi_3_1
 		icon = GFX_goal_tfv_burn_the_royal_portraits
-		cost = 5
+		cost = 10
 		x = -6
 		y = 6
 		available = {
@@ -608,7 +608,7 @@ focus_tree = {
 	focus = {
 		id = KimKorea_focus_IChi_3_2
 		icon = GFX_focus_USA_uncle_sam
-		cost = 5
+		cost = 10
 		x = -4
 		y = 6
 		available = {
@@ -1335,7 +1335,7 @@ focus_tree = {
 	focus = {
 		id = KimKorea_focus_Factory_Ichi_2
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 5
+		cost = 10
 		x = 3
 		y = 2
 		available = {
@@ -1496,7 +1496,7 @@ focus_tree = {
 	focus = {
 		id = KimKorea_focus_Factory_Ichi_2_1
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 5
+		cost = 10
 		x = 3
 		y = 4
 		available = {
@@ -1530,7 +1530,7 @@ focus_tree = {
 	focus = {
 		id = KimKorea_focus_Factory_Ichi_2_2
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 5
+		cost = 10
 		x = 3
 		y = 6
 		available = {
@@ -1564,7 +1564,7 @@ focus_tree = {
 	focus = {
 		id = KimKorea_focus_Factory_Ichi_2_3
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 5
+		cost = 10
 		x = 3
 		y = 8
 		available = {
@@ -1721,7 +1721,7 @@ focus_tree = {
 	focus = {
 		id = KimKorea_focus_Factory_Ichi_4
 		icon = GFX_focus_SWE_the_beast_stirs
-		cost = 5
+		cost = 10
 		x = 0
 		y = 9
 		available = {
@@ -1890,6 +1890,7 @@ focus_tree = {
 				KimKorea_Army_special_forces_defence_factor = 0.10
 				tooltip = special_forces_defence_factor_tt
 			}
+			add_ideas = KimKorea_focus_Army_Plan
 		}
 	}
 	focus = {
@@ -2907,7 +2908,7 @@ focus_tree = {
 				tooltip = air_manpower_requirement_factor_tt
 			}
 			add_to_variable = {
-				KimKorea_AirForce_air_range_factor = 0.35
+				KimKorea_AirForce_air_range_factor = 0.40
 				tooltip = air_range_factor_tt
 			}
 		}
@@ -3486,6 +3487,12 @@ focus_tree = {
 				creator = KOR
 				name = "恩情号"
 			}
+			create_ship = {
+				type = ship_hull_light_2
+				equipment_variant = "恩情级驱逐舰"
+				creator = KOR
+				name = "恩情号"
+			}
 		}
 	}
 	focus = {
@@ -3502,6 +3509,12 @@ focus_tree = {
 			focus = KimKorea_Navy_focus_5_1
 		}
 		completion_reward = {
+			create_ship = {
+				type = ship_hull_light_2
+				equipment_variant = "恩情级驱逐舰"
+				creator = KOR
+				name = "恩情号"
+			}
 			create_ship = {
 				type = ship_hull_light_2
 				equipment_variant = "恩情级驱逐舰"
@@ -3579,6 +3592,10 @@ focus_tree = {
 				KimKorea_Navy_navy_max_range_factor = 0.10
 				tooltip = navy_max_range_factor_tt
 			}
+			add_offsite_building = {
+                type = dockyard
+                level = 5
+            }
 			1030 = {
 				add_building_construction = {
 					type = naval_base
@@ -3682,6 +3699,10 @@ focus_tree = {
 				creator = KOR
 				name = "恩情号"
 			}
+			add_offsite_building = {
+                type = dockyard
+                level = 5
+            }
 		}
 	}
 	focus = {
@@ -3793,11 +3814,12 @@ focus_tree = {
 	focus = {
 		id = KimKorea_focus_Final
 		icon = GFX_focus_generic_communist_asia
-		cost = 30
+		cost = 20
 		x = 3
 		y = 10
 		available = {
 			is_ai = no
+			num_of_factories > 160
 		}
 		relative_position_id = KimKorea_focus_IChi
 		prerequisite = { 

@@ -17,7 +17,7 @@ ideas = {
 
 			modifier = {
 				political_power_gain = 0.25
-				research_speed_factor = 0.25
+				research_speed_factor = 0.20
 				training_time_factor = -0.1
 				production_speed_buildings_factor = 0.10
 				production_factory_efficiency_gain_factor = 0.10
@@ -54,7 +54,7 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = -0.10
 				consumer_goods_expected_value = -0.05
-				global_building_slots = 10
+				global_building_slots = 6
 				production_speed_buildings_factor = 0.10
 				industrial_capacity_factory = 0.10
 				production_factory_max_efficiency_factor = 0.10

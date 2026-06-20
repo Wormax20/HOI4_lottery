@@ -9,7 +9,7 @@ KimKorea_FacBud_balance = {
 		}
 		cost = 50
 		days_re_enable = 20
-		days_remove = 120
+		days_remove = 60
 		complete_effect = {
 			add_power_balance_value = {
 				id = KimKorea_FacBud_balance
@@ -27,7 +27,7 @@ KimKorea_FacBud_balance = {
 		}
 		cost = 75
 		days_re_enable = 40
-		days_remove = 120
+		days_remove = 80
 		complete_effect = {
 			add_power_balance_value = {
 				id = KimKorea_FacBud_balance
@@ -45,7 +45,7 @@ KimKorea_FacBud_balance = {
 		}
 		cost = 100
 		days_re_enable = 60
-		days_remove = 120
+		days_remove = 100
 		complete_effect = {
 			add_power_balance_value = {
 				id = KimKorea_FacBud_balance
@@ -63,7 +63,7 @@ KimKorea_FacBud_balance = {
 		}
 		cost = 50
 		days_re_enable = 20
-		days_remove = 120
+		days_remove = 60
 		complete_effect = {
 			add_power_balance_value = {
 				id = KimKorea_FacBud_balance
@@ -81,7 +81,7 @@ KimKorea_FacBud_balance = {
 		}
 		cost = 75
 		days_re_enable = 40
-		days_remove = 120
+		days_remove = 80
 		complete_effect = {
 			add_power_balance_value = {
 				id = KimKorea_FacBud_balance
@@ -99,7 +99,7 @@ KimKorea_FacBud_balance = {
 		}
 		cost = 100
 		days_re_enable = 60
-		days_remove = 120
+		days_remove = 100
 		complete_effect = {
 			add_power_balance_value = {
 				id = KimKorea_FacBud_balance

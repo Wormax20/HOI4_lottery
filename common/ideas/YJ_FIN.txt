@@ -40,9 +40,9 @@ ideas = {
 
 			modifier = {
 				custom_modifier_tooltip = YJ_FIN_2_ideas_tt
-				special_forces_attack_factor = 0.05
+				special_forces_attack_factor = 0.10
 				army_attack_factor = 0.05
-				army_defence_factor = 0.05
+				army_defence_factor = 0.10
 			}
 		}
 		YJ_FIN_3_ideas = {

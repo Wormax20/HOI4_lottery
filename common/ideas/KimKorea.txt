@@ -57,6 +57,21 @@ ideas = {
 			}
 		}
 
+		KimKorea_focus_Army_Plan = {
+			picture = generic_wall_line
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				max_planning = 0.10
+				max_planning_factor = 0.10
+				planning_speed = 0.10
+			}
+		}
+		
 		KimKorea_focus_Finish_idea = {
 			picture = KimKorea_focus_Finish_idea
 			allowed = {
@@ -68,7 +83,7 @@ ideas = {
 			modifier = {
 				political_power_factor = 0.25
 				weekly_manpower = 10000
-				local_resources_factor = 0.20
+				local_resources_factor = 0.10
 				min_export = -0.10
 				consumer_goods_factor = -0.10
 				consumer_goods_expected_value = -0.05
