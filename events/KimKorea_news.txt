@@ -1,7 +1,7 @@
 add_namespace = KimKorea_news
 add_namespace = KimKorea_news_Navy
 add_namespace = KimKorea_news_Victory
-
+add_namespace = KimKorea_news_ArmyOK
 news_event = {
 	id = KimKorea_news.1
 	title = KimKorea_news.1.t
@@ -29,6 +29,18 @@ news_event = {
 	option = {
 		name = KimKorea_news_Navy.101.a
 		
+	}
+}
+news_event = {
+	id = KimKorea_news_ArmyOK.1
+	title = KimKorea_news_ArmyOK.1.t
+	desc = KimKorea_news_ArmyOK.1.d
+	picture = GFX_report_event_generic
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = KimKorea_news_ArmyOK.1.a
 	}
 }
 news_event = {

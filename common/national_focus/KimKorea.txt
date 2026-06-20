@@ -3815,6 +3815,33 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = KimKorea_focus_Army_Final
+		icon = GFX_focus_SWE_refuge_from_war
+		cost = 30
+		x = 0
+		y = 10
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_AirForce_focus
+		prerequisite = { 
+			focus = KimKorea_Army_focus_5
+		}
+		prerequisite = { 
+			focus = KimKorea_AirForce_focus_11
+		}
+		prerequisite = { 
+			focus = KimKorea_Navy_focus_9
+		}
+		completion_reward = { 
+			add_ideas = KimKorea_Army_AirForce_Navy_Finishi_idea
+			news_event = {
+				id = KimKorea_news_ArmyOK.1
+				days = 0
+			}
+		}
+	}
 	#上方總結
 	#下方民主線 未來可期
 	focus = {

@@ -157,7 +157,7 @@ KOR_crewe_works_KimKorea_organization = {
 	}
 	available = {
 		from = {
-			has_country_flag = KimKorea_train_organization
+			has_country_flag = KimKorea_west_organization
 		}
 	}
 	
