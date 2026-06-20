@@ -1744,7 +1744,7 @@ focus_tree = {
 				KimKorea_Factory_local_resources_factor = 0.10
 				tooltip = local_resources_factor_tt
 			}
-			add_political_power = 100
+			add_political_power = 500
 		}
 	}
 	#上方工業線
@@ -1895,19 +1895,15 @@ focus_tree = {
 	focus = {
 		id = KimKorea_Army_focus_5
 		icon = GFX_focus_SOV_builder_of_the_red_army
-		cost = 5
+		cost = 10
 		x = 0
-		y = 8
+		y = 9
 		available = {
 			is_ai = no
 		}
 		relative_position_id = KimKorea_Army_focus
 		prerequisite = { 
-			focus = KimKorea_Army_focus_4_1
-		}
-		prerequisite = { 
-			focus = KimKorea_Army_focus_3_1_5
-			focus = KimKorea_Army_focus_3_2_5
+			focus = KimKorea_Army_focus_6
 		}
 		completion_reward = {
 			custom_effect_tooltip = KimKorea_Army_tt
@@ -1944,7 +1940,7 @@ focus_tree = {
 	focus = {
 		id = KimKorea_Army_focus_3_1
 		icon = GFX_focus_generic_infiltration
-		cost = 5
+		cost = 10
 		x = -2
 		y = 3
 		available = {
@@ -2196,7 +2192,7 @@ focus_tree = {
 	focus = {
 		id = KimKorea_Army_focus_3_2
 		icon = GFX_goal_generic_army_tanks
-		cost = 5
+		cost = 10
 		x = 2
 		y = 3
 		available = {
@@ -2450,13 +2446,17 @@ focus_tree = {
 		icon = GFX_focus_generic_reinforcing_the_supply_network
 		cost = 10
 		x = 0
-		y = 9
+		y = 8
 		available = {
 			is_ai = no
 		}
 		relative_position_id = KimKorea_Army_focus
 		prerequisite = { 
-			focus = KimKorea_Army_focus_5
+			focus = KimKorea_Army_focus_4_1
+		}
+		prerequisite = { 
+			focus = KimKorea_Army_focus_3_1_5
+			focus = KimKorea_Army_focus_3_2_5
 		}
 		completion_reward = {
 			custom_effect_tooltip = KimKorea_Army_tt
