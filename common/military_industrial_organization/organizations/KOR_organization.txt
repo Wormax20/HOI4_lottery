@@ -22,6 +22,86 @@ KOR_henschel_KimKorea_organization = {
 			has_country_flag = KimKorea_west_organization
 		}
 	}
+	add_trait = {
+		token = GER_mio_trait_hoesch_facilities
+		name = GER_mio_trait_hoesch_facilities
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+
+		position = { x=9 y=0 }  
+		
+		visible = {
+			FROM = { 
+				original_tag = KOR
+			}
+		}
+		
+		available = {
+			always = yes
+		}
+
+		equipment_bonus = {
+			soft_attack = 0.05
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	add_trait = {
+		token = GER_mio_trait_involve_henschel_in_special_projects
+		name = GER_mio_trait_involve_henschel_in_special_projects
+		icon = GFX_generic_mio_department_icon_facilities
+		special_trait_background = yes
+
+		position = { x=8 y=0 }
+
+		visible = {
+			FROM = { 
+				original_tag = KOR
+			}
+		}
+		
+		available = {
+			always = yes
+		}
+
+		equipment_bonus = {
+			hard_attack = 0.05
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	add_trait = {
+		token = GER_mio_trait_telescopic_sight
+		name = GER_mio_trait_telescopic_sight
+		icon = GFX_generic_mio_trait_icon_hard_attack
+		special_trait_background = yes
+
+		limit_to_equipment_type = { mio_cat_eq_all_heavy_tank }
+
+		position = { x=7 y=0 }
+
+		visible = {
+			FROM = { 
+				original_tag = KOR
+			}
+		}
+		
+		available = {
+			always = yes
+		}
+
+		equipment_bonus = {
+			soft_attack = 0.05
+			hard_attack = 0.05
+			breakthrough = 0.05
+		}
+	}
 }
 
 KOR_harland_wolff_KimKorea_organization = {
@@ -122,6 +202,77 @@ KOR_mytishchy_machine_building_plant_KimKorea_organization = {
 	available = {
 		from = {
 			has_country_flag = KimKorea_east_organization
+		}
+	}
+	add_trait = { 
+		token = SOV_mio_trait_merge_plant_no_174
+		name = SOV_merge_tank_plant
+		#icon = GFX_generic_mio_department_icon_facilities
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+		special_trait_background = yes
+
+		position = { x=9 y=0 }
+		
+		visible = {
+			FROM = { 
+				original_tag = KOR
+			}
+		}
+		
+		available = {
+			always = yes
+		}
+
+		production_bonus = {
+			production_resource_need_factor = -0.05
+		}
+	}
+
+	add_trait = { 
+		token = SOV_mio_trait_merge_plant_no_112
+		name = SOV_merge_tank_plant_2
+		#icon = GFX_generic_mio_department_icon_facilities
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+
+		position = { x=9 y=1 }
+		
+		visible = {
+			FROM = { 
+				original_tag = KOR
+			}
+		}
+		
+		available = {
+			always = yes
+		}
+
+		production_bonus = {
+			production_cost_factor = -0.05
+		}
+	}
+
+	add_trait = { 
+		token = SOV_mio_trait_merge_ural_heavy_machine_building_plant
+		name = SOV_merge_tank_plant_3
+		#icon = GFX_generic_mio_department_icon_facilities
+		icon = GFX_generic_mio_trait_icon_soft_attack
+		special_trait_background = yes
+
+		position = { x=9 y=2 }
+		
+		visible = {
+			FROM = { 
+				original_tag = KOR
+			}
+		}
+		
+		available = {
+			always = yes
+		}
+
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
 		}
 	}
 }
