@@ -77,3 +77,13 @@ KimKorea_Factory = {
 	industrial_capacity_dockyard = KimKorea_Factory_industrial_capacity_dockyard
 	local_resources_factor = KimKorea_Factory_local_resources_factor
 }
+KOR_regional_development = { #STATE MODIFIER
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_construction
+
+	state_production_speed_buildings_factor = 0.1
+	local_building_slots_factor = 0.05
+    local_resources_factor = 0.10
+
+}

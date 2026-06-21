@@ -1693,7 +1693,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KimKorea_focus_Factory_Ichi_3_3
-		icon = GFX_focus_generic_hydroelectric_energy
+		icon = GFX_focus_AFG_a_modern_economy
 		cost = 10
 		x = 0
 		y = 8
@@ -1706,15 +1706,11 @@ focus_tree = {
 			focus = KimKorea_focus_Factory_Ichi_3_2
 		}
 		completion_reward = { 
-			1030 = {
-				add_building_construction = {
-					type = dam
-					level = 1
-					instant_build = yes
-					province = {
-						id = 4086
-					}
+			every_controlled_state = {
+				limit = {
+					is_fully_controlled_by = KOR
 				}
+				add_dynamic_modifier = { modifier = KOR_regional_development }
 			}
 		}
 	}
