@@ -130,6 +130,61 @@ KimKorea_discipline = { #宣传部
 			}
 		}
 	}
+
+	KimKorea_Navy_Build_JiDou = {
+		activation = {
+			tag = KOR
+			has_country_flag = KimKorea_Navy_Build_Yes
+		}
+		available = {
+			always = no
+		}
+
+		is_good = no
+		days_mission_timeout = 100
+
+		timeout_effect = {
+			create_ship = {
+				type = ship_hull_cruiser_2
+				equipment_variant = "朝鲜级重巡洋舰"
+				creator = KOR
+				name = "主体号"
+			}
+			create_ship = {
+				type = ship_hull_light_2
+				equipment_variant = "恩情级驱逐舰"
+				creator = KOR
+				name = "恩情号"
+			}
+			create_ship = {
+				type = ship_hull_light_2
+				equipment_variant = "恩情级驱逐舰"
+				creator = KOR
+				name = "恩情号"
+			}
+			create_ship = {
+				type = ship_hull_light_2
+				equipment_variant = "恩情级驱逐舰"
+				creator = KOR
+				name = "恩情号"
+			}
+			create_ship = {
+				type = ship_hull_light_2
+				equipment_variant = "恩情级驱逐舰"
+				creator = KOR
+				name = "恩情号"
+			}
+			create_ship = {
+				type = ship_hull_light_2
+				equipment_variant = "恩情级驱逐舰"
+				creator = KOR
+				name = "恩情号"
+			}
+		}
+	}
+
+
+
 	KimKorea_Decisions_1_Join = {
 		icon = GFX_decision_generic_consumer_goods
 		allowed = {
