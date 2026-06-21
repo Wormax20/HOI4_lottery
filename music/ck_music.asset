@@ -15,3 +15,9 @@ music = {
     file = "KOR_Theme.ogg"
     volume = 0.75
 }
+
+music = {
+	name = "CeddinDeden"
+    file = "CeddinDeden.ogg"
+    volume = 0.75
+}

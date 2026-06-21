@@ -3889,6 +3889,23 @@ focus_tree = {
 			add_state_core = 408
 		}
 	}
+	focus = {
+		id = KimKorea_Diplomacy_focus_Out_2_1
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 5
+		x = -4
+		y = 3
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_Diplomacy_focus
+		prerequisite = { 
+			focus = KimKorea_Diplomacy_focus_Out_1
+		}
+		completion_reward = {
+			add_ideas = KimKorea_focus_Diplomacy_Out
+		}
+	}
 
 
 	
@@ -3951,6 +3968,23 @@ focus_tree = {
                     days = 1
                 }
             }
+		}
+	}
+	focus = {
+		id = KimKorea_Diplomacy_focus_In_1_1
+		icon = GFX_goal_generic_fortify_city
+		cost = 5
+		x = 5
+		y = 3
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_Diplomacy_focus
+		prerequisite = { 
+			focus = KimKorea_Diplomacy_focus_In_1
+		}
+		completion_reward = {
+			add_ideas = KimKorea_focus_Diplomacy_In
 		}
 	}
 	#上方外交線

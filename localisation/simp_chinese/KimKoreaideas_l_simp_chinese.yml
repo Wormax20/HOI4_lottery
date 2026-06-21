@@ -18,6 +18,11 @@
  KimKorea_focus_Army_Plan_desc: "战争计划室"
  KimKorea_Army_AirForce_Navy_Finishi_idea: "以战止戈"
  KimKorea_Army_AirForce_Navy_Finishi_idea_desc: "以战止戈"
+ KimKorea_focus_Diplomacy_In: "保家卫国"
+ KimKorea_focus_Diplomacy_In_desc: "保家卫国"
+ KimKorea_focus_Diplomacy_Out: "向过往复仇"
+ KimKorea_focus_Diplomacy_Out_desc: "向过往复仇"
+
 
  KimKorea_Army: "朝鲜陆军"
  KimKorea_Army_tt: "$KimKorea_Army$追加修正:"
@@ -37,7 +42,7 @@
  KimKorea_Factory: "朝鲜工业"
  KimKorea_Factory_tt: "$KimKorea_Factory$追加修正:"
  KimKorea_Factory_desc: "朝鲜工业"
-
+ 
 
  KimKorea_focus_Prod4: "窃取西方资本主义的技术"
  KimKorea_focus_Prod4_desc: "艾,真香"
