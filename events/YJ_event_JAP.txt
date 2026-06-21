@@ -83,14 +83,6 @@ country_event = {
 			uses = 2
 			category = industry
 		}
-		add_offsite_building = {
-			type = industrial_complex
-			level = 20
-		}
-		add_offsite_building = {
-			type = arms_factory
-			level = 5
-		}
 		complete_national_focus = JAP_the_shuilikeng_power_plant
 		complete_national_focus = JAP_improve_agricultural_output
 		complete_national_focus = JAP_upgrade_the_oriental_development_company
