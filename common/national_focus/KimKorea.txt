@@ -1740,7 +1740,6 @@ focus_tree = {
 				KimKorea_Factory_local_resources_factor = 0.10
 				tooltip = local_resources_factor_tt
 			}
-			add_political_power = 500
 		}
 	}
 	#上方工業線
@@ -3806,6 +3805,144 @@ focus_tree = {
 		}
 	}
 	#上方海軍線
+	#下方外交線
+	focus = {
+		id = KimKorea_Diplomacy_focus
+		icon = GFX_goal_generic_improve_relations
+		cost = 5
+		x = 23
+		y = 10
+		available = {
+			is_ai = no
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = KimKorea_Diplomacy_focus_Out
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		x = -5
+		y = 1
+		available = {
+			is_ai = no
+		}
+		mutually_exclusive = { focus = KimKorea_Diplomacy_focus_In }
+		relative_position_id = KimKorea_Diplomacy_focus
+		prerequisite = { 
+			focus = KimKorea_Diplomacy_focus
+		}
+		completion_reward = {
+			add_war_support = 0.10
+		}
+	}
+	focus = {
+		id = KimKorea_Diplomacy_focus_Out_1
+		icon = GFX_goal_generic_national_unity
+		cost = 5
+		x = -5
+		y = 2
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_Diplomacy_focus
+		prerequisite = { 
+			focus = KimKorea_Diplomacy_focus_Out
+		}
+		completion_reward = {
+			add_political_power = 300
+			set_rule = {
+				can_create_factions = yes
+			}
+		}
+	}
+	focus = {
+		id = KimKorea_Diplomacy_focus_Out_2
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 5
+		x = -6
+		y = 3
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_Diplomacy_focus
+		prerequisite = { 
+			focus = KimKorea_Diplomacy_focus_Out_1
+		}
+		completion_reward = {
+			add_state_core = 745
+			add_state_core = 716
+			add_state_core = 328
+			add_state_core = 717
+			add_state_core = 408
+		}
+	}
+
+
+	
+	focus = {
+		id = KimKorea_Diplomacy_focus_In
+		icon = GFX_goal_generic_military_sphere
+		cost = 5
+		x = 5
+		y = 1
+		available = {
+			is_ai = no
+		}
+		mutually_exclusive = { focus = KimKorea_Diplomacy_focus_Out }
+		relative_position_id = KimKorea_Diplomacy_focus
+		prerequisite = { 
+			focus = KimKorea_Diplomacy_focus
+		}
+		completion_reward = {
+			add_stability = 0.10
+		}
+	}
+	focus = {
+		id = KimKorea_Diplomacy_focus_In_1
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		cost = 5
+		x = 5
+		y = 2
+		available = {
+            is_in_faction = no
+            SOV = {
+                   exists = yes
+                is_in_faction = yes
+                is_subject = no
+            }
+            NOT = {
+                has_war_with = SOV
+            }
+        }
+        bypass = {
+            OR = {
+                is_in_faction_with = SOV
+
+                SOV = {
+                    exists = no
+                }
+
+                SOV = {
+                    is_subject = yes
+                }
+            }
+        }
+		relative_position_id = KimKorea_Diplomacy_focus
+		prerequisite = { 
+			focus = KimKorea_Diplomacy_focus_In
+		}
+		completion_reward = {
+			SOV = {
+                country_event = {
+                    id = KimKorea_event_JoinSOV.301
+                    days = 1
+                }
+            }
+		}
+	}
+	#上方外交線
 	#下方總結
 	focus = {
 		id = KimKorea_focus_Final

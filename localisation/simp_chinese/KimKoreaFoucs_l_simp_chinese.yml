@@ -223,6 +223,21 @@
 
 
 
+ KimKorea_Diplomacy_focus: "检视外交政策"
+ KimKorea_Diplomacy_focus_desc: "检视外交政策"
+ KimKorea_Diplomacy_focus_Out: "积极进取"
+ KimKorea_Diplomacy_focus_Out_desc: "积极进取"
+ KimKorea_Diplomacy_focus_Out_1: "走出自己的路"
+ KimKorea_Diplomacy_focus_Out_1_desc: "走出自己的路"
+ KimKorea_Diplomacy_focus_Out_2: "宣称大高句丽"
+ KimKorea_Diplomacy_focus_Out_2_desc: "宣称大高句丽"
+ KimKorea_Diplomacy_focus_In: "保持威摄"
+ KimKorea_Diplomacy_focus_In_desc: "保持威摄"
+ KimKorea_Diplomacy_focus_In_1: "加入共产国际"
+ KimKorea_Diplomacy_focus_In_1_desc: "加入共产国际"
+
+
+
  KimKorea_focus_IChi_2: "打击共产党"
  KimKorea_focus_IChi_2_desc: "历史的教训表明，与共产党合作都没有好事。"
 
