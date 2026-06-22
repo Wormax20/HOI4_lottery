@@ -183,9 +183,8 @@ KOR_ceska_zbrojovka_uhersky_brod_KimKorea_organization = {
 		available = {
 			always = yes
 		}
-
+		limit_to_equipment_type = { mio_cat_eq_only_light_fighter }
 		equipment_bonus = {
-			air_attack = 0.10
 			maximum_speed = 0.05
 			air_agility = 0.05
 		}
@@ -193,6 +192,7 @@ KOR_ceska_zbrojovka_uhersky_brod_KimKorea_organization = {
 		ai_will_do = {
 			base = 2
 		}
+	}
 }
 
 #共产国际
