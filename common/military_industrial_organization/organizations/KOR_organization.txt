@@ -166,6 +166,33 @@ KOR_ceska_zbrojovka_uhersky_brod_KimKorea_organization = {
 			base = 2
 		}
 	}
+	add_trait = {
+		token = CZE_mio_trait_walter_co
+		name = CZE_mio_trait_walter_co_name
+		icon = GFX_generic_mio_department_icon_plane_general_engine
+		special_trait_background = yes
+
+		position = { x=9 y=1 }
+
+		visible = {
+			FROM = { 
+				original_tag = KOR
+			}
+		}
+		
+		available = {
+			always = yes
+		}
+
+		equipment_bonus = {
+			air_attack = 0.10
+			maximum_speed = 0.05
+			air_agility = 0.05
+		}
+
+		ai_will_do = {
+			base = 2
+		}
 }
 
 #共产国际

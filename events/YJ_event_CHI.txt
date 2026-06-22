@@ -207,16 +207,6 @@ country_event = {
 
 		country_event = {id = SEA_warlords.34  days = 105 }
 		country_event = { id = wtt_xian_incident.8 days = 345 }
-		JAP = {
-			add_offsite_building = {
-				type = industrial_complex
-				level = 10
-			}
-			add_offsite_building = {
-				type = arms_factory
-				level = 5
-			}
-		}
 	}
 }
 
