@@ -110,8 +110,8 @@
 
  KimKorea_Army_focus: "朝鲜陆军"
  KimKorea_Army_focus_desc: "朝鲜陆军"
- KimKorea_Army_focus_1: "步枪研究"
- KimKorea_Army_focus_1_desc: "步枪研究"
+ KimKorea_Army_focus_1: "主体炮"
+ KimKorea_Army_focus_1_desc: "主体炮"
  KimKorea_Army_focus_2: "开始改革"
  KimKorea_Army_focus_2_desc: "开始改革"
  KimKorea_Army_focus_3_1: "尊崇传统"
@@ -233,6 +233,8 @@
  KimKorea_Diplomacy_focus_Out_2_desc: "宣称大高句丽"
  KimKorea_Diplomacy_focus_Out_2_1: "向过往复仇"
  KimKorea_Diplomacy_focus_Out_2_1_desc: "向过往复仇"
+ KimKorea_Diplomacy_focus_Out_3: "东北亚共荣圈"
+ KimKorea_Diplomacy_focus_Out_3_desc: "东北亚共荣圈"
  KimKorea_Diplomacy_focus_In: "保持威摄"
  KimKorea_Diplomacy_focus_In_desc: "保持威摄"
  KimKorea_Diplomacy_focus_In_1: "加入共产国际"
@@ -243,7 +245,7 @@
 
 
  KimKorea_focus_IChi_2: "打击共产党"
- KimKorea_focus_IChi_2_desc: "历史的教训表明，与共产党合作都没有好事。"
+ KimKorea_focus_IChi_2_desc: "§R警告 此为未來可期的民主线 后续没有国策§!"
 
 
 

@@ -86,14 +86,15 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				army_core_attack_factor = 0.30
-				army_core_defence_factor = 0.30
-				army_non_core_attack_factor = -0.20
-				army_non_core_defence_factor = -0.20
-				industrial_capacity_factory = 0.10
-				industrial_capacity_dockyard = 0.10
-				production_factory_max_efficiency_factor = 0.10
-				production_factory_efficiency_gain_factor = 0.10
+				army_core_attack_factor = 0.20
+				army_core_defence_factor = 0.20
+				army_non_core_attack_factor = -0.30
+				army_non_core_defence_factor = -0.30
+				land_night_attack = 0.10
+				convoy_escort_efficiency = 0.10
+				air_superiority_efficiency = 0.10
+				air_power_projection_factor = 0.10
+				air_ace_generation_chance_factor = 0.20
 				resource_trade_cost_bonus_per_factory = 2
 			}
 		}

@@ -1770,7 +1770,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KimKorea_Army_focus_1
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_focus_generic_railway_gun
 		cost = 5
 		x = 0
 		y = 1
@@ -1782,11 +1782,8 @@ focus_tree = {
 			focus = KimKorea_Army_focus
 		}
 		completion_reward = {
-			add_tech_bonus = {
-				name = INFANTRY_TITLE
-    			bonus = 1.0
-    			uses = 2
-   				category = infantry_tech
+			set_technology = {
+				railway_gun = 1
 			}
 		}
 	}
@@ -2484,7 +2481,7 @@ focus_tree = {
 				tooltip = army_speed_factor_tt
 			}
 			add_to_variable = {
-				KimKorea_Army_supply_consumption_factor = -0.15
+				KimKorea_Army_supply_consumption_factor = -0.20
 				tooltip = supply_consumption_factor_tt
 			}
 		}
@@ -2719,7 +2716,7 @@ focus_tree = {
 				tooltip = air_accidents_factor_tt
 			}
 			add_to_variable = {
-				KimKorea_AirForce_air_ace_bonuses_factor = 0.10
+				KimKorea_AirForce_air_ace_bonuses_factor = 0.20
 				tooltip = air_ace_bonuses_factor_tt
 			}
 			add_to_variable = {
@@ -3047,7 +3044,7 @@ focus_tree = {
 				tooltip = air_accidents_factor_tt
 			}
 			add_to_variable = {
-				KimKorea_AirForce_air_ace_bonuses_factor = 0.15
+				KimKorea_AirForce_air_ace_bonuses_factor = 0.10
 				tooltip = air_ace_bonuses_factor_tt
 			}
 			add_to_variable = {
@@ -3092,7 +3089,7 @@ focus_tree = {
 				tooltip = air_accidents_factor_tt
 			}
 			add_to_variable = {
-				KimKorea_AirForce_air_ace_bonuses_factor = 0.15
+				KimKorea_AirForce_air_ace_bonuses_factor = 0.10
 				tooltip = air_ace_bonuses_factor_tt
 			}
 			add_to_variable = {
@@ -3891,7 +3888,24 @@ focus_tree = {
 	}
 	focus = {
 		id = KimKorea_Diplomacy_focus_Out_2_1
-		icon = GFX_goal_generic_more_territorial_claims
+		icon = GFX_goal_generic_attack_allies
+		cost = 5
+		x = -5
+		y = 4
+		available = {
+			is_ai = no
+		}
+		relative_position_id = KimKorea_Diplomacy_focus
+		prerequisite = { 
+			focus = KimKorea_Diplomacy_focus_Out_1
+		}
+		completion_reward = {
+			add_ideas = KimKorea_focus_Diplomacy_Out
+		}
+	}
+	focus = {
+		id = KimKorea_Diplomacy_focus_Out_3
+		icon = GFX_focus_PHI_conquest_of_japan
 		cost = 5
 		x = -4
 		y = 3
@@ -3903,7 +3917,12 @@ focus_tree = {
 			focus = KimKorea_Diplomacy_focus_Out_1
 		}
 		completion_reward = {
-			add_ideas = KimKorea_focus_Diplomacy_Out
+			every_state = {
+			limit = {
+				is_core_of = JAP
+			}
+			add_core_of = KOR
+		}
 		}
 	}
 
