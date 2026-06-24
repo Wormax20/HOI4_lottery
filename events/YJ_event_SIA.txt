@@ -1,0 +1,258 @@
+add_namespace = KoKi_YJ_SIA_event
+country_event = {
+	id = KoKi_YJ_SIA_event.101
+	title = KoKi_YJ_SIA_event.101.title
+	desc = KoKi_YJ_SIA_event.101.desc
+
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		add_offsite_building = {
+			type = industrial_complex
+			level = 15
+		}
+		complete_national_focus = SIA_support_songsuradets_military_clique
+		complete_national_focus = SIA_thai_cultural_mandates
+		complete_national_focus = SIA_sala_chaloem_thai_movie_theater
+		add_research_slot = 1
+		transfer_state = 670
+		transfer_state = 1069
+		transfer_state = 1068
+		transfer_state = 741
+		transfer_state = 1067
+		transfer_state = 993
+		transfer_state = 994
+		transfer_state = 999
+		transfer_state = 640
+		640 = { add_core_of = ROOT }
+		671 = { add_core_of = ROOT }
+		741 = { add_core_of = ROOT }
+		286 = { add_core_of = ROOT }
+		670 = { add_core_of = ROOT }
+		993 = { add_core_of = ROOT }
+		994 = { add_core_of = ROOT }
+		999 = { add_core_of = ROOT }
+		1017 = { add_core_of = ROOT }
+		1061 = { add_core_of = ROOT }
+		1062 = { add_core_of = ROOT }
+		1064 = { add_core_of = ROOT }
+		1065 = { add_core_of = ROOT }
+		1066 = { add_core_of = ROOT }
+		1067 = { add_core_of = ROOT }
+		1068 = { add_core_of = ROOT }
+		1069 = { add_core_of = ROOT }
+
+
+		name = KoKi_YJ_SIA_event.101.a
+		add_ideas = YJ_SIA_1_ideas
+		hidden_effect = {
+			add_victory_points = {
+				province = 7408
+				value = 30
+			}
+			add_victory_points = {
+				province = 4075
+				value = 20
+			}
+			add_victory_points = {
+				province = 7376
+				value = 17
+			}
+			add_victory_points = {
+				province = 1464
+				value = 17
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = KoKi_YJ_SIA_event.102
+	title = KoKi_YJ_SIA_event.102.title
+	desc = KoKi_YJ_SIA_event.102.desc
+
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		retire_country_leader = yes
+		add_country_leader_role = {
+			character =  SIA_ananda_mahidol
+			promote_leader = yes
+			country_leader = {
+				ideology = despotism
+			}
+		}
+		hidden_effect = {
+			add_trait = {
+				character = SIA_ananda_mahidol
+				trait = SIA_the_ordered # The Ordered
+				ideology = despotism
+			}
+			add_trait = {
+				character = SIA_ananda_mahidol
+				trait = SIA_the_enlightened # The Enlightened
+				ideology = despotism
+			}
+			add_trait = {
+				character = SIA_ananda_mahidol
+				trait = SIA_the_reforming # The Reforming
+				ideology = despotism
+			}
+			add_trait = {
+				character = SIA_ananda_mahidol
+				trait = SIA_the_learned # The Learned
+				ideology = despotism
+			}
+			add_trait = {
+				character = SIA_ananda_mahidol
+				trait = SIA_the_dutiful # The Dutiful
+				ideology = despotism
+			}
+			add_trait = {
+				character = SIA_ananda_mahidol
+				trait = SIA_the_industrious # The Industrious
+				ideology = despotism
+			}
+			add_trait = {
+				character = SIA_ananda_mahidol
+				trait = SIA_the_erudite # The Erudite
+				ideology = despotism
+			}
+			add_trait = {
+				character = SIA_ananda_mahidol
+				trait = SIA_the_reflective # The Reflective
+				ideology = despotism
+			}
+			add_trait = {
+				character = SIA_ananda_mahidol
+				trait = SIA_the_pragmatic # The Pragmatic
+				ideology = despotism
+			}
+			add_trait = {
+				character = SIA_ananda_mahidol
+				trait = SIA_the_builder # The Builder
+				ideology = despotism
+			}
+			add_trait = {
+				character = SIA_ananda_mahidol
+				trait = SIA_the_stern # The Stern
+				ideology = despotism
+			}
+			add_trait = {
+				character = SIA_ananda_mahidol
+				trait = SIA_the_resolute # The Resolute
+				ideology = despotism
+			}
+			add_trait = {
+				character = SIA_ananda_mahidol
+				trait = SIA_the_iron_willed # The Iron-Willed
+				ideology = despotism
+			}
+			add_trait = {
+				character = SIA_ananda_mahidol
+				trait = SIA_the_unbending # The Unbending
+				ideology = despotism
+			}
+			add_trait = {
+				character = SIA_ananda_mahidol
+				trait = SIA_the_relentless # The Relentless
+				ideology = despotism
+			}
+			add_trait = {
+				character = SIA_ananda_mahidol
+				trait = SIA_the_iron_handed # The Iron-Handed
+				ideology = despotism
+			}
+		}
+		add_research_slot = 1
+		add_trait = {
+			character = SIA_ananda_mahidol
+			trait = SIA_ananda_scholar_2
+			ideology = despotism 
+		}
+		add_trait = {
+			character = SIA_ananda_mahidol
+			trait = SIA_ananda_military_3
+			ideology = despotism 
+		}
+		add_trait = {
+			character = SIA_ananda_mahidol
+			trait = SIA_ananda_administrator_3
+			ideology = despotism 
+		}
+		add_trait = {
+			character = SIA_ananda_mahidol
+			trait = SIA_ananda_industry_3
+			ideology = despotism 
+		}
+		complete_national_focus = SIA_the_sacred_hierarchy
+		complete_national_focus = SIA_order_discipline_and_unity
+		complete_national_focus = SIA_constitutional_virtue
+		complete_national_focus = SIA_an_absolute_monarchy
+		complete_national_focus = SIA_a_constitutional_monarchy
+		name = KoKi_YJ_SIA_event.102.a
+		add_ideas = YJ_SIA_2_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = KoKi_YJ_SIA_event.103
+	title = KoKi_YJ_SIA_event.103.title
+	desc = KoKi_YJ_SIA_event.103.desc
+
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		add_offsite_building = {
+			type = industrial_complex
+			level = 20
+		}
+		complete_national_focus = SIA_the_bank_of_siam
+		complete_national_focus = SIA_thai_rice_company
+		complete_national_focus = SIA_plan_for_a_short_war
+		complete_national_focus = SIA_intermediate_war_preparation
+		complete_national_focus = SIA_prepare_for_a_long_war
+
+		name = KoKi_YJ_SIA_event.101.a
+		add_ideas = YJ_SIA_3_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = KoKi_YJ_SIA_event.104
+	title = KoKi_YJ_SIA_event.104.title
+	desc = KoKi_YJ_SIA_event.104.desc
+
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		add_tech_bonus = {
+			name = YJ_SIA_3_ideas
+			bonus = 3
+			uses = 2
+			category = artillery
+		}
+		name = KoKi_YJ_SIA_event.101.a
+		add_ideas = YJ_SIA_4_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+}

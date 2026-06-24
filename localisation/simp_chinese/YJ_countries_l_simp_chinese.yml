@@ -771,6 +771,30 @@ OTT_SULTANATE_communism_DEF: "奥斯曼帝国"
 
 
 
+KoKi_YJ_SIA_event.101.title: "奖品: 变身泰(国)(暹)罗"
+KoKi_YJ_SIA_event.101.desc: "获得大量周边地区核心，完成部分君主线国策"
+KoKi_YJ_SIA_event.101.a: "好"
+
+KoKi_YJ_SIA_event.102.title: "奖品: 小天才"
+KoKi_YJ_SIA_event.102.desc: "获得全特质的阿南塔国王，完成大量君主线国策"
+KoKi_YJ_SIA_event.102.a: "好"
+
+KoKi_YJ_SIA_event.103.title: "奖品: 工业心脏"
+KoKi_YJ_SIA_event.103.desc: "获得双工业线国策，获得大量工业buff"
+KoKi_YJ_SIA_event.103.a: "好"
+
+KoKi_YJ_SIA_event.104.title: "奖品: 极致火力"
+KoKi_YJ_SIA_event.104.desc: "获得§Y2张§!§C300%§!炮卡，坦克与自火获得大量加成"
+KoKi_YJ_SIA_event.104.a: "好"
+
+
+YJ_SIA_1_ideas: "变身泰(国)(暹)罗"
+YJ_SIA_2_ideas: "小天才"
+YJ_SIA_2_ideas_tt: "阿南塔刚买的电话手表"
+YJ_SIA_3_ideas: "工业心脏"
+YJ_SIA_4_ideas: "极致火力"
+
+
 
 
 

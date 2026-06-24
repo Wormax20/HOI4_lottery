@@ -109,10 +109,13 @@ country_event = {
 			add_core_of = ROOT
 		}
 		annex_country = {
-			target = BRM
-			transfer_troops = yes
+			target = PAK
 		}
-
+		transfer_state = 998
+		transfer_state = 288
+		transfer_state = 997
+		transfer_state = 996
+		transfer_state = 995
 		transfer_state = 320
 		transfer_state = 321
 		422 = { add_core_of = root }
