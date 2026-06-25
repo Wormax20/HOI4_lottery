@@ -6125,14 +6125,14 @@
 		completion_reward = {
 			add_timed_idea = {
 				idea = idea_YJ_SIA_deficit_spending
-				days = 720
+				years = 1
 			}
 			custom_effect_tooltip = newline_tt
 			custom_effect_tooltip = SIA_deficit_spending_tt
 			effect_tooltip = {
 				add_timed_idea = {
 					idea = idea_SIA_debt_repayment
-					days = 365
+					years = 1
 				}
 			}
 		}
