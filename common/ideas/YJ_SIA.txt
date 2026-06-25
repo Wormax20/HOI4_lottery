@@ -1,5 +1,30 @@
 ideas = {
 	country = {
+		idea_YJ_SIA_deficit_spending = {
+			name = idea_SIA_deficit_spending
+			allowed = {
+				original_tag = SIA
+			}
+			picture = ARG_political_corruption_modifier
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.20
+				factory_energy_consumption = 0.2
+			}	
+
+			on_remove = {
+				add_timed_idea = {
+					idea = idea_SIA_debt_repayment
+					days = 365
+				}
+			}
+		}
+		
 		YJ_SIA_1_ideas = {
 			allowed = {
 				always = no
