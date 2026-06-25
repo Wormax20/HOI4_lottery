@@ -99,6 +99,22 @@ on_actions = {
 					}
 				}
 			}
+			if = {
+				limit = {
+					JAP = { is_ai = no }
+					KOR = { is_ai = no }
+				}
+				JAP = {
+					add_offsite_building = {
+						type = industrial_complex
+						level = 5
+					}
+					add_offsite_building = {
+						type = arms_factory
+						level = 5
+					}
+				}
+			}
 			SOV = {
 				add_ideas = YJ_SOV_5_ideas
 				add_to_variable = {
@@ -330,7 +346,7 @@ on_actions = {
 			}
 			set_victory_points = {
 				province = 11959
-				value = 100
+				value = 10
 			}
 			set_victory_points = {
 				province = 12434

@@ -54,7 +54,7 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = -0.10
 				consumer_goods_expected_value = -0.05
-				global_building_slots = 6
+				global_building_slots = 5
 				production_speed_buildings_factor = 0.10
 				industrial_capacity_factory = 0.10
 				production_factory_max_efficiency_factor = 0.10
@@ -79,7 +79,7 @@ ideas = {
 
 			modifier = {
 				political_power_factor = 0.25
-				political_advisor_cost_factor = -0.25
+				political_advisor_cost_factor = -1
 				production_speed_buildings_factor = 0.10
 				global_building_slots = 5
 				stability_weekly = 0.005
@@ -114,6 +114,9 @@ ideas = {
 				command_power_gain = 1
 				max_command_power = 200
 				army_chief_cost_factor = -1
+				army_advisor_cost_factor = -1
+				air_advisor_cost_factor = -1
+				navy_advisor_cost_factor = -1
 				cas_damage_reduction = 0.25
 			}
 		}

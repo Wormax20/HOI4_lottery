@@ -42,8 +42,10 @@ ideas = {
 				political_power_gain = 0.10
 				terrain_penalty_reduction = 0.10
 				max_planning = 0.10
+				planning_speed = 0.10
+				political_advisor_cost_factor = -1
 				command_power_gain = 1
-				max_commander_army_size = 200
+				max_commander_army_size = 100
 				democratic_drift = -1
 				fascism_drift = -1
 				communism_drift = -1
@@ -64,7 +66,7 @@ ideas = {
 			picture = GER_wirtschaftswunder
 
 			modifier = {
-				global_building_slots = 3
+				global_building_slots = 5
 				consumer_goods_factor = -0.10
 				consumer_goods_expected_value = -0.05
 				production_factory_max_efficiency_factor = 0.1
@@ -74,7 +76,7 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.1
 				production_speed_arms_factory_factor = 0.1
 				production_speed_buildings_factor = 0.1
-				local_resources_factor = 0.1
+				local_resources_factor = 0.2
 				min_export = -0.2
 			}
 		}
