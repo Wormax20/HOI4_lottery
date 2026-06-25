@@ -1531,7 +1531,8 @@ SIA_YJ_scripted_effects = {
 					NOT = {
 						has_idea = YJ_SIA_1_ideas
 					}
-					has_idea = YJ_SIA_4_ideas
+					has_idea = YJ_SIA_2_ideas
+					has_idea = YJ_SIA_3_ideas
 				}
 				factor = 0
 			}
@@ -1556,8 +1557,7 @@ SIA_YJ_scripted_effects = {
 					NOT = {
 						has_idea = YJ_SIA_1_ideas
 					}
-					has_idea = YJ_SIA_2_ideas
-					has_idea = YJ_SIA_3_ideas
+					has_idea = YJ_SIA_4_ideas
 				}
 				factor = 0
 			}

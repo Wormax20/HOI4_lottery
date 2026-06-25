@@ -17,6 +17,7 @@ leader_traits = {
 		stability_weekly = 0.005
 		army_core_attack_factor = 0.10
 		army_core_defence_factor = 0.10
+		political_advisor_cost_factor = -1
 
 		ai_will_do = {
 			factor = 1

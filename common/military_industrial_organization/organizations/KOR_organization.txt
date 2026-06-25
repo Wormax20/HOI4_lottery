@@ -157,9 +157,9 @@ KOR_ceska_zbrojovka_uhersky_brod_KimKorea_organization = {
 		}
 
 		production_bonus = {
-			production_efficiency_cap_factor = 0.10
-			production_resource_need_factor = -0.10
-			production_cost_factor = -0.10
+			production_efficiency_cap_factor = 0.05
+			production_resource_need_factor = -0.05
+			production_cost_factor = -0.05
 		}
 		
 		ai_will_do = {
@@ -183,12 +183,13 @@ KOR_ceska_zbrojovka_uhersky_brod_KimKorea_organization = {
 		available = {
 			always = yes
 		}
+
 		limit_to_equipment_type = { mio_cat_eq_only_light_fighter }
 		equipment_bonus = {
-			build_cost_ic = -0.05
 			air_attack = 0.05
-			maximum_speed = 0.05
+			air_defence = -0.10
 			air_agility = 0.05
+			air_range = 0.05
 		}
 
 		ai_will_do = {
