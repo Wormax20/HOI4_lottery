@@ -1,0 +1,30 @@
+state = {
+	id = 1088
+	name = "STATE_1088"
+	manpower = 123051
+	
+	state_category = rural
+
+	resources = {
+	}
+
+	history = {
+
+		owner = JAP
+		add_core_of = CHI
+		add_core_of = PRC
+		add_core_of = JAP
+		add_core_of = FOR
+
+		buildings = {
+			infrastructure = 1
+			air_base = 1
+		}
+
+	}
+	provinces = {
+		9955 4096 1175 12027
+	}
+
+	local_supplies = 0.0 
+}

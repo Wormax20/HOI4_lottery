@@ -345,10 +345,6 @@ on_actions = {
 				}
 			}
 			set_victory_points = {
-				province = 11959
-				value = 10
-			}
-			set_victory_points = {
 				province = 12434
 				value = 10
 			}

@@ -1,0 +1,40 @@
+state = {
+	id = 1087
+	name = "STATE_1087"
+	manpower = 1615321
+	
+	state_category = town
+
+	resources = {
+		rubber = 6
+	}
+
+	history = {
+
+		owner = JAP
+		add_core_of = CHI
+		add_core_of = PRC
+		add_core_of = JAP
+		add_core_of = FOR
+
+		buildings = {
+			infrastructure = 3 #was: 5
+			industrial_complex = 1
+			air_base = 1
+			12068 = {
+				naval_base = 10
+				naval_supply_hub = 1
+			}
+		}
+
+		victory_points = {
+			12068 1 # Gaoxiong
+		}
+
+	}
+	provinces = {
+		12068 11914
+	}
+
+	local_supplies = 0.0 
+}

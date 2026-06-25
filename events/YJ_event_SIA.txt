@@ -40,6 +40,10 @@ country_event = {
 		transfer_state = 994
 		transfer_state = 999
 		transfer_state = 640
+		transfer_state = 671
+		transfer_state = 1017
+		transfer_state = 286
+		transfer_state = 1066
 		640 = { add_core_of = ROOT }
 		671 = { add_core_of = ROOT }
 		741 = { add_core_of = ROOT }
