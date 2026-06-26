@@ -27,9 +27,9 @@ ideas = {
 			}
 			modifier = {
 				research_speed_factor = 0.10
-				specialization_air_speed_factor = 0.1
-				specialization_land_speed_factor = 0.1
-				specialization_naval_speed_factor = 0.1
+				specialization_air_speed_factor = 0.10
+				specialization_land_speed_factor = 0.10
+				specialization_naval_speed_factor = 0.10
 			}
 		}
 

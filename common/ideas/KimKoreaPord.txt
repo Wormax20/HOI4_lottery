@@ -95,7 +95,7 @@ ideas = {
 		}
 
 		KimKorea_focus_Diplomacy_Out = {
-			picture = GFX_idea_MEX_revolutionary_army
+			picture = SPR_crush_the_revolution
 			allowed = {
 				always = yes
 			}

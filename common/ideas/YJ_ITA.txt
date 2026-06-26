@@ -68,7 +68,7 @@ ideas = {
 
 			modifier = {
 				custom_modifier_tooltip = YJ_ITA_02_ideas_tt
-				global_building_slots = 5
+				global_building_slots = 6
 				industrial_capacity_factory = 0.1
 				production_factory_max_efficiency_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.15
