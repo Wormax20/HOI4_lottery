@@ -268,6 +268,9 @@ ideas = {
 				global_building_slots_factor = 0.10
 				industrial_capacity_dockyard = 0.20
 				production_speed_dockyard_factor = 0.20
+				naval_hit_chance = 0.10
+				naval_damage_factor = 0.10
+				navy_max_range_factor = 0.10
 			}
 			equipment_bonus = {
 				ship_hull_light = {
