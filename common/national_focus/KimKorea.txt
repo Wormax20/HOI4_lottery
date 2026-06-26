@@ -1266,11 +1266,11 @@ focus_tree = {
 		completion_reward = { 
 			add_offsite_building = {
 				type = industrial_complex
-				level = 2
+				level = 5
 			}
 			add_offsite_building = {
 				type = arms_factory
-				level = 2
+				level = 5
 			}
 		}
 	}
@@ -1290,11 +1290,11 @@ focus_tree = {
 		completion_reward = { 
 			add_offsite_building = {
 				type = industrial_complex
-				level = 3
+				level = 5
 			}
 			add_offsite_building = {
 				type = arms_factory
-				level = 3
+				level = 5
 			}
 		}
 	}
@@ -3012,7 +3012,7 @@ focus_tree = {
 	focus = {
 		id = KimKorea_AirForce_focus_10
 		icon = GFX_focus_generic_air_defense
-		cost = 5
+		cost = 10
 		x = 0
 		y = 8
 		available = {

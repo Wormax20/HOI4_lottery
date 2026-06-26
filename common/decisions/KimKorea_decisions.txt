@@ -70,7 +70,19 @@ KimKorea_discipline = { #宣传部
 		cost = 50
 		days_remove = 100
 
-		complete_effect = {
+		remove_effect = {
+			create_ship = {
+				type = ship_hull_light_2
+				equipment_variant = "恩情级驱逐舰"
+				creator = KOR
+				name = "恩情号"
+			}
+			create_ship = {
+				type = ship_hull_light_2
+				equipment_variant = "恩情级驱逐舰"
+				creator = KOR
+				name = "恩情号"
+			}
 			create_ship = {
 				type = ship_hull_light_2
 				equipment_variant = "恩情级驱逐舰"
@@ -113,9 +125,15 @@ KimKorea_discipline = { #宣传部
 			has_country_flag = KimKorea_Navy_Build_Yes
 		}
 		cost = 100
-		days_remove = 200
+		days_remove = 100
 
-		complete_effect = {
+		remove_effect = {
+			create_ship = {
+				type = ship_hull_cruiser_2
+				equipment_variant = "朝鲜级重巡洋舰"
+				creator = KOR
+				name = "主体号"
+			}
 			create_ship = {
 				type = ship_hull_cruiser_2
 				equipment_variant = "朝鲜级重巡洋舰"

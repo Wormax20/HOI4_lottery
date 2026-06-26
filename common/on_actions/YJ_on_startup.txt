@@ -88,11 +88,11 @@ on_actions = {
 				JAP = {
 					add_offsite_building = {
 						type = industrial_complex
-						level = 40
+						level = 25
 					}
 					add_offsite_building = {
 						type = arms_factory
-						level = 20
+						level = 10
 					}
 					every_core_state = {
 						set_state_category = megalopolis
@@ -103,6 +103,22 @@ on_actions = {
 				limit = {
 					JAP = { is_ai = no }
 					KOR = { is_ai = no }
+				}
+				JAP = {
+					add_offsite_building = {
+						type = industrial_complex
+						level = 5
+					}
+					add_offsite_building = {
+						type = arms_factory
+						level = 5
+					}
+				}
+			}
+			if = {
+				limit = {
+					JAP = { is_ai = no }
+					SIA = { is_ai = no }
 				}
 				JAP = {
 					add_offsite_building = {
@@ -300,12 +316,6 @@ on_actions = {
 					level = 10
 				}
 			}
-			PHI = {
-				add_offsite_building = {
-					type = industrial_complex
-					level = 30
-				}
-			}
 			RAJ = {
 				add_offsite_building = {
 					type = industrial_complex
@@ -316,6 +326,12 @@ on_actions = {
 				add_offsite_building = {
 					type = industrial_complex
 					level = 10
+				}
+			}
+			PHI = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 30
 				}
 			}
 			PHI = {

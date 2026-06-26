@@ -56,6 +56,7 @@ ideas = {
 			}
 			modifier = {
 				production_speed_supply_node_factor = 1
+				local_resources_factor = 0.10
 				global_building_slots = 5
 			}
 		}

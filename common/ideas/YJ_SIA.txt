@@ -39,12 +39,11 @@ ideas = {
 			modifier = {
 				political_power_factor = 0.15
 				consumer_goods_factor = -0.10
-				consumer_goods_expected_value = -0.05
 				stability_weekly = 0.005
 				war_support_weekly = 0.005
 				global_building_slots = 10
 				production_speed_buildings_factor = 0.1
-				local_resources_factor = 0.1
+				local_resources_factor = 0.2
 				conscription = 0.05
 			}
 		}
@@ -65,10 +64,13 @@ ideas = {
 			modifier = {
 				political_power_factor = 0.10
 				political_power_gain = 0.10
+				political_advisor_cost_factor = -1
+				global_building_slots = 2
 				terrain_penalty_reduction = 0.10
 				max_planning = 0.10
 				planning_speed = 0.10
-				political_advisor_cost_factor = -1
+				army_core_attack_factor = 0.10
+				army_core_defence_factor = 0.10
 				command_power_gain = 1
 				max_command_power = 100
 				democratic_drift = -1
@@ -102,7 +104,7 @@ ideas = {
 				production_speed_arms_factory_factor = 0.1
 				production_speed_buildings_factor = 0.1
 				local_resources_factor = 0.2
-				min_export = -0.2
+				min_export = -0.1
 			}
 		}
 		YJ_SIA_4_ideas = {
@@ -120,8 +122,9 @@ ideas = {
 			picture = generic_artillery_regiments
 
 			modifier = {
-				breakthrough_factor = 0.1
-				army_fuel_consumption_factor = -0.15
+				army_bonus_air_superiority_factor = 0.20
+				breakthrough_factor = 0.10
+				army_fuel_consumption_factor = -0.10
 			}
 			equipment_bonus = {
 				light_tank_artillery_chassis = {
