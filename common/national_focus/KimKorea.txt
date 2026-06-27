@@ -314,29 +314,29 @@ focus_tree = {
 			1030 = {
 				add_resource = {
 					type = oil
-					amount = 10
+					amount = 12
 				}
 				add_resource = {
 					type = chromium
-					amount = 24
+					amount = 30
 				}
 				add_resource = {
 					type = rubber
-					amount = 16
+					amount = 24
 				}
 			}
 			1031 = {
 				add_resource = {
 					type = Tungsten
-					amount = 12
+					amount = 22
 				}
 				add_resource = {
 					type = steel
-					amount = 36
+					amount = 56
 				}
 				add_resource = {
 					type = aluminium
-					amount = 18
+					amount = 32
 				}
 			}
 		}
@@ -1139,7 +1139,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = industry_bonus
       			bonus = 1.0
-      			uses = 2
+      			uses = 3
         		category = industry
 			}
 		}
@@ -1743,13 +1743,17 @@ focus_tree = {
 				KimKorea_Factory_local_resources_factor = 0.10
 				tooltip = local_resources_factor_tt
 			}
-			add_offsite_building = {
-				type = industrial_complex
-				level = 5
+			add_to_variable = {
+				KimKorea_Factory_production_speed_buildings_factor = 0.10
+				tooltip = production_speed_buildings_factor_tt
 			}
-			add_offsite_building = {
-				type = arms_factory
-				level = 5
+			add_to_variable = {
+				KimKorea_Factory_industrial_capacity_factory = 0.10
+				tooltip = industrial_capacity_factory_tt
+			}
+			add_to_variable = {
+				KimKorea_Factory_industrial_capacity_dockyard = 0.10
+				tooltip = industrial_capacity_dockyard_tt
 			}
 		}
 	}
@@ -1984,6 +1988,12 @@ focus_tree = {
 			add_to_variable = {
 				KimKorea_Army_army_bonus_air_superiority_factor = 0.25
 				tooltip = army_bonus_air_superiority_factor_tt
+			}
+			add_tech_bonus = {
+				name = INFANTRY_TITLE
+    			bonus = 1.0
+    			uses = 2
+   				category = infantry_tech
 			}
 		}
 	}
@@ -2237,6 +2247,12 @@ focus_tree = {
 				KimKorea_Army_army_bonus_air_superiority_factor = 0.25
 				tooltip = army_bonus_air_superiority_factor_tt
 			}
+			add_tech_bonus = {
+				name = ARMOUR_TITLE
+				bonus = 1.0
+				uses = 2
+				category = mio_cat_tech_all_armor_and_modules
+			}
 		}
 	}
 	focus = {
@@ -2263,7 +2279,7 @@ focus_tree = {
 	}
 	focus = {
 		id = KimKorea_Army_focus_3_2_2
-		icon = GFX_goal_generic_army_tanks
+		icon = GFX_goal_generic_army_artillery2
 		cost = 5
 		x = 3
 		y = 4
@@ -2276,10 +2292,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_tech_bonus = {
-				name = ARMOUR_TITLE
+				name = ARTILLERY_TITLE
 				bonus = 1.0
-				uses = 2
-				category = mio_cat_tech_all_armor_and_modules
+				uses = 3
+				category = artillery
 			}
 		}
 	}
@@ -2481,7 +2497,7 @@ focus_tree = {
 				tooltip = army_speed_factor_tt
 			}
 			add_to_variable = {
-				KimKorea_Army_supply_consumption_factor = -0.15
+				KimKorea_Army_supply_consumption_factor = -0.20
 				tooltip = supply_consumption_factor_tt
 			}
 		}
@@ -3889,7 +3905,7 @@ focus_tree = {
 	focus = {
 		id = KimKorea_Diplomacy_focus_Out_2_1
 		icon = GFX_goal_generic_attack_allies
-		cost = 5
+		cost = 10
 		x = -5
 		y = 4
 		available = {
@@ -4032,12 +4048,16 @@ focus_tree = {
 				id = KimKorea_news_Victory.1
 				days = 0
 			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 20
+			}
 		}
 	}
 	focus = {
 		id = KimKorea_focus_Army_Final
 		icon = GFX_focus_SWE_refuge_from_war
-		cost = 20
+		cost = 30
 		x = 0
 		y = 10
 		available = {
@@ -4059,6 +4079,14 @@ focus_tree = {
 				id = KimKorea_news_ArmyOK.1
 				days = 0
 			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 20
+			}
+			add_offsite_building = {
+                type = dockyard
+                level = 20
+            }
 		}
 	}
 	#上方總結

@@ -151,6 +151,10 @@ on_actions = {
 			}
 			ENG = {
 				add_ideas = YJ_ENG_7_ideas
+				add_offsite_building = {
+					type = dockyard
+					level = 10
+				}
 			}
 			every_state = {
 				add_dynamic_modifier = {

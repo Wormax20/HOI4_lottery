@@ -57,6 +57,7 @@ ideas = {
 			modifier = {
 				production_speed_supply_node_factor = 1
 				local_resources_factor = 0.10
+				equipment_conversion_speed = 0.25
 				global_building_slots = 5
 			}
 		}
@@ -144,6 +145,14 @@ ideas = {
 					maximum_speed = 0.10
 					instant = yes
 				}
+				amphibious_mechanized_equipment = {
+					build_cost_ic = -0.10
+					soft_attack = 0.10
+					hard_attack = 0.10
+					breakthrough = 0.10
+					maximum_speed = 0.10
+					instant = yes
+				}
 			}
 		}
 		KimKorea_focus_Infantry_Choose_idea = {
@@ -205,6 +214,10 @@ ideas = {
 					instant = yes
 				}
 				mechanized_equipment = {
+					build_cost_ic = -0.10
+					instant = yes
+				}
+				amphibious_mechanized_equipment = {
 					build_cost_ic = -0.10
 					instant = yes
 				}
