@@ -34,6 +34,10 @@ ideas = {
 					build_cost_ic = -0.10
 					instant = yes
 				}
+				fighter = {
+					build_cost_ic = -0.10
+					instant = yes
+				}
 			}
 		}
 

@@ -1574,6 +1574,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			add_offsite_building = {
+                type = dockyard
+                level = 5
+            }
 			navy_experience = 50
 			random_owned_controlled_state = {
 				limit = {
@@ -1674,7 +1678,7 @@ focus_tree = {
 		x = 3
 		y = 2
 		offset = {
-			x = -1
+			x = 0
 			y = 0
 			trigger = {
 				NOT = { has_dlc = "Man the Guns" }
@@ -1697,6 +1701,10 @@ focus_tree = {
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = ENG_secure_the_imperial_shipping_routes
+			add_offsite_building = {
+                type = dockyard
+                level = 5
+            }
 		}
 	}
 
@@ -1769,6 +1777,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = british_convoy_discount
+			add_offsite_building = {
+                type = dockyard
+                level = 5
+            }
 		}
 	}
 
@@ -1826,6 +1838,10 @@ focus_tree = {
 				uses = 3
 				category = naval_doctrine
 			}
+			add_offsite_building = {
+                type = dockyard
+                level = 5
+            }
 		}
 	}
 	focus = {
@@ -2053,7 +2069,7 @@ focus_tree = {
 		}
 
 		icon = GFX_goal_generic_national_unity
-		x = 29
+		x = 31
 		y = 0
 		offset = {
 			x = -2
@@ -2153,7 +2169,7 @@ focus_tree = {
 			}
 		}
 		icon = GFX_goal_generic_construct_military
-		x = 5
+		x = 6
 		y = 1
 		relative_position_id = uk_service_focus
 		cost = 10
@@ -2918,7 +2934,7 @@ focus_tree = {
 		continue_if_invalid = yes
 
 		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
-		x = 34
+		x = 38
 		y = 0
 
 		offset = {
@@ -5786,7 +5802,7 @@ focus_tree = {
 		}
 
 		icon = GFX_goal_generic_construct_civilian
-		x = -4
+		x = -5
 		y = 1
 		relative_position_id = uk_colonial_focus
 		cost = 10
@@ -5930,7 +5946,7 @@ focus_tree = {
 		}
 
 		icon = GFX_goal_generic_construct_infrastructure
-		x = -2
+		x = -3
 		y = 1
 		relative_position_id = uk_asia_focus
 		cost = 10
@@ -6386,7 +6402,7 @@ focus_tree = {
 		icon = GFX_focus_generic_manpower
 
 		x = -1
-		y = 1
+		y = 2
 		relative_position_id = singapore_focus
 
 		mutually_exclusive = { focus = ENG_territorial_army_of_malaysia_focus }
@@ -6483,7 +6499,7 @@ focus_tree = {
 		icon = GFX_focus_RAJ_indian_gurkhas
 
 		x = 1
-		y = 1
+		y = 2
 		relative_position_id = singapore_focus
 
 		mutually_exclusive = { focus = ENG_royal_malay_regiment_focus }
@@ -6905,7 +6921,7 @@ focus_tree = {
 		id = hongkong_focus
 		prerequisite = { focus = uk_asia_focus }
 		icon = GFX_goal_generic_fortify_city
-		x = 2
+		x = 4
 		y = 1
 		relative_position_id = uk_asia_focus
 		cost = 10
@@ -7018,7 +7034,7 @@ focus_tree = {
 
 		icon = GFX_focus_generic_air_bases
 
-		x = 0
+		x = -1
 		y = 2
 		relative_position_id = hongkong_focus
 
@@ -7309,7 +7325,7 @@ focus_tree = {
 		icon = GFX_focus_chi_cooperation_with_the_nationalists
 
 		x = 1
-		y = 1
+		y = 3
 		relative_position_id = ENG_south_east_asia_air_command_focus
 
 		cost = 5
@@ -7445,7 +7461,7 @@ focus_tree = {
 
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 
-		x = 4
+		x = 5
 		y = 1
 		relative_position_id = uk_colonial_focus
 
@@ -9211,7 +9227,7 @@ focus_tree = {
 			}
 		}
 
-		x = 14
+		x = 16
 		y = 0
 		relative_position_id = ENG_revisit_colonial_policy
 
@@ -14201,7 +14217,7 @@ focus_tree = {
 		id = hk_air_focus
 		prerequisite = { focus = hk_landward_forts_focus }
 		icon = GFX_goal_generic_construct_civilian
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = hk_landward_forts_focus
 		cost = 10
