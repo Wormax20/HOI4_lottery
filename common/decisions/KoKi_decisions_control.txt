@@ -327,6 +327,54 @@ KoKi_YJ_decisions_categories = {
 				name = YJ_mastery_bonus
 				folder = air
 			}
+			add_mastery_bonus = {
+				name = YJ_mastery_bonus
+				bonus = 1000
+				days = 1460
+				sub_doctrine = paratroopers_1
+			}
+			add_mastery_bonus = {
+				name = YJ_mastery_bonus
+				bonus = 1000
+				days = 1460
+				sub_doctrine = paratroopers_2
+			}
+			add_mastery_bonus = {
+				name = YJ_mastery_bonus
+				bonus = 1000
+				days = 1460
+				sub_doctrine = marines_1
+			}
+			add_mastery_bonus = {
+				name = YJ_mastery_bonus
+				bonus = 1000
+				days = 1460
+				sub_doctrine = marines_2
+			}
+			add_mastery_bonus = {
+				name = YJ_mastery_bonus
+				bonus = 1000
+				days = 1460
+				sub_doctrine = mountaineers_1
+			}
+			add_mastery_bonus = {
+				name = YJ_mastery_bonus
+				bonus = 1000
+				days = 1460
+				sub_doctrine = mountaineers_2
+			}
+			add_mastery_bonus = {
+				name = YJ_mastery_bonus
+				bonus = 1000
+				days = 1460
+				sub_doctrine = rangers_1
+			}
+			add_mastery_bonus = {
+				name = YJ_mastery_bonus
+				bonus = 1000
+				days = 1460
+				sub_doctrine = rangers_2
+			}
 			army_experience = 500
 			navy_experience = 500
 			air_experience = 500
