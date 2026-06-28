@@ -255,3 +255,229 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = KoKi_YJ_PRC_event.105
+	title = KoKi_YJ_PRC_event.105.title
+	desc = KoKi_YJ_PRC_event.105.desc
+
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ_PRC_event.105.a
+		add_ideas = YJ_PRC_1_ideas
+		CHI = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		GDC = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		annex_country = {
+			target = GDC
+			transfer_troops = yes
+		}
+		GXC = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		annex_country = {
+			target = GXC
+			transfer_troops = yes
+		}
+		YUN = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		annex_country = {
+			target = YUN
+			transfer_troops = yes
+		}
+		SIC = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		annex_country = {
+			target = SIC
+			transfer_troops = yes
+		}
+		XIC = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		annex_country = {
+			target = XIC
+			transfer_troops = yes
+		}
+		XSM = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		annex_country = {
+			target = XSM
+			transfer_troops = yes
+		}
+		GSM = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		annex_country = {
+			target = GSM
+			transfer_troops = yes
+		}
+		NXM = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		annex_country = {
+			target = NXM
+			transfer_troops = yes
+		}
+		KHM = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		annex_country = {
+			target = KHM
+			transfer_troops = yes
+		}
+		SIK = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		annex_country = {
+			target = SIK
+			transfer_troops = yes
+		}
+		SHX = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		annex_country = {
+			target = SHX
+			transfer_troops = yes
+		}
+		HBC = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		annex_country = {
+			target = HBC
+			transfer_troops = yes
+		}
+		SND = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		annex_country = {
+			target = SND
+			transfer_troops = yes
+		}
+		SIC = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		annex_country = {
+			target = SIC
+			transfer_troops = yes
+		}
+		MAN = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		annex_country = {
+			target = MAN
+			transfer_troops = yes
+		}
+		MEN = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		annex_country = {
+			target = MEN
+			transfer_troops = yes
+		}
+		transfer_state = 609
+		transfer_state = 728
+		transfer_state = 729
+		transfer_state = 326
+		transfer_state = 745
+		transfer_state = 434
+		transfer_state = 603
+		transfer_state = 748
+		transfer_state = 602
+		transfer_state = 600
+		transfer_state = 750
+		transfer_state = 595
+		transfer_state = 620
+		transfer_state = 1036
+		transfer_state = 596
+		transfer_state = 749
+		transfer_state = 606
+		transfer_state = 607
+		transfer_state = 598
+		transfer_state = 1035
+		transfer_state = 1034
+		transfer_state = 613
+		transfer_state = 743
+		434 = { add_core_of = root }
+		TIB = {
+			every_unit_leader = {
+				set_nationality = ROOT
+			}
+		}
+		annex_country = {
+			target = TIB
+			transfer_troops = yes
+		}
+		every_state = {
+			limit = {
+				is_core_of = TIB
+			}
+			add_core_of = ROOT
+		}
+		hidden_effect = {
+			every_core_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+		}
+		CHI = {
+			transfer_state = 524
+			transfer_state = 1086
+			transfer_state = 1088
+			transfer_state = 1087
+			transfer_state = 1088
+			transfer_state = 1089
+			transfer_state = 1090
+			transfer_state = 1091
+			transfer_state = 1092
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}

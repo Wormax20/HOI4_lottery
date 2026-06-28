@@ -268,3 +268,38 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = KoKi_YJ_CHI_event.105
+	title = KoKi_YJ_CHI_event.105.title
+	desc = KoKi_YJ_CHI_event.105.desc
+
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ_CHI_event.105.a
+
+		transfer_state = 524
+		transfer_state = 1086
+		transfer_state = 1088
+		transfer_state = 1087
+		transfer_state = 1088
+		transfer_state = 1089
+		transfer_state = 1090
+		transfer_state = 1091
+		transfer_state = 1092
+		add_victory_points = {
+			province = 7186
+			value = 15
+		}
+		add_equipment_to_stockpile = {
+			type = convoy
+			amount = 500
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}

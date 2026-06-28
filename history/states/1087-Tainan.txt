@@ -1,7 +1,7 @@
 state = {
 	id = 1087
 	name = "STATE_1087"
-	manpower = 1615321
+	manpower = 1462410
 	
 	state_category = town
 
@@ -29,12 +29,12 @@ state = {
 		}
 
 		victory_points = {
-			12068 1 # Gaoxiong
+			12068 5 # Gaoxiong
 		}
 
 	}
 	provinces = {
-		12068 11914
+		12068
 	}
 
 	local_supplies = 0.0 

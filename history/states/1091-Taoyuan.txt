@@ -1,9 +1,9 @@
 state = {
-	id = 1088
-	name = "STATE_1088"
-	manpower = 53420
+	id = 1091
+	name = "STATE_1091"
+	manpower = 815541
 	
-	state_category = rural
+	state_category = town
 
 	resources = {
 	}
@@ -17,12 +17,12 @@ state = {
 		add_core_of = FOR
 
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 		}
 
 	}
 	provinces = {
-		1175 12027
+		7214
 	}
 
 	local_supplies = 0.0 

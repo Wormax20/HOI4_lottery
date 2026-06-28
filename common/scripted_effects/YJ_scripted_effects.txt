@@ -81,13 +81,25 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
 		}
 	}
 	if = {
-		limit = {
+    	limit = {
 			original_tag = PRC
 		    is_ai = no
 		}
-		hidden_effect = {
-			PRC_YJ_scripted_effects = yes
-		}
+    	hidden_effect = {
+        	if = {
+            	limit = {
+					CHI = { is_ai = yes }
+            	}
+            	PRC_YJ_scripted_effects = yes
+        	}
+
+        	else_if = {
+            	limit = {
+                	CHI = { is_ai = no }
+            	}
+            	PRC_YJ_1_scripted_effects = yes
+        	}
+    	}
 	}
 	if = {
 		limit = {
@@ -219,13 +231,25 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
 		}
 	}
 	if = {
-		limit = {
+    	limit = {
 			original_tag = CHI
 			is_ai = no
 		}
-		hidden_effect = {
-			CHI_YJ_scripted_effects = yes
-		}
+    	hidden_effect = {
+        	if = {
+            	limit = {
+					PRC = { is_ai = yes }
+            	}
+            	CHI_YJ_scripted_effects = yes
+        	}
+
+        	else_if = {
+            	limit = {
+                	PRC = { is_ai = no }
+            	}
+            	CHI_YJ_1_scripted_effects = yes
+        	}
+    	}
 	}
 	if = {
 		limit = {
@@ -940,6 +964,54 @@ PRC_YJ_scripted_effects = {
 	}
 }
 
+PRC_YJ_1_scripted_effects = {
+	random_list = {
+		25 = {
+			modifier = {
+				has_idea = YJ_PRC_1_ideas
+				factor = 0
+			}
+			country_event = KoKi_YJ_PRC_event.105
+		}
+		25 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_PRC_2_ideas
+					NOT = {
+						has_idea = YJ_PRC_1_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_PRC_event.102
+		}
+		25 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_PRC_3_ideas
+					NOT = {
+						has_idea = YJ_PRC_1_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_PRC_event.103
+		}
+		25 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_PRC_4_ideas
+					NOT = {
+						has_idea = YJ_PRC_1_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_PRC_event.104
+		}
+	}
+}
+
 ROM_YJ_scripted_effects = {
 	random_list = {
 		20 = {
@@ -1511,6 +1583,15 @@ CHI_YJ_scripted_effects = {
 				factor = 0
 			}
 			country_event = KoKi_YJ_CHI_event.104
+		}
+	}
+}
+
+CHI_YJ_1_scripted_effects = {
+	
+	random_list = {
+		100 = {
+			country_event = KoKi_YJ_CHI_event.105
 		}
 	}
 }
