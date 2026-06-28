@@ -56,7 +56,6 @@ ideas = {
 			}
 			modifier = {
 				production_speed_supply_node_factor = 1
-				local_resources_factor = 0.10
 				equipment_conversion_speed = 0.25
 				global_building_slots = 5
 			}
@@ -73,7 +72,6 @@ ideas = {
 			modifier = {
 				max_planning = 0.10
 				max_planning_factor = 0.10
-				planning_speed = 0.10
 				terrain_penalty_reduction = 0.10
 				land_reinforce_rate = 0.05
 			}
@@ -90,7 +88,7 @@ ideas = {
 			modifier = {
 				political_power_factor = 0.25
 				weekly_manpower = 5000
-				local_resources_factor = 0.30
+				local_resources_factor = 0.20
 				min_export = -0.20
 				consumer_goods_factor = -0.10
 				consumer_goods_expected_value = -0.05
@@ -131,26 +129,23 @@ ideas = {
 			equipment_bonus = {
 				armor = {
 					build_cost_ic = -0.10
-					soft_attack = 0.10
-					hard_attack = 0.10
-					breakthrough = 0.10
-					maximum_speed = 0.10
+					soft_attack = 0.05
+					hard_attack = 0.05
+					maximum_speed = 0.05
 					instant = yes
 				}
 				mechanized_equipment = {
 					build_cost_ic = -0.10
-					soft_attack = 0.10
-					hard_attack = 0.10
-					breakthrough = 0.10
-					maximum_speed = 0.10
+					soft_attack = 0.05
+					hard_attack = 0.05
+					maximum_speed = 0.05
 					instant = yes
 				}
 				amphibious_mechanized_equipment = {
 					build_cost_ic = -0.10
-					soft_attack = 0.10
-					hard_attack = 0.10
-					breakthrough = 0.10
-					maximum_speed = 0.10
+					soft_attack = 0.05
+					hard_attack = 0.05
+					maximum_speed = 0.05
 					instant = yes
 				}
 			}

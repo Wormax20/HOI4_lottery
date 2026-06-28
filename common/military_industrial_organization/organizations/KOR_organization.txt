@@ -41,7 +41,6 @@ KOR_henschel_KimKorea_organization = {
 		}
 
 		equipment_bonus = {
-			soft_attack = 0.05
 			reliability = 0.05
 		}
 
@@ -69,7 +68,6 @@ KOR_henschel_KimKorea_organization = {
 		}
 
 		equipment_bonus = {
-			hard_attack = 0.05
 			maximum_speed = 0.05
 		}
 
@@ -99,9 +97,9 @@ KOR_henschel_KimKorea_organization = {
 		}
 
 		equipment_bonus = {
-			soft_attack = 0.05
-			hard_attack = 0.05
-			breakthrough = 0.05
+			soft_attack = 0.03
+			hard_attack = 0.03
+			breakthrough = 0.03
 		}
 	}
 }
