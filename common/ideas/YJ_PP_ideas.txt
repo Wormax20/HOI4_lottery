@@ -143,6 +143,7 @@ ideas = {
 			picture = SWE_hedgehog_defense
 			modifier = {
 				special_forces_attack_factor = 0.15
+				special_forces_defence_factor = 0.10
 				custom_modifier_tooltip = YJ_6_ideas_tt
 			}
 		}
@@ -163,6 +164,8 @@ ideas = {
 				war_support_weekly = 0.5
 				army_org_factor = 0.1
 		        army_morale_factor = 0.05
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.05
 				army_intel_to_others = -5
 				navy_intel_to_others =-5
@@ -234,7 +237,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				global_building_slots = 2
-				line_change_production_efficiency_factor = 0.50
+				line_change_production_efficiency_factor = 0.25
 				production_speed_buildings_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.05
 				production_factory_max_efficiency_factor = 0.05
