@@ -1,0 +1,26 @@
+spriteTypes = {
+    spriteType = {
+		name = "GFX_portrait_Cht_chiang_kai_shek"
+		texturefile = "gfx/leaders/Cht/portrait_Cht_chiang_kai_shek.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_Cht_Chiang_Ching_kuo"
+		texturefile = "gfx/leaders/Cht/portrait_Cht_Chiang_Ching_kuo.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_Cht_Yen_Chia_kan"
+		texturefile = "gfx/leaders/Cht/portrait_Cht_Yen_Chia_kan.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_Cht_Hu_Shih"
+		texturefile = "gfx/leaders/Cht/portrait_Cht_Hu_Shih.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_Cht_Tai_Li"
+		texturefile = "gfx/leaders/Cht/portrait_Cht_Tai_Li.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_Cht_Yin_Chung_jung"
+		texturefile = "gfx/leaders/Cht/portrait_Cht_Yin_Chung_jung.png"
+	}
+}

@@ -1,0 +1,109 @@
+characters = {
+	Cht_chiang_kai_shek = {
+		name = Cht_chiang_kai_shek
+		portraits={
+			civilian={
+				large = "GFX_portrait_Cht_chiang_kai_shek" #156*210 肖像
+			}
+		}
+	}
+	Cht_Chiang_Ching_kuo = {
+		name = Cht_Chiang_Ching_kuo
+		portraits={
+			civilian={
+				small = "GFX_portrait_Cht_Chiang_Ching_kuo" #65*67
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			cost = 150
+			idea_token = Cht_Chiang_Ching_kuo
+			allowed = {
+				original_tag = CHI
+			}
+			traits = {
+				Cht_Chiang_Ching_kuo_buff
+			}
+		}
+	}
+
+	Cht_Yen_Chia_kan = {
+		name = Cht_Yen_Chia_kan
+		portraits={
+			civilian={
+				small = "GFX_portrait_Cht_Yen_Chia_kan" #65*67
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			cost = 150
+			idea_token = Cht_Yen_Chia_kan
+			allowed = {
+				original_tag = CHI
+			}
+			traits = {
+				Cht_Yen_Chia_kan_buff
+			}
+		}
+	}
+
+	Cht_Hu_Shih = {
+		name = Cht_Hu_Shih
+		portraits={
+			civilian={
+				small = "GFX_portrait_Cht_Hu_Shih" #65*67
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			cost = 150
+			idea_token = Cht_Hu_Shih
+			allowed = {
+				original_tag = CHI
+			}
+			traits = {
+				Cht_Hu_Shih_buff
+			}
+		}
+	}
+
+	Cht_Tai_Li = {
+		name = Cht_Tai_Li
+		portraits={
+			civilian={
+				small = "GFX_portrait_Cht_Tai_Li" #65*67
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			cost = 150
+			idea_token = Cht_Tai_Li
+			allowed = {
+				original_tag = CHI
+			}
+			traits = {
+				Cht_Tai_Li_buff
+			}
+		}
+	}
+
+	Cht_Yin_Chung_jung = {
+		name = Cht_Yin_Chung_jung
+		portraits={
+			civilian={
+				small = "GFX_portrait_Cht_Yin_Chung_jung" #65*67
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			cost = 150
+			idea_token = Cht_Yin_Chung_jung
+			allowed = {
+				original_tag = CHI
+			}
+			traits = {
+				Cht_Yin_Chung_jung_buff
+			}
+		}
+	}
+}

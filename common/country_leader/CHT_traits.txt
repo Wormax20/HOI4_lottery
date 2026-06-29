@@ -1,0 +1,148 @@
+leader_traits = {
+	Cht_Generalissimo = { #委员长
+		random = no
+		political_power_factor = 0.10
+		army_core_attack_factor = 0.10
+		army_core_defence_factor = 0.10
+		neutrality_drift = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Cht_Anti_Communism = { #坚定反共
+		random = no
+		production_speed_arms_factory_factor = 0.10
+		communism_drift = -0.05
+		targeted_modifier = {
+			tag = PRC
+			attack_bonus_against = 0.15
+			defense_bonus_against = 0.15
+			breakthrough_bonus_against = 0.15
+		}
+		targeted_modifier = {
+			tag = SOV
+			attack_bonus_against = 0.15
+			defense_bonus_against = 0.15
+			breakthrough_bonus_against = 0.15
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Cht_Headmaster = { #校长
+		random = no
+		army_attack_factor = 0.10
+		army_defence_factor = 0.10
+		training_time_factor = -0.10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Cht_Chairman = { #党主席
+		random = no
+		political_power_factor = 0.10
+		stability_factor = 0.10
+		war_support_factor = 0.10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	#上方为蒋介石领导人BUFF
+
+	Cht_Chiang_Ching_kuo_buff = { #蔣經國
+		random = no
+		political_power_gain = 0.10
+		political_power_factor = 0.10
+		production_speed_infrastructure_factor = 0.20
+
+		sprite = 13
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	Cht_Yen_Chia_kan_buff = { #嚴家淦
+		random = no
+		consumer_goods_factor = -0.10
+		consumer_goods_expected_value = -0.10
+
+		sprite = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	Cht_Chen_Cheng_buff = { #陳誠
+		random = no
+		army_attack_factor = 0.10
+		army_org_factor = 0.05
+
+		sprite = 7
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	Cht_Sun_Li_jen_buff = { #孫立人
+		random = no
+		army_defence_factor = 0.10
+		training_time_factor = -0.10
+
+		sprite = 9
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	Cht_Hu_Shih_buff = { #胡適
+		random = no
+		research_speed_factor = 0.10
+		special_project_speed_factor = 0.10
+
+		sprite = 14
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	Cht_Tai_Li_buff = { #戴笠
+		random = no
+		operative_slot = 2
+		own_operative_capture_chance_factor = -0.15
+		enemy_operative_capture_chance_factor = 0.25
+		civilian_intel_to_others = -10
+		army_intel_to_others = -10
+		navy_intel_to_others = -10
+		airforce_intel_to_others = -10
+
+		sprite = 15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	Cht_Yin_Chung_jung_buff = { #尹仲容
+		random = no
+		production_speed_buildings_factor = 0.10
+		production_speed_industrial_complex_factor = 0.10
+		industrial_capacity_factory = 0.10
+
+		sprite = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -297,6 +297,58 @@ country_event = {
 			set_capital = {
 				state = 524
 			}
+			add_victory_points = {
+				province = 7186
+				value = 15
+			}
+			set_politics = {
+				ruling_party = neutrality
+				last_election = "1936.1.1"
+				election_frequency = 48
+				elections_allowed = no
+			}
+			set_popularities = {
+				democratic = 10
+				fascism = 10
+				communism = 5
+				neutrality = 75
+			}
+			CHI = {
+				set_nationality = {
+					target_country = PREV
+					character = Cht_chiang_kai_shek
+				}
+				set_nationality = {
+					target_country = PREV
+					character = Cht_Chiang_Ching_kuo
+				}
+				set_nationality = {
+					target_country = PREV
+					character = Cht_Yen_Chia_kan
+				}
+				set_nationality = {
+					target_country = PREV
+					character = Cht_Hu_Shih
+				}
+				set_nationality = {
+					target_country = PREV
+					character = Cht_Tai_Li
+				}
+				set_nationality = {
+					target_country = PREV
+					character = Cht_Yin_Chung_jung
+				}
+			}
+			add_country_leader_role = {
+				character = Cht_chiang_kai_shek
+				country_leader = {
+					ideology = despotism
+					traits={ Cht_Generalissimo }
+					expire="1965.1.1.1"
+					id=-1
+				}
+				promote_leader = yes 
+			}
 			if = {
 				limit = { 
 					CHI = {
@@ -304,6 +356,7 @@ country_event = {
 					}
 				}
 				change_tag_from = CHI
+				
 			}
 		}
 		ai_chance = {
