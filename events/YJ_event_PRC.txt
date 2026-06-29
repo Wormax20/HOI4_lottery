@@ -465,17 +465,6 @@ country_event = {
 				}
 			}
 		}
-		CHI = {
-			transfer_state = 524
-			transfer_state = 1086
-			transfer_state = 1088
-			transfer_state = 1087
-			transfer_state = 1088
-			transfer_state = 1089
-			transfer_state = 1090
-			transfer_state = 1091
-			transfer_state = 1092
-		}
 		ai_chance = {
 			factor = 100
 		}

@@ -280,23 +280,31 @@ country_event = {
 
 	option = {
 		name = KoKi_YJ_CHI_event.105.a
+		set_country_flag = become_TWN
 
-		transfer_state = 524
-		transfer_state = 1086
-		transfer_state = 1088
-		transfer_state = 1087
-		transfer_state = 1088
-		transfer_state = 1089
-		transfer_state = 1090
-		transfer_state = 1091
-		transfer_state = 1092
-		add_victory_points = {
-			province = 7186
-			value = 15
-		}
-		add_equipment_to_stockpile = {
-			type = convoy
-			amount = 500
+		create_dynamic_country = {
+			original_tag = CHI
+			save_event_target_as = ChinaTaiwan
+			set_cosmetic_tag = TWN
+			transfer_state = 524
+			transfer_state = 1086
+			transfer_state = 1087
+			transfer_state = 1088
+			transfer_state = 1089
+			transfer_state = 1090
+			transfer_state = 1091
+			transfer_state = 1092
+			set_capital = {
+				state = 524
+			}
+			if = {
+				limit = { 
+					CHI = {
+						has_country_flag = become_TWN
+					}
+				}
+				change_tag_from = CHI
+			}
 		}
 		ai_chance = {
 			factor = 100

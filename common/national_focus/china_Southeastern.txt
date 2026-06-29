@@ -1,0 +1,44 @@
+﻿focus_tree = {
+	id = china_southeastern_focustree
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 50
+			tag = CHI
+		}
+	}
+
+	initial_show_position = {
+		x = 0
+	}
+
+	default = no
+	reset_on_civilwar = no
+	continuous_focus_position = {
+		x = 100
+		y = 1700
+	}
+
+	focus = {
+		id = china_Southeastern
+		icon = GFX_focus_generic_improve_the_administration
+		cost = 5
+		x = 5
+		y = 0
+		
+		ai_will_do = {
+			factor = 10000
+		}
+		available = {
+			is_ai = no
+		}
+		completion_reward = { 
+			country_event = {
+				id = KimKorea_event_BacktoJapan.200
+				days = 0
+			}
+		}
+	}
+}

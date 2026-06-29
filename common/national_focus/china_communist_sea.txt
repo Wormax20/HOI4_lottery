@@ -4525,44 +4525,22 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					is_in_faction = yes
+					NOT = { has_rule = can_create_factions }
 				}
-				country_event = { id = SEA_PRC_faction_events.40 days = 2 }
+				set_rule = { can_create_factions = yes }
 			}
-			else = {
-				if = {
-					limit = {
-						NOT = { has_rule = can_create_factions }
-					}
-					set_rule = { can_create_factions = yes }
-				}
-				if = {
-					limit = {
-						NOT = {
-							any_other_country = {
-								is_literally_china_tooltip = no
-								has_faction_template = faction_template_PRC_the_peoples_front
-							}
+
+			if = {
+				limit = {
+					NOT = {
+						any_other_country = {
+							is_literally_china_tooltip = no
+							has_faction_template = faction_template_PRC_the_peoples_front
 						}
 					}
-					create_faction_from_template = faction_template_PRC_the_peoples_front
-					add_faction_initiative = 1
 				}
-
-
-				custom_effect_tooltip = generic_skip_one_line_tt
-
-				every_other_country = {
-					limit = {
-						is_literally_china_tooltip = yes
-						NOT = { tag = ROOT }
-						has_capitulated = no
-						is_faction_leader = no
-						is_subject = no
-						NOT = { has_war_with = ROOT }
-					}
-					country_event = { id = SEA_PRC_faction_events.50 days = 2 }
-				}
+				create_faction_from_template = faction_template_PRC_the_peoples_front
+				add_faction_initiative = 1
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
