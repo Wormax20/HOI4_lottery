@@ -80,30 +80,6 @@ leader_traits = {
 		}
 	}
 
-	Cht_Chen_Cheng_buff = { #陳誠
-		random = no
-		army_attack_factor = 0.10
-		army_org_factor = 0.05
-
-		sprite = 7
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	Cht_Sun_Li_jen_buff = { #孫立人
-		random = no
-		army_defence_factor = 0.10
-		training_time_factor = -0.10
-
-		sprite = 9
-
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
 	Cht_Hu_Shih_buff = { #胡適
 		random = no
 		research_speed_factor = 0.10
@@ -140,6 +116,53 @@ leader_traits = {
 		industrial_capacity_factory = 0.10
 
 		sprite = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	Cht_Chen_Cheng_buff = { #陳誠
+		random = no
+		army_attack_factor = 0.10
+		army_org_factor = 0.05
+
+		sprite = 7
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	Cht_Sun_Li_jen_buff = { #孫立人
+		random = no
+		army_defence_factor = 0.10
+		training_time_factor = -0.10
+
+		sprite = 9
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	Cht_Kao_Chih_hang_buff = { #高志航
+		random = no
+		air_ace_bonuses_factor = 0.10
+		air_range_factor = 0.10
+
+		sprite = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	Cht_Chou_Chih_jou_buff = { #周至柔
+		random = no
+		air_superiority_efficiency = 0.20
+
+		sprite = 1
 
 		ai_will_do = {
 			factor = 1
