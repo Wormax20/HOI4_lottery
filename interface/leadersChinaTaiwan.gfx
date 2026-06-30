@@ -23,4 +23,16 @@ spriteTypes = {
 		name = "GFX_portrait_Cht_Yin_Chung_jung"
 		texturefile = "gfx/leaders/Cht/portrait_Cht_Yin_Chung_jung.png"
 	}
+	spriteType = {
+		name = "GFX_portrait_Cht_Chen_Cheng"
+		texturefile = "gfx/leaders/Cht/portrait_Cht_Chen_Cheng.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_Cht_Sun_Li_jen"
+		texturefile = "gfx/leaders/Cht/portrait_Cht_Sun_Li_jen.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_Cht_Chen_Chi_liang"
+		texturefile = "gfx/leaders/Cht/portrait_Cht_Chen_Chi_liang.png"
+	}
 }

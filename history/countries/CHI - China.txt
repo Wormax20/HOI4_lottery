@@ -200,6 +200,9 @@ recruit_character = Cht_Yen_Chia_kan
 recruit_character = Cht_Hu_Shih
 recruit_character = Cht_Tai_Li
 recruit_character = Cht_Yin_Chung_jung
+recruit_character = Cht_Chen_Cheng
+recruit_character = Cht_Sun_Li_jen
+recruit_character = Cht_Chen_Chi_liang
 
 
 

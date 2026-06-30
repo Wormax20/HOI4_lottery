@@ -106,4 +106,64 @@ characters = {
 			}
 		}
 	}
+
+	Cht_Chen_Cheng = {
+		name = Cht_Chen_Cheng
+		portraits={
+			civilian={
+				small = "GFX_portrait_Cht_Chen_Cheng" #65*67
+			}
+		}
+		advisor = {
+			slot = army_chief
+			cost = 150
+			idea_token = Cht_Chen_Cheng
+			allowed = {
+				original_tag = CHI
+			}
+			traits = {
+				Cht_Chen_Cheng_buff
+			}
+		}
+	}
+
+	Cht_Sun_Li_jen = {
+		name = Cht_Sun_Li_jen
+		portraits={
+			civilian={
+				small = "GFX_portrait_Cht_Sun_Li_jen" #65*67
+			}
+		}
+		advisor = {
+			slot = high_command
+			cost = 150
+			idea_token = Cht_Sun_Li_jen
+			allowed = {
+				original_tag = CHI
+			}
+			traits = {
+				Cht_Sun_Li_jen_buff
+			}
+		}
+	}
+
+	Cht_Chen_Chi_liang = {
+		name = Cht_Chen_Chi_liang
+		portraits={
+			civilian={
+				small = "GFX_portrait_Cht_Chen_Chi_liang" #65*67
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			cost = 150
+			idea_token = Cht_Chen_Chi_liang
+			allowed = {
+				original_tag = CHI
+			}
+			traits = {
+				Cht_Chen_Chi_liang_buff
+			}
+		}
+	}
 }

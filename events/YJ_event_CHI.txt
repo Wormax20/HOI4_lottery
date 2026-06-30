@@ -338,6 +338,18 @@ country_event = {
 					target_country = PREV
 					character = Cht_Yin_Chung_jung
 				}
+				set_nationality = {
+					target_country = PREV
+					character = Cht_Chen_Cheng
+				}
+				set_nationality = {
+					target_country = PREV
+					character = Cht_Sun_Li_jen
+				}
+				set_nationality = {
+					target_country = PREV
+					character = Cht_Chen_Chi_liang
+				}
 			}
 			add_country_leader_role = {
 				character = Cht_chiang_kai_shek

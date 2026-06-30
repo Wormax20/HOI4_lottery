@@ -146,6 +146,19 @@ leader_traits = {
 		}
 	}
 
+	Cht_Chen_Chi_liang_buff = { #陳季良
+		random = no
+		naval_hit_chance = 0.05
+		navy_max_range_factor = 0.10
+		naval_supply_consumption_factor = -0.10
+
+		sprite = 3
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	Cht_Kao_Chih_hang_buff = { #高志航
 		random = no
 		air_ace_bonuses_factor = 0.10
