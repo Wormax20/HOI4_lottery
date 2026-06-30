@@ -268,11 +268,6 @@ country_event = {
 	option = {
 		name = KoKi_YJ_PRC_event.105.a
 		add_ideas = YJ_PRC_1_ideas
-		CHI = {
-			every_unit_leader = {
-				set_nationality = ROOT
-			}
-		}
 		GDC = {
 			every_unit_leader = {
 				set_nationality = ROOT

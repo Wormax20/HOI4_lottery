@@ -203,6 +203,8 @@ recruit_character = Cht_Yin_Chung_jung
 recruit_character = Cht_Chen_Cheng
 recruit_character = Cht_Sun_Li_jen
 recruit_character = Cht_Chen_Chi_liang
+recruit_character = Cht_Kao_Chih_hang
+recruit_character = Cht_Chou_Chih_jou
 
 
 

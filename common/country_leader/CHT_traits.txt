@@ -2,8 +2,8 @@ leader_traits = {
 	Cht_Generalissimo = { #委员长
 		random = no
 		political_power_factor = 0.10
-		army_core_attack_factor = 0.10
-		army_core_defence_factor = 0.10
+		command_power_gain = 1
+		max_command_power = 100
 		neutrality_drift = 0.05
 
 		ai_will_do = {
@@ -72,6 +72,8 @@ leader_traits = {
 		random = no
 		consumer_goods_factor = -0.10
 		consumer_goods_expected_value = -0.10
+		industrial_capacity_factory = 0.10
+		industrial_capacity_dockyard = 0.10
 
 		sprite = 10
 
@@ -84,6 +86,8 @@ leader_traits = {
 		random = no
 		research_speed_factor = 0.10
 		special_project_speed_factor = 0.10
+		stability_weekly = 0.002
+		war_support_weekly = 0.002
 
 		sprite = 14
 
@@ -112,8 +116,7 @@ leader_traits = {
 	Cht_Yin_Chung_jung_buff = { #尹仲容
 		random = no
 		production_speed_buildings_factor = 0.10
-		production_speed_industrial_complex_factor = 0.10
-		industrial_capacity_factory = 0.10
+		local_resources_factor = 0.10
 
 		sprite = 10
 
@@ -137,6 +140,7 @@ leader_traits = {
 	Cht_Sun_Li_jen_buff = { #孫立人
 		random = no
 		army_defence_factor = 0.10
+		supply_consumption_factor = -0.10
 		training_time_factor = -0.10
 
 		sprite = 9

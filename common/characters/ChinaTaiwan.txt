@@ -166,4 +166,44 @@ characters = {
 			}
 		}
 	}
+
+	Cht_Kao_Chih_hang = {
+		name = Cht_Kao_Chih_hang
+		portraits={
+			civilian={
+				small = "GFX_portrait_Cht_Kao_Chih_hang" #65*67
+			}
+		}
+		advisor = {
+			slot = high_command
+			cost = 150
+			idea_token = Cht_Kao_Chih_hang
+			allowed = {
+				original_tag = CHI
+			}
+			traits = {
+				Cht_Kao_Chih_hang_buff
+			}
+		}
+	}
+
+	Cht_Chou_Chih_jou = {
+		name = Cht_Chou_Chih_jou
+		portraits={
+			civilian={
+				small = "GFX_portrait_Cht_Chou_Chih_jou" #65*67
+			}
+		}
+		advisor = {
+			slot = air_chief
+			cost = 150
+			idea_token = Cht_Chou_Chih_jou
+			allowed = {
+				original_tag = CHI
+			}
+			traits = {
+				Cht_Chou_Chih_jou_buff
+			}
+		}
+	}
 }

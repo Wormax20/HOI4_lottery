@@ -35,4 +35,16 @@ spriteTypes = {
 		name = "GFX_portrait_Cht_Chen_Chi_liang"
 		texturefile = "gfx/leaders/Cht/portrait_Cht_Chen_Chi_liang.png"
 	}
+	spriteType = {
+		name = "GFX_portrait_Cht_Kao_Chih_hang"
+		texturefile = "gfx/leaders/Cht/portrait_Cht_Kao_Chih_hang.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_Cht_Kao_Chih_hang"
+		texturefile = "gfx/leaders/Cht/portrait_Cht_Kao_Chih_hang.png"
+	}
+	spriteType = {
+		name = "GFX_portrait_Cht_Chou_Chih_jou"
+		texturefile = "gfx/leaders/Cht/portrait_Cht_Chou_Chih_jou.png"
+	}
 }
