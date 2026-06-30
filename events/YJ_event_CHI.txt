@@ -294,6 +294,7 @@ country_event = {
 			transfer_state = 1090
 			transfer_state = 1091
 			transfer_state = 1092
+			load_focus_tree = china_southeastern_focustree
 			set_capital = {
 				state = 524
 			}
@@ -376,7 +377,6 @@ country_event = {
 					}
 				}
 				change_tag_from = CHI
-				
 			}
 		}
 		ai_chance = {
