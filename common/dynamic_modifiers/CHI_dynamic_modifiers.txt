@@ -1,0 +1,61 @@
+ChinaTaiwan_Army = {
+	icon = GFX_idea_generic_communist_army
+	enable = {
+		always = yes
+	}
+	army_attack_factor = ChinaTaiwan_Army_army_attack_factor
+	army_defence_factor = ChinaTaiwan_Army_army_defence_factor
+	army_org_factor = ChinaTaiwan_Army_army_org_factor
+	army_speed_factor = ChinaTaiwan_Army_army_speed_factor
+	supply_consumption_factor = ChinaTaiwan_Army_supply_consumption_factor
+}
+ChinaTaiwan_AirForce = {
+	icon = GFX_idea_generic_communist_army
+	enable = {
+		always = yes
+	}
+	air_attack_factor = ChinaTaiwan_AirForce_air_attack_factor
+	air_defence_factor = ChinaTaiwan_AirForce_air_defence_factor
+	air_ace_bonuses_factor = ChinaTaiwan_AirForce_air_ace_bonuses_factor
+	air_range_factor = ChinaTaiwan_AirForce_air_range_factor
+}
+ChinaTaiwan_Navy = {
+	icon = GFX_idea_generic_communist_army
+	enable = {
+		always = yes
+	}
+	naval_damage_factor = ChinaTaiwan_Navy_naval_damage_factor
+	naval_defense_factor = ChinaTaiwan_Navy_naval_defense_factor
+	naval_hit_chance = ChinaTaiwan_Navy_naval_hit_chance
+	naval_speed_factor = ChinaTaiwan_Navy_naval_speed_factor
+	navy_anti_air_attack_factor = ChinaTaiwan_Navy_navy_anti_air_attack_factor
+	navy_max_range_factor = ChinaTaiwan_Navy_navy_max_range_factor
+}
+ChinaTaiwan_Factory = {
+	icon = GFX_idea_FRA_factory_strikes
+	enable = {
+		always = yes
+	}
+	production_factory_max_efficiency_factor = ChinaTaiwan_Factory_production_factory_max_efficiency_factor
+	production_factory_efficiency_gain_factor = ChinaTaiwan_Factory_production_factory_efficiency_gain_factor
+	industrial_capacity_factory = ChinaTaiwan_Factory_industrial_capacity_factory
+	industrial_capacity_dockyard = ChinaTaiwan_Factory_industrial_capacity_dockyard
+}
+ChinaTaiwan_Gold = {
+	icon = GFX_idea_SPR_seize_the_gold_reserves
+	enable = {
+		always = yes
+	}
+	consumer_goods_expected_value = ChinaTaiwan_Factory_consumer_goods_expected_value
+	consumer_goods_factor = ChinaTaiwan_Factory_consumer_goods_factor
+}
+KOR_regional_development = { #STATE MODIFIER
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_construction
+
+	state_production_speed_buildings_factor = 0.10
+	local_building_slots_factor = 0.10
+    local_resources_factor = 0.10
+
+}

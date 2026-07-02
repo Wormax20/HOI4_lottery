@@ -375,6 +375,42 @@ country_event = {
 			add_ideas = CHT_Mobilization_to_Suppress_the_Rebellion
 			add_ideas = CHT_The_Party_State
 			add_ideas = CHT_Three_Principles_of_the_People
+			add_dynamic_modifier = {
+				modifier = ChinaTaiwan_Army
+			}
+			set_variable = {ChinaTaiwan_Army_army_attack_factor = -0.25}
+			set_variable = {ChinaTaiwan_Army_army_defence_factor = -0.25}
+			set_variable = {ChinaTaiwan_Army_army_org_factor = -0.25}
+			set_variable = {ChinaTaiwan_Army_army_speed_factor = -0.25}
+			set_variable = {ChinaTaiwan_Army_supply_consumption_factor = 0.25}
+			add_dynamic_modifier = {
+				modifier = ChinaTaiwan_AirForce
+			}
+			set_variable = {ChinaTaiwan_AirForce_air_attack_factor = -0.25}
+			set_variable = {ChinaTaiwan_AirForce_air_defence_factor = -0.25}
+			set_variable = {ChinaTaiwan_AirForce_air_ace_bonuses_factor = -0.25}
+			set_variable = {ChinaTaiwan_AirForce_air_range_factor = -0.25}
+			add_dynamic_modifier = {
+				modifier = ChinaTaiwan_Navy
+			}
+			set_variable = {ChinaTaiwan_Navy_naval_damage_factor = -0.25}
+			set_variable = {ChinaTaiwan_Navy_naval_defense_factor = -0.25}
+			set_variable = {ChinaTaiwan_Navy_naval_hit_chance = -0.25}
+			set_variable = {ChinaTaiwan_Navy_naval_speed_factor = -0.25}
+			set_variable = {ChinaTaiwan_Navy_navy_anti_air_attack_factor = -0.25}
+			set_variable = {ChinaTaiwan_Navy_navy_max_range_factor = -0.25}
+			add_dynamic_modifier = {
+				modifier = ChinaTaiwan_Factory
+			}
+			set_variable = {ChinaTaiwan_Factory_production_factory_max_efficiency_factor = -0.20}
+			set_variable = {ChinaTaiwan_Factory_production_factory_efficiency_gain_factor = -0.20}
+			set_variable = {ChinaTaiwan_Factory_industrial_capacity_factory = -0.20}
+			set_variable = {ChinaTaiwan_Factory_industrial_capacity_dockyard = -0.20}
+			add_dynamic_modifier = {
+				modifier = ChinaTaiwan_Gold
+			}
+			set_variable = {ChinaTaiwan_Factory_consumer_goods_expected_value = -0.15}
+			set_variable = {ChinaTaiwan_Factory_consumer_goods_factor = -0.30}
 			create_equipment_variant = {
 				name = "民国级重巡洋舰"
 				type = ship_hull_cruiser_2
