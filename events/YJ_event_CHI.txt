@@ -370,6 +370,11 @@ country_event = {
 				}
 				promote_leader = yes 
 			}
+			add_ideas = CHT_The_Mainlands_Failure
+			add_ideas = CHT_Finance
+			add_ideas = CHT_Mobilization_to_Suppress_the_Rebellion
+			add_ideas = CHT_The_Party_State
+			add_ideas = CHT_Three_Principles_of_the_People
 			create_equipment_variant = {
 				name = "民国级重巡洋舰"
 				type = ship_hull_cruiser_2

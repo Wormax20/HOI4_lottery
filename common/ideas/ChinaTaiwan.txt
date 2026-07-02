@@ -1,7 +1,7 @@
 ideas = {
 	country = { #國家精神
 		CHT_The_Mainlands_Failure = { #在大陆的失败
-			#picture = The_Kim_Dynasty
+			#picture = 
 			allowed = {
 				always = yes
 			}
@@ -10,14 +10,14 @@ ideas = {
 			}
 			modifier = {
 				political_power_gain = -0.10
-				weekly_manpower = -500
+				weekly_manpower = -300
 				stability_factor = -0.10
 				war_support_factor = -0.10
 			}
 		}
 
 		CHT_Finance = { #金圆券
-			#picture = KimKorea_focus_Ni_One_idea
+			#picture = CHT_idea_ger_mefo_bills_payment
 			allowed = {
 				always = yes
 			}
@@ -25,6 +25,7 @@ ideas = {
 				always = yes
 			}
 			modifier = {
+				political_power_gain = 0.05
 				consumer_goods_factor = 0.10
 				consumer_goods_expected_value = 0.05
 				industrial_capacity_factory = -0.10
@@ -33,7 +34,7 @@ ideas = {
 		}
 
 		CHT_Mobilization_to_Suppress_the_Rebellion = { #动员戡乱
-			#picture = KimKorea_focus_Ni_One_idea
+			#picture = CHT_idea_CHI_corruption_armed_forces
 			allowed = {
 				always = yes
 			}
@@ -46,13 +47,11 @@ ideas = {
 				production_speed_industrial_complex_factor = -0.10
 				production_speed_infrastructure_factor = -0.10
 				industrial_capacity_factory = -0.10
-				stability_factor = -0.10
-				war_support_factor = -0.10
 			}
 		}
 
-		CHT_Mobilization_to_Suppress_the_Rebellion = { #党国
-			#picture = KimKorea_focus_Ni_One_idea
+		CHT_The_Party_State = { #党国
+			#picture = GFX_CHT_idea_CHI_blue_shirt_society
 			allowed = {
 				always = yes
 			}
@@ -69,6 +68,22 @@ ideas = {
 			}
 		}
 
+		CHT_Three_Principles_of_the_People = { #三民主义
+			#picture = CHI_three_principles_of_the_people
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_factor = 0.10
+				monthly_population = 0.10
+				stability_weekly = 0.002
+				war_support_weekly = 0.002
+			}
+		}
+
 		CHT_A_Long_Road_Ahead = { #任重道远
 			#picture = KimKorea_focus_SAN_idea
 			allowed = {
@@ -79,327 +94,9 @@ ideas = {
 			}
 			modifier = {
 				consumer_goods_factor = -0.10
-				production_factory_max_efficiency_factor = 0.10
-				industrial_capacity_factory = 0.10
-				industrial_capacity_dockyard = 0.10
-			}
-		}
-
-		KimKorea_focus_SAN_two_idea = {
-			picture = KimKorea_focus_SAN_two_idea
-			allowed = {
-				always = yes
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			modifier = {
-				production_speed_supply_node_factor = 1
-				equipment_conversion_speed = 0.25
-				global_building_slots = 5
-			}
-		}
-
-		KimKorea_focus_Army_Plan = {
-			picture = generic_wall_line
-			allowed = {
-				always = yes
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			modifier = {
-				max_planning = 0.10
-				max_planning_factor = 0.10
-				terrain_penalty_reduction = 0.10
-				land_reinforce_rate = 0.05
-			}
-		}
-		
-		KimKorea_focus_Finish_idea = {
-			picture = KimKorea_focus_Finish_idea
-			allowed = {
-				always = yes
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			modifier = {
-				political_power_factor = 0.25
-				weekly_manpower = 5000
-				local_resources_factor = 0.20
-				min_export = -0.20
-				consumer_goods_factor = -0.10
 				consumer_goods_expected_value = -0.05
-				global_building_slots = 5
-				production_speed_buildings_factor = 0.10
-				production_speed_arms_factory_factor = 0.10
-				production_speed_industrial_complex_factor = 0.10
-				production_speed_dockyard_factor = 0.10
-				industrial_capacity_factory = 0.10
-				industrial_capacity_dockyard = 0.10
 				production_factory_max_efficiency_factor = 0.10
-				production_factory_efficiency_gain_factor = 0.10
-				command_power_gain_mult = 0.50
-				max_command_power_mult = 0.50
-			}
-			equipment_bonus = {
-				convoy = {
-					build_cost_ic = -0.25
-					instant = yes
-				}
-			}
-		}
-		KimKorea_focus_Tank_Choose_idea = {
-			picture = KimKorea_focus_Tank_Choose_idea 
-			allowed = {
-				always = yes
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			modifier = {
-				army_armor_attack_factor = 0.10
-				army_armor_defence_factor = 0.10
-				mechanized_attack_factor = 0.10
-				mechanized_defence_factor = 0.10
-				supply_consumption_factor = 0.15
-			}
-			equipment_bonus = {
-				armor = {
-					build_cost_ic = -0.10
-					soft_attack = 0.05
-					hard_attack = 0.05
-					maximum_speed = 0.05
-					instant = yes
-				}
-				mechanized_equipment = {
-					build_cost_ic = -0.10
-					soft_attack = 0.05
-					hard_attack = 0.05
-					maximum_speed = 0.05
-					instant = yes
-				}
-				amphibious_mechanized_equipment = {
-					build_cost_ic = -0.10
-					soft_attack = 0.05
-					hard_attack = 0.05
-					maximum_speed = 0.05
-					instant = yes
-				}
-			}
-		}
-		KimKorea_focus_Infantry_Choose_idea = {
-			picture = KimKorea_focus_Infantry_Choose_idea
-			allowed = {
-				always = yes
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			modifier = {
-				army_infantry_attack_factor = 0.10
-				army_infantry_defence_factor = 0.10
-				modifier_army_sub_unit_infantry_attack_factor = 0.10
-				modifier_army_sub_unit_infantry_defence_factor = 0.10
-				supply_consumption_factor = -0.20
-				land_reinforce_rate = 0.05
-			}
-			equipment_bonus = {
-				infantry_equipment = {
-					build_cost_ic = -0.10
-					soft_attack = 0.10
-					hard_attack = 0.10
-					defense = 0.10
-					instant = yes
-				}
-				support_equipment = {
-					build_cost_ic = -0.10
-					instant = yes
-				}
-				motorized_equipment = {
-					build_cost_ic = -0.10
-					instant = yes
-				}
-				artillery_equipment = {
-					build_cost_ic = -0.10
-					instant = yes
-				}
-				anti_air_equipment = {
-					build_cost_ic = -0.10
-					instant = yes
-				}
-				anti_tank_equipment = {
-					build_cost_ic = -0.10
-					instant = yes
-				}
-			}
-		}
-		KimKorea_Army_AirForce_Navy_Finishi_idea = {
-			picture = FRA_army_of_aggression_focus
-			allowed = {
-				always = yes
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			equipment_bonus = {
-				armor = {
-					build_cost_ic = -0.10
-					instant = yes
-				}
-				mechanized_equipment = {
-					build_cost_ic = -0.10
-					instant = yes
-				}
-				amphibious_mechanized_equipment = {
-					build_cost_ic = -0.10
-					instant = yes
-				}
-				fighter = {
-					build_cost_ic = -0.10
-					instant = yes
-				}
-				cas = {
-					build_cost_ic = -0.10
-					instant = yes
-				}
-				ship_hull_light = {
-					build_cost_ic = -0.10
-					instant = yes
-				}
-				ship_hull_cruiser = {
-					build_cost_ic = -0.10
-					instant = yes
-				}
-			}
-		}
-
-		KimKorea_Decisions_1 = {
-			picture = GFX_idea_KimKorea_debuff_money_idea
-
-			allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			equipment_bonus = {
-				infantry_equipment = {
-					build_cost_ic = -0.05
-					soft_attack = 0.05
-					hard_attack = 0.05
-					instant = yes
-				}
-				support_equipment = {
-					build_cost_ic = -0.05
-					soft_attack = 0.05
-					hard_attack = 0.05
-					instant = yes
-				}
-				armor = {
-					build_cost_ic = -0.05
-					soft_attack = 0.05
-					hard_attack = 0.05
-					instant = yes
-				}
-				fighter = {
-					build_cost_ic = -0.05
-					air_attack = 0.05
-					air_defence = 0.05
-					instant = yes
-				}
-			}
-		}
-		KimKorea_focus_Prod4 = {
-			picture = KimKorea_focus_Prod4
-			allowed = {
-				always = yes
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			modifier = {
-				political_power_factor = -0.10
-				conscription_factor = -0.20
-				stability_factor = -0.20
-				war_support_factor = -0.20
-				production_factory_efficiency_gain_factor = 0.20
-				production_factory_start_efficiency_factor = 0.10
-				line_change_production_efficiency_factor = 0.10
-				production_speed_industrial_complex_factor = 0.10
-			}
-		}
-		KimKorea_focus_Prod5 = {
-			picture = KimKorea_focus_Prod5
-			allowed = {
-				always = yes
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			modifier = {
-				political_power_factor = 0.10
 				industrial_capacity_factory = 0.10
-				production_factory_max_efficiency_factor = 0.10
-				production_factory_efficiency_gain_factor = -0.20
-			}
-		}
-		KimKorea_focus_Diplomacy_In = {
-			picture = GFX_idea_chi_army_corruption3
-			allowed = {
-				always = yes
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			modifier = {
-				army_core_attack_factor = 0.20
-				army_core_defence_factor = 0.20
-				army_non_core_attack_factor = -0.30
-				army_non_core_defence_factor = -0.30
-				land_night_attack = 0.10
-				convoy_escort_efficiency = 0.10
-				air_superiority_efficiency = 0.10
-				air_power_projection_factor = 0.10
-				air_ace_generation_chance_factor = 0.20
-				resource_trade_cost_bonus_per_factory = 2
-			}
-		}
-		KimKorea_focus_Diplomacy_Out = {
-			picture = SPR_crush_the_revolution
-			allowed = {
-				always = yes
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			targeted_modifier = {
-				tag = PRC
-				attack_bonus_against = 0.1
-			    defense_bonus_against = 0.1
-				breakthrough_bonus_against = 0.1
-			}
-			targeted_modifier = {
-				tag = CHI
-				attack_bonus_against = 0.1
-			    defense_bonus_against = 0.1
-				breakthrough_bonus_against = 0.1
-			}
-			targeted_modifier = {
-				tag = SOV
-				attack_bonus_against = 0.1
-			    defense_bonus_against = 0.1
-				breakthrough_bonus_against = 0.1
-			}
-			targeted_modifier = {
-				tag = JAP
-				attack_bonus_against = 0.1
-			    defense_bonus_against = 0.1
-				breakthrough_bonus_against = 0.1
 			}
 		}
 	}
