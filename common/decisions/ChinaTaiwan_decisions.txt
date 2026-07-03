@@ -1,0 +1,21 @@
+ChinaTaiwan_discipline = { 
+	ChinaTaiwan_Economic_Collapse = { #經濟崩潰
+		activation = {
+			tag = CHI
+			owner = { controls_state = 524 }
+		}
+		available = {
+			always = no
+		}
+		is_good = no
+		days_mission_timeout = 120
+
+		timeout_effect = {
+			add_political_power = -500
+			add_timed_idea = {
+				idea = CHT_Economic_Collapse
+				years = 1
+			}
+		}
+	}
+}

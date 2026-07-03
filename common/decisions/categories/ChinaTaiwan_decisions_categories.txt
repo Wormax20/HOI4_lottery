@@ -1,0 +1,10 @@
+ChinaTaiwan_discipline = {
+	icon = 1
+	allowed = {
+		always = yes
+	}
+	visible = {
+		always = yes
+	}
+	priority = 100
+}
