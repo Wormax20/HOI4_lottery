@@ -1,7 +1,7 @@
 ideas = {
 	country = { #國家精神
 		CHT_The_Mainlands_Failure = { #在大陆的失败
-			#picture = 
+			picture = CHI_cradle_of_civilization
 			allowed = {
 				always = yes
 			}
@@ -17,7 +17,7 @@ ideas = {
 		}
 
 		CHT_Finance = { #金圆券
-			#picture = CHT_idea_ger_mefo_bills_payment
+			picture = ger_mefo_bills_payment
 			allowed = {
 				always = yes
 			}
@@ -34,7 +34,7 @@ ideas = {
 		}
 
 		CHT_Mobilization_to_Suppress_the_Rebellion = { #动员戡乱
-			#picture = CHT_idea_CHI_corruption_armed_forces
+			picture = ETH_peacekeeping_forces
 			allowed = {
 				always = yes
 			}
@@ -51,7 +51,7 @@ ideas = {
 		}
 
 		CHT_The_Party_State = { #党国
-			#picture = GFX_CHT_idea_CHI_blue_shirt_society
+			picture = CHI_blue_shirt_society
 			allowed = {
 				always = yes
 			}
@@ -60,7 +60,6 @@ ideas = {
 			}
 			modifier = {
 				political_power_factor = 0.10
-				production_factory_efficiency_gain_factor = -0.10
 				democratic_drift = -0.05
 				fascism_drift = -0.05
 				communism_drift = -0.05
@@ -69,7 +68,7 @@ ideas = {
 		}
 
 		CHT_Three_Principles_of_the_People = { #三民主义
-			#picture = CHI_three_principles_of_the_people
+			picture = CHI_three_principles_of_the_people
 			allowed = {
 				always = yes
 			}
