@@ -5,6 +5,7 @@ ChinaTaiwan_discipline = {
 	}
 	visible = {
 		original_tag = CHI
+		controls_state = 524
 	}
 	priority = 100
 }

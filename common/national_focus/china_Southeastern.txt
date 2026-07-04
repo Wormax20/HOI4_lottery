@@ -24,7 +24,7 @@
 	focus = {
 		id = china_Southeastern #東南苦行山
 		icon = GFX_focus_CHI_southern_naval_logistics
-		cost = 5
+		cost = 10
 		x = 12
 		y = 0
 		
@@ -72,7 +72,7 @@
 	focus = {
 		id = CHT_Stabilize_the_Economy #穩定經濟
 		icon = GFX_focus_RAJ_special_economic_zones
-		cost = 5
+		cost = 10
 		x = 0
 		y = 2
 		available = {
@@ -93,9 +93,33 @@
 				ChinaTaiwan_Factory_consumer_goods_expected = 0.10
 				tooltip = consumer_goods_factor_tt
 			}
-			remove_mission = ChinaTaiwan_Economic_Collapse
-			activate_mission = ChinaTaiwan_Economic_Collapse
 			add_stability = 0.10
+			hidden_effect = {
+				remove_mission = ChinaTaiwan_Economic_Collapse
+				activate_mission = ChinaTaiwan_Economic_Collapse
+			}
+		}
+	}
+	focus = {
+		id = CHT_Closed_Policy #关闭政策
+		icon = GFX_focus_PRC_naval_capstone
+		cost = 10
+		x = 0
+		y = 3
+		available = {
+			is_ai = no
+		}
+		relative_position_id = china_Southeastern
+		prerequisite = { 
+			focus = CHT_Stabilize_the_Economy
+		}
+		completion_reward = { 
+			PRC = {
+				add_timed_idea = {
+					idea = CHT_Closed_Policy
+					years = 5
+				}
+			}
 		}
 	}
 }

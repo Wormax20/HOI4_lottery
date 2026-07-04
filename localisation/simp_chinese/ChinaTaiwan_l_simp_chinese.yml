@@ -7,15 +7,21 @@
  STATE_1091: "中坜"
  STATE_1092: "嘉义"
 
+
+
  ChinaTaiwan_discipline: "东南苦行山决议组"
  ChinaTaiwan_Economic_Collapse: "经济崩溃"
  ChinaTaiwan_Economic_Collapse_Reset_tt: "§R經濟崩潰§! §Y任務倒數重新開始§!。"
 
+
+ 
  Cht_chiang_kai_shek: "蒋介石"
  Cht_Generalissimo: "委员长"
  Cht_Anti_Communism: "坚定反共"
  Cht_Headmaster: "校长"
  Cht_Chairman: "主席"
+
+
 
  Cht_Chiang_Ching_kuo: "蒋经国"
  Cht_Chiang_Ching_kuo_buff: "留学归来"
@@ -38,14 +44,21 @@
  Cht_Chou_Chih_jou: "周至柔"
  Cht_Chou_Chih_jou_buff: "空军官校校长"
 
+
+
  idea_Cht_thai_rice_company: "台湾农会"
 
+
+
+ china_southeastern_focustree: "东南苦行山"
  CHT_The_Mainlands_Failure: "在大陆的失败"
  CHT_Finance: "金圆券"
  CHT_Mobilization_to_Suppress_the_Rebellion: "动员戡乱"
  CHT_The_Party_State: "党国"
  CHT_Three_Principles_of_the_People: "三民主义"
  CHT_Economic_Collapse: "经济崩溃"
+
+
 
  ChinaTaiwan_Army: "中国陆军"
  ChinaTaiwan_AirForce: "中国空军"
@@ -54,7 +67,7 @@
  ChinaTaiwan_Gold: "从大陆带来的黄金"
 
 
+ ChinaTaiwan_event.100.t: "残存海军舰队抵台"
+ ChinaTaiwan_event.100.d: "内战中受损的舰队抵达台湾岛，这将会成为我们的助力。"
+ ChinaTaiwan_event.100.a: "好"
 
-
-
- china_southeastern_focustree: "东南苦行山"

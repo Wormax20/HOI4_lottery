@@ -1,0 +1,23 @@
+on_actions = {
+    on_daily = {
+        effect = {
+            every_country = {
+                limit = {
+                    tag = CHI
+					controls_state = 524
+					date > 1936.1.14
+					date < 1936.1.15
+
+					NOT ={
+						has_country_flag = The_Fleet_Arrives_in_Taiwan
+					}
+				}
+				set_country_flag = The_Fleet_Arrives_in_Taiwan
+
+				country_event = {
+					id = ChinaTaiwan_event.100
+				}
+			}
+        }
+    }
+}
