@@ -1976,6 +1976,10 @@ focus_tree = {
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 			add_ideas = ENG_expand_the_repair_yards
+			add_offsite_building = {
+            	type = dockyard
+            	level = 5
+        	}
 		}
 	}
 
@@ -9227,8 +9231,8 @@ focus_tree = {
 			}
 		}
 
-		x = 16
-		y = 0
+		x = -15
+		y = 12
 		relative_position_id = ENG_revisit_colonial_policy
 
 		offset = {
