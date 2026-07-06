@@ -1,6 +1,9 @@
 on_actions = {
 	on_monthly_ENG = {
 		effect = {
+			add_to_variable = {
+				YJ_ENG_ideas_DOCKYARD_DONATIONS = 1
+			}
 			IF = {
 				limit = {
 					has_idea = YJ_ENG_1_ideas

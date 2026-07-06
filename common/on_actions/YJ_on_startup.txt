@@ -155,6 +155,9 @@ on_actions = {
 					type = dockyard
 					level = 10
 				}
+				add_dynamic_modifier = {
+					modifier = YJ_ENG_ideas
+				}
 			}
 			every_state = {
 				add_dynamic_modifier = {
