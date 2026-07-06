@@ -122,4 +122,21 @@
 			}
 		}
 	}
+	focus = {
+		id = CHT_Seize_Japanese_Assets_in_Taiwan #劫掠在台日资
+		icon = GFX_focus_PHI_encourage_japanese_investment
+		cost = 5
+		x = -2
+		y = 3
+		available = {
+			is_ai = no
+		}
+		relative_position_id = china_Southeastern
+		prerequisite = { 
+			focus = CHT_Stabilize_the_Economy
+		}
+		completion_reward = { 
+			
+		}
+	}
 }
