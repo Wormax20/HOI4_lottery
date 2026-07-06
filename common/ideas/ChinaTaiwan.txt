@@ -105,6 +105,7 @@ ideas = {
 		}
 
 		CHT_Closed_Policy = { #贸易封锁
+			picture = generic_convoys 
 			allowed = {
 				always = yes
 			}
@@ -113,7 +114,6 @@ ideas = {
 			}
 			modifier = {
 				resource_trade_cost_bonus_per_factory = -3
-				min_export = -0.25
 				trade_opinion_factor = -0.50
 				trade_cost_for_target_factor = 0.50
 			}

@@ -38,13 +38,13 @@ ideas = {
 
 			modifier = {
 				political_power_factor = 0.15
-				consumer_goods_factor = -0.10
-				stability_weekly = 0.005
-				war_support_weekly = 0.005
+				consumer_goods_factor = -0.15
+				stability_weekly = 0.002
+				war_support_weekly = 0.002
 				global_building_slots = 8
-				production_speed_buildings_factor = 0.1
-				local_resources_factor = 0.2
 				conscription = 0.05
+				army_core_attack_factor = 0.10
+				army_core_defence_factor = 0.10
 			}
 		}
 		YJ_SIA_2_ideas = {
@@ -62,15 +62,12 @@ ideas = {
 			picture = AFG_placated_graduates
 
 			modifier = {
-				political_power_factor = 0.10
 				political_power_gain = 0.10
 				political_advisor_cost_factor = -1
-				global_building_slots = 1
+				global_building_slots = 2
 				terrain_penalty_reduction = 0.10
 				max_planning = 0.10
 				planning_speed = 0.10
-				army_core_attack_factor = 0.10
-				army_core_defence_factor = 0.10
 				command_power_gain = 1
 				max_command_power = 100
 				democratic_drift = -1
@@ -93,17 +90,15 @@ ideas = {
 			picture = GER_wirtschaftswunder
 
 			modifier = {
-				global_building_slots = 3
+				global_building_slots = 2
+				resource_trade_cost_bonus_per_factory = 2
 				consumer_goods_factor = -0.10
 				consumer_goods_expected_value = -0.05
 				production_factory_max_efficiency_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.1
-				industrial_capacity_factory = 0.1
 				production_speed_industrial_complex_factor = 0.1
 				production_speed_arms_factory_factor = 0.1
 				production_speed_buildings_factor = 0.1
-				local_resources_factor = 0.2
-				min_export = -0.1
 			}
 		}
 		YJ_SIA_4_ideas = {
@@ -121,8 +116,6 @@ ideas = {
 			picture = generic_artillery_regiments
 
 			modifier = {
-				army_bonus_air_superiority_factor = 0.20
-				breakthrough_factor = 0.10
 				army_fuel_consumption_factor = -0.10
 			}
 			equipment_bonus = {

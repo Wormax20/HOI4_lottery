@@ -1012,4 +1012,24 @@ KoKi_YJ_decisions_categories = {
 			base = 0
 		}
 	}
+	KoKi_YJ_PRC_decisions_01 = {
+		icon = GFX_decision_generic_form_nation
+		allowed = {
+			original_tag = PRC
+		}
+		available = {
+			has_navy_size = {
+				size > 199
+			}
+		}
+		visible = {
+			has_idea = CHT_Closed_Policy
+		}
+		complete_effect = {
+			remove_ideas = CHT_Closed_Policy
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
 }

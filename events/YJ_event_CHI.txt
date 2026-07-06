@@ -310,10 +310,10 @@ country_event = {
 				elections_allowed = no
 			}
 			set_popularities = {
-				democratic = 10
-				fascism = 10
-				communism = 5
-				neutrality = 75
+				democratic = 20
+				fascism = 8
+				communism = 2
+				neutrality = 70
 			}
 			CHI = {
 				set_nationality = {
