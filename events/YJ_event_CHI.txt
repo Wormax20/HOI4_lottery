@@ -281,6 +281,7 @@ country_event = {
 	option = {
 		name = KoKi_YJ_CHI_event.105.a
 		set_country_flag = become_TWN
+		set_country_flag = CHI_YJ_event_105_done
 
 		create_dynamic_country = {
 			original_tag = CHI

@@ -1589,10 +1589,11 @@ CHI_YJ_scripted_effects = {
 
 CHI_YJ_1_scripted_effects = {
 	
-	random_list = {
-		100 = {
-			country_event = KoKi_YJ_CHI_event.105
+	if = {
+		limit = {
+			NOT = { has_country_flag = CHI_YJ_event_105_done }
 		}
+		country_event = KoKi_YJ_CHI_event.105
 	}
 }
 
