@@ -85,7 +85,7 @@ ideas = {
 		}
 
 		CHT_Economic_Collapse = { #經濟崩潰
-			#picture = CHI_three_principles_of_the_people
+			picture = generic_economic_crisis
 			allowed = {
 				always = yes
 			}
