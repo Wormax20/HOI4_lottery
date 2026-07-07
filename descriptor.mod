@@ -4,5 +4,5 @@ tags={
 	"Gameplay"
 }
 name="狗窩抽獎修復+平衡"
-supported_version="1.19.0.1"
+supported_version="1.19.2.0"
 remote_file_id="3715247457"
