@@ -1,0 +1,62 @@
+﻿units = {
+	division = {
+		name = "1 DaLuJun"
+		location = 7186
+		division_template = "DaLuJun"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		name = "2 DaLuJun"
+		location = 7214
+		division_template = "DaLuJun"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		name = "3 DaLuJun"
+		location = 12068
+		division_template = "DaLuJun"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		name = "4 DaLuJun"
+		location = 12068
+		division_template = "DaLuJun"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		name = "5 DaLuJun"
+		location = 11959
+		division_template = "DaLuJun"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	division = {
+		name = "6 DaLuJun"
+		location = 1091
+		division_template = "DaLuJun"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+}
+##### STARTING PRODUCTION #####
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "CHI"
+		}
+		requested_factories = 2
+		progress = 0.33
+		efficiency = 100
+	}
+}

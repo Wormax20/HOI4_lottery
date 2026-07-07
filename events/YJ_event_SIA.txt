@@ -220,7 +220,7 @@ country_event = {
 	option = {
 		add_offsite_building = {
 			type = industrial_complex
-			level = 10
+			level = 15
 		}
 		complete_national_focus = SIA_the_bank_of_siam
 		complete_national_focus = SIA_thai_rice_company

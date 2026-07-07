@@ -18,6 +18,23 @@ on_actions = {
 					id = ChinaTaiwan_event.100
 				}
 			}
+			every_country = {
+                limit = {
+                    tag = CHI
+					controls_state = 524
+					date > 1936.1.24
+					date < 1936.1.25
+
+					NOT ={
+						has_country_flag = Retreat_the_Army_to_Taiwan
+					}
+				}
+				set_country_flag = Retreat_the_Army_to_Taiwan
+
+				country_event = {
+					id = ChinaTaiwan_event.101
+				}
+			}
         }
     }
 }

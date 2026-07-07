@@ -72,3 +72,7 @@
  ChinaTaiwan_event.100.d: "内战中受损的舰队抵达台湾岛，这将会成为我们的助力。"
  ChinaTaiwan_event.100.a: "好"
 
+ ChinaTaiwan_event.101.t: "陆军部队撤退来台"
+ ChinaTaiwan_event.101.d: "我们在内战中剩余的有生力量已经透过运输船转移到台湾。"
+ ChinaTaiwan_event.101.a: "好"
+

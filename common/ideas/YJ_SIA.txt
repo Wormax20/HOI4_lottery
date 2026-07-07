@@ -91,7 +91,7 @@ ideas = {
 			picture = GER_wirtschaftswunder
 
 			modifier = {
-				global_building_slots = 2
+				global_building_slots = 4
 				resource_trade_cost_bonus_per_factory = 2
 				consumer_goods_factor = -0.10
 				consumer_goods_expected_value = -0.05

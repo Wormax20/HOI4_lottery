@@ -1,5 +1,5 @@
 ChinaTaiwan_Army = {
-	icon = GFX_idea_generic_communist_army
+	icon = GFX_idea_chi_army_corruption3
 	enable = {
 		always = yes
 	}
@@ -10,7 +10,7 @@ ChinaTaiwan_Army = {
 	supply_consumption_factor = ChinaTaiwan_Army_supply_consumption_factor
 }
 ChinaTaiwan_AirForce = {
-	icon = GFX_idea_generic_communist_army
+	icon = GFX_idea_CHI_air_force
 	enable = {
 		always = yes
 	}
@@ -20,7 +20,7 @@ ChinaTaiwan_AirForce = {
 	air_range_factor = ChinaTaiwan_AirForce_air_range_factor
 }
 ChinaTaiwan_Navy = {
-	icon = GFX_idea_generic_communist_army
+	icon = GFX_idea_generic_sea_focused_navy
 	enable = {
 		always = yes
 	}

@@ -91,3 +91,35 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = ChinaTaiwan_event.101
+	title = ChinaTaiwan_event.101.t
+	desc = ChinaTaiwan_event.101.d
+
+	is_triggered_only = yes
+		immediate = {
+			division_template = {
+				name = "DaLuJun"
+				division_names_group = CHI_ARM_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+					infantry = { x = 3 y = 0 }
+					infantry = { x = 3 y = 1 }
+					infantry = { x = 3 y = 2 }
+				}
+			priority = 1
+			}
+		}	
+	option = {
+		name = ChinaTaiwan_event.101.a
+		load_oob = "CHT_1936"
+	}
+}

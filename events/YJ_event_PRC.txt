@@ -433,7 +433,6 @@ country_event = {
 		transfer_state = 598
 		transfer_state = 1035
 		transfer_state = 1034
-		transfer_state = 613
 		transfer_state = 743
 		434 = { add_core_of = root }
 		TIB = {
