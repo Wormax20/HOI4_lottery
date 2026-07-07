@@ -60,12 +60,16 @@
  CHT_Closed_Policy: "封闭大陆政策"
 
 
+ 
+ CHT_focus_Closed_Policy: "封闭大陆政策"
+
+
 
  ChinaTaiwan_Army: "中国陆军"
  ChinaTaiwan_AirForce: "中国空军"
  ChinaTaiwan_Navy: "中国海军"
  ChinaTaiwan_Factory: "国家经济"
- ChinaTaiwan_Gold: "从大陆带来的黄金"
+ ChinaTaiwan_Gold: "黄金储备"
 
 
  ChinaTaiwan_event.100.t: "残存海军舰队抵台"

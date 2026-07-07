@@ -1,5 +1,5 @@
 ﻿focus_tree = {
-	id = china_southeastern_focustree
+	id = CHT_focus_china_Southeastern_focustree
 	
 	country = {
 		factor = 0
@@ -22,7 +22,7 @@
 	}
 
 	focus = {
-		id = china_Southeastern #東南苦行山
+		id = CHT_focus_china_Southeastern #東南苦行山
 		icon = GFX_focus_CHI_southern_naval_logistics
 		cost = 10
 		x = 12
@@ -52,7 +52,7 @@
 		}
 	}
 	focus = {
-		id = CHT_Deliver_a_Speech #發表講話
+		id = CHT_focus_Deliver_a_Speech #發表講話
 		icon = GFX_focus_PER_establish_opec
 		cost = 5
 		x = 0
@@ -60,9 +60,9 @@
 		available = {
 			is_ai = no
 		}
-		relative_position_id = china_Southeastern
+		relative_position_id = CHT_focus_china_Southeastern
 		prerequisite = { 
-			focus = china_Southeastern
+			focus = CHT_focus_china_Southeastern
 		}
 		completion_reward = { 
 			add_stability = 0.10
@@ -70,7 +70,7 @@
 		}
 	}
 	focus = {
-		id = CHT_Stabilize_the_Economy #穩定經濟
+		id = CHT_focus_Stabilize_the_Economy #穩定經濟
 		icon = GFX_focus_RAJ_special_economic_zones
 		cost = 10
 		x = 0
@@ -78,9 +78,9 @@
 		available = {
 			is_ai = no
 		}
-		relative_position_id = china_Southeastern
+		relative_position_id = CHT_focus_china_Southeastern
 		prerequisite = { 
-			focus = CHT_Deliver_a_Speech
+			focus = CHT_focus_Deliver_a_Speech
 		}
 		completion_reward = { 
 			custom_effect_tooltip = ChinaTaiwan_Gold_tt
@@ -101,7 +101,7 @@
 		}
 	}
 	focus = {
-		id = CHT_Closed_Policy #关闭政策
+		id = CHT_focus_Closed_Policy #关闭政策
 		icon = GFX_focus_PRC_naval_capstone
 		cost = 10
 		x = 0
@@ -109,9 +109,9 @@
 		available = {
 			is_ai = no
 		}
-		relative_position_id = china_Southeastern
+		relative_position_id = CHT_focus_china_Southeastern
 		prerequisite = { 
-			focus = CHT_Stabilize_the_Economy
+			focus = CHT_focus_Stabilize_the_Economy
 		}
 		completion_reward = { 
 			PRC = {
@@ -123,7 +123,7 @@
 		}
 	}
 	focus = {
-		id = CHT_Seize_Japanese_Assets_in_Taiwan #劫掠在台日资
+		id = CHT_focus_Seize_Japanese_Assets_in_Taiwan #劫掠在台日资
 		icon = GFX_focus_PHI_encourage_japanese_investment
 		cost = 5
 		x = -2
@@ -131,12 +131,33 @@
 		available = {
 			is_ai = no
 		}
-		relative_position_id = china_Southeastern
+		relative_position_id = CHT_focus_china_Southeastern
 		prerequisite = { 
-			focus = CHT_Stabilize_the_Economy
+			focus = CHT_focus_Stabilize_the_Economy
 		}
 		completion_reward = { 
-			
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = CHT_focus_A_Group_of_Comrades_from_the_Central_Plains #来自中原一群伙伴
+		icon = GFX_focus_CHI_enforce_virtues
+		cost = 10
+		x = 2
+		y = 3
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Stabilize_the_Economy
+		}
+		completion_reward = { 
+			add_manpower = 1200000
+			add_timed_idea = {
+				idea = CHT_A_Group_of_Comrades_from_the_Central_Plains
+				years = 1
+			}
 		}
 	}
 }

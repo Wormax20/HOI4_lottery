@@ -120,6 +120,19 @@ ideas = {
 			}
 		}
 
+		CHT_A_Group_of_Comrades_from_the_Central_Plains = { #来自中原一群伙伴
+			picture = generic_convoys 
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				weekly_manpower = 1000
+			}
+		}
+
 		CHT_A_Long_Road_Ahead = { #任重道远
 			#picture = KimKorea_focus_SAN_idea
 			allowed = {
