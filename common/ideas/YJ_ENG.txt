@@ -34,6 +34,7 @@ ideas = {
 			research_bonus = {
 				electronics = 0.2
 				air_equipment = 0.2
+				naval_equipment = 0.2
 			}
 		}
 		YJ_ENG_2_ideas = {
