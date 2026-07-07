@@ -123,3 +123,19 @@ country_event = {
 		load_oob = "CHT_1936"
 	}
 }
+country_event = {
+	id = ChinaTaiwan_event.102
+	title = ChinaTaiwan_event.102.t
+	desc = ChinaTaiwan_event.102.d
+
+	is_triggered_only = yes
+		immediate = {
+		}	
+	option = {
+		name = ChinaTaiwan_event.102.a
+		add_war_support = -0.10
+		PRC = {
+			transfer_state = 613
+		}
+	}
+}

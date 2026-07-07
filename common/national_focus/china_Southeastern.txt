@@ -136,7 +136,7 @@
 			focus = CHT_focus_Stabilize_the_Economy
 		}
 		completion_reward = { 
-			add_political_power = 100
+			add_political_power = 150
 		}
 	}
 	focus = {

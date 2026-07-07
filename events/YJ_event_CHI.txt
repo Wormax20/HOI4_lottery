@@ -274,7 +274,7 @@ country_event = {
 	title = KoKi_YJ_CHI_event.105.title
 	desc = KoKi_YJ_CHI_event.105.desc
 
-	picture = GFX_report_event_china_ledo_road
+	picture = GFX_report_event_Retreat_to_Taiwan
 
 	is_triggered_only = yes
 
