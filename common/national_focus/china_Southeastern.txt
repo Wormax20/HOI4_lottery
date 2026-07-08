@@ -25,7 +25,7 @@
 		id = CHT_focus_china_Southeastern #東南苦行山
 		icon = GFX_focus_CHI_southern_naval_logistics
 		cost = 10
-		x = 12
+		x = 20
 		y = 0
 		
 		available = {
@@ -134,7 +134,7 @@
 		}
 		relative_position_id = CHT_focus_china_Southeastern
 		prerequisite = { 
-			focus = CHT_focus_Stabilize_the_Economy
+			focus = CHT_focus_Closed_Policy
 		}
 		completion_reward = { 
 			add_ideas = CHT_Declare_Martial_Law
@@ -145,7 +145,7 @@
 		id = CHT_focus_Seize_Japanese_Assets_in_Taiwan #劫掠在台日资
 		icon = GFX_focus_PHI_encourage_japanese_investment
 		cost = 10
-		x = -2
+		x = -6
 		y = 3
 		available = {
 			is_ai = no
@@ -158,12 +158,62 @@
 			add_political_power = 150
 		}
 	}
+	focus = {
+		id = CHT_focus_Enact_a_Trade_Embargo_Against_the_Communists #颁布对赤匪贸易禁令
+		icon = GFX_focus_AST_dalfram_dispute
+		cost = 5
+		x = -5
+		y = 4
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Seize_Japanese_Assets_in_Taiwan
+		}
+		completion_reward = { 
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = CHT_focus_Import_Foreign_Machine_Tools #进口外国机床
+		icon = GFX_focus_generic_befriend_usa
+		cost = 5
+		x = -7
+		y = 4
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Seize_Japanese_Assets_in_Taiwan
+		}
+		completion_reward = { 
+			custom_effect_tooltip = ChinaTaiwan_Factory_tt
+			add_to_variable = {
+				ChinaTaiwan_Factory_production_factory_max_efficiency_factor = 0.05
+				tooltip = production_factory_max_efficiency_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Factory_production_factory_efficiency_gain_factor = 0.05
+				tooltip = production_factory_efficiency_gain_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Factory_industrial_capacity_factory = 0.05
+				tooltip = industrial_capacity_factory_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Factory_industrial_capacity_dockyard = 0.05
+				tooltip = industrial_capacity_dockyard_tt
+			}
+		}
+	}
 	#軍事
 	focus = {
 		id = CHT_focus_A_Group_of_Comrades_from_the_Central_Plains #来自中原一群伙伴
 		icon = GFX_focus_CHI_enforce_virtues
 		cost = 10
-		x = 2
+		x = 6
 		y = 3
 		available = {
 			is_ai = no

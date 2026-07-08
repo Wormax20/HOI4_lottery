@@ -66,10 +66,20 @@
 
 
  ChinaTaiwan_Army: "中国陆军"
+ ChinaTaiwan_Army_tt: "§G$ChinaTaiwan_Army$§!追加修正:"
+ ChinaTaiwan_Army_desc: "中国陆军"
  ChinaTaiwan_AirForce: "中国空军"
+ ChinaTaiwan_AirForce_tt: "§G$ChinaTaiwan_AirForce$§!追加修正:"
+ ChinaTaiwan_AirForce_desc: "中国空军"
  ChinaTaiwan_Navy: "中国海军"
+ ChinaTaiwan_Navy_tt: "§G$ChinaTaiwan_Navy$§!追加修正:"
+ ChinaTaiwan_Navy_desc: "中国海军"
  ChinaTaiwan_Factory: "国家经济"
+ ChinaTaiwan_Factory_tt: "§G$ChinaTaiwan_Factory$§!追加修正:"
+ ChinaTaiwan_Factory_desc: "国家经济"
  ChinaTaiwan_Gold: "黄金储备"
+ ChinaTaiwan_Gold_tt: "§G$ChinaTaiwan_Gold$§!追加修正:"
+ ChinaTaiwan_Gold_desc: "黄金储备"
 
 
  ChinaTaiwan_event.100.t: "残存海军舰队抵台"
