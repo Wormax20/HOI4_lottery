@@ -170,5 +170,22 @@ ideas = {
 				trade_cost_for_target_factor = 0.50
 			}
 		}
+		CHT_Security_and_Counterintelligence = { #保密防谍
+			picture = generic_spy_coup
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				enemy_operative_capture_chance_factor = 0.25
+				intelligence_agency_defense = 0.25
+				civilian_intel_to_others = -15
+				army_intel_to_others = -15
+				navy_intel_to_others = -15
+				airforce_intel_to_others = -15
+			}
+		}
 	}
 }
