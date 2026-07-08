@@ -295,7 +295,7 @@ country_event = {
 			transfer_state = 1090
 			transfer_state = 1091
 			transfer_state = 1092
-			load_focus_tree = china_southeastern_focustree
+			load_focus_tree = CHT_focus_china_Southeastern_focustree
 			set_capital = {
 				state = 524
 			}

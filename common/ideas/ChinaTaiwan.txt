@@ -105,8 +105,8 @@ ideas = {
 			}
 		}
 
-		CHT_Closed_Policy = { #贸易封锁
-			picture = generic_convoys 
+		CHT_Declare_Martial_Law = { #戒严
+			picture = ast_classify_aliens
 			allowed = {
 				always = yes
 			}
@@ -114,9 +114,14 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				resource_trade_cost_bonus_per_factory = -3
-				trade_opinion_factor = -0.50
-				trade_cost_for_target_factor = 0.50
+				political_advisor_cost_factor = -0.2
+				army_chief_cost_factor = -0.2
+				army_advisor_cost_factor = -0.2
+				air_advisor_cost_factor = -0.2
+				navy_advisor_cost_factor = -0.2
+				research_speed_factor = -0.10
+				stability_factor = -0.10
+				war_support_factor = -0.10
 			}
 		}
 
@@ -146,6 +151,23 @@ ideas = {
 				consumer_goods_expected_value = -0.05
 				production_factory_max_efficiency_factor = 0.10
 				industrial_capacity_factory = 0.10
+			}
+		}
+
+
+
+		CHT_Closed_Policy = { #贸易封锁
+			picture = generic_convoys 
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				resource_trade_cost_bonus_per_factory = -3
+				trade_opinion_factor = -0.50
+				trade_cost_for_target_factor = 0.50
 			}
 		}
 	}
