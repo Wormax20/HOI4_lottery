@@ -52,7 +52,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Deliver_a_Speech #發表講話
+		id = CHT_focus_Deliver_a_Speech #发表讲话
 		icon = GFX_focus_PER_establish_opec
 		cost = 5
 		x = 0
@@ -70,7 +70,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Stabilize_the_Economy #穩定經濟
+		id = CHT_focus_Stabilize_the_Economy #稳定经济
 		icon = GFX_focus_RAJ_special_economic_zones
 		cost = 10
 		x = 0
@@ -175,6 +175,12 @@
 			send_embargo = PRC
 			send_embargo = SOV
 			custom_effect_tooltip = embargo_relation_tt
+			PRC = {
+				send_embargo = ROOT
+			}
+			SOV = {
+				send_embargo = ROOT
+			}
 		}
 	}
 	focus = {
@@ -258,6 +264,9 @@
 		y = 5
 		available = {
 			is_ai = no
+			NOT = {
+				has_completed_focus = CHT_focus_Abolish_the_Gold_Yuan
+			}
 		}
 		relative_position_id = CHT_focus_china_Southeastern
 		prerequisite = { 
@@ -926,6 +935,24 @@
 				remove_mission = ChinaTaiwan_Economic_Collapse
 				set_country_flag = ChinaTaiwan_Economic_Collapse_Over
 			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Establish_Farmers_Associations #建立农会
+		icon = GFX_focus_SIA_thai_rice_company
+		cost = 10
+		x = -11
+		y = 10
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Taiwan_Coal_Industry
+		}
+		completion_reward = { 
+			custom_effect_tooltip = ChinaTaiwan_rice_company_on_tt
+			set_country_flag = rice_company_on
 		}
 	}
 	#軍事

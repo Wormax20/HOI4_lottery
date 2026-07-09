@@ -1633,8 +1633,9 @@ ideas = {
 			}
 			available = {
 				owner = { controls_state = 524 }
+				has_country_flag = rice_company_on
 			}
-			cost = 100
+			cost = 25
 
 			traits = { food_distributor }
 			modifier = {
