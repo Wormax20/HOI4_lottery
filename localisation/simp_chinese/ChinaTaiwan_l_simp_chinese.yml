@@ -5,14 +5,14 @@
  STATE_1089: "花莲"
  STATE_1090: "屏东"
  STATE_1091: "中坜"
- STATE_1092: "嘉义"
+ STATE_1092: "台南"
 
 
 
  ChinaTaiwan_discipline: "东南苦行山决议组"
  ChinaTaiwan_Economic_Collapse: "经济崩溃"
  ChinaTaiwan_Economic_Collapse_Reset_tt: "§R經濟崩潰§! §Y任務倒數重新開始§!。"
-
+ ChinaTaiwan_Economic_Collapse_Over_tt: "§R經濟崩潰§! §G任務移除§!。"
 
  
  Cht_chiang_kai_shek: "蒋介石"

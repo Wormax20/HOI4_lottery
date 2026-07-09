@@ -407,6 +407,9 @@ country_event = {
 			set_variable = {ChinaTaiwan_Factory_production_factory_efficiency_gain_factor = -0.20}
 			set_variable = {ChinaTaiwan_Factory_industrial_capacity_factory = -0.20}
 			set_variable = {ChinaTaiwan_Factory_industrial_capacity_dockyard = -0.20}
+			set_variable = {ChinaTaiwan_Factory_production_speed_industrial_complex_factor = 0}
+			set_variable = {ChinaTaiwan_Factory_production_speed_arms_factory_factor = 0}
+
 			add_dynamic_modifier = {
 				modifier = ChinaTaiwan_Gold
 			}

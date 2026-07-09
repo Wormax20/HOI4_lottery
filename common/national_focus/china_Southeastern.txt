@@ -276,15 +276,12 @@
 		id = CHT_focus_Land_Reform #土地改革
 		icon = GFX_focus_generic_land_reclamation
 		cost = 10
-		x = -7
+		x = -9
 		y = 5
 		available = {
 			is_ai = no
 		}
 		relative_position_id = CHT_focus_china_Southeastern
-		prerequisite = { 
-			focus = CHT_focus_Enact_a_Trade_Embargo_Against_the_Communists
-		}
 		prerequisite = { 
 			focus = CHT_focus_Import_Foreign_Machine_Tools
 		}
@@ -304,12 +301,15 @@
 		id = CHT_focus_Export_Processing #加工出口
 		icon = GFX_goal_continuous_non_factory_construct
 		cost = 10
-		x = -9
+		x = -7
 		y = 5
 		available = {
 			is_ai = no
 		}
 		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Enact_a_Trade_Embargo_Against_the_Communists
+		}
 		prerequisite = { 
 			focus = CHT_focus_Import_Foreign_Machine_Tools
 		}
@@ -330,6 +330,601 @@
 			add_to_variable = {
 				ChinaTaiwan_Factory_industrial_capacity_dockyard = 0.05
 				tooltip = industrial_capacity_dockyard_tt
+			}
+			1087 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			524 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_The_375_Rent_Reduction_Act #三七五减租
+		icon = GFX_focus_generic_land_reclamation
+		cost = 5
+		x = -13
+		y = 6
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Land_Reform
+		}
+		completion_reward = { 
+			1089 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			1088 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			1090 = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Sale_of_Public_Lands #公地放领
+		icon = GFX_focus_generic_land_reclamation
+		cost = 5
+		x = -11
+		y = 6
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Land_Reform
+		}
+		completion_reward = { 
+			524 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			1087 = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Land_to_the_Tiller #耕者有其田
+		icon = GFX_focus_generic_land_reclamation
+		cost = 5
+		x = -9
+		y = 6
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Land_Reform
+		}
+		completion_reward = { 
+			1086 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			1091 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			1092 = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Support_Private_Enterprises #支持民营企业
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5
+		x = -7
+		y = 6
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		mutually_exclusive = { focus = CHT_focus_Support_the_Arms_Industry }
+		prerequisite = { 
+			focus = CHT_focus_Export_Processing
+			focus = CHT_focus_Commit_to_Economic_Recovery
+		}
+		completion_reward = { 
+			custom_effect_tooltip = ChinaTaiwan_Factory_tt
+			add_to_variable = {
+				ChinaTaiwan_Factory_production_speed_industrial_complex_factor = 0.10
+				tooltip = production_speed_industrial_complex_factor_tt
+			}
+			1091 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			1092 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			1086 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			1090 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Support_the_Arms_Industry #支持军工产业
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5
+		x = -5
+		y = 6
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		mutually_exclusive = { focus = CHT_focus_Support_Private_Enterprises }
+		prerequisite = { 
+			focus = CHT_focus_Export_Processing
+			focus = CHT_focus_Commit_to_Economic_Recovery
+		}
+		completion_reward = { 
+			custom_effect_tooltip = ChinaTaiwan_Factory_tt
+			add_to_variable = {
+				ChinaTaiwan_Factory_production_speed_arms_factory_factor = 0.10
+				tooltip = production_speed_arms_factory_factor_tt
+			}
+			1091 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			1092 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			1086 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			1090 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Develop_the_Steel_Industry #发展钢铁业
+		icon = GFX_focus_generic_steel
+		cost = 5
+		x = -13
+		y = 7
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_The_375_Rent_Reduction_Act
+		}
+		completion_reward = { 
+			add_resource = {
+				type = steel
+				amount = 24
+				state = 1091
+			}
+			add_resource = {
+				type = steel
+				amount = 16
+				state = 1092
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Expand_Rubber_Plantations #扩展橡胶园
+		icon = GFX_focus_generic_rubber
+		cost = 5
+		x = -11
+		y = 7
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Sale_of_Public_Lands
+		}
+		completion_reward = { 
+			add_resource = {
+				type = rubber
+				amount = 16
+				state = 1090
+			}
+			add_resource = {
+				type = rubber
+				amount = 12
+				state = 1088
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Deepen_Oil_Exploration #深挖油田
+		icon = GFX_goal_generic_oil_refinery
+		cost = 5
+		x = -9
+		y = 7
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Land_to_the_Tiller
+		}
+		completion_reward = { 
+			add_resource = {
+				type = oil
+				amount = 8
+				state = 1086
+			}
+			add_resource = {
+				type = oil
+				amount = 8
+				state = 1087
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Invest_in_Industrial_and_Commercial_Development #投资工商业发展
+		icon = GFX_focus_CHI_promote_national_currency
+		cost = 10
+		x = -6
+		y = 7
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Support_Private_Enterprises
+			focus = CHT_focus_Support_the_Arms_Industry
+		}
+		completion_reward = { 
+			custom_effect_tooltip = ChinaTaiwan_Economic_Collapse_Reset_tt
+			custom_effect_tooltip = ChinaTaiwan_Factory_tt
+			custom_effect_tooltip = ChinaTaiwan_Gold_tt
+			add_to_variable = {
+				ChinaTaiwan_Factory_production_factory_max_efficiency_factor = 0.10
+				tooltip = production_factory_max_efficiency_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Factory_production_factory_efficiency_gain_factor = 0.10
+				tooltip = production_factory_efficiency_gain_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Factory_industrial_capacity_factory = 0.10
+				tooltip = industrial_capacity_factory_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Factory_industrial_capacity_dockyard = 0.10
+				tooltip = industrial_capacity_dockyard_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Factory_consumer_goods_expected_value = 0.05
+				tooltip = consumer_goods_expected_value_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Factory_consumer_goods_factor = 0.10
+				tooltip = consumer_goods_factor_tt
+			}
+			hidden_effect = {
+				remove_mission = ChinaTaiwan_Economic_Collapse
+				activate_mission = ChinaTaiwan_Economic_Collapse
+			}
+			add_tech_bonus = {
+				name = industry_bonus
+      			bonus = 1.0
+      			uses = 2
+        		category = industry
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Tungsten_Recycling_Technology #钨金属回收技术
+		icon = GFX_focus_generic_tungsten
+		cost = 5
+		x = -12
+		y = 8
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Develop_the_Steel_Industry
+		}
+		prerequisite = { 
+			focus = CHT_focus_Expand_Rubber_Plantations
+		}
+		completion_reward = { 
+			add_resource = {
+				type = tungsten
+				amount = 10
+				state = 1086
+			}
+			add_resource = {
+				type = tungsten
+				amount = 16
+				state = 1092
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_China_Steel_and_Aluminum_Corporation #中钢铝业公司
+		icon = GFX_focus_generic_aluminum
+		cost = 5
+		x = -10
+		y = 8
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Expand_Rubber_Plantations
+		}
+		prerequisite = { 
+			focus = CHT_focus_Deepen_Oil_Exploration
+		}
+		completion_reward = { 
+			add_resource = {
+				type = aluminium
+				amount = 12
+				state = 1090
+			}
+			add_resource = {
+				type = aluminium
+				amount = 18
+				state = 1091
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Construct_the_Shimen_Dam #建设石门水库
+		icon = GFX_focus_generic_hydroelectric_energy
+		cost = 5
+		x = -8
+		y = 8
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Invest_in_Industrial_and_Commercial_Development
+		}
+		completion_reward = { 
+			1091 = {
+				add_building_construction = {
+					type = dam
+					level = 1
+					instant_build = yes
+					province = {
+						id = 7214
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Construct_the_Sun_Moon_Lake_Reservoir #建设日月潭水库
+		icon = GFX_focus_generic_hydroelectric_energy
+		cost = 5
+		x = -6
+		y = 8
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Invest_in_Industrial_and_Commercial_Development
+		}
+		completion_reward = { 
+			1088 = {
+				add_building_construction = {
+					type = dam
+					level = 1
+					instant_build = yes
+					province = {
+						id = 12027
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Construct_the_Jianshanpi_Reservoir #建设尖山埤水库
+		icon = GFX_focus_generic_hydroelectric_energy
+		cost = 5
+		x = -4
+		y = 8
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Invest_in_Industrial_and_Commercial_Development
+		}
+		completion_reward = { 
+			1092 = {
+				add_building_construction = {
+					type = dam
+					level = 1
+					instant_build = yes
+					province = {
+						id = 1091
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Taiwan_Coal_Industry #台湾煤矿业
+		icon = GFX_focus_generic_coal_mining
+		cost = 5
+		x = -11
+		y = 9
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Tungsten_Recycling_Technology
+		}
+		prerequisite = { 
+			focus = CHT_focus_China_Steel_and_Aluminum_Corporation
+		}
+		completion_reward = { 
+			add_resource = {
+				type = coal
+				amount = 16
+				state = 524
+			}
+			add_resource = {
+				type = coal
+				amount = 16
+				state = 1089
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Urban_Planning #规划城市
+		icon = GFX_focus_JAP_the_five_great_cities
+		cost = 10
+		x = -7
+		y = 9
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Construct_the_Shimen_Dam
+		}
+		prerequisite = { 
+			focus = CHT_focus_Construct_the_Sun_Moon_Lake_Reservoir
+		}
+		prerequisite = { 
+			focus = CHT_focus_Construct_the_Jianshanpi_Reservoir
+		}
+		completion_reward = { 
+			524 = {
+				set_state_category = city
+			}
+			1091 = {
+				set_state_category = large_town
+			}
+			1086 = {
+				set_state_category = large_town
+			}
+			1092 = {
+				set_state_category = large_town
+			}
+			1087 = {
+				set_state_category = city
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Develop_Rural_Areas #发展乡村
+		icon = GFX_focus_PRC_rural_region_development_two
+		cost = 10
+		x = -5
+		y = 9
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Construct_the_Shimen_Dam
+		}
+		prerequisite = { 
+			focus = CHT_focus_Construct_the_Sun_Moon_Lake_Reservoir
+		}
+		prerequisite = { 
+			focus = CHT_focus_Construct_the_Jianshanpi_Reservoir
+		}
+		completion_reward = { 
+			1090 = {
+				set_state_category = town
+			}
+			1089 = {
+				set_state_category = town
+			}
+			1088 = {
+				set_state_category = town
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Abolish_the_Gold_Yuan #废除金圆券
+		icon = GFX_focus_RAJ_special_economic_zones
+		cost = 10
+		x = -6
+		y = 10
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Urban_Planning
+		}
+		prerequisite = { 
+			focus = CHT_focus_Develop_Rural_Areas
+		}
+		completion_reward = { 
+			remove_ideas = CHT_Finance
+			custom_effect_tooltip = ChinaTaiwan_Economic_Collapse_Over_tt
+			custom_effect_tooltip = ChinaTaiwan_Factory_tt
+			add_to_variable = {
+				ChinaTaiwan_Factory_production_factory_max_efficiency_factor = 0.10
+				tooltip = production_factory_max_efficiency_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Factory_production_factory_efficiency_gain_factor = 0.10
+				tooltip = production_factory_efficiency_gain_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Factory_industrial_capacity_factory = 0.10
+				tooltip = industrial_capacity_factory_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Factory_industrial_capacity_dockyard = 0.10
+				tooltip = industrial_capacity_dockyard_tt
+			}
+			hidden_effect = {
+				remove_mission = ChinaTaiwan_Economic_Collapse
+				set_country_flag = ChinaTaiwan_Economic_Collapse_Over
 			}
 		}
 	}

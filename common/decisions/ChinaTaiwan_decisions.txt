@@ -3,12 +3,18 @@ ChinaTaiwan_discipline = {
 		activation = {
 			original_tag = CHI
 			controls_state = 524
+			NOT = {
+				has_country_flag = ChinaTaiwan_Economic_Collapse_Over
+			}
 		}
 		available = {
 			always = no
 		}
+		cancel_trigger = {
+			has_country_flag = ChinaTaiwan_Economic_Collapse_Over
+		}
 		is_good = no
-		days_mission_timeout = 120
+		days_mission_timeout = 180
 
 		timeout_effect = {
 			add_political_power = -500

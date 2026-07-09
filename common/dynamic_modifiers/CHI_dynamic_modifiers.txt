@@ -40,6 +40,8 @@ ChinaTaiwan_Factory = {
 	production_factory_efficiency_gain_factor = ChinaTaiwan_Factory_production_factory_efficiency_gain_factor
 	industrial_capacity_factory = ChinaTaiwan_Factory_industrial_capacity_factory
 	industrial_capacity_dockyard = ChinaTaiwan_Factory_industrial_capacity_dockyard
+	production_speed_industrial_complex_factor = ChinaTaiwan_Factory_production_speed_industrial_complex_factor
+	production_speed_arms_factory_factor = ChinaTaiwan_Factory_production_speed_arms_factory_factor
 }
 ChinaTaiwan_Gold = {
 	icon = GFX_idea_SPR_seize_the_gold_reserves
@@ -49,13 +51,11 @@ ChinaTaiwan_Gold = {
 	consumer_goods_expected_value = ChinaTaiwan_Factory_consumer_goods_expected_value
 	consumer_goods_factor = ChinaTaiwan_Factory_consumer_goods_factor
 }
-KOR_regional_development = { #STATE MODIFIER
+CHT_The_Ten_Major_Construction_Projects = { #十大建设
 	enable = { always = yes }
 
 	icon = GFX_modifiers_generic_construction
 
-	state_production_speed_buildings_factor = 0.10
+	state_production_speed_buildings_factor = 0.15
 	local_building_slots_factor = 0.10
-    local_resources_factor = 0.10
-
 }
