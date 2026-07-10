@@ -140,10 +140,153 @@
 			add_ideas = CHT_Declare_Martial_Law
 		}
 	}
+	focus = {
+		id = CHT_focus_Mobilization_to_Suppress_the_Rebellion #动员戡乱临时条款
+		icon = GFX_focus_chi_one_china_policy
+		cost = 10
+		x = 0
+		y = 6
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Declare_Martial_Law
+		}
+		completion_reward = { 
+			add_ideas = CHT_Mobilization_to_Suppress_the_Rebellion
+		}
+	}
+	focus = {
+		id = CHT_focus_Suspend_Constitutional_Government #暂停宪政程序
+		icon = GFX_focus_CHI_dang_guo
+		cost = 10
+		x = -2
+		y = 7
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Mobilization_to_Suppress_the_Rebellion
+		}
+		completion_reward = { 
+			add_ideas = CHT_The_Party_State
+		}
+	}
+	focus = {
+		id = CHT_focus_Permit_Local_Elections #开放地方选举
+		icon = GFX_focus_CHI_registry_of_property
+		cost = 10
+		x = 0
+		y = 7
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Mobilization_to_Suppress_the_Rebellion
+		}
+		completion_reward = { 
+			add_stability = 0.10
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.10
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Chinese_Cultural_Renaissance_Movement #中华文化复兴运动
+		icon = GFX_goal_generic_national_unity
+		cost = 10
+		x = 2
+		y = 7
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Mobilization_to_Suppress_the_Rebellion
+		}
+		completion_reward = { 
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = CHT_focus_Resist_Communism_and_Oppose_Russia #反共抗俄
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10
+		x = 1
+		y = 8
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Permit_Local_Elections
+		}
+		prerequisite = { 
+			focus = CHT_focus_Chinese_Cultural_Renaissance_Movement
+		}
+		completion_reward = { 
+			add_country_leader_trait = Cht_Anti_Communism
+		}
+	}
+	focus = {
+		id = CHT_focus_Approach_Japan #接触日本
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 10
+		x = -1
+		y = 8
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Permit_Local_Elections
+		}
+		prerequisite = { 
+			focus = CHT_focus_Suspend_Constitutional_Government
+		}
+		completion_reward = { 
+			add_opinion_modifier = {
+				target = JAP
+				modifier = CHT_approach_japan_opinion
+			}
+			JAP = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = CHT_approach_japan_opinion
+				}
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Accept_Japanese_Aid #接收日援
+		icon = GFX_focus_PHI_encourage_japanese_investment
+		cost = 10
+		x = -1
+		y = 9
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Permit_Local_Elections
+		}
+		prerequisite = { 
+			focus = CHT_focus_Suspend_Constitutional_Government
+		}
+		completion_reward = { 
+			JAP = {
+				country_event = ChinaTaiwan_event.103
+			}
+		}
+	}
 	#工業
 	focus = {
-		id = CHT_focus_Seize_Japanese_Assets_in_Taiwan #劫掠在台日资
-		icon = GFX_focus_PHI_encourage_japanese_investment
+		id = CHT_focus_Seize_Japanese_Assets_in_Taiwan #劫掠在台物资
+		icon = GFX_focus_generic_expropriate_industrialist
 		cost = 10
 		x = -7
 		y = 3
@@ -265,7 +408,7 @@
 		available = {
 			is_ai = no
 			NOT = {
-				has_completed_focus = CHT_focus_Abolish_the_Gold_Yuan
+				has_country_flag = ChinaTaiwan_Economic_Collapse_Over
 			}
 		}
 		relative_position_id = CHT_focus_china_Southeastern
@@ -285,7 +428,7 @@
 		id = CHT_focus_Land_Reform #土地改革
 		icon = GFX_focus_generic_land_reclamation
 		cost = 10
-		x = -9
+		x = -10
 		y = 5
 		available = {
 			is_ai = no
@@ -295,14 +438,11 @@
 			focus = CHT_focus_Import_Foreign_Machine_Tools
 		}
 		completion_reward = { 
-			1091 = {
-				set_state_category = town
-			}
-			1086 = {
-				set_state_category = town
-			}
-			1092 = {
-				set_state_category = town
+			every_controlled_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				add_dynamic_modifier = { modifier = CHT_Land_Reform }
 			}
 		}
 	}
@@ -360,7 +500,7 @@
 		id = CHT_focus_The_375_Rent_Reduction_Act #三七五减租
 		icon = GFX_focus_generic_land_reclamation
 		cost = 5
-		x = -13
+		x = -14
 		y = 6
 		available = {
 			is_ai = no
@@ -385,7 +525,7 @@
 		id = CHT_focus_Sale_of_Public_Lands #公地放领
 		icon = GFX_focus_generic_land_reclamation
 		cost = 5
-		x = -11
+		x = -12
 		y = 6
 		available = {
 			is_ai = no
@@ -407,7 +547,7 @@
 		id = CHT_focus_Land_to_the_Tiller #耕者有其田
 		icon = GFX_focus_generic_land_reclamation
 		cost = 5
-		x = -9
+		x = -10
 		y = 6
 		available = {
 			is_ai = no
@@ -534,7 +674,7 @@
 		id = CHT_focus_Develop_the_Steel_Industry #发展钢铁业
 		icon = GFX_focus_generic_steel
 		cost = 5
-		x = -13
+		x = -14
 		y = 7
 		available = {
 			is_ai = no
@@ -546,12 +686,12 @@
 		completion_reward = { 
 			add_resource = {
 				type = steel
-				amount = 24
+				amount = 36
 				state = 1091
 			}
 			add_resource = {
 				type = steel
-				amount = 16
+				amount = 22
 				state = 1092
 			}
 		}
@@ -560,7 +700,7 @@
 		id = CHT_focus_Expand_Rubber_Plantations #扩展橡胶园
 		icon = GFX_focus_generic_rubber
 		cost = 5
-		x = -11
+		x = -12
 		y = 7
 		available = {
 			is_ai = no
@@ -572,7 +712,7 @@
 		completion_reward = { 
 			add_resource = {
 				type = rubber
-				amount = 16
+				amount = 24
 				state = 1090
 			}
 			add_resource = {
@@ -586,7 +726,7 @@
 		id = CHT_focus_Deepen_Oil_Exploration #深挖油田
 		icon = GFX_goal_generic_oil_refinery
 		cost = 5
-		x = -9
+		x = -10
 		y = 7
 		available = {
 			is_ai = no
@@ -598,7 +738,7 @@
 		completion_reward = { 
 			add_resource = {
 				type = oil
-				amount = 8
+				amount = 16
 				state = 1086
 			}
 			add_resource = {
@@ -660,13 +800,14 @@
       			uses = 2
         		category = industry
 			}
+			add_research_slot = 1
 		}
 	}
 	focus = {
 		id = CHT_focus_Tungsten_Recycling_Technology #钨金属回收技术
 		icon = GFX_focus_generic_tungsten
 		cost = 5
-		x = -12
+		x = -13
 		y = 8
 		available = {
 			is_ai = no
@@ -681,7 +822,7 @@
 		completion_reward = { 
 			add_resource = {
 				type = tungsten
-				amount = 10
+				amount = 20
 				state = 1086
 			}
 			add_resource = {
@@ -695,7 +836,7 @@
 		id = CHT_focus_China_Steel_and_Aluminum_Corporation #中钢铝业公司
 		icon = GFX_focus_generic_aluminum
 		cost = 5
-		x = -10
+		x = -11
 		y = 8
 		available = {
 			is_ai = no
@@ -715,7 +856,7 @@
 			}
 			add_resource = {
 				type = aluminium
-				amount = 18
+				amount = 28
 				state = 1091
 			}
 		}
@@ -802,7 +943,7 @@
 		id = CHT_focus_Taiwan_Coal_Industry #台湾煤矿业
 		icon = GFX_focus_generic_coal_mining
 		cost = 5
-		x = -11
+		x = -12
 		y = 9
 		available = {
 			is_ai = no
@@ -824,6 +965,11 @@
 				type = coal
 				amount = 16
 				state = 1089
+			}
+			add_resource = {
+				type = coal
+				amount = 16
+				state = 1091
 			}
 		}
 	}
@@ -931,6 +1077,12 @@
 				ChinaTaiwan_Factory_industrial_capacity_dockyard = 0.10
 				tooltip = industrial_capacity_dockyard_tt
 			}
+			add_tech_bonus = {
+				name = industry_bonus
+      			bonus = 1.0
+      			uses = 2
+        		category = industry
+			}
 			hidden_effect = {
 				remove_mission = ChinaTaiwan_Economic_Collapse
 				set_country_flag = ChinaTaiwan_Economic_Collapse_Over
@@ -941,7 +1093,7 @@
 		id = CHT_focus_Establish_Farmers_Associations #建立农会
 		icon = GFX_focus_SIA_thai_rice_company
 		cost = 10
-		x = -11
+		x = -12
 		y = 10
 		available = {
 			is_ai = no
@@ -953,6 +1105,26 @@
 		completion_reward = { 
 			custom_effect_tooltip = ChinaTaiwan_rice_company_on_tt
 			set_country_flag = rice_company_on
+		}
+	}
+	focus = {
+		id = CHT_focus_The_Road_Ahead_Is_Long #任重而道远
+		icon = GFX_focus_generic_workers
+		cost = 10
+		x = -9
+		y = 11
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Establish_Farmers_Associations
+		}
+		prerequisite = { 
+			focus = CHT_focus_Abolish_the_Gold_Yuan
+		}
+		completion_reward = { 
+			add_ideas = CHT_A_Long_Road_Ahead
 		}
 	}
 	#軍事

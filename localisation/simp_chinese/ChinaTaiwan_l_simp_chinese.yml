@@ -12,6 +12,7 @@
  ChinaTaiwan_discipline: "东南苦行山决议组"
  ChinaTaiwan_Economic_Collapse: "经济崩溃"
  ChinaTaiwan_Economic_Collapse_Reset_tt: "§R經濟崩潰§! §Y任務倒數重新開始§!。"
+ ChinaTaiwan_Economic_Collapse_Over: "§R經濟崩潰§! §G任務移除§!。"
  ChinaTaiwan_Economic_Collapse_Over_tt: "§R經濟崩潰§! §G任務移除§!。"
  ChinaTaiwan_rice_company_on_tt: "§G启用台湾农会§!。"
  rice_company_on: "完成国策§G建立农会§!。"
@@ -63,8 +64,8 @@
  CHT_focus_Closed_Policy_desc: "关闭政策"
  CHT_focus_Declare_Martial_Law: "宣布戒严"
  CHT_focus_Declare_Martial_Law_desc: "宣布戒严"
- CHT_focus_Seize_Japanese_Assets_in_Taiwan: "劫掠在台日资"
- CHT_focus_Seize_Japanese_Assets_in_Taiwan_desc: "劫掠在台日资"
+ CHT_focus_Seize_Japanese_Assets_in_Taiwan: "劫掠在台物资"
+ CHT_focus_Seize_Japanese_Assets_in_Taiwan_desc: "劫掠在台物资"
  CHT_focus_Enact_a_Trade_Embargo_Against_the_Communists: "对赤匪贸易禁令"
  CHT_focus_Enact_a_Trade_Embargo_Against_the_Communists_desc: "对赤匪贸易禁令"
  CHT_focus_Import_Foreign_Machine_Tools: "进口外国机床"
@@ -130,10 +131,18 @@
  CHT_Economic_Collapse: "经济崩溃"
  CHT_Closed_Policy: "封闭大陆政策"
  CHT_A_Group_of_Comrades_from_the_Central_Plains: "来自中原一群伙伴"
+ CHT_Security_and_Counterintelligence: "保密防谍"
+ CHT_Declare_Martial_Law: "戒严"
+ CHT_A_Long_Road_Ahead: "任重道远"
 
 
  
  CHT_focus_Closed_Policy: "封闭大陆政策"
+
+
+
+ CHT_Land_Reform: "土地改革"
+ CHT_approach_japan_opinion: "接触日本"
 
 
 
@@ -165,4 +174,21 @@
  ChinaTaiwan_event.102.t: "共军占领了上海"
  ChinaTaiwan_event.102.d: "赤匪进驻了租界地区，我们丢失了上海的控制权。"
  ChinaTaiwan_event.102.a: "该死的"
+
+ ChinaTaiwan_event.103.t: "台湾方面请求我方援助"
+ ChinaTaiwan_event.103.d: "我们已收到来自台湾方面送来的请求，期望我们援助他们。"
+ ChinaTaiwan_event.103.a: "当然，我们会援助他们。"
+ ChinaTaiwan_event.103.b: "那是什么小岛，没听过。"
+
+ ChinaTaiwan_event.104.t: "日方援助抵达"
+ ChinaTaiwan_event.104.d: "日本方面很慷慨的援助我们，相关援助已到港了！"
+ ChinaTaiwan_event.104.a: "太好了"
+
+ ChinaTaiwan_event.105.t: "日方拒绝"
+ ChinaTaiwan_event.105.d: "日本方面拒绝的我们的请求，只能靠我们自己了。"
+ ChinaTaiwan_event.105.a: "草"
+
+ ChinaTaiwan_event.106.t: "在台皇民"
+ ChinaTaiwan_event.106.d: "我们在台湾台中地区抓获一位自称「日本皇民」的东海大学日文系学生。"
+ ChinaTaiwan_event.106.a: "把他送进太平洋"
 

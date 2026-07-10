@@ -52,6 +52,23 @@ on_actions = {
 					id = ChinaTaiwan_event.101
 				}
 			}
+			every_country = {
+                limit = {
+                    tag = CHI
+					controls_state = 524
+					date > 1937.7.6
+					date < 1937.7.7
+
+					NOT ={
+						has_country_flag = Department_of_Japanese_Language_at_Tunghai_University
+					}
+				}
+				set_country_flag = Department_of_Japanese_Language_at_Tunghai_University
+
+				country_event = {
+					id = ChinaTaiwan_event.106
+				}
+			}
         }
     }
 }

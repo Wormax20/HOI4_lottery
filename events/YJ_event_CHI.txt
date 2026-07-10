@@ -373,8 +373,6 @@ country_event = {
 			}
 			add_ideas = CHT_The_Mainlands_Failure
 			add_ideas = CHT_Finance
-			add_ideas = CHT_Mobilization_to_Suppress_the_Rebellion
-			add_ideas = CHT_The_Party_State
 			add_ideas = CHT_Three_Principles_of_the_People
 			add_dynamic_modifier = {
 				modifier = ChinaTaiwan_Army

@@ -3,4 +3,8 @@ spriteTypes = {
 		name = "GFX_report_event_Retreat_to_Taiwan"
 		texturefile = "gfx/event_pictures/report_event_Retreat_to_Taiwan.png"
 	}
+	spriteType = {
+		name = "GFX_report_event_Department_of_Japanese_Language_at_Tunghai_University"
+		texturefile = "gfx/event_pictures/report_event_Department_of_Japanese_Language_at_Tunghai_University.png"
+	}
 }

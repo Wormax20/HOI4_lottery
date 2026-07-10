@@ -46,9 +46,8 @@ ideas = {
 				conscription = 0.05
 				conscription_factor = 0.25
 				production_speed_arms_factory_factor = 0.15
-				production_speed_industrial_complex_factor = -0.15
-				production_speed_infrastructure_factor = -0.15
-				industrial_capacity_factory = -0.15
+				production_speed_industrial_complex_factor = -0.10
+				production_speed_infrastructure_factor = -0.10
 			}
 		}
 
@@ -139,7 +138,7 @@ ideas = {
 		}
 
 		CHT_A_Long_Road_Ahead = { #任重道远
-			#picture = KimKorea_focus_SAN_idea
+			picture = man_five_year_plan_industry
 			allowed = {
 				always = yes
 			}
@@ -156,7 +155,7 @@ ideas = {
 
 
 
-		CHT_Closed_Policy = { #贸易封锁
+		CHT_Closed_Policy = { #封闭大陆政策
 			picture = generic_convoys 
 			allowed = {
 				always = yes

@@ -51,11 +51,11 @@ ChinaTaiwan_Gold = {
 	consumer_goods_expected_value = ChinaTaiwan_Factory_consumer_goods_expected_value
 	consumer_goods_factor = ChinaTaiwan_Factory_consumer_goods_factor
 }
-CHT_The_Ten_Major_Construction_Projects = { #十大建设
+CHT_Land_Reform = { #土地改革
 	enable = { always = yes }
 
 	icon = GFX_modifiers_generic_construction
 
-	state_production_speed_buildings_factor = 0.15
+	state_production_speed_buildings_factor = 0.10
 	local_building_slots_factor = 0.10
 }
