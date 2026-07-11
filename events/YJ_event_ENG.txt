@@ -9,6 +9,12 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
+		every_state = {
+			limit = {
+				is_core_of = IRE
+			}
+			add_core_of = ROOT
+		}
 		annex_country = {
 			target = IRE
 		}
@@ -18,7 +24,6 @@ country_event = {
 		annex_country = {
 			target = PAL
 		}
-		119 = { add_core_of = ROOT }
 		119 = { add_core_of = ROOT }
 		set_cosmetic_tag = ENG_imperial_federation_unified
 		name = KoKi_YJ_ENG_event.101.a

@@ -16,7 +16,7 @@ ideas = {
 			picture = chi_chinese_unity
 
 			modifier = {
-				political_power_gain = 0.25
+				political_power_gain = 0.20
 				research_speed_factor = 0.20
 				training_time_factor = -0.1
 				production_speed_buildings_factor = 0.10
