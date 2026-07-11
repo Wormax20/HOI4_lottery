@@ -272,10 +272,7 @@
 		}
 		relative_position_id = CHT_focus_china_Southeastern
 		prerequisite = { 
-			focus = CHT_focus_Permit_Local_Elections
-		}
-		prerequisite = { 
-			focus = CHT_focus_Suspend_Constitutional_Government
+			focus = CHT_focus_Approach_Japan
 		}
 		completion_reward = { 
 			JAP = {
