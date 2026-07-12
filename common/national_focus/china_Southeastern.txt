@@ -177,7 +177,7 @@
 	focus = {
 		id = CHT_focus_Permit_Local_Elections #开放地方选举
 		icon = GFX_focus_CHI_registry_of_property
-		cost = 10
+		cost = 5
 		x = 0
 		y = 7
 		available = {
@@ -198,7 +198,7 @@
 	focus = {
 		id = CHT_focus_Chinese_Cultural_Renaissance_Movement #中华文化复兴运动
 		icon = GFX_goal_generic_national_unity
-		cost = 10
+		cost = 5
 		x = 2
 		y = 7
 		available = {
@@ -213,26 +213,6 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Resist_Communism_and_Oppose_Russia #反共抗俄
-		icon = GFX_goal_anti_comintern_pact
-		cost = 10
-		x = 1
-		y = 8
-		available = {
-			is_ai = no
-		}
-		relative_position_id = CHT_focus_china_Southeastern
-		prerequisite = { 
-			focus = CHT_focus_Permit_Local_Elections
-		}
-		prerequisite = { 
-			focus = CHT_focus_Chinese_Cultural_Renaissance_Movement
-		}
-		completion_reward = { 
-			add_country_leader_trait = Cht_Anti_Communism
-		}
-	}
-	focus = {
 		id = CHT_focus_Approach_Japan #接触日本
 		icon = GFX_focus_jap_pacific_guardian
 		cost = 10
@@ -242,6 +222,7 @@
 			is_ai = no
 		}
 		relative_position_id = CHT_focus_china_Southeastern
+		mutually_exclusive = { focus = CHT_focus_Approach_Germany }
 		prerequisite = { 
 			focus = CHT_focus_Permit_Local_Elections
 		}
@@ -262,6 +243,36 @@
 		}
 	}
 	focus = {
+		id = CHT_focus_Approach_Germany #接触德国
+		icon = GFX_focus_chi_mission_to_germany
+		cost = 5
+		x = 1
+		y = 8
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		mutually_exclusive = { focus = CHT_focus_Approach_Japan }
+		prerequisite = { 
+			focus = CHT_focus_Permit_Local_Elections
+		}
+		prerequisite = { 
+			focus = CHT_focus_Chinese_Cultural_Renaissance_Movement
+		}
+		completion_reward = { 
+			add_opinion_modifier = {
+				target = GER
+				modifier = CHT_approach_germany_opinion
+			}
+			GER = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = CHT_approach_germany_opinion
+				}
+			}
+		}
+	}
+	focus = {
 		id = CHT_focus_Accept_Japanese_Aid #接收日援
 		icon = GFX_focus_PHI_encourage_japanese_investment
 		cost = 10
@@ -277,6 +288,76 @@
 		completion_reward = { 
 			JAP = {
 				country_event = ChinaTaiwan_event.103
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_German_Tank_Technology #德意志坦克技术
+		icon = GFX_focus_BRA_acquire_german_tanks
+		cost = 10
+		x = 1
+		y = 9
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Approach_Germany
+		}
+		completion_reward = { 
+			add_tech_bonus = {
+				name = ARMOUR_TITLE
+				ahead_reduction = 0.5
+				bonus = 1.0
+				uses = 2
+				category = mio_cat_tech_all_armor_and_modules
+			}
+			add_tech_bonus = {
+				name = ARTILLERY_TITLE
+				ahead_reduction = 0.5
+				bonus = 1.0
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Resist_Communism_and_Oppose_Russia #反共抗俄
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10
+		x = 1
+		y = 10
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_German_Tank_Technology
+			focus = CHT_focus_Accept_Japanese_Aid
+		}
+		completion_reward = { 
+			add_country_leader_trait = Cht_Anti_Communism
+		}
+	}
+	focus = {
+		id = CHT_focus_Arrest_Dissidents #逮捕异议者
+		icon = GFX_focus_CHI_arrest_the_seven_gentlemen
+		cost = 5
+		x = -1
+		y = 10
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_German_Tank_Technology
+			focus = CHT_focus_Accept_Japanese_Aid
+		}
+		completion_reward = { 
+			add_stability = -0.10
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.10
 			}
 		}
 	}

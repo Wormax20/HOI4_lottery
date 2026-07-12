@@ -360,6 +360,14 @@ country_event = {
 					target_country = PREV
 					character = Cht_Chou_Chih_jou
 				}
+				set_nationality = {
+					target_country = PREV
+					character = CHI_hu_zongnan
+				}
+				set_nationality = {
+					target_country = PREV
+					character = CHI_hsueh_yueh
+				}
 			}
 			add_country_leader_role = {
 				character = Cht_chiang_kai_shek

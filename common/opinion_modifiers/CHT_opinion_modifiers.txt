@@ -12,4 +12,7 @@ opinion_modifiers = {
 	CHT_approach_japan_opinion = {
 		value = 25
 	}
+	CHT_approach_germany_opinion = {
+		value = 25
+	}
 }
