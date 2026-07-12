@@ -12,7 +12,6 @@ leader_traits = {
 	}
 	Cht_Anti_Communism = { #坚定反共
 		random = no
-		production_speed_arms_factory_factor = 0.10
 		communism_drift = -0.05
 		targeted_modifier = {
 			tag = PRC
@@ -71,7 +70,7 @@ leader_traits = {
 	Cht_Yen_Chia_kan_buff = { #嚴家淦
 		random = no
 		consumer_goods_factor = -0.10
-		consumer_goods_expected_value = -0.10
+		consumer_goods_expected_value = -0.05
 		industrial_capacity_factory = 0.10
 		industrial_capacity_dockyard = 0.10
 

@@ -141,8 +141,8 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Mobilization_to_Suppress_the_Rebellion #动员戡乱临时条款
-		icon = GFX_focus_chi_one_china_policy
+		id = CHT_focus_Suspend_Constitutional_Government #暂停宪政程序
+		icon = GFX_focus_CHI_dang_guo
 		cost = 10
 		x = 0
 		y = 6
@@ -154,38 +154,22 @@
 			focus = CHT_focus_Declare_Martial_Law
 		}
 		completion_reward = { 
-			add_ideas = CHT_Mobilization_to_Suppress_the_Rebellion
-		}
-	}
-	focus = {
-		id = CHT_focus_Suspend_Constitutional_Government #暂停宪政程序
-		icon = GFX_focus_CHI_dang_guo
-		cost = 10
-		x = -2
-		y = 7
-		available = {
-			is_ai = no
-		}
-		relative_position_id = CHT_focus_china_Southeastern
-		prerequisite = { 
-			focus = CHT_focus_Mobilization_to_Suppress_the_Rebellion
-		}
-		completion_reward = { 
 			add_ideas = CHT_The_Party_State
 		}
 	}
 	focus = {
-		id = CHT_focus_Permit_Local_Elections #开放地方选举
+		id = CHT_focus_Permit_Local_Elections #开放局部地方选举
 		icon = GFX_focus_CHI_registry_of_property
 		cost = 5
-		x = 0
-		y = 7
+		x = -1
+		y = 10
 		available = {
 			is_ai = no
 		}
 		relative_position_id = CHT_focus_china_Southeastern
 		prerequisite = { 
-			focus = CHT_focus_Mobilization_to_Suppress_the_Rebellion
+			focus = CHT_focus_German_Tank_Technology
+			focus = CHT_focus_Accept_Japanese_Aid
 		}
 		completion_reward = { 
 			add_stability = 0.10
@@ -198,7 +182,7 @@
 	focus = {
 		id = CHT_focus_Chinese_Cultural_Renaissance_Movement #中华文化复兴运动
 		icon = GFX_goal_generic_national_unity
-		cost = 5
+		cost = 10
 		x = 2
 		y = 7
 		available = {
@@ -206,10 +190,27 @@
 		}
 		relative_position_id = CHT_focus_china_Southeastern
 		prerequisite = { 
-			focus = CHT_focus_Mobilization_to_Suppress_the_Rebellion
+			focus = CHT_focus_Suspend_Constitutional_Government
 		}
 		completion_reward = { 
 			add_political_power = 100
+		}
+	}
+	focus = {
+		id = CHT_focus_Universalize_Public_Education #普及国民教育
+		icon = GFX_focus_generic_education
+		cost = 10
+		x = -2
+		y = 7
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Suspend_Constitutional_Government
+		}
+		completion_reward = { 
+			add_research_slot = 1
 		}
 	}
 	focus = {
@@ -224,10 +225,10 @@
 		relative_position_id = CHT_focus_china_Southeastern
 		mutually_exclusive = { focus = CHT_focus_Approach_Germany }
 		prerequisite = { 
-			focus = CHT_focus_Permit_Local_Elections
+			focus = CHT_focus_Arrest_Dissidents
 		}
 		prerequisite = { 
-			focus = CHT_focus_Suspend_Constitutional_Government
+			focus = CHT_focus_Universalize_Public_Education
 		}
 		completion_reward = { 
 			add_opinion_modifier = {
@@ -245,7 +246,7 @@
 	focus = {
 		id = CHT_focus_Approach_Germany #接触德国
 		icon = GFX_focus_chi_mission_to_germany
-		cost = 5
+		cost = 10
 		x = 1
 		y = 8
 		available = {
@@ -254,7 +255,7 @@
 		relative_position_id = CHT_focus_china_Southeastern
 		mutually_exclusive = { focus = CHT_focus_Approach_Japan }
 		prerequisite = { 
-			focus = CHT_focus_Permit_Local_Elections
+			focus = CHT_focus_Arrest_Dissidents
 		}
 		prerequisite = { 
 			focus = CHT_focus_Chinese_Cultural_Renaissance_Movement
@@ -343,15 +344,14 @@
 		id = CHT_focus_Arrest_Dissidents #逮捕异议者
 		icon = GFX_focus_CHI_arrest_the_seven_gentlemen
 		cost = 5
-		x = -1
-		y = 10
+		x = 0
+		y = 7
 		available = {
 			is_ai = no
 		}
 		relative_position_id = CHT_focus_china_Southeastern
 		prerequisite = { 
-			focus = CHT_focus_German_Tank_Technology
-			focus = CHT_focus_Accept_Japanese_Aid
+			focus = CHT_focus_Suspend_Constitutional_Government
 		}
 		completion_reward = { 
 			add_stability = -0.10
@@ -359,6 +359,145 @@
 				ideology = neutrality
 				popularity = 0.10
 			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Greater_East_Asia_Economic_Bloc #大东亚经济体
+		icon = GFX_focus_JAP_greater_east_asian_co_properity_sphere
+		cost = 10
+		x = -3
+		y = 10
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Accept_Japanese_Aid
+		}
+		completion_reward = { 
+			custom_effect_tooltip = ChinaTaiwan_Factory_tt
+			add_to_variable = {
+				ChinaTaiwan_Factory_production_speed_industrial_complex_factor = 0.10
+				tooltip = production_speed_industrial_complex_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Factory_production_factory_max_efficiency_factor = 0.05
+				tooltip = production_factory_max_efficiency_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Factory_production_factory_efficiency_gain_factor = 0.05
+				tooltip = production_factory_efficiency_gain_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Factory_industrial_capacity_factory = 0.05
+				tooltip = industrial_capacity_factory_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Factory_industrial_capacity_dockyard = 0.05
+				tooltip = industrial_capacity_dockyard_tt
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_German_Military_Cooperation #德意志军事合作
+		icon = GFX_focus_GER_appease_the_wehrmacht
+		cost = 10
+		x = 3
+		y = 10
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_German_Tank_Technology
+		}
+		completion_reward = { 
+			custom_effect_tooltip = ChinaTaiwan_Factory_tt
+			custom_effect_tooltip = ChinaTaiwan_Army_tt
+			add_to_variable = {
+				ChinaTaiwan_Factory_production_speed_arms_factory_factor = 0.10
+				tooltip = production_speed_arms_factory_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Army_army_attack_factor = 0.05
+				tooltip = army_attack_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Army_army_defence_factor = 0.05
+				tooltip = army_defence_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Army_army_org_factor = 0.05
+				tooltip = army_org_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Army_army_speed_factor = 0.05
+				tooltip = army_speed_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Army_supply_consumption_factor = -0.05
+				tooltip = supply_consumption_factor_tt
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_The_Savior_of_the_Nation #国家的救星
+		icon = GFX_focus_GER_ally_chiang_kai_shek
+		cost = 10
+		x = 0
+		y = 11
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Permit_Local_Elections
+		}
+		prerequisite = { 
+			focus = CHT_focus_Resist_Communism_and_Oppose_Russia
+		}
+		prerequisite = { 
+			focus = CHT_focus_Greater_East_Asia_Economic_Bloc
+			focus = CHT_focus_German_Military_Cooperation
+		}
+		completion_reward = { 
+			add_country_leader_trait = Cht_Chairman
+		}
+	}
+	focus = {
+		id = CHT_focus_Mobilization_to_Suppress_the_Rebellion #动员戡乱临时条款
+		icon = GFX_focus_chi_one_china_policy
+		cost = 10
+		x = -4
+		y = 12
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		mutually_exclusive = { focus = CHT_focus_Focus_on_Taiwans_Development }
+		prerequisite = { 
+			focus = CHT_focus_The_Savior_of_the_Nation
+		}
+		completion_reward = { 
+			add_ideas = CHT_Mobilization_to_Suppress_the_Rebellion
+		}
+	}
+	focus = {
+		id = CHT_focus_Focus_on_Taiwans_Development #专注在台发展
+		icon = GFX_focus_generic_invade_taiwan
+		cost = 10
+		x = 4
+		y = 12
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		mutually_exclusive = { focus = CHT_focus_Mobilization_to_Suppress_the_Rebellion }
+		prerequisite = { 
+			focus = CHT_focus_The_Savior_of_the_Nation
+		}
+		completion_reward = { 
+			remove_ideas = CHT_The_Mainlands_Failure
 		}
 	}
 	#工業
@@ -495,7 +634,16 @@
 		}
 		completion_reward = { 
 			add_political_power = -100
+			custom_effect_tooltip = ChinaTaiwan_Gold_tt
 			custom_effect_tooltip = ChinaTaiwan_Economic_Collapse_Reset_tt
+			add_to_variable = {
+				ChinaTaiwan_Factory_consumer_goods_expected_value = 0.05
+				tooltip = consumer_goods_expected_value_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Factory_consumer_goods_factor = 0.10
+				tooltip = consumer_goods_factor_tt
+			}
 			hidden_effect = {
 				remove_mission = ChinaTaiwan_Economic_Collapse
 				activate_mission = ChinaTaiwan_Economic_Collapse
@@ -1186,7 +1334,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_The_Road_Ahead_Is_Long #任重而道远
+		id = CHT_focus_The_Road_Ahead_Is_Long #任重道远
 		icon = GFX_focus_generic_workers
 		cost = 10
 		x = -9

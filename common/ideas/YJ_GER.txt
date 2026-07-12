@@ -21,7 +21,6 @@ ideas = {
 				army_strength_factor = 0.1
 				army_org_factor = 0.1
 				factory_energy_consumption = -0.3
-				army_bonus_air_superiority_factor = 0.1
 			}
 			equipment_bonus = {
 				armor = {

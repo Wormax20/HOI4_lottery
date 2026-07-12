@@ -115,7 +115,6 @@ ideas = {
 			modifier = {
 				political_advisor_cost_factor = -0.2
 				army_chief_cost_factor = -0.2
-				army_advisor_cost_factor = -0.2
 				air_advisor_cost_factor = -0.2
 				navy_advisor_cost_factor = -0.2
 				research_speed_factor = -0.10
