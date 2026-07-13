@@ -188,8 +188,20 @@ country_event = {
 			add_core_of = ROOT
 		}
 		complete_national_focus = {
-                focus = CHI_victory_over_the_invaders
-            }
+            focus = CHI_victory_over_the_invaders
+        }
+		complete_national_focus = {
+            focus = CHI_demonstrate_our_resolve
+        }
+		complete_national_focus = {
+            focus = CHI_secure_the_soviet_border
+        }
+		complete_national_focus = {
+            focus = CHI_send_the_first_lady_abroad
+        }
+		complete_national_focus = {
+            focus = CHI_inspect_the_troops
+        }
 		hidden_effect = {
 			every_core_state = {
 				add_extra_state_shared_building_slots = 3

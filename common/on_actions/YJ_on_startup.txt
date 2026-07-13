@@ -88,7 +88,7 @@ on_actions = {
 				JAP = {
 					add_offsite_building = {
 						type = industrial_complex
-						level = 25
+						level = 20
 					}
 					add_offsite_building = {
 						type = arms_factory
@@ -103,22 +103,6 @@ on_actions = {
 				limit = {
 					JAP = { is_ai = no }
 					KOR = { is_ai = no }
-				}
-				JAP = {
-					add_offsite_building = {
-						type = industrial_complex
-						level = 5
-					}
-					add_offsite_building = {
-						type = arms_factory
-						level = 5
-					}
-				}
-			}
-			if = {
-				limit = {
-					JAP = { is_ai = no }
-					SIA = { is_ai = no }
 				}
 				JAP = {
 					add_offsite_building = {
@@ -157,6 +141,12 @@ on_actions = {
 				}
 				add_dynamic_modifier = {
 					modifier = YJ_ENG_ideas
+				}
+			}
+			SIA = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 10
 				}
 			}
 			every_state = {

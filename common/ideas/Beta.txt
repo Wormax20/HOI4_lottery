@@ -49,13 +49,13 @@ ideas = {
 			picture = ETH_conservative_high_command
 
 			modifier = {
-				air_cas_efficiency = 0.1
-				air_intercept_efficiency = 0.1
+				air_cas_efficiency = 0.05
+				air_intercept_efficiency = 0.05
 			}
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.1
-				defense_bonus_against = 0.1
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
 			}
 		}
 
@@ -74,13 +74,13 @@ ideas = {
 			picture = GER_fan_prussian_militarism
 
 			modifier = {
-				air_cas_efficiency = 0.1
-				air_intercept_efficiency = 0.1
+				air_cas_efficiency = 0.05
+				air_intercept_efficiency = 0.05
 			}
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.1
-				defense_bonus_against = 0.1
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
 			}
 		}
 

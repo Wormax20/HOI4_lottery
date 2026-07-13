@@ -625,16 +625,18 @@ SOV_YJ_scripted_effects = {
 		}
 		20 = {
 			modifier = {
-				NOT = {
-					OR = {
-						has_idea = YJ_SOV_1_ideas
-						has_idea = YJ_SOV_2_ideas
-						has_idea = YJ_SOV_4_ideas
+				OR = {
+					NOT = {
+						OR = {
+							has_idea = YJ_SOV_1_ideas
+							has_idea = YJ_SOV_2_ideas
+							has_idea = YJ_SOV_4_ideas
+						}
 					}
-				}
-				NOT = {
-					has_dynamic_modifier = {
-						modifier = YJ_SOV_3_ideas
+					NOT = {
+						has_dynamic_modifier = {
+							modifier = YJ_SOV_3_ideas
+						}
 					}
 				}
 				factor = 0

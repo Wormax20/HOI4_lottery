@@ -81,6 +81,8 @@ country_event = {
 		name = KoKi_YJ_USA_event.104.a
 		add_ideas = YJ_USA_4_ideas
 		remove_ideas = great_depression
+		remove_ideas = great_depression_2
+		remove_ideas = great_depression_3
 		ai_chance = {
 			factor = 100
 		}

@@ -61,8 +61,9 @@ ideas = {
 
 			modifier = {
 				political_power_gain = 0.10
-				political_advisor_cost_factor = -0.5
+				political_advisor_cost_factor = -1
 				terrain_penalty_reduction = 0.10
+				max_planning = 0.10
 				command_power_gain = 1
 				max_command_power = 100
 				democratic_drift = -1
@@ -85,8 +86,9 @@ ideas = {
 			picture = GER_wirtschaftswunder
 
 			modifier = {
-				global_building_slots = 2
+				global_building_slots = 4
 				resource_trade_cost_bonus_per_factory = 2
+				industrial_capacity_factory = 0.10
 				production_factory_max_efficiency_factor = 0.10
 				production_factory_efficiency_gain_factor = 0.10
 				production_speed_industrial_complex_factor = 0.15
@@ -108,8 +110,9 @@ ideas = {
 			picture = generic_artillery_regiments
 
 			modifier = {
-				supply_consumption_factor = 0.50
+				supply_consumption_factor = 0.30
 				army_bonus_air_superiority_factor = 0.20
+				breakthrough_factor = 0.10
 			}
 			equipment_bonus = {
 				light_tank_artillery_chassis = {
@@ -128,7 +131,8 @@ ideas = {
 					instant = yes
 				}
 				mio_cat_eq_all_tanks = {
-					hard_attack = 0.05
+					reliability = 0.05
+					defense = 0.05
 					instant = yes
 				}
 			}

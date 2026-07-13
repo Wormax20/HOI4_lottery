@@ -18,9 +18,9 @@ ideas = {
                 political_power_gain = 0.10
 				research_speed_factor = 0.1
 				training_time_factor = -0.1
-				production_speed_buildings_factor = 0.05
-				production_factory_efficiency_gain_factor = 0.05
-				production_factory_max_efficiency_factor = 0.05
+				production_speed_buildings_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
 				industrial_capacity_factory = 0.05
 			}
 			equipment_bonus = {
@@ -54,12 +54,12 @@ ideas = {
 
 			modifier = {
 				global_building_slots_factor = 0.10
-				line_change_production_efficiency_factor = 0.1
-				production_factory_max_efficiency_factor = 0.1
-				production_factory_start_efficiency_factor = 0.1
-				production_factory_efficiency_gain_factor = 0.1
-				industrial_capacity_factory = 0.1
-				industrial_capacity_dockyard = 0.1
+				line_change_production_efficiency_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_start_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.10
+				industrial_capacity_factory = 0.10
+				industrial_capacity_dockyard = 0.10
 			}
 		}
 		YJ_PRC_3_ideas = {

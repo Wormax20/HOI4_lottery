@@ -12,10 +12,6 @@ country_event = {
 	option = {
 		name = KoKi_YJ_SIA_event.101.a
 		add_ideas = YJ_SIA_1_ideas
-		add_offsite_building = {
-			type = industrial_complex
-			level = 15
-		}
 		complete_national_focus = SIA_support_songsuradets_military_clique
 		complete_national_focus = SIA_thai_cultural_mandates
 		complete_national_focus = SIA_sala_chaloem_thai_movie_theater
@@ -218,10 +214,6 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		add_offsite_building = {
-			type = industrial_complex
-			level = 15
-		}
 		complete_national_focus = SIA_the_bank_of_siam
 		complete_national_focus = SIA_thai_rice_company
 		complete_national_focus = SIA_plan_for_a_short_war

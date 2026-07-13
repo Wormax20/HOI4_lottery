@@ -638,15 +638,16 @@ country_event = {
 
 			traits={
 				brilliant_strategist
-		armor_officer
-panzer_leader
-cavalry_leader
-ground_pounder
-urban_assault_specialist
-infantry_leader
-organizer
-trickster
-ranger YJ_traits_1
+				armor_officer
+				panzer_leader
+				cavalry_leader
+				ground_pounder
+				urban_assault_specialist
+				infantry_leader
+				organizer
+				trickster
+				ranger 
+				YJ_traits_1
 				}
 			skill = 6
 			attack_skill = 5

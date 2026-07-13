@@ -393,7 +393,7 @@ leader_traits = {
 			supply_consumption_factor =  -0.05
 			army_org_regain = -0.05
 			army_org_factor = 0.05
-			cas_damage_reduction = 0.25
+			cas_damage_reduction = 0.10
 		}
 
 		non_shared_modifier = {

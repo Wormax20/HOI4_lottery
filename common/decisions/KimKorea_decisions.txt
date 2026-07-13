@@ -177,7 +177,7 @@ KimKorea_discipline = { #宣传部
 		}
 
 		is_good = no
-		days_mission_timeout = 100
+		days_mission_timeout = 30
 
 		timeout_effect = {
 			create_ship = {
