@@ -56,6 +56,6 @@ CHT_Land_Reform = { #土地改革
 
 	icon = GFX_modifiers_generic_construction
 
-	state_production_speed_buildings_factor = 0.10
 	local_building_slots_factor = 0.10
+	local_resources_factor = 0.20
 }
