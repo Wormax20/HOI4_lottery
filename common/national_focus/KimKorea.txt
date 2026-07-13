@@ -1638,7 +1638,6 @@ focus_tree = {
 		y = 4
 		available = {
 			is_ai = no
-			num_of_factories > 30
 		}
 		relative_position_id = KimKorea_focus_Factory
 		prerequisite = { 
@@ -1674,7 +1673,7 @@ focus_tree = {
 		y = 6
 		available = {
 			is_ai = no
-			num_of_factories > 50
+			num_of_factories > 30
 		}
 		relative_position_id = KimKorea_focus_Factory
 		prerequisite = { 
@@ -1702,7 +1701,7 @@ focus_tree = {
 		y = 8
 		available = {
 			is_ai = no
-			num_of_factories > 70
+			num_of_factories > 50
 		}
 		relative_position_id = KimKorea_focus_Factory
 		prerequisite = { 
@@ -1725,7 +1724,7 @@ focus_tree = {
 		y = 9
 		available = {
 			is_ai = no
-			num_of_factories > 120
+			num_of_factories > 80
 		}
 		relative_position_id = KimKorea_focus_Factory
 		prerequisite = { 
@@ -4024,7 +4023,7 @@ focus_tree = {
 		y = 10
 		available = {
 			is_ai = no
-			num_of_factories > 160
+			num_of_factories > 120
 		}
 		relative_position_id = KimKorea_focus_IChi
 		prerequisite = { 
