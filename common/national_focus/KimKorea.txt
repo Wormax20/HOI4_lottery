@@ -4058,11 +4058,7 @@ focus_tree = {
 		relative_position_id = KimKorea_AirForce_focus
 		prerequisite = { 
 			focus = KimKorea_Army_focus_5
-		}
-		prerequisite = { 
 			focus = KimKorea_AirForce_focus_11
-		}
-		prerequisite = { 
 			focus = KimKorea_Navy_focus_9
 		}
 		completion_reward = { 
@@ -4073,11 +4069,11 @@ focus_tree = {
 			}
 			add_offsite_building = {
 				type = arms_factory
-				level = 20
+				level = 10
 			}
 			add_offsite_building = {
                 type = dockyard
-                level = 20
+                level = 10
             }
 		}
 	}
