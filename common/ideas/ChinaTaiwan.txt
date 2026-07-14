@@ -124,7 +124,7 @@ ideas = {
 			}
 		}
 
-		CHT_A_Group_of_Comrades_from_the_Central_Plains = { #来自中原一群伙伴
+		CHT_A_Group_of_Comrades_from_the_Central_Plains = { #为自由
 			picture = generic_convoys 
 			allowed = {
 				always = yes
@@ -134,6 +134,12 @@ ideas = {
 			}
 			modifier = {
 				weekly_manpower = 1000
+			}
+			targeted_modifier = {
+				tag = PRC
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+				breakthrough_bonus_against = 0.10
 			}
 		}
 
@@ -162,9 +168,23 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				training_time_factor = -0.10
+				training_time_factor = -0.15
 				mic_to_target_factor = 0.15
 				cic_to_target_factor = 0.15
+			}
+		}
+
+		CHT_Never_Forget_Ju = { #毋忘在莒
+			picture = generic_convoys 
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_core_attack_factor = 0.10
+				army_core_defence_factor = 0.10
 			}
 		}
 

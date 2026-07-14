@@ -605,7 +605,7 @@
 	}
 	focus = {
 		id = CHT_focus_Never_Forget_Ju #毋忘在莒
-		icon = GFX_focus_CHI_utmost_loyalty
+		icon = GFX_focus_CHI_meritocratic_principles
 		cost = 10
 		x = -2
 		y = 13
@@ -617,14 +617,14 @@
 			focus = CHT_focus_Focus_on_Taiwans_Development
 		}
 		completion_reward = { 
-			add_political_power = 100
+			add_ideas = CHT_Never_Forget_Ju
 		}
 	}
 	focus = {
 		id = CHT_focus_Return_to_the_Five_Sacred_Mountains_and_the_Three_Rivers #返指五岳和三江
 		icon = GFX_focus_CHI_utmost_loyalty
 		cost = 10
-		x = 0
+		x = 4
 		y = 14
 		available = {
 			is_ai = no
@@ -634,10 +634,44 @@
 		}
 		relative_position_id = CHT_focus_china_Southeastern
 		prerequisite = { 
-			focus = CHT_focus_The_Savior_of_the_Nation
+			focus = CHT_focus_For_Freedom
+		}
+		prerequisite = { 
+			focus = CHT_focus_For_the_Party_State
+		}
+		prerequisite = { 
+			focus = CHT_focus_Strive_for
 		}
 		completion_reward = { 
+			remove_ideas = CHT_The_Mainlands_Failure
 			load_focus_tree = china_nationalist_sea_focus
+		}
+	}
+	focus = {
+		id = CHT_focus_A_Great_Son_of_the_Nation #民族的伟人
+		icon = GFX_focus_CHI_generalissimo_for_all_of_china
+		cost = 10
+		x = -4
+		y = 14
+		available = {
+			is_ai = no
+			num_of_factories > 200
+			has_army_manpower = {
+				size > 1500000
+			}
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Recuperate_and_Rebuild
+		}
+		prerequisite = { 
+			focus = CHT_focus_Bide_Our_Time
+		}
+		prerequisite = { 
+			focus = CHT_focus_Never_Forget_Ju
+		}
+		completion_reward = { 
+			add_country_leader_trait = Cht_Headmaster
 		}
 	}
 	#工業
