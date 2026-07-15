@@ -42,6 +42,7 @@ ChinaTaiwan_Factory = {
 	industrial_capacity_dockyard = ChinaTaiwan_Factory_industrial_capacity_dockyard
 	production_speed_industrial_complex_factor = ChinaTaiwan_Factory_production_speed_industrial_complex_factor
 	production_speed_arms_factory_factor = ChinaTaiwan_Factory_production_speed_arms_factory_factor
+	production_speed_dockyard_factor = ChinaTaiwan_Factory_production_speed_dockyard_factor
 }
 ChinaTaiwan_Gold = {
 	icon = GFX_idea_SPR_seize_the_gold_reserves

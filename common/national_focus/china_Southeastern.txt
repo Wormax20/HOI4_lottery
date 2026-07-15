@@ -221,6 +221,7 @@
 		y = 8
 		available = {
 			is_ai = no
+			has_completed_focus = CHT_focus_Naval_Dominance
 		}
 		relative_position_id = CHT_focus_china_Southeastern
 		mutually_exclusive = { focus = CHT_focus_Approach_Germany }
@@ -251,6 +252,7 @@
 		y = 8
 		available = {
 			is_ai = no
+			has_completed_focus = CHT_focus_Army_Dominance
 		}
 		relative_position_id = CHT_focus_china_Southeastern
 		mutually_exclusive = { focus = CHT_focus_Approach_Japan }
@@ -469,6 +471,7 @@
 		}
 		completion_reward = { 
 			add_country_leader_trait = Cht_Chairman
+			add_research_slot = 1
 		}
 	}
 	focus = {
@@ -1537,6 +1540,120 @@
 		}
 		completion_reward = { 
 			add_manpower = 1200000
+		}
+	}
+	focus = {
+		id = CHT_focus_Army_Dominance #陆军主导
+		icon = GFX_focus_CHI_military_affairs_commission
+		cost = 10
+		x = 7
+		y = 4
+		available = {
+			is_ai = no
+		}
+		mutually_exclusive = { focus = CHT_focus_Naval_Dominance }
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Stabilize_the_Economy
+		}
+		completion_reward = { 
+			custom_effect_tooltip = ChinaTaiwan_Army_tt
+			add_to_variable = {
+				ChinaTaiwan_Army_army_attack_factor = 0.05
+				tooltip = army_attack_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Army_army_defence_factor = 0.05
+				tooltip = army_defence_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Army_army_org_factor = 0.05
+				tooltip = army_org_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Army_army_speed_factor = 0.05
+				tooltip = army_speed_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Army_supply_consumption_factor = -0.05
+				tooltip = supply_consumption_factor_tt
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Naval_Dominance #海军主导
+		icon = GFX_focus_CHI_Republic_of_china_navy
+		cost = 10
+		x = 17
+		y = 4
+		available = {
+			is_ai = no
+		}
+		mutually_exclusive = { focus = CHT_focus_Army_Dominance }
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_A_Group_of_Comrades_from_the_Central_Plains
+		}
+		completion_reward = { 
+			custom_effect_tooltip = ChinaTaiwan_Navy_tt
+			add_to_variable = {
+				ChinaTaiwan_Navy_naval_damage_factor = 0.05
+				tooltip = naval_damage_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Navy_naval_defense_factor = 0.05
+				tooltip = naval_defense_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Navy_naval_hit_chance = 0.05
+				tooltip = naval_hit_chance_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Navy_naval_speed_factor = 0.05
+				tooltip = naval_speed_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Navy_navy_anti_air_attack_factor = 0.05
+				tooltip = navy_anti_air_attack_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Navy_navy_max_range_factor = 0.05
+				tooltip = navy_max_range_factor_tt
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Republic_of_China_Air_Force #中华民国空军
+		icon = GFX_focus_CHI_air_force
+		cost = 10
+		x = 12
+		y = 5
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Army_Dominance
+			focus = CHT_focus_Naval_Dominance
+		}
+		completion_reward = { 
+			custom_effect_tooltip = ChinaTaiwan_AirForce_tt
+			add_to_variable = {
+				ChinaTaiwan_AirForce_air_attack_factor = 0.05
+				tooltip = air_attack_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_AirForce_air_defence_factor = 0.05
+				tooltip = air_defence_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_AirForce_air_ace_bonuses_factor = 0.05
+				tooltip = air_ace_bonuses_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_AirForce_air_range_factor = 0.05
+				tooltip = air_range_factor_tt
+			}
 		}
 	}
 }

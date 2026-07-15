@@ -36,7 +36,7 @@ country_event = {
 			attack_skill = 7
 			defense_skill = 5
 			planning_skill = 5
-			logistics_skill = 5
+			logistics_skill = 6
 		}
 		hidden_effect = {
 			meta_effect = {
@@ -326,21 +326,25 @@ country_event = {
 				is_ai = no
 			}
 			traits={
-				YJ_traits_2
+				YJ_traits_1
 				old_guard
 				inflexible_strategist
 				trait_cautious
+				commando
+				urban_assault_specialist
+				panzer_leader
+				cavalry_leader
+				infantry_leader
 				trickster
 				organizer
 				ranger
 				YJ_traits_29
-
 			}
-			skill = 3
+			skill = 6
 			attack_skill = 1
-			defense_skill = 9
-			planning_skill = 1
-			logistics_skill = 2
+			defense_skill = 10
+			planning_skill = 3
+			logistics_skill = 4
 		}
 
 		ai_chance = {
@@ -641,7 +645,6 @@ country_event = {
 				YJ_traits_14
 				YJ_traits_42
 				YJ_traits_39
-				brilliant_strategist
 				commando
 				urban_assault_specialist
 				panzer_leader
@@ -1987,8 +1990,8 @@ country_event = {
 			}
 			skill = 5
 			attack_skill = 4
-			defense_skill = 5
-			planning_skill = 6
+			defense_skill = 4
+			planning_skill = 5
 			logistics_skill = 4
 		}
 		hidden_effect = {

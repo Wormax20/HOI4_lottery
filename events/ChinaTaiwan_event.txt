@@ -89,6 +89,36 @@ country_event = {
 			creator = ROOT
 			name = "逸仙级"
 		}
+		create_ship = {
+			type = ship_hull_light_2
+			equipment_variant = "逸仙级驱逐舰"
+			creator = ROOT
+			name = "逸仙级"
+		}
+		create_ship = {
+			type = ship_hull_light_2
+			equipment_variant = "逸仙级驱逐舰"
+			creator = ROOT
+			name = "逸仙级"
+		}
+		create_ship = {
+			type = ship_hull_light_2
+			equipment_variant = "逸仙级驱逐舰"
+			creator = ROOT
+			name = "逸仙级"
+		}
+		create_ship = {
+			type = ship_hull_light_2
+			equipment_variant = "逸仙级驱逐舰"
+			creator = ROOT
+			name = "逸仙级"
+		}
+		create_ship = {
+			type = ship_hull_light_2
+			equipment_variant = "逸仙级驱逐舰"
+			creator = ROOT
+			name = "逸仙级"
+		}
 	}
 }
 country_event = {
@@ -184,9 +214,8 @@ country_event = {
 		}
 		add_offsite_building = {
              type = dockyard
-            level = 5
+            level = 10
         }
-		
 	}
 }
 country_event = {
