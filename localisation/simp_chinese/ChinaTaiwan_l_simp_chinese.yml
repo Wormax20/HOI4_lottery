@@ -180,7 +180,7 @@
  CHT_The_Mainlands_Failure: "在大陆的失败"
  CHT_Finance: "金圆券"
  CHT_Mobilization_to_Suppress_the_Rebellion: "动员戡乱"
- CHT_The_Party_State: "党国"
+ CHT_The_Party_State: "为党国"
  CHT_Three_Principles_of_the_People: "三民主义"
  CHT_Economic_Collapse: "经济崩溃"
  CHT_Closed_Policy: "封闭大陆政策"
@@ -188,7 +188,7 @@
  CHT_Security_and_Counterintelligence: "保密防谍"
  CHT_Declare_Martial_Law: "戒严"
  CHT_A_Long_Road_Ahead: "任重道远"
- CHT_Strive_for: "争取"
+ CHT_Strive_for: "来争取"
  CHT_Bide_Our_Time: "卧薪尝胆"
  CHT_Never_Forget_Ju: "毋忘在莒"
 
@@ -201,6 +201,7 @@
  CHT_Land_Reform: "土地改革"
  CHT_approach_japan_opinion: "接触日本"
  CHT_approach_germany_opinion: "接触德国"
+ CHT_Irreconcilable_Differences_opinion: "势不两立"
 
 
 
@@ -219,6 +220,8 @@
  ChinaTaiwan_Gold: "黄金储备"
  ChinaTaiwan_Gold_tt: "§G$ChinaTaiwan_Gold$§!追加修正:"
  ChinaTaiwan_Gold_desc: "从哪里来的黄金不要多问"
+ ChinaTaiwan_Operation_National_Glory: "国光计画"
+ ChinaTaiwan_Operation_National_Glory_tt: "§R计画上限 计画速度§!§O核心攻防 制空权§!§G每月+0.25%§!"
 
 
  ChinaTaiwan_event.100.t: "残存海军舰队抵台"

@@ -22,15 +22,15 @@ sub_units = {
 			category_mobile_and_mobile_combat_sup
 		}
 
-		combat_width = 2
+		combat_width = 3
 
 		need = {
-			armored_car_equipment = 50
+			armored_car_equipment = 60
 		}
 		soft_attack = 0.3
 		hard_attack = 0.5
-		manpower = 500
-		max_organisation = 60
+		manpower = 600
+		max_organisation = 30
 		default_morale = 0.3
 		training_time = 140
 		max_strength = 14
@@ -40,12 +40,12 @@ sub_units = {
 		suppression = 2.5
 
 		forest = {
-		    attack = -0.1
+		    attack = -0.15
 			movement = -0.2
 		}
 		mountain = 	{
-		    attack = -0.1
-		    movement = -0.1
+		    attack = -0.15
+		    movement = -0.15
 		}
 		jungle = {
 		    attack = -0.15

@@ -134,8 +134,16 @@ leader_traits = {
 	A_traits = {
 		random = no
 		sprite = 13
-        political_power_factor = -0.1
-    	consumer_goods_factor = -0.30
+        political_power_factor = 0.10
+		industrial_capacity_factory = 0.05
+		conscription_factor = 0.05
+		communism_drift = 0.05
+    	targeted_modifier = {
+			tag = MEX
+			attack_bonus_against = -0.05
+			defense_bonus_against = -0.05
+			breakthrough_bonus_against = -0.05
+		}
 	}
 
 	Pap_traits = {

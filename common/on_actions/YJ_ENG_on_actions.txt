@@ -210,4 +210,198 @@ on_actions = {
 			}
 		}
 	}
+
+	on_monthly_ENG = {
+		effect = {
+			if = {
+				limit = {
+					tag = ENG
+				}
+				set_temp_variable = {
+					YJ_ENG_OFF_loop_effcet_count = 0
+				}
+
+				while_loop_effect = {
+					limit = {
+						check_variable = {
+							YJ_ENG_OFF_loop_effcet_count = 1
+							compare = less_than
+						}
+					}
+					if = {
+						limit = {
+							any_state = {
+								is_core_of = ENG
+								is_fully_controlled_by = ROOT
+								industrial_complex > 1
+							}
+						}
+
+						random_core_state = {
+							limit = {
+								is_core_of = ENG
+								is_fully_controlled_by = ROOT
+								industrial_complex > 1
+							}
+
+							remove_building = {
+								type = industrial_complex
+								level = 2
+							}
+						}
+
+						add_offsite_building = {
+							type = industrial_complex
+							level = 2
+						}
+					}
+					else = {
+						if = {
+							limit = {
+								any_state = {
+									is_core_of = ENG
+									is_fully_controlled_by = ROOT
+									industrial_complex > 0
+								}
+							}
+
+							random_core_state = {
+								limit = {
+									is_core_of = ENG
+									is_fully_controlled_by = ROOT
+									industrial_complex > 0
+								}
+
+								remove_building = {
+									type = industrial_complex
+									level = 1
+								}
+							}
+
+							add_offsite_building = {
+								type = industrial_complex
+								level = 1
+							}
+						}
+					}
+					if = {
+						limit = {
+							any_state = {
+								is_core_of = ENG
+								is_fully_controlled_by = ROOT
+								arms_factory > 1
+							}
+						}
+
+						random_core_state = {
+							limit = {
+								is_core_of = ENG
+								is_fully_controlled_by = ROOT
+								arms_factory > 1
+							}
+
+							remove_building = {
+								type = arms_factory
+								level = 2
+							}
+						}
+
+						add_offsite_building = {
+							type = arms_factory
+							level = 2
+						}
+					}
+					else = {
+						if = {
+							limit = {
+								any_state = {
+									is_core_of = ENG
+									is_fully_controlled_by = ROOT
+									arms_factory > 0
+								}
+							}
+
+							random_core_state = {
+								limit = {
+									is_core_of = ENG
+									is_fully_controlled_by = ROOT
+									arms_factory > 0
+								}
+
+								remove_building = {
+									type = arms_factory
+									level = 1
+								}
+							}
+
+							add_offsite_building = {
+								type = arms_factory
+								level = 1
+							}
+						}
+					}
+					if = {
+						limit = {
+							any_state = {
+								is_core_of = ENG
+								is_fully_controlled_by = ROOT
+								dockyard > 1
+							}
+						}
+
+						random_core_state = {
+							limit = {
+								is_core_of = ENG
+								is_fully_controlled_by = ROOT
+								dockyard > 1
+							}
+
+							remove_building = {
+								type = dockyard
+								level = 2
+							}
+						}
+
+						add_offsite_building = {
+							type = dockyard
+							level = 2
+						}
+					}
+					else = {
+						if = {
+							limit = {
+								any_state = {
+									is_core_of = ENG
+									is_fully_controlled_by = ROOT
+									dockyard > 0
+								}
+							}
+
+							random_core_state = {
+								limit = {
+									is_core_of = ENG
+									is_fully_controlled_by = ROOT
+									dockyard > 0
+								}
+
+								remove_building = {
+									type = dockyard
+									level = 1
+								}
+							}
+
+							add_offsite_building = {
+								type = dockyard
+								level = 1
+							}
+						}
+					}
+
+					add_to_temp_variable = {
+						YJ_ENG_OFF_loop_effcet_count = 1
+					}
+				}
+			}
+		}
+	}
 }

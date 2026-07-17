@@ -51,24 +51,6 @@ ideas = {
 			}
 		}
 
-		CHT_The_Party_State = { #党国
-			picture = CHI_blue_shirt_society
-			allowed = {
-				always = yes
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			modifier = {
-				political_power_factor = 0.10
-				political_power_gain = 0.10
-				democratic_drift = -0.05
-				fascism_drift = -0.05
-				communism_drift = -0.05
-				neutrality_drift = 0.05
-			}
-		}
-
 		CHT_Three_Principles_of_the_People = { #三民主义
 			picture = CHI_three_principles_of_the_people
 			allowed = {
@@ -124,8 +106,57 @@ ideas = {
 			}
 		}
 
+		CHT_A_Long_Road_Ahead = { #任重道远
+			picture = man_five_year_plan_industry
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = -0.10
+				consumer_goods_expected_value = -0.05
+				production_factory_max_efficiency_factor = 0.10
+				industrial_capacity_factory = 0.10
+			}
+		}
+
+		CHT_The_Party_State = { #为党国
+			picture = CHI_blue_shirt_society
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_factor = 0.10
+				political_power_gain = 0.10
+				democratic_drift = -0.05
+				fascism_drift = -0.05
+				communism_drift = -0.05
+				neutrality_drift = 0.05
+			}
+		}
+
+		CHT_Strive_for = { #来争取
+			picture = CHI_decisive_battle
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				training_time_factor = -0.15
+				mic_to_target_factor = 0.15
+				cic_to_target_factor = 0.15
+			}
+		}
+
 		CHT_A_Group_of_Comrades_from_the_Central_Plains = { #为自由
-			picture = generic_convoys 
+			picture = CHI_baojia_system
 			allowed = {
 				always = yes
 			}
@@ -143,39 +174,8 @@ ideas = {
 			}
 		}
 
-		CHT_A_Long_Road_Ahead = { #任重道远
-			picture = man_five_year_plan_industry
-			allowed = {
-				always = yes
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			modifier = {
-				consumer_goods_factor = -0.10
-				consumer_goods_expected_value = -0.05
-				production_factory_max_efficiency_factor = 0.10
-				industrial_capacity_factory = 0.10
-			}
-		}
-
-		CHT_Strive_for = { #争取
-			picture = generic_convoys 
-			allowed = {
-				always = yes
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			modifier = {
-				training_time_factor = -0.15
-				mic_to_target_factor = 0.15
-				cic_to_target_factor = 0.15
-			}
-		}
-
 		CHT_Never_Forget_Ju = { #毋忘在莒
-			picture = generic_convoys 
+			picture = chi_warlord_integration5
 			allowed = {
 				always = yes
 			}
@@ -189,7 +189,7 @@ ideas = {
 		}
 
 		CHT_Bide_Our_Time = { #卧薪尝胆
-			picture = generic_convoys 
+			picture = CHI_protracted_warfareCHI_protracted_warfare
 			allowed = {
 				always = yes
 			}
@@ -211,11 +211,12 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				resource_trade_cost_bonus_per_factory = -3
+				resource_trade_cost_bonus_per_factory = -2
 				trade_opinion_factor = -0.50
 				trade_cost_for_target_factor = 0.50
 			}
 		}
+
 		CHT_Security_and_Counterintelligence = { #保密防谍
 			picture = generic_spy_coup
 			allowed = {
@@ -231,6 +232,38 @@ ideas = {
 				army_intel_to_others = -15
 				navy_intel_to_others = -15
 				airforce_intel_to_others = -15
+			}
+		}
+		CHT_Naval_Research_Institute = { #海军研究所
+			picture = generic_convoys 
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				navy_visibility = -0.05
+				naval_torpedo_cooldown_factor = -0.10
+				naval_torpedo_hit_chance_factor = 0.10
+			}
+			research_bonus = {
+				naval_equipment = 0.2
+			}
+		}
+		CHT_Air_Land_Integration = { #空地一体
+			picture = generic_convoys 
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				ground_attack_factor = 0.10
+				air_close_air_support_org_damage_factor = 0.10
+				air_cas_efficiency = 0.10
+				air_night_penalty = -0.10
 			}
 		}
 	}

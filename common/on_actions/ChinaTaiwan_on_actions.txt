@@ -71,4 +71,30 @@ on_actions = {
 			}
         }
     }
+	on_monthly = {
+		effect = {
+			if = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = ChinaTaiwan_Operation_National_Glory
+					}
+				}
+				add_to_variable = {
+					ChinaTaiwan_Operation_National_Glory_max_planning = 0.0025
+				}
+				add_to_variable = {
+					ChinaTaiwan_Operation_National_Glory_planning_speed = 0.0025
+				}
+				add_to_variable = {
+					ChinaTaiwan_Operation_National_Glory_army_core_attack_factor = 0.0025
+				}
+				add_to_variable = {
+					ChinaTaiwan_Operation_National_Glory_army_core_defence_factor = 0.0025
+				}
+				add_to_variable = {
+					ChinaTaiwan_Operation_National_Glory_army_bonus_air_superiority_factor = 0.0025
+				}
+			}
+		}
+	}
 }

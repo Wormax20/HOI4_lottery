@@ -15,4 +15,7 @@ opinion_modifiers = {
 	CHT_approach_germany_opinion = {
 		value = 25
 	}
+	CHT_Irreconcilable_Differences_opinion = {
+		value = -100
+	}
 }

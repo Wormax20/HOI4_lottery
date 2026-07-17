@@ -44,6 +44,22 @@ country_event = {
 					rear_1_custom_slot = ship_torpedo_2
 				}
 			}
+			create_equipment_variant = {
+				name = "蒋公级航空母舰"
+				type = ship_hull_carrier_1
+				parent_version = 0
+				modules = {
+					fixed_ship_deck_slot_1 = ship_deck_space
+      				fixed_ship_deck_slot_2 = ship_deck_space
+      				fixed_ship_anti_air_slot = ship_anti_air_2
+      				fixed_ship_radar_slot = ship_radar_1
+       				fixed_ship_engine_slot = carrier_ship_engine_2
+ 				    fixed_ship_secondaries_slot = dp_ship_secondaries_2
+        			fixed_ship_armor_slot = ship_armor_cruiser_1
+        			front_1_custom_slot = ship_deck_space
+        			mid_1_custom_slot = ship_deck_space
+				}
+			}
 		}	
 	option = {
 		name = ChinaTaiwan_event.100.a

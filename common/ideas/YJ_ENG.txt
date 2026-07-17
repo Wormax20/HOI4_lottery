@@ -266,7 +266,7 @@ ideas = {
 			picture = ast_abandon_the_westminster_system
 
 			modifier = {
-				global_building_slots_factor = 0.10
+				custom_modifier_tooltip = YJ_ENG_7_ideas_tt
 				industrial_capacity_dockyard = 0.20
 				production_speed_dockyard_factor = 0.20
 				naval_damage_factor = 0.10

@@ -49,12 +49,24 @@
                 type = dockyard
                 level = 3
             }
+			hidden_effect = {
+				add_opinion_modifier = {
+					target = PRC
+					modifier = CHT_Irreconcilable_Differences_opinion
+				}
+				PRC = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = CHT_Irreconcilable_Differences_opinion
+					}
+				}
+			}
 		}
 	}
 	focus = {
 		id = CHT_focus_Deliver_a_Speech #发表讲话
 		icon = GFX_focus_PER_establish_opec
-		cost = 5
+		cost = 10
 		x = 0
 		y = 1
 		available = {
@@ -296,8 +308,15 @@
 				name = industry_bonus
 				ahead_reduction = 0.5
       			bonus = 1.0
-      			uses = 2
+      			uses = 3
         		category = industry
+			}
+			add_tech_bonus = {
+				name = electronics_bonus
+				ahead_reduction = 0.5
+				bonus = 1.0
+				uses = 3
+				category = electronics
 			}
 		}
 	}
@@ -319,14 +338,14 @@
 				name = ARMOUR_TITLE
 				ahead_reduction = 0.5
 				bonus = 1.0
-				uses = 2
+				uses = 3
 				category = mio_cat_tech_all_armor_and_modules
 			}
 			add_tech_bonus = {
 				name = ARTILLERY_TITLE
 				ahead_reduction = 0.5
 				bonus = 1.0
-				uses = 2
+				uses = 3
 				category = artillery
 			}
 		}
@@ -385,6 +404,10 @@
 		}
 		completion_reward = { 
 			custom_effect_tooltip = ChinaTaiwan_Factory_tt
+			add_to_variable = {
+				ChinaTaiwan_Factory_production_speed_dockyard_factor = 0.10
+				tooltip = production_speed_dockyard_factor_tt
+			}
 			add_to_variable = {
 				ChinaTaiwan_Factory_production_speed_industrial_complex_factor = 0.10
 				tooltip = production_speed_industrial_complex_factor_tt
@@ -647,7 +670,7 @@
 		}
 		completion_reward = { 
 			remove_ideas = CHT_The_Mainlands_Failure
-			load_focus_tree = china_nationalist_sea_focus
+			add_country_leader_trait = Cht_Headmaster
 		}
 	}
 	focus = {
@@ -974,7 +997,7 @@
 	focus = {
 		id = CHT_focus_Support_Private_Enterprises #支持民营企业
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 5
+		cost = 10
 		x = -7
 		y = 6
 		available = {
@@ -1025,7 +1048,7 @@
 	focus = {
 		id = CHT_focus_Support_the_Arms_Industry #支持军工产业
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 5
+		cost = 10
 		x = -5
 		y = 6
 		available = {
@@ -1521,6 +1544,9 @@
 			focus = CHT_focus_Abolish_the_Gold_Yuan
 		}
 		completion_reward = { 
+			set_technology = {
+				dispersed_industry = 1
+			}
 			add_ideas = CHT_A_Long_Road_Ahead
 		}
 	}
@@ -1543,6 +1569,28 @@
 		}
 	}
 	focus = {
+		id = CHT_focus_Operation_National_Glory #国光计画
+		icon = GFX_focus_CHI_lay_the_foundation_for_a_united_china
+		cost = 10
+		x = 11
+		y = 6
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Infantry_Equipment_Research
+		}
+		prerequisite = { 
+			focus = CHT_focus_Republic_of_China_Air_Force
+		}
+		completion_reward = { 
+			add_dynamic_modifier = {
+				modifier = ChinaTaiwan_Operation_National_Glory
+			}
+		}
+	}
+	focus = {
 		id = CHT_focus_Army_Dominance #陆军主导
 		icon = GFX_focus_CHI_military_affairs_commission
 		cost = 10
@@ -1554,7 +1602,7 @@
 		mutually_exclusive = { focus = CHT_focus_Naval_Dominance }
 		relative_position_id = CHT_focus_china_Southeastern
 		prerequisite = { 
-			focus = CHT_focus_Stabilize_the_Economy
+			focus = CHT_focus_A_Group_of_Comrades_from_the_Central_Plains
 		}
 		completion_reward = { 
 			custom_effect_tooltip = ChinaTaiwan_Army_tt
@@ -1584,7 +1632,7 @@
 		id = CHT_focus_Naval_Dominance #海军主导
 		icon = GFX_focus_CHI_Republic_of_china_navy
 		cost = 10
-		x = 17
+		x = 25
 		y = 4
 		available = {
 			is_ai = no
@@ -1626,7 +1674,7 @@
 		id = CHT_focus_Republic_of_China_Air_Force #中华民国空军
 		icon = GFX_focus_CHI_air_force
 		cost = 10
-		x = 12
+		x = 16
 		y = 5
 		available = {
 			is_ai = no
@@ -1635,6 +1683,533 @@
 		prerequisite = { 
 			focus = CHT_focus_Army_Dominance
 			focus = CHT_focus_Naval_Dominance
+		}
+		completion_reward = { 
+			custom_effect_tooltip = ChinaTaiwan_AirForce_tt
+			add_to_variable = {
+				ChinaTaiwan_AirForce_air_attack_factor = 0.05
+				tooltip = air_attack_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_AirForce_air_defence_factor = 0.05
+				tooltip = air_defence_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_AirForce_air_ace_bonuses_factor = 0.05
+				tooltip = air_ace_bonuses_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_AirForce_air_range_factor = 0.05
+				tooltip = air_range_factor_tt
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Infantry_Equipment_Research #单兵装备研究
+		icon = GFX_focus_AFG_against_kabul
+		cost = 10
+		x = 7
+		y = 5
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Army_Dominance
+		}
+		completion_reward = { 
+			add_tech_bonus = {
+				name = INFANTRY_TITLE
+    			bonus = 1.0
+    			uses = 2
+   				category = infantry_tech
+			}
+			add_tech_bonus = {
+				name = support_bonus
+    			bonus = 1.0
+    			uses = 2
+   				category = support_tech
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Expand_the_Destroyer_Fleet #扩充驱逐舰队
+		icon = GFX_focus_generic_destroyer
+		cost = 5
+		x = 25
+		y = 5
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Naval_Dominance
+		}
+		completion_reward = { 
+			create_ship = {
+				type = ship_hull_light_2
+				equipment_variant = "逸仙级驱逐舰"
+				creator = ROOT
+				name = "逸仙级"
+			}
+			create_ship = {
+				type = ship_hull_light_2
+				equipment_variant = "逸仙级驱逐舰"
+				creator = ROOT
+				name = "逸仙级"
+			}
+			create_ship = {
+				type = ship_hull_light_2
+				equipment_variant = "逸仙级驱逐舰"
+				creator = ROOT
+				name = "逸仙级"
+			}
+			create_ship = {
+				type = ship_hull_light_2
+				equipment_variant = "逸仙级驱逐舰"
+				creator = ROOT
+				name = "逸仙级"
+			}
+			create_ship = {
+				type = ship_hull_light_2
+				equipment_variant = "逸仙级驱逐舰"
+				creator = ROOT
+				name = "逸仙级"
+			}
+			create_ship = {
+				type = ship_hull_light_2
+				equipment_variant = "逸仙级驱逐舰"
+				creator = ROOT
+				name = "逸仙级"
+			}
+			create_ship = {
+				type = ship_hull_light_2
+				equipment_variant = "逸仙级驱逐舰"
+				creator = ROOT
+				name = "逸仙级"
+			}
+			create_ship = {
+				type = ship_hull_light_2
+				equipment_variant = "逸仙级驱逐舰"
+				creator = ROOT
+				name = "逸仙级"
+			}
+			create_ship = {
+				type = ship_hull_light_2
+				equipment_variant = "逸仙级驱逐舰"
+				creator = ROOT
+				name = "逸仙级"
+			}
+			create_ship = {
+				type = ship_hull_light_2
+				equipment_variant = "逸仙级驱逐舰"
+				creator = ROOT
+				name = "逸仙级"
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Establish_the_Naval_Research_Institute #设立海军研究所
+		icon = GFX_focus_generic_navy_research_bonus
+		cost = 10
+		x = 21
+		y = 6
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Republic_of_China_Air_Force
+		}
+		prerequisite = { 
+			focus = CHT_focus_Expand_the_Destroyer_Fleet
+		}
+		completion_reward = { 
+			add_research_slot = 1
+			add_ideas = CHT_Naval_Research_Institute
+		}
+	}
+	focus = {
+		id = CHT_focus_Expand_Aircraft_Production #扩大空军制造商
+		icon = GFX_focus_CHI_camco_primacy
+		cost = 10
+		x = 16
+		y = 6
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Republic_of_China_Air_Force
+		}
+		completion_reward = { 
+			mio:CHT_camco_fighter_ChinaTaiwan_organization = {
+				add_mio_size = 2
+				add_mio_funds_gain_factor = 0.25
+				add_mio_research_bonus = 0.05
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Rebuild_the_Whampoa_Military_Academy #重建黄埔军校
+		icon = GFX_focus_chi_army_reform
+		cost = 10
+		x = 7
+		y = 6
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Infantry_Equipment_Research
+		}
+		completion_reward = { 
+			custom_effect_tooltip = ChinaTaiwan_Army_tt
+			add_to_variable = {
+				ChinaTaiwan_Army_army_attack_factor = 0.05
+				tooltip = army_attack_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Army_army_defence_factor = 0.05
+				tooltip = army_defence_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Army_army_org_factor = 0.05
+				tooltip = army_org_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Army_army_speed_factor = 0.05
+				tooltip = army_speed_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Army_supply_consumption_factor = -0.05
+				tooltip = supply_consumption_factor_tt
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Rebuild_the_Naval_Academy #重建海军军官学校
+		icon = GFX_focus_generic_naval_discipline
+		cost = 10
+		x = 25
+		y = 6
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Expand_the_Destroyer_Fleet
+		}
+		completion_reward = { 
+			custom_effect_tooltip = ChinaTaiwan_Navy_tt
+			add_to_variable = {
+				ChinaTaiwan_Navy_naval_damage_factor = 0.05
+				tooltip = naval_damage_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Navy_naval_defense_factor = 0.05
+				tooltip = naval_defense_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Navy_naval_hit_chance = 0.05
+				tooltip = naval_hit_chance_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Navy_naval_speed_factor = 0.05
+				tooltip = naval_speed_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Navy_navy_anti_air_attack_factor = 0.05
+				tooltip = navy_anti_air_attack_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Navy_navy_max_range_factor = 0.05
+				tooltip = navy_max_range_factor_tt
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_The_Soul_of_Whampoa #黄埔军魂
+		icon = GFX_focus_chi_whampoa_military_academy
+		cost = 10
+		x = 6
+		y = 7
+		available = {
+			is_ai = no
+		}
+		mutually_exclusive = { focus = CHT_focus_Modernize_the_Northern_Faction }
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Rebuild_the_Whampoa_Military_Academy
+		}
+		completion_reward = { 
+			custom_effect_tooltip = ChinaTaiwan_Army_tt
+			add_to_variable = {
+				ChinaTaiwan_Army_army_attack_factor = 0.05
+				tooltip = army_attack_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Army_army_defence_factor = 0.05
+				tooltip = army_defence_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Army_army_org_factor = 0.10
+				tooltip = army_org_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Army_army_speed_factor = 0.10
+				tooltip = army_speed_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Army_supply_consumption_factor = -0.10
+				tooltip = supply_consumption_factor_tt
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Modernize_the_Northern_Faction #现代化北派
+		icon = GFX_focus_CHI_200th_division
+		cost = 10
+		x = 8
+		y = 7
+		available = {
+			is_ai = no
+		}
+		mutually_exclusive = { focus = CHT_focus_The_Soul_of_Whampoa }
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Rebuild_the_Whampoa_Military_Academy
+		}
+		completion_reward = { 
+			custom_effect_tooltip = ChinaTaiwan_Army_tt
+			add_to_variable = {
+				ChinaTaiwan_Army_army_attack_factor = 0.10
+				tooltip = army_attack_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Army_army_defence_factor = 0.10
+				tooltip = army_defence_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Army_army_org_factor = 0.05
+				tooltip = army_org_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Army_army_speed_factor = 0.05
+				tooltip = army_speed_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Army_supply_consumption_factor = -0.05
+				tooltip = supply_consumption_factor_tt
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Advanced_Hull_Research #先进船体研发
+		icon = GFX_focus_NORDIC_dem_navy
+		cost = 5
+		x = 24
+		y = 7
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Rebuild_the_Naval_Academy
+		}
+		completion_reward = { 
+			set_technology = {
+				basic_ship_hull_carrier = 1
+			}
+			set_technology = {
+				early_ship_hull_carrier = 1
+			}
+			add_tech_bonus = {
+				name = dd_tech
+				bonus = 1.0
+				uses = 2
+				category = dd_tech
+			}
+			add_tech_bonus = {
+				name = ship_modules_tech
+				bonus = 1.0
+				uses = 1
+				category = ship_modules_tech
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Expand_Naval_Dockyards #扩建海军船坞
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 5
+		x = 26
+		y = 7
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Rebuild_the_Naval_Academy
+		}
+		completion_reward = { 
+			add_offsite_building = {
+                type = dockyard
+                level = 5
+            }
+		}
+	}
+	focus = {
+		id = CHT_focus_Train_Flight_Instructors #飞行教官培训
+		icon = GFX_focus_generic_pilot_training
+		cost = 10
+		x = 16
+		y = 7
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Expand_Aircraft_Production
+		}
+		completion_reward = { 
+			custom_effect_tooltip = ChinaTaiwan_AirForce_tt
+			add_to_variable = {
+				ChinaTaiwan_AirForce_air_attack_factor = 0.05
+				tooltip = air_attack_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_AirForce_air_defence_factor = 0.05
+				tooltip = air_defence_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_AirForce_air_ace_bonuses_factor = 0.10
+				tooltip = air_ace_bonuses_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_AirForce_air_range_factor = 0.10
+				tooltip = air_range_factor_tt
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Aircraft_Weapons_Research #飞行武器研发
+		icon = GFX_goal_continuous_air_production
+		cost = 5
+		x = 18
+		y = 7
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Expand_Aircraft_Production
+		}
+		completion_reward = { 
+			add_tech_bonus = {
+				name = small_airframe
+				bonus = 1.0
+				uses = 4
+				category = air_equipment
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Small_Airframe_Research #小型机体研究
+		icon = GFX_focus_generic_air_research_boost
+		cost = 5
+		x = 14
+		y = 7
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Expand_Aircraft_Production
+		}
+		completion_reward = { 
+			add_tech_bonus = {
+				name = small_airframe
+				bonus = 1.0
+				uses = 2
+				category = light_air
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Air_Land_Integration #空地一体
+		icon = GFX_focus_generic_tank_air_support
+		cost = 10
+		x = 11
+		y = 8
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Modernize_the_Northern_Faction
+		}
+		prerequisite = { 
+			focus = CHT_focus_Small_Airframe_Research
+		}
+		prerequisite = { 
+			focus = CHT_focus_Operation_National_Glory
+		}
+		completion_reward = { 
+			add_ideas = CHT_Air_Land_Integration
+		}
+	}
+	focus = {
+		id = CHT_focus_Over_the_Sea #大海之上
+		icon = GFX_focus_generic_air_carrier
+		cost = 10
+		x = 21
+		y = 8
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Aircraft_Weapons_Research
+		}
+		prerequisite = { 
+			focus = CHT_focus_Establish_the_Naval_Research_Institute
+		}
+		prerequisite = { 
+			focus = CHT_focus_Advanced_Hull_Research
+		}
+		completion_reward = { 
+			create_ship = {
+				type = ship_hull_carrier_1
+				equipment_variant = "蒋公级航空母舰"
+				creator = ROOT
+				name = "蒋公级"
+			}
+			create_ship = {
+				type = ship_hull_carrier_1
+				equipment_variant = "蒋公级航空母舰"
+				creator = ROOT
+				name = "蒋公级"
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Aspire_to_the_Skies #向往蓝天
+		icon = GFX_goal_generic_air_fighter2
+		cost = 10
+		x = 16
+		y = 8
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Aircraft_Weapons_Research
+		}
+		prerequisite = { 
+			focus = CHT_focus_Train_Flight_Instructors
+		}
+		prerequisite = { 
+			focus = CHT_focus_Small_Airframe_Research
 		}
 		completion_reward = { 
 			custom_effect_tooltip = ChinaTaiwan_AirForce_tt

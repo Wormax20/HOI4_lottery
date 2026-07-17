@@ -52,6 +52,18 @@ ChinaTaiwan_Gold = {
 	consumer_goods_expected_value = ChinaTaiwan_Factory_consumer_goods_expected_value
 	consumer_goods_factor = ChinaTaiwan_Factory_consumer_goods_factor
 }
+ChinaTaiwan_Operation_National_Glory = {
+	icon = GFX_idea_CHI_military_affairs_commission
+	enable = {
+		has_completed_focus = CHT_focus_Operation_National_Glory
+	}
+	custom_modifier_tooltip = ChinaTaiwan_Operation_National_Glory_tt
+	max_planning = ChinaTaiwan_Operation_National_Glory_max_planning
+	planning_speed = ChinaTaiwan_Operation_National_Glory_planning_speed
+	army_core_attack_factor = ChinaTaiwan_Operation_National_Glory_army_core_attack_factor
+	army_core_defence_factor = ChinaTaiwan_Operation_National_Glory_army_core_defence_factor
+	army_bonus_air_superiority_factor = ChinaTaiwan_Operation_National_Glory_army_bonus_air_superiority_factor
+}
 CHT_Land_Reform = { #土地改革
 	enable = { always = yes }
 
