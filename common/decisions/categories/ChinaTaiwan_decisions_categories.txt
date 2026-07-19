@@ -5,7 +5,7 @@ ChinaTaiwan_discipline = {
 	}
 	visible = {
 		original_tag = CHI
-		controls_state = 524
+		has_completed_focus = CHT_focus_china_Southeastern
 	}
 	priority = 100
 }

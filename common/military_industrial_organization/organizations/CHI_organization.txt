@@ -1110,7 +1110,9 @@ CHI_jinling_arsenal_organization = {
 	}
 
 }
+
 #下方东南苦行山
+
 CHT_henschel_ChinaTaiwan_organization = {
 	include = generic_infantry_tank_organization
 	icon = GFX_idea_henschel
@@ -1123,7 +1125,9 @@ CHT_henschel_ChinaTaiwan_organization = {
 		always = yes
 	}
 	available = {
-		owner = { controls_state = 524 }
+		from = {
+			has_country_flag = CHT_focus_china_Southeastern_Has
+		}
 	}
 	add_trait = {
 		token = GER_mio_trait_hoesch_facilities
@@ -1219,12 +1223,30 @@ CHT_crewe_works_ChinaTaiwan_organization = {
 		always = yes
 	}
 	available = {
-		owner = { controls_state = 524 }
+		from = {
+			has_country_flag = CHT_focus_china_Southeastern_Has
+		}
 	}
 	
 }
 CHT_jiangnan_shipyard_group_ChinaTaiwan_organization = {
 	include = generic_task_force_ship_organization
+	icon = GFX_idea_generic_naval_manufacturer_3
+	name = 龙德造船
+	allowed = {	
+		original_tag = CHI
+	}
+	visible = {
+		always = yes
+	}
+	available = {
+		from = {
+			has_country_flag = CHT_focus_china_Southeastern_Has
+		}
+	}
+}
+CHT_dagu_shipyard_ChinaTaiwan_organization = {
+	include = generic_raider_ship_organization
 	icon = GFX_idea_generic_naval_manufacturer_3
 	name = 台湾国际造船
 	allowed = {	
@@ -1234,7 +1256,9 @@ CHT_jiangnan_shipyard_group_ChinaTaiwan_organization = {
 		always = yes
 	}
 	available = {
-		owner = { controls_state = 524 }
+		from = {
+			has_country_flag = CHT_focus_china_Southeastern_Has
+		}
 	}
 }
 CHT_camco_fighter_ChinaTaiwan_organization = {
@@ -1248,7 +1272,9 @@ CHT_camco_fighter_ChinaTaiwan_organization = {
 		always = yes
 	}
 	available = {
-		owner = { controls_state = 524 }
+		from = {
+			has_country_flag = CHT_focus_china_Southeastern_Has
+		}
 	}
 }
 CHT_rheinmetall_ChinaTaiwan_organization = {
@@ -1262,7 +1288,9 @@ CHT_rheinmetall_ChinaTaiwan_organization = {
 		always = yes
 	}
 	available = {
-		owner = { controls_state = 524 }
+		from = {
+			has_country_flag = CHT_focus_china_Southeastern_Has
+		}
 	}
 
 	add_trait = { 
@@ -1326,7 +1354,9 @@ CHT_mauser_ChinaTaiwan_organization = {
 		always = yes
 	}
 	available = {
-		owner = { controls_state = 524 }
+		from = {
+			has_country_flag = CHT_focus_china_Southeastern_Has
+		}
 	}
 }
 CHT_carl_walther_ChinaTaiwan_organization = {
@@ -1341,6 +1371,8 @@ CHT_carl_walther_ChinaTaiwan_organization = {
 		always = yes
 	}
 	available = {
-		owner = { controls_state = 524 }
+		from = {
+			has_country_flag = CHT_focus_china_Southeastern_Has
+		}
 	}
 }

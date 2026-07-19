@@ -50,6 +50,7 @@
                 level = 3
             }
 			hidden_effect = {
+				set_country_flag = CHT_focus_china_Southeastern_Has
 				add_opinion_modifier = {
 					target = PRC
 					modifier = CHT_Irreconcilable_Differences_opinion
@@ -345,7 +346,7 @@
 				name = ARTILLERY_TITLE
 				ahead_reduction = 0.5
 				bonus = 1.0
-				uses = 3
+				uses = 2
 				category = artillery
 			}
 		}
@@ -569,7 +570,7 @@
 	}
 	focus = {
 		id = CHT_focus_Strive_for #来争取
-		icon = GFX_focus_CHI_change_in_leadership
+		icon = GFX_focus_CHI_weaponise_the_faithful
 		cost = 10
 		x = 6
 		y = 13
@@ -648,7 +649,7 @@
 	}
 	focus = {
 		id = CHT_focus_Return_to_the_Five_Sacred_Mountains_and_the_Three_Rivers #返指五岳和三江
-		icon = GFX_focus_CHI_utmost_loyalty
+		icon = GFX_focus_CHI_victory_over_the_invaders
 		cost = 10
 		x = 4
 		y = 14
@@ -1539,8 +1540,6 @@
 		relative_position_id = CHT_focus_china_Southeastern
 		prerequisite = { 
 			focus = CHT_focus_Establish_Farmers_Associations
-		}
-		prerequisite = { 
 			focus = CHT_focus_Abolish_the_Gold_Yuan
 		}
 		completion_reward = { 
@@ -2178,6 +2177,31 @@
 			focus = CHT_focus_Advanced_Hull_Research
 		}
 		completion_reward = { 
+			custom_effect_tooltip = ChinaTaiwan_Navy_tt
+			add_to_variable = {
+				ChinaTaiwan_Navy_naval_damage_factor = 0.05
+				tooltip = naval_damage_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Navy_naval_defense_factor = 0.05
+				tooltip = naval_defense_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Navy_naval_hit_chance = 0.05
+				tooltip = naval_hit_chance_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Navy_naval_speed_factor = 0.05
+				tooltip = naval_speed_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Navy_navy_anti_air_attack_factor = 0.05
+				tooltip = navy_anti_air_attack_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Navy_navy_max_range_factor = 0.05
+				tooltip = navy_max_range_factor_tt
+			}
 			create_ship = {
 				type = ship_hull_carrier_1
 				equipment_variant = "蒋公级航空母舰"
@@ -2228,6 +2252,300 @@
 			add_to_variable = {
 				ChinaTaiwan_AirForce_air_range_factor = 0.05
 				tooltip = air_range_factor_tt
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Ideology_Is_Faith #主义即信仰
+		icon = GFX_focus_CHI_revise_the_national_curriculum
+		cost = 10
+		x = 5
+		y = 8
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_The_Soul_of_Whampoa
+		}
+		completion_reward = { 
+			custom_effect_tooltip = ChinaTaiwan_Army_tt
+			add_to_variable = {
+				ChinaTaiwan_Army_army_org_factor = 0.10
+				tooltip = army_org_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Army_army_speed_factor = 0.10
+				tooltip = army_speed_factor_tt
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Expand_Logistics_Convoys #扩展后勤车队
+		icon = GFX_focus_generic_reinforcing_the_supply_network
+		cost = 10
+		x = 7
+		y = 8
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_The_Soul_of_Whampoa
+			focus = CHT_focus_Modernize_the_Northern_Faction
+		}
+		completion_reward = { 
+			custom_effect_tooltip = ChinaTaiwan_Army_tt
+			add_to_variable = {
+				ChinaTaiwan_Army_supply_consumption_factor = -0.10
+				tooltip = supply_consumption_factor_tt
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Artillery_Is_Justice #炮弹即正义
+		icon = GFX_goal_generic_army_artillery2
+		cost = 10
+		x = 9
+		y = 8
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Modernize_the_Northern_Faction
+		}
+		completion_reward = { 
+			custom_effect_tooltip = ChinaTaiwan_Army_tt
+			add_to_variable = {
+				ChinaTaiwan_Army_army_attack_factor = 0.05
+				tooltip = army_attack_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Army_army_defence_factor = 0.05
+				tooltip = army_defence_factor_tt
+			}
+			add_tech_bonus = {
+				name = ARTILLERY_TITLE
+				ahead_reduction = 0.5
+				bonus = 1.0
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Carrier_Fighter_Mass_Production_Program #舰载战斗机量产计画
+		icon = GFX_goal_generic_navy_carrier
+		cost = 10
+		x = 24
+		y = 9
+		available = {
+			is_ai = no
+		}
+		mutually_exclusive = { focus = CHT_focus_Carrier_Torpedo_Bomber_Mass_Production_Program }
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Invest_in_Lungteh_Shipbuilding
+			focus = CHT_focus_Invest_in_CSBC_Corporation_Taiwan
+		}
+		completion_reward = { 
+			add_ideas = CHT_Carrier_Fighter_Mass_Production_Program
+		}
+	}
+	focus = {
+		id = CHT_focus_Carrier_Torpedo_Bomber_Mass_Production_Program #舰载鱼雷机量产计画
+		icon = GFX_goal_generic_navy_carrier
+		cost = 10
+		x = 26
+		y = 9
+		available = {
+			is_ai = no
+		}
+		mutually_exclusive = { focus = CHT_focus_Carrier_Fighter_Mass_Production_Program }
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Invest_in_Lungteh_Shipbuilding
+			focus = CHT_focus_Invest_in_CSBC_Corporation_Taiwan
+		}
+		completion_reward = { 
+			add_ideas = CHT_Carrier_Torpedo_Bomber_Mass_Production_Program
+		}
+	}
+	focus = {
+		id = CHT_focus_Invest_in_Lungteh_Shipbuilding #投资龙德造船
+		icon = GFX_focus_generic_refit_civilian_ships
+		cost = 5
+		x = 24
+		y = 8
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Advanced_Hull_Research
+			focus = CHT_focus_Expand_Naval_Dockyards
+		}
+		completion_reward = { 
+			mio:CHT_jiangnan_shipyard_group_ChinaTaiwan_organization = {
+				add_mio_size = 2
+				add_mio_funds_gain_factor = 0.25
+				add_mio_research_bonus = 0.05
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Invest_in_CSBC_Corporation_Taiwan #投资台湾国际造船
+		icon = GFX_focus_generic_refit_civilian_ships
+		cost = 5
+		x = 26
+		y = 8
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Advanced_Hull_Research
+			focus = CHT_focus_Expand_Naval_Dockyards
+		}
+		completion_reward = { 
+			mio:CHT_dagu_shipyard_ChinaTaiwan_organization = {
+				add_mio_size = 2
+				add_mio_funds_gain_factor = 0.25
+				add_mio_research_bonus = 0.05
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Expand_Airfields #扩建机场
+		icon = GFX_goal_generic_air_doctrine
+		cost = 5
+		x = 18
+		y = 9
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Aspire_to_the_Skies
+		}
+		completion_reward = { 
+			1091 = {
+				add_building_construction = {
+					type = air_base
+					level = 5
+				}
+			}
+			1092 = {
+				add_building_construction = {
+					type = air_base
+					level = 5
+				}
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Expand_Airfields2 #扩建机场2
+		icon = GFX_goal_generic_air_doctrine
+		cost = 5
+		x = 14
+		y = 9
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Aspire_to_the_Skies
+		}
+		completion_reward = { 
+			524 = {
+				add_building_construction = {
+					type = air_base
+					level = 5
+				}
+			}
+			1087 = {
+				add_building_construction = {
+					type = air_base
+					level = 5
+				}
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Deploy_Air_Defense_Systems #部署防空系统
+		icon = GFX_focus_PRC_anti_air_effort
+		cost = 5
+		x = 16
+		y = 9
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Aspire_to_the_Skies
+		}
+		completion_reward = { 
+			524 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+				}
+			}
+			1091 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+				}
+			}
+			1087 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+				}
+			}
+			1092 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+				}
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Army_High_Command #陆军总司令部
+		icon = GFX_focus_CHI_change_in_leadership
+		cost = 10
+		x = 7
+		y = 9
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Expand_Logistics_Convoys
+		}
+		completion_reward = { 
+			custom_effect_tooltip = ChinaTaiwan_Army_tt
+			add_to_variable = {
+				ChinaTaiwan_Army_army_attack_factor = 0.05
+				tooltip = army_attack_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Army_army_defence_factor = 0.05
+				tooltip = army_defence_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Army_army_org_factor = 0.05
+				tooltip = army_org_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Army_army_speed_factor = 0.05
+				tooltip = army_speed_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Army_supply_consumption_factor = -0.05
+				tooltip = supply_consumption_factor_tt
 			}
 		}
 	}

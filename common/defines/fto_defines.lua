@@ -1,1 +1,0 @@
-NDefines.NFocus.FOCUS_POINT_DAYS = 3.5;

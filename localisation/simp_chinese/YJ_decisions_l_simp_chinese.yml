@@ -374,3 +374,9 @@ YJ_bread_cos_neutrality_DEF:0 "麵包"
 
 KoKi_YJ_decisions_set_axis_tt: "設為軸心陣營(用於計算工廠)"
 KoKi_YJ_decisions_set_allie_tt: "設為同盟陣營(用於計算工廠)"
+
+YJ_GAME_MODE_RULE: "搖獎模組宣戰時間設定"
+YJ_GAME_MODE_PVP: "PvP模式"
+YJ_GAME_MODE_PVP_DESC: "1938.6宣AI 1941.6宣玩家"
+YJ_GAME_MODE_PVE: "PvE模式"
+YJ_GAME_MODE_PVE_DESC: "無宣戰時間限制"

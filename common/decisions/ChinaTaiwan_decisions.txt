@@ -2,7 +2,7 @@ ChinaTaiwan_discipline = {
 	ChinaTaiwan_Economic_Collapse = { #經濟崩潰
 		activation = {
 			original_tag = CHI
-			controls_state = 524
+			has_completed_focus = CHT_focus_china_Southeastern
 			NOT = {
 				has_country_flag = ChinaTaiwan_Economic_Collapse_Over
 			}
@@ -21,6 +21,104 @@ ChinaTaiwan_discipline = {
 			add_timed_idea = {
 				idea = CHT_Economic_Collapse
 				years = 1
+			}
+		}
+	}
+	ChinaTaiwan_Navy_Fix = {
+		visible = {
+			original_tag = CHI
+			has_completed_focus = CHT_focus_Army_Dominance
+			check_variable = {
+				ChinaTaiwan_Navy_Fix_count = 5
+				compare = less_than
+			}
+		}
+		available = {
+			original_tag = CHI
+			has_completed_focus = CHT_focus_Army_Dominance
+			check_variable = {
+				ChinaTaiwan_Navy_Fix_count = 5
+				compare = less_than
+			}
+		}
+		cost = 100
+		days_remove = 100
+
+		remove_effect = {
+			custom_effect_tooltip = ChinaTaiwan_Navy_tt
+			add_to_variable = {
+				ChinaTaiwan_Navy_naval_damage_factor = 0.05
+				tooltip = naval_damage_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Navy_naval_defense_factor = 0.05
+				tooltip = naval_defense_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Navy_naval_hit_chance = 0.05
+				tooltip = naval_hit_chance_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Navy_naval_speed_factor = 0.05
+				tooltip = naval_speed_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Navy_navy_anti_air_attack_factor = 0.05
+				tooltip = navy_anti_air_attack_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Navy_navy_max_range_factor = 0.05
+				tooltip = navy_max_range_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Navy_Fix_count = 1
+			}
+		}
+	}
+	ChinaTaiwan_Army_Fix = {
+		visible = {
+			original_tag = CHI
+			has_completed_focus = CHT_focus_Naval_Dominance
+			check_variable = {
+				ChinaTaiwan_Army_Fix_count = 5
+				compare = less_than
+			}
+		}
+		available = {
+			original_tag = CHI
+			has_completed_focus = CHT_focus_Naval_Dominance
+			check_variable = {
+				ChinaTaiwan_Army_Fix_count = 5
+				compare = less_than
+			}
+		}
+		cost = 100
+		days_remove = 100
+
+		remove_effect = {
+			custom_effect_tooltip = ChinaTaiwan_Army_tt
+			add_to_variable = {
+				ChinaTaiwan_Army_army_attack_factor = 0.05
+				tooltip = army_attack_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Army_army_defence_factor = 0.05
+				tooltip = army_defence_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Army_army_org_factor = 0.05
+				tooltip = army_org_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Army_army_speed_factor = 0.05
+				tooltip = army_speed_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Army_supply_consumption_factor = -0.05
+				tooltip = supply_consumption_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Army_Fix_count = 1
 			}
 		}
 	}

@@ -1,6 +1,10 @@
 DIPLOMACY_WAR_ENABLE_TRIGGER = {
     if = {
         limit = {
+			has_game_rule = {
+				rule = YJ_GAME_MODE_RULE
+				option = YJ_GAME_MODE_PVP
+			}
             AND = {
                 date < 1938.6.1
             }
@@ -12,6 +16,10 @@ DIPLOMACY_WAR_ENABLE_TRIGGER = {
     }
 	if = {
         limit = {
+			has_game_rule = {
+				rule = YJ_GAME_MODE_RULE
+				option = YJ_GAME_MODE_PVP
+			}
             FROM = { is_ai = no }
             date < 1941.6.1
         }
