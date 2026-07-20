@@ -41,6 +41,8 @@ ideas = {
 				consumer_goods_factor = -0.10
 				consumer_goods_expected_value = -0.10
 				conscription = 0.05
+				stability_weekly = 0.002
+				war_support_weekly = 0.002
 				global_building_slots = 6
 				local_resources_factor = 0.20
 			}
