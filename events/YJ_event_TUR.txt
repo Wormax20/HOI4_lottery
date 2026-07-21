@@ -164,6 +164,7 @@ country_event = {
 		}
 		name = KoKi_YJ_TUR_event.102.a
 		add_ideas = YJ_TUR_2_ideas
+		set_country_flag = TUR_daimler_benz_YJ_organization_Yes
 		ai_chance = {
 			factor = 100
 		}
