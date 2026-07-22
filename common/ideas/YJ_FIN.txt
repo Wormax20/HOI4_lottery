@@ -15,7 +15,7 @@ ideas = {
 			picture = SWE_with_finland_for_sweden_swe
 
 			modifier = {
-				political_power_factor = 0.2
+				political_power_factor = 0.25
 				conscription =  0.1
 				conscription_factor = 0.3
 				global_building_slots = 5
@@ -40,9 +40,8 @@ ideas = {
 
 			modifier = {
 				custom_modifier_tooltip = YJ_FIN_2_ideas_tt
-				special_forces_attack_factor = 0.10
-				army_attack_factor = 0.05
-				army_defence_factor = 0.10
+				special_forces_attack_factor = 0.15
+				army_defence_factor = 0.15
 			}
 		}
 		YJ_FIN_3_ideas = {

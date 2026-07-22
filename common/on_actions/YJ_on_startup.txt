@@ -382,6 +382,18 @@ on_actions = {
 					set_nationality = RAJ
 				}
 			}
+			every_country = {
+				limit = {
+					AND = {
+						is_ai = no
+						is_subject_of = ENG
+					}
+				}
+				add_ideas = YJ_ENG_8_ideas
+				every_character = {
+					set_nationality = PREV
+				}
+			}
 		}
 	}
 

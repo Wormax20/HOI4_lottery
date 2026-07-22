@@ -28,7 +28,7 @@ YJ_USA_3_ideas_tt: "[YJ_USA_3_ideas_txt]"
 YJ_USA_3_ideas_tooltip: "§Y两栖机械化§!:\n$STAT_COMMON_BUILD_COST_IC$§G-15%§!"
 YJ_USA_4_ideas: "大繁荣"
 YJ_USA_5_ideas: "美英合作"
-YJ_USA_5_ideas_tt: "解锁沃克斯豪尔军工机构\n获得先进登陆艇\n获得3张超前10年机械化加成卡,机械化宽度-0.2,装甲率-15"
+YJ_USA_5_ideas_tt: "解锁沃克斯豪尔军工机构\n获得先进登陆艇\n获得3张超前10年机械化加成卡,机械化宽度-0.2,装甲率-10"
 YJ_USA_6_ideas: "殊途同归"
 YJ_USA_7_ideas: "父与子之歌"
 
@@ -107,6 +107,7 @@ YJ_ENG_5_ideas_tt: "获得永久保持威慑同款效果\n解锁决议,消耗100
 YJ_ENG_6_ideas: "蒙哥马利的承诺"
 YJ_ENG_7_ideas: "維多利亞時代的餘暉"
 YJ_ENG_7_ideas_tt: "§R每月随机在§!§G核心且完全控制的地块,§!§R自动搬迁至多各二民军船坞到虚空。§!"
+YJ_ENG_8_ideas: "大英国协"
 
 
 

@@ -29,33 +29,32 @@ ideas = {
 			equipment_bonus = {
 				ship_hull_cruiser = {
 					instant = yes
-					build_cost_ic = -0.1
+					build_cost_ic = -0.15
 				}
 				ship_hull_heavy = {
 					instant = yes
-					build_cost_ic = -0.1
+					build_cost_ic = -0.15
 				}
 				ship_hull_light = {
 					instant = yes
-					build_cost_ic = -0.1
+					build_cost_ic = -0.15
 				}
 				ship_hull_submarine = {
 					instant = yes
-					build_cost_ic = -0.1
+					build_cost_ic = -0.15
 				}
 				ship_hull_torpedo_cruiser = {
 					instant = yes
-					build_cost_ic = -0.1
+					build_cost_ic = -0.15
 				}
 				ship_hull_carrier = {
 					instant = yes
-					build_cost_ic = -0.1
+					build_cost_ic = -0.15
 				}
 				convoy = {
 					instant = yes
 					build_cost_ic = -0.5
 				}
-
 			}
 		}
 
@@ -102,15 +101,15 @@ ideas = {
 				max_dig_in_factor = 0.10
 				army_strength_factor = 0.1
 				army_org_factor = 0.1
-				army_attack_factor = 0.10
-				army_defence_factor = 0.10
-				}
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+			}
 			equipment_bonus = {
 				heavy_tank_chassis = {
-					build_cost_ic = -0.3
-					reliability = 0.4
-					armor_value = 0.2
-					maximum_speed = 0.3
+					build_cost_ic = -0.10
+					reliability = 0.30
+					armor_value = 0.15
+					maximum_speed = 0.20
 					instant = yes
 				}
 				infantry_equipment = {
@@ -151,7 +150,7 @@ ideas = {
 			picture = generic_acquire_tanks
 
 			modifier = {
-				}
+			}
 			equipment_bonus = {
 				heavy_tank_chassis = {
 					build_cost_ic = -0.3

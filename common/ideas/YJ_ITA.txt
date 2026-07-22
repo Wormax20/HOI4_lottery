@@ -44,11 +44,12 @@ ideas = {
 			modifier = {
 				custom_modifier_tooltip = YJ_ITA_01_ideas_tt
 				global_building_slots = 3
-				industrial_capacity_factory = 0.10
+				non_core_manpower = 0.10
+				industrial_capacity_dockyard = 0.10
 				production_factory_max_efficiency_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.05
+				production_speed_infrastructure_factor = 0.10
 				production_speed_buildings_factor = 0.05
-
 			}
 		}
 
@@ -69,10 +70,10 @@ ideas = {
 			modifier = {
 				custom_modifier_tooltip = YJ_ITA_02_ideas_tt
 				global_building_slots = 6
-				industrial_capacity_factory = 0.1
-				production_factory_max_efficiency_factor = 0.1
-				production_factory_efficiency_gain_factor = 0.15
-				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.10
+				production_speed_buildings_factor = 0.10
 			}
 		}
 
@@ -92,12 +93,11 @@ ideas = {
 
 			modifier = {
 				air_attack_factor = 0.15
-				air_intercept_efficiency = 0.15
-				air_agility_factor = 0.15
-				air_defence_factor = 0.05
+				air_defence_factor = 0.10
+				air_intercept_efficiency = 0.10
+				air_agility_factor = 0.10
 				air_range_factor = 0.10
 				air_maximum_speed_factor = 0.1
-
 			}
 			research_bonus = {
 				artillery = 0.1

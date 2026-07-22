@@ -126,37 +126,6 @@ ideas = {
 			}
 
 		}
-		YJ_ENG_4_ideas = {
-
-			allowed = {
-				always = no
-			}
-
-			cancel = {
-				is_ai = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_goods_red_bonus
-
-			modifier = {
-				autonomy_gain = -10
-				industrial_factory_donations = 5
-				military_factory_donations = 1
-				dockyard_donations = 1
-			}
-
-			targeted_modifier = {
-				tag = ENG
-				cic_to_target_factor = 0.6
-				mic_to_target_factor = 0.6
-			}
-		}
 		YJ_ENG_5_ideas = {
 
 			allowed = {
@@ -293,6 +262,68 @@ ideas = {
 				convoy = {
 					instant = yes
 					build_cost_ic = -0.25
+				}
+			}
+		}
+		YJ_ENG_4_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				is_ai = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+
+			modifier = {
+				autonomy_gain = -10
+				industrial_factory_donations = 5
+				military_factory_donations = 1
+				dockyard_donations = 1
+			}
+
+			targeted_modifier = {
+				tag = ENG
+				cic_to_target_factor = 0.6
+				mic_to_target_factor = 0.6
+			}
+		}
+		YJ_ENG_8_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = eng_the_sun_never_sets
+
+			modifier = {
+				trade_opinion_factor = 0.25
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				local_resources_factor = 0.10
+			}
+			equipment_bonus = {
+				ship_hull_cruiser = {
+					build_cost_ic = -0.10
+					instant = yes
+				}
+				convoy = {
+					instant = yes
+					build_cost_ic = -0.10
 				}
 			}
 		}

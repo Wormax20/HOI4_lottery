@@ -2,8 +2,8 @@ technologies = {
 	USA_mechanized_tech = {
 		mechanized = {
             combat_width = -0.2
-			hardness = -0.15
-	}
+			hardness = -0.10
+		}
     }
 	USA_helicopter_tech = {
 		helicopter_field_hospital = {
