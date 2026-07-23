@@ -135,10 +135,6 @@ ideas = {
 					instant = yes
 					supply_consumption = -0.2
 				}
-				infantry_equipment = {
-					instant = yes
-					defense = -0.3
-				}
 			}
 		}
 

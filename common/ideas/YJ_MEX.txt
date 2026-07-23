@@ -189,12 +189,14 @@ ideas = {
 			picture = generic_reserve_divisions
 
 			modifier = {
-				special_forces_min = 72
+				special_forces_min = 1024
 				special_forces_cap = 0.5
 				special_forces_training_time_factor = -0.3
 				special_forces_no_supply_grace = 96
 				special_forces_attack_factor = 0.10
 				special_forces_defence_factor = 0.10
+				army_non_core_attack_factor = 0.10
+				army_non_core_defence_factor = 0.10
 				army_bonus_air_superiority_factor = 0.30
 				air_superiority_bonus_in_combat = 0.3
 			}

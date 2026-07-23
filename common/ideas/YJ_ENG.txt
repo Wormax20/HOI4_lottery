@@ -259,6 +259,10 @@ ideas = {
 					build_cost_ic = -0.15
 					instant = yes
 				}
+				ship_hull_carrier = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
 				convoy = {
 					instant = yes
 					build_cost_ic = -0.25
@@ -311,19 +315,19 @@ ideas = {
 			picture = eng_the_sun_never_sets
 
 			modifier = {
-				trade_opinion_factor = 0.25
+				trade_opinion_factor = 0.10
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05
-				local_resources_factor = 0.10
+				local_resources_factor = 0.5
 			}
 			equipment_bonus = {
 				ship_hull_cruiser = {
-					build_cost_ic = -0.10
+					build_cost_ic = -0.15
 					instant = yes
 				}
 				convoy = {
 					instant = yes
-					build_cost_ic = -0.10
+					build_cost_ic = -0.15
 				}
 			}
 		}

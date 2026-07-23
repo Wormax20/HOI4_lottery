@@ -2489,7 +2489,7 @@ focus_tree = {
 				tooltip = army_speed_factor_tt
 			}
 			add_to_variable = {
-				KimKorea_Army_supply_consumption_factor = -0.25
+				KimKorea_Army_supply_consumption_factor = -0.20
 				tooltip = supply_consumption_factor_tt
 			}
 		}
@@ -3333,6 +3333,10 @@ focus_tree = {
 				creator = KOR
 				name = "恩情号"
 			}
+			add_offsite_building = {
+                type = dockyard
+                level = 5
+            }
 		}
 	}
 	focus = {
@@ -3458,6 +3462,10 @@ focus_tree = {
 				creator = KOR
 				name = "主体号"
 			}
+			add_offsite_building = {
+                type = dockyard
+                level = 5
+            }
 		}
 	}
 	focus = {
@@ -3926,11 +3934,11 @@ focus_tree = {
 		}
 		completion_reward = {
 			every_state = {
-			limit = {
-				is_core_of = JAP
+				limit = {
+					is_core_of = JAP
+				}
+				add_core_of = KOR
 			}
-			add_core_of = KOR
-		}
 		}
 	}
 
