@@ -9,6 +9,7 @@ YJ_AIR_ideas = {
 	enable = { always = yes }
 
 	production_speed_buildings_factor = YJ_coal_num_0_01
+	industrial_capacity_dockyard = YJ_navy_output_penalty_0_1
 }
 
 YJ_AXIS_BAL_ideas = {

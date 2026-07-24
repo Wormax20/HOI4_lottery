@@ -334,6 +334,7 @@ decision_cost_CP_100_blocked: "£command_power §R100§!"
 
 YJ_AIR_ideas: "布丁性平衡"
 YJ_AIR_ideas_tt: "§5每100煤炭增加§11%§5建造速度\n§C目前建造速度§7[?YJ_coal_num|Y0]%§!"
+YJ_AIR_ideas_ship_tt: "§3艦隊數量多於100艘後\n§6每10艘船減少§11%§6船塢產出\n§R目前減少的船塢產出§7[?YJ_navy_output_penalty_tt|Y0]%§!"
 
 YJ_AXIS_BAL_ideas: "轴心国平衡(壓廠平衡)"
 YJ_ALLIE_BAL_ideas: "同盟国平衡(壓廠平衡)"

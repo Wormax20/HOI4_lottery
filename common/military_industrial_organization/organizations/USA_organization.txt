@@ -75,7 +75,7 @@ USA_marmon_herrington_organization = {
 
 		equipment_bonus = {
 			reliability = 0.10
-			build_cost_ic = -0.20
+			build_cost_ic = -0.15
 		}
 
 		ai_will_do = {

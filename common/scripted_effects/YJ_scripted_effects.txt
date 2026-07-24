@@ -749,7 +749,6 @@ BRA_YJ_scripted_effects = {
 					has_idea = YJ_BRA_2_ideas
 					has_idea = YJ_BRA_3_ideas
 				}
-				has_idea = YJ_BRA_2_ideas
 				factor = 0
 			}
 			country_event = KoKi_YJ_BRA_event.102
@@ -760,7 +759,6 @@ BRA_YJ_scripted_effects = {
 					has_idea = YJ_BRA_2_ideas
 					has_idea = YJ_BRA_3_ideas
 				}
-				has_idea = YJ_BRA_3_ideas
 				factor = 0
 			}
 			country_event = KoKi_YJ_BRA_event.103

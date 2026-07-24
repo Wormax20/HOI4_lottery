@@ -90,4 +90,63 @@ on_actions = {
             }
         }
     }
+
+    on_weekly = {
+	    effect = {
+	    	set_variable = {
+	    		var = YJ_navy_output_penalty_0_0
+	    		value = num_ships
+	    	}
+            subtract_from_variable = {
+			    var = YJ_navy_output_penalty_0_0
+			    value = 200
+		    }
+            if = {
+		    	limit = {
+			    	check_variable = {
+			    		YJ_navy_output_penalty_0_0 < 0
+			    	}
+		    	}
+		    	set_variable = {
+		    		var = YJ_navy_output_penalty_0_0
+		    		value = 0
+		    	}
+	    	}
+            if = {
+		    	limit = {
+		    		check_variable = {
+		    			YJ_navy_output_penalty_0_0 > 1000
+		    		}
+		    	}
+		    	set_variable = {
+		    		var = YJ_navy_output_penalty_0_0
+		    		value = 1000
+		    	}
+	    	}
+	    	divide_variable = {
+	    		var = YJ_navy_output_penalty_0_0
+	    		value = 100
+    		}
+	    	set_variable = {
+                var = YJ_navy_output_penalty_0_1
+                value = YJ_navy_output_penalty_0_0
+            }
+            divide_variable = {
+                var = YJ_navy_output_penalty_0_1
+                value = 10
+            }
+            multiply_variable = {
+			    var = YJ_navy_output_penalty_0_1
+			    value = -1
+		    }
+            set_variable = {
+    			var = YJ_navy_output_penalty_tt
+	    		value = YJ_navy_output_penalty_0_1
+	    	}
+	    	multiply_variable = {
+		    	var = YJ_navy_output_penalty_tt
+		    	value = -100
+		    }
+    	}
+    }
 }

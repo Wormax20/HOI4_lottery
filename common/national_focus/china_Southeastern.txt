@@ -1554,7 +1554,7 @@
 		id = CHT_focus_A_Group_of_Comrades_from_the_Central_Plains #来自中原一群伙伴
 		icon = GFX_focus_CHI_enforce_virtues
 		cost = 10
-		x = 7
+		x = 16
 		y = 3
 		available = {
 			is_ai = no
@@ -2351,6 +2351,31 @@
 		}
 		completion_reward = { 
 			add_ideas = CHT_Carrier_Fighter_Mass_Production_Program
+			custom_effect_tooltip = ChinaTaiwan_Navy_tt
+			add_to_variable = {
+				ChinaTaiwan_Navy_naval_damage_factor = 0.05
+				tooltip = naval_damage_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Navy_naval_defense_factor = 0.05
+				tooltip = naval_defense_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Navy_naval_hit_chance = 0.05
+				tooltip = naval_hit_chance_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Navy_naval_speed_factor = 0.05
+				tooltip = naval_speed_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Navy_navy_anti_air_attack_factor = 0.05
+				tooltip = navy_anti_air_attack_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Navy_navy_max_range_factor = 0.05
+				tooltip = navy_max_range_factor_tt
+			}
 		}
 	}
 	focus = {
@@ -2370,6 +2395,31 @@
 		}
 		completion_reward = { 
 			add_ideas = CHT_Carrier_Torpedo_Bomber_Mass_Production_Program
+			custom_effect_tooltip = ChinaTaiwan_Navy_tt
+			add_to_variable = {
+				ChinaTaiwan_Navy_naval_damage_factor = 0.05
+				tooltip = naval_damage_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Navy_naval_defense_factor = 0.05
+				tooltip = naval_defense_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Navy_naval_hit_chance = 0.05
+				tooltip = naval_hit_chance_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Navy_naval_speed_factor = 0.05
+				tooltip = naval_speed_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Navy_navy_anti_air_attack_factor = 0.05
+				tooltip = navy_anti_air_attack_factor_tt
+			}
+			add_to_variable = {
+				ChinaTaiwan_Navy_navy_max_range_factor = 0.05
+				tooltip = navy_max_range_factor_tt
+			}
 		}
 	}
 	focus = {
@@ -2546,6 +2596,26 @@
 			add_to_variable = {
 				ChinaTaiwan_Army_supply_consumption_factor = -0.05
 				tooltip = supply_consumption_factor_tt
+			}
+		}
+	}
+	focus = {
+		id = CHT_focus_Special_Projects_Research #特殊项目科研
+		icon = GFX_goal_continuous_research
+		cost = 10
+		x = 7
+		y = 10
+		available = {
+			is_ai = no
+		}
+		relative_position_id = CHT_focus_china_Southeastern
+		prerequisite = { 
+			focus = CHT_focus_Army_High_Command
+		}
+		completion_reward = { 
+			add_breakthrough_progress = {
+				specialization = specialization_land
+				value = 3
 			}
 		}
 	}

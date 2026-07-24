@@ -106,6 +106,7 @@ ideas = {
 				navy_submarine_attack_factor = -10
 				navy_submarine_defence_factor = -10
 				custom_modifier_tooltip = YJ_AIR_ideas_tt
+				custom_modifier_tooltip = YJ_AIR_ideas_ship_tt
 			}
 
 			picture = generic_anti_air

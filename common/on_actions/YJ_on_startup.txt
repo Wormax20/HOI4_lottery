@@ -137,7 +137,7 @@ on_actions = {
 				add_ideas = YJ_ENG_7_ideas
 				add_offsite_building = {
 					type = dockyard
-					level = 10
+					level = 15
 				}
 				add_dynamic_modifier = {
 					modifier = YJ_ENG_ideas
@@ -290,7 +290,7 @@ on_actions = {
 			MEX = {
 				add_offsite_building = {
 					type = industrial_complex
-					level = 10
+					level = 15
 				}
 				add_offsite_building = {
 					type = arms_factory
@@ -312,17 +312,21 @@ on_actions = {
 					type = industrial_complex
 					level = 10
 				}
+				add_offsite_building = {
+					type = arms_factory
+					level = 5
+				}
 			}
 			RAJ = {
 				add_offsite_building = {
 					type = industrial_complex
-					level = 10
+					level = 15
 				}
 			}
 			FIN = {
 				add_offsite_building = {
 					type = industrial_complex
-					level = 10
+					level = 15
 				}
 			}
 			PHI = {
@@ -330,8 +334,6 @@ on_actions = {
 					type = industrial_complex
 					level = 30
 				}
-			}
-			PHI = {
 				add_offsite_building = {
 					type = dockyard
 					level = 15
@@ -339,8 +341,8 @@ on_actions = {
 			}
 			ITA = {
 				add_timed_idea = {
-				idea = YJ_ITA_06_ideas
-				days = 30
+					idea = YJ_ITA_06_ideas
+					days = 30
 				}
 			}
 			CAN = {
