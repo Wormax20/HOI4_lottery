@@ -116,7 +116,6 @@ ideas = {
 			modifier = {
 				custom_modifier_tooltip = YJ_TUR_3_ideas_tt
 				weekly_manpower = 10000
-
 			}
 			equipment_bonus = {
 				armor = {

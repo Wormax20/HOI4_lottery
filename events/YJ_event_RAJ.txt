@@ -20,13 +20,13 @@ country_event = {
 		complete_national_focus = RAJ_comrades_of_the_city
 		complete_national_focus = RAJ_industrialize_the_ganges
 		add_offsite_building = {
-						type = industrial_complex
-						level = 20
-					}
+			type = industrial_complex
+			level = 20
+		}
 		add_offsite_building = {
 			type = arms_factory
 			level = 20
-					}
+		}
 		every_controlled_state = {
 			limit = {
 				infrastructure < 4
@@ -190,13 +190,13 @@ country_event = {
 
 	option = {
 		add_offsite_building = {
-						type = industrial_complex
-						level = 10
-					}
+			type = industrial_complex
+			level = 10
+		}
 		add_offsite_building = {
 			type = arms_factory
 			level = 10
-					}
+		}
 		name = KoKi_YJ_RAJ_event.104.a
 		add_ideas = YJ_RAJ_4_ideas
 		ai_chance = {
@@ -216,8 +216,8 @@ country_event = {
 
 	option = {
 		set_technology = {
-					tech_field_hospital4 = 1
-				}
+			tech_field_hospital4 = 1
+		}
 		name = KoKi_YJ_RAJ_event.105.a
 		add_ideas = YJ_RAJ_5_ideas
 		ai_chance = {

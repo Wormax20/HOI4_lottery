@@ -152,13 +152,13 @@ country_event = {
 
 	option = {
 		add_popularity = {
-				ideology = communism
-				popularity = 1
-			}
+			ideology = communism
+			popularity = 1
+		}
 		name = KoKi_YJ_MEX_event.103.a
 		set_cosmetic_tag = BRA_union_of_latin_american_socialist_republics_cos_tag
 		set_politics = {
-		ruling_party = communism
+			ruling_party = communism
 		}
 		set_technology = {
 			advanced_medium_tank_chassis = 1
@@ -167,8 +167,8 @@ country_event = {
 			MEX_helicopter_tech = 1
 		}
 		complete_special_project = {
-					project = sp:sp_air_helicopter
-				}
+			project = sp:sp_air_helicopter
+		}
 		add_ideas = YJ_MEX_3_ideas
 		add_ideas = YJ_MEX_03_ideas
 		add_ideas = YJ_MEX_04_ideas

@@ -21,6 +21,7 @@ ideas = {
 				industrial_capacity_dockyard = 0.2
 				navy_capital_ship_attack_factor = 0.15
 				local_resources_factor = 0.20
+				min_export = -0.10
 				stability_weekly = 0.002
 				war_support_weekly = 0.002
 				surrender_limit = 0.5
@@ -73,6 +74,7 @@ ideas = {
 			picture = generic_sea_focused_navy
 
 			modifier = {
+				political_power_factor = 0.15
 				production_speed_naval_base_factor = 2.0
 				max_planning = 0.10
 				max_planning_factor = 0.10
@@ -129,7 +131,7 @@ ideas = {
 					instant = yes
 				}
 				armor = {
-					build_cost_ic = -0.15
+					build_cost_ic = -0.10
 					instant = yes
 				}
 			}

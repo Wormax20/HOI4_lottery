@@ -325,6 +325,30 @@ ideas = {
 				industrial_capacity_dockyard = 0.05
 				local_resources_factor = 0.10
 			}
+			targeted_modifier = {
+				tag = ENG
+				trade_cost_for_target_factor = -0.25
+			}
+			targeted_modifier = {
+				tag = RAJ
+				trade_cost_for_target_factor = -0.10
+			}
+			targeted_modifier = {
+				tag = CAN
+				trade_cost_for_target_factor = -0.10
+			}
+			targeted_modifier = {
+				tag = SAF
+				trade_cost_for_target_factor = -0.10
+			}
+			targeted_modifier = {
+				tag = AST
+				trade_cost_for_target_factor = -0.10
+			}
+			targeted_modifier = {
+				tag = NZL
+				trade_cost_for_target_factor = -0.10
+			}
 			equipment_bonus = {
 				ship_hull_cruiser = {
 					build_cost_ic = -0.15
