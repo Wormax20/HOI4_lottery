@@ -9,6 +9,7 @@ country_event = {
 
 	is_triggered_only = yes
 		immediate = {
+			set_country_flag = CHI_YJ_event_105_done
 			set_technology = {basic_ship_hull_cruiser = 1}
 			set_technology = {basic_ship_hull_light = 1}
 			create_equipment_variant = {
