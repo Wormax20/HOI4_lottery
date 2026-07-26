@@ -260,6 +260,15 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
 			SIA_YJ_scripted_effects = yes
 		}
 	}
+	if = {
+		limit = {
+			original_tag = AST
+			is_ai = no
+		}
+		hidden_effect = {
+			AST_YJ_scripted_effects = yes
+		}
+	}
 }
 
 YJ_TY_scripted_effects = {
@@ -1594,6 +1603,57 @@ CHI_YJ_1_scripted_effects = {
 			NOT = { has_country_flag = CHI_YJ_event_105_done }
 		}
 		country_event = KoKi_YJ_CHI_event.105
+	}
+}
+
+AST_YJ_scripted_effects = {
+
+	random_list = {
+		25 = {
+			modifier = {
+				has_idea = YJ_AST_1_ideas
+				factor = 0
+			}
+			country_event = KoKi_YJ_AST_event.101
+		}
+		25 = {
+			modifier = {
+				OR = {
+					NOT = {
+						has_idea = YJ_AST_1_ideas
+					}
+					has_idea = YJ_AST_3_ideas
+					has_idea = YJ_AST_4_ideas
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_AST_event.103
+		}
+		25 = {
+			modifier = {
+				OR = {
+					NOT = {
+						has_idea = YJ_AST_1_ideas
+					}
+					has_idea = YJ_AST_3_ideas
+					has_idea = YJ_AST_4_ideas
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_AST_event.104
+		}
+		25 = {
+			modifier = {
+				OR = {
+					NOT = {
+						has_idea = YJ_AST_1_ideas
+					}
+					has_idea = YJ_AST_2_ideas
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_AST_event.102
+		}
 	}
 }
 

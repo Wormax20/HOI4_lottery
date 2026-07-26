@@ -1,0 +1,110 @@
+ideas = {
+	country = {
+		YJ_AST_1_ideas = { #大洋洲一統
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = AST_a_sense_of_place
+
+			modifier = {
+				political_power_factor = 0.25
+				global_building_slots_factor = 0.25
+				conscription = 0.05
+				consumer_goods_factor = -0.10
+				consumer_goods_expected_value = -0.10
+				production_speed_buildings_factor = 0.10
+				local_resources_factor = 0.20
+				stability_weekly = 0.002
+				war_support_weekly = 0.002
+			}
+		}
+
+		YJ_AST_2_ideas = { #工業振興
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = man_five_year_plan_industry
+
+			modifier = {
+				global_building_slots = 5
+				min_export = -0.10
+				industrial_capacity_factory = 0.10
+				industrial_capacity_dockyard = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.10
+				production_speed_buildings_factor = 0.10
+				production_speed_arms_factory_factor = 0.10
+				production_speed_industrial_complex_factor = 0.10
+				production_speed_dockyard_factor = 0.10
+			}
+		}
+
+		YJ_AST_3_ideas = { #澳洲皇家海軍
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_navy_cruiser_warfare
+
+			modifier = {
+				conscription = 0.05
+				repair_speed_factor = 0.25
+				naval_detection = 0.10
+				naval_hit_chance = 0.10
+				navy_max_range_factor = 0.20
+				navy_visibility = -0.10
+				screening_efficiency = 0.10
+				navy_fuel_consumption_factor = -0.20
+				industrial_capacity_dockyard = 0.20
+				production_speed_dockyard_factor = 0.10
+			}
+		}
+
+		YJ_AST_4_ideas = { #澳紐軍團
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_women_in_the_army
+
+			modifier = {
+				conscription = 0.05
+				conscription_factor = 0.25
+				command_power_gain = 0.5
+				max_command_power = 200
+				max_commander_army_size = 6
+				army_non_core_attack_factor = 0.10
+				army_non_core_defence_factor = 0.10
+				supply_consumption_factor = -0.10
+				industrial_capacity_factory = 0.20
+				production_speed_arms_factory_factor = 0.10
+			}
+		}
+	}
+}

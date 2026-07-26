@@ -16,14 +16,14 @@ ideas = {
 
 			modifier = {
 				subversive_activites_upkeep = -0.5
-				supply_consumption_factor = -0.05
+				supply_consumption_factor = -0.10
 				army_org_regain = 0.05
 				consumer_goods_factor = -0.15
 				production_factory_max_efficiency_factor = 0.10
                 production_factory_efficiency_gain_factor = 0.10
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.25
-				production_speed_buildings_factor = 0.05
+				production_speed_buildings_factor = 0.10
 			}
 		}
 

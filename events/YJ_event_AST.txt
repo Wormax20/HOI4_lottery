@@ -1,0 +1,136 @@
+add_namespace = KoKi_YJ_AST_event
+country_event = {
+	id = KoKi_YJ_AST_event.101
+	title = KoKi_YJ_AST_event.101.title
+	desc = KoKi_YJ_AST_event.101.desc
+
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		if = {
+            limit = {
+            	is_subject = yes
+            }
+            ENG = {
+                set_autonomy = {
+                    target = AST
+                    autonomy_state = autonomy_free
+                    end_civil_wars = yes
+                }
+            }
+		}
+		annex_country = {
+			target = NZL
+			transfer_troops = yes
+		}
+		every_state = {
+			limit = {
+				is_core_of = NZL
+			}
+			add_core_of = ROOT
+		}
+		523 = { add_core_of = ROOT }
+		979 = { add_core_of = ROOT }
+		737 = { add_core_of = ROOT }
+		1070 = { add_core_of = ROOT }
+		1057 = { add_core_of = ROOT }
+		669 = { add_core_of = ROOT }
+		738 = { add_core_of = ROOT }
+		634 = { add_core_of = ROOT }
+		734 = { add_core_of = ROOT }
+		1071 = { add_core_of = ROOT }
+		635 = { add_core_of = ROOT }
+		643 = { add_core_of = ROOT }
+		636 = { add_core_of = ROOT }
+		726 = { add_core_of = ROOT }
+		1072 = { add_core_of = ROOT }
+		725 = { add_core_of = ROOT }
+		transfer_state = 738
+		transfer_state = 669
+		transfer_state = 1057
+		transfer_state = 634
+		transfer_state = 734
+		transfer_state = 1071
+		transfer_state = 643
+		transfer_state = 636
+		transfer_state = 1072
+		transfer_state = 635
+		add_research_slot = 1
+
+		name = KoKi_YJ_AST_event.101.a
+		add_ideas = YJ_AST_1_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = KoKi_YJ_AST_event.102
+	title = KoKi_YJ_AST_event.102.title
+	desc = KoKi_YJ_AST_event.102.desc
+
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		add_offsite_building = {
+			type = industrial_complex
+			level = 10
+		}
+		complete_national_focus = AST_lang_plan
+		complete_national_focus = AST_exports_for_economic_recovery
+		name = KoKi_YJ_AST_event.102.a
+		add_ideas = YJ_AST_2_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = KoKi_YJ_AST_event.103
+	title = KoKi_YJ_AST_event.103.title
+	desc = KoKi_YJ_AST_event.103.desc
+
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		add_offsite_building = {
+			type = dockyard
+			level = 10
+		}
+		complete_national_focus = AST_kangaroo_point_dry_dock_taog
+		complete_national_focus = AST_cockatoo_island_shipyards_taog
+		name = KoKi_YJ_AST_event.103.a
+		add_ideas = YJ_AST_3_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = KoKi_YJ_AST_event.104
+	title = KoKi_YJ_AST_event.104.title
+	desc = KoKi_YJ_AST_event.104.desc
+
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		add_offsite_building = {
+			type = arms_factory
+			level = 10
+		}
+		complete_national_focus = AST_australian_regular_army
+		name = KoKi_YJ_AST_event.104.a
+		add_ideas = YJ_AST_4_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
