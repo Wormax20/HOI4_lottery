@@ -171,6 +171,7 @@ on_actions = {
 			}
 			ENG = {
 				add_ideas = YJ_ENG_7_ideas
+				add_ideas = YJ_ENG_9_ideas
 				add_offsite_building = {
 					type = dockyard
 					level = 15

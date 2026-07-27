@@ -242,11 +242,10 @@ ideas = {
 				custom_modifier_tooltip = YJ_ENG_7_ideas_tt
 				industrial_capacity_dockyard = 0.20
 				production_speed_dockyard_factor = 0.20
-				naval_damage_factor = 0.10
-				naval_defense_factor = 0.10
-				navy_max_range_factor = 0.20
+				naval_damage_factor = 0.05
+				naval_defense_factor = 0.05
+				navy_max_range_factor = 0.15
 				naval_supply_consumption_factor = -0.10
-				navy_visibility = -0.05
 			}
 			research_bonus = {
 				naval_equipment = 0.2
@@ -358,6 +357,46 @@ ideas = {
 					instant = yes
 					build_cost_ic = -0.15
 				}
+			}
+		}
+		YJ_ENG_9_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = eng_the_sun_never_sets
+
+			modifier = {
+				trade_opinion_factor = 0.10
+				resource_trade_cost_bonus_per_factory = 1
+				local_resources_factor = 0.20
+			}
+			targeted_modifier = {
+				tag = RAJ
+				trade_cost_for_target_factor = -0.10
+			}
+			targeted_modifier = {
+				tag = CAN
+				trade_cost_for_target_factor = -0.10
+			}
+			targeted_modifier = {
+				tag = SAF
+				trade_cost_for_target_factor = -0.10
+			}
+			targeted_modifier = {
+				tag = AST
+				trade_cost_for_target_factor = -0.10
+			}
+			targeted_modifier = {
+				tag = NZL
+				trade_cost_for_target_factor = -0.10
 			}
 		}
 	}
