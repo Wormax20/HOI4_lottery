@@ -115,6 +115,42 @@ on_actions = {
 					}
 				}
 			}
+			if = {
+				limit = {
+					CAN = { is_ai = no }
+					ENG = { is_ai = no }
+				}
+				ENG = {
+					add_offsite_building = {
+						type = industrial_complex
+						level = 5
+					}
+				}
+			}
+			if = {
+				limit = {
+					RAJ = { is_ai = no }
+					ENG = { is_ai = no }
+				}
+				ENG = {
+					add_offsite_building = {
+						type = industrial_complex
+						level = 5
+					}
+				}
+			}
+			if = {
+				limit = {
+					AST = { is_ai = no }
+					ENG = { is_ai = no }
+				}
+				ENG = {
+					add_offsite_building = {
+						type = industrial_complex
+						level = 5
+					}
+				}
+			}
 			SOV = {
 				add_ideas = YJ_SOV_5_ideas
 				add_to_variable = {
@@ -147,6 +183,92 @@ on_actions = {
 				add_offsite_building = {
 					type = industrial_complex
 					level = 15
+				}
+			}
+			MEX = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 15
+				}
+				add_offsite_building = {
+					type = arms_factory
+					level = 10
+				}
+			}
+			ROM = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 20
+				}
+				add_offsite_building = {
+					type = arms_factory
+					level = 10
+				}
+			}
+			BEL = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 10
+				}
+				add_offsite_building = {
+					type = arms_factory
+					level = 5
+				}
+			}
+			RAJ = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 10
+				}
+			}
+			FIN = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 15
+				}
+			}
+			PHI = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 30
+				}
+				add_offsite_building = {
+					type = dockyard
+					level = 15
+				}
+			}
+			ITA = {
+				add_timed_idea = {
+					idea = YJ_ITA_06_ideas
+					days = 30
+				}
+			}
+			CAN = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 25
+				}
+				add_offsite_building = {
+					type = arms_factory
+					level = 10
+				}
+				add_offsite_building = {
+					type = dockyard
+					level = 10
+				}
+			}
+			AST = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 15
+				}
+				add_offsite_building = {
+					type = arms_factory
+					level = 5
+				}
+				add_offsite_building = {
+					type = dockyard
+					level = 5
 				}
 			}
 			every_state = {
@@ -285,92 +407,6 @@ on_actions = {
 				add_resource = {
 					type = aluminium
 					amount = 200
-				}
-			}
-			MEX = {
-				add_offsite_building = {
-					type = industrial_complex
-					level = 15
-				}
-				add_offsite_building = {
-					type = arms_factory
-					level = 10
-				}
-			}
-			ROM = {
-				add_offsite_building = {
-					type = industrial_complex
-					level = 20
-				}
-				add_offsite_building = {
-					type = arms_factory
-					level = 10
-				}
-			}
-			BEL = {
-				add_offsite_building = {
-					type = industrial_complex
-					level = 10
-				}
-				add_offsite_building = {
-					type = arms_factory
-					level = 5
-				}
-			}
-			RAJ = {
-				add_offsite_building = {
-					type = industrial_complex
-					level = 10
-				}
-			}
-			FIN = {
-				add_offsite_building = {
-					type = industrial_complex
-					level = 15
-				}
-			}
-			PHI = {
-				add_offsite_building = {
-					type = industrial_complex
-					level = 30
-				}
-				add_offsite_building = {
-					type = dockyard
-					level = 15
-				}
-			}
-			ITA = {
-				add_timed_idea = {
-					idea = YJ_ITA_06_ideas
-					days = 30
-				}
-			}
-			CAN = {
-				add_offsite_building = {
-					type = industrial_complex
-					level = 25
-				}
-				add_offsite_building = {
-					type = arms_factory
-					level = 10
-				}
-				add_offsite_building = {
-					type = dockyard
-					level = 10
-				}
-			}
-			AST = {
-				add_offsite_building = {
-					type = industrial_complex
-					level = 10
-				}
-				add_offsite_building = {
-					type = arms_factory
-					level = 5
-				}
-				add_offsite_building = {
-					type = dockyard
-					level = 5
 				}
 			}
 			set_victory_points = {

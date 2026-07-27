@@ -10181,7 +10181,6 @@ focus_tree = {
 		cost = 10
 		available = {
 			has_war = no
-			date > 1938.1.1
 		}
 		                
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY}
@@ -10206,6 +10205,7 @@ focus_tree = {
 		relative_position_id = SOV_back_to_the_nep
 		cost = 10
 		available = {
+			date > 1938.1.1
 		}
 		                
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -11488,7 +11488,6 @@ focus_tree = {
 		relative_position_id = SOV_expand_the_agitprop
 		cost = 10
 
-		mutually_exclusive = { focus = SOV_collectivist_propaganda }
 
 		available = {
 
@@ -11628,7 +11627,6 @@ focus_tree = {
 		relative_position_id = SOV_expand_the_agitprop
 		cost = 10
 
-		mutually_exclusive = { focus = SOV_positive_heroism }
 
 		available = {
 
