@@ -41,3 +41,13 @@ music = {
 		}
 	}
 }
+
+music = {
+	song = "Moscow_defender"
+	
+	chance = { 
+		modifier = {
+			factor = 1
+		}
+	}
+}

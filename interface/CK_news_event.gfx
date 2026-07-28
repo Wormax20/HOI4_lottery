@@ -7,4 +7,8 @@ spriteTypes = {
 	    name = "GFX_bbls"  
 	    textureFile = "gfx/event_pictures/bbls.dds"
     } 
+	spriteType = {
+	    name = "GFX_news_event_moscow_defender"  
+	    textureFile = "gfx/event_pictures/SOV_Moscow_defender.png"
+    } 
 }

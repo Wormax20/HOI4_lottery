@@ -999,6 +999,10 @@ KoKi_YJ_decisions_categories = {
 		}
 		available = {
 			original_tag = SOV
+			219 = {
+				is_capital = no
+				is_fully_controlled_by = SOV
+			}
 		}
 		visible = {
 			original_tag = SOV

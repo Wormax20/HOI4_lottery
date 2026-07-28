@@ -21,3 +21,9 @@ music = {
     file = "CeddinDeden.ogg"
     volume = 0.75
 }
+
+music = {
+	name = "Moscow_defender"
+    file = "Moscow_defender.ogg"
+    volume = 0.75
+}

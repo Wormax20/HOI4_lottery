@@ -166,5 +166,34 @@ ideas = {
 				}
 			}
 		}
+		YJ_SOV_6_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = CHI_protracted_warfare
+
+			modifier = {
+				army_core_attack_factor = 0.10
+				army_core_defence_factor =  0.10
+				supply_consumption_factor = -0.10
+				land_reinforce_rate = 0.05
+			}
+			targeted_modifier = {
+				tag = GER
+				defense_bonus_against = 0.20
+			}
+			targeted_modifier = {
+				tag = FIN
+				defense_bonus_against = 0.20
+			}
+		}
 	}
 }

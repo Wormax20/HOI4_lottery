@@ -5,7 +5,7 @@ news_event = {
 	title = KoKi_YJ_NEW.1.title
 	desc = KoKi_YJ_NEW.1.desc
 
-	picture = GFX_news_event_soviet_tanks
+	picture = GFX_news_event_moscow_defender
 
 	major = yes
 
@@ -33,6 +33,13 @@ news_event = {
 		add_to_variable = { SOV_production_factory_max_efficiency_factor = 0.1 tooltip = production_factory_max_efficiency_factor_tt }
 		add_to_variable = { SOV_industrial_capacity_factory = 0.1 tooltip = industrial_capacity_factory_tt }
 		add_to_variable = { SOV_production_factory_start_efficiency_factor = 0.1 tooltip = production_factory_start_efficiency_factor_tt }
+		add_timed_idea = {
+			idea = YJ_SOV_6_ideas
+			years = 1
+		}
+		hidden_effect = {
+			play_song = "Moscow_defender"
+		}
 		trigger = {
 			TAG = SOV
 		}

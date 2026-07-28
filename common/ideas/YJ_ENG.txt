@@ -376,7 +376,7 @@ ideas = {
 			modifier = {
 				trade_opinion_factor = 0.10
 				resource_trade_cost_bonus_per_factory = 1
-				local_resources_factor = 0.20
+				local_resources_factor = 0.10
 			}
 			targeted_modifier = {
 				tag = RAJ
