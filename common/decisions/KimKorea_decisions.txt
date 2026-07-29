@@ -1,4 +1,4 @@
-KimKorea_discipline = { #宣传部
+KimKorea_discipline = {
 	KimKorea_More_Food = {
 		icon = 1
 		cost = 50
@@ -57,7 +57,6 @@ KimKorea_discipline = { #宣传部
 			army_defence_factor = 0.05
 		}
 	}
-	#下方海軍建設
 	KimKorea_Navy_Build = {
 		visible = {
 			tag = KOR
@@ -227,7 +226,6 @@ KimKorea_discipline = { #宣传部
 			always = yes
 		}
 		available = {
-			#always = yes
 			date > 1938.1.1
 		}
 		visible = {

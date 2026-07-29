@@ -1,12 +1,5 @@
-#####################
 
-###  ##  #  # # #  ## 
- #  #  # ## # # # #   
- #  #### # ## ##   #  
- #  #  # #  # # #   # 
- #  #  # #  # # # ## 
 
- #################### 
 
 
 CHI_sino_german_technical_mission_organization = {
@@ -69,7 +62,7 @@ CHI_shanghai_arsenal = {
 			limit = {
 				FROM = { NOT = { original_tag = CHI } }
 			}
-			owner = { controls_state = CHI.mio_locations^7 } # #613 Shanghai
+			owner = { controls_state = CHI.mio_locations^7 }
 		}
 		IF = {
 			limit = {
@@ -77,7 +70,7 @@ CHI_shanghai_arsenal = {
 			}
 			OR = {
 				owner = { has_completed_focus = CHI_relocate_factories_from_the_coast }
-				owner = { controls_state = CHI.mio_locations^7 } # #613 Shanghai
+				owner = { controls_state = CHI.mio_locations^7 }
 			}
 		}
 	}
@@ -284,15 +277,8 @@ CHI_ncns_sino_german_technical_mission_organization = {
 	}
 }
 
-#####################
 
- ## #  # ### ###   ## 
-#   #  #  #  #  # #   
- #  ####  #  ###   #  
-  # #  #  #  #      # 
-##  #  # ### #    ##  
  
-#####################
 
 CHI_jiangnan_shipyard_group_organization = {
 	include = generic_task_force_ship_organization
@@ -306,7 +292,7 @@ CHI_jiangnan_shipyard_group_organization = {
 		NOT = { has_dlc = "No Compromise, No Surrender" }
 	}
 	available = {
-		owner = { controls_state = CHI.mio_locations^0 } # #613 Shanghai
+		owner = { controls_state = CHI.mio_locations^0 }
 	}
 }
 
@@ -323,7 +309,7 @@ CHI_dagu_shipyard_organization = {
 		NOT = { has_dlc = "No Compromise, No Surrender" }
 	}
 	available = {
-		owner = { controls_state = CHI.mio_locations^1 } #608 Beijing
+		owner = { controls_state = CHI.mio_locations^1 }
 	}
 }
 
@@ -343,7 +329,7 @@ CHI_kiangnan_shipyard_group_organization_sea = {
 			limit = {
 				FROM = { NOT = { original_tag = CHI } }
 			}
-			owner = { controls_state = CHI.mio_locations^7 } # #613 Shanghai
+			owner = { controls_state = CHI.mio_locations^7 }
 		}
 		IF = {
 			limit = {
@@ -351,7 +337,7 @@ CHI_kiangnan_shipyard_group_organization_sea = {
 			}
 			OR = {
 				owner = { has_completed_focus = CHI_relocate_factories_from_the_coast }
-				owner = { controls_state = CHI.mio_locations^7 } # #613 Shanghai
+				owner = { controls_state = CHI.mio_locations^7 }
 			}
 		}
 	}
@@ -422,7 +408,7 @@ CHI_dagu_shipyard_organization_sea = {
 			limit = {
 				FROM = { NOT = { original_tag = CHI } }
 			}
-			owner = { controls_state = CHI.mio_locations^1 } #608 Beijing
+			owner = { controls_state = CHI.mio_locations^1 }
 		}
 		IF = {
 			limit = {
@@ -430,7 +416,7 @@ CHI_dagu_shipyard_organization_sea = {
 			}
 			OR = {
 				owner = { has_completed_focus = CHI_relocate_factories_from_the_coast }
-				owner = { controls_state = CHI.mio_locations^1 } #608 Beijing
+				owner = { controls_state = CHI.mio_locations^1 }
 			}
 		}
 	}
@@ -465,15 +451,8 @@ CHI_dagu_shipyard_organization_sea = {
 	}
 }
 
-###########################
 
-###  #    ##  #  # ###  ## 
-#  # #   #  # ## # #   #   
-###  #   #### # ## ##   #  
-#    #   #  # #  # #     # 
-#    ### #  # #  # ### ##  
 
-###########################
 
 CHI_camco_organization = {
 	include = generic_medium_aircraft_organization
@@ -615,7 +594,7 @@ CHI_camco_organization_sea = {
 			limit = {
 				FROM = { NOT = { original_tag = CHI } }
 			}
-			owner = { controls_state = CHI.mio_locations^8 } # #596 Zhejiang
+			owner = { controls_state = CHI.mio_locations^8 }
 		}
 		IF = {
 			limit = {
@@ -623,7 +602,7 @@ CHI_camco_organization_sea = {
 			}
 			OR = {
 				owner = { has_completed_focus = CHI_relocate_factories_from_the_coast }
-				owner = { controls_state = CHI.mio_locations^8 } # #596 Zhejiang
+				owner = { controls_state = CHI.mio_locations^8 }
 			}
 		}
 	}
@@ -641,7 +620,7 @@ CHI_sinaw_organization_sea = {
 			limit = {
 				FROM = { NOT = { original_tag = CHI } }
 			}
-			owner = { controls_state = CHI.mio_locations^9 } # #600 Jiangxi
+			owner = { controls_state = CHI.mio_locations^9 }
 		}
 		IF = {
 			limit = {
@@ -649,22 +628,15 @@ CHI_sinaw_organization_sea = {
 			}
 			OR = {
 				owner = { has_completed_focus = CHI_relocate_factories_from_the_coast }
-				owner = { controls_state = CHI.mio_locations^9 } # #600 Jiangxi
+				owner = { controls_state = CHI.mio_locations^9 }
 			}
 		}
 	}
 }
 
-################################### 
-
-#   #  ##  ### ### ###  ### ### #   
-## ## #  #  #  #   #  #  #  #   #   
-# # # ####  #  ##  ###   #  ##  #   
-#   # #  #  #  #   #  #  #  #   #   
-#   # #  #  #  ### #  # ### ### ### 
 
 
-###################################
+
 
 CHI_taiyuan_arsenal_organization = {
 	include = generic_artillery_organization
@@ -678,7 +650,7 @@ CHI_taiyuan_arsenal_organization = {
 		NOT = { has_dlc = "No Compromise, No Surrender" }
 	}
 	available = {
-		owner = { controls_state = CHI.mio_locations^2 } # #615 Shanxi
+		owner = { controls_state = CHI.mio_locations^2 }
 	}
 }
 CHI_liaoning_arsenal_organization = {
@@ -693,7 +665,7 @@ CHI_liaoning_arsenal_organization = {
 		NOT = { has_dlc = "No Compromise, No Surrender" } 
 	}
 	available = {
-		owner = { controls_state = CHI.mio_locations^3 } # #715 Liaobei
+		owner = { controls_state = CHI.mio_locations^3 }
 	}
 }
 CHI_hanyan_arsenal_organization = {
@@ -708,7 +680,7 @@ CHI_hanyan_arsenal_organization = {
 		NOT = { has_dlc = "No Compromise, No Surrender" }
 	}
 	available = {
-		owner = { controls_state = CHI.mio_locations^4 } ##1036 Wuhan
+		owner = { controls_state = CHI.mio_locations^4 }
 	}
 }
 
@@ -735,7 +707,7 @@ CHI_mukden_arsenal_organization = {
 					}
 				}
 			}
-			owner = { controls_state = CHI.mio_locations^5 } # #716 Liaoning
+			owner = { controls_state = CHI.mio_locations^5 }
 		}
 		IF = {
 			limit = {
@@ -744,7 +716,7 @@ CHI_mukden_arsenal_organization = {
 			}
 			OR = {
 				owner = { has_completed_focus = CHI_relocate_factories_from_the_coast }
-				owner = { controls_state = CHI.mio_locations^5 } # #716 Liaoning
+				owner = { controls_state = CHI.mio_locations^5 }
 			}
 		}
 	}
@@ -766,7 +738,7 @@ CHI_taiyuan_arsenal_organization_sea = {
 			limit = {
 				FROM = { NOT = { original_tag = CHI } }
 			}
-			owner = { controls_state = CHI.mio_locations^2 } # #615 Shanxi
+			owner = { controls_state = CHI.mio_locations^2 }
 		}
 		IF = {
 			limit = {
@@ -774,7 +746,7 @@ CHI_taiyuan_arsenal_organization_sea = {
 			}
 			OR = {
 				owner = { has_completed_focus = CHI_relocate_factories_from_the_coast }
-				owner = { controls_state = CHI.mio_locations^2 } # #615 Shanxi
+				owner = { controls_state = CHI.mio_locations^2 }
 			}
 		}
 	}
@@ -796,7 +768,7 @@ CHI_liaoning_arsenal_organization_sea = {
 			limit = {
 				FROM = { NOT = { original_tag = CHI } }
 			}
-			owner = { controls_state = CHI.mio_locations^3 } # #715 Liaobei
+			owner = { controls_state = CHI.mio_locations^3 }
 		}
 		IF = {
 			limit = {
@@ -804,7 +776,7 @@ CHI_liaoning_arsenal_organization_sea = {
 			}
 			OR = {
 				owner = { has_completed_focus = CHI_relocate_factories_from_the_coast }
-				owner = { controls_state = CHI.mio_locations^3 } # #715 Liaobei
+				owner = { controls_state = CHI.mio_locations^3 }
 			}
 		}
 	}
@@ -871,7 +843,7 @@ CHI_liaoning_arsenal_organization_sea = {
 	}
 
 	override_trait = {
-		token = generic_mio_trait_mounted_light_anti_tank_gun #elephant gun
+		token = generic_mio_trait_mounted_light_anti_tank_gun
 		any_parent = { generic_mio_trait_bulletproof_panels generic_mio_trait_sufficient_armor }
 	}
 
@@ -902,7 +874,7 @@ CHI_hanyan_arsenal_organization_sea = {
 			limit = {
 				FROM = { NOT = { original_tag = CHI } }
 			}
-			owner = { controls_state = CHI.mio_locations^4 } ##1036 Wuhan
+			owner = { controls_state = CHI.mio_locations^4 }
 		}
 		IF = {
 			limit = {
@@ -910,7 +882,7 @@ CHI_hanyan_arsenal_organization_sea = {
 			}
 			OR = {
 				owner = { has_completed_focus = CHI_relocate_factories_from_the_coast }
-				owner = { controls_state = CHI.mio_locations^4 } ##1036 Wuhan
+				owner = { controls_state = CHI.mio_locations^4 }
 			}
 		}
 	}
@@ -989,7 +961,7 @@ CHI_china_automobile_corporation_organization = {
 			limit = {
 				FROM = { NOT = { original_tag = CHI } }
 			}
-			owner = { controls_state = CHI.mio_locations^6 } # 613 Shanghai
+			owner = { controls_state = CHI.mio_locations^6 }
 		}
 		IF = {
 			limit = {
@@ -997,7 +969,7 @@ CHI_china_automobile_corporation_organization = {
 			}
 			OR = {
 				owner = { has_completed_focus = CHI_relocate_factories_from_the_coast }
-				owner = { controls_state = CHI.mio_locations^6 } # 613 Shanghai
+				owner = { controls_state = CHI.mio_locations^6 }
 			}
 		}
 	}
@@ -1064,7 +1036,7 @@ CHI_china_automobile_corporation_organization = {
 	}
 
 	override_trait = {
-		token = generic_mio_trait_mounted_light_anti_tank_gun #elephant gun
+		token = generic_mio_trait_mounted_light_anti_tank_gun
 		any_parent = { generic_mio_trait_bulletproof_panels generic_mio_trait_sufficient_armor }
 	}
 
@@ -1096,7 +1068,7 @@ CHI_jinling_arsenal_organization = {
 			limit = {
 				FROM = { NOT = { original_tag = CHI } }
 			}
-			owner = { controls_state = CHI.mio_locations^6 } # 1035 Nanjing
+			owner = { controls_state = CHI.mio_locations^6 }
 		}
 		IF = {
 			limit = {
@@ -1104,14 +1076,13 @@ CHI_jinling_arsenal_organization = {
 			}
 			OR = {
 				owner = { has_completed_focus = CHI_relocate_factories_from_the_coast }
-				owner = { controls_state = CHI.mio_locations^6 } # 1035 Nanjing
+				owner = { controls_state = CHI.mio_locations^6 }
 			}
 		}
 	}
 
 }
 
-#下方东南苦行山
 
 CHT_henschel_ChinaTaiwan_organization = {
 	include = generic_infantry_tank_organization

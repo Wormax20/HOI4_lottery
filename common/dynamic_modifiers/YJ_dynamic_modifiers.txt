@@ -10,6 +10,10 @@ YJ_AIR_ideas = {
 
 	production_speed_buildings_factor = YJ_coal_num_0_01
 	industrial_capacity_dockyard = YJ_navy_output_penalty_0_1
+
+	naval_damage_factor = YJ_navy_cap_atk
+	naval_defense_factor = YJ_navy_cap_def
+	navy_visibility = YJ_navy_cap_vis
 }
 
 YJ_AXIS_BAL_ideas = {

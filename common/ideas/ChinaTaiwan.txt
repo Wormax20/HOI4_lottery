@@ -1,6 +1,6 @@
 ideas = {
-	country = { #國家精神
-		CHT_The_Mainlands_Failure = { #在大陆的失败
+	country = {
+		CHT_The_Mainlands_Failure = {
 			picture = CHI_cradle_of_civilization
 			allowed = {
 				always = yes
@@ -16,7 +16,7 @@ ideas = {
 			}
 		}
 
-		CHT_Finance = { #金圆券
+		CHT_Finance = {
 			picture = ger_mefo_bills_payment
 			allowed = {
 				always = yes
@@ -34,7 +34,7 @@ ideas = {
 			}
 		}
 
-		CHT_Mobilization_to_Suppress_the_Rebellion = { #动员戡乱
+		CHT_Mobilization_to_Suppress_the_Rebellion = {
 			picture = ETH_peacekeeping_forces
 			allowed = {
 				always = yes
@@ -51,7 +51,7 @@ ideas = {
 			}
 		}
 
-		CHT_Three_Principles_of_the_People = { #三民主义
+		CHT_Three_Principles_of_the_People = {
 			picture = CHI_three_principles_of_the_people
 			allowed = {
 				always = yes
@@ -67,7 +67,7 @@ ideas = {
 			}
 		}
 
-		CHT_Economic_Collapse = { #經濟崩潰
+		CHT_Economic_Collapse = {
 			picture = generic_economic_crisis
 			allowed = {
 				always = yes
@@ -87,7 +87,7 @@ ideas = {
 			}
 		}
 
-		CHT_Declare_Martial_Law = { #戒严
+		CHT_Declare_Martial_Law = {
 			picture = ast_classify_aliens
 			allowed = {
 				always = yes
@@ -106,7 +106,7 @@ ideas = {
 			}
 		}
 
-		CHT_A_Long_Road_Ahead = { #任重道远
+		CHT_A_Long_Road_Ahead = {
 			picture = man_five_year_plan_industry
 			allowed = {
 				always = yes
@@ -122,7 +122,7 @@ ideas = {
 			}
 		}
 
-		CHT_The_Party_State = { #为党国
+		CHT_The_Party_State = {
 			picture = CHI_blue_shirt_society
 			allowed = {
 				always = yes
@@ -140,7 +140,7 @@ ideas = {
 			}
 		}
 
-		CHT_Strive_for = { #来争取
+		CHT_Strive_for = {
 			picture = CHI_decisive_battle
 			allowed = {
 				always = yes
@@ -155,7 +155,7 @@ ideas = {
 			}
 		}
 
-		CHT_A_Group_of_Comrades_from_the_Central_Plains = { #为自由
+		CHT_A_Group_of_Comrades_from_the_Central_Plains = {
 			picture = CHI_baojia_system
 			allowed = {
 				always = yes
@@ -174,7 +174,7 @@ ideas = {
 			}
 		}
 
-		CHT_Never_Forget_Ju = { #毋忘在莒
+		CHT_Never_Forget_Ju = {
 			picture = chi_warlord_integration5
 			allowed = {
 				always = yes
@@ -188,7 +188,7 @@ ideas = {
 			}
 		}
 
-		CHT_Bide_Our_Time = { #卧薪尝胆
+		CHT_Bide_Our_Time = {
 			picture = CHI_protracted_warfareCHI_protracted_warfare
 			allowed = {
 				always = yes
@@ -202,7 +202,7 @@ ideas = {
 			}
 		}
 
-		CHT_Closed_Policy = { #封闭大陆政策
+		CHT_Closed_Policy = {
 			picture = generic_convoys 
 			allowed = {
 				always = yes
@@ -217,7 +217,7 @@ ideas = {
 			}
 		}
 
-		CHT_Security_and_Counterintelligence = { #保密防谍
+		CHT_Security_and_Counterintelligence = {
 			picture = generic_spy_coup
 			allowed = {
 				always = yes
@@ -234,7 +234,7 @@ ideas = {
 				airforce_intel_to_others = -15
 			}
 		}
-		CHT_Naval_Research_Institute = { #海军研究所
+		CHT_Naval_Research_Institute = {
 			picture = generic_convoys 
 			allowed = {
 				always = yes
@@ -251,7 +251,7 @@ ideas = {
 				naval_equipment = 0.2
 			}
 		}
-		CHT_Carrier_Fighter_Mass_Production_Program = { #舰载战斗机量产计画
+		CHT_Carrier_Fighter_Mass_Production_Program = {
 			picture = man_five_year_plan_air
 			allowed = {
 				always = yes
@@ -268,7 +268,7 @@ ideas = {
 				}
 			}
 		}
-		CHT_Carrier_Torpedo_Bomber_Mass_Production_Program = { #舰载鱼雷机量产计画
+		CHT_Carrier_Torpedo_Bomber_Mass_Production_Program = {
 			picture = man_five_year_plan_air
 			allowed = {
 				always = yes
@@ -284,7 +284,7 @@ ideas = {
 				}
 			}
 		}
-		CHT_Air_Land_Integration = { #空地一体
+		CHT_Air_Land_Integration = {
 			picture = SWE_land_air_warfare 
 			allowed = {
 				always = yes

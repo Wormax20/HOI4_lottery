@@ -279,6 +279,5 @@
 6066;9228;sea;990;-1;-1;-1;-1;;FINTOSWE
 11278;9228;sea;1211;-1;-1;-1;-1;;FINTOSWE
 -1;-1;;-1;-1;-1;-1;-1;-1 
-#Start province ID;End province ID;Adjacency type;Through province ID;Starting X position;Starting Y position;Ending X position;Ending Y position;Adjacency rule;Comment
 
 

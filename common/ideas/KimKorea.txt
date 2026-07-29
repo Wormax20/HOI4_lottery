@@ -1,6 +1,6 @@
 ideas = {
-	country = { #國家精神
-		The_Kim_Dynasty = { #ideas的id
+	country = {
+		The_Kim_Dynasty = {
 			picture = The_Kim_Dynasty
 			allowed = {
 				always = yes

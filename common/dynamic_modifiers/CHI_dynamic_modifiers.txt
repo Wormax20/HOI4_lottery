@@ -64,7 +64,7 @@ ChinaTaiwan_Operation_National_Glory = {
 	army_core_defence_factor = ChinaTaiwan_Operation_National_Glory_army_core_defence_factor
 	army_bonus_air_superiority_factor = ChinaTaiwan_Operation_National_Glory_army_bonus_air_superiority_factor
 }
-CHT_Land_Reform = { #土地改革
+CHT_Land_Reform = {
 	enable = { always = yes }
 
 	icon = GFX_modifiers_generic_construction

@@ -1,20 +1,4 @@
-﻿#############################################
-### search_filters = {FOCUS_FILTER_POLITICAL}
-### search_filters = {FOCUS_FILTER_RESEARCH}
-### search_filters = {FOCUS_FILTER_INDUSTRY}
-### search_filters = {FOCUS_FILTER_STABILITY}
-### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
-### search_filters = {FOCUS_FILTER_MANPOWER}
-### search_filters = {FOCUS_FILTER_ANNEXATION}
-### search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
-### search_filters = {FOCUS_FILTER_ARMY_XP}
-### search_filters = {FOCUS_FILTER_NAVY_XP}
-### search_filters = {FOCUS_FILTER_AIR_XP}
-### search_filters = {FOCUS_FILTER_POLITICAL_CHARACTER}
-### search_filters = {FOCUS_FILTER_MILITARY_CHARACTER}
-### search_filters = {FOCUS_FILTER_INTERNATIONAL_TRADE}
-### search_filters = {FOCUS_FILTER_HISTORICAL}
-
+﻿
 focus_tree = {
 	id = china_nationalist_sea_focus
 	
@@ -39,44 +23,32 @@ focus_tree = {
 	shortcut = {
 		name = CHI_navy_shortcut
 		target = CHI_republic_of_china_navy
-		#scroll_wheel_factor = 0.469 #Optional parameter, if left unset will use existing zoomlevel. arning: #there's no good way for this to respect client resolution.
 	}
 	shortcut = {
 		name = CHI_air_shortcut
 		target = CHI_rocaf
-		#scroll_wheel_factor = 0.9
 	}
 	shortcut = {
 		name = CHI_army_shortcut
 		target = CHI_military_affairs_commission_sea
-		#scroll_wheel_factor = 0.65
 	}
 	shortcut = {
 		name = CHI_industry_shortcut
 		target = CHI_promote_the_national_currency
-		#scroll_wheel_factor = 0.9
 	}
 	shortcut = {
 		name = CHI_fascist_shortcut
 		target = CHI_strengthening_our_resolve
-		#scroll_wheel_factor = 0.469 #Optional parameter, if left unset will use existing zoomlevel. arning: #there's no good way for this to respect client resolution.
 	}
 	shortcut = {
 		name = CHI_neutral_shortcut
 		target = CHI_dang_guo 
-		#scroll_wheel_factor = 0.9
 	}
 	shortcut = {
 		name = CHI_democratic_shortcut
 		target = CHI_end_military_primacy
-		#scroll_wheel_factor = 0.65
 	}
 
-	###  ### #   #  ##   ##  ###   ##  ### ###  ##      ###  ###   ##  #  #  ##  #  # 
-	#  # #   ## ## #  # #  # #  # #  #  #   #  #  #     #  # #  # #  # ## # #  # #  # 
-	#  # ##  # # # #  # #    ###  ####  #   #  #        ###  ###  #### # ## #    #### 
-	#  # #   #   # #  # #  # #  # #  #  #   #  #  #     #  # #  # #  # #  # #  # #  # 
-	###  ### #   #  ##   ##  #  # #  #  #  ###  ##      ###  #  # #  # #  #  ##  #  # 
 
 
 	focus = {
@@ -675,7 +647,6 @@ focus_tree = {
 		id = CHI_truly_free_speech
 		icon = GFX_focus_SWE_radiotjanst
 		prerequisite = { focus = CHI_give_protection_of_civil_rights }
-		#mutually_exclusive = { focus = CHI_a_control_yuan_with_teeth }
 		x = -1
 		y = 1
 		relative_position_id = CHI_give_protection_of_civil_rights
@@ -707,7 +678,6 @@ focus_tree = {
 		id = CHI_a_control_yuan_with_teeth
 		icon = GFX_focus_ARG_anti_corruption_policies
 		prerequisite = { focus = CHI_give_protection_of_civil_rights }
-		#mutually_exclusive = { focus = CHI_truly_free_speech }
 		x = 1
 		y = 1
 		relative_position_id = CHI_give_protection_of_civil_rights
@@ -842,7 +812,7 @@ focus_tree = {
 
 			custom_effect_tooltip = CHI_develop_counterinsurgency_tactics_tt
 
-			divide_variable = { CHI_counter_infiltration_cost = 2 } #halves the cost for Counter Infiltration Measures Decision
+			divide_variable = { CHI_counter_infiltration_cost = 2 }
 
 		}
 	}
@@ -1081,7 +1051,6 @@ focus_tree = {
 			1035 = {
 				is_controlled_by_ROOT_or_ally = yes
 			}
-			#OR = {
 				592 = {
 					is_controlled_by_ROOT_or_ally = yes
 				}
@@ -1091,7 +1060,6 @@ focus_tree = {
 				1037 = {
 					is_controlled_by_ROOT_or_ally = yes
 				}
-			#}
 			OR = {
 				PRC = {
 					exists = yes
@@ -1362,15 +1330,6 @@ focus_tree = {
 		}
 
 		bypass = {
-			#USA = {
-			#	OR = {
-			#		exists = no
-			#		NOT = {
-			#			has_government = democratic
-			#		}
-			#		has_war_with = ROOT
-			#	}
-			#}
 		}
 	
 		search_filters = {}
@@ -2000,7 +1959,7 @@ focus_tree = {
 		completion_reward = {
 			
 			custom_effect_tooltip = CHI_make_a_stand_against_the_colonialists_tt
-			CHI_setup_colonized_countries_to_liberate_array = yes #setting up the array with a scripted effect
+			CHI_setup_colonized_countries_to_liberate_array = yes
 
 		}
 	}
@@ -2110,11 +2069,6 @@ focus_tree = {
 		}
 	}
 
-	#   #  ##  #  #  ##       ### ### #  #  ##  #   # ### ###     ###  ###   ##  #  #  ##  #  # 
-	#   # #  # ## # #           #  #  ## # #    #   # #    #      #  # #  # #  # ## # #  # #  # 
-	# # # #### # ## # ##        #  #  # ## # ## # # # ##   #      ###  ###  #### # ## #    #### 
-	# # # #  # #  # #  #     #  #  #  #  # #  # # # # #    #      #  # #  # #  # #  # #  # #  # 
-	 # #  #  # #  #  ##       ##  ### #  #  ##   # #  ### ###     ###  #  # #  # #  #  ##  #  # 
 
 
 	focus = {
@@ -3028,8 +2982,7 @@ focus_tree = {
 				name = CHI_expropriate_industrialists
 				bonus = 0.5
 				uses = 1
-				category = excavation_tech# optional 
-				# technology  = technology_id # optional
+				category = excavation_tech
 			}
 
 		}
@@ -3182,7 +3135,7 @@ focus_tree = {
 
 	focus = {
 		id = CHI_affirm_civilian_primacy
-		icon = GFX_focus_generic_improve_the_administration # TODO_JNS could do with something more special
+		icon = GFX_focus_generic_improve_the_administration
 		prerequisite = { focus = CHI_close_whampoa }
 	
 		x = 0
@@ -3360,7 +3313,6 @@ focus_tree = {
 				has_war_with = JAP 
 			}
 			is_subject = no
-			# is_government_in_exile = no # Probably not needed
 		}
 	
 		search_filters = {FOCUS_FILTER_ARMY_XP FOCUS_FILTER_NAVY_XP FOCUS_FILTER_AIR_XP}
@@ -3487,7 +3439,6 @@ focus_tree = {
 			factor = 1
 		}
 		historical_ai = {
-			# Only if we have defeated our enemies
 			OR = {
 				NOT = {
 					any_neighbor_country = {
@@ -3716,7 +3667,6 @@ focus_tree = {
 	focus = {
 		id = CHI_start_looking_outwards
 		icon = GFX_focus_CHI_start_looking_outwards
-		#prerequisite = { focus = CHI_victory_over_the_invaders }
 		prerequisite = { focus = CHI_proclaim_a_new_chapter }
 	
 		x = 1
@@ -3788,7 +3738,7 @@ focus_tree = {
 	
 		completion_reward = {
 			custom_effect_tooltip = CHI_liberate_the_peoples_of_asia_tt
-			every_other_country = { # TODO_JNS Have a thunk about interactions
+			every_other_country = {
 				limit = {
 					OR = {
 						AND = {
@@ -3832,7 +3782,7 @@ focus_tree = {
 		}
 	
 		completion_reward = {
-			every_other_country = { # TODO_JNS Have a thunk about interactions
+			every_other_country = {
 				limit = {
 					is_unequal_signatory = yes
 					NOT = { is_ally_with = ROOT }
@@ -3871,7 +3821,7 @@ focus_tree = {
 	
 		completion_reward = {
 			custom_effect_tooltip = CHI_bring_the_revolution_further_tt
-			every_other_country = { # TODO_JNS Have a thunk about interactions
+			every_other_country = {
 				limit = {
 					OR = {
 						AND = {
@@ -3952,11 +3902,6 @@ focus_tree = {
 	}
 
 
-	 ##  #  # ###  ##  #  #  ##      # #  ##  ###     ## #  # ### # #     ###  ###   ##  #  #  ##  #  # 
-	#  # #  #  #  #  # ## # #        # # #  #  #     #   #  # #   # #     #  # #  # #  # ## # #  # #  # 
-	#    ####  #  #### # ## # ##     ##  ####  #  ##  #  #### ##  ##      ###  ###  #### # ## #    #### 
-	#  # #  #  #  #  # #  # #  #     # # #  #  #       # #  # #   # #     #  # #  # #  # #  # #  # #  # 
-	 ##  #  # ### #  # #  #  ##      # # #  # ###    ##  #  # ### # #     ###  #  # #  # #  #  ##  #  # 
 
 
 	 
@@ -4204,7 +4149,7 @@ focus_tree = {
 					is_in_faction = no
 
 				}
-				IF = { ## Added check to prevent two CUFs from being formed - if PRC has created CUF, but CHI does not join, then create Nanjing front instead
+				IF = {
 					limit = {
 						PRC = {
 							has_faction_template = faction_template_chinese_united_front
@@ -4397,7 +4342,7 @@ focus_tree = {
 			hidden_effect = {
 				delete_unit_template_and_units = {
 					division_template = "Baojia Juntuán"
-					disband = yes #if yes, will refund equipment/manpower.
+					disband = yes
 				}
 
 				division_template = {
@@ -4405,7 +4350,7 @@ focus_tree = {
 					division_names_group = CHI_INF_01
 					role = garrison
 					template_counter = 118
-					priority = 0 # garrison
+					priority = 0
 					regiments = {
 						infantry = { x = 0 y = 0 }
 						infantry = { x = 0 y = 1 }
@@ -4471,7 +4416,7 @@ focus_tree = {
 		available = {
 			OR = {
 				has_war_with = JAP
-				AND = { # TODO_JNS double check if we want this
+				AND = {
 					has_defensive_war = yes
 					any_enemy_country = {
 						is_major = yes 
@@ -4554,55 +4499,6 @@ focus_tree = {
 		}
 	}
 	
-#	focus = {
-#		id = CHI_take_a_stance_on_illicit_trade
-#		icon = GFX_focus_generic_support_the_left_right
-#		prerequisite = { focus = CHI_decree_the_end_to_corruption }
-#	
-#		x = 0
-#		y = 1
-#		relative_position_id = CHI_decree_the_end_to_corruption
-#		cost = 10
-#		available = {
-#		}
-#	
-#		search_filters = {}
-#	
-#		completion_reward = {
-#			CHI_corrupt_administration_improvement = yes#			
-#			CHI_modify_administration_modifier = yes
-#			add_to_variable = { 
-#				CHI_illicit_trade_consumer_goods = 0.05
-#				tooltip = consumer_goods_factor_tt
-#			}
-#			add_to_variable = { 
-#				CHI_illicit_trade_industrial_capacity_factory = 0.05
-#				tooltip = industrial_capacity_factory_tt
-#			}
-#			add_to_variable = { 
-#				CHI_illicit_trade_industrial_capacity_dockyard = 0.05
-#				tooltip = industrial_capacity_dockyard_tt
-#			}
-#
-#
-#			custom_effect_tooltip = generic_skip_one_line_tt
-#			unlock_decision_tooltip = {
-#				decision = CHI_improve_opium_modifiers_cg
-#				show_effect_tooltip = yes # default is no
-#				show_modifiers = yes # default is no
-#			}
-#			custom_effect_tooltip = CHI_take_a_stance_on_illicit_trade_tt_2
-#
-#			custom_effect_tooltip = generic_skip_one_line_tt
-#			unlock_decision_tooltip = {
-#				decision = CHI_improve_opium_modifiers_output
-#				show_effect_tooltip = yes # default is no
-#				show_modifiers = yes # default is no
-#			}
-#
-#			custom_effect_tooltip = CHI_take_a_stance_on_illicit_trade_tt
-#		}
-#	}
 
 	focus = {
 		id = CHI_reshuffle_the_green_gang
@@ -5039,7 +4935,6 @@ focus_tree = {
 		}
 	
 		completion_reward = {
-			# TODO_JNS Explain the decrease better
 			add_stability = -0.15
 			CHI_modify_illicit_goods_event_trigger = yes
 		}
@@ -5100,14 +4995,14 @@ focus_tree = {
 				controller = { has_war_with = ROOT }
 				OR = {
 					is_coastal = yes
-					state = 1035 #nanjing
-					state = 750 #Changde
-					state = 1032 #Yan'an
-					state = 744 #Xi'an
-					state = 594 #Nanning
-					state = 1036 #Wuhan
-					state = 325 #Kunming
-					state = 615 #Shanxi
+					state = 1035
+					state = 750
+					state = 1032
+					state = 744
+					state = 594
+					state = 1036
+					state = 325
+					state = 615
 				}
 			}
 		}
@@ -5126,14 +5021,14 @@ focus_tree = {
 							has_resistance = no
 							OR = {
 								is_coastal = yes
-								state = 1035 #nanjing
-								state = 750 #Changde
-								state = 1032 #Yan'an
-								state = 744 #Xi'an
-								state = 594 #Nanning
-								state = 1036 #Wuhan
-								state = 325 #Kunming
-								state = 615 #Shanxi
+								state = 1035
+								state = 750
+								state = 1032
+								state = 744
+								state = 594
+								state = 1036
+								state = 325
+								state = 615
 							}
 						}
 					}
@@ -5150,14 +5045,14 @@ focus_tree = {
 							has_resistance = yes
 							OR = {
 								is_coastal = yes
-								state = 1035 #nanjing
-								state = 750 #Changde
-								state = 1032 #Yan'an
-								state = 744 #Xi'an
-								state = 594 #Nanning
-								state = 1036 #Wuhan
-								state = 325 #Kunming
-								state = 615 #Shanxi
+								state = 1035
+								state = 750
+								state = 1032
+								state = 744
+								state = 594
+								state = 1036
+								state = 325
+								state = 615
 							}
 
 							controller = {
@@ -5246,7 +5141,7 @@ focus_tree = {
 			hidden_effect = {
 				add_faction_goal = faction_goal_subjugate_the_faction
 				add_faction_goal_slot = {
-					category  = medium_term # options: short_term, medium_term, long_term 
+					category  = medium_term
 					value = 1 
 				}
 				IF = {
@@ -5332,7 +5227,6 @@ focus_tree = {
 				tooltip = army_armor_speed_factor_tt
 			}
 
-			#for resetting
 			set_variable = { CHI_soviet_support_army_armor_attack_factor_default = CHI_soviet_support_army_armor_attack_factor }
 			set_variable = { CHI_soviet_support_army_armor_speed_factor_default = CHI_soviet_support_army_armor_speed_factor }
 			 
@@ -5351,11 +5245,11 @@ focus_tree = {
 			NOT = {
 				any_enemy_country = {
 					OR = {
-						controls_state = 617 # Urumqi
-						controls_state = 759 # Kunlun Shan
-						controls_state = 755 # Haixi
-						controls_state = 754 # Golog
-						controls_state = 283 # Gansu
+						controls_state = 617
+						controls_state = 759
+						controls_state = 755
+						controls_state = 754
+						controls_state = 283
 					}
 				}
 			}
@@ -5596,7 +5490,7 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = CHI_burma_campaign_trigger
 
-				NOT = { # TODO_JNS Check that we don't have faction weirdness
+				NOT = {
 					BRM = {
 						all_core_state = {
 							OR = {
@@ -5642,28 +5536,28 @@ focus_tree = {
 			has_dynamic_modifier = {
 				modifier = CHI_american_support
 			}
-			NOT = { # TODO_JNS Check that we don't have faction weirdness
-				741 = { # Cambodia
+			NOT = {
+				741 = {
 					controller = { 
 						NOT = { has_war_with = ROOT } 
 					}
 				}
-				286 = { # Champa
+				286 = {
 					controller = { 
 						NOT = { has_war_with = ROOT } 
 					}
 				}
-				670 = { # Laos
+				670 = {
 					controller = { 
 						NOT = { has_war_with = ROOT } 
 					}
 				}
-				1017 = { # Trung Bo
+				1017 = {
 					controller = { 
 						NOT = { has_war_with = ROOT } 
 					}
 				}
-				671 = { # Tonkin
+				671 = {
 					controller = { 
 						NOT = { has_war_with = ROOT } 
 					}
@@ -6147,7 +6041,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = CHI_preemptive_strike_tt
 			custom_effect_tooltip = generic_skip_one_line_tt
-			every_other_country = { # TODO_JNS Have a thunk about interactions
+			every_other_country = {
 				limit = {
 					is_literally_china_not_prc = yes
 					OR = {
@@ -6192,10 +6086,10 @@ focus_tree = {
 				HBC = {
 					is_ally_with = ROOT
 				}
-				XIC = { # TODO_JNS Might not be needed
+				XIC = {
 					is_ally_with = ROOT
 				}
-				SND = { # TODO_JNS Have a thunk
+				SND = {
 					is_ally_with = ROOT
 				}
 			}
@@ -6246,7 +6140,7 @@ focus_tree = {
 						exists = no
 					}
 				}
-				XIC = { # TODO_JNS Might not be needed
+				XIC = {
 					OR = {
 						AND = {
 							is_subject = yes
@@ -6257,7 +6151,7 @@ focus_tree = {
 						exists = no
 					}
 				}
-				SND = { # TODO_JNS Have a thunk
+				SND = {
 					OR = {
 						AND = {
 							is_subject = yes
@@ -6281,7 +6175,7 @@ focus_tree = {
 				limit = {
 					CHI_northern_warlords = yes
 				}
-				subtract_from_variable = { CHI_warlord_integration_pp_cost = CHI.CHI_reduce_integration_pp_cost } #Makes Integration Decisions cheaper to take
+				subtract_from_variable = { CHI_warlord_integration_pp_cost = CHI.CHI_reduce_integration_pp_cost }
 				CHI_apply_integration_cost_reduction = yes
 				custom_effect_tooltip = CHI_warlord_integration_cost_reduction
 				custom_effect_tooltip = CHI_impair_the_control_yuan_tt
@@ -6398,7 +6292,7 @@ focus_tree = {
 				limit = {
 					CHI_western_warlords = yes
 				}
-				subtract_from_variable = { CHI_warlord_integration_pp_cost = CHI.CHI_reduce_integration_pp_cost } #Makes Integration Decisions cheaper to take
+				subtract_from_variable = { CHI_warlord_integration_pp_cost = CHI.CHI_reduce_integration_pp_cost }
 				CHI_apply_integration_cost_reduction = yes
 				custom_effect_tooltip = CHI_warlord_integration_cost_reduction
 				custom_effect_tooltip = CHI_impair_the_control_yuan_tt
@@ -6505,7 +6399,7 @@ focus_tree = {
 				limit = {
 					CHI_southern_warlords = yes
 				}
-				subtract_from_variable = { CHI_warlord_integration_pp_cost = CHI.CHI_reduce_integration_pp_cost } #Makes Integration Decisions cheaper to take
+				subtract_from_variable = { CHI_warlord_integration_pp_cost = CHI.CHI_reduce_integration_pp_cost }
 				CHI_apply_integration_cost_reduction = yes
 				custom_effect_tooltip = CHI_warlord_integration_cost_reduction
 				custom_effect_tooltip = CHI_impair_the_control_yuan_tt
@@ -6530,7 +6424,6 @@ focus_tree = {
 	focus = {
 		id = CHI_a_generalissimo_for_all_of_china
 		icon = GFX_focus_CHI_generalissimo_for_all_of_china 
-		#prerequisite = { focus = CHI_victory_over_the_invaders }
 		prerequisite = { focus = CHI_tour_the_north focus = CHI_tour_the_west focus = CHI_tour_the_south } 
 	
 		x = 2
@@ -6590,7 +6483,6 @@ focus_tree = {
 				 	value = 0
 				}
 			}
-			# Upgrading Chiangs trait
 			swap_ruler_traits = {
 				remove = CHI_generallissimo_sea
 				add = CHI_all_china_generalisimo 
@@ -6706,7 +6598,7 @@ focus_tree = {
 		relative_position_id = CHI_crush_the_communists
 		
 		allow_branch = {
-			has_country_flag = CHI_unlock_retreat_to_taiwan_focus #Set in SEA_china_misc.1
+			has_country_flag = CHI_unlock_retreat_to_taiwan_focus
 		}
 
 		cost = 5
@@ -6862,7 +6754,7 @@ focus_tree = {
 		}
 	
 		completion_reward = {
-			every_other_country = { # TODO_JNS Have a thunk about interactions
+			every_other_country = {
 				limit = {
 					has_government = communism
 					NOT = { 
@@ -7101,11 +6993,6 @@ focus_tree = {
 		}
 	}
 
-	###  ##   ##  ##  ###  ## ###     ###  ###   ##  #  #  ##  #  # 
-	#   #  # #   #  #  #  #    #      #  # #  # #  # ## # #  # #  # 
-	##  ####  #  #     #   #   #      ###  ###  #### # ## #    #### 
-	#   #  #   # #  #  #    #  #      #  # #  # #  # #  # #  # #  # 
-	#   #  # ##   ##  ### ##   #      ###  #  # #  # #  #  ##  #  # 
 
 
 	focus = {
@@ -8119,7 +8006,7 @@ focus_tree = {
 					1035 = {
 						add_dynamic_modifier = {
 							modifier = CHI_infiltrated_state_2
-							scope = CHI #These modifiers should only apply to PRC
+							scope = CHI
 						}
 					}
 				}
@@ -8130,7 +8017,7 @@ focus_tree = {
 					613 = {
 						add_dynamic_modifier = {
 							modifier = CHI_infiltrated_state_2
-							scope = CHI #These modifiers should only apply to PRC
+							scope = CHI
 						}
 					}
 				}
@@ -8141,7 +8028,7 @@ focus_tree = {
 					1036 = {
 						add_dynamic_modifier = {
 							modifier = CHI_infiltrated_state_2
-							scope = CHI #These modifiers should only apply to PRC
+							scope = CHI
 						}
 					}
 				}
@@ -8152,7 +8039,7 @@ focus_tree = {
 					1037 = {
 						add_dynamic_modifier = {
 							modifier = CHI_infiltrated_state_2
-							scope = CHI #These modifiers should only apply to PRC
+							scope = CHI
 						}
 					}
 				}
@@ -8163,7 +8050,7 @@ focus_tree = {
 					608 = {
 						add_dynamic_modifier = {
 							modifier = CHI_infiltrated_state_2
-							scope = CHI #These modifiers should only apply to PRC
+							scope = CHI
 						}
 					}
 				}
@@ -8456,14 +8343,14 @@ focus_tree = {
 							has_resistance = yes
 							OR = {
 								is_coastal = yes
-								state = 1035 #nanjing
-								state = 750 #Changde
-								state = 1032 #Yan'an
-								state = 744 #Xi'an
-								state = 594 #Nanning
-								state = 1036 #Wuhan
-								state = 325 #Kunming
-								state = 615 #Shanxi
+								state = 1035
+								state = 750
+								state = 1032
+								state = 744
+								state = 594
+								state = 1036
+								state = 325
+								state = 615
 							}
 
 							controller = {
@@ -8478,7 +8365,7 @@ focus_tree = {
 			hidden_effect = {
 				delete_unit_template_and_units = {
 					division_template = "Defence Groups"
-					disband = yes #if yes, will refund equipment/manpower.
+					disband = yes
 				}
 
 				division_template = {
@@ -8553,7 +8440,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = CHI_develop_counterinsurgency_tactics_tt
 
-			divide_variable = { CHI_counter_infiltration_cost = 2 } #halves the cost for Counter Infiltration Measures Decision
+			divide_variable = { CHI_counter_infiltration_cost = 2 }
 		}
 	}
 
@@ -8646,7 +8533,7 @@ focus_tree = {
 					is_coastal = yes
 					is_controlled_by = ROOT
 				}
-				prioritize = { 595 } #optional: to pick those states first if they fulfill the limit
+				prioritize = { 595 }
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
@@ -8706,7 +8593,7 @@ focus_tree = {
 			hidden_effect = {
 				delete_unit_template_and_units = {
 					division_template = "Blueshirt Militia"
-					disband = yes #if yes, will refund equipment/manpower.
+					disband = yes
 				}
 
 				division_template = {
@@ -9351,17 +9238,17 @@ focus_tree = {
 			every_state = {
 				limit = {
 					OR = {
-						region = 149 #Eastern Siberia
-						region = 152 #Outer Mongolia
-						region = 256 #Transbaikal
-						region = 255 #Amur
-						region = 148 #Russian Far east
-						region = 266 #uriankhai
-						region = 260 #Western Sakha
-						region = 259 #Eastern Sakha
-						region = 258 #Okhotsk
-						region = 257 #Northern Far east
-						region = 147 #Northern Siberia
+						region = 149
+						region = 152
+						region = 256
+						region = 255
+						region = 148
+						region = 266
+						region = 260
+						region = 259
+						region = 258
+						region = 257
+						region = 147
 					}
 				}
 				add_claim_by = ROOT
@@ -9681,7 +9568,7 @@ focus_tree = {
 					is_in_faction = yes
 				}
 				add_faction_goal_slot = {
-					category  = short_term # options: short_term, medium_term, long_term 
+					category  = short_term
 					value = 1 
 				}
 			}
@@ -9711,7 +9598,7 @@ focus_tree = {
 					CHI_southern_mandate_states = yes
 				}
 				add_claim_by = ROOT
-				controller = { # TODO_JNS I want this wargoal but it creates uggly TT
+				controller = {
 					ROOT = {
 						create_wargoal = {
 							type = take_claimed_state
@@ -9731,7 +9618,7 @@ focus_tree = {
 				add_faction_goal = faction_goal_the_southern_mandate
 				hidden_effect = {
 					add_faction_goal_slot = {
-						category  = medium_term # options: short_term, medium_term, long_term 
+						category  = medium_term
 						value = 1 
 					}
 				}
@@ -9770,7 +9657,7 @@ focus_tree = {
 					CHI_northern_mandate_states = yes
 				}
 				add_claim_by = ROOT
-				controller = { # TODO_JNS I want this wargoal but it creates uggly TT
+				controller = {
 					ROOT = {
 						create_wargoal = {
 							type = take_claimed_state
@@ -9790,7 +9677,7 @@ focus_tree = {
 				add_faction_goal = faction_goal_the_northern_mandate
 				hidden_effect = {
 					add_faction_goal_slot = {
-						category  = medium_term # options: short_term, medium_term, long_term 
+						category  = medium_term
 						value = 1 
 					}
 				}
@@ -9829,7 +9716,7 @@ focus_tree = {
 					CHI_greater_game_states = yes
 				}
 				add_claim_by = ROOT
-				controller = { # TODO_JNS I want this wargoal but it creates uggly TT
+				controller = {
 					ROOT = {
 						create_wargoal = {
 							type = take_claimed_state
@@ -9849,7 +9736,7 @@ focus_tree = {
 				add_faction_goal = faction_goal_the_greater_game
 				hidden_effect = {
 					add_faction_goal_slot = {
-						category  = medium_term # options: short_term, medium_term, long_term 
+						category  = medium_term
 						value = 1 
 					}
 				}
@@ -9894,7 +9781,6 @@ focus_tree = {
 				remove_idea = idea_CHI_a_new_middle_kingdom
 				add_idea = idea_CHI_cradle_of_civilization
 			}
-			#custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = CHI_cradle_of_civilization_tt
 
 		}
@@ -9902,9 +9788,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_promote_the_national_currency # focus_CHI_Promote_national_currency
+		id = CHI_promote_the_national_currency
 		icon = GFX_focus_CHI_promote_national_currency
-		#prerequisite = { focus = }
 	
 		x = 12
 		y = 0
@@ -9982,17 +9867,11 @@ focus_tree = {
 		}
 	}
 
-	 ##  ###  #   # #   #     ###  ###   ##  #  #  ##  #  # 
-	#  # #  # ## ##  # #      #  # #  # #  # ## # #  # #  # 
-	#### ###  # # #   #       ###  ###  #### # ## #    #### 
-	#  # #  # #   #   #       #  # #  # #  # #  # #  # #  # 
-	#  # #  # #   #   #       ###  #  # #  # #  #  ##  #  # 
 
 	
 	focus = {
 		id = CHI_military_affairs_commission_sea
 		icon = GFX_focus_CHI_military_affairs_commission
-		#prerequisite = { focus =  }
 
 		x =  20
 		y =  0
@@ -10856,7 +10735,7 @@ focus_tree = {
 
 	focus = {
 		id = CHI_bog_them_down_in_the_centre 
-		icon = GFX_goal_generic_defence # TODO_JNS Maybe order something else
+		icon = GFX_goal_generic_defence
 		prerequisite = { focus = CHI_defence_in_depth }
 
 		x = 3
@@ -10971,12 +10850,12 @@ focus_tree = {
 		cost = 10
 		available = {
 			OR = {
-				608 = { state_is_fully_controlled_by_ROOT_or_subject  = yes } # Beijing
-				613 = { state_is_fully_controlled_by_ROOT_or_subject  = yes } #  Shanghai
-				1035 = { state_is_fully_controlled_by_ROOT_or_subject  = yes } #  Nanjing
-				1036 = { state_is_fully_controlled_by_ROOT_or_subject  = yes } #  Wuhan
-				620 = { state_is_fully_controlled_by_ROOT_or_subject  = yes } #  Chongqing
-				592 = { state_is_fully_controlled_by_ROOT_or_subject  = yes } #  Guanzhou
+				608 = { state_is_fully_controlled_by_ROOT_or_subject  = yes }
+				613 = { state_is_fully_controlled_by_ROOT_or_subject  = yes }
+				1035 = { state_is_fully_controlled_by_ROOT_or_subject  = yes }
+				1036 = { state_is_fully_controlled_by_ROOT_or_subject  = yes }
+				620 = { state_is_fully_controlled_by_ROOT_or_subject  = yes }
+				592 = { state_is_fully_controlled_by_ROOT_or_subject  = yes }
 			}
 		}
 			   	 
@@ -10996,7 +10875,7 @@ focus_tree = {
 
 			IF = {
 				limit = { 
-					608 = { state_is_fully_controlled_by_ROOT_or_subject = yes } # Beijing
+					608 = { state_is_fully_controlled_by_ROOT_or_subject = yes }
 					anti_air_building < 5
 				}
 				608 = {
@@ -11009,7 +10888,7 @@ focus_tree = {
 			}
 			IF = {
 				limit = {
-					613 = { state_is_fully_controlled_by_ROOT_or_subject = yes } #  Shanghai
+					613 = { state_is_fully_controlled_by_ROOT_or_subject = yes }
 					anti_air_building < 5
 				}
 				613 = {
@@ -11022,7 +10901,7 @@ focus_tree = {
 			}
 			IF = {
 				limit = {
-					1035 = { state_is_fully_controlled_by_ROOT_or_subject = yes } #  Nanjing
+					1035 = { state_is_fully_controlled_by_ROOT_or_subject = yes }
 					anti_air_building < 5
 				}
 				1035 = {
@@ -11035,7 +10914,7 @@ focus_tree = {
 			}
 			IF = {
 				limit = {
-					1036 = { state_is_fully_controlled_by_ROOT_or_subject = yes } #  Wuhan
+					1036 = { state_is_fully_controlled_by_ROOT_or_subject = yes }
 					anti_air_building < 5
 				}
 				1036 = {
@@ -11048,7 +10927,7 @@ focus_tree = {
 			}
 			IF = {
 				limit = {
-					1037 = { state_is_fully_controlled_by_ROOT_or_subject = yes } #  Chongqing
+					1037 = { state_is_fully_controlled_by_ROOT_or_subject = yes }
 					anti_air_building < 5
 				}
 				1037 = {
@@ -11061,7 +10940,7 @@ focus_tree = {
 			}
 			IF = {
 				limit = {
-					592 = { state_is_fully_controlled_by_ROOT_or_subject = yes } #  Guanzhou
+					592 = { state_is_fully_controlled_by_ROOT_or_subject = yes }
 					anti_air_building < 5
 				}
 				592 = {
@@ -11085,25 +10964,25 @@ focus_tree = {
 		cost = 5
 		available = {
 			OR = {
-				608 = { # Beijing
+				608 = {
 					state_is_fully_controlled_by_ROOT_or_subject = yes
 				}
-				743 = { # Qingdao
+				743 = {
 					state_is_fully_controlled_by_ROOT_or_subject = yes
 				}
-				613 = { # Shanghai
+				613 = {
 					state_is_fully_controlled_by_ROOT_or_subject = yes
 				}
-				596 = { # Zhejian
+				596 = {
 					state_is_fully_controlled_by_ROOT_or_subject = yes
 				}
-				595 = { # Fujian
+				595 = {
 					state_is_fully_controlled_by_ROOT_or_subject = yes
 				}
-				592 = { # Guanzhou
+				592 = {
 					state_is_fully_controlled_by_ROOT_or_subject = yes
 				}
-				598 = { # Jiangsu
+				598 = {
 					state_is_fully_controlled_by_ROOT_or_subject = yes
 				}
 			}
@@ -11128,7 +11007,7 @@ focus_tree = {
 				limit = {
 					608 = { state_is_fully_controlled_by_ROOT_or_subject = yes }
 				}
-				608 = { # Beijing
+				608 = {
 					add_building_construction = {
 						type = bunker
 						level = 2
@@ -11145,7 +11024,7 @@ focus_tree = {
 				limit = {
 					743 = { state_is_fully_controlled_by_ROOT_or_subject = yes }
 				}
-				743 = { # Qingdao
+				743 = {
 					add_building_construction = {
 						type = coastal_bunker
 						level = 2
@@ -11160,7 +11039,7 @@ focus_tree = {
 				limit = {
 					613 = { state_is_fully_controlled_by_ROOT_or_subject = yes }
 				}
-				613 = { # Shanghai
+				613 = {
 					add_building_construction = {
 						type = coastal_bunker
 						level = 1
@@ -11177,7 +11056,7 @@ focus_tree = {
 				limit = {
 					596 = { state_is_fully_controlled_by_ROOT_or_subject = yes }
 				}
-				596 = { # Zhejiang
+				596 = {
 					add_building_construction = {
 						type = coastal_bunker
 						level = 1
@@ -11193,7 +11072,7 @@ focus_tree = {
 				limit = {
 					595 = { state_is_fully_controlled_by_ROOT_or_subject = yes }
 				}
-				595 = { # Fujian
+				595 = {
 					add_building_construction = {
 						type = coastal_bunker
 						level = 1
@@ -11208,7 +11087,7 @@ focus_tree = {
 				limit = {
 					592 = { state_is_fully_controlled_by_ROOT_or_subject = yes }
 				}
-				592 = { # Guanzhou
+				592 = {
 					add_building_construction = {
 						type = coastal_bunker
 						level = 2
@@ -11223,7 +11102,7 @@ focus_tree = {
 				limit = {
 					598 = { state_is_fully_controlled_by_ROOT_or_subject = yes }
 				}
-				598 = { # Jiangsu
+				598 = {
 					add_building_construction = {
 						type = coastal_bunker
 						level = 1
@@ -11261,7 +11140,7 @@ focus_tree = {
 				CHI_protracted_warfare_equipment_capture_factor = 0.1
 				tooltip = equipment_capture_factor_tt
 			}
-			custom_effect_tooltip = CHI_salvage_enemy_equipment_random_generals_tt # Update if changing the amount of generals.
+			custom_effect_tooltip = CHI_salvage_enemy_equipment_random_generals_tt
 			hidden_effect = {
 				random_army_leader = {			
 					limit = {
@@ -11397,7 +11276,7 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = CHI_train_for_asymmetry_guerilla_cost_tt
-			custom_effect_tooltip = CHI_train_for_asymmetry_random_generals_tt # Update if changing the amount of generals. 
+			custom_effect_tooltip = CHI_train_for_asymmetry_random_generals_tt
 			hidden_effect = {
 				random_army_leader = {			
 					limit = {
@@ -11489,7 +11368,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CHI_armoured_car_tactics
-		icon = GFX_goal_generic_army_motorized # TODO_JNS Order a better one
+		icon = GFX_goal_generic_army_motorized
 		prerequisite = { focus = CHI_motorise_our_infantry }
 
 		x = 0
@@ -11623,11 +11502,6 @@ focus_tree = {
 
 
 
-	 ##  ### ###      ###  ##  ###   ##  ###     ###  ###   ##  #  #  ##  #  # 
-	#  #  #  #  #     #   #  # #  # #  # #       #  # #  # #  # ## # #  # #  # 
-	####  #  ###      ##  #  # ###  #    ##      ###  ###  #### # ## #    #### 
-	#  #  #  #  #     #   #  # #  # #  # #       #  # #  # #  # #  # #  # #  # 
-	#  # ### #  #     #    ##  #  #  ##  ###     ###  #  # #  # #  #  ##  #  # 
 
 
 	focus = {
@@ -11687,7 +11561,7 @@ focus_tree = {
 			add_ace = {
 				name = Yue 
 				surname = Yiqin
-				callsign = "Pengju" # This is made up as nothing have been found for this.
+				callsign = "Pengju"
 				type = fighter_unique
 			}
 			add_ace = {
@@ -11810,7 +11684,6 @@ focus_tree = {
 
 			IF = {
 				limit = {
-					# Yunnan/Kunming
 					325 = {
 						is_controlled_by_ROOT_or_subject = no
 					}
@@ -11918,7 +11791,7 @@ focus_tree = {
 
 	focus = {
 		id = CHI_strike_at_what_is_weak
-		icon = GFX_goal_poland_goal # TODO_JNS figure out something better
+		icon = GFX_goal_poland_goal
 		x = 0
 		y = 1
 		relative_position_id = CHI_projecting_power
@@ -11958,7 +11831,7 @@ focus_tree = {
 			add_ace = {
 				name = Liu 
 				surname = Zhesheng
-				callsign = "Xingyun" # This is made up as nothing have been found for this.
+				callsign = "Xingyun"
 				type = fighter_unique
 			}
 		}
@@ -12122,7 +11995,7 @@ focus_tree = {
 
 	focus = {
 		id = CHI_controlling_our_skies
-		icon = GFX_goal_generic_defence # TODO_JNS figure out something better
+		icon = GFX_goal_generic_defence
 		mutually_exclusive = { focus = CHI_projecting_power }
 		x = 0
 		y = 2
@@ -12196,7 +12069,7 @@ focus_tree = {
 
 	focus = {
 		id = CHI_interception_detection
-		icon = GFX_focus_generic_air_defense # TODO_JNS figure out something better
+		icon = GFX_focus_generic_air_defense
 		x = 0
 		y = 1
 		relative_position_id = CHI_controlling_our_skies
@@ -12236,7 +12109,7 @@ focus_tree = {
 			add_ace = {
 				name = Liu 
 				surname = Chuikang
-				callsign = "Pengju" # This is made up as nothing have been found for this.
+				callsign = "Pengju"
 				type = fighter_unique
 			}
 		}
@@ -12332,7 +12205,7 @@ focus_tree = {
 
 	focus = {
 		id = CHI_coordinate_with_the_army
-		icon = GFX_goal_generic_air_doctrine # TODO_JNS figure out something better
+		icon = GFX_goal_generic_air_doctrine
 		x = 0
 		y = 2
 		relative_position_id = CHI_interception_detection
@@ -12622,7 +12495,7 @@ focus_tree = {
 
 	focus = {
 		id = CHI_reorganise_the_central_armys_academy_aviation_corps
-		icon = GFX_focus_generic_military_academy # TODO_JNS figure out something better
+		icon = GFX_focus_generic_military_academy
 		prerequisite = { focus = CHI_rocaf }
 		x = 5
 		y = 1
@@ -12817,7 +12690,7 @@ focus_tree = {
 				custom_effect_tooltip = generic_skip_one_line_tt
 				if = {
 					limit = {
-						596 = { # Zhejiang
+						596 = {
 							is_fully_controlled_by = ROOT
 							free_building_slots = {
 								building = arms_factory
@@ -12861,7 +12734,7 @@ focus_tree = {
 				custom_effect_tooltip = generic_skip_one_line_tt
 				if = {
 					limit = {
-						596 = { # Zhejiang
+						596 = {
 							is_fully_controlled_by = ROOT
 							free_building_slots = {
 								building = arms_factory
@@ -12904,7 +12777,7 @@ focus_tree = {
 
 	focus = {
 		id = CHI_SINAW_primacy
-		icon = GFX_focus_BRA_italian_aircraft_development # TODO_JNS Order new stuff
+		icon = GFX_focus_BRA_italian_aircraft_development
 		mutually_exclusive = { focus = CHI_camco_primacy }
 		prerequisite = { focus = CHI_reorganise_the_central_armys_academy_aviation_corps }
 		x = 1
@@ -12949,7 +12822,7 @@ focus_tree = {
 				custom_effect_tooltip = generic_skip_one_line_tt
 				if = {
 					limit = {
-						600 = { # Jiangxi
+						600 = {
 							is_fully_controlled_by = ROOT
 							free_building_slots = {
 								building = arms_factory
@@ -12993,7 +12866,7 @@ focus_tree = {
 				custom_effect_tooltip = generic_skip_one_line_tt
 				if = {
 					limit = {
-						600 = { # Jiangxi
+						600 = {
 							is_fully_controlled_by = ROOT
 							free_building_slots = {
 								building = arms_factory
@@ -13085,7 +12958,7 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
-					756 = { # Jiuquan
+					756 = {
 						is_fully_controlled_by = ROOT
 						air_facility < 1
 						land_facility < 1
@@ -13117,7 +12990,7 @@ focus_tree = {
 						instant_build = yes
 						province = {
 							all_provinces = yes
-							first = yes #just picks the first valid after reduction
+							first = yes
 						}
 					}
 				}
@@ -13181,7 +13054,7 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
-					751 = { # Liangshan
+					751 = {
 						is_fully_controlled_by = ROOT
 						air_facility < 1
 						land_facility < 1
@@ -13308,18 +13181,11 @@ focus_tree = {
 
 	}
 
-	#  #  ##  #   # #   #	 ###  ###   ##  #  #  ##  #  # 
-	## # #  # #   #  # #	  #  # #  # #  # ## # #  # #  # 
-	# ## ####  # #	#	   ###  ###  #### # ## #	#### 
-	#  # #  #  # #	#	   #  # #  # #  # #  # #  # #  # 
-	#  # #  #   #	 #	   ###  #  # #  # #  #  ##  #  # 
 
-	# GFX_focus_CHI_river_crossing_studies
 
 	focus = {
 		id = CHI_republic_of_china_navy
 		icon = GFX_focus_CHI_Republic_of_china_navy
-		#prerequisite = { focus =  }
 	
 		x = 16
 		y = 0
@@ -13357,9 +13223,9 @@ focus_tree = {
 		cost = 10
 		available = {
 			OR = {
-				controls_state = 597 # Shandong 
-				controls_state = 743 # Qingdao
-				controls_state = 598 # Jiangsu
+				controls_state = 597
+				controls_state = 743
+				controls_state = 598
 			}
 		}
 			   	 
@@ -13624,7 +13490,7 @@ focus_tree = {
 
 	focus = {
 		id = CHI_dominate_the_enemy
-		icon = GFX_goal_generic_navy_doctrines_tactics # TODO_JNS Maybe order something better
+		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = CHI_republic_of_china_navy }
 		mutually_exclusive = { focus = CHI_deny_the_enemy }
 	
@@ -14274,7 +14140,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					591 = { # Hainan 
+					591 = {
 						is_fully_controlled_by = ROOT
 						air_facility < 1
 						land_facility < 1
@@ -14365,11 +14231,6 @@ focus = CHI_long_range }
 		}
 	}
 
-	### #  # ###  #  #  ## ### ###  ###  ##  #       ###  ###   ##  #  #  ##  #  # 
-	 #  ## # #  # #  # #    #  #  #  #  #  # #       #  # #  # #  # ## # #  # #  # 
-	 #  # ## #  # #  #  #   #  ###   #  #### #       ###  ###  #### # ## #    #### 
-	 #  #  # #  # #  #   #  #  #  #  #  #  # #       #  # #  # #  # #  # #  # #  # 
-	### #  # ###   ##  ##   #  #  # ### #  # ###     ###  #  # #  # #  #  ##  #  # 
 
 	focus = {
 		id = CHI_institute_a_national_registry_of_property
@@ -14534,7 +14395,7 @@ focus = CHI_long_range }
 			every_core_state = {
 				limit = {
 					is_fully_controlled_by = ROOT
-					is_coastal = no #Because Japan is coming
+					is_coastal = no
 					free_building_slots = {
 						building = arms_factory
 						size > 0
@@ -14550,7 +14411,7 @@ focus = CHI_long_range }
 				}
 			}
 
-			add_ai_strategy = { #All you need is guns - Guns is all you need
+			add_ai_strategy = {
 				type = building_target
 				id = arms_factory
 				value = 50
@@ -14750,7 +14611,7 @@ focus = CHI_long_range }
 			every_core_state = {
 				limit = {
 					is_fully_controlled_by = ROOT
-					is_coastal = no #Because Japan is coming
+					is_coastal = no
 					free_building_slots = {
 						building = arms_factory
 						size > 0
@@ -14966,7 +14827,7 @@ focus = CHI_long_range }
 
 			IF = {
 				limit = {
-					596 = { # Zhejiang
+					596 = {
 						is_fully_controlled_by = ROOT
 						air_facility < 1
 						land_facility < 1
@@ -14985,7 +14846,7 @@ focus = CHI_long_range }
 			}
 			ELSE_IF = {
 				limit = {
-					1038 = { # Jinan
+					1038 = {
 						is_fully_controlled_by = ROOT
 						air_facility < 1
 						land_facility < 1
@@ -15288,7 +15149,7 @@ focus = CHI_long_range }
 		completion_reward = {
 			custom_effect_tooltip = CHI_grow_the_coal_industry_tt1
 			custom_effect_tooltip = generic_skip_one_line_tt
-			if = { # Hunan
+			if = {
 				limit = {
 					603 = { 
 						OR = {
@@ -15308,7 +15169,7 @@ focus = CHI_long_range }
 				}
 			}
 
-			if = { # Shanxi
+			if = {
 				limit = {
 					615 = { 
 						OR = {
@@ -15328,7 +15189,7 @@ focus = CHI_long_range }
 				}
 			}
 
-			if = { # Shanxi
+			if = {
 				limit = {
 					614 = { 
 						OR = {
@@ -15348,7 +15209,7 @@ focus = CHI_long_range }
 				}
 			}
 
-			if = { # Suiyuan
+			if = {
 				limit = {
 					621 = { 
 						OR = {
@@ -15368,7 +15229,7 @@ focus = CHI_long_range }
 				}
 			}
 
-			if = { # Ordos
+			if = {
 				limit = {
 					746 = { 
 						OR = {
@@ -15388,7 +15249,7 @@ focus = CHI_long_range }
 				}
 			}
 
-			if = { # Shaanbei
+			if = {
 				limit = {
 					746 = { 
 						OR = {
@@ -15408,7 +15269,7 @@ focus = CHI_long_range }
 				}
 			}
 
-			if = { # FangChengGang
+			if = {
 				limit = {
 					1033 = { 
 						OR = {
@@ -15450,7 +15311,7 @@ focus = CHI_long_range }
 		}
 	
 		completion_reward = {
-			IF = { # Hunan
+			IF = {
 				limit = {
 					602 = { is_fully_controlled_by = ROOT}
 				}
@@ -15465,7 +15326,7 @@ focus = CHI_long_range }
 			ELSE = {
 				unlock_decision_tooltip  = CHI_develop_hunan_tungsten_mines
 			}
-			IF = { # Jiangxi
+			IF = {
 				limit = {
 					600 = { is_fully_controlled_by = ROOT}
 				}
@@ -15511,7 +15372,6 @@ focus = CHI_long_range }
 						include_locked = yes
 					}
 				}
-				# prioritize = { 605 602 620 } # TODO_JNS fix 
 				random_select_amount = 3
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -15639,7 +15499,6 @@ focus = CHI_long_range }
 						include_locked = yes
 					}
 				}
-				# prioritize = { 605 602 620 } # TODO_JNS fix 
 				random_select_amount = 2
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {

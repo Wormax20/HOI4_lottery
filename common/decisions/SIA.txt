@@ -51,7 +51,7 @@ SIA_war_fervor_cat = {
 			if = {
 				limit = { has_idea = idea_SIA_war_fervor }
 				add_war_support = -0.5
-				if = { #The AI should avoid this at all costs on historical, but if for some reason it fails due to lack off pp safeguard on historical and punish in other ways
+				if = {
 					limit = {
 						is_ai = yes
 						is_historical_focus_on = yes
@@ -115,7 +115,7 @@ SIA_thai_cultural_mandates = {
 		fire_only_once = yes
 
 		complete_effect = {
-			if = { #Rest it scripted effects but this one is always free to pick, 	
+			if = {
 				limit = {
 					NOT = {
 						has_dynamic_modifier = {
@@ -784,12 +784,10 @@ SIA_limited_war_cat = {
 	    	custom_effect_tooltip = newline_tt
 
 	    	custom_effect_tooltip = SIA_start_limited_war_can_join_faction
-	    	#General cleanup
 	    	clear_array = limited_war_states
 	    	clear_variable = limited_war_target 
 	    	clear_array = limited_war_target_allies
 
-	    	#Save all states that is included in the limited war
 	    	for_each_scope_loop = {
 	    		array = indochina_states
 	    		if = {
@@ -799,9 +797,9 @@ SIA_limited_war_cat = {
 	    		}
 	    	}
 
-	    	set_variable = { limited_war_target = FROM } #is_target_of_limited_war
+	    	set_variable = { limited_war_target = FROM }
 
-	    	if = { #overlord will always be called if target is a subject
+	    	if = {
 	    		limit = {
 	    			var:limited_war_target = { is_subject = yes }
 	    		}
@@ -1009,12 +1007,10 @@ SIA_limited_war_cat = {
 	    	custom_effect_tooltip = newline_tt
 
 	    	custom_effect_tooltip = SIA_start_limited_war_can_join_faction
-	    	#General cleanup
 	    	clear_array = limited_war_states
 	    	clear_variable = limited_war_target
 	    	clear_array = limited_war_target_allies
 
-	    	#Save all states that is included in the limited war
 	    	for_each_scope_loop = {
 	    		array = malaysia_burma_states
 	    		if = {
@@ -1025,8 +1021,8 @@ SIA_limited_war_cat = {
 	    	}
 
 	    	
-	    	set_variable = { limited_war_target = FROM } #is_target_of_limited_war
-	    	if = { #overlord will always be called if target is a subject
+	    	set_variable = { limited_war_target = FROM }
+	    	if = {
 	    		limit = {
 	    			var:limited_war_target = { is_subject = yes }
 	    		}
@@ -1127,7 +1123,6 @@ SIA_limited_war_cat = {
 					has_capitulated = yes
 					NOT = { original_tag = FRA }
 				}
-				# Fallback: target was defeated by someone else, so neither win nor loss exit can fire
 				var:limited_war_target = { exists = no }
 			}
 		}
@@ -2053,8 +2048,7 @@ SIA_new_territories_administration_cat = {
 				name = SIA_use_abandoned_french_tools
 				ahead_reduction = 1
 				uses = 1
-				category = cat_production # optional 
-				# technology  = technology_id # optional
+				category = cat_production
 			}
 		}
 	}
@@ -2062,7 +2056,6 @@ SIA_new_territories_administration_cat = {
 
 political_actions = {
 	SIA_release_contigency_funds = {
-		#icon = aluminium
 
 		allowed = {
 			original_tag = SIA
@@ -2868,7 +2861,6 @@ SIA_asian_democratic_compact_cat = {
 	SIA_demand_independence = {
 
 		icon = generic_civil_support
-	    #target_array = ROOT.adc_possible_countries_non_existing
 	    target_trigger = {
 	    	FROM = {
 		    	is_subject = yes
@@ -2909,7 +2901,6 @@ SIA_asian_democratic_compact_cat = {
 	    }
 	}
 
-	#These are special snowflakes because they never exists at game start (LAO CAM AND VIN)
 	SIA_demand_independence_LAO = {
 		icon = generic_civil_support
 	    visible = {
@@ -3166,7 +3157,6 @@ SIA_asian_democratic_compact_cat = {
 	SIA_invite_to_adc = {
 
 
-	    #target_array = ROOT.adc_possible_countries_non_existing
 	    target_trigger = {
 	    	FROM = {
 		    	is_subject = no
@@ -3202,7 +3192,6 @@ SIA_asian_democratic_compact_cat = {
 	    	FROM = {
 	    		set_country_flag = SIA_weight_towards_accepting_invite_to_alliance
 	    		country_event = { id = generic.5 }
-	    		#set_country_flag = SIA_has_invited_to_adc
 	    	}
 	    	
 	    }
@@ -3386,7 +3375,7 @@ SIA_khana_ratsadon_cat = {
 		}
 	}
 
-	SIA_khana_ratsadon_dummy_military = { #To warn
+	SIA_khana_ratsadon_dummy_military = {
 		icon = generic_civil_support
 
 		available = {
@@ -3431,7 +3420,6 @@ SIA_khana_ratsadon_cat = {
 		}
 
 		days_mission_timeout = 150
-		#days_remove = 1
 
 		activation = {
 			has_idea = idea_SIA_military_rebellious
@@ -3478,7 +3466,7 @@ SIA_khana_ratsadon_cat = {
 	}
 
 
-	SIA_khana_ratsadon_dummy_civilian = { #To warn
+	SIA_khana_ratsadon_dummy_civilian = {
 		icon = generic_civil_support
 
 		available = {
@@ -3523,7 +3511,6 @@ SIA_khana_ratsadon_cat = {
 		}
 
 		days_mission_timeout = 150
-		#days_remove = 1
 
 		activation = {
 			has_idea = idea_SIA_civilian_rebellious

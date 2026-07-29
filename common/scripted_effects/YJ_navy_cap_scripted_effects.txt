@@ -1,0 +1,209 @@
+
+
+YJ_navy_cap_set_config = {
+	set_temp_variable = { YJ_nc_w_carrier = 15 }
+	set_temp_variable = { YJ_nc_w_battleship = 12 }
+	set_temp_variable = { YJ_nc_w_battle_cruiser = 10 }
+	set_temp_variable = { YJ_nc_w_heavy_cruiser = 6 }
+	set_temp_variable = { YJ_nc_w_light_cruiser = 4 }
+	set_temp_variable = { YJ_nc_w_destroyer = 2 }
+	set_temp_variable = { YJ_nc_w_submarine = 2 }
+
+	set_temp_variable = { YJ_nc_w_capital_fallback = 10 }
+	set_temp_variable = { YJ_nc_w_screen_fallback = 3 }
+
+	set_temp_variable = { YJ_nc_atk_penalty_rate = 0.5 }
+	set_temp_variable = { YJ_nc_def_penalty_rate = 0.5 }
+	set_temp_variable = { YJ_nc_vis_penalty_rate = 0.5 }
+
+	set_temp_variable = { YJ_nc_overflow_step = 1 }
+}
+
+
+YJ_navy_cap_count_port_score = {
+	set_variable = { var = YJ_port_score value = 0 }
+
+	every_owned_state = {
+		limit = {
+			is_fully_controlled_by = ROOT
+			naval_base > 0
+		}
+
+		set_temp_variable = { YJ_nc_lvl = building_level@naval_base }
+
+		if = {
+			limit = {
+				check_variable = { YJ_nc_lvl < 1 }
+			}
+			set_temp_variable = { YJ_nc_lvl = 0 }
+			if = { limit = { naval_base > 0 }  add_to_temp_variable = { YJ_nc_lvl = 1 } }
+			if = { limit = { naval_base > 1 }  add_to_temp_variable = { YJ_nc_lvl = 1 } }
+			if = { limit = { naval_base > 2 }  add_to_temp_variable = { YJ_nc_lvl = 1 } }
+			if = { limit = { naval_base > 3 }  add_to_temp_variable = { YJ_nc_lvl = 1 } }
+			if = { limit = { naval_base > 4 }  add_to_temp_variable = { YJ_nc_lvl = 1 } }
+			if = { limit = { naval_base > 5 }  add_to_temp_variable = { YJ_nc_lvl = 1 } }
+			if = { limit = { naval_base > 6 }  add_to_temp_variable = { YJ_nc_lvl = 1 } }
+			if = { limit = { naval_base > 7 }  add_to_temp_variable = { YJ_nc_lvl = 1 } }
+			if = { limit = { naval_base > 8 }  add_to_temp_variable = { YJ_nc_lvl = 1 } }
+			if = { limit = { naval_base > 9 }  add_to_temp_variable = { YJ_nc_lvl = 1 } }
+			if = { limit = { naval_base > 10 } add_to_temp_variable = { YJ_nc_lvl = 1 } }
+			if = { limit = { naval_base > 11 } add_to_temp_variable = { YJ_nc_lvl = 1 } }
+			if = { limit = { naval_base > 12 } add_to_temp_variable = { YJ_nc_lvl = 1 } }
+			if = { limit = { naval_base > 13 } add_to_temp_variable = { YJ_nc_lvl = 1 } }
+			if = { limit = { naval_base > 14 } add_to_temp_variable = { YJ_nc_lvl = 1 } }
+			if = { limit = { naval_base > 15 } add_to_temp_variable = { YJ_nc_lvl = 1 } }
+			if = { limit = { naval_base > 16 } add_to_temp_variable = { YJ_nc_lvl = 1 } }
+			if = { limit = { naval_base > 17 } add_to_temp_variable = { YJ_nc_lvl = 1 } }
+			if = { limit = { naval_base > 18 } add_to_temp_variable = { YJ_nc_lvl = 1 } }
+			if = { limit = { naval_base > 19 } add_to_temp_variable = { YJ_nc_lvl = 1 } }
+		}
+
+		set_temp_variable = { YJ_nc_lvl_sq = YJ_nc_lvl }
+		multiply_temp_variable = { YJ_nc_lvl_sq = YJ_nc_lvl }
+
+		add_to_variable = { ROOT.YJ_port_score = YJ_nc_lvl_sq }
+	}
+}
+
+
+YJ_navy_cap_count_navy_score = {
+	set_variable = { var = YJ_navy_score value = 0 }
+	set_temp_variable = { YJ_nc_sum_type = 0 }
+
+	set_temp_variable = { YJ_nc_ship = num_ships_with_type@carrier }
+	add_to_temp_variable = { YJ_nc_sum_type = YJ_nc_ship }
+	multiply_temp_variable = { YJ_nc_ship = YJ_nc_w_carrier }
+	add_to_variable = { var = YJ_navy_score value = YJ_nc_ship }
+
+	set_temp_variable = { YJ_nc_ship = num_ships_with_type@battleship }
+	add_to_temp_variable = { YJ_nc_sum_type = YJ_nc_ship }
+	multiply_temp_variable = { YJ_nc_ship = YJ_nc_w_battleship }
+	add_to_variable = { var = YJ_navy_score value = YJ_nc_ship }
+
+	set_temp_variable = { YJ_nc_ship = num_ships_with_type@battle_cruiser }
+	add_to_temp_variable = { YJ_nc_sum_type = YJ_nc_ship }
+	multiply_temp_variable = { YJ_nc_ship = YJ_nc_w_battle_cruiser }
+	add_to_variable = { var = YJ_navy_score value = YJ_nc_ship }
+
+	set_temp_variable = { YJ_nc_ship = num_ships_with_type@heavy_cruiser }
+	add_to_temp_variable = { YJ_nc_sum_type = YJ_nc_ship }
+	multiply_temp_variable = { YJ_nc_ship = YJ_nc_w_heavy_cruiser }
+	add_to_variable = { var = YJ_navy_score value = YJ_nc_ship }
+
+	set_temp_variable = { YJ_nc_ship = num_ships_with_type@light_cruiser }
+	add_to_temp_variable = { YJ_nc_sum_type = YJ_nc_ship }
+	multiply_temp_variable = { YJ_nc_ship = YJ_nc_w_light_cruiser }
+	add_to_variable = { var = YJ_navy_score value = YJ_nc_ship }
+
+	set_temp_variable = { YJ_nc_ship = num_ships_with_type@destroyer }
+	add_to_temp_variable = { YJ_nc_sum_type = YJ_nc_ship }
+	multiply_temp_variable = { YJ_nc_ship = YJ_nc_w_destroyer }
+	add_to_variable = { var = YJ_navy_score value = YJ_nc_ship }
+
+	set_temp_variable = { YJ_nc_ship = num_ships_with_type@submarine }
+	add_to_temp_variable = { YJ_nc_sum_type = YJ_nc_ship }
+	multiply_temp_variable = { YJ_nc_ship = YJ_nc_w_submarine }
+	add_to_variable = { var = YJ_navy_score value = YJ_nc_ship }
+
+	set_temp_variable = { YJ_nc_sum_class = num_ships_with_type@carrier }
+	add_to_temp_variable = { YJ_nc_sum_class = num_ships_with_type@capital }
+	add_to_temp_variable = { YJ_nc_sum_class = num_ships_with_type@screen }
+	add_to_temp_variable = { YJ_nc_sum_class = num_ships_with_type@submarine }
+
+	set_variable = { var = YJ_navy_ship_count value = YJ_nc_sum_class }
+
+	if = {
+		limit = {
+			NOT = {
+				check_variable = { YJ_nc_sum_type = YJ_nc_sum_class }
+			}
+		}
+
+		set_variable = { var = YJ_navy_score value = 0 }
+
+		set_temp_variable = { YJ_nc_ship = num_ships_with_type@carrier }
+		multiply_temp_variable = { YJ_nc_ship = YJ_nc_w_carrier }
+		add_to_variable = { var = YJ_navy_score value = YJ_nc_ship }
+
+		set_temp_variable = { YJ_nc_ship = num_ships_with_type@capital }
+		multiply_temp_variable = { YJ_nc_ship = YJ_nc_w_capital_fallback }
+		add_to_variable = { var = YJ_navy_score value = YJ_nc_ship }
+
+		set_temp_variable = { YJ_nc_ship = num_ships_with_type@screen }
+		multiply_temp_variable = { YJ_nc_ship = YJ_nc_w_screen_fallback }
+		add_to_variable = { var = YJ_navy_score value = YJ_nc_ship }
+
+		set_temp_variable = { YJ_nc_ship = num_ships_with_type@submarine }
+		multiply_temp_variable = { YJ_nc_ship = YJ_nc_w_submarine }
+		add_to_variable = { var = YJ_navy_score value = YJ_nc_ship }
+	}
+}
+
+
+YJ_navy_cap_apply_penalty = {
+	set_variable = { var = YJ_navy_cap_ratio value = YJ_navy_score }
+	subtract_from_variable = { var = YJ_navy_cap_ratio value = YJ_port_score }
+
+	if = {
+		limit = {
+			check_variable = { YJ_navy_cap_ratio < 0 }
+		}
+		set_variable = { var = YJ_navy_cap_ratio value = 0 }
+	}
+
+	set_temp_variable = { YJ_nc_div = YJ_port_score }
+	if = {
+		limit = {
+			check_variable = { YJ_nc_div < 1 }
+		}
+		set_temp_variable = { YJ_nc_div = 1 }
+	}
+
+	divide_variable = { var = YJ_navy_cap_ratio value = YJ_nc_div }
+	divide_variable = { var = YJ_navy_cap_ratio value = YJ_nc_overflow_step }
+
+	set_variable = { var = YJ_navy_cap_atk value = YJ_navy_cap_ratio }
+	multiply_variable = { var = YJ_navy_cap_atk value = YJ_nc_atk_penalty_rate }
+	multiply_variable = { var = YJ_navy_cap_atk value = -1 }
+
+	set_variable = { var = YJ_navy_cap_def value = YJ_navy_cap_ratio }
+	multiply_variable = { var = YJ_navy_cap_def value = YJ_nc_def_penalty_rate }
+	multiply_variable = { var = YJ_navy_cap_def value = -1 }
+
+	set_variable = { var = YJ_navy_cap_vis value = YJ_navy_cap_ratio }
+	multiply_variable = { var = YJ_navy_cap_vis value = YJ_nc_vis_penalty_rate }
+
+	set_variable = { var = YJ_navy_cap_tt value = YJ_navy_cap_ratio }
+	multiply_variable = { var = YJ_navy_cap_tt value = 100 }
+
+	set_variable = { var = YJ_navy_cap_atk_tt value = YJ_navy_cap_atk }
+	multiply_variable = { var = YJ_navy_cap_atk_tt value = -100 }
+
+	set_variable = { var = YJ_navy_cap_def_tt value = YJ_navy_cap_def }
+	multiply_variable = { var = YJ_navy_cap_def_tt value = -100 }
+
+	set_variable = { var = YJ_navy_cap_vis_tt value = YJ_navy_cap_vis }
+	multiply_variable = { var = YJ_navy_cap_vis_tt value = 100 }
+}
+
+
+YJ_navy_cap_clear_penalty = {
+	set_variable = { var = YJ_navy_cap_ratio value = 0 }
+	set_variable = { var = YJ_navy_cap_atk value = 0 }
+	set_variable = { var = YJ_navy_cap_def value = 0 }
+	set_variable = { var = YJ_navy_cap_vis value = 0 }
+	set_variable = { var = YJ_navy_cap_tt value = 0 }
+	set_variable = { var = YJ_navy_cap_atk_tt value = 0 }
+	set_variable = { var = YJ_navy_cap_def_tt value = 0 }
+	set_variable = { var = YJ_navy_cap_vis_tt value = 0 }
+}
+
+
+YJ_navy_cap_weekly_effect = {
+	YJ_navy_cap_set_config = yes
+	YJ_navy_cap_count_port_score = yes
+	YJ_navy_cap_count_navy_score = yes
+	YJ_navy_cap_apply_penalty = yes
+
+	log = "YJ_navy_cap [THIS.GetTag] : port=[?YJ_port_score] navy=[?YJ_navy_score] ships=[?YJ_navy_ship_count] ratio=[?YJ_navy_cap_ratio]"
+}

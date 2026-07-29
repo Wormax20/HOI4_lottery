@@ -1,12 +1,5 @@
-#####################
 
-###  ##  #  # # #  ## 
- #  #  # ## # # # #   
- #  #### # ## ##   #  
- #  #  # #  # # #   # 
- #  #  # #  # # # ## 
 
- #################### 
 
 
 TUR_ticaret_organization = {
@@ -26,15 +19,8 @@ TUR_tulomsas_organization = {
 	}
 }
 
-#####################
 
- ## #  # ### ###   ## 
-#   #  #  #  #  # #   
- #  ####  #  ###   #  
-  # #  #  #  #      # 
-##  #  # ### #    ##  
  
-#####################
 
 TUR_golcuk_nsy_organization = {
 	include = generic_task_force_ship_organization
@@ -60,15 +46,8 @@ TUR_koc_ticaret_as_shipyard_organization = {
 	}
 }
 
-###########################
 
-###  #    ##  #  # ###  ## 
-#  # #   #  # ## # #   #   
-###  #   #### # ## ##   #  
-#    #   #  # #  # #     # 
-#    ### #  # #  # ### ##  
 
-###########################
 
 
 TUR_thk_organization = {
@@ -123,16 +102,9 @@ TUR_tomtasch_organization = {
 }
 
 
-################################### 
-
-#   #  ##  ### ### ###  ### ### #   
-## ## #  #  #  #   #  #  #  #   #   
-# # # ####  #  ##  ###   #  ##  #   
-#   # #  #  #  #   #  #  #  #   #   
-#   # #  #  #  ### #  # ### ### ### 
 
 
-###################################
+
 
 TUR_istanbul_military_industries_organization = {
 	include = generic_infantry_equipment_organization

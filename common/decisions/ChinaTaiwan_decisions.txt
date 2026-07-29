@@ -1,5 +1,5 @@
 ChinaTaiwan_discipline = { 
-	ChinaTaiwan_Economic_Collapse = { #經濟崩潰
+	ChinaTaiwan_Economic_Collapse = {
 		activation = {
 			original_tag = CHI
 			has_completed_focus = CHT_focus_china_Southeastern

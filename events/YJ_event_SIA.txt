@@ -91,82 +91,82 @@ country_event = {
 		hidden_effect = {
 			add_trait = {
 				character = SIA_ananda_mahidol
-				trait = SIA_the_ordered # The Ordered
+				trait = SIA_the_ordered
 				ideology = despotism
 			}
 			add_trait = {
 				character = SIA_ananda_mahidol
-				trait = SIA_the_enlightened # The Enlightened
+				trait = SIA_the_enlightened
 				ideology = despotism
 			}
 			add_trait = {
 				character = SIA_ananda_mahidol
-				trait = SIA_the_reforming # The Reforming
+				trait = SIA_the_reforming
 				ideology = despotism
 			}
 			add_trait = {
 				character = SIA_ananda_mahidol
-				trait = SIA_the_learned # The Learned
+				trait = SIA_the_learned
 				ideology = despotism
 			}
 			add_trait = {
 				character = SIA_ananda_mahidol
-				trait = SIA_the_dutiful # The Dutiful
+				trait = SIA_the_dutiful
 				ideology = despotism
 			}
 			add_trait = {
 				character = SIA_ananda_mahidol
-				trait = SIA_the_industrious # The Industrious
+				trait = SIA_the_industrious
 				ideology = despotism
 			}
 			add_trait = {
 				character = SIA_ananda_mahidol
-				trait = SIA_the_erudite # The Erudite
+				trait = SIA_the_erudite
 				ideology = despotism
 			}
 			add_trait = {
 				character = SIA_ananda_mahidol
-				trait = SIA_the_reflective # The Reflective
+				trait = SIA_the_reflective
 				ideology = despotism
 			}
 			add_trait = {
 				character = SIA_ananda_mahidol
-				trait = SIA_the_pragmatic # The Pragmatic
+				trait = SIA_the_pragmatic
 				ideology = despotism
 			}
 			add_trait = {
 				character = SIA_ananda_mahidol
-				trait = SIA_the_builder # The Builder
+				trait = SIA_the_builder
 				ideology = despotism
 			}
 			add_trait = {
 				character = SIA_ananda_mahidol
-				trait = SIA_the_stern # The Stern
+				trait = SIA_the_stern
 				ideology = despotism
 			}
 			add_trait = {
 				character = SIA_ananda_mahidol
-				trait = SIA_the_resolute # The Resolute
+				trait = SIA_the_resolute
 				ideology = despotism
 			}
 			add_trait = {
 				character = SIA_ananda_mahidol
-				trait = SIA_the_iron_willed # The Iron-Willed
+				trait = SIA_the_iron_willed
 				ideology = despotism
 			}
 			add_trait = {
 				character = SIA_ananda_mahidol
-				trait = SIA_the_unbending # The Unbending
+				trait = SIA_the_unbending
 				ideology = despotism
 			}
 			add_trait = {
 				character = SIA_ananda_mahidol
-				trait = SIA_the_relentless # The Relentless
+				trait = SIA_the_relentless
 				ideology = despotism
 			}
 			add_trait = {
 				character = SIA_ananda_mahidol
-				trait = SIA_the_iron_handed # The Iron-Handed
+				trait = SIA_the_iron_handed
 				ideology = despotism
 			}
 		}

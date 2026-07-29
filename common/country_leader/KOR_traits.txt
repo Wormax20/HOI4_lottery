@@ -34,7 +34,6 @@ leader_traits = {
 	}
 
 
-	#上方为金日成领导人BUFF
 
 	KimKorea_Kim_Il_buff = {
 		random = no

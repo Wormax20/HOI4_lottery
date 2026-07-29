@@ -21,7 +21,7 @@ state = {
 		}
 		
 		victory_points = {
-			11835 1 # Shingishū
+			11835 1
 		}	
 	}
 

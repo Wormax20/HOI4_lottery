@@ -171,7 +171,7 @@ GAM = "countries/Gambia.txt"
 WLS = "countries/Wales.txt"
 NGR = "countries/Niger.txt"
 CSA = "countries/CSA.txt"
-USB = "countries/USB.txt"#neutral US bloc during civil war in MTG
+USB = "countries/USB.txt"
 MRT = "countries/Mauritania.txt"
 NMB = "countries/Namibia.txt"
 WES = "countries/Western Sahara.txt"
@@ -274,7 +274,6 @@ RHI = "countries/Rhineland.txt"
 UBD = "countries/United Baltic Duchy.txt"
 KOS	= "countries/Kosovo.txt"
 
-# REICHSKOMMISSARIATS (no cores) (European)
 RKB = "countries/Reichskommisariat Belgien.txt"
 RKN = "countries/Reichskommisariat Niederlande.txt"
 RKG = "countries/Reichskommisariat Norwegen.txt"
@@ -290,23 +289,19 @@ RKI = "countries/Reichskommisariat Iberien.txt"
 RKC = "countries/Reichskommisariat Balkan.txt"
 RGB = "countries/Reichskommisariat Grossbritannien.txt"
 
-# REICHSKOMMISSARIATS (no cores) (African)
 RKA = "countries/Reichskommisariat Mittelafrika.txt"
 RNA = "countries/Reichskommisariat Nordafrika.txt"
 
-# REICHSKOMMISSARIATS (no cores) (American)
 RKV = "countries/Reichskommisariat Klein Venedig.txt"
 RAN = "countries/Reichskommisariat Anden.txt"
 RCO = "countries/Reichskommisariat Kolumbus.txt"
 RUS = "countries/Reichskommisariat Nordamerika.txt"
 
-# REICHSKOMMISSARIATS (no cores) (Asian)
 RHD = "countries/Reichskommisariat Grosshindustan.txt"
 RAR = "countries/Reichskommisariat Arabien.txt"
 ROA = "countries/Reichskommisariat Ostasien.txt"
 RAA = "countries/Reichskommisariat Australasien.txt"
 
-# AMERINDIAN NATIONS (no starting cores)
 GAR = "countries/Guarani.txt"
 INC = "countries/Inca.txt"
 MIS = "countries/Miskito.txt"
@@ -317,7 +312,6 @@ ITZ = "countries/Itza.txt"
 NAH = "countries/Nahua.txt"
 IAS = "countries/Isthmo Amerindia.txt"
 
-# GoE 
 DIP = "countries/Partisans.txt"
 PSH = "countries/Pashtunistan.txt"
 HYD = "countries/Hyderabad.txt"
@@ -340,7 +334,6 @@ BHR = "countries/Bahrain.txt"
 IMO = "countries/Omani Imamate.txt"
 BLC = "countries/Balochistan.txt"
 
-# SEA 
 EZO = "countries/Ezo Republic.txt"
 OKN = "countries/Okinawa.txt"
 ANU = "countries/Ainu.txt"
@@ -365,14 +358,11 @@ RNG = "countries/Reorganized National Government.txt"
 PSR = "countries/Philippine Second Republic.txt"
 HBC = "countries/Hebei-Chahar.txt"
 
-# MUN
 SDL = "countries/Sudetenland.txt"
 RUT = "countries/Ruthenia.txt"
 GAL = "countries/Galicia and Lodomeria.txt"
 
-#NOTE: Useful to add a basic default loc entry for each tag in 00_countries.txt so that hovering over a tag will show the tag's name in loc (ie. PAP: "Papal States")
 
-# TAOG
 BLI = "countries/Bali.txt"
 ATJ = "countries/Atjeh.txt"
 SSI = "countries/Siak.txt"

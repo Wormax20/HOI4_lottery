@@ -1,0 +1,33 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+			every_country = {
+				set_variable = { var = YJ_port_score value = 0 }
+				set_variable = { var = YJ_navy_score value = 0 }
+				set_variable = { var = YJ_navy_ship_count value = 0 }
+				YJ_navy_cap_clear_penalty = yes
+			}
+		}
+	}
+
+	on_weekly = {
+		effect = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				YJ_navy_cap_weekly_effect = yes
+			}
+
+			else = {
+				if = {
+					limit = {
+						NOT = { check_variable = { YJ_navy_cap_ratio = 0 } }
+					}
+					YJ_navy_cap_clear_penalty = yes
+				}
+			}
+		}
+	}
+}

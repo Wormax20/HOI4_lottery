@@ -24,11 +24,11 @@ state = {
 		}
 
 		victory_points = {
-			10115 3 # Seishū
+			10115 3
 		}
 
 		victory_points = {
-			11977 3 # Taiden
+			11977 3
 		}
 		victory_points = {
 			7175 3 

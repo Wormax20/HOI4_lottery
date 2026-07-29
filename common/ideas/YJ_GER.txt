@@ -17,10 +17,14 @@ ideas = {
 			modifier = {
 				army_speed_factor = 0.2
 				planning_decay_rate_factor = -0.1
+				planning_speed_factor = 0.1
 				supply_node_range = 0.1
 				army_strength_factor = 0.1
 				army_org_factor = 0.1
 				factory_energy_consumption = -0.3
+				out_of_supply_factor = -0.1
+				org_loss_at_low_org_factor = -0.1
+				org_loss_when_moving = -0.1
 			}
 			equipment_bonus = {
 				armor = {
@@ -30,6 +34,10 @@ ideas = {
 					reliability = 0.10
 					instant = yes
 				}
+			}
+			research_bonus = {
+				motorized_equipment = 0.25
+				armor = 0.25
 			}
 		}
 		YJ_GER_2_ideas = {
@@ -47,13 +55,17 @@ ideas = {
 			picture = generic_armor
 
 			modifier = {
+				training_time_army_factor = -0.3
 				army_armor_attack_factor = 0.10
 				mechanized_attack_factor = 0.10
 				army_infantry_defence_factor = 0.10
-				coordination_bonus = 0.05
+				coordination_bonus = 0.1
 				army_strength_factor = 0.1
 				initiative_factor = 0.1
 				breakthrough_factor = 0.10
+				equipment_capture = 0.1
+				equipment_capture_factor = 0.1
+				equipment_conversion_speed = 0.1
 			}
 		}
 		YJ_GER_3_ideas = {
@@ -71,12 +83,17 @@ ideas = {
 			picture = GER_german_military
 
 			modifier = {
-				command_power_gain = 0.5
+				command_power_gain = 5
 				army_strength_factor = 0.1
-				max_command_power = 500
+				max_command_power = 5000
 				army_attack_factor = 0.10
 				army_org_factor = 0.10
 				army_morale_factor = 0.10
+			}
+			targeted_modifier = {
+				tag = POL
+				attack_bonus_against = 1
+				defense_bonus_against = 1
 			}
 		}
 		YJ_GER_4_ideas = {
@@ -94,7 +111,12 @@ ideas = {
 			picture = generic_research_bonus
 
 			modifier = {
-				research_speed_factor = 0.20
+				research_speed_factor = 0.3
+				special_project_speed_factor = 0.2
+				research_sharing_per_country_bonus_factor = 0.5
+				scientist_breakthrough_bonus_factor = 0.2
+				scientist_research_bonus_factor = 0.1
+				scientist_xp_gain_factor = 0.25
 				custom_modifier_tooltip = YJ_GER_4_ideas_tt
 			}
 		}
@@ -114,13 +136,15 @@ ideas = {
 			picture = GER_german_trade
 
 			modifier = {
-				production_speed_buildings_factor = 0.05
-				production_factory_max_efficiency_factor = 0.05
-				industrial_capacity_factory = 0.05
-				local_resources_factor = 0.15
+				production_speed_buildings_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.1
+				local_resources_factor = 0.2
 				factory_energy_consumption = -0.1
                 subversive_activites_upkeep = -1
                 justify_war_goal_time = -1
+				license_production_speed = 0.5
+				required_garrison_factor = -0.8
 			}
 		}
 
@@ -145,6 +169,8 @@ ideas = {
 				army_core_defence_factor = 0.1
 				land_night_attack = 0.10
 				production_speed_supply_node_factor = 1
+				production_speed_rail_way_factor = 1
+				terrain_penalty_reduction = 0.1
 			}
 		}
 
@@ -195,7 +221,7 @@ ideas = {
 				intelligence_agency_defense = 0.3
 				subversive_activites_upkeep = -0.25
 				operative_slot = 4
-				enemy_operative_capture_chance_factor = 0.1
+				enemy_operative_capture_chance_factor = 0.2
 				boost_ideology_mission_factor = 1
 				propaganda_mission_factor = 1
 				operation_risk = -0.2

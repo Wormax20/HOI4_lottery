@@ -20,11 +20,11 @@ state = {
 		}
 
 		victory_points = {
-			4126 1 # Zenshū
+			4126 1
 		}
 
 		victory_points = {
-			10110 1 # Kōshū
+			10110 1
 		}
 
 	}

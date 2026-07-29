@@ -220,7 +220,7 @@ ideas = {
 				army_defence_factor = -0.15
 				production_speed_arms_factory_factor = -0.15
 				production_speed_industrial_complex_factor = -0.15
-				production_factory_efficiency_gain_factor = -2 #200% of base not 200% absolute 
+				production_factory_efficiency_gain_factor = -2
 			}
 		}
 
@@ -562,7 +562,6 @@ ideas = {
 			}
 		}	
 
-		#Historical Version
 		idea_SIA_cemented_control = {
 			picture = SIA_cemented_control
 			allowed_civil_war = {
@@ -580,7 +579,6 @@ ideas = {
 			}
 		}	
 
-		#upgraded version
 		idea_SIA_cemented_control_2 = {
 			picture = SIA_cemented_control
 			allowed_civil_war = {
@@ -2323,7 +2321,6 @@ ideas = {
 		}
 	}
 
-	# Non-AAT designer counterparts to the SIA_*_organization MIOs.
 	tank_manufacturer = {
 
 		designer = yes

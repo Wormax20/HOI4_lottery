@@ -22,7 +22,7 @@
 	}
 
 	focus = {
-		id = CHT_focus_china_Southeastern #東南苦行山
+		id = CHT_focus_china_Southeastern
 		icon = GFX_focus_CHI_southern_naval_logistics
 		cost = 10
 		x = 20
@@ -65,7 +65,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Deliver_a_Speech #发表讲话
+		id = CHT_focus_Deliver_a_Speech
 		icon = GFX_focus_PER_establish_opec
 		cost = 10
 		x = 0
@@ -83,7 +83,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Stabilize_the_Economy #稳定经济
+		id = CHT_focus_Stabilize_the_Economy
 		icon = GFX_focus_RAJ_special_economic_zones
 		cost = 10
 		x = 0
@@ -113,9 +113,8 @@
 			}
 		}
 	}
-	#政治
 	focus = {
-		id = CHT_focus_Closed_Policy #关闭政策
+		id = CHT_focus_Closed_Policy
 		icon = GFX_focus_PRC_naval_capstone
 		cost = 10
 		x = 0
@@ -137,7 +136,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Declare_Martial_Law #宣布戒严
+		id = CHT_focus_Declare_Martial_Law
 		icon = GFX_focus_SWE_attack_landsorganisationen
 		cost = 10
 		x = 0
@@ -154,7 +153,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Suspend_Constitutional_Government #暂停宪政程序
+		id = CHT_focus_Suspend_Constitutional_Government
 		icon = GFX_focus_CHI_reject_the_nine_powers
 		cost = 10
 		x = 0
@@ -171,7 +170,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Permit_Local_Elections #开放局部地方选举
+		id = CHT_focus_Permit_Local_Elections
 		icon = GFX_focus_CHI_registry_of_property
 		cost = 5
 		x = -1
@@ -193,7 +192,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Chinese_Cultural_Renaissance_Movement #中华文化复兴运动
+		id = CHT_focus_Chinese_Cultural_Renaissance_Movement
 		icon = GFX_goal_generic_national_unity
 		cost = 10
 		x = 2
@@ -210,7 +209,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Universalize_Public_Education #普及国民教育
+		id = CHT_focus_Universalize_Public_Education
 		icon = GFX_focus_generic_education
 		cost = 10
 		x = -2
@@ -227,7 +226,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Approach_Japan #接触日本
+		id = CHT_focus_Approach_Japan
 		icon = GFX_focus_jap_pacific_guardian
 		cost = 10
 		x = -1
@@ -258,7 +257,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Approach_Germany #接触德国
+		id = CHT_focus_Approach_Germany
 		icon = GFX_focus_chi_mission_to_germany
 		cost = 10
 		x = 1
@@ -289,7 +288,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Accept_Japanese_Aid #接收日援
+		id = CHT_focus_Accept_Japanese_Aid
 		icon = GFX_focus_PHI_encourage_japanese_investment
 		cost = 10
 		x = -1
@@ -322,7 +321,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_German_Tank_Technology #德意志坦克技术
+		id = CHT_focus_German_Tank_Technology
 		icon = GFX_focus_BRA_acquire_german_tanks
 		cost = 10
 		x = 1
@@ -352,7 +351,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Resist_Communism_and_Oppose_Russia #反共抗俄
+		id = CHT_focus_Resist_Communism_and_Oppose_Russia
 		icon = GFX_goal_anti_comintern_pact
 		cost = 10
 		x = 1
@@ -370,7 +369,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Arrest_Dissidents #逮捕异议者
+		id = CHT_focus_Arrest_Dissidents
 		icon = GFX_focus_CHI_arrest_the_seven_gentlemen
 		cost = 5
 		x = 0
@@ -391,7 +390,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Greater_East_Asia_Economic_Bloc #大东亚经济体
+		id = CHT_focus_Greater_East_Asia_Economic_Bloc
 		icon = GFX_focus_JAP_greater_east_asian_co_properity_sphere
 		cost = 10
 		x = -3
@@ -432,7 +431,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_German_Military_Cooperation #德意志军事合作
+		id = CHT_focus_German_Military_Cooperation
 		icon = GFX_focus_CHI_utilize_german_contacts
 		cost = 10
 		x = 3
@@ -474,7 +473,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_The_Savior_of_the_Nation #国家的救星
+		id = CHT_focus_The_Savior_of_the_Nation
 		icon = GFX_focus_GER_ally_chiang_kai_shek
 		cost = 10
 		x = 0
@@ -499,7 +498,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Mobilization_to_Suppress_the_Rebellion #动员戡乱临时条款
+		id = CHT_focus_Mobilization_to_Suppress_the_Rebellion
 		icon = GFX_focus_chi_one_china_policy
 		cost = 10
 		x = 4
@@ -517,7 +516,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Focus_on_Taiwans_Development #潜修东南山
+		id = CHT_focus_Focus_on_Taiwans_Development
 		icon = GFX_focus_generic_invade_taiwan
 		cost = 10
 		x = -4
@@ -535,7 +534,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_For_the_Party_State #为党国
+		id = CHT_focus_For_the_Party_State
 		icon = GFX_focus_CHI_dang_guo
 		cost = 10
 		x = 2
@@ -552,7 +551,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_For_Freedom #为自由
+		id = CHT_focus_For_Freedom
 		icon = GFX_goal_continuous_boost_freedom
 		cost = 10
 		x = 4
@@ -569,7 +568,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Strive_for #来争取
+		id = CHT_focus_Strive_for
 		icon = GFX_focus_CHI_weaponise_the_faithful
 		cost = 10
 		x = 6
@@ -586,7 +585,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Recuperate_and_Rebuild #休养生息
+		id = CHT_focus_Recuperate_and_Rebuild
 		icon = GFX_focus_DEN_limited_regulations
 		cost = 10
 		x = -6
@@ -611,7 +610,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Bide_Our_Time #卧薪尝胆
+		id = CHT_focus_Bide_Our_Time
 		icon = GFX_focus_GER_autarky_achieved
 		cost = 10
 		x = -4
@@ -631,7 +630,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Never_Forget_Ju #毋忘在莒
+		id = CHT_focus_Never_Forget_Ju
 		icon = GFX_focus_CHI_meritocratic_principles
 		cost = 10
 		x = -2
@@ -648,7 +647,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Return_to_the_Five_Sacred_Mountains_and_the_Three_Rivers #返指五岳和三江
+		id = CHT_focus_Return_to_the_Five_Sacred_Mountains_and_the_Three_Rivers
 		icon = GFX_focus_CHI_victory_over_the_invaders
 		cost = 10
 		x = 4
@@ -675,7 +674,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_A_Great_Son_of_the_Nation #民族的伟人
+		id = CHT_focus_A_Great_Son_of_the_Nation
 		icon = GFX_focus_CHI_generalissimo_for_all_of_china
 		cost = 10
 		x = -4
@@ -701,9 +700,8 @@
 			add_country_leader_trait = Cht_Headmaster
 		}
 	}
-	#工業
 	focus = {
-		id = CHT_focus_Seize_Japanese_Assets_in_Taiwan #劫掠在台物资
+		id = CHT_focus_Seize_Japanese_Assets_in_Taiwan
 		icon = GFX_focus_generic_expropriate_industrialist
 		cost = 10
 		x = -7
@@ -720,7 +718,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Enact_a_Trade_Embargo_Against_the_Communists #对赤匪贸易禁令
+		id = CHT_focus_Enact_a_Trade_Embargo_Against_the_Communists
 		icon = GFX_focus_AST_dalfram_dispute
 		cost = 5
 		x = -6
@@ -745,7 +743,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Import_Foreign_Machine_Tools #进口外国机床
+		id = CHT_focus_Import_Foreign_Machine_Tools
 		icon = GFX_focus_generic_befriend_usa
 		cost = 5
 		x = -8
@@ -778,7 +776,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Crack_Down_on_the_Local_Communists #打击岛内赤党
+		id = CHT_focus_Crack_Down_on_the_Local_Communists
 		icon = GFX_focus_GER_end_european_communism
 		cost = 5
 		x = -3
@@ -801,7 +799,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Security_and_Counterintelligence #保密防谍
+		id = CHT_focus_Security_and_Counterintelligence
 		icon = GFX_focus_GER_expand_gestapo
 		cost = 5
 		x = -1
@@ -818,7 +816,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Commit_to_Economic_Recovery #承诺改善经济
+		id = CHT_focus_Commit_to_Economic_Recovery
 		icon = GFX_goal_generic_demand_territory
 		cost = 5
 		x = -5
@@ -852,7 +850,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Land_Reform #土地改革
+		id = CHT_focus_Land_Reform
 		icon = GFX_focus_generic_land_reclamation
 		cost = 10
 		x = -10
@@ -874,7 +872,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Export_Processing #加工出口
+		id = CHT_focus_Export_Processing
 		icon = GFX_goal_continuous_non_factory_construct
 		cost = 10
 		x = -7
@@ -924,7 +922,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_The_375_Rent_Reduction_Act #三七五减租
+		id = CHT_focus_The_375_Rent_Reduction_Act
 		icon = GFX_focus_generic_land_reclamation
 		cost = 5
 		x = -14
@@ -949,7 +947,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Sale_of_Public_Lands #公地放领
+		id = CHT_focus_Sale_of_Public_Lands
 		icon = GFX_focus_generic_land_reclamation
 		cost = 5
 		x = -12
@@ -971,7 +969,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Land_to_the_Tiller #耕者有其田
+		id = CHT_focus_Land_to_the_Tiller
 		icon = GFX_focus_generic_land_reclamation
 		cost = 5
 		x = -10
@@ -996,7 +994,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Support_Private_Enterprises #支持民营企业
+		id = CHT_focus_Support_Private_Enterprises
 		icon = GFX_goal_generic_construct_civ_factory
 		cost = 10
 		x = -7
@@ -1047,7 +1045,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Support_the_Arms_Industry #支持军工产业
+		id = CHT_focus_Support_the_Arms_Industry
 		icon = GFX_goal_generic_construct_mil_factory
 		cost = 10
 		x = -5
@@ -1098,7 +1096,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Develop_the_Steel_Industry #发展钢铁业
+		id = CHT_focus_Develop_the_Steel_Industry
 		icon = GFX_focus_generic_steel
 		cost = 5
 		x = -14
@@ -1124,7 +1122,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Expand_Rubber_Plantations #扩展橡胶园
+		id = CHT_focus_Expand_Rubber_Plantations
 		icon = GFX_focus_generic_rubber
 		cost = 5
 		x = -12
@@ -1150,7 +1148,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Deepen_Oil_Exploration #深挖油田
+		id = CHT_focus_Deepen_Oil_Exploration
 		icon = GFX_goal_generic_oil_refinery
 		cost = 5
 		x = -10
@@ -1176,7 +1174,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Invest_in_Industrial_and_Commercial_Development #投资工商业发展
+		id = CHT_focus_Invest_in_Industrial_and_Commercial_Development
 		icon = GFX_focus_CHI_promote_national_currency
 		cost = 10
 		x = -6
@@ -1231,7 +1229,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Tungsten_Recycling_Technology #钨金属回收技术
+		id = CHT_focus_Tungsten_Recycling_Technology
 		icon = GFX_focus_generic_tungsten
 		cost = 5
 		x = -13
@@ -1260,7 +1258,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_China_Steel_and_Aluminum_Corporation #中钢铝业公司
+		id = CHT_focus_China_Steel_and_Aluminum_Corporation
 		icon = GFX_focus_generic_aluminum
 		cost = 5
 		x = -11
@@ -1289,7 +1287,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Construct_the_Shimen_Dam #建设石门水库
+		id = CHT_focus_Construct_the_Shimen_Dam
 		icon = GFX_focus_generic_hydroelectric_energy
 		cost = 5
 		x = -8
@@ -1315,7 +1313,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Construct_the_Sun_Moon_Lake_Reservoir #建设日月潭水库
+		id = CHT_focus_Construct_the_Sun_Moon_Lake_Reservoir
 		icon = GFX_focus_generic_hydroelectric_energy
 		cost = 5
 		x = -6
@@ -1341,7 +1339,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Construct_the_Jianshanpi_Reservoir #建设尖山埤水库
+		id = CHT_focus_Construct_the_Jianshanpi_Reservoir
 		icon = GFX_focus_generic_hydroelectric_energy
 		cost = 5
 		x = -4
@@ -1367,7 +1365,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Taiwan_Coal_Industry #台湾煤矿业
+		id = CHT_focus_Taiwan_Coal_Industry
 		icon = GFX_focus_generic_coal_mining
 		cost = 5
 		x = -12
@@ -1401,7 +1399,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Urban_Planning #规划城市
+		id = CHT_focus_Urban_Planning
 		icon = GFX_focus_JAP_the_five_great_cities
 		cost = 10
 		x = -7
@@ -1438,7 +1436,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Develop_Rural_Areas #发展乡村
+		id = CHT_focus_Develop_Rural_Areas
 		icon = GFX_focus_PRC_rural_region_development_two
 		cost = 10
 		x = -5
@@ -1469,7 +1467,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Abolish_the_Gold_Yuan #废除金圆券
+		id = CHT_focus_Abolish_the_Gold_Yuan
 		icon = GFX_focus_RAJ_special_economic_zones
 		cost = 10
 		x = -6
@@ -1511,7 +1509,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Establish_Farmers_Associations #建立农会
+		id = CHT_focus_Establish_Farmers_Associations
 		icon = GFX_focus_SIA_thai_rice_company
 		cost = 10
 		x = -12
@@ -1529,7 +1527,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_The_Road_Ahead_Is_Long #任重道远
+		id = CHT_focus_The_Road_Ahead_Is_Long
 		icon = GFX_focus_generic_workers
 		cost = 10
 		x = -9
@@ -1549,9 +1547,8 @@
 			add_ideas = CHT_A_Long_Road_Ahead
 		}
 	}
-	#軍事
 	focus = {
-		id = CHT_focus_A_Group_of_Comrades_from_the_Central_Plains #来自中原一群伙伴
+		id = CHT_focus_A_Group_of_Comrades_from_the_Central_Plains
 		icon = GFX_focus_CHI_enforce_virtues
 		cost = 10
 		x = 16
@@ -1568,7 +1565,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Operation_National_Glory #国光计画
+		id = CHT_focus_Operation_National_Glory
 		icon = GFX_focus_CHI_lay_the_foundation_for_a_united_china
 		cost = 10
 		x = 11
@@ -1590,7 +1587,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Army_Dominance #陆军主导
+		id = CHT_focus_Army_Dominance
 		icon = GFX_focus_CHI_military_affairs_commission
 		cost = 10
 		x = 7
@@ -1628,7 +1625,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Naval_Dominance #海军主导
+		id = CHT_focus_Naval_Dominance
 		icon = GFX_focus_CHI_Republic_of_china_navy
 		cost = 10
 		x = 25
@@ -1670,7 +1667,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Republic_of_China_Air_Force #中华民国空军
+		id = CHT_focus_Republic_of_China_Air_Force
 		icon = GFX_focus_CHI_air_force
 		cost = 10
 		x = 16
@@ -1704,7 +1701,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Infantry_Equipment_Research #单兵装备研究
+		id = CHT_focus_Infantry_Equipment_Research
 		icon = GFX_focus_AFG_against_kabul
 		cost = 10
 		x = 7
@@ -1732,7 +1729,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Expand_the_Destroyer_Fleet #扩充驱逐舰队
+		id = CHT_focus_Expand_the_Destroyer_Fleet
 		icon = GFX_focus_generic_destroyer
 		cost = 5
 		x = 25
@@ -1808,7 +1805,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Establish_the_Naval_Research_Institute #设立海军研究所
+		id = CHT_focus_Establish_the_Naval_Research_Institute
 		icon = GFX_focus_generic_navy_research_bonus
 		cost = 10
 		x = 21
@@ -1829,7 +1826,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Expand_Aircraft_Production #扩大空军制造商
+		id = CHT_focus_Expand_Aircraft_Production
 		icon = GFX_focus_CHI_camco_primacy
 		cost = 10
 		x = 16
@@ -1850,7 +1847,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Rebuild_the_Whampoa_Military_Academy #重建黄埔军校
+		id = CHT_focus_Rebuild_the_Whampoa_Military_Academy
 		icon = GFX_focus_chi_army_reform
 		cost = 10
 		x = 7
@@ -1887,7 +1884,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Rebuild_the_Naval_Academy #重建海军军官学校
+		id = CHT_focus_Rebuild_the_Naval_Academy
 		icon = GFX_focus_generic_naval_discipline
 		cost = 10
 		x = 25
@@ -1928,7 +1925,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_The_Soul_of_Whampoa #黄埔军魂
+		id = CHT_focus_The_Soul_of_Whampoa
 		icon = GFX_focus_chi_whampoa_military_academy
 		cost = 10
 		x = 6
@@ -1966,7 +1963,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Modernize_the_Northern_Faction #现代化北派
+		id = CHT_focus_Modernize_the_Northern_Faction
 		icon = GFX_focus_CHI_200th_division
 		cost = 10
 		x = 8
@@ -2004,7 +2001,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Advanced_Hull_Research #先进船体研发
+		id = CHT_focus_Advanced_Hull_Research
 		icon = GFX_focus_NORDIC_dem_navy
 		cost = 5
 		x = 24
@@ -2038,7 +2035,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Expand_Naval_Dockyards #扩建海军船坞
+		id = CHT_focus_Expand_Naval_Dockyards
 		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 5
 		x = 26
@@ -2058,7 +2055,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Train_Flight_Instructors #飞行教官培训
+		id = CHT_focus_Train_Flight_Instructors
 		icon = GFX_focus_generic_pilot_training
 		cost = 10
 		x = 16
@@ -2091,7 +2088,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Aircraft_Weapons_Research #飞行武器研发
+		id = CHT_focus_Aircraft_Weapons_Research
 		icon = GFX_goal_continuous_air_production
 		cost = 5
 		x = 18
@@ -2113,7 +2110,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Small_Airframe_Research #小型机体研究
+		id = CHT_focus_Small_Airframe_Research
 		icon = GFX_focus_generic_air_research_boost
 		cost = 5
 		x = 14
@@ -2135,7 +2132,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Air_Land_Integration #空地一体
+		id = CHT_focus_Air_Land_Integration
 		icon = GFX_focus_generic_tank_air_support
 		cost = 10
 		x = 11
@@ -2158,7 +2155,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Over_the_Sea #大海之上
+		id = CHT_focus_Over_the_Sea
 		icon = GFX_focus_generic_air_carrier
 		cost = 10
 		x = 21
@@ -2217,7 +2214,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Aspire_to_the_Skies #向往蓝天
+		id = CHT_focus_Aspire_to_the_Skies
 		icon = GFX_goal_generic_air_fighter2
 		cost = 10
 		x = 16
@@ -2256,7 +2253,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Ideology_Is_Faith #主义即信仰
+		id = CHT_focus_Ideology_Is_Faith
 		icon = GFX_focus_CHI_revise_the_national_curriculum
 		cost = 10
 		x = 5
@@ -2281,7 +2278,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Expand_Logistics_Convoys #扩展后勤车队
+		id = CHT_focus_Expand_Logistics_Convoys
 		icon = GFX_focus_generic_reinforcing_the_supply_network
 		cost = 10
 		x = 7
@@ -2303,7 +2300,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Artillery_Is_Justice #炮弹即正义
+		id = CHT_focus_Artillery_Is_Justice
 		icon = GFX_goal_generic_army_artillery2
 		cost = 10
 		x = 9
@@ -2335,7 +2332,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Carrier_Fighter_Mass_Production_Program #舰载战斗机量产计画
+		id = CHT_focus_Carrier_Fighter_Mass_Production_Program
 		icon = GFX_goal_generic_navy_carrier
 		cost = 10
 		x = 24
@@ -2379,7 +2376,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Carrier_Torpedo_Bomber_Mass_Production_Program #舰载鱼雷机量产计画
+		id = CHT_focus_Carrier_Torpedo_Bomber_Mass_Production_Program
 		icon = GFX_goal_generic_navy_carrier
 		cost = 10
 		x = 26
@@ -2423,7 +2420,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Invest_in_Lungteh_Shipbuilding #投资龙德造船
+		id = CHT_focus_Invest_in_Lungteh_Shipbuilding
 		icon = GFX_focus_generic_refit_civilian_ships
 		cost = 5
 		x = 24
@@ -2445,7 +2442,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Invest_in_CSBC_Corporation_Taiwan #投资台湾国际造船
+		id = CHT_focus_Invest_in_CSBC_Corporation_Taiwan
 		icon = GFX_focus_generic_refit_civilian_ships
 		cost = 5
 		x = 26
@@ -2467,7 +2464,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Expand_Airfields #扩建机场
+		id = CHT_focus_Expand_Airfields
 		icon = GFX_goal_generic_air_doctrine
 		cost = 5
 		x = 18
@@ -2495,7 +2492,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Expand_Airfields2 #扩建机场2
+		id = CHT_focus_Expand_Airfields2
 		icon = GFX_goal_generic_air_doctrine
 		cost = 5
 		x = 14
@@ -2523,7 +2520,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Deploy_Air_Defense_Systems #部署防空系统
+		id = CHT_focus_Deploy_Air_Defense_Systems
 		icon = GFX_focus_PRC_anti_air_effort
 		cost = 5
 		x = 16
@@ -2563,7 +2560,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Army_High_Command #陆军总司令部
+		id = CHT_focus_Army_High_Command
 		icon = GFX_focus_CHI_change_in_leadership
 		cost = 10
 		x = 7
@@ -2600,7 +2597,7 @@
 		}
 	}
 	focus = {
-		id = CHT_focus_Special_Projects_Research #特殊项目科研
+		id = CHT_focus_Special_Projects_Research
 		icon = GFX_goal_continuous_research
 		cost = 10
 		x = 7

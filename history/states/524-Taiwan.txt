@@ -6,8 +6,8 @@ state = {
 	state_category = large_town
 
 	resources = {
-		coal = 8 # 200,000 metric tons produced 
-		oil = 3 #1m barrels annually
+		coal = 8
+		oil = 3
 	}
 
 	history = {
@@ -19,7 +19,7 @@ state = {
 		add_core_of = FOR
 
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 3
 			industrial_complex = 3
 			arms_factory = 1
 			air_base = 5
@@ -29,7 +29,7 @@ state = {
 		}
 
 		victory_points = {
-			7186 10 # Taipei
+			7186 10
 		}
 
 	}

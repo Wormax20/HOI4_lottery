@@ -41,8 +41,6 @@ focus_tree = {
 			}
 		}
 	}
-	#上方為回歸日本
-	#下方政治線與科研線
 	focus = {
 		id = KimKorea_focus_IChi
 		icon = GFX_goal_generic_neutrality_focus
@@ -975,8 +973,6 @@ focus_tree = {
 			}
 		}
 	}
-	#上方共產線
-	#下方工業線
 	focus = {
 		id = KimKorea_focus_Factory
 		icon = GFX_goal_generic_production
@@ -1749,8 +1745,6 @@ focus_tree = {
 			}
 		}
 	}
-	#上方工業線
-	#下方陸軍線
 	focus = {
 		id = KimKorea_Army_focus
 		icon = GFX_goal_generic_allies_build_infantry
@@ -2494,8 +2488,6 @@ focus_tree = {
 			}
 		}
 	}
-	#上方陸軍線
-	#下方空軍線
 	focus = {
 		id = KimKorea_AirForce_focus
 		icon = GFX_goal_generic_build_airforce
@@ -3110,8 +3102,6 @@ focus_tree = {
 			}
 		}
 	}
-	#上方空軍線
-	#下方海軍線
 	focus = {
 		id = KimKorea_Navy_focus
 		icon = GFX_goal_generic_navy_doctrines_tactics
@@ -3828,8 +3818,6 @@ focus_tree = {
 			set_country_flag = KimKorea_Navy_Build_Yes
 		}
 	}
-	#上方海軍線
-	#下方外交線
 	focus = {
 		id = KimKorea_Diplomacy_focus
 		icon = GFX_goal_generic_improve_relations
@@ -4022,8 +4010,6 @@ focus_tree = {
 			add_ideas = KimKorea_focus_Diplomacy_In
 		}
 	}
-	#上方外交線
-	#下方總結
 	focus = {
 		id = KimKorea_focus_Final
 		icon = GFX_focus_generic_communist_asia
@@ -4085,8 +4071,6 @@ focus_tree = {
             }
 		}
 	}
-	#上方總結
-	#下方民主線 未來可期
 	focus = {
 		id = KimKorea_focus_IChi_2
 		icon = GFX_goal_anti_comintern_pact

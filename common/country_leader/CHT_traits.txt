@@ -1,5 +1,5 @@
 leader_traits = {
-	Cht_Generalissimo = { #委员长
+	Cht_Generalissimo = {
 		random = no
 		political_power_factor = 0.10
 		command_power_gain = 1
@@ -10,7 +10,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
-	Cht_Anti_Communism = { #坚定反共
+	Cht_Anti_Communism = {
 		random = no
 		communism_drift = -0.05
 		targeted_modifier = {
@@ -30,7 +30,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
-	Cht_Headmaster = { #民族的伟人
+	Cht_Headmaster = {
 		random = no
 		army_attack_factor = 0.10
 		army_defence_factor = 0.10
@@ -40,7 +40,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
-	Cht_Chairman = { #国家的救星
+	Cht_Chairman = {
 		random = no
 		political_power_factor = 0.10
 		stability_factor = 0.10
@@ -52,9 +52,8 @@ leader_traits = {
 	}
 
 
-	#上方为蒋介石领导人BUFF
 
-	Cht_Chiang_Ching_kuo_buff = { #蔣經國
+	Cht_Chiang_Ching_kuo_buff = {
 		random = no
 		political_power_gain = 0.10
 		political_power_factor = 0.10
@@ -67,7 +66,7 @@ leader_traits = {
 		}
 	}
 
-	Cht_Yen_Chia_kan_buff = { #嚴家淦
+	Cht_Yen_Chia_kan_buff = {
 		random = no
 		consumer_goods_factor = -0.10
 		consumer_goods_expected_value = -0.05
@@ -81,7 +80,7 @@ leader_traits = {
 		}
 	}
 
-	Cht_Hu_Shih_buff = { #胡適
+	Cht_Hu_Shih_buff = {
 		random = no
 		research_speed_factor = 0.10
 		special_project_speed_factor = 0.10
@@ -95,7 +94,7 @@ leader_traits = {
 		}
 	}
 
-	Cht_Tai_Li_buff = { #戴笠
+	Cht_Tai_Li_buff = {
 		random = no
 		operative_slot = 2
 		own_operative_capture_chance_factor = -0.15
@@ -112,7 +111,7 @@ leader_traits = {
 		}
 	}
 
-	Cht_Yin_Chung_jung_buff = { #尹仲容
+	Cht_Yin_Chung_jung_buff = {
 		random = no
 		production_speed_buildings_factor = 0.10
 		local_resources_factor = 0.10
@@ -124,7 +123,7 @@ leader_traits = {
 		}
 	}
 
-	Cht_Chen_Cheng_buff = { #陳誠
+	Cht_Chen_Cheng_buff = {
 		random = no
 		army_attack_factor = 0.10
 		army_org_factor = 0.05
@@ -136,7 +135,7 @@ leader_traits = {
 		}
 	}
 
-	Cht_Sun_Li_jen_buff = { #孫立人
+	Cht_Sun_Li_jen_buff = {
 		random = no
 		army_defence_factor = 0.10
 		supply_consumption_factor = -0.10
@@ -149,7 +148,7 @@ leader_traits = {
 		}
 	}
 
-	Cht_Chen_Chi_liang_buff = { #陳季良
+	Cht_Chen_Chi_liang_buff = {
 		random = no
 		naval_hit_chance = 0.05
 		navy_max_range_factor = 0.10
@@ -162,7 +161,7 @@ leader_traits = {
 		}
 	}
 
-	Cht_Kao_Chih_hang_buff = { #高志航
+	Cht_Kao_Chih_hang_buff = {
 		random = no
 		air_ace_bonuses_factor = 0.10
 		air_range_factor = 0.10
@@ -174,7 +173,7 @@ leader_traits = {
 		}
 	}
 
-	Cht_Chou_Chih_jou_buff = { #周至柔
+	Cht_Chou_Chih_jou_buff = {
 		random = no
 		air_superiority_efficiency = 0.20
 

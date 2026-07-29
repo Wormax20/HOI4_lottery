@@ -1793,7 +1793,6 @@ USA_baldwin_locomotive_works_organization = {
 		name = generic_mio_initial_trait_generic_train_manufacturer
 		limit_to_equipment_type = { 
 			train_equipment 
-			#support_equipment
 		}
 
 		production_bonus = {
@@ -1801,7 +1800,7 @@ USA_baldwin_locomotive_works_organization = {
 		}
 
 		organization_modifier = {
-			military_industrial_organization_research_bonus = 0 #5%
+			military_industrial_organization_research_bonus = 0
 		}
 	}
 
@@ -1818,12 +1817,6 @@ USA_baldwin_locomotive_works_organization = {
 	}
 
 	
-	# override_trait = {
-	# 	token = generic_mio_trait_improved_wagon_design
-	#
-	# 	position = { x=-2 y=1 }
-	# 	relative_position_id = generic_mio_trait_improved_axle_fitting
-	# }
 
 	add_trait = {
 		token = generic_mio_trait_compulsory_tank_designer

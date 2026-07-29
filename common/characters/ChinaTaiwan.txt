@@ -3,7 +3,7 @@ characters = {
 		name = Cht_chiang_kai_shek
 		portraits={
 			civilian={
-				large = "GFX_portrait_Cht_chiang_kai_shek" #156*210 肖像
+				large = "GFX_portrait_Cht_chiang_kai_shek"
 			}
 		}
 	}
@@ -11,7 +11,7 @@ characters = {
 		name = Cht_Chiang_Ching_kuo
 		portraits={
 			civilian={
-				small = "GFX_portrait_Cht_Chiang_Ching_kuo" #65*67
+				small = "GFX_portrait_Cht_Chiang_Ching_kuo"
 			}
 		}
 		advisor = {
@@ -31,7 +31,7 @@ characters = {
 		name = Cht_Yen_Chia_kan
 		portraits={
 			civilian={
-				small = "GFX_portrait_Cht_Yen_Chia_kan" #65*67
+				small = "GFX_portrait_Cht_Yen_Chia_kan"
 			}
 		}
 		advisor = {
@@ -51,7 +51,7 @@ characters = {
 		name = Cht_Hu_Shih
 		portraits={
 			civilian={
-				small = "GFX_portrait_Cht_Hu_Shih" #65*67
+				small = "GFX_portrait_Cht_Hu_Shih"
 			}
 		}
 		advisor = {
@@ -71,7 +71,7 @@ characters = {
 		name = Cht_Tai_Li
 		portraits={
 			civilian={
-				small = "GFX_portrait_Cht_Tai_Li" #65*67
+				small = "GFX_portrait_Cht_Tai_Li"
 			}
 		}
 		advisor = {
@@ -91,7 +91,7 @@ characters = {
 		name = Cht_Yin_Chung_jung
 		portraits={
 			civilian={
-				small = "GFX_portrait_Cht_Yin_Chung_jung" #65*67
+				small = "GFX_portrait_Cht_Yin_Chung_jung"
 			}
 		}
 		advisor = {
@@ -111,7 +111,7 @@ characters = {
 		name = Cht_Chen_Cheng
 		portraits={
 			civilian={
-				small = "GFX_portrait_Cht_Chen_Cheng" #65*67
+				small = "GFX_portrait_Cht_Chen_Cheng"
 			}
 		}
 		advisor = {
@@ -131,7 +131,7 @@ characters = {
 		name = Cht_Sun_Li_jen
 		portraits={
 			civilian={
-				small = "GFX_portrait_Cht_Sun_Li_jen" #65*67
+				small = "GFX_portrait_Cht_Sun_Li_jen"
 			}
 		}
 		advisor = {
@@ -151,7 +151,7 @@ characters = {
 		name = Cht_Chen_Chi_liang
 		portraits={
 			civilian={
-				small = "GFX_portrait_Cht_Chen_Chi_liang" #65*67
+				small = "GFX_portrait_Cht_Chen_Chi_liang"
 			}
 		}
 		advisor = {
@@ -171,7 +171,7 @@ characters = {
 		name = Cht_Kao_Chih_hang
 		portraits={
 			civilian={
-				small = "GFX_portrait_Cht_Kao_Chih_hang" #65*67
+				small = "GFX_portrait_Cht_Kao_Chih_hang"
 			}
 		}
 		advisor = {
@@ -191,7 +191,7 @@ characters = {
 		name = Cht_Chou_Chih_jou
 		portraits={
 			civilian={
-				small = "GFX_portrait_Cht_Chou_Chih_jou" #65*67
+				small = "GFX_portrait_Cht_Chou_Chih_jou"
 			}
 		}
 		advisor = {

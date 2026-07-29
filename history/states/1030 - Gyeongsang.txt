@@ -23,11 +23,11 @@ state = {
 		}
 
 		victory_points = {
-			4056 5 # Pusan/Busan
+			4056 5
 		}
 
 		victory_points = {
-			12089 3 # Taikyū
+			12089 3
 		}
 
 	}

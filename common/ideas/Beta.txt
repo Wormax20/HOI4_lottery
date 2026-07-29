@@ -96,7 +96,7 @@ ideas = {
 
 			removal_cost = -1
 			modifier = {
-				special_forces_cap = -100
+				special_forces_cap = -10000
 				special_forces_attack_factor = -0.2
 				special_forces_defence_factor = -0.1
 				special_forces_training_time_factor = 0.30
@@ -109,6 +109,7 @@ ideas = {
 				navy_submarine_defence_factor = -10
 				custom_modifier_tooltip = YJ_AIR_ideas_tt
 				custom_modifier_tooltip = YJ_AIR_ideas_ship_tt
+				custom_modifier_tooltip = YJ_AIR_ideas_navy_cap_tt
 			}
 
 			picture = generic_anti_air

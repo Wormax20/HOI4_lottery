@@ -335,6 +335,7 @@ decision_cost_CP_100_blocked: "£command_power §R100§!"
 YJ_AIR_ideas: "布丁性平衡"
 YJ_AIR_ideas_tt: "§5每100煤炭增加§11%§5建造速度\n§C目前建造速度§7[?YJ_coal_num|Y0]%§!"
 YJ_AIR_ideas_ship_tt: "§3艦隊數量多於200艘後\n§6每10艘船減少§11%§6船塢產出\n§R目前減少的船塢產出§7[?YJ_navy_output_penalty_tt|Y0]%§!"
+YJ_AIR_ideas_navy_cap_tt: "§Y◆ 港口容量失衡§!\n§3港口分數§!＝境內每個州的海軍基地等級§Y平方§!後相加\n§3艦隊分數§!＝各艦種數量×該艦種權重後相加\n§6艦隊分數超過港口分數時吃艦隊戰鬥懲罰\n§6超出越多疊越重，且§R沒有上限§!\n§C目前港口分數§7[?YJ_port_score|Y0]§! §C艦隊分數§7[?YJ_navy_score|Y0]§! \n§R海軍攻擊§7-[?YJ_navy_cap_atk_tt|Y0]%§! §R海軍防禦§7-[?YJ_navy_cap_def_tt|Y0]%§! §R艦隊可見度§7+[?YJ_navy_cap_vis_tt|Y0]%§!"
 
 YJ_AXIS_BAL_ideas: "轴心国平衡(壓廠平衡)"
 YJ_ALLIE_BAL_ideas: "同盟国平衡(壓廠平衡)"

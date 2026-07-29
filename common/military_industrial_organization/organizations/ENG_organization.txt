@@ -999,7 +999,6 @@ ENG_crewe_works_organization = {
 		name = generic_mio_initial_trait_generic_train_manufacturer
 		limit_to_equipment_type = { 
 			train_equipment 
-			#support_equipment
 		}
 
 		production_bonus = {
@@ -1007,7 +1006,7 @@ ENG_crewe_works_organization = {
 		}
 
 		organization_modifier = {
-			military_industrial_organization_research_bonus = 0 #5% from MIO base
+			military_industrial_organization_research_bonus = 0
 		}
 	}
 
@@ -1257,9 +1256,6 @@ ENG_crewe_works_organization = {
 			production_efficiency_gain_factor = 0.02
 		}
 
-		# organization_modifier = {
-		# 	military_industrial_organization_research_bonus = 0.05
-		# }
 
 		ai_will_do = {
 			base = 2

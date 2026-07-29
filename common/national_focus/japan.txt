@@ -1,19 +1,3 @@
-### search_filters = {FOCUS_FILTER_POLITICAL}
-### search_filters = {FOCUS_FILTER_RESEARCH}
-### search_filters = {FOCUS_FILTER_INDUSTRY}
-### search_filters = {FOCUS_FILTER_STABILITY}
-### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
-### search_filters = {FOCUS_FILTER_MANPOWER}
-### search_filters = {FOCUS_FILTER_ANNEXATION}
-### search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
-### search_filters = {FOCUS_FILTER_ARMY_XP}
-### search_filters = {FOCUS_FILTER_NAVY_XP}
-### search_filters = {FOCUS_FILTER_AIR_XP}
-### search_filters = {FOCUS_FILTER_BALANCE_OF_POWER}
-### search_filters = {FOCUS_FILTER_POLITICAL_CHARACTER}
-### search_filters = {FOCUS_FILTER_MILITARY_CHARACTER}
-### search_filters = {FOCUS_FILTER_INTERNATIONAL_TRADE}
-### search_filters = {FOCUS_FILTER_HISTORICAL}
 
 
 focus_tree = {
@@ -29,7 +13,6 @@ focus_tree = {
 	}
 
 
-	#Focus Path shortcuts	
 	shortcut = {
 		name = JAP_military_doctrine_shortcut
 		target = JAP_the_imperial_defense_plan
@@ -45,17 +28,16 @@ focus_tree = {
 	shortcut = {
 		name = GER_historical_path_shortcut
 		target = JAP_sea_purge_the_kodoha_faction
-		scroll_wheel_factor = 0.6 #Optional parameter, if left unset will use existing zoomlevel. arning: #there's no good way for this to respect client resolution.
+		scroll_wheel_factor = 0.6
 		trigger = {
 			always = yes
-			# If FALSE, this will not display. If true, it will not supercede allow conditions of target ocus.
 		}
 	}
 
 	shortcut = {
 		name = GER_oppose_hitler_shortcut
 		target = JAP_strengthen_civilian_government
-		scroll_wheel_factor = 0.8 #Optional parameter, if left unset will use existing zoomlevel. arning: #there's no good way for this to respect client resolution.
+		scroll_wheel_factor = 0.8
 		trigger = {
 			NOT = { 
 				has_dlc = "No Compromise, No Surrender"
@@ -68,7 +50,7 @@ focus_tree = {
 	shortcut = {
 		name = GER_oppose_hitler_shortcut
 		target = JAP_support_the_kodoha_faction
-		scroll_wheel_factor = 0.8 #Optional parameter, if left unset will use existing zoomlevel. arning: #there's no good way for this to respect client resolution.
+		scroll_wheel_factor = 0.8
 		trigger = {
 			has_completed_focus = JAP_support_the_kodoha_faction
 		}
@@ -77,7 +59,7 @@ focus_tree = {
 	shortcut = {
 		name = GER_oppose_hitler_shortcut
 		target = JAP_the_unthinkable_option
-		scroll_wheel_factor = 0.8 #Optional parameter, if left unset will use existing zoomlevel. arning: #there's no good way for this to respect client resolution.
+		scroll_wheel_factor = 0.8
 		trigger = {
 			has_completed_focus = JAP_the_unthinkable_option
 		}
@@ -530,7 +512,7 @@ focus_tree = {
 			start_civil_war = {
 				ruling_party = communism
 				ideology = fascism
-				size = 0.5	#This was too much for AI
+				size = 0.5
 				capital = 282
 				states = { 282 533 536 555 529 530 528 526 524 645 648 646 647 684 633 609 745 527 525 1018 }
 				keep_unit_leaders = {
@@ -895,7 +877,6 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			#Join SOV faction. If SOV has no faction or is not faction leader, form own faction and cry a lot.
 			if = {
 				limit = {
 					SOV = {
@@ -1527,21 +1508,10 @@ focus_tree = {
 	focus = {
 		id = JAP_national_mobilization_law
 		icon = GFX_goal_generic_axis_build_infantry
-		prerequisite = { focus = JAP_challenge_the_zaibatsus } # focus = JAP_guide_the_zaibatsus 
+		prerequisite = { focus = JAP_challenge_the_zaibatsus }
 		x = 2
 		y = 1
 		relative_position_id = JAP_challenge_the_zaibatsus
-		#offset = {
-		#	x = -14
-		#	y = 0
-		#	trigger = {
-		#		has_game_rule = {
-		#			rule = obsolete_focus_branches_visibility
-		#			option = HIDE
-		#		}
-		#		has_completed_focus = JAP_support_the_kodoha_faction
-		#	}
-		#}
 
 		cost = 10
 
@@ -1743,7 +1713,7 @@ focus_tree = {
 	focus = {
 		id = JAP_national_defense_state
 		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = JAP_imperial_arsenals } # focus = JAP_nationalize_war_industry 
+		prerequisite = { focus = JAP_imperial_arsenals }
 		x = 1
 		y = 1
 		relative_position_id = JAP_imperial_arsenals
@@ -1773,17 +1743,6 @@ focus_tree = {
 			}
 		}
 
-		#offset = {
-		#	x = 10
-		#	y = 0
-		#	trigger = {
-		#		has_game_rule = {
-		#			rule = obsolete_focus_branches_visibility
-		#			option = HIDE
-		#		}
-		#		has_completed_focus = JAP_support_the_kodoha_faction
-		#	}
-		#}
 
 		available = {
 
@@ -2540,7 +2499,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					has_country_leader = { id = 700 } #Hirohito
+					has_country_leader = { id = 700 }
 				}
 				remove_country_leader_trait = warrior_code
 			}
@@ -3201,11 +3160,6 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			add_ideas = JAP_hirohito
-			#set_party_name = {
-			#	ideology = democratic
-			#	long_name = JAP_minseito_party_long
-			#	name = JAP_minseito_party
-			#}	
 		}
 	}
 
@@ -3269,7 +3223,6 @@ focus_tree = {
 			is_subject = no
 			ENG = {
 				has_government = democratic
-				#is_faction_leader = yes
 			}
 			NOT = { has_war_with = ENG }
 		}
@@ -3401,10 +3354,6 @@ focus_tree = {
 				add_opinion_modifier = { target = ROOT modifier = JAP_anti_communist_bulwark }
 				ROOT = { add_opinion_modifier = { target = PREV modifier = JAP_anti_communist_bulwark } }
 			}
-			# SOV = { add_opinion_modifier = { target = ROOT modifier = JAP_anti_communist_bulwark } }
-			# PRC = { add_opinion_modifier = { target = ROOT modifier = JAP_anti_communist_bulwark } }
-			# add_opinion_modifier = { target = SOV modifier = JAP_anti_communist_bulwark }
-			# add_opinion_modifier = { target = PRC modifier = JAP_anti_communist_bulwark }
 		}
 	}
 
@@ -3688,9 +3637,6 @@ focus_tree = {
 		}
 	}
 
-	################################
-	######## SEA FOCUSES ###########
-	################################
 
 	focus = {
 		id = JAP_okadas_military_purge_speech
@@ -3701,7 +3647,6 @@ focus_tree = {
 			focus = JAP_revere_the_emperor_destroy_the_traitors
 		}
 		
-		#relative_position_id = JAP_new_naval_estimates
 		x = 27
 		y = 0
 
@@ -3779,10 +3724,9 @@ focus_tree = {
 			
 			hidden_effect = {
 
-				# The Tokko will Assassinate Okada :0 
 				country_event = {
 					id = SEA_japan_popup_events.15
-					days = 14 # then 7 days until next event 
+					days = 14
 				}	
 
 				IF = {
@@ -3807,9 +3751,6 @@ focus_tree = {
 	}
 
 
-	################################
-	####### KODOHA FOCUSES #########
-	################################
 
 	focus = {
 		id = JAP_revere_the_emperor_destroy_the_traitors
@@ -3942,7 +3883,6 @@ focus_tree = {
 	focus = {
 		id = JAP_establish_the_gunbatsu
 		icon = GFX_focus_generic_military_dictatorship
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = 0
 		y = 1
 		relative_position_id = JAP_revere_the_emperor_destroy_the_traitors
@@ -3992,7 +3932,6 @@ focus_tree = {
 	focus = {
 		id = JAP_authorize_aid_to_ethiopia
 		icon = GFX_focus_generic_befriend_ethiopia
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = -3
 		y = 1
 		relative_position_id = JAP_revere_the_emperor_destroy_the_traitors
@@ -4072,7 +4011,6 @@ focus_tree = {
 	focus = {
 		id = JAP_grand_army_purge
 		icon = GFX_focus_IRQ_attempted_assasination_of_sidqi
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = -1
 		y = 1
 		relative_position_id = JAP_establish_the_gunbatsu
@@ -4104,7 +4042,7 @@ focus_tree = {
 			custom_effect_tooltip = JAP_grand_army_purge_tt
 
 			IF = {
-				limit = { # So that the tooltip doesn't break as much once the focus has been taken
+				limit = {
 					NOT = {
 						has_completed_focus = JAP_grand_army_purge
 					}
@@ -4133,7 +4071,6 @@ focus_tree = {
 				retire_character = JAP_hisaichi_terauchi
 				retire_character = JAP_kanin_kotohito
 				retire_character = JAP_nashimoto_morimasa
-				#retire_character = JAP_kuniaki_koiso
 				retire_character = JAP_hatazo_adachi
 				retire_character = JAP_tsuneyoshi_takeda
 				retire_character = JAP_naruhiko_higashikuni
@@ -4146,7 +4083,6 @@ focus_tree = {
 	focus = {
 		id = JAP_remove_the_weeds_from_the_crop
 		icon = GFX_focus_JAP_remove_the_weeds_from_the_crop
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = 1
 		y = 1
 		relative_position_id = JAP_establish_the_gunbatsu
@@ -4229,7 +4165,6 @@ focus_tree = {
 	focus = {
 		id = JAP_sea_the_showa_restoration
 		icon = GFX_focus_JAP_sea_the_showa_restoration
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = -1
 		y = 1
 		relative_position_id = JAP_remove_the_weeds_from_the_crop
@@ -4277,7 +4212,6 @@ focus_tree = {
 	focus = {
 		id = JAP_an_ode_to_showa_restoration
 		icon = GFX_focus_jap_showa_restoration
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = -3
 		y = 1
 		relative_position_id = JAP_sea_the_showa_restoration
@@ -4316,7 +4250,6 @@ focus_tree = {
 	focus = {
 		id = JAP_ikki_kitas_state_socialist_ideals
 		icon = GFX_focus_JAP_ikki_kitas_state_socialist_ideals
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = -6
 		y = 1
 		relative_position_id = JAP_sea_the_showa_restoration
@@ -4365,7 +4298,6 @@ focus_tree = {
 	focus = {
 		id = JAP_oppose_the_zaibatsus
 		icon = GFX_focus_JAP_oppose_zaibatsus
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = 0
 		y = 1
 		relative_position_id = JAP_ikki_kitas_state_socialist_ideals
@@ -4418,7 +4350,6 @@ focus_tree = {
 	focus = {
 		id = JAP_give_it_your_all_for_the_emperor
 		icon = GFX_focus_JAP_give_it_your_all_for_the_emperor
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = 0
 		y = 2
 		relative_position_id = JAP_oppose_the_zaibatsus
@@ -4470,7 +4401,6 @@ focus_tree = {
 	focus = {
 		id = JAP_revitalize_rural_areas
 		icon = GFX_focus_generic_welfare
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = -1
 		y = 1
 		relative_position_id = JAP_oppose_the_zaibatsus
@@ -4542,7 +4472,6 @@ focus_tree = {
 	focus = {
 		id = JAP_nationalize_western_corporations
 		icon = GFX_focus_generic_industrialists
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = 1
 		y = 1
 		relative_position_id = JAP_oppose_the_zaibatsus
@@ -4628,7 +4557,6 @@ focus_tree = {
 	focus = {
 		id = JAP_ally_the_league_of_blood
 		icon = GFX_goal_tripartite_pact
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = -9
 		y = 1
 		relative_position_id = JAP_sea_the_showa_restoration
@@ -4681,7 +4609,6 @@ focus_tree = {
 	focus = {
 		id = JAP_integrate_the_kenkokutai
 		icon = GFX_focus_generic_fascist_troops
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = 0
 		y = 2
 		relative_position_id = JAP_ally_the_league_of_blood
@@ -4731,7 +4658,6 @@ focus_tree = {
 	focus = {
 		id = JAP_contact_the_masterless_samurai
 		icon = GFX_focus_JAP_contact_the_masterless_samurai
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = -1
 		y = 1
 		relative_position_id = JAP_ally_the_league_of_blood
@@ -4781,7 +4707,6 @@ focus_tree = {
 	focus = {
 		id = JAP_contact_former_sakurakai_members
 		icon = GFX_goal_generic_dangerous_deal
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = 1
 		y = 1
 		relative_position_id = JAP_ally_the_league_of_blood
@@ -4832,7 +4757,6 @@ focus_tree = {
 	focus = {
 		id = JAP_the_great_spiritual_evil
 		icon = GFX_focus_JAP_the_great_spiritual_evil
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = 4
 		y = 1
 		relative_position_id = JAP_sea_the_showa_restoration
@@ -4902,7 +4826,7 @@ focus_tree = {
 					value = 0.66
 				}
 				set_country_flag = banned_communism_flag
-				IF = {#NSB -> If country has Trotskyist Revolutionary Uprisings NS, swap it with the weakened version
+				IF = {
 					limit = {
 						has_idea = SOV_trotskyist_revolutionary_agitation
 					}
@@ -4921,7 +4845,6 @@ focus_tree = {
 	focus = {
 		id = JAP_strike_down_the_enemy_of_the_people
 		icon = GFX_focus_GER_end_european_communism
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = -1
 		y = 1
 		relative_position_id = JAP_the_great_spiritual_evil
@@ -5089,7 +5012,6 @@ focus_tree = {
 	focus = {
 		id = JAP_indoctrination_in_the_military_academy
 		icon = GFX_focus_generic_subjugation
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = 9
 		y = 1
 		relative_position_id = JAP_sea_the_showa_restoration
@@ -5142,7 +5064,6 @@ focus_tree = {
 	focus = {
 		id = JAP_sea_supremacy_of_will
 		icon = GFX_focus_JAP_supremacy_of_will
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = -2
 		y = 1
 		relative_position_id = JAP_indoctrination_in_the_military_academy
@@ -5179,7 +5100,6 @@ focus_tree = {
 	focus = {
 		id = JAP_tennoheika_banzai
 		icon = GFX_focus_JAP_tennoheika_banzai
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = -1
 		y = 1
 		relative_position_id = JAP_sea_supremacy_of_will
@@ -5230,7 +5150,6 @@ focus_tree = {
 	focus = {
 		id = JAP_a_truly_righteous_army
 		icon = GFX_focus_generic_advanced_military_studies
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = 1
 		y = 1
 		relative_position_id = JAP_sea_supremacy_of_will
@@ -5270,7 +5189,6 @@ focus_tree = {
 	focus = {
 		id = JAP_supremacy_of_the_kempeitai
 		icon = GFX_focus_generic_secret_service_agency
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = 0
 		y = 1
 		relative_position_id = JAP_a_truly_righteous_army
@@ -5335,7 +5253,6 @@ focus_tree = {
 	focus = {
 		id = JAP_sonnou_joui
 		icon = GFX_focus_JAP_sonno_joi
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = -1
 		y = 2
 		relative_position_id = JAP_a_truly_righteous_army
@@ -5378,7 +5295,6 @@ focus_tree = {
 	focus = {
 		id = JAP_subdue_the_kwantung_army
 		icon = GFX_focus_SOV_military_purge
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = 2
 		y = 1
 		relative_position_id = JAP_indoctrination_in_the_military_academy
@@ -5414,7 +5330,7 @@ focus_tree = {
 
 			custom_effect_tooltip = JAP_subdue_the_kwantung_army_2_tt
 			IF = {
-				limit = {	 # So that the tooltip doesn't break as much once the focus has been taken
+				limit = {
 					NOT = {
 						has_completed_focus = JAP_subdue_the_kwantung_army
 					}
@@ -5443,7 +5359,6 @@ focus_tree = {
 	focus = {
 		id = JAP_hasten_the_integration_of_taiwan
 		icon = GFX_focus_JAP_hasten_the_integration_of_taiwan
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = -1
 		y = 1
 		relative_position_id = JAP_subdue_the_kwantung_army
@@ -5488,7 +5403,6 @@ focus_tree = {
 	focus = {
 		id = JAP_integrate_the_government_general
 		icon = GFX_focus_JAP_integrate_the_government_general
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = 1
 		y = 1
 		relative_position_id = JAP_subdue_the_kwantung_army
@@ -5574,7 +5488,6 @@ focus_tree = {
 	focus = {
 		id = JAP_align_the_concordia_association
 		icon = GFX_focus_JAP_align_the_concordia_association
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = -1
 		y = 1
 		relative_position_id = JAP_integrate_the_government_general
@@ -5629,7 +5542,6 @@ focus_tree = {
 	focus = {
 		id = JAP_integrate_the_great_empire_of_manchuria
 		icon = GFX_focus_JAP_integrate_the_great_manchurian_empire
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = 0
 		y = 1
 		relative_position_id = JAP_align_the_concordia_association
@@ -5731,7 +5643,6 @@ focus_tree = {
 	focus = {
 		id = JAP_embrace_kokutai
 		icon = GFX_focus_JAP_embrace_kokutai
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = 0
 		y = 1
 		relative_position_id = JAP_sea_the_showa_restoration
@@ -5943,7 +5854,6 @@ focus_tree = {
 	focus = {
 		id = JAP_a_worthy_succssor_of_meiji
 		icon = GFX_focus_JAP_a_worthy_succssor_of_meiji
-		#mutually_exclusive = { focus = JAP_empower_the_shogun }
 		x = 1
 		y = 1
 		relative_position_id = JAP_empower_the_emperor
@@ -6025,7 +5935,6 @@ focus_tree = {
 	focus = {
 		id = JAP_the_art_of_warfare
 		icon = GFX_focus_generic_army_doctrines_2
-		#mutually_exclusive = { focus = JAP_empower_the_shogun }
 		x = -1
 		y = 1
 		relative_position_id = JAP_empower_the_shogun
@@ -6077,7 +5986,6 @@ focus_tree = {
 	focus = {
 		id = JAP_the_imperial_colors
 		icon = GFX_focus_jap_pacific_guardian
-		#mutually_exclusive = { focus = JAP_empower_the_shogun }
 		x = 1
 		y = 1
 		relative_position_id = JAP_empower_the_shogun
@@ -6108,7 +6016,6 @@ focus_tree = {
 				
 			add_political_power = 50
 
-			#custom_effect_tooltip = generic_skip_one_line_tt
 
 			add_war_support = 0.1
 			
@@ -6164,7 +6071,6 @@ focus_tree = {
 			custom_effect_tooltip = if_they_accept_tt
 			effect_tooltip = {
 				add_ideas = JAP_POL_anti_soviet_pact
-				#custom_effect_tooltip = POL_JAP_pact_tt
 				POL = {
 					add_ideas = JAP_POL_anti_soviet_pact
 				}
@@ -6344,7 +6250,6 @@ focus_tree = {
 	focus = {
 		id = JAP_societal_bushido
 		icon = GFX_focus_generic_japanese_imperial_glory
-		#mutually_exclusive = { focus = JAP_utilize_our_polish_friendship }
 		x = 0
 		y = 1
 		relative_position_id = JAP_the_enemy_of_our_enemy
@@ -6391,7 +6296,6 @@ focus_tree = {
 	focus = {
 		id = JAP_politicize_the_education_system
 		icon = GFX_focus_JAP_politicize_the_education_system
-		#mutually_exclusive = { focus = JAP_utilize_our_polish_friendship }
 		x = -1
 		y = 1
 		relative_position_id = JAP_societal_bushido
@@ -6433,7 +6337,6 @@ focus_tree = {
 	focus = {
 		id = JAP_the_spirit_of_the_imperial_nation
 		icon = GFX_focus_JAP_the_spirit_of_the_imperial_nation
-		#mutually_exclusive = { focus = JAP_utilize_our_polish_friendship }
 		x = 1
 		y = 1
 		relative_position_id = JAP_societal_bushido
@@ -6482,7 +6385,6 @@ focus_tree = {
 	focus = {
 		id = JAP_propagandize_the_nihon_shoki
 		icon = GFX_focus_JAP_propaganda
-		#mutually_exclusive = { focus = JAP_utilize_our_polish_friendship }
 		x = -1
 		y = 1
 		relative_position_id = JAP_the_spirit_of_the_imperial_nation
@@ -6527,7 +6429,6 @@ focus_tree = {
 	focus = {
 		id = JAP_the_yamato_spirit
 		icon = GFX_focus_JAP_national_spiritual_mobilization_movement
-		#mutually_exclusive = { focus = JAP_utilize_our_polish_friendship }
 		x = 0
 		y = 2
 		relative_position_id = JAP_propagandize_the_nihon_shoki
@@ -6601,7 +6502,6 @@ focus_tree = {
 	focus = {
 		id = JAP_children_of_the_sun 
 		icon = GFX_focus_JAP_new_order_movement
-		#mutually_exclusive = { focus = JAP_utilize_our_polish_friendship }
 		x = -1
 		y = 1
 		relative_position_id = JAP_the_yamato_spirit
@@ -6646,7 +6546,6 @@ focus_tree = {
 	focus = {
 		id = JAP_the_footsteps_of_jimmu
 		icon = GFX_focus_JAP_the_footsteps_of_jimmu
-		#mutually_exclusive = { focus = JAP_utilize_our_polish_friendship }
 		x = 1
 		y = 1
 		relative_position_id = JAP_the_yamato_spirit
@@ -6692,7 +6591,6 @@ focus_tree = {
 	focus = {
 		id = JAP_yatagarasus_guidance
 		icon = GFX_focus_JAP_yatagarasus_guidance
-		#mutually_exclusive = { focus = JAP_utilize_our_polish_friendship }
 		x = 0
 		y = 2
 		relative_position_id = JAP_the_footsteps_of_jimmu
@@ -6755,7 +6653,6 @@ focus_tree = {
 	focus = {
 		id = JAP_the_jeweled_spear_has_struck
 		icon = GFX_focus_JAP_the_jeweled_spear_has_struck
-		#mutually_exclusive = { focus = JAP_utilize_our_polish_friendship }
 		x = -1
 		y = 1
 		relative_position_id = JAP_the_footsteps_of_jimmu
@@ -6793,7 +6690,6 @@ focus_tree = {
 	focus = {
 		id = JAP_hakko_ichiu
 		icon = GFX_focus_JAP_hakko_ichiu
-		#mutually_exclusive = { focus = JAP_utilize_our_polish_friendship }
 		x = 0
 		y = 2
 		relative_position_id = JAP_the_jeweled_spear_has_struck
@@ -6853,7 +6749,6 @@ focus_tree = {
 	focus = {
 		id = JAP_embodying_empress_jinguu
 		icon = GFX_focus_JAP_embodying_empress_jingu
-		#mutually_exclusive = { focus = JAP_utilize_our_polish_friendship }
 		x = -4
 		y = 1
 		relative_position_id = JAP_the_yamato_spirit
@@ -6916,7 +6811,6 @@ focus_tree = {
 			add_country_leader_trait = JAP_embodying_empress_jingu
 			
 			hidden_effect = {
-				#mark_focus_tree_layout_dirty = yes
 			}
 
 		}
@@ -6925,7 +6819,6 @@ focus_tree = {
 	focus = {
 		id = JAP_to_reach_princess_kaguya
 		icon = GFX_focus_ETH_an_empire_in_the_shade_of_the_sun
-		#mutually_exclusive = { focus = JAP_utilize_our_polish_friendship }
 		x = -1
 		y = 1
 		relative_position_id = JAP_embodying_empress_jinguu
@@ -6977,7 +6870,6 @@ focus_tree = {
 	focus = {
 		id = JAP_to_rival_zheng_yi_sao
 		icon = GFX_focus_SMB_blue_water_fleet
-		#mutually_exclusive = { focus = JAP_utilize_our_polish_friendship }
 		x = 1
 		y = 1
 		relative_position_id = JAP_embodying_empress_jinguu
@@ -7039,7 +6931,6 @@ focus_tree = {
 	focus = {
 		id = JAP_amaterasus_aramitama
 		icon = GFX_focus_RAJ_the_sun_sets
-		#mutually_exclusive = { focus = JAP_utilize_our_polish_friendship }
 		x = -1
 		y = 1
 		relative_position_id = JAP_to_rival_zheng_yi_sao
@@ -7088,9 +6979,6 @@ focus_tree = {
 
 
 
-	################################
-	##### HISTORICAL FOCUSES #######
-	################################
 
 	focus = {
 		id = JAP_sea_purge_the_kodoha_faction
@@ -7227,9 +7115,6 @@ focus_tree = {
 					days = 725
 				}
 
-				#CHI = {
-				#	activate_mission = CHI_kwantung_army_impatience_dummy
-				#}
 			}
 
 		}
@@ -7239,7 +7124,6 @@ focus_tree = {
 	focus = {
 		id = JAP_promulgate_the_military_ministers_system
 		icon = GFX_focus_AUS_lawmaking_leniency
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = 0
 		y = 1
 		relative_position_id = JAP_sea_purge_the_kodoha_faction
@@ -7309,7 +7193,6 @@ focus_tree = {
 	focus = {
 		id = JAP_east_asian_cooperative_society
 		icon = GFX_goal_generic_positive_trade_relations
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = 3
 		y = 1
 		relative_position_id = JAP_sea_purge_the_kodoha_faction
@@ -7351,7 +7234,6 @@ focus_tree = {
 	focus = {
 		id = JAP_imperial_headquarters_liasion_conference
 		icon = GFX_goal_generic_intelligence_exchange
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = -3
 		y = 1
 		relative_position_id = JAP_sea_purge_the_kodoha_faction
@@ -7530,7 +7412,6 @@ focus_tree = {
 	focus = {
 		id = JAP_konoes_first_cabinet
 		icon = GFX_focus_JAP_konoes_first_cabinet
-		#mutually_exclusive = { focus = JAP_reprimand_hamada_kunimatsu }
 		x = 0
 		y = 1
 		relative_position_id = JAP_the_harakiri_debate
@@ -7576,7 +7457,6 @@ focus_tree = {
 				}
 			}
 
-			#custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = JAP_mitsumasa_yonai
@@ -7587,7 +7467,6 @@ focus_tree = {
 	focus = {
 		id = JAP_new_order_in_east_asia
 		icon = GFX_focus_JAP_new_order_in_east_asia
-		#mutually_exclusive = { focus = JAP_reprimand_hamada_kunimatsu }
 		x = 1
 		y = 1
 		relative_position_id = JAP_konoes_first_cabinet
@@ -7663,7 +7542,6 @@ focus_tree = {
 	focus = {
 		id = JAP_reiterate_the_three_principles_of_hirota
 		icon = GFX_goal_generic_forceful_treaty
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 0
 		y = 1
 		relative_position_id = JAP_reprimand_hamada_kunimatsu
@@ -7772,7 +7650,6 @@ focus_tree = {
 	focus = {
 		id = JAP_formalize_japan_china_manchukuo_alliance
 		icon = GFX_focus_GER_ally_chiang_kai_shek
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = -1
 		y = 1
 		relative_position_id = JAP_reiterate_the_three_principles_of_hirota
@@ -7874,7 +7751,6 @@ focus_tree = {
 	focus = {
 		id = JAP_sea_national_spiritual_mobliization_movement
 		icon = GFX_focus_JAP_national_spiritual_mobilization_movement
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 2
 		y = 1
 		relative_position_id = JAP_reiterate_the_three_principles_of_hirota
@@ -7914,12 +7790,10 @@ focus_tree = {
 			    decision = JAP_luxury_is_the_enemy_decision
 			    show_effect_tooltip = no
 			}
-			#custom_effect_tooltip = generic_skip_one_line_tt
 			unlock_decision_tooltip = {
 			    decision = JAP_form_a_labor_patriot_corps_decision
 			    show_effect_tooltip = no
 			}
-			#custom_effect_tooltip = generic_skip_one_line_tt
 			unlock_decision_tooltip = {
 			    decision = JAP_produce_bullet_stamps_decision
 			    show_effect_tooltip = no
@@ -7931,7 +7805,6 @@ focus_tree = {
 	focus = {
 		id = JAP_form_cabinet_intelligence_bureau
 		icon = GFX_focus_generic_secret_service_agency
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 3
 		y = 1
 		relative_position_id = JAP_sea_national_spiritual_mobliization_movement
@@ -7983,7 +7856,6 @@ focus_tree = {
 	focus = {
 		id = JAP_crackdown_on_foreign_agents
 		icon = GFX_focus_generic_conspiracy
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 1
 		y = 1
 		relative_position_id = JAP_form_cabinet_intelligence_bureau
@@ -8047,7 +7919,6 @@ focus_tree = {
 	focus = {
 		id = JAP_found_the_great_japan_press_association
 		icon = GFX_focus_generic_printing_press
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = -1
 		y = 1
 		relative_position_id = JAP_form_cabinet_intelligence_bureau
@@ -8093,7 +7964,6 @@ focus_tree = {
 	focus = {
 		id = JAP_empower_the_thought_police
 		icon = GFX_focus_generic_national_security
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 0
 		y = 1
 		relative_position_id = JAP_found_the_great_japan_press_association
@@ -8143,14 +8013,12 @@ focus_tree = {
 					remove_idea = JAP_tokko_idea_lar
 					add_idea = JAP_tokko_idea_lar_2
 				}	
-				#custom_effect_tooltip = generic_skip_one_line_tt
 			}
 			ELSE = {
 				swap_ideas = {
 					remove_idea = JAP_tokko_idea_no_lar
 					add_idea = JAP_tokko_idea_no_lar_2
 				}
-				#custom_effect_tooltip = generic_skip_one_line_tt
 			}
 
 			custom_effect_tooltip = available_political_advisor
@@ -8163,7 +8031,6 @@ focus_tree = {
 	focus = {
 		id = JAP_form_the_central_economic_council
 		icon = GFX_focus_generic_economic_recovery
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = -3
 		y = 1
 		relative_position_id = JAP_sea_national_spiritual_mobliization_movement
@@ -8223,7 +8090,6 @@ focus_tree = {
 	focus = {
 		id = JAP_expand_the_showa_research_association
 		icon = GFX_focus_JAP_expand_the_showa_research_association
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = -1
 		y = 1
 		relative_position_id = JAP_form_the_central_economic_council
@@ -8258,13 +8124,12 @@ focus_tree = {
 			
 			IF = {
 				limit = {
-					532 = { #Nagoya/Tokai
+					532 = {
 						is_fully_controlled_by = ROOT
 						can_construct_building = air_facility
 					}
 				}
 				532 = {
-					# Mitsubishi Arnsenals 
 					add_building_construction = {
 						type = air_facility
 						level = 1
@@ -8291,7 +8156,6 @@ focus_tree = {
 	focus = {
 		id = JAP_form_the_great_japan_industrial_patriotic_association
 		icon = GFX_focus_ICE_state_corporatism
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 1
 		y = 1
 		relative_position_id = JAP_form_the_central_economic_council
@@ -8360,7 +8224,6 @@ focus_tree = {
 	focus = {
 		id = JAP_sea_guide_the_zaibatsus
 		icon = GFX_focus_jap_zaibatsu
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 0
 		y = 2
 		relative_position_id = JAP_form_the_central_economic_council
@@ -8416,7 +8279,6 @@ focus_tree = {
 	focus = {
 		id = JAP_sea_state_general_mobilization_law
 		icon = GFX_focus_ITA_generic_fascist_workers
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = -1
 		y = 1
 		relative_position_id = JAP_sea_national_spiritual_mobliization_movement
@@ -8466,7 +8328,6 @@ focus_tree = {
 	focus = {
 		id = JAP_issue_the_ten_commandments_for_marriage
 		icon = GFX_focus_generic_population_growth
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 1
 		y = 1
 		relative_position_id = JAP_sea_national_spiritual_mobliization_movement
@@ -8505,7 +8366,6 @@ focus_tree = {
 	focus = {
 		id = JAP_enact_religious_organizations_law
 		icon = GFX_focus_jap_spiritual_mobilization
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = -1
 		y = 1
 		relative_position_id = JAP_issue_the_ten_commandments_for_marriage
@@ -8554,7 +8414,6 @@ focus_tree = {
 	focus = {
 		id = JAP_new_order_movement
 		icon = GFX_focus_JAP_new_order_movement
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 0
 		y = 2
 		relative_position_id = JAP_enact_religious_organizations_law
@@ -8606,7 +8465,6 @@ focus_tree = {
 	focus = {
 		id = JAP_sea_tripartite_pact
 		icon = GFX_focus_JAP_sea_tripartite_pact
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = -3
 		y = 1
 		relative_position_id = JAP_new_order_movement
@@ -8734,7 +8592,6 @@ focus_tree = {
 	focus = {
 		id = JAP_sea_mil_tech_coop_with_germany
 		icon = GFX_focus_BRA_acquire_german_tanks
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 0
 		y = 1
 		relative_position_id = JAP_sea_tripartite_pact
@@ -8813,7 +8670,6 @@ focus_tree = {
 	focus = {
 		id = JAP_imperial_rule_assistance_association
 		icon = GFX_focus_JAP_imperial_rule_assistance_association
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 0
 		y = 2
 		relative_position_id = JAP_new_order_movement
@@ -8937,7 +8793,6 @@ focus_tree = {
 	focus = {
 		id = JAP_form_the_yokusan_sonendan
 		icon = GFX_focus_JAP_form_the_yokusan_sonendan
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = -2
 		y = 1
 		relative_position_id = JAP_imperial_rule_assistance_association
@@ -8978,7 +8833,6 @@ focus_tree = {
 	focus = {
 		id = JAP_integrate_the_great_japan_youth_party
 		icon = GFX_focus_JAP_integrate_the_great_japan_youth_party
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 0
 		y = 1
 		relative_position_id = JAP_form_the_yokusan_sonendan
@@ -9022,7 +8876,6 @@ focus_tree = {
 	focus = {
 		id = JAP_sea_national_defense_state
 		icon = GFX_goal_generic_military_sphere
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 0
 		y = 1
 		relative_position_id = JAP_imperial_rule_assistance_association
@@ -9090,7 +8943,6 @@ focus_tree = {
 	focus = {
 		id = JAP_formalize_the_tonarigumi
 		icon = GFX_focus_generic_whispers
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 2
 		y = 1
 		relative_position_id = JAP_imperial_rule_assistance_association
@@ -9147,7 +8999,6 @@ focus_tree = {
 	focus = {
 		id = JAP_ichioku_isshin
 		icon = GFX_goal_generic_national_unity
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = -2
 		y = 1
 		relative_position_id = JAP_formalize_the_tonarigumi
@@ -9183,7 +9034,6 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			#custom_effect_tooltip = JAP_build_hakko_ichiu_landmark_tt
 			1018 = {
 				add_building_construction = {
 					type = landmark_hakko_ichiu
@@ -9201,7 +9051,6 @@ focus_tree = {
 	focus = {
 		id = JAP_issue_the_senjinkun_military_code
 		icon = GFX_focus_SOV_mobilization_plan
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 4
 		y = 1
 		relative_position_id = JAP_imperial_rule_assistance_association
@@ -9243,7 +9092,6 @@ focus_tree = {
 	focus = {
 		id = JAP_issue_the_shinmin_no_michi_manifesto
 		icon = GFX_focus_hol_the_foundations_of_defense
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 0
 		y = 1
 		relative_position_id = JAP_issue_the_senjinkun_military_code
@@ -9286,7 +9134,6 @@ focus_tree = {
 	focus = {
 		id = JAP_sea_greater_east_asian_co_properity_sphere
 		icon = GFX_focus_JAP_greater_east_asian_co_properity_sphere
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 8
 		y = 1
 		relative_position_id = JAP_imperial_rule_assistance_association
@@ -9369,7 +9216,7 @@ focus_tree = {
 				}
 				set_faction_name = JAP_greater_east_asian_co_prosperity_sphere
 			}
-			ELSE_IF = { # If member of a faction but not faction leader
+			ELSE_IF = {
 				limit = {
 					has_dlc = "No Compromise, No Surrender"
 				}
@@ -9410,7 +9257,6 @@ focus_tree = {
 	focus = {
 		id = JAP_expand_japan_manchukuo_economic_bloc
 		icon = GFX_focus_RAJ_special_economic_zones
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = -2
 		y = 1
 		relative_position_id = JAP_sea_greater_east_asian_co_properity_sphere
@@ -9464,7 +9310,6 @@ focus_tree = {
 	focus = {
 		id = JAP_develop_the_yen_bloc
 		icon = GFX_focus_JAP_develop_the_yen_block
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 0
 		y = 1
 		relative_position_id = JAP_expand_japan_manchukuo_economic_bloc
@@ -9533,7 +9378,6 @@ focus_tree = {
 	focus = {
 		id = JAP_the_flying_geese
 		icon = GFX_focus_JAP_the_flying_geese
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 2
 		y = 1
 		relative_position_id = JAP_sea_greater_east_asian_co_properity_sphere
@@ -9585,7 +9429,6 @@ focus_tree = {
 	focus = {
 		id = JAP_greater_east_asia_railroad
 		icon = GFX_focus_SOV_south_manchuria_railway
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 0
 		y = 1
 		relative_position_id = JAP_the_flying_geese
@@ -9633,7 +9476,6 @@ focus_tree = {
 
 			add_to_variable = { JAP_east_asia_co_prosperity_sphere_production_speed_rail_way_factor = 0.1 tooltip = production_speed_rail_way_factor_tt }
 			add_to_variable = { JAP_east_asia_co_prosperity_sphere_production_speed_supply_node_factor = 0.15 tooltip = production_speed_supply_node_factor_tt }
-			#add_to_variable = { JAP_east_asia_co_prosperity_sphere_resources_to_overlord_factor = 0.05 tooltip = resources_to_overlord_factor_tt }
 			
 		}
 	}
@@ -9641,7 +9483,6 @@ focus_tree = {
 	focus = {
 		id = JAP_east_asia_development_board
 		icon = GFX_goal_generic_construction
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 0
 		y = 1
 		relative_position_id = JAP_sea_greater_east_asian_co_properity_sphere
@@ -9697,7 +9538,6 @@ focus_tree = {
 	focus = {
 		id = JAP_ministry_of_greater_east_asia
 		icon = GFX_focus_ETH_re-convene_the_parliament
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 0
 		y = 1
 		relative_position_id = JAP_east_asia_development_board
@@ -9748,7 +9588,6 @@ focus_tree = {
 	focus = {
 		id = JAP_promote_pan_asianism
 		icon = GFX_focus_JAP_promote_pan_asianism
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 0
 		y = 1
 		relative_position_id = JAP_ministry_of_greater_east_asia
@@ -10098,7 +9937,6 @@ focus_tree = {
 	focus = {
 		id = JAP_national_defense_brotherhood
 		icon = GFX_focus_JAP_national_defense_brotherhood
-		#mutually_exclusive = { focus = JAP_yamamotos_premiership focus = JAP_the_crysanthemum_throne }
 		x = -2
 		y = 2
 		relative_position_id = JAP_tojos_premiership
@@ -10139,7 +9977,7 @@ focus_tree = {
 			show_ideas_tooltip = JAP_nobusuke_kishi
 
 			hidden_effect = {
-				set_country_flag = JAP_national_defense_brotherhood_started_flag # Timer for collapse event
+				set_country_flag = JAP_national_defense_brotherhood_started_flag
 			}	
 			
 		}
@@ -10148,7 +9986,6 @@ focus_tree = {
 	focus = {
 		id = JAP_supreme_council_for_direction_of_war
 		icon = GFX_focus_JAP_supreme_council_for_direction_of_war
-		#mutually_exclusive = { focus = JAP_yamamotos_premiership focus = JAP_the_crysanthemum_throne }
 		x = -1
 		y = 1
 		relative_position_id = JAP_tojos_premiership
@@ -10210,7 +10047,6 @@ focus_tree = {
 	focus = {
 		id = JAP_found_the_boeitai
 		icon = GFX_focus_generic_manpower
-		#mutually_exclusive = { focus = JAP_yamamotos_premiership focus = JAP_the_crysanthemum_throne }
 		x = 0
 		y = 2
 		relative_position_id = JAP_tojos_premiership
@@ -10255,7 +10091,7 @@ focus_tree = {
 
 				delete_unit_template_and_units = {
 					division_template = "Kokumin Giyū Sentōtai"
-					disband = yes #if yes, will refund equipment/manpower.
+					disband = yes
 				}
 
 				division_template = {
@@ -10284,7 +10120,6 @@ focus_tree = {
 	focus = {
 		id = JAP_advance_one_hundred_million_fireballs
 		icon = GFX_focus_JAP_advance_one_hundred_million_fireballs
-		#mutually_exclusive = { focus = JAP_yamamotos_premiership focus = JAP_the_crysanthemum_throne }
 		x = 0
 		y = 1
 		relative_position_id = JAP_found_the_boeitai
@@ -10336,7 +10171,6 @@ focus_tree = {
 	focus = {
 		id = JAP_joshi_teishin_tai
 		icon = GFX_focus_JAP_joshi_teishin_tai
-		#mutually_exclusive = { focus = JAP_yamamotos_premiership focus = JAP_the_crysanthemum_throne }
 		x = 1
 		y = 1
 		relative_position_id = JAP_tojos_premiership
@@ -10379,7 +10213,6 @@ focus_tree = {
 	focus = {
 		id = JAP_the_metal_collection_order
 		icon = GFX_focus_CONGO_copper_cartridges
-		#mutually_exclusive = { focus = JAP_yamamotos_premiership focus = JAP_the_crysanthemum_throne }
 		x = 2
 		y = 2
 		relative_position_id = JAP_tojos_premiership
@@ -10427,7 +10260,6 @@ focus_tree = {
 	focus = {
 		id = JAP_form_the_dai_nippon_fujinkai
 		icon = GFX_focus_JAP_form_the_dai_nippon_fujinkai
-		#mutually_exclusive = { focus = JAP_yamamotos_premiership focus = JAP_the_crysanthemum_throne }
 		x = 3
 		y = 1
 		relative_position_id = JAP_tojos_premiership
@@ -10476,7 +10308,6 @@ focus_tree = {
 	focus = {
 		id = JAP_fund_propaganda_films
 		icon = GFX_focus_JAP_fund_propaganda_films
-		#mutually_exclusive = { focus = JAP_yamamotos_premiership focus = JAP_the_crysanthemum_throne }
 		x = 4
 		y = 2
 		relative_position_id = JAP_tojos_premiership
@@ -10535,7 +10366,6 @@ focus_tree = {
 	focus = {
 		id = JAP_the_eternal_kingdom
 		icon = GFX_focus_JAP_the_eternal_kingdom
-		#mutually_exclusive = { focus = JAP_yamamotos_premiership focus = JAP_the_crysanthemum_throne }
 		x = 0
 		y = 1
 		relative_position_id = JAP_fund_propaganda_films
@@ -10623,7 +10453,6 @@ focus_tree = {
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
 			ELSE = {
-				# For tooltip pruposes before heading down the tree 
 				effect_tooltip = {
 					set_cosmetic_tag = JAP_greater_army_dominant_fascism
 					custom_effect_tooltip = generic_skip_one_line_tt
@@ -10637,7 +10466,6 @@ focus_tree = {
 
 			add_country_leader_trait = JAP_protector_of_the_eternal_kingdom
 
-			#custom_effect_tooltip = generic_skip_one_line_tt
 
 			every_state = {
 				limit = {
@@ -10742,7 +10570,6 @@ focus_tree = {
 			OR = {
 				is_subject = yes
 				has_government = democratic
-				#has_war = no 
 			}
 		}
 
@@ -10777,7 +10604,6 @@ focus_tree = {
 	focus = {
 		id = JAP_the_war_has_not_necessarily_developed_focus
 		icon = GFX_focus_JAP_propaganda
-		#mutually_exclusive = { focus = JAP_utilize_our_polish_friendship }
 		x = 0
 		y = 1
 		relative_position_id = JAP_the_koiso_cabinet
@@ -10800,7 +10626,6 @@ focus_tree = {
 			OR = {
 				is_subject = yes
 				has_government = democratic
-				#has_war = no
 			}
 		}
 
@@ -10845,7 +10670,6 @@ focus_tree = {
 
 		bypass = {
 			OR = {
-				#has_war = no
 				is_subject = yes
 				has_government = democratic
 			}
@@ -10948,12 +10772,10 @@ focus_tree = {
 
 
 
-	##### SHARED FOREIGN POLICY BRANCH #####
 
 	focus = {
 		id = JAP_revisit_the_thirteen_demands
 		icon = GFX_focus_generic_treaty
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = -13
 		y = 1
 		relative_position_id = JAP_sea_purge_the_kodoha_faction
@@ -11022,7 +10844,6 @@ focus_tree = {
 	focus = {
 		id = JAP_invest_in_senbu
 		icon = GFX_focus_generic_concessions
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 0
 		y = 1
 		relative_position_id = JAP_revisit_the_thirteen_demands
@@ -11070,7 +10891,6 @@ focus_tree = {
 	focus = {
 		id = JAP_establish_mongol_military_government
 		icon = GFX_focus_JAP_establish_the_mongol_military_government
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = -2
 		y = 1
 		relative_position_id = JAP_revisit_the_thirteen_demands
@@ -11143,7 +10963,6 @@ focus_tree = {
 	focus = {
 		id = JAP_launch_the_suiyuan_campaign
 		icon = GFX_focus_generic_attack_kuomintang
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 1
 		y = 1
 		relative_position_id = JAP_establish_mongol_military_government
@@ -11222,7 +11041,6 @@ focus_tree = {
 	focus = {
 		id = JAP_reorganize_the_united_autonomous_government
 		icon = GFX_focus_JAP_reorganize_the_united_autonomous_government
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = -1
 		y = 1
 		relative_position_id = JAP_establish_mongol_military_government
@@ -11278,7 +11096,6 @@ focus_tree = {
 	focus = {
 		id = JAP_mengjiang_united_autonomous_government
 		icon = GFX_focus_JAP_mengjiang_united_autonomous_government
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 0
 		y = 1
 		relative_position_id = JAP_reorganize_the_united_autonomous_government
@@ -11371,7 +11188,6 @@ focus_tree = {
 	focus = {
 		id = JAP_mongol_autonomous_state
 		icon = GFX_focus_generic_attack_mongolia
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 0
 		y = 1
 		relative_position_id = JAP_mengjiang_united_autonomous_government
@@ -11446,7 +11262,6 @@ focus_tree = {
 	focus = {
 		id = JAP_reinforce_the_beijing_garrison
 		icon = GFX_focus_JAP_reinforce_the_east_hebei_garrisons
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 2
 		y = 1
 		relative_position_id = JAP_revisit_the_thirteen_demands
@@ -11603,7 +11418,7 @@ focus_tree = {
 
 				IF = {
 					limit = {
-						CHI = { #if CHI owns one of these states, they get the event
+						CHI = {
 							OR = {
 								controls_state = 608
 								controls_state = 597
@@ -11622,7 +11437,7 @@ focus_tree = {
 				}
 				ELSE_IF = {
 					limit = {
-						PRC = { #only fires the event for PRC if they control ALL of the states (to ensure that only one of them gets it, to avoid issues when one selects to turn over the states and the other doesn't)
+						PRC = {
 							AND = {
 								controls_state = 608
 								controls_state = 614
@@ -11639,7 +11454,7 @@ focus_tree = {
 				}
 				ELSE_IF = {
 					limit = {
-						SHX = { #only fires the event for SHX if they control ALL of the states (to ensure that only one of them gets it, to avoid issues when one selects to turn over the states and the other doesn't)
+						SHX = {
 							AND = {
 								controls_state = 608
 								controls_state = 614
@@ -11656,7 +11471,7 @@ focus_tree = {
 				}
 				ELSE_IF = {
 					limit = {
-						SND = { #only fires the event for SND if they control ALL of the states (to ensure that only one of them gets it, to avoid issues when one selects to turn over the states and the other doesn't)
+						SND = {
 							AND = {
 								controls_state = 608
 								controls_state = 597
@@ -11674,7 +11489,7 @@ focus_tree = {
 				}
 				ELSE_IF = {
 					limit = {
-						XIC = { #only fires the event for XIC if they control ALL of the states (to ensure that only one of them gets it, to avoid issues when one selects to turn over the states and the other doesn't)
+						XIC = {
 							AND = {
 								controls_state = 608
 								controls_state = 1039 
@@ -11701,7 +11516,7 @@ focus_tree = {
 						}
 					}
 				}
-				add_named_threat = { threat = 2 name = JAP_intervene_in_china } # From threat = 1 to 2 due to no escalation tension
+				add_named_threat = { threat = 2 name = JAP_intervene_in_china }
 
 			}
 			ELSE_IF = {
@@ -11749,7 +11564,6 @@ focus_tree = {
 	focus = {
 		id = JAP_strategic_offensives
 		icon = GFX_goal_generic_position_armies
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = -1
 		y = 1
 		relative_position_id = JAP_reinforce_the_beijing_garrison
@@ -11807,7 +11621,6 @@ focus_tree = {
 	focus = {
 		id = JAP_intensify_anti_guerilla_operations
 		icon = GFX_focus_generic_attack_chinese_soviets
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = -1
 		y = 2
 		relative_position_id = JAP_strategic_offensives
@@ -11857,7 +11670,6 @@ focus_tree = {
 	focus = {
 		id = JAP_reorganized_national_government
 		icon = GFX_focus_JAP_reorganized_national_government
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 0
 		y = 1
 		relative_position_id = JAP_strategic_offensives
@@ -11895,7 +11707,6 @@ focus_tree = {
 
 		completion_reward = {
 
-			# Establishes the Reorganized National Government
 			613 = {
 				add_core_of = RNG
 				transfer_state_to = RNG
@@ -11990,20 +11801,20 @@ focus_tree = {
 					limit = {
 						is_owned_and_controlled_by = ROOT
 						NOT = {
-							state = 745 # Kwantung Leased Territory
-							state = 609 # Easty Hebei
-							state = 611 # South Chahar
-							state = 612 # Chahar
-							region = 155 # West Manchuria
-							region = 242 # North Manchuria
-							region = 243 # East Manchuria
-							state = 728 # Gouangzhouwan
-							state = 729 # Macau
-							state = 326 # Hong Kong
-							state = 743 # Qingdao
-							state = 524 # Taiwan
-							state = 1039 # Hebei-Chahar
-							state = 591 # Hainan
+							state = 745
+							state = 609
+							state = 611
+							state = 612
+							region = 155
+							region = 242
+							region = 243
+							state = 728
+							state = 729
+							state = 326
+							state = 743
+							state = 524
+							state = 1039
+							state = 591
 						}
 					}
 					add_core_of = RNG
@@ -12027,7 +11838,6 @@ focus_tree = {
 	focus = {
 		id = JAP_occupy_macau
 		icon = GFX_focus_JAP_occupy_macau
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 0
 		y = 2
 		relative_position_id = JAP_reorganized_national_government
@@ -12097,7 +11907,6 @@ focus_tree = {
 	focus = {
 		id = JAP_develop_the_chinese_resources
 		icon = GFX_goal_generic_construct_civilian
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 0
 		y = 3
 		relative_position_id = JAP_reinforce_the_beijing_garrison
@@ -12176,7 +11985,6 @@ focus_tree = {
 	focus = {
 		id = JAP_form_the_jikyoku_iinkai
 		icon = GFX_focus_generic_fascist_propaganda
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 1
 		y = 1
 		relative_position_id = JAP_reinforce_the_beijing_garrison
@@ -12286,7 +12094,6 @@ focus_tree = {
 	focus = {
 		id = JAP_an_expedition_to_tibet
 		icon = GFX_focus_prc_infiltration
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 3
 		y = 1
 		relative_position_id = JAP_reinforce_the_beijing_garrison
@@ -12738,7 +12545,6 @@ focus_tree = {
 	focus = {
 		id = JAP_nanshin_ron
 		icon = GFX_focus_JAP_nanshin_ron
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = -21
 		y = 1
 		relative_position_id = JAP_sea_purge_the_kodoha_faction
@@ -12829,7 +12635,7 @@ focus_tree = {
 			JAP_small_naval_faction_gain = yes
 
 			hidden_effect = {
-				set_country_flag = JAP_nanshin_ron_started_flag # Used to temporarily block the Hokushin-ron focuses
+				set_country_flag = JAP_nanshin_ron_started_flag
 			}	
 			
 		}
@@ -12838,7 +12644,6 @@ focus_tree = {
 	focus = {
 		id = JAP_soviet_japanese_neutrality_pact
 		icon = GFX_focus_chi_mission_to_the_soviet_union
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 3
 		y = 1
 		relative_position_id = JAP_nanshin_ron
@@ -12886,7 +12691,7 @@ focus_tree = {
 			custom_effect_tooltip = JAP_soviet_japanese_neutrality_pact_tt
 
 			hidden_effect = {
-				set_country_flag = JAP_soviet_japanese_neutrality_pact_flag # Used to temporarily block the Persimmon focuses
+				set_country_flag = JAP_soviet_japanese_neutrality_pact_flag
 			}
 
 		}
@@ -12896,7 +12701,6 @@ focus_tree = {
 	focus = {
 		id = JAP_unsinkable_aircraft_carriers
 		icon = GFX_focus_generic_air_bases
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 1
 		y = 1
 		relative_position_id = JAP_nanshin_ron
@@ -12923,9 +12727,6 @@ focus_tree = {
 				646 = {
 					state_is_fully_controlled_by_ROOT_or_subject = yes
 				}
-				#638 = {
-				#	state_is_fully_controlled_by_ROOT_or_subject = yes
-				#}
 				725 = {
 					state_is_fully_controlled_by_ROOT_or_subject = yes
 				}
@@ -12947,9 +12748,6 @@ focus_tree = {
 				1071 = {
 					state_is_fully_controlled_by_ROOT_or_subject = yes
 				}
-				#726 = {
-				#	state_is_fully_controlled_by_ROOT_or_subject = yes
-				#}
 				648 = {
 					state_is_fully_controlled_by_ROOT_or_subject = yes
 				}
@@ -13111,7 +12909,6 @@ focus_tree = {
 	focus = {
 		id = JAP_isolate_oceania
 		icon = GFX_focus_JAP_isolate_oceania
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 0
 		y = 1
 		relative_position_id = JAP_unsinkable_aircraft_carriers
@@ -13171,7 +12968,6 @@ focus_tree = {
 	focus = {
 		id = JAP_battle_for_australia
 		icon = GFX_focus_generic_air_carrier
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 0
 		y = 1
 		relative_position_id = JAP_isolate_oceania
@@ -13273,7 +13069,6 @@ focus_tree = {
 	focus = {
 		id = JAP_operation_take_australia
 		icon = GFX_focus_JAP_operation_take_australia
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 0
 		y = 1
 		relative_position_id = JAP_battle_for_australia
@@ -13377,7 +13172,6 @@ focus_tree = {
 	focus = {
 		id = JAP_sea_exploit_southern_resource_area
 		icon = GFX_focus_GER_south_east_asian_natural_wealth
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 0
 		y = 5
 		relative_position_id = JAP_nanshin_ron
@@ -13508,7 +13302,6 @@ focus_tree = {
 	focus = {
 		id = JAP_demand_tonkinese_bases
 		icon = GFX_focus_generic_attack_indochina
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = -2
 		y = 1
 		relative_position_id = JAP_nanshin_ron
@@ -13551,7 +13344,7 @@ focus_tree = {
 							has_army_manpower = { size > 799999 }
 							has_war_support > 0.9
 						}
-						16 = { NOT = { is_controlled_by = FRA } } #Paris has fallen
+						16 = { NOT = { is_controlled_by = FRA } }
 					}
 				}
 				custom_trigger_tooltip = {
@@ -13621,7 +13414,6 @@ focus_tree = {
 	focus = {
 		id = JAP_occupy_indochina
 		icon = GFX_focus_JAP_occupy_indochina
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 0
 		y = 1
 		relative_position_id = JAP_demand_tonkinese_bases
@@ -13675,7 +13467,7 @@ focus_tree = {
 
 			OR = {
 				AND = {
-					16 = { NOT = { is_controlled_by = FRA } } #Paris has fallen
+					16 = { NOT = { is_controlled_by = FRA } }
 					custom_trigger_tooltip = {
 						tooltip = demand_indochina_focus_tt
 						OR = {
@@ -13776,7 +13568,6 @@ focus_tree = {
 					}
 
 					OR = {
-						# Either Siam doesn't hold it 
 						NOT = {
 							286 = { 
 								CONTROLLER = { 
@@ -13800,7 +13591,6 @@ focus_tree = {
 							}
 						}
 
-						# Siam holds it and we have decided on our approach tpwards them first 
 						AND = {
 							OR = {
 								286 = { 
@@ -13993,7 +13783,7 @@ focus_tree = {
 				limit = {
 					has_dlc = "Thunder at Our Gates"
 				}
-				is_ai = no #I am not AI
+				is_ai = no
 			}
 
 
@@ -14133,7 +13923,6 @@ focus_tree = {
 	focus = {
 		id = JAP_strike_the_southern_road
 		icon = GFX_focus_jap_strike_south
-		#mutually_exclusive = { focus = JAP_sea_pressure_siam }
 		x = -1
 		y = 1
 		relative_position_id = JAP_occupy_siam
@@ -14278,7 +14067,7 @@ focus_tree = {
 						}
 					}
 
-					INS = { #I see what you are doing you cheeky exploiter
+					INS = {
 						every_core_state = {
 							limit = {
 								NOT = { is_owned_and_controlled_by = PREV }
@@ -14403,7 +14192,6 @@ focus_tree = {
 					NOT = { has_wargoal_against = FRA }
 					NOT = { has_war_with = FRA }
 				}
-				#Might be generating on states FRA does not own, but not worth the time to get it exact. Should have no gameplay impact.
 				create_wargoal = {
 					target = FRA
 					type = take_state_focus
@@ -14519,7 +14307,6 @@ focus_tree = {
 	focus = {
 		id = JAP_occupy_east_timor
 		icon = GFX_focus_generic_attack_timor
-		#mutually_exclusive = { focus = JAP_sea_pressure_siam }
 		x = 0
 		y = 1
 		relative_position_id = JAP_strike_the_southern_road
@@ -14609,7 +14396,6 @@ focus_tree = {
 	focus = {
 		id = JAP_hokushin_ron
 		icon = GFX_focus_JAP_hokushin_ron
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = -28
 		y = 1
 		relative_position_id = JAP_sea_purge_the_kodoha_faction
@@ -14674,7 +14460,7 @@ focus_tree = {
 
 				delete_unit_template_and_units = {
 					division_template = "Asano Brigade"
-					disband = yes #if yes, will refund equipment/manpower.
+					disband = yes
 				}
 
 				division_template = {
@@ -14723,7 +14509,7 @@ focus_tree = {
 			}
 
 			hidden_effect = {
-				set_country_flag = JAP_hokushin_ron_started_flag # Used to temporarily block the Nanshin-ron focuses
+				set_country_flag = JAP_hokushin_ron_started_flag
 			}	
 			
 		}
@@ -14732,7 +14518,6 @@ focus_tree = {
 	focus = {
 		id = JAP_ensure_temporary_peace_with_china
 		icon = GFX_focus_generic_mountain_fortification
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 2
 		y = 1
 		relative_position_id = JAP_hokushin_ron
@@ -14760,7 +14545,7 @@ focus_tree = {
 				has_war_with = CHI
 				has_subject = CHI
 				has_subject = RNG
-				owns_state = 608 # Beijing
+				owns_state = 608
 			}
 		}
 
@@ -14958,7 +14743,7 @@ focus_tree = {
 			}
 
 			hidden_effect = {
-				set_country_flag = JAP_chinese_japanese_neutrality_pact_flag # Used to temporarily block the Persimmon focuses
+				set_country_flag = JAP_chinese_japanese_neutrality_pact_flag
 			}
 			
 		}
@@ -14967,7 +14752,6 @@ focus_tree = {
 	focus = {
 		id = JAP_a_mongol_volunteer_army
 		icon = GFX_focus_secret_rearmament
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 0
 		y = 1
 		relative_position_id = JAP_ensure_temporary_peace_with_china
@@ -15038,7 +14822,7 @@ focus_tree = {
 				limit = {
 					MAN = {
 						exists = no
-						761 = { # Hulunbuir
+						761 = {
 							is_owned_and_controlled_by = ROOT
 						}
 					}
@@ -15052,7 +14836,7 @@ focus_tree = {
 				limit = {
 					MEN = {
 						exists = no
-						611 = { # South Chahar
+						611 = {
 							is_owned_and_controlled_by = ROOT
 						}
 					}
@@ -15067,7 +14851,7 @@ focus_tree = {
 
 				delete_unit_template_and_units = {
 					division_template = "Mongoru Dokuritsu-gun"
-					disband = yes #if yes, will refund equipment/manpower.
+					disband = yes
 				}
 
 				division_template = {
@@ -15092,7 +14876,6 @@ focus_tree = {
 
 			}
 
-			#custom_effect_tooltip = generic_skip_one_line_tt
 
 			761 = {
 				create_unit = {
@@ -15117,7 +14900,6 @@ focus_tree = {
 	focus = {
 		id = JAP_strenghten_manchukuo_imperial_army
 		icon = GFX_focus_JAP_strenghten_manchukuo_imperial_army
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = -2
 		y = 1
 		relative_position_id = JAP_hokushin_ron
@@ -15183,7 +14965,6 @@ focus_tree = {
 	focus = {
 		id = JAP_strenghten_manchukuo_imperial_airforce
 		icon = GFX_focus_JAP_strenghten_manchukuo_imperial_airforce
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 0
 		y = 1
 		relative_position_id = JAP_strenghten_manchukuo_imperial_army
@@ -15269,7 +15050,6 @@ focus_tree = {
 	focus = {
 		id = JAP_utilize_ainu_expertise
 		icon = GFX_focus_JAP_utilize_ainu_expertise
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 0
 		y = 1
 		relative_position_id = JAP_hokushin_ron
@@ -15302,7 +15082,7 @@ focus_tree = {
 
 				delete_unit_template_and_units = {
 					division_template = "Ainu Giyū-tai"
-					disband = yes #if yes, will refund equipment/manpower.
+					disband = yes
 				}
 
 				division_template = {
@@ -15345,7 +15125,6 @@ focus_tree = {
 	focus = {
 		id = JAP_kantokuen
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		#mutually_exclusive = { focus = JAP_the_harakiri_debate }
 		x = 0
 		y = 1
 		relative_position_id = JAP_utilize_ainu_expertise
@@ -15770,7 +15549,6 @@ focus_tree = {
 	focus = {
 		id = JAP_sea_establish_the_northern_resource_area
 		icon = GFX_focus_generic_mining_industry
-		#mutually_exclusive = { focus = JAP_a_green_persimmon }
 		x = 1
 		y = 1
 		relative_position_id = JAP_a_green_persimmon
@@ -15883,7 +15661,6 @@ focus_tree = {
 	focus = {
 		id = JAP_seek_yakuza_support
 		icon = GFX_focus_JAP_seek_yakuza_support
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = -7
 		y = 1
 		relative_position_id = JAP_okadas_military_purge_speech
@@ -15968,7 +15745,6 @@ focus_tree = {
 	focus = {
 		id = JAP_expand_the_metropolitan_police
 		icon = GFX_focus_JAP_the_national_police_reserve
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = 7
 		y = 1
 		relative_position_id = JAP_okadas_military_purge_speech
@@ -16033,7 +15809,6 @@ focus_tree = {
 	focus = {
 		id = JAP_secretly_rebuild_the_party
 		icon = GFX_focus_JAP_secretly_rebuild_the_party
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = -4
 		y = 1
 		relative_position_id = JAP_okadas_military_purge_speech
@@ -16099,7 +15874,6 @@ focus_tree = {
 	focus = {
 		id = JAP_build_an_anti_army_coalition
 		icon = GFX_focus_generic_conspiracy
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = 4
 		y = 1
 		relative_position_id = JAP_okadas_military_purge_speech
@@ -16153,7 +15927,6 @@ focus_tree = {
 	focus = {
 		id = JAP_ensure_cross_party_support
 		icon = GFX_goal_generic_national_unity
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = -1
 		y = 1
 		relative_position_id = JAP_build_an_anti_army_coalition
@@ -16206,7 +15979,6 @@ focus_tree = {
 	focus = {
 		id = JAP_gather_royal_pacifists_support
 		icon = GFX_focus_JAP_gather_royal_pacifists_support
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = 1
 		y = 1
 		relative_position_id = JAP_build_an_anti_army_coalition
@@ -16490,7 +16262,6 @@ focus_tree = {
 	focus = {
 		id = JAP_bribe_generals
 		icon = GFX_focus_BRA_reach_out_to_military_dem
-		#mutually_exclusive = { focus = }
 		x = 6
 		y = 2
 		relative_position_id = JAP_sway_the_navy_moderates
@@ -16577,7 +16348,6 @@ focus_tree = {
 	focus = {
 		id = JAP_appoint_new_generals
 		icon = GFX_focus_generic_military_mission
-		#mutually_exclusive = { focus = }
 		x = -1
 		y = 1
 		relative_position_id = JAP_bribe_generals
@@ -16636,7 +16406,6 @@ focus_tree = {
 	focus = {
 		id = JAP_implement_army_reforms
 		icon = GFX_focus_JAP_implement_army_reforms
-		#mutually_exclusive = { focus = }
 		x = 1
 		y = 1
 		relative_position_id = JAP_bribe_generals
@@ -16698,7 +16467,6 @@ focus_tree = {
 	focus = {
 		id = JAP_a_new_take_on_state_shintoism
 		icon = GFX_focus_jap_spiritual_mobilization
-		#mutually_exclusive = { focus = }
 		x = -1
 		y = 1
 		relative_position_id = JAP_implement_army_reforms
@@ -16748,7 +16516,6 @@ focus_tree = {
 	focus = {
 		id = JAP_crush_the_spirit_of_gekokujo
 		icon = GFX_focus_JAP_crush_the_spirit_of_gekokujo
-		#mutually_exclusive = { focus = }
 		x = 0
 		y = 1
 		relative_position_id = JAP_a_new_take_on_state_shintoism
@@ -16791,7 +16558,6 @@ focus_tree = {
 	focus = {
 		id = JAP_anti_militarist_speeches_in_the_diet
 		icon = GFX_focus_JAP_anti_militarist_speeches_in_the_diet
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = 0
 		y = 1
 		relative_position_id = JAP_secretly_rebuild_the_party
@@ -16828,7 +16594,6 @@ focus_tree = {
 
 			add_political_power = 50
 				
-			#custom_effect_tooltip = JAP_anti_militarist_speeches_in_the_diet_tt
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -16844,7 +16609,6 @@ focus_tree = {
 	focus = {
 		id = JAP_sway_disillusioned_young_officers
 		icon = GFX_focus_PER_stage_mass_protests
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = 0
 		y = 2
 		relative_position_id = JAP_anti_militarist_speeches_in_the_diet
@@ -16915,7 +16679,6 @@ focus_tree = {
 	focus = {
 		id = JAP_organize_the_student_movements
 		icon = GFX_focus_JAP_organize_the_student_movements
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = 2
 		y = 1
 		relative_position_id = JAP_anti_militarist_speeches_in_the_diet
@@ -16975,7 +16738,6 @@ focus_tree = {
 	focus = {
 		id = JAP_raise_support_within_the_proletarian_class
 		icon = GFX_focus_YUG_pan_slavic_congress
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = 0
 		y = 1
 		relative_position_id = JAP_organize_the_student_movements
@@ -17067,7 +16829,6 @@ focus_tree = {
 	focus = {
 		id = JAP_organize_underground_resistance
 		icon = GFX_focus_prc_infiltration
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = -2
 		y = 1
 		relative_position_id = JAP_anti_militarist_speeches_in_the_diet
@@ -17116,7 +16877,6 @@ focus_tree = {
 	focus = {
 		id = JAP_mountain_village_operation_units
 		icon = GFX_focus_JAP_mountain_village_operation_units
-		#mutually_exclusive = { focus = JAP_divert_military_funds }
 		x = 0
 		y = 1
 		relative_position_id = JAP_organize_underground_resistance
@@ -17247,7 +17007,6 @@ focus_tree = {
 	focus = {
 		id = JAP_organize_the_fifth_column
 		icon = GFX_focus_generic_sabotage
-		#mutually_exclusive = { focus = JAP_divert_military_funds }
 		x = -2
 		y = 1
 		relative_position_id = JAP_return_of_the_manchukuo_exiles
@@ -17284,7 +17043,7 @@ focus_tree = {
 
 				delete_unit_template_and_units = {
 					division_template = "Kokumin Giyū Sentōtai"
-					disband = yes #if yes, will refund equipment/manpower.
+					disband = yes
 				}
 
 				division_template = {
@@ -17342,7 +17101,6 @@ focus_tree = {
 	focus = {
 		id = JAP_revoke_the_peace_preservation_law
 		icon = GFX_focus_JAP_revoke_the_peace_preservation_law
-		#mutually_exclusive = { focus = JAP_the_unthinkable_option }
 		x = 4
 		y = 1
 		relative_position_id = JAP_return_of_the_manchukuo_exiles
@@ -17386,7 +17144,6 @@ focus_tree = {
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
 
-			# Democratic Version should be the one that shows by default 
 			IF = {
 				limit = {
 					has_completed_focus = JAP_return_of_the_manchukuo_exiles
@@ -17404,7 +17161,6 @@ focus_tree = {
 				}
 			}
 			ELSE = {
-				# The Siege of Osaka Castle 
 				country_event = {
 					id = SEA_japan_popup_events.22
 				}	
@@ -17429,7 +17185,6 @@ focus_tree = {
 			}
 
 			hidden_effect = {
-				# Let the fellas out of prison please 
 				IF = {
 					limit = {
 						has_country_flag = JAP_IJA_arrested_advisors_flag
@@ -17696,7 +17451,6 @@ focus_tree = {
 	focus = {
 		id = JAP_sea_fate_of_the_imperial_family
 		icon = GFX_focus_JAP_the_fate_of_the_imperial_family
-		#mutually_exclusive = { focus =  }
 		x = 3
 		y = 1
 		relative_position_id = JAP_the_lecture_group_ascendant
@@ -17737,7 +17491,6 @@ focus_tree = {
 	focus = {
 		id = JAP_hold_a_peoples_tribunal
 		icon = GFX_focus_BRA_tribunal
-		#mutually_exclusive = { focus =  }
 		x = -1
 		y = 1
 		relative_position_id = JAP_sea_fate_of_the_imperial_family
@@ -17772,7 +17525,7 @@ focus_tree = {
 
 			custom_effect_tooltip = JAP_hold_a_peoples_tribunal_tt
 			IF = {
-				limit = {	 # So that the tooltip doesn't break as much once the focus has been taken
+				limit = {
 					NOT = {
 						has_completed_focus = JAP_hold_a_peoples_tribunal
 					}
@@ -17799,7 +17552,6 @@ focus_tree = {
 	focus = {
 		id = JAP_social_and_cultural_revolution
 		icon = GFX_focus_JAP_social_and_cultural_revolution
-		#mutually_exclusive = { focus =  }
 		x = 1
 		y = 1
 		relative_position_id = JAP_sea_fate_of_the_imperial_family
@@ -17850,7 +17602,6 @@ focus_tree = {
 	focus = {
 		id = JAP_overhaul_the_education_system
 		icon = GFX_focus_generic_socialist_science
-		#mutually_exclusive = { focus =  }
 		x = -1
 		y = 1
 		relative_position_id = JAP_social_and_cultural_revolution
@@ -17893,7 +17644,6 @@ focus_tree = {
 	focus = {
 		id = JAP_sea_nationalize_the_zaibatsus
 		icon = GFX_focus_JAP_nationalize_zaibatsus
-		#mutually_exclusive = { focus =  }
 		x = 0
 		y = 1
 		relative_position_id = JAP_overhaul_the_education_system
@@ -17948,7 +17698,6 @@ focus_tree = {
 				
 			JAP_big_zaibatsu_faction_loss = yes
 
-			#custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = JAP_minoru_takano
@@ -17963,7 +17712,6 @@ focus_tree = {
 	focus = {
 		id = JAP_a_functionalist_housing_policy
 		icon = GFX_focus_JAP_a_functionalist_housing_policy
-		#mutually_exclusive = { focus =  }
 		x = 2
 		y = 1
 		relative_position_id = JAP_overhaul_the_education_system
@@ -18000,7 +17748,6 @@ focus_tree = {
 	focus = {
 		id = JAP_redistribute_land_and_wealth
 		icon = GFX_focus_generic_workers_and_farmers_rise
-		#mutually_exclusive = { focus =  }
 		x = -2
 		y = 1
 		relative_position_id = JAP_overhaul_the_education_system
@@ -18052,7 +17799,6 @@ focus_tree = {
 	focus = {
 		id = JAP_ganbarou
 		icon = GFX_focus_JAP_ganbarou
-		#mutually_exclusive = { focus =  }
 		x = 2
 		y = 1
 		relative_position_id = JAP_redistribute_land_and_wealth
@@ -18099,7 +17845,6 @@ focus_tree = {
 	focus = {
 		id = JAP_cooperate_with_anarchists
 		icon = GFX_focus_ETH_support_from_the_japanese_communists 
-		#mutually_exclusive = { focus =  }
 		x = 4
 		y = 1
 		relative_position_id = JAP_sea_fate_of_the_imperial_family
@@ -18162,7 +17907,6 @@ focus_tree = {
 	focus = {
 		id = JAP_the_ie_system_and_socialism
 		icon = GFX_focus_generic_soviet_politics
-		#mutually_exclusive = { focus =  }
 		x = -4
 		y = 1
 		relative_position_id = JAP_sea_fate_of_the_imperial_family
@@ -18203,7 +17947,6 @@ focus_tree = {
 	focus = {
 		id = JAP_fukumotoism
 		icon = GFX_focus_DEN_limited_regulations
-		#mutually_exclusive = { focus =  }
 		x = -1
 		y = 1
 		relative_position_id = JAP_the_ie_system_and_socialism
@@ -18254,7 +17997,6 @@ focus_tree = {
 	focus = {
 		id = JAP_the_modern_ashigaru
 		icon = GFX_focus_JAP_the_modern_ashigaru
-		#mutually_exclusive = { focus =  }
 		x = -4
 		y = 1
 		relative_position_id = JAP_the_ie_system_and_socialism
@@ -18292,7 +18034,7 @@ focus_tree = {
 			hidden_effect = {
 				delete_unit_template_and_units = {
 					division_template = "Ashigaru Levy"
-					disband = yes #if yes, will refund equipment/manpower.
+					disband = yes
 				}
 				set_country_flag = JAP_ashigaru_system_is_active
 				division_template = {
@@ -18323,7 +18065,6 @@ focus_tree = {
 	focus = {
 		id = JAP_learn_from_the_nkvd
 		icon = GFX_focus_JAP_learn_from_the_nkvd
-		#mutually_exclusive = { focus =  }
 		x = 0
 		y = 1
 		relative_position_id = JAP_the_modern_ashigaru
@@ -18383,7 +18124,6 @@ focus_tree = {
 	focus = {
 		id = JAP_further_urban_investments
 		icon = GFX_focus_JAP_further_urban_investments
-		#mutually_exclusive = { focus =  }
 		x = -1
 		y = 1
 		relative_position_id = JAP_fukumotoism
@@ -18434,7 +18174,6 @@ focus_tree = {
 	focus = {
 		id = JAP_the_first_five_year_plan
 		icon = GFX_focus_generic_communist_industry
-		#mutually_exclusive = { focus =  }
 		x = 1
 		y = 1
 		relative_position_id = JAP_fukumotoism
@@ -18476,7 +18215,6 @@ focus_tree = {
 	focus = {
 		id = JAP_form_pioneer_organizations
 		icon = GFX_focus_JAP_form_pioneer_organizations
-		#mutually_exclusive = { focus =  }
 		x = -1
 		y = 1
 		relative_position_id = JAP_the_first_five_year_plan
@@ -18523,7 +18261,6 @@ focus_tree = {
 	focus = {
 		id = JAP_war_communism
 		icon = GFX_goal_support_communism
-		#mutually_exclusive = { focus =  }
 		x = -1
 		y = 1
 		relative_position_id = JAP_cooperate_with_anarchists
@@ -18563,7 +18300,6 @@ focus_tree = {
 	focus = {
 		id = JAP_the_uno_school_of_economics
 		icon = GFX_focus_JAP_the_uno_school_of_economics
-		#mutually_exclusive = { focus =  }
 		x = 1
 		y = 1
 		relative_position_id = JAP_cooperate_with_anarchists
@@ -18614,7 +18350,6 @@ focus_tree = {
 	focus = {
 		id = JAP_incorporate_buddhist_socialism
 		icon = GFX_focus_JAP_incorporate_buddhist_socialism
-		#mutually_exclusive = { focus =  }
 		x = 3
 		y = 1
 		relative_position_id = JAP_cooperate_with_anarchists
@@ -18664,7 +18399,6 @@ focus_tree = {
 	focus = {
 		id = JAP_the_spirit_of_the_ikko_ikki
 		icon = GFX_focus_JAP_the_modern_ashigaru
-		#mutually_exclusive = { focus = JAP_utilize_our_polish_friendship }
 		x = 1
 		y = 1
 		relative_position_id = JAP_incorporate_buddhist_socialism
@@ -18727,7 +18461,6 @@ focus_tree = {
 	focus = {
 		id = JAP_achieving_joubukkokudo
 		icon = GFX_focus_smiling_buddha
-		#mutually_exclusive = { focus = JAP_utilize_our_polish_friendship }
 		x = 0
 		y = 2
 		relative_position_id = JAP_the_spirit_of_the_ikko_ikki
@@ -18792,7 +18525,6 @@ focus_tree = {
 	focus = {
 		id = JAP_uplift_ainu_revolution_theory
 		icon = GFX_focus_JAP_uplift_ainu_revolution_theory
-		#mutually_exclusive = { focus =  }
 		x = 0
 		y = 2
 		relative_position_id = JAP_incorporate_buddhist_socialism
@@ -18844,7 +18576,6 @@ focus_tree = {
 	focus = {
 		id = JAP_kikues_new_model
 		icon = GFX_focus_JAP_kikues_new_model
-		#mutually_exclusive = { focus =  }
 		x = 5
 		y = 1
 		relative_position_id = JAP_cooperate_with_anarchists
@@ -18903,7 +18634,6 @@ focus_tree = {
 	focus = {
 		id = JAP_women_in_industry
 		icon = GFX_focus_JAP_women_in_industry
-		#mutually_exclusive = { focus =  }
 		x = 0
 		y = 1
 		relative_position_id = JAP_kikues_new_model
@@ -18948,7 +18678,6 @@ focus_tree = {
 	focus = {
 		id = JAP_form_national_cooperatives
 		icon = GFX_goal_generic_national_unity
-		#mutually_exclusive = { focus =  }
 		x = 1
 		y = 1
 		relative_position_id = JAP_the_uno_school_of_economics
@@ -19023,7 +18752,6 @@ focus_tree = {
 	focus = {
 		id = JAP_further_rural_investments
 		icon = GFX_focus_prc_agrarian_socialism
-		#mutually_exclusive = { focus =  }
 		x = -1
 		y = 1
 		relative_position_id = JAP_the_uno_school_of_economics
@@ -19078,7 +18806,6 @@ focus_tree = {
 	focus = {
 		id = JAP_adopt_syndicalist_ideas
 		icon = GFX_focus_ARG_establish_the_free_association
-		#mutually_exclusive = { focus =  }
 		x = 1
 		y = 1
 		relative_position_id = JAP_further_rural_investments
@@ -19123,7 +18850,6 @@ focus_tree = {
 	focus = {
 		id = JAP_raise_the_red_flag_high
 		icon = GFX_focus_JAP_raise_the_red_flag_high
-		#mutually_exclusive = { focus =  }
 		x = -5
 		y = 2
 		relative_position_id = JAP_adopt_syndicalist_ideas
@@ -19198,7 +18924,6 @@ focus_tree = {
 	focus = {
 		id = JAP_guide_the_lesser_states
 		icon = GFX_focus_GER_liberate_exploited_colonial_workers
-		#mutually_exclusive = { focus =  }
 		x = 5
 		y = 1
 		relative_position_id = JAP_raise_the_red_flag_high
@@ -19250,7 +18975,6 @@ focus_tree = {
 	focus = {
 		id = JAP_socialism_in_one_state
 		icon = GFX_focus_ETH_callout_to_the_world
-		#mutually_exclusive = { focus =  }
 		x = -5
 		y = 1
 		relative_position_id = JAP_raise_the_red_flag_high
@@ -19293,7 +19017,6 @@ focus_tree = {
 	focus = {
 		id = JAP_the_courage_to_defend_the_revolution
 		icon = GFX_focus_ITA_peasants_rise
-		#mutually_exclusive = { focus =  }
 		x = 2
 		y = 1
 		relative_position_id = JAP_guide_the_lesser_states
@@ -19335,7 +19058,6 @@ focus_tree = {
 	focus = {
 		id = JAP_demand_submission_from_breawakay_states
 		icon = GFX_focus_GER_proletarian_dictatorship
-		#mutually_exclusive = { focus =  }
 		x = 0
 		y = 1
 		relative_position_id = JAP_guide_the_lesser_states
@@ -19467,7 +19189,6 @@ focus_tree = {
 	focus = {
 		id = JAP_ignite_the_korean_peninsula
 		icon = GFX_focus_JAP_ignite_the_korean_peninsula
-		#mutually_exclusive = { focus =  }
 		x = 0
 		y = 1
 		relative_position_id = JAP_demand_submission_from_breawakay_states
@@ -19536,7 +19257,6 @@ focus_tree = {
 	focus = {
 		id = JAP_protect_the_manchurians
 		icon = GFX_focus_JAP_protect_the_manchurians
-		#mutually_exclusive = { focus =  }
 		x = -1
 		y = 1
 		relative_position_id = JAP_ignite_the_korean_peninsula
@@ -19602,7 +19322,6 @@ focus_tree = {
 	focus = {
 		id = JAP_guide_the_chinese
 		icon = GFX_focus_chi_one_china_policy
-		#mutually_exclusive = { focus =  }
 		x = 1
 		y = 1
 		relative_position_id = JAP_ignite_the_korean_peninsula
@@ -19701,7 +19420,6 @@ focus_tree = {
 	focus = {
 		id = JAP_guide_the_mongols
 		icon = GFX_focus_generic_attack_mongolia
-		#mutually_exclusive = { focus =  }
 		x = 1
 		y = 1
 		relative_position_id = JAP_guide_the_chinese
@@ -19819,7 +19537,6 @@ focus_tree = {
 	focus = {
 		id = JAP_spread_the_revolutuon_south
 		icon = GFX_focus_generic_spur_communist_revolutions
-		#mutually_exclusive = { focus =  }
 		x = -1
 		y = 1
 		relative_position_id = JAP_guide_the_chinese
@@ -19900,7 +19617,6 @@ focus_tree = {
 						has_war_with = ROOT
 					}
 				}
-				# Demand Submission
 				country_event = {
 					id = SEA_japan_foreign_policy.132
 					hours = 6
@@ -19944,7 +19660,6 @@ focus_tree = {
 						has_war_with = ROOT
 					}
 				}
-				# Stir Communist Sentiment and gain a puppet wargoal 
 				country_event = {
 					id = SEA_japan_popup_events.37
 					hours = 6
@@ -19965,7 +19680,6 @@ focus_tree = {
 	focus = {
 		id = JAP_free_asians_from_soviet_opression
 		icon = GFX_focus_attack_soviet
-		#mutually_exclusive = { focus =  }
 		x = -1
 		y = 1
 		relative_position_id = JAP_spread_the_revolutuon_south
@@ -20035,7 +19749,6 @@ focus_tree = {
 	focus = {
 		id = JAP_go_after_the_capitalists
 		icon = GFX_focus_GER_wage_war_on_capitalism
-		#mutually_exclusive = { focus =  }
 		x = 1
 		y = 1
 		relative_position_id = JAP_spread_the_revolutuon_south
@@ -20130,7 +19843,6 @@ focus_tree = {
 	focus = {
 		id = JAP_a_free_asia_pacific
 		icon = GFX_focus_JAP_a_free_asia_pacific
-		#mutually_exclusive = { focus =  }
 		x = -1
 		y = 1
 		relative_position_id = JAP_go_after_the_capitalists
@@ -20202,7 +19914,6 @@ focus_tree = {
 	focus = {
 		id = JAP_the_pan_asian_revolutionary_front
 		icon = GFX_focus_CHL_union_of_hispanic_republics
-		#mutually_exclusive = { focus =  }
 		x = -4
 		y = 1
 		relative_position_id = JAP_guide_the_lesser_states
@@ -20248,7 +19959,6 @@ focus_tree = {
 	focus = {
 		id = JAP_educate_the_peasants
 		icon = GFX_focus_CHI_tongzi_jun
-		#mutually_exclusive = { focus =  }
 		x = 2
 		y = 1
 		relative_position_id = JAP_the_pan_asian_revolutionary_front
@@ -20303,7 +20013,7 @@ focus_tree = {
 					subtract_from_temp_variable = { temp_targets_index = 1 }
 				}
 
-				hidden_effect = { #This is necessary since Japan is already accounted for when setting all of this up
+				hidden_effect = {
 					subtract_from_variable = { JAP.JAP_educating_the_peasants_modifier_research_speed_factor = 0.01 }
 				}
 			}
@@ -20318,7 +20028,6 @@ focus_tree = {
 	focus = {
 		id = JAP_a_common_currency_for_all_of_asia
 		icon = GFX_focus_JAP_develop_the_yen_block
-		#mutually_exclusive = { focus =  }
 		x = 0
 		y = 1
 		relative_position_id = JAP_the_pan_asian_revolutionary_front
@@ -20371,7 +20080,6 @@ focus_tree = {
 	focus = {
 		id = JAP_the_minitry_of_pan_asian_development
 		icon = GFX_focus_ETH_re-convene_the_parliament
-		#mutually_exclusive = { focus =  }
 		x = -2
 		y = 1
 		relative_position_id = JAP_the_pan_asian_revolutionary_front
@@ -20419,7 +20127,6 @@ focus_tree = {
 	focus = {
 		id = JAP_development_for_the_undeveloped
 		icon = GFX_focus_AFG_helmand_river_authority
-		#mutually_exclusive = { focus =  }
 		x = 0
 		y = 1
 		relative_position_id = JAP_the_minitry_of_pan_asian_development
@@ -20479,7 +20186,6 @@ focus_tree = {
 	focus = {
 		id = JAP_a_pan_asian_diet
 		icon = GFX_focus_JAP_a_pan_asian_diet
-		#mutually_exclusive = { focus =  }
 		x = 2
 		y = 2
 		relative_position_id = JAP_the_minitry_of_pan_asian_development
@@ -20522,7 +20228,6 @@ focus_tree = {
 	focus = {
 		id = JAP_extensive_navy_maneuvers
 		icon = GFX_focus_PER_the_peoples_navy
-		#mutually_exclusive = { focus =  }
 		x = 2
 		y = 1
 		relative_position_id = JAP_socialism_in_one_state
@@ -20568,7 +20273,6 @@ focus_tree = {
 	focus = {
 		id = JAP_extensive_army_maneuvers
 		icon = GFX_focus_SOV_builder_of_the_red_army
-		#mutually_exclusive = { focus =  }
 		x = -2
 		y = 1
 		relative_position_id = JAP_socialism_in_one_state
@@ -20614,7 +20318,6 @@ focus_tree = {
 	focus = {
 		id = JAP_reclaim_lost_territories
 		icon = GFX_focus_JAP_reclaim_the_lost_territories
-		#mutually_exclusive = { focus =  }
 		x = 1
 		y = 2
 		relative_position_id = JAP_socialism_in_one_state
@@ -20753,7 +20456,6 @@ focus_tree = {
 	focus = {
 		id = JAP_conquer_the_army_remnants
 		icon = GFX_focus_generic_attack_manchukuo
-		#mutually_exclusive = { focus =  }
 		x = -1
 		y = 2
 		relative_position_id = JAP_socialism_in_one_state
@@ -20818,7 +20520,6 @@ focus_tree = {
 	focus = {
 		id = JAP_put_an_end_to_chinese_feudalism
 		icon = GFX_focus_JAP_put_an_end_to_chinese_feudalism
-		#mutually_exclusive = { focus =  }
 		x = 1
 		y = 1
 		relative_position_id = JAP_conquer_the_army_remnants
@@ -20895,7 +20596,6 @@ focus_tree = {
 	focus = {
 		id = JAP_mobilize_the_proletariat
 		icon = GFX_focus_GER_proletarian_solidarity
-		#mutually_exclusive = { focus =  }
 		x = 1
 		y = 1
 		relative_position_id = JAP_put_an_end_to_chinese_feudalism
@@ -20937,7 +20637,6 @@ focus_tree = {
 	focus = {
 		id = JAP_the_long_march_to_victory
 		icon = GFX_focus_SOV_the_road_of_life
-		#mutually_exclusive = { focus =  }
 		x = -1
 		y = 1
 		relative_position_id = JAP_put_an_end_to_chinese_feudalism
@@ -20979,7 +20678,6 @@ focus_tree = {
 	focus = {
 		id = JAP_the_pacific_union_of_soviet_socialist_republics
 		icon = GFX_focus_JAP_pacific_soviet_union
-		#mutually_exclusive = { focus =  }
 		x = 0
 		y = 2
 		relative_position_id = JAP_put_an_end_to_chinese_feudalism
@@ -21049,7 +20747,6 @@ focus_tree = {
 	focus = {
 		id = JAP_the_indochinese_soviet
 		icon = GFX_focus_JAP_the_indochinese_soviet
-		#mutually_exclusive = { focus =  }
 		x = 1
 		y = 1
 		relative_position_id = JAP_the_pacific_union_of_soviet_socialist_republics
@@ -21158,7 +20855,6 @@ focus_tree = {
 	focus = {
 		id = JAP_transformation_of_nature
 		icon = GFX_goal_generic_soviet_construction
-		#mutually_exclusive = { focus =  }
 		x = 1
 		y = 1
 		relative_position_id = JAP_the_indochinese_soviet
@@ -21398,7 +21094,6 @@ focus_tree = {
 	focus = {
 		id = JAP_the_south_pacific_soviet
 		icon = GFX_focus_JAP_the_south_pacific_soviet
-		#mutually_exclusive = { focus =  }
 		x = -1
 		y = 1
 		relative_position_id = JAP_the_pacific_union_of_soviet_socialist_republics
@@ -21503,7 +21198,6 @@ focus_tree = {
 	focus = {
 		id = JAP_the_oceanian_soviet
 		icon = GFX_focus_JAP_the_oceanian_soviet
-		#mutually_exclusive = { focus =  }
 		x = -1
 		y = 1
 		relative_position_id = JAP_the_south_pacific_soviet
@@ -21600,7 +21294,6 @@ focus_tree = {
 	focus = {
 		id = JAP_strike_down_the_great_pretender
 		icon = GFX_focus_attack_soviet
-		#mutually_exclusive = { focus =  }
 		x = 0
 		y = 2
 		relative_position_id = JAP_the_pacific_union_of_soviet_socialist_republics
@@ -21661,7 +21354,6 @@ focus_tree = {
 	focus = {
 		id = JAP_a_red_dawn_over_asia
 		icon = GFX_focus_JAP_a_red_dawn_over_asia
-		#mutually_exclusive = { focus =  }
 		x = 0
 		y = 1
 		relative_position_id = JAP_strike_down_the_great_pretender
@@ -21730,7 +21422,6 @@ focus_tree = {
 	focus = {
 		id = JAP_to_rival_the_comintern
 		icon = GFX_focus_generic_join_comintern
-		#mutually_exclusive = { focus =  }
 		x = -5
 		y = 1
 		relative_position_id = JAP_the_pacific_union_of_soviet_socialist_republics
@@ -21773,7 +21464,6 @@ focus_tree = {
 	focus = {
 		id = JAP_wrestle_mongolia_from_the_soviets
 		icon = GFX_focus_generic_befriend_mongolia
-		#mutually_exclusive = { focus =  }
 		x = 1
 		y = 1
 		relative_position_id = JAP_to_rival_the_comintern
@@ -21870,7 +21560,6 @@ focus_tree = {
 	focus = {
 		id = JAP_wrestle_tuva_from_the_soviets
 		icon = GFX_focus_generic_befriend_tannu_tuva
-		#mutually_exclusive = { focus =  }
 		x = 0
 		y = 1
 		relative_position_id = JAP_wrestle_mongolia_from_the_soviets
@@ -21952,7 +21641,6 @@ focus_tree = {
 	focus = {
 		id = JAP_spread_revolutionary_flames_to_south_asia
 		icon = GFX_focus_JAP_spread_the_revolutionary_flame_to_south_asia
-		#mutually_exclusive = { focus =  }
 		x = -1
 		y = 1
 		relative_position_id = JAP_to_rival_the_comintern
@@ -21997,7 +21685,6 @@ focus_tree = {
 	focus = {
 		id = JAP_spread_revolutionary_flames_to_west_asia
 		icon = GFX_focus_JAP_spread_the_revolutionary_flame_to_west_asia
-		#mutually_exclusive = { focus =  }
 		x = 0
 		y = 1
 		relative_position_id = JAP_spread_revolutionary_flames_to_south_asia
@@ -22042,7 +21729,6 @@ focus_tree = {
 	focus = {
 		id = JAP_trans_pacific_influence
 		icon = GFX_focus_GER_align_south_america
-		#mutually_exclusive = { focus =  }
 		x = 0
 		y = 3
 		relative_position_id = JAP_to_rival_the_comintern
@@ -22102,9 +21788,6 @@ focus_tree = {
 
 	}
 
-	###################################
-	######### SEA DEMO POST-CW ########
-	###################################
 
 	focus = {
 		id = JAP_organize_a_general_election
@@ -22295,7 +21978,6 @@ focus_tree = {
 	focus = {
 		id = JAP_promote_meritocracy
 		icon = GFX_focus_generic_industrial_experts
-		#mutually_exclusive = { focus = JAP_rikken_seiyukai_victory }
 		x = -1
 		y = 1
 		relative_position_id = JAP_rikken_minseito_victory
@@ -22332,7 +22014,6 @@ focus_tree = {
 	focus = {
 		id = JAP_experimental_housing_solutions
 		icon = GFX_focus_generic_low_cost_housing
-		#mutually_exclusive = { focus = JAP_rikken_seiyukai_victory }
 		x = 1
 		y = 1
 		relative_position_id = JAP_rikken_minseito_victory
@@ -22369,7 +22050,6 @@ focus_tree = {
 	focus = {
 		id = JAP_minshu_shugi
 		icon = GFX_focus_JAP_minshu_shugi
-		#mutually_exclusive = { focus = JAP_rikken_seiyukai_victory }
 		x = -1
 		y = 1
 		relative_position_id = JAP_experimental_housing_solutions
@@ -22411,7 +22091,6 @@ focus_tree = {
 	focus = {
 		id = JAP_embrace_amakudari
 		icon = GFX_focus_generic_conference
-		#mutually_exclusive = { focus = JAP_rikken_seiyukai_victory }
 		x = -1
 		y = 1
 		relative_position_id = JAP_rikken_seiyukai_victory
@@ -22448,7 +22127,6 @@ focus_tree = {
 	focus = {
 		id = JAP_agricultural_protectionism
 		icon = GFX_goal_generic_defence
-		#mutually_exclusive = { focus = JAP_rikken_seiyukai_victory }
 		x = 1
 		y = 1
 		relative_position_id = JAP_rikken_seiyukai_victory
@@ -22485,7 +22163,6 @@ focus_tree = {
 	focus = {
 		id = JAP_minpon_shugi
 		icon = GFX_focus_JAP_minpon_shugi
-		#mutually_exclusive = { focus = JAP_rikken_seiyukai_victory }
 		x = -1
 		y = 1
 		relative_position_id = JAP_agricultural_protectionism
@@ -22680,7 +22357,6 @@ focus_tree = {
 	focus = {
 		id = JAP_uplift_labor_unions
 		icon = GFX_focus_generic_social_democracy
-		#mutually_exclusive = { focus = JAP_mitsumasa_yonai_focus }
 		x = 0
 		y = 1
 		relative_position_id = JAP_abe_isoo_focus
@@ -22859,7 +22535,6 @@ focus_tree = {
 	focus = {
 		id = JAP_form_the_ldp
 		icon = GFX_focus_JAP_form_the_ldp
-		#mutually_exclusive = { focus = JAP_mitsumasa_yonai_focus }
 		x = 0
 		y = 1
 		relative_position_id = JAP_ichiro_hatoyama_focus
@@ -22979,7 +22654,6 @@ focus_tree = {
 	focus = {
 		id = JAP_draft_the_showa_constitution
 		icon = GFX_focus_JAP_draft_the_showa_constitution
-		#mutually_exclusive = { focus = JAP_mitsumasa_yonai_focus }
 		x = 4
 		y = 1
 		relative_position_id = JAP_machida_chuuji_focus
@@ -23025,7 +22699,6 @@ focus_tree = {
 	focus = {
 		id = JAP_limit_the_emperors_power
 		icon = GFX_focus_NOR_restore_public_trust_in_the_storting
-		#mutually_exclusive = { focus = JAP_mitsumasa_yonai_focus }
 		x = -1
 		y = 1
 		relative_position_id = JAP_draft_the_showa_constitution
@@ -23073,7 +22746,6 @@ focus_tree = {
 	focus = {
 		id = JAP_ensure_civil_liberties
 		icon = GFX_focus_ARG_defense_and_democracy
-		#mutually_exclusive = { focus = JAP_mitsumasa_yonai_focus }
 		x = 1
 		y = 1
 		relative_position_id = JAP_draft_the_showa_constitution
@@ -23121,7 +22793,6 @@ focus_tree = {
 	focus = {
 		id = JAP_crush_the_internal_factions
 		icon = GFX_focus_JAP_crush_the_internal_factions
-		#mutually_exclusive = { focus = JAP_mitsumasa_yonai_focus }
 		x = -1
 		y = 1
 		relative_position_id = JAP_ensure_civil_liberties
@@ -23162,7 +22833,6 @@ focus_tree = {
 	focus = {
 		id = JAP_democratic_war_with_manchukuo
 		icon = GFX_focus_generic_attack_manchukuo
-		#mutually_exclusive = { focus = JAP_mitsumasa_yonai_focus }
 		x = -3
 		y = 1
 		relative_position_id = JAP_crush_the_internal_factions
@@ -23236,7 +22906,6 @@ focus_tree = {
 	focus = {
 		id = JAP_democratic_war_with_china
 		icon = GFX_focus_attack_china
-		#mutually_exclusive = { focus = JAP_mitsumasa_yonai_focus }
 		x = -6
 		y = 1
 		relative_position_id = JAP_crush_the_internal_factions
@@ -23405,7 +23074,6 @@ focus_tree = {
 	focus = {
 		id = JAP_closer_ties_with_the_usa
 		icon = GFX_focus_generic_befriend_usa
-		#mutually_exclusive = { focus = JAP_mitsumasa_yonai_focus }
 		x = 0
 		y = 1
 		relative_position_id = JAP_democratic_war_with_china
@@ -23453,7 +23121,6 @@ focus_tree = {
 	focus = {
 		id = JAP_ally_the_philippines
 		icon = GFX_focus_generic_befriend_philippines
-		#mutually_exclusive = { focus = JAP_mitsumasa_yonai_focus }
 		x = 0
 		y = 2
 		relative_position_id = JAP_closer_ties_with_the_usa
@@ -23498,12 +23165,6 @@ focus_tree = {
 					random_days = 2
 				}	
 			}
-			#custom_effect_tooltip = if_they_accept_tt
-			#effect_tooltip = {
-			#	ROOT = {
-			#		add_to_faction = PHI
-			#	}
-			#}
 			
 		}
 	}
@@ -23511,7 +23172,6 @@ focus_tree = {
 	focus = {
 		id = JAP_strike_the_soviets
 		icon = GFX_focus_attack_soviet
-		#mutually_exclusive = { focus = JAP_mitsumasa_yonai_focus }
 		x = -1
 		y = 2
 		relative_position_id = JAP_democratic_war_with_china
@@ -23573,7 +23233,6 @@ focus_tree = {
 	focus = {
 		id = JAP_free_colonized_asian_countries
 		icon = GFX_focus_JAP_free_colonised_asian_countries
-		#mutually_exclusive = { focus = JAP_mitsumasa_yonai_focus }
 		x = -2
 		y = 1
 		relative_position_id = JAP_democratic_war_with_china
@@ -23610,7 +23269,6 @@ focus_tree = {
 	focus = {
 		id = JAP_fund_resistance_groups_in_asia
 		icon = GFX_focus_GER_support_the_proletarian_uprising
-		#mutually_exclusive = { focus = JAP_mitsumasa_yonai_focus }
 		x = 0
 		y = 2
 		relative_position_id = JAP_free_colonized_asian_countries
@@ -23671,7 +23329,6 @@ focus_tree = {
 			is_subject = no
 			ENG = {
 				has_government = democratic
-				#is_faction_leader = yes
 			}
 			NOT = { has_war_with = ENG }
 		}
@@ -23724,7 +23381,6 @@ focus_tree = {
 		id = JAP_guardian_of_the_pacific
 		icon = GFX_focus_usa_focus_on_asia
 		prerequisite = { focus = JAP_sea_rekindle_the_old_alliance }
-		#mutually_exclusive = { focus = JAP_create_greater_east_asian_treaty_organization }
 		x = 0
 		y = 2
 		relative_position_id = JAP_sea_rekindle_the_old_alliance
@@ -23823,7 +23479,6 @@ focus_tree = {
 	focus = {
 		id = JAP_form_greater_east_asian_customs_union
 		icon = GFX_focus_GER_customs_union
-		#mutually_exclusive = { focus = JAP_mitsumasa_yonai_focus }
 		x = -1
 		y = 1
 		relative_position_id = JAP_create_greater_east_asian_treaty_organization
@@ -23871,7 +23526,7 @@ focus_tree = {
 					limit = { 
 						is_ally_with = ROOT 
 					}
-					set_country_flag = JAP_trade_agreement_event_flag #This flag prevents countries that receive the event below from showing up in the Decision
+					set_country_flag = JAP_trade_agreement_event_flag
 					country_event = {
 						id = SEA_japan_foreign_policy.97
 						hours = 6
@@ -23892,7 +23547,6 @@ focus_tree = {
 	focus = {
 		id = JAP_form_greater_east_asian_currency_union
 		icon = GFX_focus_generic_monetary_union
-		#mutually_exclusive = { focus = JAP_mitsumasa_yonai_focus }
 		x = 1
 		y = 1
 		relative_position_id = JAP_create_greater_east_asian_treaty_organization
@@ -23944,7 +23598,6 @@ focus_tree = {
 	focus = {
 		id = JAP_an_integrated_union
 		icon = GFX_focus_JAP_an_integrated_union
-		#mutually_exclusive = { focus = JAP_mitsumasa_yonai_focus }
 		x = -1
 		y = 1
 		relative_position_id = JAP_form_greater_east_asian_currency_union
@@ -24003,7 +23656,7 @@ focus_tree = {
 						is_in_faction_with = ROOT 
 						has_idea = JAP_pacific_customs_union_member
 					}
-					set_country_flag = JAP_has_sent_invitation_for_integration_once_already_flag #So that this/these countries don't show up in the Integrated Economies Decisions aswell
+					set_country_flag = JAP_has_sent_invitation_for_integration_once_already_flag
 					country_event = {
 						id = SEA_japan_foreign_policy.103
 						hours = 6
@@ -24025,7 +23678,6 @@ focus_tree = {
 	focus = {
 		id = JAP_greater_east_asian_federation
 		icon = GFX_focus_JAP_the_greater_east_asian_federation
-		#mutually_exclusive = { focus = JAP_mitsumasa_yonai_focus }
 		x = 1
 		y = 1
 		relative_position_id = JAP_an_integrated_union
@@ -24078,7 +23730,6 @@ focus_tree = {
 	focus = {
 		id = JAP_democratic_womens_suffrage
 		icon = GFX_focus_AUS_womens_education_initiative
-		#mutually_exclusive = { focus = JAP_mitsumasa_yonai_focus }
 		x = 0
 		y = 1
 		relative_position_id = JAP_crush_the_internal_factions
@@ -24126,7 +23777,6 @@ focus_tree = {
 	focus = {
 		id = JAP_launch_the_income_doubling_plan
 		icon = GFX_focus_JAP_launch_the_income_doubling_plan
-		#mutually_exclusive = { focus = JAP_mitsumasa_yonai_focus }
 		x = 5
 		y = 1
 		relative_position_id = JAP_crush_the_internal_factions
@@ -24175,7 +23825,6 @@ focus_tree = {
 	focus = {
 		id = JAP_reform_the_education_system
 		icon = GFX_focus_generic_university_2
-		#mutually_exclusive = { focus = JAP_mitsumasa_yonai_focus }
 		x = -3
 		y = 1
 		relative_position_id = JAP_launch_the_income_doubling_plan
@@ -24208,10 +23857,7 @@ focus_tree = {
 
 			add_to_variable = { JAP_industry_research_speed_factor = 0.1 tooltip = research_speed_factor_tt }
 
-			#custom_effect_tooltip = generic_skip_one_line_tt
 
-			#custom_effect_tooltip = available_industrial_concern
-			#show_ideas_tooltip = doumei_tsushin
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -24226,7 +23872,6 @@ focus_tree = {
 	focus = {
 		id = JAP_democratic_women_in_the_workforce
 		icon = GFX_focus_ARG_women_in_industry
-		#mutually_exclusive = { focus = JAP_mitsumasa_yonai_focus }
 		x = -2
 		y = 1
 		relative_position_id = JAP_reform_the_education_system
@@ -24270,7 +23915,6 @@ focus_tree = {
 	focus = {
 		id = JAP_taiheyo_belt
 		icon = GFX_focus_JAP_taiheiyo_belt
-		#mutually_exclusive = { focus = JAP_mitsumasa_yonai_focus }
 		x = -1
 		y = 1
 		relative_position_id = JAP_launch_the_income_doubling_plan
@@ -24284,19 +23928,19 @@ focus_tree = {
 		}
 
 		available = {
-			282 = { #Kanto (Tokyo)
+			282 = {
 				is_fully_controlled_by = ROOT
 			}
-			532 = { #Tokai
+			532 = {
 				is_fully_controlled_by = ROOT
 			}
-			531 = { #Kansai (Kyoto)
+			531 = {
 				is_fully_controlled_by = ROOT				
 			}
-			529 = { #Sanyo (Hiroshima)
+			529 = {
 				is_fully_controlled_by = ROOT				
 			}
-			528 = { #Hokubu Kyushu (Fukuoka)
+			528 = {
 				is_fully_controlled_by = ROOT				
 			}
 		}
@@ -24322,7 +23966,6 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			#Kanto (Tokyo)
 			IF = {
 				limit = {
 					282 = { 
@@ -24346,7 +23989,6 @@ focus_tree = {
 				}
 			}
 
-			#Tokai
 			IF = {
 				limit = {
 					532 = { 
@@ -24370,7 +24012,6 @@ focus_tree = {
 				}
 			}
 
-			#Kansai (Kyoto)
 			IF = {
 				limit = {
 					531 = { 
@@ -24394,7 +24035,6 @@ focus_tree = {
 				}
 			}
 
-			#Sanyo (Hiroshima)
 			IF = {
 				limit = {
 					529 = { 
@@ -24418,7 +24058,6 @@ focus_tree = {
 				}
 			}
 
-			#Hokubu Kyushu (Fukuoka)
 			IF = {
 				limit = {
 					528 = { 
@@ -24454,7 +24093,6 @@ focus_tree = {
 	focus = {
 		id = JAP_shinkansen
 		icon = GFX_focus_JAP_shinkansen
-		#mutually_exclusive = { focus = JAP_mitsumasa_yonai_focus }
 		x = 1
 		y = 1
 		relative_position_id = JAP_launch_the_income_doubling_plan
@@ -24504,7 +24142,6 @@ focus_tree = {
 	focus = {
 		id = JAP_pursue_international_trade
 		icon = GFX_goal_generic_positive_trade_relations
-		#mutually_exclusive = { focus = JAP_mitsumasa_yonai_focus }
 		x = 3
 		y = 1
 		relative_position_id = JAP_launch_the_income_doubling_plan
@@ -24543,7 +24180,6 @@ focus_tree = {
 	focus = {
 		id = JAP_seek_foreign_investments
 		icon = GFX_focus_generic_currency_reforms
-		#mutually_exclusive = { focus = JAP_mitsumasa_yonai_focus }
 		x = 1
 		y = 1
 		relative_position_id = JAP_pursue_international_trade
@@ -24580,7 +24216,6 @@ focus_tree = {
 	focus = {
 		id = JAP_invest_in_foreign_industries
 		icon = GFX_focus_GER_factories_for_resources
-		#mutually_exclusive = { focus = JAP_mitsumasa_yonai_focus }
 		x = -1
 		y = 1
 		relative_position_id = JAP_pursue_international_trade
@@ -24617,7 +24252,6 @@ focus_tree = {
 	focus = {
 		id = JAP_democratic_foreign_exchange_allocation_policy
 		icon = GFX_focus_JAP_foreign_exchange_allocation_policy
-		#mutually_exclusive = { focus = JAP_mitsumasa_yonai_focus }
 		x = 1
 		y = 1
 		relative_position_id = JAP_invest_in_foreign_industries
@@ -24657,7 +24291,6 @@ focus_tree = {
 	focus = {
 		id = JAP_democratic_research_slot
 		icon = GFX_focus_research
-		#mutually_exclusive = { focus = JAP_mitsumasa_yonai_focus }
 		x = -1
 		y = 1
 		relative_position_id = JAP_taiheyo_belt
@@ -24706,7 +24339,6 @@ focus_tree = {
 	focus = {
 		id = JAP_offshore_coal
 		icon = GFX_focus_JAP_expand_coal_islands
-		#mutually_exclusive = { focus = JAP_mitsumasa_yonai_focus }
 		x = 1
 		y = 1
 		relative_position_id = JAP_taiheyo_belt
@@ -24926,7 +24558,6 @@ focus_tree = {
 	focus = {
 		id = JAP_lifetime_employment
 		icon = GFX_focus_generic_full_employment
-		#mutually_exclusive = {  }
 		x = -1
 		y = 1
 		relative_position_id = JAP_split_uo_zaibatsu_monopolies
@@ -24965,7 +24596,6 @@ focus_tree = {
 	focus = {
 		id = JAP_modernize_agriculture
 		icon = GFX_focus_generic_modernize_agriculture_2
-		#mutually_exclusive = {  }
 		x = 1
 		y = 1
 		relative_position_id = JAP_split_uo_zaibatsu_monopolies
@@ -25019,7 +24649,6 @@ focus_tree = {
 	focus = {
 		id = JAP_civilian_nuclear_reactor_investments
 		icon = GFX_focus_generic_nuclear_development
-		#mutually_exclusive = {  }
 		x = -1
 		y = 1
 		relative_position_id = JAP_modernize_agriculture
@@ -25084,9 +24713,6 @@ focus_tree = {
 
 
 
-	###############################
-	######### SEA INDUSTRY ########
-	###############################
 
 	focus = {
 		id = JAP_ministry_of_commerce_and_industry
@@ -25770,9 +25396,6 @@ focus_tree = {
 		id = JAP_fund_the_riken_institute
 		icon = GFX_focus_research
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_approach_yasuda focus = JAP_approach_mitsui focus = JAP_approach_sumitomo focus = JAP_approach_mitsubishi }
 		relative_position_id = JAP_approach_mitsubishi
@@ -25826,18 +25449,17 @@ focus_tree = {
 				}
 				IF = {
 					limit = {
-						282 = { # Saitama/Kanto
+						282 = {
 							is_fully_controlled_by = ROOT
 							can_construct_building = nuclear_facility
 						}
 					}
 					282 = {
-						# RIKEN Institute
 						add_building_construction = {
 							type = nuclear_facility
 							level = 1
 							instant_build = yes
-							province = 1097 # Saitama
+							province = 1097
 						}
 					}
 					custom_effect_tooltip = generic_skip_one_line_tt
@@ -25874,9 +25496,6 @@ focus_tree = {
 		id = JAP_build_the_nishotaki_and_miyanaka_dams
 		icon = GFX_focus_generic_hydroelectric_energy
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_fund_the_riken_institute }
 		relative_position_id = JAP_fund_the_riken_institute
@@ -25933,9 +25552,6 @@ focus_tree = {
 		id = JAP_establish_synthetic_fuel_joint_venture
 		icon = GFX_goal_generic_oil_refinery
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_fund_the_riken_institute }
 		relative_position_id = JAP_fund_the_riken_institute
@@ -26030,7 +25646,7 @@ focus_tree = {
 				}
 
 				if = {
-					limit = {  #Don't display this tooltip if the focus has been completed
+					limit = {
 						NOT = { has_completed_focus = JAP_establish_synthetic_fuel_joint_venture }
 					}
 					custom_effect_tooltip = generic_skip_one_line_tt
@@ -26129,9 +25745,6 @@ focus_tree = {
 		id = JAP_establish_nippon_hassoden
 		icon = GFX_focus_generic_electrification
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_fund_the_riken_institute }
 		relative_position_id = JAP_fund_the_riken_institute
@@ -26171,9 +25784,6 @@ focus_tree = {
 		id = JAP_new_industrial_city_development_policy
 		icon = GFX_focus_generic_modernize_industry
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_establish_nippon_hassoden focus = JAP_establish_synthetic_fuel_joint_venture focus = JAP_build_the_nishotaki_and_miyanaka_dams }
 		relative_position_id = JAP_establish_synthetic_fuel_joint_venture
@@ -26232,9 +25842,6 @@ focus_tree = {
 		id = JAP_ship_management_committee
 		icon = GFX_focus_generic_merchant_fleet
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_new_industrial_city_development_policy }
 
@@ -26279,9 +25886,6 @@ focus_tree = {
 		id = JAP_establish_housing_corporation
 		icon = GFX_focus_generic_low_cost_housing
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_establish_nippon_hassoden focus = JAP_establish_synthetic_fuel_joint_venture focus = JAP_build_the_nishotaki_and_miyanaka_dams }
 		relative_position_id = JAP_establish_synthetic_fuel_joint_venture
@@ -26351,9 +25955,6 @@ focus_tree = {
 		id = JAP_danganressha
 		icon = GFX_focus_JAP_danganressha
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_establish_housing_corporation }
 
@@ -26407,9 +26008,6 @@ focus_tree = {
 		id = JAP_central_agricultural_association
 		icon = GFX_focus_JAP_central_agricultural_association
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_establish_housing_corporation  }
 		relative_position_id = JAP_establish_housing_corporation
@@ -26467,9 +26065,6 @@ focus_tree = {
 		id = JAP_the_five_great_cities
 		icon = GFX_focus_JAP_the_five_great_cities
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_new_industrial_city_development_policy }
 		relative_position_id = JAP_new_industrial_city_development_policy
@@ -26483,13 +26078,13 @@ focus_tree = {
 		}
 
 		available = {
-			282 = { #Kanto (Tokyo)
+			282 = {
 				is_fully_controlled_by = ROOT
 			}
-			532 = { #Tokai
+			532 = {
 				is_fully_controlled_by = ROOT
 			}
-			531 = { #Kansai (Kyoto)
+			531 = {
 				is_fully_controlled_by = ROOT				
 			}
 		}
@@ -26506,7 +26101,6 @@ focus_tree = {
 
 		completion_reward = {
 
-			#Kanto (Tokyo)
 			if = {
 				limit = {
 					282 = { 
@@ -26530,7 +26124,6 @@ focus_tree = {
 				}
 			}
 
-			#Tokai
 			if = {
 				limit = {
 					532 = { 
@@ -26554,7 +26147,6 @@ focus_tree = {
 				}
 			}
 
-			#Kansai (Kyoto)
 			if = {
 				limit = {
 					531 = { 
@@ -26596,9 +26188,6 @@ focus_tree = {
 		id = JAP_resource_security
 		icon = GFX_focus_JAP_resource_security
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_the_five_great_cities }
 		prerequisite = { focus = JAP_central_agricultural_association }
@@ -26722,9 +26311,6 @@ focus_tree = {
 		id = JAP_ministry_of_colonial_affairs
 		icon = GFX_focus_JAP_ministry_of_colonial_affairs
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_ministry_of_commerce_and_industry }
 
@@ -26904,9 +26490,6 @@ focus_tree = {
 		id = JAP_manchuria_five_year_plan
 		icon = GFX_focus_jap_manchurian_project
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_ministry_of_colonial_affairs }
 
@@ -26960,7 +26543,7 @@ focus_tree = {
 
 			IF = {
 				limit = {
-					716 = { #Liaotung
+					716 = {
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 						infrastructure < 5
 					}
@@ -27026,9 +26609,6 @@ focus_tree = {
 		id = JAP_establish_manchuria_airplane_manufacturing_company
 		icon = GFX_focus_JAP_manchuria_airplane_manufacturing_company
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_manchuria_five_year_plan }
 
@@ -27120,9 +26700,6 @@ focus_tree = {
 		id = JAP_eastern_road_and_steel_expansion
 		icon = GFX_focus_generic_road_investment
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_manchuria_five_year_plan }
 
@@ -27184,7 +26761,7 @@ focus_tree = {
 
 			IF = {
 				limit = {
-					530 = { #Kirin
+					530 = {
 						infrastructure < 5
 					}
 				}
@@ -27208,13 +26785,13 @@ focus_tree = {
 							controls_state = 715
 							controls_state = 716
 						}
-						build_railway = { #in Kirin
+						build_railway = {
 							path = { 4572 }
 						}
-						build_railway = { #in Liaoning
+						build_railway = {
 							path = { 916 4642 4572 }
 						}
-						build_railway = { #in Liaotung
+						build_railway = {
 							path = { 11808 }
 						}
 					}
@@ -27223,10 +26800,10 @@ focus_tree = {
 							controls_state = 328
 							controls_state = 717
 						}
-						build_railway = { #in Kirin
+						build_railway = {
 							path = { 4572 7663 9913 9928 }
 						}
-						build_railway = { #in Sungkiang
+						build_railway = {
 							path = { 11893 6964 9897 }
 						}
 					}
@@ -27234,10 +26811,10 @@ focus_tree = {
 						limit = {
 							controls_state = 716
 						}
-						build_railway = { #Mukden-Korean border
+						build_railway = {
 							path = { 11771 9885 3895 3839 3970 6981 }
 						}
-						build_railway = { #Mukden - Dalian
+						build_railway = {
 							path = { 11771 987 9781 11764 964 3783 6851 1150 }
 						}
 					}
@@ -27246,7 +26823,7 @@ focus_tree = {
 							controls_state = 716
 							controls_state = 610
 						}
-						build_railway = { #Mukden - Chinese border
+						build_railway = {
 							path = { 11771 6951 11815 9835 6837 11886 3900 }
 						}
 					}
@@ -27257,10 +26834,10 @@ focus_tree = {
 					limit = {
 						controls_state = 716
 					}
-					build_railway = { #Mukden-Korean border
+					build_railway = {
 						path = { 11771 9885 3895 3839 3970 6981	}
 					}
-					build_railway = { #Mukden - Dalian
+					build_railway = {
 						path = { 11771 987 9781 11764 964 3783 6851 1150 }
 					}
 				}
@@ -27269,7 +26846,7 @@ focus_tree = {
 						controls_state = 716
 						controls_state = 610
 					}
-					build_railway = { #Mukden - Chinese border
+					build_railway = {
 						path = { 11771 6951 11815 9835 6837 11886 3900 }
 					}
 				}
@@ -27288,9 +26865,6 @@ focus_tree = {
 		id = JAP_sea_promote_japanese_settlement
 		icon = GFX_focus_JAP_promote_japanese_settlement
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_eastern_road_and_steel_expansion focus = JAP_establish_manchuria_airplane_manufacturing_company }
 
@@ -27340,9 +26914,6 @@ focus_tree = {
 		id = JAP_construct_the_sui_ho_dam
 		icon = GFX_focus_IRQ_construct_the_kut_barrage
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_eastern_road_and_steel_expansion focus = JAP_establish_manchuria_airplane_manufacturing_company }
 
@@ -27408,9 +26979,6 @@ focus_tree = {
 		id = JAP_the_shuilikeng_power_plant
 		icon = GFX_focus_JAP_the_shuilikeng_power_plant
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_ministry_of_colonial_affairs }
 
@@ -27478,9 +27046,6 @@ focus_tree = {
 		id = JAP_improve_agricultural_output
 		icon = GFX_focus_generic_modernizing_agriculture
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_the_shuilikeng_power_plant }
 
@@ -27530,9 +27095,6 @@ focus_tree = {
 		id = JAP_develop_the_south_seas_mandate
 		icon = GFX_focus_JAP_develop_the_south_seas_mandate
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_ministry_of_colonial_affairs }
 
@@ -27625,12 +27187,12 @@ focus_tree = {
 		available = {
 			count_triggers = {
 				amount = 4
-				controls_state = 645 #Iwo Jima
-				controls_state = 648 #Marcus Island
-				controls_state = 646 #Saipan
-				controls_state = 684 #Caroline Islands
-				controls_state = 647 #Palau
-				controls_state = 633 #Marshall Islands
+				controls_state = 645
+				controls_state = 648
+				controls_state = 646
+				controls_state = 684
+				controls_state = 647
+				controls_state = 633
 			}	
 		}
 
@@ -27649,12 +27211,12 @@ focus_tree = {
 			every_controlled_state = {
 				limit = {
 					OR = {
-						state = 645 #Iwo Jima
-						state = 648 #Marcus Island
-						state = 646 #Saipan
-						state = 684 #Caroline Islands
-						state = 647 #Palau
-						state = 633 #Marshall Islands
+						state = 645
+						state = 648
+						state = 646
+						state = 684
+						state = 647
+						state = 633
 					}
 					is_fully_controlled_by = ROOT
 				}
@@ -27675,9 +27237,6 @@ focus_tree = {
 		id = JAP_upgrade_the_oriental_development_company
 		icon = GFX_focus_JAP_upgrade_the_oriental_development_company
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_improve_agricultural_output }
 		prerequisite = { focus = JAP_increase_crop_yields }
@@ -27733,9 +27292,6 @@ focus_tree = {
 		id = JAP_build_up_korean_industries
 		icon = GFX_focus_JAP_build_up_korean_industries
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_ministry_of_colonial_affairs }
 
@@ -27839,9 +27395,6 @@ focus_tree = {
 		id = JAP_increase_agricultural_export
 		icon = GFX_focus_generic_agricultural_subsidies
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_build_up_korean_industries }
 
@@ -27915,9 +27468,6 @@ focus_tree = {
 		id = JAP_hydroelectric_dams_in_korea
 		icon = GFX_focus_focus_generic_build_dam
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_build_up_korean_industries }
 
@@ -27980,9 +27530,6 @@ focus_tree = {
 		id = JAP_prepare_for_peninsular_warfare
 		icon = GFX_focus_JAP_prepare_for_peninsular_war
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_build_up_korean_industries }
 
@@ -28138,9 +27685,6 @@ focus_tree = {
 		id = JAP_establish_the_japanese_korean_army
 		icon = GFX_focus_JAP_korean_volunteer_army
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_prepare_for_peninsular_warfare }
 
@@ -28219,9 +27763,6 @@ focus_tree = {
 
 
 
-	###############################
-	######### SEA MILITARY ########
-	###############################
 
 
 	focus = {
@@ -28235,7 +27776,7 @@ focus_tree = {
 		x = 23
 		y = 0
 
-		cost = 3 #This times perfect with the Kodoha Coup event
+		cost = 3
 
 		ai_will_do = {
 			factor = 3
@@ -28269,9 +27810,6 @@ focus_tree = {
 		id = JAP_expand_kawagoe_army_arsenal
 		icon = GFX_focus_generic_reorient_production
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_the_imperial_defense_plan }
 
@@ -28416,9 +27954,6 @@ focus_tree = {
 		id = JAP_rethink_armor_doctrine
 		icon = GFX_focus_generic_tank_assault
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_reform_the_army }
 
@@ -28674,9 +28209,6 @@ focus_tree = {
 		id = JAP_the_ultimate_tank
 		icon = GFX_focus_JAP_the_ultimate_tank
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_domestic_tank_modernization_program focus = JAP_foreign_tank_modernization_cooperation }
 
@@ -28739,7 +28271,6 @@ focus_tree = {
 					remove_idea = JAP_japanese_armor_doctrine
 					add_idea = JAP_japanese_armor_doctrine_3
 				}	
-				#custom_effect_tooltip = generic_skip_one_line_tt
 			}
 			ELSE_IF = {
 				limit = {
@@ -28749,7 +28280,6 @@ focus_tree = {
 					remove_idea = JAP_japanese_armor_doctrine_2
 					add_idea = JAP_japanese_armor_doctrine_3
 				}	
-				#custom_effect_tooltip = generic_skip_one_line_tt
 			}
 
 			JAP_add_or_modify_imperial_army = yes
@@ -28767,7 +28297,6 @@ focus_tree = {
 						has_tech = super_heavy_tank_chassis
 					}
 					custom_effect_tooltip = generic_skip_one_line_tt
-					#O-I
 					create_equipment_variant = {
 						name = "O-I"
 						type = super_heavy_tank_chassis_1
@@ -28793,7 +28322,6 @@ focus_tree = {
 				ELSE = {
 					custom_effect_tooltip = JAP_the_ultimate_tank_tt
 					effect_tooltip = {
-						#O-I
 						create_equipment_variant = {
 							name = "O-I"
 							type = super_heavy_tank_chassis_1
@@ -28903,9 +28431,6 @@ focus_tree = {
 		id = JAP_adopt_new_assault_doctrine
 		icon = GFX_focus_generic_full_social_mobilization
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_rely_on_supremacy_of_the_will }
 
@@ -28989,9 +28514,6 @@ focus_tree = {
 		id = JAP_develop_lethal_infantry_equipment
 		icon = GFX_goal_generic_small_arms
 		
-		#mutually_exclusive = {
-		#	focus = JAP_develop_sophisticated_artillery_equipment
-		#}
 
 		prerequisite = { focus = JAP_adopt_new_assault_doctrine }
 
@@ -29006,7 +28528,6 @@ focus_tree = {
 		}
 
 		available = {
-			#JAP_army_faction_is_at_least_influential = yes
 		}
 
 		bypass = {
@@ -29077,9 +28598,6 @@ focus_tree = {
 		id = JAP_develop_sophisticated_artillery_equipment
 		icon = GFX_focus_SWE_let_fly_all_guns
 		
-		#mutually_exclusive = {
-		#	focus = JAP_develop_lethal_infantry_equipment
-		#}
 
 		prerequisite = { focus = JAP_adopt_new_assault_doctrine }
 
@@ -29094,7 +28612,6 @@ focus_tree = {
 		}
 
 		available = {
-			#JAP_army_faction_is_at_least_influential = yes
 		}
 
 		bypass = {
@@ -29165,9 +28682,6 @@ focus_tree = {
 		id = JAP_expand_the_irago_proving_ground
 		icon = GFX_focus_JAP_expand_the_irago_proving_ground
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_develop_sophisticated_artillery_equipment }
 		prerequisite = { focus = JAP_develop_lethal_infantry_equipment }
@@ -29231,9 +28745,6 @@ focus_tree = {
 		id = JAP_prepare_the_northern_front
 		icon = GFX_goal_generic_position_armies
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_reform_the_army focus = JAP_rely_on_supremacy_of_the_will }
 
@@ -29293,7 +28804,7 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
-				build_railway = { #From Southern to Northern Supply Hub in Heilungkiang
+				build_railway = {
 					path = { 4506 1588 12618 7832 }
 				}
 			}
@@ -29310,9 +28821,6 @@ focus_tree = {
 		id = JAP_enact_the_national_conscription_law
 		icon = GFX_focus_generic_limited_social_mobilization
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_reform_the_army focus = JAP_rely_on_supremacy_of_the_will }
 
@@ -29359,9 +28867,6 @@ focus_tree = {
 		id = JAP_instill_the_spirit_of_bushido
 		icon = GFX_focus_generic_japanese_imperial_glory
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_prepare_the_northern_front focus = JAP_enact_the_national_conscription_law }
 
@@ -29413,9 +28918,6 @@ focus_tree = {
 		id = JAP_sea_mountaineers
 		icon = GFX_focus_generic_mountain_troops
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_instill_the_spirit_of_bushido }
 
@@ -29499,9 +29001,6 @@ focus_tree = {
 		id = JAP_jungle_adaptation
 		icon = GFX_focus_generic_jungle_troops
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_instill_the_spirit_of_bushido }
 
@@ -29588,9 +29087,6 @@ focus_tree = {
 		id = JAP_army_weapons_administration_headquarters
 		icon = GFX_focus_JAP_army_weapons_administration_hq
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_instill_the_spirit_of_bushido }
 
@@ -29606,7 +29102,6 @@ focus_tree = {
 
 		available = {
 			has_war_with_major = yes
-			#JAP_army_faction_is_at_least_influential = yes
 		}
 
 		bypass = {
@@ -29650,18 +29145,17 @@ focus_tree = {
 				}
 				IF = {
 					limit = {
-						534 = { # Nagano/Koshintetsu 
+						534 = {
 							is_fully_controlled_by = ROOT
 							can_construct_building = land_facility
 						}
 					}
 					534 = {
-						# Underground Weapons Testing Arsenal 
 						add_building_construction = {
 							type = land_facility
 							level = 1
 							instant_build = yes
-							province = 10015 # Nagano
+							province = 10015
 						}
 					}
 					custom_effect_tooltip = generic_skip_one_line_tt
@@ -29690,9 +29184,6 @@ focus_tree = {
 		id = JAP_divert_naval_guns_to_the_army
 		icon = GFX_focus_generic_railway_gun
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_army_weapons_administration_headquarters }
 
@@ -29851,9 +29342,6 @@ focus_tree = {
 		id = JAP_ni_go_nuclear_project
 		icon = GFX_focus_JAP_ni_go_nuclear_project
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_strenghten_the_supply_lines focus = JAP_pivot_towards_defensive_measures }
 
@@ -29923,9 +29411,6 @@ focus_tree = {
 		id = JAP_establish_showa_aircraft_idnsutry
 		icon = GFX_focus_generic_aircraft_production
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_the_imperial_defense_plan }
 
@@ -30011,9 +29496,6 @@ focus_tree = {
 		id = JAP_develop_new_fighters
 		icon = GFX_focus_jap_zero
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_establish_showa_aircraft_idnsutry }
 
@@ -30117,9 +29599,6 @@ focus_tree = {
 		id = JAP_7075_aluminium_alloy
 		icon = GFX_focus_generic_air_research_boost
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_develop_new_fighters }
 
@@ -30192,10 +29671,10 @@ focus_tree = {
 					name = JAP_7075_aluminium_alloy
 					bonus = {
 						small_plane_airframe = {
-							air_agility = 0.1 #WARNING! If you change this value, you need to update JAP_7075_aluminium_alloy_tt
+							air_agility = 0.1
 						}
 						cv_small_plane_airframe = {
-							air_agility = 0.1 #WARNING! If you change this value, you need to update JAP_7075_aluminium_alloy_tt
+							air_agility = 0.1
 						}
 					}
 				}
@@ -30209,9 +29688,6 @@ focus_tree = {
 		id = JAP_modern_bombers
 		icon = GFX_goal_generic_air_bomber
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_establish_showa_aircraft_idnsutry }
 
@@ -30278,9 +29754,6 @@ focus_tree = {
 		id = JAP_improve_the_type_91_aerial_torpedo
 		icon = GFX_goal_generic_air_naval_bomber
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_modern_bombers }
 
@@ -30346,9 +29819,6 @@ focus_tree = {
 		id = JAP_escort_efficiency
 		icon = GFX_goal_generic_air_fighter2
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_develop_new_fighters focus = JAP_modern_bombers }
 
@@ -30545,9 +30015,6 @@ focus_tree = {
 		id = JAP_project_z_bomber_project
 		icon = GFX_focus_JAP_z_bomber_project
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_sea_long_operational_range }
 
@@ -30618,7 +30085,7 @@ focus_tree = {
 						NOT = { is_special_project_completed = sp_air_intercontinental_bomber }
 					}
 					add_to_variable = { 
-						JAP_advanced_weapons_sp_air_intercontinental_bomber_speed_factor = 0.25 #This is the focus of this focus, so extra speed
+						JAP_advanced_weapons_sp_air_intercontinental_bomber_speed_factor = 0.25
 						tooltip = sp_air_intercontinental_bomber_speed_factor_tt
 					}
 				}
@@ -30654,9 +30121,6 @@ focus_tree = {
 		id = JAP_adopt_new_air_doctrine
 		icon = GFX_goal_generic_air_doctrine
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_sea_long_operational_range focus = JAP_sea_sturdy_aircraft }
 
@@ -30717,9 +30181,6 @@ focus_tree = {
 		id = JAP_sea_unify_the_air_forces
 		icon = GFX_focus_JAP_unify_the_air_forces
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_adopt_new_air_doctrine }
 
@@ -30811,9 +30272,6 @@ focus_tree = {
 		id = JAP_improved_radio_communications
 		icon = GFX_focus_generic_radio_communication
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_sea_unify_the_air_forces }
 
@@ -30859,9 +30317,6 @@ focus_tree = {
 		id = JAP_combined_arms
 		icon = GFX_focus_generic_tank_air_support
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_improved_radio_communications }
 		prerequisite = { focus = JAP_strenghten_the_supply_lines focus = JAP_pivot_towards_defensive_measures }
@@ -30924,9 +30379,6 @@ focus_tree = {
 		id = JAP_the_divine_wind
 		icon = GFX_focus_JAP_the_divine_wind
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_adopt_new_air_doctrine }
 
@@ -30982,9 +30434,6 @@ focus_tree = {
 		id = JAP_sea_jet_prototypes
 		icon = GFX_focus_JAP_jet_prototypes
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_sea_unify_the_air_forces focus = JAP_the_divine_wind }
 
@@ -31038,9 +30487,6 @@ focus_tree = {
 		id = JAP_rockets_development
 		icon = GFX_focus_rocketry
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_sea_unify_the_air_forces focus = JAP_the_divine_wind }
 
@@ -31106,9 +30552,6 @@ focus_tree = {
 		id = JAP_expand_hiratsuka_navy_arsenal
 		icon = GFX_goal_generic_construct_naval_dockyard
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_the_imperial_defense_plan }
 
@@ -31205,9 +30648,6 @@ focus_tree = {
 		id = JAP_expand_navy_technical_department
 		icon = GFX_focus_JAP_expand_navy_technical_department
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_expand_hiratsuka_navy_arsenal }
 
@@ -31288,9 +30728,6 @@ focus_tree = {
 		id = JAP_prepare_the_southern_front
 		icon = GFX_focus_generic_naval_invasion
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_expand_hiratsuka_navy_arsenal }
 
@@ -31324,7 +30761,7 @@ focus_tree = {
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			524 = { #Taiwan
+			524 = {
 				IF = {
 					limit = {
 						state_is_fully_controlled_by_ROOT_or_subject = yes
@@ -31498,9 +30935,6 @@ focus_tree = {
 		id = JAP_yokosuka_naval_air_technical_arsenal
 		icon = GFX_goal_generic_navy_carrier
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_focus_on_aircraft_carriers }
 
@@ -31566,9 +31000,6 @@ focus_tree = {
 		id = JAP_establish_the_mine_warfare_force
 		icon = GFX_focus_JAP_mine_warfare_force
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_yokosuka_naval_air_technical_arsenal }
 		prerequisite = { focus = JAP_improve_the_type_91_aerial_torpedo }
@@ -31786,9 +31217,6 @@ focus_tree = {
 		id = JAP_sea_bigger_better_yamato
 		icon = GFX_focus_generic_navy_battleship2
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_sea_battleship_initiative }
 
@@ -31829,7 +31257,7 @@ focus_tree = {
 				type = ship_hull_super_heavy_1
 				name_group = JAP_BB_HISTORICAL
 				parent_version = 0
-				allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
+				allow_without_tech = yes
 				modules = {
 					fixed_ship_battery_slot = ship_super_heavy_battery_1
 					fixed_ship_anti_air_slot = ship_anti_air_2
@@ -31876,9 +31304,6 @@ focus_tree = {
 		id = JAP_akizuki_class_destroyers
 		icon = GFX_focus_generic_destroyer
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_focus_on_aircraft_carriers focus = JAP_balanced_naval_approach focus = JAP_sea_battleship_initiative }
 
@@ -31911,7 +31336,7 @@ focus_tree = {
 			create_equipment_variant = {
 				name = "Akizuki Class"
 				name_group = JAP_DD_HISTORICAL
-				allow_without_tech = yes #Makes no difference since focus requires appropriate tech (above), but it improves tooltip
+				allow_without_tech = yes
 				type = ship_hull_light_2
 				parent_version = 0
 				modules = {
@@ -31978,9 +31403,6 @@ focus_tree = {
 		id = JAP_form_the_kido_butai
 		icon = GFX_focus_SMB_blue_water_fleet
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_focus_on_aircraft_carriers focus = JAP_balanced_naval_approach }
 
@@ -32030,9 +31452,6 @@ focus_tree = {
 		id = JAP_sea_heavier_naval_guns
 		icon = GFX_focus_generic_battleship_guns
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_balanced_naval_approach focus = JAP_sea_battleship_initiative }
 
@@ -32086,9 +31505,6 @@ focus_tree = {
 		id = JAP_naval_armaments_program
 		icon = GFX_focus_JAP_naval_armaments_program
 
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_form_the_kido_butai focus = JAP_sea_heavier_naval_guns }
 
@@ -32267,7 +31683,7 @@ focus_tree = {
 					type = ship_hull_super_heavy_1
 					name_group = JAP_BB_HISTORICAL
 					parent_version = 0
-					allow_without_tech = yes #Makes no difference since focus grants appropriate tech (above), but it improves tooltip
+					allow_without_tech = yes
 					modules = {
 						fixed_ship_battery_slot = ship_super_heavy_battery_1
 						fixed_ship_anti_air_slot = ship_anti_air_2
@@ -32286,8 +31702,6 @@ focus_tree = {
 					}
 					design_team = mio:JAP_kure_naval_arsenal_organization
 				}
-				#custom_effect_tooltip = JAP_yamato_tt
-				#hidden_effect = {
 					add_equipment_production = {
 						equipment = {
 							type = ship_hull_super_heavy_1
@@ -32312,7 +31726,6 @@ focus_tree = {
 						amount = 1
 						industrial_manufacturer = mio:JAP_kure_naval_arsenal_organization
 					}
-				#}
 			}
 			ELSE = {
 				create_equipment_variant = {
@@ -32320,7 +31733,7 @@ focus_tree = {
 					type = ship_hull_super_heavy_1
 					name_group = JAP_BB_HISTORICAL
 					parent_version = 0
-					allow_without_tech = yes #Makes no difference since focus grants appropriate tech (above), but it improves tooltip
+					allow_without_tech = yes
 					modules = {
 						fixed_ship_battery_slot = ship_super_heavy_battery_1
 						fixed_ship_anti_air_slot = ship_anti_air_2
@@ -32339,8 +31752,6 @@ focus_tree = {
 					}
 					design_team = mio:JAP_kure_naval_arsenal_organization
 				}
-				#custom_effect_tooltip = JAP_yamato_tt
-				#hidden_effect = {
 					add_equipment_production = {
 						equipment = {
 							type = ship_hull_super_heavy_1
@@ -32389,7 +31800,6 @@ focus_tree = {
 						amount = 1
 						industrial_manufacturer = mio:JAP_kure_naval_arsenal_organization
 					}
-				#}
 			}
 
 		}
@@ -32400,9 +31810,6 @@ focus_tree = {
 		id = JAP_radio_guided_missiles
 		icon = GFX_focus_JAP_radio_guided_missiles
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_naval_armaments_program }
 		prerequisite = { focus = JAP_rockets_development }
@@ -32556,9 +31963,6 @@ focus_tree = {
 		id = JAP_nationalize_suzuka_naval_arsenal
 		icon = GFX_focus_POL_develop_polish_shipbuilding
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_form_the_kido_butai focus = JAP_sea_heavier_naval_guns }
 
@@ -32637,9 +32041,6 @@ focus_tree = {
 		id = JAP_nationalize_fujinagata_shipyards
 		icon = GFX_focus_generic_refit_civilian_ships
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_nationalize_suzuka_naval_arsenal }
 
@@ -32679,9 +32080,6 @@ focus_tree = {
 		id = JAP_secure_the_sea_lanes
 		icon = GFX_goal_generic_navy_anti_submarine
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_naval_armaments_program focus = JAP_assure_superior_naval_quality focus = JAP_seek_strength_in_numbers focus = JAP_nationalize_suzuka_naval_arsenal }
 
@@ -32721,9 +32119,6 @@ focus_tree = {
 		id = JAP_fix_flawed_naval_designs
 		icon = GFX_focus_generic_navy_research_bonus
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_naval_armaments_program focus = JAP_assure_superior_naval_quality focus = JAP_seek_strength_in_numbers focus = JAP_nationalize_suzuka_naval_arsenal }
 
@@ -32761,9 +32156,6 @@ focus_tree = {
 		id = JAP_f_go_nuclear_project
 		icon = GFX_focus_JAP_f_go_nuclear_project
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_fix_flawed_naval_designs }
 		prerequisite = { focus = JAP_secure_the_sea_lanes }
@@ -32840,9 +32232,6 @@ focus_tree = {
 		id = JAP_combined_nuclear_research_efforts
 		icon = GFX_focus_wonderweapons
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_f_go_nuclear_project }
 		prerequisite = { focus = JAP_ni_go_nuclear_project }
@@ -32888,9 +32277,6 @@ focus_tree = {
 		id = JAP_end_the_interservice_rivalry
 		icon = GFX_focus_JAP_end_the_interservice_rivalry
 		
-		#mutually_exclusive = {
-		#	focus = 
-		#}
 
 		prerequisite = { focus = JAP_combined_nuclear_research_efforts }
 

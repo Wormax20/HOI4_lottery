@@ -30,11 +30,9 @@
 	focus = {
 		id = SIA_the_khana_ratsadon
 		icon = GFX_focus_SIA_khana_ratsadon
-		#prerequisite = { focus = }
 		x = 20
 		y = 0
 
-		#mutually_exclusive = { focus =  focus =  }
 		cost = 1
 		ai_will_do = {
 			factor = 10
@@ -51,9 +49,6 @@
 		}
 	}
 
-	############################
-	#####    Civilian Wing     #	
-	############################
 
 		focus = {
 		id = SIA_shuffle_pridi_to_the_minister_of_interior
@@ -62,7 +57,6 @@
 		x = -11
 		y = 1
 		relative_position_id = SIA_the_khana_ratsadon
-		#mutually_exclusive = { focus =  focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -108,19 +102,18 @@
 		completion_reward = {
 			SIA_increase_civilian_approval = yes
 			SIA_decrease_military_approval = yes
-			# Pridi may have left the roster (e.g. exiled by a civil war) - only shuffle him if he is still here.
 			if = {
 				limit = { has_character = SIA_pridi_banomyong }
 				remove_trait = {
-					character = SIA_pridi_banomyong # optional if inside character scope
+					character = SIA_pridi_banomyong
 					trait = JUNO_minister_of_foreign_affairs
-					slot = political_advisor #Only required for updating advisor
+					slot = political_advisor
 				}
 
 				add_trait = {
-					character = SIA_pridi_banomyong # optional if inside character scope
+					character = SIA_pridi_banomyong
 					trait = SIA_minister_of_interior
-					slot = political_advisor #Only required for updating advisor
+					slot = political_advisor
 				}
 			}
 
@@ -136,15 +129,12 @@
 		x = -3
 		y = 1
 		relative_position_id = SIA_shuffle_pridi_to_the_minister_of_interior
-		#mutually_exclusive = { focus =  focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
 
 		completion_reward = {
@@ -180,15 +170,12 @@
 		x = 2
 		y = 0
 		relative_position_id = SIA_civil_nationalism
-		#mutually_exclusive = { focus =  focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
@@ -202,7 +189,7 @@
 			add_tech_bonus = {
 				bonus = 0.5
 				uses = 1
-				category = electronics # optional 
+				category = electronics
 				name = SIA_the_true_heirs_of_1932
 			}
 		}
@@ -216,15 +203,12 @@
 		x = 2
 		y = 0
 		relative_position_id = SIA_the_true_heirs_of_1932
-		#mutually_exclusive = { focus =  focus =  }
 		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
@@ -239,15 +223,12 @@
 		x = 0
 		y = 1
 		relative_position_id = SIA_civil_nationalism
-		#mutually_exclusive = { focus =  focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
 
 		completion_reward = {
@@ -277,15 +258,12 @@
 		x = 2
 		y = 0
 		relative_position_id = SIA_dominate_public_symbols
-		#mutually_exclusive = { focus =  focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
@@ -306,21 +284,17 @@
 	focus = {
 		id = SIA_spread_democratic_sentiment_in_universities
 		icon = GFX_focus_research2
-		#prerequisite = { focus = SIA_civil_service_heroism }
 		prerequisite = { focus = SIA_thammasat_university }
 		prerequisite = { focus = SIA_civil_service_heroism }
 		x = 0
 		y = 2
 		relative_position_id = SIA_thammasat_university
-		#mutually_exclusive = { focus =  focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
@@ -347,15 +321,12 @@
 		x = 0
 		y = 1
 		relative_position_id = SIA_spread_democratic_sentiment_in_universities
-		#mutually_exclusive = { focus =  focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
@@ -373,15 +344,12 @@
 		x = 4
 		y = 1
 		relative_position_id = SIA_shuffle_pridi_to_the_minister_of_interior
-		#mutually_exclusive = { focus =  focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
@@ -442,15 +410,12 @@
 		x = 2
 		y = 0
 		relative_position_id = SIA_sideline_disloyal_officers
-		#mutually_exclusive = { focus =  focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -471,7 +436,6 @@
 		x = 2
 		y = 1
 		relative_position_id = SIA_sideline_disloyal_officers
-		#mutually_exclusive = { focus =  focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -488,8 +452,6 @@
 		bypass = {
 			has_completed_focus = SIA_the_songsuradet_rebellion
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_ARMY_XP }
 
 		completion_reward = {
@@ -526,8 +488,6 @@
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
@@ -539,7 +499,7 @@
 
 			effect_tooltip = {
 				add_corps_commander_role = {
-					character = SIA_adul_aduldejajaras # optional if inside character scope
+					character = SIA_adul_aduldejajaras
 					traits = {  }
 					skill = 2
 					attack_skill = 1
@@ -587,9 +547,6 @@
 	}
 
 
-	############################
-	#####    Military Wing     #	
-	############################
 
 	focus = { 
 		id = SIA_for_the_preservation_of_siamese_independence 
@@ -598,15 +555,12 @@
 		x = 22
 		y = 0
 		relative_position_id = SIA_shuffle_pridi_to_the_minister_of_interior
-		#mutually_exclusive = { focus =  focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
@@ -623,7 +577,7 @@
 						include_locked = yes
 					}
 				}
-				prioritize = { 1076 } #optional: to pick those states first if they fulfill the limit
+				prioritize = { 1076 }
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
@@ -659,8 +613,6 @@
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_STABILITY }
 
 		completion_reward = {
@@ -691,8 +643,6 @@
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 
 		completion_reward = {
@@ -751,8 +701,6 @@
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
@@ -777,8 +725,6 @@
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_ARMY_XP }
 
 		completion_reward = {
@@ -802,15 +748,12 @@
 		y = 1
 		relative_position_id = SIA_the_peoples_day
 		prerequisite = { focus = SIA_the_peoples_day focus = SIA_hold_military_parades }
-		#mutually_exclusive = { focus = SIA_drum_up_irredentism }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
 
 		completion_reward = {
@@ -836,7 +779,6 @@
 		y = 0
 		relative_position_id = SIA_the_king_of_the_white_elephant
 		prerequisite = { focus = SIA_embed_technocrats_in_civilian_institutions focus = SIA_military_academies_indoctrination }
-		#mutually_exclusive = { focus = SIA_the_king_of_the_white_elephant }
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -854,8 +796,6 @@
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 
 		completion_reward = {
@@ -882,15 +822,12 @@
 		y = 0
 		relative_position_id = SIA_drum_up_irredentism
 		prerequisite = { focus =  SIA_military_academies_indoctrination focus = SIA_embed_technocrats_in_civilian_institutions }
-		#mutually_exclusive = { focus = }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -923,15 +860,12 @@
 		y = 1
 		relative_position_id = SIA_the_king_of_the_white_elephant
 		prerequisite = { focus = SIA_drum_up_irredentism }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 
 		completion_reward = {
@@ -949,16 +883,13 @@
 			custom_effect_tooltip = newline_tt
 			unlock_decision_tooltip = {
 				decision = SIA_urge_restraint
-				show_effect_tooltip = yes # default is no
-				show_modifiers = yes # default is no
+				show_effect_tooltip = yes
+				show_modifiers = yes
 			}
 		}
 	}
 
 
-	############################
-	#####    Monarchist    	   #	
-	############################
 
 		focus = {
 		id = SIA_the_midnight_meeting 
@@ -978,7 +909,7 @@
 		bypass_effect = {
 			set_party_name = {
 	  			ideology = fascism
-	  			long_name = SIA_neutrality_party_long #This is the military branch being swapped over
+	  			long_name = SIA_neutrality_party_long
 	  			name = SIA_neutrality_party
 	  		}
 	  		set_party_name = {
@@ -1003,17 +934,6 @@
 		}
 
 
-		#offset = {
-		#	x = -38
-		#	y = 0
-		#	trigger = {
-		#		has_game_rule = {
-		#			rule = obsolete_focus_branches_visibility
-		#			option = HIDE
-		#		}
-		#		has_completed_focus = SIA_to_lay_the_bait
-		#	}
-		#}
 
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1023,7 +943,7 @@
 
 	  		set_party_name = {
 	  			ideology = fascism
-	  			long_name = SIA_neutrality_party_long #This is the military branch being swapped over
+	  			long_name = SIA_neutrality_party_long
 	  			name = SIA_neutrality_party
 	  		}
 
@@ -1069,15 +989,12 @@
 		y = 1
 		relative_position_id = SIA_the_midnight_meeting
 		prerequisite = { focus = SIA_the_midnight_meeting }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_POLITICAL_CHARACTER }
 		bypass = {
 			has_idea = YJ_SIA_1_ideas
@@ -1089,7 +1006,6 @@
 			}
 			custom_effect_tooltip = available_political_advisor 
 			show_ideas_tooltip = SIA_chao_phraya_sri_dharmathibhet
-			#country_event = { id =  }
 		}
 	}
 
@@ -1107,8 +1023,6 @@
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		bypass = {
 			has_idea = YJ_SIA_1_ideas
@@ -1169,8 +1083,6 @@
 		bypass = {
 			has_idea = YJ_SIA_1_ideas
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
@@ -1197,8 +1109,6 @@
 		bypass = {
 			has_idea = YJ_SIA_1_ideas
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
@@ -1581,8 +1491,6 @@
 		available = {
 			has_civil_war = no
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -1611,17 +1519,14 @@
 				check_variable = { SIA_anandas_age > 11 }
 			}
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			#
 			set_variable = { SIA_ananda_lesson_expected = 1 }
 
 			if = {
 				limit = {
-					check_variable = { SIA_anandas_age > 12 } #13
+					check_variable = { SIA_anandas_age > 12 }
 				}
 
 				add_to_variable = { SIA_ananda_lesson_expected = 1 }
@@ -1629,7 +1534,7 @@
 
 			if = {
 				limit = {
-					check_variable = { SIA_anandas_age > 13 } #14
+					check_variable = { SIA_anandas_age > 13 }
 				}
 
 				add_to_variable = { SIA_ananda_lesson_expected = 1 }
@@ -1658,8 +1563,6 @@
 				check_variable = { SIA_anandas_age > 14 }
 			}
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
@@ -1667,7 +1570,7 @@
 			retire_country_leader = yes
 
 			add_country_leader_role = {
-				character =  SIA_ananda_mahidol # optional if inside character scope
+				character =  SIA_ananda_mahidol
 				promote_leader = yes
 				country_leader = {
 					ideology = despotism
@@ -1678,7 +1581,7 @@
 				limit = { check_variable = { SIA_ananda_scholar = 1 } }
 
 				add_trait = {
-					character = SIA_ananda_mahidol # optional if inside character scope
+					character = SIA_ananda_mahidol
 					trait = SIA_ananda_scholar_1
 					ideology = despotism 
 				}
@@ -1686,7 +1589,7 @@
 			else_if = {
 				limit = { check_variable = { SIA_ananda_scholar = 2 } }
 				add_trait = {
-					character = SIA_ananda_mahidol # optional if inside character scope
+					character = SIA_ananda_mahidol
 					trait = SIA_ananda_scholar_2
 					ideology = despotism 
 				}
@@ -1696,7 +1599,7 @@
 				limit = { check_variable = { SIA_ananda_scholar = 3 } }
 				add_research_slot = 1
 				add_trait = {
-					character = SIA_ananda_mahidol # optional if inside character scope
+					character = SIA_ananda_mahidol
 					trait = SIA_ananda_scholar_2
 					ideology = despotism 
 				}
@@ -1804,8 +1707,6 @@
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_POLITICAL_CHARACTER }
 
 		completion_reward = {
@@ -1855,15 +1756,13 @@
 				character = SIA_ananda_mahidol
 			}
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 
 		completion_reward = {
 			retire_country_leader = yes
 			add_country_leader_role = {
-				character =  SIA_bowardej # optional if inside character scope
+				character =  SIA_bowardej
 				promote_leader = yes
 				country_leader = {
 					ideology = despotism
@@ -1887,8 +1786,6 @@
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
@@ -1910,8 +1807,6 @@
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 
 		bypass = {
 			has_country_leader = {
@@ -1923,7 +1818,7 @@
 		completion_reward = {
 			retire_country_leader = yes
 			add_country_leader_role = {
-				character =  SIA_phraya_songsuradet # optional if inside character scope
+				character =  SIA_phraya_songsuradet
 				promote_leader = yes
 				country_leader = {
 					ideology = despotism
@@ -1946,8 +1841,6 @@
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_WAR_SUPPORT }
 
 		completion_reward = {
@@ -1979,7 +1872,7 @@
 		completion_reward = {
 			retire_country_leader = yes
 			add_country_leader_role = {
-				character =  SIA_rangsit_prayurasakdi # optional if inside character scope
+				character =  SIA_rangsit_prayurasakdi
 				promote_leader = yes
 				country_leader = {
 					ideology = despotism
@@ -2002,8 +1895,6 @@
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
@@ -2025,15 +1916,12 @@
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY }
 
 		completion_reward = {
 			add_ideas = idea_SIA_an_absolute_monarchy
 			add_stability = -0.6
 
-			# AR-72791: if the player also took the Constitutional appeal, instant-fail that demand.
 			if = {
 				limit = { has_country_flag = SIA_support_from_constitutional_monarchists }
 				add_stability = -0.1
@@ -2060,14 +1948,11 @@
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH FOCUS_FILTER_STABILITY }
 
 		completion_reward = {
 			add_ideas = idea_SIA_a_constituional_monarchy
 
-			# AR-72791: if the player also took the Absolutist appeal, instant-fail that demand.
 			if = {
 				limit = { has_country_flag = SIA_support_from_absolutist_monarchists }
 				add_stability = -0.1
@@ -2080,9 +1965,6 @@
 		}
 	}
 
-	############################
-	#####    DEMOCRATIC    	####
-	############################
 
 	focus = {
 		id = SIA_to_lay_the_bait
@@ -2162,7 +2044,6 @@
 		y = 1
 		relative_position_id = SIA_to_lay_the_bait
 		prerequisite = { focus = SIA_to_lay_the_bait }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -2180,8 +2061,6 @@
 				check_variable = { SIA_dem_event_count_cw_scale > 0.8 }
 			}
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
@@ -2260,8 +2139,6 @@
 			factor = 50
 		}
 		available = { has_civil_war = no }
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
@@ -2300,8 +2177,6 @@
 			factor = 50
 		}
 		available = { has_civil_war = no }
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_ARMY_XP }
 
 		completion_reward = {
@@ -2337,7 +2212,6 @@
 		y = 1
 		relative_position_id = SIA_the_purge
 		prerequisite = { focus = SIA_the_purge focus = SIA_military_oversight_bureau }
-		#mutually_exclusive = { focus =  }
 		cost = 10
 		ai_will_do = {
 			factor = 60
@@ -2361,8 +2235,6 @@
 			}
 		}
 
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 
 		completion_reward = {
@@ -2381,7 +2253,7 @@
 				}
 				damage_building = {
 					type = infrastructure 
-					damage = 0.2# levels of damage 
+					damage = 0.2
 				}
 				
 			}
@@ -2396,7 +2268,6 @@
 		y = 1
 		relative_position_id = SIA_secure_the_state
 		prerequisite = { focus = SIA_secure_the_state }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 60
@@ -2411,8 +2282,6 @@
 				has_stability > 0.7
 			}
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
@@ -2420,7 +2289,6 @@
 			custom_effect_tooltip = newline_tt
 			set_country_flag = SIA_turn_off_the_khana_ratsadon
 
-			# Dissolve the military wing entirely, whatever its standing.
 			if = {
 				limit = { has_idea = idea_SIA_military_rebellious }
 				remove_ideas = idea_SIA_military_rebellious
@@ -2473,15 +2341,12 @@
 		y = 1
 		relative_position_id = SIA_achieve_domestic_legitimacy
 		prerequisite = { focus = SIA_achieve_domestic_legitimacy }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
 
 		completion_reward = {
@@ -2507,15 +2372,12 @@
 		y = 0
 		relative_position_id = SIA_end_military_grift
 		prerequisite = { focus = SIA_achieve_domestic_legitimacy }
-		#mutually_exclusive = { focus =  }
 		cost = 10
 		ai_will_do = {
 			factor = 50
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -2552,7 +2414,6 @@
 		y = 2
 		relative_position_id = SIA_end_military_grift
 		prerequisite = { focus = SIA_end_military_grift focus = SIA_rebuild_the_war_torn_economy }
-		#mutually_exclusive = { focus =  }
 		cost = 10
 		ai_will_do = {
 			factor = 50
@@ -2569,8 +2430,6 @@
 				}
 			}
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
 
 		complete_tooltip = {
@@ -2669,8 +2528,6 @@
 		available = {
 
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
 
 		completion_reward = {
@@ -2693,8 +2550,6 @@
 			num_of_factories > 35
 
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
 
 		completion_reward = {
@@ -2724,8 +2579,6 @@
 				is_owned_by = ROOT
 			}
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -2790,15 +2643,12 @@
 		y = 1
 		relative_position_id =  SIA_a_more_moderate_option
 		prerequisite = { focus = SIA_a_more_moderate_option }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
@@ -3056,8 +2906,6 @@
 				is_ally_with = 1021.owner
 			}
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -3094,8 +2942,8 @@
 						build_railway = {
 							level = 1
 							fallback = yes
-							start_province = 7408	#Bangkok
-							target_province = 12299	#Singapore
+							start_province = 7408
+							target_province = 12299
 						}
 						add_building_construction = {
 							type = coastal_bunker
@@ -3149,8 +2997,6 @@
 				is_owned_by = ROOT
 			}
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -3207,8 +3053,6 @@
 				is_owned_by = ROOT
 			}
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP }
 
 		completion_reward = {
@@ -3251,8 +3095,6 @@
 		available = {
 			NOT = { has_idea = idea_SIA_pacific_war_preparations }
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -3323,8 +3165,6 @@
 			has_tech = basic_ship_hull_heavy
 			has_tech = basic_ship_hull_cruiser
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -3446,8 +3286,6 @@
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER }
 
 		completion_reward = { 
@@ -3607,7 +3445,6 @@
 		id = SIA_a_land_war_in_asia
 		icon = GFX_focus_generic_asia_liberation
 		prerequisite = { focus = SIA_join_the_united_front }
-		#mutually_exclusive = { focus =  }
 		x = 0
 		y = 1
 		relative_position_id = SIA_join_the_united_front
@@ -3752,8 +3589,6 @@
 		available = {
 		}
 		mutually_exclusive = { focus = SIA_join_the_allies focus = SIA_join_the_united_front }
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		will_lead_to_war_with = FRA
@@ -3816,7 +3651,6 @@
 		id = SIA_the_peoples_war_in_asia
 		icon = GFX_focus_PRC_raid_weapon_depots
 		prerequisite = { focus = SIA_death_to_the_nationalists }
-		#mutually_exclusive = { focus =  }
 		x = 1
 		y = 1
 		relative_position_id = SIA_death_to_the_nationalists
@@ -3842,7 +3676,6 @@
 		id = SIA_national_defense_in_asia
 		icon = GFX_focus_PRC_arms_recovery_efforts
 		prerequisite = { focus = SIA_death_to_the_communists }
-		#mutually_exclusive = { focus =  }
 		x = -1
 		y = 1
 		relative_position_id = SIA_death_to_the_communists
@@ -3871,7 +3704,6 @@
 		id = SIA_a_new_dawn_over_asia
 		icon = GFX_focus_RAJ_the_sun_sets
 		prerequisite = { focus = SIA_national_defense_in_asia focus = SIA_the_peoples_war_in_asia  }
-		#mutually_exclusive = { focus =  }
 		x = -1
 		y = 2
 		relative_position_id = SIA_death_to_the_nationalists
@@ -3949,9 +3781,6 @@
 		}
 	}
 
-	###############################
-	###		Phibun/Historical   ###
-	###############################
 
 	focus = {
 		id = SIA_phibuns_premiership
@@ -3999,7 +3828,7 @@
 	  		}
 	  		set_party_name = {
 	  			ideology = fascism
-	  			long_name = SIA_neutrality_party_long #This is the military branch being swapped over
+	  			long_name = SIA_neutrality_party_long
 	  			name = SIA_neutrality_party
 	  		}
 
@@ -4034,7 +3863,6 @@
 		y = 1
 		relative_position_id = SIA_asian_democratic_compact
 		prerequisite = { focus = SIA_asian_democratic_compact }
-		#mutually_exclusive = { focus = }
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -4042,8 +3870,6 @@
 		available = {
 			is_faction_leader = yes
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
@@ -4061,7 +3887,6 @@
 		y = 0
 		relative_position_id = SIA_southeast_asia_joint_command
 		prerequisite = { focus = SIA_asian_democratic_compact }
-		#mutually_exclusive = { focus = }
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -4069,8 +3894,6 @@
 		available = {
 			is_faction_leader = yes
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
@@ -4087,7 +3910,6 @@
 		y = 0
 		relative_position_id = SIA_pan_asian_weapon_standardization
 		prerequisite = { focus = SIA_asian_democratic_compact }
-		#mutually_exclusive = { focus = }
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -4095,8 +3917,6 @@
 		available = {
 			is_faction_leader = yes
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 
 		completion_reward = {
@@ -4113,7 +3933,6 @@
 		y = 0
 		relative_position_id = SIA_united_against_aggression
 		prerequisite = { focus = SIA_asian_democratic_compact }
-		#mutually_exclusive = { focus = }
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -4121,8 +3940,6 @@
 		available = {
 			is_faction_leader = yes
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 
 		completion_reward = {
@@ -4139,7 +3956,6 @@
 		y = 1
 		relative_position_id = SIA_southeast_asia_joint_command
 		prerequisite = { focus = SIA_southeast_asia_joint_command focus = SIA_pan_asian_weapon_standardization focus = SIA_united_against_aggression focus = SIA_the_hammers_that_strike }
-		#mutually_exclusive = { focus = }
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -4147,8 +3963,6 @@
 		available = {
 			is_faction_leader = yes
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
@@ -4176,8 +3990,8 @@
 
 				country_event = {
 					id = siam.45
-					hours = 2 # optional - can take hours/days/months
-					random_hours = 4 # optional - can take hours/days/months
+					hours = 2
+					random_hours = 4
 				}
 			}
 
@@ -4191,15 +4005,12 @@
 		y = 1
 		relative_position_id = SIA_phibuns_premiership	
 		prerequisite = { focus =  SIA_phibuns_premiership }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
@@ -4214,15 +4025,12 @@
 		y = 1
 		relative_position_id = SIA_siamese_youth_movement	
 		prerequisite = { focus =  SIA_siamese_youth_movement }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
@@ -4321,15 +4129,12 @@
 		y = 1
 		relative_position_id = SIA_phibuns_premiership	
 		prerequisite = { focus = SIA_phibuns_premiership }
-		#mutually_exclusive = { focus =  }
 		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -4342,7 +4147,7 @@
 						include_locked = yes
 					}
 				}
-				prioritize = { 1076 } #optional: to pick those states first if they fulfill the limit
+				prioritize = { 1076 }
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
@@ -4360,15 +4165,12 @@
 		y = 1
 		relative_position_id = SIA_phibuns_premiership	
 		prerequisite = { focus = SIA_phibuns_premiership }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
@@ -4387,15 +4189,12 @@
 		y = 1
 		relative_position_id = SIA_look_to_european_fascism	
 		prerequisite = { focus = SIA_look_to_european_fascism }
-		#mutually_exclusive = { focus =  }
 		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
@@ -4435,15 +4234,12 @@
 		y = 1
 		relative_position_id = SIA_the_songsuradet_rebellion	
 		prerequisite = { focus = SIA_the_songsuradet_rebellion }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -4489,7 +4285,6 @@
 		y = 0
 		relative_position_id = SIA_sue_the_king_in_exile	
 		prerequisite = { focus = SIA_the_songsuradet_rebellion }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -4497,8 +4292,6 @@
 		available = {
 			has_idea = idea_SIA_cemented_control
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT }
 
 		completion_reward = {
@@ -4527,7 +4320,6 @@
 		y = 1
 		relative_position_id = SIA_suspend_ordinary_legal_procedures	
 		prerequisite = { focus = SIA_suspend_ordinary_legal_procedures }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -4536,8 +4328,6 @@
 			has_idea = idea_SIA_cemented_control_2
 			has_war = yes
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 
 		completion_reward = {
@@ -4548,28 +4338,6 @@
 		}
 	}
 
-#	focus = {
-#		id = SIA_recognize_manchukuo
-#		icon = GFX_focus_PLACEHOLDER
-#		x = 2
-#		y = 0
-#		relative_position_id = SIA_the_duty_of_the_thai_people_during_the_war_act	
-#		prerequisite = { focus = SIA_suspend_ordinary_legal_procedures }
-#		#mutually_exclusive = { focus =  }
-#		cost = 5
-#		ai_will_do = {
-#			factor = 10
-#		}
-#		available = {
-#		}
-#		#allow_branch = {
-#		#}
-#		search_filters = { }
-#
-#		completion_reward = {
-#			custom_effect_tooltip = "CM_TODO"
-#		}
-#	}
 
 	focus = {
 		id = SIA_press_censorship
@@ -4578,15 +4346,12 @@
 		y = 1
 		relative_position_id = SIA_suspend_ordinary_legal_procedures
 		prerequisite = { focus = SIA_suspend_ordinary_legal_procedures }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_STABILITY }
 
 		completion_reward = {
@@ -4607,15 +4372,12 @@
 		y = 1
 		relative_position_id = SIA_look_to_european_fascism	
 		prerequisite = { focus = SIA_look_to_european_fascism }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 
 		completion_reward = {
@@ -4635,15 +4397,12 @@
 		y = 1
 		relative_position_id = SIA_department_of_publicity	
 		prerequisite = { focus = SIA_department_of_publicity }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
@@ -4652,8 +4411,8 @@
 			custom_effect_tooltip = newline_tt
 			unlock_decision_tooltip = {
 				decision = SIA_mandate_1
-				show_effect_tooltip = yes # default is no
-				show_modifiers = yes # default is no
+				show_effect_tooltip = yes
+				show_modifiers = yes
 			}
 
 		}
@@ -4666,7 +4425,6 @@
 		y = 1
 		relative_position_id = SIA_thai_cultural_mandates	
 		prerequisite = { focus = SIA_thai_cultural_mandates }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -4674,8 +4432,6 @@
 		available = {
 			controls_province = 10398
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -4691,7 +4447,6 @@
 			set_major = yes
 			hidden_effect = {
 
-				#Move arms factories
 				for_loop_effect = {
 					end = 3
 					break = b
@@ -4733,7 +4488,6 @@
 					}
 				}
 
-				#Move Civs
 				for_loop_effect = {
 					end = 3
 					break = b
@@ -4775,7 +4529,6 @@
 					}
 				}
 
-				#Build Bunkers
 
 				if = {
 					limit = {
@@ -4858,20 +4611,17 @@
 
 	focus = {
 		id = SIA_radio_propaganda
-		icon = GFX_focus_SWE_radiotjanst # A thousand radios
+		icon = GFX_focus_SWE_radiotjanst
 		x = 1
 		y = 1
 		relative_position_id = SIA_department_of_publicity	
 		prerequisite = { focus = SIA_department_of_publicity }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 
 		completion_reward = {
@@ -4907,30 +4657,24 @@
 		y = 1
 		relative_position_id = SIA_radio_propaganda	
 		prerequisite = { focus = SIA_radio_propaganda }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			custom_effect_tooltip = SIA_sala_chaloem_thai_movie_theater_tt
 			unlock_decision_tooltip = {
 				decision = SIA_thai_soldiers_blood
-				show_effect_tooltip = yes # default is no
-				show_modifiers = yes # default is no
+				show_effect_tooltip = yes
+				show_modifiers = yes
 			}
 		}
 	}
 
-	####################
-	###	Expansionism ###
-	####################
 
 	focus = {
 		id =  SIA_pan_thaiism
@@ -4939,7 +4683,6 @@
 		y = 1
 		relative_position_id = SIA_the_midnight_meeting	
 		prerequisite = { focus = SIA_the_midnight_meeting focus = SIA_phibuns_premiership }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 25
@@ -4966,8 +4709,6 @@
 				
 			}
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
@@ -4982,7 +4723,6 @@
 		y = 1
 		relative_position_id = SIA_pan_thaiism	
 		prerequisite = { focus = SIA_pan_thaiism }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 15
@@ -5000,8 +4740,6 @@
 		will_lead_to_war_with = ENG
 		will_lead_to_war_with = BRM
 		will_lead_to_war_with = MAL
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
@@ -5029,8 +4767,6 @@
 				NOT = { is_controlled_by = ROOT }
 			}
 		}
-		#allow_branch = {
-		#}
 
 		bypass = {
 			all_of_scopes = {
@@ -5065,8 +4801,6 @@
 		}
 		available = {
 		}
-		#allow_branch = { 
-		#}
 
 		bypass = {
 			controls_state = 1069  
@@ -5094,7 +4828,7 @@
 					every_state = {
 						limit = {
 							controller = { NOT = { original_tag = SIA } }
-							NOT = { is_owned_by = ROOT } # skip states we already own
+							NOT = { is_owned_by = ROOT }
 							OR = {
 								state = 1069
 								state = 1067
@@ -5146,7 +4880,6 @@
 		y = 1
 		relative_position_id = SIA_recover_indochina
 		prerequisite = { focus = SIA_recover_indochina focus = SIA_demand_the_return_of_lost_territory }
-		#mutually_exclusive = { focus = }
 		cost = 5
 		ai_will_do = {
 			factor = 100
@@ -5197,8 +4930,6 @@
 			}
 
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
@@ -5230,7 +4961,6 @@
 		y = 0
 		relative_position_id = SIA_demand_the_return_of_lost_territory	
 		prerequisite = { focus = SIA_pan_thaiism }
-		#mutually_exclusive = { focus = }
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -5238,8 +4968,6 @@
 		available = {
 			has_idea = idea_SIA_pan_thaiism
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 
 		completion_reward = {
@@ -5257,15 +4985,12 @@
 		y = 1
 		relative_position_id = SIA_crack_down_of_foreign_merchants	
 		prerequisite = { focus = SIA_crack_down_of_foreign_merchants }
-		#mutually_exclusive = { focus = }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -5282,14 +5007,14 @@
 			custom_effect_tooltip = newline_tt
 			unlock_decision_tooltip = {
 				decision = SIA_cultivate_civilian_wing
-				show_effect_tooltip = yes # default is no
-				show_modifiers = yes # default is no
+				show_effect_tooltip = yes
+				show_modifiers = yes
 			}
 
 			unlock_decision_tooltip = {
 				decision = SIA_cultivate_military_wing
-				show_effect_tooltip = yes # default is no
-				show_modifiers = yes # default is no
+				show_effect_tooltip = yes
+				show_modifiers = yes
 			}
 
 		}
@@ -5321,7 +5046,6 @@
 
 			set_country_flag = SIA_turn_off_the_khana_ratsadon
 
-			# Both wings should be at full support per the mission, but guard against a late drop.
 			if = {
 				limit = { has_idea = idea_SIA_military_full_support }
 				remove_ideas = idea_SIA_military_full_support
@@ -5368,9 +5092,6 @@
 		}
 	}
 
-	################################
-	###	Develop Greater Thailand ###
-	################################
 
 
 	focus = {
@@ -5380,7 +5101,6 @@
 		y = 1
 		relative_position_id = SIA_retake_lost_british_states	
 		prerequisite = { focus = SIA_retake_lost_british_states focus = SIA_recover_indochina focus = SIA_demand_the_return_of_lost_territory }
-		#mutually_exclusive = { focus = }
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -5396,8 +5116,6 @@
 			}
 			
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
@@ -5405,9 +5123,6 @@
 		}
 	}
 
-	###############################
-	###			Economy			###
-	###############################
 
 		focus = {
 		id = SIA_industrialization_drive
@@ -5415,8 +5130,6 @@
 		x = 29
 		y = 0
 		relative_position_id = SIA_the_khana_ratsadon	
-		#prerequisite = { focus = SIA_for_the_preservation_of_siamese_independence }
-		#mutually_exclusive = { focus = SIA_for_the_preservation_of_siamese_independence }
 		cost = 5
 		ai_will_do = {
 			factor = 15
@@ -5427,8 +5140,6 @@
 				has_completed_focus = SIA_the_khana_ratsadon
 			}
 		}
-		#allow_branch = {
-		#}
 
         offset = {
             x = 4
@@ -5453,7 +5164,7 @@
 						include_locked = yes
 					}
 				}
-				prioritize = { 1076 } #optional: to pick those states first if they fulfill the limit
+				prioritize = { 1076 }
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -5530,8 +5241,7 @@
 				name = SIA_asian_financial_compact
 				bonus = 0.33
 				uses = 2
-				category = infantry_weapons # optional
-				# technology  = technology_id # optional
+				category = infantry_weapons
 			}
 
 			SIA_increase_military_approval = yes
@@ -5619,7 +5329,6 @@
 		y = 1
 		relative_position_id = SIA_asian_financial_compact	
 		prerequisite = { focus = SIA_asian_financial_compact focus = SIA_revision_of_unequal_treaties }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -5627,8 +5336,6 @@
 		available = {
 			controls_state = 869
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -5680,15 +5387,12 @@
 		y = 0
 		relative_position_id = SIA_renegotiate_teak_control	
 		prerequisite = { focus = SIA_asian_financial_compact focus = SIA_revision_of_unequal_treaties }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -5753,15 +5457,12 @@
 		y = 0
 		relative_position_id = SIA_a_fledgling_tobacco_industry	
 		prerequisite = { focus = SIA_asian_financial_compact focus = SIA_revision_of_unequal_treaties }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -5770,7 +5471,7 @@
 					is_fully_controlled_by = ROOT
 					infrastructure < 5
 				}
-				prioritize = { 1076 868 1077 } #optional: to pick those states first if they fulfill the limit
+				prioritize = { 1076 868 1077 }
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
@@ -5785,7 +5486,7 @@
 					is_fully_controlled_by = ROOT
 					infrastructure < 5
 				}
-				prioritize = { 1076 868 1077 } #optional: to pick those states first if they fulfill the limit
+				prioritize = { 1076 868 1077 }
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
@@ -5922,7 +5623,6 @@
 			set_variable = { SIA_aep_resource_trade_cost_bonus_per_factory = 0 }
 			set_variable = { SIA_aep_production_speed_arms_factory_factor = 0.05 }
 			
-			#Flame
 			set_variable = { SIA_aep_recruitable_population_factor = 0 }
 			set_variable = { SIA_aep_static_anti_air_hit_chance_factor = 0 }
 			set_variable = { SIA_aep_supply_consumption_factor = 0 }
@@ -5977,15 +5677,12 @@
 		y = 1
 		relative_position_id = SIA_the_bank_of_siam	
 		prerequisite = { focus = SIA_the_bank_of_siam }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
@@ -6005,15 +5702,12 @@
 		y = 0
 		relative_position_id = SIA_send_bureaucrats_abroad	
 		prerequisite = { focus = SIA_the_bank_of_siam }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
@@ -6032,15 +5726,12 @@
 		y = 0
 		relative_position_id = SIA_baht_stabilization_act	
 		prerequisite = { focus = SIA_the_bank_of_siam }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -6059,15 +5750,12 @@
 		y = 1
 		relative_position_id = SIA_siamese_development_cooperative	
 		prerequisite = { focus = SIA_siamese_development_cooperative focus = SIA_reduction_of_agricultural_yield_taxes}
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -6083,7 +5771,7 @@
 						include_locked = yes
 					}
 				}
-				prioritize = { 1076 } #optional: to pick those states first if they fulfill the limit
+				prioritize = { 1076 }
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -6102,15 +5790,12 @@
 		relative_position_id = SIA_boon_rawd_brewery	
 		prerequisite = { focus = SIA_siamese_development_cooperative focus = SIA_reduction_of_agricultural_yield_taxes }
 
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -6144,20 +5829,16 @@
 		y = 1
 		relative_position_id = SIA_baht_stabilization_act	
 		prerequisite = { focus = SIA_baht_stabilization_act focus = SIA_siamese_development_cooperative focus = SIA_send_bureaucrats_abroad }
-		#mutually_exclusive = { focus =  }
 		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			add_political_power = 120
-			#TODO_CM Figure out if I can make better tooltip
 			SIA_refresh_nsb_spirit = yes
 			custom_effect_tooltip = SIA_national_savings_bond_tt
 			show_ideas_tooltip = idea_SIA_nsb_disarmed_nation
@@ -6229,15 +5910,12 @@
 		y = 1
 		relative_position_id = SIA_national_savings_bond	
 		prerequisite = { focus = SIA_national_savings_bond }
-		#mutually_exclusive = { focus =  }
 		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -6263,15 +5941,12 @@
 		y = 1
 		relative_position_id = SIA_deficit_spending	
 		prerequisite = { focus = SIA_deficit_spending }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
@@ -6279,8 +5954,7 @@
 				name = SIA_acquire_light_tools
 				ahead_reduction = 1
 				uses = 1
-				category = industry # optional 
-				# technology  = technology_id # optional
+				category = industry
 			}
 
 			random_core_state = {
@@ -6310,7 +5984,6 @@
 		y = 0
 		relative_position_id = SIA_acquire_light_tools	
 		prerequisite = { focus = SIA_deficit_spending }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -6322,8 +5995,6 @@
 			}
 			controls_province = 7408
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -6387,7 +6058,6 @@
 		y = 1
 		relative_position_id = SIA_acquire_light_tools	
 		prerequisite = { focus = SIA_acquire_light_tools }
-		#mutually_exclusive = { focus =  }
 		cost = 10
 		ai_will_do = {
 			factor = 20
@@ -6397,8 +6067,6 @@
 				motorized_equipment > 999
 			}
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
@@ -6425,8 +6093,7 @@
 				name = SIA_mechanization_of_agriculture
 				bonus = 1
 				uses = 1
-				category = motorized_equipment # optional 
-				# technology  = technology_id # optional
+				category = motorized_equipment
 			}
 		}
 	}
@@ -6438,15 +6105,12 @@
 		y = 0
 		relative_position_id = SIA_mechanization_of_agriculture	
 		prerequisite = { focus = SIA_acquire_light_tools }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 20
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -6474,20 +6138,16 @@
 		y = 0
 		relative_position_id = SIA_irrigation	
 		prerequisite = { focus = SIA_railway_and_port_extensions }
-		#mutually_exclusive = { focus =  }
 		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
 
-				#Change #SIA_chemical_imports_opinion_threshold for tooltip if changing this. Seems like value does take variables directly
 
 				if = { 
 					limit = { 
@@ -6583,15 +6243,12 @@
 		y = 1
 		relative_position_id = SIA_mechanization_of_agriculture	
 		prerequisite = { focus = SIA_mechanization_of_agriculture }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 30
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_INTERNATIONAL_TRADE }
 
 		completion_reward = {
@@ -6610,7 +6267,6 @@
 		relative_position_id = SIA_foreign_currency_exchange
 		prerequisite = { focus = SIA_irrigation  }
 		prerequisite = {focus = SIA_mechanization_of_agriculture }
-		#mutually_exclusive = { focus =  }
 		cost = 10
 		ai_will_do = {
 			factor = 20
@@ -6624,8 +6280,6 @@
 				is_controlled_by = ROOT
 			}
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
@@ -6664,7 +6318,6 @@
 				}
 			}
 
-			#only for show
 			every_state = {
 				limit = {
 					is_in_array = {
@@ -6695,15 +6348,12 @@
 		relative_position_id = SIA_farmers_into_the_city	
 		prerequisite = { focus = SIA_farmers_into_the_city }
 		prerequisite = { focus = SIA_chemical_imports }
-		#mutually_exclusive = { focus =  }
 		cost = 10
 		ai_will_do = {
 			factor = 20
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -6716,7 +6366,7 @@
 						include_locked = yes
 					}
 				}
-				prioritize = { 1076 } #optional: to pick those states first if they fulfill the limit
+				prioritize = { 1076 }
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -6734,7 +6384,7 @@
 						include_locked = yes
 					}
 				}
-				prioritize = { 1076 } #optional: to pick those states first if they fulfill the limit
+				prioritize = { 1076 }
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -6752,15 +6402,12 @@
 		y = 1
 		relative_position_id = SIA_foreign_currency_exchange	
 		prerequisite = { focus = SIA_foreign_currency_exchange }
-		#mutually_exclusive = { focus =  }
 		cost = 10
 		ai_will_do = {
 			factor = 20
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -6803,7 +6450,6 @@
 		relative_position_id = SIA_public_credit	
 		prerequisite = { focus = SIA_public_credit }
 		prerequisite = { focus = SIA_textile_mills }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 40
@@ -6811,8 +6457,6 @@
 		available = {
 			num_of_factories > 50
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -6830,15 +6474,12 @@
 		y = 1
 		relative_position_id = SIA_thai_rice_company	
 		prerequisite = { focus = SIA_thai_rice_company }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -6868,7 +6509,6 @@
 		y = 1
 		relative_position_id = SIA_thai_rice_company	
 		prerequisite = { focus = SIA_thai_rice_company }
-		#mutually_exclusive = { focus =  }
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -6878,8 +6518,6 @@
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INTERNATIONAL_TRADE }
 
 		completion_reward = {
@@ -6903,7 +6541,6 @@
 		y = 2
 		relative_position_id = SIA_diversity_foreign_reserves	
 		prerequisite = { focus = SIA_diversity_foreign_reserves }
-		#mutually_exclusive = { focus =  }
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -6933,8 +6570,8 @@
 			custom_effect_tooltip = newline_tt
 			unlock_decision_tooltip = {
 				decision = SIA_release_contigency_funds
-				show_effect_tooltip = no # default is no
-				show_modifiers = no # default is no
+				show_effect_tooltip = no
+				show_modifiers = no
 			}
 			set_variable = { SIA_contingency_funds = 1 }
 			set_variable = { SIA_contingency_funds_industrial_capacity_factory = 0 }
@@ -6954,15 +6591,12 @@
 		y = 1
 		relative_position_id = SIA_contingency_funds	
 		prerequisite = { focus = SIA_contingency_funds }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
@@ -6975,7 +6609,7 @@
 
 				set_technology = { fuel_silos = 1 popup = no }
 				
-				effect_tooltip = { #Tooltip doesn't appear if fuel silos isn't unlocked with free_building_slots...
+				effect_tooltip = {
 					random_core_state = {
 						limit = {
 							is_controlled_by = ROOT
@@ -7049,15 +6683,12 @@
 		y = 0
 		relative_position_id = SIA_fuel_oil_act	
 		prerequisite = { focus = SIA_contingency_funds }
-		#mutually_exclusive = { focus =  }
 		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
@@ -7065,8 +6696,7 @@
 				name = SIA_siam_electricity_company
 				ahead_reduction = 1
 				uses = 1
-				category = electronics # optional 
-				# technology  = technology_id # optional
+				category = electronics
 			}
 
 			custom_effect_tooltip = idea_SIA_agrarian_economical_policy_modify
@@ -7083,15 +6713,12 @@
 		y = 1
 		relative_position_id = SIA_reduction_of_agricultural_yield_taxes	
 		prerequisite = { focus = SIA_reduction_of_agricultural_yield_taxes }
-		#mutually_exclusive = { focus =  }
 		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -7114,25 +6741,16 @@
 		y = 1
 		relative_position_id = SIA_revise_the_taxation_system	
 		prerequisite = { focus = SIA_revise_the_taxation_system }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
 
-			# Est 861454 Hill Tribe population in 2002
-			# average population compound growth rate in Thailand between 2002 - 1960 was 2.10% for data that is available
-			# so 861.454 / (1.021^62) ≈ 237.485
-			# Half of those being women and werent allowed to serve during WW2 - The Hill Tribe Welfare Division's 2002 tabulation puts the ratio at 100.85:100 = 119.245 males
-			# https://doi.org/ 10.22624/AIMS/iSTEAMS-2019/V18N1P7 gives approx 33.2%+- of men in the pyramid, (assuming 18-60 all adult-serve). Skipping mobilization laws factor for simplicity yields
-			# 119245*0.332 = 39589~=40000
 
 			add_manpower = 40000
 		}
@@ -7146,15 +6764,12 @@
 		y = 0
 		relative_position_id = SIA_revise_the_taxation_system	
 		prerequisite = { focus = SIA_reduction_of_agricultural_yield_taxes }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_INTERNATIONAL_TRADE }
 
 		completion_reward = {
@@ -7175,15 +6790,12 @@
 		y = 1
 		relative_position_id = SIA_thai_rice_company	
 		prerequisite = { focus = SIA_thai_rice_company }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
 
 		completion_reward = {
@@ -7200,15 +6812,12 @@
 		y = 1
 		relative_position_id = SIA_fuel_oil_act	
 		prerequisite = { focus = SIA_fuel_oil_act }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -7237,15 +6846,12 @@
 		y = 1
 		relative_position_id = SIA_siam_electricity_company
 		prerequisite = { focus = SIA_siam_electricity_company }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
@@ -7277,7 +6883,7 @@
 				name = SIA_domestic_tin_smelters
 				bonus = 0.75
 				uses = 1
-				category = excavation_tech #
+				category = excavation_tech
 			}
 
 			custom_effect_tooltip = idea_SIA_agrarian_economical_policy_modify
@@ -7298,15 +6904,12 @@
 		y = 1
 		relative_position_id = SIA_rice_husk_steam_turbines	
 		prerequisite = { focus = SIA_domestic_tin_smelters focus = SIA_rice_husk_steam_turbines }
-		#mutually_exclusive = { focus =  }
 		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -7321,15 +6924,12 @@
 		y = 1
 		relative_position_id = SIA_railway_and_port_extensions	
 		prerequisite = { focus = SIA_railway_and_port_extensions focus = SIA_prepare_for_the_next_blockade }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 40
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
@@ -7344,7 +6944,6 @@
 		y = 1
 		relative_position_id = SIA_kasetsart_university	
 		prerequisite = { focus = SIA_kasetsart_university }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 40
@@ -7353,8 +6952,6 @@
 			is_major = yes
 			num_of_factories > 100
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
@@ -7370,7 +6967,6 @@
 		y = 1
 		relative_position_id = SIA_contingency_funds
 		prerequisite = { focus = SIA_contingency_funds }
-		#mutually_exclusive = { focus =  }
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -7381,8 +6977,6 @@
 				is_owned_by = ROOT
 			}
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -7426,15 +7020,12 @@
 		y = 0
 		relative_position_id = SIA_prepare_for_the_next_blockade	
 		prerequisite = { focus = SIA_contingency_funds }
-		#mutually_exclusive = { focus =  }
 		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -7455,15 +7046,12 @@
 		y = 1
 		relative_position_id = SIA_prepare_for_the_next_blockade	
 		prerequisite = { focus = SIA_prepare_for_the_next_blockade focus = SIA_domestic_arms_industry }
-		#mutually_exclusive = { focus =  }
 		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
@@ -7481,15 +7069,12 @@
 		y = 0
 		relative_position_id = SIA_war_material_substitutions	
 		prerequisite = { focus = SIA_domestic_arms_industry focus = SIA_prepare_for_the_next_blockade }
-		#mutually_exclusive = { focus =  }
 		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -7533,15 +7118,12 @@
 		relative_position_id = SIA_war_material_substitutions	
 		prerequisite = { focus = SIA_war_material_substitutions }
 		prerequisite = { focus = SIA_royal_thai_ordnance_factory  }
-		#mutually_exclusive = { focus =  }
 		cost = 10
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY }
 
 		completion_reward = {
@@ -7557,9 +7139,6 @@
 		}
 	}
 
-	################
-	###   ARMY   ###
-	################
 
 	focus = {
 		id = SIA_the_army_of_siam
@@ -7567,8 +7146,6 @@
 		x = 18
 		y = 0
 		relative_position_id = SIA_industrialization_drive	
-		#prerequisite = { focus = }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -7576,8 +7153,6 @@
 		available = {
 			has_war_support > 0.03
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -7601,8 +7176,6 @@
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -7628,8 +7201,6 @@
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -7656,8 +7227,6 @@
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
@@ -7683,8 +7252,6 @@
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
@@ -7710,8 +7277,6 @@
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
@@ -7734,15 +7299,12 @@
 		y = 1
 		relative_position_id = SIA_intermediate_war_preparation	
 		prerequisite = { focus = SIA_plan_for_a_short_war focus = SIA_intermediate_war_preparation focus = SIA_prepare_for_a_long_war }
-		#mutually_exclusive = { }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -7801,8 +7363,6 @@
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -7824,8 +7384,6 @@
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -7840,7 +7398,7 @@
 			}
 			else = {
 				add_tech_bonus = {
-					name = SIA_directorate_of_aeronautical_engineering #Usually the name of the focus decision or event that grants the bonus
+					name = SIA_directorate_of_aeronautical_engineering
 					bonus = 1
 					uses = 1
 					category = light_air 
@@ -7848,7 +7406,7 @@
 			}
 
 			add_tech_bonus = {
-				name = SIA_directorate_of_aeronautical_engineering #Usually the name of the focus decision or event that grants the bonus
+				name = SIA_directorate_of_aeronautical_engineering
 				bonus = 0.33
 				uses = 3
 				category = air_equipment
@@ -7866,15 +7424,12 @@
 		y = 1
 		relative_position_id = SIA_artillery_reigns_supreme	
 		prerequisite = { focus = SIA_artillery_reigns_supreme }
-		#mutually_exclusive = {  }
 		cost = 5
 		ai_will_do = {
 			factor = 30
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
@@ -7916,15 +7471,12 @@
 		y = 1
 		relative_position_id = SIA_specialized_warfare	
 		prerequisite = { focus = SIA_specialized_warfare }
-		#mutually_exclusive = {  }
 		cost = 10
 		ai_will_do = {
 			factor = 20
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
@@ -7942,15 +7494,12 @@
 		y = 1
 		relative_position_id = SIA_the_thunder_at_the_gates	
 		prerequisite = { focus = SIA_the_thunder_at_the_gates focus = SIA_night_time_training }
-		#mutually_exclusive = {  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -7975,8 +7524,6 @@
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
@@ -7998,8 +7545,6 @@
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
@@ -8014,7 +7559,6 @@
 		y = 1
 		relative_position_id = SIA_conventional_tank_construction
 		prerequisite = { focus = SIA_conventional_tank_construction }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -8038,8 +7582,6 @@
 				}
 			}
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
@@ -8087,7 +7629,7 @@
 					improved_light_tank = 1
 					popup = no
 				}
-				create_equipment_variant = { ## Create non-NSB T34 variant and tech
+				create_equipment_variant = {
 					name = "V-76"
 					type = light_tank_equipment_2
 					icon = "GFX_ENG_improved_light_tank_medium"
@@ -8103,15 +7645,12 @@
 		y = 1
 		relative_position_id = SIA_unconventional_tank_construction
 		prerequisite = { focus = SIA_unconventional_tank_construction focus = SIA_conventional_tank_construction }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
@@ -8132,15 +7671,12 @@
 		y = 1
 		relative_position_id = SIA_unconventional_tank_construction
 		prerequisite = { focus = SIA_unconventional_tank_construction }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
@@ -8161,31 +7697,23 @@
 		y = 0
 		relative_position_id = SIA_jungle_armor
 		prerequisite = { focus = SIA_unconventional_tank_construction }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
             custom_effect_tooltip = mountain_tanks_tt
-           # hidden_effect = {
                 set_technology = {
                     mountain_tanks = 1
                     popup = yes
                 }
-           # }
 		}
 	}
 
-	#########################
-	###   Submit or Die   ###
-	######################### 
 
 	focus = {
 		id = SIA_reluctant_submission
@@ -8193,7 +7721,6 @@
 		x = 15
 		y = 0
 		relative_position_id = SIA_the_army_of_siam
-		#prerequisite = { focus = }
 		mutually_exclusive = { focus = SIA_standing_our_ground }
 		cost = 5
 		ai_will_do = {
@@ -8258,8 +7785,6 @@
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
@@ -8284,15 +7809,12 @@
 		y = 1
 		relative_position_id = SIA_seri_thai	
 		prerequisite = { focus = SIA_seri_thai }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
@@ -8312,15 +7834,12 @@
 		y = 1
 		relative_position_id = SIA_contact_the_south_east_asia_command	
 		prerequisite = { focus = SIA_contact_the_south_east_asia_command }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 
 		completion_reward = {
@@ -8339,15 +7858,12 @@
 		y = 1
 		relative_position_id = SIA_seri_thai
 		prerequisite = { focus = SIA_seri_thai }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -8380,15 +7896,12 @@
 		y = 1
 		relative_position_id = SIA_american_investment_aid
 		prerequisite = { focus = SIA_american_investment_aid }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
@@ -8406,15 +7919,12 @@
 		y = 1
 		relative_position_id = SIA_thai_students_in_the_oss
 		prerequisite = { focus = SIA_thai_students_in_the_oss }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
@@ -8470,7 +7980,6 @@
 		relative_position_id = SIA_prepare_to_drop
 		prerequisite = { focus = SIA_prepare_to_drop }
 		prerequisite = { focus = SIA_broadcast_weather_reports_to_the_allies }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -8478,16 +7987,12 @@
 		available = {
 			democratic > 0.35
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
 			custom_effect_tooltip = SIA_unseat_the_government_tt
 			custom_effect_tooltip = newline_tt
 			hidden_effect = {
-				# Generals swayed via the Seri Thai decisions stay with us; everyone else joins the loyalist revolt.
-				# These always side with us, regardless of the sway decisions.
 				if = { limit = { has_character = SIA_bowardej } SIA_bowardej = { set_character_flag = SIA_seri_thai_swayed } }
 				if = { limit = { has_character = SIA_rangsit_prayurasakdi } SIA_rangsit_prayurasakdi = { set_character_flag = SIA_seri_thai_swayed } }
 				if = { limit = { has_character = SIA_adul_aduldejajaras } SIA_adul_aduldejajaras = { set_character_flag = SIA_seri_thai_swayed } }
@@ -8508,12 +8013,10 @@
 						ruling_party = democratic
 						ideology = ROOT
 						size = var:SIA_seri_thai_cw_scale
-						# the current (revolting-ideology) leader heads the loyalist revolt
 						keep_political_leader = no
 						keep_unit_leaders_trigger = {
 							has_character_flag = SIA_seri_thai_swayed
 						}
-						# Phibun always sides with the loyalist revolt, never us
 						PREV = {
 							if = {
 								limit = { has_character = SIA_plaek_phibunsongkhram }
@@ -8526,7 +8029,6 @@
 			}
 
 			SIA_increase_civilian_approval = yes
-			# The printing-money arrangement with Japan ends; we seize their funds for our own use.
 			if = {
 				limit = { has_dynamic_modifier = { modifier = idea_SIA_printing_money } }
 				remove_dynamic_modifier = { modifier = idea_SIA_printing_money }
@@ -8535,7 +8037,6 @@
 				idea = idea_SIA_seized_japanese_funds
 				days = 365
 			}
-			# The victors must now choose who heads the new government.
 			custom_effect_tooltip = SIA_choose_new_leader_tt
 			country_event = { id = siam_dem.5 hours = 2 }
 		}
@@ -8555,8 +8056,6 @@
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
@@ -8600,15 +8099,12 @@
 		y = 1
 		relative_position_id = SIA_the_phayap_army
 		prerequisite = { focus = SIA_the_phayap_army }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
@@ -8636,15 +8132,12 @@
 		y = 1
 		relative_position_id = SIA_securing_the_rubber_islands
 		prerequisite = { focus = SIA_securing_the_rubber_islands }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
@@ -8662,15 +8155,12 @@
 		y = 0
 		relative_position_id = SIA_breaking_the_burmese_line
 		prerequisite = { focus = SIA_securing_the_rubber_islands }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_NAVY_XP }
 
 		completion_reward = {
@@ -8686,15 +8176,12 @@
 		y = 1
 		relative_position_id = SIA_the_phayap_army
 		prerequisite = { focus = SIA_the_phayap_army }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_ARMY_XP }
 
 		completion_reward = {
@@ -8709,7 +8196,6 @@
 		y = 1
 		relative_position_id = SIA_joint_asian_military_command
 		prerequisite = { focus = SIA_joint_asian_military_command }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 200
@@ -8718,8 +8204,6 @@
 			any_war_score > 8
 			is_ally_with = JAP
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
@@ -8737,7 +8221,6 @@
 		x = 8
 		y = 0
 		relative_position_id = SIA_reluctant_submission
-		#prerequisite = { focus = }
 		mutually_exclusive = { focus = SIA_reluctant_submission }
 		cost = 5
 		ai_will_do = {
@@ -8780,7 +8263,6 @@
 			 	idea = idea_SIA_standing_our_ground_mission_temp_buff
 			 	days = 90
 			 }
-			#activate_mission = SIA_standing_our_ground_mission
 
 			SIA_increase_civilian_approval = yes
 			SIA_increase_military_approval = yes
@@ -8812,8 +8294,6 @@
 		available = {
 			NOT = { has_war_with = USA }
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -8837,8 +8317,6 @@
 		available = {
 			NOT = { has_war_with = JAP }
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -8857,7 +8335,6 @@
 		y = 0
 		relative_position_id = SIA_japanese_fighters	
 		prerequisite = { focus = SIA_standing_our_ground }
-		#mutually_exclusive = { focus = }
 		cost = 1
 		ai_will_do = {
 			factor = 10
@@ -8869,8 +8346,6 @@
 				}
 			}
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
@@ -8917,15 +8392,12 @@
 		y = 1
 		relative_position_id = SIA_ask_for_the_release_of_american_commodities	
 		prerequisite = { focus = SIA_ask_for_the_release_of_american_commodities }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
@@ -8946,7 +8418,6 @@
 		y = 0
 		relative_position_id = SIA_singaporean_reinforcements	
 		prerequisite = { focus = SIA_japanese_fighters }
-		#mutually_exclusive = { focus =  }
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -8962,8 +8433,6 @@
 		available = {
 
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -8986,7 +8455,6 @@
 		y = 1
 		relative_position_id = SIA_singaporean_reinforcements	
 		prerequisite = { focus = SIA_singaporean_reinforcements focus = SIA_aid_for_resources }
-		#mutually_exclusive = { focus =  }
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -9007,8 +8475,6 @@
 				}
 			}
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
@@ -9028,9 +8494,6 @@
 		}
 	}
 
-	##############
-	###  Navy  ###
-	##############
 
 	focus = {
 		id = SIA_royal_thai_navy
@@ -9038,8 +8501,6 @@
 		x = 20
 		y = 0
 		relative_position_id = SIA_reluctant_submission
-		#prerequisite = { focus = }
-		#mutually_exclusive = { focus = }
 		cost = 5
 		ai_will_do = {
 			factor = 5
@@ -9110,15 +8571,12 @@
 		y = 1
 		relative_position_id = SIA_royal_thai_navy
 		prerequisite = { focus = SIA_royal_thai_navy }
-		#mutually_exclusive = { focus = }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -9141,15 +8599,12 @@
 		y = 0
 		relative_position_id = SIA_direct_army_fundings_towards_the_navy
 		prerequisite = { focus = SIA_royal_thai_navy }
-		#mutually_exclusive = { focus = }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		} 
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -9166,15 +8621,12 @@
 		y = 0
 		relative_position_id = SIA_thonburi_class_coastal_defense_ship
 		prerequisite = { focus = SIA_royal_thai_navy }
-		#mutually_exclusive = { focus = }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -9195,15 +8647,12 @@
 		y = 1
 		relative_position_id = SIA_acquire_submarines
 		prerequisite = { focus = SIA_acquire_submarines }
-		#mutually_exclusive = { focus = }
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
 
 		completion_reward = {
@@ -9222,7 +8671,7 @@
 
 	focus = {
 		id = SIA_the_thonburi_dockyard_project
-		icon = GFX_focus_generic_navy_research_bonus  # 
+		icon = GFX_focus_generic_navy_research_bonus
 		x = -3
 		y = 2
 		relative_position_id = SIA_royal_thai_navy
@@ -9242,8 +8691,6 @@
 				is_fully_controlled_by = ROOT
 			}
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -9278,7 +8725,6 @@
 		y = 1
 		relative_position_id = SIA_the_thonburi_dockyard_project
 		prerequisite = { focus = SIA_the_thonburi_dockyard_project }
-		#mutually_exclusive = { focus = }
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -9293,8 +8739,6 @@
 				is_fully_controlled_by = ROOT
 			}
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -9329,7 +8773,6 @@
 		y = 0
 		relative_position_id = SIA_expand_the_slipways
 		prerequisite = { focus = SIA_the_thonburi_dockyard_project }
-		#mutually_exclusive = { focus = }
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -9344,8 +8787,6 @@
 				is_fully_controlled_by = ROOT
 			}
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -9380,7 +8821,6 @@
 		y = 0
 		relative_position_id = SIA_a_new_drydock
 		prerequisite = { focus = SIA_the_thonburi_dockyard_project }
-		#mutually_exclusive = { focus = }
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -9395,8 +8835,6 @@
 				is_fully_controlled_by = ROOT
 			}
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -9438,7 +8876,6 @@
 		relative_position_id = SIA_install_heavy_cranes_and_power_plant
 		prerequisite = { focus = SIA_the_thonburi_dockyard_project }
 
-		#mutually_exclusive = { focus = }
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -9453,8 +8890,6 @@
 				is_fully_controlled_by = ROOT
 			}
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
@@ -9507,8 +8942,6 @@
 				is_owned_by = ROOT
 			}
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -9580,8 +9013,6 @@
 				is_fully_controlled_by = ROOT
 			}
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -9627,8 +9058,6 @@
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
@@ -9659,8 +9088,6 @@
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
@@ -9684,8 +9111,6 @@
 		}
 		available = {
 		}
-		#allow_branch = {
-		#}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {

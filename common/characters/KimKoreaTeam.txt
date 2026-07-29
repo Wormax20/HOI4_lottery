@@ -3,7 +3,7 @@ characters = {
 		name = KimKorea_Kim_Il_Sung
 		portraits={
 			civilian={
-				large = "GFX_portrait_KimKorea_Kim_Il_Sung" #156*210 肖像
+				large = "GFX_portrait_KimKorea_Kim_Il_Sung"
 			}
 		}
 		country_leader={
@@ -17,7 +17,7 @@ characters = {
 		name = KimKorea_Kim_Il
 		portraits={
 			civilian={
-				small = "GFX_portrait_KimKorea_Kim_Il" #65*67
+				small = "GFX_portrait_KimKorea_Kim_Il"
 			}
 		}
 		advisor = {
@@ -37,7 +37,7 @@ characters = {
 		name = KimKorea_Heo_Heon
 		portraits={
 			civilian={
-				small = "GFX_portrait_KimKorea_Heo_Heon" #65*67
+				small = "GFX_portrait_KimKorea_Heo_Heon"
 			}
 		}
 		advisor = {
@@ -57,7 +57,7 @@ characters = {
 		name = KimKorea_Ri_Sung_Yop
 		portraits={
 			civilian={
-				small = "GFX_portrait_KimKorea_Ri_Sung_Yop" #65*67
+				small = "GFX_portrait_KimKorea_Ri_Sung_Yop"
 			}
 		}
 		advisor = {
@@ -77,7 +77,7 @@ characters = {
 		name = KimKorea_Pak_Kum_chol
 		portraits={
 			civilian={
-				small = "GFX_portrait_KimKorea_Pak_Kum_chol" #65*67
+				small = "GFX_portrait_KimKorea_Pak_Kum_chol"
 			}
 		}
 		advisor = {

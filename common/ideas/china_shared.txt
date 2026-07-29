@@ -282,7 +282,7 @@ ideas = {
 				always = yes
 			}
 			
-			modifier = { # If changed here, change if upgraded versions too!
+			modifier = {
 				stability_factor = 0.05
 			}
 
@@ -304,7 +304,7 @@ ideas = {
 				always = yes
 			}
 			
-			modifier = { # If changed here, change if upgraded versions too!
+			modifier = {
 				war_support_factor = 0.05
 				communism_drift = -0.05
 			}
@@ -327,7 +327,7 @@ ideas = {
 				always = yes
 			}
 			
-			modifier = { # If changed here, change if upgraded versions too!
+			modifier = {
 				political_power_factor = 0.1
 			}
 
@@ -661,7 +661,7 @@ ideas = {
 							}
 						}
 					}
-					owner = { controls_state = CHI.mio_locations^6 } # 613 Shanghai
+					owner = { controls_state = CHI.mio_locations^6 }
 				}
 				IF = {
 					limit = {
@@ -670,7 +670,7 @@ ideas = {
 					}
 					OR = {
 						owner = { has_completed_focus = CHI_relocate_factories_from_the_coast }
-						owner = { controls_state = CHI.mio_locations^6 } # 613 Shanghai
+						owner = { controls_state = CHI.mio_locations^6 }
 					}
 				}
 			}
@@ -679,7 +679,6 @@ ideas = {
 				naval_equipment = 0.15
 			}
 			
-			# riverine warfare weak on open waters
 						
 			traits = { coastal_defence_naval_manufacturer }
 			
@@ -709,7 +708,7 @@ ideas = {
 							}
 						}
 					}
-					owner = { controls_state = 608 } # Beijing
+					owner = { controls_state = 608 }
 				}
 				IF = {
 					limit = {
@@ -718,7 +717,7 @@ ideas = {
 					}
 					OR = {
 						owner = { has_completed_focus = CHI_relocate_factories_from_the_coast }
-						owner = { controls_state = 608 } # Beijing
+						owner = { controls_state = 608 }
 					}
 				}
 			}
@@ -727,7 +726,6 @@ ideas = {
 				naval_equipment = 0.15
 			}
 			
-			# riverine warfare weak on open waters
 						
 			traits = { raiding_fleet_naval_manufacturer }
 			
@@ -742,7 +740,7 @@ ideas = {
 			picture = generic_artillery_manufacturer_1
 
 			
-			allowed = { ## If have SEA, then all China except PRC has it. Else all have it (because SEA PRC has Sinochem)
+			allowed = {
 				OR = {
 					AND = {
 						has_dlc = "No Compromise, No Surrender"
@@ -773,7 +771,7 @@ ideas = {
 							}
 						}
 					}
-					owner = { controls_state = CHI.mio_locations^2 } # 615 Shanxi
+					owner = { controls_state = CHI.mio_locations^2 }
 				}
 				IF = {
 					limit = {
@@ -782,7 +780,7 @@ ideas = {
 					}
 					OR = {
 						owner = { has_completed_focus = CHI_relocate_factories_from_the_coast }
-						owner = { controls_state = CHI.mio_locations^2 } # 615 Shanxi
+						owner = { controls_state = CHI.mio_locations^2 }
 					}
 				}
 			}
@@ -820,7 +818,7 @@ ideas = {
 							}
 						}
 					}
-					owner = { controls_state = CHI.mio_locations^3 } # 715 Liaobei
+					owner = { controls_state = CHI.mio_locations^3 }
 				}
 				IF = {
 					limit = {
@@ -829,7 +827,7 @@ ideas = {
 					}
 					OR = {
 						owner = { has_completed_focus = CHI_relocate_factories_from_the_coast }
-						owner = { controls_state = CHI.mio_locations^3 } # 715 Liaobei
+						owner = { controls_state = CHI.mio_locations^3 }
 					}
 				}
 			}
@@ -846,7 +844,7 @@ ideas = {
 			picture = CHI_hanyang
 
 			
-			allowed = { ## If have SEA, then all China except PRC has it. Else all have it (because SEA PRC has Sinochem)
+			allowed = {
 				OR = {
 					AND = {
 						has_dlc = "No Compromise, No Surrender"
@@ -877,7 +875,7 @@ ideas = {
 							}
 						}
 					}
-					owner = { controls_state = CHI.mio_locations^4 } # 1036 Wuhan
+					owner = { controls_state = CHI.mio_locations^4 }
 				}
 				IF = {
 					limit = {
@@ -886,7 +884,7 @@ ideas = {
 					}
 					OR = {
 						owner = { has_completed_focus = CHI_relocate_factories_from_the_coast }
-						owner = { controls_state = CHI.mio_locations^4 } # 1036 Wuhan
+						owner = { controls_state = CHI.mio_locations^4 }
 					}
 				}
 			}
@@ -922,7 +920,7 @@ ideas = {
 							}
 						}
 					}
-					owner = { controls_state = CHI.mio_locations^5 } #716 Liaoning
+					owner = { controls_state = CHI.mio_locations^5 }
 				}
 				IF = {
 					limit = {
@@ -931,7 +929,7 @@ ideas = {
 					}
 					OR = {
 						owner = { has_completed_focus = CHI_relocate_factories_from_the_coast }
-						owner = { controls_state = CHI.mio_locations^5 } #716 Liaoning
+						owner = { controls_state = CHI.mio_locations^5 }
 					}
 				}
 			}
@@ -960,7 +958,7 @@ ideas = {
 					limit = {
 						FROM = { NOT = { original_tag = CHI } }
 					}
-					owner = { controls_state = CHI.mio_locations^7 } # 613 Shanghai
+					owner = { controls_state = CHI.mio_locations^7 }
 				}
 				IF = {
 					limit = {
@@ -968,7 +966,7 @@ ideas = {
 					}
 					OR = {
 						owner = { has_completed_focus = CHI_relocate_factories_from_the_coast }
-						owner = { controls_state = CHI.mio_locations^7 } # 613 Shanghai
+						owner = { controls_state = CHI.mio_locations^7 }
 					}
 				}
 			}
@@ -998,7 +996,7 @@ ideas = {
 					limit = {
 						FROM = { NOT = { original_tag = CHI } }
 					}
-					owner = { controls_state = CHI.mio_locations^6 }  # 1035 Nanjing
+					owner = { controls_state = CHI.mio_locations^6 }
 				}
 				IF = {
 					limit = {
@@ -1006,7 +1004,7 @@ ideas = {
 					}
 					OR = {
 						owner = { has_completed_focus = CHI_relocate_factories_from_the_coast }
-						owner = { controls_state = CHI.mio_locations^6 }  # 1035 Nanjing
+						owner = { controls_state = CHI.mio_locations^6 }
 					}
 				}
 			}
@@ -1015,7 +1013,6 @@ ideas = {
 				support_tech = 0.10
 			}
 			
-				#WTT_TODO_CD: a special trait to make more distinct from above somehow?		
 			traits = { support_equipment_manufacturer }
 			
 		}
@@ -1059,7 +1056,7 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 				
-				modifier = { # CHI might lose the advisors, don't want the AI wasting PP
+				modifier = {
 					factor = 0
 					NOT = {
 						has_completed_focus = CHI_chinese_panzers
@@ -1085,7 +1082,7 @@ ideas = {
 					limit = {
 						FROM = { NOT = { original_tag = CHI } }
 					}
-					owner = { controls_state = CHI.mio_locations^7 } # 613 Shanghai
+					owner = { controls_state = CHI.mio_locations^7 }
 				}
 				IF = {
 					limit = {
@@ -1093,7 +1090,7 @@ ideas = {
 					}
 					OR = {
 						owner = { has_completed_focus = CHI_relocate_factories_from_the_coast }
-						owner = { controls_state = CHI.mio_locations^7 } # 613 Shanghai
+						owner = { controls_state = CHI.mio_locations^7 }
 					}
 				}
 			}
@@ -1115,7 +1112,7 @@ ideas = {
 		}
 	}
 	
-	aircraft_manufacturer = { #
+	aircraft_manufacturer = {
 			
 		designer = yes		
 
@@ -1146,7 +1143,6 @@ ideas = {
 			
 			traits = { medium_aircraft_manufacturer }
 			
-			# assembled hawk II and hawk III fighter bombers as well as the Vultee V-11 ground attackers
 						
 			ai_will_do = {
 				factor = 1
@@ -1190,7 +1186,6 @@ ideas = {
 			
 			traits = { medium_aircraft_manufacturer }
 			
-			# assembled hawk II and hawk III fighter bombers as well as the Vultee V-11 ground attackers
 						
 			ai_will_do = {
 				factor = 1
@@ -1236,7 +1231,6 @@ ideas = {
 			
 			traits = { medium_aircraft_manufacturer }
 			
-			# assembled hawk II and hawk III fighter bombers as well as the Vultee V-11 ground attackers
 						
 			ai_will_do = {
 				factor = 1
@@ -1253,11 +1247,11 @@ ideas = {
 						original_tag = CHI
 					}
 					has_completed_focus = CHI_camco_primacy
-					owner = { controls_state = CHI.mio_locations^8 } # #596 Zhejiang
+					owner = { controls_state = CHI.mio_locations^8 }
 				}
 				else = {
 					tag = event_target:WTT_current_china_leader
-					owner = { controls_state = CHI.mio_locations^8 } # #596 Zhejiang
+					owner = { controls_state = CHI.mio_locations^8 }
 				}
 			}
 
@@ -1275,7 +1269,6 @@ ideas = {
 			
 			traits = { light_aircraft_manufacturer }
 			
-			# assembled hawk II and hawk III fighter bombers as well as the Vultee V-11 ground attackers
 						
 			ai_will_do = {
 				factor = 1
@@ -1292,11 +1285,11 @@ ideas = {
 						original_tag = CHI
 					}
 					has_completed_focus = CHI_SINAW_primacy
-					owner = { controls_state = CHI.mio_locations^9 } # #600 Jiangxi
+					owner = { controls_state = CHI.mio_locations^9 }
 				}
 				else = {
 					tag = event_target:WTT_current_china_leader
-					owner = { controls_state = CHI.mio_locations^9 } # #600 Jiangxi
+					owner = { controls_state = CHI.mio_locations^9 }
 				}
 			}
 
@@ -1359,7 +1352,7 @@ ideas = {
 				controls_state = 716
 			}
 
-			allowed = { ## If have SEA, then all China except PRC has it. Else all have it (because SEA PRC has Sinochem)
+			allowed = {
 				OR = {
 					AND = {
 						has_dlc = "No Compromise, No Surrender"
@@ -1386,7 +1379,6 @@ ideas = {
 			
 			traits = { refinery_concern }
 			
-			# assembled hawk II and hawk III fighter bombers as well as the Vultee V-11 ground attackers
 						
 			ai_will_do = {
 				factor = 1
@@ -1444,7 +1436,7 @@ ideas = {
 				}
 			}
 
-			allowed = { ## If have SEA, then all China except PRC has it. Else all have it (because SEA PRC has Sinochem)
+			allowed = {
 				OR = {
 					AND = {
 						has_dlc = "No Compromise, No Surrender"
@@ -1502,7 +1494,7 @@ ideas = {
 			ai_will_do = {
 				factor = 1
 				
-				modifier = { # AI is likely to lose access to this state and waste the PP
+				modifier = {
 					factor = 0
 					OR = {
 						has_war_with = JAP

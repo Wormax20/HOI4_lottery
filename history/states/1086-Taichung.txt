@@ -18,7 +18,7 @@ state = {
 		add_core_of = FOR
 
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 3
 			industrial_complex = 2
 			air_base = 1
 		}
