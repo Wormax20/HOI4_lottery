@@ -825,4 +825,49 @@ on_actions = {
 			}
 		}
 	}
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = YJ_PRODUCTION_RULE
+						option = YJ_PRODUCTION_MINUS_25
+					}
+				}
+
+				every_country = {
+					limit = {
+						exists = yes
+						NOT = {
+							has_idea = YJ_PRODUCTION_MINUS_25_IDEA
+						}
+					}
+
+					remove_ideas = YJ_PRODUCTION_MINUS_50_IDEA
+					add_ideas = YJ_PRODUCTION_MINUS_25_IDEA
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = YJ_PRODUCTION_RULE
+						option = YJ_PRODUCTION_MINUS_50
+					}
+				}
+
+				every_country = {
+					limit = {
+						exists = yes
+						NOT = {
+							has_idea = YJ_PRODUCTION_MINUS_50_IDEA
+						}
+					}
+
+					remove_ideas = YJ_PRODUCTION_MINUS_25_IDEA
+					add_ideas = YJ_PRODUCTION_MINUS_50_IDEA
+				}
+			}
+		}
+	}
 }

@@ -3567,3 +3567,27 @@ YJ_Game_Mode_RULE = {
 		desc = "YJ_GAME_MODE_PVE_DESC"
 	}
 }
+
+YJ_PRODUCTION_RULE = {
+	name = "YJ_PRODUCTION_RULE"
+	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
+	icon = "GFX_wargoals"
+
+	default = {
+		name = "YJ_PRODUCTION_ORIGINAL"
+		text = "YJ_PRODUCTION_ORIGINAL"
+		desc = "YJ_PRODUCTION_ORIGINAL_DESC"
+	}
+
+	option = {
+		name = "YJ_PRODUCTION_MINUS_25"
+		text = "YJ_PRODUCTION_MINUS_25"
+		desc = "YJ_PRODUCTION_MINUS_25_DESC"
+	}
+
+	option = {
+		name = "YJ_PRODUCTION_MINUS_50"
+		text = "YJ_PRODUCTION_MINUS_50"
+		desc = "YJ_PRODUCTION_MINUS_50_DESC"
+	}
+}
