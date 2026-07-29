@@ -184,7 +184,6 @@ ideas = {
 				army_core_attack_factor = 0.10
 				army_core_defence_factor =  0.10
 				supply_consumption_factor = -0.10
-				land_reinforce_rate = 0.05
 			}
 			targeted_modifier = {
 				tag = GER

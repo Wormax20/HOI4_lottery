@@ -157,12 +157,10 @@ ideas = {
 				resistance_decay = 0.6
 				resistance_growth = -0.6
 				army_core_attack_factor = 0.1
-				army_armor_defence_factor = 0.1
 				resistance_target_on_our_occupied_states = 0.4
 				resistance_decay_on_our_occupied_states = -0.4
 				resistance_growth_on_our_occupied_states = 0.4
 				compliance_growth_on_our_occupied_states = -0.4
-				custom_modifier_tooltip = YJ_FRA_4_ideas_tt
 			}
 		}
 

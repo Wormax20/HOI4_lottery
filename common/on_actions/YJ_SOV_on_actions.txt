@@ -23,8 +23,8 @@ on_daily_SOV = {
 			add_to_variable = { SOV_conscription = 0.005 }
 			add_to_variable = { SOV_mobilization_speed = 0.05 }
 			add_to_variable = { SOV_supply_combat_penalties_on_core_factor = -0.05 }
-			add_to_variable = { SOV_army_core_attack_factor = 0.065 }
-			add_to_variable = { SOV_army_core_defence_factor = 0.065 }
+			add_to_variable = { SOV_army_core_attack_factor = 0.075 }
+			add_to_variable = { SOV_army_core_defence_factor = 0.075 }
 			add_to_variable = { SOV_cas_damage_reduction = 0.025 }
 			if = {
 				limit = {

@@ -99,7 +99,6 @@ ideas = {
 			picture = SWE_land_air_warfare
 
 			modifier = {
-				production_speed_buildings_factor = 0.1
 		        air_cas_efficiency = 0.15
 				ground_attack_factor = 0.1
 				air_cas_present_factor = 0.1
@@ -107,6 +106,7 @@ ideas = {
 				air_defence_factor = 0.15
 				air_agility_factor = 0.15
 				air_range_factor = 0.15
+				production_speed_buildings_factor = 0.1
 				local_resources_factor = 0.1
 			}
 			equipment_bonus = {
@@ -165,7 +165,7 @@ ideas = {
 			picture = raj_rifle_factory_ishapore
 
 			modifier = {
-				army_defence_factor = 0.10
+				army_defence_factor = 0.15
 				max_planning = 0.1
 				planning_speed = 0.1
 				supply_consumption_factor = -0.2
@@ -242,6 +242,7 @@ ideas = {
 				custom_modifier_tooltip = YJ_ENG_7_ideas_tt
 				industrial_capacity_dockyard = 0.20
 				production_speed_dockyard_factor = 0.20
+				production_speed_naval_base_factor = 0.20
 				naval_damage_factor = 0.05
 				naval_defense_factor = 0.05
 				navy_max_range_factor = 0.15
