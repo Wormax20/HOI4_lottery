@@ -3538,7 +3538,6 @@ focus_tree = {
 		}
 
 		available = {
-
 		}
 		
 		bypass = {
@@ -3653,6 +3652,7 @@ focus_tree = {
 		}
 
 		available = {
+			date > 1938.12.31
 		}
 		
 		bypass = {
@@ -4029,7 +4029,6 @@ focus_tree = {
 		}
 
 		available = {
-			
 		}
 		
 		bypass = {
@@ -4236,6 +4235,7 @@ focus_tree = {
 		}
 
 		available = {
+			date > 1938.05.31
 		}
 	
 

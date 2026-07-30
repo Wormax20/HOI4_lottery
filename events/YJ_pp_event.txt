@@ -201,10 +201,7 @@ country_event = {
 
 	option = {
 		name = KoKi_YJ_pp.18.a
-		add_political_power = 200
-		add_to_variable = {
-			YJ_country_limit = 5
-		}
+		add_political_power = 300
 		ai_chance = {
 			factor = 100
 		}
