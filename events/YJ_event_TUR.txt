@@ -23,13 +23,13 @@ country_event = {
 		complete_national_focus = SSB_combined_arms
 		complete_national_focus = SSB_saadabad_research_cooperation
 		mio:TUR_ticaret_organization = {
-					add_mio_size = 5
+			add_mio_size = 5
 		}
 		mio:TUR_koc_ticaret_as_shipyard_organization = {
-					add_mio_size = 5
+			add_mio_size = 5
 		}
 		mio:TUR_koc_ticaret_as_defense_industry_organization = {
-					add_mio_size = 5
+			add_mio_size = 5
 		}
 		every_state = {
 			limit = {

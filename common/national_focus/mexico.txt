@@ -4263,7 +4263,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = tooltip_spanish_civil_war_technical_knowledge
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = industry
 				category = electronics
 			}
@@ -6881,7 +6881,7 @@ focus_tree = {
 				custom_effect_tooltip = available_mio_tt
 				show_mio_tooltip = MEX_tga_organization
 				mio:MEX_tga_organization = {
-					add_mio_size = 3
+					add_mio_size = 6
 				}
 			}
 			ELSE = {
