@@ -37,6 +37,7 @@ news_event = {
 			idea = YJ_SOV_6_ideas
 			years = 1
 		}
+		add_ideas = YJ_SOV_7_ideas
 		hidden_effect = {
 			play_song = "Moscow_defender"
 		}
@@ -152,10 +153,7 @@ news_event = {
 			is_in_faction_with = SOV
 			NOT = { tag = SOV }
 		}
-		add_timed_idea = {
-			idea = YJ_SOV_6_ideas
-			years = 1
-		}
+		add_ideas = YJ_SOV_7_ideas
 	}
 
 }
