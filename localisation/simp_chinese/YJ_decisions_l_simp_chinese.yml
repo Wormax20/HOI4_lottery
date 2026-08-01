@@ -17,7 +17,7 @@ KoKi_YJ_TY_decisions_2: "第二次通用抽奖"
 
 
 KoKi_YJ_decisions_JL: "将领抽奖"
-KoKi_YJ_decisions_JL_txt: "当前抽奖次数:§Y[?KoKi_YJ_decisions_JL|Y0]§!次  最多可抽§R40§!次"
+KoKi_YJ_decisions_JL_txt: "当前抽奖次数:§Y[?KoKi_YJ_decisions_JL|Y0]§!次  最多可抽§R50§!次"
 
 KoKi_YJ_decisions_pp: "PP抽奖"
 KoKi_YJ_decisions_pp_txt: "当前抽奖次数:§Y[?KoKi_YJ_decisions_pp|Y0]§!次  最多可抽§R[?YJ_country_limit|Y0]§!次"

@@ -427,7 +427,7 @@ KoKi_YJ_decisions_categories = {
 			custom_trigger_tooltip = {
 				tooltip = KoKi_YJ_decisions_JL_txt
 				check_variable = {
-					KoKi_YJ_decisions_JL < 40
+					KoKi_YJ_decisions_JL < 50
 				}
 			}
 		}
