@@ -251,5 +251,14 @@ YJ_war_bf: "战争前夜"
 
 YJ_most_factory_country:0 "§Y民用工厂数量最多的国家§!"
 
+ENG_YJ_Naval_Tradition: "大英帝国皇家海军传统"
+ENG_YJ_Naval_Tradition_desc: "新舰数年即可建成，海军传统却须百年淬链。"
+ITA_YJ_Naval_Tradition: "意大利王国海军"
+ITA_YJ_Naval_Tradition_desc: "地中海不是英国人的内海——它是意大利的「我们的海」！"
+USA_YJ_Naval_Tradition: "美利坚合众国海军"
+USA_YJ_Naval_Tradition_desc: "从大西洋到太平洋，星条旗所向，皆有巨舰破浪而行。"
+JAP_YJ_Naval_Tradition: "大日本帝国海军"
+JAP_YJ_Naval_Tradition_desc: "以联合舰队之名，将帝国的命运押在太平洋的怒涛之上。"
+
 set_axis:0 "設為軸心国"
 set_allie:0 "設為同盟国"

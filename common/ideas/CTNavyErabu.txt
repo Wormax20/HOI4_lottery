@@ -1,0 +1,77 @@
+ideas = {
+	naval_academy_spirit = {
+		ENG_YJ_Naval_Tradition = {
+			ledger = navy
+			picture = ENG_YJ_Naval_Tradition
+			visible = {
+				tag = ENG
+			}
+			modifier = {
+				navy_max_range_factor = 0.10
+				naval_hit_chance = 0.05
+				positioning = 0.1
+				naval_coordination = 0.1
+				naval_retreat_chance = -0.1
+				naval_has_potf_in_combat_attack = 0.15
+				naval_has_potf_in_combat_defense = 0.15
+			}
+			ai_will_do = {
+				factor = 3
+			}
+		}
+		ITA_YJ_Naval_Tradition = {
+			ledger = navy
+			picture = ITA_YJ_Naval_Tradition
+			visible = {
+				tag = ITA
+			}
+			modifier = {
+				naval_speed_factor = 0.15
+				naval_heavy_gun_hit_chance_factor = 0.05
+				navy_capital_ship_attack_factor = 0.10
+				navy_capital_ship_defence_factor = 0.10
+				naval_supply_consumption_factor = -0.10
+			}
+			ai_will_do = {
+				factor = 3
+			}
+		}
+		USA_YJ_Naval_Tradition = {
+			ledger = navy
+			picture = USA_YJ_Naval_Tradition
+			visible = {
+				tag = USA
+			}
+			modifier = {
+				navy_max_range_factor = 0.20
+				naval_manufacturer_cost_factor = -0.20
+				navy_anti_air_attack_factor = 0.15
+				convoy_escort_efficiency = 0.15
+				screening_efficiency = 0.15
+				naval_supply_consumption_factor = -0.15
+				sortie_efficiency = 0.10
+			}
+			ai_will_do = {
+				factor = 3
+			}
+		}
+		JAP_YJ_Naval_Tradition = {
+			ledger = navy
+			picture = JAP_YJ_Naval_Tradition
+			visible = {
+				tag = JAP
+			}
+			modifier = {
+				navy_max_range_factor = 0.20
+				navy_capital_ship_attack_factor = 0.1
+				navy_capital_ship_defence_factor = 0.1
+				sortie_efficiency = 0.10
+				naval_retreat_chance = -0.10
+				navy_org_factor = 0.10
+			}
+			ai_will_do = {
+				factor = 3
+			}
+		}
+	}
+}

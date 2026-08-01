@@ -15,4 +15,20 @@ spriteTypes = {
 	    name = "GFX_idea_yj_qq"  
 	    textureFile = "gfx/interface/ideas/yj_qq.png"
     } 
+	spriteType = {
+	    name = "GFX_idea_ENG_YJ_Naval_Tradition"  
+	    textureFile = "gfx/interface/ideas/ENG_YJ_Naval_Tradition.png"
+    }
+	spriteType = {
+	    name = "GFX_idea_ITA_YJ_Naval_Tradition"  
+	    textureFile = "gfx/interface/ideas/ITA_YJ_Naval_Tradition.png"
+    }
+	spriteType = {
+	    name = "GFX_idea_USA_YJ_Naval_Tradition"  
+	    textureFile = "gfx/interface/ideas/USA_YJ_Naval_Tradition.png"
+    }
+	spriteType = {
+	    name = "GFX_idea_JAP_YJ_Naval_Tradition"  
+	    textureFile = "gfx/interface/ideas/JAP_YJ_Naval_Tradition.png"
+    }
 }
