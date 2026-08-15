@@ -45,6 +45,8 @@ news_event = {
 			name = "后备动员"
 			division_names_group = KOR_INF_01
 			is_locked = no
+			force_allow_recruiting = yes
+			obsolete = yes
 			regiments = {
 				infantry = { x = 0 y = 0 }
 				infantry = { x = 0 y = 1 }
@@ -62,68 +64,32 @@ news_event = {
 				}
 			}
 		}
-		set_temp_variable = {
-			YJ_SOV_create_unit_loop_effcet_count = 0
+		219 = {
+			create_unit = {
+				division = "division_template = \"后备动员\" start_experience_factor = 0.2 start_equipment_factor = 1.0"
+				owner = PREV
+				count = 144
+			}
 		}
-		while_loop_effect = {
-			limit = {
-				check_variable = {
-					YJ_SOV_create_unit_loop_effcet_count = 12
-					compare = less_than
-				}
+		217 = {
+			create_unit = {
+				division = "division_template = \"后备动员\" start_experience_factor = 0.2 start_equipment_factor = 1.0"
+				owner = PREV
+				count = 72
 			}
-			219 = {
-				create_unit = {
-					division = "name = \"后备动员\" division_template = \"后备动员\" start_experience_factor = 0.2 start_equipment_factor = 1"
-					owner = ROOT
-				}
-				create_unit = {
-					division = "name = \"后备动员\" division_template = \"后备动员\" start_experience_factor = 0.2 start_equipment_factor = 1"
-					owner = ROOT
-				}
-				create_unit = {
-					division = "name = \"后备动员\" division_template = \"后备动员\" start_experience_factor = 0.2 start_equipment_factor = 1"
-					owner = ROOT
-				}
-				create_unit = {
-					division = "name = \"后备动员\" division_template = \"后备动员\" start_experience_factor = 0.2 start_equipment_factor = 1"
-					owner = ROOT
-				}
-				create_unit = {
-					division = "name = \"后备动员\" division_template = \"后备动员\" start_experience_factor = 0.2 start_equipment_factor = 1"
-					owner = ROOT
-				}
-				create_unit = {
-					division = "name = \"后备动员\" division_template = \"后备动员\" start_experience_factor = 0.2 start_equipment_factor = 1"
-					owner = ROOT
-				}
-				create_unit = {
-					division = "name = \"后备动员\" division_template = \"后备动员\" start_experience_factor = 0.2 start_equipment_factor = 1"
-					owner = ROOT
-				}
-				create_unit = {
-					division = "name = \"后备动员\" division_template = \"后备动员\" start_experience_factor = 0.2 start_equipment_factor = 1"
-					owner = ROOT
-				}
-				create_unit = {
-					division = "name = \"后备动员\" division_template = \"后备动员\" start_experience_factor = 0.2 start_equipment_factor = 1"
-					owner = ROOT
-				}
-				create_unit = {
-					division = "name = \"后备动员\" division_template = \"后备动员\" start_experience_factor = 0.2 start_equipment_factor = 1"
-					owner = ROOT
-				}
-				create_unit = {
-					division = "name = \"后备动员\" division_template = \"后备动员\" start_experience_factor = 0.2 start_equipment_factor = 1"
-					owner = ROOT
-				}
-				create_unit = {
-					division = "name = \"后备动员\" division_template = \"后备动员\" start_experience_factor = 0.2 start_equipment_factor = 1"
-					owner = ROOT
-				}
+		}
+		221 = {
+			create_unit = {
+				division = "division_template = \"后备动员\" start_experience_factor = 0.2 start_equipment_factor = 1.0"
+				owner = PREV
+				count = 72
 			}
-			add_to_temp_variable = {
-				YJ_SOV_create_unit_loop_effcet_count = 1
+		}
+		263 = {
+			create_unit = {
+				division = "division_template = \"后备动员\" start_experience_factor = 0.2 start_equipment_factor = 1.0"
+				owner = PREV
+				count = 72
 			}
 		}
 		trigger = {
@@ -153,7 +119,68 @@ news_event = {
 			is_in_faction_with = SOV
 			NOT = { tag = SOV }
 		}
-		add_ideas = YJ_SOV_7_ideas
+	}
+
+}
+
+news_event = {
+	id = KoKi_YJ_NEW.11
+	title = KoKi_YJ_NEW.11.title
+	desc = KoKi_YJ_NEW.11.desc
+
+	picture = GFX_news_event_USA_One_more
+
+	major = yes
+
+	immediate = {
+		set_global_flag = KoKi_YJ_NEW_11_flag
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	trigger = {
+		USA = { has_war_with = JAP }
+		has_global_flag = {
+			flag = YJ_USA_Asia_defence
+			days > 60
+		}
+		NOT = { has_global_flag = KoKi_YJ_NEW_11_flag }
+	}
+
+	option = {
+		name = KoKi_YJ_NEW.11.a
+		
+		add_ideas = YJ_USA_67_ideas
+		
+		trigger = {
+			tag = USA
+		}
+	}
+
+	option = {
+		name = KoKi_YJ_NEW.11.b
+		trigger = {
+			has_war_with = USA
+		}
+	}
+
+	option = {
+		name = KoKi_YJ_NEW.11.c
+		trigger = {
+			NOT = { has_war_with = USA }
+			NOT = { tag = USA }
+			NOT = { is_in_faction_with = USA }
+		}
+	}
+
+	option = {
+		name = KoKi_YJ_NEW.11.d
+		trigger = {
+			is_in_faction_with = USA
+			NOT = { tag = USA }
+		}
 	}
 
 }

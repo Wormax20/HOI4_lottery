@@ -11,4 +11,8 @@ spriteTypes = {
 	    name = "GFX_news_event_moscow_defender"  
 	    textureFile = "gfx/event_pictures/SOV_Moscow_defender.png"
     } 
+	spriteType = {
+	    name = "GFX_news_event_USA_One_more"  
+	    textureFile = "gfx/event_pictures/USA_One_more.png"
+    } 
 }

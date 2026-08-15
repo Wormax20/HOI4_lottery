@@ -496,6 +496,43 @@ on_actions = {
 					}
 				}
 			}
+			IF = {
+				limit = {
+					219 = { is_fully_controlled_by = SOV }
+					has_idea = YJ_SOV_7_ideas
+				}
+				division_template = {
+					name = "后备动员"
+					division_names_group = KOR_INF_01
+					is_locked = no
+					force_allow_recruiting = yes
+					obsolete = yes
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+					}
+					support = {
+						artillery = {
+							x = 0
+							y = 0
+						}
+					}
+				}
+
+				219 = {
+					create_unit = {
+						division = "division_template = \"后备动员\" start_experience_factor = 0.2 start_equipment_factor = 1.0"
+						owner = PREV
+						count = 24
+					}
+				}
+			}
 			if = {
 				limit = {
 					USA = {has_idea = YJ_USA_5_ideas}
@@ -564,6 +601,13 @@ on_actions = {
 					has_war_with = GER
 			    }
 				set_global_flag = YJ_SOV_defence
+			}
+			if = {
+				limit = {
+					original_tag = USA
+					has_war_with = JAP
+			    }
+				set_global_flag = YJ_USA_Asia_defence
 			}
 			if = {
 				limit = {

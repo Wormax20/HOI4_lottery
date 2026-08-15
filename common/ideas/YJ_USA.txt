@@ -69,7 +69,7 @@ ideas = {
 
 			modifier = {
 				planning_speed = 0.10
-				max_planning = 0.05
+				max_planning = 0.10
 				research_speed_factor = 0.10
 				specialization_air_speed_factor = 0.5
 				specialization_land_speed_factor = 0.5
@@ -189,6 +189,18 @@ ideas = {
 				army_attack_against_major_factor = 0.1
 				army_defence_against_major_factor = 0.1
                 breakthrough_factor = 0.15
+            }
+        }
+
+		YJ_USA_67_ideas = {
+            picture = prc_low_popular_support
+
+            allowed = { always = no }
+
+            modifier = {
+				army_strength_factor = 0.10
+				experience_loss_factor = -0.15
+				experience_gain_army_unit = 1
             }
         }
 	}

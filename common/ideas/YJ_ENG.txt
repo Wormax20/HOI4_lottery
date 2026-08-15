@@ -18,18 +18,19 @@ ideas = {
 				custom_modifier_tooltip = YJ_ENG_1_ideas_tt
 				conscription = 0.03
 				global_building_slots = 10
-				political_power_factor = 0.25
-				political_power_gain =  0.10
+				political_power_factor = 0.15
+				political_power_gain =  0.15
 				stability_weekly = 0.002
 				war_support_weekly = 0.002
 				democratic_drift = 0.01
-				industrial_capacity_factory = 0.10
-				production_factory_max_efficiency_factor = 0.10
-				production_factory_efficiency_gain_factor = 0.10
-				industrial_capacity_dockyard = 0.1
-	            production_speed_dockyard_factor = 0.1
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				production_speed_buildings_factor = 0.1
 				air_manpower_requirement_factor = -0.5
 				air_mission_efficiency = 0.1
+				air_range_factor = 0.10
 			}
 			research_bonus = {
 				electronics = 0.2
@@ -51,8 +52,6 @@ ideas = {
 			picture = eng_the_sun_never_sets
 
 			modifier = {
-				production_factory_max_efficiency_factor = 0.05
-				industrial_capacity_factory = 0.05
 				custom_modifier_tooltip = YJ_ENG_2_ideas_tt
 				special_forces_attack_factor = 0.1
 				army_attack_factor = 0.1
@@ -67,7 +66,7 @@ ideas = {
 			}
 			equipment_bonus = {
 				armor = {
-					build_cost_ic = -0.05
+					build_cost_ic = -0.10
 					instant = yes
 				}
 				small_plane_airframe = {
@@ -106,8 +105,6 @@ ideas = {
 				air_defence_factor = 0.15
 				air_agility_factor = 0.15
 				air_range_factor = 0.15
-				production_speed_buildings_factor = 0.1
-				local_resources_factor = 0.1
 			}
 			equipment_bonus = {
 				small_plane_airframe = {
@@ -172,9 +169,7 @@ ideas = {
 				command_power_gain = 0.5
 				max_command_power = 200
 				air_cas_present_factor = 0.1
-				air_attack_factor =  0.05
-				air_defence_factor = 0.05
-				air_agility_factor = 0.05
+				air_agility_factor = 0.1
 			}
 			equipment_bonus = {
 				infantry_equipment = {
@@ -194,30 +189,6 @@ ideas = {
 					build_cost_ic = -0.05
 				}
 				small_plane_cas_airframe = {
-					instant = yes
-					build_cost_ic = -0.05
-				}
-				cv_small_plane_airframe = {
-					instant = yes
-					build_cost_ic = -0.05
-				}
-				medium_plane_airframe = {
-					instant = yes
-					build_cost_ic = -0.05
-				}
-				medium_plane_fighter_airframe = {
-					instant = yes
-					build_cost_ic = -0.05
-				}
-				medium_plane_scout_plane_airframe = {
-					instant = yes
-					build_cost_ic = -0.05
-				}
-				large_plane_airframe = {
-					instant = yes
-					build_cost_ic = -0.05
-				}
-				large_plane_maritime_patrol_plane_airframe = {
 					instant = yes
 					build_cost_ic = -0.05
 				}
@@ -267,10 +238,6 @@ ideas = {
 				ship_hull_carrier = {
 					instant = yes
 					build_cost_ic = -0.15
-				}
-				convoy = {
-					instant = yes
-					build_cost_ic = -0.25
 				}
 			}
 		}
@@ -327,7 +294,7 @@ ideas = {
 			}
 			targeted_modifier = {
 				tag = ENG
-				trade_cost_for_target_factor = -0.25
+				trade_cost_for_target_factor = -0.10
 			}
 			targeted_modifier = {
 				tag = RAJ
@@ -350,10 +317,6 @@ ideas = {
 				trade_cost_for_target_factor = -0.10
 			}
 			equipment_bonus = {
-				ship_hull_cruiser = {
-					build_cost_ic = -0.15
-					instant = yes
-				}
 				convoy = {
 					instant = yes
 					build_cost_ic = -0.15
@@ -398,6 +361,12 @@ ideas = {
 			targeted_modifier = {
 				tag = NZL
 				trade_cost_for_target_factor = -0.10
+			}
+			equipment_bonus = {
+				convoy = {
+					instant = yes
+					build_cost_ic = -0.50
+				}
 			}
 		}
 	}
