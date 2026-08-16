@@ -38,13 +38,15 @@ ideas = {
 
 			modifier = {
 				political_power_factor = 0.15
-				consumer_goods_factor = -0.10
+				consumer_goods_factor = -0.15
 				consumer_goods_expected_value = -0.10
 				conscription = 0.05
-				stability_weekly = 0.002
-				war_support_weekly = 0.002
+				stability_weekly = 0.005
+				war_support_weekly = 0.005
 				global_building_slots = 8
 				local_resources_factor = 0.20
+				army_core_attack_factor = 0.10
+				army_core_defence_factor = 0.10
 			}
 		}
 		YJ_SIA_2_ideas = {
@@ -93,7 +95,7 @@ ideas = {
 				industrial_capacity_factory = 0.10
 				production_factory_max_efficiency_factor = 0.10
 				production_factory_efficiency_gain_factor = 0.10
-				production_speed_infrastructure_factor = 0.15
+				production_speed_infrastructure_factor = 0.20
 				production_speed_industrial_complex_factor = 0.15
 				production_speed_arms_factory_factor = 0.15
 			}
@@ -119,28 +121,28 @@ ideas = {
 			}
 			equipment_bonus = {
 				light_tank_artillery_chassis = {
-					soft_attack = 0.06
-					breakthrough = 0.06
-					instant = yes
-				}
-				medium_tank_artillery_chassis = {
-					build_cost_ic = -0.03
 					soft_attack = 0.09
-					hard_attack = 0.09
 					breakthrough = 0.09
 					instant = yes
 				}
-				heavy_tank_artillery_chassis = {
+				medium_tank_artillery_chassis = {
 					build_cost_ic = -0.06
 					soft_attack = 0.12
 					hard_attack = 0.12
-					ap_attack = 0.12
 					breakthrough = 0.12
+					instant = yes
+				}
+				heavy_tank_artillery_chassis = {
+					build_cost_ic = -0.12
+					soft_attack = 0.15
+					hard_attack = 0.15
+					ap_attack = 0.15
+					breakthrough = 0.15
 					instant = yes
 				}
 				mio_cat_eq_all_tanks = {
 					reliability = 0.10
-					defense = 0.05
+					defense = 0.10
 					instant = yes
 				}
 			}
