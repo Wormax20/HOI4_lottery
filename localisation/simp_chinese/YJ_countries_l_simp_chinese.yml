@@ -63,7 +63,7 @@ YJ_GER_1_ideas: "闪击战法"
 YJ_GER_2_ideas: "竞争战法"
 YJ_GER_3_ideas: "毫无波澜"
 YJ_GER_4_ideas: "德意志帝国研发"
-YJ_GER_4_ideas_tt: "1937.1月德国将会获得§Y1次§!§R100%超前1年§!§C火炮§!加成卡\n1937.1月苏联将会获得§Y1次§!§R100%超前0.5年§!§C装甲§!加成卡\n1938.1.1获得全套飞机配件\n1941年1.1获得现代小型机身和二级机炮"
+YJ_GER_4_ideas_tt: "1937.1月德国将会获得§Y1次§!§R100%超前1年§!§C火炮§!加成卡\n1937.1月苏联将会获得§Y1次§!§R100%超前0.5年§!§C装甲§!加成卡\n1938.1.1获得44引擎以及44年以前其余飞机配件,还有40机体\n1941年1.1获得现代小型机身和二级机炮"
 
 YJ_GER_5_ideas: "德式军纪"
 YJ_GER_6_ideas: "德意志民族的生存空间"
@@ -205,7 +205,7 @@ YJ_SOV_4_ideas_tt: "跳过左翼内战\n获得无与伦比的联合\n修改部�
 YJ_SOV_5_ideas: "最美好的一代"
 YJ_SOV_6_ideas: "红场大阅兵"
 YJ_SOV_7_ideas: "世界人民反法西斯战争"
-YJ_SOV_7_ideas_tt: "每月给予苏联24个后备动员师，除非莫斯科地块并未§R完全控制。§!"
+YJ_SOV_7_ideas_tt: "§G每月给予苏联24个后备动员师，除非莫斯科地块并未§!§R完全控制。§!"
 YJ_SOV_3_ideas_event_tt: "§Y[KoKi_SOV_IDEAS]§!追加效果:"
 
 
@@ -322,7 +322,7 @@ KoKi_YJ_FIN_event.102.desc: "获得高额山地师修正，特种攻击\n冬季�
 KoKi_YJ_FIN_event.102.a: "好"
 
 KoKi_YJ_FIN_event.103.title: "奖品: 凛冬航空队"
-KoKi_YJ_FIN_event.103.desc: "解锁满血萨博,获得高额空军buff"
+KoKi_YJ_FIN_event.103.desc: "解锁满血萨博,获得核心攻防与生产建设相关加强"
 KoKi_YJ_FIN_event.103.a: "好"
 
 KoKi_YJ_FIN_event.104.title: "奖品: 北欧工业整合"

@@ -1027,7 +1027,7 @@ focus_tree = {
 		cost = 10
 
 		available = {
-
+			has_completed_focus = SOV_industrial_modernization
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}

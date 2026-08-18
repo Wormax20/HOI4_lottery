@@ -10,7 +10,7 @@ news_event = {
 	major = yes
 
 	immediate = {
-		set_global_flag = KoKi_YJ_NEW_1_flag
+		set_global_flag = KoKi_YJ_RED_NEW_1_flag
 	}
 
 	mean_time_to_happen = {
@@ -19,12 +19,11 @@ news_event = {
 
 	trigger = {
 		SOV = { has_war_with = GER }
-		SOV = { has_dynamic_modifier = { modifier = YJ_SOV_3_ideas } }
 		has_global_flag = {
 			flag = YJ_SOV_defence
 			days > 30
 		}
-		NOT = { has_global_flag = KoKi_YJ_NEW_1_flag }
+		NOT = { has_global_flag = KoKi_YJ_RED_NEW_1_flag }
 	}
 
 	option = {

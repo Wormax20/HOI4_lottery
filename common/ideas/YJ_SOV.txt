@@ -101,9 +101,10 @@ ideas = {
 				custom_modifier_tooltip = YJ_SOV_4_ideas_tt
 				political_power_factor = 0.15
 				research_speed_factor = 0.20
-				stability_factor = 0.1
+				stability_factor = 0.10
+				war_support_factor = 0.10
 				global_building_slots = 3
-				production_speed_buildings_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
 				industrial_capacity_factory = 0.10
 				local_resources_factor = 0.10
 				max_dig_in_factor = 0.1
@@ -157,12 +158,15 @@ ideas = {
 			equipment_bonus = {
 				infantry_equipment = {
 					build_cost_ic = -0.10
+					instant = yes
 				}
 				motorized_equipment = {
 					build_cost_ic = -0.10
+					instant = yes
 				}
 				anti_air_equipment = {
 					build_cost_ic = -0.10
+					instant = yes
 				}
 			}
 		}
@@ -188,11 +192,13 @@ ideas = {
 			targeted_modifier = {
 				tag = GER
 				attack_bonus_against = 0.10
+				breakthrough_bonus_against = 0.10
 				defense_bonus_against = 0.10
 			}
 			targeted_modifier = {
 				tag = FIN
 				attack_bonus_against = 0.10
+				breakthrough_bonus_against = 0.10
 				defense_bonus_against = 0.10
 			}
 		}
@@ -211,8 +217,10 @@ ideas = {
 			picture = CHI_protracted_warfare
 
 			modifier = {
+				custom_modifier_tooltip = YJ_SOV_7_ideas_tt
 				conscription = 0.05
 				mobilization_speed = 0.25
+				weekly_manpower = 10000
 				industrial_capacity_factory = 0.10
 				industrial_capacity_dockyard = 0.10
 			}
