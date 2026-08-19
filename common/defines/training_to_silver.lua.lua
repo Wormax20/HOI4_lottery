@@ -1,0 +1,1 @@
+NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 2
