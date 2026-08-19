@@ -6382,6 +6382,11 @@ focus_tree = {
 				uses = 1
 				category = motorized_equipment
 			}
+			mio:USA_marmon_herrington_organization = {
+				add_mio_size = 2
+				add_mio_funds_gain_factor = 0.25
+				add_mio_research_bonus = 0.05
+			}
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = MEX_manuel_avila
 		}
