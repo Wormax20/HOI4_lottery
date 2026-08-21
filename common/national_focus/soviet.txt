@@ -533,7 +533,7 @@ focus_tree = {
 		id = SOV_industrial_modernization
 
 		icon = GFX_SOV_industrial_modernization_ccp_2d_sov_compatibility
-		prerequisite = { focus = SOV_reorganize_the_pc_of_heavy_industry }
+		prerequisite = { focus = SOV_shift_to_armaments_production focus = SOV_reorganize_the_pc_of_heavy_industry }
 		x = 0
 		y = 3
 		relative_position_id = SOV_reorganize_the_pc_of_heavy_industry
@@ -708,7 +708,7 @@ focus_tree = {
 		id = SOV_optimize_production_lines
 
 		icon = GFX_SOV_optimize_production_lines_ccp_2d_sov_compatibility
-		prerequisite = { focus = SOV_shift_to_armaments_production }
+		prerequisite = { focus = SOV_shift_to_armaments_production focus = SOV_reorganize_the_pc_of_heavy_industry }
 		x = 0
 		y = 3
 		relative_position_id = SOV_shift_to_armaments_production
