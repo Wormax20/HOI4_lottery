@@ -1028,6 +1028,7 @@ focus_tree = {
 
 		available = {
 			has_completed_focus = SOV_industrial_modernization
+			has_completed_focus = SOV_optimize_production_lines
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}

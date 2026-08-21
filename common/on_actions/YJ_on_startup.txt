@@ -94,6 +94,10 @@ on_actions = {
 						type = arms_factory
 						level = 10
 					}
+					add_offsite_building = {
+						type = dockyard
+						level = 5
+					}
 					every_core_state = {
 						set_state_category = megalopolis
 					}
@@ -148,6 +152,30 @@ on_actions = {
 					add_offsite_building = {
 						type = industrial_complex
 						level = 5
+					}
+				}
+			}
+			if = {
+				limit = {
+					SIA = { is_ai = no }
+					CHI = { is_ai = no }
+				}
+				CHI = {
+					add_offsite_building = {
+						type = industrial_complex
+						level = 10
+					}
+				}
+			}
+			if = {
+				limit = {
+					SIA = { is_ai = no }
+					PRC = { is_ai = no }
+				}
+				PRC = {
+					add_offsite_building = {
+						type = industrial_complex
+						level = 10
 					}
 				}
 			}

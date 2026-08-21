@@ -171,6 +171,8 @@ ideas = {
 				production_speed_supply_node_factor = 1
 				production_speed_rail_way_factor = 1
 				terrain_penalty_reduction = 0.1
+				stability_weekly = 0.002
+				war_support_weekly = 0.002
 			}
 		}
 

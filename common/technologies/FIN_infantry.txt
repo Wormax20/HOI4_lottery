@@ -3,20 +3,20 @@ technologies = {
 		mountaineers = {
 			soft_attack = 0.05
 			hard_attack = 0.05
-			breakthrough = 0.1
-			defense = 0.1
-			maximum_speed = 1
+			breakthrough = 0.05
+			defense = 0.05
+			maximum_speed = 0.1
 			supply_consumption = -0.02
 		}
 		winter_logistics_support = {
 			acclimatization_cold_climate_gain_factor = 3
 			supply_consumption = -0.2
-			soft_attack = 8.33
+			soft_attack = 4.165
 		}
 		long_range_patrol_support = {
 			acclimatization_cold_climate_gain_factor = 3
 			supply_consumption = -0.1
-			soft_attack = 8.33
+			soft_attack = 4.165
 			battalion_mult = {
 				category = category_light_infantry
 				initiative = 0.05
