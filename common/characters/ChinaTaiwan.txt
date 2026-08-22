@@ -120,6 +120,9 @@ characters = {
 			idea_token = Cht_Chen_Cheng
 			allowed = {
 				original_tag = CHI
+				FROM = {
+					has_country_leader = Cht_chiang_kai_shek
+				}
 			}
 			traits = {
 				Cht_Chen_Cheng_buff
@@ -140,6 +143,9 @@ characters = {
 			idea_token = Cht_Sun_Li_jen
 			allowed = {
 				original_tag = CHI
+				FROM = {
+					has_country_leader = Cht_chiang_kai_shek
+				}
 			}
 			traits = {
 				Cht_Sun_Li_jen_buff
@@ -160,6 +166,9 @@ characters = {
 			idea_token = Cht_Chen_Chi_liang
 			allowed = {
 				original_tag = CHI
+				FROM = {
+					has_country_leader = Cht_chiang_kai_shek
+				}
 			}
 			traits = {
 				Cht_Chen_Chi_liang_buff
@@ -180,6 +189,9 @@ characters = {
 			idea_token = Cht_Kao_Chih_hang
 			allowed = {
 				original_tag = CHI
+				FROM = {
+					has_country_leader = Cht_chiang_kai_shek
+				}
 			}
 			traits = {
 				Cht_Kao_Chih_hang_buff
@@ -200,6 +212,9 @@ characters = {
 			idea_token = Cht_Chou_Chih_jou
 			allowed = {
 				original_tag = CHI
+				FROM = {
+					has_country_leader = Cht_chiang_kai_shek
+				}
 			}
 			traits = {
 				Cht_Chou_Chih_jou_buff
