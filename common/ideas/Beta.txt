@@ -101,13 +101,14 @@ ideas = {
 				special_forces_attack_factor = -0.2
 				special_forces_defence_factor = -0.1
 				special_forces_training_time_factor = 0.30
-				special_forces_no_supply_grace = -24
 				production_speed_bunker_factor = -0.25
 				production_cost_bunker_factor = 0.5
 				bunker_max_level_terrain_limit = -4
 				air_strategic_bomber_bombing_factor = -0.5
 				navy_submarine_attack_factor = -10
 				navy_submarine_defence_factor = -10
+				stability_weekly = 0.002
+				war_support_weekly = 0.002
 				custom_modifier_tooltip = YJ_AIR_ideas_tt
 				custom_modifier_tooltip = YJ_AIR_ideas_ship_tt
 				custom_modifier_tooltip = YJ_AIR_ideas_navy_cap_tt
@@ -142,7 +143,7 @@ ideas = {
 				}
 				infantry_equipment = {
 					instant = yes
-					build_cost_ic = 0.3
+					build_cost_ic = 0.15
 					breakthrough = -0.3
 				}
 				fighter = {

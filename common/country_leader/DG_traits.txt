@@ -28,15 +28,15 @@ leader_traits = {
 		random = no
 		sprite = 10
 		industrial_capacity_factory = -0.15
-		political_power_cost = 0.30
+		political_power_cost = 0.25
 		production_speed_industrial_complex_factor = 0.15
-		local_resources_factor = 0.1
+		local_resources_factor = 0.15
 	}
 
 	Han_traits = {
 		random = no
 		sprite = 10
-		political_power_cost = 0.25
+		political_power_cost = 0.20
 		production_speed_buildings_factor = 0.10
 	}
 
@@ -182,7 +182,7 @@ leader_traits = {
 	Arg_traits = {
 		random = no
 		sprite = 14
-		political_power_cost = 0.2
+		political_power_cost = 0.15
 		conscription = 0.01
 		min_export = -0.10
         research_speed_factor = 0.05
@@ -249,7 +249,7 @@ leader_traits = {
 		industrial_capacity_factory = -0.10
 		industrial_capacity_dockyard = -0.10
 		conscription_factor = -0.50
-    	army_attack_factor = 0.05
+    	army_attack_factor = 0.075
         army_defence_factor = 0.05
 		army_org_factor = 0.05
 		breakthrough_factor =0.05

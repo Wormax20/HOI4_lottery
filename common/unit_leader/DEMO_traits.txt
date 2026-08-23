@@ -39,7 +39,7 @@ leader_traits = {
 		}
 
 		non_shared_modifier = {
-			experience_gain_factor = 0.4
+			experience_gain_factor = 0.1
 		}
 
 		ai_will_do = {

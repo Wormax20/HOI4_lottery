@@ -115,7 +115,7 @@ ideas = {
 			picture = generic_artillery_regiments
 
 			modifier = {
-				supply_consumption_factor = 0.20
+				supply_consumption_factor = 0.15
 				army_bonus_air_superiority_factor = 0.20
 				breakthrough_factor = 0.10
 			}

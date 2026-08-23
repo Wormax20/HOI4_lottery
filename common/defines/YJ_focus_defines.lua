@@ -1,0 +1,1 @@
+NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 30

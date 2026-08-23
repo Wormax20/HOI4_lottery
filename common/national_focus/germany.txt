@@ -12011,6 +12011,7 @@ focus_tree = {
 			OR = {
 				NOT = { country_exists = FRA }
 				has_war_with = FRA
+				is_in_faction_with = FRA
 			}
 		}
 		
