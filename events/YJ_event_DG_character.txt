@@ -1653,7 +1653,7 @@ country_event = {
 							cost = 100
 							slot = high_command
 							idea_token = LGS
-							desc = AGH_desc
+							desc = LGS_desc
 							traits = {
 								Lgs_traits
 							}
