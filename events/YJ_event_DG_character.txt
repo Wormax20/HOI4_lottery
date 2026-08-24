@@ -1650,7 +1650,7 @@ country_event = {
 							is_ai = no
 						}
 						advisor={
-							cost = 100
+							cost = 175
 							slot = high_command
 							idea_token = LGS
 							desc = LGS_desc
