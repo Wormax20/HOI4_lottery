@@ -1659,6 +1659,18 @@ country_event = {
 							ai_will_do = {
 								base = 1
 							}
+							on_add = {
+								set_country_flag = LGS_on
+								set_variable = {
+									LGS_pp_lot = 0
+								}
+							}
+							on_remove = {
+								clr_country_flag = LGS_on
+								set_variable = {
+									LGS_pp_lot = 0
+								}
+							}
 						}
 					}
 				}

@@ -241,6 +241,8 @@ mos_traits: "這裡絕對是加拿大理论家"
 receive_western_education: "西方教育背景"
 
 AGH_desc: "§Y每天§!獲得10單位的§Y裝甲車§!"
+LGS_desc: "若连续抽到§R2次负面事件§!则下一次抽奖必定是§Y获得工厂事件§!\n若抽到核弹事件则下一次抽奖必定是§G军民没有船屋事件§!"
+
 options_button_text: "开始游戏"
 
 ck_TITLE:0 "ck Music"

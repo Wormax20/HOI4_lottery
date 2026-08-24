@@ -14,6 +14,14 @@ country_event = {
 			type = industrial_complex
 			level = 10
 		}
+		if = {
+			limit = {
+				has_country_flag = LGS_on
+			}
+			set_variable = {
+				LGS_pp_lot = 0
+			}
+		}
 		ai_chance = {
 			factor = 100
 		}
@@ -33,6 +41,14 @@ country_event = {
 		add_offsite_building = {
 			type = arms_factory
 			level = 10
+		}
+		if = {
+			limit = {
+				has_country_flag = LGS_on
+			}
+			set_variable = {
+				LGS_pp_lot = 0
+			}
 		}
 		ai_chance = {
 			factor = 100
@@ -60,6 +76,14 @@ country_event = {
 			idea = YJ_29_ideas
 			days = YJ_29_ideas_var
 		}
+		if = {
+			limit = {
+				has_country_flag = LGS_on
+			}
+			set_variable = {
+				LGS_pp_lot = 0
+			}
+		}
 		ai_chance = {
 			factor = 100
 		}
@@ -77,6 +101,14 @@ country_event = {
 	option = {
 		name = KoKi_YJ_pp.4.a
 		add_stability = 0.2
+		if = {
+			limit = {
+				has_country_flag = LGS_on
+			}
+			set_variable = {
+				LGS_pp_lot = 0
+			}
+		}
 		ai_chance = {
 			factor = 100
 		}
@@ -94,6 +126,14 @@ country_event = {
 	option = {
 		name = KoKi_YJ_pp.5.a
 		add_war_support = 0.2
+		if = {
+			limit = {
+				has_country_flag = LGS_on
+			}
+			set_variable = {
+				LGS_pp_lot = 0
+			}
+		}
 		ai_chance = {
 			factor = 100
 		}
@@ -111,6 +151,14 @@ country_event = {
 	option = {
 		name = KoKi_YJ_pp.2.a
 		add_stability = -0.1
+		if = {
+			limit = {
+				has_country_flag = LGS_on
+			}
+			add_to_variable = {
+				LGS_pp_lot = 1
+			}
+		}
 		ai_chance = {
 			factor = 100
 		}
@@ -128,6 +176,14 @@ country_event = {
 	option = {
 		name = KoKi_YJ_pp.2.a
 		add_war_support = -0.1
+		if = {
+			limit = {
+				has_country_flag = LGS_on
+			}
+			add_to_variable = {
+				LGS_pp_lot = 1
+			}
+		}
 		ai_chance = {
 			factor = 100
 		}
@@ -149,6 +205,15 @@ country_event = {
    			controller = ROOT
     		use_nuke = no
     		nuke_type = thermonuclear_bomb
+		}
+		if = {
+			limit = {
+				has_country_flag = LGS_on
+			}
+			add_to_variable = {
+				LGS_pp_lot = 1
+			}
+			set_country_flag = LGS_nuke
 		}
 		ai_chance = {
 			factor = 100
@@ -184,6 +249,14 @@ country_event = {
 			category = nuclear
 			category = rocketry
 		}
+		if = {
+			limit = {
+				has_country_flag = LGS_on
+			}
+			set_variable = {
+				LGS_pp_lot = 0
+			}
+		}
 		ai_chance = {
 			factor = 100
 		}
@@ -202,6 +275,14 @@ country_event = {
 	option = {
 		name = KoKi_YJ_pp.18.a
 		add_political_power = 300
+		if = {
+			limit = {
+				has_country_flag = LGS_on
+			}
+			set_variable = {
+				LGS_pp_lot = 0
+			}
+		}
 		ai_chance = {
 			factor = 100
 		}
@@ -225,6 +306,14 @@ country_event = {
 		add_offsite_building = {
 			type = arms_factory
 			level = 10
+		}
+		if = {
+			limit = {
+				has_country_flag = LGS_on
+			}
+			set_variable = {
+				LGS_pp_lot = 0
+			}
 		}
 		ai_chance = {
 			factor = 100
@@ -272,6 +361,14 @@ country_event = {
 				instant_build = yes
 			}
 		}
+		if = {
+			limit = {
+				has_country_flag = LGS_on
+			}
+			add_to_variable = {
+				LGS_pp_lot = 1
+			}
+		}
 		ai_chance = {
 			factor = 100
 		}
@@ -297,6 +394,14 @@ country_event = {
 		add_timed_idea = {
 			idea = YJ_21_ideas
 			days = YJ_21_ideas_var
+		}
+		if = {
+			limit = {
+				has_country_flag = LGS_on
+			}
+			set_variable = {
+				LGS_pp_lot = 0
+			}
 		}
 		ai_chance = {
 			factor = 100
@@ -324,6 +429,14 @@ country_event = {
 			idea = YJ_22_ideas
 			days = YJ_22_ideas_var
 		}
+		if = {
+			limit = {
+				has_country_flag = LGS_on
+			}
+			set_variable = {
+				LGS_pp_lot = 0
+			}
+		}
 		ai_chance = {
 			factor = 100
 		}
@@ -350,6 +463,14 @@ country_event = {
 			idea = YJ_23_ideas
 			days = YJ_23_ideas_var
 		}
+		if = {
+			limit = {
+				has_country_flag = LGS_on
+			}
+			set_variable = {
+				LGS_pp_lot = 0
+			}
+		}
 		ai_chance = {
 			factor = 100
 		}
@@ -375,6 +496,14 @@ country_event = {
 		add_timed_idea = {
 			idea = YJ_24_ideas
 			days = YJ_24_ideas_var
+		}
+		if = {
+			limit = {
+				has_country_flag = LGS_on
+			}
+			set_variable = {
+				LGS_pp_lot = 0
+			}
 		}
 		ai_chance = {
 			factor = 100
@@ -403,6 +532,14 @@ country_event = {
 			days = YJ_25_ideas_var
 		}
 		add_manpower = 1000000
+		if = {
+			limit = {
+				has_country_flag = LGS_on
+			}
+			set_variable = {
+				LGS_pp_lot = 0
+			}
+		}
 		ai_chance = {
 			factor = 100
 		}
@@ -428,6 +565,14 @@ country_event = {
 		add_timed_idea = {
 			idea = YJ_26_ideas
 			days = YJ_26_ideas_var
+		}
+		if = {
+			limit = {
+				has_country_flag = LGS_on
+			}
+			set_variable = {
+				LGS_pp_lot = 0
+			}
 		}
 		ai_chance = {
 			factor = 100
@@ -455,6 +600,14 @@ country_event = {
 			idea = YJ_27_ideas
 			days = YJ_27_ideas_var
 		}
+		if = {
+			limit = {
+				has_country_flag = LGS_on
+			}
+			set_variable = {
+				LGS_pp_lot = 0
+			}
+		}
 		ai_chance = {
 			factor = 100
 		}
@@ -480,6 +633,14 @@ country_event = {
 		add_timed_idea = {
 			idea = YJ_28_ideas
 			days = YJ_28_ideas_var
+		}
+		if = {
+			limit = {
+				has_country_flag = LGS_on
+			}
+			set_variable = {
+				LGS_pp_lot = 0
+			}
 		}
 		ai_chance = {
 			factor = 100
@@ -515,6 +676,17 @@ country_event = {
 				id = KoKi_YJ_pp.29_1
 			}
 		}
+		if = {
+			limit = {
+				has_country_flag = LGS_on
+			}
+			set_variable = {
+				LGS_pp_lot = 0
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
 	}
 }
 
@@ -534,6 +706,9 @@ country_event = {
 		add_offsite_building = {
 			type = arms_factory
 			level = 5
+		}
+		ai_chance = {
+			factor = 100
 		}
 	}
 }

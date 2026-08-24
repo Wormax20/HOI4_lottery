@@ -692,6 +692,15 @@ on_actions = {
 			set_variable_to_random = { var = YJ_rng1 min = 1 max = 100 }
 			round_variable = YJ_rng1
 			log = "value2 : [?YJ_rng1]"
+
+			if = {
+				limit = {
+					has_country_flag = LGS_on
+				}
+				set_variable_to_random = { var = YJ_rng2 min = 1 max = 3 }
+				round_variable = YJ_rng2
+				log = "value3 : [?YJ_rng2]"
+			}
 		}
 	}
 
