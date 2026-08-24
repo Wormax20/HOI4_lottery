@@ -138,7 +138,6 @@ ideas = {
 				
 			}
 		}
-		# version if player went down limited intervention
 		USA_lend_lease_act_li = {
 			picture = generic_production_bonus
 			name = USA_lend_lease_act
@@ -161,7 +160,7 @@ ideas = {
 				economy_cost_factor = 1
 			}
 		}
-		USA_lend_lease_act_na = {# version if player went down neutrality act
+		USA_lend_lease_act_na = {
 			picture = generic_production_bonus
 			name = USA_lend_lease_act
 			allowed = {
@@ -182,7 +181,7 @@ ideas = {
 				embargo_threshold_factor = 1.5
 			}
 		}
-		USA_lend_lease_act_dummy = { #dummy version to show effects
+		USA_lend_lease_act_dummy = {
 			picture = generic_production_bonus
 			name = USA_lend_lease_act
 			allowed = {
@@ -1110,12 +1109,11 @@ ideas = {
 			}
 			modifier = {
 				drift_defence_factor = 0.2
-				ai_badass_factor = 0.03 # cares for 3% of normal threat
+				ai_badass_factor = 0.03
 				ai_desired_divisions_factor = 0.5 
 			}
 		}
 
-		# idea for the protect Amercians focus - USA democratic
 		american_influence_defence_democratic = {
 			allowed = { always = no	}
 
@@ -1168,7 +1166,6 @@ ideas = {
 				democratic_drift = 0.05
 			}			
 		}
-			# idea for the protect Amercians focus - USA communist
 		american_influence_defence_communism = {
 			allowed = { always = no	}
 
@@ -1221,7 +1218,6 @@ ideas = {
 				communism_drift = 0.05
 			}			
 		}
-			# idea for the protect Amercians focus - USA fascist
 		american_influence_defence_fascism = {
 			allowed = { always = no	}
 
@@ -1652,24 +1648,6 @@ ideas = {
 			}
 		}
 		
-		#bell = {
-		#	
-		#	
-		#	allowed = {
-		#		original_tag = USA
-		#	}
-		#	
-		#
-		#	
-		#	research_bonus = {
-		#		air_equipment = 0.15
-		#	}
-		#	
-		#	traits = { light_aircraft_manufacturer }	#TODO, make different from north american
-		#	
-		#	modifier = {
-		#	}
-		#}	
 		
 		lockheed = {
 			
@@ -1749,24 +1727,6 @@ ideas = {
 			}
 		}
 		
-		#consolidated_aircraft = {
-		#	
-		#	
-		#	allowed = {
-		#		original_tag = USA
-		#	}
-		#	
-		#
-		#	
-		#	research_bonus = {
-		#		air_equipment = 0.15
-		#	}
-		#	
-		#	traits = { heavy_aircraft_manufacturer } #TODO remove?
-		#	
-		#	modifier = {
-		#	}
-		#}
 		grumman = {
 			
 			

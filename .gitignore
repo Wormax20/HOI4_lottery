@@ -3,5 +3,5 @@
 .idea/
 *.bak
 *.tmp
-_*.py
+*.py
 Thumbs.db

@@ -1,0 +1,283 @@
+DGL_bread_set_config = {
+	set_variable = { DGL_bread_rate = 1 }
+	set_variable = { DGL_bread_cap_base = 10000 }
+	set_variable = { DGL_bread_cap_per_factory = 1000 }
+	set_variable = { DGL_bread_cap_per_infra = 500 }
+	set_variable = { DGL_bread_start_ratio = 0.45 }
+
+	set_variable = { DGL_bread_eat_per_1k = 0.5 }
+
+	set_variable = { DGL_bread_law_1 = 0.8 }
+	set_variable = { DGL_bread_law_2 = 1.0 }
+	set_variable = { DGL_bread_law_3 = 1.2 }
+	set_variable = { DGL_bread_law_4 = 1.5 }
+	set_variable = { DGL_bread_law_5 = 2.0 }
+
+	set_variable = { DGL_bread_tier_high = 0.75 }
+	set_variable = { DGL_bread_tier_mid = 0.40 }
+	set_variable = { DGL_bread_tier_low = 0.15 }
+
+	set_variable = { DGL_bread_good_org = 0.05 }
+	set_variable = { DGL_bread_good_atk = 0.05 }
+	set_variable = { DGL_bread_good_stab = 0.05 }
+
+	set_variable = { DGL_bread_short_org = -0.05 }
+	set_variable = { DGL_bread_short_atk = -0.05 }
+	set_variable = { DGL_bread_short_stab = -0.05 }
+
+	set_variable = { DGL_bread_famine_org = -0.15 }
+	set_variable = { DGL_bread_famine_atk = -0.15 }
+	set_variable = { DGL_bread_famine_stab = -0.15 }
+	set_variable = { DGL_bread_famine_fac = -0.20 }
+
+	set_variable = { DGL_bread_famine_drain_stab = -0.01 }
+	set_variable = { DGL_bread_famine_drain_ws = -0.01 }
+}
+
+DGL_bread_count_infra = {
+	set_variable = { DGL_bread_infra_levels = 0 }
+
+	every_owned_state = {
+		limit = {
+			is_fully_controlled_by = PREV
+		}
+		set_temp_variable = { DGL_bread_lvl = infrastructure_level }
+		add_to_variable = { PREV.DGL_bread_infra_levels = DGL_bread_lvl }
+	}
+}
+
+DGL_bread_calc_cap = {
+	DGL_bread_count_infra = yes
+
+	set_variable = { DGL_bread_cap_fac = num_of_civilian_factories }
+	multiply_variable = { DGL_bread_cap_fac = DGL_bread_cap_per_factory }
+
+	set_variable = { DGL_bread_cap_infra = DGL_bread_infra_levels }
+	multiply_variable = { DGL_bread_cap_infra = DGL_bread_cap_per_infra }
+
+	set_variable = { DGL_bread_cap = DGL_bread_cap_base }
+	add_to_variable = { DGL_bread_cap = DGL_bread_cap_fac }
+	add_to_variable = { DGL_bread_cap = DGL_bread_cap_infra }
+}
+
+DGL_bread_calc_law = {
+	set_variable = { DGL_bread_law_level = 0 }
+	set_variable = { DGL_bread_law_mult = DGL_bread_law_2 }
+
+	set_variable = { DGL_bread_dbg_civ = 0 }
+	set_variable = { DGL_bread_dbg_low = 0 }
+	set_variable = { DGL_bread_dbg_par = 0 }
+	set_variable = { DGL_bread_dbg_war = 0 }
+	set_variable = { DGL_bread_dbg_tot = 0 }
+	if = {
+		limit = { has_idea = civilian_economy }
+		set_variable = { DGL_bread_dbg_civ = 1 }
+	}
+	if = {
+		limit = { has_idea = low_economic_mobilisation }
+		set_variable = { DGL_bread_dbg_low = 1 }
+	}
+	if = {
+		limit = { has_idea = partial_economic_mobilisation }
+		set_variable = { DGL_bread_dbg_par = 1 }
+	}
+	if = {
+		limit = { has_idea = war_economy }
+		set_variable = { DGL_bread_dbg_war = 1 }
+	}
+	if = {
+		limit = { has_idea = tot_economic_mobilisation }
+		set_variable = { DGL_bread_dbg_tot = 1 }
+	}
+
+	if = {
+		limit = {
+			OR = {
+				has_idea = civilian_economy
+				has_idea = isolation
+				has_idea = undisturbed_isolation
+			}
+		}
+		set_variable = { DGL_bread_law_level = 1 }
+		set_variable = { DGL_bread_law_mult = DGL_bread_law_1 }
+	}
+	else_if = {
+		limit = { has_idea = low_economic_mobilisation }
+		set_variable = { DGL_bread_law_level = 2 }
+		set_variable = { DGL_bread_law_mult = DGL_bread_law_2 }
+	}
+	else_if = {
+		limit = { has_idea = partial_economic_mobilisation }
+		set_variable = { DGL_bread_law_level = 3 }
+		set_variable = { DGL_bread_law_mult = DGL_bread_law_3 }
+	}
+	else_if = {
+		limit = { has_idea = war_economy }
+		set_variable = { DGL_bread_law_level = 4 }
+		set_variable = { DGL_bread_law_mult = DGL_bread_law_4 }
+	}
+	else_if = {
+		limit = {
+			OR = {
+				has_idea = tot_economic_mobilisation
+				has_idea = totaler_krieg_economy
+				has_idea = national_defense_state
+				has_idea = new_economic_policy
+				has_idea = new_economic_policy_2
+				has_idea = capital_investment_model
+			}
+		}
+		set_variable = { DGL_bread_law_level = 5 }
+		set_variable = { DGL_bread_law_mult = DGL_bread_law_5 }
+	}
+
+	if = {
+		limit = { is_ai = no }
+		log = "DGL_bread_law [THIS.GetTag] level=[?DGL_bread_law_level] mult=[?DGL_bread_law_mult] civ=[?DGL_bread_dbg_civ] low=[?DGL_bread_dbg_low] par=[?DGL_bread_dbg_par] war=[?DGL_bread_dbg_war] tot=[?DGL_bread_dbg_tot]"
+	}
+}
+
+DGL_bread_calc_eat = {
+	DGL_bread_calc_law = yes
+
+	set_variable = { DGL_bread_army_k = deployed_army_manpower_k }
+
+	set_variable = { DGL_bread_eat = DGL_bread_army_k }
+	multiply_variable = { DGL_bread_eat = DGL_bread_eat_per_1k }
+	multiply_variable = { DGL_bread_eat = DGL_bread_law_mult }
+
+	if = {
+		limit = { check_variable = { DGL_bread_eat < 0 } }
+		set_variable = { DGL_bread_eat = 0 }
+	}
+}
+
+DGL_bread_store_init = {
+	DGL_bread_set_config = yes
+	DGL_bread_calc_eat = yes
+	DGL_bread_calc_cap = yes
+
+	set_variable = { DGL_bread_store = DGL_bread_cap }
+	multiply_variable = { DGL_bread_store = DGL_bread_start_ratio }
+
+	DGL_bread_store_display = yes
+}
+
+DGL_bread_store_tick = {
+	DGL_bread_set_config = yes
+	DGL_bread_calc_eat = yes
+	DGL_bread_calc_cap = yes
+
+	set_temp_variable = { DGL_bread_gain = resource@bread }
+	multiply_temp_variable = { DGL_bread_gain = DGL_bread_rate }
+	multiply_temp_variable = { DGL_bread_gain = 7 }
+	add_to_variable = { DGL_bread_store = DGL_bread_gain }
+
+	subtract_from_variable = { DGL_bread_store = DGL_bread_eat }
+
+	if = {
+		limit = { check_variable = { DGL_bread_store > DGL_bread_cap } }
+		set_variable = { DGL_bread_store = DGL_bread_cap }
+	}
+	if = {
+		limit = { check_variable = { DGL_bread_store < 0 } }
+		set_variable = { DGL_bread_store = 0 }
+	}
+
+	DGL_bread_store_display = yes
+
+	if = {
+		limit = { check_variable = { DGL_bread_tier = 0 } }
+		add_stability = DGL_bread_drain_stab
+		add_war_support = DGL_bread_drain_ws
+	}
+}
+
+DGL_bread_store_display = {
+	set_variable = { DGL_bread_surplus = resource@bread }
+	set_variable = { DGL_bread_output = resource_produced@bread }
+
+	set_variable = { DGL_bread_gain_week = DGL_bread_surplus }
+	multiply_variable = { DGL_bread_gain_week = 7 }
+
+	set_variable = { DGL_bread_net = DGL_bread_gain_week }
+	subtract_from_variable = { DGL_bread_net = DGL_bread_eat }
+
+	set_variable = { DGL_bread_fill = DGL_bread_store }
+	if = {
+		limit = { check_variable = { DGL_bread_cap > 0 } }
+		divide_variable = { DGL_bread_fill = DGL_bread_cap }
+	}
+	else = {
+		set_variable = { DGL_bread_fill = 0 }
+	}
+
+	DGL_bread_apply_tier = yes
+
+	multiply_variable = { DGL_bread_fill = 100 }
+}
+
+DGL_bread_apply_tier = {
+	set_variable = { DGL_bread_b_org = 0 }
+	set_variable = { DGL_bread_b_atk = 0 }
+	set_variable = { DGL_bread_b_def = 0 }
+	set_variable = { DGL_bread_b_stab = 0 }
+	set_variable = { DGL_bread_b_ws = 0 }
+	set_variable = { DGL_bread_b_fac = 0 }
+	set_variable = { DGL_bread_drain_stab = 0 }
+	set_variable = { DGL_bread_drain_ws = 0 }
+	set_variable = { DGL_bread_tier = 2 }
+
+	if = {
+		limit = {
+			check_variable = { DGL_bread_fill > DGL_bread_tier_high }
+		}
+		set_variable = { DGL_bread_tier = 3 }
+		set_variable = { DGL_bread_b_org = DGL_bread_good_org }
+		set_variable = { DGL_bread_b_atk = DGL_bread_good_atk }
+		set_variable = { DGL_bread_b_def = DGL_bread_good_atk }
+		set_variable = { DGL_bread_b_stab = DGL_bread_good_stab }
+		set_variable = { DGL_bread_b_ws = DGL_bread_good_stab }
+	}
+	else_if = {
+		limit = {
+			check_variable = { DGL_bread_fill > DGL_bread_tier_mid }
+		}
+		set_variable = { DGL_bread_tier = 2 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { DGL_bread_fill > DGL_bread_tier_low }
+		}
+		set_variable = { DGL_bread_tier = 1 }
+		set_variable = { DGL_bread_b_org = DGL_bread_short_org }
+		set_variable = { DGL_bread_b_atk = DGL_bread_short_atk }
+		set_variable = { DGL_bread_b_def = DGL_bread_short_atk }
+		set_variable = { DGL_bread_b_stab = DGL_bread_short_stab }
+		set_variable = { DGL_bread_b_ws = DGL_bread_short_stab }
+	}
+	else = {
+		set_variable = { DGL_bread_tier = 0 }
+		set_variable = { DGL_bread_b_org = DGL_bread_famine_org }
+		set_variable = { DGL_bread_b_atk = DGL_bread_famine_atk }
+		set_variable = { DGL_bread_b_def = DGL_bread_famine_atk }
+		set_variable = { DGL_bread_b_stab = DGL_bread_famine_stab }
+		set_variable = { DGL_bread_b_ws = DGL_bread_famine_stab }
+		set_variable = { DGL_bread_b_fac = DGL_bread_famine_fac }
+		set_variable = { DGL_bread_drain_stab = DGL_bread_famine_drain_stab }
+		set_variable = { DGL_bread_drain_ws = DGL_bread_famine_drain_ws }
+	}
+
+	set_variable = { DGL_bread_b_org_tt = DGL_bread_b_org }
+	multiply_variable = { DGL_bread_b_org_tt = 100 }
+	set_variable = { DGL_bread_b_atk_tt = DGL_bread_b_atk }
+	multiply_variable = { DGL_bread_b_atk_tt = 100 }
+	set_variable = { DGL_bread_b_stab_tt = DGL_bread_b_stab }
+	multiply_variable = { DGL_bread_b_stab_tt = 100 }
+	set_variable = { DGL_bread_b_fac_tt = DGL_bread_b_fac }
+	multiply_variable = { DGL_bread_b_fac_tt = 100 }
+	set_variable = { DGL_bread_drain_stab_tt = DGL_bread_drain_stab }
+	multiply_variable = { DGL_bread_drain_stab_tt = 100 }
+	set_variable = { DGL_bread_drain_ws_tt = DGL_bread_drain_ws }
+	multiply_variable = { DGL_bread_drain_ws_tt = 100 }
+}

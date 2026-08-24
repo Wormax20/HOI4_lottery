@@ -1,0 +1,15 @@
+DGL_bread_storage = {
+	icon = GFX_idea_generic_agrarian_society
+	enable = { always = yes }
+
+	army_org_factor = DGL_bread_b_org
+	army_morale_factor = DGL_bread_b_org
+	army_attack_factor = DGL_bread_b_atk
+	army_defence_factor = DGL_bread_b_def
+	stability_factor = DGL_bread_b_stab
+	war_support_factor = DGL_bread_b_ws
+	industrial_capacity_factory = DGL_bread_b_fac
+	industrial_capacity_dockyard = DGL_bread_b_fac
+
+	custom_modifier_tooltip = DGL_bread_storage_tt
+}
