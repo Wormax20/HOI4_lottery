@@ -1,33 +1,37 @@
 DGL_bread_set_config = {
 	set_variable = { DGL_bread_rate = 1 }
 	set_variable = { DGL_bread_cap_base = 10000 }
-	set_variable = { DGL_bread_cap_per_factory = 1000 }
-	set_variable = { DGL_bread_cap_per_infra = 500 }
-	set_variable = { DGL_bread_start_ratio = 0.45 }
+	set_variable = { DGL_bread_cap_per_factory = 250 }
+	set_variable = { DGL_bread_cap_per_infra = 1000 }
+	set_variable = { DGL_bread_start_ratio = 0.6 }
 
-	set_variable = { DGL_bread_eat_per_1k = 0.5 }
+	set_variable = { DGL_bread_eat_per_1k = 0.3 }
 
-	set_variable = { DGL_bread_law_1 = 0.8 }
-	set_variable = { DGL_bread_law_2 = 1.0 }
-	set_variable = { DGL_bread_law_3 = 1.2 }
-	set_variable = { DGL_bread_law_4 = 1.5 }
-	set_variable = { DGL_bread_law_5 = 2.0 }
+	set_variable = { DGL_bread_law_1 = 0.4 }
+	set_variable = { DGL_bread_law_2 = 0.6 }
+	set_variable = { DGL_bread_law_3 = 0.8 }
+	set_variable = { DGL_bread_law_4 = 1.0 }
+	set_variable = { DGL_bread_law_5 = 1.2 }
 
 	set_variable = { DGL_bread_tier_high = 0.75 }
-	set_variable = { DGL_bread_tier_mid = 0.40 }
-	set_variable = { DGL_bread_tier_low = 0.15 }
+	set_variable = { DGL_bread_tier_mid = 0.30 }
+	set_variable = { DGL_bread_tier_low = 0.10 }
 
 	set_variable = { DGL_bread_good_org = 0.05 }
 	set_variable = { DGL_bread_good_atk = 0.05 }
 	set_variable = { DGL_bread_good_stab = 0.05 }
+	set_variable = { DGL_bread_good_fac = 0.10 }
+
+	set_variable = { DGL_bread_normal_fac = 0.05 }
 
 	set_variable = { DGL_bread_short_org = -0.05 }
 	set_variable = { DGL_bread_short_atk = -0.05 }
 	set_variable = { DGL_bread_short_stab = -0.05 }
+	set_variable = { DGL_bread_short_fac = -0.05 }
 
-	set_variable = { DGL_bread_famine_org = -0.15 }
-	set_variable = { DGL_bread_famine_atk = -0.15 }
-	set_variable = { DGL_bread_famine_stab = -0.15 }
+	set_variable = { DGL_bread_famine_org = -0.20 }
+	set_variable = { DGL_bread_famine_atk = -0.20 }
+	set_variable = { DGL_bread_famine_stab = -0.20 }
 	set_variable = { DGL_bread_famine_fac = -0.20 }
 
 	set_variable = { DGL_bread_famine_drain_stab = -0.01 }
@@ -49,7 +53,10 @@ DGL_bread_count_infra = {
 DGL_bread_calc_cap = {
 	DGL_bread_count_infra = yes
 
-	set_variable = { DGL_bread_cap_fac = num_of_civilian_factories }
+	set_variable = { DGL_bread_fac_n = num_of_available_civilian_factories }
+	set_variable = { DGL_bread_fac_onmap = num_of_civilian_factories }
+
+	set_variable = { DGL_bread_cap_fac = DGL_bread_fac_n }
 	multiply_variable = { DGL_bread_cap_fac = DGL_bread_cap_per_factory }
 
 	set_variable = { DGL_bread_cap_infra = DGL_bread_infra_levels }
@@ -58,6 +65,11 @@ DGL_bread_calc_cap = {
 	set_variable = { DGL_bread_cap = DGL_bread_cap_base }
 	add_to_variable = { DGL_bread_cap = DGL_bread_cap_fac }
 	add_to_variable = { DGL_bread_cap = DGL_bread_cap_infra }
+
+	if = {
+		limit = { is_ai = no }
+		log = "DGL_bread_fac [THIS.GetTag] available=[?DGL_bread_fac_n] onmap=[?DGL_bread_fac_onmap] infra=[?DGL_bread_infra_levels] cap=[?DGL_bread_cap]"
+	}
 }
 
 DGL_bread_calc_law = {
@@ -238,12 +250,14 @@ DGL_bread_apply_tier = {
 		set_variable = { DGL_bread_b_def = DGL_bread_good_atk }
 		set_variable = { DGL_bread_b_stab = DGL_bread_good_stab }
 		set_variable = { DGL_bread_b_ws = DGL_bread_good_stab }
+		set_variable = { DGL_bread_b_fac = DGL_bread_good_fac }
 	}
 	else_if = {
 		limit = {
 			check_variable = { DGL_bread_fill > DGL_bread_tier_mid }
 		}
 		set_variable = { DGL_bread_tier = 2 }
+		set_variable = { DGL_bread_b_fac = DGL_bread_normal_fac }
 	}
 	else_if = {
 		limit = {
@@ -255,6 +269,7 @@ DGL_bread_apply_tier = {
 		set_variable = { DGL_bread_b_def = DGL_bread_short_atk }
 		set_variable = { DGL_bread_b_stab = DGL_bread_short_stab }
 		set_variable = { DGL_bread_b_ws = DGL_bread_short_stab }
+		set_variable = { DGL_bread_b_fac = DGL_bread_short_fac }
 	}
 	else = {
 		set_variable = { DGL_bread_tier = 0 }

@@ -631,6 +631,9 @@ on_actions = {
 				set_global_flag = DGL_bread_storage_initialised
 
 				every_country = {
+					limit = {
+						is_ai = no
+					}
 					DGL_bread_store_init = yes
 					add_dynamic_modifier = { modifier = DGL_bread_storage }
 				}
