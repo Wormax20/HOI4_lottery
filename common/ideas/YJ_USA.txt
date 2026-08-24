@@ -138,7 +138,7 @@ ideas = {
 
 			modifier = {
 				custom_modifier_tooltip = YJ_USA_5_ideas_tt
-				political_power_factor = 0.10
+				political_power_factor = 0.15
 				stability_weekly = 0.002
 				war_support_weekly = 0.002
 				production_speed_dockyard_factor = 0.10
