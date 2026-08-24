@@ -5,7 +5,7 @@ DGL_bread_set_config = {
 	set_variable = { DGL_bread_cap_per_infra = 500 }
 	set_variable = { DGL_bread_start_ratio = 0.45 }
 
-	set_variable = { DGL_bread_eat_per_1k = 0.5 }
+	set_variable = { DGL_bread_eat_per_1k = 0.3 }
 
 	set_variable = { DGL_bread_law_1 = 0.8 }
 	set_variable = { DGL_bread_law_2 = 1.0 }
@@ -49,7 +49,10 @@ DGL_bread_count_infra = {
 DGL_bread_calc_cap = {
 	DGL_bread_count_infra = yes
 
-	set_variable = { DGL_bread_cap_fac = num_of_civilian_factories }
+	set_variable = { DGL_bread_fac_n = num_of_available_civilian_factories }
+	set_variable = { DGL_bread_fac_onmap = num_of_civilian_factories }
+
+	set_variable = { DGL_bread_cap_fac = DGL_bread_fac_n }
 	multiply_variable = { DGL_bread_cap_fac = DGL_bread_cap_per_factory }
 
 	set_variable = { DGL_bread_cap_infra = DGL_bread_infra_levels }
@@ -58,6 +61,11 @@ DGL_bread_calc_cap = {
 	set_variable = { DGL_bread_cap = DGL_bread_cap_base }
 	add_to_variable = { DGL_bread_cap = DGL_bread_cap_fac }
 	add_to_variable = { DGL_bread_cap = DGL_bread_cap_infra }
+
+	if = {
+		limit = { is_ai = no }
+		log = "DGL_bread_fac [THIS.GetTag] available=[?DGL_bread_fac_n] onmap=[?DGL_bread_fac_onmap] infra=[?DGL_bread_infra_levels] cap=[?DGL_bread_cap]"
+	}
 }
 
 DGL_bread_calc_law = {
