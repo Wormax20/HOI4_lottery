@@ -660,6 +660,7 @@ KoKi_YJ_decisions_categories = {
 			}
 			custom_effect_tooltip = YJ_60d_resource_tt
 		}
+	}
 
 	YJ_90d_extra = {
 		activation = {
