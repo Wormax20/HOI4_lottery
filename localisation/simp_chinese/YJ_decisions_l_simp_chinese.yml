@@ -348,6 +348,9 @@ YJ_lend_allow_tt: "蘇德開戰後才能起草租借法案"
 YJ_60d_resource: "开发资源"
 YJ_60d_resource_tt: "§R发现资源§!"
 
+YJ_90d_extra: "额外抽獎次數"
+YJ_90d_extra_tt: "§R获得额外抽獎次數§!"
+
 continuous_focus_pop: "专注人口增长"
 continuous_focus_pop_desc: "专注人口增长"
 continuous_focus_mit: "大规模生产"

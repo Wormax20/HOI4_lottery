@@ -639,7 +639,7 @@ KoKi_YJ_decisions_categories = {
 		}
 	}
 
-		YJ_60d_resource = {
+	YJ_60d_resource = {
 		activation = {
 			has_idea = YJ_11_ideas
 		}
@@ -659,6 +659,27 @@ KoKi_YJ_decisions_categories = {
 				activate_mission = YJ_60d_resource
 			}
 			custom_effect_tooltip = YJ_60d_resource_tt
+		}
+
+	YJ_90d_extra = {
+		activation = {
+			date > 1938.12.31
+		}
+		available = {
+			always = no
+		}
+		is_good = yes
+		days_mission_timeout = 90
+		fire_only_once = yes
+
+		timeout_effect = {
+			hidden_effect = {
+				add_to_variable = {
+					YJ_country_limit = 1
+				}
+				activate_mission = YJ_90d_extra
+			}
+			custom_effect_tooltip = YJ_90d_extra_tt
 		}
 	}
 
