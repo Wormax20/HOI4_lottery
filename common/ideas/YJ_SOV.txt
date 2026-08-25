@@ -72,12 +72,10 @@ ideas = {
 					instant = yes
 				}
 				mechanized_equipment = {
-					build_cost_ic = -0.05
 					breakthrough = 0.1
 					instant = yes
 				}
 				amphibious_mechanized_equipment = {
-					build_cost_ic = -0.05
 					breakthrough = 0.1
 					instant = yes
 				}

@@ -38,12 +38,12 @@ ideas = {
 
 			modifier = {
 				political_power_factor = 0.15
-				consumer_goods_factor = -0.10
+				consumer_goods_factor = -0.15
 				consumer_goods_expected_value = -0.05
 				conscription = 0.05
-				stability_weekly = 0.005
-				war_support_weekly = 0.005
-				global_building_slots = 6
+				stability_weekly = 0.002
+				war_support_weekly = 0.002
+				global_building_slots = 8
 				local_resources_factor = 0.20
 				army_core_attack_factor = 0.10
 				army_core_defence_factor = 0.10
@@ -95,9 +95,9 @@ ideas = {
 				industrial_capacity_factory = 0.10
 				production_factory_max_efficiency_factor = 0.10
 				production_factory_efficiency_gain_factor = 0.10
-				production_speed_infrastructure_factor = 0.10
-				production_speed_industrial_complex_factor = 0.10
-				production_speed_arms_factory_factor = 0.10
+				production_speed_infrastructure_factor = 0.20
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_arms_factory_factor = 0.15
 			}
 		}
 		YJ_SIA_4_ideas = {
@@ -116,7 +116,7 @@ ideas = {
 
 			modifier = {
 				supply_consumption_factor = 0.15
-				breakthrough_factor = 0.10
+				breakthrough_factor = 0.15
 			}
 			equipment_bonus = {
 				light_tank_artillery_chassis = {

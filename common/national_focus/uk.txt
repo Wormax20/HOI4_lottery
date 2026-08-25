@@ -733,7 +733,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = industrial_bonus
 				bonus = 1.0
-				uses = 4
+				uses = 3
 				category = industry
 			}
 		}
