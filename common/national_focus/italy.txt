@@ -2664,7 +2664,6 @@ focus_tree = {
 		id = ITA_steel_industry_in_terni
 		icon = GFX_focus_generic_steel
 		prerequisite = { focus = ITA_italian_highways_bba }
-		mutually_exclusive = { focus = ITA_power_plants_in_terni }
 		x = -1
 		y = 1
 		relative_position_id = ITA_italian_highways_bba
@@ -2697,7 +2696,6 @@ focus_tree = {
 		id = ITA_power_plants_in_terni
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = ITA_italian_highways_bba }
-		mutually_exclusive = { focus = ITA_steel_industry_in_terni }
 		x = 1
 		y = 1
 		relative_position_id = ITA_italian_highways_bba
@@ -2792,7 +2790,6 @@ focus_tree = {
 		id = ITA_strengthen_northern_industry
 		icon = GFX_focus_ITA_northern_industry
 		prerequisite = { focus = ITA_industria_della_gomma_sintetica }
-		mutually_exclusive = { focus = ITA_modernize_the_mezzogiorno }
 		x = -1
 		y = 1
 		relative_position_id = ITA_industria_della_gomma_sintetica
@@ -2969,7 +2966,6 @@ focus_tree = {
 		id = ITA_modernize_the_mezzogiorno
 		icon = GFX_focus_ITA_southern_industry
 		prerequisite = { focus = ITA_industria_della_gomma_sintetica }
-		mutually_exclusive = { focus = ITA_strengthen_northern_industry }
 		x = 1
 		y = 1
 		relative_position_id = ITA_industria_della_gomma_sintetica
@@ -3329,6 +3325,26 @@ focus_tree = {
 						type = industrial_complex
 						level = 2
 						instant_build = yes
+					}
+				}
+			}
+			159 = {
+				add_building_construction = {
+					type = dam
+					level = 1
+					instant_build = yes
+					province = {
+						id = 969
+					}
+				}
+			}
+			162 = {
+				add_building_construction = {
+					type = dam
+					level = 1
+					instant_build = yes
+					province = {
+						id = 9879
 					}
 				}
 			}
