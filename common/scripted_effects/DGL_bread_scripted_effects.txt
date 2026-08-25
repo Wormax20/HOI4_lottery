@@ -1,17 +1,17 @@
 DGL_bread_set_config = {
 	set_variable = { DGL_bread_rate = 1 }
 	set_variable = { DGL_bread_cap_base = 10000 }
-	set_variable = { DGL_bread_cap_per_factory = 250 }
+	set_variable = { DGL_bread_cap_per_factory = 500 }
 	set_variable = { DGL_bread_cap_per_infra = 1000 }
 	set_variable = { DGL_bread_start_ratio = 0.6 }
 
-	set_variable = { DGL_bread_eat_per_1k = 0.3 }
+	set_variable = { DGL_bread_eat_per_1k = 1 }
 
 	set_variable = { DGL_bread_law_1 = 0.4 }
-	set_variable = { DGL_bread_law_2 = 0.6 }
-	set_variable = { DGL_bread_law_3 = 0.8 }
-	set_variable = { DGL_bread_law_4 = 1.0 }
-	set_variable = { DGL_bread_law_5 = 1.2 }
+	set_variable = { DGL_bread_law_2 = 1.8 }
+	set_variable = { DGL_bread_law_3 = 1.2 }
+	set_variable = { DGL_bread_law_4 = 1.6 }
+	set_variable = { DGL_bread_law_5 = 1.8 }
 
 	set_variable = { DGL_bread_tier_high = 0.75 }
 	set_variable = { DGL_bread_tier_mid = 0.30 }

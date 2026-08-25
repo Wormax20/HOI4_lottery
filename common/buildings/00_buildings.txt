@@ -48,7 +48,7 @@ buildings = {
 			shares_slots = yes
 			state_max = 50
 		}
-		local_resources_bread = 2
+		local_resources_bread = 1
 	}
 
 	air_base = {
