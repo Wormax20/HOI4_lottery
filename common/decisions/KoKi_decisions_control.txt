@@ -94,7 +94,20 @@ KoKi_YJ_decisions_categories = {
 		days_mission_timeout = 10
 		fire_only_once = yes
 		timeout_effect = {
-			KoKi_YJ_TAG_decisions_0_scripted_effects = yes
+			if = {
+				limit = {
+					###待更新    特殊模式所有國家抽獎完全隨機
+					#has_game_rule = {
+					#	rule = YJ_PRODUCTION_RULE
+					#	option = x
+					#}
+					always = no
+				}
+				ALL_RANDOM_YJ_scripted_effects = yes
+			}
+			else = {
+				KoKi_YJ_TAG_decisions_0_scripted_effects = yes
+			}
 			set_global_flag = KoKi_YJ_TAG_decisions_YJ_1
 		}
 		priority = 99999
@@ -112,7 +125,20 @@ KoKi_YJ_decisions_categories = {
 		days_mission_timeout = 15
 		fire_only_once = yes
 		timeout_effect = {
-			KoKi_YJ_TAG_decisions_0_scripted_effects = yes
+			if = {
+				limit = {
+					###待更新    特殊模式所有國家抽獎完全隨機
+					#has_game_rule = {
+					#	rule = YJ_PRODUCTION_RULE
+					#	option = x
+					#}
+					always = no
+				}
+				ALL_RANDOM_YJ_scripted_effects = yes
+			}
+			else = {
+				KoKi_YJ_TAG_decisions_0_scripted_effects = yes
+			}
 			set_global_flag = KoKi_YJ_TAG_decisions_YJ_2
 		}
 		priority = 99999
@@ -131,7 +157,20 @@ KoKi_YJ_decisions_categories = {
 		days_mission_timeout = 705
 		fire_only_once = yes
 		timeout_effect = {
-			KoKi_YJ_TAG_decisions_0_scripted_effects = yes
+			if = {
+				limit = {
+					###待更新    特殊模式所有國家抽獎完全隨機
+					#has_game_rule = {
+					#	rule = YJ_PRODUCTION_RULE
+					#	option = x
+					#}
+					always = no
+				}
+				ALL_RANDOM_YJ_scripted_effects = yes
+			}
+			else = {
+				KoKi_YJ_TAG_decisions_0_scripted_effects = yes
+			}
 		}
 		priority = 99999
 	}
@@ -243,13 +282,19 @@ KoKi_YJ_decisions_categories = {
 			always = yes
 		}
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = KoKi_YJ_decisions_pp_txt
-				check_variable = {
-					KoKi_YJ_decisions_pp < YJ_country_limit
+			OR = {
+				hidden_trigger = {
+					is_debug = yes
 				}
+				custom_trigger_tooltip = {
+					tooltip = KoKi_YJ_decisions_pp_txt
+					check_variable = {
+						KoKi_YJ_decisions_pp < YJ_country_limit
+					}
+				}
+				date > 1937.1.1
 			}
-			date > 1937.1.1
+
 		}
 		visible = {
 
@@ -262,6 +307,11 @@ KoKi_YJ_decisions_categories = {
 		complete_effect = {
 		    hidden_effect = {
 			    KoKi_YJ_decisions_pp = yes
+
+				###待更新pp抽獎國家隨機
+				#KoKi_YJ_decisions_pp_RANDOM_COUNTRY = yes
+
+
 				add_to_variable = {
 					KoKi_YJ_decisions_pp = 1
 				}
