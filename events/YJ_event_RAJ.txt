@@ -12,13 +12,18 @@ country_event = {
 		set_technology = {
 			elephantry = 1
 		}
-		complete_national_focus = RAJ_provincial_autonomy
-		complete_national_focus = RAJ_league_against_gandhism
-		complete_national_focus = RAJ_red_in_the_shadows
-		complete_national_focus = RAJ_royal_indian_navy_mutiny
-		complete_national_focus = RAJ_urban_industrialism
-		complete_national_focus = RAJ_comrades_of_the_city
-		complete_national_focus = RAJ_industrialize_the_ganges
+		if = {
+            limit = {
+            	is_subject = yes
+            }
+            ENG = {
+                set_autonomy = {
+                    target = RAJ
+                    autonomy_state = autonomy_free
+                    end_civil_wars = yes
+                }
+            }
+		}
 		add_offsite_building = {
 			type = industrial_complex
 			level = 20

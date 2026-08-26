@@ -49,6 +49,7 @@ buildings = {
 			state_max = 50
 		}
 		local_resources_bread = 1
+		refinery = yes
 	}
 
 	air_base = {
