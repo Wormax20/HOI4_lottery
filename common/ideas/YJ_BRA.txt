@@ -46,8 +46,9 @@ ideas = {
 				production_speed_buildings_factor = 0.1
 				production_factory_max_efficiency_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.10
-				production_lack_of_resource_penalty_factor = -0.4
 				industrial_capacity_factory = 0.1
+				command_power_gain = 0.5
+				max_command_power = 100
 				political_power_factor =  0.25
 			}
 		}
@@ -66,7 +67,6 @@ ideas = {
 			picture = CHL_ligas_patrioticas
 
 			modifier = {
-				production_lack_of_resource_penalty_factor = -0.4
 				acclimatization_hot_climate_gain_factor = 0.5
 				consumer_goods_factor = -0.1
 				heat_attrition_factor =  -0.5

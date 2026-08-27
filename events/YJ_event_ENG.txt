@@ -46,14 +46,17 @@ country_event = {
 
 	option = {
 		set_technology = {
-				marines = 1
-				mtg_tank_landing_craft = 1
-				ENG_marines_tech = 1
-				popup = yes
+			marines = 1
+			mtg_tank_landing_craft = 1
+			ENG_marines_tech = 1
+			popup = yes
 		}
 		add_potential_special_forces_tree = yes
 		name = KoKi_YJ_ENG_event.102.a
 		add_ideas = YJ_ENG_2_ideas
+		mio:USA_detroit_arsenal_organization = {
+			add_mio_size = 6
+		}
 		ai_chance = {
 			factor = 100
 		}

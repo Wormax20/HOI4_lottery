@@ -3476,13 +3476,13 @@ focus_tree = {
                     }
                     promote_character = RAJ_freeman_freeman_thomas
                     set_popularities = {
-                        democratic= 28
-                        neutrality = 70
+                        democratic= 70
+                        neutrality = 28
                         fascism = 1
                         communism = 1
                     }
                     set_politics = {
-                        ruling_party = neutrality
+                        ruling_party = democratic
                         elections_allowed = no
                     }
                 }
@@ -3679,16 +3679,6 @@ focus_tree = {
             country_event = { id = GOE_RAJ_eic.2 hours = 2 }
              hidden_effect = {
                 calc_expected_consumer_goods_for_taxes = yes
-            }
-
-            event_target:UK_INDIA = {
-            every_owned_state = {
-                add_core_of = ROOT
-            }
-            }
-            annex_country = {
-                target = event_target:UK_INDIA
-                transfer_troops = yes
             }
         }
     }
@@ -5449,6 +5439,10 @@ focus_tree = {
         search_filters = {FOCUS_FILTER_ANNEXATION}
 
         completion_reward = {
+            add_offsite_building = {
+                type = industrial_complex
+                level = 5
+            }
             custom_effect_tooltip = RAJ_hostile_takeover_tt
             hidden_effect = {
                 controlled_civilian_factories_excluding_trade = yes
@@ -5599,6 +5593,10 @@ focus_tree = {
         search_filters = {FOCUS_FILTER_INDUSTRY}
 
         completion_reward = {
+            add_offsite_building = {
+                type = industrial_complex
+                level = 5
+            }
             add_ideas = capital_investment_model
 
             hidden_effect = {
@@ -5638,6 +5636,10 @@ focus_tree = {
         search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH FOCUS_FILTER_INTERNATIONAL_TRADE}
 
         completion_reward = {
+            add_offsite_building = {
+                type = industrial_complex
+                level = 5
+            }
             add_ideas = special_economic_zones
         }
     }
@@ -5815,6 +5817,10 @@ focus_tree = {
                 }
                 add_resistance = 15
             }
+            add_offsite_building = {
+                type = industrial_complex
+                level = 5
+            }
             add_timed_idea = {
                 idea = idea_RAJ_cost_underrun
                 days = 480
@@ -5898,7 +5904,7 @@ focus_tree = {
                 }
                 event_target:UK_INDIA = {
                     exists = yes
-                    num_of_controlled_states < 5
+                    num_of_controlled_states < 10
                 }
             }
 
@@ -5925,6 +5931,10 @@ focus_tree = {
         search_filters = {FOCUS_FILTER_ANNEXATION FOCUS_FILTER_STABILITY}
 
         completion_reward = {
+            add_offsite_building = {
+                type = industrial_complex
+                level = 10
+            }
              if = {
                 limit = {
                     has_idea = RAJ_marginalized_muslim_community
@@ -5935,7 +5945,7 @@ focus_tree = {
                 limit = {
                     has_event_target = UK_INDIA
                     event_target:UK_INDIA = {
-                        num_of_controlled_states < 5
+                        num_of_controlled_states < 10
                     }
                 }
 
@@ -5954,6 +5964,7 @@ focus_tree = {
             else = {
                 custom_effect_tooltip = RAJ_deathknell_to_the_raj_trigger_tt
             }
+            987 = { add_core_of = ROOT }
 
             hidden_effect = {
                 every_country = {

@@ -106,12 +106,12 @@ country_event = {
 			category = cat_mechanized_equipment
 		}
 		set_technology = {
-				USA_mechanized_tech = 1
-				mtg_tank_landing_craft = 1
-				popup = yes
+			USA_mechanized_tech = 1
+			mtg_tank_landing_craft = 1
+			popup = yes
 		}
 		mio:ENG_vauxhall_organization = {
-					add_mio_size = 6
+			add_mio_size = 6
 		}
 		name = KoKi_YJ_USA_event.105.a
 		add_ideas = YJ_USA_5_ideas

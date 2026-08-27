@@ -38,7 +38,7 @@ ideas = {
 			picture = ARG_construction_guilds
 
 			modifier = {
-				political_power_factor = 0.15
+				political_power_factor = 0.25
 				production_factory_max_efficiency_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.1
 				industrial_capacity_factory = 0.10
@@ -114,7 +114,7 @@ ideas = {
 				consumer_goods_factor = -0.05
 				consumer_goods_expected_value = -0.05
 				local_resources_factor = 0.10
-				production_speed_infrastructure_factor = 0.15
+				production_speed_infrastructure_factor = 0.20
 				production_speed_industrial_complex_factor = 0.10
 				production_speed_buildings_factor = 0.10
 				conversion_cost_civ_to_mil_factor = -0.5
@@ -145,7 +145,7 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.05
 				industrial_capacity_dockyard = 0.10
-				industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.10
 				max_planning = 0.05
 			}
 			equipment_bonus = {
