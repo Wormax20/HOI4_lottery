@@ -3987,9 +3987,7 @@ focus_tree = {
 		}
 
 		available = {
-			country_exists = POL
-			NOT = { has_war_with = POL }
-			is_subject = no
+			always = no
 		}
 		
 		bypass = {

@@ -223,20 +223,4 @@ country_event = {
 			factor = 100
 		}
 	}
-
-	option = {
-		name = KoKi_YJ_GER_event.10001.a
-		add_ideas = YJ_GER_5_ideas
-		ai_chance = {
-			factor = 0
-		}
-	}
-
-	option = {
-		name = KoKi_YJ_GER_event.10001.a
-		ai_chance = {
-			factor = 0
-		}
-	}
-
 }

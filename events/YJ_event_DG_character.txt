@@ -1514,9 +1514,9 @@ country_event = {
 
 			}
 			skill = 3
-			attack_skill = 4
-			defense_skill = 4
-			planning_skill = 2
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 1
 			logistics_skill = 2
 		}
 
@@ -1630,7 +1630,7 @@ country_event = {
 				ranger
 			}
 			skill = 3
-			attack_skill = 4
+			attack_skill = 3
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 2
@@ -2044,6 +2044,115 @@ country_event = {
 					}
 				}
 			}
+		}
+	}
+}
+
+country_event = {
+	id = DOG_exe_YJ_new_JL_event.35
+	title = DOG_exe_YJ_new_JL_event.35.title
+	desc = DOG_exe_YJ_new_JL_event.35.desc
+
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = DOG_exe_YJ_JL_event.1.a
+		create_corps_commander = {
+			name = "Moxiaoju"
+			portrait_path = "gfx/leaders/DOG_exe/Moxiaoju.png"
+			allowed_civil_war = {
+				is_ai = no
+			}
+			traits={
+				YJ_traits_1
+				brilliant_strategist
+				armor_officer
+				commando
+				urban_assault_specialist
+				panzer_leader
+				cavalry_leader
+				infantry_leader
+				trickster
+				organizer
+				ranger
+			}
+			skill = 6
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 4
+		}
+	}
+}
+
+country_event = {
+	id = DOG_exe_YJ_new_JL_event.36
+	title = DOG_exe_YJ_new_JL_event.36.title
+	desc = DOG_exe_YJ_new_JL_event.36.desc
+
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = DOG_exe_YJ_JL_event.1.a
+		create_corps_commander = {
+			name = "西瓜eeeee"
+			portrait_path = "gfx/leaders/DOG_exe/Suika.png"
+			allowed_civil_war = {
+				is_ai = no
+			}
+			traits= {
+				YJ_traits_2
+				career_officer
+				infantry_officer
+				trickster
+				organizer
+				ranger
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+}
+
+country_event = {
+	id = DOG_exe_YJ_new_JL_event.37
+	title = DOG_exe_YJ_new_JL_event.37.title
+	desc = DOG_exe_YJ_new_JL_event.37.desc
+
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = DOG_exe_YJ_JL_event.1.a
+		create_corps_commander = {
+			name = "菈米露亞"
+			portrait_path = "gfx/leaders/DOG_exe/Lami.png"
+			allowed_civil_war = {
+				is_ai = no
+			}
+			traits={
+				YJ_traits_2
+				trait_reckless
+				career_officer
+				YJ_traits_16
+				infantry_officer
+				trickster
+				organizer
+				ranger
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 3
 		}
 	}
 }

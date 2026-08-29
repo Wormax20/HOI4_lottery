@@ -5817,10 +5817,6 @@ focus_tree = {
                 }
                 add_resistance = 15
             }
-            add_offsite_building = {
-                type = industrial_complex
-                level = 5
-            }
             add_timed_idea = {
                 idea = idea_RAJ_cost_underrun
                 days = 480
@@ -5887,7 +5883,7 @@ focus_tree = {
         y = 1
         relative_position_id = RAJ_institutional_money_laundering
 
-        cost = 5
+        cost = 10
 
         ai_will_do = {
             factor = 1
@@ -5931,11 +5927,7 @@ focus_tree = {
         search_filters = {FOCUS_FILTER_ANNEXATION FOCUS_FILTER_STABILITY}
 
         completion_reward = {
-            add_offsite_building = {
-                type = industrial_complex
-                level = 10
-            }
-             if = {
+            if = {
                 limit = {
                     has_idea = RAJ_marginalized_muslim_community
                 }

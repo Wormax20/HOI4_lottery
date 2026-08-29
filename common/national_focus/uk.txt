@@ -300,6 +300,11 @@ focus_tree = {
 				uses = 1
 				category = armor
 			}
+			mio:ENG_vauxhall_organization = {
+				add_mio_size = 2
+				add_mio_funds_gain_factor = 0.25
+				add_mio_research_bonus = 0.05
+			}
 		}
 	}
 
@@ -733,7 +738,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = industrial_bonus
 				bonus = 1.0
-				uses = 3
+				uses = 4
 				category = industry
 			}
 		}

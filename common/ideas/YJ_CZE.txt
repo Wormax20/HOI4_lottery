@@ -15,6 +15,7 @@ ideas = {
 			picture = generic_air_fighter
 
 			modifier = {
+				custom_modifier_tooltip = YJ_CZE_1_ideas_tt
 				political_power_gain = 0.15
 				political_power_factor = 0.15
 				global_building_slots_factor = 0.20

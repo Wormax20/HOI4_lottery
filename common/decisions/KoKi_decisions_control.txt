@@ -78,6 +78,9 @@ KoKi_YJ_decisions_categories = {
 			country_event = DOG_exe_YJ_new_JL_event.32
 			country_event = DOG_exe_YJ_new_JL_event.33
 			country_event = DOG_exe_YJ_new_JL_event.34
+			country_event = DOG_exe_YJ_new_JL_event.35
+			country_event = DOG_exe_YJ_new_JL_event.36
+			country_event = DOG_exe_YJ_new_JL_event.37
 		}
 
 	}
@@ -303,7 +306,7 @@ KoKi_YJ_decisions_categories = {
 		}
 		cost = YJ_country_cost
 		days_remove = 0
-		days_re_enable = 0
+		days_re_enable = 15
 		modifier = {
 		}
 		complete_effect = {

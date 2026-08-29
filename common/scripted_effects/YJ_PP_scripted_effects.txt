@@ -125,7 +125,7 @@ YJ_JL_LJ = {
                 NOT = { has_country_flag = YJ_pool_initialized }
             }
             for_loop_effect = {
-                end = 67
+                end = 70
                 compare = less_than
                 value = current_i
 
@@ -218,6 +218,9 @@ YJ_JL_LJ = {
             else_if = { limit = { check_variable = { drawn_event = 64 } } country_event = DOG_exe_YJ_new_JL_event.32 }
             else_if = { limit = { check_variable = { drawn_event = 65 } } country_event = DOG_exe_YJ_new_JL_event.33 }
             else_if = { limit = { check_variable = { drawn_event = 66 } } country_event = DOG_exe_YJ_new_JL_event.34 }
+            else_if = { limit = { check_variable = { drawn_event = 67 } } country_event = DOG_exe_YJ_new_JL_event.35 }
+            else_if = { limit = { check_variable = { drawn_event = 68 } } country_event = DOG_exe_YJ_new_JL_event.36 }
+            else_if = { limit = { check_variable = { drawn_event = 69 } } country_event = DOG_exe_YJ_new_JL_event.37 }
         }
     }
 }

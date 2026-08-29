@@ -213,6 +213,7 @@ on_actions = {
 			}
 			GER = {
 				add_ideas = YJ_GER_6_ideas
+				add_ideas = YJ_GER_5_ideas
 				set_technology = {
 					basic_heavy_tank = 1
 				}
@@ -459,11 +460,11 @@ on_actions = {
 			275 = {
 				add_resource = {
 					type = aluminium
-					amount = 160
+					amount = 200
 				}
 				add_resource = {
 					type = steel
-					amount = 40
+					amount = 60
 				}
 			}
 			937 = {
@@ -529,19 +530,19 @@ on_actions = {
 			1061 = {
 				add_resource = {
 					type = aluminium
-					amount = 25
+					amount = 50
 				}
 			}
 			1060 = {
 				add_resource = {
 					type = aluminium
-					amount = 25
+					amount = 50
 				}
 			}
 			1068 = {
 				add_resource = {
 					type = steel
-					amount = 25
+					amount = 10
 				}
 				add_resource = {
 					type = tungsten
@@ -568,6 +569,42 @@ on_actions = {
 				add_resource = {
 					type = coal
 					amount = 25
+				}
+			}
+			33 = {
+				add_resource = {
+					type = steel
+					amount = 25
+				}
+				add_resource = {
+					type = coal
+					amount = 25
+				}
+			}
+			33 = {
+				add_resource = {
+					type = steel
+					amount = 25
+				}
+				add_resource = {
+					type = tungsten
+					amount = 25
+				}
+			}
+			70 = {
+				add_resource = {
+					type = steel
+					amount = 25
+				}
+			}
+			670 = {
+				add_resource = {
+					type = chromium
+					amount = 25
+				}
+				add_resource = {
+					type = steel
+					amount = 10
 				}
 			}
 			
