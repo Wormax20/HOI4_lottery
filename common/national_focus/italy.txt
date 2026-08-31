@@ -2675,7 +2675,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			add_to_variable = { ITA_iri_production_speed_arms_factory_factor = 0.025 }
+			add_to_variable = { ITA_iri_production_speed_arms_factory_factor = 0.05 }
 			custom_effect_tooltip = ITA_steel_industry_in_terni_ricostruzione_industriale_tt
 			2 = {
 				add_extra_state_shared_building_slots = 2
@@ -2800,6 +2800,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			add_to_variable = { ITA_iri_production_speed_arms_factory_factor = 0.05 }
+			custom_effect_tooltip = ITA_steel_industry_in_terni_ricostruzione_industriale_tt
 			if = {
 				limit = {
 					has_full_control_of_state = 158
@@ -2976,6 +2978,8 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			add_to_variable = { ITA_iri_production_speed_industrial_complex_factor = 0.05 }
+			custom_effect_tooltip = ITA_power_plants_in_terni_ricostruzione_industriale_tt
 			if = {
 				limit = {
 					has_full_control_of_state = 117
@@ -3267,7 +3271,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			add_timed_idea = { idea = ITA_foggia_farm_fields days = 730 }
+			add_timed_idea = { idea = ITA_foggia_farm_fields years = 1 }
 		}
 	}
 
@@ -3608,7 +3612,6 @@ focus_tree = {
 		icon = GFX_focus_generic_combined_arms
 		prerequisite = { focus = ITA_expand_national_universities }
 		prerequisite = { focus = ITA_redirect_alfa_romeo_production }
-		mutually_exclusive = { focus = ITA_keep_specialization }
 		x = -1
 		y = 2
 		relative_position_id = ITA_redirect_alfa_romeo_production
@@ -3635,7 +3638,6 @@ focus_tree = {
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = ITA_expand_national_universities }
 		prerequisite = { focus = ITA_redirect_alfa_romeo_production }
-		mutually_exclusive = { focus = ITA_increase_production }
 		x = 1
 		y = 2
 		relative_position_id = ITA_redirect_alfa_romeo_production

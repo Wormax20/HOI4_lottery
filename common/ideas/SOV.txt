@@ -1220,6 +1220,7 @@ ideas = {
 				conscription_factor = 0.15
 				non_core_manpower = 0.05
 				army_morale_factor = 0.05
+				local_resources_bread_factor = 0.10
 			}
 		}
 
@@ -1265,6 +1266,7 @@ ideas = {
 				drift_defence_factor = 0.05
 				communism_drift = 0.05
 				consumer_goods_factor = -0.05
+				local_resources_bread_factor = 0.10
 			}
 		}
 

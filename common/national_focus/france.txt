@@ -1582,9 +1582,7 @@ focus_tree = {
 		x = 26
 		y = 0
 		available = {
-			any_other_country = {
-				controls_state = 16
-			}
+			is_ai = yes
 		}
 
 		prerequisite = {}
@@ -4462,9 +4460,7 @@ focus_tree = {
 		x = 42
 		y = 0
 		available = {
-			any_other_country = {
-				controls_state = 16
-			}
+			is_ai = yes
 		}
 
 

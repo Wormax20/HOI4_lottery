@@ -100,6 +100,14 @@ ideas = {
 			    defense_bonus_against = 0.3
 				breakthrough_bonus_against = 0.3
 			}
+			targeted_modifier = {
+				tag = JAP
+				trade_cost_for_target_factor = -0.20
+			}
+			targeted_modifier = {
+				tag = SIA
+				trade_cost_for_target_factor = -0.20
+			}
 			equipment_bonus = {
 				convoy = {
 					instant = yes

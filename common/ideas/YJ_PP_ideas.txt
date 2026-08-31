@@ -18,6 +18,7 @@ ideas = {
 			modifier = {
 				army_infantry_attack_factor = 0.10
 				army_infantry_defence_factor = 0.10
+				local_resources_bread_factor = 0.10
 				custom_modifier_tooltip = YJ_1_ideas_tt
 			}
 		}

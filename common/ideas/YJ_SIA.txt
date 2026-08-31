@@ -49,6 +49,14 @@ ideas = {
 				army_core_attack_factor = 0.10
 				army_core_defence_factor = 0.10
 			}
+			targeted_modifier = {
+				tag = JAP
+				trade_cost_for_target_factor = -0.20
+			}
+			targeted_modifier = {
+				tag = SIA
+				trade_cost_for_target_factor = -0.20
+			}
 		}
 		YJ_SIA_2_ideas = {
 
@@ -67,9 +75,10 @@ ideas = {
 			modifier = {
 				political_power_gain = 0.15
 				political_advisor_cost_factor = -1
-				local_resources_factor = 0.10
+				local_resources_factor = 0.20
 				terrain_penalty_reduction = 0.10
 				max_planning = 0.10
+				planning_speed = 0.10
 				command_power_gain = 1
 				max_command_power = 200
 				democratic_drift = -1
@@ -93,7 +102,7 @@ ideas = {
 
 			modifier = {
 				global_building_slots = 3
-				local_resources_steel_factor = 0.20
+				local_resources_steel_factor = 0.40
 				resource_trade_cost_bonus_per_factory = 2
 				industrial_capacity_factory = 0.10
 				production_factory_max_efficiency_factor = 0.10

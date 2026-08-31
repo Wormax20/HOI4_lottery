@@ -102,6 +102,7 @@ ideas = {
 				fighter = {
 					build_cost_ic = -0.05
 					air_attack = 0.05
+					air_defence = 0.05
 				}
 			}
 			research_bonus = {
