@@ -103,12 +103,6 @@ country_event = {
 		}
 		every_state = {
 			limit = {
-				is_core_of = SIA
-			}
-			add_core_of = ROOT
-		}
-		every_state = {
-			limit = {
 				is_core_of = BRM
 			}
 			add_core_of = ROOT
