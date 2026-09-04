@@ -2800,6 +2800,12 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = industry_bonus
+      			bonus = 1.0
+      			uses = 1
+        		category = industry
+			}
 			add_to_variable = { ITA_iri_production_speed_arms_factory_factor = 0.05 }
 			custom_effect_tooltip = ITA_steel_industry_in_terni_ricostruzione_industriale_tt
 			if = {
@@ -2978,6 +2984,12 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = industry_bonus
+      			bonus = 1.0
+      			uses = 1
+        		category = industry
+			}
 			add_to_variable = { ITA_iri_production_speed_industrial_complex_factor = 0.05 }
 			custom_effect_tooltip = ITA_power_plants_in_terni_ricostruzione_industriale_tt
 			if = {
@@ -3175,6 +3187,13 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = industry_bonus
+				ahead_reduction = 1
+      			bonus = 1.0
+      			uses = 1
+        		category = industry
+			}
 			add_to_variable = { ITA_iri_consumer_goods_factor = 0.02 }
 			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
 
@@ -3271,6 +3290,12 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = YJ_ITA_foggia_farm
+				bonus = 1
+				uses = 3
+				category = excavation_tech
+			}
 			add_timed_idea = { idea = ITA_foggia_farm_fields years = 1 }
 		}
 	}
