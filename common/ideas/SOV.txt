@@ -3217,7 +3217,6 @@ ideas = {
 			}
 
 			cancel = {
-				NOT = { is_in_faction_with = SOV }
 			}
 
 			targeted_modifier = {
@@ -3240,33 +3239,13 @@ ideas = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
-				small_plane_airframe = {
-					instant = yes
+				fighter = {
 					build_cost_ic = -0.1
+					instant = yes
 				}
-				small_plane_cas_airframe = {
-					instant = yes
+				cas = {
 					build_cost_ic = -0.1
-				}
-				cv_small_plane_airframe = {
 					instant = yes
-					build_cost_ic = -0.1
-				}
-				medium_plane_airframe = {
-					instant = yes
-					build_cost_ic = -0.1
-				}
-				medium_plane_scout_plane_airframe = {
-					instant = yes
-					build_cost_ic = -0.1
-				}
-				large_plane_airframe = {
-					instant = yes
-					build_cost_ic = -0.1
-				}
-				large_plane_maritime_patrol_plane_airframe = {
-					instant = yes
-					build_cost_ic = -0.1
 				}
 			}
 		}

@@ -80,7 +80,6 @@ ideas = {
 				infantry_equipment = {
 					soft_attack = 0.10
 					hard_attack = 0.10
-					reliability = 0.10
 					breakthrough = 0.10
 					defense = 0.10
 					build_cost_ic = -0.10

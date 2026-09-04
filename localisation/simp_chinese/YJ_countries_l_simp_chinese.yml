@@ -423,7 +423,7 @@ KoKi_YJ_PRC_event.102.desc: "获得全方面工业BUFF加成"
 KoKi_YJ_PRC_event.102.a: "好"
 
 KoKi_YJ_PRC_event.103.title: "奖品: 人民战争"
-KoKi_YJ_PRC_event.103.desc: "提高缴获率和被占领地区的抵抗"
+KoKi_YJ_PRC_event.103.desc: "获得陆军和工业BUFF加成"
 KoKi_YJ_PRC_event.103.a: "好"
 
 KoKi_YJ_PRC_event.104.title: "奖品: 人民站起来了"
@@ -434,6 +434,7 @@ YJ_PRC_1_ideas: "国共合作"
 YJ_PRC_2_ideas: "中国制造"
 YJ_PRC_3_ideas: "人民战争"
 YJ_PRC_4_ideas: "人民站起来了"
+YJ_PRC_4_ideas_tt: "解锁§C中坦设计商§!与§C标准化生产商§!的锁定特质点，并立刻获得六点特质点数!"
 
 KoKi_YJ_CHI_event.101.title: "奖品: 国共合作"
 KoKi_YJ_CHI_event.101.desc: "开局统一,获得额外BUFF"
@@ -798,7 +799,7 @@ KoKi_YJ_SIA_event.103.desc: "获得双工业线国策，获得大量工业buff"
 KoKi_YJ_SIA_event.103.a: "好"
 
 KoKi_YJ_SIA_event.104.title: "奖品: 极致火力"
-KoKi_YJ_SIA_event.104.desc: "获得§Y2张§!§C300%§!炮卡，坦克与自火获得大量加成"
+KoKi_YJ_SIA_event.104.desc: "获得§Y3张§!§C200%§!炮卡，坦克与自火获得大量加成"
 KoKi_YJ_SIA_event.104.a: "好"
 
 

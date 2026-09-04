@@ -9031,7 +9031,7 @@ focus_tree = {
 			division_template = {
 				name = "Trotskyist Revolutionary Militias"
 				priority = 1
-				is_locked = yes
+				is_locked = no
 				division_names_group = SOV_INF_02
 				regiments = {
 					infantry = { x = 0 y = 0 }
@@ -10181,7 +10181,7 @@ focus_tree = {
 		relative_position_id = SOV_curtailment_of_the_collective_farms
 		cost = 10
 		available = {
-			has_war = no
+			date > 1938.1.1
 		}
 		                
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY}
@@ -10206,7 +10206,6 @@ focus_tree = {
 		relative_position_id = SOV_back_to_the_nep
 		cost = 10
 		available = {
-			date > 1938.1.1
 		}
 		                
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -11240,7 +11239,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			add_political_power = 70
+			add_political_power = 100
 			add_popularity = {
 				ideology = communism 
 				popularity = 0.05

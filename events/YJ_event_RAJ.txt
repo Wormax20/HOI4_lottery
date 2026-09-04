@@ -123,6 +123,7 @@ country_event = {
 		transfer_state = 995
 		transfer_state = 320
 		transfer_state = 321
+		transfer_state = 733
 		422 = { add_core_of = root }
 		320 = { add_core_of = root }
 		321 = { add_core_of = root }

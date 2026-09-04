@@ -40,6 +40,21 @@ ideas = {
 				stability_weekly = 0.002
 				war_support_weekly = 0.002
 			}
+			equipment_bonus = {
+				armor = {
+					hard_attack = 0.05
+					breakthrough = 0.05
+					instant = yes
+				}
+				mechanized_equipment = {
+					breakthrough = 0.05
+					instant = yes
+				}
+				amphibious_mechanized_equipment = {
+					breakthrough = 0.05
+					instant = yes
+				}
+			}
 		}
 		YJ_SOV_2_ideas = {
 
@@ -56,27 +71,26 @@ ideas = {
 			picture = SOV_stakhanovite_movement
 
 			modifier = {
-				production_speed_buildings_factor = 0.10
 				consumer_goods_factor = -0.15
 				consumer_goods_expected_value = -0.10
-				global_building_slots = 5
+				production_speed_buildings_factor = 0.10
+				local_resources_factor = 0.20
+				global_building_slots = 4
 				stability_weekly = 0.002
 				war_support_weekly = 0.002
 				political_advisor_cost_factor = -1
 			}
 			equipment_bonus = {
 				armor = {
-					build_cost_ic = -0.05
-					reliability = 0.05
-					hard_attack = 0.05
+					reliability = 0.10
 					instant = yes
 				}
 				mechanized_equipment = {
-					breakthrough = 0.05
+					reliability = 0.10
 					instant = yes
 				}
 				amphibious_mechanized_equipment = {
-					breakthrough = 0.05
+					reliability = 0.10
 					instant = yes
 				}
 			}
@@ -99,16 +113,27 @@ ideas = {
 				custom_modifier_tooltip = YJ_SOV_4_ideas_tt
 				political_power_factor = 0.15
 				research_speed_factor = 0.20
-				stability_factor = 0.10
-				war_support_factor = 0.10
-				global_building_slots = 3
+				equipment_conversion_speed = 0.25
 				production_factory_max_efficiency_factor = 0.10
-				industrial_capacity_factory = 0.10
-				local_resources_factor = 0.10
-				max_dig_in_factor = 0.1
-				supply_consumption_factor = -0.1
+				production_factory_efficiency_gain_factor = 0.20
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
 				stability_weekly = 0.002
 				war_support_weekly = 0.002
+			}
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				mechanized_equipment = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				amphibious_mechanized_equipment = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
 			}
 		}
 		YJ_SOV_5_ideas = {
@@ -143,7 +168,7 @@ ideas = {
 				conscription = 0.05
 				conscription_factor = 0.25
 				mobilization_speed = 0.75
-				global_building_slots = 5
+				global_building_slots = 6
 				stability_weekly = 0.002
 				war_support_weekly = 0.002
 				supply_consumption_factor = -0.30
@@ -190,13 +215,16 @@ ideas = {
 			targeted_modifier = {
 				tag = GER
 				attack_bonus_against = 0.10
-				breakthrough_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = FRA
+				attack_bonus_against = 0.10
 				defense_bonus_against = 0.10
 			}
 			targeted_modifier = {
 				tag = FIN
 				attack_bonus_against = 0.10
-				breakthrough_bonus_against = 0.10
 				defense_bonus_against = 0.10
 			}
 		}
