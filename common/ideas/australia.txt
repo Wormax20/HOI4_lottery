@@ -68,17 +68,13 @@ ideas = {
 			}
 
 			modifier = {
-				political_power_cost = 1.0 #Edit - AST_GET_ALP_CAMPAIGN_POL_POWER_COST /AND/ AST_uap_election_campaign_tt /AND/ AST_alp_election_campaign_tt - if changed
+				political_power_cost = 1.0
 			}
 		}
 
 	}
 
 	country = {
-
-		####################
-		#### TAOG START ####
-		####################
 
 		idea_AST_civil_war_on_their_own = {
 
@@ -153,7 +149,7 @@ ideas = {
 			}
 		}
 
-		AST_great_depression_taog_spirit_fake = { #Fake for bookmark
+		AST_great_depression_taog_spirit_fake = { 
 
 			allowed = {
 				always = no
@@ -169,7 +165,7 @@ ideas = {
 			}
    		}
 
-		AST_citizen_army_spirit_fake = { #Fake for bookmark
+		AST_citizen_army_spirit_fake = { 
 
 			allowed = {
 				always = no
@@ -183,7 +179,7 @@ ideas = {
 			}
    		}
 
-   		AST_war_is_coming_spirit_fake = { #Fake for bookmark
+   		AST_war_is_coming_spirit_fake = { 
 
    			allowed = {
 				always = no
@@ -196,7 +192,7 @@ ideas = {
 			}
    		}
 		
-		AST_unratified_westminster_act_idea = { #Will apply to vanilla too
+		AST_unratified_westminster_act_idea = { 
 
 			allowed = {
 				always = no
@@ -261,7 +257,7 @@ ideas = {
 			on_add = {
 				add_offsite_building = { 
 					type = arms_factory
-					level = 2 #Edit AST_australian_war_cabinet_war_idea_tt if changed
+					level = 2 
 				}
 			}
 
@@ -294,25 +290,25 @@ ideas = {
 			cancel = {
 				OR = {
 					ENG = {	
-						NOT = { controls_state = 1021 } #Singapore
+						NOT = { controls_state = 1021 } 
 						has_idea = AST_singapore_strategy_idea
 					}
 					AST = {	
-						NOT = { controls_state = 1021 } #Singapore
+						NOT = { controls_state = 1021 } 
 						has_idea = AST_singapore_strategy_idea
 					}
 				}
 			}
 
-			on_remove = { #Edit AST_singapore_strategy_idea_desc if changed
+			on_remove = { 
 
 				1021 = {
-					add_building_construction = { #edit AST_singapore_strategy_tt /AND/ AST_singapore_strategy_idea_desc if changed
+					add_building_construction = { 
 						type = air_base 
 						level = 2 
 						instant_build = yes
 					}
-					add_building_construction = { #edit AST_singapore_strategy_tt /AND/ AST_singapore_strategy_idea_desc if changed
+					add_building_construction = { 
 						type = naval_base 
 						level = 2 
 						instant_build = yes
@@ -322,7 +318,7 @@ ideas = {
 			  				limit_to_coastal = yes
 			  			}
 					}
-					add_building_construction = { #edit AST_singapore_strategy_tt /AND/ AST_singapore_strategy_idea_desc if changed
+					add_building_construction = { 
 						type = coastal_bunker 
 						level = 1 
 						province = {
@@ -363,14 +359,14 @@ ideas = {
 			on_add = {
 				add_offsite_building = { 
 					type = arms_factory
-					level = 2 #Edit AST_all_dressed_up_idea_tt if changed
+					level = 2 
 				}
 			}
 
 			on_remove = {
 				add_offsite_building = {
 					type = arms_factory
-					level = -2 #Edit AST_all_dressed_up_idea_tt if changed
+					level = -2 
 				}
 			}
 
@@ -565,11 +561,11 @@ ideas = {
 
 			picture = generic_air_research
 
-			research_bonus = { #Edit AST_political_events.1.a.tt if changed
+			research_bonus = { 
 				air_equipment = 0.15
 			}
 
-			modifier = { #Edit AST_political_events.1.a.tt if changed	
+			modifier = { 
 				production_speed_air_base_factor = 0.05
 			}
 		}
@@ -609,7 +605,6 @@ ideas = {
 
 			targeted_modifier = {
 	   			tag = AST
-	  			trade_cost_for_target_factor = -0.10
 	  			extra_trade_to_target_factor = 0.15
    			}	
 		}
@@ -648,7 +643,7 @@ ideas = {
 
 			picture = AST_cabinet_trust1_idea
 
-			modifier = { #Edit AST_cabinet_trust_state_1_tt if changed
+			modifier = { 
 				stability_factor = -0.30
 				political_power_factor = -0.2
 				war_support_factor = -0.15
@@ -670,7 +665,7 @@ ideas = {
 
 			picture = AST_cabinet_trust2_idea
 
-			modifier = { #Edit AST_cabinet_trust_state_2_tt if changed
+			modifier = { 
 				stability_factor = -0.25
 				political_power_factor = -0.17
 				war_support_factor = -0.12
@@ -692,7 +687,7 @@ ideas = {
 
 			picture = AST_cabinet_trust3_idea
 
-			modifier = { #Edit AST_cabinet_trust_state_3_tt if changed
+			modifier = { 
 				stability_factor = -0.20
 				political_power_factor = -0.15
 				war_support_factor = -0.10
@@ -714,7 +709,7 @@ ideas = {
 
 			picture = AST_cabinet_trust4_idea
 
-			modifier = { #Edit AST_cabinet_trust_state_4_tt if changed
+			modifier = { 
 				stability_factor = -0.15
 				political_power_factor = -0.12
 				war_support_factor = -0.07
@@ -736,7 +731,7 @@ ideas = {
 
 			picture = AST_cabinet_trust5_idea
 
-			modifier = { #Edit AST_cabinet_trust_state_5_tt if changed
+			modifier = { 
 				stability_factor = -0.10
 				political_power_factor = -0.1
 				war_support_factor = -0.05
@@ -761,14 +756,14 @@ ideas = {
 			on_add = {
 				add_offsite_building = {
 				    type = industrial_complex
-				    level = 2 #Edit AST_british_military_construction_aid_idea_tt if changed
+				    level = 2 
 				}
 			}
 
 			on_remove = {
 				add_offsite_building = {
 					type = industrial_complex
-					level = -2 #Edit AST_british_military_construction_aid_idea_tt if changed
+					level = -2 
 				}
 			}
 
@@ -925,7 +920,7 @@ ideas = {
 			}
 
 			on_remove = {
-				add_ideas = { #Edit AST_invasion_planning_desc if changed
+				add_ideas = { 
 					AST_war_plan_japan
 				}
 				create_wargoal = {
@@ -1120,7 +1115,7 @@ ideas = {
 
 		}
 
-		AST_the_pacific_garrison_1 = { #Supported by oil supply
+		AST_the_pacific_garrison_1 = { 
 
 			allowed = {
 				always = no
@@ -1143,7 +1138,7 @@ ideas = {
 
 		}
 
-		AST_the_pacific_garrison_2 = { #Not supported by oil supply
+		AST_the_pacific_garrison_2 = { 
 
 			allowed = {
 				always = no
@@ -1165,7 +1160,7 @@ ideas = {
 
 		}
 
-		AST_the_pacific_garrison_eng = { #ENG: Supporting AST oil supply
+		AST_the_pacific_garrison_eng = { 
 
 			allowed = {
 				always = no
@@ -1322,9 +1317,6 @@ ideas = {
 
 		}
 
-		##################
-		#### TAOG END ####
-		##################
 
 
 		AST_standard_gauge_railway = {
@@ -2042,7 +2034,7 @@ ideas = {
 
 
 			visible = {
-				#has_completed_focus = ETH_soviet-ethiopian_trade_agreement
+				
 			}
 
 			research_bonus = {
