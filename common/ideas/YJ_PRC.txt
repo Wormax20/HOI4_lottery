@@ -70,7 +70,6 @@ ideas = {
 			picture = PRC_peoples_aviation_company_of_china
 
 			modifier = {
-				local_resources_factor = 0.10
 				production_factory_efficiency_gain_factor = 0.1
 				production_factory_max_efficiency_factor = 0.1
 				supply_consumption_factor = -0.15

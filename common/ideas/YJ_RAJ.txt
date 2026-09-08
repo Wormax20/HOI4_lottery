@@ -59,7 +59,7 @@ ideas = {
 			equipment_bonus = {
 				armor = {
 					soft_attack = 0.05
-					defense = 0.05
+					reliability = 0.10
 					instant = yes
 				}
 				infantry_equipment = {
@@ -116,7 +116,7 @@ ideas = {
 				custom_modifier_tooltip = YJ_RAJ_5_ideas_tt
 				army_org_factor = 0.10
 				army_org_regain = 0.10
-				army_strength_factor = 0.10
+				army_strength_factor = 0.05
 				experience_loss_factor = -0.05
 			}
 		}

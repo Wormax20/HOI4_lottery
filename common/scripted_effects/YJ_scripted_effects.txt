@@ -1760,7 +1760,7 @@ MEX_state_YJ_scripted_effects = {
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
-			scope = RAJ
+			scope = AST
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
@@ -1786,7 +1786,7 @@ MEX_state_YJ_scripted_effects = {
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
-			scope = RAJ
+			scope = AST
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
@@ -1812,7 +1812,7 @@ MEX_state_YJ_scripted_effects = {
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
-			scope = RAJ
+			scope = AST
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
@@ -1838,7 +1838,7 @@ MEX_state_YJ_scripted_effects = {
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
-			scope = RAJ
+			scope = AST
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
@@ -1864,7 +1864,7 @@ MEX_state_YJ_scripted_effects = {
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
-			scope = RAJ
+			scope = AST
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
@@ -1890,7 +1890,7 @@ MEX_state_YJ_scripted_effects = {
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
-			scope = RAJ
+			scope = AST
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
@@ -1916,7 +1916,7 @@ MEX_state_YJ_scripted_effects = {
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
-			scope = RAJ
+			scope = AST
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
@@ -1942,7 +1942,7 @@ MEX_state_YJ_scripted_effects = {
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
-			scope = RAJ
+			scope = AST
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
@@ -1968,7 +1968,7 @@ MEX_state_YJ_scripted_effects = {
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
-			scope = RAJ
+			scope = AST
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
@@ -1994,7 +1994,7 @@ MEX_state_YJ_scripted_effects = {
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
-			scope = RAJ
+			scope = AST
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
@@ -2020,7 +2020,7 @@ MEX_state_YJ_scripted_effects = {
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
-			scope = RAJ
+			scope = AST
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
@@ -2046,7 +2046,7 @@ MEX_state_YJ_scripted_effects = {
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
-			scope = RAJ
+			scope = AST
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
@@ -2072,7 +2072,7 @@ MEX_state_YJ_scripted_effects = {
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
-			scope = RAJ
+			scope = AST
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
@@ -2098,7 +2098,7 @@ MEX_state_YJ_scripted_effects = {
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
-			scope = RAJ
+			scope = AST
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
@@ -2124,7 +2124,7 @@ MEX_state_YJ_scripted_effects = {
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
-			scope = RAJ
+			scope = AST
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
@@ -2150,7 +2150,7 @@ MEX_state_YJ_scripted_effects = {
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
-			scope = RAJ
+			scope = AST
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
@@ -2176,7 +2176,7 @@ MEX_state_YJ_scripted_effects = {
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
-			scope = RAJ
+			scope = AST
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
@@ -2202,7 +2202,7 @@ MEX_state_YJ_scripted_effects = {
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
-			scope = RAJ
+			scope = AST
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
@@ -2228,7 +2228,7 @@ MEX_state_YJ_scripted_effects = {
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
-			scope = RAJ
+			scope = AST
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
@@ -2254,7 +2254,7 @@ MEX_state_YJ_scripted_effects = {
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
-			scope = RAJ
+			scope = AST
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
@@ -2280,7 +2280,7 @@ MEX_state_YJ_scripted_effects = {
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
-			scope = RAJ
+			scope = AST
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
@@ -2306,7 +2306,7 @@ MEX_state_YJ_scripted_effects = {
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
-			scope = RAJ
+			scope = AST
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
@@ -2332,7 +2332,7 @@ MEX_state_YJ_scripted_effects = {
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
-			scope = RAJ
+			scope = AST
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
@@ -2358,7 +2358,7 @@ MEX_state_YJ_scripted_effects = {
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
-			scope = RAJ
+			scope = AST
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
@@ -2384,7 +2384,7 @@ MEX_state_YJ_scripted_effects = {
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
-			scope = RAJ
+			scope = AST
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
@@ -2410,7 +2410,7 @@ MEX_state_YJ_scripted_effects = {
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
-			scope = RAJ
+			scope = AST
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
@@ -2436,7 +2436,7 @@ MEX_state_YJ_scripted_effects = {
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
-			scope = RAJ
+			scope = AST
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
@@ -2462,7 +2462,7 @@ MEX_state_YJ_scripted_effects = {
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
-			scope = RAJ
+			scope = AST
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
@@ -2488,7 +2488,7 @@ MEX_state_YJ_scripted_effects = {
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
-			scope = RAJ
+			scope = AST
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
@@ -2514,7 +2514,7 @@ MEX_state_YJ_scripted_effects = {
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas
-			scope = RAJ
+			scope = AST
 		}
 		add_dynamic_modifier = {
 			modifier = YJ_MEX_state_2_ideas

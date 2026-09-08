@@ -324,7 +324,7 @@ KoKi_YJ_FIN_event.102.desc: "获得山地师修正\n冬季后勤连修正:寒冷
 KoKi_YJ_FIN_event.102.a: "好"
 
 KoKi_YJ_FIN_event.103.title: "奖品: 凛冬航空队"
-KoKi_YJ_FIN_event.103.desc: "解锁满血萨博,获得核心攻防与生产建设相关加强"
+KoKi_YJ_FIN_event.103.desc: "解锁满血萨博,获得生产,空军相关加强"
 KoKi_YJ_FIN_event.103.a: "好"
 
 KoKi_YJ_FIN_event.104.title: "奖品: 北欧工业整合"
@@ -663,7 +663,7 @@ KoKi_YJ_SWI_event.101.desc: "永久减100生产资源惩罚\n获得40生产上�
 KoKi_YJ_SWI_event.101.a: "好"
 
 KoKi_YJ_SWI_event.102.title: "奖品: 联邦空军"
-KoKi_YJ_SWI_event.102.desc: "获得高额空军buff"
+KoKi_YJ_SWI_event.102.desc: "获得获得生产空军加强"
 KoKi_YJ_SWI_event.102.a: "好"
 
 KoKi_YJ_SWI_event.103.title: "奖品:阿尔卑斯防卫军"
