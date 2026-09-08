@@ -102,9 +102,9 @@ ideas = {
 				armor = {
 					soft_attack = 0.10
 					hard_attack = 0.10
-					reliability = -0.1
+					reliability = -0.15
 					maximum_speed = 0.2
-					build_cost_ic = -0.20
+					build_cost_ic = -0.15
 					instant = yes
 				}
 			}
@@ -193,8 +193,8 @@ ideas = {
 				special_forces_no_supply_grace = 96
 				special_forces_attack_factor = 0.10
 				special_forces_defence_factor = 0.10
-				army_bonus_air_superiority_factor = 0.30
-				air_superiority_bonus_in_combat = 0.3
+				army_bonus_air_superiority_factor = 0.15
+				air_superiority_bonus_in_combat = 0.15
 			}
 			equipment_bonus = {
 				amphibious_mechanized_equipment = {

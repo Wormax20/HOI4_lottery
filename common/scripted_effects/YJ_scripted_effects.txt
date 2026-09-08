@@ -410,41 +410,78 @@ GER_YJ_scripted_effects = {
 }
 
 USA_YJ_scripted_effects = {
+
 	random_list = {
 		20 = {
 			modifier = {
-				has_idea = YJ_USA_1_ideas
+				OR = {
+					has_idea = YJ_USA_1_ideas
+					has_idea = YJ_USA_4_ideas
+				}
 				factor = 0
 			}
 			country_event = KoKi_YJ_USA_event.101
 		}
 		20 = {
 			modifier = {
-				has_idea = YJ_USA_4_ideas
+				OR = {
+					has_idea = YJ_USA_1_ideas
+					has_idea = YJ_USA_4_ideas
+				}
 				factor = 0
 			}
 			country_event = KoKi_YJ_USA_event.104
 		}
 		20 = {
 			modifier = {
-				has_idea = YJ_USA_2_ideas
+				OR = {
+					AND = {
+						NOT = {
+							has_idea = YJ_USA_1_ideas
+						}
+						NOT = {
+							has_idea = YJ_USA_4_ideas
+						}
+					}
+					has_idea = YJ_USA_2_ideas
+				}
 				factor = 0
 			}
 			country_event = KoKi_YJ_USA_event.102
 		}
 		20 = {
 			modifier = {
-				has_idea = YJ_USA_5_ideas
-				factor = 0
-			}
-			country_event = KoKi_YJ_USA_event.105
-		}
-		20 = {
-			modifier = {
-				has_idea = YJ_USA_3_ideas
+				OR = {
+					AND = {
+						NOT = {
+							has_idea = YJ_USA_1_ideas
+						}
+						NOT = {
+							has_idea = YJ_USA_4_ideas
+						}
+					}
+					has_idea = YJ_USA_3_ideas
+				}
 				factor = 0
 			}
 			country_event = KoKi_YJ_USA_event.103
+		}
+		20 = {
+			modifier = {
+				OR = {
+					AND = {
+						NOT = {
+							has_idea = YJ_USA_1_ideas
+						}
+						NOT = {
+							has_idea = YJ_USA_4_ideas
+						}
+					}
+					has_idea = YJ_USA_5_ideas
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_USA_event.105
 		}
 	}
 }
@@ -807,14 +844,14 @@ BRA_YJ_scripted_effects = {
 
 FIN_YJ_scripted_effects = {
 	random_list = {
-		20 = {
+		25 = {
 			modifier = {
 				has_idea = YJ_FIN_1_ideas
 				factor = 0
 			}
 			country_event = KoKi_YJ_FIN_event.101
 		}
-		20 = {
+		25 = {
 			modifier = {
 				OR = {
 					has_idea = YJ_FIN_2_ideas
@@ -826,7 +863,7 @@ FIN_YJ_scripted_effects = {
 			}
 			country_event = KoKi_YJ_FIN_event.102
 		}
-		20 = {
+		25 = {
 			modifier = {
 				OR = {
 					has_idea = YJ_FIN_3_ideas
@@ -838,7 +875,7 @@ FIN_YJ_scripted_effects = {
 			}
 			country_event = KoKi_YJ_FIN_event.103
 		}
-		20 = {
+		25 = {
 			modifier = {
 				OR = {
 					has_idea = YJ_FIN_4_ideas
@@ -849,18 +886,6 @@ FIN_YJ_scripted_effects = {
 				factor = 0
 			}
 			country_event = KoKi_YJ_FIN_event.104
-		}
-		20 = {
-			modifier = {
-				OR = {
-					has_idea = YJ_FIN_5_ideas
-					NOT = {
-						has_idea = YJ_FIN_1_ideas
-					}
-				}
-				factor = 0
-			}
-			country_event = KoKi_YJ_FIN_event.105
 		}
 	}
 }
@@ -1697,6 +1722,14 @@ SIA_YJ_scripted_effects = {
 				OR = {
 					NOT = {
 						has_idea = YJ_SIA_1_ideas
+					}
+					AND = {
+						NOT = {
+							has_idea = YJ_SIA_2_ideas
+						}
+						NOT = {
+							has_idea = YJ_SIA_3_ideas
+						}
 					}
 					has_idea = YJ_SIA_4_ideas
 				}
@@ -2867,14 +2900,6 @@ ALL_RANDOM_YJ_scripted_effects = {
 			}
 			set_global_flag = YJ_FIN_4_ideas
 			country_event = KoKi_YJ_FIN_event.104
-		}
-		1 = {
-			modifier = {
-				has_global_flag = YJ_FIN_5_ideas
-				factor = 0
-			}
-			set_global_flag = YJ_FIN_5_ideas
-			country_event = KoKi_YJ_FIN_event.105
 		}
 
 

@@ -15,23 +15,16 @@ ideas = {
 			picture = chi_chinese_unity
 
 			modifier = {
-                political_power_gain = 0.10
+                political_power_gain = 0.15
 				research_speed_factor = 0.1
 				training_time_factor = -0.1
 				production_speed_buildings_factor = 0.10
 				production_factory_efficiency_gain_factor = 0.10
 				production_factory_max_efficiency_factor = 0.10
 				industrial_capacity_factory = 0.10
+				local_resources_bread_factor = 0.10
 			}
 			equipment_bonus = {
-				infantry_equipment = {
-					build_cost_ic = -0.10
-					instant = yes
-				}
-				support_equipment = {
-					build_cost_ic = -0.10
-					instant = yes
-				}
 				fighter = {
 					build_cost_ic = -0.10
 					instant = yes
@@ -59,8 +52,7 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.10
 				production_factory_start_efficiency_factor = 0.10
 				line_change_production_efficiency_factor = 0.10
-				industrial_capacity_factory = 0.10
-				industrial_capacity_dockyard = 0.10
+				military_industrial_organization_funds_gain = 0.10
 			}
 		}
 		YJ_PRC_3_ideas = {
@@ -78,10 +70,9 @@ ideas = {
 			picture = PRC_peoples_aviation_company_of_china
 
 			modifier = {
-				global_building_slots = 3
+				local_resources_factor = 0.10
 				production_factory_efficiency_gain_factor = 0.1
 				production_factory_max_efficiency_factor = 0.1
-				local_resources_bread_factor = 0.10
 				supply_consumption_factor = -0.15
 				conscription = 0.05
 				mobilization_speed = 0.50
@@ -91,7 +82,7 @@ ideas = {
 			equipment_bonus = {
 				infantry_equipment = {
 					instant = yes
-					build_cost_ic = -0.15
+					build_cost_ic = -0.10
 					defence = 0.10
 					soft_attack = 0.10
 					hard_attack = 0.10
@@ -115,9 +106,10 @@ ideas = {
 			modifier = {
 				custom_modifier_tooltip = YJ_PRC_4_ideas_tt
 				political_advisor_cost_factor = -1
+				global_building_slots = 3
 				industrial_capacity_factory = 0.10
-				production_factory_efficiency_gain_factor = 0.10
-				production_factory_max_efficiency_factor = 0.10
+				industrial_capacity_dockyard = 0.10
+				local_resources_factor = 0.10
 			}
 			equipment_bonus = {
 				fighter = { 

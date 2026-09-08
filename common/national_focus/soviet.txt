@@ -15445,10 +15445,7 @@ ai_will_do = {
 			factor = 1
 		}
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = SOV_no_major_purge_tt		
-				check_variable = { SOV_great_purge_counter < 1 }
-			}
+			always = no
 		}
 
 		available_if_capitulated = yes

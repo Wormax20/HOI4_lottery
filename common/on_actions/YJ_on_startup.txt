@@ -737,7 +737,7 @@ on_actions = {
 						infantry = { x = 1 y = 3 }
 					}
 					support = {
-						artillery = {
+						anti_air = {
 							x = 0
 							y = 0
 						}

@@ -331,11 +331,6 @@ KoKi_YJ_FIN_event.104.title: "奖品: 北欧工业整合"
 KoKi_YJ_FIN_event.104.desc: "获得高额工业buff"
 KoKi_YJ_FIN_event.104.a: "好"
 
-KoKi_YJ_FIN_event.105.title: "奖品: 冰火人"
-KoKi_YJ_FIN_event.105.desc: "获得机制修正:当在每年的10月到3月,获得修正【雪地行者】\n在每年的4月到9月,获得修正【旱地难行】"
-KoKi_YJ_FIN_event.105.a: "好"
-
-
 YJ_FIN_1_ideas: "追寻斯堪的纳维亚遗产"
 YJ_FIN_2_ideas: "凛冬将军"
 YJ_FIN_2_ideas_tt: "山地师攻防+5%，山地师速度+10%,山地师补给使用-0.02\n冬季后勤连修正:寒冷适应度增长率+300%,积雪地形修正+15%,软攻+50点,补给使用-0.2\n长城巡逻连修正:寒冷适应度增长率+300%,积雪地形修正+15%,软攻+50点,补给使用-0.1,每个徒步步兵主动性+0.08,坦克及其衍生硬攻+10%"
@@ -343,12 +338,6 @@ YJ_FIN_3_ideas: "凛冬航空队"
 YJ_FIN_3_ideas_tt: "解锁满血萨博"
 YJ_FIN_4_ideas: "北欧工业整合"
 YJ_FIN_4_ideas_tt: "增加地图外20个民\n增加地图外5个军"
-YJ_FIN_05_ideas: "冰火人"
-YJ_FIN_05_ideas_tt: "获得机制修正:当在每年的10月到3月,获得修正【雪地行者】\n在每年的4月到9月,获得修正【旱地难行】"
-YJ_FIN_6_ideas: "雪地行者"
-YJ_FIN_7_ideas: "旱地难行"
-
-
 YJ_FIN_5_ideas: "小棉袄"
 
 
@@ -598,6 +587,10 @@ KoKi_YJ_AUS_event.102.a: "好"
 KoKi_YJ_CZE_event.101.title: "奖品: 波西米亚皇冠领"
 KoKi_YJ_CZE_event.101.desc: "获得三元君主制版图，以及高额工业buff"
 KoKi_YJ_CZE_event.101.a: "好"
+
+KoKi_YJ_CZE_event.BACK.title: "德国归还苏台德"
+KoKi_YJ_CZE_event.BACK.desc: "德国人将苏台德地区归还给我们了"
+KoKi_YJ_CZE_event.BACK.a: "好"
 
 YJ_AUS_1_ideas: "内莱塔尼亚"
 YJ_CZE_1_ideas: "波西米亚皇冠领"

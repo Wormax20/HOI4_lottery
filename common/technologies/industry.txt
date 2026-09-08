@@ -1683,7 +1683,7 @@ technologies = {
 		
 		local_resources_factor = 0.10
 		local_resources_coal_factor = 0.05
-		local_resources_bread_factor = 0.05
+		local_resources_bread_factor = 0.10
 		
 		path = {
 			research_cost_coeff = 1
@@ -1775,7 +1775,7 @@ technologies = {
 		
 		local_resources_factor = 0.10
 		local_resources_coal_factor = 0.05
-		local_resources_bread_factor = 0.05
+		local_resources_bread_factor = 0.10
 
 		path = {
 			research_cost_coeff = 1
@@ -1880,7 +1880,7 @@ technologies = {
 		
 		local_resources_factor = 0.10
 		local_resources_coal_factor = 0.05
-		local_resources_bread_factor = 0.05
+		local_resources_bread_factor = 0.10
 
 		path = {
 			research_cost_coeff = 1
@@ -1980,7 +1980,7 @@ technologies = {
 		
 		local_resources_factor = 0.10
 		local_resources_coal_factor = 0.05
-		local_resources_bread_factor = 0.05
+		local_resources_bread_factor = 0.10
 
 		path = {
 			research_cost_coeff = 1
@@ -2071,7 +2071,7 @@ technologies = {
 		
 		local_resources_factor = 0.10
 		local_resources_coal_factor = 0.05
-		local_resources_bread_factor = 0.05
+		local_resources_bread_factor = 0.10
 
 		path = {
 			research_cost_coeff = 1

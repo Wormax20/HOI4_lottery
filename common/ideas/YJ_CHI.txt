@@ -23,6 +23,7 @@ ideas = {
 				production_factory_efficiency_gain_factor = 0.10
 				production_factory_max_efficiency_factor = 0.10
 				industrial_capacity_factory = 0.10
+				local_resources_bread_factor = 0.10
 			}
 			equipment_bonus = {
 				infantry_equipment = {

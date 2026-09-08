@@ -46,6 +46,10 @@ KoKi_YJ_GER_event.10001.a: "可以"
 
 KoKi_YJ_GER_decisions_categories: "轴心国工业合作"
 KoKi_YJ_GER_decisions_categories_0: "与[FROM.GetName]合作"
+KoKi_YJ_GER_decisions_categories_1: "归还苏台德给捷克"
+
+ITA_unlock_special_templates: "解锁特殊编制"
+
 KoKi_SOV_IDEAS_war: "伟大的卫国战争"
 KoKi_SOV_IDEAS_pace: "联盟会更好"
 
