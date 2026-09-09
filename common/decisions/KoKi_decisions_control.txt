@@ -317,7 +317,7 @@ KoKi_YJ_decisions_categories = {
 				add_to_variable = {
 					KoKi_YJ_decisions_pp = 1
 				}
-				set_variable_to_random = { var = YJ_rng min = 1 max = 21 }
+				set_variable_to_random = { var = YJ_rng min = 1 max = 27 }
 				round_variable = YJ_rng
 				log = "value1 : [?YJ_rng]"
 		    }

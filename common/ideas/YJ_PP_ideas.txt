@@ -431,5 +431,110 @@ ideas = {
 				research_speed_factor = 0.1
 			}
 		}
+		YJ_31_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = man_five_year_plan_tank
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.25
+					reliability = -0.2
+					instant = yes
+				}
+			}
+		}
+		YJ_32_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_supply_line
+
+			modifier = {
+				supply_consumption_factor = -0.3
+				army_fuel_consumption_factor = -0.25
+			}
+		}
+		YJ_33_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = CHI_corruption_armed_forces
+
+			modifier = {
+				army_speed_factor = 0.25
+				attrition = 0.15
+				army_fuel_consumption_factor = 0.25
+			}
+		}
+		YJ_34_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_local_self_management
+
+			modifier = {
+				equipment_capture = 0.2
+			}
+		}
+		YJ_35_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = jap_duplicate_research
+
+			on_add = {
+				add_research_slot = 1
+			}
+
+			on_remove = {
+				add_research_slot = -1
+			}
+
+			modifier = {
+				custom_modifier_tooltip = YJ_35_ideas_tt
+			}
+		}
 	}
 }

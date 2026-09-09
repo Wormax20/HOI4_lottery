@@ -91,6 +91,12 @@ YJ_26_ideas: "士气大增"
 YJ_27_ideas: "鉴定守住就有办法"
 YJ_28_ideas: "工作狂热"
 YJ_29_ideas: "科研速度加成"
+YJ_31_ideas: "纸糊坦克"
+YJ_32_ideas: "后勤部开了外挂"
+YJ_33_ideas: "油门焊死"
+YJ_34_ideas: "战场回收公司"
+YJ_35_ideas: "临时研究所"
+YJ_35_ideas_tt: "科研槽：§G+1§!\n重复抽中延长120天，科研槽数量不叠加；到期收回1个科研槽。"
 
 KoKi_YJ_pp.1.title: "奖品: 地图外民用工厂"
 KoKi_YJ_pp.1.desc: ""
@@ -213,6 +219,30 @@ KoKi_YJ_pp.29.a: "好"
 KoKi_YJ_pp.29_1.title: "奖品: 免費贈禮"
 KoKi_YJ_pp.29_1.desc: "[FROM.GetName] 转移5军5民到我们这"
 KoKi_YJ_pp.29_1.a: "好"
+
+KoKi_YJ_pp.30.title: "奖品: 军火盲盒"
+KoKi_YJ_pp.30.desc: "等概率获得一种基础型装备礼包：步兵包（20000步枪和1000火炮）、后勤包（3000卡车和200火车）、支援包（3000支援装备）"
+KoKi_YJ_pp.30.a: "好"
+
+KoKi_YJ_pp.31.title: "奖品: 纸糊坦克"
+KoKi_YJ_pp.31.desc: "获得为期120天的装甲装备生产成本-25%、可靠性-20%加成，重复抽中延长持续时间"
+KoKi_YJ_pp.31.a: "好"
+
+KoKi_YJ_pp.32.title: "奖品: 后勤部开了外挂"
+KoKi_YJ_pp.32.desc: "获得为期120天的补给消耗-30%、陆军燃料消耗-25%加成，重复抽中延长持续时间"
+KoKi_YJ_pp.32.a: "好"
+
+KoKi_YJ_pp.33.title: "奖品: 油门焊死"
+KoKi_YJ_pp.33.desc: "获得为期90天的陆军师速度+25%、陆军师损耗+15%、陆军燃料消耗+25%加成，重复抽中延长持续时间"
+KoKi_YJ_pp.33.a: "好"
+
+KoKi_YJ_pp.34.title: "奖品: 战场回收公司"
+KoKi_YJ_pp.34.desc: "获得为期180天的装备缴获比例+20个百分点加成，重复抽中延长持续时间"
+KoKi_YJ_pp.34.a: "好"
+
+KoKi_YJ_pp.35.title: "奖品: 临时研究所"
+KoKi_YJ_pp.35.desc: "获得为期120天的1个额外科研槽，持续期间重复抽中延长120天，科研槽数量不叠加；到期收回1个科研槽。"
+KoKi_YJ_pp.35.a: "好"
 
 YJ_10001_ideas: "大西洋宪章"
 

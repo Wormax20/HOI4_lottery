@@ -233,7 +233,7 @@ country_event = {
 		name = KoKi_YJ_pp.9.a
 		add_tech_bonus = {
 			name =  KoKi_YJ_pp.9.title
-			ahead_reduction = 0.5
+			ahead_reduction = 1
 			bonus = 2
 			uses = 1
 			category = armor
@@ -667,6 +667,18 @@ country_event = {
 	picture = GFX_report_event_generic
 	is_triggered_only = yes
 
+	immediate = {
+		random_country = {
+			limit = {
+				is_ai = no
+				NOT = {
+					tag = ROOT
+				}
+			}
+			save_event_target_as = YJ_pp_29_recipient
+		}
+	}
+
 	option = {
 		name = KoKi_YJ_pp.29.a
 		add_offsite_building = {
@@ -677,13 +689,7 @@ country_event = {
 			type = arms_factory
 			level = -5
 		}
-		random_country = {
-			limit = {
-				is_ai = no
-				NOT = {
-					tag = ROOT
-				}
-			}
+		event_target:YJ_pp_29_recipient = {
 			country_event = {
 				id = KoKi_YJ_pp.29_1
 			}
@@ -718,6 +724,239 @@ country_event = {
 		add_offsite_building = {
 			type = arms_factory
 			level = 5
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+country_event = {
+	id = KoKi_YJ_pp.30
+	title = KoKi_YJ_pp.30.title
+	desc = KoKi_YJ_pp.30.desc
+
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ_pp.30.a
+		random_list = {
+			33 = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 20000
+					producer = ROOT
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_1
+					amount = 1000
+					producer = ROOT
+				}
+			}
+			33 = {
+				add_equipment_to_stockpile = {
+					type = motorized_equipment_1
+					amount = 3000
+					producer = ROOT
+				}
+				add_equipment_to_stockpile = {
+					type = train_equipment_1
+					amount = 200
+					producer = ROOT
+				}
+			}
+			33 = {
+				add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 3000
+					producer = ROOT
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = LGS_on
+			}
+			set_variable = {
+				LGS_pp_lot = 0
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = KoKi_YJ_pp.31
+	title = KoKi_YJ_pp.31.title
+	desc = KoKi_YJ_pp.31.desc
+
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ_pp.31.a
+		remove_ideas = YJ_31_ideas
+		add_to_variable = {
+			var = YJ_31_ideas_var
+			value = 120
+		}
+		add_timed_idea = {
+			idea = YJ_31_ideas
+			days = YJ_31_ideas_var
+		}
+		if = {
+			limit = {
+				has_country_flag = LGS_on
+			}
+			set_variable = {
+				LGS_pp_lot = 0
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = KoKi_YJ_pp.32
+	title = KoKi_YJ_pp.32.title
+	desc = KoKi_YJ_pp.32.desc
+
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ_pp.32.a
+		remove_ideas = YJ_32_ideas
+		add_to_variable = {
+			var = YJ_32_ideas_var
+			value = 120
+		}
+		add_timed_idea = {
+			idea = YJ_32_ideas
+			days = YJ_32_ideas_var
+		}
+		if = {
+			limit = {
+				has_country_flag = LGS_on
+			}
+			set_variable = {
+				LGS_pp_lot = 0
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = KoKi_YJ_pp.33
+	title = KoKi_YJ_pp.33.title
+	desc = KoKi_YJ_pp.33.desc
+
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ_pp.33.a
+		remove_ideas = YJ_33_ideas
+		add_to_variable = {
+			var = YJ_33_ideas_var
+			value = 90
+		}
+		add_timed_idea = {
+			idea = YJ_33_ideas
+			days = YJ_33_ideas_var
+		}
+		if = {
+			limit = {
+				has_country_flag = LGS_on
+			}
+			set_variable = {
+				LGS_pp_lot = 0
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = KoKi_YJ_pp.34
+	title = KoKi_YJ_pp.34.title
+	desc = KoKi_YJ_pp.34.desc
+
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ_pp.34.a
+		remove_ideas = YJ_34_ideas
+		add_to_variable = {
+			var = YJ_34_ideas_var
+			value = 180
+		}
+		add_timed_idea = {
+			idea = YJ_34_ideas
+			days = YJ_34_ideas_var
+		}
+		if = {
+			limit = {
+				has_country_flag = LGS_on
+			}
+			set_variable = {
+				LGS_pp_lot = 0
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = KoKi_YJ_pp.35
+	title = KoKi_YJ_pp.35.title
+	desc = KoKi_YJ_pp.35.desc
+
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		name = KoKi_YJ_pp.35.a
+		if = {
+			limit = {
+				has_idea = YJ_35_ideas
+			}
+			modify_timed_idea = {
+				idea = YJ_35_ideas
+				days = 120
+			}
+		}
+		else = {
+			add_timed_idea = {
+				idea = YJ_35_ideas
+				days = 120
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = LGS_on
+			}
+			set_variable = {
+				LGS_pp_lot = 0
+			}
 		}
 		ai_chance = {
 			factor = 100

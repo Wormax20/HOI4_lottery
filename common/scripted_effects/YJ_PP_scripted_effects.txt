@@ -43,6 +43,12 @@ KoKi_YJ_decisions_pp = {
             else_if = { limit = { check_variable = { YJ_rng = 19 } } country_event = KoKi_YJ_pp.19 } #goodgood
             else_if = { limit = { check_variable = { YJ_rng = 20 } } country_event = KoKi_YJ_pp.20 } #bad
             else_if = { limit = { check_variable = { YJ_rng = 21 } } country_event = KoKi_YJ_pp.29 } #bad
+            else_if = { limit = { check_variable = { YJ_rng = 22 } } country_event = KoKi_YJ_pp.30 } #good
+            else_if = { limit = { check_variable = { YJ_rng = 23 } } country_event = KoKi_YJ_pp.31 } #good
+            else_if = { limit = { check_variable = { YJ_rng = 24 } } country_event = KoKi_YJ_pp.32 } #good
+            else_if = { limit = { check_variable = { YJ_rng = 25 } } country_event = KoKi_YJ_pp.33 } #good
+            else_if = { limit = { check_variable = { YJ_rng = 26 } } country_event = KoKi_YJ_pp.34 } #good
+            else_if = { limit = { check_variable = { YJ_rng = 27 } } country_event = KoKi_YJ_pp.35 } #good
         }
     }
 }
@@ -99,6 +105,12 @@ KoKi_YJ_decisions_pp_RANDOM_COUNTRY = {
                 else_if = { limit = { check_variable = { YJ_rng = 19 } } country_event = KoKi_YJ_pp.19 } #goodgood
                 else_if = { limit = { check_variable = { YJ_rng = 20 } } country_event = KoKi_YJ_pp.20 } #bad
                 else_if = { limit = { check_variable = { YJ_rng = 21 } } country_event = KoKi_YJ_pp.29 } #bad
+                else_if = { limit = { check_variable = { YJ_rng = 22 } } country_event = KoKi_YJ_pp.30 } #good
+                else_if = { limit = { check_variable = { YJ_rng = 23 } } country_event = KoKi_YJ_pp.31 } #good
+                else_if = { limit = { check_variable = { YJ_rng = 24 } } country_event = KoKi_YJ_pp.32 } #good
+                else_if = { limit = { check_variable = { YJ_rng = 25 } } country_event = KoKi_YJ_pp.33 } #good
+                else_if = { limit = { check_variable = { YJ_rng = 26 } } country_event = KoKi_YJ_pp.34 } #good
+                else_if = { limit = { check_variable = { YJ_rng = 27 } } country_event = KoKi_YJ_pp.35 } #good
             }
         }
     }

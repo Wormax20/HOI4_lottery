@@ -10,19 +10,11 @@ country_event = {
 
 	option = {
 		add_ideas = YJ_BEL_01_ideas
-		36 = { add_core_of = root }
-		35 = { add_core_of = root }
-		7 = { add_core_of = root }
-		8 = { add_core_of = root }
-		672 = { add_core_of = root }
-		1022 = { add_core_of = root }
-		334 = { add_core_of = root }
-		335 = { add_core_of = root }
-		667 = { add_core_of = root }
-		673 = { add_core_of = root }
-		668 = { add_core_of = root }
-		669 = { add_core_of = root }
-		738 = { add_core_of = root }
+		INS = {
+			every_controlled_state = {
+				add_core_of = BEL
+			}
+		}
 
 		name = KoKi_YJ_BEL_event.101.a
 		ai_chance = {

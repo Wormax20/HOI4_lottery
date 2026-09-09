@@ -420,7 +420,10 @@ USA_YJ_scripted_effects = {
 		}
 		20 = {
 			modifier = {
-				has_idea = YJ_USA_4_ideas
+				OR = {
+					has_idea = YJ_USA_4_ideas
+					has_country_flag = KoKi_YJ_TAG_decisions_YJ_2
+				}
 				factor = 0
 			}
 			country_event = KoKi_YJ_USA_event.104
@@ -2591,7 +2594,10 @@ ALL_RANDOM_YJ_scripted_effects = {
 		}
 		1 = {
 			modifier = {
-				has_global_flag = YJ_USA_4_ideas
+				OR = {
+					has_global_flag = YJ_USA_4_ideas
+					has_country_flag = YJ_third_country_lottery
+				}
 				factor = 0
 			}
 			set_global_flag = YJ_USA_4_ideas

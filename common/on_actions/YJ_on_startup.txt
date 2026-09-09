@@ -795,7 +795,7 @@ on_actions = {
 
 	on_daily = {
 		effect = {
-			set_variable_to_random = { var = YJ_rng min = 1 max = 21 }
+			set_variable_to_random = { var = YJ_rng min = 1 max = 27 }
 			round_variable = YJ_rng
 			log = "value1 : [?YJ_rng]"
 			set_variable_to_random = { var = YJ_rng1 min = 1 max = 100 }
@@ -842,6 +842,18 @@ on_actions = {
 				}
 				set_variable = {
 					YJ_29_ideas_var = 0
+				}
+				set_variable = {
+					YJ_31_ideas_var = 0
+				}
+				set_variable = {
+					YJ_32_ideas_var = 0
+				}
+				set_variable = {
+					YJ_33_ideas_var = 0
+				}
+				set_variable = {
+					YJ_34_ideas_var = 0
 				}
 			}
 		}
@@ -946,6 +958,50 @@ on_actions = {
 				}
 				subtract_from_variable = {
 					YJ_29_ideas_var = 1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YJ_31_ideas
+					check_variable = {
+						YJ_31_ideas_var > 0
+					}
+				}
+				subtract_from_variable = {
+					YJ_31_ideas_var = 1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YJ_32_ideas
+					check_variable = {
+						YJ_32_ideas_var > 0
+					}
+				}
+				subtract_from_variable = {
+					YJ_32_ideas_var = 1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YJ_33_ideas
+					check_variable = {
+						YJ_33_ideas_var > 0
+					}
+				}
+				subtract_from_variable = {
+					YJ_33_ideas_var = 1
+				}
+			}
+			if = {
+				limit = {
+					has_idea = YJ_34_ideas
+					check_variable = {
+						YJ_34_ideas_var > 0
+					}
+				}
+				subtract_from_variable = {
+					YJ_34_ideas_var = 1
 				}
 			}
 		}
