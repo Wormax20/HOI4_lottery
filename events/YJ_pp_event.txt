@@ -67,14 +67,20 @@ country_event = {
 
 	option = {
 		name = KoKi_YJ_pp.3.a
-		remove_ideas = YJ_29_ideas
-		add_to_variable = {
-			var = YJ_29_ideas_var
-			value = 120
+		if = {
+			limit = {
+				has_idea = YJ_29_ideas
+			}
+			modify_timed_idea = {
+				idea = YJ_29_ideas
+				days = 120
+			}
 		}
-		add_timed_idea = {
-			idea = YJ_29_ideas
-			days = YJ_29_ideas_var
+		else = {
+			add_timed_idea = {
+				idea = YJ_29_ideas
+				days = 120
+			}
 		}
 		if = {
 			limit = {
@@ -398,14 +404,20 @@ country_event = {
 
 	option = {
 		name = KoKi_YJ_pp.21.a
-		remove_ideas = YJ_21_ideas
-		add_to_variable = {
-			var = YJ_21_ideas_var
-			value = 120
+		if = {
+			limit = {
+				has_idea = YJ_21_ideas
+			}
+			modify_timed_idea = {
+				idea = YJ_21_ideas
+				days = 120
+			}
 		}
-		add_timed_idea = {
-			idea = YJ_21_ideas
-			days = YJ_21_ideas_var
+		else = {
+			add_timed_idea = {
+				idea = YJ_21_ideas
+				days = 120
+			}
 		}
 		if = {
 			limit = {
@@ -432,14 +444,20 @@ country_event = {
 
 	option = {
 		name = KoKi_YJ_pp.22.a
-		remove_ideas = YJ_22_ideas
-		add_to_variable = {
-			var = YJ_22_ideas_var
-			value = 120
+		if = {
+			limit = {
+				has_idea = YJ_22_ideas
+			}
+			modify_timed_idea = {
+				idea = YJ_22_ideas
+				days = 120
+			}
 		}
-		add_timed_idea = {
-			idea = YJ_22_ideas
-			days = YJ_22_ideas_var
+		else = {
+			add_timed_idea = {
+				idea = YJ_22_ideas
+				days = 120
+			}
 		}
 		if = {
 			limit = {
@@ -466,14 +484,20 @@ country_event = {
 
 	option = {
 		name = KoKi_YJ_pp.23.a
-		remove_ideas = YJ_23_ideas
-		add_to_variable = {
-			var = YJ_23_ideas_var
-			value = 120
+		if = {
+			limit = {
+				has_idea = YJ_23_ideas
+			}
+			modify_timed_idea = {
+				idea = YJ_23_ideas
+				days = 120
+			}
 		}
-		add_timed_idea = {
-			idea = YJ_23_ideas
-			days = YJ_23_ideas_var
+		else = {
+			add_timed_idea = {
+				idea = YJ_23_ideas
+				days = 120
+			}
 		}
 		if = {
 			limit = {
@@ -500,14 +524,20 @@ country_event = {
 
 	option = {
 		name = KoKi_YJ_pp.24.a
-		remove_ideas = YJ_24_ideas
-		add_to_variable = {
-			var = YJ_24_ideas_var
-			value = 120
+		if = {
+			limit = {
+				has_idea = YJ_24_ideas
+			}
+			modify_timed_idea = {
+				idea = YJ_24_ideas
+				days = 120
+			}
 		}
-		add_timed_idea = {
-			idea = YJ_24_ideas
-			days = YJ_24_ideas_var
+		else = {
+			add_timed_idea = {
+				idea = YJ_24_ideas
+				days = 120
+			}
 		}
 		if = {
 			limit = {
@@ -534,14 +564,20 @@ country_event = {
 
 	option = {
 		name = KoKi_YJ_pp.25.a
-		remove_ideas = YJ_25_ideas
-		add_to_variable = {
-			var = YJ_25_ideas_var
-			value = 120
+		if = {
+			limit = {
+				has_idea = YJ_25_ideas
+			}
+			modify_timed_idea = {
+				idea = YJ_25_ideas
+				days = 120
+			}
 		}
-		add_timed_idea = {
-			idea = YJ_25_ideas
-			days = YJ_25_ideas_var
+		else = {
+			add_timed_idea = {
+				idea = YJ_25_ideas
+				days = 120
+			}
 		}
 		add_manpower = 1000000
 		if = {
@@ -569,14 +605,20 @@ country_event = {
 
 	option = {
 		name = KoKi_YJ_pp.26.a
-		remove_ideas = YJ_26_ideas
-		add_to_variable = {
-			var = YJ_26_ideas_var
-			value = 120
+		if = {
+			limit = {
+				has_idea = YJ_26_ideas
+			}
+			modify_timed_idea = {
+				idea = YJ_26_ideas
+				days = 120
+			}
 		}
-		add_timed_idea = {
-			idea = YJ_26_ideas
-			days = YJ_26_ideas_var
+		else = {
+			add_timed_idea = {
+				idea = YJ_26_ideas
+				days = 120
+			}
 		}
 		if = {
 			limit = {
@@ -603,14 +645,20 @@ country_event = {
 
 	option = {
 		name = KoKi_YJ_pp.27.a
-		remove_ideas = YJ_27_ideas
-		add_to_variable = {
-			var = YJ_27_ideas_var
-			value = 120
+		if = {
+			limit = {
+				has_idea = YJ_27_ideas
+			}
+			modify_timed_idea = {
+				idea = YJ_27_ideas
+				days = 120
+			}
 		}
-		add_timed_idea = {
-			idea = YJ_27_ideas
-			days = YJ_27_ideas_var
+		else = {
+			add_timed_idea = {
+				idea = YJ_27_ideas
+				days = 120
+			}
 		}
 		if = {
 			limit = {
@@ -637,14 +685,20 @@ country_event = {
 
 	option = {
 		name = KoKi_YJ_pp.28.a
-		remove_ideas = YJ_28_ideas
-		add_to_variable = {
-			var = YJ_28_ideas_var
-			value = 120
+		if = {
+			limit = {
+				has_idea = YJ_28_ideas
+			}
+			modify_timed_idea = {
+				idea = YJ_28_ideas
+				days = 120
+			}
 		}
-		add_timed_idea = {
-			idea = YJ_28_ideas
-			days = YJ_28_ideas_var
+		else = {
+			add_timed_idea = {
+				idea = YJ_28_ideas
+				days = 120
+			}
 		}
 		if = {
 			limit = {
@@ -799,14 +853,20 @@ country_event = {
 
 	option = {
 		name = KoKi_YJ_pp.31.a
-		remove_ideas = YJ_31_ideas
-		add_to_variable = {
-			var = YJ_31_ideas_var
-			value = 120
+		if = {
+			limit = {
+				has_idea = YJ_31_ideas
+			}
+			modify_timed_idea = {
+				idea = YJ_31_ideas
+				days = 120
+			}
 		}
-		add_timed_idea = {
-			idea = YJ_31_ideas
-			days = YJ_31_ideas_var
+		else = {
+			add_timed_idea = {
+				idea = YJ_31_ideas
+				days = 120
+			}
 		}
 		if = {
 			limit = {
@@ -833,14 +893,20 @@ country_event = {
 
 	option = {
 		name = KoKi_YJ_pp.32.a
-		remove_ideas = YJ_32_ideas
-		add_to_variable = {
-			var = YJ_32_ideas_var
-			value = 120
+		if = {
+			limit = {
+				has_idea = YJ_32_ideas
+			}
+			modify_timed_idea = {
+				idea = YJ_32_ideas
+				days = 120
+			}
 		}
-		add_timed_idea = {
-			idea = YJ_32_ideas
-			days = YJ_32_ideas_var
+		else = {
+			add_timed_idea = {
+				idea = YJ_32_ideas
+				days = 120
+			}
 		}
 		if = {
 			limit = {
@@ -867,14 +933,20 @@ country_event = {
 
 	option = {
 		name = KoKi_YJ_pp.33.a
-		remove_ideas = YJ_33_ideas
-		add_to_variable = {
-			var = YJ_33_ideas_var
-			value = 90
+		if = {
+			limit = {
+				has_idea = YJ_33_ideas
+			}
+			modify_timed_idea = {
+				idea = YJ_33_ideas
+				days = 90
+			}
 		}
-		add_timed_idea = {
-			idea = YJ_33_ideas
-			days = YJ_33_ideas_var
+		else = {
+			add_timed_idea = {
+				idea = YJ_33_ideas
+				days = 90
+			}
 		}
 		if = {
 			limit = {
@@ -901,14 +973,20 @@ country_event = {
 
 	option = {
 		name = KoKi_YJ_pp.34.a
-		remove_ideas = YJ_34_ideas
-		add_to_variable = {
-			var = YJ_34_ideas_var
-			value = 180
+		if = {
+			limit = {
+				has_idea = YJ_34_ideas
+			}
+			modify_timed_idea = {
+				idea = YJ_34_ideas
+				days = 180
+			}
 		}
-		add_timed_idea = {
-			idea = YJ_34_ideas
-			days = YJ_34_ideas_var
+		else = {
+			add_timed_idea = {
+				idea = YJ_34_ideas
+				days = 180
+			}
 		}
 		if = {
 			limit = {
