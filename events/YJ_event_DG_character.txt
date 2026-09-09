@@ -294,6 +294,9 @@ country_event = {
 							traits = {
 								AK_traits
 							}
+							research_bonus = {
+								armor = 0.2
+							}
 							ai_will_do = {
 								base = 1
 							}

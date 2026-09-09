@@ -939,13 +939,13 @@ country_event = {
 			}
 			modify_timed_idea = {
 				idea = YJ_33_ideas
-				days = 90
+				days = 120
 			}
 		}
 		else = {
 			add_timed_idea = {
 				idea = YJ_33_ideas
-				days = 90
+				days = 120
 			}
 		}
 		if = {
@@ -979,13 +979,13 @@ country_event = {
 			}
 			modify_timed_idea = {
 				idea = YJ_34_ideas
-				days = 180
+				days = 120
 			}
 		}
 		else = {
 			add_timed_idea = {
 				idea = YJ_34_ideas
-				days = 180
+				days = 120
 			}
 		}
 		if = {

@@ -129,7 +129,7 @@ KoKi_YJ_pp.8.desc: "§R恭喜你中大奖啦!\n§R恭喜你中大奖啦!\n§R恭
 KoKi_YJ_pp.8.a: "恭喜你中大奖啦"
 
 KoKi_YJ_pp.9.title: "奖品: 超前加成卡"
-KoKi_YJ_pp.9.desc: "超前0.5年200%全类型加成卡一张"
+KoKi_YJ_pp.9.desc: "超前1年200%全类型加成卡一张"
 KoKi_YJ_pp.9.a: "好"
 
 KoKi_YJ_pp_resource.10.title: "奖品: 钢"
@@ -193,7 +193,7 @@ KoKi_YJ_pp.23.desc: "获得为期120天的20生产效率增长"
 KoKi_YJ_pp.23.a: "好"
 
 KoKi_YJ_pp.24.title: "奖品: 手搓万物"
-KoKi_YJ_pp.24.desc: "获得为期90天的-2000%缺乏战略资源惩罚"
+KoKi_YJ_pp.24.desc: "获得为期120天的-2000%缺乏战略资源惩罚"
 KoKi_YJ_pp.24.a: "好"
 
 KoKi_YJ_pp.25.title: "奖品: 人口大爆发"
@@ -233,11 +233,11 @@ KoKi_YJ_pp.32.desc: "获得为期120天的补给消耗-30%、陆军燃料消耗-
 KoKi_YJ_pp.32.a: "好"
 
 KoKi_YJ_pp.33.title: "奖品: 油门焊死"
-KoKi_YJ_pp.33.desc: "获得为期90天的陆军师速度+25%、陆军师损耗+15%、陆军燃料消耗+25%加成，重复抽中延长持续时间"
+KoKi_YJ_pp.33.desc: "获得为期120天的陆军师速度+25%、陆军师损耗+15%、陆军燃料消耗+25%加成，重复抽中延长持续时间"
 KoKi_YJ_pp.33.a: "好"
 
 KoKi_YJ_pp.34.title: "奖品: 战场回收公司"
-KoKi_YJ_pp.34.desc: "获得为期180天的装备缴获比例+20个百分点加成，重复抽中延长持续时间"
+KoKi_YJ_pp.34.desc: "获得为期120天的装备缴获比例+20个百分点加成，重复抽中延长持续时间"
 KoKi_YJ_pp.34.a: "好"
 
 KoKi_YJ_pp.35.title: "奖品: 临时研究所"
