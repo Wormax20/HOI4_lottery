@@ -166,6 +166,7 @@ country_event = {
 		name = KoKi_YJ.109.a
 
 		add_ideas = YJ_9_ideas
+		create_intelligence_agency = yes
 		ai_chance = {
 			factor = 100
 		}

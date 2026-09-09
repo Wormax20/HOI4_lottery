@@ -100,5 +100,17 @@ spriteTypes = {
 		name = "GFX_leaders_Wolf" 
 		texturefile = "gfx/leaders/DOG_exe/Wolf.png"
 	}
+	spriteType = {
+		name = "GFX_leaders_Moxiaoju" 
+		texturefile = "gfx/leaders/DOG_exe/Moxiaoju.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_Suika" 
+		texturefile = "gfx/leaders/DOG_exe/Suika.png"
+	}
+	spriteType = {
+		name = "GFX_leaders_Lami" 
+		texturefile = "gfx/leaders/DOG_exe/Lami.png"
+	}
 
 }	

@@ -46,6 +46,10 @@ KoKi_YJ_GER_event.10001.a: "可以"
 
 KoKi_YJ_GER_decisions_categories: "轴心国工业合作"
 KoKi_YJ_GER_decisions_categories_0: "与[FROM.GetName]合作"
+KoKi_YJ_GER_decisions_categories_1: "归还苏台德给捷克"
+
+ITA_unlock_special_templates: "解锁特殊编制"
+
 KoKi_SOV_IDEAS_war: "伟大的卫国战争"
 KoKi_SOV_IDEAS_pace: "联盟会更好"
 
@@ -317,6 +321,15 @@ DOG_exe_YJ_new_JL_event.33.desc: "奖品: 勘规"
 
 DOG_exe_YJ_new_JL_event.34.title: "奖品: EmPtY"
 DOG_exe_YJ_new_JL_event.34.desc: "奖品: EmPtY"
+
+DOG_exe_YJ_new_JL_event.35.title: "奖品: Moxiaoju"
+DOG_exe_YJ_new_JL_event.35.desc: "奖品: Moxiaoju"
+
+DOG_exe_YJ_new_JL_event.36.title: "奖品: 西瓜eeeee"
+DOG_exe_YJ_new_JL_event.36.desc: "奖品: 西瓜eeeee"
+
+DOG_exe_YJ_new_JL_event.37.title: "奖品: 菈米露亞"
+DOG_exe_YJ_new_JL_event.37.desc: "奖品: 菈米露亞"
 
 KoKi_YJ_FRA_event.NPL.title: "拿破仑归来"
 KoKi_YJ_FRA_event.NPL.desc: "拿破仑将领回归"

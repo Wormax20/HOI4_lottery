@@ -33,3 +33,23 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = KoKi_YJ_CZE_event.BACK
+	title = KoKi_YJ_CZE_event.BACK.title
+	desc = KoKi_YJ_CZE_event.BACK.desc
+
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		transfer_state = 69
+		transfer_state = 972
+		transfer_state = 74
+		name = KoKi_YJ_CZE_event.BACK.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}

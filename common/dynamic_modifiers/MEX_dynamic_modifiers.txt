@@ -4,7 +4,7 @@ YJ_MEX_state_1_ideas = {
 	icon = GFX_modifiers_generic_military_plans
 	army_attack_factor = 0.05
 	army_defence_factor = 0.05
-	breakthrough_factor =0.1
+	breakthrough_factor = 0.1
 }
 
 YJ_MEX_state_2_ideas = {
@@ -12,8 +12,8 @@ YJ_MEX_state_2_ideas = {
 
 	icon = GFX_modifiers_SOV_invaders_must_die
 	naval_invasion_penalty = -0.2
-	army_attack_factor = 0.075
-	army_defence_factor = 0.075
+	army_attack_factor = 0.10
+	army_defence_factor = 0.10
 	local_supplies = 0.2
 	supply_factor = 0.2
 }

@@ -32,6 +32,7 @@ ideas = {
 					soft_attack = 0.10
 					hard_attack = 0.10
 					reliability = 0.10
+					maximum_speed = 0.10
 					instant = yes
 				}
 			}
@@ -139,9 +140,8 @@ ideas = {
 				production_speed_buildings_factor = 0.1
 				production_factory_max_efficiency_factor = 0.1
 				industrial_capacity_factory = 0.1
+				equipment_conversion_speed = 0.10
 				local_resources_factor = 0.2
-				factory_energy_consumption = -0.1
-                subversive_activites_upkeep = -1
                 justify_war_goal_time = -1
 				license_production_speed = 0.25
 				required_garrison_factor = -0.8

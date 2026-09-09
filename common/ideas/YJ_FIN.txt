@@ -20,6 +20,8 @@ ideas = {
 				conscription_factor = 0.25
 				global_building_slots = 5
 				local_resources_factor = 0.2
+				army_core_attack_factor = 0.10
+				army_core_defence_factor = 0.10
 				stability_weekly = 0.002
 				war_support_weekly = 0.002
 			}
@@ -71,19 +73,17 @@ ideas = {
 
 			modifier = {
 				custom_modifier_tooltip = YJ_FIN_3_ideas_tt
-				army_core_attack_factor = 0.10
-				army_core_defence_factor = 0.10
-				global_building_slots = 3
-				trade_opinion_factor = 0.10
-				local_resources_factor = 0.10
-				resource_trade_cost_bonus_per_factory = 2
+				air_attack_factor = 0.05
+				air_defence_factor = 0.05
+				air_range_factor = 0.15
+				air_cas_present_factor = 0.10
 			}
 			equipment_bonus = {
-				small_plane_airframe = {
+				fighter = {
 					instant = yes
 					build_cost_ic = -0.10
 				}
-				small_plane_cas_airframe = {
+				cas = {
 					instant = yes
 					build_cost_ic = -0.10
 				}
@@ -105,6 +105,7 @@ ideas = {
 
 			modifier = {
 				custom_modifier_tooltip = YJ_FIN_4_ideas_tt
+				global_building_slots_factor = 0.10
 				industrial_capacity_factory = 0.1
 				production_factory_max_efficiency_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.1
@@ -131,79 +132,6 @@ ideas = {
 				political_power_gain =  0.10
 				winter_attrition_factor = -0.2
 				acclimatization_cold_climate_gain_factor = 0.2
-			}
-		}
-
-		YJ_FIN_05_ideas = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = JAP_the_ainu_revolution
-
-			modifier = {
-				custom_modifier_tooltip = YJ_FIN_05_ideas_tt
-			}
-		}
-
-		YJ_FIN_6_ideas = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = NORDIC_army_democratic
-
-			modifier = {
-				army_strength_factor = 0.1
-				army_speed_factor = 0.1
-				army_org_factor = 0.1
-				experience_loss_factor = -0.3
-				land_reinforce_rate = 0.05
-				air_attack_factor =  0.05
-				air_range_factor = 0.05
-				air_intercept_efficiency = 0.1
-				air_night_penalty = -0.2
-			}
-		}
-
-		YJ_FIN_7_ideas = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = RAJ_partition_chaos_bad
-
-			modifier = {
-				army_strength_factor = -0.2
-				army_speed_factor = -0.05
-				army_org_factor = -0.05
-				experience_loss_factor = 0.1
-				land_reinforce_rate = -0.03
-				air_attack_factor =  -0.05
-				air_range_factor = -0.1
-				air_defence_factor = -0.05
-				air_accidents_factor = 0.1
 			}
 		}
 	}

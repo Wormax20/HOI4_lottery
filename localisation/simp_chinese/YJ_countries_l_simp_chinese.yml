@@ -272,6 +272,8 @@ YJ_ITA_04_ideas_tt: "如果意大利为罗马形态，则获得一日雄狮形�
 YJ_ITA_05_ideas: "教皇他有几个师?"
 YJ_ITA_06_ideas: "打个埃塞生死局"
 
+YJ_ITA_foggia_farm: "扩建福贾农场"
+
 
 
 
@@ -322,17 +324,12 @@ KoKi_YJ_FIN_event.102.desc: "获得山地师修正\n冬季后勤连修正:寒冷
 KoKi_YJ_FIN_event.102.a: "好"
 
 KoKi_YJ_FIN_event.103.title: "奖品: 凛冬航空队"
-KoKi_YJ_FIN_event.103.desc: "解锁满血萨博,获得核心攻防与生产建设相关加强"
+KoKi_YJ_FIN_event.103.desc: "解锁满血萨博,获得生产,空军相关加强"
 KoKi_YJ_FIN_event.103.a: "好"
 
 KoKi_YJ_FIN_event.104.title: "奖品: 北欧工业整合"
 KoKi_YJ_FIN_event.104.desc: "获得高额工业buff"
 KoKi_YJ_FIN_event.104.a: "好"
-
-KoKi_YJ_FIN_event.105.title: "奖品: 冰火人"
-KoKi_YJ_FIN_event.105.desc: "获得机制修正:当在每年的10月到3月,获得修正【雪地行者】\n在每年的4月到9月,获得修正【旱地难行】"
-KoKi_YJ_FIN_event.105.a: "好"
-
 
 YJ_FIN_1_ideas: "追寻斯堪的纳维亚遗产"
 YJ_FIN_2_ideas: "凛冬将军"
@@ -341,12 +338,6 @@ YJ_FIN_3_ideas: "凛冬航空队"
 YJ_FIN_3_ideas_tt: "解锁满血萨博"
 YJ_FIN_4_ideas: "北欧工业整合"
 YJ_FIN_4_ideas_tt: "增加地图外20个民\n增加地图外5个军"
-YJ_FIN_05_ideas: "冰火人"
-YJ_FIN_05_ideas_tt: "获得机制修正:当在每年的10月到3月,获得修正【雪地行者】\n在每年的4月到9月,获得修正【旱地难行】"
-YJ_FIN_6_ideas: "雪地行者"
-YJ_FIN_7_ideas: "旱地难行"
-
-
 YJ_FIN_5_ideas: "小棉袄"
 
 
@@ -423,7 +414,7 @@ KoKi_YJ_PRC_event.102.desc: "获得全方面工业BUFF加成"
 KoKi_YJ_PRC_event.102.a: "好"
 
 KoKi_YJ_PRC_event.103.title: "奖品: 人民战争"
-KoKi_YJ_PRC_event.103.desc: "提高缴获率和被占领地区的抵抗"
+KoKi_YJ_PRC_event.103.desc: "获得陆军和工业BUFF加成"
 KoKi_YJ_PRC_event.103.a: "好"
 
 KoKi_YJ_PRC_event.104.title: "奖品: 人民站起来了"
@@ -434,6 +425,7 @@ YJ_PRC_1_ideas: "国共合作"
 YJ_PRC_2_ideas: "中国制造"
 YJ_PRC_3_ideas: "人民战争"
 YJ_PRC_4_ideas: "人民站起来了"
+YJ_PRC_4_ideas_tt: "解锁§C中坦设计商§!与§C标准化生产商§!的锁定特质点，并立刻获得六点特质点数!"
 
 KoKi_YJ_CHI_event.101.title: "奖品: 国共合作"
 KoKi_YJ_CHI_event.101.desc: "开局统一,获得额外BUFF"
@@ -596,8 +588,13 @@ KoKi_YJ_CZE_event.101.title: "奖品: 波西米亚皇冠领"
 KoKi_YJ_CZE_event.101.desc: "获得三元君主制版图，以及高额工业buff"
 KoKi_YJ_CZE_event.101.a: "好"
 
+KoKi_YJ_CZE_event.BACK.title: "德国归还苏台德"
+KoKi_YJ_CZE_event.BACK.desc: "德国人将苏台德地区归还给我们了"
+KoKi_YJ_CZE_event.BACK.a: "好"
+
 YJ_AUS_1_ideas: "内莱塔尼亚"
 YJ_CZE_1_ideas: "波西米亚皇冠领"
+YJ_CZE_1_ideas_tt: "1938.5.1获得40机体及40配件 3级引擎"
 
 BOS_fascism: "伊利里亚"
 BOS_fascism_DEF: "伊利里亚"
@@ -666,7 +663,7 @@ KoKi_YJ_SWI_event.101.desc: "永久减100生产资源惩罚\n获得40生产上�
 KoKi_YJ_SWI_event.101.a: "好"
 
 KoKi_YJ_SWI_event.102.title: "奖品: 联邦空军"
-KoKi_YJ_SWI_event.102.desc: "获得高额空军buff"
+KoKi_YJ_SWI_event.102.desc: "获得获得生产空军加强"
 KoKi_YJ_SWI_event.102.a: "好"
 
 KoKi_YJ_SWI_event.103.title: "奖品:阿尔卑斯防卫军"
@@ -797,7 +794,7 @@ KoKi_YJ_SIA_event.103.desc: "获得双工业线国策，获得大量工业buff"
 KoKi_YJ_SIA_event.103.a: "好"
 
 KoKi_YJ_SIA_event.104.title: "奖品: 极致火力"
-KoKi_YJ_SIA_event.104.desc: "获得§Y2张§!§C300%§!炮卡，坦克与自火获得大量加成"
+KoKi_YJ_SIA_event.104.desc: "获得§Y3张§!§C200%§!炮卡，坦克与自火获得大量加成"
 KoKi_YJ_SIA_event.104.a: "好"
 
 

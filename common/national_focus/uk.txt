@@ -300,6 +300,11 @@ focus_tree = {
 				uses = 1
 				category = armor
 			}
+			mio:ENG_vauxhall_organization = {
+				add_mio_size = 2
+				add_mio_funds_gain_factor = 0.25
+				add_mio_research_bonus = 0.05
+			}
 		}
 	}
 
@@ -733,7 +738,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = industrial_bonus
 				bonus = 1.0
-				uses = 3
+				uses = 4
 				category = industry
 			}
 		}
@@ -1504,6 +1509,16 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
 			add_ideas = british_fighter_discount
+			mio:ENG_supermarine_organization = {
+				add_mio_size = 2
+				add_mio_funds_gain_factor = 0.25
+				add_mio_research_bonus = 0.05
+			}
+			mio:ENG_hawker_organization = {
+				add_mio_size = 2
+				add_mio_funds_gain_factor = 0.25
+				add_mio_research_bonus = 0.05
+			}
 		}
 	}
 	focus = {

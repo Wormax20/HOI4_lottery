@@ -932,9 +932,8 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_mass_production
-		cost = 10
+		cost = 20
 		available = {
-			has_war_with_major = yes
 		}
 
 		continue_if_invalid = yes
@@ -2646,9 +2645,8 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_armament_rationalization
-		cost = 5
+		cost = 10
 		available = {
-			has_war_with_major = yes
 			OR = {
 				has_war_support > 0.89
 				surrender_progress > 0
@@ -9367,9 +9365,8 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = GER_army_indoctrination
-		cost = 10
+		cost = 25
 		available = {
-			has_war_with_major = yes
 			has_tech = advanced_machine_tools
 		}
 

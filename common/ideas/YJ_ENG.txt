@@ -257,6 +257,7 @@ ideas = {
 
 			modifier = {
 				autonomy_gain = -10
+				local_resources_factor = 0.10
 				industrial_factory_donations = 5
 				military_factory_donations = 1
 				dockyard_donations = 1
@@ -335,6 +336,10 @@ ideas = {
 				trade_opinion_factor = 0.10
 				resource_trade_cost_bonus_per_factory = 1
 				local_resources_factor = 0.10
+			}
+			targeted_modifier = {
+				tag = ENG
+				trade_cost_for_target_factor = -0.10
 			}
 			targeted_modifier = {
 				tag = RAJ

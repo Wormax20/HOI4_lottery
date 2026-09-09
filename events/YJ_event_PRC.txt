@@ -250,6 +250,12 @@ country_event = {
 	option = {
 		name = KoKi_YJ_PRC_event.104.a
 		add_ideas = YJ_PRC_4_ideas
+		mio:PRC_first_tractor_company_organization = {
+			add_mio_size = 6
+		}
+		mio:PRC_factory_617_organization = {
+			add_mio_size = 6
+		}
 		ai_chance = {
 			factor = 100
 		}

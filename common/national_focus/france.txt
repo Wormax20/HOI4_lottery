@@ -1582,9 +1582,7 @@ focus_tree = {
 		x = 26
 		y = 0
 		available = {
-			any_other_country = {
-				controls_state = 16
-			}
+			is_ai = yes
 		}
 
 		prerequisite = {}
@@ -3948,13 +3946,7 @@ focus_tree = {
 		}
 
 		available = {
-			ENG = {
-				is_faction_leader = yes
-			}
 			is_subject = no
-			NOT = {
-				has_war_with = ENG
-			}
 		}
 		
 		bypass = {
@@ -3987,9 +3979,7 @@ focus_tree = {
 		}
 
 		available = {
-			country_exists = POL
-			NOT = { has_war_with = POL }
-			is_subject = no
+			always = no
 		}
 		
 		bypass = {
@@ -4464,9 +4454,7 @@ focus_tree = {
 		x = 42
 		y = 0
 		available = {
-			any_other_country = {
-				controls_state = 16
-			}
+			is_ai = yes
 		}
 
 

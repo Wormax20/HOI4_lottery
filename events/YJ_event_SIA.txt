@@ -216,9 +216,6 @@ country_event = {
 	option = {
 		complete_national_focus = SIA_the_bank_of_siam
 		complete_national_focus = SIA_thai_rice_company
-		complete_national_focus = SIA_plan_for_a_short_war
-		complete_national_focus = SIA_intermediate_war_preparation
-		complete_national_focus = SIA_prepare_for_a_long_war
 
 		name = KoKi_YJ_SIA_event.101.a
 		add_ideas = YJ_SIA_3_ideas
@@ -240,10 +237,13 @@ country_event = {
 	option = {
 		add_tech_bonus = {
 			name = YJ_SIA_3_ideas
-			bonus = 3
-			uses = 2
+			bonus = 2
+			uses = 3
 			category = artillery
 		}
+		complete_national_focus = SIA_plan_for_a_short_war
+		complete_national_focus = SIA_intermediate_war_preparation
+		complete_national_focus = SIA_prepare_for_a_long_war
 		name = KoKi_YJ_SIA_event.101.a
 		add_ideas = YJ_SIA_4_ideas
 		ai_chance = {

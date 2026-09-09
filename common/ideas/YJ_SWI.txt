@@ -40,12 +40,16 @@ ideas = {
 			picture = SWE_land_air_warfare
 
 			modifier = {
-				air_cas_efficiency = 0.05
-				air_range_factor = 0.10
-				air_maximum_speed_factor = 0.05
-				air_defence_factor = 0.05
-				air_attack_factor = 0.05
-				air_intercept_efficiency = 0.05
+				global_building_slots = 2
+				trade_opinion_factor = 0.10
+				local_resources_factor = 0.10
+				resource_trade_cost_bonus_per_factory = 2
+			}
+			equipment_bonus = {
+				fighter = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
 			}
 		}
 
