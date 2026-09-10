@@ -96,6 +96,9 @@ ideas = {
 
 			removal_cost = -1
 			modifier = {
+				repair_speed_naval_base_factor = 1000
+				repair_speed_rail_way_factor = 1000
+                repair_speed_supply_node_factor = 1000
 				max_command_power = 100
 				special_forces_cap = -10000
 				modifier_army_sub_unit_infantry_attack_factor = -0.10
@@ -155,6 +158,10 @@ ideas = {
 					instant = yes
 					build_cost_ic = 0.30
 				}
+			    strategic_bomber = {
+                    instant = yes
+                    build_cost_ic = 0.30
+                }
 			}
 		}
 
@@ -210,10 +217,9 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				research_speed_factor = 0.50
-				specialization_air_speed_factor = 0.5
-				specialization_land_speed_factor = 0.5
-				specialization_naval_speed_factor = 0.5
+				research_speed_factor = 0.5
+				special_project_speed_factor=2
+				
 			}
 		}
 	}

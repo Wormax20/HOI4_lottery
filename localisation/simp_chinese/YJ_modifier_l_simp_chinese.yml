@@ -1,3 +1,4 @@
 ﻿l_simp_chinese:
  modifier_production_cost_bunker_factor: "陆上要塞建造花费"
- 
+ modifier_repair_speed_naval_base_factor: "海軍基地修復速度"
+ modifier_repair_speed_supply_node_factor: "補給中心修復速度"
