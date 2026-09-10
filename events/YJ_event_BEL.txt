@@ -15,6 +15,16 @@ country_event = {
 				add_core_of = BEL
 			}
 		}
+		HOL = {
+			every_core_state = {
+				add_core_of = BEL
+			}
+		}
+		LUX = {
+			every_core_state = {
+				add_core_of = BEL
+			}
+		}
 
 		name = KoKi_YJ_BEL_event.101.a
 		ai_chance = {
@@ -36,8 +46,8 @@ country_event = {
 
 	option = {
 		complete_special_project = {
-					project = sp:sp_land_land_cruiser
-				}
+			project = sp:sp_land_land_cruiser
+		}
 		set_technology = { BEL_land_cruiser_tech = 1 }
 		name = KoKi_YJ_BEL_event.102.a
 		add_ideas = YJ_BEL_2_ideas

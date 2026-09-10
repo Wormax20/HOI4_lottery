@@ -201,6 +201,21 @@ ideas = {
 				industrial_capacity_dockyard = -0.50
 			}
 		}
+
+		YJ_RESEARCH_SPEED_IDEA = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.50
+				specialization_air_speed_factor = 0.5
+				specialization_land_speed_factor = 0.5
+				specialization_naval_speed_factor = 0.5
+			}
+		}
 	}
 
 	industrial_concern = {
