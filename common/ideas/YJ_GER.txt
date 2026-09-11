@@ -194,10 +194,12 @@ ideas = {
 				custom_modifier_tooltip = YJ_GER_01_ideas_tt
 				neutrality_drift = 0.2
 				political_power_factor = 0.25
-				stability_factor = 0.1
+				war_support_factor = 0.2
+				stability_factor = 0.2
 				stability_weekly = 0.005
 				war_support_weekly = 0.005
 				industrial_capacity_factory = 0.10
+				terrain_penalty_reduction = 0.10
 			}
 		}
 
@@ -216,23 +218,21 @@ ideas = {
 			picture = generic_spy_political
 
 			modifier = {
-				political_power_factor = 0.25
-				war_support_factor = 0.2
-				stability_factor = 0.2
-				intel_from_operatives_factor = 0.15
-				intelligence_agency_defense = 0.3
+				political_power_factor = 0.10
+				intel_from_operatives_factor = 0.10
+				intelligence_agency_defense = 0.15
 				subversive_activites_upkeep = -0.25
-				operative_slot = 4
-				enemy_operative_capture_chance_factor = 0.2
+				operative_slot = 2
+				enemy_operative_capture_chance_factor = 0.1
 				boost_ideology_mission_factor = 1
 				propaganda_mission_factor = 1
 				operation_risk = -0.2
 				operation_cost = -0.2
-				operation_outcome = 0.5
-				civilian_intel_to_others = -20
-				army_intel_to_others =-20
-				navy_intel_to_others =-20
-				airforce_intel_to_others =-20
+				operation_outcome = 0.25
+				civilian_intel_to_others = -10
+				army_intel_to_others =-10
+				navy_intel_to_others =-10
+				airforce_intel_to_others =-10
 			}
 		}
 	}

@@ -361,7 +361,7 @@ YJ_TY_scripted_effects = {
 
 GER_YJ_scripted_effects = {
 	random_list = {
-		16.6 = {
+		20 = {
 			modifier = {
 				OR = {
 					has_global_flag = KoKi_YJ_TAG_decisions_YJ_2
@@ -371,40 +371,33 @@ GER_YJ_scripted_effects = {
 			}
 			country_event = KoKi_YJ_GER_event.1011
 		}
-		16.6 = {
+		20 = {
 			modifier = {
 				has_idea = YJ_GER_4_ideas
 				factor = 0
 			}
 			country_event = KoKi_YJ_GER_event.104
 		}
-		16.6 = {
+		20 = {
 			modifier = {
 				has_idea = YJ_GER_1_ideas
 				factor = 0
 			}
 			country_event = KoKi_YJ_GER_event.101
 		}
-		16.6 = {
+		20 = {
 			modifier = {
 				has_idea = YJ_GER_2_ideas
 				factor = 0
 			}
 			country_event = KoKi_YJ_GER_event.102
 		}
-		16.6 = {
+		20 = {
 			modifier = {
 				has_idea = YJ_GER_3_ideas
 				factor = 0
 			}
 			country_event = KoKi_YJ_GER_event.103
-		}
-		16.6 = {
-			modifier = {
-				has_idea = YJ_GER_02_ideas
-				factor = 0
-			}
-			country_event = KoKi_YJ_GER_event.1012
 		}
 	}
 }
@@ -425,6 +418,7 @@ USA_YJ_scripted_effects = {
 		20 = {
 			modifier = {
 				OR = {
+					has_idea = YJ_USA_1_ideas
 					has_idea = YJ_USA_4_ideas
 					has_country_flag = KoKi_YJ_TAG_decisions_YJ_2
 				}

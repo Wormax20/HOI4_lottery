@@ -16,7 +16,7 @@ ideas = {
 
 			modifier = {
 				custom_modifier_tooltip = YJ_ENG_1_ideas_tt
-				conscription = 0.03
+				conscription = 0.05
 				global_building_slots = 10
 				political_power_factor = 0.15
 				political_power_gain =  0.15
@@ -53,8 +53,8 @@ ideas = {
 
 			modifier = {
 				custom_modifier_tooltip = YJ_ENG_2_ideas_tt
-				consumer_goods_factor = -0.15
-				special_forces_attack_factor = 0.1
+				political_power_factor = 0.10
+				consumer_goods_factor = -0.10
 				army_attack_factor = 0.1
 				army_defence_factor = 0.1
 				air_cas_efficiency = 0.1
@@ -101,7 +101,7 @@ ideas = {
 				air_defence_factor = 0.15
 				air_agility_factor = 0.15
 				air_range_factor = 0.15
-				air_power_projection_factor = 0.10
+				air_power_projection_factor = 0.15
 			}
 			equipment_bonus = {
 				small_plane_airframe = {

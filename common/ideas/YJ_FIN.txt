@@ -20,8 +20,8 @@ ideas = {
 				conscription_factor = 0.25
 				global_building_slots = 5
 				local_resources_factor = 0.2
-				army_core_attack_factor = 0.10
-				army_core_defence_factor = 0.10
+				production_speed_buildings_factor = 0.10
+				air_range_factor = 0.10
 				stability_weekly = 0.002
 				war_support_weekly = 0.002
 			}
@@ -42,14 +42,14 @@ ideas = {
 
 			modifier = {
 				custom_modifier_tooltip = YJ_FIN_2_ideas_tt
-				special_forces_min = 240
+				special_forces_min = 480
 				special_forces_attack_factor = 0.10
 				special_forces_defence_factor = 0.10
 				army_defence_factor = 0.10
 			}
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.10
+					build_cost_ic = -0.15
 					soft_attack = 0.10
 					hard_attack = 0.10
 					breakthrough = 0.10
@@ -75,8 +75,10 @@ ideas = {
 				custom_modifier_tooltip = YJ_FIN_3_ideas_tt
 				air_attack_factor = 0.05
 				air_defence_factor = 0.05
-				air_range_factor = 0.15
+				air_range_factor = 0.10
 				air_cas_present_factor = 0.10
+				army_core_attack_factor = 0.10
+				army_core_defence_factor = 0.10
 			}
 			equipment_bonus = {
 				fighter = {
@@ -106,11 +108,12 @@ ideas = {
 			modifier = {
 				custom_modifier_tooltip = YJ_FIN_4_ideas_tt
 				global_building_slots_factor = 0.10
+				production_speed_buildings_factor = 0.1
+				local_resources_factor = 0.10
 				industrial_capacity_factory = 0.1
 				production_factory_max_efficiency_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.1
 				line_change_production_efficiency_factor = 0.1
-				production_speed_buildings_factor = 0.1
 			}
 		}
 

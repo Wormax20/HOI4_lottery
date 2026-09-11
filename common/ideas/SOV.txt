@@ -3226,9 +3226,7 @@ ideas = {
 				cic_to_target_factor = 0.05
 			}
 			modifier = {
-				army_attack_factor = 0.1
-				army_defence_factor = 0.1
-				consumer_goods_factor = -0.10
+				
 			}
 			equipment_bonus = {
 				amphibious_mechanized_equipment = {

@@ -206,13 +206,14 @@ country_event = {
 	option = {
 		name = KoKi_YJ_GER_event.10001.a
 		if = {
-			limit = { has_idea = war_economy }
+			limit = {
+				has_idea = war_economy
+			}
 			add_ideas = tot_economic_mobilisation
 		}
 		else_if = {
 			limit = {
-				OR = {
-					has_idea = war_economy
+				NOT = {
 					has_idea = tot_economic_mobilisation
 				}
 			}
