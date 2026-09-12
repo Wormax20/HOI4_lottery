@@ -5570,9 +5570,9 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_AIR_XP}
 
 		completion_reward = {
-			add_to_variable = { ITA_ra_air_superiority_bonus_in_combat = 0.05 }
-			add_to_variable = { ITA_ra_air_superiority_efficiency = 0.05 }
-			add_to_variable = { ITA_ra_air_intercept_efficiency = 0.05 }
+			add_to_variable = { ITA_ra_air_superiority_bonus_in_combat = 0.10 }
+			add_to_variable = { ITA_ra_air_superiority_efficiency = 0.10 }
+			add_to_variable = { ITA_ra_air_intercept_efficiency = 0.10 }
 			custom_effect_tooltip = ITA_supremacy_in_the_skies_ra_tt
 
 			air_experience = 50
@@ -5600,6 +5600,25 @@ focus_tree = {
 				}
 				ITA_add_supremacy_in_the_skies_templates = yes
 			}
+		}
+	}
+
+	focus = {
+		id = ITA_supremacy_in_the_skies1
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = ITA_supremacy_in_the_skies }
+
+		x = 1
+		y = 2
+		relative_position_id = ITA_bomber_designs
+		cost = 10
+		available = {
+			date > 1939.1.1
+			NOT = { has_idea = YJ_ITA_03_ideas }
+		}
+
+		completion_reward = {
+			add_ideas = YJ_ITA_in_the_skies1_ideas
 		}
 	}
 

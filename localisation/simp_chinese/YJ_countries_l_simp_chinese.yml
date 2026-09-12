@@ -239,7 +239,7 @@ YJ_ITA_1_ideas: "一日雄狮"
 YJ_ITA_1_ideas_tt: "修正Buff§Y每60天§!从§R雄狮形态§!和§C绵羊形态§!进行抽奖\n§R雄狮形态§!获得三军Buff加成\n§C绵羊形态§!获得生产加成"
 YJ_ITA_2_ideas: "唯有浴血"
 YJ_ITA_4_ideas: "赶超英美!"
-YJ_ITA_4_ideas_tt: "各项Buff§Y每月§!增长§Y0.25%§!,每月攻防增长0.45%!"
+YJ_ITA_4_ideas_tt: "各项Buff§Y每月§!增长§Y0.25%§!,每月攻防增长0.3%!"
 
 
 KoKi_YJ_ITA_event.1011.title: "奖品: 条条大路通罗马"
@@ -274,10 +274,12 @@ YJ_ITA_06_ideas: "打个埃塞生死局"
 
 YJ_ITA_foggia_farm: "扩建福贾农场"
 YJ_ITA_MoreBuild_ideas: "增加建设预算"
+YJ_ITA_in_the_skies1_ideas: "集合意大利空军"
 
 
 ITA_new_industrialization_program_1: "增加建设预算"
 ITA_new_industrialization_program_2: "投资工厂建设"
+ITA_supremacy_in_the_skies1: "集合意大利空军"
 
 
 

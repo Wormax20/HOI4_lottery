@@ -70,6 +70,7 @@ ideas = {
 			picture = PRC_peoples_aviation_company_of_china
 
 			modifier = {
+				production_speed_arms_factory_factor = 0.10
 				production_factory_efficiency_gain_factor = 0.1
 				production_factory_max_efficiency_factor = 0.1
 				supply_consumption_factor = -0.15
@@ -111,6 +112,10 @@ ideas = {
 				local_resources_factor = 0.10
 			}
 			equipment_bonus = {
+				armor = {
+					instant = yes
+					build_cost_ic = -0.05
+				}
 				fighter = { 
 					instant = yes
 					air_agility = 0.10

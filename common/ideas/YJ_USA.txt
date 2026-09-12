@@ -16,7 +16,9 @@ ideas = {
 			}
 			equipment_bonus = {
 				amphibious_mechanized_equipment = {
-					build_cost_ic = -0.15
+					build_cost_ic = -0.10
+					soft_attack = 0.05
+					hard_attack = 0.05
 					instant = yes
 				}
 				strategic_bomber = {
@@ -119,7 +121,7 @@ ideas = {
 			modifier = {
 				political_power_factor = 0.25
 				global_building_slots = 5
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.10
 				consumer_goods_expected_value = -0.05
 				local_resources_factor = 0.10
 				production_speed_infrastructure_factor = 0.20
@@ -160,7 +162,7 @@ ideas = {
 				armor = {
 					instant = yes
 					build_cost_ic = -0.05
-					reliability = 0.05
+					reliability = 0.10
 				}
 				strategic_bomber = {
                     instant = yes
