@@ -200,7 +200,22 @@ country_event = {
 
 	option = {
 		name = KoKi_YJ_FRA_event.zd.a
-		recruit_character = FRA_jeanne_darc
+		every_country = {
+			limit = {
+				has_character = FRA_jeanne_darc
+				NOT = { tag = ROOT }
+			}
+			set_nationality = {
+				target_country = ROOT
+				character = FRA_jeanne_darc
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_character = FRA_jeanne_darc }
+			}
+			recruit_character = FRA_jeanne_darc
+		}
 		promote_character = FRA_jeanne_darc
 		ai_chance = {
 			factor = 100
