@@ -59,7 +59,7 @@ on_actions = {
 					Beta_ITA_4_lindustrial_capacity_dockyard = 0.0025
 				}
 				add_to_variable = {
-					Beta_ITA_4_army_attack_factor = 0.0045
+					Beta_ITA_4_army_attack_factor = 0.003
 				}
 				add_to_variable = {
 					Beta_ITA_4_army_defence_factor = 0.003
