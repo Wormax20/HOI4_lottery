@@ -743,7 +743,7 @@ KoKi_YJ_decisions_categories = {
 			always = no
 		}
 		available = {
-			num_of_civilian_factories < global.sec_max_civ
+			num_of_available_civilian_factories < global.sec_max_civ
 			NOT = {
 				has_country_flag = YJ_most_factory_country
 			}
@@ -765,7 +765,7 @@ KoKi_YJ_decisions_categories = {
 			always = no
 		}
 		available = {
-			num_of_civilian_factories > global.max_civ
+			num_of_available_civilian_factories > global.max_civ
 		}
 
 		is_good = yes
