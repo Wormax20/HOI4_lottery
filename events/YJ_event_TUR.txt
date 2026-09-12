@@ -33,6 +33,18 @@ country_event = {
 		}
 		every_state = {
 			limit = {
+				is_core_of = AFG
+			}
+			add_core_of = ROOT
+		}
+		every_state = {
+			limit = {
+				is_core_of = PER
+			}
+			add_core_of = ROOT
+		}
+		every_state = {
+			limit = {
 				is_core_of = GRE
 			}
 			add_core_of = ROOT
@@ -100,7 +112,8 @@ country_event = {
 		complete_national_focus = TUR_turk_silahli_kuvvetleri
 		set_technology = {
 			TUR_camelry_tech = 1
-			camelry = 1 }
+			camelry = 1 
+		}
 		every_owned_state = {
     		add_building_construction = {
         		type = infrastructure

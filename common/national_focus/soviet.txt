@@ -10181,7 +10181,7 @@ focus_tree = {
 		relative_position_id = SOV_curtailment_of_the_collective_farms
 		cost = 10
 		available = {
-			date > 1938.1.1
+			
 		}
 		                
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY}
@@ -10206,6 +10206,7 @@ focus_tree = {
 		relative_position_id = SOV_back_to_the_nep
 		cost = 10
 		available = {
+			date > 1939.1.1
 		}
 		                
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -10361,7 +10362,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SOV_strengthen_the_trade_unions }
 
 		available = {
-			date > 1939.1.1
+			date > 1940.1.1
 		}
 		                
 		search_filters = {}

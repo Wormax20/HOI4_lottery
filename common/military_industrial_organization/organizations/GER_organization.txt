@@ -492,6 +492,7 @@ GER_man_organization = {
 	allowed = {
 		OR = {
 			original_tag = GER
+			original_tag = ITA
 			AND = {
 				original_tag = GRE
 				has_dlc = "Battle for the Bosporus"
@@ -500,10 +501,14 @@ GER_man_organization = {
 	}
 
 	available = {
-
 		IF = {
 			limit = {
-				FROM = { NOT = { original_tag = GER } }
+				FROM = { 
+					NOT = { 
+						original_tag = GER 
+						original_tag = ITA
+					} 
+				}
 			}
 			FROM = { NOT = { has_war_with = GER } }
 		}
@@ -602,6 +607,9 @@ GER_man_organization = {
 		all_parents = { generic_mio_trait_improved_suspension }
 
 		available = {
+			FROM = {
+				original_tag = GER
+			}
 		}
 
 		equipment_bonus = {
@@ -626,6 +634,9 @@ GER_man_organization = {
 		all_parents = { generic_mio_trait_improved_suspension }
 
 		available = {
+			FROM = {
+				original_tag = GER
+			}
 		}
 
 		equipment_bonus = {
