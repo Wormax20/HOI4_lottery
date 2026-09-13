@@ -114,7 +114,7 @@ ideas = {
 			equipment_bonus = {
 				armor = {
 					instant = yes
-					build_cost_ic = -0.05
+					build_cost_ic = -0.10
 				}
 				fighter = { 
 					instant = yes

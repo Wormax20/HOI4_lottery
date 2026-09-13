@@ -10362,7 +10362,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SOV_strengthen_the_trade_unions }
 
 		available = {
-			date > 1940.1.1
+			date > 1939.1.1
 		}
 		                
 		search_filters = {}

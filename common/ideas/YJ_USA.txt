@@ -15,6 +15,10 @@ ideas = {
 			modifier = {
 			}
 			equipment_bonus = {
+				armor = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
 				amphibious_mechanized_equipment = {
 					build_cost_ic = -0.10
 					soft_attack = 0.05
@@ -55,7 +59,6 @@ ideas = {
 				mic_to_target_factor = 0.10
 			}
 			research_bonus = {
-				industry = 0.2
 				artillery = 0.35
 			}
 		}
@@ -98,10 +101,6 @@ ideas = {
                     instant = yes
                     build_cost_ic = -0.30
                 }
-				armor = {
-					instant = yes
-					build_cost_ic = -0.1
-				}
 			}
 		}
 		YJ_USA_4_ideas = {
@@ -125,10 +124,13 @@ ideas = {
 				consumer_goods_expected_value = -0.05
 				local_resources_factor = 0.10
 				production_speed_infrastructure_factor = 0.20
-				production_speed_industrial_complex_factor = 0.10
+				production_speed_industrial_complex_factor = 0.20
 				production_speed_buildings_factor = 0.10
 				conversion_cost_civ_to_mil_factor = -0.5
 				cic_to_target_factor = 0.10
+			}
+			research_bonus = {
+				industry = 0.35
 			}
 		}
 

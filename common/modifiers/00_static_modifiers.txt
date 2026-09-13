@@ -252,7 +252,7 @@ FRA_coordinate_rearmament = {
 	}
 	license_purchase_cost = 0
 	ai_license_acceptance = 100
-	license_production_speed = 0.25
+	military_industrial_organization_funds_gain = 0.25
 	license_tech_difference_speed = 0.25
 }
 
