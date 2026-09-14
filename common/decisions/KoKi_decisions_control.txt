@@ -1114,51 +1114,105 @@ KoKi_YJ_decisions_categories = {
 	}
 	
 	ITA_unlock_special_templates = {
-	icon = GFX_decision_generic_prepare_for_war
+		icon = GFX_decision_generic_prepare_for_war
 
-	allowed = {
-		original_tag = ITA
+		allowed = {
+			original_tag = ITA
+		}
+
+		visible = {
+			always = yes
+		}
+
+		available = {
+			always = yes
+		}
+
+		cost = 0
+		days_remove = 0
+		fire_only_once = yes
+
+		complete_effect = {
+			set_division_template_lock = {
+				division_template = "Camicie Nere"
+				is_locked = no
+			}
+			set_division_template_lock = {
+				division_template = "Banda Indigena Irregolare"
+				is_locked = no
+			}
+			set_division_template_lock = {
+				division_template = "Truppe Irregolari a Cavallo"
+				is_locked = no
+			}
+			set_division_template_lock = {
+				division_template = "Banda Irregolare Libica"
+				is_locked = no
+			}
+			set_division_template_lock = {
+				division_template = "Banda Irregolare Eritrea"
+				is_locked = no
+			}
+			set_division_template_lock = {
+				division_template = "Banda Irregolare Somala"
+				is_locked = no
+			}
+		}
 	}
 
-	visible = {
-		always = yes
-	}
+	SOV_release_SPR = {
+		icon = GFX_decision_generic_prepare_for_war
 
-	available = {
-		always = yes
-	}
+		allowed = {
+			original_tag = SOV
+		}
 
-	cost = 0
-	days_remove = 0
-	fire_only_once = yes
+		visible = {
+			SPR = {
+				is_subject_of = SOV
+			}
+		}
 
-	complete_effect = {
-		set_division_template_lock = {
-			division_template = "Camicie Nere"
-			is_locked = no
+		available = {
+			SPR = {
+				is_subject_of = SOV
+			}
 		}
-		set_division_template_lock = {
-			division_template = "Banda Indigena Irregolare"
-			is_locked = no
-		}
-		set_division_template_lock = {
-			division_template = "Truppe Irregolari a Cavallo"
-			is_locked = no
-		}
-		set_division_template_lock = {
-			division_template = "Banda Irregolare Libica"
-			is_locked = no
-		}
-		set_division_template_lock = {
-			division_template = "Banda Irregolare Eritrea"
-			is_locked = no
-		}
-		set_division_template_lock = {
-			division_template = "Banda Irregolare Somala"
-			is_locked = no
+
+		cost = 0
+		days_remove = 0
+
+		complete_effect = {
+			POR = {
+				transfer_state = 171
+				transfer_state = 790
+				transfer_state = 174
+				transfer_state = 791
+				transfer_state = 792
+				transfer_state = 176
+				transfer_state = 172
+				transfer_state = 166
+				transfer_state = 794
+				transfer_state = 165
+				transfer_state = 177
+				transfer_state = 788
+				transfer_state = 41
+				transfer_state = 793
+				transfer_state = 167
+				transfer_state = 170
+				transfer_state = 175
+				transfer_state = 168
+				transfer_state = 789
+				transfer_state = 169
+				transfer_state = 173
+				transfer_state = 290
+				transfer_state = 783
+				transfer_state = 178
+				transfer_state = 699
+				transfer_state = 297
+			}
 		}
 	}
-}
 }
 
 DEBUG_decisions_categories = {

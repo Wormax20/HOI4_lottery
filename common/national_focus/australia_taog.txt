@@ -8688,7 +8688,7 @@ focus = {
 			AST_add_or_modify_forging_australias_future = yes
 
 			add_to_variable = { AST_forging_australias_future_spirit_consumer_goods_factor = 0.05 tooltip = consumer_goods_factor_tt }
-			add_to_variable = { AST_forging_australias_future_spirit_overlord_trade_cost_factor = -0.15 tooltip = overlord_trade_cost_factor_tt }
+			add_to_variable = { AST_forging_australias_future_spirit_overlord_trade_cost_factor = -0.05 tooltip = overlord_trade_cost_factor_tt }
 			add_to_variable = { 
 				AST_forging_australias_future_spirit_resource_trade_cost_bonus_per_factory = 1
 				tooltip = resource_trade_cost_bonus_per_factory_tt				

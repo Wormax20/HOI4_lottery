@@ -10390,41 +10390,33 @@ focus_tree = {
 		cost = 5
 	
 		available = {
-			custom_trigger_tooltip = {
-				tooltip = GER_improve_national_spirit_tooltip
-				OR = {
-					GER = { controls_state = 126 }
-					any_other_country = {
-						is_in_faction_with = GER
-						controls_state = 126
+			OR = {
+				date > 1940.12.31
+				custom_trigger_tooltip = {
+					tooltip = GER_improve_national_spirit_tooltip
+				
+					AND = {
+						OR = {
+							GER = {
+								controls_state = 126
+							}
+							any_other_country = {
+								is_in_faction_with = GER
+								controls_state = 126
+							}
+						}
+						OR = {
+							GER = {
+								controls_state = 16
+							}
+							any_other_country = {
+								is_in_faction_with = GER
+								controls_state = 16
+							}
+						}
 					}
-				}
-				OR = {
-					GER = { controls_state = 16 }
-					any_other_country = {
-						is_in_faction_with = GER
-						controls_state = 16
-					}
-				}
-			}
-			64 = {
-				is_fully_controlled_by = ROOT
-			}
-		}
-
-		cancel = {
-			AND = {
-				has_war = no
-				126 = {
-					owner = {
-						NOT = { tag = GER }
-						NOT = { is_in_faction_with = GER }
-					}
-				}
-				16 = {
-					owner = {
-						NOT = { tag = GER }
-						NOT = { is_in_faction_with = GER }
+					64 = {
+						is_fully_controlled_by = ROOT
 					}
 				}
 			}

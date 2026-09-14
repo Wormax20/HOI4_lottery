@@ -7786,8 +7786,21 @@ country_event = {
 				uses = 2
 				category = industry
 			}
-
 			add_ideas = new_economic_policy
+		}
+		
+	}
+
+	option = {
+		name = NSB_soviet_planned_economy.1.b
+
+		effect_tooltip = {
+			add_tech_bonus = {
+				name = NSB_soviet_planned_economy.1.t
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}
 		}
 	}
 }
@@ -8708,36 +8721,12 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		hidden_effect = {
-			if = {
-				limit = {
-					is_subject_of = FROM
-				}
-				add_ideas = SOV_for_the_common_good_subjects
-				add_autonomy_score = {
-					value = -100
-					localization = SOV_for_the_common_good
-				}
-			}
-			else = {
-				add_ideas = SOV_for_the_common_good_allies
-				if = {
-					limit = {
-						has_dlc = "Death or Dishonor"
-					}
-					add_relation_modifier = {
-						target = ROOT
-						modifier = SOV_for_the_common_good_relation
-					}
-				}
-			}
-		}
+		
 	}
 
 	option = {
 		name = NSB_soviet_for_the_common_good.1.a
 
-		effect_tooltip = {
 			if = {
 				limit = {
 					is_subject_of = FROM
@@ -8760,7 +8749,11 @@ country_event = {
 					}
 				}
 			}
-		}
+	}
+
+	option = {
+		name = NSB_soviet_for_the_common_good.1.b
+
 	}
 }
 

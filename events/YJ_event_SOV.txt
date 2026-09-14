@@ -1096,5 +1096,4 @@ country_event = {
 			factor = 100
 		}
 	}
-
 }
