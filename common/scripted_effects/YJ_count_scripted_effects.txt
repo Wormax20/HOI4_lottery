@@ -1,12 +1,28 @@
 YJ_count_all_factory = {
 	every_country = {
+		set_temp_variable = {
+			var = YJ_civilian_factories
+			value = num_of_controlled_factories
+		}
+		subtract_from_temp_variable = {
+			var = YJ_civilian_factories
+			value = num_of_military_factories
+		}
+		subtract_from_temp_variable = {
+			var = YJ_civilian_factories
+			value = num_of_naval_factories
+		}
+		add_to_temp_variable = {
+			var = YJ_civilian_factories
+			value = modifier@industrial_factory_donations
+		}
 		if = {
 			limit = {
 				has_country_flag = YJ_axis
 			}
 			add_to_variable = {
 				var = global.YJ_axis_all_factory
-				value = num_of_civilian_factories
+				value = YJ_civilian_factories
 			}
 			add_to_variable = {
 				var = global.YJ_axis_all_factory
@@ -22,7 +38,7 @@ YJ_count_all_factory = {
 			}
 			add_to_variable = {
 				var = global.YJ_axis_industrial_complex
-				value = num_of_civilian_factories
+				value = YJ_civilian_factories
 			}
 			add_to_variable = {
 				var = global.YJ_axis_dockyard
@@ -36,7 +52,7 @@ YJ_count_all_factory = {
 			}
 			add_to_variable = {
 				var = global.YJ_allie_all_factory
-				value = num_of_civilian_factories
+				value = YJ_civilian_factories
 			}
 			add_to_variable = {
 				var = global.YJ_allie_all_factory
@@ -52,7 +68,7 @@ YJ_count_all_factory = {
 			}
 			add_to_variable = {
 				var = global.YJ_allie_industrial_complex
-				value = num_of_civilian_factories
+				value = YJ_civilian_factories
 			}
 			add_to_variable = {
 				var = global.YJ_allie_dockyard

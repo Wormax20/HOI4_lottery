@@ -257,15 +257,8 @@ ideas = {
 			modifier = {
 				autonomy_gain = -10
 				local_resources_factor = 0.10
-				industrial_factory_donations = 5
-				military_factory_donations = 1
-				dockyard_donations = 1
-			}
-
-			targeted_modifier = {
-				tag = ENG
-				cic_to_target_factor = 0.6
-				mic_to_target_factor = 0.6
+				cic_to_overlord_factor = 0.8
+				mic_to_overlord_factor = 0.8
 			}
 		}
 		YJ_ENG_8_ideas = {

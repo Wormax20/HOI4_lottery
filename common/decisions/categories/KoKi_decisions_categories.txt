@@ -56,3 +56,15 @@ MEX_integrate_state_decisions_categories = {
 		has_completed_focus = MEX_focus_push_past_the_darien_gap
 	}
 }
+
+DEBUG_decisions_categories = {
+	allowed = {
+		is_debug = yes
+	}
+	available = {
+		is_debug = yes
+	}
+	visible = {
+		is_debug = yes
+	}
+}

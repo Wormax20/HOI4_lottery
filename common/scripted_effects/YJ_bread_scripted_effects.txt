@@ -3,6 +3,10 @@ YJ_most_factory = {
 
     every_country = {
         limit = { is_ai = no }
+        set_variable = { YJ_bread_civilian_factories = num_of_controlled_factories }
+        subtract_from_variable = { YJ_bread_civilian_factories = num_of_military_factories }
+        subtract_from_variable = { YJ_bread_civilian_factories = num_of_naval_factories }
+        add_to_variable = { YJ_bread_civilian_factories = modifier@industrial_factory_donations }
         clr_country_flag = YJ_candidate_civ
         clr_country_flag = YJ_most_factory_country
 
@@ -13,15 +17,15 @@ YJ_most_factory = {
     every_country = {
         limit = { is_ai = no }
         if = {
-            limit = { check_variable = { num_of_available_civilian_factories > global.max_civ } }
-            set_variable = { global.max_civ = num_of_available_civilian_factories }
+            limit = { check_variable = { YJ_bread_civilian_factories > global.max_civ } }
+            set_variable = { global.max_civ = YJ_bread_civilian_factories }
         }
     }
 
     every_country = {
         limit = {
             is_ai = no
-            check_variable = { num_of_available_civilian_factories = global.max_civ }
+            check_variable = { YJ_bread_civilian_factories = global.max_civ }
         }
         set_country_flag = YJ_candidate_civ
     }
@@ -48,8 +52,8 @@ YJ_most_factory = {
             NOT = { has_country_flag = YJ_most_factory_country }
         }
         if = {
-            limit = { check_variable = { num_of_available_civilian_factories > global.sec_max_civ } }
-            set_variable = { global.sec_max_civ = num_of_available_civilian_factories }
+            limit = { check_variable = { YJ_bread_civilian_factories > global.sec_max_civ } }
+            set_variable = { global.sec_max_civ = YJ_bread_civilian_factories }
         }
     }
 
@@ -57,7 +61,7 @@ YJ_most_factory = {
         limit = {
             is_ai = no
             NOT = { has_country_flag = YJ_most_factory_country }
-            check_variable = { num_of_available_civilian_factories = global.sec_max_civ }
+            check_variable = { YJ_bread_civilian_factories = global.sec_max_civ }
         }
         set_country_flag = YJ_sec_candidate_civ
     }
@@ -72,5 +76,10 @@ YJ_most_factory = {
             }
             activate_mission = YJ_no_bread
         }
+    }
+
+    every_country = {
+        limit = { is_ai = no }
+        clear_variable = YJ_bread_civilian_factories
     }
 }
