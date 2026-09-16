@@ -3418,3 +3418,21 @@ YJ_RESEARCH_RULE = {
 		desc = "YJ_RESEARCH_SPEED_DESC"
 	}
 }
+
+YJ_LEND_LEASE_RULE = {
+	name = "YJ_LEND_LEASE_RULE"
+	group = "YJ_GAME_RULE_GROUP"
+	icon = "GFX_wargoals"
+
+	default = {
+		name = "YJ_LEND_LEASE_UNRESTRICTED"
+		text = "YJ_LEND_LEASE_UNRESTRICTED"
+		desc = "YJ_LEND_LEASE_UNRESTRICTED_DESC"
+	}
+
+	option = {
+		name = "YJ_LEND_LEASE_AFTER_GER_SOV_WAR"
+		text = "YJ_LEND_LEASE_AFTER_GER_SOV_WAR"
+		desc = "YJ_LEND_LEASE_AFTER_GER_SOV_WAR_DESC"
+	}
+}

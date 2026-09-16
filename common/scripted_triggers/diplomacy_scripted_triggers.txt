@@ -1136,6 +1136,10 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 	}
 	if = {
 		limit = {
+			has_game_rule = {
+				rule = YJ_LEND_LEASE_RULE
+				option = YJ_LEND_LEASE_AFTER_GER_SOV_WAR
+			}
 			GER = {
 				NOT = {
 					has_war_with = SOV

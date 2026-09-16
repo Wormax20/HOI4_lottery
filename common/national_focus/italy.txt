@@ -2686,7 +2686,7 @@ focus_tree = {
 				}
 				add_resource = {
 					type = steel
-					amount = 8
+					amount = 24
 				}
 			}
 		}
@@ -2716,6 +2716,14 @@ focus_tree = {
 					type = industrial_complex
 					level = 1
 					instant_build = yes
+				}
+				add_building_construction = {
+					type = dam
+					level = 1
+					instant_build = yes
+					province = {
+						id = 9794
+					}
 				}
 			}
 		}
@@ -2800,12 +2808,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = industry_bonus
-      			bonus = 1.0
-      			uses = 1
-        		category = industry
-			}
 			add_to_variable = { ITA_iri_production_speed_arms_factory_factor = 0.05 }
 			custom_effect_tooltip = ITA_steel_industry_in_terni_ricostruzione_industriale_tt
 			if = {
@@ -2984,12 +2986,6 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = industry_bonus
-      			bonus = 1.0
-      			uses = 1
-        		category = industry
-			}
 			add_to_variable = { ITA_iri_production_speed_industrial_complex_factor = 0.05 }
 			custom_effect_tooltip = ITA_power_plants_in_terni_ricostruzione_industriale_tt
 			if = {
@@ -3349,10 +3345,10 @@ focus_tree = {
 			add_tech_bonus = {
 				name = YJ_ITA_foggia_farm
 				bonus = 1
-				uses = 3
+				uses = 5
 				category = excavation_tech
 			}
-			add_timed_idea = { idea = ITA_foggia_farm_fields years = 2 }
+			add_timed_idea = { idea = ITA_foggia_farm_fields years = 1 }
 		}
 	}
 

@@ -22,6 +22,7 @@ ideas = {
 				army_strength_factor = 0.1
 				army_org_regain = 0.10
 				army_org_factor = 0.10
+				supply_consumption_factor = -0.10
 				intel_from_operatives_factor = 0.15
 				intelligence_agency_defense = 1
 				subversive_activites_upkeep = -0.25

@@ -63,6 +63,12 @@ country_event = {
 				province = 1464
 				value = 17
 			}
+			every_core_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
 		}
 		ai_chance = {
 			factor = 100

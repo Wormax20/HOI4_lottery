@@ -56,6 +56,7 @@ ideas = {
 				local_resources_factor = 0.10
 				consumer_goods_factor = -0.10
 				production_speed_buildings_factor = 0.20
+				production_speed_arms_factory_factor = 0.20
 				mic_to_target_factor = 0.10
 			}
 			research_bonus = {
@@ -94,8 +95,8 @@ ideas = {
 				medium_plane_fighter_airframe = {
 					instant = yes
 					build_cost_ic = -0.30
-					air_attack = 0.05
-					air_defence = 0.10
+					air_attack = 0.10
+					air_defence = 0.15
 				}
 				strategic_bomber = {
                     instant = yes
@@ -125,7 +126,7 @@ ideas = {
 				local_resources_factor = 0.10
 				production_speed_infrastructure_factor = 0.20
 				production_speed_industrial_complex_factor = 0.20
-				production_speed_buildings_factor = 0.10
+				production_speed_buildings_factor = 0.20
 				conversion_cost_civ_to_mil_factor = -0.5
 				cic_to_target_factor = 0.10
 			}
@@ -154,16 +155,16 @@ ideas = {
 				stability_weekly = 0.002
 				war_support_weekly = 0.002
 				production_speed_dockyard_factor = 0.10
-				production_factory_max_efficiency_factor = 0.05
-				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.10
 				industrial_capacity_dockyard = 0.10
 				industrial_capacity_factory = 0.10
-				max_planning = 0.05
+				max_planning = 0.10
 			}
 			equipment_bonus = {
 				armor = {
 					instant = yes
-					build_cost_ic = -0.05
+					build_cost_ic = -0.10
 					reliability = 0.10
 				}
 				strategic_bomber = {
