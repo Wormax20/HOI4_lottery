@@ -4398,9 +4398,9 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_panzer_troops_school
-		cost = 5
+		cost = 20
 		available = {
-			has_war_with_major = yes
+			
 		}
 
 		continue_if_invalid = yes
@@ -5629,9 +5629,9 @@ focus_tree = {
 		x = 2
 		y = 2
 		relative_position_id = GER_reorganize_the_luftwaffe
-		cost = 10
+		cost = 20
 		available = {
-			has_war_with_major = yes
+			
 		}
 
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_INDUSTRY }
@@ -5652,9 +5652,9 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = GER_defense_of_the_reich
-		cost = 5
+		cost = 10
 		available = {
-			has_war_with_major = yes
+			
 			is_special_project_completed = sp:sp_air_radar
 			custom_trigger_tooltip = {
 				tooltip = GER_controls_atlantic_coast_brittany_finnmark_tt
@@ -5788,10 +5788,10 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_defense_of_the_reich
-		cost = 5
+		cost = 10
 		available = {
 			has_tech = centimetric_radar
-			has_war_with_major = yes
+			
 		}
 
 		search_filters = { FOCUS_FILTER_MILITARY_CHARACTER FOCUS_FILTER_HISTORICAL }
@@ -9365,7 +9365,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = GER_army_indoctrination
-		cost = 25
+		cost = 20
 		available = {
 			has_tech = advanced_machine_tools
 		}
