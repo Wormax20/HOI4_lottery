@@ -9,7 +9,7 @@ KoKi_YJ_USA_event.102.desc: "获得高额研究加成与大量加成卡\n1938.1.
 KoKi_YJ_USA_event.102.a: "好"
 
 KoKi_YJ_USA_event.103.title: "奖品: 让美国再次伟大"
-KoKi_YJ_USA_event.103.desc: "完成任务获得额外工厂产出"
+KoKi_YJ_USA_event.103.desc: "获得陆军与装备加成，并额外给予生产线加成"
 KoKi_YJ_USA_event.103.a: "好"
 
 KoKi_YJ_USA_event.104.title: "奖品: 大繁荣"
@@ -17,7 +17,7 @@ KoKi_YJ_USA_event.104.desc: "移除大萧条并获得额外加成"
 KoKi_YJ_USA_event.104.a: "好"
 
 KoKi_YJ_USA_event.105.title: "奖品: 美英合作"
-KoKi_YJ_USA_event.105.desc: "获得英国6级沃克斯豪尔军工机构\n获得先进登陆艇\n获得3张超前10年机械化加成卡,机械化宽度-0.2,装甲率-15"
+KoKi_YJ_USA_event.105.desc: "获得英国6级沃克斯豪尔军工机构\n获得先进登陆艇\n获得3张超前10年机械化加成卡,机械化与两栖机械化宽度-0.2,装甲率-10"
 KoKi_YJ_USA_event.105.a: "好"
 
 YJ_USA_1_ideas: "巨人的觉醒"
@@ -25,7 +25,7 @@ YJ_USA_2_ideas: "现代战争"
 YJ_USA_2_ideas_tt: "§Y每半年§!获得§Y1次§!§R300%超前2年§!§C全类型§!加成卡与§C全类型§!§Y1§!突破点\n1938.1.1获得空天母舰"
 YJ_USA_3_ideas: "让美国再次伟大!!! "
 YJ_USA_3_ideas_tt: "[YJ_USA_3_ideas_txt]"
-YJ_USA_3_ideas_tooltip: "§Y两栖机械化§!:\n$STAT_COMMON_BUILD_COST_IC$§G-15%§!"
+YJ_USA_3_ideas_tooltip: "§Y两栖机械化§!:\n$STAT_COMMON_BUILD_COST_IC$§G-10%§!"
 YJ_USA_4_ideas: "大繁荣"
 YJ_USA_5_ideas: "美英合作"
 YJ_USA_5_ideas_tt: "解锁沃克斯豪尔军工机构\n获得先进登陆艇\n获得3张超前10年机械化加成卡,机械化宽度-0.2,装甲率-10"
@@ -35,11 +35,11 @@ YJ_USA_67_ideas: "主阿 让我再救一个"
 
 
 KoKi_YJ_GER_event.101.title: "奖品: 闪击战法"
-KoKi_YJ_GER_event.101.desc: "装甲飞机科技减少建造花费,增加陆军移动速度,减少计划下降速度,获得高额飞机buff"
+KoKi_YJ_GER_event.101.desc: "装甲科技减少生产花费,获得陆军与补给方面加成"
 KoKi_YJ_GER_event.101.a: "好"
 
 KoKi_YJ_GER_event.102.title: "奖品: 竞争战法"
-KoKi_YJ_GER_event.102.desc: "获得高额坦克攻击及其他buff"
+KoKi_YJ_GER_event.102.desc: "获得高额陆军加成"
 KoKi_YJ_GER_event.102.a: "好"
 
 KoKi_YJ_GER_event.103.title: "奖品: 毫无波澜"
@@ -73,7 +73,7 @@ YJ_GER_02_ideas: "盖世太保"
 
 
 KoKi_YJ_ENG_event.101.title: "奖品: 英联邦觉醒"
-KoKi_YJ_ENG_event.101.desc: "§R成立英联邦§!\n为每个附属国附加殖民地上贡buff,效果为:贡献给宗主国的工厂+40%，每日自治度获取-10\n获得英国科技buff,38.1.1获得4级引擎和40机"
+KoKi_YJ_ENG_event.101.desc: "§R成立英联邦§!\n统一英伦三岛并获得核心\n获得英国科技buff,38.1.1获得4级引擎和40机"
 KoKi_YJ_ENG_event.101.a: "好"
 
 KoKi_YJ_ENG_event.102.title: "奖品: 英美合作"
@@ -179,11 +179,11 @@ YJ_FRA_18_ideas: "决不投降"
 
 
 KoKi_YJ_SOV_event.101.title: "奖品: 斯大林铁血统治"
-KoKi_YJ_SOV_event.101.desc: "跳过大清洗\n删除所有斯大林互斥\n获得NKVD\n修改斯大林国策的部分buff\n获得新经济政策"
+KoKi_YJ_SOV_event.101.desc: "跳过大清洗\n修改斯大林国策的部分buff\n获得高昂情报局与陆军加成"
 KoKi_YJ_SOV_event.101.a: "好"
 
 KoKi_YJ_SOV_event.102.title: "奖品: TNO缔造者"
-KoKi_YJ_SOV_event.102.desc: "跳过右翼内战\n获得牢不可破的联盟\n修改部分国策buff\n获得建造速度换取高额数值"
+KoKi_YJ_SOV_event.102.desc: "跳过右翼内战\n修改部分国策buff\n获得工厂建设与政治顾问花费－１００％相关加成"
 KoKi_YJ_SOV_event.102.a: "好"
 
 KoKi_YJ_SOV_event.103.title: "奖品: 伟大的卫国战争"
@@ -191,7 +191,7 @@ KoKi_YJ_SOV_event.103.desc: "在战时获得伟大的卫国战争Buff"
 KoKi_YJ_SOV_event.103.a: "好"
 
 KoKi_YJ_SOV_event.104.title: "奖品: 托派联合"
-KoKi_YJ_SOV_event.104.desc: "跳过左翼内战\n获得无与伦比的联合\n修改部分国策buff\n获得总体战"
+KoKi_YJ_SOV_event.104.desc: "跳过左翼内战\n修改部分国策buff\n获得生产线与科研相关大幅加成"
 KoKi_YJ_SOV_event.104.a: "好"
 
 
@@ -201,7 +201,7 @@ YJ_SOV_2_ideas: "TNO缔造者"
 YJ_SOV_3_ideas: "[KoKi_SOV_IDEAS]"
 YJ_SOV_3_ideas_tt: "§Y根据投降倾向获得buff增益§!"
 YJ_SOV_4_ideas: "托派联合!"
-YJ_SOV_4_ideas_tt: "跳过左翼内战\n获得无与伦比的联合\n修改部分国策buff\n获得总体战"
+YJ_SOV_4_ideas_tt: "跳过左翼内战\n修改部分国策buff\n获得总体战"
 YJ_SOV_5_ideas: "最美好的一代"
 YJ_SOV_6_ideas: "红场大阅兵"
 YJ_SOV_7_ideas: "世界人民反法西斯战争"
@@ -324,7 +324,7 @@ YJ_BRA_4_ideas: "战争机器"
 
 
 KoKi_YJ_FIN_event.101.title: "奖品: 追寻斯堪的纳维亚遗产"
-KoKi_YJ_FIN_event.101.desc: "获得高额人力加成,资源获取率\n获得全北欧核心,解锁为队友发小棉袄\n解锁4个顾问和1个元帅"
+KoKi_YJ_FIN_event.101.desc: "获得高额人力加成,资源获取率\n获得全北欧核心,解锁为队友发小棉袄"
 KoKi_YJ_FIN_event.101.a: "好"
 
 KoKi_YJ_FIN_event.102.title: "奖品: 凛冬将军"
@@ -523,7 +523,7 @@ KoKi_YJ_MEX_event.103.desc: "获得高额军事buff\n设置执政党为共产党
 KoKi_YJ_MEX_event.103.a: "好"
 
 KoKi_YJ_MEX_event.104.title: "奖品: 美墨特种技术特派团"
-KoKi_YJ_MEX_event.104.desc: "获得两栖科技与高额特种修正减少两栖载具造价"
+KoKi_YJ_MEX_event.104.desc: "获得两栖科技与高额特种修正"
 KoKi_YJ_MEX_event.104.a: "好"
 
 YJ_MEX_1_ideas: "中美洲之光"
@@ -667,7 +667,7 @@ YJ_BEL_3_ideas_tt: "§Y高额游骑兵加成§!"
 
 
 KoKi_YJ_SWI_event.101.title: "奖品: 虚空造物"
-KoKi_YJ_SWI_event.101.desc: "永久减100生产资源惩罚\n获得40生产上限和10效率增长"
+KoKi_YJ_SWI_event.101.desc: "永久减100生产资源惩罚\n获得生产加成"
 KoKi_YJ_SWI_event.101.a: "好"
 
 KoKi_YJ_SWI_event.102.title: "奖品: 联邦空军"
@@ -893,7 +893,7 @@ CK_SOV_development_of_tankograd_factories_tt: "在每一个至少拥有3座军�
 
 
 YJ_FRA_ideas: "自由,平等,博爱"
-YJ_FRA_ideas_tt: "§Y每月§!获得§C1民§!§G1军§!"
+YJ_FRA_ideas_tt: "§Y每月§!获得§G1军§!"
 
 YJ_ENG_ideas: "逢敌必战"
 YJ_ENG_ideas_tt: "§Y每月§!获得§C1船坞§!"

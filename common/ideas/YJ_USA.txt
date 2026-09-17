@@ -60,7 +60,8 @@ ideas = {
 				mic_to_target_factor = 0.10
 			}
 			research_bonus = {
-				artillery = 0.35
+				artillery = 0.20
+				armor = 0.20
 			}
 		}
 		YJ_USA_2_ideas = {
@@ -95,7 +96,7 @@ ideas = {
 				medium_plane_fighter_airframe = {
 					instant = yes
 					build_cost_ic = -0.30
-					air_attack = 0.10
+					air_attack = 0.05
 					air_defence = 0.10
 				}
 				strategic_bomber = {

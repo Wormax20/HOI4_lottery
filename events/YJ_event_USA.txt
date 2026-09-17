@@ -57,6 +57,7 @@ country_event = {
 			amphibious_tank = 1
 			amphibious_drive = 1
 			amphibious_mechanized_infantry = 1
+			USA_mechanized_tech = 1
 		}
 		hidden_effect = {
 			add_ideas = YJ_USA_3_ideas

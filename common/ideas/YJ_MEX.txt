@@ -52,7 +52,6 @@ ideas = {
 			picture = MEX_church_power_5
 
 			modifier = {
-				political_power_factor = 0.10
 				supply_consumption_factor = -0.20
 				supply_node_range = 0.1
 				land_reinforce_rate = 0.05
@@ -102,9 +101,9 @@ ideas = {
 				armor = {
 					soft_attack = 0.10
 					hard_attack = 0.10
-					reliability = -0.15
+					reliability = -0.10
 					maximum_speed = 0.2
-					build_cost_ic = -0.15
+					build_cost_ic = -0.10
 					instant = yes
 				}
 			}

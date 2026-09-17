@@ -53,6 +53,12 @@ ideas = {
 			research_bonus = {
 				armor = 0.25
 			}
+			equipment_bonus = {
+				land_cruiser = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+			}
 		}
 
 		YJ_BEL_3_ideas = {
