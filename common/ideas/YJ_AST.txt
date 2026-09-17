@@ -129,7 +129,7 @@ ideas = {
 					build_cost_ic = -0.15
 					soft_attack = 0.10
 					hard_attack = 0.10
-					defence = 0.10
+					defense = 0.10
 					breakthrough = 0.10
 					instant = yes
 				}

@@ -42,7 +42,7 @@ ideas = {
 
 			modifier = {
 				custom_modifier_tooltip = YJ_BRA_2_ideas_tt
-				political_power_factor = 0.10
+				political_power_factor =  0.25
 				global_building_slots =  5
 				production_speed_buildings_factor = 0.1
 				production_factory_max_efficiency_factor = 0.1
@@ -50,7 +50,6 @@ ideas = {
 				industrial_capacity_factory = 0.1
 				command_power_gain = 0.5
 				max_command_power = 100
-				political_power_factor =  0.25
 			}
 		}
 		YJ_BRA_3_ideas = {

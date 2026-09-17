@@ -68,13 +68,17 @@ ideas = {
 			}
 
 			modifier = {
-				political_power_cost = 1.0
+				political_power_cost = 1.0 #Edit - AST_GET_ALP_CAMPAIGN_POL_POWER_COST /AND/ AST_uap_election_campaign_tt /AND/ AST_alp_election_campaign_tt - if changed
 			}
 		}
 
 	}
 
 	country = {
+
+		####################
+		#### TAOG START ####
+		####################
 
 		idea_AST_civil_war_on_their_own = {
 
@@ -149,7 +153,7 @@ ideas = {
 			}
 		}
 
-		AST_great_depression_taog_spirit_fake = { 
+		AST_great_depression_taog_spirit_fake = { #Fake for bookmark
 
 			allowed = {
 				always = no
@@ -165,7 +169,7 @@ ideas = {
 			}
    		}
 
-		AST_citizen_army_spirit_fake = { 
+		AST_citizen_army_spirit_fake = { #Fake for bookmark
 
 			allowed = {
 				always = no
@@ -179,7 +183,7 @@ ideas = {
 			}
    		}
 
-   		AST_war_is_coming_spirit_fake = { 
+   		AST_war_is_coming_spirit_fake = { #Fake for bookmark
 
    			allowed = {
 				always = no
@@ -192,7 +196,7 @@ ideas = {
 			}
    		}
 		
-		AST_unratified_westminster_act_idea = { 
+		AST_unratified_westminster_act_idea = { #Will apply to vanilla too
 
 			allowed = {
 				always = no
@@ -257,7 +261,7 @@ ideas = {
 			on_add = {
 				add_offsite_building = { 
 					type = arms_factory
-					level = 2 
+					level = 2 #Edit AST_australian_war_cabinet_war_idea_tt if changed
 				}
 			}
 
@@ -288,47 +292,41 @@ ideas = {
 			}
 
 			cancel = {
-				OR = {
-					ENG = {	
-						NOT = { controls_state = 1021 } 
-						has_idea = AST_singapore_strategy_idea
-					}
-					AST = {	
-						NOT = { controls_state = 1021 } 
-						has_idea = AST_singapore_strategy_idea
-					}
-				}
+				NOT = { controls_state = 1021 } #Singapore
 			}
 
-			on_remove = { 
-
-				1021 = {
-					add_building_construction = { 
-						type = air_base 
-						level = 2 
-						instant_build = yes
+			on_remove = { #Edit AST_singapore_strategy_idea_desc if changed
+				IF = {
+					limit = {
+						controls_state = 1021
 					}
-					add_building_construction = { 
-						type = naval_base 
-						level = 2 
-						instant_build = yes
-						province = {
-			  				all_provinces = yes
-			  				limit_to_victory_point > 0
-			  				limit_to_coastal = yes
-			  			}
+					1021 = {
+						add_building_construction = { #edit AST_singapore_strategy_tt /AND/ AST_singapore_strategy_idea_desc if changed
+							type = air_base 
+							level = 2 
+							instant_build = yes
+						}
+						add_building_construction = { #edit AST_singapore_strategy_tt /AND/ AST_singapore_strategy_idea_desc if changed
+							type = naval_base 
+							level = 2 
+							instant_build = yes
+							province = {
+				  				all_provinces = yes
+				  				limit_to_victory_point > 0
+				  				limit_to_coastal = yes
+				  			}
+						}
+						add_building_construction = { #edit AST_singapore_strategy_tt /AND/ AST_singapore_strategy_idea_desc if changed
+							type = coastal_bunker 
+							level = 1 
+							province = {
+				  				all_provinces = yes
+				  				limit_to_victory_point > 0
+				  				limit_to_coastal = yes
+				  			}
+						}
 					}
-					add_building_construction = { 
-						type = coastal_bunker 
-						level = 1 
-						province = {
-			  				all_provinces = yes
-			  				limit_to_victory_point > 0
-			  				limit_to_coastal = yes
-			  			}
-					}
-				}
-					
+				}		
 			}
 		
 		}
@@ -359,14 +357,14 @@ ideas = {
 			on_add = {
 				add_offsite_building = { 
 					type = arms_factory
-					level = 2 
+					level = 2 #Edit AST_all_dressed_up_idea_tt if changed
 				}
 			}
 
 			on_remove = {
 				add_offsite_building = {
 					type = arms_factory
-					level = -2 
+					level = -2 #Edit AST_all_dressed_up_idea_tt if changed
 				}
 			}
 
@@ -544,7 +542,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-			modifier = { political_power_cost = 0.15 }
+			modifier = { political_power_gain = -0.15 }
 		}
 
 		AST_referendum_aviation_idea = {
@@ -561,11 +559,11 @@ ideas = {
 
 			picture = generic_air_research
 
-			research_bonus = { 
+			research_bonus = { #Edit AST_political_events.1.a.tt if changed
 				air_equipment = 0.15
 			}
 
-			modifier = { 
+			modifier = { #Edit AST_political_events.1.a.tt if changed	
 				production_speed_air_base_factor = 0.05
 			}
 		}
@@ -584,7 +582,7 @@ ideas = {
 
 			picture = PER_fund_state_intelligence_idea
 
-			modifier = {
+			modifier = { #Edit AST_political_events.1.b.tt if changed
 				consumer_goods_factor = -0.10
 			}
 		}
@@ -643,7 +641,7 @@ ideas = {
 
 			picture = AST_cabinet_trust1_idea
 
-			modifier = { 
+			modifier = { #Edit AST_cabinet_trust_state_1_tt if changed
 				stability_factor = -0.30
 				political_power_factor = -0.2
 				war_support_factor = -0.15
@@ -665,7 +663,7 @@ ideas = {
 
 			picture = AST_cabinet_trust2_idea
 
-			modifier = { 
+			modifier = { #Edit AST_cabinet_trust_state_2_tt if changed
 				stability_factor = -0.25
 				political_power_factor = -0.17
 				war_support_factor = -0.12
@@ -687,7 +685,7 @@ ideas = {
 
 			picture = AST_cabinet_trust3_idea
 
-			modifier = { 
+			modifier = { #Edit AST_cabinet_trust_state_3_tt if changed
 				stability_factor = -0.20
 				political_power_factor = -0.15
 				war_support_factor = -0.10
@@ -709,7 +707,7 @@ ideas = {
 
 			picture = AST_cabinet_trust4_idea
 
-			modifier = { 
+			modifier = { #Edit AST_cabinet_trust_state_4_tt if changed
 				stability_factor = -0.15
 				political_power_factor = -0.12
 				war_support_factor = -0.07
@@ -731,7 +729,7 @@ ideas = {
 
 			picture = AST_cabinet_trust5_idea
 
-			modifier = { 
+			modifier = { #Edit AST_cabinet_trust_state_5_tt if changed
 				stability_factor = -0.10
 				political_power_factor = -0.1
 				war_support_factor = -0.05
@@ -756,14 +754,14 @@ ideas = {
 			on_add = {
 				add_offsite_building = {
 				    type = industrial_complex
-				    level = 2 
+				    level = 2 #Edit AST_british_military_construction_aid_idea_tt if changed
 				}
 			}
 
 			on_remove = {
 				add_offsite_building = {
 					type = industrial_complex
-					level = -2 
+					level = -2 #Edit AST_british_military_construction_aid_idea_tt if changed
 				}
 			}
 
@@ -920,7 +918,7 @@ ideas = {
 			}
 
 			on_remove = {
-				add_ideas = { 
+				add_ideas = { #Edit AST_invasion_planning_desc if changed
 					AST_war_plan_japan
 				}
 				create_wargoal = {
@@ -961,6 +959,49 @@ ideas = {
 				breakthrough_bonus_against = 0.1
 			}
 
+		}
+
+		AST_war_strategy = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_japanese_conflict
+
+			targeted_modifier = { 
+				tag = JAP
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.20
+			}
+
+		}
+
+		AST_australias_glorious_fleet = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = AST_royal_australian_navy
+
+			targeted_modifier = {
+				tag = AST
+				spotting_chance_against = -0.1
+				navy_capital_ship_attack_factor_against = -0.1	
+			}
 		}
 
 		AST_australian_culture_investments_idea = {
@@ -1093,29 +1134,7 @@ ideas = {
 
 		}
 
-		AST_british_intel_sharing = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			picture = generic_spy_intel
-
-			modifier = { 
-				operative_slot = 1
-				agency_upgrade_time = -0.15
-				intel_network_gain_factor = 0.15
-			}
-
-		}
-
-		AST_the_pacific_garrison_1 = { 
+		AST_the_pacific_garrison_1 = { #Supported by oil supply
 
 			allowed = {
 				always = no
@@ -1138,7 +1157,7 @@ ideas = {
 
 		}
 
-		AST_the_pacific_garrison_2 = { 
+		AST_the_pacific_garrison_2 = { #Not supported by oil supply
 
 			allowed = {
 				always = no
@@ -1160,7 +1179,7 @@ ideas = {
 
 		}
 
-		AST_the_pacific_garrison_eng = { 
+		AST_the_pacific_garrison_eng = { #ENG: Supporting AST oil supply
 
 			allowed = {
 				always = no
@@ -1317,6 +1336,76 @@ ideas = {
 
 		}
 
+		AST_new_guard_spirit = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = stiff_upper_lip
+
+			modifier = {
+				custom_modifier_tooltip = AST_new_guard_spirit_tt
+			}
+		}
+
+		AST_fascist_legion_spirit = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = stiff_upper_lip
+
+			modifier = {
+				resistance_target = -0.1
+				compliance_growth = 0.1
+				required_garrison_factor = -0.15
+				resistance_damage_to_garrison = -0.15
+				stability_factor = 0.1
+			}
+		}
+
+		AST_monarchist_intervention_spirit = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_monarchist_uprising
+
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.05
+				neutrality_drift = 0.1
+			}
+
+			on_remove = {
+				mark_focus_tree_layout_dirty = yes
+			}
+		}
+
+		##################
+		#### TAOG END ####
+		##################
 
 
 		AST_standard_gauge_railway = {
@@ -2034,7 +2123,7 @@ ideas = {
 
 
 			visible = {
-				
+				#has_completed_focus = ETH_soviet-ethiopian_trade_agreement
 			}
 
 			research_bonus = {
@@ -2301,7 +2390,7 @@ ideas = {
 
 		AST_whyalla_steelworks_ic = { 
 
-			picture = generic_industrial_concern_1
+			picture = AST_whyalla_steelworks_ic
 
 			allowed = {
 				original_tag = AST
@@ -2330,7 +2419,7 @@ ideas = {
 
 		AST_whyalla_steelworks_improved_ic = { 
 
-			picture = generic_industrial_concern_1
+			picture = AST_whyalla_steelworks_ic
 
 			allowed = {
 				original_tag = AST
