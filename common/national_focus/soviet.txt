@@ -7449,13 +7449,9 @@ focus_tree = {
 			else = {
 				custom_effect_tooltip = SOV_war_economy_stability_war_tt
 			}
-			if = {
-				limit = {
-					NOT = { has_idea = war_economy }
-					NOT = { has_idea = tot_economic_mobilisation }
-				}
-				add_ideas = totaler_krieg_economy
-			}
+
+			add_ideas = totaler_krieg_economy
+			
 			custom_effect_tooltip = generic_skip_one_line_tt
 			if = {
 				limit = {
