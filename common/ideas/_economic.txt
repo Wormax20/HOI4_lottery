@@ -734,6 +734,7 @@ ideas = {
 						ratio > 0.5
 					}
 				}
+				has_completed_focus = SOV_war_economy
 
 				IF = {
 					limit = {
@@ -923,15 +924,26 @@ ideas = {
 		totaler_krieg_economy = {
 
 			visible = {
-				original_tag = SOV
-				original_tag = GER
-				has_completed_focus = GER_totaler_krieg
+				OR = {
+					AND = {
+						original_tag = GER
+						has_completed_focus = GER_totaler_krieg
+					}
+					AND = {
+						original_tag = SOV
+						OR = {
+							has_completed_focus = SOV_war_economy
+							has_completed_focus = SOV_the_permanent_revolution
+						}
+					}
+				}
 			}
 
 			available = {
 				OR = {
 					has_completed_focus = GER_totaler_krieg
 					has_completed_focus = SOV_the_permanent_revolution
+					has_completed_focus = SOV_war_economy
 				}
 				has_war_with_major = yes
 				has_war_support > 0.8
@@ -949,13 +961,11 @@ ideas = {
 			modifier = {
 				consumer_goods_expected_value = 0.15
 				conscription = -0.02
-				production_speed_arms_factory_factor = 0.2
-				production_speed_dockyard_factor = 0.2
+				production_speed_arms_factory_factor = 0.3
 				conversion_cost_civ_to_mil_factor= -0.3
 				conversion_cost_mil_to_civ_factor = -0.3
 				industrial_capacity_factory = 0.05
 				production_factory_max_efficiency_factor = 0.05
-				industrial_capacity_dockyard = 0.05
 				factory_energy_consumption = 0.5
 			}
 			cancel_if_invalid = no
@@ -968,12 +978,10 @@ ideas = {
 			visible = {
 				OR = {
 					original_tag = JAP
-					original_tag = SOV
 				}
 				OR = {
 					has_completed_focus = JAP_prepare_for_the_final_war
 					has_completed_focus = JAP_sea_national_defense_state
-					has_completed_focus = SOV_war_economy
 				}
 			}
 
@@ -981,7 +989,6 @@ ideas = {
 				OR = {
 					has_completed_focus = JAP_prepare_for_the_final_war
 					has_completed_focus = JAP_sea_national_defense_state
-					has_completed_focus = SOV_war_economy
 				}
 				OR = {
 					has_war_with_major = yes
