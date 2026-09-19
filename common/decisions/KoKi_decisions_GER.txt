@@ -5,7 +5,7 @@ KoKi_YJ_GER_decisions_categories = {
 			always = yes
 		}
 		available = {
-			date > 1938.1.1
+			date > 1937.12.31
 		}
 		visible = {
 			original_tag = GER
@@ -14,7 +14,7 @@ KoKi_YJ_GER_decisions_categories = {
 		target_trigger = {
 			FROM = { is_in_faction_with = ROOT }
 		}
-		cost = 50
+		cost = 100
 		days_remove = 0
 		days_re_enable = 0
 		fire_only_once = yes

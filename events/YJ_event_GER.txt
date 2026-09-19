@@ -205,21 +205,18 @@ country_event = {
 
 	option = {
 		name = KoKi_YJ_GER_event.10001.a
-		if = {
-			limit = {
-				has_idea = war_economy
-			}
-			add_ideas = tot_economic_mobilisation
-		}
-		else_if = {
-			limit = {
-				NOT = {
-					has_idea = tot_economic_mobilisation
-				}
-			}
-			add_ideas = war_economy
-		}
+		add_ideas = tot_economic_mobilisation
 		add_ideas = YJ_GER_5_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		name = KoKi_YJ_GER_event.10001.b
+		add_ideas = YJ_GER_5_ideas
+		trigger = {
+			has_idea = national_defense_state
+		}
 		ai_chance = {
 			factor = 100
 		}

@@ -8200,7 +8200,7 @@ focus_tree = {
 
 		completion_reward = {
 
-			custom_effect_tooltip = CK_SOV_development_of_tankograd_factories_tt
+			custom_effect_tooltip = CK_SOV_development_of_tankograd_factories_SC_tt
 			effect_tooltip = {
 				every_owned_state = {
 					limit = {
@@ -9003,7 +9003,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = SOV_revolutionary_spirit_idea
-				days = 3650
+				days = 365
 			}
 		}
 	}
@@ -10189,6 +10189,12 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = SOV_back_to_the_nep_new_economy_law
 			add_ideas = new_economic_policy
+			add_tech_bonus = {
+				name = SOV_planned_economy
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}
 			add_stability = 0.05
 			add_popularity = {
 				ideology = democratic 
@@ -10206,7 +10212,7 @@ focus_tree = {
 		relative_position_id = SOV_back_to_the_nep
 		cost = 10
 		available = {
-			date > 1939.1.1
+			date > 1938.12.31
 		}
 		                
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -10362,7 +10368,7 @@ focus_tree = {
 		mutually_exclusive = { focus = SOV_strengthen_the_trade_unions }
 
 		available = {
-			date > 1939.1.1
+			date > 1938.12.31
 		}
 		                
 		search_filters = {}

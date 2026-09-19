@@ -126,6 +126,12 @@ country_event = {
 			type = arms_factory
 			level = 10
 		}
+		add_tech_bonus = {
+			name = YJ_AST_4_ideas
+			bonus = 1
+			uses = 2
+			category = artillery
+		}
 		complete_national_focus = AST_australian_regular_army
 		name = KoKi_YJ_AST_event.104.a
 		add_ideas = YJ_AST_4_ideas

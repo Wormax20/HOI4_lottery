@@ -830,6 +830,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = industry_bonus
+      			bonus = 1.0
+      			uses = 1
+        		category = industry
+			}
 
 			random_core_state = {
 				limit = {
@@ -886,6 +892,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = industry_bonus
+      			bonus = 1.0
+      			uses = 1
+        		category = industry
+			}
 			random_core_state = {
 				limit = {
 					is_fully_controlled_by = ROOT

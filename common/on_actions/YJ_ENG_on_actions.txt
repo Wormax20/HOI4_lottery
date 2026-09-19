@@ -11,7 +11,7 @@ on_actions = {
 					NOT = { has_global_flag = Beta_ENG_1_flag }
 				}
 				random_list = {
-					20 = {
+					25 = {
 						set_technology = { early_ship_hull_light = 1 }
 						set_technology = { sonar = 1 }
 						set_technology = { smoke_generator = 1 }
@@ -21,7 +21,7 @@ on_actions = {
 						set_technology = { improved_ship_hull_light = 1 }
 						set_technology = { advanced_depth_charges = 1 }
 					}
-					20 = {
+					25 = {
 						set_technology = { early_ship_hull_cruiser = 1 }
 						set_technology = { basic_ship_hull_cruiser = 1 }
 						set_technology = { improved_ship_hull_cruiser = 1 }
@@ -29,21 +29,15 @@ on_actions = {
 						set_technology = { basic_heavy_armor_scheme = 1 }
 						set_technology = { improved_heavy_armor_scheme = 1 }
 					}
-					20 = {
+					25 = {
 						set_technology = { early_ship_hull_heavy = 1 }
 						set_technology = { basic_ship_hull_heavy = 1 }
 						set_technology = { improved_ship_hull_heavy = 1 }
 					}
-					20 = {
+					25 = {
 						set_technology = { early_ship_hull_carrier = 1 }
 						set_technology = { basic_ship_hull_carrier = 1 }
 						set_technology = { improved_ship_hull_carrier = 1 }
-					}
-					20 = {
-						set_technology = { early_ship_hull_submarine = 1 }
-						set_technology = { basic_ship_hull_submarine = 1 }
-						set_technology = { improved_ship_hull_submarine = 1 }
-						set_technology = { basic_submarine_snorkel = 1 }
 					}
 				}
 				set_technology = { basic_battery = 1 }

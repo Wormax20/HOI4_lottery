@@ -77,6 +77,8 @@ ideas = {
 
 			modifier = {
 				political_power_gain = 0.10
+				conscription = 0.05
+				special_forces_min = 240
 				special_forces_attack_factor = 0.10
 				special_forces_defence_factor = 0.10
 				supply_consumption_factor = -0.10

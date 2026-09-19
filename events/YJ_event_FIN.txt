@@ -53,6 +53,10 @@ country_event = {
 			}
 			add_core_of = ROOT
 		}
+		add_offsite_building = {
+			type = industrial_complex
+			level = 10
+		}
 		complete_national_focus = FIN_wartsila_engine_production
 		complete_national_focus = FIN_german_military_advisors
 		complete_national_focus = FIN_modernize_the_industry
@@ -144,11 +148,11 @@ country_event = {
 	option = {
 		add_offsite_building = {
 			type = industrial_complex
-			level = 20
+			level = 10
 		}
 		add_offsite_building = {
 			type = arms_factory
-			level = 5
+			level = 10
 		}
 		set_technology = {
 			excavation3 = 1

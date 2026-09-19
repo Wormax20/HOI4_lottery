@@ -2433,13 +2433,20 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		available = {
-			democratic > 0.95
+			date > 1937.12.31
 		}
 		completion_reward = {
 			add_ideas = wartime_industry_focus
 			custom_effect_tooltip = generic_skip_one_line_tt
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = USA_general_motors
+			IF = {
+				limit = {
+					NOT = {
+						has_idea = tot_economic_mobilisation
+						has_idea = new_economic_policy
+					}
+				}
+				add_ideas = war_economy
+			}
 		}
 	}
 	

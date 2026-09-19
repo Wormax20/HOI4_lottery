@@ -324,7 +324,7 @@ YJ_BRA_4_ideas: "战争机器"
 
 
 KoKi_YJ_FIN_event.101.title: "奖品: 追寻斯堪的纳维亚遗产"
-KoKi_YJ_FIN_event.101.desc: "获得高额人力加成,资源获取率\n获得全北欧核心,解锁为队友发小棉袄"
+KoKi_YJ_FIN_event.101.desc: "获得高额人力加成,资源获取率\n获得全北欧核心,解锁为队友发小棉袄\n增加地图外10个民"
 KoKi_YJ_FIN_event.101.a: "好"
 
 KoKi_YJ_FIN_event.102.title: "奖品: 凛冬将军"
@@ -345,7 +345,7 @@ YJ_FIN_2_ideas_tt: "山地师攻防+5%，山地师速度+10%,山地师补给使�
 YJ_FIN_3_ideas: "凛冬航空队"
 YJ_FIN_3_ideas_tt: "解锁满血萨博"
 YJ_FIN_4_ideas: "北欧工业整合"
-YJ_FIN_4_ideas_tt: "增加地图外20个民\n增加地图外5个军"
+YJ_FIN_4_ideas_tt: "增加地图外10个民\n增加地图外10个军"
 YJ_FIN_5_ideas: "小棉袄"
 
 
@@ -887,6 +887,7 @@ FRA_Small_Entente: "小协约国"
 SOV_leader_of_the_party_and_the_people_trait_tt: "§Y[ROOT.GetLeader]§!: §Y$stalin_inheritor_of_lenin$§!或§Y$stalin_servant_of_lenin$§!追加效果: \n政党支持率对稳定度修正: §G+15.00%§!\n防御战争对稳定度修正: §G+40.00%§!\n政治顾问花费: §G-25%§!\n陆军师核心攻防:§G+3.00%§!\n"
 
 CK_SOV_development_of_tankograd_factories_tt: "在每一个至少拥有3座军用工厂的乌拉尔和远东地区添加§G1§!个建筑位和§Y1座军用工厂§!。（最多20个）"
+CK_SOV_development_of_tankograd_factories_SC_tt: "在每一个至少拥有3座民用工厂的乌拉尔和远东地区添加§G1§!个建筑位和§Y1座民用工厂§!。（最多20个）"
 
 
 

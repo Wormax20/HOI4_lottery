@@ -273,7 +273,7 @@ KoKi_YJ_TAG_decisions_0_scripted_effects = {
 
 YJ_TY_scripted_effects = {
 	random_list = {
-		seed = random
+		
 		9.09 = {
 			modifier = {
 				has_idea = YJ_1_ideas
@@ -362,7 +362,7 @@ YJ_TY_scripted_effects = {
 
 GER_YJ_scripted_effects = {
 	random_list = {
-		seed = random
+		
 		20 = {
 			modifier = {
 				OR = {
@@ -407,7 +407,7 @@ GER_YJ_scripted_effects = {
 USA_YJ_scripted_effects = {
 
 	random_list = {
-		seed = random
+		
 		20 = {
 			modifier = {
 				OR = {
@@ -485,7 +485,7 @@ USA_YJ_scripted_effects = {
 
 ENG_YJ_scripted_effects = {
 	random_list = {
-		seed = random
+		
 		20 = {
 			modifier = {
 				has_idea = YJ_ENG_1_ideas
@@ -546,7 +546,7 @@ ENG_YJ_scripted_effects = {
 
 FRA_YJ_scripted_effects = {
 		random_list = {
-			seed = random
+			
 			20 = {
 				modifier = {
 					OR = {
@@ -617,7 +617,7 @@ FRA_YJ_scripted_effects = {
 
 SOV_YJ_scripted_effects = {
 	random_list = {
-		seed = random
+		
 		20 = {
 			modifier = {
 				OR = {
@@ -694,7 +694,7 @@ SOV_YJ_scripted_effects = {
 
 ITA_YJ_scripted_effects = {
 	random_list = {
-		seed = random
+		
 		16.6 = {
 			modifier = {
 				OR = {
@@ -790,7 +790,7 @@ ITA_YJ_scripted_effects = {
 
 BRA_YJ_scripted_effects = {
 	random_list = {
-		seed = random
+		
 		25 = {
 			modifier = {
 				OR = {
@@ -846,7 +846,7 @@ BRA_YJ_scripted_effects = {
 
 FIN_YJ_scripted_effects = {
 	random_list = {
-		seed = random
+		
 		25 = {
 			modifier = {
 				has_idea = YJ_FIN_1_ideas
@@ -895,7 +895,7 @@ FIN_YJ_scripted_effects = {
 
 JAP_YJ_scripted_effects = {
 	random_list = {
-		seed = random
+		
 		20 = {
 			modifier = {
 				has_idea = YJ_JAP_3_ideas
@@ -956,7 +956,7 @@ JAP_YJ_scripted_effects = {
 
 PRC_YJ_scripted_effects = {
 	random_list = {
-		seed = random
+		
 		25 = {
 			modifier = {
 				has_idea = YJ_PRC_1_ideas
@@ -1005,7 +1005,7 @@ PRC_YJ_scripted_effects = {
 
 PRC_YJ_1_scripted_effects = {
 	random_list = {
-		seed = random
+		
 		25 = {
 			modifier = {
 				has_idea = YJ_PRC_1_ideas
@@ -1054,7 +1054,7 @@ PRC_YJ_1_scripted_effects = {
 
 ROM_YJ_scripted_effects = {
 	random_list = {
-		seed = random
+		
 		20 = {
 			modifier = {
 				has_idea = YJ_ROM_1_ideas
@@ -1115,7 +1115,7 @@ ROM_YJ_scripted_effects = {
 
 MEX_YJ_scripted_effects = {
 	random_list = {
-		seed = random
+		
 		25 = {
 			modifier = {
 				has_idea = YJ_MEX_1_ideas
@@ -1164,7 +1164,7 @@ MEX_YJ_scripted_effects = {
 
 HUN_YJ_scripted_effects = {
 	random_list = {
-		seed = random
+		
 		25 = {
 			modifier = {
 				has_idea = YJ_HUN_1_ideas
@@ -1213,7 +1213,7 @@ HUN_YJ_scripted_effects = {
 
 HUN_YJ_2_scripted_effects = {
 	random_list = {
-		seed = random
+		
 		33.3 = {
 			modifier = {
 				has_idea = YJ_HUN_01_ideas
@@ -1250,7 +1250,7 @@ HUN_YJ_2_scripted_effects = {
 
 HUN_YJ_3_scripted_effects = {
 	random_list = {
-		seed = random
+		
 		50 = {
 			modifier = {
 				has_idea = YJ_HUN_02_ideas
@@ -1275,7 +1275,7 @@ HUN_YJ_3_scripted_effects = {
 
 PHI_YJ_scripted_effects = {
 	random_list = {
-		seed = random
+		
 		25 = {
 			modifier = {
 				has_idea = YJ_PHI_1_ideas
@@ -1324,7 +1324,7 @@ PHI_YJ_scripted_effects = {
 
 BEL_YJ_scripted_effects = {
 	random_list = {
-		seed = random
+		
 		33.3 = {
 			modifier = {
 				has_idea = YJ_BEL_1_ideas
@@ -1361,7 +1361,7 @@ BEL_YJ_scripted_effects = {
 
 SWI_YJ_scripted_effects = {
 	random_list = {
-		seed = random
+		
 		25 = {
 			modifier = {
 				has_idea = YJ_SWI_1_ideas
@@ -1410,7 +1410,7 @@ SWI_YJ_scripted_effects = {
 
 RAJ_YJ_scripted_effects = {
 	random_list = {
-		seed = random
+		
 		25 = {
 			modifier = {
 				has_idea = YJ_RAJ_1_ideas
@@ -1459,7 +1459,7 @@ RAJ_YJ_scripted_effects = {
 
 CAN_YJ_scripted_effects = {
 	random_list = {
-		seed = random
+		
 		25 = {
 			modifier = {
 				has_idea = YJ_CAN_1_ideas
@@ -1508,7 +1508,7 @@ CAN_YJ_scripted_effects = {
 
 TUR_YJ_scripted_effects = {
 	random_list = {
-		seed = random
+		
 		33.3 = {
 			modifier = {
 				has_idea = YJ_TUR_1_ideas
@@ -1545,7 +1545,7 @@ TUR_YJ_scripted_effects = {
 
 AUS_YJ_2_scripted_effects = {
 	random_list = {
-		seed = random
+		
 		50 = {
 			modifier = {
 				has_idea = YJ_AUS_1_ideas
@@ -1560,7 +1560,7 @@ AUS_YJ_2_scripted_effects = {
 
 AUS_YJ_3_scripted_effects = {
 	random_list = {
-		seed = random
+		
 		50 = {
 			modifier = {
 				has_idea = YJ_AUS_1_ideas
@@ -1576,7 +1576,7 @@ AUS_YJ_3_scripted_effects = {
 
 CZE_YJ_scripted_effects = {
 	random_list = {
-		seed = random
+		
 		50 = {
 			modifier = {
 				has_idea = YJ_CZE_1_ideas
@@ -1593,7 +1593,7 @@ CZE_YJ_scripted_effects = {
 CHI_YJ_scripted_effects = {
 
 	random_list = {
-		seed = random
+		
 		25 = {
 			modifier = {
 				has_idea = YJ_CHI_1_ideas
@@ -1654,7 +1654,7 @@ CHI_YJ_1_scripted_effects = {
 AST_YJ_scripted_effects = {
 
 	random_list = {
-		seed = random
+		
 		25 = {
 			modifier = {
 				has_idea = YJ_AST_1_ideas
@@ -1706,7 +1706,7 @@ AST_YJ_scripted_effects = {
 SIA_YJ_scripted_effects = {
 
 	random_list = {
-		seed = random
+		
 		25 = {
 			modifier = {
 				has_idea = YJ_SIA_1_ideas
@@ -2548,7 +2548,7 @@ MEX_state_YJ_scripted_effects = {
 
 KoKi_YJ_ITA_event_1_scripted_effects = {
 	random_list = {
-		seed = random
+		
 		50 = {
 			set_variable = { KoKi_YJ_ITA_event_1_industrial_capacity_factory = 0 }
 			set_variable = { KoKi_YJ_ITA_event_1_industrial_capacity_dockyard = 0 }
@@ -2588,7 +2588,7 @@ KoKi_YJ_ITA_event_1_scripted_effects = {
 
 ALL_RANDOM_YJ_scripted_effects = {
 	random_list = {
-		seed = random
+		
 		1 = {
 			modifier = {
 				has_global_flag = YJ_GER_01_ideas
