@@ -107,7 +107,6 @@ country_event = {
 			category = cat_mechanized_equipment
 		}
 		set_technology = {
-			USA_mechanized_tech = 1
 			mtg_tank_landing_craft = 1
 			popup = yes
 		}

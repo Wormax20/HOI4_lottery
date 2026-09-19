@@ -43,6 +43,7 @@ ideas = {
 
 			modifier = {
 				custom_modifier_tooltip = YJ_ITA_01_ideas_tt
+				political_power_gain = 0.10
 				global_building_slots = 3
 				conscription = 0.05
 				industrial_capacity_factory = 0.10
@@ -68,6 +69,7 @@ ideas = {
 
 			modifier = {
 				custom_modifier_tooltip = YJ_ITA_02_ideas_tt
+				political_power_gain = 0.10
 				global_building_slots = 6
 				conscription = 0.05
 				industrial_capacity_dockyard = 0.10

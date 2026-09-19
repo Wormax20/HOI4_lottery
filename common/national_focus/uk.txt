@@ -309,7 +309,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = USA_wartime_industry
+		id = ENG_wartime_industry
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = ENG_tank_focus }
 		x = 0
