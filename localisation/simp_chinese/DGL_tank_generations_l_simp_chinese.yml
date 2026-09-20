@@ -9,3 +9,5 @@
  DGL_heavy_tank_generation_2:0 "第2代重型坦克底盘"
  DGL_heavy_tank_generation_3:0 "第3代重型坦克底盘"
  DGL_modern_tank_generation_1:0 "现代坦克底盘"
+ DGL_self_propelled_artillery:0 "自行火炮设计"
+ DGL_tank_destroyers:0 "自行反坦克设计"

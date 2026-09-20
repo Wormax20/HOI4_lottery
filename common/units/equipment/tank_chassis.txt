@@ -1,5 +1,9 @@
 equipments = {
-
+	
+	### Helpful handy information: modules that depend on other modules (ie, big guns require fixed turrets)
+	### require that the module slots for their equipment archetype are defined in operational order for AI + historical templates.
+	### tldr; If your gun requires a specific turret: define the turret slot first.
+	
 	light_tank_chassis = {
 		year = 1922
 		is_archetype = yes
@@ -31,7 +35,7 @@ equipments = {
 
 		module_slots = {			
 
-			turret_type_slot = {
+			turret_type_slot = { #Turrets must go at the top
 				required = yes
 				allowed_module_categories = {
 					tank_light_turret_type
@@ -178,7 +182,7 @@ equipments = {
 
 	}
 
-	light_tank_chassis_0 = {
+	light_tank_chassis_0 = { #also great war tank
 		abbreviation = "lt0"
 		derived_variant_name = light_tank_equipment_0
 		visual_level = 0
@@ -203,7 +207,7 @@ equipments = {
 		priority = 2000
 		module_slots = inherit
 		maximum_speed = 5
-		build_cost_ic = 2.4
+		build_cost_ic = 2.35
 		reliability = 0.95
 		armor_value = 15
 	}
@@ -217,7 +221,7 @@ equipments = {
 		parent = light_tank_chassis_1
 		priority = 2000
 		module_slots = inherit
-		build_cost_ic = 2.88
+		build_cost_ic = 2.7
 		maximum_speed = 6
 		reliability = 1.1
 		armor_value = 20
@@ -235,7 +239,7 @@ equipments = {
 		parent = light_tank_chassis_2
 		priority = 2000
 		module_slots = inherit
-		build_cost_ic = 3.456
+		build_cost_ic = 3
 		maximum_speed = 7
 		reliability = 1.3
 		armor_value = 25
@@ -357,7 +361,7 @@ equipments = {
 		}
 		module_count_limit = {
 			category = tank_secondary_turret
-			count < 3
+			count < 3 #two secondary turrets only
 		}
 		module_count_limit = {
 			module = amphibious_drive
@@ -418,7 +422,7 @@ equipments = {
 		manpower = 2
 
 	}
-	medium_tank_chassis_0 = {
+	medium_tank_chassis_0 = { #used for interwar tanks
 		abbreviation = "mt0"
 		derived_variant_name = medium_tank_equipment_0
 		visual_level = 0
@@ -449,7 +453,7 @@ equipments = {
 		priority = 2000
 		module_slots = inherit
 		armor_value = 30
-		build_cost_ic = 4.2
+		build_cost_ic = 3.75
 		reliability = 0.8
 		maximum_speed = 5
 	}
@@ -463,7 +467,7 @@ equipments = {
 		priority = 2000
 		module_slots = inherit
 		maximum_speed = 6
-		build_cost_ic = 5.04
+		build_cost_ic = 4
 		reliability = 1
 		armor_value = 40
 		resources = {
@@ -480,7 +484,7 @@ equipments = {
 		priority = 2000
 		module_slots = inherit
 		maximum_speed = 6
-		build_cost_ic = 6.048
+		build_cost_ic = 4.25
 		reliability = 1.2
 		armor_value = 50
 		resources = {
@@ -659,7 +663,7 @@ equipments = {
 
 	}
 
-	heavy_tank_chassis_0 = {
+	heavy_tank_chassis_0 = { #interwar heavy tanks
 		abbreviation = "hv0"
 		derived_variant_name = heavy_tank_equipment_0
 		visual_level = 0
@@ -689,7 +693,6 @@ equipments = {
 		armor_value = 55
 		maximum_speed = 5
 		reliability = 0.8
-		build_cost_ic = 10.8
 	}
 
 	heavy_tank_chassis_2 = {
@@ -701,7 +704,7 @@ equipments = {
 		parent = heavy_tank_chassis_1
 		priority = 2000
 		module_slots = inherit
-		build_cost_ic = 12.96
+		build_cost_ic = 11
 		maximum_speed = 5
 		reliability = 1.1
 		armor_value = 60
@@ -720,7 +723,7 @@ equipments = {
 		parent = heavy_tank_chassis_2
 		priority = 2000
 		module_slots = inherit
-		build_cost_ic = 15.552
+		build_cost_ic = 12
 		maximum_speed = 5
 		reliability = 1.2
 		armor_value = 75
@@ -848,7 +851,6 @@ equipments = {
 			category = tank_secondary_turret
 			count < 3
 		}
-
 		module_count_limit = {
 			module = wet_ammo_storage
 			count < 2
@@ -893,7 +895,7 @@ equipments = {
 
 		fuel_consumption = 0
 		maximum_speed = 7
-		build_cost_ic = 8.70912
+		build_cost_ic = 14
 		reliability = 1.2
 		armor_value = 65
 		hardness = 0.95
@@ -1078,7 +1080,7 @@ equipments = {
 		build_cost_ic = 28
 		reliability = 1
 		armor_value = 90
-		hardness = 0
+		hardness = 0 #Hardness doesn't apply to support comapnies, this must be changed if they every become a line battalion. #Was 1
 		
 		resources = {
 			steel = 3
@@ -1288,6 +1290,9 @@ equipments = {
 
 
 
+	###################################
+	######## SPECIAL PROJECTS #########
+	###################################
 
 	land_cruiser_chassis = {
 		year = 1945
@@ -1451,15 +1456,17 @@ equipments = {
 		}	
 
 		default_modules = {
+			#lc_main_armament_slot = lc_heavy_naval_guns
+			#lc_secondary_armament_slot = lc_medium_naval_guns
 		}
 
 		fuel_consumption = 12
-		maximum_speed = 5
+		maximum_speed = 5 #shouldn't be slower than infantry, or we ran into problems
 		build_cost_ic = 330
 		reliability = 1
 		armor_value = 150
 		defense = 12
-		hardness = 0
+		hardness = 0 #Hardness doesn't apply to support companies, this must be changed if they every become a line battalion. #Was 10
 		
 		resources = {
 			steel = 8
@@ -1468,7 +1475,7 @@ equipments = {
 
 		lend_lease_cost = 80
 
-		manpower = 30
+		manpower = 30 #Other Tanks: 2
 
 	}
 

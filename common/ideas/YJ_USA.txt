@@ -1,37 +1,4 @@
 ideas = {
-	hidden_ideas = {
-		YJ_USA_3_ideas = {
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-
-			modifier = {
-			}
-			equipment_bonus = {
-				armor = {
-					instant = yes
-					build_cost_ic = -0.10
-				}
-				amphibious_mechanized_equipment = {
-					build_cost_ic = -0.10
-					soft_attack = 0.05
-					hard_attack = 0.05
-					instant = yes
-				}
-				strategic_bomber = {
-                    instant = yes
-					air_range = 0.15
-                }
-			}
-		}
-	}
 	country = {
 		YJ_USA_1_ideas = {
 
@@ -101,6 +68,37 @@ ideas = {
 				strategic_bomber = {
                     instant = yes
                     build_cost_ic = -0.30
+                }
+			}
+		}
+		YJ_USA_3_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			}
+			equipment_bonus = {
+				armor = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				amphibious_mechanized_equipment = {
+					build_cost_ic = -0.10
+					soft_attack = 0.05
+					hard_attack = 0.05
+					instant = yes
+				}
+				strategic_bomber = {
+                    instant = yes
+					air_range = 0.15
                 }
 			}
 		}
