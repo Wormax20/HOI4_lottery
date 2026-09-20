@@ -1655,14 +1655,14 @@ AST_YJ_scripted_effects = {
 
 	random_list = {
 		
-		25 = {
+		33.3 = {
 			modifier = {
 				has_idea = YJ_AST_1_ideas
 				factor = 0
 			}
 			country_event = KoKi_YJ_AST_event.101
 		}
-		25 = {
+		33.3 = {
 			modifier = {
 				OR = {
 					NOT = {
@@ -1675,20 +1675,7 @@ AST_YJ_scripted_effects = {
 			}
 			country_event = KoKi_YJ_AST_event.103
 		}
-		25 = {
-			modifier = {
-				OR = {
-					NOT = {
-						has_idea = YJ_AST_1_ideas
-					}
-					has_idea = YJ_AST_3_ideas
-					has_idea = YJ_AST_4_ideas
-				}
-				factor = 0
-			}
-			country_event = KoKi_YJ_AST_event.104
-		}
-		25 = {
+		33.3 = {
 			modifier = {
 				OR = {
 					NOT = {

@@ -6236,9 +6236,6 @@ focus_tree = {
 		cost = 5
 
 		available = {
-			any_enemy_country = {
-				SOV_is_major_not_original_sov = yes
-			}
 		}
 		
 		search_filters = {}

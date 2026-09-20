@@ -607,9 +607,7 @@ GER_man_organization = {
 		all_parents = { generic_mio_trait_improved_suspension }
 
 		available = {
-			FROM = {
-				original_tag = GER
-			}
+
 		}
 
 		equipment_bonus = {
@@ -634,9 +632,7 @@ GER_man_organization = {
 		all_parents = { generic_mio_trait_improved_suspension }
 
 		available = {
-			FROM = {
-				original_tag = GER
-			}
+
 		}
 
 		equipment_bonus = {

@@ -827,13 +827,10 @@ KoKi_YJ_AST_event.102.title: "奖品: 工业振兴"
 KoKi_YJ_AST_event.102.desc: "完成工业线分支国策，并获得工业加成"
 KoKi_YJ_AST_event.102.a: "好"
 
-KoKi_YJ_AST_event.103.title: "奖品: 澳洲皇家海军"
-KoKi_YJ_AST_event.103.desc: "获得大量海军加成"
-KoKi_YJ_AST_event.103.a: "好"
-
-KoKi_YJ_AST_event.104.title: "奖品: 澳纽军团"
-KoKi_YJ_AST_event.104.desc: "获得大量陆军加成"
-KoKi_YJ_AST_event.104.a: "好"
+KoKi_YJ_AST_event.103.title: "奖品: 陆军海军分支选择"
+KoKi_YJ_AST_event.103.desc: "透过下方按钮自行选择陆军或是海军抽奖"
+KoKi_YJ_AST_event.103.a: "获得大量海军加成"
+KoKi_YJ_AST_event.103.b: "获得大量陆军加成"
 
 
 YJ_AST_1_ideas: "大洋洲一统"
