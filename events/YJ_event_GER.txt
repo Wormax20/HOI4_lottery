@@ -214,9 +214,6 @@ country_event = {
 	option = {
 		name = KoKi_YJ_GER_event.10001.b
 		add_ideas = YJ_GER_5_ideas
-		trigger = {
-			has_idea = national_defense_state
-		}
 		ai_chance = {
 			factor = 100
 		}
