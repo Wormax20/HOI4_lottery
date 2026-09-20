@@ -1,0 +1,8 @@
+on_actions = {
+	on_startup = {
+		effect = { DGL_sync_german_research = yes }
+	}
+	on_weekly = {
+		effect = { DGL_sync_german_research = yes }
+	}
+}

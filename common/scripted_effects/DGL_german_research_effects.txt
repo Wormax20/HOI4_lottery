@@ -1,0 +1,21 @@
+DGL_sync_german_research = {
+	every_country = {
+		if = {
+			limit = {
+				GER = { has_idea = YJ_GER_4_ideas }
+				OR = {
+					tag = GER
+					is_in_faction_with = GER
+				}
+			}
+			if = {
+				limit = { NOT = { is_in_tech_sharing_group = DGL_german_research } }
+				add_to_tech_sharing_group = DGL_german_research
+			}
+		}
+		else_if = {
+			limit = { is_in_tech_sharing_group = DGL_german_research }
+			remove_from_tech_sharing_group = DGL_german_research
+		}
+	}
+}
