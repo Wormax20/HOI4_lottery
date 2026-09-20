@@ -46,7 +46,9 @@ KoKi_YJ_GER_decisions_categories = {
 			original_tag = GER
 		}
 		available = {
-			always = yes
+			CZE = {
+				is_ai = no
+			}
 		}
 		visible = {
 			69 = { is_fully_controlled_by = GER }
