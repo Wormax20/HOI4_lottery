@@ -178,8 +178,9 @@ technologies = {
 				bonus = {
 					DGL_light_tank_generation_1 = {
 						instant = yes
-						soft_attack = 0.15
-						hard_attack = 0.15
+						soft_attack = 0.10
+						hard_attack = 0.10
+						build_cost_ic = 0.15
 					}
 				}
 			}
@@ -340,8 +341,9 @@ technologies = {
 				bonus = {
 					DGL_light_tank_generation_2 = {
 						instant = yes
-						soft_attack = 0.3225
-						hard_attack = 0.3225
+						soft_attack = 0.2
+						hard_attack = 0.2
+						build_cost_ic = 0.3
 					}
 				}
 			}
@@ -577,8 +579,9 @@ technologies = {
 				bonus = {
 					DGL_light_tank_generation_3 = {
 						instant = yes
-						soft_attack = 0.520875
-						hard_attack = 0.520875
+						soft_attack = 0.3
+						hard_attack = 0.3
+						build_cost_ic = 0.45
 					}
 				}
 			}
@@ -609,8 +612,9 @@ technologies = {
 				bonus = {
 					DGL_medium_tank_generation_1 = {
 						instant = yes
-						soft_attack = 0.15
-						hard_attack = 0.15
+						soft_attack = 0.10
+						hard_attack = 0.10
+						build_cost_ic = 0.15
 					}
 				}
 			}
@@ -756,8 +760,9 @@ technologies = {
 				bonus = {
 					DGL_medium_tank_generation_2 = {
 						instant = yes
-						soft_attack = 0.3225
-						hard_attack = 0.3225
+						soft_attack = 0.2
+						hard_attack = 0.2
+						build_cost_ic = 0.3
 					}
 				}
 			}
@@ -917,8 +922,9 @@ technologies = {
 				bonus = {
 					DGL_medium_tank_generation_3 = {
 						instant = yes
-						soft_attack = 0.520875
-						hard_attack = 0.520875
+						soft_attack = 0.3
+						hard_attack = 0.3
+						build_cost_ic = 0.45
 					}
 				}
 			}
@@ -1079,8 +1085,9 @@ technologies = {
 				bonus = {
 					DGL_modern_tank_generation_1 = {
 						instant = yes
-						soft_attack = 0.74900625
-						hard_attack = 0.74900625
+						soft_attack = 0.4
+						hard_attack = 0.4
+						build_cost_ic = 0.6
 					}
 				}
 			}
@@ -1112,8 +1119,9 @@ technologies = {
 				bonus = {
 					DGL_heavy_tank_generation_1 = {
 						instant = yes
-						soft_attack = 0.15
-						hard_attack = 0.15
+						soft_attack = 0.10
+						hard_attack = 0.10
+						build_cost_ic = 0.15
 					}
 				}
 			}
@@ -1225,8 +1233,9 @@ technologies = {
 				bonus = {
 					DGL_heavy_tank_generation_2 = {
 						instant = yes
-						soft_attack = 0.3225
-						hard_attack = 0.3225
+						soft_attack = 0.2
+						hard_attack = 0.2
+						build_cost_ic = 0.3
 					}
 				}
 			}
@@ -1316,8 +1325,9 @@ technologies = {
 				bonus = {
 					DGL_heavy_tank_generation_3 = {
 						instant = yes
-						soft_attack = 0.520875
-						hard_attack = 0.520875
+						soft_attack = 0.3
+						hard_attack = 0.3
+						build_cost_ic = 0.45
 					}
 				}
 			}
