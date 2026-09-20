@@ -541,7 +541,9 @@ intel_network_state_level_bonus = {
 }
 
 intel_network_state_level_penalty = {
-	max_dig_in = -30
+	max_dig_in = -50
+	max_dig_in_factor = -0.75
+	dig_in_speed_factor = -0.75
 }
 
 created_intelligence_agency = {

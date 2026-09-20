@@ -14,12 +14,27 @@ YJ_AIR_ideas = {
 	naval_damage_factor = YJ_navy_cap_atk
 	naval_defense_factor = YJ_navy_cap_def
 	navy_visibility = YJ_navy_cap_vis
+	army_attack_factor = DGL_army_cap_combat
+	army_defence_factor = DGL_army_cap_combat
+	training_time_army_factor = DGL_army_cap_training
 }
 
 YJ_AXIS_BAL_ideas = {
 	production_speed_buildings_factor = global.YJ_axis_advantage
+	industrial_capacity_factory = global.YJ_axis_arms_advantage
+	production_factory_efficiency_gain_factor = global.YJ_axis_arms_advantage
+	production_factory_max_efficiency_factor = global.YJ_axis_arms_advantage
+	industrial_capacity_dockyard = global.YJ_axis_dockyard_advantage
+	refit_speed = global.YJ_axis_dockyard_advantage
+	refit_ic_cost = global.YJ_axis_refit_cost
 }
 
 YJ_ALLIE_BAL_ideas = {
 	production_speed_buildings_factor = global.YJ_allie_advantage
+	industrial_capacity_factory = global.YJ_allie_arms_advantage
+	production_factory_efficiency_gain_factor = global.YJ_allie_arms_advantage
+	production_factory_max_efficiency_factor = global.YJ_allie_arms_advantage
+	industrial_capacity_dockyard = global.YJ_allie_dockyard_advantage
+	refit_speed = global.YJ_allie_dockyard_advantage
+	refit_ic_cost = global.YJ_allie_refit_cost
 }

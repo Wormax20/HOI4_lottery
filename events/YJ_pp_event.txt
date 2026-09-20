@@ -729,7 +729,9 @@ country_event = {
 					tag = ROOT
 				}
 			}
-			save_event_target_as = YJ_pp_29_recipient
+			country_event = {
+				id = KoKi_YJ_pp.29_1
+			}
 		}
 	}
 
@@ -743,9 +745,17 @@ country_event = {
 			type = arms_factory
 			level = -5
 		}
-		event_target:YJ_pp_29_recipient = {
-			country_event = {
-				id = KoKi_YJ_pp.29_1
+		effect_tooltip = {
+			random_country = {
+				limit = {
+					is_ai = no
+					NOT = {
+						tag = ROOT
+					}
+				}
+				country_event = {
+					id = KoKi_YJ_pp.29_1
+				}
 			}
 		}
 		if = {
