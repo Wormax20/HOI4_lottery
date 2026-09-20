@@ -3,7 +3,6 @@ YJ_USA_3_ideas = {
 		always = yes
 	}
 	icon = GFX_idea_USA_union_pacific_railway
-	custom_modifier_tooltip = YJ_USA_3_ideas_tt
 	political_power_factor = 0.25
 	military_industrial_organization_funds_gain = 0.20
 	industrial_capacity_dockyard = 0.10
