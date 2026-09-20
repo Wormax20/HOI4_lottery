@@ -86,9 +86,38 @@ YJ_calculate_factory_balance_effect = {
 
         set_variable = { global.YJ_axis_advantage = 0 }
         set_variable = { global.YJ_allie_advantage = 0 }
+        set_variable = { global.YJ_axis_arms_advantage = 0 }
+        set_variable = { global.YJ_allie_arms_advantage = 0 }
+        set_variable = { global.YJ_axis_dockyard_advantage = 0 }
+        set_variable = { global.YJ_allie_dockyard_advantage = 0 }
+        set_variable = { global.YJ_axis_refit_cost = 0 }
+        set_variable = { global.YJ_allie_refit_cost = 0 }
     }
 
 	else = {
+		set_variable = { global.YJ_axis_arms_advantage = global.YJ_allie_arms_factory }
+		subtract_from_variable = { global.YJ_axis_arms_advantage = global.YJ_axis_arms_factory }
+		clamp_variable = { var = global.YJ_axis_arms_advantage min = 0 }
+		divide_variable = { global.YJ_axis_arms_advantage = 10000 }
+		set_variable = { global.YJ_allie_arms_advantage = global.YJ_axis_arms_factory }
+		subtract_from_variable = { global.YJ_allie_arms_advantage = global.YJ_allie_arms_factory }
+		clamp_variable = { var = global.YJ_allie_arms_advantage min = 0 }
+		divide_variable = { global.YJ_allie_arms_advantage = 10000 }
+
+		set_variable = { global.YJ_axis_dockyard_advantage = global.YJ_allie_dockyard }
+		subtract_from_variable = { global.YJ_axis_dockyard_advantage = global.YJ_axis_dockyard }
+		clamp_variable = { var = global.YJ_axis_dockyard_advantage min = 0 }
+		divide_variable = { global.YJ_axis_dockyard_advantage = 10000 }
+		set_variable = { global.YJ_allie_dockyard_advantage = global.YJ_axis_dockyard }
+		subtract_from_variable = { global.YJ_allie_dockyard_advantage = global.YJ_allie_dockyard }
+		clamp_variable = { var = global.YJ_allie_dockyard_advantage min = 0 }
+		divide_variable = { global.YJ_allie_dockyard_advantage = 10000 }
+
+		set_variable = { global.YJ_axis_refit_cost = global.YJ_axis_dockyard_advantage }
+		multiply_variable = { global.YJ_axis_refit_cost = -1 }
+		set_variable = { global.YJ_allie_refit_cost = global.YJ_allie_dockyard_advantage }
+		multiply_variable = { global.YJ_allie_refit_cost = -1 }
+
     	set_variable = { global.YJ_axis_advantage = global.YJ_allie_all_factory }
     	subtract_from_variable = { var = global.YJ_axis_advantage value = global.YJ_axis_all_factory }
 
