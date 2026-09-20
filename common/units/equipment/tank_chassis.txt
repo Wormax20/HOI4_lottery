@@ -844,6 +844,10 @@ equipments = {
 			module = amphibious_drive
 			count < 1
 		}
+		module_count_limit = {
+			category = tank_secondary_turret
+			count < 3
+		}
 
 		module_count_limit = {
 			module = wet_ammo_storage
@@ -889,7 +893,7 @@ equipments = {
 
 		fuel_consumption = 0
 		maximum_speed = 7
-		build_cost_ic = 7.2576
+		build_cost_ic = 8.70912
 		reliability = 1.2
 		armor_value = 65
 		hardness = 0.95
