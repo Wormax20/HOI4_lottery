@@ -113,8 +113,6 @@ PRC_factory_617_organization = {
 			production_efficiency_cap_factor = 0.10
 			production_efficiency_gain_factor = 0.10
 		}
-
-
  	}
 
  }

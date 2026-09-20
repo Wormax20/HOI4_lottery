@@ -98,13 +98,13 @@ leader_traits = {
 		equipment_bonus = {
 			armor = {
 				build_cost_ic = -0.10
-				reliability = -0.3
-				maximum_speed = 0.2
+				reliability = -0.4
+				maximum_speed = 0.1
 				instant = yes
 			}
 			mechanized_equipment = {
 				build_cost_ic = -0.10
-				reliability = -0.3
+				reliability = -0.4
 				instant = yes
 			}
 		}
@@ -343,7 +343,7 @@ leader_traits = {
 		political_power_factor = 0.20
 		command_power_gain = 0.5
 		command_power_gain_mult = 1
-		max_command_power = 1000
+		max_command_power = 500
 		conscription = 0.05
 		production_speed_arms_factory_factor = 0.2
 	}

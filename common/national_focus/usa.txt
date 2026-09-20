@@ -5801,7 +5801,7 @@ focus_tree = {
 				custom_effect_tooltip = available_mio_tt
 				show_mio_tooltip = USA_detroit_arsenal_organization
 				mio:USA_detroit_arsenal_organization = {
-					add_mio_size = 2
+					add_mio_size = 6
 					add_mio_funds_gain_factor = 0.25
 					add_mio_research_bonus = 0.05
 				}

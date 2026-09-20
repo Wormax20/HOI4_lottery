@@ -2497,7 +2497,7 @@ focus_tree = {
 		relative_position_id = GER_concentrated_armament_program
 		cost = 10
 		available = {
-			has_war_with_major = yes
+			
 			has_civil_war = no
 		}
 
@@ -3308,7 +3308,7 @@ focus_tree = {
 		relative_position_id = GER_the_prussian_legacy
 		cost = 5
 		available = {
-			has_war_with_major = yes
+			
 		}
 		continue_if_invalid = yes
 
@@ -4068,7 +4068,7 @@ focus_tree = {
 		relative_position_id = GER_improve_the_logistics_system
 		cost = 5
 		available = {
-			has_war_with_major = yes
+			
 		}
 
 		search_filters = { FOCUS_FILTER_RESEARCH }

@@ -8889,7 +8889,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_war_with_major = yes
+			
 			OR = {
 				has_war_support > 0.79
 				surrender_progress > 0
@@ -10510,7 +10510,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_war_with_major = yes
+			
 		}
 
 		bypass = {
@@ -19030,7 +19030,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_war_with_major = yes
+			
 		}
 
 		bypass = {
@@ -25856,7 +25856,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_war_with_major = yes
+			
 		}
 
 		bypass = {
@@ -29101,7 +29101,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_war_with_major = yes
+			
 		}
 
 		bypass = {
@@ -29272,7 +29272,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_war_with_major = yes
+			
 		}
 
 		bypass = {
@@ -29318,7 +29318,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_war_with_major = yes
+			
 		}
 
 		bypass = {
@@ -29356,7 +29356,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_war_with_major = yes
+			
 			JAP_army_faction_is_at_least_influential = yes
 		}
 
@@ -30135,7 +30135,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_war_with_major = yes
+			
 		}
 
 		bypass = {
@@ -31875,7 +31875,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_war_with_major = yes
+			
 			JAP_naval_faction_is_at_least_influential = yes
 		}
 
@@ -31927,7 +31927,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_war_with_major = yes
+			
 			JAP_naval_faction_is_at_least_influential = yes
 		}
 
@@ -32094,7 +32094,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_war_with_major = yes
+			
 		}
 
 		bypass = {
@@ -32133,7 +32133,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_war_with_major = yes
+			
 		}
 
 		bypass = {
@@ -32171,7 +32171,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_war_with_major = yes
+			
 			JAP_naval_faction_is_at_least_influential = yes
 		}
 
