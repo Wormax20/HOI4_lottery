@@ -693,6 +693,43 @@ KoKi_YJ_decisions_categories = {
 		}
 	}
 
+	DGL_180d_research_bonus = {
+		activation = {
+			has_idea = YJ_9_ideas
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			has_idea = YJ_9_ideas
+		}
+		cancel_trigger = {
+			NOT = { has_idea = YJ_9_ideas }
+		}
+		is_good = yes
+		days_mission_timeout = 180
+		fire_only_once = no
+
+		timeout_effect = {
+			if = {
+				limit = { has_idea = YJ_9_ideas }
+				random_list = {
+					1 = { add_tech_bonus = { name = DGL_random_research_bonus bonus = 1.0 uses = 1 category = infantry_weapons } }
+					1 = { add_tech_bonus = { name = DGL_random_research_bonus bonus = 1.0 uses = 1 category = support_tech } }
+					1 = { add_tech_bonus = { name = DGL_random_research_bonus bonus = 1.0 uses = 1 category = armor } }
+					1 = { add_tech_bonus = { name = DGL_random_research_bonus bonus = 1.0 uses = 1 category = artillery } }
+					1 = { add_tech_bonus = { name = DGL_random_research_bonus bonus = 1.0 uses = 1 category = air_equipment } }
+					1 = { add_tech_bonus = { name = DGL_random_research_bonus bonus = 1.0 uses = 1 category = naval_equipment } }
+					1 = { add_tech_bonus = { name = DGL_random_research_bonus bonus = 1.0 uses = 1 category = industry } }
+					1 = { add_tech_bonus = { name = DGL_random_research_bonus bonus = 1.0 uses = 1 category = electronics } }
+				}
+				hidden_effect = {
+					activate_mission = DGL_180d_research_bonus
+				}
+			}
+		}
+	}
+
 	YJ_60d_resource = {
 		activation = {
 			has_idea = YJ_11_ideas

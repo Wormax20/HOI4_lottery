@@ -1,0 +1,17 @@
+DGL_update_army_cap = {
+	set_variable = { DGL_army_cap_states = num_controlled_states }
+	set_variable = { DGL_army_cap_limit = DGL_army_cap_states }
+	multiply_variable = { DGL_army_cap_limit = 10 }
+	clamp_variable = { var = DGL_army_cap_limit max = 800 }
+	set_variable = { DGL_army_cap_count = num_divisions }
+	set_variable = { DGL_army_cap_excess = DGL_army_cap_count }
+	subtract_from_variable = { DGL_army_cap_excess = DGL_army_cap_limit }
+	clamp_variable = { var = DGL_army_cap_excess min = 0 }
+	set_temp_variable = { DGL_army_cap_divisor = DGL_army_cap_limit }
+	clamp_temp_variable = { var = DGL_army_cap_divisor min = 1 }
+	set_variable = { DGL_army_cap_training = DGL_army_cap_excess }
+	divide_variable = { DGL_army_cap_training = DGL_army_cap_divisor }
+	set_variable = { DGL_army_cap_combat = DGL_army_cap_training }
+	multiply_variable = { DGL_army_cap_combat = -0.5 }
+	clamp_variable = { var = DGL_army_cap_combat min = -0.9 max = 0 }
+}

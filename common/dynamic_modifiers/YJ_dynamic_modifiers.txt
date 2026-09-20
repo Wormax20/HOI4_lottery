@@ -14,6 +14,9 @@ YJ_AIR_ideas = {
 	naval_damage_factor = YJ_navy_cap_atk
 	naval_defense_factor = YJ_navy_cap_def
 	navy_visibility = YJ_navy_cap_vis
+	army_attack_factor = DGL_army_cap_combat
+	army_defence_factor = DGL_army_cap_combat
+	training_time_army_factor = DGL_army_cap_training
 }
 
 YJ_AXIS_BAL_ideas = {

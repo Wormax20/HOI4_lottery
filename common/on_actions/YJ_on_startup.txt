@@ -7,6 +7,7 @@ on_actions = {
 					rangers_tech = 1
 				}
 				add_ideas = YJ_AIR_ideas
+				DGL_update_army_cap = yes
 				add_dynamic_modifier = {
 					modifier = YJ_AIR_ideas
 				}

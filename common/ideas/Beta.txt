@@ -113,6 +113,7 @@ ideas = {
 				custom_modifier_tooltip = YJ_AIR_ideas_tt
 				custom_modifier_tooltip = YJ_AIR_ideas_ship_tt
 				custom_modifier_tooltip = YJ_AIR_ideas_navy_cap_tt
+				custom_modifier_tooltip = YJ_AIR_ideas_army_cap_tt
 			}
 
 			picture = generic_anti_air

@@ -1,0 +1,117 @@
+DGL_light_tank_generation_1 = {
+	description = DGL_light_tank_generation_1
+	equipment_type = {
+		light_tank_chassis_1
+		light_tank_aa_chassis_1
+		light_tank_artillery_chassis_1
+		light_tank_destroyer_chassis_1
+		light_tank_amphibious_chassis_1
+		light_tank_flame_chassis_1
+	}
+}
+
+DGL_light_tank_generation_2 = {
+	description = DGL_light_tank_generation_2
+	equipment_type = {
+		light_tank_chassis_2
+		light_tank_aa_chassis_2
+		light_tank_artillery_chassis_2
+		light_tank_destroyer_chassis_2
+		light_tank_amphibious_chassis_2
+		light_tank_flame_chassis_2
+	}
+}
+
+DGL_light_tank_generation_3 = {
+	description = DGL_light_tank_generation_3
+	equipment_type = {
+		light_tank_chassis_3
+		light_tank_aa_chassis_3
+		light_tank_artillery_chassis_3
+		light_tank_destroyer_chassis_3
+		light_tank_amphibious_chassis_3
+		light_tank_flame_chassis_3
+	}
+}
+
+DGL_medium_tank_generation_1 = {
+	description = DGL_medium_tank_generation_1
+	equipment_type = {
+		medium_tank_chassis_1
+		medium_tank_aa_chassis_1
+		medium_tank_artillery_chassis_1
+		medium_tank_destroyer_chassis_1
+		medium_tank_amphibious_chassis_1
+		medium_tank_flame_chassis_1
+	}
+}
+
+DGL_medium_tank_generation_2 = {
+	description = DGL_medium_tank_generation_2
+	equipment_type = {
+		medium_tank_chassis_2
+		medium_tank_aa_chassis_2
+		medium_tank_artillery_chassis_2
+		medium_tank_destroyer_chassis_2
+		medium_tank_amphibious_chassis_2
+		medium_tank_flame_chassis_2
+	}
+}
+
+DGL_medium_tank_generation_3 = {
+	description = DGL_medium_tank_generation_3
+	equipment_type = {
+		medium_tank_chassis_3
+		medium_tank_aa_chassis_3
+		medium_tank_artillery_chassis_3
+		medium_tank_destroyer_chassis_3
+		medium_tank_amphibious_chassis_3
+		medium_tank_flame_chassis_3
+	}
+}
+
+DGL_heavy_tank_generation_1 = {
+	description = DGL_heavy_tank_generation_1
+	equipment_type = {
+		heavy_tank_chassis_1
+		heavy_tank_aa_chassis_1
+		heavy_tank_artillery_chassis_1
+		heavy_tank_destroyer_chassis_1
+		heavy_tank_amphibious_chassis_1
+		heavy_tank_flame_chassis_1
+	}
+}
+
+DGL_heavy_tank_generation_2 = {
+	description = DGL_heavy_tank_generation_2
+	equipment_type = {
+		heavy_tank_chassis_2
+		heavy_tank_aa_chassis_2
+		heavy_tank_artillery_chassis_2
+		heavy_tank_destroyer_chassis_2
+		heavy_tank_amphibious_chassis_2
+		heavy_tank_flame_chassis_2
+	}
+}
+
+DGL_heavy_tank_generation_3 = {
+	description = DGL_heavy_tank_generation_3
+	equipment_type = {
+		heavy_tank_chassis_3
+		heavy_tank_aa_chassis_3
+		heavy_tank_artillery_chassis_3
+		heavy_tank_destroyer_chassis_3
+		heavy_tank_amphibious_chassis_3
+		heavy_tank_flame_chassis_3
+	}
+}
+
+DGL_modern_tank_generation_1 = {
+	description = DGL_modern_tank_generation_1
+	equipment_type = {
+		modern_tank_chassis_1
+		modern_tank_aa_chassis_1
+		modern_tank_artillery_chassis_1
+		modern_tank_destroyer_chassis_1
+	}
+}

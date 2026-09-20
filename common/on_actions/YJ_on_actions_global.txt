@@ -78,9 +78,54 @@ on_actions = {
 		}
 	}
 
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = {
+					OR = {
+						tag = USA
+						tag = ENG
+						tag = SOV
+						tag = PRC
+						tag = CHI
+						tag = RAJ
+						tag = PHI
+						tag = CAN
+						tag = MEX
+						tag = BRA
+						tag = AST
+					}
+				}
+				set_country_flag = YJ_allie
+			}
+
+			every_country = {
+				limit = {
+					OR = {
+						tag = FRA
+						tag = GER
+						tag = ITA
+						tag = HUN
+						tag = JAP
+						tag = TUR
+						tag = BEL
+						tag = CZE
+						tag = SWI
+						tag = AUS
+						tag = FIN
+						tag = SIA
+						tag = KOR
+					}
+				}
+				set_country_flag = YJ_axis
+			}
+		}
+	}
+
 	on_daily = {
 		effect = {
 			every_country = {
+				DGL_update_army_cap = yes
 				if = {
 					limit = {
 						has_country_flag = YJ_controller
