@@ -2969,6 +2969,26 @@ focus_tree = {
 					}
 				}
 			}
+			158 = {
+				add_resource = {
+					type = tungsten
+					amount = 12
+				}
+				add_resource = {
+					type = aluminium
+					amount = 12
+				}
+			}
+			159 = {
+				add_resource = {
+					type = steel
+					amount = 12
+				}
+				add_resource = {
+					type = coal
+					amount = 12
+				}
+			}
 		}
 	}
 
@@ -3151,13 +3171,33 @@ focus_tree = {
 
 			if = {
 				limit = {
-					has_full_control_of_state = 162
+					has_full_control_of_state = 117
 				}
-				162 = {
+				117 = {
 					add_resource = {
 						type = steel
 						amount = 12
 					}
+				}
+			}
+			156 = {
+				add_resource = {
+					type = steel
+					amount = 12
+				}
+				add_resource = {
+					type = aluminium
+					amount = 12
+				}
+			}
+			849 = {
+				add_resource = {
+					type = steel
+					amount = 12
+				}
+				add_resource = {
+					type = coal
+					amount = 12
 				}
 			}
 		}
@@ -3348,6 +3388,25 @@ focus_tree = {
 				uses = 5
 				category = excavation_tech
 			}
+			115 = {
+				add_resource = {
+					type = bread
+					amount = 6
+				}
+			}
+			117 = {
+				add_resource = {
+					type = bread
+					amount = 6
+				}
+			}
+			156 = {
+				add_resource = {
+					type = bread
+					amount = 6
+				}
+			}
+
 			add_timed_idea = { idea = ITA_foggia_farm_fields years = 1 }
 		}
 	}
