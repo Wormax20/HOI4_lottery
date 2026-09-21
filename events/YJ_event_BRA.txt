@@ -240,6 +240,12 @@ country_event = {
 		694 = { add_core_of = ROOT }
 		transfer_state = 308
 		308 = { add_core_of = ROOT }
+		121 = {
+			add_resource = {
+				type = aluminium
+				amount = 48
+			}
+		}
 		ai_chance = {
 			factor = 100
 		}
