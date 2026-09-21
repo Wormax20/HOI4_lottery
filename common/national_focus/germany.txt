@@ -4183,6 +4183,13 @@ focus_tree = {
 				category = land_doctrine
 			}
 
+			add_tech_bonus = {
+				name = armor
+				bonus = 1
+				uses = 1
+				category = armor
+			}
+
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			show_unit_leaders_tooltip = GER_heinz_guderian
@@ -4429,6 +4436,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = GER_expand_kummersdorfs_capacity
+				ahead_reduction = 1
 				bonus = 1
 				uses = 1
 				category = cat_medium_armor
@@ -4570,6 +4578,12 @@ focus_tree = {
 			add_to_variable = { 
 				GER_military_coordination_bonus = 0.05
 				tooltip = coordination_bonus_tt
+			}
+			add_tech_bonus = {
+				name = armor
+				bonus = 1
+				uses = 2
+				category = armor
 			}
 		}
 	}
