@@ -582,6 +582,7 @@ focus_tree = {
 		relative_position_id = KimKorea_focus_IChi
 		prerequisite = { 
 			focus = KimKorea_focus_IChi_3
+			focus = KimKorea_focus_IChi_4
 		}
 		completion_reward = { 
 			custom_effect_tooltip = KimKorea_Political_tt
@@ -616,6 +617,7 @@ focus_tree = {
 		}
 		relative_position_id = KimKorea_focus_IChi
 		prerequisite = { 
+			focus = KimKorea_focus_IChi_3
 			focus = KimKorea_focus_IChi_4
 		}
 		completion_reward = { 

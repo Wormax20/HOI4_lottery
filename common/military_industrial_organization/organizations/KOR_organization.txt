@@ -8,7 +8,7 @@
 KOR_henschel_KimKorea_organization = {
 	include = generic_infantry_tank_organization
 	icon = GFX_idea_henschel
-	name = 朝鲜-德国坦克制造商
+	#name = 朝鲜-德国坦克制造商
 
 	allowed = {	
 		original_tag = KOR
@@ -17,6 +17,12 @@ KOR_henschel_KimKorea_organization = {
 		always = yes
 	}
 	available = {
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = GER } }
+			}
+			FROM = { NOT = { has_war_with = GER } }
+		}
 		from = {
 			has_country_flag = KimKorea_west_organization
 		}
@@ -106,7 +112,7 @@ KOR_henschel_KimKorea_organization = {
 KOR_harland_wolff_KimKorea_organization = {
 	include = generic_task_force_ship_organization
 	icon = GFX_idea_harland_wolff
-	name = 朝鲜-英国船舰设计商
+	#name = 朝鲜-英国船舰设计商
 
 	allowed = {	
 		original_tag = KOR
@@ -115,6 +121,12 @@ KOR_harland_wolff_KimKorea_organization = {
 		always = yes
 	}
 	available = {
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = ENG } }
+			}
+			FROM = { NOT = { has_war_with = ENG } }
+		}
 		from = {
 			has_country_flag = KimKorea_west_organization
 		}
@@ -124,7 +136,7 @@ KOR_harland_wolff_KimKorea_organization = {
 KOR_ceska_zbrojovka_uhersky_brod_KimKorea_organization = {
 	include = CZE_automatic_weapons_equipment_organization
 	icon = GFX_idea_CZE_ceska_zbrojovka_uhersky_brod
-	name = 朝鲜-捷克混合生产商
+	#name = 朝鲜-捷克混合生产商
 
 	allowed = {	
 		original_tag = KOR
@@ -133,6 +145,12 @@ KOR_ceska_zbrojovka_uhersky_brod_KimKorea_organization = {
 		always = yes
 	}
 	available = {
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = CZE } }
+			}
+			FROM = { NOT = { has_war_with = CZE } }
+		}
 		from = {
 			has_country_flag = KimKorea_west_organization
 		}
@@ -201,7 +219,7 @@ KOR_ceska_zbrojovka_uhersky_brod_KimKorea_organization = {
 KOR_okmo_KimKorea_organization = {
 	include = generic_infantry_tank_organization
 	icon = GFX_idea_okmo
-	name = 朝鲜-苏维埃坦克设计商
+	#name = 朝鲜-苏维埃坦克设计商
 
 	allowed = {	
 		original_tag = KOR
@@ -210,6 +228,12 @@ KOR_okmo_KimKorea_organization = {
 		always = yes
 	}
 	available = {
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = SOV } }
+			}
+			FROM = { NOT = { has_war_with = SOV } }
+		}
 		from = {
 			has_country_flag = KimKorea_east_organization
 		}
@@ -219,7 +243,7 @@ KOR_okmo_KimKorea_organization = {
 KOR_mytishchy_machine_building_plant_KimKorea_organization = {
 	include = generic_tank_refurbishment_plant_organization
 	icon = GFX_idea_SOV_mytishchy_machine_building_plant
-	name = 朝鲜-苏维埃坦克生产商
+	#name = 朝鲜-苏维埃坦克生产商
 	
 	allowed = {	
 		original_tag = KOR
@@ -228,6 +252,12 @@ KOR_mytishchy_machine_building_plant_KimKorea_organization = {
 		always = yes
 	}
 	available = {
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = SOV } }
+			}
+			FROM = { NOT = { has_war_with = SOV } }
+		}
 		from = {
 			has_country_flag = KimKorea_east_organization
 		}
@@ -306,7 +336,7 @@ KOR_shenyang_aircraft_corporation_KimKorea_organization = {
 	include = generic_high_agility_fighter_aircraft_organization 
 	name = PRC_shenyang_aircraft_corporation_organization
  	icon = GFX_idea_PRC_shenyang_aircraft_corporation
-	name = 朝鲜-中共飞机合作商
+	#name = 朝鲜-中共飞机合作商
 
  	allowed = {	
 		original_tag = KOR
@@ -315,15 +345,82 @@ KOR_shenyang_aircraft_corporation_KimKorea_organization = {
 		always = yes
 	}
 	available = {
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = PRC } }
+			}
+			FROM = { NOT = { has_war_with = PRC } }
+		}
 		from = {
 			has_country_flag = KimKorea_east_organization
 		}
 	}
+
+	add_trait = {
+
+ 		token = PRC_shenyang_aircraft_corporation_factory_112_trait
+ 		name = PRC_shenyang_aircraft_corporation_factory_112_trait
+ 		icon = GFX_generic_mio_department_icon_facilities
+ 		
+ 		special_trait_background = yes 
+
+ 		relative_position_id = generic_mio_trait_fabric_skin
+
+ 		any_parent = {	generic_mio_trait_fabric_skin generic_mio_trait_metal_skin }
+
+
+ 		position = {
+ 			x = 1
+ 			y = 2
+ 		} 
+
+ 		limit_to_equipment_type = { 
+			
+		}
+
+ 		production_bonus = {
+ 			production_capacity_factor = 0.15
+ 		}
+ 	}
+
+ 	add_trait = {
+
+ 		token = PRC_shenyang_aircraft_corporation_domestic_jet_manufacturer_trait
+ 		name = PRC_shenyang_aircraft_corporation_domestic_jet_manufacturer_trait
+ 		icon = GFX_military_industrial_organization_jet_fighter_equipment
+ 		
+ 		special_trait_background = yes 
+
+ 		relative_position_id = generic_mio_trait_fabric_skin
+
+ 		all_parents = {
+ 			PRC_shenyang_aircraft_corporation_factory_112_trait
+ 			generic_mio_trait_fuel_injection_engines
+ 		}
+
+ 		position = {
+ 			x = 1
+ 			y = 4
+ 		} 
+
+ 		limit_to_equipment_type = { 
+			small_plane_airframe_4
+			cv_small_plane_airframe_4
+		}
+
+ 		equipment_bonus = {
+ 			air_agility = 0.15
+ 		}
+
+ 		production_bonus = {
+ 			production_capacity_factor = 0.1
+ 		}
+ 	}
 }
 KOR_crewe_works_KimKorea_organization = {
 	include = generic_train_organization
 	icon = GFX_idea_ENG_crewe
-	name = 中央火车厂
+	#name = 中央火车厂
 	
  	allowed = {	
 		original_tag = KOR

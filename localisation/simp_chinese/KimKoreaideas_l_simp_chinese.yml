@@ -58,3 +58,14 @@
  naval_supply_consumption_factor_tt: "$MODIFIER_NAVAL_SUPPLY_CONSUMPTION_FACTOR$：$RIGHT|Y=%1$"
  naval_speed_factor_tt: "$MODIFIER_NAVAL_SPEED_FACTOR$：$RIGHT|Y=%1$"
  navy_fuel_consumption_factor_tt: "$MODIFIER_NAVY_FUEL_CONSUMPTION_FACTOR$：$RIGHT|Y=%1$"
+
+ KimKorea_east_organization: "已完成国策：共产国际的支援"
+ KimKorea_west_organization: "已完成国策：窃取西方资本主义的技术"
+
+ KOR_henschel_KimKorea_organization: "朝鲜-德国坦克制造商"
+ KOR_harland_wolff_KimKorea_organization: "朝鲜-英国船舰设计商"
+ KOR_ceska_zbrojovka_uhersky_brod_KimKorea_organization: "朝鲜-捷克混合生产商"
+ KOR_okmo_KimKorea_organization: "朝鲜-苏维埃坦克设计商"
+ KOR_mytishchy_machine_building_plant_KimKorea_organization: "朝鲜-苏维埃坦克生产商"
+ KOR_shenyang_aircraft_corporation_KimKorea_organization: "朝鲜-中共飞机合作商"
+ KOR_crewe_works_KimKorea_organization: "中央火车厂"

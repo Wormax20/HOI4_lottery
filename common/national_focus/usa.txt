@@ -5807,17 +5807,32 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			mio:USA_detroit_arsenal_organization = {
+				add_mio_size = 6
+				add_mio_funds_gain_factor = 0.25
+				add_mio_research_bonus = 0.05
+			}
+			mio:USA_marmon_herrington_organization = {
+				add_mio_size = 6
+				add_mio_funds_gain_factor = 0.25
+				add_mio_research_bonus = 0.05
+			}
+			IF = {
+				limit = {
+					has_idea = YJ_USA_5_ideas
+				}
+				mio:ENG_vauxhall_organization = {
+					add_mio_size = 6
+					add_mio_funds_gain_factor = 0.25
+					add_mio_research_bonus = 0.05
+				}
+			}
 			IF = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
 				}	
 				custom_effect_tooltip = available_mio_tt
 				show_mio_tooltip = USA_detroit_arsenal_organization
-				mio:USA_detroit_arsenal_organization = {
-					add_mio_size = 6
-					add_mio_funds_gain_factor = 0.25
-					add_mio_research_bonus = 0.05
-				}
 			}
 			ELSE = {
 				custom_effect_tooltip = available_designer
