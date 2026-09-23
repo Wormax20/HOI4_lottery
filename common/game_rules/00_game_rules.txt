@@ -3436,3 +3436,21 @@ YJ_LEND_LEASE_RULE = {
 		desc = "YJ_LEND_LEASE_AFTER_GER_SOV_WAR_DESC"
 	}
 }
+
+YJ_FACTORY_BALANCE_RULE = {
+	name = "YJ_FACTORY_BALANCE_RULE"
+	group = "YJ_GAME_RULE_GROUP"
+	icon = "GFX_wargoals"
+
+	default = {
+		name = YJ_FACTORY_BALANCE_ON
+		text = YJ_FACTORY_BALANCE_ON
+		desc = YJ_FACTORY_BALANCE_ON_DESC
+	}
+
+	option = {
+		name = YJ_FACTORY_BALANCE_OFF
+		text = YJ_FACTORY_BALANCE_OFF
+		desc = YJ_FACTORY_BALANCE_OFF_DESC
+	}
+}

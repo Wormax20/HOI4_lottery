@@ -1227,15 +1227,13 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_wpa }
 		relative_position_id = USA_wpa
-		cost = 10
+		cost = 20
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-			congress_medium_support_trigger = yes
-			has_government = democratic
 		}
 		
 		bypass = {
@@ -1267,16 +1265,13 @@ focus_tree = {
 		y = 2
 		prerequisite = { focus = USA_agricultural_adjustment_act }
 		relative_position_id = USA_wpa
-		cost = 10
+		cost = 20
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-			congress_medium_support_trigger = yes
-			has_government = democratic
-			not = { has_country_flag = USA_great_depression_cooldown }
 		}
 		
 		bypass = {
@@ -1307,16 +1302,13 @@ focus_tree = {
 		y = 3
 		prerequisite = { focus = USA_fair_labour_standards_act }
 		relative_position_id = USA_wpa
-		cost = 10
+		cost = 20
 
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-			congress_medium_support_trigger = yes
-			has_government = democratic
-			not = { has_country_flag = USA_great_depression_cooldown }
 		}
 		
 		bypass = {

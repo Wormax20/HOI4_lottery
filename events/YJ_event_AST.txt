@@ -128,3 +128,45 @@ country_event = {
 		}
 	}
 }
+country_event = {
+    id = KoKi_YJ_AST_event.104
+    title = KoKi_YJ_AST_event.104.title
+    desc = KoKi_YJ_AST_event.104.desc
+
+    picture = GFX_report_event_china_ledo_road
+
+    is_triggered_only = yes
+
+    option = {
+        add_offsite_building = {
+            type = industrial_complex
+            level = 5
+        }
+        add_offsite_building = {
+            type = arms_factory
+            level = 3
+        }
+        add_offsite_building = {
+            type = dockyard
+            level = 2
+        }
+        add_tech_bonus = {
+            name = YJ_AST_5_ideas
+            bonus = 10
+            uses = 3
+            category = cat_mechanized_equipment
+        }
+        complete_national_focus = AST_united_states_as_our_keystone
+        complete_national_focus = AST_british_pacific_fleet
+        complete_national_focus = AST_an_uncle_for_father_figure
+        complete_national_focus = AST_bring_on_the_giant
+        name = KoKi_YJ_AST_event.104.a
+        add_ideas = YJ_AST_5_ideas
+		USA = {
+			add_ideas = YJ_AST_6_ideas
+		}
+        ai_chance = {
+            factor = 100
+        }
+    }
+}

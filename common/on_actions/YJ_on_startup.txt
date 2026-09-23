@@ -895,17 +895,6 @@ on_actions = {
 			if = {
 				limit = {
 					ROOT = { tag = GER }
-					FROM = { tag = ENG }
-				}
-				if = {
-					limit = { NOT = { has_global_flag = Altria_GER_WAR_ENG_Global_Flag } }
-					news_event = { id = KoKi_YJ_NEW.bfzc days = 115 }
-					set_global_flag = Altria_GER_WAR_ENG_Global_Flag
-				}
-			}
-			if = {
-				limit = {
-					ROOT = { tag = GER }
 					FROM = { tag = SOV }
 				}
 				if = {
