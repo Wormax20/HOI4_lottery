@@ -171,4 +171,9 @@ spriteTypes = {
 	    textureFile = "gfx/interface/ideas/empty.png"
     } 
 
+	spriteType = {
+	    name = "GFX_idea_mxj"  
+	    textureFile = "gfx/interface/ideas/mxj.png"
+    } 
+
 }

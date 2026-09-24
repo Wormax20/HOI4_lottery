@@ -2752,6 +2752,13 @@ focus_tree = {
 				category = cat_synth_oil
 			}
 
+			155 = {
+				add_resource = {
+					type = rubber
+					amount = 12
+				}
+			}
+
 			if = {
 				limit = {
 					2 = {
@@ -3197,6 +3204,34 @@ focus_tree = {
 				}
 				add_resource = {
 					type = coal
+					amount = 24
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ITA_focus_Aluminum_Corporation
+		icon = GFX_focus_generic_aluminum
+		cost = 5
+		x = 0
+		y = 1
+		available = {
+		}
+		relative_position_id = ITA_modernize_the_mezzogiorno
+		prerequisite = { 
+			focus = ITA_modernize_the_mezzogiorno
+		}
+		completion_reward = { 
+			159 = {
+				add_resource = {
+					type = aluminium
+					amount = 24
+				}
+			}
+			158 = {
+				add_resource = {
+					type = aluminium
 					amount = 24
 				}
 			}

@@ -213,6 +213,9 @@ YJ_SOV_7_ideas_tt: "§G每月给予苏联24个后备动员师，除非莫斯科�
 YJ_SOV_3_ideas_event_tt: "§Y[KoKi_SOV_IDEAS]§!追加效果:"
 
 
+SOV_change_limited_exports: "限制国际贸易"
+
+
 SOV_planned_economy_subjects_tt: "所有阵营成员:"
 SOV_planned_economy_dynamic_modifier_tt: "\n添加§Y$SOV_planned_economy_dynamic_modifier$§!，其效果为（工厂产出: §G+[?SOV_planned_economy_industrial_capacity_factory_extra|2+%]§!，缺乏战略资源惩罚: §G[?SOV_planned_economy_production_lack_of_resource_penalty_factor_extra|2-%]§!）\n每有一个阵营成员采用§Y$new_economic_policy$§!，就额外获得: \n工厂产出: §G+[?SOV_planned_economy_industrial_capacity_factory_extra|2+%]§!\n缺乏战略资源惩罚: §G[?SOV_planned_economy_production_lack_of_resource_penalty_factor_extra|2-%]§!\n（额外加成上限为: 工厂产出: §Y+10.00%§!，缺乏战略资源惩罚: §Y-10.00%§!）\n\n"
 
@@ -285,6 +288,7 @@ YJ_ITA_in_the_skies1_ideas: "集合意大利空军"
 ITA_new_industrialization_program_1: "增加建设预算"
 ITA_new_industrialization_program_2: "投资工厂建设"
 ITA_supremacy_in_the_skies1: "集合意大利空军"
+ITA_focus_Aluminum_Corporation: "意大利铝业公司"
 
 
 

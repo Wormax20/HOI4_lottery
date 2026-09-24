@@ -1108,6 +1108,7 @@ ideas = {
 			}
 			modifier = {
 				political_power_gain = 0.10
+				command_power_gain = 0.25
 				drift_defence_factor = 0.2
 				ai_badass_factor = 0.03
 				ai_desired_divisions_factor = 0.5 

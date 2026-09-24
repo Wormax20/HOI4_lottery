@@ -160,7 +160,7 @@ on_actions = {
 				ENG = {
 					add_offsite_building = {
 						type = industrial_complex
-						level = 5
+						level = 10
 					}
 				}
 			}
@@ -232,7 +232,7 @@ on_actions = {
 				CAN = {
 					add_offsite_building = {
 						type = industrial_complex
-						level = 15
+						level = 20
 					}
 					add_offsite_building = {
 						type = arms_factory
@@ -251,7 +251,7 @@ on_actions = {
 				AST = {
 					add_offsite_building = {
 						type = industrial_complex
-						level = 5
+						level = 10
 					}
 					add_offsite_building = {
 						type = arms_factory
@@ -382,13 +382,13 @@ on_actions = {
 			CAN = {
 				add_offsite_building = {
 					type = industrial_complex
-					level = 10
+					level = 5
 				}
 			}
 			AST = {
 				add_offsite_building = {
 					type = industrial_complex
-					level = 10
+					level = 5
 				}
 			}
 			every_state = {

@@ -2087,6 +2087,35 @@ country_event = {
 			planning_skill = 5
 			logistics_skill = 4
 		}
+		hidden_effect = {
+			meta_effect = {
+				text = {
+					generate_character = {
+						token_base = MXJ
+						name="Moxiaoju"
+						portraits = {
+							civilian = {
+								small="GFX_idea_mxj"
+							}
+						}
+						allowed_civil_war = {
+							is_ai = no
+						}
+						advisor={
+							cost = 150
+							slot = political_advisor
+							idea_token = MXJ
+							traits = {
+								mxj_traits
+							}
+							ai_will_do = {
+								base = 1
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
