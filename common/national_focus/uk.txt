@@ -301,7 +301,7 @@ focus_tree = {
 				category = armor
 			}
 			mio:ENG_vauxhall_organization = {
-				add_mio_size = 2
+				add_mio_size = 6
 				add_mio_funds_gain_factor = 0.25
 				add_mio_research_bonus = 0.05
 			}
@@ -2028,6 +2028,35 @@ focus_tree = {
 			add_offsite_building = {
             	type = dockyard
             	level = 5
+        	}
+		}
+	}
+
+	focus = {
+		id = ENG_expand_dockyard
+		prerequisite = { 
+			focus = ENG_a_s_warfare
+			focus = ENG_expand_the_repair_yards 
+		}
+		icon = GFX_goal_generic_production
+		x = -2
+		y = 2
+		relative_position_id = uk_battleship_focus
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+		}
+
+		completion_reward = {
+			add_offsite_building = {
+            	type = dockyard
+            	level = 10
         	}
 		}
 	}

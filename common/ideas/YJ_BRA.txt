@@ -48,7 +48,7 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.10
 				industrial_capacity_factory = 0.1
-				command_power_gain = 0.5
+				command_power_gain = 1
 				max_command_power = 100
 			}
 		}

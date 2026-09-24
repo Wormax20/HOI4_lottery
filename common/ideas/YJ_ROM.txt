@@ -31,7 +31,7 @@ ideas = {
 				research_speed_factor = 0.15
 				command_power_gain = 1
 				max_command_power = 200
-				railway_gun_bombardment_factor = 0.20
+				railway_gun_bombardment_factor = 0.25
 			}
 			equipment_bonus = {
 				train_equipment_1 = {

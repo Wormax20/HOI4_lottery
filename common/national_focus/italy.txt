@@ -1633,7 +1633,7 @@ focus_tree = {
 		completion_reward = {
 			add_resource = {
 				type = oil
-				amount = 8
+				amount = 80
 				state = 662
 			}	
 
@@ -2972,21 +2972,21 @@ focus_tree = {
 			158 = {
 				add_resource = {
 					type = tungsten
-					amount = 12
+					amount = 24
 				}
 				add_resource = {
 					type = aluminium
-					amount = 12
+					amount = 24
 				}
 			}
 			159 = {
 				add_resource = {
 					type = steel
-					amount = 12
+					amount = 24
 				}
 				add_resource = {
 					type = coal
-					amount = 12
+					amount = 24
 				}
 			}
 		}
@@ -3183,21 +3183,21 @@ focus_tree = {
 			156 = {
 				add_resource = {
 					type = steel
-					amount = 12
+					amount = 24
 				}
 				add_resource = {
 					type = aluminium
-					amount = 12
+					amount = 24
 				}
 			}
 			849 = {
 				add_resource = {
 					type = steel
-					amount = 12
+					amount = 24
 				}
 				add_resource = {
 					type = coal
-					amount = 12
+					amount = 24
 				}
 			}
 		}
@@ -3391,19 +3391,19 @@ focus_tree = {
 			115 = {
 				add_resource = {
 					type = bread
-					amount = 6
+					amount = 12
 				}
 			}
 			117 = {
 				add_resource = {
 					type = bread
-					amount = 6
+					amount = 12
 				}
 			}
 			156 = {
 				add_resource = {
 					type = bread
-					amount = 6
+					amount = 12
 				}
 			}
 
@@ -4406,6 +4406,11 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
+			mio:ITA_fiat_organization = {
+				add_mio_size = 6
+				add_mio_funds_gain_factor = 0.25
+				add_mio_research_bonus = 0.05
+			}
 			custom_effect_tooltip = ITA_italian_tankettes_military_industry_tt
 			hidden_effect = {
 				add_ideas = ITA_hidden_tankettes_ns
@@ -15648,7 +15653,6 @@ focus_tree = {
 
 		available = {
 			NOT = { has_war_with = GER }
-			is_in_faction = no
 			GER = {
 				is_faction_leader = yes
 				is_subject = no
@@ -15669,6 +15673,12 @@ focus_tree = {
 			add_timed_idea = {
 				idea = ITA_pact_of_steel
 				days = 365
+			}
+			GER = {
+				add_timed_idea = {
+					idea = ITA_pact_of_steel
+					days = 365
+				}
 			}
 
 			custom_effect_tooltip = remove_political_advisor

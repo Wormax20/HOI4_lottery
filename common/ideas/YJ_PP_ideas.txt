@@ -75,7 +75,7 @@ ideas = {
 					hard_attack = 0.1
 					breakthrough = 0.1
 					reliability = 0.1
-					build_cost_ic = 0.20
+					build_cost_ic = 0.25
 					instant = yes
 				}
 				small_plane_airframe = {

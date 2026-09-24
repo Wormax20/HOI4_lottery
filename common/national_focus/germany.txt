@@ -688,7 +688,24 @@ focus_tree = {
 				GER_industrial_consumer_goods_factor = -0.1
 				tooltip = consumer_goods_factor_tt
 			}
-
+			66 = {
+				add_resource = {
+					type = bread
+					amount = 18
+				}
+			}
+			67 = {
+				add_resource = {
+					type = bread
+					amount = 18
+				}
+			}
+			65 = {
+				add_resource = {
+					type = bread
+					amount = 18
+				}
+			}
 		}
 	}
 
