@@ -143,7 +143,7 @@ ITA_fiat_organization = {
 			hard_attack = 0.1
 			soft_attack = 0.1
 			breakthrough = 0.1
-			reliability = 0.1
+			reliability = 0.20
 			build_cost_ic = -0.10
 		}
 

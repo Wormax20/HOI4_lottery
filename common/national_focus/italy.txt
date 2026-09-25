@@ -2752,7 +2752,7 @@ focus_tree = {
 				category = cat_synth_oil
 			}
 
-			155 = {
+			115 = {
 				add_resource = {
 					type = rubber
 					amount = 12
@@ -3340,6 +3340,35 @@ focus_tree = {
 			add_offsite_building = {
 				type = arms_factory
 				level = 10
+			}
+		}
+	}
+
+	focus = {
+		id = ITA_focus_Steel_Industry
+		icon = GFX_focus_generic_steel
+		cost = 5
+		x = 4
+		y = 1
+		available = {
+		}
+		relative_position_id = ITA_modernize_the_mezzogiorno
+		prerequisite = { 
+			focus = ITA_redirect_alfa_romeo_production
+		}
+
+		completion_reward = { 
+			159 = {
+				add_resource = {
+					type = steel
+					amount = 24
+				}
+			}
+			161 = {
+				add_resource = {
+					type = steel
+					amount = 24
+				}
 			}
 		}
 	}
