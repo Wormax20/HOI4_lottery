@@ -1001,19 +1001,81 @@ focus_tree = {
 	}
 
 	focus = {
+		id = SOV_Precious_metals_production
+
+		icon = GFX_focus_generic_chromium
+
+		prerequisite = { 
+			focus = SOV_synthetic_rubber 
+		}
+		prerequisite = { 
+			focus = SOV_oil_production 
+		}
+
+		x = 0
+		y = 2
+
+		relative_position_id = SOV_steel_casting_industry
+		cost = 5
+
+		available = {
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = YJ_ITA_foggia_farm
+				bonus = 1
+				uses = 2
+				category = excavation_tech
+			}
+			651 = {
+				add_resource = {
+					type = chromium
+					amount = 12
+				}
+			}
+			580 = {
+				add_resource = {
+					type = chromium
+					amount = 12
+				}
+			}
+			402 = {
+				add_resource = {
+					type = chromium
+					amount = 12
+				}
+			}
+			400 = {
+				add_resource = {
+					type = chromium
+					amount = 12
+				}
+			}
+		}
+	}
+
+
+	focus = {
 		id = SOV_restoration_and_development
 
 		icon = GFX_SOV_restoration_and_development_ccp_2d_sov_compatibility
-		prerequisite = { focus = SOV_industrial_modernization focus = SOV_optimize_production_lines }
+		prerequisite = { 
+			focus = SOV_industrial_modernization 
+		}
+		prerequisite = { 
+			focus = SOV_optimize_production_lines 
+		}
+		prerequisite = { 
+			focus = SOV_Precious_metals_production 
+		}
+
 		x = 2
 		y = 1
 		relative_position_id = SOV_industrial_modernization
 		cost = 5
 
-		cancel_if_invalid = no
-
 		available = {
-			SOV_fourth_five_year_plan_available = yes
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_PROPAGANDA}

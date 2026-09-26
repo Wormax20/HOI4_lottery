@@ -2502,10 +2502,6 @@ focus_tree = {
 			set_temp_variable = { FRA_rw_support = party_popularity@fascism }
 			add_to_temp_variable = { FRA_rw_support = party_popularity@neutrality }
 			multiply_temp_variable = { FRA_rw_support = 0.5 }
-			start_civil_war = {
-				size = FRA_rw_support
-				ideology = fascism
-			}
 		}
 	}
 

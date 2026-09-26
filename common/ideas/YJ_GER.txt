@@ -118,6 +118,9 @@ ideas = {
 				scientist_breakthrough_bonus_factor = 0.2
 				scientist_research_bonus_factor = 0.1
 				scientist_xp_gain_factor = 0.25
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
 				custom_modifier_tooltip = YJ_GER_4_ideas_tt
 			}
 		}

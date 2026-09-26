@@ -1129,6 +1129,30 @@ KoKi_YJ_decisions_categories = {
 			base = 0
 		}
 	}
+	KoKi_YJ_SOV_decisions_02 = {
+		icon = GFX_decision_generic_form_nation
+		allowed = {
+			original_tag = SOV
+		}
+		available = {
+			original_tag = SOV
+			875 = {
+				is_capital = no
+				is_fully_controlled_by = SOV
+			}
+		}
+		visible = {
+			original_tag = SOV
+		}
+		complete_effect = {
+			set_capital = {
+				state = 875
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
 	KoKi_YJ_PRC_decisions_01 = {
 		icon = GFX_decision_generic_form_nation
 		allowed = {

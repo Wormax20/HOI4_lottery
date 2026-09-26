@@ -214,6 +214,9 @@ YJ_SOV_3_ideas_event_tt: "§Y[KoKi_SOV_IDEAS]§!追加效果:"
 
 
 SOV_change_limited_exports: "限制国际贸易"
+SOV_change_limited_exports_desc: "限制国际贸易"
+SOV_Precious_metals_production: "苏维埃贵金属工业"
+SOV_Precious_metals_production_desc: "苏维埃贵金属工业"
 
 
 SOV_planned_economy_subjects_tt: "所有阵营成员:"
@@ -555,6 +558,11 @@ YJ_MEX_4_ideas: "美墨特种技术特派团"
 
 MEX_integrate_state_decisions_categories: "整合南美"
 MEX_integrate_state: "整合[FROM.GetName]"
+
+MEX_focus_Steel_Industry: "墨西哥钢铁工业"
+MEX_focus_Steel_Industry_desc: "墨西哥钢铁工业"
+MEX_focus_Expand_iron_production: "扩大铁产量"
+MEX_focus_Expand_iron_production_desc: "扩大铁产量"
 
 
 

@@ -375,7 +375,10 @@ GER_YJ_scripted_effects = {
 		}
 		20 = {
 			modifier = {
-				has_idea = YJ_GER_4_ideas
+				OR = {
+					has_idea = YJ_GER_4_ideas
+					date > 1937.1.1
+				}
 				factor = 0
 			}
 			country_event = KoKi_YJ_GER_event.104

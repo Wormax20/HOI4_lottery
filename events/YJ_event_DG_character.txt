@@ -679,8 +679,8 @@ country_event = {
 							is_ai = no
 						}
 						advisor={
-							cost = 100
-							slot = navy_chief
+							cost = 150
+							slot = theorist
 							idea_token = CUF
 							traits = {
 								CUF_traits
