@@ -1287,7 +1287,6 @@ ideas = {
 			picture = generic_fascism_drift_2
 				
 			allowed = {
-				original_tag = ITA
 			}
 
 			allowed_civil_war = {
@@ -1295,7 +1294,6 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = ITA_pact_of_steel
 			}
 
 			modifier = {

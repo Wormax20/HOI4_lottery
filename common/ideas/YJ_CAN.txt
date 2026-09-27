@@ -21,9 +21,9 @@ ideas = {
 				stability_weekly = 0.005
 				war_support_weekly = 0.005
 				consumer_goods_factor = -0.20
-				consumer_goods_expected_value = -0.20
-				local_resources_factor = 0.30
-				min_export = -0.1
+				consumer_goods_expected_value = -0.10
+				local_resources_factor = 0.20
+				min_export = -0.20
 			}
 		}
 
@@ -43,14 +43,18 @@ ideas = {
 
 			modifier = {
 				custom_modifier_tooltip = YJ_CAN_2_ideas_tt
-				political_power_factor = 0.15
-				production_factory_max_efficiency_factor = 0.10
-				industrial_capacity_factory = 0.10
-				land_night_attack = 0.05
+				political_power_factor = 0.10
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+				land_night_attack = 0.1
 				max_planning = 0.1
-
+				special_forces_min = 480
 			}
 			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
 				amphibious_mechanized_equipment = {
 					build_cost_ic = -0.15
 					instant = yes
@@ -78,7 +82,7 @@ ideas = {
 
 			modifier = {
 				custom_modifier_tooltip = YJ_CAN_3_ideas_tt
-				political_power_factor = 0.15
+				political_power_factor = 0.10
 				air_superiority_efficiency = 0.20
 				air_range_factor = 0.15
 				air_agility_factor = 0.1
@@ -87,7 +91,7 @@ ideas = {
 			equipment_bonus = {
 				medium_plane_fighter_airframe = {
 					instant = yes
-					build_cost_ic = -0.15
+					build_cost_ic = -0.25
 				}
 			}
 		}
@@ -107,9 +111,10 @@ ideas = {
 			picture = generic_local_self_management
 
 			modifier = {
-				production_factory_efficiency_gain_factor = 0.20
-				industrial_capacity_factory = 0.10
+				production_factory_efficiency_gain_factor = 0.10
 				production_factory_max_efficiency_factor = 0.10
+				production_factory_start_efficiency_factor = 0.10
+				industrial_capacity_factory = 0.10
 			}
 			equipment_bonus = {
 				armor = {
