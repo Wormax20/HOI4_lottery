@@ -2550,12 +2550,12 @@ MEX_state_YJ_scripted_effects = {
 
 KoKi_YJ_ITA_event_1_scripted_effects = {
 	random_list = {
-		
 		50 = {
 			set_variable = { KoKi_YJ_ITA_event_1_industrial_capacity_factory = 0 }
 			set_variable = { KoKi_YJ_ITA_event_1_industrial_capacity_dockyard = 0 }
 			set_variable = { KoKi_YJ_ITA_event_1_production_factory_max_efficiency_factor = 0 }
 			set_variable = { KoKi_YJ_ITA_event_1_production_factory_efficiency_gain_factor = 0 }
+			set_variable = { KoKi_YJ_ITA_event_1_production_speed_buildings_factor = 0 }
 			set_variable = { KoKi_YJ_ITA_event_1_production_lack_of_resource_penalty_factor = 0 }
 
 			set_variable = { KoKi_YJ_ITA_event_1_army_attack_factor = 0.1 }
@@ -2573,6 +2573,7 @@ KoKi_YJ_ITA_event_1_scripted_effects = {
 			set_variable = { KoKi_YJ_ITA_event_1_industrial_capacity_dockyard = 0.1 }
 			set_variable = { KoKi_YJ_ITA_event_1_production_factory_max_efficiency_factor = 0.1 }
 			set_variable = { KoKi_YJ_ITA_event_1_production_factory_efficiency_gain_factor = 0.1 }
+			set_variable = { KoKi_YJ_ITA_event_1_production_speed_buildings_factor = 0.1 }
 			set_variable = { KoKi_YJ_ITA_event_1_production_lack_of_resource_penalty_factor = -0.3 }
 
 			set_variable = { KoKi_YJ_ITA_event_1_army_attack_factor = 0 }

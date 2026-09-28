@@ -1,14 +1,3 @@
-#####################
-
-###  ##  #  # # #  ## 
- #  #  # ## # # # #   
- #  #### # ## ##   #  
- #  #  # #  # # #   # 
- #  #  # #  # # # ## 
-
- #################### 
-
-
 ITA_fiat_organization = {
 	include = generic_tank_organization
 	icon = GFX_idea_fiat

@@ -227,6 +227,21 @@ on_actions = {
 			}
 			if = {
 				limit = {
+					SIA = { is_ai = no }
+				}
+				SIA = {
+					add_offsite_building = {
+						type = industrial_complex
+						level = 15
+					}
+					add_offsite_building = {
+						type = arms_factory
+						level = 5
+					}
+				}
+			}
+			if = {
+				limit = {
 					CAN = { is_ai = no }
 				}
 				CAN = {
@@ -319,16 +334,6 @@ on_actions = {
 				}
 				add_dynamic_modifier = {
 					modifier = YJ_ENG_ideas
-				}
-			}
-			SIA = {
-				add_offsite_building = {
-					type = industrial_complex
-					level = 15
-				}
-				add_offsite_building = {
-					type = arms_factory
-					level = 5
 				}
 			}
 			MEX = {
@@ -856,13 +861,6 @@ on_actions = {
 
 	on_war = {
 		effect = {
-			if = {
-				limit = {
-					original_tag = SOV
-					has_war_with = GER
-			    }
-				set_global_flag = YJ_SOV_defence
-			}
 			if = {
 				limit = {
 					original_tag = USA

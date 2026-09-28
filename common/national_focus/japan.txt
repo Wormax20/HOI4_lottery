@@ -1,5 +1,3 @@
-
-
 focus_tree = {
 
 	id = japan_wtt_focus
@@ -22930,16 +22928,19 @@ focus_tree = {
 		}
 
 		bypass = {
-			613 = {
-				OR = {
-					is_owned_by = ROOT
-					OWNER = {
-						is_ally_with = ROOT
-					}
-					OWNER = {
-						has_war_with = ROOT
+			OR = {
+				613 = {
+					OR = {
+						is_owned_by = ROOT
+						OWNER = {
+							is_ally_with = ROOT
+						}
+						OWNER = {
+							has_war_with = ROOT
+						}
 					}
 				}
+				CHI = { is_ai = no }
 			}
 		}
 

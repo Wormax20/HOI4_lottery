@@ -988,7 +988,7 @@ KoKi_YJ_decisions_categories = {
 			is_in_faction_with = ROOT
 		}
 	}
-	cost = 100
+	cost = 150
 	days_remove = 0
 	days_re_enable = 0
 	modifier = {
@@ -999,7 +999,7 @@ KoKi_YJ_decisions_categories = {
 				limit = { NOT = { has_idea = YJ_ROM_03_ideas } }
 				add_timed_idea = {
 					idea = YJ_ROM_03_ideas
-					days = 60
+					days = 90
 				}
 			}
 		}
@@ -1079,7 +1079,7 @@ KoKi_YJ_decisions_categories = {
 				is_in_faction_with = ROOT
 			}
 		}
-		cost = 100
+		cost = 150
 		days_remove = 0
 		days_re_enable = 0
 		modifier = {
@@ -1090,7 +1090,7 @@ KoKi_YJ_decisions_categories = {
 					limit = { NOT = { has_idea = YJ_ROM_04_ideas } }
 					add_timed_idea = {
 						idea = YJ_ROM_04_ideas
-						days = 60
+						days = 90
 					}
 				}
 			}
@@ -1272,6 +1272,56 @@ KoKi_YJ_decisions_categories = {
 				transfer_state = 699
 				transfer_state = 297
 			}
+		}
+	}
+
+	FRA_NPL_Back = {
+		icon = GFX_decision_generic_prepare_for_war
+
+		allowed = {
+			original_tag = FRA
+		}
+
+		visible = {
+			has_idea = YJ_FRA_1_ideas
+		}
+
+		available = {
+			has_idea = YJ_FRA_1_ideas
+		}
+
+		fire_only_once = yes
+
+		cost = 0
+		days_remove = 0
+
+		complete_effect = {
+			country_event = KoKi_YJ_FRA_event.NPL
+		}
+	}
+
+	FRA_ZD_FlyIn = {
+		icon = GFX_decision_generic_prepare_for_war
+
+		allowed = {
+			original_tag = FRA
+		}
+
+		visible = {
+			has_idea = YJ_FRA_2_ideas
+		}
+
+		available = {
+			has_idea = YJ_FRA_2_ideas
+		}
+
+		fire_only_once = yes
+
+		cost = 0
+		days_remove = 0
+
+		complete_effect = {
+			country_event = KoKi_YJ_FRA_event.zd
 		}
 	}
 }

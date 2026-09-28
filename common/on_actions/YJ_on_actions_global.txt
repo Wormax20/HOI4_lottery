@@ -52,6 +52,7 @@ on_actions = {
 							tag = KOR
 							tag = SIA
 							tag = AST
+							tag = ROM
 						}
 					}
 					set_variable = {
@@ -82,6 +83,7 @@ on_actions = {
 		effect = {
 			every_country = {
 				limit = {
+					is_ai = no
 					OR = {
 						tag = USA
 						tag = ENG
@@ -94,6 +96,7 @@ on_actions = {
 						tag = MEX
 						tag = BRA
 						tag = AST
+						tag = KOR
 					}
 				}
 				set_country_flag = YJ_allie
@@ -101,6 +104,7 @@ on_actions = {
 
 			every_country = {
 				limit = {
+					is_ai = no
 					OR = {
 						tag = FRA
 						tag = GER
@@ -114,7 +118,7 @@ on_actions = {
 						tag = AUS
 						tag = FIN
 						tag = SIA
-						tag = KOR
+						tag = ROM
 					}
 				}
 				set_country_flag = YJ_axis

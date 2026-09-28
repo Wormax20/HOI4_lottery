@@ -346,6 +346,9 @@ KoKi_YJ_FRA_event.zd.a: "好"
 decision_cost_CP_100: "£command_power §Y100§!"
 decision_cost_CP_100_blocked: "£command_power §R100§!"
 
+FRA_NPL_Back: "皇帝归来"
+FRA_ZD_FlyIn: "圣女降临"
+
 
 
 

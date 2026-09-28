@@ -178,11 +178,11 @@ leader_traits = {
 			}
 			mio_cat_eq_all_medium_tank = {
 				instant = yes
-				build_cost_ic = 0.1
+				build_cost_ic = 0.2
 			}
 			mio_cat_eq_all_heavy_tank = {
 				instant = yes
-				build_cost_ic = 0.1
+				build_cost_ic = 0.2
 			}
 		}
 	}

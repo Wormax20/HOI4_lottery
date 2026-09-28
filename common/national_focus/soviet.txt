@@ -6802,10 +6802,6 @@ focus_tree = {
 		}
 
 		available = {
-			any_enemy_country = {
-				SOV_is_major_not_original_sov = yes
-			}
-			surrender_progress < 0.05
 		}
 		
 		search_filters = {FOCUS_FILTER_ARMY_XP}
@@ -6828,6 +6824,27 @@ focus_tree = {
 			add_breakthrough_progress = {
 				specialization = specialization_land
 				value = 0.25
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_Moscow_defender
+		icon = GFX_focus_SWE_the_beast_stirs
+		cost = 10
+		x = 0
+		y = 1
+		available = {
+			has_war_with = GER
+		}
+		relative_position_id = SOV_the_glory_of_the_red_army
+		prerequisite = { 
+			focus = SOV_the_glory_of_the_red_army
+		}
+		completion_reward = { 
+			news_event = {
+				id = KoKi_YJ_NEW.1
+				days = 0
 			}
 		}
 	}

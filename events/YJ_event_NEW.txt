@@ -7,23 +7,10 @@ news_event = {
 
 	picture = GFX_news_event_moscow_defender
 
-	major = yes
+	is_triggered_only = yes
 
 	immediate = {
 		set_global_flag = KoKi_YJ_RED_NEW_1_flag
-	}
-
-	mean_time_to_happen = {
-		days = 2
-	}
-
-	trigger = {
-		SOV = { has_war_with = GER }
-		has_global_flag = {
-			flag = YJ_SOV_defence
-			days > 30
-		}
-		NOT = { has_global_flag = KoKi_YJ_RED_NEW_1_flag }
 	}
 
 	option = {
@@ -67,28 +54,28 @@ news_event = {
 			create_unit = {
 				division = "division_template = \"后备动员\" start_experience_factor = 0.2 start_equipment_factor = 1.0"
 				owner = PREV
-				count = 144
+				count = 72
 			}
 		}
 		217 = {
 			create_unit = {
 				division = "division_template = \"后备动员\" start_experience_factor = 0.2 start_equipment_factor = 1.0"
 				owner = PREV
-				count = 72
+				count = 36
 			}
 		}
 		252 = {
 			create_unit = {
 				division = "division_template = \"后备动员\" start_experience_factor = 0.2 start_equipment_factor = 1.0"
 				owner = PREV
-				count = 72
+				count = 36
 			}
 		}
 		249 = {
 			create_unit = {
 				division = "division_template = \"后备动员\" start_experience_factor = 0.2 start_equipment_factor = 1.0"
 				owner = PREV
-				count = 72
+				count = 36
 			}
 		}
 		trigger = {
@@ -314,5 +301,36 @@ news_event = {
 		trigger = {
             is_in_faction_with = SOV
     	}
+	}
+}
+
+news_event = {
+	id = KoKi_YJ_NEW.uksq
+	title = KoKi_YJ_NEW.uksq.title
+	desc = KoKi_YJ_NEW.uksq.desc
+
+	picture = GFX_news_event_generic_usa_treaty
+
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = KoKi_YJ_NEW.uksq.a
+
+		send_embargo = ENG
+		
+		trigger = {
+            is_in_faction_with = FRA
+    	}
+	}
+	option = {
+		name = KoKi_YJ_NEW.uksq.b
+		trigger = {
+            is_in_faction_with = ENG
+    	}
+	}
+	option = {
+		name = KoKi_YJ_NEW.uksq.c
 	}
 }

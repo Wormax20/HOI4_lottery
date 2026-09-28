@@ -45,6 +45,7 @@ ideas = {
 			equipment_bonus = {
 				armor = {
 					hard_attack = 0.05
+					soft_attack = 0.05
 					breakthrough = 0.05
 					instant = yes
 				}

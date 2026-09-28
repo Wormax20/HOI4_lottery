@@ -113,7 +113,11 @@ YJ_ENG_9_ideas: "大英国协宗主国"
 
 
 ENG_wartime_industry: "战时工业"
+ENG_wartime_industry_desc: "战时工业"
 ENG_expand_dockyard: "扩建船坞"
+ENG_expand_dockyard_desc: "扩建船坞"
+ENG_Diplomacy_focus_In: "确保美洲"
+ENG_Diplomacy_focus_In_desc: "确保美洲"
 
 
 
@@ -217,6 +221,8 @@ SOV_change_limited_exports: "限制国际贸易"
 SOV_change_limited_exports_desc: "限制国际贸易"
 SOV_Precious_metals_production: "苏维埃贵金属工业"
 SOV_Precious_metals_production_desc: "苏维埃贵金属工业"
+SOV_Moscow_defender: "莫斯科大阅兵"
+SOV_Moscow_defender_desc: "莫斯科大阅兵"
 
 
 SOV_planned_economy_subjects_tt: "所有阵营成员:"
@@ -500,17 +506,16 @@ KoKi_YJ_ROM_event.102.desc: "可在决议里花费100cp选择对某个与罗尼�
 KoKi_YJ_ROM_event.102.a: "好"
 
 KoKi_YJ_ROM_event.103.title: "奖品: 死亡蛋糕"
-KoKi_YJ_ROM_event.103.desc: "花费50pp为队友提供30天高额工业buff"
+KoKi_YJ_ROM_event.103.desc: "花费150pp为队友提供90天高额工业buff"
 KoKi_YJ_ROM_event.103.a: "好"
 
 KoKi_YJ_ROM_event.104.title: "奖品: 吸血鬼的故乡"
-KoKi_YJ_ROM_event.104.desc: "解锁决议花费100pp为队友提供60天buff\n夜战攻击+5,泄露给他国情报-15,补给消耗-20,补给范围+10"
+KoKi_YJ_ROM_event.104.desc: "解锁决议花费150pp为队友提供90天buff"
 KoKi_YJ_ROM_event.104.a: "好"
 
 KoKi_YJ_ROM_event.105.title: "奖品: 大罗尼之梦"
-KoKi_YJ_ROM_event.105.desc: "获得老兵不死翻倍效果\n获得高额陆军buff"
+KoKi_YJ_ROM_event.105.desc: "获得老兵不死效果\n获得高额陆军buff"
 KoKi_YJ_ROM_event.105.a: "好"
-
 
 YJ_ROM_1_ideas: "帝国油都"
 YJ_ROM_2_ideas: "冰与火之歌"
@@ -523,6 +528,19 @@ YJ_ROM_5_ideas: "大罗尼之梦"
 
 YJ_ROM_state_1_ideas: "血火同源"
 YJ_ROM_state_2_ideas: "寒冰"
+
+ROM_focus_Expand_iron_production: "钢铁工业技术"
+ROM_focus_Expand_iron_production_desc: "钢铁工业技术"
+ROM_focus_steel_industry: "钢铁企业扩张"
+ROM_focus_steel_industry_desc: "钢铁企业扩张"
+ROM_focus_Aluminum_recycling_technology_1: "铝资源回收技术"
+ROM_focus_Aluminum_recycling_technology_1_desc: "铝资源回收技术"
+ROM_focus_Aluminum_recycling_technology: "扩张铝资源"
+ROM_focus_Aluminum_recycling_technology_desc: "扩张铝资源"
+ROM_focus_chromium_technology: "铬产量提升"
+ROM_focus_chromium_technology_desc: "铬产量提升"
+ROM_focus_rubber_technology: "建设橡胶园"
+ROM_focus_rubber_technology_desc: "建设橡胶园"
 
 
 
@@ -898,12 +916,11 @@ KoKi_YJ_NEW.bbls.tm: "希望苏联能抗住攻势"
 KoKi_YJ_NEW.bbls.gc: "让他们来吧!"
 
 
-KoKi_YJ_NEW.bfzc.title: "北非正在总动员!"
-KoKi_YJ_NEW.bfzc.desc: "北非战区联合通告\n对于在北非地区所展开之全面军事行动,兹称为北非总动员.自地中海沿岸至撒哈拉腹地,交战双方正迅速集结兵力,战区规模不断扩大.北非之战略地位,关乎地中海航线与殖民体系之稳定,亦成为双方争夺主动权之关键所在.\n随着双方力量不断投入,北非战场正由局部冲突转变为全面对抗.沙漠与海岸线之间的广阔空间,正在成为新的决战区域,其走向不仅关系地区控制权,亦将对整个战争格局产生深远影响."
-KoKi_YJ_NEW.bfzc.zx: "一雪前耻!"
-KoKi_YJ_NEW.bfzc.tm: "来试试看!"
-KoKi_YJ_NEW.bfzc.gc: "希望同盟能抗住攻势"
-
+KoKi_YJ_NEW.uksq.title: "英国出兵占领法属圣皮埃尔与密克隆岛"
+KoKi_YJ_NEW.uksq.desc: "在[GetDateText]清晨。\n\n英国派遣特战队登陆法属圣皮埃尔与密克隆岛。\n\n英国首相已发表声明此为保障北美安全的必要措施。\n\n稍早，法国驻英国大使遭英国政府驱逐。\n\n英国与法国的关系似乎不再跟过去一样可靠。"
+KoKi_YJ_NEW.uksq.a: "这是战争行为!"
+KoKi_YJ_NEW.uksq.b: "正确的抉择"
+KoKi_YJ_NEW.uksq.c: "有趣"
 
 
 FRA_Small_Entente: "小协约国"

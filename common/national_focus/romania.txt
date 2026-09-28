@@ -4842,4 +4842,174 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = ROM_focus_Expand_iron_production
+		icon = GFX_focus_generic_steel
+		cost = 5
+		x = 32
+		y = 7
+		available = {
+		}
+
+		completion_reward = { 
+			81 = {
+				add_resource = {
+					type = steel
+					amount = 24
+				}
+			}
+			82 = {
+				add_resource = {
+					type = steel
+					amount = 24
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ROM_focus_steel_industry
+		icon = GFX_focus_generic_steel
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = { focus = ROM_focus_Expand_iron_production }
+		x = 0
+		y = 1
+		relative_position_id = ROM_focus_Expand_iron_production
+
+		completion_reward = { 
+			971 = {
+				add_resource = {
+					type = steel
+					amount = 24
+				}
+			}
+			77 = {
+				add_resource = {
+					type = steel
+					amount = 24
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ROM_focus_Aluminum_recycling_technology
+		icon = GFX_focus_generic_aluminum
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = { focus = ROM_focus_steel_industry }
+		x = -1
+		y = 2
+		relative_position_id = ROM_focus_Expand_iron_production
+
+		completion_reward = { 
+			79 = {
+				add_resource = {
+					type = aluminium
+					amount = 12
+				}
+			}
+			766 = {
+				add_resource = {
+					type = aluminium
+					amount = 12
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ROM_focus_Aluminum_recycling_technology_1
+		icon = GFX_focus_generic_aluminum
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = { focus = ROM_focus_steel_industry }
+		x = -3
+		y = 2
+		relative_position_id = ROM_focus_Expand_iron_production
+
+		completion_reward = { 
+			80 = {
+				add_resource = {
+					type = aluminium
+					amount = 12
+				}
+			}
+			83 = {
+				add_resource = {
+					type = aluminium
+					amount = 12
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ROM_focus_chromium_technology
+		icon = GFX_focus_generic_chromium
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = { focus = ROM_focus_steel_industry }
+		x = 1
+		y = 2
+		relative_position_id = ROM_focus_Expand_iron_production
+
+		completion_reward = { 
+			79 = {
+				add_resource = {
+					type = chromium
+					amount = 24
+				}
+			}
+			766 = {
+				add_resource = {
+					type = chromium
+					amount = 24
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ROM_focus_rubber_technology
+		icon = GFX_focus_generic_rubber
+		cost = 5
+
+		available = {
+		}
+
+		prerequisite = { focus = ROM_focus_steel_industry }
+		x = 3
+		y = 2
+		relative_position_id = ROM_focus_Expand_iron_production
+
+		completion_reward = { 
+			79 = {
+				add_resource = {
+					type = rubber
+					amount = 24
+				}
+			}
+			766 = {
+				add_resource = {
+					type = rubber
+					amount = 24
+				}
+			}
+		}
+	}
 }

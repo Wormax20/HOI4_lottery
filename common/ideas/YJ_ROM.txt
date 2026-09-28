@@ -18,10 +18,10 @@ ideas = {
                 political_power_gain = 0.5
 				stability_weekly = 0.002
 				war_support_weekly = 0.002
-				production_speed_buildings_factor = 0.1
+				production_speed_buildings_factor = 0.2
 				production_speed_infrastructure_factor = 1
 				consumer_goods_factor = -0.15
-				consumer_goods_expected_value = -0.05
+				consumer_goods_expected_value = -0.10
 				conscription_factor = 0.5
 				weekly_manpower = 3000
 				global_building_slots = 15
@@ -40,11 +40,11 @@ ideas = {
 					instant = yes
 				}
 				railway_gun = {
-					build_cost_ic = -0.1
+					build_cost_ic = -0.15
 					instant = yes
 				}
 				super_heavy_railway_gun_equipment = {
-					build_cost_ic = -0.1
+					build_cost_ic = -0.15
 					instant = yes
 				}
 			}
@@ -64,6 +64,8 @@ ideas = {
 			picture = JAP_the_ainu_revolution
 
 			modifier = {
+				command_power_gain = 0.5
+				max_command_power = 100
 				custom_modifier_tooltip = YJ_ROM_2_ideas_tt
 			}
 		}
@@ -83,6 +85,7 @@ ideas = {
 			picture = recovering_from_the_civil_war
 
 			modifier = {
+				political_power_factor = 0.10
 			}
 		}
 
@@ -104,9 +107,7 @@ ideas = {
 				consumer_goods_factor = -0.1
                 production_factory_efficiency_gain_factor = 0.1
 				industrial_capacity_factory = 0.05
-				production_speed_buildings_factor = 0.05
-				production_speed_arms_factory_factor = 0.05
-				production_speed_industrial_complex_factor = 0.05
+				production_speed_buildings_factor = 0.10
 			}
 			equipment_bonus = {
 				armor = {
@@ -115,31 +116,11 @@ ideas = {
 				}
 				small_plane_airframe = {
 					instant = yes
-					build_cost_ic = -0.1
+					build_cost_ic = -0.05
 				}
 				small_plane_cas_airframe = {
 					instant = yes
-					build_cost_ic = -0.1
-				}
-				cv_small_plane_airframe = {
-					instant = yes
-					build_cost_ic = -0.1
-				}
-				medium_plane_airframe = {
-					instant = yes
-					build_cost_ic = -0.1
-				}
-				medium_plane_scout_plane_airframe = {
-					instant = yes
-					build_cost_ic = -0.1
-				}
-				large_plane_airframe = {
-					instant = yes
-					build_cost_ic = -0.1
-				}
-				large_plane_maritime_patrol_plane_airframe = {
-					instant = yes
-					build_cost_ic = -0.1
+					build_cost_ic = -0.05
 				}
 			}
 		}
@@ -159,6 +140,7 @@ ideas = {
 			picture = air_war_plans_division_focus
 
 			modifier = {
+				political_power_factor = 0.10
 			}
 		}
 
@@ -206,7 +188,7 @@ ideas = {
 				conscription =  0.05
 				max_planning = 0.10
 				planning_speed = 0.10
-				army_strength_factor = 0.10
+				army_strength_factor = 0.20
 				army_defence_factor = 0.10
 				land_reinforce_rate = 0.02
 				supply_consumption_factor = -0.25

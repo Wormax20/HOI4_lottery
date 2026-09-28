@@ -19,6 +19,7 @@ YJ_ITA_1_ideas = {
 	production_factory_max_efficiency_factor = KoKi_YJ_ITA_event_1_production_factory_max_efficiency_factor
 	production_factory_efficiency_gain_factor = KoKi_YJ_ITA_event_1_production_factory_efficiency_gain_factor
 	production_lack_of_resource_penalty_factor = KoKi_YJ_ITA_event_1_production_lack_of_resource_penalty_factor
+	production_speed_buildings_factor = KoKi_YJ_ITA_event_1_production_speed_buildings_factor
 }
 
 YJ_ITA_4_ideas = {
