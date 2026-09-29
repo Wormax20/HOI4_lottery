@@ -581,7 +581,10 @@ MEX_focus_Steel_Industry: "墨西哥钢铁工业"
 MEX_focus_Steel_Industry_desc: "墨西哥钢铁工业"
 MEX_focus_Expand_iron_production: "扩大铁产量"
 MEX_focus_Expand_iron_production_desc: "扩大铁产量"
-
+MEX_focus_Expand_iron_production_1: "国家补助炼钢"
+MEX_focus_Expand_iron_production_1_desc: "国家补助炼钢"
+MEX_focus_Steel_Industry_1: "吸引外国投资"
+MEX_focus_Steel_Industry_1_desc: "吸引外国投资"
 
 
 

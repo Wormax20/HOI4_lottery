@@ -16,9 +16,10 @@ ideas = {
 
 			modifier = {
 				political_power_factor = 0.25
+				war_support_factor = 0.25
 				global_building_slots_factor = 0.10
-				consumer_goods_factor = -0.15
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.10
+				consumer_goods_expected_value = -0.10
 				production_factory_max_efficiency_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.1
 				industrial_capacity_factory = 0.10
@@ -28,8 +29,8 @@ ideas = {
 				mic_to_target_factor = 0.10
 			}
 			research_bonus = {
-				artillery = 0.20
-				armor = 0.20
+				artillery = 0.30
+				armor = 0.30
 			}
 		}
 		YJ_USA_2_ideas = {
@@ -130,7 +131,8 @@ ideas = {
 				cic_to_target_factor = 0.10
 			}
 			research_bonus = {
-				industry = 0.35
+				industry = 0.30
+				electronics = 0.30
 			}
 		}
 

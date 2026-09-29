@@ -22941,6 +22941,7 @@ focus_tree = {
 					}
 				}
 				CHI = { is_ai = no }
+				PRC = { is_ai = no }
 			}
 		}
 

@@ -648,6 +648,7 @@ country_event = {
 				YJ_traits_14
 				YJ_traits_42
 				YJ_traits_39
+				brilliant_strategist
 				commando
 				urban_assault_specialist
 				panzer_leader
@@ -662,7 +663,7 @@ country_event = {
 			attack_skill = 4
 			defense_skill = 3
 			planning_skill = 4
-			logistics_skill = 8
+			logistics_skill = 7
 		}
 		hidden_effect = {
 			meta_effect = {
@@ -1426,9 +1427,7 @@ country_event = {
 				is_ai = no
 			}
 			traits = {
-				armor_officer
 				panzer_leader
-				cavalry_leader
 				trickster
 				organizer
 				ranger
@@ -1439,10 +1438,10 @@ country_event = {
 				YJ_traits_15
 			}
 			skill =3
-			attack_skill = 3
+			attack_skill = 2
 			defense_skill = 2
 			planning_skill = 3
-			logistics_skill = 2
+			logistics_skill = 1
 		}
 
 		hidden_effect = {
@@ -1514,7 +1513,7 @@ country_event = {
 				naval_liason
 				organizer
 				trait_engineer
-
+				YJ_traits_37
 			}
 			skill = 3
 			attack_skill = 3

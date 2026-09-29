@@ -2553,7 +2553,6 @@ KoKi_YJ_ITA_event_1_scripted_effects = {
 		50 = {
 			set_variable = { KoKi_YJ_ITA_event_1_industrial_capacity_factory = 0 }
 			set_variable = { KoKi_YJ_ITA_event_1_industrial_capacity_dockyard = 0 }
-			set_variable = { KoKi_YJ_ITA_event_1_production_factory_max_efficiency_factor = 0 }
 			set_variable = { KoKi_YJ_ITA_event_1_production_factory_efficiency_gain_factor = 0 }
 			set_variable = { KoKi_YJ_ITA_event_1_production_speed_buildings_factor = 0 }
 			set_variable = { KoKi_YJ_ITA_event_1_production_lack_of_resource_penalty_factor = 0 }
@@ -2571,8 +2570,7 @@ KoKi_YJ_ITA_event_1_scripted_effects = {
 		50 = {
 			set_variable = { KoKi_YJ_ITA_event_1_industrial_capacity_factory = 0.1 }
 			set_variable = { KoKi_YJ_ITA_event_1_industrial_capacity_dockyard = 0.1 }
-			set_variable = { KoKi_YJ_ITA_event_1_production_factory_max_efficiency_factor = 0.1 }
-			set_variable = { KoKi_YJ_ITA_event_1_production_factory_efficiency_gain_factor = 0.1 }
+			set_variable = { KoKi_YJ_ITA_event_1_production_factory_efficiency_gain_factor = 0.2 }
 			set_variable = { KoKi_YJ_ITA_event_1_production_speed_buildings_factor = 0.1 }
 			set_variable = { KoKi_YJ_ITA_event_1_production_lack_of_resource_penalty_factor = -0.3 }
 

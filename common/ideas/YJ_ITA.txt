@@ -145,8 +145,8 @@ ideas = {
 			modifier = {
 				conscription = 0.05
 				mobilization_speed = 0.25
-				supply_consumption_factor = -0.15
-				army_strength_factor = 0.05
+				supply_consumption_factor = -0.20
+				army_strength_factor = 0.10
 				army_org_factor = 0.10
 			}
 			targeted_modifier = {

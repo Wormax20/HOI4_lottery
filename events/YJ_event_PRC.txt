@@ -189,6 +189,7 @@ country_event = {
 		}
 		add_research_slot = 1
 		hidden_effect = {
+			set_rule = { can_join_factions = yes }
 			every_core_state = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -458,6 +459,7 @@ country_event = {
 			add_core_of = ROOT
 		}
 		hidden_effect = {
+			set_rule = { can_join_factions = yes }
 			every_core_state = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {

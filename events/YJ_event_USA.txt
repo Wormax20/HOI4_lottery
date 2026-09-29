@@ -11,6 +11,7 @@ country_event = {
 	option = {
 		name = KoKi_YJ_USA_event.101.a
 		add_ideas = YJ_USA_1_ideas
+		add_political_power = 300
 		complete_national_focus = USA_the_giant_wakes
 		ai_chance = {
 			factor = 100
