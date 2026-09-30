@@ -345,7 +345,10 @@ focus_tree = {
 		y = 1
 		available = {
 			date > 1938.12.31
-			FRA = {  is_in_faction_with = GER }
+			OR = {
+				FRA = {  is_in_faction_with = GER }
+				730 = { is_fully_controlled_by = GER }
+			}
 		}
 		relative_position_id = ENG_wartime_industry
 		prerequisite = { 
@@ -9366,12 +9369,7 @@ focus_tree = {
 		}
 
 		available = {
-			if = {
-				limit = {
-					NOT = { has_country_flag = ENG_abdication_crisis_changed_mind }
-				}
-				NOT = { has_country_flag = edward_viii_refused_to_abdicate_flag }
-			}
+			is_ai = yes
 		}
 		cancel_if_invalid = yes
 
@@ -10962,7 +10960,7 @@ focus_tree = {
 		}
 
 		available = {
-
+			is_ai = yes
 		}
 		icon = GFX_focus_generic_strike_at_democracy2
 		x = 18
@@ -11244,17 +11242,18 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			remove_ideas = ENG_king_edward
 			create_country_leader = {
-				name = "Edward VIII"
+				name = "阿爾托莉雅·潘德拉貢"
 				desc = "POLITICS_EDWARD_EDWARD_DESC"
-				picture = GFX_portrait_Edward_VIII
+				picture = GFX_leaders_ARTRA
 				expire = "1965.1.1"
 				ideology = despotism
 				traits = {
-					inexperienced_imperialist
+					ARTRA_King_Arthur
+					ARTRA_King_of_Ahoge
+					ARTRA_Knight_King
 				}
 			}
 
-			hidden_effect = { news_event = { id = mtg_news.19 days = 1 } }
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = ENG_winston_churchill
 			custom_effect_tooltip = available_political_advisor
@@ -11379,6 +11378,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			GER = { country_event = { id = mtg_britain.23 hours = 6 } }
+			remove_ideas = MTG_naval_treaty_adherent
 		}
 	}
 
@@ -11466,6 +11466,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			add_ideas = YJ_ENG_arms_race
 			create_wargoal = {
 				type = puppet_wargoal_focus
 				target = ITA
@@ -12081,21 +12082,9 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}
 		completion_reward = {
-			if = {
-				limit = {
-					has_country_leader = { ruling_only = yes name = "Edward VIII" }
-				}
-				add_stability = 0.05
-				remove_country_leader_trait = inexperienced_imperialist
-				add_country_leader_trait = autocratic_imperialist
-			}
-			if = {
-				limit = {
-					NOT = { has_country_leader = { ruling_only = yes name = "Edward VIII" } }
-				}
-				add_stability = 0.05
-				add_war_support = 0.1
-			}
+			add_country_leader_trait = ARTRA_Excaliburg
+			add_stability = 0.10
+			add_war_support = 0.10
 		}
 	}
 
@@ -12105,37 +12094,17 @@ focus_tree = {
 		available = {
 			has_full_control_of_state = 422
 			hidden_trigger = {
-					if = {
-						limit = {
-							has_dlc = "Graveyard of Empires"
-							has_event_target = UK_INDIA
-						}
-						event_target:UK_INDIA = { is_subject_of = ENG }
-					}
-				}
-			}
-		bypass = {
-			OR = {
-				RAJ = {
-					is_in_faction_with = ENG
-					OR = {
-						has_country_flag = ENG_dominions_stayed_with_fascist_britain_flag
-						has_country_flag = britain_enforced_our_loyalty
-					}
-				}
-				has_completed_focus = ENG_towards_indian_independence
 				if = {
 					limit = {
 						has_dlc = "Graveyard of Empires"
 						has_event_target = UK_INDIA
 					}
-
-					event_target:UK_INDIA = {
-						exists = no
-						NOT = { is_subject_of = ROOT }
-					}
+					event_target:UK_INDIA = { is_subject_of = ENG }
 				}
 			}
+		}
+		bypass = {
+
 		}
 
 		icon = GFX_goal_generic_position_armies
@@ -12450,22 +12419,9 @@ focus_tree = {
 		id = ENG_consolidate_the_british_isles
 		prerequisite = { focus = ENG_god_save_the_king }
 		available = {
-			is_subject = no
-			country_exists = IRE
-			NOT = { is_in_faction_with = IRE }
+
 		}
-		bypass = {
-			owns_state = 113
-			owns_state = 134
-			owns_state = 135
-			owns_state = 119
-			owns_state = 122
-			owns_state = 133
-			owns_state = 121
-			owns_state = 136
-			owns_state = 120
-		}
-		will_lead_to_war_with = IRE
+
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		x = 0
 		y = 2
@@ -12475,30 +12431,12 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			ENG_mosley_pacifism_level_down = yes
-			every_other_country = {
+			every_core_state = {
 				limit = {
-					OR = {
-						owns_state = 113
-						owns_state = 134
-						owns_state = 135
-						owns_state = 119
-						owns_state = 122
-						owns_state = 133
-						owns_state = 121
-						owns_state = 136
-						owns_state = 120
-					}
+					is_fully_controlled_by = ENG
 				}
-				ENG = {
-					add_state_claim = 113
-					add_state_claim = 134
-					add_state_claim = 135
-					create_wargoal = {
-						type = annex_everything
-						target = PREV
-						expire = 0
-					}
+				add_dynamic_modifier = {
+					modifier = ENG_Britain_security
 				}
 			}
 		}
@@ -12609,6 +12547,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			add_political_power = 100
 			ENG_mosley_pacifism_level_down = yes
 			custom_effect_tooltip = ENG_appeal_to_imperial_loyalists_tt
 		}
@@ -12674,6 +12613,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			add_political_power = 100
 			ENG_mosley_pacifism_level_down = yes
 			if = {
 				limit = {

@@ -7,6 +7,10 @@ ideas = {
 				original_tag = ENG
 			}
 
+			cancel = {
+				has_idea = YJ_ENG_10_ideas
+			}
+
 			allowed_civil_war = {
 				NOT ={
 					has_government = communism
@@ -33,6 +37,10 @@ ideas = {
 			
 			allowed = {
 				original_tag = ENG
+			}
+
+			cancel = {
+				has_idea = YJ_ENG_10_ideas
 			}
 
 			allowed_civil_war = {
@@ -86,6 +94,10 @@ ideas = {
 			
 			allowed = {
 				original_tag = ENG
+			}
+
+			cancel = {
+				has_idea = YJ_ENG_10_ideas
 			}
 
 			allowed_civil_war = {

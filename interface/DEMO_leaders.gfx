@@ -135,4 +135,8 @@ spriteTypes = {
 		name = "GFX_leaders_zd" 
 		texturefile = "gfx/leaders/DEMO/zd.jpg"
 	}
+	spriteType = {
+		name = "GFX_leaders_ARTRA" 
+		texturefile = "gfx/leaders/DEMO/ARTRA.png"
+	}
 }	

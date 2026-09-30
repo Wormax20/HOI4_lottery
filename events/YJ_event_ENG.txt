@@ -26,6 +26,7 @@ country_event = {
 		}
 		119 = { add_core_of = ROOT }
 		set_cosmetic_tag = ENG_imperial_federation_unified
+		complete_national_focus = ENG_steady_as_she_goes
 		name = KoKi_YJ_ENG_event.101.a
 		add_ideas = YJ_ENG_1_ideas
 		ai_chance = {
@@ -158,4 +159,43 @@ country_event = {
 		}
 		set_country_flag = KoKi_YJ_ENG_event_106_Flag
 	}
+}
+
+country_event = {
+	id = KoKi_YJ_ENG_event.107
+	title = KoKi_YJ_ENG_event.107.title
+	desc = KoKi_YJ_ENG_event.107.desc
+
+	picture = GFX_report_event_china_ledo_road
+
+	is_triggered_only = yes
+
+	option = {
+		every_state = {
+			limit = {
+				is_core_of = IRE
+			}
+			add_core_of = ROOT
+		}
+		annex_country = {
+			target = IRE
+		}
+		annex_country = {
+			target = JOR
+		}
+		annex_country = {
+			target = PAL
+		}
+		119 = { add_core_of = ROOT }
+		set_cosmetic_tag = ENG_imperial_federation_unified
+		add_popularity = { ideology = neutrality popularity = 1 }
+		complete_national_focus = ENG_a_change_in_course
+		complete_national_focus = ENG_the_kings_party
+		name = KoKi_YJ_ENG_event.107.a
+		add_ideas = YJ_ENG_10_ideas
+		ai_chance = {
+			factor = 100
+		}
+	}
+
 }

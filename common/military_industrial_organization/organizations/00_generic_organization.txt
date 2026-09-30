@@ -2,7 +2,22 @@ generic_tank_organization = {
 	icon = GFX_idea_generic_tank_manufacturer_1
 
 	allowed = {
-		NOT = { OR = { original_tag = GER original_tag = ENG original_tag = SOV original_tag = FRA original_tag = ITA original_tag = JAP original_tag = USA original_tag = BEL original_tag = CZE original_tag = ROM  original_tag = HUN original_tag = SLO original_tag = RKH } }
+		NOT = { 
+			OR = { 
+				original_tag = GER 
+				original_tag = SOV 
+				original_tag = FRA 
+				original_tag = ITA 
+				original_tag = JAP 
+				original_tag = USA 
+				original_tag = BEL 
+				original_tag = CZE 
+				original_tag = ROM  
+				original_tag = HUN 
+				original_tag = SLO 
+				original_tag = RKH 
+			} 
+		}
 		NOT = {
 			AND = {
 				tag = POL
@@ -82,11 +97,8 @@ generic_tank_organization = {
 		}
 		NOT = {
 			AND = {
-
-					original_tag = PHI
-
+				original_tag = PHI
 				has_dlc = "No Compromise, No Surrender"
-
 			}
 		}
 		NOT = {

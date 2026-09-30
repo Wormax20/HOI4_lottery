@@ -491,7 +491,10 @@ ENG_YJ_scripted_effects = {
 		
 		20 = {
 			modifier = {
-				has_idea = YJ_ENG_1_ideas
+				OR = {
+					has_idea = YJ_ENG_1_ideas
+					has_idea = YJ_ENG_10_ideas
+				}
 				factor = 0
 			}
 			country_event = KoKi_YJ_ENG_event.101
@@ -499,9 +502,22 @@ ENG_YJ_scripted_effects = {
 		20 = {
 			modifier = {
 				OR = {
+					has_idea = YJ_ENG_1_ideas
+					has_idea = YJ_ENG_10_ideas
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_ENG_event.107
+		}
+		20 = {
+			modifier = {
+				OR = {
 					has_idea = YJ_ENG_2_ideas
 					NOT = {
-						has_idea = YJ_ENG_1_ideas
+						OR = {
+							has_idea = YJ_ENG_1_ideas
+							has_idea = YJ_ENG_10_ideas
+						}
 					}
 				}
 				factor = 0
@@ -513,7 +529,10 @@ ENG_YJ_scripted_effects = {
 				OR = {
 					has_idea = YJ_ENG_3_ideas
 					NOT = {
-						has_idea = YJ_ENG_1_ideas
+						OR = {
+							has_idea = YJ_ENG_1_ideas
+							has_idea = YJ_ENG_10_ideas
+						}
 					}
 				}
 				factor = 0
@@ -525,7 +544,10 @@ ENG_YJ_scripted_effects = {
 				OR = {
 					has_idea = YJ_ENG_5_ideas
 					NOT = {
-						has_idea = YJ_ENG_1_ideas
+						OR = {
+							has_idea = YJ_ENG_1_ideas
+							has_idea = YJ_ENG_10_ideas
+						}
 					}
 				}
 				factor = 0
@@ -537,7 +559,10 @@ ENG_YJ_scripted_effects = {
 				OR = {
 					has_idea = YJ_ENG_6_ideas
 					NOT = {
-						has_idea = YJ_ENG_1_ideas
+						OR = {
+							has_idea = YJ_ENG_1_ideas
+							has_idea = YJ_ENG_10_ideas
+						}
 					}
 				}
 				factor = 0

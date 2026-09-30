@@ -411,4 +411,56 @@ leader_traits = {
 		political_power_factor = 0.15
 		weekly_manpower = 10000
 	}
+
+	ARTRA_King_Arthur = {
+		random = no
+		political_power_factor = 0.25
+		stability_factor = 0.10
+		war_support_factor = 0.10
+		compliance_gain = 0.05
+		production_speed_buildings_factor = 0.10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ARTRA_King_of_Ahoge = {
+		random = no
+		stability_weekly = 0.002
+		research_speed_factor = 0.10
+		industrial_capacity_factory = 0.10
+		industrial_capacity_dockyard = 0.10
+		production_speed_industrial_complex_factor = 0.10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ARTRA_Knight_King = {
+		random = no
+		war_support_weekly = 0.002
+		army_attack_factor = 0.05
+		army_defence_factor = 0.05
+		army_org_factor = 0.05
+		production_speed_arms_factory_factor = 0.10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ARTRA_Excaliburg = {
+		random = no
+		army_attack_factor = 0.05
+		army_strength_factor = 0.05
+		air_attack_factor = 0.10
+		air_defence_factor = 0.10
+		air_range_factor = 0.10
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

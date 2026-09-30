@@ -2388,7 +2388,6 @@ focus_tree = {
 		}
 
 		available = {
-			ENG = { has_government = ROOT }
 		}
 
 		bypass = {
