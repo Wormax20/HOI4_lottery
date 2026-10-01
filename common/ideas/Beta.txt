@@ -124,6 +124,14 @@ ideas = {
 					build_cost_ic = 0.15
 					breakthrough = -0.3
 				}
+				fighter = {
+					instant = yes
+					build_cost_ic = 0.5
+				}
+				medium_plane_fighter_airframe = {
+					instant = yes
+					build_cost_ic = 0.5
+				}
 			    strategic_bomber = {
                     instant = yes
                     build_cost_ic = 3
