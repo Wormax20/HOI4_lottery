@@ -15,16 +15,6 @@ country_event = {
 		}
 		set_cosmetic_tag = CZE_AUS_danubian_state
 		BOS = { set_cosmetic_tag = BOS_AUS_danubian_state }
-		transfer_state = 109
-		109 = { add_core_of = ROOT }
-		transfer_state = 103
-		103 = { add_core_of = ROOT }
-		transfer_state = 104
-		104 = { add_core_of = ROOT }
-		transfer_state = 804
-		804 = { add_core_of = ROOT }
-		transfer_state = 164
-		164 = { add_core_of = ROOT }
 
 		name = KoKi_YJ_CZE_event.101.a
 		add_ideas = YJ_CZE_1_ideas

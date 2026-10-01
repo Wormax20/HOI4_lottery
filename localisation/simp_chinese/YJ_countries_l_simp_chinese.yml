@@ -267,8 +267,8 @@ YJ_ITA_4_ideas: "赶超英美!"
 YJ_ITA_4_ideas_tt: "各项Buff§Y每月§!增长§Y0.25%§!,每月攻防增长0.3%!"
 
 
-KoKi_YJ_ITA_event.1011.title: "奖品: 条条大路通罗马"
-KoKi_YJ_ITA_event.1011.desc: "§R获得罗马帝国版图§!\n完成国策社团主义\n高额产能buff"
+KoKi_YJ_ITA_event.1011.title: "奖品: 地中海霸权 大意大利"
+KoKi_YJ_ITA_event.1011.desc: "§R获得大意大利版图§!\n完成国策社团主义\n立即解锁大意大利决议"
 KoKi_YJ_ITA_event.1011.a: "好"
 
 KoKi_YJ_ITA_event.1012.title: "奖品: 圣帝重生"
@@ -287,8 +287,8 @@ KoKi_YJ_ITA_event.1015.title: "奖品: 教皇他有几个师？"
 KoKi_YJ_ITA_event.1015.desc: "如果意大利为§R罗马§形态,则获得一日雄狮形态\n如果意大利为§R教宗§形态,则获得“教皇他有几个师?”"
 KoKi_YJ_ITA_event.1015.a: "好"
 
-YJ_ITA_01_ideas: "条条大路通罗马"
-YJ_ITA_01_ideas_tt: "§R获得罗马帝国版图§!\n完成国策社团主义"
+YJ_ITA_01_ideas: "地中海霸权 大意大利"
+YJ_ITA_01_ideas_tt: "§R获得大意大利版图§!\n完成国策社团主义"
 YJ_ITA_02_ideas: "圣帝重生"
 YJ_ITA_02_ideas_tt: "§R解锁隐藏教宗线§!"
 YJ_ITA_03_ideas: "改组皇家空军"

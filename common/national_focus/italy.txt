@@ -14700,6 +14700,10 @@ focus_tree = {
 			}
 		}
 
+		bypass = {
+			ENG = { is_ai = no }
+		}
+
 		search_filters = {FOCUS_FILTER_ANNEXATION FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {

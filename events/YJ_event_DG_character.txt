@@ -263,11 +263,11 @@ country_event = {
 				commando
 				urban_assault_specialist
 				ranger
-				YJ_traits_1
+				YJ_traits_2
 			}
 			skill = 3
-			attack_skill = 2
-			defense_skill = 2
+			attack_skill = 1
+			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
 		}
@@ -1427,21 +1427,24 @@ country_event = {
 				is_ai = no
 			}
 			traits = {
+				YJ_traits_1
+				YJ_traits_33
+				YJ_traits_43
+				armor_officer
+				commando
+				urban_assault_specialist
 				panzer_leader
+				cavalry_leader
+				infantry_leader
 				trickster
 				organizer
 				ranger
-				urban_assault_specialist
-				YJ_traits_2
-				YJ_traits_33
-				YJ_traits_43
-				YJ_traits_15
 			}
-			skill =3
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 3
-			logistics_skill = 1
+			skill =6
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 4
 		}
 
 		hidden_effect = {
@@ -2003,20 +2006,23 @@ country_event = {
 				is_ai = no
 			}
 			traits={
-				YJ_traits_2
+				YJ_traits_1
+				YJ_traits_33
 				armor_officer
+				commando
+				urban_assault_specialist
 				panzer_leader
-				career_officer
+				cavalry_leader
+				infantry_leader
 				trickster
 				organizer
 				ranger
-				YJ_traits_33
 			}
-			skill = 3
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 3
-			logistics_skill = 2
+			skill = 6
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 6
+			logistics_skill = 4
 		}
 		hidden_effect = {
 			meta_effect = {
@@ -2170,6 +2176,7 @@ country_event = {
 				is_ai = no
 			}
 			traits={
+				YJ_traits_1
 				YJ_traits_2
 				trait_reckless
 				career_officer

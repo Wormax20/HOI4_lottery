@@ -40,8 +40,8 @@ leader_traits = {
 
 		non_shared_modifier = {
 			experience_gain_factor = 0.1
-			max_planning = -0.05
-			planning_speed = -0.05
+			max_planning = -0.10
+			planning_speed = -0.10
 		}
 
 		ai_will_do = {

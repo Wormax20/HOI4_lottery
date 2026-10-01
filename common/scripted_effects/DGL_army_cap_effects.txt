@@ -2,7 +2,7 @@ DGL_update_army_cap = {
 	set_variable = { DGL_army_cap_states = num_controlled_states }
 	set_variable = { DGL_army_cap_limit = DGL_army_cap_states }
 	multiply_variable = { DGL_army_cap_limit = 10 }
-	clamp_variable = { var = DGL_army_cap_limit max = 800 }
+	clamp_variable = { var = DGL_army_cap_limit max = 800 min = 200 }
 	set_variable = { DGL_army_cap_count = num_divisions }
 	set_variable = { DGL_army_cap_excess = DGL_army_cap_count }
 	subtract_from_variable = { DGL_army_cap_excess = DGL_army_cap_limit }

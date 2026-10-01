@@ -9806,7 +9806,7 @@ focus_tree = {
 				else_if = {
 					limit = {
 						ENG = {
-							NOT = { has_completed_focus = ENG_a_change_in_course }
+							#NOT = { has_completed_focus = ENG_a_change_in_course }
 							exists = yes
 							is_subject = no
 						}
@@ -9870,7 +9870,7 @@ focus_tree = {
 									ENG = {
 										exists = yes
 										is_subject = no
-										NOT = { has_completed_focus = ENG_a_change_in_course }
+										#NOT = { has_completed_focus = ENG_a_change_in_course }
 									}
 								}
 								NOT = {
