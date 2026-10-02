@@ -173,6 +173,7 @@ ideas = {
 				production_speed_rail_way_factor = 1
 				stability_weekly = 0.002
 				war_support_weekly = 0.002
+				command_power_gain = 0.25
 			}
 		}
 

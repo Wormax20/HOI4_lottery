@@ -524,7 +524,7 @@ USA_detroit_arsenal_organization = {
 		all_parents = { generic_mio_trait_standardized_components }
 
 		production_bonus = {
-			production_capacity_factor = 0.10
+			production_capacity_factor = 0.05
 			production_efficiency_cap_factor = 0.10
 			production_cost_factor = -0.10
 		}
@@ -579,7 +579,7 @@ USA_detroit_arsenal_organization = {
 
 		all_parents = { generic_mio_trait_standardized_components }
 		production_bonus = {
-			production_capacity_factor = 0.10
+			production_capacity_factor = 0.05
 			production_efficiency_cap_factor = 0.15
 			production_cost_factor = -0.03
 		}
