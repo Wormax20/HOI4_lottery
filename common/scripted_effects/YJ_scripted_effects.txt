@@ -1613,7 +1613,15 @@ CZE_YJ_scripted_effects = {
 			country_event = KoKi_YJ_CZE_event.101
 		}
 
-		50 = { }
+		50 = {
+			modifier = {
+				NOT = {
+					has_idea = YJ_CZE_1_ideas
+				}
+				factor = 0
+			}
+			YJ_TY_scripted_effects = yes
+		}
 
 	}
 }
