@@ -18,12 +18,56 @@ ideas = {
 				custom_modifier_tooltip = YJ_CZE_1_ideas_tt
 				political_power_gain = 0.15
 				political_power_factor = 0.15
-				global_building_slots_factor = 0.20
-				consumer_goods_factor = -0.10
 				production_speed_buildings_factor = 0.10
-				local_resources_factor = 0.10
 				stability_weekly = 0.002
 				war_support_weekly = 0.002
+			}
+		}
+		YJ_CZE_2_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_air_fighter
+
+			modifier = {
+				custom_modifier_tooltip = YJ_CZE_2_ideas_tt
+				consumer_goods_factor = -0.10
+				consumer_goods_expected_value = -0.05
+				cic_construction_boost_factor = 0.25
+				global_building_slots = 5
+				local_resources_factor = 0.10
+			}
+		}
+		YJ_CZE_3_ideas = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_air_fighter
+
+			modifier = {
+				conscription = 0.05
+				conscription_factor = 0.20
+				fuel_gain_factor = 0.15
+				command_power_gain = 1
+				military_industrial_organization_funds_gain = 0.25
+				army_core_attack_factor = 0.25
+				army_core_defence_factor = 0.25
 			}
 		}
 	}

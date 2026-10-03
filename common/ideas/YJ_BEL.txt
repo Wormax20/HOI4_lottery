@@ -55,7 +55,7 @@ ideas = {
 				armor = 0.25
 			}
 			equipment_bonus = {
-				land_cruiser = {
+				armor = {
 					instant = yes
 					build_cost_ic = -0.10
 				}

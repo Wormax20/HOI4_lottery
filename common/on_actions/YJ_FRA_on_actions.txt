@@ -2,7 +2,6 @@ on_actions = {
 	on_monthly_FRA = {
 		effect = {
 			add_to_variable = {
-				YJ_FRA_ideas_INDUSTRIAL_FACTORY_DONATIONS = 1
 				YJ_FRA_ideas_MILITARY_FACTORY_DONATIONS = 1
 			}
 		}

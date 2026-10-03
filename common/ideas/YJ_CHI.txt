@@ -39,6 +39,14 @@ ideas = {
 					instant = yes
 				}
 			}
+			targeted_modifier = {
+				tag = CHI
+				trade_cost_for_target_factor = -0.20
+			}
+			targeted_modifier = {
+				tag = SOV
+				trade_cost_for_target_factor = -0.20
+			}
 		}
 
 		YJ_CHI_2_ideas = {

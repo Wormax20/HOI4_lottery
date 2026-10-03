@@ -310,7 +310,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				production_speed_industrial_complex_factor = 0.075
+				production_speed_industrial_complex_factor = 0.10
 			}
 		}
 		FRA_entrepeneurship = {
@@ -327,8 +327,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				production_speed_arms_factory_factor = 0.05
-				production_speed_dockyard_factor = 0.05
+				production_speed_arms_factory_factor = 0.10
+				production_speed_dockyard_factor = 0.10
 			}
 		}
 		FRA_market_dynamism = {

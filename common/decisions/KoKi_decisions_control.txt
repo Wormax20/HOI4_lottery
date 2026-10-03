@@ -903,6 +903,7 @@ KoKi_YJ_decisions_categories = {
 		}
 		target_trigger = {
 			FROM = {
+				is_ai = no
 				is_in_faction_with = ROOT
 			}
 		}
@@ -940,6 +941,7 @@ KoKi_YJ_decisions_categories = {
 		}
 		target_trigger = {
 			FROM = {
+				is_ai = no
 				is_in_faction_with = ROOT
 			}
 		}
@@ -985,6 +987,7 @@ KoKi_YJ_decisions_categories = {
 	}
 	target_trigger = {
 		FROM = {
+			is_ai = no
 			is_in_faction_with = ROOT
 		}
 	}
@@ -1032,6 +1035,7 @@ KoKi_YJ_decisions_categories = {
 	}
 	target_trigger = {
 		FROM = {
+			is_ai = no
 			is_in_faction_with = ROOT
 			NOT = {
 				has_idea = YJ_USA_6_ideas
@@ -1068,6 +1072,7 @@ KoKi_YJ_decisions_categories = {
 			original_tag = ROM
 		}
 		available = {
+			date > 1938.1.1
 			has_idea = YJ_ROM_4_ideas
 			FROM = { NOT = { has_idea = YJ_ROM_04_ideas } }
 		}
@@ -1076,6 +1081,7 @@ KoKi_YJ_decisions_categories = {
 		}
 		target_trigger = {
 			FROM = {
+				is_ai = no
 				is_in_faction_with = ROOT
 			}
 		}
@@ -1160,7 +1166,7 @@ KoKi_YJ_decisions_categories = {
 		}
 		available = {
 			has_navy_size = {
-				size > 199
+				size > 99
 			}
 		}
 		visible = {

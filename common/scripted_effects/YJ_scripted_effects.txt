@@ -1605,7 +1605,7 @@ AUS_YJ_3_scripted_effects = {
 CZE_YJ_scripted_effects = {
 	random_list = {
 		
-		50 = {
+		33.3 = {
 			modifier = {
 				has_idea = YJ_CZE_1_ideas
 				factor = 0
@@ -1613,14 +1613,30 @@ CZE_YJ_scripted_effects = {
 			country_event = KoKi_YJ_CZE_event.101
 		}
 
-		50 = {
+		33.3 = {
 			modifier = {
-				NOT = {
-					has_idea = YJ_CZE_1_ideas
+				OR = {
+					has_idea = YJ_CZE_2_ideas
+					NOT = {
+						has_idea = YJ_CZE_1_ideas
+					}
 				}
 				factor = 0
 			}
-			YJ_TY_scripted_effects = yes
+			country_event = KoKi_YJ_CZE_event.102
+		}
+
+		33.3 = {
+			modifier = {
+				OR = {
+					has_idea = YJ_CZE_3_ideas
+					NOT = {
+						has_idea = YJ_CZE_1_ideas
+					}
+				}
+				factor = 0
+			}
+			country_event = KoKi_YJ_CZE_event.103
 		}
 
 	}

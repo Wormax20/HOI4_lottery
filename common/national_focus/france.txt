@@ -1893,7 +1893,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 			name = FRA_agricultural_collectivization
-			bonus = 2
+			bonus = 1
 			uses = 3
 			category = industry
 			}
@@ -4505,7 +4505,7 @@ focus_tree = {
 				name = FRA_laissez_faire
 				category = industry
 				uses = 3
-				bonus = 1.5
+				bonus = 1
 			}
 			hidden_effect = { country_event = { id = lar_fra_inefficient_economy.1 days = 730 } }
 			custom_effect_tooltip = FRA_laissez_faire_tt

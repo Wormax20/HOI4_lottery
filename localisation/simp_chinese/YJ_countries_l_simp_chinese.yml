@@ -643,8 +643,16 @@ KoKi_YJ_AUS_event.102.desc: "获得三元君主制版图，以及高额政治点
 KoKi_YJ_AUS_event.102.a: "好"
 
 KoKi_YJ_CZE_event.101.title: "奖品: 波西米亚皇冠领"
-KoKi_YJ_CZE_event.101.desc: "获得三元君主制版图，以及高额工业buff"
+KoKi_YJ_CZE_event.101.desc: "获得政治点数加成以及建设buff"
 KoKi_YJ_CZE_event.101.a: "好"
+
+KoKi_YJ_CZE_event.102.title: "奖品: 斯柯达工业奇迹"
+KoKi_YJ_CZE_event.102.desc: "完成工业计划互斥国策，以及获得工业buff"
+KoKi_YJ_CZE_event.102.a: "好"
+
+KoKi_YJ_CZE_event.103.title: "奖品: 国家安全 人民有钱"
+KoKi_YJ_CZE_event.103.desc: "获得人力加成以及指挥点数与燃油加成"
+KoKi_YJ_CZE_event.103.a: "好"
 
 KoKi_YJ_CZE_event.BACK.title: "德国归还苏台德"
 KoKi_YJ_CZE_event.BACK.desc: "德国人将苏台德地区归还给我们了"
@@ -653,6 +661,9 @@ KoKi_YJ_CZE_event.BACK.a: "好"
 YJ_AUS_1_ideas: "内莱塔尼亚"
 YJ_CZE_1_ideas: "波西米亚皇冠领"
 YJ_CZE_1_ideas_tt: "1938.5.1获得40机体及40配件 3级引擎"
+YJ_CZE_2_ideas: "斯柯达工业奇迹"
+YJ_CZE_2_ideas_tt: "完成工业计划互斥国策"
+YJ_CZE_3_ideas: "国家安全 人民有钱"
 
 BOS_fascism: "伊利里亚"
 BOS_fascism_DEF: "伊利里亚"
